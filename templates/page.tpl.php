@@ -7,7 +7,7 @@
     <article class="row main-content">
       <header class="col-sm-12 titlearea">
        <div>
-        <h1 class="page-title"><i class="icon km-places"></i><span><?php print ($title == 'Home')? 'Audio-Video':$title; ?></span></h1>
+        <h1 class="page-title"><i class="icon km-places"></i><span><?php print ($title == '')? $variables['default_title']:$title; ?></span></h1>
           <nav class="breadcrumbs-wrapper" role="navigation">
             <?php print shanti_sarvaka_get_breadcrumbs($variables); ?>
           </nav>

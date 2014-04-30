@@ -12,6 +12,7 @@
 function shanti_sarvaka_preprocess(&$variables) {
   global $base_url;
   $variables['theme_path'] = $base_url . '/' . drupal_get_path('theme', 'shanti_sarvaka'); 
+  $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
   $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
   $variables['icon_code'] = theme_get_setting('shanti_sarvaka_icon_code');
 }
