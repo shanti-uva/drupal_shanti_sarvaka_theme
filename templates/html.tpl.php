@@ -56,10 +56,10 @@
   <?php print $scripts; ?>
   
   <style>
-    .titlearea {background: <? print  $variables['base_color'];?> !important; } 
-    .titlearea .page-title .icon { background:  <? print $variables['base_color']; ?> !important; } 
+    .titlearea {background: <?php print  $variables['base_color'];?> !important; } 
+    .titlearea .page-title .icon { background:  <?php print $variables['base_color']; ?> !important; } 
     .km-places:before {
-      content: "\<? print $variables['icon_code']; ?>";
+      content: "\<?php print $variables['icon_code']; ?>";
       }
   </style>
 </head>
