@@ -1,0 +1,5 @@
+/**
+ *   These are hacks created by Than to achieve certain stylistic results. Need to be checked by Mark and Gerard
+ */
+
+article.main-content p { text-align: justify; } /* Can't figure out why it's not justified */
