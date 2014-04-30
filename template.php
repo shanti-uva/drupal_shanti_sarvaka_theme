@@ -17,6 +17,10 @@ function shanti_sarvaka_preprocess(&$variables) {
   $variables['icon_code'] = theme_get_setting('shanti_sarvaka_icon_code');
 }
 
+function shanti_sarvaka_preprocess_region(&$variables) {
+  $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
+}
+
 /**
  * Implements HOOK_breadcrumbs
  * Customizes output of breadcrumbs

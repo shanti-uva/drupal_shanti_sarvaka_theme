@@ -7,15 +7,19 @@ core = 7.x
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[header]         = 'Top Bar'
-regions[banner]         = 'Color Strip'
-regions[navigation]     = 'Navigation Tabs'
-regions[highlighted]    = 'Highlighted'
-regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
-regions[search_flyout]  = 'Search Fly Out'
-regions[footer]         = 'Footer'
+regions[header]         = Top Bar
+regions[banner]         = Color Strip
+regions[navigation]     = Navigation Tabs
+regions[highlighted]    = Highlighted
+regions[content]        = Content
+regions[help]           = Help
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+regions[sidebar_first]  = Primary
+regions[sidebar_second] = Secondary
+regions[search_flyout]  = Search Fly Out
+regions[footer]         = Footer
+regions[admin_footer]   = Admin Footer
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Theme Settings

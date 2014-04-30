@@ -3,3 +3,5 @@
  */
 
 article.main-content p { text-align: justify; } /* Can't figure out why it's not justified */
+
+#admin_footer { margin: 10px; }

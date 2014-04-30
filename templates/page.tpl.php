@@ -20,6 +20,7 @@
           </article>
         </div>
       </section>
+      <a href="#" class="back-to-top" style="display: inline;"><i class="icon"></i>Top</a>
     </article>
   </main> <!-- End Main Content -->
   <!-- Search Tab -->
@@ -30,3 +31,8 @@
         </p>  </section></div></section>
 <!-- End of Search Tab -->
  </div> <!-- End of class="wrap" -->
+<?php print render($page['footer']); ?>
+
+<div id="admin_footer">
+  <?php print render($page['admin_footer']); ?> 
+</div>

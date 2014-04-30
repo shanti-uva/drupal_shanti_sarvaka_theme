@@ -9,7 +9,7 @@
         </button>        
       </nav>      
       <h1 class="navbar-title"><a href="" class="navbar-brand" title="SHANTI homepage link">
-        <a href="<?php print $front_page; ?>" class="navbar-brand" title="SHANTI homepage link"><img 
+        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="SHANTI homepage link"><img 
           src="<?php print $variables['theme_path']; ?>/images/shanti_logo.png" alt="shanti logo"> 
           <span> <span class="hidden">SHANTI</span>Scholarly Collections at the University of Virginia</span></a></h1>              
       <nav class="navbar-collapse collapse navtop" role="navigation">
@@ -80,3 +80,4 @@
         <span class="closecollection"> <i class="icon km-close"></i> </span>
     </nav>
   </section><!-- END dropdown panel -->
+</header>
