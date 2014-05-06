@@ -13,6 +13,7 @@
           </nav>
         </div>
       </header>
+      <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
       <section class="col-sm-10 content-section">
         <div class="tab-content">
           <article class="tab-pane active" id="tab-overview">

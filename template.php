@@ -15,6 +15,8 @@ function shanti_sarvaka_preprocess(&$variables) {
   $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
   $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
   $variables['icon_code'] = theme_get_setting('shanti_sarvaka_icon_code');
+  $variables['breadcrumb'] = menu_get_active_breadcrumb();
+  $variables['breadcrumb'][] = drupal_get_title();
 }
 
 function shanti_sarvaka_preprocess_region(&$variables) {
@@ -26,30 +28,21 @@ function shanti_sarvaka_preprocess_region(&$variables) {
  * Customizes output of breadcrumbs
  */
 function shanti_sarvaka_get_breadcrumbs($variables) {
-  /**
-   * what we want is:
-   * 
-   * <!--
-            <ol class="breadcrumb">
-              <li><span class="tag-before-breadcrumb"><?php print $site_name; ?>:</span></li>
-              <li><a href="#">World</a></li>
-              <li><a href="#">Asia</a></li>
-              <li><a href="#">Greater Himalayas & Tibetan Plateau</a></li>
-              <li><a href="#">China</a></li>
-              <li><a href="#">Tibet Autonomous Region</a></li>
-              <li><a href="#">Lhasa</a></li>
-              <li class="active">Lhasa</li>
-            </ol>-->
-   */
-  $breadcrumbs = $variables['breadcrumb'];
 
+  $breadcrumbs = $variables['breadcrumb'];
+  $intro = theme_get_setting('shanti_sarvaka_breadcrumb_intro');
   $output = '<ol class="breadcrumb">';
-  $output .= '<li><span class="tag-before-breadcrumb">' . $variables['site_name'] . ':</span></li>';
-  if(is_array($breadcrumbs) && count($breadcrumbs) > 0) { 
-    foreach($breadcrumbs as $crumb) {
-      $output .= '<li><a href="#">' . $crumb . '</a></li>';
-    }
+  if(isset($intro)) {
+      $output .= '<li><span class="tag-before-breadcrumb">' . $intro . ':</span></li>';
   }
+  if(is_array($breadcrumbs) && count($breadcrumbs) > 0) {
+    if(count($breadcrumbs) == 1) {
+        $breadcrumbs[0] = '<a>Home</a>';
+    }
+    foreach($breadcrumbs as $crumb) {
+        $output .= '<li>' . $crumb . '</li>';
+    }
+  } 
   $output .= '</ol>';
   return $output;
 }

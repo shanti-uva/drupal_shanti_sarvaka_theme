@@ -4,4 +4,26 @@
 
 article.main-content p { text-align: justify; } /* Can't figure out why it's not justified */
 
-#admin_footer { margin: 10px; }
+#admin_footer { padding: 10px; background-color: #f6d4ba; }
+#admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
+
+div.shanti-gallery {
+	width: 100%;
+}
+
+div.shanti-thumbnail { 
+	width: 142px !important;
+	height: 190px !important;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	margin: 0 10px 10px 0 !important;
+	border: solid 1px #eee;
+	overflow: hidden;
+}
+
+div.shanti-thumbnail:hover {
+	background-color: #eee;
+	border-color: #ddd;
+}
+
