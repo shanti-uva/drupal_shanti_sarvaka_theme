@@ -7,8 +7,8 @@ core = 7.x
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[header]         = Top Bar
-regions[banner]         = Color Strip
+regions[header]         = Top Bar Header
+regions[banner]         = Color Strip Banner
 regions[navigation]     = Navigation Tabs
 regions[highlighted]    = Highlighted
 regions[content]        = Content
@@ -39,14 +39,14 @@ stylesheets[all][] =  css/search-panel.css
 stylesheets[all][] =  css/vjs.zencdn.nt-5.4-video-js.css
 stylesheets[all][] =  css/main.css
 stylesheets[all][] =  css/additional.css
-stylesheets[all][] =  css/hacks.css
+stylesheets[all][] =  css/new.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = 'js/vendor/jquery-1.10.1.min.js'
-scripts[] = 'js/vendor/jquery-ui.min.js'
+;scripts[] = 'js/vendor/jquery-1.10.1.min.js' ; Added through jquery update module.
+;scripts[] = 'js/vendor/jquery-ui.min.js'
 scripts[] = 'js/vendor/bootstrap.min.js'
 scripts[] = 'js/menus/jquery.multilevelpushmenu.min.js'
 scripts[] = 'js/extruder/jquery.hoverIntent.min.js'

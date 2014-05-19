@@ -39,11 +39,28 @@ jQuery(function ($) {
       event.stopPropagation();
       $('#menu').toggle();
   });
+  
   $(document).click( function(){
       $('#menu').hide();
       $('.menu-toggle').removeClass('show-topmenu');
       $('#menu').multilevelpushmenu( 'collapse' );
   });
+  
+  // Language Chooser Functionality with ICheck
+  $('input.optionlang').on('ifChecked', function() {
+  	var newLang = $(this).val();
+  	var oldLang = Drupal.settings.pathPrefix;
+  	var currentPage = window.location.pathname;
+  	if(oldLang.length > 0) { 
+	  	// remove any current lang in url (format = "zh/")
+	  	var currentPage = currentPage.replace(RegExp(oldLang + "?$"), ''); // Take care of home page (no slash at end of line)
+	  	currentPage = currentPage.replace(oldLang, ''); // All other pages
+	  }
+  	// Create New URL with new Lang Prefix
+  	var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/'); 
+  	window.location.pathname = newUrl;
+  });
+  
 });
 
 
@@ -73,7 +90,10 @@ jQuery(function ($) {
       width: 295,
       top: 0
   });
-
+  
+	// -- Move collections section from inside block to after navbar div
+	$('div.block section.collections').appendTo($("header[role=banner]"));
+	
   // --- collections toggle
   $("li.explore").addClass("closed");
   $(".explore>a, .closecollection").click(function(){

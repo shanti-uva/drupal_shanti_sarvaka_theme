@@ -22,7 +22,51 @@ body div.wrap{ position:relative;}
 .navbar-default h1 a.navbar-brand span{ position:relative; top:7px; display:inline-block;}
 .navbar-default h1 a.navbar-brand img { height:auto; width:28%; margin:7px 15px 0 0; }
 .navbar-collapse{ padding:0;}
-.navbar-default .navbar-nav>li{ border-left:1px solid #ddd; /* line-height:1.25em; height:3.5em; height:50px; */}
+
+/** Changed by NDG to generalize for Drupal **/
+.navbar-default .navbar-nav { border-left:1px solid #ddd; }
+div.navbar nav.navtop div.block {
+	background: #fff;
+	color: #444;
+	float: right;
+	height: 50px;
+}
+.navbar-default .navbar-nav a{ 
+	color:#666; 
+	display:inline-block; 
+	font-weight:600; 
+	font-size:0.88em; 
+	line-height:1em; 
+	height:50px;
+	margin:0;
+	padding:14px 0 0 16px;
+	font-weight:600;
+	background:#fff;
+	-webkit-transition: background-color 0.2s ease 0s;
+	transition: background-color 0.2s ease 0s;
+	text-transform:uppercase;
+}
+.navbar-default .navbar-nav a,
+.navbar-default .navbar-nav a:hover{ background:#f0f0f0;}
+.navbar-default .navbar-nav:last-child>a{ padding-left:15px;padding-right:40px;}
+
+.navbar-default .navbar-nav .highlight>a{ background:#eee;color:#444;}
+.navbar-default .navbar-nav .explore>a>i.icon{ font-size:17px; position:relative;left:6px;top:2px;}
+.navbar-default .navbar-nav .highlight:last-child{ border-left-color:#d0d0d0;}
+
+.navbar-default .navbar-nav .highlight>a:hover{ background:#fff;color:#444;}
+.navbar-default .navbar-nav .highlight.show-topmenu a{ background:#555; color:#fff;}
+.navbar-default .navbar-nav .highlight.show-topmenu a i:before{ color:#fff;}
+.navbar-default .navbar-nav .highlight.lang:active,
+.navbar-default .navbar-nav .highlight:active{ background:#fff;}
+
+.navbar-default .navbar-na .lang>a{ padding-right:10px;}
+.navbar-default .navbar-nav  .explore>a{ padding-right:20px;}
+.navbar-default .navbar-nav  a>i.km-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
+
+/* Original CSS from Mark:
+ 
+.navbar-default .navbar-nav>li{ border-left:1px solid #ddd; /* line-height:1.25em; height:3.5em; height:50px; */ /*}
 .navbar-default .navbar-nav>li>a{ 
 	color:#666; 
 	display:inline-block; 
@@ -56,6 +100,7 @@ body div.wrap{ position:relative;}
 .navbar-default .navbar-nav>li.lang>a{ padding-right:10px;}
 .navbar-default .navbar-nav li.explore>a{ padding-right:20px;}
 .navbar-default .navbar-nav li>a>i.km-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
+*/
 /*--- END navbar tabs ---*/
 
 /*--- BEGIN dropdown menu ---*/

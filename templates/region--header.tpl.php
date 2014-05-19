@@ -11,8 +11,9 @@
       <h1 class="navbar-title"><a href="" class="navbar-brand" title="SHANTI homepage link">
         <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="SHANTI homepage link"><img 
           src="<?php print $variables['theme_path']; ?>/images/shanti_logo.png" alt="shanti logo"> 
-          <span> <span class="hidden">SHANTI</span>Scholarly Collections at the University of Virginia</span></a></h1>              
-      <nav class="navbar-collapse collapse navtop" role="navigation">
+          <span> <span class="hidden">SHANTI</span><?php print $site_slogan; ?></span></a></h1>  
+          <nav class="navbar-collapse collapse navtop" role="navigation"><?php echo $content; ?></nav>            
+      <!--<nav class="navbar-collapse collapse navtop" role="navigation">
         <form role="form" class="form">
           <fieldset>      
             <ul class="nav navbar-nav navbar-right"><li class="explore"><a href="#">Explore Collections<i class="icon km-directions"></i></a></li>
@@ -38,9 +39,15 @@
               </li>
             </ul>
           </fieldset>
+          
+          <ul class="language-switcher-locale-url"><li class="zh-hans first"><a href="/zh-hans" class="language-link" lang="zh-hans">简体中文</a></li>
+<li class="en active"><a href="/" class="language-link active" lang="en">English</a></li>
+<li class="bo last"><a href="/bo" class="language-link" lang="bo">Tibetan</a></li>
+</ul>
         </form>
       </nav>
     </div> <!-- End of Navbar -->
+    <!--
   <section class="row collections collapse opencollect">
     <nav class="container-fluid" role="navigation"> 
        <div class="col-sm-8 col-sm-offset-2">          
