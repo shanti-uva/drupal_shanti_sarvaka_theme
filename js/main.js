@@ -61,6 +61,33 @@ jQuery(function ($) {
   	window.location.pathname = newUrl;
   });
   
+  // Itree for search flyout
+  //console.log(  $('.block-facetapi .content > .item-list').length);
+  $('.block-facetapi .content > .item-list').fancytree({
+	  	activeVisible: true, // Make sure, active nodes are visible (expanded).
+	  	activate: function(event, data) {
+	  		console.log({'event': event, 'data': data});
+	  	},
+	    aria: false, // Enable WAI-ARIA support.
+	    autoActivate: true, // Automatically activate a node when it is focused (using keys).
+	    autoCollapse: false, // Automatically collapse all siblings, when a node is expanded.
+	    autoScroll: false, // Automatically scroll nodes into visible area.
+	    clickFolderMode: 4, // 1:activate, 2:expand, 3:activate and expand, 4:activate (dblclick expands)
+	    checkbox: false, // Show checkboxes.
+	    debugLevel: 2, // 0:quiet, 1:normal, 2:debug
+	    disabled: false, // Disable control
+	    generateIds: true, // Generate id attributes like <span id='fancytree-id-KEY'>
+	    idPrefix: "fancytree-id-", // Used to generate node id´s like <span id='fancytree-id-<key>'>.
+	    icons: true, // Display node icons.
+	    keyboard: true, // Support keyboard navigation.
+	    keyPathSeparator: "/", // Used by node.getKeyPath() and tree.loadKeyPath().
+	    minExpandLevel: 1, // 1: root node is not collapsible
+	    selectMode: 2, // 1:single, 2:multi, 3:multi-hier
+	    tabbable: true, // Whole tree behaves as one single control
+	    titlesTabbable: false // Node titles can receive keyboard focus
+	  });
+   
+   $('ul.ui-fancytree-source, a.facetapi-limit-link').hide();
 });
 
 

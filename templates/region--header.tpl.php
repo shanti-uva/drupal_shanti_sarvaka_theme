@@ -12,7 +12,7 @@
         <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="SHANTI homepage link"><img 
           src="<?php print $variables['theme_path']; ?>/images/shanti_logo.png" alt="shanti logo"> 
           <span> <span class="hidden">SHANTI</span><?php print $site_slogan; ?></span></a></h1>  
-          <nav class="navbar-collapse collapse navtop" role="navigation"><?php echo $content; ?></nav>            
+          <nav class="navbar-collapse collapse navtop" role="navigation"><?php print $content; ?></nav>            
       <!--<nav class="navbar-collapse collapse navtop" role="navigation">
         <form role="form" class="form">
           <fieldset>      

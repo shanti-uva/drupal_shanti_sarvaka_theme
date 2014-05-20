@@ -5,6 +5,7 @@
  * template.php
  */
  
+
 /*
  * implements hook_preprocess
  * Add theme_path to all templates
@@ -20,7 +21,7 @@ function shanti_sarvaka_preprocess(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_region(&$variables) {
-  if($variables['region'] == 'header') {
+  if($variables['region'] == 'search_flyout') {
    //dpm($variables, 'header variables');
   }
   $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');

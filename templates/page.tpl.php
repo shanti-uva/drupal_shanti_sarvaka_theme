@@ -24,13 +24,7 @@
       <a href="#" class="back-to-top" style="display: inline;"><i class="icon"></i>Top</a>
     </article>
   </main> <!-- End Main Content -->
-  <!-- Search Tab -->
-  <section id="gen-search" class="extruder right" >
-      <div class="text ui-resizable" >               
-      <!-- BEGIN input section -->                    
-      <section class="input-section" style="display: block;">      <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.
-        </p>  </section></div></section>
-<!-- End of Search Tab -->
+  <?php print render($page['search_flyout']); ?>
  </div> <!-- End of class="wrap" -->
 <?php print render($page['footer']); ?>
 
