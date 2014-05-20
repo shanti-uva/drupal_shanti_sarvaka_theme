@@ -65,6 +65,34 @@ div.highlight:last-child {
 	color: #444;
 }
 
+/** Search Flyout **/
+	
+div.treeview .block-facetapi h2 {
+	font-size: 1em;
+}
+
+.treeview .facetapi-limit-link {
+	display: none;
+}
+
+ul.fancytree-container {
+	margin: 0;
+	background: transparent;
+	border: none;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+ul.fancytree-container {
+	font-family: tahoma, arial, helvetica;
+	font-size: 10pt;
+	white-space: nowrap;
+	padding: 3px;
+	margin: 0;
+	background-color: white;
+	border: 1px dotted gray;
+	overflow: auto;
+	height: 100%;
+}
 
 /* Admin */
 

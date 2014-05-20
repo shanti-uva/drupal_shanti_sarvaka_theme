@@ -1,9 +1,11 @@
+$ = jQuery.noConflict(); // added to enable $ namespace
+
 /* Set the defaults for DataTables initialisation */
 $.extend( true, $.fn.dataTable.defaults, {
 	"sDom":
-		"<'row'<'col-xs-6'i><'col-xs-6'p>>"+
-            "t"+
-		"<'row'<'col-xs-6'p><'col-xs-6'i>>",
+		"<'row'<'col-xs-6'l><'col-xs-6'f>r>"+
+		"t"+
+		"<'row'<'col-xs-6'i><'col-xs-6'p>>",
 	"oLanguage": {
 		"sLengthMenu": "_MENU_ records per page"
 	}
