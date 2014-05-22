@@ -1,19 +1,65 @@
-var Settings = {
+/** 
+ * Taken from Kmaps Aardvark Site
+ * Adapted to Shanti Sarvaka Mediabase by Than Grove (beginning 2014-05-22)
+ **/
+var ShantiSettings = {
      baseUrl: "http://dev-subjects.kmaps.virginia.edu",
      mmsUrl: "http://dev-mms.thlib.org",
-     placesUrl: "http://dev-places.kmaps.virginia.edu"
+     placesUrl: "http://dev-places.kmaps.virginia.edu",
+     ftListSelector: "ul.facetapi-mb-solr-facet-tree"
 }
 
-// Initialization of UI components on page
+// Initialization of UI components on page on load
 jQuery(function($) {
-	// Initialize Search Flyout
-  $("#gen-search").buildMbExtruder({
-      positionFixed: false,
-      position: "right",
-      width: 295,
-      top: 0
+  createTopLink();
+  iCheckInit();
+  langButtonsInit();
+	mbExtruderInit();
+	fancytreeInit();
+  miscInit();
+  checkWidth();
+});
+
+// *** CONTENT *** top link
+function createTopLink() {
+  var offset = 220;
+  var duration = 500;
+  jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+          jQuery('.back-to-top').fadeIn(duration);
+      } else {
+          jQuery('.back-to-top').fadeOut(duration);
+      }
   });
-  
+
+  jQuery('.back-to-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+  })
+}
+
+// Initialize iCheck form graphics
+function iCheckInit() {
+  $("input[type='checkbox'], input[type='radio']").each(function () {
+      var self = $(this),
+          label = self.next(),
+          label_text = label.text();
+
+      label.remove();
+      self.iCheck({
+          checkboxClass: "icheckbox_minimal-red",
+          radioClass: "iradio_minimal-red",
+          insert: "<div class='icheck_line-icon'></div>" + label_text
+      });
+  });
+
+  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select
+
+}
+
+/* Initialize Language Buttons */
+function langButtonsInit() {
   // Language Chooser Functionality with ICheck
   $('input.optionlang').on('ifChecked', function() {
   	var newLang = $(this).val();
@@ -28,9 +74,61 @@ jQuery(function($) {
   	var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/'); 
   	window.location.pathname = newUrl;
   });
+}
 
+/* Initialize Extruder search fly-out */
+function mbExtruderInit() {
+	// Initialize Search Flyout
+  $("#gen-search").buildMbExtruder({
+      positionFixed: false,
+      position: "right",
+      width: 295,
+      top: 0
+  });
+  
+  // Make it resizeable
+  $("div.extruder-content > div.text").resizable({ handles: "w",
+      resize: function (event, ui) {
+          $('.title-field').trunk8({ tooltip:false });
+      }
+   });
+      
+  // Bind event listener
+  $(".extruder-content").resize(checkWidth);
+  
+  if (!$(".extruder.right").hasClass("isOpened")) {
+        $(".flap").prepend("<span style='font-size:20px; position:absolute; left:19px; top:13px; z-index:10;'><i class='icon km-search'></i></span>");
+        $(".flap").addClass("on-flap");
+  }
+
+  // --- set class on dropdown menu for icon
+  $(".extruder.right .flap").hover( 
+  	 function () {
+      	$(this).addClass('on-hover');
+      },
+      function () {
+      	$(this).removeClass('on-hover');
+      }
+  );
+  
+}
+
+/** Function to check width of Extruder and resize content accordingly */
+function checkWidth() {
+var panelWidth = $(".text").width();
+  if( panelWidth > 275 ) {
+      $(".extruder-content").css("width","100%");
+    } else
+  if( panelWidth <= 275 ) {
+      $(".extruder-content").css("width","100% !important");
+    }
+}
+
+/** Initialize Fancy tree in fly out */
+function fancytreeInit() {
+	
   // Facet Tree in Search Flyout
-  var divs = $('ul.facetapi-mb-solr-facet-tree').parent();
+  var divs = $(ShantiSettings.ftListSelector).parent();
   
   divs.each(function() {
   	var facettype = $(this).children('ul').attr('id').split('-').pop();
@@ -77,109 +175,13 @@ jQuery(function($) {
 	  });
    //$('ul.ui-fancytree-source, a.facetapi-limit-link').hide();
   });
-});
+}
 
-
-
-// *** SEARCH *** corrections for widths
-jQuery(function($) {
-
-  $("#gen-search div.text").resizable({ handles: "w",
-          resize: function (event, ui) {
-              $('.title-field').trunk8({ tooltip:false });
-          }
-      }); // --- initiate jquery resize
-
-  function checkWidth() {
-  var panelWidth = $(".text").width();
-
-    if( panelWidth > 275 ) {
-        $(".extruder-content").css("width","100%");
-      } else
-    if( panelWidth <= 275 ) {
-        $(".extruder-content").css("width","100% !important");
-      }
-  }
-
-  // Execute on load
-  checkWidth();
-  // Bind event listener
-  $(".extruder-content").resize(checkWidth);
-
-});
-
-
-// *** SEARCH *** toggle button
-jQuery(function($) {
-  if (!$(".extruder.right").hasClass("isOpened")) {
-        $(".flap").prepend("<span style='font-size:20px; position:absolute; left:19px; top:13px; z-index:10;'><i class='icon km-search'></i></span>");
-        $(".flap").addClass("on-flap");
-  }
-
-  // --- set class on dropdown menu for icon
-  $(".extruder.right .flap").hover( function() {
-      $(this).addClass('on-hover');
-      },
-        function () {
-      $(this).removeClass('on-hover');
-      }
-  );
-});
-
-
-// *** SEARCH *** Select-Form & iCheck form graphics
-jQuery(function ($) {
-  $("input[type='checkbox'], input[type='radio']").each(function () {
-      var self = $(this),
-          label = self.next(),
-          label_text = label.text();
-
-      label.remove();
-      self.iCheck({
-          checkboxClass: "icheckbox_minimal-red",
-          radioClass: "iradio_minimal-red",
-          insert: "<div class='icheck_line-icon'></div>" + label_text
-      });
-  });
-
-  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select
-
-});
-
-
-// *** CONTENT *** top link
-jQuery(function ($) {
-  var offset = 220;
-  var duration = 500;
-  jQuery(window).scroll(function() {
-      if (jQuery(this).scrollTop() > offset) {
-          jQuery('.back-to-top').fadeIn(duration);
-      } else {
-          jQuery('.back-to-top').fadeOut(duration);
-      }
-  });
-
-  jQuery('.back-to-top').click(function(event) {
-      event.preventDefault();
-      jQuery('html, body').animate({scrollTop: 0}, duration);
-      return false;
-  })
-});
-
-
-
-// *** GLOBAL ** conditional IE message
-jQuery(function ($) { 
+function miscInit() {
+	// *** GLOBAL ** conditional IE message
   // show-hide the IE message for older browsers
   // this could be improved with conditional for - lte IE7 - so it does not self-hide
   $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
-});
-
-/* Additions by Gerard Ketuma */
-/* Reorganization and Additions by Than Grove (2014-05-20)*/
-
-
-
-
+}
 
 

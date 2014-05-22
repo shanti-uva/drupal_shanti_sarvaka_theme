@@ -67,19 +67,17 @@ div.highlight:last-child {
 
 /** Search Flyout **/
 	
+.treeview .block-facetapi {
+	overflow: hidden !important;
+}
+
 div.treeview .block-facetapi h2 {
-	font-size: 1em;
+	font-size: 1.1em;
+	padding: 0px 6px;
 }
 
 .treeview .facetapi-limit-link {
 	display: none;
-}
-
-ul.fancytree-container {
-	margin: 0;
-	background: transparent;
-	border: none;
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 ul.fancytree-container {
