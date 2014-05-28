@@ -144,3 +144,12 @@ function shanti_sarvaka_get_breadcrumbs($variables) {
   $output .= '</ol>';
   return $output;
 }
+
+/** Theme Facet Counts for JS **/
+function shanti_sarvaka_facetapi_count($variables) {
+  return '<span class="facet-count">' . (int) $variables['count'] . '</span>';
+}
+
+function shanti_sarvaka_block_facetapi($variables) {
+  dpm($variables, 'in facet block function');
+}

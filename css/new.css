@@ -74,6 +74,7 @@ div.highlight:last-child {
 div.treeview .block-facetapi h2 {
 	font-size: 1.1em;
 	padding: 0px 6px;
+	white-space: nowrap;
 }
 
 .treeview .facetapi-limit-link {
@@ -88,8 +89,43 @@ ul.fancytree-container {
 	margin: 0;
 	background-color: white;
 	border: 1px dotted gray;
-	overflow: auto;
+	overflow: hidden;
 	height: 100%;
+}
+
+ul.fancytree-container .glyphicon {
+	color: #888;
+	font-family: 'Glyphicons Halflings';
+	font-size: 13px;
+	margin-right: 12px;
+	position: relative;
+	top: 3px;
+}
+
+span.facet-count:before { content: '(';  }
+span.facet-count:after { content: ')';  }
+
+button.toggle-facet-label-search {
+	text-decoration: none;
+	border: none;
+	background: transparent;
+	padding: 0px;
+}
+
+input.facet-label-search {
+	display: inline;
+	height: 1.5em;
+	font-size: smaller;
+	padding: 3px;
+	margin: 0px 4px;
+}
+
+span.fancytree-node i.icon.km-cancel {
+	color: red;
+	font-size: smaller;
+	padding-top: 4px;
+	display: inline-block;
+	cursor: pointer;
 }
 
 /* Admin */
@@ -101,3 +137,4 @@ ul.fancytree-container {
 /* General */
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
+.back-to-top { z-index: 1000; } /* Back to top tab */

@@ -11,6 +11,7 @@
           <nav class="breadcrumbs-wrapper" role="navigation">
             <?php print shanti_sarvaka_get_breadcrumbs($variables); ?>
           </nav>
+          <?php print render($tabs); ?>
         </div>
       </header>
       <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
