@@ -84,11 +84,22 @@ function shanti_sarvaka_preprocess(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_region(&$variables) {
-  if($variables['region'] == 'search_flyout') {
+  if($variables['region'] == 'header') {
    //dpm($variables, 'header variables');
   }
   $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');
   $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
+}
+
+
+function shanti_sarvaka_preprocess_block(&$variables) {
+  $block = $variables['block'];
+  if(isset($block->region) && $block->region == 'header') {
+    // TODO: Is there a way to get the content of each block to be written (hidden) elsewhere on the page?
+    if($block->title == "Explore Collections") {
+      //dpm($block, 'block in preprocess for explore collections block');
+    }
+  }
 }
 
 function shanti_sarvaka_block_view_locale_language_alter(&$data, $block) {

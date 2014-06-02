@@ -2,47 +2,38 @@
  *   These are hacks created by Than to achieve certain stylistic results. Need to be checked by Mark and Gerard
  */
 
-/* Gallery and thumbnails */
-div.shanti-gallery {
-	width: 100%;
+/* Top Level Elements */
+section.messages {
+	clear: both;
 }
 
-div.shanti-thumbnail { 
-	width: 142px !important;
-	height: 190px !important;
-	display: inline-block;
-	float: left;
-	padding: 10px;
-	margin: 0 10px 10px 0 !important;
-	border: solid 1px #eee;
-	overflow: hidden;
+.main-content .content-section {
+	/*width: 100%;	*/
 }
 
-div.shanti-thumbnail:hover {
-	background-color: #eee;
-	border-color: #ddd;
+.navbar-static-top {
+	z-index: auto;
 }
 
-/* Breadcrumbs */
-ol.breadcrumb>li:first-child {
-	font-weight: bold;
+/* Header Top Bar */
+.menu-buttons .menu-icon a {
+	white-space: nowrap;
+	width: auto;
+	padding: 14px 16px 0px;
 }
 
-ol.breadcrumb>li:first-child::after {
-	font-weight: bold;
-	content: ':\00a0';
+.menu-buttons .menu-icon a span {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 0.88em;
 }
 
-body.front ol.breadcrumb>li:first-child::after {
-	display: none;
-}
-
-ol.breadcrumb>li:nth-child(2)::before {
-	content: '\00a0';
-}
-
-ol.breadcrumb>li+li:before {
-	content: "\00a0/\00a0";
+.menu-buttons .menu-icon a i.icon.km-directions, 
+.menu-buttons .menu-icon a i.icon.km-arrowselect {
+	font-size: 17px;
+	position: relative;
+	top: 3px;
+	padding-left: 2px;
 }
 
 /* Language Chooser */
@@ -63,6 +54,76 @@ div.highlight:last-child {
 	text-decoration: none;
 	background: #fff;
 	color: #444;
+}
+
+/* Breadcrumbs */
+nav.breadcrumbs-wrapper ol.breadcrumb {
+	background: inherit;
+	font-size: 0.88em;
+	line-height: 21px;
+	height: 21px;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+ol.breadcrumb {
+	background: transparent;
+	border: none;
+	padding: auto;
+	margin: auto;
+}
+
+ol.breadcrumb li {
+	display: inline-block;
+	float: left;
+	position: relative;
+	height: 21px;
+	overflow: hidden;
+	line-height: 21px;
+	margin: 0px 6px 0px 0;
+	padding: 0px 10px 0px 0;
+	font-size: 1em;
+}
+
+ol.breadcrumb>li:first-child {
+	font-family: "Museo Sans", sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0 5px 0 0;
+	font-weight: 600;
+	font-style: normal;
+}
+
+ol.breadcrumb>li:first-child::after {
+	font-weight: bold;
+	content: ':\00a0';
+}
+
+body.front ol.breadcrumb>li:first-child::after {
+	display: none;
+}
+
+ol.breadcrumb>li:nth-child(2)::before {
+	content: '\00a0';
+}
+
+ol.breadcrumb>li+li:before {
+	content: "\00a0/\00a0";
+}
+
+ol.breadcrumb li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	height: 21px;
+	line-height: 21px;
+	overflow: hidden;
+	float: left;
+	margin-right: 0px;
 }
 
 /** Search Flyout **/
@@ -126,6 +187,27 @@ span.fancytree-node i.icon.km-cancel {
 	padding-top: 4px;
 	display: inline-block;
 	cursor: pointer;
+}
+
+/* Gallery and thumbnails */
+div.shanti-gallery {
+	width: 100%;
+}
+
+div.shanti-thumbnail { 
+	width: 142px !important;
+	height: 190px !important;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	margin: 0 10px 10px 0 !important;
+	border: solid 1px #eee;
+	overflow: hidden;
+}
+
+div.shanti-thumbnail:hover {
+	background-color: #eee;
+	border-color: #ddd;
 }
 
 /* Admin */
