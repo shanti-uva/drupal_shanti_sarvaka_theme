@@ -127,7 +127,10 @@ ol.breadcrumb li a {
 }
 
 /** Search Flyout **/
-	
+section#gen-search {
+	top: 50px;
+}
+
 .treeview .block-facetapi {
 	overflow: hidden !important;
 }
@@ -220,3 +223,4 @@ div.shanti-thumbnail:hover {
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
 .back-to-top { z-index: 1000; } /* Back to top tab */
+div.loader { height: 80%; min-height: 500px; padding-top: 16px;}

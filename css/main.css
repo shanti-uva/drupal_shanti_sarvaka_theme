@@ -990,28 +990,28 @@ ul.menu-main>li>a:first-child {
 	.menu-icon a:hover i:before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}	
 	.menu-icon.show-topmenu a:hover i:before{ color:#fff;}
-	.kmaps-searchtoggle a{ border-radius:4px; position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
-	.kmaps-searchtoggle a:hover{ color:#222;}
-	.kmaps-searchtoggle i{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:700; padding:0;}
-	.kmaps-searchtoggle i:before{ color:#eee; content: "\e600";}
-	.kmaps-searchtoggle a:hover i:before{ color:#fff;}
-	.kmaps-searchtoggle .menu-icon.show-topmenu a{ background:#000;}		
-	.kmaps-searchtoggle .menu-icon.show-topmenu a i:before{ color:#fff;}
+	.gen-searchtoggle a{ border-radius:4px; position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
+	.gen-searchtoggle a:hover{ color:#222;}
+	.gen-searchtoggle i{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:700; padding:0;}
+	.gen-searchtoggle i:before{ color:#eee; content: "\e600";}
+	.gen-searchtoggle a:hover i:before{ color:#fff;}
+	.gen-searchtoggle .menu-icon.show-topmenu a{ background:#000;}		
+	.gen-searchtoggle .menu-icon.show-topmenu a i:before{ color:#fff;}
 	
 	.menu-explore a,
 	.menu-options .bottom-trim,
 	.menu-collections .bottom-trim,	
-	#kmaps-search.extruder.right .flap,
-	#kmaps-search.extruder.right .flap span.flapLabel,
-	#kmaps-search.extruder.right .flap.on-flap span.flapLabel{ display:none !important;}
+	#gen-search.extruder.right .flap,
+	#gen-search.extruder.right .flap span.flapLabel,
+	#gen-search.extruder.right .flap.on-flap span.flapLabel{ display:none !important;}
 
 }
 
 @media screen and (min-width: 400px) {
 	
 	#menu-main .menu-collections,
-	.kmaps-searchtoggle,
-	.kmaps-search-wrap{ display:none !important;} /* hide collections menu */
+	.gen-searchtoggle,
+	.gen-search-wrap{ display:none !important;} /* hide collections menu */
 
 }
 

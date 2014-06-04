@@ -39,24 +39,25 @@ object.flip_label{ display:none;}
 
 
 /*--- panel ---*/
-#kmaps-search.extruder.right{ margin-top:7px; }
-#kmaps-search .ext_wrapper{ height:auto; padding:0; }
-#kmaps-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse:separate; /* for ie9+ with box-shadow */}
-#kmaps-search.extruder.right.isOpened .extruder-content{ border-right-width:12px;}
-#kmaps-search.extruder .text{ border:none; padding:0; text-shadow:none; background:#f8f8f8; color:#333;}
+#gen-search { top: 50px; }
+#gen-search.extruder.right{ margin-top:7px; }
+#gen-search .ext_wrapper{ height:auto; padding:0; }
+#gen-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse:separate; /* for ie9+ with box-shadow */}
+#gen-search.extruder.right.isOpened .extruder-content{ border-right-width:12px;}
+#gen-search.extruder .text{ border:none; padding:0; text-shadow:none; background:#f8f8f8; color:#333;}
 
 /*--- big search button inline styles are loaded via main.js with icon markup  */
-#kmaps-search.extruder.right .flap{ cursor:pointer; display:block; background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px;margin:0 0 0 -7px; border-top-left-radius:44px;border-bottom-left-radius:44px;}
-#kmaps-search.extruder.right .flap.on-flap{ border-collapse:separate;}
-#kmaps-search.extruder.right .flap span.flapLabel,
-#kmaps-search.extruder.right .flap.on-flap span.flapLabel{ width:37px !important;background:#505050; height:30px;display:block; padding:17px 38px 17px 0; margin:0;border-top-left-radius:20px;border-bottom-left-radius:20px;}
-#kmaps-search.extruder.right.isOpened .flap{ width:48px;}
-#kmaps-search.extruder.right.isOpened .flap.on-flap span.flapLabel{ width:30px !important;}
+#gen-search.extruder.right .flap{ cursor:pointer; display:block; background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px;margin:0 0 0 -7px; border-top-left-radius:44px;border-bottom-left-radius:44px;}
+#gen-search.extruder.right .flap.on-flap{ border-collapse:separate;}
+#gen-search.extruder.right .flap span.flapLabel,
+#gen-search.extruder.right .flap.on-flap span.flapLabel{ width:37px !important;background:#505050; height:30px;display:block; padding:17px 38px 17px 0; margin:0;border-top-left-radius:20px;border-bottom-left-radius:20px;}
+#gen-search.extruder.right.isOpened .flap{ width:48px;}
+#gen-search.extruder.right.isOpened .flap.on-flap span.flapLabel{ width:30px !important;}
 /*----- css for the flap is inserted inline, see js/main ---*/
-#kmaps-search.extruder.right .flap>span,
-#kmaps-search.extruder.right .flap.on-flap>span{ color:#ddd;-webkit-transition: all .3s ease-out; -moz-transition: all .3s ease-out; transition: all .3s ease-out;}
-#kmaps-search.extruder.right .flap.on-hover>span,
-#kmaps-search.extruder.right .flap.on-hover.on-flap>span{ color:#fff;background:#444;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
+#gen-search.extruder.right .flap>span,
+#gen-search.extruder.right .flap.on-flap>span{ color:#ddd;-webkit-transition: all .3s ease-out; -moz-transition: all .3s ease-out; transition: all .3s ease-out;}
+#gen-search.extruder.right .flap.on-hover>span,
+#gen-search.extruder.right .flap.on-hover.on-flap>span{ color:#fff;background:#444;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
 
 
 
@@ -300,7 +301,7 @@ object.flip_label{ display:none;}
 /*--- the feature dropdown-menu ---*/
 .feature-group .dropdown-menu{ height:320px; overflow:auto; border-radius:12px; padding:0; top:46px; left:0; width:100%; min-width:220px;}
 /* .feature-group .dropdown-menu p{ font-size:.82em; line-height:normal; color:#222;}
-#kmaps-search .text .feature-message{ background-color:#fff; font-size:12px;padding:10px 17px 10px; margin:0; 
+#gen-search .text .feature-message{ background-color:#fff; font-size:12px;padding:10px 17px 10px; margin:0; 
 border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 
 .show-feature-tree{ padding:0; background:#f8f8f8; width:100%; margin-right:0.06em;} 
@@ -328,8 +329,8 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 .feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected, 
 .feature-group span.fancytree-node.fancytree-selected:hover{ background:transparent;border:none;}
 
-#kmaps-search .text .feature-group { }
-#kmaps-search .text input.feature-name { }
+#gen-search .text .feature-group { }
+#gen-search .text input.feature-name { }
 
 
 .feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active, 
@@ -339,7 +340,7 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 .feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected, 
 .feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected:hover{ background:transparent;}
 
-/*--- highlighting ---*/
+/*--- highlighting ---*/ 
 .fancytree-node.fancytree-match{ } /* targets the filtered nodes */
 .fancytree-ext-filter span.fancytree-node.fancytree-submatch span.fancytree-title{ color:#777;} /*--- highlight parent node ---*/
 .fancytree-ext-filter span.fancytree-node.fancytree-match span.fancytree-title { color:#555;} /* fancytree-match is the class for the actual feature highlight - default is font-weight: bold; */

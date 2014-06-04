@@ -6,7 +6,8 @@ var ShantiSettings = {
      baseUrl: "http://dev-subjects.kmaps.virginia.edu",
      mmsUrl: "http://dev-mms.thlib.org",
      placesUrl: "http://dev-places.kmaps.virginia.edu",
-     ftListSelector: "ul.facetapi-mb-solr-facet-tree" // should change "mb-solr" to "fancy" for universality
+     ftListSelector: "ul.facetapi-mb-solr-facet-tree", // should change "mb-solr" to "fancy" for universality
+     fancytrees: [],
 }
 
 /**
@@ -19,25 +20,26 @@ var ShantiSettings = {
 // Consider to use [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/)
 "use strict";
 	
-	$.ui.fancytree._FancytreeClass.prototype.clearFacetFilter = function(){
+	$.ui.fancytree._FancytreeClass.prototype.clearFacetFilter = function() {
 		var tree = this,
 			treeOptions = tree.options;
-			if (tree.activeNode) {
-	        tree.activeNode.setActive(false);
-	    }
-	    tree.clearFilter();
-	    tree.rootNode.visit(function (node) {
-	        node.setExpanded(false);
-	    });
-	    // "unwrap" the <mark>ed text
-	    tree.$div.eq(0).find('span.fancytree-title mark').each(
-	        function () {
-	          var parent = $(this).parent()
-	        	var children = parent.children('.facet-count, .element-invisible').remove();
-	          parent.text(parent.text());
-	          parent.append(children);
-	        }
-	    );
+		// "unwrap" the <mark>ed text
+    tree.$div.eq(0).find('span.fancytree-title mark').each(
+        function () {
+          var parent = $(this).parent();
+        	var children = parent.children().remove(); // took out children selector: '.facet-count, .element-invisible'
+          parent.text(parent.text());
+          parent.append(children);
+        }
+    );
+		if (tree.activeNode) {
+        tree.activeNode.setActive(false);
+    }
+    tree.clearFilter();
+    tree.rootNode.visit(function (node) {
+    	  $(node.li).find('span.facet-count').text(node.data.count);
+        //node.setExpanded(false);
+    });
 	};
 // End of namespace closure
 } (jQuery));
@@ -48,6 +50,7 @@ jQuery(function($) {
   iCheckInit();
   langButtonsInit();
 	mbExtruderInit();
+	setSearchTabHeight();
 	fancytreeInit();
   miscInit();
   checkWidth();
@@ -55,7 +58,7 @@ jQuery(function($) {
 
 // *** CONTENT *** top link
 function createTopLink() {
-  var offset = 220;
+  var offset = 420;
   var duration = 500;
   jQuery(window).scroll(function() {
       if (jQuery(this).scrollTop() > offset) {
@@ -64,7 +67,6 @@ function createTopLink() {
           jQuery('.back-to-top').fadeOut(duration);
       }
   });
-
   jQuery('.back-to-top').click(function(event) {
       event.preventDefault();
       jQuery('html, body').animate({scrollTop: 0}, duration);
@@ -115,9 +117,13 @@ function mbExtruderInit() {
   $("#gen-search").buildMbExtruder({
       positionFixed: false,
       position: "right",
-      width: 310,
+      closeOnExternalClick:false,
+      closeOnClick:false,
+      width: 310, // width is set in two places, here and the css
       top: 0
   });
+  
+  $("#gen-search").css('top', '50px'); // custom adjustment for mbase (?) Using top parameter above lowers only the tab not the whole search div
   
   // Make it resizeable
   $("div.extruder-content > div.text").resizable({ handles: "w",
@@ -128,12 +134,25 @@ function mbExtruderInit() {
       
   // Bind event listener
   $(".extruder-content").resize(checkWidth);
-  
+ 
   if (!$(".extruder.right").hasClass("isOpened")) {
-        $(".flap").prepend("<span style='font-size:20px; position:absolute; left:19px; top:13px; z-index:10;'><i class='icon km-search'></i></span>");
+        $(".flap").click( function() {
+          $(".extruder .text").css("width","100%");
+        });
+          // styles inline for now, forces
+        $(".flap").prepend("<span style='font-size:21px; position:absolute; left:17px; top:12px; z-index:10;'><i class='icon km-search-kmaps'></i></span>");
         $(".flap").addClass("on-flap");
   }
 
+  // --- set class on dropdown menu for icon
+  $(".extruder.right .flap").hover( function() {
+      $(this).addClass('on-hover');
+      },
+        function () {
+      $(this).removeClass('on-hover');
+      }
+  );
+  
   // --- set class on dropdown menu for icon
   $(".extruder.right .flap").hover( 
   	 function () {
@@ -186,7 +205,8 @@ function fancytreeInit() {
 	    autoScroll: true, // Automatically scroll nodes into visible area.
 	    activate: function(event, data) {
 	    	var node = data.node;
-	    	//console.info(node.data);
+	    	console.info(node.data);
+	    	$('i.icon.km-cancel').remove(); // remove existing cancel icons
 	    	loadFacetSearch(node.data);
 	    	return false;
 	    },
@@ -217,6 +237,7 @@ function fancytreeInit() {
 	    tabbable: true, // Whole tree behaves as one single control
 	    titlesTabbable: false, // Node titles can receive keyboard focus
 	  });
+  	ShantiSettings.fancytrees.push($(tree).fancytree('getTree'));
   });
   
   // Set facet link title attributes on mouseover
@@ -270,19 +291,23 @@ function fancytreeInit() {
   });
   
   // Activate the remove facet links
-  var ret = $('div.block-facetapi').on('click', 'i.icon.km-cancel', function() {
-  	console.log('clicked');
+  $('div.block-facetapi').on('click', 'i.icon.km-cancel', function() {
+  	//console.log('clicked');
   	var tree = $(this).parents('ul.ui-fancytree').parents('div.content').fancytree('getTree');
   	var nodeId = $(this).parents('li').eq(0).attr('id').replace('ftid','');
   	var node = tree.getNodeByKey(nodeId);
-  	tree.clearFilter();
+  	tree.clearFacetFilter();
+  	//node.setActive(true);
+  	node.setExpanded(true);
   	node.setSelected(false);
-  	loadFacetSearch({ 'fname' : node.data.fname, 'fid': 'clear'});
+  	//$(node.span).removeClass('fancytree-active fancytree-focused fancytree-selected');
+  	$('article.main-content section.content-section').html($('#original-content').html());
+  	$('#original-content').remove();
   	$(this).remove();
   	//console.log(tree, nodeId, node.data);
   });
 }
-
+ 
 function miscInit() {
 	// *** GLOBAL ** conditional IE message
   // show-hide the IE message for older browsers
@@ -298,7 +323,11 @@ function loadFacetSearch(fdata) {
 	$.ajax({
 		url: dataurl,
 		beforeSend: function() {
-			$('article.main-content section.content-section').html('<p><i class="fa fa-spinner fa-spin"></i> Loading ...</p>');
+			if($('article.main-content #original-content').length == 0) {
+				$('article.main-content').append('<div id="original-content" style="display:none; width: 0px; height: 0px;"></div>');
+			}
+			$('#original-content').html($('article.main-content section.content-section').html());
+			$('article.main-content section.content-section').html('<div class="loader"><i class="fa fa-spinner fa-spin"></i> Loading ...</div>');
 		}
 	}).done(function(json) {
 		$('article.main-content section.content-section').html(json.html);
@@ -314,7 +343,8 @@ function loadFacetSearch(fdata) {
 				if(node.data.fid in facets) {
 					var ctel = $(node.li).find('.facet-count').eq(0);
 					if(ctel) {
-						ctel.html(facets[node.data.fid] + "<!--" + ctel.text() + "-->");
+						//node.data.originalcount = ctel.text(); // a data field that store original count for facet
+						ctel.html(facets[node.data.fid]);
 						if(node.data.fid == fid) {
 							ctel.parent().after(' <i class="icon km-cancel" title="Remove this facet"></i>');
 						}
@@ -324,7 +354,46 @@ function loadFacetSearch(fdata) {
 				return false;
 			});
 		}
-		console.info({'ulclass': ulclass, 'tree':tree, 'fdata':fdata, 'data':json});
+		//console.info({'ulclass': ulclass, 'tree':tree, 'fdata':fdata, 'data':json});
 	});
 }
 
+function searchTabHeight() {
+	var height = $(window).height();
+	var srchtab = (height) - 80;
+	var viewheight = (height) - 212;
+	    
+	srchtab = parseInt(srchtab) + 'px';
+	$("#gen-search").find(".text").css('height',srchtab);
+	  
+	viewheight = parseInt(viewheight) + 'px';
+	$("#gen-search").find(".view-wrap").css('height',viewheight);
+}
+
+function setSearchTabHeight() {
+	var winHeight = $(window).height();
+  var panelHeight = winHeight -80; // ----- height of container for search panel - minus length above and below in px
+  var viewHeight = winHeight -215; // ----- height for view-section & search options - CLOSED
+  var shortHeight = winHeight -483; // ----- height for view-section & search options - OPEN
+
+  // set initial div height
+  $("div.text").css({ "height": panelHeight });
+  $(".view-wrap").css({ "height": viewHeight });
+  $("#gen-search .view-wrap.short-wrap").css({ "height": shortHeight });
+  // make sure div stays full width/height on resize
+  $(window).resize(function(){
+    $("div.text").css({ "height": panelHeight });
+    $(".view-wrap").css({ "height": viewHeight });
+    $("#gen-search .view-wrap.short-wrap").css({ "height": shortHeight });
+  });
+  // toggle heights with search options
+  $(".advanced-link").click(function () {
+    var winHeight = $(window).height();
+    $(".view-wrap").css({ "height": viewHeight });
+    $("#gen-search .view-wrap.short-wrap").css({ "height": shortHeight });
+  });
+
+	// --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
+    searchTabHeight();
+    $(window).bind('load orientationchange resize', searchTabHeight);
+}

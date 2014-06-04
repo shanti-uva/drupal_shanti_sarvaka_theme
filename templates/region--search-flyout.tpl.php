@@ -1,30 +1,30 @@
 <!-- Search Tab -->
-<section id="gen-search" class="extruder right" >
+<section id="gen-search" class="extruder right" role="search">
   <!-- BEGIN Input Section -->                 
   <section class="input-section">                   
-    <form role="form" class="form">
+    <form class="form">
      <fieldset>                       
       <legend class="hidden">Search Form</legend>                 
                                 
         <div class="input-group">
-            <input id="searchform" class="form-control kms" type="text" placeholder="Enter Search...">
-            <span class="input-group-btn">
-              <button type="reset" class="searchreset">&times;</button>
-              <button id="searchbutton" type="button" class="btn btn-default"><i class="icon"></i></button>
-            </span>
+          <input type="text" class="form-control kms" id="searchform" placeholder="Enter Search..." autocomplete="off">
+          <span class="input-group-btns">
+            <button type="button" class="btn btn-default" id="searchbutton"><i class="icon"></i></button>
+            <button type="reset" class="searchreset">×</button>
+          </span>
         </div>
 
        <!-- search scope -->
        <div class="btn-group" data-toggle="buttons">
            <label class="checkbox-inline">
-               <input type="checkbox" id="termscope" name="term-scope" checked="checked" data-value="terms"> Titles
+               <input type="checkbox" id="descscope" name="desc-scope" checked="checked" data-value="desc"> Descriptions
            </label>
            <label class="checkbox-inline">
-               <input type="checkbox" id="summaryscope" name="summary-scope" checked="checked" data-value="summaries"> Descriptions
+               <input type="checkbox" id="transcriptscope" name="transcript-scope" checked="checked" data-value="transcript"> Transcripts
            </label>
-           <label class="checkbox-inline" >
-               <input type="checkbox" id="essayscope" name="essay-scope" data-value="essays"> Other
-           </label>
+           <!--<label class="checkbox-inline" >
+               <input type="checkbox" id="otherscope" name="other-scope" data-value="other"> Other
+           </label>-->
         </div>
 
         <a href="#" class="advanced-link toggle-link"><i class="icon"></i>Advanced</a>  
