@@ -16,7 +16,7 @@
           </div>
         </header>
         <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
-        <section class="content-section col-xs-12 col-sm-9">
+        <section class="content-section col-xs-12"> <!-- had col-sm-9 (ndg, 2014-06-06) -->
           <div class="tab-content">
             <article class="tab-pane main-col active" id="tab-overview">
                <?php print render($page['content']); ?>
