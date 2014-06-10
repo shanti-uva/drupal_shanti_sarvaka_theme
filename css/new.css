@@ -9,6 +9,7 @@ section.messages {
 
 .main-content .content-section {
 	/*width: 100%;	*/
+	padding: 8px 24px;
 }
 
 .navbar-static-top {
@@ -54,6 +55,11 @@ div.highlight:last-child {
 	text-decoration: none;
 	background: #fff;
 	color: #444;
+}
+
+#block-locale-language .iradio_minimal-red {
+	width: 18px;
+	margin-right: 6px;
 }
 
 /* Breadcrumbs */
@@ -198,14 +204,28 @@ div.shanti-gallery {
 }
 
 div.shanti-thumbnail { 
-	width: 142px !important;
-	height: 190px !important;
+	height: 270px;
+	max-width: 210px;
 	display: inline-block;
 	float: left;
-	padding: 10px;
-	margin: 0 10px 10px 0 !important;
+	padding: 0px;
+	margin: 4px;
 	border: solid 1px #eee;
 	overflow: hidden;
+	background-color: #FFFFFF;
+}
+
+div.shanti-thumbnail div.shanti-thumbnail-image {
+	width: 100%;
+	overflow: hidden;
+}
+
+div.shanti-thumbnail div.shanti-thumbnail-image img {
+	width: 100%;
+	border: solid 1px #eee;
+	border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
 }
 
 div.shanti-thumbnail:hover {
@@ -213,14 +233,68 @@ div.shanti-thumbnail:hover {
 	border-color: #ddd;
 }
 
+div.shanti-thumbnail div.shanti-thumbnail-info {
+	padding: 6px 10px 4px;
+	font-size: small;
+}
+
+div.shanti-field-created span.shanti-field-content {
+	color: #999;
+}
+
+div.shanti-thumbnail-field.shanti-field-title {
+	text-align: left;
+	line-height: 1.25em;
+	margin-top: 6px;
+}
+
+div.shanti-thumbnail-field.shanti-field-title a {
+	color: #333;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* Thumbnail icons */
+div.shanti-thumbnail-image i.sarvaka-video-line, div.shanti-thumbnail-image i.sarvaka-video, div.shanti-thumbnail-image i.sarvaka-volume {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: #32ccca;
+	width: 25px;
+	height: 25px;
+	border: thin solid #aaa;
+	-webkit-border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	padding-left: 3px;
+	padding-top: 2px;
+	opacity: 0.9;
+}
+
+/** Test
+section.content-section > div.tab-content > article:first-child > div.region:first-child > div.block:first-child {
+	font-size: 32px;
+}
+**/
+
 /* Admin */
 
 #admin_footer { padding: 10px; background-color: #f6d4ba; }
 #admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
 
+/* Headers */
+h4 { 
+	font-family: "Museo Sans",sans-serif; 
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-top: 12px;
+}
 
 /* General */
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
 .back-to-top { z-index: 1000; } /* Back to top tab */
 div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
+table.pagerer { clear: both; } /** To get pagerer to appear under gallery of images */
+.input-section label.radio-inline:first-child { width: auto; } /* radio button styles */
+.search-group .radio-inline > div { margin-right:4px; }

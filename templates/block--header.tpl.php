@@ -8,14 +8,28 @@
     * 
     **/
 ?>
-<span id="<?php print $block_html_id; ?>-btn" class="menu-toggle menu-icon"> <!--  -->
-  <a href="#"> 
-    <?php if ($block->title): ?>
-        <span><?php print $block->title ?></span>
-        <i class="icon km-directions"></i>
-    <?php else: ?>
-      <i class="icon km-menu"></i>
-    <?php endif;?>
-   </a>
-</span>
+<?php print $prev_markup; ?>
+<ul class="nav navbar-nav navbar-right">
+  <li class="dropdown <?php print $bs_class; ?> highlight" id="<?php print $block_html_id; ?>">  
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <?php if ($block->title): ?>
+            <span><?php print $block->title ?></span>
+        <?php endif;?>
+        <!-- $icon_class determines icon image -->
+        <i class="icon <?php print $icon_class; ?>"></i>
+       </a>
+  <?php if($is_explore): ?>
+     </li>
+    </ul>
+    <section class="container collapse opencollect collections">
+      <nav class="row" role="navigation"> 
+        <?php print $elements['#markup']; ?>
+      </nav>
+    </section>
+  <?php else: ?>
+      <?php print $elements['#markup']; ?>
+   </li>
+</ul>
+  <?php endif; ?>
+<?php print $follow_markup; ?>
   

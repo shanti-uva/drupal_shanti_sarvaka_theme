@@ -8,6 +8,7 @@ var ShantiSettings = {
      placesUrl: "http://dev-places.kmaps.virginia.edu",
      ftListSelector: "ul.facetapi-mb-solr-facet-tree", // should change "mb-solr" to "fancy" for universality
      fancytrees: [],
+     flyoutWidth: 310,
 }
 
 /**
@@ -50,7 +51,8 @@ jQuery(function($) {
   iCheckInit();
   langButtonsInit();
 	mbExtruderInit();
-	setSearchTabHeight();
+	searchInit();
+	//setSearchTabHeight();
 	fancytreeInit();
   miscInit();
   checkWidth();
@@ -76,6 +78,7 @@ function createTopLink() {
 
 // Initialize iCheck form graphics
 function iCheckInit() {
+	
   $("input[type='checkbox'], input[type='radio']").each(function () {
       var self = $(this),
           label = self.next(),
@@ -89,7 +92,11 @@ function iCheckInit() {
       });
   });
 
-  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select
+  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select (What's this for? NDG @014-06-10)
+  
+  /*$('input').on('ifChecked', function(event){
+	  console.log(event.type + ' callback');
+	});*/
 
 }
 
@@ -97,7 +104,7 @@ function iCheckInit() {
 function langButtonsInit() {
   // Language Chooser Functionality with ICheck
   $('input.optionlang').on('ifChecked', function() {
-  	var newLang = $(this).val();
+  	var newLang = $(this).val().replace('lang:','');
   	var oldLang = Drupal.settings.pathPrefix;
   	var currentPage = window.location.pathname;
   	if(oldLang.length > 0) { 
@@ -113,13 +120,27 @@ function langButtonsInit() {
 
 /* Initialize Extruder search fly-out */
 function mbExtruderInit() {
+	var mywidth = ShantiSettings.flyoutWidth;
 	// Initialize Search Flyout
   $("#gen-search").buildMbExtruder({
       positionFixed: false,
       position: "right",
       closeOnExternalClick:false,
       closeOnClick:false,
-      width: 310, // width is set in two places, here and the css
+      onExtOpen: function(event) {
+      	$('article.main-content section.content-section').animate({
+      		'width': $('article.main-content section.content-section').width() - mywidth + 50 
+      	});
+      },
+      onExtClose: function(event) {
+      	$('article.main-content section.content-section').animate({
+      			'width': $('article.main-content section.content-section').width() + mywidth 
+      		}, 
+      		500, 
+      		function() { $(this).attr('style',''); 
+      	});
+      },
+      width: mywidth, // width is set in two places, here and the css
       top: 0
   });
   
@@ -325,8 +346,8 @@ function loadFacetSearch(fdata) {
 		beforeSend: function() {
 			if($('article.main-content #original-content').length == 0) {
 				$('article.main-content').append('<div id="original-content" style="display:none; width: 0px; height: 0px;"></div>');
+				$('#original-content').html($('article.main-content section.content-section').html());
 			}
-			$('#original-content').html($('article.main-content section.content-section').html());
 			$('article.main-content section.content-section').html('<div class="loader"><i class="fa fa-spinner fa-spin"></i> Loading ...</div>');
 		}
 	}).done(function(json) {
@@ -358,19 +379,18 @@ function loadFacetSearch(fdata) {
 	});
 }
 
-function searchTabHeight() {
-	var height = $(window).height();
-	var srchtab = (height) - 80;
-	var viewheight = (height) - 212;
-	    
-	srchtab = parseInt(srchtab) + 'px';
-	$("#gen-search").find(".text").css('height',srchtab);
-	  
-	viewheight = parseInt(viewheight) + 'px';
-	$("#gen-search").find(".view-wrap").css('height',viewheight);
-}
-
-function setSearchTabHeight() {
+function searchInit() {
+	// Handle Search form Submit
+	$('#gen-search form button#searchbutton').click(function() { $(this).parents('form').eq(0).submit(); });
+	$('#gen-search form').on('submit', function(event) {
+		// TODO: Implement Ajax searching
+		// In order to implement Ajax searching need to use hash to create unique bookmarks. Check out Jquery BBQ (though tis old).
+		// See doAjaxSearch function below => partial implementation
+		//doAjaxSearch($(this).find('input[type=text]').val(), $(this).find('input[name=srchscope]').val());
+		event.preventDefault();
+		window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
+	});
+	// Set Search Tab Height
 	var winHeight = $(window).height();
   var panelHeight = winHeight -80; // ----- height of container for search panel - minus length above and below in px
   var viewHeight = winHeight -215; // ----- height for view-section & search options - CLOSED
@@ -394,6 +414,37 @@ function setSearchTabHeight() {
   });
 
 	// --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
-    searchTabHeight();
-    $(window).bind('load orientationchange resize', searchTabHeight);
+  searchTabHeight();
+  $(window).bind('load orientationchange resize', searchTabHeight);
+}
+
+function searchTabHeight() {
+	var height = $(window).height();
+	var srchtab = (height) - 80;
+	var viewheight = (height) - 212;
+	    
+	srchtab = parseInt(srchtab) + 'px';
+	$("#gen-search").find(".text").css('height',srchtab);
+	  
+	viewheight = parseInt(viewheight) + 'px';
+	$("#gen-search").find(".view-wrap").css('height',viewheight);
+}
+
+function doAjaxSearch(qstr, type) {
+	var surl = '/services/ajaxsearch';
+	$.ajax({
+		url: surl,
+		data: {'query': qstr, 'type': type},
+		dataType: 'json',
+		beforeSend: function() {
+			if($('article.main-content #original-content').length == 0) {
+				$('article.main-content').append('<div id="original-content" style="display:none; width: 0px; height: 0px;"></div>');
+				$('#original-content').html($('article.main-content section.content-section').html());
+			}
+			$('article.main-content section.content-section').html('<div class="loader"><i class="fa fa-spinner fa-spin"></i> Loading ...</div>');
+		},
+		success: function(json) {
+			$('article.main-content section.content-section').html(json.html);
+		}
+	})
 }

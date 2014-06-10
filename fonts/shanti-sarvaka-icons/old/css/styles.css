@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "shanti-sarvaka-icons";
+  src:url("fonts/shanti-sarvaka-icons.eot");
+  src:url("fonts/shanti-sarvaka-icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/shanti-sarvaka-icons.woff") format("woff"),
+    url("fonts/shanti-sarvaka-icons.ttf") format("truetype"),
+    url("fonts/shanti-sarvaka-icons.svg#shanti-sarvaka-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "shanti-sarvaka-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="sarvaka-"]:before,
+[class*=" sarvaka-"]:before {
+  font-family: "shanti-sarvaka-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sarvaka-video:before {
+  content: "\e000";
+}
+.sarvaka-volume:before {
+  content: "\e001";
+}
+.sarvaka-camera:before {
+  content: "\e002";
+}
+.sarvaka-zoom-in:before {
+  content: "\e003";
+}
+.sarvaka-zoom-out:before {
+  content: "\e004";
+}
+.sarvaka-volume-strike:before {
+  content: "\e005";
+}
+.sarvaka-play:before {
+  content: "\e006";
+}
+.sarvaka-play-circle:before {
+  content: "\e007";
+}
+.sarvaka-play-video:before {
+  content: "\e008";
+}
+.sarvaka-rewind:before {
+  content: "\e009";
+}
+.sarvaka-previous:before {
+  content: "\e00a";
+}
+.sarvaka-widget:before {
+  content: "\e00b";
+}
+.sarvaka-wrench:before {
+  content: "\e00c";
+}
+.sarvaka-x:before {
+  content: "\e00d";
+}
+.sarvaka-lock:before {
+  content: "\e00e";
+}
+.sarvaka-magnifying-glass:before {
+  content: "\e00f";
+}
+.sarvaka-info:before {
+  content: "\e010";
+}
+.sarvaka-comment-video:before {
+  content: "\e011";
+}
+.sarvaka-microphone:before {
+  content: "\e012";
+}
+.sarvaka-x-circle:before {
+  content: "\e013";
+}
+.sarvaka-unlock:before {
+  content: "\e014";
+}
+.sarvaka-unlink:before {
+  content: "\e015";
+}
+.sarvaka-archive:before {
+  content: "\e016";
+}
+.sarvaka-fast-forward:before {
+  content: "\e017";
+}
+.sarvaka-eject:before {
+  content: "\e018";
+}
+.sarvaka-next:before {
+  content: "\e019";
+}
+.sarvaka-stop:before {
+  content: "\e01a";
+}
+.sarvaka-pause:before {
+  content: "\e01b";
+}
+.sarvaka-alert:before {
+  content: "\e01c";
+}
+.sarvaka-arrow-down:before {
+  content: "\e01d";
+}
+.sarvaka-arrow-left:before {
+  content: "\e01e";
+}
+.sarvaka-arrow-right:before {
+  content: "\e01f";
+}
+.sarvaka-arrow-up:before {
+  content: "\e020";
+}
+.sarvaka-background-color:before {
+  content: "\e021";
+}
+.sarvaka-asterisk:before {
+  content: "\e022";
+}
+.sarvaka-arrows-out:before {
+  content: "\e023";
+}
+.sarvaka-arrows-in:before {
+  content: "\e024";
+}
+.sarvaka-anchor:before {
+  content: "\e025";
+}
+.sarvaka-at-sign:before {
+  content: "\e026";
+}
+.sarvaka-bookmark:before {
+  content: "\e027";
+}
+.sarvaka-burst:before {
+  content: "\e028";
+}
+.sarvaka-calendar:before {
+  content: "\e029";
+}
+.sarvaka-check:before {
+  content: "\e02a";
+}
+.sarvaka-checkbox:before {
+  content: "\e02b";
+}
+.sarvaka-flag:before {
+  content: "\e02c";
+}
+.sarvaka-folder:before {
+  content: "\e02d";
+}
+.sarvaka-graph-pie:before {
+  content: "\e02e";
+}
+.sarvaka-home:before {
+  content: "\e02f";
+}
+.sarvaka-heart:before {
+  content: "\e030";
+}
+.sarvaka-graph-trend:before {
+  content: "\e031";
+}
+.sarvaka-laptop:before {
+  content: "\e032";
+}
+.sarvaka-link:before {
+  content: "\e033";
+}
+.sarvaka-like:before {
+  content: "\e034";
+}
+.sarvaka-mountains:before {
+  content: "\e035";
+}
+.sarvaka-music:before {
+  content: "\e036";
+}
+.sarvaka-print:before {
+  content: "\e037";
+}
+.sarvaka-paperclip:before {
+  content: "\e038";
+}
+.sarvaka-pencil:before {
+  content: "\e039";
+}
+.sarvaka-photo:before {
+  content: "\e03a";
+}
+.sarvaka-plus:before {
+  content: "\e03b";
+}
+.sarvaka-refresh:before {
+  content: "\e03c";
+}
+.sarvaka-rss:before {
+  content: "\e03d";
+}
+.sarvaka-share:before {
+  content: "\e03e";
+}
+.sarvaka-sheriff-badge:before {
+  content: "\e03f";
+}
+.sarvaka-torsos-all:before {
+  content: "\e040";
+}
+.sarvaka-trash:before {
+  content: "\e041";
+}
+.sarvaka-trees:before {
+  content: "\e042";
+}
+.sarvaka-volume-none:before {
+  content: "\e043";
+}
+.sarvaka-web:before {
+  content: "\e044";
+}
+.sarvaka-torso-business:before {
+  content: "\e045";
+}
+.sarvaka-folder-add:before {
+  content: "\e046";
+}
+.sarvaka-folder-lock:before {
+  content: "\e047";
+}
+.sarvaka-clipboard-pencil:before {
+  content: "\e048";
+}
+.sarvaka-book-bookmark:before {
+  content: "\e049";
+}
+.sarvaka-book:before {
+  content: "\e04a";
+}
+.sarvaka-dislike:before {
+  content: "\e04b";
+}
+.sarvaka-fontawesome-webfont:before {
+  content: "\e04c";
+}
+.sarvaka-fontawesome-webfont-1:before {
+  content: "\e04d";
+}
+.sarvaka-torso:before {
+  content: "\e04e";
+}
+.sarvaka-star:before {
+  content: "\e04f";
+}
+.sarvaka-mail:before {
+  content: "\e050";
+}
+.sarvaka-male:before {
+  content: "\e051";
+}
+.sarvaka-male-female:before {
+  content: "\e052";
+}
+.sarvaka-megaphone:before {
+  content: "\e053";
+}
+.sarvaka-marker:before {
+  content: "\e054";
+}
+.sarvaka-key:before {
+  content: "\e055";
+}
+.sarvaka-lightbulb:before {
+  content: "\e056";
+}
+.sarvaka-loop:before {
+  content: "\e057";
+}

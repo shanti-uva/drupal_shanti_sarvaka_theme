@@ -1017,11 +1017,6 @@ ul.menu-main>li>a:first-child {
 
 
 
-
-
-
-
-
 @media screen and (max-width: 499px) {
 	
   .navbar-default h1 i.icon{ 
@@ -1037,12 +1032,6 @@ ul.menu-main>li>a:first-child {
    .navbar-header h1.navbar-title a span{ padding-left:12px;}
 
 }
-
-
-
-
-
-
 
 
 @media screen and (max-width: 599px) {    
@@ -1063,10 +1052,6 @@ ul.menu-main>li>a:first-child {
   .collections ul li a { font-size: 0.68em; line-height:2.25em;}
   
 }
-
-
-
-
 
 
 
@@ -1167,7 +1152,7 @@ ul.menu-main>li>a:first-child {
 
   .navbar-header h1.navbar-title a span{ font-size:0.93em; position:relative; top:-5px; }
 
-  .main-content .content-section { max-width: 750px; }
+  /*.main-content .content-section { max-width: 750px; } ndg commented out (2014-06-06) not sure why this is here? */
   
 	.collections ul li a { font-size: 0.75em; line-height:2em;}	
  	.collections h4 {
@@ -1177,19 +1162,11 @@ ul.menu-main>li>a:first-child {
 }
 
 
-
-
-
-
 @media screen and (min-width: 1280px) {
 	
 	.collections ul li a { font-size: 0.82em;}
 	.collections ul:first-child{ margin-left:7%; }
 }
-
-
-
-
 
 
 /* temporary print styles */

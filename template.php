@@ -91,14 +91,58 @@ function shanti_sarvaka_preprocess_region(&$variables) {
   $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
 }
 
-
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
+  // Header blocks
   if(isset($block->region) && $block->region == 'header') {
-    // TODO: Is there a way to get the content of each block to be written (hidden) elsewhere on the page?
+    $variables['icon_class'] = 'km-menu';
+    $variables['bs_class'] = '';
+    $variables['is_explore'] = FALSE;
+    $variables['prev_markup'] = '';
+    $variables['follow_markup'] = '';
+    
+    // Explore collections Block
     if($block->title == "Explore Collections") {
-      //dpm($block, 'block in preprocess for explore collections block');
+      $variables['icon_class'] = 'km-directions';
+      $variables['is_explore'] = TRUE; 
+      $variables['bs_class'] = 'explore';
+      
+    // Language Chooser Block 
+    } if($variables['block_html_id'] == 'block-locale-language') {
+      global $language;
+      $block->title = $language->language;
+      $variables['icon_class'] = 'km-arrowselect';
+      $variables['bs_class'] = 'lang';
+      //$variables['prev_markup'] = '<nav class="navbar-collapse collapse navtop"><form class="form"><fieldset>'; 
+      //$variables['follow_markup'] = '</fieldset></form></nav>';
     }
+    //dpm($variables, 'variables in preproce block');
+  }
+}
+
+function shanti_sarvaka_preprocess_search_results(&$variables) {
+  //dpm($variables, 'vars34');
+}
+
+function shanti_sarvaka_preprocess_search_result(&$variables) {
+  global $base_path;
+  $nid = '';
+  if(isset($variables['result']['node'])) {
+    $nid = $variables['result']['node']->entity_id;
+    $coll = get_collection_ancestor_node($nid);
+    if($coll) {
+        $coll->url = $base_path . drupal_get_path_alias('node/' . $coll->nid);
+    }
+    $variables['coll'] = $coll;
+  } else if (isset($variables['result']['fields']['is_eid'])) {
+    // TODO: Must add thumbnail and collection variables for TCU hits in transcripts
+    $nid = $variables['result']['fields']['is_eid'];
+    $variables['result']['thumb_url'] ='';
+    $variables['coll'] = FALSE;
+    dpm('Must add thumbnail and collection variables for TCU hits in transcripts');
+  } else {
+    // Any other options?
+    dpm($variables);
   }
 }
 
@@ -107,18 +151,16 @@ function shanti_sarvaka_block_view_locale_language_alter(&$data, $block) {
   $currentCode = $language->language; // ISO 2 letter code
   $currentName = shanti_lang_code_to_name($currentCode); 
   $languages = language_list(); // List of all enabled languages
-  $markup = '<div class="nav navbar-nav dropdown dropdown-menu-right lang highlight">' . 
-            '<a href="" class="dropdown-toggle" data-toggle="dropdown">' .
-              $currentName . '<i class="icon km-arrowselect"></i></a><ul class="dropdown-menu dropdown-features" role="menu">';
+  $markup = '<ul class="dropdown-menu">';
   $n = 0;
   foreach($languages as $lang) {
     $n++;
     $checked = ($lang->language == $currentCode) ? 'checked="checked"' : '';
     $markup .= '<li class="form-group"><label class="radio-inline" for="optionlang' . $n . '">
-                  <input type="radio" name="radios" class="optionlang" id="optionlang' . $n . '" value="' . $lang->prefix . '" ' . $checked . '/>' .
-                  shanti_lang_code_to_name($lang->language) . '</label></li>';
+                    <input type="radio" name="radios" id="optionlang' . $n . '" class="optionlang" value="lang:' . $lang->prefix . '" ' . $checked . ' />' .
+                   shanti_lang_code_to_name($lang->language)  . '</label></li>'; //
   }
-  $markup .= '</ul></div>';
+  $markup .= '</ul>';
   $data['content'] = $markup;
 }
 

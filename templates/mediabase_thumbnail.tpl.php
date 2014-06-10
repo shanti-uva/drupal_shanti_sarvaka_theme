@@ -5,6 +5,7 @@
              alt="<?php print $result['title']; ?>" 
              src="<?php print $result['thumb_url']; ?>" 
              typeof="foaf:Image" class="k-no-rotate">
+         <i class="sarvaka-<?php if($result['bundle'] == 'video') { print 'video'; } else { print 'volume'; } ?>"></i> <!-- Need to switch icon based on bundle -->
       </a>
     </div>
     <div class="shanti-thumbnail-info">
