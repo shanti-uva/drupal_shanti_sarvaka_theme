@@ -29,12 +29,20 @@ section.messages {
 	font-size: 0.88em;
 }
 
-.menu-buttons .menu-icon a i.icon.km-directions, 
-.menu-buttons .menu-icon a i.icon.km-arrowselect {
+.menu-buttons .menu-icon a i.icon.shanticon-directions, 
+.menu-buttons .menu-icon a i.icon.shanticon-arrowselect {
 	font-size: 17px;
 	position: relative;
 	top: 3px;
 	padding-left: 2px;
+}
+
+/* Reverse BS settings to account for floating blocks right where first is most right */
+.navbar-nav.navbar-right:first-child {
+	margin-right: -15px;
+}
+.navbar-nav.navbar-right:last-child {
+	margin-right: 0px;
 }
 
 /* Language Chooser */
@@ -190,7 +198,7 @@ input.facet-label-search {
 	margin: 0px 4px;
 }
 
-span.fancytree-node i.icon.km-cancel {
+span.fancytree-node i.icon.shanticon-cancel {
 	color: red;
 	font-size: smaller;
 	padding-top: 4px;
@@ -255,7 +263,7 @@ div.shanti-thumbnail-field.shanti-field-title a {
 }
 
 /* Thumbnail icons */
-div.shanti-thumbnail-image i.sarvaka-video-line, div.shanti-thumbnail-image i.sarvaka-video, div.shanti-thumbnail-image i.sarvaka-volume {
+div.shanti-thumbnail-image i.shanticon-video, div.shanti-thumbnail-image i.shanticon-video-2, div.shanti-thumbnail-image i.shanticon-audio {
 	position: absolute;
 	top: 5px;
 	right: 5px;
@@ -269,6 +277,10 @@ div.shanti-thumbnail-image i.sarvaka-video-line, div.shanti-thumbnail-image i.sa
 	padding-left: 3px;
 	padding-top: 2px;
 	opacity: 0.9;
+}
+
+.shanticon-video:before, .shanticon-audio:before  {
+	font-weight: bold;
 }
 
 /** Test

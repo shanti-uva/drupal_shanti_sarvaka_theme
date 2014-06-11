@@ -58,9 +58,6 @@
   <style>
     .titlearea {background: <?php print  $variables['base_color'];?> !important; } 
     .titlearea .page-title .icon { background:  <?php print $variables['base_color']; ?> !important; } 
-    .km-places:before {
-      content: "\<?php print $variables['icon_code']; ?>";
-      }
   </style>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

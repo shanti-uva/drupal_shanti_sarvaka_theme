@@ -18,18 +18,8 @@
         <!-- $icon_class determines icon image -->
         <i class="icon <?php print $icon_class; ?>"></i>
        </a>
-  <?php if($is_explore): ?>
-     </li>
-    </ul>
-    <section class="container collapse opencollect collections">
-      <nav class="row" role="navigation"> 
-        <?php print $elements['#markup']; ?>
-      </nav>
-    </section>
-  <?php else: ?>
       <?php print $elements['#markup']; ?>
    </li>
 </ul>
-  <?php endif; ?>
 <?php print $follow_markup; ?>
   

@@ -1,495 +1,384 @@
 @charset "UTF-8";
 
-/*-------------------------------*/
-/*--- START Kmaps Icon Fonts ----*/
-/*-------------------------------*/
-
-/* *** KMAPS CUSTOM icons below *** */
 @font-face {
-	font-family: 'kmaps-icons';
-	src:url('../fonts/kmaps-icons/fonts/kmaps-icons.eot?-n4brbx');
-	src:url('../fonts/kmaps-icons/fonts/kmaps-icons.eot?#iefix-n4brbx') format('embedded-opentype'),
-		url('../fonts/kmaps-icons/fonts/kmaps-icons.woff?-n4brbx') format('woff'),
-		url('../fonts/kmaps-icons/fonts/kmaps-icons.ttf?-n4brbx') format('truetype'),
-		url('../fonts/kmaps-icons/fonts/kmaps-icons.svg?-n4brbx#kmaps-icons') format('svg');
+	font-family: 'shanticon';
+	src:url('../fonts/shanticon/shanticon.eot?ojr2cy');
+	src:url('../fonts/shanticon/shanticon.eot?#iefixojr2cy') format('embedded-opentype'),
+		url('../fonts/shanticon/shanticon.woff?ojr2cy') format('woff'),
+		url('../fonts/shanticon/shanticon.ttf?ojr2cy') format('truetype'),
+		url('../fonts/shanticon/shanticon.svg?ojr2cy#shanticon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-.icon {
-	font-family: 'kmaps-icons';
+[class^="shanticon-"], [class*=" shanticon-"] {
+	font-family: 'shanticon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-		
+
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
-/*--- increases the font 33% larger relative to the icon container ---*/
-.km-lg {
-  font-size: 1.3333333333333333em;
-  line-height: 0.75em;
-  vertical-align: -30%;
-}
-.km-2x {
-  font-size: 2em;
-}
-.km-3x {
-  font-size: 3em;
-}
-.km-4x {
-  font-size: 4em;
-}
-.km-5x {
-  font-size: 5em;
-}
-.km-fw {
-  width: 1.2857142857142858em;
-  text-align: center;
-}
-.km-ul {
-  padding-left: 0;
-  margin-left: 2.142857142857143em;
-  list-style-type: none;
-}
-.km-ul > li {
-  position: relative;
-}
-.km-li {
-  position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
-  top: 0.14285714285714285em;
-  text-align: center;
-}
-.km-li.km-lg {
-  left: -1.8571428571428572em;
-}
-.km-border {
-  padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
-  border-radius: .1em;
-}
-.pull-right {
-  float: right;
-}
-.pull-left {
-  float: left;
-}
-.icon.pull-left {
-  margin-right: .3em;
-}
-.icon.pull-right {
-  margin-left: .3em;
-}
-.km-spin {
-  -webkit-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
-}
-
-
-
-/*---- kmaps icon font set -----*/
-.km-search-kmaps:before {
+.shanticon-search:before {
 	content: "\e600";
 }
-.km-logo-kmaps:before {
+.shanticon-logo:before {
 	content: "\e601";
 }
-.km-visuals:before {
-	content: "\e606";
-}
-.km-texts:before {
+.shanticon-texts:before {
 	content: "\e603";
 }
-.km-tree:before {
-	content: "\e607";
-}
-.km-terms:before {
-	content: "\e608";
-}
-.km-subjects:before {
-	content: "\e609";
-}
-.km-stack:before {
-	content: "\e60a";
-}
-.km-places:before {
-	content: "\e60e";
-}
-.km-overview:before {
-	content: "\e610";
-}
-.km-directions:before {
-	content: "\e611";
-}
-.km-menu2:before {
-	content: "\e614";
-}
-.km-maps:before {
-	content: "\e615";
-}
-.km-list2:before {
-	content: "\e616";
-}
-.km-list:before {
-	content: "\e617";
-}
-.km-essays:before {
-	content: "\e61a";
-}
-.km-community:before {
-	content: "\e61c";
-}
-.km-cancel:before {
-	content: "\e61e";
-}
-.km-audiovideo:before {
-	content: "\e61f";
-}
-.km-arrowselect:before {
-	content: "\e620";
-}
-.km-agents:before {
-	content: "\e621";
-}
-.km-photos:before {
-	content: "\e60b";
-}
-.km-sources:before {
-	content: "\e60f";
-}
-.km-events:before {
-	content: "\e622";
-}
-.km-menu:before {
+.shanticon-menu:before {
 	content: "\e605";
 }
-
-/*----------------------*/
-/***** End KMap Icons ******/
-/*----------------------*/
-
-@font-face {
-  font-family: "shanti-sarvaka-icons";
-  src:url("../fonts/shanti-sarvaka-icons/fonts/shanti-sarvaka-icons.eot");
-  src:url("../fonts/shanti-sarvaka-icons/fonts/shanti-sarvaka-icons.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/shanti-sarvaka-icons/fonts/shanti-sarvaka-icons.woff") format("woff"),
-    url("../fonts/shanti-sarvaka-icons/fonts/shanti-sarvaka-icons.ttf") format("truetype"),
-    url("../fonts/shanti-sarvaka-icons/fonts/shanti-sarvaka-icons.svg#shanti-sarvaka-icons") format("svg");
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-[data-icon]:before {
-  font-family: "shanti-sarvaka-icons" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="sarvaka-"]:before,
-[class*=" sarvaka-"]:before {
-  font-family: "shanti-sarvaka-icons" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.sarvaka-video:before {
-  content: "\e000";
+.shanticon-visuals:before {
+	content: "\e606";
 }
-.sarvaka-volume:before {
-  content: "\e001";
+.shanticon-tree:before {
+	content: "\e607";
 }
-.sarvaka-camera:before {
-  content: "\e002";
+.shanticon-terms:before {
+	content: "\e608";
 }
-.sarvaka-zoom-in:before {
-  content: "\e003";
+.shanticon-subjects:before {
+	content: "\e609";
 }
-.sarvaka-zoom-out:before {
-  content: "\e004";
+.shanticon-stack:before {
+	content: "\e60a";
 }
-.sarvaka-volume-strike:before {
-  content: "\e005";
+.shanticon-photos:before {
+	content: "\e60b";
 }
-.sarvaka-play:before {
-  content: "\e006";
+.shanticon-places:before {
+	content: "\e60e";
 }
-.sarvaka-play-circle:before {
-  content: "\e007";
+.shanticon-sources:before {
+	content: "\e60f";
 }
-.sarvaka-play-video:before {
-  content: "\e008";
+.shanticon-overview:before {
+	content: "\e610";
 }
-.sarvaka-rewind:before {
-  content: "\e009";
+.shanticon-explore:before {
+	content: "\e611";
 }
-.sarvaka-previous:before {
-  content: "\e00a";
+.shanticon-menu2:before {
+	content: "\e614";
 }
-.sarvaka-widget:before {
-  content: "\e00b";
+.shanticon-maps:before {
+	content: "\e615";
 }
-.sarvaka-wrench:before {
-  content: "\e00c";
+.shanticon-list:before {
+	content: "\e616";
 }
-.sarvaka-x:before {
-  content: "\e00d";
+.shanticon-list2:before {
+	content: "\e617";
 }
-.sarvaka-lock:before {
-  content: "\e00e";
+.shanticon-essays:before {
+	content: "\e61a";
 }
-.sarvaka-magnifying-glass:before {
-  content: "\e00f";
+.shanticon-community:before {
+	content: "\e61c";
 }
-.sarvaka-info:before {
-  content: "\e010";
+.shanticon-cancel:before {
+	content: "\e61e";
 }
-.sarvaka-comment-video:before {
-  content: "\e011";
+.shanticon-av:before {
+	content: "\e61f";
 }
-.sarvaka-microphone:before {
-  content: "\e012";
+.shanticon-arrowselect:before {
+	content: "\e620";
 }
-.sarvaka-x-circle:before {
-  content: "\e013";
+.shanticon-agents:before {
+	content: "\e621";
 }
-.sarvaka-unlock:before {
-  content: "\e014";
+.shanticon-events:before {
+	content: "\e622";
 }
-.sarvaka-unlink:before {
-  content: "\e015";
+.shanticon-video-3:before {
+	content: "\e000";
 }
-.sarvaka-archive:before {
-  content: "\e016";
+.shanticon-audio-2:before {
+	content: "\e001";
 }
-.sarvaka-fast-forward:before {
-  content: "\e017";
+.shanticon-camera:before {
+	content: "\e002";
 }
-.sarvaka-eject:before {
-  content: "\e018";
+.shanticon-zoomin:before {
+	content: "\e003";
 }
-.sarvaka-next:before {
-  content: "\e019";
+.shanticon-zoomout:before {
+	content: "\e004";
 }
-.sarvaka-stop:before {
-  content: "\e01a";
+.shanticon-mute:before {
+	content: "\e005";
 }
-.sarvaka-pause:before {
-  content: "\e01b";
+.shanticon-play:before {
+	content: "\e006";
 }
-.sarvaka-alert:before {
-  content: "\e01c";
+.shanticon-playcircle:before {
+	content: "\e007";
 }
-.sarvaka-arrow-down:before {
-  content: "\e01d";
+.shanticon-playsquare:before {
+	content: "\e008";
 }
-.sarvaka-arrow-left:before {
-  content: "\e01e";
+.shanticon-rewind:before {
+	content: "\e009";
 }
-.sarvaka-arrow-right:before {
-  content: "\e01f";
+.shanticon-rewindfull:before {
+	content: "\e00a";
 }
-.sarvaka-arrow-up:before {
-  content: "\e020";
+.shanticon-gear:before {
+	content: "\e00b";
 }
-.sarvaka-background-color:before {
-  content: "\e021";
+.shanticon-wrench:before {
+	content: "\e00c";
 }
-.sarvaka-asterisk:before {
-  content: "\e022";
+.shanticon-cancel-2:before {
+	content: "\e00d";
 }
-.sarvaka-arrows-out:before {
-  content: "\e023";
+.shanticon-lock:before {
+	content: "\e00e";
 }
-.sarvaka-arrows-in:before {
-  content: "\e024";
+.shanticon-search-2:before {
+	content: "\e00f";
 }
-.sarvaka-anchor:before {
-  content: "\e025";
+.shanticon-info:before {
+	content: "\e010";
 }
-.sarvaka-at-sign:before {
-  content: "\e026";
+.shanticon-videonote:before {
+	content: "\e011";
 }
-.sarvaka-bookmark:before {
-  content: "\e027";
+.shanticon-microphone:before {
+	content: "\e012";
 }
-.sarvaka-burst:before {
-  content: "\e028";
+.shanticon-cancel-3:before {
+	content: "\e013";
 }
-.sarvaka-calendar:before {
-  content: "\e029";
+.shanticon-unlock:before {
+	content: "\e014";
 }
-.sarvaka-check:before {
-  content: "\e02a";
+.shanticon-unlink:before {
+	content: "\e015";
 }
-.sarvaka-checkbox:before {
-  content: "\e02b";
+.shanticon-download:before {
+	content: "\e016";
 }
-.sarvaka-flag:before {
-  content: "\e02c";
+.shanticon-fastforward:before {
+	content: "\e017";
 }
-.sarvaka-folder:before {
-  content: "\e02d";
+.shanticon-eject:before {
+	content: "\e018";
 }
-.sarvaka-graph-pie:before {
-  content: "\e02e";
+.shanticon-fastforwardfull:before {
+	content: "\e019";
 }
-.sarvaka-home:before {
-  content: "\e02f";
+.shanticon-stop:before {
+	content: "\e01a";
 }
-.sarvaka-heart:before {
-  content: "\e030";
+.shanticon-pause:before {
+	content: "\e01b";
 }
-.sarvaka-graph-trend:before {
-  content: "\e031";
+.shanticon-warning:before {
+	content: "\e01c";
 }
-.sarvaka-laptop:before {
-  content: "\e032";
+.shanticon-down:before {
+	content: "\e01d";
 }
-.sarvaka-link:before {
-  content: "\e033";
+.shanticon-back:before {
+	content: "\e01e";
 }
-.sarvaka-like:before {
-  content: "\e034";
+.shanticon-forward:before {
+	content: "\e01f";
 }
-.sarvaka-mountains:before {
-  content: "\e035";
+.shanticon-up:before {
+	content: "\e020";
 }
-.sarvaka-music:before {
-  content: "\e036";
+.shanticon-character:before {
+	content: "\e021";
 }
-.sarvaka-print:before {
-  content: "\e037";
+.shanticon-asterisk:before {
+	content: "\e022";
 }
-.sarvaka-paperclip:before {
-  content: "\e038";
+.shanticon-expand:before {
+	content: "\e023";
 }
-.sarvaka-pencil:before {
-  content: "\e039";
+.shanticon-contract:before {
+	content: "\e024";
 }
-.sarvaka-photo:before {
-  content: "\e03a";
+.shanticon-anchor:before {
+	content: "\e025";
 }
-.sarvaka-plus:before {
-  content: "\e03b";
+.shanticon-atsign:before {
+	content: "\e026";
 }
-.sarvaka-refresh:before {
-  content: "\e03c";
+.shanticon-bookmark:before {
+	content: "\e027";
 }
-.sarvaka-rss:before {
-  content: "\e03d";
+.shanticon-gear-2:before {
+	content: "\e028";
 }
-.sarvaka-share:before {
-  content: "\e03e";
+.shanticon-calendar:before {
+	content: "\e029";
 }
-.sarvaka-sheriff-badge:before {
-  content: "\e03f";
+.shanticon-checkmark:before {
+	content: "\e02a";
 }
-.sarvaka-torsos-all:before {
-  content: "\e040";
+.shanticon-checkedbox:before {
+	content: "\e02b";
 }
-.sarvaka-trash:before {
-  content: "\e041";
+.shanticon-flag:before {
+	content: "\e02c";
 }
-.sarvaka-trees:before {
-  content: "\e042";
+.shanticon-folder:before {
+	content: "\e02d";
 }
-.sarvaka-volume-none:before {
-  content: "\e043";
+.shanticon-piechart:before {
+	content: "\e02e";
 }
-.sarvaka-web:before {
-  content: "\e044";
+.shanticon-home:before {
+	content: "\e02f";
 }
-.sarvaka-torso-business:before {
-  content: "\e045";
+.shanticon-love:before {
+	content: "\e030";
 }
-.sarvaka-folder-add:before {
-  content: "\e046";
+.shanticon-graph:before {
+	content: "\e031";
 }
-.sarvaka-folder-lock:before {
-  content: "\e047";
+.shanticon-computer:before {
+	content: "\e032";
 }
-.sarvaka-clipboard-pencil:before {
-  content: "\e048";
+.shanticon-link:before {
+	content: "\e033";
 }
-.sarvaka-book-bookmark:before {
-  content: "\e049";
+.shanticon-like:before {
+	content: "\e034";
 }
-.sarvaka-book:before {
-  content: "\e04a";
+.shanticon-mountains:before {
+	content: "\e035";
 }
-.sarvaka-dislike:before {
-  content: "\e04b";
+.shanticon-music:before {
+	content: "\e036";
 }
-.sarvaka-fontawesome-webfont:before {
-  content: "\e04c";
+.shanticon-printer:before {
+	content: "\e037";
 }
-.sarvaka-fontawesome-webfont-1:before {
-  content: "\e04d";
+.shanticon-paperclip:before {
+	content: "\e038";
 }
-.sarvaka-torso:before {
-  content: "\e04e";
+.shanticon-pencils:before {
+	content: "\e039";
 }
-.sarvaka-star:before {
-  content: "\e04f";
+.shanticon-photo:before {
+	content: "\e03a";
 }
-.sarvaka-mail:before {
-  content: "\e050";
+.shanticon-plus:before {
+	content: "\e03b";
 }
-.sarvaka-male:before {
-  content: "\e051";
+.shanticon-reload:before {
+	content: "\e03c";
 }
-.sarvaka-male-female:before {
-  content: "\e052";
+.shanticon-feed:before {
+	content: "\e03d";
 }
-.sarvaka-megaphone:before {
-  content: "\e053";
+.shanticon-connection:before {
+	content: "\e03e";
 }
-.sarvaka-marker:before {
-  content: "\e054";
+.shanticon-star:before {
+	content: "\e03f";
 }
-.sarvaka-key:before {
-  content: "\e055";
+.shanticon-communit:before {
+	content: "\e040";
 }
-.sarvaka-lightbulb:before {
-  content: "\e056";
+.shanticon-trash:before {
+	content: "\e041";
 }
-.sarvaka-loop:before {
-  content: "\e057";
+.shanticon-forrest:before {
+	content: "\e042";
 }
-.sarvaka-video-line:before {
-  content: "\e058";
+.shanticon-speaker:before {
+	content: "\e043";
 }
-.sarvaka-fontawesome-webfont-2:before {
-  content: "\e059";
+.shanticon-world:before {
+	content: "\e044";
 }
-.sarvaka-fontawesome-webfont-3:before {
-  content: "\e05a";
+.shanticon-personinfo:before {
+	content: "\e045";
 }
-.sarvaka-volume-1:before {
-  content: "\e05b";
+.shanticon-folderadd:before {
+	content: "\e046";
 }
-
+.shanticon-folderlock:before {
+	content: "\e047";
+}
+.shanticon-note:before {
+	content: "\e048";
+}
+.shanticon-bookmarks:before {
+	content: "\e049";
+}
+.shanticon-uniE04A:before {
+	content: "\e04a";
+}
+.shanticon-dislike:before {
+	content: "\e04b";
+}
+.shanticon-helpcircle:before {
+	content: "\e04c";
+}
+.shanticon-help:before {
+	content: "\e04d";
+}
+.shanticon-person:before {
+	content: "\e04e";
+}
+.shanticon-star-2:before {
+	content: "\e04f";
+}
+.shanticon-envelope:before {
+	content: "\e050";
+}
+.shanticon-man:before {
+	content: "\e051";
+}
+.shanticon-manwoman:before {
+	content: "\e052";
+}
+.shanticon-bullhorn:before {
+	content: "\e053";
+}
+.shanticon-place:before {
+	content: "\e054";
+}
+.shanticon-key:before {
+	content: "\e055";
+}
+.shanticon-idea:before {
+	content: "\e056";
+}
+.shanticon-reload-2:before {
+	content: "\e057";
+}
+.shanticon-volume:before {
+	content: "\e059";
+}
+.shanticon-video-2:before {
+	content: "\e05a";
+}
+.shanticon-volume-2:before {
+	content: "\e05b";
+}
+.shanticon-audio:before {
+	content: "\e058";
+}
+.shanticon-video:before {
+	content: "\e075";
+}
+.shanticon-sound-alt:before {
+	content: "\e602";
+}

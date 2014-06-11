@@ -75,48 +75,46 @@ function shanti_sarvaka_item_list($variables) {
  */
 function shanti_sarvaka_preprocess(&$variables) {
   global $base_url;
-  $variables['theme_path'] = $base_url . '/' . drupal_get_path('theme', 'shanti_sarvaka'); 
-  $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
   $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
-  $variables['icon_code'] = theme_get_setting('shanti_sarvaka_icon_code');
   $variables['breadcrumb'] = menu_get_active_breadcrumb();
   $variables['breadcrumb'][] = ($variables['is_front'])? 'Home' : drupal_get_title();
+  $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
+  $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
+  //$variables['icon_code'] = theme_get_setting('shanti_sarvaka_icon_code');
+  $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
+  $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');
+  $variables['theme_path'] = $base_url . '/' . drupal_get_path('theme', 'shanti_sarvaka'); 
 }
 
 function shanti_sarvaka_preprocess_region(&$variables) {
   if($variables['region'] == 'header') {
    //dpm($variables, 'header variables');
   }
-  $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');
-  $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
 }
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
   // Header blocks
   if(isset($block->region) && $block->region == 'header') {
-    $variables['icon_class'] = 'km-menu';
     $variables['bs_class'] = '';
+    $variables['follow_markup'] = '';
+    $variables['icon_class'] = 'shanticon-menu';
     $variables['is_explore'] = FALSE;
     $variables['prev_markup'] = '';
-    $variables['follow_markup'] = '';
-    
+    //dpm($block);
     // Explore collections Block
-    if($block->title == "Explore Collections") {
-      $variables['icon_class'] = 'km-directions';
-      $variables['is_explore'] = TRUE; 
+    if($block->delta == "explore_menu_block") {
       $variables['bs_class'] = 'explore';
+      $variables['icon_class'] = 'shanticon-explore';
+      $variables['is_explore'] = TRUE; 
       
     // Language Chooser Block 
     } if($variables['block_html_id'] == 'block-locale-language') {
       global $language;
-      $block->title = $language->language;
-      $variables['icon_class'] = 'km-arrowselect';
+      $block->title = shanti_lang_code_to_name($language->language);
       $variables['bs_class'] = 'lang';
-      //$variables['prev_markup'] = '<nav class="navbar-collapse collapse navtop"><form class="form"><fieldset>'; 
-      //$variables['follow_markup'] = '</fieldset></form></nav>';
+      $variables['icon_class'] = 'shanticon-arrowselect';
     }
-    //dpm($variables, 'variables in preproce block');
   }
 }
 

@@ -3,9 +3,9 @@
  * Adapted to Shanti Sarvaka Mediabase by Than Grove (beginning 2014-05-22)
  **/
 var ShantiSettings = {
-     baseUrl: "http://dev-subjects.kmaps.virginia.edu",
-     mmsUrl: "http://dev-mms.thlib.org",
-     placesUrl: "http://dev-places.kmaps.virginia.edu",
+     kmapsUrl: "http://subjects.kmaps.virginia.edu",
+     mmsUrl: "http://-mms.thlib.org",
+     placesUrl: "http://places.kmaps.virginia.edu",
      ftListSelector: "ul.facetapi-mb-solr-facet-tree", // should change "mb-solr" to "fancy" for universality
      fancytrees: [],
      flyoutWidth: 310,
@@ -48,6 +48,7 @@ var ShantiSettings = {
 // Initialization of UI components on page on load
 jQuery(function($) {
   createTopLink();
+  arrangeMenuDivs();
   iCheckInit();
   langButtonsInit();
 	mbExtruderInit();
@@ -74,6 +75,14 @@ function createTopLink() {
       jQuery('html, body').animate({scrollTop: 0}, duration);
       return false;
   });
+}
+
+// Rearrange the button divs so that they are in the order blocks are added with a float-right css
+function arrangeMenuDivs() {
+	var buttons = $('div.menu-buttons ul.navbar-right').detach();
+	buttons.each(function() {
+		$('div.menu-buttons').prepend($(this));
+	});
 }
 
 // Initialize iCheck form graphics
@@ -161,7 +170,7 @@ function mbExtruderInit() {
           $(".extruder .text").css("width","100%");
         });
           // styles inline for now, forces
-        $(".flap").prepend("<span style='font-size:21px; position:absolute; left:17px; top:12px; z-index:10;'><i class='icon km-search-kmaps'></i></span>");
+        $(".flap").prepend("<span style='font-size:21px; position:absolute; left:17px; top:12px; z-index:10;'><i class='icon shanticon-search'></i></span>");
         $(".flap").addClass("on-flap");
   }
 
@@ -227,7 +236,7 @@ function fancytreeInit() {
 	    activate: function(event, data) {
 	    	var node = data.node;
 	    	console.info(node.data);
-	    	$('i.icon.km-cancel').remove(); // remove existing cancel icons
+	    	$('i.icon.shanticon-cancel').remove(); // remove existing cancel icons
 	    	loadFacetSearch(node.data);
 	    	return false;
 	    },
@@ -312,7 +321,7 @@ function fancytreeInit() {
   });
   
   // Activate the remove facet links
-  $('div.block-facetapi').on('click', 'i.icon.km-cancel', function() {
+  $('div.block-facetapi').on('click', 'i.icon.shanticon-cancel', function() {
   	//console.log('clicked');
   	var tree = $(this).parents('ul.ui-fancytree').parents('div.content').fancytree('getTree');
   	var nodeId = $(this).parents('li').eq(0).attr('id').replace('ftid','');
@@ -367,7 +376,7 @@ function loadFacetSearch(fdata) {
 						//node.data.originalcount = ctel.text(); // a data field that store original count for facet
 						ctel.html(facets[node.data.fid]);
 						if(node.data.fid == fid) {
-							ctel.parent().after(' <i class="icon km-cancel" title="Remove this facet"></i>');
+							ctel.parent().after(' <i class="icon shanticon-cancel" title="Remove this facet"></i>');
 						}
 					}
 					return true;
@@ -448,3 +457,4 @@ function doAjaxSearch(qstr, type) {
 		}
 	})
 }
+

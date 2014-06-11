@@ -28,8 +28,8 @@
   <!-- Begin View Section -->
   <section class="view-section" style="display: block;">             
     <ul class="nav nav-tabs">
-      <li class="treeview active"><a href=".treeview" data-toggle="tab" style="display: block;"><i class="icon km-tree"></i>Tree</a></li>
-      <li class="listview"><a href=".listview" data-toggle="tab" style="display: block;"><i class="icon km-list"></i>List</a></li>
+      <li class="treeview active"><a href=".treeview" data-toggle="tab" style="display: block;"><i class="icon shanticon-tree"></i>Tree</a></li>
+      <li class="listview"><a href=".listview" data-toggle="tab" style="display: block;"><i class="icon shanticon-list"></i>List</a></li>
     </ul>           
     <div class="tab-content">
                       

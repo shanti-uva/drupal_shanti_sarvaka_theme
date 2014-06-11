@@ -110,7 +110,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 
 .navbar-default .navbar-nav>li.lang>a{ padding-right:10px;}
 .navbar-default .navbar-nav li.explore>a{ padding-right:20px;}
-.navbar-default .navbar-nav li>a>i.km-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
+.navbar-default .navbar-nav li>a>i.shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
 /*--- END navbar tabs ---*/
 
 /*--- BEGIN dropdown menu ---*/
