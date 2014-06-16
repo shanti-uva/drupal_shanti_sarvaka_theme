@@ -39,7 +39,7 @@
      </div>
      
      <!-- include shanti-explore-menu if it exists -->
-     <?php if(module_exists('explore_menu')) { print render(menu_tree('shanti-explore-menu')); } ?>
+     <?php if(module_exists('explore_menu')) { print render($variables['explore_menu']); } ?>
     
     </header>
     <main class="main-wrapper container">

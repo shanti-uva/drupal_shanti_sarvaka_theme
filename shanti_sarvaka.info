@@ -47,7 +47,7 @@ stylesheets[all][] =  css/new.css
 ;;;;;;;;;;;;;;;;;;;;;;
 
 ;scripts[] = 'js/vendor/jquery-1.10.1.min.js' ; Added through jquery update module.
-;scripts[] = 'js/vendor/jquery-ui.min.js'
+scripts[] = 'js/vendor/jquery-ui.min.js'
 scripts[] = 'js/vendor/bootstrap.min.js'
 scripts[] = 'js/menus/jquery.multilevelpushmenu.min.js'
 scripts[] = 'js/extruder/jquery.hoverIntent.min.js'

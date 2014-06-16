@@ -4,7 +4,7 @@
  **/
 var ShantiSettings = {
      kmapsUrl: "http://subjects.kmaps.virginia.edu",
-     mmsUrl: "http://-mms.thlib.org",
+     mmsUrl: "http://mms.thlib.org",
      placesUrl: "http://places.kmaps.virginia.edu",
      ftListSelector: "ul.facetapi-mb-solr-facet-tree, ul.fancy-tree", // should change "mb-solr" to "fancy" for universality
      fancytrees: [],

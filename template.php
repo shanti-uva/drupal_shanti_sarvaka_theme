@@ -28,6 +28,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   shanti_sarvaka_block_view_locale_language_alter($data, $block);
   if(module_exists('explore_menu')) {
     $variables['explore_menu_link'] = variable_get('explore_link_text', EXPLORE_LINK_TEXT);
+    $variables['explore_menu'] = menu_tree('shanti-explore-menu');
   }
   if(module_exists('locale')) {
     $variables['language_switcher'] = '<li class="dropdown lang highlight" id="block-locale-language">  
