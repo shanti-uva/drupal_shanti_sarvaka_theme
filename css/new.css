@@ -37,14 +37,6 @@ section.messages {
 	padding-left: 2px;
 }
 
-/* Reverse BS settings to account for floating blocks right where first is most right */
-.navbar-nav.navbar-right:first-child {
-	margin-right: -15px;
-}
-.navbar-nav.navbar-right:last-child {
-	margin-right: 0px;
-}
-
 /* Language Chooser */
 
 div.navbar nav.navtop div.block h2 {

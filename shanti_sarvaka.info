@@ -26,7 +26,7 @@ regions[admin_footer]   = Admin Footer
 ;;;;;;;;;;;;;;;;;;;;;
 
 settings[shanti_sarvaka_base_color] = '#dc3c47'
-settings[shanti_sarvaka_icon_code] = 'e60e'
+settings[shanti_sarvaka_icon_class] = 'av'
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets

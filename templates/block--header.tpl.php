@@ -9,17 +9,15 @@
     **/
 ?>
 <?php print $prev_markup; ?>
-<ul class="nav navbar-nav navbar-right">
-  <li class="dropdown <?php print $bs_class; ?> highlight" id="<?php print $block_html_id; ?>">  
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <?php if ($block->title): ?>
-            <span><?php print $block->title ?></span>
-        <?php endif;?>
-        <!-- $icon_class determines icon image -->
-        <i class="icon <?php print $icon_class; ?>"></i>
-       </a>
-      <?php print $elements['#markup']; ?>
-   </li>
-</ul>
+<li class="dropdown <?php print $bs_class; ?> highlight" id="<?php print $block_html_id; ?>">  
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <?php if ($block->title): ?>
+        <span><?php print $block->title ?></span>
+    <?php endif;?>
+    <!-- $icon_class determines icon image -->
+    <i class="icon <?php print $icon_class; ?>"></i>
+   </a>
+  <?php print $elements['#markup']; ?>
+ </li>
 <?php print $follow_markup; ?>
   

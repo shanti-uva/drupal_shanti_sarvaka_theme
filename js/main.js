@@ -148,6 +148,8 @@ function mbExtruderInit() {
       		500, 
       		function() { $(this).attr('style',''); 
       	});
+      	
+      	$('#gen-search .on-flap').css("top", "0px");
       },
       width: mywidth, // width is set in two places, here and the css
       top: 0
@@ -235,7 +237,7 @@ function fancytreeInit() {
 	    autoScroll: true, // Automatically scroll nodes into visible area.
 	    activate: function(event, data) {
 	    	var node = data.node;
-	    	console.info(node.data);
+	    	//console.info(node.data);
 	    	$('i.icon.shanticon-cancel').remove(); // remove existing cancel icons
 	    	loadFacetSearch(node.data);
 	    	return false;
@@ -383,6 +385,9 @@ function loadFacetSearch(fdata) {
 				}
 				return false;
 			});
+			
+			var title = $('section.content-section div.content h3:first-child').detach();
+			$('h1.page-title span').text(title.text());
 		}
 		//console.info({'ulclass': ulclass, 'tree':tree, 'fdata':fdata, 'data':json});
 	});
@@ -455,6 +460,6 @@ function doAjaxSearch(qstr, type) {
 		success: function(json) {
 			$('article.main-content section.content-section').html(json.html);
 		}
-	})
+	});
 }
 
