@@ -27,9 +27,7 @@
               <li id="collexplink" class="explore closed"><a href="#"><?php print $variables['explore_menu_link']; ?> 
                 <i class="icon shanticon-explore"></i></a></li>
             <?php endif; ?>
-            <?php 
-              print $variables['language_switcher']; 
-            ?>
+            <?php  if(isset($variables['language_switcher'])) { print $variables['language_switcher']; }  ?>
             <!-- TODO: Need to hardcode user menu/options here as well -->
             
             <?php print render($page['header']);  ?>
