@@ -17,7 +17,7 @@
     <!-- $icon_class determines icon image -->
     <i class="icon <?php print $icon_class; ?>"></i>
    </a>
-  <?php print $elements['#markup']; ?>
+  <?php if(isset($elements['#markup'])) { print $elements['#markup']; } ?>
  </li>
 <?php print $follow_markup; ?>
   
