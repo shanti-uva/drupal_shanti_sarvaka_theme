@@ -69,7 +69,7 @@ nav.breadcrumbs-wrapper ol.breadcrumb {
 	line-height: 21px;
 	height: 21px;
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-	margin: 0;
+	margin: 0px 0px 0px 12px;
 	padding: 0;
 	display: block;
 }
@@ -81,6 +81,7 @@ ol.breadcrumb {
 	margin: auto;
 }
 
+/* General Breadcrumb */
 ol.breadcrumb li {
 	display: inline-block;
 	float: left;
@@ -88,11 +89,10 @@ ol.breadcrumb li {
 	height: 21px;
 	overflow: hidden;
 	line-height: 21px;
-	margin: 0px 6px 0px 0;
-	padding: 0px 10px 0px 0;
 	font-size: 1em;
 }
 
+/* Font home breadcrumb */
 ol.breadcrumb>li:first-child {
 	font-family: "Museo Sans", sans-serif;
 	font-size: 1em;
@@ -103,21 +103,27 @@ ol.breadcrumb>li:first-child {
 	font-style: normal;
 }
 
+/* Add colon after first breadcrumb which is site home */
 ol.breadcrumb>li:first-child::after {
 	font-weight: bold;
 	content: ':\00a0';
 }
 
-body.front ol.breadcrumb>li:first-child::after {
-	display: none;
-}
-
-ol.breadcrumb>li:nth-child(2)::before {
-	content: '\00a0';
-}
-
+/* override bootstrap default */
 ol.breadcrumb>li+li:before {
-	content: "\00a0/\00a0";
+	content: "";
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Add space greater-than space after breadcrumbs */
+ol.breadcrumb>li+li:after {
+	content: '\00a0\003e\00a0';
+}
+
+/* Except for the last one */
+ol.breadcrumb>li+li:last-child:after {
+	content: '';
 }
 
 ol.breadcrumb li a {
@@ -294,6 +300,27 @@ h4 {
 	margin-top: 12px;
 }
 
+/** Field Groups. See shanti_sarvaka_fieldset() function */
+div.field-accordion {
+  min-height: 2em;
+	margin: 6px 0px;
+  padding-top: 9px;
+	border-top: 1px solid #C0C0C0;
+	background-color: #EEE;
+}
+
+div.field-accordion * {
+	background-color: #EEE;
+}
+
+div.field-accordion h4 span.glyphicon {
+	font-size: 70%;
+	padding: 3px;
+	border-radius: 10px;
+	top: 0px;
+	border: thin solid grey;
+	background-color: #FFF;
+}
 /* General */
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */

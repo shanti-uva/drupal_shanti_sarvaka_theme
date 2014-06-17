@@ -37,6 +37,9 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   }
 }
 
+function shanti_sarvaka_preprocess_node(&$variables) {
+  //dpm($variables, 'in node preprocess');
+}
 
 function shanti_sarvaka_preprocess_region(&$variables) {
   if($variables['region'] == 'header') {
@@ -228,4 +231,25 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
   $title = $variables['element']['#title'];
   $class = explore_menu_get_iconclass($title);
   return '<li><a href="' . $href . '"><i class="icon shanticon-' . $class . '"></i>' . $title . '</a></li>';
+}
+
+/** Fieldset Groups **/
+
+function shanti_sarvaka_fieldset($variables) {
+  $element = $variables['element'];
+  $out = '<div class="field-accordion panel-group" id="accordion' . $element['#id'] . '">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <span class="glyphicon glyphicon-plus"></span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#' . $element['#id'] . '">'
+           . $element['#title'] .
+        '</a>
+      </h4>
+    </div>
+    <div id="' . $element['#id'] . '" class="panel-collapse collapse">
+      <div class="panel-body">';
+   $out .= $element['#children'];
+   $out .= '</div></div></div></div>';
+   return $out;
 }
