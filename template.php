@@ -35,6 +35,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native . 
         '</span><i class="icon shanticon-arrowselect"></i></a>' . $data['content'] . '</li>';
   }
+  //dpm($variables, 'vars in page');
 }
 
 function shanti_sarvaka_preprocess_node(&$variables) {
@@ -42,8 +43,12 @@ function shanti_sarvaka_preprocess_node(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_region(&$variables) {
-  if($variables['region'] == 'header') {
-    //dpm($variables, 'header variables 2');
+  if($variables['region'] == 'search_flyout') {
+    //dpm($variables, 'flyout variables all new');
+    if(isset($variables['elements']['search_form'])) {
+      $variables['search_form'] = $variables['elements']['search_form'];
+      unset($variables['elements']['search_form']);
+    }
   }
 }
 

@@ -1,28 +1,30 @@
 <!-- Search Tab -->
+<?php //dpm(array($variables, $content), 'variables in sidebar'); ?>
 <section id="gen-search" class="extruder right" role="search">
   <!-- BEGIN Input Section -->                 
   <section class="input-section">                   
-    <form class="form">
-     <fieldset>                       
-        <div class="search-group">                        
-            <div class="input-group">
-                <input type="text" class="form-control kms" id="searchform" placeholder="Enter Search...">
-                <span class="input-group-btns">
-                  <button type="button" class="btn btn-default" id="searchbutton"><i class="icon"></i></button>
-                  <button type="reset" class="searchreset">&times;</button>
-                </span>
-            </div>
-            
-           <!-- search scope -->
-           <div class="form-group">
-             <label class="radio-inline" for="descscope"><input type="radio" id="descscope" name="srchscope" value="descriptions" data-value="descriptions" checked="checked">Descriptions</label>
-             <label class="radio-inline" for="transscope"><input type="radio" id="transscope" name="srchscope" value="transcripts" data-value="transcripts">Transcripts</label>                      
-           </div>
-           
-       </div><!-- END search group -->
-     </fieldset>
-     
-   </form>
+    <!--<form class="form">
+         <fieldset>                       
+            <div class="search-group">                        
+                <div class="input-group">
+                    <input type="text" class="form-control kms" id="searchform" placeholder="Enter Search...">
+                    <span class="input-group-btns">
+                      <button type="button" class="btn btn-default" id="searchbutton"><i class="icon"></i></button>
+                      <button type="reset" class="searchreset">&times;</button>
+                    </span>
+                </div>
+                
+               <!-- search scope -->
+                <!--<div class="form-group">
+                 <label class="radio-inline" for="descscope"><input type="radio" id="descscope" name="srchscope" value="descriptions" data-value="descriptions" checked="checked">Descriptions</label>
+                 <label class="radio-inline" for="transscope"><input type="radio" id="transscope" name="srchscope" value="transcripts" data-value="transcripts">Transcripts</label>                      
+               </div>
+               
+           </div><!-- END search group -->
+          <!--</fieldset>
+         
+       </form>-->
+       <?php print render($search_form); ?>
   </section>  <!-- End Input Section -->
   
   <!-- Begin View Section -->
@@ -35,7 +37,7 @@
                       
       <!-- TAB - tree view -->
       <div class="treeview tab-pane active">
-        <?php print $content; ?> 
+        <?php print render($elements); ?> 
       </div>
       
       <div class="listview tab-pane">   
