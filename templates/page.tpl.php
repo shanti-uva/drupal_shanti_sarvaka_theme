@@ -46,7 +46,7 @@
       <article class="main-content" role="main">
         <div class="row">
           <!-- Banner Region -->
-          <header class="col-sm-12 titlearea">
+          <header class="col-sm-12 titlearea banner">
            <div role="banner">
             <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php 
               print ($title == '')? $variables['default_title']:$title; ?></span></h1>
@@ -56,7 +56,10 @@
               <div class="banner-content">
                 <?php print render($page['banner']); ?>
               </div>
-              <?php print render($tabs); ?>
+              <?php 
+                // For view/edit tabs
+                print render($tabs); 
+              ?>
             </div>
           </header>
           <!-- Message Area -->

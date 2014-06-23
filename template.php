@@ -251,9 +251,18 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
 }
 
 /** Fieldset Groups **/
-
+/*
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
+  $title = (isset($element['#title'])) ? $element['#title'] : 'Fieldset w/o Title';
+  $title = (isset($element['#id'])) ? $element['#title'] : 'Fieldset w/o Title';
+  if(!isset($element['#title'])) {
+    $title = 'No';
+  }
+  if(!isset($element['#id'])) {
+    dpm($element, 'element without id');
+  }
+  //$id = (isset($element['#id'])) ? $element['#id'] : 
   $out = '<div class="field-accordion panel-group" id="accordion' . $element['#id'] . '">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -269,4 +278,4 @@ function shanti_sarvaka_fieldset($variables) {
    $out .= $element['#children'];
    $out .= '</div></div></div></div>';
    return $out;
-}
+}*/

@@ -50,7 +50,7 @@
 	jQuery(function($) {
 	  createTopLink();
 	  arrangeMenuDivs();
-	  iCheckInit();
+	  //iCheckInit();
 	  langButtonsInit();
 		mbExtruderInit();
 		searchInit();
@@ -58,6 +58,7 @@
 		fancytreeInit();
 	  miscInit();
 	  checkWidth();
+	  carouselInit();
 	});
 	
 	// *** CONTENT *** top link
@@ -156,7 +157,7 @@
 	      top: 0
 	  });
 	  
-	  $("#gen-search").css('top', '50px'); // custom adjustment for mbase (?) Using top parameter above lowers only the tab not the whole search div
+	  $("#gen-search").css({'top':'50px', 'z-index': 600 }); // custom adjustment for mbase (?) Using top parameter above lowers only the tab not the whole search div
 	  
 	  // Make it resizeable
 	  $("div.extruder-content > div.text").resizable({ handles: "w",
@@ -463,5 +464,11 @@
 			}
 		});
 	}
+	
+	function carouselInit() {
+		var options = { $AutoPlay: true };
+		var jssor_slider = new $JssorSlider$('shanti-carousel-div', options);
+	}
+	
 }(jQuery));
 

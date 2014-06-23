@@ -17,6 +17,7 @@ section.messages {
 }
 
 /* Header Top Bar */
+
 .menu-buttons .menu-icon a {
 	white-space: nowrap;
 	width: auto;
@@ -60,6 +61,29 @@ div.highlight:last-child {
 #block-locale-language .iradio_minimal-red {
 	width: 18px;
 	margin-right: 6px;
+}
+
+/* Color Strip Banner */
+header.banner {
+	z-index: 500; /* so Drop down menus are above main page content but banner is under admin menu*/
+}
+
+div.banner-content {
+	margin-top: -1.8em;
+	position: absolute;
+	right: 26%;
+}
+
+div.banner-content button.btn-default {
+	background: rgba(120,120,120,0.3);
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 0.15em;
+	font-weight: normal;
+	text-shadow: none;
+	border: none;
+	padding: 10px 20px;
 }
 
 /* Breadcrumbs */
