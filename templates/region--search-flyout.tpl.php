@@ -1,5 +1,4 @@
 <!-- Search Tab -->
-<?php //dpm(array($variables, $content), 'variables in sidebar'); ?>
 <section id="gen-search" class="extruder right" role="search">
   <!-- BEGIN Input Section -->                 
   <section class="input-section">                   
@@ -24,7 +23,9 @@
           <!--</fieldset>
          
        </form>-->
-       <?php print render($search_form); ?>
+       <?php 
+        print $search_form['#children']; 
+       ?>
   </section>  <!-- End Input Section -->
   
   <!-- Begin View Section -->
@@ -37,7 +38,7 @@
                       
       <!-- TAB - tree view -->
       <div class="treeview tab-pane active">
-        <?php print render($elements); ?> 
+        <?php foreach($other_elements as $el) {  print $el['#children']; } ?> 
       </div>
       
       <div class="listview tab-pane">   
