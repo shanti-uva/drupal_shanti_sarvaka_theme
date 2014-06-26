@@ -39,6 +39,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 
 function shanti_sarvaka_preprocess_node(&$variables) {
   //dpm($variables, 'in node preprocess');
+  $variables['date'] = Date('j M Y', $variables['node']->created);
 }
 
 function shanti_sarvaka_preprocess_region(&$variables) {
