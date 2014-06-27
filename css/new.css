@@ -345,7 +345,7 @@ div.field-accordion h4 span.glyphicon {
 	border: thin solid grey;
 	background-color: #FFF;
 }
-/* General */
+/* General Styles */
 
 div.inline { display: inline-block; }
 article.main-content p { text-align: justify; } /* Justify paragraphs */
@@ -354,3 +354,121 @@ div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
 table.pagerer { clear: both; } /** To get pagerer to appear under gallery of images */
 .input-section label.radio-inline:first-child { width: auto; } /* radio button styles */
 .search-group .radio-inline > div { margin-right:4px; }
+
+
+/** 
+ * Carousel Styles 
+ *		A Bootstrap Carousel implementation taken from http://codepen.io/redfrost/full/dbrgk 	
+ **/
+
+div.carousel div { word-break: break-all; }
+
+div.carousel img { max-width:100%; }
+
+div.carousel a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+}
+
+div.carousel a:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+    filter: alpha(opacity=50); /* IE7 */
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+div.carousel a.carousel-control {
+	height: 30px;
+	top: 45%;
+	width: 30px;
+	color: white;
+	font-weight: bold;
+	background-image: none;
+}
+
+/* Carousel Container */
+div.carouseldiv .container-fluid {
+   /* margin: 40px auto 10px;
+    padding: 20px 0px;*/
+    max-width: 960px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/*  Carousel Header */
+div.carouseldiv .header {
+	margin-top: 30px;
+}
+
+div.carouseldiv .header .title {
+	font-style: italic;
+	font-size: larger;
+}
+
+div.carouseldiv .header .title a {
+	color: inherit;
+}
+
+div.carouseldiv .header .link {
+	text-transform: uppercase;
+	font-size:smaller;
+	
+}
+
+div.carousel {
+	padding: 16px;
+	background-color: #fff;
+}
+
+div.carousel div.carousel-inner {
+	padding-top: 6px;
+}
+
+div.carouseldiv .caption .span4, div.carouseldiv .caption .span8 {
+    padding: 0px 20px;
+}
+
+div.carouseldiv .caption .span4 {
+    border-right: 1px dotted #CCCCCC;
+}
+
+div.carousel .caption h3 {
+	weight: bold;
+	margin: 0 0 10px;
+}
+
+div.carousel .item .title h3 a {
+	color: #333333;
+}
+
+div.carousel .item .byline {
+	color: #aaaaaa;
+	font-style: italic;
+	margin: 0 0 10px 0;
+}
+
+div.carousel  .caption p {
+	font-size: 1em;
+	line-height: 1.6em;
+	color: #333333;
+}
+
+
+div.carouseldiv .carousel-control {
+	
+}
+
+/* ADD-ON
+-------------------------------------------------- 
+
+div.carouseldiv ::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
+div.carouseldiv ::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+div.carouseldiv a, div.carouseldiv a:focus, div.carouseldiv a:active, div.carouseldiv a:hover, div.carouseldiv object, div.carouseldiv embed { outline: none; }
+:-moz-any-link:focus { outline: none; }
+div.carouseldiv input::-moz-focus-inner { border: 0; }*/
+
+/* End of Carousel Styles */

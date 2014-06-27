@@ -466,8 +466,10 @@
 	}
 	
 	function carouselInit() {
-		var options = { $AutoPlay: true };
-		var jssor_slider = new $JssorSlider$('shanti-carousel-div', options);
+		// Carousel Auto-Cycle
+    $('.carousel').carousel({
+      interval: 5000000,
+    });
 	}
 	
 }(jQuery));

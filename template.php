@@ -4,6 +4,19 @@
  * @file
  * template.php
  */
+ 
+/**
+ * Implements hook_theme
+ *    Registers carousel theme function
+ */
+function shanti_sarvaka_theme() {
+  $items = array(
+    'carousel' => array(
+      'render element' => 'element',
+    ),
+  );
+  return $items;
+}
 
 /*
  * Implements hook_preprocess
@@ -35,6 +48,10 @@ function shanti_sarvaka_preprocess_page(&$variables) {
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native . 
         '</span><i class="icon shanticon-arrowselect"></i></a>' . $data['content'] . '</li>';
   }
+  drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; }, ' .
+                 '.basecolor { color: ' . $variables['base_color'] . '!important; }', array(
+                      'type' => 'inline'
+                    ));
 }
 
 function shanti_sarvaka_preprocess_node(&$variables) {
@@ -249,6 +266,59 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
   $title = $variables['element']['#title'];
   $class = explore_menu_get_iconclass($title);
   return '<li><a href="' . $href . '"><i class="icon shanticon-' . $class . '"></i>' . $title . '</a></li>';
+}
+
+/**
+ * Implements hook_carousel, custom theme function for carousels defined above in hook_theme
+ * Element array has child called "slides". Each slide has the following variables:
+ *    nid
+ *    title
+ *    author
+ *    date
+ *    link
+ *    path
+ *    summary
+ *    img
+ *    
+ */
+function shanti_sarvaka_carousel($variables) {
+  $el = $variables['element'];
+  $html = '<div class="container-fluid carouseldiv">
+      <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+      
+          <div class="header row">
+              <p class="title col-md-10">' . $el['title'] . '</p>
+              <p class="link">' . $el['link'] . '</p>
+          </div>
+              
+          <div class="carousel slide row" id="collection-carousel">
+              <div class="carousel-inner">';
+  foreach($el['slides'] as $n => $slide) {
+    $active = ($n == 0) ? 'active' : '';
+    $html .= '<!-- Slide' . $n . ' --> 
+      <div class="item ' . $active . '">
+        <div class="caption col-md-7">
+          <div class="title"><h3><a href="' . $slide['path'] . '"><i class="shanticon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>   
+          <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . '</div>               
+          <div class="description">' . $slide['summary'] . '</div>
+          <div class="link"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' <i class="glyphicon glyphicon-plus"></i></a></div>
+        </div>                 
+        <div class="bannerImage col-md-5">
+            <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>
+        </div>                
+     </div><!-- /Slide' . $n . ' --> ';
+  }
+  $html .= '</div>
+              <div class="control-box">                            
+                  <a data-slide="prev" href="#collection-carousel" class="carousel-control left basebg">‹</a>
+                  <a data-slide="next" href="#collection-carousel" class="carousel-control right basebg">›</a>
+              </div><!-- /.control-box -->   
+            </div><!-- /#collection-carousel -->
+        </div><!-- /.span12 -->          
+        </div><!-- /.row --> 
+        </div><!-- /.container -->';
+  return $html;
 }
 
 /** Fieldset Groups **/
