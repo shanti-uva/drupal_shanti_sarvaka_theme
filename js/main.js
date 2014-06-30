@@ -468,7 +468,7 @@
 	function carouselInit() {
 		// Carousel Auto-Cycle
     $('.carousel').carousel({
-      interval: 5000000,
+      interval: 5000,
     });
 	}
 	
