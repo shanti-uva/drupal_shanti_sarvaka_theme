@@ -5,7 +5,12 @@
  */
 function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
   global $base_path;
-  
+   $form['shanti_sarvaka_shanti_site'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Shanti Site'),
+    '#default_value' => theme_get_setting('shanti_sarvaka_shanti_site'),
+    '#description'   => t("Check if you want Shanti Logo and title to appear in top bar"),
+  );
   $form['shanti_sarvaka_default_title'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Default Title for Banner'),

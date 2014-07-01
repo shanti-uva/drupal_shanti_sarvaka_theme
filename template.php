@@ -32,6 +32,7 @@ function shanti_sarvaka_preprocess(&$variables) {
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
   $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');
   $variables['theme_path'] = $base_url . '/' . drupal_get_path('theme', 'shanti_sarvaka'); 
+  $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
@@ -279,6 +280,7 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
  *    path
  *    summary
  *    img
+ *    itemcount
  *    
  */
 function shanti_sarvaka_carousel($variables) {
@@ -300,7 +302,7 @@ function shanti_sarvaka_carousel($variables) {
       <div class="item ' . $active . '">
         <div class="caption col-md-7">
           <div class="title"><h3><a href="' . $slide['path'] . '"><i class="shanticon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>   
-          <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . '</div>               
+          <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>               
           <div class="description">' . $slide['summary'] . '</div>
           <div class="link"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' <i class="glyphicon glyphicon-plus"></i></a></div>
         </div>                 

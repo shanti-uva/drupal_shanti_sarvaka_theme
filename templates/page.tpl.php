@@ -13,9 +13,13 @@
       <!-- </nav>-->
       <nav class="navbar-header">
         <h1 class="navbar-title">
-          <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="SHANTI Homepage">
-            <i class="icon shanticon-logo"></i><em>SHANTI</em>
-            <span><?php print $site_slogan; ?></span>
+          <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<? print $site_name; ?> Homepage">
+            <?php if($variables['shanti_site']): ?>
+              <i class="icon shanticon-logo"></i><em>SHANTI</em>
+            <?php else: ?>
+              <img src="<?php print $logo; ?>" class="site-logo" /> <span class="site-title"><?php print $site_name; ?></span>
+            <?php endif; ?>
+            <?php if($site_slogan) { print '<span class="site-slogan">' . $site_slogan . '</span>' ;} ?>
           </a>
         </h1>
       </nav>  

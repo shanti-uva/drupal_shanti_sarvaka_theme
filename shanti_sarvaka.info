@@ -9,12 +9,11 @@ core = 7.x
 
 regions[header]         = Top Bar Header
 regions[banner]         = Color Strip Banner
+regions[content]        = Content
 regions[search_flyout]  = Search Fly Out
-regions[navigation]     = Navigation Tabs
 regions[sidebar_first]  = Primary Sidebar
 regions[sidebar_second] = Secondary Sidebar
 regions[highlighted]    = Highlighted
-regions[content]        = Content
 regions[help]           = Help
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
