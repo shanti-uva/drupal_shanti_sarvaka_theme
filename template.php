@@ -18,6 +18,10 @@ function shanti_sarvaka_theme() {
   return $items;
 }
 
+/**
+ * PREPROCESS FUNCTIONS
+ */
+ 
 /*
  * Implements hook_preprocess
  * Add theme_path to all templates
@@ -36,6 +40,16 @@ function shanti_sarvaka_preprocess(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
+  // Figure out bootstrap column classes
+  //dpm($variables, 'page vars');
+  $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
+  $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
+  $variables['bsclass_main'] = 'col-sm-6';
+  if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
+    $variables['bsclass_main'] = 'col-sm-12'; 
+  } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
+    $variables['bsclass_main'] = 'col-sm-9'; 
+  }
   // Preload and render the language switcher to include in header (in page template)
   $data = module_invoke('locale', 'block_view', 'language');
   $block = block_load('locale', 'language');
@@ -61,18 +75,25 @@ function shanti_sarvaka_preprocess_node(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_region(&$variables) {
-  if($variables['region'] == 'search_flyout') {
-    $elements = $variables['elements'];
-    // Separate out search block "element" from others to display it in a different part of the flyout region template
-    $variables['other_elements'] = array();
-    foreach($elements as $n => $el) {
-      if($n == 'search_form') {
-        $variables['search_form'] = $variables['elements']['search_form'];
-      } else if (substr($n, 0, 1) != '#') { // Elements without a # in the name are blocks added to the region
-        array_push($variables['other_elements'], $variables['elements'][$n]);
+  switch ($variables['region']) {
+    case 'sidebar_second':
+      //dpm($variables, '2nd side vars');
+      
+      break;
+      
+    case 'search_flyout':
+      $elements = $variables['elements'];
+      // Separate out search block "element" from others to display it in a different part of the flyout region template
+      $variables['other_elements'] = array();
+      foreach($elements as $n => $el) {
+        if($n == 'search_form') {
+          $variables['search_form'] = $variables['elements']['search_form'];
+        } else if (substr($n, 0, 1) != '#') { // Elements without a # in the name are blocks added to the region
+          array_push($variables['other_elements'], $variables['elements'][$n]);
+        }
       }
-    }
-    unset($variables['elements']['search_form']);
+      unset($variables['elements']['search_form']);
+      break;
   }
 }
 
@@ -89,6 +110,7 @@ function shanti_sarvaka_preprocess_block(&$variables) {
     $variables['prev_markup'] = '';
   }
 }
+
 
 /**
 * Changes the search form to use the "search" input element of HTML5.
@@ -123,6 +145,25 @@ function shanti_sarvaka_preprocess_search_result(&$variables) {
   }
 }
 
+/**
+ * Implements theme_preprocess_image_style
+ */
+function shanti_sarvaka_preprocess_image_style(&$vars) {
+  $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
+}
+
+/**
+ * Modify buttons so they have Bootstrap style .btn classess with BEM syntax for variations
+ *
+ */
+function shanti_sarvaka_preprocess_button(&$vars) {
+  $vars['attributes']['class'][] = 'btn-primary'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
+}
+  
+/**
+ * THEMING FUNCTIONS
+ */
+ 
  /**
   * Implements THEME_item_list to theme the facet links within a facetapi block
   */
@@ -189,6 +230,9 @@ function shanti_sarvaka_item_list($variables) {
   return $output;
 }
 
+/**
+ * Implements theme_block_view_locale_language_alter
+ */
 function shanti_sarvaka_block_view_locale_language_alter(&$data, $block) {
   //dpm(array($data, $block));
   global $language;  // Currently chosen language
@@ -206,46 +250,6 @@ function shanti_sarvaka_block_view_locale_language_alter(&$data, $block) {
   }
   $markup .= '</ul>';
   $data['content'] = $markup;
-}
-
-/**
- * Takes a Drupal lang code (which is not ISO) and returns name of the language in that language. Custom function for Shanti
- */
- /* Can just user $language->native
-function shanti_lang_code_to_name($code) {
-  $langnames = array(
-    'en' => 'English',
-    'bo' => 'བོད་ཡིག',
-    'dz' => 'རྫོང་ཁ།',
-    'zh-hans' => '汉语',
-    'fr' => 'Français',
-  );  
-  return (isset($langnames[$code])) ? $langnames[$code] : FALSE;
-}
-*/
-/**
- * Implements HOOK_breadcrumbs
- * Customizes output of breadcrumbs
- */
-function shanti_sarvaka_get_breadcrumbs($variables) {
-  global $base_url;
-  
-  $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
-  $output = '<ol class="breadcrumb">';
-  if(!$variables['is_front']) {
-    $breadcrumbs[0] = '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>';
-  } 
-  foreach($breadcrumbs as $crumb) {
-    $output .= '<li>' . $crumb . '</li>';
-  }
-    
-  $output .= '</ol>';
-  return $output;
-}
-
-/** Theme Facet Counts for JS **/
-function shanti_sarvaka_facetapi_count($variables) {
-  return '<span class="facet-count">' . (int) $variables['count'] . '</span>';
 }
 
 /** Explore Menu Theme Functions works with Shanti Explore Menu Module**/
@@ -290,7 +294,7 @@ function shanti_sarvaka_carousel($variables) {
         <div class="col-md-11">
       
           <div class="header row">
-              <p class="title col-md-10">' . $el['title'] . '</p>
+              <p class="title col-md-9">' . $el['title'] . '</p>
               <p class="link">' . $el['link'] . '</p>
           </div>
               
@@ -352,3 +356,100 @@ function shanti_sarvaka_fieldset($variables) {
    $out .= '</div></div></div></div>';
    return $out;
 }*/
+
+/**
+ * Theme buttons to use Bootstrap Markup
+ */
+ $bdone = 0;
+function shanti_sarvaka_button($variables) {
+  global $bdone;
+  if($bdone == 0) {
+    //dpm($variables, 'button');
+    $bdone = 1;
+  }
+  $element = $variables['element'];
+  $text = $element['#value'];
+  unset($element['#value']);
+  $icon = '';
+  if(strpos(strtolower($text), 'video') > 0) {
+    $icon = '<i class="shanticon shanticon-video"></i> ';
+  } else if(strpos(strtolower($text), 'audio') > 0) {
+    $icon = '<i class="shanticon shanticon-audio"></i> ';
+  } else if(strpos(strtolower($text), 'collection') > 0) {
+    $icon = '<i class="shanticon shanticon-texts"></i> ';
+  } 
+  $element['#attributes']['type'] = 'submit';
+  element_set_attributes($element, array('id', 'name', 'value'));
+  $element['#attributes']['class'][] = 'btn';
+  $element['#attributes']['class'][] = 'btn-primary';
+  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
+
+  return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . '<span>' . $text . '</span></button>';
+}
+
+function shanti_sarvaka_select($variables) {
+  $element = $variables['element'];
+  $element['#attributes']['class'][] = 'form-control';
+  element_set_attributes($element, array('id', 'name', 'size'));
+  _form_set_class($element, array('form-select'));
+
+  return '<select' . drupal_attributes($element['#attributes']) . '>' . form_select_options($element) . '</select>';
+}
+
+function shanti_sarvaka_textfield($variables) {
+  $element = $variables['element'];
+  $element['#attributes']['type'] = 'text';
+  $element['#attributes']['class'][] = 'form-control';
+  element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
+  _form_set_class($element, array('form-text'));
+
+  $extra = '';
+  if ($element['#autocomplete_path'] && drupal_valid_path($element['#autocomplete_path'])) {
+    drupal_add_library('system', 'drupal.autocomplete');
+    $element['#attributes']['class'][] = 'form-autocomplete';
+
+    $attributes = array();
+    $attributes['type'] = 'hidden';
+    $attributes['id'] = $element['#attributes']['id'] . '-autocomplete';
+    $attributes['value'] = url($element['#autocomplete_path'], array('absolute' => TRUE));
+    $attributes['disabled'] = 'disabled';
+    $attributes['class'][] = 'autocomplete';
+    $extra = '<input' . drupal_attributes($attributes) . ' />';
+  }
+
+  $output = '<input' . drupal_attributes($element['#attributes']) . ' />';
+
+  return $output . $extra;
+}
+
+/**
+ * MISCELLANEOUS HOOKS AND FUNCTIONS
+ */
+/**
+ * Implements HOOK_breadcrumbs
+ * Customizes output of breadcrumbs
+ */
+function shanti_sarvaka_get_breadcrumbs($variables) {
+  global $base_url;
+  
+  $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
+  $output = '<ol class="breadcrumb">';
+  if(!$variables['is_front']) {
+    $breadcrumbs[0] = '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>';
+  } 
+  foreach($breadcrumbs as $crumb) {
+    $output .= '<li>' . $crumb . '</li>';
+  }
+    
+  $output .= '</ol>';
+  return $output;
+}
+
+/** Theme Facet Counts for JS **/
+function shanti_sarvaka_facetapi_count($variables) {
+  return '<span class="facet-count">' . (int) $variables['count'] . '</span>';
+}
+

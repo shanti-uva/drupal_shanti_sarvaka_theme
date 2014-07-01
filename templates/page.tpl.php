@@ -23,7 +23,8 @@
           </a>
         </h1>
       </nav>  
-      <nav class="navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
+      <!-- HEADER REGION -->
+      <nav id="header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
          <form class="form">
          <fieldset>         
           <ul class="nav navbar-nav navbar-right">
@@ -33,19 +34,18 @@
             <?php endif; ?>
             <?php  if(isset($variables['language_switcher'])) { print $variables['language_switcher']; }  ?>
             <!-- TODO: Need to hardcode user menu/options here as well -->
-            
+            <!-- If admin puts blocks in  header, render here -->
             <?php print render($page['header']);  ?>
           </ul>
          </fieldset>  
          </form>           
        </nav>
-       
+       <!-- End of HEADER region -->
      </div>
-     
      <!-- include shanti-explore-menu if it exists -->
      <?php if(module_exists('explore_menu')) { print render($variables['explore_menu']); } ?>
-    
     </header>
+    
     <main class="main-wrapper container">
       <article class="main-content" role="main">
         <div class="row">
@@ -66,11 +66,20 @@
               ?>
             </div>
           </header>
+        </div> <!-- End of Banner Region -->
+        
+        <div class="row">
           <!-- Message Area -->
           <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
+          <!-- Sidebar First Region -->
+          <?php if ($page['sidebar_first']): ?>
+            <div id="sidebar-first" class="region  <?php print $bsclass_sb1; ?>">
+              <?php print render($page['sidebar_first']); ?>
+            </div>
+          <?php endif; ?>
           
           <!-- Begin Page Content -->
-          <section class="content-section col-xs-12"> <!-- had col-sm-9 (ndg, 2014-06-06) -->
+          <section class="content-section <?php print $bsclass_main; ?>"> <!-- had col-sm-9 (ndg, 2014-06-06) -->
             <div class="tab-content">
               <article class="tab-pane main-col active" id="tab-overview">
                  <?php print render($page['content']); ?>
@@ -79,12 +88,22 @@
           </section>
           <!-- END Content -->
           
+          <!-- Sidebar Second Region -->
+          <?php if ($page['sidebar_second']): ?>
+            <div id="sidebar-second" class="region <?php print $bsclass_sb2; ?>">
+              <?php print render($page['sidebar_second']); ?>
+            </div>
+          <?php endif; ?>
         </div>
         <a href="#" class="back-to-top" style="display: inline;"><i class="icon"></i>Top</a>
       </article>
     </main> <!-- End Main Content -->
     <!-- Search Flyout -->
-    <?php print render($page['search_flyout']); ?>
+    <?php 
+      if($page['search_flyout']) {
+        print render($page['search_flyout']);
+      }
+    ?>
     
 </div> <!-- End of class="wrap" -->
 

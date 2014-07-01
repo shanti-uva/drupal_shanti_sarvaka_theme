@@ -355,6 +355,41 @@ table.pagerer { clear: both; } /** To get pagerer to appear under gallery of ima
 .input-section label.radio-inline:first-child { width: auto; } /* radio button styles */
 .search-group .radio-inline > div { margin-right:4px; }
 
+button.btn-primary {
+	background-image: none;
+	background-color: #4850bd;
+	padding: 0px;
+	margin: 0px 3px;
+}
+
+button.btn-primary:hover {
+	background-color: #5b68ce; /* #5a65d1;*/
+}
+
+button.btn-primary i.shanticon {
+	display: inline-block;
+	font-weight: normal;
+	padding: 6px 6px 6px 8px; 
+}
+
+button.btn-primary span {
+	display: inline-block;
+	padding: 6px 8px;
+	background-color: rgba(255, 255, 255, .1);
+}
+
+.form-text {
+	height: 28px;
+}
+
+html.js input.form-autocomplete {
+	background-position: 100% 8px;
+}
+
+#edit-masquerade-user-field {
+	width: 80%;
+	display: inline;
+}
 
 /** 
  * Carousel Styles 
