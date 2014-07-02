@@ -18,6 +18,16 @@ section.messages {
 
 /* Header Top Bar */
 
+h1.navbar-title.default img.site-logo {
+	height: 35px;
+}
+
+h1.navbar-title.default .site-title, h1.navbar-title.default .site-slogan {
+	display: inline-block;
+	padding-top: 20px;
+	top: 3px;
+}
+
 .menu-buttons .menu-icon a {
 	white-space: nowrap;
 	width: auto;

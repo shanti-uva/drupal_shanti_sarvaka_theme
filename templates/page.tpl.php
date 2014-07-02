@@ -12,7 +12,7 @@
         <!-- <span class="menu-exploretoggle menu-explore"><a href="#"><span>Explore </span>Collections<i class="icon km-directions"></i></a></span><!-- mobile < 768 : collections -->
       <!-- </nav>-->
       <nav class="navbar-header">
-        <h1 class="navbar-title">
+        <h1 class="navbar-title<?php if(!$variables['shanti_site']) { print " default"; } ?>">
           <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<? print $site_name; ?> Homepage">
             <?php if($variables['shanti_site']): ?>
               <i class="icon shanticon-logo"></i><em>SHANTI</em>
