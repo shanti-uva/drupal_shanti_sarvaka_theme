@@ -350,6 +350,7 @@
 	  // show-hide the IE message for older browsers
 	  // this could be improved with conditional for - lte IE7 - so it does not self-hide
 	  $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
+	  $('div#sidebar-second').height($el.parent().height()); // set the sidebar heigth
 	}
 	
 	function loadFacetSearch(fdata) {

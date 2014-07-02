@@ -8,7 +8,7 @@ section.messages {
 }
 
 .main-content .content-section {
-	padding: 12px 0px 8px 24px;
+	padding: 12px 12px 8px 24px;
 }
 
 .navbar-static-top {
@@ -180,14 +180,6 @@ div.sidebar {
 div#sidebar-second {
 	background-image: none;
 	background-color: #ffffff;
-	position: absolute;
-	top: 65px;
-	right: 0px;
-	bottom: 0px;
-	width: 26%;
-	max-width: 310px;
-	min-width: 250px;
-	margin-right: -15px;
 }
 
 div.region-sidebar-second div.block {
