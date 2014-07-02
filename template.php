@@ -42,13 +42,13 @@ function shanti_sarvaka_preprocess(&$variables) {
 function shanti_sarvaka_preprocess_page(&$variables) {
   // Figure out bootstrap column classes
   //dpm($variables, 'page vars');
-  $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
-  $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
-  $variables['bsclass_main'] = 'col-sm-6';
+  $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-2 col-md-3' : '';
+  $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-2 col-md-3' : '';
+  $variables['bsclass_main'] = 'col-sm-8 col-md-6';
   if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = 'col-sm-12'; 
+    $variables['bsclass_main'] = 'col-xs-12'; 
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = 'col-sm-9'; 
+    $variables['bsclass_main'] = 'col-sm-10 col-md-9'; 
   }
   // Preload and render the language switcher to include in header (in page template)
   $data = module_invoke('locale', 'block_view', 'language');
