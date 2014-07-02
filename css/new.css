@@ -172,6 +172,42 @@ ol.breadcrumb li a {
 	margin-right: 0px;
 }
 
+/** Sidebars **/
+div.sidebar {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size:1.1em;
+}	
+
+div#sidebar-second {
+	background-image: none;
+	background-color: #ffffff;
+	position: absolute;
+	top: 65px;
+	right: 0px;
+	bottom: 0px;
+	width: 26%;
+	margin-right: -15px;
+}
+
+div.region-sidebar-second div.block {
+	/*border-bottom: thin #777 solid;*/
+	padding: 15px 15px 5px 15px;
+}
+
+div.region-sidebar-second div.block:after {
+	content: '';
+	width: 83%;
+	margin-left: 9%;
+	height: 1px;
+	background-color: #aaa;
+	display: block;
+	margin-top: 20px;
+}
+
+div#sidebar-second button.form-submit {
+	
+}
+
 /** Search Flyout **/
 section#gen-search {
 	top: 50px;
