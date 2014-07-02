@@ -8,8 +8,7 @@ section.messages {
 }
 
 .main-content .content-section {
-	/*width: 100%;	*/
-	padding: 8px 24px;
+	padding: 12px 0px 8px 24px;
 }
 
 .navbar-static-top {
@@ -186,6 +185,8 @@ div#sidebar-second {
 	right: 0px;
 	bottom: 0px;
 	width: 26%;
+	max-width: 310px;
+	min-width: 250px;
 	margin-right: -15px;
 }
 
