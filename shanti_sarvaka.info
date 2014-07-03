@@ -1,7 +1,6 @@
-name = Shanti Sarvaka Universal Drupal 7 Theme
-description = A Drupal 7 theme for all Shanti@UVa sites based on the Bootstrap theme.
+name = Shanti Sarvaka 
+description = A responsive Drupal 7 theme for all Shanti@UVa sites, built with Bootstrap.
 core = 7.x
-;base theme = bootstrap
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions

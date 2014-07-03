@@ -180,6 +180,7 @@ div.sidebar {
 div#sidebar-second {
 	background-image: none;
 	background-color: #ffffff;
+	max-width: 310px;
 }
 
 div.region-sidebar-second div.block {
