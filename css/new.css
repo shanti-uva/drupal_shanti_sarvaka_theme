@@ -355,6 +355,7 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 #admin_footer { padding: 10px; background-color: #f6d4ba; }
 #admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
+#admin_footer div.block { display: inline-block; padding: 0px 8px; margin-right: thin solid #777; }
 
 /* Headers */
 h4 { 
