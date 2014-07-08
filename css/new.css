@@ -365,12 +365,18 @@ h4 {
 	margin-top: 12px;
 }
 
+h5, .h5 {
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+}
+
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 div.field-accordion {
   min-height: 2em;
 	margin: 6px 0px;
   padding-top: 9px;
-	border-top: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
 	background-color: #EEE;
 }
 
@@ -378,22 +384,93 @@ div.field-accordion * {
 	background-color: #EEE;
 }
 
-div.field-accordion h4 span.glyphicon {
-	font-size: 70%;
-	padding: 3px;
-	border-radius: 10px;
-	top: 0px;
+div.field-accordion div.panel-heading {
+	min-height: 22px;
+}
+
+div.field-accordion .form-item, div.field-accordion .form-actions {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+div.field-accordion h4 span.ss-fieldset-toggle {
+	font-size: 90%;
+	padding: 0px 4px 2px;
+	border-radius: 20px;
 	border: thin solid grey;
-	background-color: #FFF;
+	background-color: #fff;
+	box-shadow: 2px 0px 3px #aaa;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: text-top;
+	margin-right: 4px;
+}
+
+div.field-accordion h4 span.ss-fieldset-toggle.open {
+	padding: 0px 5px 1px;
+}
+
+/** Tabs **/
+ul.ss-full-tabs {
+	margin: 18px 5px;
+}
+
+ul.ss-full-tabs li {
+	width: 50%;
+	background-color: white;
+}
+
+ul.ss-full-tabs li a {
+	font-family: 'Museo Sans', sans-serif;
+	border: none;
+	text-align: center;
+	font-size: larger;
+	font-weight: bold;
+	color: #999999;
+	border-radius: 0px;
+}
+
+ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+ul.ss-full-tabs li.active a:after {
+	border-color: rgba(50,204,202,0);
+	border-top-color: #32ccca;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+ul.ss-full-tabs>li>a:hover, ul.ss-full-tabs>li.active>a:hover {
+	border: none;
+}
+
+ul.ss-full-tabs li.active a {
+	border: none;
+	color: white;
 }
 /* General Styles */
 
 div.inline { display: inline-block; }
+
+
 article.main-content p { text-align: justify; } /* Justify paragraphs */
+
 .back-to-top { z-index: 1000; } /* Back to top tab */
+
 div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
+
 table.pagerer { clear: both; } /** To get pagerer to appear under gallery of images */
+	
 .input-section label.radio-inline:first-child { width: auto; } /* radio button styles */
+
 .search-group .radio-inline > div { margin-right:4px; }
 
 button.btn-primary {

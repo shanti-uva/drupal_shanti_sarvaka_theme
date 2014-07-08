@@ -351,6 +351,26 @@
 	  // this could be improved with conditional for - lte IE7 - so it does not self-hide
 	  $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
 	  $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
+	  // Change collapsible div icon from +/- depending on state
+	  $('div.panel-collapse').on('hide.bs.collapse', function () {
+		  $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
+		  $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
+		});
+		$('div.panel-collapse').on('show.bs.collapse', function () {
+		  $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
+		  $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
+		});
+		
+		// Add class and event handler to bootstrap tabs for formatting
+		$('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
+		$('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+			var el = e.target;
+			$(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
+				$(this).removeClass('basebg');
+			});
+			$(el).addClass('basebg');
+		});
+		
 	}
 	
 	function loadFacetSearch(fdata) {

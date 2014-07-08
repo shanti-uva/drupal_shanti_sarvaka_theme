@@ -24,10 +24,12 @@
          
        </form>-->
        <?php 
-        print $search_form['#children']; 
+        if(isset($search_form['#children'])) {
+          print $search_form['#children']; 
+        }
        ?>
   </section>  <!-- End Input Section -->
-  
+ <?php if(count($other_elements) > 0):  ?>
   <!-- Begin View Section -->
   <section class="view-section" style="display: block;">             
     <ul class="nav nav-tabs">
@@ -38,7 +40,9 @@
                       
       <!-- TAB - tree view -->
       <div class="treeview tab-pane active">
-        <?php foreach($other_elements as $el) {  print $el['#children']; } ?> 
+        <?php 
+          foreach($other_elements as $el) {  print $el['#children']; } 
+        ?> 
       </div>
       
       <div class="listview tab-pane">   
@@ -50,13 +54,15 @@
                     <th>Name</th>
                   </tr>
               </thead>
-              <tbody></tbody>
+              <tbody>
+                <!-- TODO: Need to create the list view as well -->
+              </tbody>
              </table>                                   
           </div>
         </div>
       </div>
     </div>
   </section> <!-- End View Section -->
-  
+ <?php endif; ?>
 </section>
 <!-- End of Search Tab -->

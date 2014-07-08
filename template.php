@@ -64,7 +64,13 @@ function shanti_sarvaka_preprocess_page(&$variables) {
         '</span><i class="icon shanticon-arrowselect"></i></a>' . $data['content'] . '</li>';
   }
   drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; }, ' .
-                 '.basecolor { color: ' . $variables['base_color'] . '!important; }', array(
+                 '.basecolor { color: ' . $variables['base_color'] . '!important; }, ' . 
+                 ' ul.ss-full-tabs>li.active>a:after {
+                    border-color: rgba(' . hex2rgb($variables['base_color']) . ', 0) !important;
+                    border-top-color: ' . $variables['base_color'] . ' !important;
+                    border-width: 20px !important;
+                    margin-left: -20px !important; /* These arrow styles dont work. why?*/
+                  }', array(
                       'type' => 'inline'
                     ));
 }
@@ -328,7 +334,6 @@ function shanti_sarvaka_carousel($variables) {
 }
 
 /** Fieldset Groups **/
-/*
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
   $title = (isset($element['#title'])) ? $element['#title'] : 'Fieldset w/o Title';
@@ -336,26 +341,26 @@ function shanti_sarvaka_fieldset($variables) {
   if(!isset($element['#title'])) {
     $title = 'No';
   }
-  if(!isset($element['#id'])) {
-    dpm($element, 'element without id');
-  }
-  //$id = (isset($element['#id'])) ? $element['#id'] : 
-  $out = '<div class="field-accordion panel-group" id="accordion' . $element['#id'] . '">
+  $openclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " in";
+  $icon = (isset($element['#collapsed']) && $element['#collapsed']) ? "+" : "-";
+  $iconclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " open";
+  $id = (isset($element['#id'])) ? $element['#id'] : uniqid('mb');
+  $out = '<div class="field-accordion panel-group" id="accordion' . $id . '">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <span class="glyphicon glyphicon-plus"></span>
-        <a data-toggle="collapse" data-parent="#accordion" href="#' . $element['#id'] . '">'
+        <span class="ss-fieldset-toggle' . $iconclass . '">' . $icon . '</span>
+        <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">'
            . $element['#title'] .
         '</a>
       </h4>
     </div>
-    <div id="' . $element['#id'] . '" class="panel-collapse collapse">
+    <div id="' . $id . '" class="panel-collapse collapse' . $openclass . '">
       <div class="panel-body">';
    $out .= $element['#children'];
    $out .= '</div></div></div></div>';
    return $out;
-}*/
+}
 
 /**
  * Theme buttons to use Bootstrap Markup
@@ -453,3 +458,22 @@ function shanti_sarvaka_facetapi_count($variables) {
   return '<span class="facet-count">' . (int) $variables['count'] . '</span>';
 }
 
+/** Miscellaneous functions **/
+
+function hex2rgb($hex) {
+  // From http://bavotasan.com/2011/convert-hex-color-to-rgb-using-php/
+   $hex = str_replace("#", "", $hex);
+
+   if(strlen($hex) == 3) {
+      $r = hexdec(substr($hex,0,1).substr($hex,0,1));
+      $g = hexdec(substr($hex,1,1).substr($hex,1,1));
+      $b = hexdec(substr($hex,2,1).substr($hex,2,1));
+   } else {
+      $r = hexdec(substr($hex,0,2));
+      $g = hexdec(substr($hex,2,2));
+      $b = hexdec(substr($hex,4,2));
+   }
+   $rgb = array($r, $g, $b);
+   return implode(",", $rgb); // returns the rgb values separated by commas
+   //return $rgb; // returns an array with the rgb values
+}
