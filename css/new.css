@@ -374,8 +374,8 @@ h5, .h5 {
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 div.field-accordion {
   min-height: 2em;
-	margin: 6px 0px;
-  padding-top: 9px;
+	margin: 0px 0px 6px;
+  padding: 6px 0px;
 	border-bottom: 1px solid #C0C0C0;
 	background-color: #EEE;
 }
