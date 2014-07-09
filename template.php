@@ -63,15 +63,26 @@ function shanti_sarvaka_preprocess_page(&$variables) {
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native . 
         '</span><i class="icon shanticon-arrowselect"></i></a>' . $data['content'] . '</li>';
   }
-  drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; }, ' .
-                 '.basecolor { color: ' . $variables['base_color'] . '!important; }, ' . 
+  
+  /**
+   * Add Custom CSS with Theme Setting for Site's Default/Base Color. These include:
+   * 
+   *        .basebg =  Set the background to theme's color
+   *        .basecolor = Set Font color to theme's color
+   *        ul.ss-full-tabs>li.active>a:after = Sets the color of the triangle under ss-full-tabs (bootstrap tabs)
+   *        i.thumbtype = Sets the color for the the thumbnail type icon in the upper right corner of gallery thumbnails
+   * 
+   */
+  drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; } ' .
+                 '.basecolor { color: ' . $variables['base_color'] . '!important; }  ' . 
                  ' ul.ss-full-tabs>li.active>a:after {
                     border-color: rgba(' . hex2rgb($variables['base_color']) . ', 0) !important;
                     border-top-color: ' . $variables['base_color'] . ' !important;
-                    border-width: 20px !important;
-                    margin-left: -20px !important; /* These arrow styles dont work. why?*/
-                  }', array(
-                      'type' => 'inline'
+                    border-width: 15px !important;
+                    margin-left: -15px !important; 
+                  }  i.thumbtype { background-color: rgba(' . hex2rgb($variables['base_color']) . ', 0.8) !important; }', array(
+                      'type' => 'inline',
+                      'preprocess' => FALSE,
                     ));
 }
 

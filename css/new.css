@@ -325,24 +325,18 @@ div.shanti-thumbnail-field.shanti-field-title a {
 }
 
 /* Thumbnail icons */
-div.shanti-thumbnail-image i.shanticon-video, div.shanti-thumbnail-image i.shanticon-video-2, div.shanti-thumbnail-image i.shanticon-audio {
+div.shanti-thumbnail-image i.thumbtype {
 	position: absolute;
 	top: 5px;
 	right: 5px;
-	background-color: #32ccca;
+	/*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
 	width: 25px;
 	height: 25px;
 	border: thin solid #aaa;
 	-webkit-border-radius: 3px;
 	color: white;
-	font-size: 18px;
-	padding-left: 3px;
-	padding-top: 2px;
-	opacity: 0.9;
-}
-
-.shanticon-video:before, .shanticon-audio:before  {
-	font-weight: bold;
+	padding-left: 2px;
+	padding-top: 3px;
 }
 
 /** Test
@@ -441,13 +435,14 @@ ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
 	pointer-events: none;
 }
 
+/*
 ul.ss-full-tabs li.active a:after {
 	border-color: rgba(50,204,202,0);
 	border-top-color: #32ccca;
 	border-width: 15px;
 	margin-left: -15px;
 }
-
+*/
 ul.ss-full-tabs>li>a:hover, ul.ss-full-tabs>li.active>a:hover {
 	border: none;
 }

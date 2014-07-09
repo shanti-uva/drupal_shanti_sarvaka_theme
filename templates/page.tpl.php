@@ -30,7 +30,7 @@
           <ul class="nav navbar-nav navbar-right">
             <?php if(module_exists('explore_menu')): ?>
               <li id="collexplink" class="explore closed"><a href="#"><?php print $variables['explore_menu_link']; ?> 
-                <i class="icon shanticon-explore"></i></a></li>
+                <i class="icon shanticon-directions"></i></a></li>
             <?php endif; ?>
             <?php  if(isset($variables['language_switcher'])) { print $variables['language_switcher']; }  ?>
             <!-- TODO: Need to hardcode user menu/options here as well -->

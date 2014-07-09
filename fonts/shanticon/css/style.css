@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'shanticon';
-	src:url('fonts/shanticon.eot?-k6fulx');
-	src:url('fonts/shanticon.eot?#iefix-k6fulx') format('embedded-opentype'),
-		url('fonts/shanticon.woff?-k6fulx') format('woff'),
-		url('fonts/shanticon.ttf?-k6fulx') format('truetype'),
-		url('fonts/shanticon.svg?-k6fulx#shanticon') format('svg');
+	src:url('../fonts/shanticon.eot?-k6fulx');
+	src:url('../fonts/shanticon.eot?#iefix-k6fulx') format('embedded-opentype'),
+		url('../fonts/shanticon.woff?-k6fulx') format('woff'),
+		url('../fonts/shanticon.ttf?-k6fulx') format('truetype'),
+		url('../fonts/shanticon.svg?-k6fulx#shanticon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
