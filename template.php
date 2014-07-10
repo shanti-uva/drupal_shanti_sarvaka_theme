@@ -347,10 +347,9 @@ function shanti_sarvaka_carousel($variables) {
 /** Fieldset Groups **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
-  $title = (isset($element['#title'])) ? $element['#title'] : 'Fieldset w/o Title';
-  $title = (isset($element['#id'])) ? $element['#title'] : 'Fieldset w/o Title';
+  $title = (isset($element['#title'])) ? $element['#title'] : t('Field Group');
   if(!isset($element['#title'])) {
-    $title = 'No';
+    return '<div class="panel panel-default"><div class="panel-body">' . $element['#children'] . '</div></div>';
   }
   $openclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " in";
   $icon = (isset($element['#collapsed']) && $element['#collapsed']) ? "+" : "-";
@@ -362,7 +361,7 @@ function shanti_sarvaka_fieldset($variables) {
       <h4 class="panel-title">
         <span class="ss-fieldset-toggle' . $iconclass . '">' . $icon . '</span>
         <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">'
-           . $element['#title'] .
+           . $title .
         '</a>
       </h4>
     </div>
@@ -409,8 +408,9 @@ function shanti_sarvaka_button($variables) {
 function shanti_sarvaka_select($variables) {
   $element = $variables['element'];
   $element['#attributes']['class'][] = 'form-control';
+  $element['#attributes']['class'][] = 'form-select';
+  $element['#attributes']['class'][] = 'ss-select';
   element_set_attributes($element, array('id', 'name', 'size'));
-  _form_set_class($element, array('form-select'));
 
   return '<select' . drupal_attributes($element['#attributes']) . '>' . form_select_options($element) . '</select>';
 }

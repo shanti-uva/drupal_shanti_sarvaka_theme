@@ -365,6 +365,65 @@ h5, .h5 {
 	letter-spacing: 0.03em;
 }
 
+/** Form Fields **/
+.form-control {
+	width: auto;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+
+.form-textarea-wrapper textarea {
+	/*width: auto;*/
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+select.form-control.ss-select {
+	width: auto;
+	margin-bottom: 8px;
+}
+
+button.btn-primary, button.btn-success, button.btn-info, button.btn-warning, button.btn-danger {
+	padding: 0px;
+	margin: 0px 3px;
+}
+
+button.btn-primary {
+	background-image: none;
+	background-color: #4850bd;
+}
+
+button.btn-primary:hover {
+	background-color: #5b68ce; /* #5a65d1;*/
+}
+
+button.btn-primary i.shanticon {
+	display: inline-block;
+	font-weight: normal;
+	padding: 6px 6px 6px 8px; 
+}
+
+button.btn-primary span {
+	display: inline-block;
+	padding: 6px 8px;
+	background-color: rgba(255, 255, 255, .1);
+}
+
+button#edit-delete:hover {
+	background-color: red;
+	border: thin solid red;
+}
+
+.form-text {
+	height: 28px;
+}
+
+textarea {
+	border: 1px solid #ccc;
+}
+
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 div.field-accordion {
   min-height: 2em;
@@ -451,59 +510,8 @@ ul.ss-full-tabs li.active a {
 	border: none;
 	color: white;
 }
-/* General Styles */
-
-div.inline { display: inline-block; }
-
-
-article.main-content p { text-align: justify; } /* Justify paragraphs */
-
-.back-to-top { z-index: 1000; } /* Back to top tab */
-
-div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
-
-table.pagerer { clear: both; } /** To get pagerer to appear under gallery of images */
+/** End of Tabs section **/
 	
-.input-section label.radio-inline:first-child { width: auto; } /* radio button styles */
-
-.search-group .radio-inline > div { margin-right:4px; }
-
-button.btn-primary {
-	background-image: none;
-	background-color: #4850bd;
-	padding: 0px;
-	margin: 0px 3px;
-}
-
-button.btn-primary:hover {
-	background-color: #5b68ce; /* #5a65d1;*/
-}
-
-button.btn-primary i.shanticon {
-	display: inline-block;
-	font-weight: normal;
-	padding: 6px 6px 6px 8px; 
-}
-
-button.btn-primary span {
-	display: inline-block;
-	padding: 6px 8px;
-	background-color: rgba(255, 255, 255, .1);
-}
-
-.form-text {
-	height: 28px;
-}
-
-html.js input.form-autocomplete {
-	background-position: 100% 8px;
-}
-
-#edit-masquerade-user-field {
-	width: 80%;
-	display: inline;
-}
-
 /** 
  * Carousel Styles 
  *		A Bootstrap Carousel implementation taken from http://codepen.io/redfrost/full/dbrgk 	
@@ -616,6 +624,34 @@ div.carousel  .caption p {
 	word-break: normal;
 }
 
+/** End of Carousel Styles **/
+
+/* General Styles */
+
+div.inline { display: inline-block; }
+
+article.main-content p { text-align: justify; } /* Justify paragraphs */
+
+a { color: #5b68ce; }
 
 
-/* End of Carousel Styles */
+/* Miscellaneous Styles */
+
+.back-to-top { z-index: 1000; } /* Back to top tab */
+
+div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
+
+table.pagerer { clear: both; } /** To get pagerer to appear under gallery of images */
+	
+.input-section label.radio-inline:first-child { width: auto; } /* radio button styles */
+
+.search-group .radio-inline > div { margin-right:4px; }
+
+#edit-masquerade-user-field {
+	width: 80%;
+	display: inline;
+}
+
+html.js input.form-autocomplete {
+	background-position: 100% 8px;
+}

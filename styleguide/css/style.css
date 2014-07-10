@@ -1,0 +1,165 @@
+
+/* -------------------------------------------------------------------------
+ Colors
+---------------------------------------------------------------------------- */
+.sg-color--a1 .sg-color-swatch {background: #da3e4a;}
+.sg-color--a2 .sg-color-swatch {background: #a37ffc;}
+
+.sg-color--b1 .sg-color-swatch {background: #ab4179;}
+.sg-color--b2 .sg-color-swatch {background: #84579d;}
+
+.sg-color--c1 .sg-color-swatch {background: #db6375;}
+.sg-color--c2 .sg-color-swatch {background: #31459e;}
+
+.sg-color--d1 .sg-color-swatch {background: #fb8d41;}
+.sg-color--d2 .sg-color-swatch {background: #51a8f8;}
+
+.sg-color--e1 .sg-color-swatch {background: #fdb443;}
+.sg-color--e2 .sg-color-swatch {background: #158ea6;}
+
+.sg-color--f1 .sg-color-swatch {background: #c4be27;}
+.sg-color--f2 .sg-color-swatch {background: #3cccca;}
+
+.sg-color--g1 .sg-color-swatch {background: #7eb822;}
+.sg-color--g2 .sg-color-swatch {background: #27bd65;}
+
+.sg-color--dark .sg-color-swatch {background: #39373f;}
+.sg-color--link .sg-color-swatch {background: #5b68ce;}
+
+.sg-color.main { 
+	width: 100%;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+	padding-bottom: 0px;
+}
+.sg-color--dark, .sg-color--link {
+	width: 40%;
+	margin-top: -5px;
+	border-top: 0px;
+	padding-top: 0px;
+}
+
+.sg-color--dark {
+	left:0px;
+}
+
+.sg-color--link {
+	margin-left: 17.2%;
+	margin-right: 0px;
+}
+
+table#palette {
+	width: 60%;
+}
+
+table#palette td { 
+	margin: auto 5px; padding: 3px; 
+}
+
+/* -------------------------------------------------------------------------
+ Fonts
+---------------------------------------------------------------------------- */
+.sg-font-primary {font-family: "Museo Sans", sans-serif;}
+
+.sg-font-secondary {font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+
+.shanticon {font-size: larger;}
+
+.shanticon.custom1 { font-size: 1.5em; color: #158ea6; }
+.shanticon.custom2 { font-size: 2em; color: #ab4179;}
+/* -------------------------------------------------------------------------
+ Alerts
+---------------------------------------------------------------------------- */
+/**
+ * Alert styles. Your patterns/styles will vary. 
+ * You should link your main stylesheet up with Style Guide Boilerplate for 
+ * best results. When you update your site's styles, your style guide will
+ * update as well.
+ */
+.alert {
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+  color: #c09853;
+}
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+
+
+
+/* -------------------------------------------------------------------------
+ Breadcrumbs
+---------------------------------------------------------------------------- */
+/**
+ * Breadcrumb styles for first pattern. Your patterns/styles will vary. 
+ * You should link your main stylesheet up with Style Guide Boilerplate for 
+ * best results. When you update your site's styles, your style guide will
+ * update as well.
+ */
+.breadcrumb {
+   background-color: #eee;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 8px 15px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  *display: inline;
+  text-shadow: 0 1px 0 #fff;
+  *zoom: 1;
+}
+
+.breadcrumb li a {
+  color: #007f96;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  color: #004068;
+}
+
+.breadcrumb li .divider {  
+  color: #aaa;
+  padding: 0 5px;
+}
+
+.breadcrumb .active {
+  color: #555;
+}
+
+span.question {
+	font-style: italic;
+	color: green;
+	padding: 3px;
+	display: inline-block;
+	border: thin solid red;
+}

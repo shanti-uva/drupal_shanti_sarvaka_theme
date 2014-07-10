@@ -245,6 +245,7 @@
 		    	//console.info(node.data);
 		    	$('i.icon.shanticon-cancel').remove(); // remove existing cancel icons
 		    	loadFacetSearch(node.data);
+		    	searchTabHeight();
 		    	return false;
 		    },
 		    clickFolderMode: 3, // 1:activate, 2:expand, 3:activate and expand, 4:activate (dblclick expands)
