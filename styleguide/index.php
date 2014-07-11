@@ -71,6 +71,8 @@
 <meta charset="utf-8">
   <title>Style Guide Boilerplate</title>
   <meta name="viewport" content="width=device-width">
+  <script type="text/javascript" src="http://mediabase.dev/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+  <script type="text/javascript" src="http://mediabase.dev/sites/all/themes/shanti_sarvaka/js/vendor/bootstrap.min.js?n8ic4w"></script>
   <link rel="shortcut icon" href="http://mediabase.dev/sites/all/themes/shanti_sarvaka/favicon.ico" type="image/vnd.microsoft.icon" />
   <!-- Style Guide Boilerplate Styles -->
   <link rel="stylesheet" href="css/sg-style.css">

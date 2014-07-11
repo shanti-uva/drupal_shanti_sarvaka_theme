@@ -371,6 +371,11 @@ h5, .h5 {
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
+	background-color: #ffffff;
+}
+
+input.form-control.form-text {
+	display: inline-block;
 }
 
 .form-textarea-wrapper textarea {
@@ -383,6 +388,12 @@ h5, .h5 {
 select.form-control.ss-select {
 	width: auto;
 	margin-bottom: 8px;
+}
+
+select.form-control.ss-select[multiple] {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 }
 
 button.btn-primary, button.btn-success, button.btn-info, button.btn-warning, button.btn-danger {
@@ -407,8 +418,9 @@ button.btn-primary i.shanticon {
 
 button.btn-primary span {
 	display: inline-block;
-	padding: 6px 8px;
+	padding: 1px 8px;
 	background-color: rgba(255, 255, 255, .1);
+	font-size: 90%;
 }
 
 button#edit-delete:hover {
@@ -418,6 +430,7 @@ button#edit-delete:hover {
 
 .form-text {
 	height: 28px;
+	background-color: #ffffff;
 }
 
 textarea {
@@ -433,8 +446,8 @@ div.field-accordion {
 	background-color: #EEE;
 }
 
-div.field-accordion * {
-	background-color: #EEE;
+div.field-accordion div.panel-body .form-text {
+	background-color: #ffffff;
 }
 
 div.field-accordion div.panel-heading {
@@ -564,7 +577,6 @@ div.carouseldiv .container-fluid {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-
 /*  Carousel Header */
 div.carouseldiv .header {
 	margin-top: 30px;
@@ -632,8 +644,9 @@ div.inline { display: inline-block; }
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
 
-a { color: #5b68ce; }
+body a, body a:visited, body a:active { color: #5b68ce; }
 
+body a:hover { color: #000F81; }
 
 /* Miscellaneous Styles */
 

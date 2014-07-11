@@ -1,19 +1,56 @@
 <form>
-  <fieldset>
-    <legend>Fieldset with legend</legend>
-    <p><label>Text Input</label> <input type="text"></p>
-    <p><input type="submit" value="Submit"></p>
-  </fieldset>
-
-  <fieldset>
-    <p>Fieldset without legend</p>
-    <p><label>Text Input</label> <input type="text"></p>
-    <p><input type="submit" value="Submit"></p>
-  </fieldset>
-
-  <fieldset>
-    <legend>Fieldset with a very, very, very, very, very, long legend that can test the display of word wrapping to see how it looks.</legend>
-    <p><label>Text Input</label> <input type="text"></p>
-    <p><input type="submit" value="Submit"></p>
-  </fieldset>
+	<div class="field-accordion panel-group">
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <span class="ss-fieldset-toggle">+</span>
+	        <a data-toggle="collapse" data-parent="#accordion" href="#bs-collapsible-div-content">Fieldset with legend</a>
+	      </h4>
+	    </div>
+	    <div id="bs-collapsible-div-content" class="panel-collapse collapse">
+	     <div class="panel-body">
+	    	<div><label>Text input</label> <input type="text" class="form-control form-text" />
+	     	<button type="submit" id="edit-submit--00" name="op" class="btn btn-primary form-submit">
+		  		<i class="shanticon shanticon-texts"></i> 
+		  		<span>Button</span>
+		  	</button>
+		  	</div>
+	     </div>
+	   </div>
+	 </div>
+	</div>
+      
+  <div class="field-accordion panel-group">
+	  <div class="panel panel-default">
+	     <div class="panel-body">
+		     	<p>Fieldset without legend</p>
+		    	<div><label>Text input</label> <input type="text" class="form-control form-text" />
+		     	<button type="submit" id="edit-submit--00" name="op" class="btn btn-primary form-submit">
+			  		<i class="shanticon shanticon-texts"></i> 
+			  		<span>Button</span>
+			  	</button></div>
+	     </div>
+	   </div>
+	 </div>
+	 
+	<div class="field-accordion panel-group">
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <span class="ss-fieldset-toggle">+</span>
+	        <a data-toggle="collapse" data-parent="#accordion" href="#bs-collapsible-div-content2">Fieldset with a very, very, very, very, very, long legend that can test the display of word wrapping to see how it looks.</a>
+	      </h4>
+	    </div>
+	    <div id="bs-collapsible-div-content2" class="panel-collapse collapse">
+	     <div class="panel-body">
+	    	<div><label>Text input</label> <input type="text" class="form-control form-text" />
+	     	<button type="submit" id="edit-submit--00" name="op" class="btn btn-primary form-submit">
+		  		<i class="shanticon shanticon-texts"></i> 
+		  		<span>Button</span>
+		  	</button>
+	     </div></div>
+	   </div>
+	 </div>
+	</div>
+  
 </form>

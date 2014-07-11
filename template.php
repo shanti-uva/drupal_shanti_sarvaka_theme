@@ -344,32 +344,52 @@ function shanti_sarvaka_carousel($variables) {
   return $html;
 }
 
-/** Fieldset Groups **/
+/** 
+ * Fieldset Groups: Markup collapsible fieldsets according to Bootstrap 
+ *     non-collapsible fieldsets get formatted per core 
+ **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
-  $title = (isset($element['#title'])) ? $element['#title'] : t('Field Group');
-  if(!isset($element['#title'])) {
-    return '<div class="panel panel-default"><div class="panel-body">' . $element['#children'] . '</div></div>';
+ /* if(strpos($element['#title'], 'Access') > -1)  {
+    dpm($element);
+  }*/
+  // If not collapsible or no title for heading then just format as normal field set
+  if( empty($element['#collapsible']) || empty($element['#title']) ) {
+    return theme_fieldset($variables);
   }
+  
+  // Set icon and status classes 
   $openclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " in";
   $icon = (isset($element['#collapsed']) && $element['#collapsed']) ? "+" : "-";
   $iconclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " open";
+  
+  // Set attribute values
   $id = (isset($element['#id'])) ? $element['#id'] : uniqid('mb');
-  $out = '<div class="field-accordion panel-group" id="accordion' . $id . '">
+  if(!isset($element['#attributes']['class']) || !is_array($element['#attributes']['class'])) {
+    $element['#attributes']['class'] = array();
+  }
+  $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group'));
+  $element['#attributes']['id'] = 'accordion' . $id;
+  
+  // Create markup
+  $output = '<div ' . drupal_attributes($element['#attributes']) . '> 
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <span class="ss-fieldset-toggle' . $iconclass . '">' . $icon . '</span>
         <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">'
-           . $title .
+           . $element['#title'] .
         '</a>
       </h4>
     </div>
     <div id="' . $id . '" class="panel-collapse collapse' . $openclass . '">
       <div class="panel-body">';
-   $out .= $element['#children'];
-   $out .= '</div></div></div></div>';
-   return $out;
+   $output .= $element['#children'];
+    if (isset($element['#value'])) {
+      $output .= $element['#value'];
+    }
+   $output .= '</div></div></div></div>';
+   return $output;
 }
 
 /**

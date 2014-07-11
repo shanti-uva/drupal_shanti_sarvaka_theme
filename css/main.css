@@ -547,7 +547,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .panel-default .panel-heading{
 	background-image:none;
-	background:#f2f2f2;
+	background:#eeeeee;
   margin:0;
   padding:0;
 }
@@ -562,7 +562,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .panel-group,
 .panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:transparent; border:none;}
+.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:#eeeeee; border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
 .panel-group{
   border:none;
