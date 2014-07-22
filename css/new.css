@@ -74,7 +74,7 @@ div.highlight:last-child {
 
 /* Color Strip Banner */
 header.banner {
-	z-index: 500; /* so Drop down menus are above main page content but banner is under admin menu*/
+	/* z-index: 500; so Drop down menus are above main page content but banner is under admin menu*/
 }
 
 div.banner-content {
@@ -95,8 +95,19 @@ div.banner-content button.btn-default {
 	padding: 10px 20px;
 }
 
+/* Drupal Edit Tabs */
+article.main-content header ul.primary {
+	float: right;
+	margin-top: -18px;
+	margin-right: 40px;
+}
+
 /* Breadcrumbs */
-nav.breadcrumbs-wrapper ol.breadcrumb {
+nav.breadwrap {
+	width: 75%;
+}
+
+nav.breadwrap ol.breadcrumb {
 	background: inherit;
 	font-size: 0.88em;
 	line-height: 21px;

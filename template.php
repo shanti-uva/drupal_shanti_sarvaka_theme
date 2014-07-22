@@ -50,15 +50,25 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
     $variables['bsclass_main'] = 'col-sm-9'; 
   }
-  // Preload and render the language switcher to include in header (in page template)
-  $data = module_invoke('locale', 'block_view', 'language');
-  $block = block_load('locale', 'language');
-  shanti_sarvaka_block_view_locale_language_alter($data, $block);
+  // Set Loginout_link
+  $variables['loginout_link'] = l(t('Logout'), 'user/logout');
+  if(!$variables['logged_in']) {
+    if(module_exists('shib_auth')) {
+      $variables['loginout_link'] = l(t('Login'), shib_auth_generate_login_url());
+    } else {
+      $variables['loginout_link'] = l(t('Login'), 'user');
+    }
+  }
+  // If explore menu module installed set variables for its markup
   if(module_exists('explore_menu')) {
     $variables['explore_menu_link'] = variable_get('explore_link_text', EXPLORE_LINK_TEXT);
     $variables['explore_menu'] = menu_tree('shanti-explore-menu');
   }
+  // Preload and render the language switcher to include in header (in page template)
   if(module_exists('locale')) {
+    $data = module_invoke('locale', 'block_view', 'language');
+    $block = block_load('locale', 'language');
+    shanti_sarvaka_block_view_locale_language_alter($data, $block);
     $variables['language_switcher'] = '<li class="dropdown lang highlight" id="block-locale-language">  
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native . 
         '</span><i class="icon shanticon-arrowselect"></i></a>' . $data['content'] . '</li>';
@@ -425,6 +435,17 @@ function shanti_sarvaka_button($variables) {
   return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . '<span>' . $text . '</span></button>';
 }
 
+function shanti_sarvaka_password($variables) {
+  //dpm($variables, 'vars in password');
+  $element = $variables['element'];
+  $element['#attributes']['type'] = 'password';
+  $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
+  element_set_attributes($element, array('id', 'name', 'size', 'maxlength'));
+  _form_set_class($element, array('form-control'));
+
+  return '<input' . drupal_attributes($element['#attributes']) . ' />';
+}
+
 function shanti_sarvaka_select($variables) {
   $element = $variables['element'];
   $element['#attributes']['class'][] = 'form-control';
@@ -438,9 +459,9 @@ function shanti_sarvaka_select($variables) {
 function shanti_sarvaka_textfield($variables) {
   $element = $variables['element'];
   $element['#attributes']['type'] = 'text';
-  $element['#attributes']['class'][] = 'form-control';
+  $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
   element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
-  _form_set_class($element, array('form-text'));
+  _form_set_class($element, array('form-control', 'form-text'));
 
   $extra = '';
   if ($element['#autocomplete_path'] && drupal_valid_path($element['#autocomplete_path'])) {

@@ -49,7 +49,7 @@
 	// Initialization of UI components on page on load
 	jQuery(function($) {
 	  createTopLink();
-	  arrangeMenuDivs();
+	  menuInit();
 	  //iCheckInit();
 	  langButtonsInit();
 		mbExtruderInit();
@@ -79,12 +79,52 @@
 	  });
 	}
 	
-	// Rearrange the button divs so that they are in the order blocks are added with a float-right css
-	function arrangeMenuDivs() {
+	// Initialize the top bar menus
+	function menuInit() {
+		// Rearrange the button divs so that they are in the order blocks are added with a float-right css
 		var buttons = $('div.menu-buttons ul.navbar-right').detach();
 		buttons.each(function() {
 			$('div.menu-buttons').prepend($(this));
 		});
+		// Initialize the multilevel menus
+		$( '#menu' ).multilevelpushmenu({
+	    menuWidth: 250,
+	    menuHeight: '32em', // this height is determined by tallest menu, Preferences
+	    mode: 'cover',
+	    direction: 'rtl',
+	    backItemIcon: 'fa fa-angle-left',
+	    groupIcon: 'fa fa-angle-right',
+	    collapsed: false,
+	    preventItemClick: false
+	  });
+	  
+	  // --- align the text
+	  $('#menu ul>li, #menu h2').css('text-align','left');
+	  $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
+	
+	
+	  // --- close the menu on outside click except button
+	  $('.menu-toggle').click( function(event){
+	      event.stopPropagation();
+	      $('#menu').toggle(50);
+	      $('.menu-toggle').toggleClass('show-topmenu');
+	      $('.collections').slideUp(200);
+	      $('.menu-exploretoggle').removeClass('show-topmenu');
+	   });
+	
+		// --- close the menu on outside click except button
+	  $('.menu-exploretoggle').click( function(event){
+	      event.stopPropagation();
+	      $('.collections').slideUp();
+	  });
+	    
+	  $(document).click( function(){
+	      $('.menu-toggle').removeClass('show-topmenu');
+	      $('#menu').hide(100);
+	      // $('.collections').slideUp(200);
+	      // $(".collections").css('display','none');
+	  });  
+	        
 	}
 	
 	// Initialize iCheck form graphics

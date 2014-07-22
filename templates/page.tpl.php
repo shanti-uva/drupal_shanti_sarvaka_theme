@@ -1,16 +1,16 @@
 <div class="wrap-all">
-   <a href=".main-content" class="sr-only">
-    Skip to main content</a>
+   <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#kmaps-search">Skip to search</a></span>
     <!-- Header Region -->
    <header class="header-banner">
     <div class="navbar navbar-default navbar-static-top" role="navigation"> 
-      <!-- Need Mark to implement this for mobile devices (????)
+     
       <nav class="menu-buttons">
-        <!-- <span class="kmaps-searchtoggle menu-icon"><a href="#"><i class="icon km-search-kmaps"></i></a></span><!-- mobile < 400 : search -->
-        <!-- <span class="menu-toggle menu-icon"><a href="#"><i class="icon km-menu"></i></a></span><!-- desktop > 768 drilldown menu : main-menu -->
-        <!-- <span class="menu-maintoggle menu-icon"><a href="#"><i class="icon km-menu"></i></a></span><!-- mobile < 768 : main-menu -->
-        <!-- <span class="menu-exploretoggle menu-explore"><a href="#"><span>Explore </span>Collections<i class="icon km-directions"></i></a></span><!-- mobile < 768 : collections -->
-      <!-- </nav>-->
+        <span class="shanti-searchtoggle menu-icon"><a href="#"><i class='icon shanticon-search'></i></a></span><!-- mobile < 400 : search -->
+        <span class="menu-toggle menu-icon"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- desktop > 768 drilldown menu : main-menu -->
+        <span class="menu-maintoggle menu-icon"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- mobile < 768 : main-menu -->
+        <span class="menu-exploretoggle menu-explore"><a href="#"><span>Explore </span>Collections<i class="icon shanticon-directions"></i></a></span><!-- mobile < 768 : collections -->
+      </nav>
+
       <nav class="navbar-header">
         <h1 class="navbar-title<?php if(!$variables['shanti_site']) { print " default"; } ?>">
           <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<? print $site_name; ?> Homepage">
@@ -24,7 +24,7 @@
         </h1>
       </nav>  
       <!-- HEADER REGION -->
-      <nav id="header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
+      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
          <form class="form">
          <fieldset>         
           <ul class="nav navbar-nav navbar-right">
@@ -54,7 +54,7 @@
            <div role="banner">
             <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php 
               print ($title == '')? $variables['default_title']:$title; ?></span></h1>
-              <nav class="breadcrumbs-wrapper" role="navigation">
+              <nav class="breadwrap" role="navigation">
                 <?php print shanti_sarvaka_get_breadcrumbs($variables); ?>
               </nav>
               <div class="banner-content">
@@ -79,7 +79,7 @@
           <?php endif; ?>
           
           <!-- Begin Page Content -->
-          <section class="content-section <?php print $bsclass_main; ?>"> <!-- had col-sm-9 (ndg, 2014-06-06) -->
+          <section class="content-section <?php print $bsclass_main; ?>"> 
             <div class="tab-content">
               <article class="tab-pane main-col active" id="tab-overview">
                  <?php print render($page['content']); ?>
@@ -98,13 +98,108 @@
         <a href="#" class="back-to-top" style="display: inline;"><i class="icon"></i>Top</a>
       </article>
     </main> <!-- End Main Content -->
-    <!-- Search Flyout -->
-    <?php 
-      if($page['search_flyout']) {
-        print render($page['search_flyout']);
-      }
-    ?>
     
+  <!-- Search Flyout -->
+  <?php 
+    if($page['search_flyout']) {
+      print render($page['search_flyout']);
+    }
+  ?>
+    
+  <!-- LOAD menus -->
+  <section id="menu-main" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">   </section>  
+  <section id="menu-collections" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">    </section>
+   
+  <section id="menu" role="navigation" style="display:none;">
+    <nav id="menu-drill">                
+     <ul>
+       <li><h3><em>Main Menu</em></h3> 
+          <a class="link-blocker"></a>
+       </li>
+       <li class="myaccount">
+         <?php if(!$logged_in): 
+            print $variables['loginout_link']; 
+          else: ?>
+            <a href="#">My Account</a>
+            <h2>My Account</h2>       
+            <ul>
+              <li>
+                  <a href="<?php print url('user'); ?>">Account Details</a>              
+                  <!--<h2>Account Details</h2>               
+                     <ul class="myaccount-details">
+                      <li><a href="#">Account Settings</a></li>  
+                      <li><a href="#">Profile</a></li>   
+                      <li><a href="#">Related Link</a></li>
+                      <li><a href="#">Another Link</a></li>
+                    </ul>          --> 
+                </li>
+                <li><a href="#">Community Networks</a></li>
+                <li><?php print $variables['loginout_link']; ?></li>  
+            </ul>
+        <?php endif; ?>
+       </li>                  
+       <li>
+          <a href="#">Preferences</a>
+          <h2>Preferences</h2>
+          <ul>          
+            <!-- header -->              
+            <li class="drop-hdr"><em>Perspective</em></li>
+              <li class="form-group"><label class="radio-inline" for="option1a">
+                <input type="radio" name="option1" id="option1a" value="option1a" checked>General</label>
+              </li>
+              <li class="form-group"><label class="radio-inline" for="option1b">
+                <input type="radio" name="option1" id="option1b" value="option1b">Tibetan</label>
+              </li>
+              <li class="form-group last"></li>
+            
+            <!-- header -->
+            <li class="drop-hdr"><em>Subject Language</em></li>
+              <li class="form-group"><label class="radio-inline" for="option2a">
+                  <input type="radio" name="option2" id="option2a" value="undefined" checked>English</label>
+              </li>
+              <li class="form-group"><label class="radio-inline" for="option2b">
+                  <input type="radio" name="option2" id="option2b" value="simp.chi">Chinese Characters (simplified)</label>
+              </li>
+              <?php //if(!$subject): ?>
+              <li class="form-group"><label class="radio-inline" for="option2c">
+                  <input type="radio" name="option2" id="option2c" value="trad.chi">Chinese Characters (traditional)</label>
+              </li>
+              <?php //endif ?>
+              <li class="form-group"><label class="radio-inline" for="option2d">
+                  <input type="radio" name="option2" id="option2d" value="deva">Devangiri Script</label>
+              </li>
+              <li class="form-group"><label class="radio-inline" for="option2e">
+                  <input type="radio" name="option2" id="option2e" value="roman.popular">Popular Standard (romanization)</label>
+              </li>
+              <li class="form-group"><label class="radio-inline" for="option2f">
+                  <input type="radio" name="option2" id="option2f" value="roman.scholar">Scholarly Standard (romanization)</label>
+              </li>
+              <li class="form-group"><label class="radio-inline" for="option2g">
+                  <input type="radio" name="option2" id="option2g" value="pri.tib.sec.chi">Tibetan Script (simplified)</label>
+              </li>
+              <li class="form-group"><label class="radio-inline" for="option2h">
+                  <input type="radio" name="option2" id="option2h" value="pri.tib.sec.roman">Tibetan Script (romanization)</label>
+              </li>
+              <li class="form-group last"></li>
+            
+            <!-- header -->
+            <li class="drop-hdr"><em>Show Subject Details</em></li>                     
+              <li class="form-group"><label class="radio-inline" for="option3a">
+                <input type="radio" name="option3" id="option3a" value="option3a" checked>Yes</label>
+              </li>
+              <li class="form-group"><label class="radio-inline" for="option3b">
+                <input type="radio" name="option3" id="option3b" value="option3b">No</label>
+              </li>
+              <li class="form-group last"></li>
+          </ul>                         
+        </li>   
+         
+        <li><a href="#">Help</a></li>
+        
+        <li><a href="#">Contact Us</a></li>
+     </ul>    
+    </nav>
+  </section><!-- END menu -->
 </div> <!-- End of class="wrap" -->
 
 <!-- Footer -->
