@@ -27,12 +27,6 @@ h1.navbar-title.default .site-title, h1.navbar-title.default .site-slogan {
 	top: 3px;
 }
 
-.menu-buttons .menu-icon a {
-	white-space: nowrap;
-	width: auto;
-	padding: 14px 16px 0px;
-}
-
 .menu-buttons .menu-icon a span {
 	font-weight: 600;
 	text-transform: uppercase;
@@ -654,10 +648,10 @@ div.carousel  .caption p {
 div.inline { display: inline-block; }
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
-
+/*
 body a, body a:visited, body a:active { color: #5b68ce; }
 
-body a:hover { color: #000F81; }
+body a:hover { color: #000F81; }*/
 
 /* Miscellaneous Styles */
 

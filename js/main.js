@@ -50,8 +50,8 @@
 	jQuery(function($) {
 	  createTopLink();
 	  menuInit();
-	  //iCheckInit();
-	  langButtonsInit();
+	  responsiveMenusInit();
+	  iCheckInit();
 		mbExtruderInit();
 		searchInit();
 		//setSearchTabHeight();
@@ -86,7 +86,7 @@
 		buttons.each(function() {
 			$('div.menu-buttons').prepend($(this));
 		});
-		// Initialize the multilevel menus
+		// Initialize the multilevel main menu
 		$( '#menu' ).multilevelpushmenu({
 	    menuWidth: 250,
 	    menuHeight: '32em', // this height is determined by tallest menu, Preferences
@@ -125,34 +125,7 @@
 	      // $(".collections").css('display','none');
 	  });  
 	        
-	}
-	
-	// Initialize iCheck form graphics
-	function iCheckInit() {
-		
-	  $("input[type='checkbox'], input[type='radio']").each(function () {
-	      var self = $(this),
-	          label = self.next(),
-	          label_text = label.text();
-	
-	      label.remove();
-	      self.iCheck({
-	          checkboxClass: "icheckbox_minimal-red",
-	          radioClass: "iradio_minimal-red",
-	          insert: "<div class='icheck_line-icon'></div>" + label_text
-	      });
-	  });
-	
-	  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select (What's this for? NDG @014-06-10)
-	  
-	  /*$('input').on('ifChecked', function(event){
-		  console.log(event.type + ' callback');
-		});*/
-	
-	}
-	
-	/* Initialize Language Buttons */
-	function langButtonsInit() {
+	  /* Initialize Language Buttons */
 	  // Language Chooser Functionality with ICheck
 	  $('input.optionlang').on('ifChecked', function() {
 	  	var newLang = $(this).val().replace('lang:','');
@@ -168,6 +141,141 @@
 	  	window.location.pathname = newUrl;
 	  });
 	}
+	
+	// Initialize the responsive menus with mbExtruder
+	function responsiveMenusInit() {
+			
+	  $("#menu-main").buildMbExtruder({
+	      positionFixed: false,
+	      position: "right",
+	      width: 280,      
+	      hidePanelsOnClose:false,
+	      accordionPanels:false,
+	      onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false });  },
+	      onExtContentLoad:function(){ 
+	      
+	      	$("input[type='radio']").each(function () {
+						var self = $(this),
+	          label = self.next(),
+	          label_text = label.text();
+						label.remove();
+						self.iCheck({
+		          // checkboxClass: "icheckbox_minimal-red",
+		          radioClass: "iradio_minimal-red",
+		          insert: "<div class='icheck_line-icon'></div>" + label_text
+						});
+					});
+	      	
+	      },
+	      onExtClose:function(){},
+	      top: 0
+	  }); 
+	  $("#menu-collections").buildMbExtruder({
+	      positionFixed: false,
+	      position: "right",
+	      width:280, // width is set in two places, here and the css
+	      hidePanelsOnClose:false,
+	      accordionPanels:false,
+	      onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false }); },
+	      onExtContentLoad:function(){  },
+	      onExtClose:function(){},
+	      top: 0
+	  });	
+		// this is for the responsive button
+	  $(".shanti-searchtoggle").click(function () {   
+	      if($("#kmaps-search.extruder").hasClass("isOpened")){   
+	        $("#kmaps-search").closeMbExtruder();
+	        $(".shanti-searchtoggle").removeClass("show-topmenu");        
+	      } else {      
+	        $("#menu-main").closeMbExtruder();
+	        $("#menu-collections").closeMbExtruder();
+	        $("#kmaps-search").openMbExtruder();
+	        $(".shanti-searchtoggle").addClass("show-topmenu");
+	        $(".menu-maintoggle,.menu-exploretoggle").removeClass("show-topmenu");
+	        // $("#menu-main").load("./menus-ajax.html");        
+	        // $(".menu-collections-wrap .accordion-toggle").addClass("collapsed");
+	        // $(".menu-collections-wrap .panel-collapse").removeClass("in").css('height','0');
+	        return false;
+	      }
+	  });   
+	  $('body').on('click','.menu-maintoggle',function(){   
+	      if($("#menu-main.extruder").hasClass("isOpened")){    
+	        $("#menu-main").closeMbExtruder();
+	        $(".menu-maintoggle").removeClass("show-topmenu");     
+	      } else {     
+	        $("#menu-main").openMbExtruder();
+	        $("#kmaps-search").closeMbExtruder();
+	        $("#menu-collections").closeMbExtruder();
+	        $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
+	        
+	        $(".menu-commons").addClass("active");
+	        
+	        $(".menu-collections").removeClass("active");
+	        $(".menu-collections > ul").removeClass("in");
+	        
+	        // $("#menu-main").load("/menus-ajax.html #menu-accordion");
+	        $(".menu-maintoggle").addClass("show-topmenu");
+	        $(".menu-exploretoggle, .shanti-searchtoggle").removeClass("show-topmenu");
+	        return false;
+	      }
+	  });
+	  $(".menu-exploretoggle").click(function () {   
+	      if($("#menu-collections.extruder").hasClass("isOpened")){   
+	        
+	        $("#menu-collections").closeMbExtruder();
+	        $(".menu-exploretoggle").removeClass("show-topmenu");
+	        // $(".bottom-trim").remove();                
+	      } else {        
+	        $(".menu-commons, .menu-preferences").css('display','none');
+	        $(".menu-collections").css('display','block');
+	        
+	        $(".menu-collections").addClass("active");
+	        $(".menu-collections > ul").addClass("in");
+	        
+	        $("#menu-collections").openMbExtruder();
+	        $("#menu-main").closeMbExtruder();        
+	        $("#kmaps-search").closeMbExtruder();
+	        
+	        $(".menu-exploretoggle").addClass("show-topmenu");  
+	        $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");    
+	        
+	        // $(".menu-collections").find("ul").append("<li class='bottom-trim'></li>");  
+	        return false;
+	      }
+	  });   
+	   
+		// --- ajax call for collections list
+		$( "#kmaps-collections").load( "/sites/all/themes/shanti_theme/js/menus/menu-ajax.php .menu-collections > ul");  	
+	  $('body').on('click','.explore>a, .collections button',function(){
+	       $(".opencollect").slideToggle(200);      
+	  });
+	    
+	}
+	// Initialize iCheck form graphics
+	function iCheckInit() {
+		
+	  $("input[type='checkbox'], input[type='radio']").each(function () {
+	      var self = $(this),
+	          label = self.next(),
+	          label_text = label.text();
+	
+	      label.remove();
+	      self.iCheck({
+	          checkboxClass: "icheckbox_minimal-red",
+	          radioClass: "iradio_minimal-red",
+	          insert: "<div class='icheck_line-icon'></div>" + label_text
+	      });
+	  });
+		 
+	  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select (What's this for? NDG @014-06-10)
+	  
+	  /*$('input').on('ifChecked', function(event){
+		  console.log(event.type + ' callback');
+		});*/
+	
+	}
+	
+	
 	
 	/* Initialize Extruder search fly-out */
 	function mbExtruderInit() {
@@ -200,7 +308,7 @@
 	      top: 0
 	  });
 	  
-	  $("#gen-search").css({'top':'50px', 'z-index': 600 }); // custom adjustment for mbase (?) Using top parameter above lowers only the tab not the whole search div
+	  $("#gen-search").css({'top':'50px'}); // custom adjustment for mbase (?) Using top parameter above lowers only the tab not the whole search div
 	  
 	  // Make it resizeable
 	  $("div.extruder-content > div.text").resizable({ handles: "w",
