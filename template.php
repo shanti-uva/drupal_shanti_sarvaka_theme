@@ -439,7 +439,9 @@ function shanti_sarvaka_password($variables) {
   //dpm($variables, 'vars in password');
   $element = $variables['element'];
   $element['#attributes']['type'] = 'password';
-  $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
+  if(!empty($element['#title'])) {
+    $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
+  }
   element_set_attributes($element, array('id', 'name', 'size', 'maxlength'));
   _form_set_class($element, array('form-control'));
 
@@ -459,7 +461,9 @@ function shanti_sarvaka_select($variables) {
 function shanti_sarvaka_textfield($variables) {
   $element = $variables['element'];
   $element['#attributes']['type'] = 'text';
-  $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
+  if(!empty($element['#title'])) {
+    $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
+  }
   element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
   _form_set_class($element, array('form-control', 'form-text'));
 
