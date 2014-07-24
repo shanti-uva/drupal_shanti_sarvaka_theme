@@ -70,7 +70,7 @@
         
         <div class="row">
           <!-- Message Area -->
-          <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
+          <?php if (isset($messages)) { ?><section class="messages clearfix"><?php print $messages; ?></section> <?php } ?>
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
             <div id="sidebar-first" class="region sidebar pull-left <?php print $bsclass_sb1; ?>">
@@ -95,7 +95,7 @@
             </div>
           <?php endif; ?>
         </div>
-        <a href="#" class="back-to-top" style="display: inline;"><i class="icon"></i>Top</a>
+        <a href="#" class="back-to-top"><i class="icon"></i></a>
       </article>
     </main> <!-- End Main Content -->
     
@@ -200,7 +200,7 @@
      </ul>    
     </nav>
   </section><!-- END menu -->
-</div> <!-- End of class="wrap" -->
+</div> <!-- End wrap-all -->
 
 <!-- Footer -->
 <footer class="footer">

@@ -318,11 +318,11 @@ function shanti_sarvaka_carousel($variables) {
   $el = $variables['element'];
   $html = '<div class="container-fluid carouseldiv">
       <div class="row">
-        <div class="col-md-11">
+        <div class="col-md-12">
       
-          <div class="header row">
-              <p class="title col-md-9">' . $el['title'] . '</p>
-              <p class="link">' . $el['link'] . '</p>
+          <div class="header">
+              <p><span class="title">' . $el['title'] . '</span>
+              <span class="link show-more pull-right">' . $el['link'] . '</span></p>
           </div>
               
           <div class="carousel slide row" id="collection-carousel">
@@ -335,7 +335,7 @@ function shanti_sarvaka_carousel($variables) {
           <div class="title"><h3><a href="' . $slide['path'] . '"><i class="shanticon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>   
           <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>               
           <div class="description">' . $slide['summary'] . '</div>
-          <div class="link"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' <i class="glyphicon glyphicon-plus"></i></a></div>
+          <div class="link show-more"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' </a></div>
         </div>                 
         <div class="bannerImage col-md-5">
             <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>
@@ -344,8 +344,8 @@ function shanti_sarvaka_carousel($variables) {
   }
   $html .= '</div>
               <div class="control-box">                            
-                  <a data-slide="prev" href="#collection-carousel" class="carousel-control left basebg">‹</a>
-                  <a data-slide="next" href="#collection-carousel" class="carousel-control right basebg">›</a>
+                  <a data-slide="prev" href="#collection-carousel" class="carousel-control left basebg"><i class="icon"></i></a>
+                  <a data-slide="next" href="#collection-carousel" class="carousel-control right basebg"><i class="icon"></i></a>
               </div><!-- /.control-box -->   
             </div><!-- /#collection-carousel -->
         </div><!-- /.span12 -->          
