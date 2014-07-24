@@ -607,46 +607,52 @@ div.carousel a.carousel-control i {
 div.carousel a.carousel-control.left {
 	margin-left: -1.18em;
 }
-
-div.carousel a.carousel-control.right {
-	margin-right: -8px;
+div.carousel a.carousel-control.left i:before {
+	content:'\f04a'; /* fa-play */
 }
+div.carousel a.carousel-control.right {
+	margin-right: -1.18em;
+}
+div.carousel a.carousel-control.right i:before {
+	content:'\f04e'; /* fa-play */
+}
+
+
 
 /* Carousel Container */
 div.carouseldiv .container-fluid {
    /* margin: 40px auto 10px;
     padding: 20px 0px;*/
-    max-width: 960px;
+    max-width: 60em;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /*  Carousel Header */
 div.carouseldiv .header {
-	margin-top: 30px;
+	margin-top: 1em;
 }
+div.carouseldiv .header p{ margin-bottom:.38em;}
 
 div.carouseldiv .header .title {
-	font-style: italic;
-	font-size: larger;
+	font-style:italic;
+	font-weight:bold;
+	font-size:120%;
 }
 
-div.carouseldiv .header .title a {
-	color: inherit;
+div.carouseldiv .header .link.show-more {
+	margin-bottom: 0;
+	position:relative;
+	top:0.5em;
 }
 
-div.carouseldiv .header .link {
-	text-transform: uppercase;
-	font-size:smaller;
-	
-}
 
 div.carousel {
-	padding: 16px;
+	padding:25px 35px; 
 	background-color: #fff;
 }
 
 div.carousel div.carousel-inner {
-	padding-top: 6px;
+	padding-top: 0;
 }
 
 div.carouseldiv .caption .span4, div.carouseldiv .caption .span8 {
@@ -681,9 +687,23 @@ div.carousel  .caption p {
 
 /** End of Carousel Styles **/
 
-/* General Styles */
 
-div.inline { display: inline-block; }
+
+
+
+
+table.pagerer { 
+	clear: both;
+	color:#555;
+	text-align:right;
+  margin: 0.75em 2em 0.75em 0;
+  font-size:80%;
+  font-family:"Museo-Sans", sans-serif;	
+  text-transform:uppercase;
+	font-weight:700;
+	width:100%;
+	float:right;
+}
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
 /*
@@ -693,9 +713,25 @@ body a:hover { color: #000F81; }*/
 
 /* Miscellaneous Styles */
 
-.back-to-top { z-index: 1000; } /* Back to top tab */
+input.pagerer-page{
+	border:none;	
+	font-size:100%;
+	color: #5a65d1;
+}
 
-div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
+ul.pager{
+	margin:0;
+	display:inline;
+	text-align: right;
+	float:right;
+}
+.pager li>a{
+	padding:0.06em 0.5em;
+	border-radius:0;
+	margin:0;
+	background:transparent;
+	border:none;
+}
 
 table.pagerer { clear: both; } /** To get pagerer to appear under gallery of images */
 	
@@ -711,3 +747,23 @@ table.pagerer { clear: both; } /** To get pagerer to appear under gallery of ima
 html.js input.form-autocomplete {
 	background-position: 100% 8px;
 }
+
+
+.link.show-more{ 
+	text-transform: uppercase;
+	font-size:.75em;
+}
+.link.show-more:after{ 
+	color:#5a65d1;	
+	font-size: 0.68em;
+	font-weight:normal;
+	padding-left:2px;
+	font-family: 'Glyphicons Halflings';
+	content: '\002b';
+}
+.link.show-more a{ font-family: "Museo Sans",sans-serif;	font-weight:700;}
+
+
+
+
+
