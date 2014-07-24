@@ -76,7 +76,7 @@ div.navbar nav.navtop div.block h2 {
 }
 
 .navbar .lang ul.dropdown-menu {
-	left: 5px;
+	left: -35px;
 }
 
 div.highlight:last-child {
@@ -338,7 +338,8 @@ div.shanti-thumbnail:hover {
 
 div.shanti-thumbnail div.shanti-thumbnail-info {
 	padding: 6px 10px 4px;
-	font-size: small;
+	font-size: 0.75em;
+	font-family:"Museo-Sans",sans-serif;
 }
 
 div.shanti-field-created span.shanti-field-content {
@@ -360,16 +361,19 @@ div.shanti-thumbnail-field.shanti-field-title a {
 /* Thumbnail icons */
 div.shanti-thumbnail-image i.thumbtype {
 	position: absolute;
-	top: 5px;
-	right: 5px;
+	top: 1px;
+	right: 1px;
 	/*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
-	width: 25px;
-	height: 25px;
-	border: thin solid #aaa;
-	-webkit-border-radius: 3px;
+	width: 35px;
+	height: 35px;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0.12em;
 	color: white;
-	padding-left: 2px;
-	padding-top: 3px;
+	font-size:1.25em;
+	line-height:1.88em;
+	font-weight:normal;
+	text-align:center;
 }
 
 /** Test
@@ -380,7 +384,7 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 /* Admin */
 
-#admin_footer { padding: 10px; background-color: #f6d4ba; }
+#admin_footer { padding: 0; background-color: #f6d4ba; }
 #admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
 #admin_footer div.block { display: inline-block; padding: 0px 8px; margin-right: thin solid #777; }
 
@@ -565,7 +569,7 @@ ul.ss-full-tabs li.active a {
 
 div.carousel div { word-break: break-all; }
 
-div.carousel img { max-width:100%; }
+div.carousel img { max-width:100%; float:right;}
 
 div.carousel a {
 	-webkit-transition: all 150ms ease;
@@ -583,19 +587,25 @@ div.carousel a:hover {
 }
 
 div.carousel a.carousel-control {
-	height: 30px;
-	top: 45%;
-	width: 35px;
+	height:1.88em;
+	top: 42%;
+	width:2em;
 	font-size: 2em;
-	line-height: 1em;
+	line-height:1.75em;
 	color: white;
 	font-weight: bold;
 	background-image: none;
 	border-radius: 4px;
+	text-shadow:none;
+	border-radius:0;
 }
 
+div.carousel a.carousel-control i {
+	font-family:"FontAwesome";
+	font-style:normal;
+}
 div.carousel a.carousel-control.left {
-	margin-left: -8px;
+	margin-left: -1.18em;
 }
 
 div.carousel a.carousel-control.right {
