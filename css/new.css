@@ -2,17 +2,44 @@
  *   These are hacks created by Than to achieve certain stylistic results. Need to be checked by Mark and Gerard
  */
 
+
+/* common elements */
+
+div.inline { display: inline-block; }
+
+article.main-content p { text-align: justify; } /* Justify paragraphs */
+
+body a, body a:visited, body a:active { color: #5a65d1; }
+
+body a:hover { color: #000F81; }
+
+/* Miscellaneous Styles */
+
+.back-to-top { z-index: 1000; } /* Back to top tab */
+.back-to-top i {font-style:normal;}
+
+div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
+
+.dfn, .italic{ font-style:italic !important; }
+.sans-serif{ font-family: "Museo Sans", sans-serif !important;}
+.serif{ font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important; }
+
+
+
 /* Top Level Elements */
+
+/* testing use of class -----
 section.messages {
 	clear: both;
 }
+*/
 
 .main-content .content-section {
-	padding: 12px 12px 8px 24px;
+	padding: .75em 2em .5em;
 }
 
 .navbar-static-top {
-	z-index: auto;
+	z-index: 1000px;
 }
 
 /* Header Top Bar */
@@ -21,7 +48,8 @@ h1.navbar-title.default img.site-logo {
 	height: 35px;
 }
 
-h1.navbar-title.default .site-title, h1.navbar-title.default .site-slogan {
+h1.navbar-title.default .site-title, 
+h1.navbar-title.default .site-slogan {
 	display: inline-block;
 	padding-top: 20px;
 	top: 3px;
