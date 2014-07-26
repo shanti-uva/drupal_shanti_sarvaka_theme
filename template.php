@@ -514,6 +514,23 @@ function shanti_sarvaka_facetapi_count($variables) {
   return '<span class="facet-count">' . (int) $variables['count'] . '</span>';
 }
 
+/**
+ * Implements theme_pagerer_mini to replace text links with icons
+ * 
+ */
+function shanti_sarvaka_pagerer_mini($variables) {
+  $variables['tags']['first'] = "FIRST_HERE";
+  $variables['tags']['previous'] = "PREVIOUS_HERE";
+  $variables['tags']['next'] = "NEXT_HERE";
+  $variables['tags']['last'] = "LAST_HERE";
+  $html = _pagerer_theme_handler('pagerer_mini', $variables);
+  $html = str_replace('FIRST_HERE','<i class="icon"></i>', $html);
+  $html = str_replace('PREVIOUS_HERE','<i class="icon"></i>', $html);
+  $html = str_replace('NEXT_HERE','<i class="icon"></i>', $html);
+  $html = str_replace('LAST_HERE','<i class="icon"></i>', $html);
+  return $html;
+}
+
 /** Miscellaneous functions **/
 
 function hex2rgb($hex) {
