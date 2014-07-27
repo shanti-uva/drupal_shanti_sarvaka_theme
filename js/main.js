@@ -307,9 +307,7 @@
 	      width: mywidth, // width is set in two places, here and the css
 	      top: 0
 	  });
-	  
-	  $("#gen-search").css({'top':'50px'}); // custom adjustment for mbase (?) Using top parameter above lowers only the tab not the whole search div
-	  
+	  	  
 	  // Make it resizeable
 	  $("div.extruder-content > div.text").resizable({ handles: "w",
 	      resize: function (event, ui) {

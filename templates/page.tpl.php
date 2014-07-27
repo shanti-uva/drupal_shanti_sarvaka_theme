@@ -97,14 +97,18 @@
         </div>
         <a href="#" class="back-to-top"><i class="icon"></i></a>
       </article>
-    </main> <!-- End Main Content -->
+
+
     
-  <!-- Search Flyout -->
-  <?php 
-    if($page['search_flyout']) {
-      print render($page['search_flyout']);
-    }
-  ?>
+		  <!-- Search Flyout -->
+		  <?php 
+		    if($page['search_flyout']) {
+		      print render($page['search_flyout']);
+		    }
+		  ?>
+
+    </main> <!-- End Main Content -->
+
     
   <!-- LOAD menus -->
   <section id="menu-main" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">   </section>  
