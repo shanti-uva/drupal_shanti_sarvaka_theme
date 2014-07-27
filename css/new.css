@@ -9,14 +9,15 @@ div.inline { display: inline-block; }
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
 
+/* 
 body a, body a:visited, body a:active { color: #5a65d1; }
-
 body a:hover { color: #000F81; }
+*/
 
 /* Miscellaneous Styles */
 
 .back-to-top { z-index: 1000; } /* Back to top tab */
-.back-to-top i {font-style:normal;}
+.back-to-top i {font-style:normal; top:-9px;}
 
 div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
 
@@ -35,14 +36,14 @@ section.messages {
 */
 
 .main-content .content-section {
-	padding: .75em 2em .5em;
+	padding: 1.25em 2em .5em 2em;
 }
 
 .navbar-static-top {
 	z-index: 1000px;
 }
 
-/* Header Top Bar */
+/* Header Top Bar 
 
 h1.navbar-title.default img.site-logo {
 	height: 35px;
@@ -68,7 +69,7 @@ h1.navbar-title.default .site-slogan {
 	top: 3px;
 	padding-left: 2px;
 }
-
+*/
 /* Language Chooser */
 
 div.navbar nav.navtop div.block h2 {
@@ -293,7 +294,7 @@ input.facet-label-search {
 	margin: 0px 4px;
 }
 
-span.fancytree-node i.icon.shanticon-cancel {
+span.fancytree-node i.shanticon-cancel {
 	color: red;
 	font-size: smaller;
 	padding-top: 4px;
@@ -301,81 +302,114 @@ span.fancytree-node i.icon.shanticon-cancel {
 	cursor: pointer;
 }
 
+
+
+
 /* Gallery and thumbnails */
 div.shanti-gallery {
 	width: 100%;
+	-moz-column-width: 12em;
+ -webkit-column-width: 12em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap: 1em;
 }
 
-div.shanti-thumbnail { 
-	height: 270px;
-	max-width: 210px;
+.shanti-field-created{
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+	font-style:;
+	color:#888;	
+}
+
+.shanti-thumbnail { 
+	height: 18em;
+  max-width: 12em;
+	padding: 0;
+  margin:  0.25em 0.25em 1.25em .38em;
+  width:  100%;
+	border-radius:.32em;
+	background-color: #FFFFFF;	
 	display: inline-block;
-	float: left;
-	padding: 0px;
-	margin: 16px;
-	border: solid 1px #eee;
-	overflow: hidden;
-	background-color: #FFFFFF;
+  position:relative;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.shanti-thumbnail:hover {
+  -moz-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
 }
 
-div.shanti-thumbnail div.shanti-thumbnail-image {
+.shanti-thumbnail-image {
 	width: 100%;
 	overflow: hidden;
 }
 
-div.shanti-thumbnail div.shanti-thumbnail-image img {
+.shanti-thumbnail-image img {
 	width: 100%;
-	border: solid 1px #eee;
-	border-radius: 5px 5px 0px 0px;
-  -webkit-border-radius: 5px 5px 0px 0px;
-  -moz-border-radius: 5px 5px 0px 0px;
+	border: none;
+	border-radius: .32em .32em 0 0;
 }
-
-div.shanti-thumbnail:hover {
-	background-color: #eee;
-	border-color: #ddd;
-}
-
-div.shanti-thumbnail div.shanti-thumbnail-info {
-	padding: 6px 10px 4px;
+.shanti-thumbnail-info {
 	font-size: 0.75em;
 	font-family:"Museo-Sans",sans-serif;
 }
 
-div.shanti-field-created span.shanti-field-content {
+.shanti-thumbnail .body-wrap{
+	padding: .38em .75em 25em 1em;
+}
+.shanti-thumbnail .footer-wrap {
+	position:absolute;
+	bottom:0;
+	background:#f6f6f6;
+	border-top:1px solid #e6e6e6;
+	border-radius:0 0 .32em .32em;
+	width:100%;
+	display:block;
+	padding:.44em 1em 1em;
+	/* text-shadow: 0 1px 0 #fff; */
+	color:#787878;
+	height:2.5em;
+}
+.shanti-thumbnail .footer-wrap i{
+	font-size:1.25em;
+	position:relative;
+	top:1px;
+}
+
+.shanti-field-created span.shanti-field-content {
 	color: #999;
 }
-
-div.shanti-thumbnail-field.shanti-field-title {
+.shanti-thumbnail-field.shanti-field-title {
 	text-align: left;
 	line-height: 1.25em;
-	margin-top: 6px;
+	margin-top: 0.38em;
 }
 
-div.shanti-thumbnail-field.shanti-field-title a {
+.shanti-thumbnail-field.shanti-field-title a {
 	color: #333;
 	font-size: 1.1em;
 	font-weight: bold;
 }
 
 /* Thumbnail icons */
-div.shanti-thumbnail-image i.thumbtype {
+.shanti-thumbnail-image i.thumbtype {
 	position: absolute;
-	top: 1px;
-	right: 1px;
+	top: 0;
+	right: 0;
 	/*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
-	width: 35px;
-	height: 35px;
+	width: 2em;
+	height: 1.88em;
 	border: none;
 	-webkit-border-radius: 0;
-	border-radius: 0.12em;
+	border-radius: 0 0.25em 0 0.25em;
 	color: white;
 	font-size:1.25em;
-	line-height:1.88em;
+	line-height:1.83em;
 	font-weight:normal;
 	text-align:center;
 }
-
+.shanti-thumbnail-image:hover i.thumbtype{
+	background-color: #f00; /* #32ccca */
+}
 /** Test
 section.content-section > div.tab-content > article:first-child > div.region:first-child > div.block:first-child {
 	font-size: 32px;
@@ -386,7 +420,7 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 #admin_footer { padding: 0; background-color: #f6d4ba; }
 #admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
-#admin_footer div.block { display: inline-block; padding: 0px 8px; margin-right: thin solid #777; }
+#admin_footer .block { display: inline-block; padding: 0px 8px; margin-right: thin solid #777; }
 
 /* Headers */
 h4 { 
@@ -447,7 +481,7 @@ button.btn-primary:hover {
 	background-color: #5b68ce; /* #5a65d1;*/
 }
 
-button.btn-primary i.shanticon {
+button.btn-primary i.icon {
 	display: inline-block;
 	font-weight: normal;
 	padding: 6px 6px 6px 8px; 
@@ -643,6 +677,7 @@ div.carouseldiv .header .link.show-more {
 	margin-bottom: 0;
 	position:relative;
 	top:0.5em;
+	float:right;
 }
 
 
@@ -696,9 +731,9 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: 0.75em 2em 0.75em 0;
+  margin: -0.75em 2em 0.18em 0;
   font-size:80%;
-  font-family:"Museo-Sans", sans-serif;	
+  font-family:"Museo Sans", sans-serif;	
   text-transform:uppercase;
 	font-weight:700;
 	width:100%;
@@ -751,7 +786,7 @@ html.js input.form-autocomplete {
 
 .link.show-more{ 
 	text-transform: uppercase;
-	font-size:.75em;
+	font-size:.83em;
 }
 .link.show-more:after{ 
 	color:#5a65d1;	
@@ -766,4 +801,81 @@ html.js input.form-autocomplete {
 
 
 
+/*-----------------------------------------------------------*/
+/*--- START Default Font Styles for shanticon Collection ----*/
+/*-----------------------------------------------------------*/
+.icon{
+	font-family: 'shanticon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*--- increases the font 33% larger relative to the icon container ---*/
+.icon-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -30%;
+}
+.icon-2x {
+  font-size: 2em;
+}
+.icon-3x {
+  font-size: 3em;
+}
+.icon-4x {
+  font-size: 4em;
+}
+.icon-5x {
+  font-size: 5em;
+}
+.icon-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+.icon-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+}
+.icon-ul > li {
+  position: relative;
+}
+.icon-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center;
+}
+.icon-li.icon-lg {
+  left: -1.8571428571428572em;
+}
+.icon-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.icon.pull-left {
+  margin-right: .3em;
+}
+.icon.pull-right {
+  margin-left: .3em;
+}
+.icon-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+/*---------------------------------------------------*/
+/*--- END Default Font Styles ----*/
+/*---------------------------------------------------*/

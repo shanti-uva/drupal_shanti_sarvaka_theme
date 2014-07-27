@@ -39,7 +39,7 @@
 	content: "\e604";
 }
 .shanticon-arrow3-down:before {
-	content: "\e605";
+	content: "\e627";
 }
 .shanticon-arrow3-left:before {
 	content: "\e606";
@@ -56,7 +56,7 @@
 .shanticon-audio:before {
 	content: "\e60a";
 }
-.shanticon-audiovideo:before {
+.shanticon-audio-video:before {
 	content: "\e60b";
 }
 .shanticon-calendar:before {

@@ -245,10 +245,10 @@
 	  });   
 	   
 		// --- ajax call for collections list
-		$( "#kmaps-collections").load( "/sites/all/themes/shanti_theme/js/menus/menu-ajax.php .menu-collections > ul");  	
-	  $('body').on('click','.explore>a, .collections button',function(){
-	       $(".opencollect").slideToggle(200);      
-	  });
+		// $( "#kmaps-collections").load( "/sites/all/themes/shanti_theme/js/menus/menu-ajax.php .menu-collections > ul");  	
+			   $('body').on('click','.explore>a, .collections button',function(){
+			       $(".opencollect").slideToggle(200);      
+			   });
 	    
 	}
 	// Initialize iCheck form graphics

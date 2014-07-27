@@ -70,7 +70,7 @@
         
         <div class="row">
           <!-- Message Area -->
-          <?php if (isset($messages)) { ?><section class="messages clearfix"><?php print $messages; ?></section> <?php } ?>
+          <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
             <div id="sidebar-first" class="region sidebar pull-left <?php print $bsclass_sb1; ?>">
