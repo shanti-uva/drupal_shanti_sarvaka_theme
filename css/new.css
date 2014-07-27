@@ -17,7 +17,7 @@ body a:hover { color: #000F81; }
 /* Miscellaneous Styles */
 
 .back-to-top { z-index: 1000; } /* Back to top tab */
-.back-to-top i {font-style:normal; top:-9px;}
+.back-to-top i {font-style:normal; top:-7px;}
 
 div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
 
@@ -36,11 +36,58 @@ section.messages {
 */
 
 .main-content .content-section {
-	padding: 1.25em 2em .5em 2em;
+	padding: 1em 2em .5em 2em;
 }
 
 .navbar-static-top {
 	z-index: 1000px;
+}
+
+.views-row{
+	padding-top: 0.63em;
+	margin:0.32em auto 1em;
+	border-top:1px solid #ddd;
+	min-height:9em;
+}
+.views-row:after{
+	clear:both;
+}
+
+.views-row:first-child{
+	padding-top:0;
+	margin-top:0.25em;
+	border:none;
+}
+
+.views-field-title{ 
+	text-transform:uppercase;
+}
+
+.views-field-realname{
+	margin-bottom:.25em;
+}
+
+.views-field-title,
+.views-field-realname{
+	font-family: "museo-sans", sans-serif;
+}
+
+.views-field-field-images img{ 
+	float:left;
+	margin:.44em .88em .18em 0;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.7);
+	box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.7);
+}
+
+.views-submit-button .btn-primary{
+	font-size:110%;
+	position:relative;
+	top:-0.32em;
+}
+
+.views-exposed-form input.form-control{
+	width:12em;
 }
 
 /* Header Top Bar 
@@ -324,16 +371,22 @@ div.shanti-gallery {
 
 .shanti-thumbnail { 
 	height: 18em;
-  max-width: 12em;
+  max-width: 11.75em;
 	padding: 0;
-  margin:  0.25em 0.25em 1.25em .38em;
+  margin:  0.25em 0.38em 1.25em;
   width:  100%;
 	border-radius:.32em;
 	background-color: #FFFFFF;	
 	display: inline-block;
   position:relative;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.7);
+-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.7);
+box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.7);
+  -webkit-transition: box-shadow 250ms ease;
+	-moz-transition: box-shadow 250ms ease;
+	-ms-transition: box-shadow 250ms ease;
+	-o-transition: box-shadow 250ms ease;
+	transition: box-shadow 250ms ease; 
 }
 .shanti-thumbnail:hover {
   -moz-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
