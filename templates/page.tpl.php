@@ -113,95 +113,10 @@
   <!-- LOAD menus -->
   <section id="menu-main" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">   </section>  
   <section id="menu-collections" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">    </section>
-   
+
   <section id="menu" role="navigation" style="display:none;">
     <nav id="menu-drill">                
-     <ul>
-       <li><h3><em>Main Menu</em></h3> 
-          <a class="link-blocker"></a>
-       </li>
-       <li class="myaccount">
-         <?php if(!$logged_in): 
-            print $variables['loginout_link']; 
-          else: ?>
-            <a href="#">My Account</a>
-            <h2>My Account</h2>       
-            <ul>
-              <li>
-                  <a href="<?php print url('user'); ?>">Account Details</a>              
-                  <!--<h2>Account Details</h2>               
-                     <ul class="myaccount-details">
-                      <li><a href="#">Account Settings</a></li>  
-                      <li><a href="#">Profile</a></li>   
-                      <li><a href="#">Related Link</a></li>
-                      <li><a href="#">Another Link</a></li>
-                    </ul>          --> 
-                </li>
-                <li><a href="#">Community Networks</a></li>
-                <li><?php print $variables['loginout_link']; ?></li>  
-            </ul>
-        <?php endif; ?>
-       </li>                  
-       <li>
-          <a href="#">Preferences</a>
-          <h2>Preferences</h2>
-          <ul>          
-            <!-- header -->              
-            <li class="drop-hdr"><em>Perspective</em></li>
-              <li class="form-group"><label class="radio-inline" for="option1a">
-                <input type="radio" name="option1" id="option1a" value="option1a" checked>General</label>
-              </li>
-              <li class="form-group"><label class="radio-inline" for="option1b">
-                <input type="radio" name="option1" id="option1b" value="option1b">Tibetan</label>
-              </li>
-              <li class="form-group last"></li>
-            
-            <!-- header -->
-            <li class="drop-hdr"><em>Subject Language</em></li>
-              <li class="form-group"><label class="radio-inline" for="option2a">
-                  <input type="radio" name="option2" id="option2a" value="undefined" checked>English</label>
-              </li>
-              <li class="form-group"><label class="radio-inline" for="option2b">
-                  <input type="radio" name="option2" id="option2b" value="simp.chi">Chinese Characters (simplified)</label>
-              </li>
-              <?php //if(!$subject): ?>
-              <li class="form-group"><label class="radio-inline" for="option2c">
-                  <input type="radio" name="option2" id="option2c" value="trad.chi">Chinese Characters (traditional)</label>
-              </li>
-              <?php //endif ?>
-              <li class="form-group"><label class="radio-inline" for="option2d">
-                  <input type="radio" name="option2" id="option2d" value="deva">Devangiri Script</label>
-              </li>
-              <li class="form-group"><label class="radio-inline" for="option2e">
-                  <input type="radio" name="option2" id="option2e" value="roman.popular">Popular Standard (romanization)</label>
-              </li>
-              <li class="form-group"><label class="radio-inline" for="option2f">
-                  <input type="radio" name="option2" id="option2f" value="roman.scholar">Scholarly Standard (romanization)</label>
-              </li>
-              <li class="form-group"><label class="radio-inline" for="option2g">
-                  <input type="radio" name="option2" id="option2g" value="pri.tib.sec.chi">Tibetan Script (simplified)</label>
-              </li>
-              <li class="form-group"><label class="radio-inline" for="option2h">
-                  <input type="radio" name="option2" id="option2h" value="pri.tib.sec.roman">Tibetan Script (romanization)</label>
-              </li>
-              <li class="form-group last"></li>
-            
-            <!-- header -->
-            <li class="drop-hdr"><em>Show Subject Details</em></li>                     
-              <li class="form-group"><label class="radio-inline" for="option3a">
-                <input type="radio" name="option3" id="option3a" value="option3a" checked>Yes</label>
-              </li>
-              <li class="form-group"><label class="radio-inline" for="option3b">
-                <input type="radio" name="option3" id="option3b" value="option3b">No</label>
-              </li>
-              <li class="form-group last"></li>
-          </ul>                         
-        </li>   
-         
-        <li><a href="#">Help</a></li>
-        
-        <li><a href="#">Contact Us</a></li>
-     </ul>    
+     <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->
 </div> <!-- End wrap-all -->

@@ -50,6 +50,14 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
     $variables['bsclass_main'] = 'col-sm-9'; 
   }
+  // Add usermenu to main menu
+  $um = menu_tree_all_data('user-menu');
+  /*dpm($um, 'um');
+  foreach($um as $n => &$link) {
+    
+  }*/
+  $variables['user_menu_links']  = shanti_sarvaka_user_menu($um, TRUE);
+  
   // Set Loginout_link
   $variables['loginout_link'] = l(t('Logout'), 'user/logout');
   if(!$variables['logged_in']) {
@@ -298,6 +306,31 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
   $title = $variables['element']['#title'];
   $class = explore_menu_get_iconclass($title);
   return '<li><a href="' . $href . '"><i class="icon shanticon-' . $class . '"></i>' . $title . '</a></li>';
+}
+
+/**
+ * Function to create markup for responsive main menu from Drupal's user menu
+ */
+function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
+  $html = '<ul>';
+  if($toplevel) {
+  $html .= '<li><h3><em>Main Menu</em></h3> 
+          <a class="link-blocker"></a>
+       </li>';
+  }
+  foreach($links as $n => $link) {
+     $url = $link['link']['href'];
+     if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
+     $target = (strpos('http', $url) == 0) ? ' target="_blank"':'';
+     $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
+     if(is_array($link['below']) && count($link['below']) > 0) {
+        $linkhtml .= shanti_sarvaka_user_menu($link['below']);
+     }
+     $linkhtml .= '</li>';
+     $html .= $linkhtml;
+  }
+  $html .= '</ul>';
+  return $html;
 }
 
 /**
