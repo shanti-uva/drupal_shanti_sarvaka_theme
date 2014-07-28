@@ -36,7 +36,11 @@ section.messages {
 */
 
 .main-content .content-section {
-	padding: 1em 2em .5em 2em;
+	padding: 1em 2em 5em 2em;
+}
+
+.main-content .content-section .view-content{
+	width:58em;
 }
 
 .navbar-static-top {
@@ -237,10 +241,12 @@ div#sidebar-second button.form-submit {
 	
 }
 
+
+
+
+
 /** Search Flyout **/
-section#gen-search {
-	top: 50px;
-}
+
 
 .treeview .block-facetapi {
 	overflow: hidden !important;
@@ -317,11 +323,10 @@ div.shanti-gallery {
 
 .shanti-field-created{
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
-	font-style:;
-	color:#888;	
 }
 
 .shanti-thumbnail { 
+	color:#444;
 	height: 18em;
   max-width: 11.75em;
 	padding: 0;
@@ -332,22 +337,32 @@ div.shanti-gallery {
 	display: inline-block;
   position:relative;
   -webkit-box-shadow: 0px 3px 3px rgba(50, 50, 50, 0.5);
--moz-box-shadow:    0px 3px 3px rgba(50, 50, 50, 0.5);
-box-shadow:         0px 3px 3px rgba(50, 50, 50, 0.5);
-  -webkit-transition: box-shadow 250ms ease;
-	-moz-transition: box-shadow 250ms ease;
-	-ms-transition: box-shadow 250ms ease;
-	-o-transition: box-shadow 250ms ease;
-	transition: box-shadow 250ms ease; 
+	-moz-box-shadow:    0px 3px 3px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 3px 3px rgba(50, 50, 50, 0.5);
+  -webkit-transition: box-shadow 150ms ease;
+	-moz-transition: box-shadow 150ms ease;
+	-ms-transition: box-shadow 150ms ease;
+	-o-transition: box-shadow 150ms ease;
+	transition: box-shadow 150ms ease; 
 }
 .shanti-thumbnail:hover {
-  -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
-
+.shanti-thumbnail:active {
+  -webkit-box-shadow: 0px 3px 3px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 3px 3px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 3px 3px rgba(50, 50, 50, 0.5);
+}
 .shanti-thumbnail-image {
 	width: 100%;
 	overflow: hidden;
+}
+
+.shanti-thumbnail-image a{
+	position:relative;
+	display:block;	
 }
 
 .shanti-thumbnail-image img {
@@ -383,7 +398,7 @@ box-shadow:         0px 3px 3px rgba(50, 50, 50, 0.5);
 }
 
 .shanti-field-created span.shanti-field-content {
-	color: #999;
+	color: #707070;
 }
 .shanti-thumbnail-field.shanti-field-title {
 	text-align: left;
@@ -395,6 +410,30 @@ box-shadow:         0px 3px 3px rgba(50, 50, 50, 0.5);
 	color: #333;
 	font-size: 1.1em;
 	font-weight: bold;
+}
+
+.shanti-thumbnail-link .overlay{
+	display:none;
+	
+	position:absolute:
+	top:0;
+	left:0;
+	z-index:10000;
+	width:100%;
+	height:100%;	
+	background:#555;
+	cursor:pointer;
+	text-align:center;
+	opacity:0.1;
+	color:#fff;
+}
+
+.shanti-thumbnail-link .overlay i{
+}
+.shanti-thumbnail-link .overlay:hover{
+	background:#eee;
+	opacity:1;
+	color:red;
 }
 
 /* Thumbnail icons */
@@ -894,10 +933,12 @@ html.js input.form-autocomplete {
 
 
 .views-row{
-	padding-top: 0.63em;
-	margin:0.32em auto 1em;
-	border-top:1px solid #ddd;
-	min-height:9em;
+	padding-top: 0.75em;
+	padding-bottom: 1em;
+	margin:0 auto;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ccc;
+	min-height:10em;
 }
 .views-row:after{
 	clear:both;
@@ -906,7 +947,7 @@ html.js input.form-autocomplete {
 .views-row:first-child{
 	padding-top:0;
 	margin-top:0.25em;
-	border:none;
+	border-top:none;
 }
 
 .views-field-title{ 
@@ -915,6 +956,8 @@ html.js input.form-autocomplete {
 
 .views-field-realname{
 	margin-bottom:.25em;
+	font-size:90%;
+	color:#666;
 }
 
 .views-field-title,
