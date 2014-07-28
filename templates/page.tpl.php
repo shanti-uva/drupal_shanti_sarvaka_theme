@@ -2,7 +2,7 @@
    <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#kmaps-search">Skip to search</a></span>
     <!-- Header Region -->
    <header class="header-banner">
-    <div class="navbar navbar-default navbar-static-top" role="navigation"> 
+    <div class="navbar navbar-default" role="navigation"> 
      
       <nav class="menu-buttons">
         <span class="shanti-searchtoggle menu-icon"><a href="#"><i class='icon shanticon-search'></i></a></span><!-- mobile < 400 : search -->
