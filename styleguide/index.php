@@ -219,6 +219,20 @@
       <h2 class="sg-h2"><a id="sg-fontStacks" class="sg-anchor">Font Stacks</a></h2>
       <p class="sg-font sg-font-primary">"Museo Sans", sans-serif;</p>
       <p class="sg-font sg-font-secondary">Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;</p>
+      <p><strong>Font Sizes:</strong> Font size is set to 100% = 1em = 16px. Use percentages to make font size larger or smaller. Avoid using 
+        preset font sizes as these vary widely across browsers and are not reliable.</p>
+      <p>Do not use the following css styles:</p>
+        <ul>
+          <li>font-size: xx-small  /* absolute-size values */</li>
+          <li>font-size: x-small</li>
+          <li>font-size: small</li>
+          <li>font-size: medium</li>
+          <li>font-size: large</li>
+          <li>font-size: x-large</li>
+          <li>font-size: xx-large</li>
+          <li>font-size: larger    /* relative-size values */</li>
+          <li>font-size: smaller</li>
+        </ul>
       <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
     </div><!--/.sg-font-stacks-->
   </div><!--/.sg-info-->    
