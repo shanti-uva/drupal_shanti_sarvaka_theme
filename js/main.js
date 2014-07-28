@@ -577,45 +577,37 @@
 			event.preventDefault();
 			window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
 		});
-		// Set Search Tab Height
-		var winHeight = $(window).height();
-	  var panelHeight = winHeight -80; // ----- height of container for search panel - minus length above and below in px
-	  var viewHeight = winHeight -215; // ----- height for view-section & search options - CLOSED
-	  var shortHeight = winHeight -483; // ----- height for view-section & search options - OPEN
-	
-	  // set initial div height
-	  $("div.text").css({ "height": panelHeight });
-	  $(".view-wrap").css({ "height": viewHeight });
-	  $("#gen-search .view-wrap.short-wrap").css({ "height": shortHeight });
-	  // make sure div stays full width/height on resize
-	  $(window).resize(function(){
-	    $("div.text").css({ "height": panelHeight });
-	    $(".view-wrap").css({ "height": viewHeight });
-	    $("#gen-search .view-wrap.short-wrap").css({ "height": shortHeight });
-	  });
-	  // toggle heights with search options
+	}
+
+// *** SEARCH *** adapt search panel height to viewport
+  function searchTabHeight() {
+    var height = $(window).height();
+    var srchtab = (height) - 80;
+    var viewheight = (height) -  211;
+		// var advHeight = $(".advanced-view").show().height();
+    var comboHeight = (viewheight) - 126;
+    
+    srchtab = parseInt(srchtab) + 'px';
+    $("#gen-search").find(".text").css('height',srchtab);
+    
+    viewheight = parseInt(viewheight) + 'px';
+    comboHeight = parseInt(comboHeight) + 'px';
+    $(".view-wrap").css('height', viewheight);
+		$(".view-wrap.short-wrap").css('height', comboHeight);            
+  } 
+	 	
+	 	// --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
+    searchTabHeight();
+    $(window).bind('load orientationchange resize', searchTabHeight );
+	  
+	  // --- advanced search toggle icons, open/close, view change height
 	  $(".advanced-link").click(function () {
-	    var winHeight = $(window).height();
-	    $(".view-wrap").css({ "height": viewHeight });
-	    $("#gen-search .view-wrap.short-wrap").css({ "height": shortHeight });
-	  });
-	
-		// --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
-	  searchTabHeight();
-	  $(window).bind('load orientationchange resize', searchTabHeight);
-	}
-	
-	function searchTabHeight() {
-		var height = $(window).height();
-		var srchtab = (height) - 80;
-		var viewheight = (height) - 212;
-		    
-		srchtab = parseInt(srchtab) + 'px';
-		$("#gen-search").find(".text").css('height',srchtab);
-		  
-		viewheight = parseInt(viewheight) + 'px';
-		$("#gen-search").find(".view-wrap").css('height',viewheight);
-	}
+	      $(this).toggleClass("show-advanced",'fast');
+	      $(".advanced-view").slideToggle('fast');
+	      $(".advanced-view").toggleClass("show-options");
+	      $(".view-wrap").toggleClass("short-wrap"); // ----- toggle class for managing view-section height      
+	      searchTabHeight();
+	  }); 
 	
 	function doAjaxSearch(qstr, type) {
 		var surl = '/services/ajaxsearch';
