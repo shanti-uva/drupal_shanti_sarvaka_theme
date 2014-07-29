@@ -458,8 +458,6 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 **/
 
 /* Admin */
-
-
 @media (max-width: 1040px) {
 	/* necessary styles to make admin menu work at smaller screen sizes */
 	#admin-menu .dropdown .admin-menu-account, #admin-menu .dropdown .admin-menu-users, #admin-menu .dropdown .admin-menu-search {
