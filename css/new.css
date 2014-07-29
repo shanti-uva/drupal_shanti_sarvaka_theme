@@ -98,11 +98,6 @@ div.highlight:last-child {
 	margin-right: 6px;
 }
 
-/* Color Strip Banner */
-header.banner {
-	/* z-index: 500; so Drop down menus are above main page content but banner is under admin menu*/
-}
-
 /* 
 div.banner-content {
 	margin-top: -1.8em;

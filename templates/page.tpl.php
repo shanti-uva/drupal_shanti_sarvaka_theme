@@ -68,12 +68,12 @@
           </header>
         </div> <!-- End of Banner Region -->
         
-        <div class="row">
+        <div class="row row-offcanvas row-offcanvas-right">
           <!-- Message Area -->
           <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar pull-left <?php print $bsclass_sb1; ?>">
+            <div id="sidebar-first" class="region sidebar col-xs-6 col-sm-3 sidebar-offcanvas <?php print $bsclass_sb1; ?>">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>
@@ -90,7 +90,7 @@
           
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar pull-right <?php print $bsclass_sb2; ?>">
+            <div id="sidebar-second" class="region sidebar col-xs-6 col-sm-3 sidebar-offcanvas <?php print $bsclass_sb2; ?>">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
