@@ -52,11 +52,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   }
   // Add usermenu to main menu
   $um = menu_tree_all_data('user-menu');
-  /*dpm($um, 'um');
-  foreach($um as $n => &$link) {
-    
-  }*/
-  $variables['user_menu_links']  = shanti_sarvaka_user_menu($um, TRUE);
+  $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
   
   // Set Loginout_link
   $variables['loginout_link'] = l(t('Logout'), 'user/logout');
@@ -306,6 +302,57 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
   $title = $variables['element']['#title'];
   $class = explore_menu_get_iconclass($title);
   return '<li><a href="' . $href . '"><i class="icon shanticon-' . $class . '"></i>' . $title . '</a></li>';
+}
+
+/** 
+ * Update user menu tree with properly nested account and log in/out links. Then create markup
+ * Called from shanti_sarvaka_preprocess_page
+ */
+function shanti_sarvaka_create_user_menu($um) {
+  dpm($um);
+  // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
+  if(user_is_anonymous()) {
+    // Determine whether login is via password or shibboleth and create login link accordingly
+    $loginlink = url('user');
+    if(module_exists('shib_auth')) {
+      $loginlink = shib_auth_generate_login_url();
+    }
+    // Add login link to bottom of links array
+    $um[] = array(
+      'link' => array(
+        'title' => t('Log in'),
+        'href' => $loginlink,
+      ),
+      'below' => array(),
+    );
+  // if logged in show account submenu at top of list
+  } else {
+    $acctarray = array(
+      'link' => array(
+        'title' => t('Account'),
+        'href' => '#',
+        
+      ),
+      'below' => array(
+          'profile' => array(
+            'link' => array(
+              'title' => t('Profile'),
+              'href' => url('user'),
+            ),
+            'below' => array(),
+          ),
+          'logout' => array(
+            'link' => array(
+              'title' => t('Log out'),
+              'href' => url('user/logout'),
+            ),
+            'below' => array(),
+          ),
+        ),
+    );
+    array_shift($um, $acctarray);
+  }
+  return shanti_sarvaka_user_menu($um, TRUE);
 }
 
 /**

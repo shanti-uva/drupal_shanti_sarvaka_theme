@@ -260,18 +260,24 @@
 	          label_text = label.text();
 	
 	      label.remove();
-	      self.iCheck({
+	      self.on('ifCreated ifClicked ifChanged ifChecked ifUnchecked ifDisabled ifEnabled ifDestroyed check ', 
+	      	function(event){                
+              if(event.type ==="ifChecked"){
+                  self.trigger('click');  
+                  self.iCheck('update');
+              }
+              if(event.type ==="ifUnchecked"){
+                  self.trigger('click');  
+                  self.iCheck('update');
+              }                             
+          }).iCheck({
 	          checkboxClass: "icheckbox_minimal-red",
 	          radioClass: "iradio_minimal-red",
 	          insert: "<div class='icheck_line-icon'></div>" + label_text
 	      });
 	  });
 		 
-	  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select (What's this for? NDG @014-06-10)
-	  
-	  /*$('input').on('ifChecked', function(event){
-		  console.log(event.type + ' callback');
-		});*/
+	  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select used for multiselectors such as KMaps
 	
 	}
 	
