@@ -17,9 +17,9 @@ body a:hover { color: #000F81; }
 /* Miscellaneous Styles */
 
 .back-to-top { z-index: 1000; } /* Back to top tab */
-.back-to-top i {font-style:normal; top:-7px;}
+.back-to-top i {font-style:normal; top:-0.44em;}
 
-div.loader { height: 80%; min-height: 500px; padding-top: 1em;}
+div.loader { height: 80%; min-height: 31em; padding-top: 1em;}
 
 .dfn, .italic{ font-style:italic !important; }
 .sans-serif{ font-family: "Museo Sans", sans-serif !important;}
@@ -91,8 +91,8 @@ div.highlight:last-child {
 }
 
 #block-locale-language .iradio_minimal-red {
-	width: 18px;
-	margin-right: 6px;
+	width: 1.12em;
+	margin-right: 0.38em;
 }
 
 /* 
@@ -112,95 +112,31 @@ div.banner-content button.btn-default {
 	font-weight: normal;
 	text-shadow: none;
 	border: none;
-	padding: 10px 20px;
+	padding: 0.63em 1.25em;
 }
 
 /* Drupal Edit Tabs */
 article.main-content header ul.primary {
 	float: right;
-	margin-top: -18px;
-	margin-right: 40px;
+	margin-top: -1.12em;
+	margin-right: 2.5em;
 }
 
-/* Breadcrumbs */
-nav.breadwrap {
-	width: 75%;
+
+
+
+
+
+
+
+.breadwrap ol{
+	border:none;
 }
 
-nav.breadwrap ol.breadcrumb {
-	background: inherit;
-	font-size: 0.88em;
-	line-height: 21px;
-	height: 21px;
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-	margin: 0px 0px 0px 12px;
-	padding: 0;
-	display: block;
-}
 
-ol.breadcrumb {
-	background: transparent;
-	border: none;
-	padding: auto;
-	margin: auto;
-}
 
-/* General Breadcrumb */
-ol.breadcrumb li {
-	display: inline-block;
-	float: left;
-	position: relative;
-	height: 21px;
-	overflow: hidden;
-	line-height: 21px;
-	font-size: 1em;
-}
 
-/* Font home breadcrumb */
-ol.breadcrumb>li:first-child {
-	font-family: "Museo Sans", sans-serif;
-	font-size: 1em;
-	line-height: 1.5em;
-	padding: 0;
-	margin: 0 5px 0 0;
-	font-weight: 600;
-	font-style: normal;
-}
 
-/* Add colon after first breadcrumb which is site home */
-ol.breadcrumb>li:first-child::after {
-	font-weight: bold;
-	content: ':\00a0';
-}
-
-/* override bootstrap default */
-ol.breadcrumb>li+li:before {
-	content: "";
-	padding: 0px;
-	margin: 0px;
-}
-
-/* Add space greater-than space after breadcrumbs */
-ol.breadcrumb>li+li:after {
-	content: '\00a0\003e\00a0';
-}
-
-/* Except for the last one */
-ol.breadcrumb>li+li:last-child:after {
-	content: '';
-}
-
-ol.breadcrumb li a {
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-	position: relative;
-	height: 21px;
-	line-height: 21px;
-	overflow: hidden;
-	float: left;
-	margin-right: 0px;
-}
 
 /** Sidebars **/
 div.sidebar {
@@ -211,12 +147,12 @@ div.sidebar {
 div#sidebar-second {
 	background-image: none;
 	background-color: #ffffff;
-	max-width: 310px;
+	max-width: 19em;
 }
 
 div.region-sidebar-second div.block {
 	/*border-bottom: thin #777 solid;*/
-	padding: 15px 15px 5px 15px;
+	padding: 1em 1em .32em;
 }
 
 div.region-sidebar-second div.block:after {
@@ -226,7 +162,7 @@ div.region-sidebar-second div.block:after {
 	height: 1px;
 	background-color: #aaa;
 	display: block;
-	margin-top: 20px;
+	margin-top: 1.25em;
 }
 
 div#sidebar-second button.form-submit {
@@ -246,7 +182,7 @@ div#sidebar-second button.form-submit {
 
 div.treeview .block-facetapi h2 {
 	font-size: 1.1em;
-	padding: 0px 6px;
+	padding: 0 6px;
 	white-space: nowrap;
 }
 
@@ -282,7 +218,7 @@ button.toggle-facet-label-search {
 	text-decoration: none;
 	border: none;
 	background: transparent;
-	padding: 0px;
+	padding: 0;
 }
 
 input.facet-label-search {
@@ -290,7 +226,7 @@ input.facet-label-search {
 	height: 1.5em;
 	font-size: smaller;
 	padding: 3px;
-	margin: 0px 4px;
+	margin: 0 4px;
 }
 
 span.fancytree-node i.shanticon-cancel {
@@ -313,9 +249,6 @@ div.shanti-gallery {
  -webkit-column-gap: 1em;
 }
 
-.shanti-field-created{
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
-}
 
 .shanti-thumbnail { 
 	color:#444;
@@ -328,9 +261,9 @@ div.shanti-gallery {
 	background-color: #FFFFFF;	
 	display: inline-block;
   position:relative;
-  -webkit-box-shadow: 0px 3px 3px rgba(50, 50, 50, 0.3);
-	-moz-box-shadow:    0px 3px 3px rgba(50, 50, 50, 0.3);
-	box-shadow:         0px 3px 3px rgba(50, 50, 50, 0.3);
+  -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow:    0 3px 3px rgba(50, 50, 50, 0.4);
+	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.4);
   -webkit-transition: box-shadow 150ms ease;
 	-moz-transition: box-shadow 150ms ease;
 	-ms-transition: box-shadow 150ms ease;
@@ -338,14 +271,14 @@ div.shanti-gallery {
 	transition: box-shadow 150ms ease; 
 }
 .shanti-thumbnail:hover {
-	-webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 .shanti-thumbnail:active {
-  -webkit-box-shadow: 0px 3px 3px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    0px 3px 3px rgba(50, 50, 50, 0.5);
-	box-shadow:         0px 3px 3px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0 3px 3px rgba(50, 50, 50, 0.5);
+	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.5);
 }
 .shanti-thumbnail-image {
 	width: 100%;
@@ -389,6 +322,13 @@ div.shanti-gallery {
 	top:1px;
 }
 
+
+.shanti-field-created{
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+}
+div.shanti-thumbnail-field.shanti-field-duration{
+	margin-top: 0.25em;
+}
 .shanti-field-created span.shanti-field-content {
 	color: #707070;
 }
@@ -513,8 +453,8 @@ select.form-control.ss-select[multiple] {
 }
 
 button.btn-primary, button.btn-success, button.btn-info, button.btn-warning, button.btn-danger {
-	padding: 0px;
-	margin: 0px 3px;
+	padding: 0;
+	margin: 0 3px;
 }
 
 button.btn-primary {
@@ -545,8 +485,10 @@ button#edit-delete:hover {
 }
 
 .form-text {
-	height: 1.63em;
+	height: 1.83em;
+	line-height:1.44em;
 	background-color: #ffffff;
+	padding: .38em .75em;
 }
 
 textarea {
@@ -556,8 +498,8 @@ textarea {
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 div.field-accordion {
   min-height: 2em;
-	margin: 0px 0px 6px;
-  padding: 6px 0px;
+	margin: 0 0 6px;
+  padding: .38em 0;
 	border-bottom: 1px solid #C0C0C0;
 	background-color: #EEE;
 }
@@ -577,24 +519,24 @@ div.field-accordion .form-item, div.field-accordion .form-actions {
 
 div.field-accordion h4 span.ss-fieldset-toggle {
 	font-size: 90%;
-	padding: 0px 4px 2px;
+	padding: 0 4px 2px;
 	border-radius: 1.25em;
 	border: 1px solid grey;
 	background-color: #fff;
-	box-shadow: 2px 0px 3px #aaa;
+	box-shadow: 2px 0 3px #aaa;
 	display: inline-block;
 	cursor: pointer;
 	vertical-align: text-top;
-	margin-right: 4px;
+	margin-right: .25em;
 }
 
 div.field-accordion h4 span.ss-fieldset-toggle.open {
-	padding: 0px 5px 1px;
+	padding: 0 5px 1px;
 }
 
 /** Tabs **/
 ul.ss-full-tabs {
-	margin: 18px 5px;
+	margin: 1.12em .32em;
 }
 
 ul.ss-full-tabs li {
@@ -609,7 +551,7 @@ ul.ss-full-tabs li a {
 	font-size: larger;
 	font-weight: 777;
 	color: #999;
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
@@ -665,7 +607,7 @@ div.carousel a:hover {
     text-decoration: none;
 }
 
-div.carousel{ margin-bottom:20px;}
+div.carousel{ margin-bottom:1.25em;}
 
 div.carousel a.carousel-control {
 	height:1.88em;
@@ -676,7 +618,7 @@ div.carousel a.carousel-control {
 	color: white;
 	font-weight: bold;
 	background-image: none;
-	border-radius: 4px;
+	border-radius: 0.25em;
 	text-shadow:none;
 	border-radius:0;
 }
@@ -729,7 +671,7 @@ div.carouseldiv .header .link.show-more {
 
 
 div.carousel {
-	padding:25px 35px; 
+	padding: 1.56em 2em; 
 	background-color: #fff;
 }
 
@@ -738,7 +680,7 @@ div.carousel div.carousel-inner {
 }
 
 div.carouseldiv .caption .span4, div.carouseldiv .caption .span8 {
-    padding: 0px 20px;
+    padding: 0 1.25em;
 }
 
 div.carouseldiv .caption .span4 {
@@ -747,7 +689,7 @@ div.carouseldiv .caption .span4 {
 
 div.carousel .caption h3 {
 	weight: bold;
-	margin: 0 0 10px;
+	margin: 0 0 0.63em;
 }
 
 div.carousel .item .title h3 a {
@@ -757,7 +699,7 @@ div.carousel .item .title h3 a {
 div.carousel .item .byline {
 	color: #aaaaaa;
 	font-style: italic;
-	margin: 0 0 10px 0;
+	margin: 0 0 1.63em 0;
 }
 
 div.carousel  .caption p {
@@ -840,7 +782,7 @@ html.js input.form-autocomplete {
 	color:#5a65d1;	
 	font-size: 0.68em;
 	font-weight:normal;
-	padding-left:3px;
+	padding-left:0.18em;
 	font-family: 'Glyphicons Halflings';
 	content: '\002b';
 	position:relative;
@@ -948,9 +890,9 @@ html.js input.form-autocomplete {
 }
 
 .views-row:first-child{
-	padding-top:0;
+	/* padding-top:0;
 	margin-top:0.25em;
-	border-top:none;
+	border-top:none; */
 }
 
 .views-field-title{ 
@@ -958,7 +900,7 @@ html.js input.form-autocomplete {
 }
 
 .views-field-realname{
-	margin-bottom:.25em;
+	margin-bottom:0.25em;
 	font-size:90%;
 	color:#666;
 }
@@ -971,9 +913,9 @@ html.js input.form-autocomplete {
 .views-field-field-images img{ 
 	float:left;
 	margin:.44em .88em .18em 0;
-	-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.7);
-	-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.7);
-	box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.7);
+	-webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    0 0 3px 0 rgba(50, 50, 50, 0.7);
+	box-shadow:         0 0 3px 0 rgba(50, 50, 50, 0.7);
 }
 
 .views-submit-button .btn-primary{
@@ -990,11 +932,10 @@ html.js input.form-autocomplete {
 
 /*-----------------------------------------------*/
 /*---- select dropdown -----*/
-.main-content .bootstrap-select.form-control{
-	height:1.83em;
-}
 .main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
 .main-content .bootstrap-select .selectpicker{ line-height:1.75em; height:1.83em; padding:0; border:1px solid #ddd; width:100% !important;}
+
+.main-content .bootstrap-select.form-control{ height:1.83em;}
 .main-content .bootstrap-select .popover-title{ padding: .25em .88em; margin-bottom:.38em;}
 
 .main-content .bootstrap-select .btn{ 
@@ -1012,7 +953,7 @@ html.js input.form-autocomplete {
 	*/
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
-	border-radius:25px;  	
+	border-radius:1.56em;  	
 	border-color: #eeee #eee #ddd;
 	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
 	overflow:hidden;
@@ -1025,7 +966,7 @@ html.js input.form-autocomplete {
 }
 	
 .main-content .bootstrap-select .btn:focus,
-.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; 
+.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 0.25em 0 #5764de; box-shadow: 0 0 0.25em 0 #5764de; 
 	background: #f5f5f5;
 	background-image:none;
 }
@@ -1046,7 +987,7 @@ html.js input.form-autocomplete {
 .main-content .selectpicker li{ padding:0; overflow:hidden;}
 .main-content .selectpicker li a{ color:#555; padding:0 1em; overflow:hidden; display:block; line-height:1.68em; height:1.56em;}
 
-.main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
+.main-content .selectpicker>li>a>span.text{ padding-left: 0.25em !important;}
 
 .main-content .selectpicker li a,
 .main-content .selectpicker li a span.text,
@@ -1076,7 +1017,7 @@ html.js input.form-autocomplete {
 .main-content .selectpicker>li.selected>a:hover i.check-mark,
 .main-content .selectpicker>li.selected>a:focus i.check-mark{ color:#dc3c47;}
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:15px; margin-top:2px; }
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:0.93em; margin-top:2px; }
 
 .main-content .selectpicker li a span.text,
 .main-content .selectpicker li a span.text:hover{ background:transparent; color:#444;}
