@@ -73,7 +73,7 @@
           <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar sidebar-offcanvas col-xs-6 <?php print $bsclass_sb1; ?>">
+            <div id="sidebar-first" class="region sidebar col-xs-6 <?php print $bsclass_sb1; ?>">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>

@@ -19,7 +19,7 @@ body a:hover { color: #000F81; }
 .back-to-top { z-index: 1000; } /* Back to top tab */
 .back-to-top i {font-style:normal; top:-7px;}
 
-div.loader { height: 80%; min-height: 500px; padding-top: 16px;}
+div.loader { height: 80%; min-height: 500px; padding-top: 1em;}
 
 .dfn, .italic{ font-style:italic !important; }
 .sans-serif{ font-family: "Museo Sans", sans-serif !important;}
@@ -43,9 +43,6 @@ section.messages {
 	width:58em;
 }
 
-.navbar-static-top {
-	z-index: 1000px;
-}
 /* Header Top Bar 
 
 h1.navbar-title.default img.site-logo {
@@ -80,7 +77,7 @@ div.navbar nav.navtop div.block h2 {
 }
 
 .navbar .lang ul.dropdown-menu {
-	left: -3em;
+	left: -2em;
 }
 
 div.highlight:last-child {
@@ -387,7 +384,7 @@ div.shanti-gallery {
 	height:2.5em;
 }
 .shanti-thumbnail .footer-wrap i{
-	font-size:1.25em;
+	font-size:1.32em;
 	position:relative;
 	top:1px;
 }
@@ -467,14 +464,14 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 #admin_footer { padding: 0; background-color: #f6d4ba; }
 #admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
-#admin_footer .block { display: inline-block; padding: 0px 8px; margin-right: thin solid #777; }
+#admin_footer .block { display: inline-block; padding: 0 0.5em; margin-right: thin solid #777; }
 
 /* Headers */
 h4 { 
 	font-family: "Museo Sans",sans-serif; 
 	font-weight: bold;
 	text-transform: capitalize;
-	margin-top: 12px;
+	margin-top: .75em;
 }
 
 h5, .h5 {
@@ -548,7 +545,7 @@ button#edit-delete:hover {
 }
 
 .form-text {
-	height: 28px;
+	height: 1.63em;
 	background-color: #ffffff;
 }
 
@@ -781,7 +778,7 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: -0.75em 2em 0.18em 0;
+  margin: -0.5em 2em .5em;
   font-size:80%;
   font-family:"Museo Sans", sans-serif;	
   text-transform:uppercase;
@@ -834,6 +831,7 @@ html.js input.form-autocomplete {
 }
 
 
+/*--- LINK: show more ---*/
 .link.show-more{ 
 	text-transform: uppercase;
 	font-size:.83em;
@@ -842,9 +840,11 @@ html.js input.form-autocomplete {
 	color:#5a65d1;	
 	font-size: 0.68em;
 	font-weight:normal;
-	padding-left:2px;
+	padding-left:3px;
 	font-family: 'Glyphicons Halflings';
 	content: '\002b';
+	position:relative;
+	top:-1px;
 }
 .link.show-more a{ font-family: "Museo Sans",sans-serif;	font-weight:700;}
 
@@ -990,15 +990,15 @@ html.js input.form-autocomplete {
 
 /*-----------------------------------------------*/
 /*---- select dropdown -----*/
-.content-section .bootstrap-select.form-control{
-	height:27px;
+.main-content .bootstrap-select.form-control{
+	height:1.83em;
 }
-.content-section .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
-.content-section .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100% !important;}
-.content-section .bootstrap-select .popover-title{ padding: 4px 14px; margin-bottom:5px;}
+.main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
+.main-content .bootstrap-select .selectpicker{ line-height:1.75em; height:1.83em; padding:0; border:1px solid #ddd; width:100% !important;}
+.main-content .bootstrap-select .popover-title{ padding: .25em .88em; margin-bottom:.38em;}
 
-.content-section .bootstrap-select .btn{ 
-	padding-left: 20px;
+.main-content .bootstrap-select .btn{ 
+	padding-left: 1.25em;
 	 color:#606060; 
 	background: transparent;
 	background-image:none;
@@ -1019,67 +1019,67 @@ html.js input.form-autocomplete {
 	-webkit-box-shadow:none;
 	box-shadow:none;
 }
-.content-section .bootstrap-select .btn:hover{ 
+.main-content .bootstrap-select .btn:hover{ 
 	border: 1px solid #ccc; 
 	background: #eee; 
 }
 	
-.content-section .bootstrap-select .btn:focus,
-.content-section .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; 
+.main-content .bootstrap-select .btn:focus,
+.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; 
 	background: #f5f5f5;
 	background-image:none;
 }
 
 /*--- dropdown ---*/
-.content-section .dropdown-menu.open{ border-radius:10px;}
-.content-section .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
+.main-content .dropdown-menu.open{ border-radius:0.63em;}
+.main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:1.12em; overflow:hidden;}
 
-.content-section .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;box-shadow:none;}
+.main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;box-shadow:none;}
 .bootstrap-select.btn-group:not(.input-group-btn){ margin-bottom:0;}
 
-.content-section .bootstrap-select.btn-group .dropdown-menu{ height:auto; overflow:auto;}
-.content-section .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
+.main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; overflow:auto;}
+.main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
 
-.content-section .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
-.content-section .selectpicker .caret:before{ color:#555; font-size:17px; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-10px; right:0px;}
+.main-content .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
+.main-content .selectpicker .caret:before{ color:#555; font-size:1em; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-0.75em; right:0;}
 
-.content-section .selectpicker li{ padding:0; overflow:hidden;}
-.content-section .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
+.main-content .selectpicker li{ padding:0; overflow:hidden;}
+.main-content .selectpicker li a{ color:#555; padding:0 1em; overflow:hidden; display:block; line-height:1.68em; height:1.56em;}
 
-.content-section .selectpicker>li>a>span.text{ padding-left:4px !important;}
+.main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
 
-.content-section .selectpicker li a,
-.content-section .selectpicker li a span.text,
-.content-section .selectpicker li.selected a{ background: #fff !important;}
+.main-content .selectpicker li a,
+.main-content .selectpicker li a span.text,
+.main-content .selectpicker li.selected a{ background: #fff !important;}
 
-.content-section .selectpicker li.selected a,
-.content-section .selectpicker li.selected a span.text{ font-weight:bold;}
-.content-section .selectpicker li.selected a i.icon{ font-weight:bold; color:#dc3c47;}
+.main-content .selectpicker li.selected a,
+.main-content .selectpicker li.selected a span.text{ font-weight:bold;}
+.main-content .selectpicker li.selected a i.icon{ font-weight:bold; color:#dc3c47;}
 
-.content-section .selectpicker li:hover,
-.content-section .selectpicker li a:hover,
-.content-section .selectpicker li a:active,
-.content-section .selectpicker li:hover span.text,
-.content-section .selectpicker li:active span.text,
-.content-section .selectpicker li a span.text:hover,
-.content-section .selectpicker li.selected a:hover,
-.content-section .selectpicker li.selected a:active{ color:#444; background: #eee !important;}
+.main-content .selectpicker li:hover,
+.main-content .selectpicker li a:hover,
+.main-content .selectpicker li a:active,
+.main-content .selectpicker li:hover span.text,
+.main-content .selectpicker li:active span.text,
+.main-content .selectpicker li a span.text:hover,
+.main-content .selectpicker li.selected a:hover,
+.main-content .selectpicker li.selected a:active{ color:#444; background: #eee !important;}
 
-.content-section .selectpicker li a span.text:hover,
-.content-section .selectpicker li.selected a span.text:hover{ color:#444; background: #eee !important;}
+.main-content .selectpicker li a span.text:hover,
+.main-content .selectpicker li.selected a span.text:hover{ color:#444; background: #eee !important;}
 
-.content-section .selectpicker>li>a i.check-mark,
-.content-section .selectpicker>li>a:hover i.check-mark,
-.content-section .selectpicker>li>a:focus i.check-mark { color:#ccc;}
+.main-content .selectpicker>li>a i.check-mark,
+.main-content .selectpicker>li>a:hover i.check-mark,
+.main-content .selectpicker>li>a:focus i.check-mark { color:#ccc;}
 	
-.content-section .selectpicker>li.selected>a i.check-mark,
-.content-section .selectpicker>li.selected>a:hover i.check-mark,
-.content-section .selectpicker>li.selected>a:focus i.check-mark{ color:#dc3c47;}
+.main-content .selectpicker>li.selected>a i.check-mark,
+.main-content .selectpicker>li.selected>a:hover i.check-mark,
+.main-content .selectpicker>li.selected>a:focus i.check-mark{ color:#dc3c47;}
 
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:15px; margin-top:2px; }
 
-.content-section .selectpicker li a span.text,
-.content-section .selectpicker li a span.text:hover{ background:transparent; color:#444;}
+.main-content .selectpicker li a span.text,
+.main-content .selectpicker li a span.text:hover{ background:transparent; color:#444;}
 
 .bootstrap-select.btn-group .btn .filter-option{ font-size:.92em;}
 .bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
