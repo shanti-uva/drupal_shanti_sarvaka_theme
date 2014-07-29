@@ -291,7 +291,7 @@ function shanti_sarvaka_menu_tree__shanti_explore_menu($variables) {
               . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4>' 
               . variable_get('explore_div_title', EXPLORE_DIV_TITLE) . '</h4>' 
               . '<div class="shanti-collections"><ul>'
-              . $variables['tree'] . '</ul></div></div><button class="closecollection"> <i class="icon shanticon-cancel"></i> </button></nav></section>';
+              . $variables['tree'] . '</ul></div></div><button class="close"> <i class="icon shanticon-cancel"></i> </button></nav></section>';
     return $html;
   }
 }
