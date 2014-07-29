@@ -650,7 +650,7 @@ ul.ss-full-tabs li.active a {
 
 div.carousel div { word-break: break-all; }
 
-div.carousel img { max-width:100%; float:right;}
+div.carousel img { max-width:100%; max-height:20em; float:right;}
 
 div.carousel a {
 	-webkit-transition: all 150ms ease;
@@ -666,6 +666,8 @@ div.carousel a:hover {
     opacity: 0.6;
     text-decoration: none;
 }
+
+div.carousel{ margin-bottom:20px;}
 
 div.carousel a.carousel-control {
 	height:1.88em;
