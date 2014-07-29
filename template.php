@@ -309,7 +309,7 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
  * Called from shanti_sarvaka_preprocess_page
  */
 function shanti_sarvaka_create_user_menu($um) {
-  dpm($um);
+  //dpm($um);
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
     // Determine whether login is via password or shibboleth and create login link accordingly
@@ -327,6 +327,16 @@ function shanti_sarvaka_create_user_menu($um) {
     );
   // if logged in show account submenu at top of list
   } else {
+    // Filter out existing Account links
+    $um = array_filter($um, function($item) use (&$um) {
+      $k = array_search($item, $um);
+      if($k && preg_match('/My account/', $k)) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+    // Add theme custom ones
     $acctarray = array(
       'link' => array(
         'title' => t('Account'),
@@ -350,7 +360,7 @@ function shanti_sarvaka_create_user_menu($um) {
           ),
         ),
     );
-    array_shift($um, $acctarray);
+    array_unshift($um, $acctarray);
   }
   return shanti_sarvaka_user_menu($um, TRUE);
 }

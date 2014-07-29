@@ -464,6 +464,14 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 /* Admin */
 
+
+@media (max-width: 1040px) {
+	/* necessary styles to make admin menu work at smaller screen sizes */
+	#admin-menu .dropdown .admin-menu-account, #admin-menu .dropdown .admin-menu-users, #admin-menu .dropdown .admin-menu-search {
+		display: none;
+	}
+}
+
 #admin_footer { padding: 0; background-color: #f6d4ba; }
 #admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
 #admin_footer .block { display: inline-block; padding: 0px 8px; margin-right: thin solid #777; }
