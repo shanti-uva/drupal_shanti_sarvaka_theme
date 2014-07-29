@@ -378,7 +378,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
   foreach($links as $n => $link) {
      $url = $link['link']['href'];
      if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
-     $target = (strpos('http', $url) == 0) ? ' target="_blank"':'';
+     $target = (strpos($url, 'http') == 0) ? ' target="_blank"':'';
      $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
      if(is_array($link['below']) && count($link['below']) > 0) {
         $linkhtml .= shanti_sarvaka_user_menu($link['below']);
