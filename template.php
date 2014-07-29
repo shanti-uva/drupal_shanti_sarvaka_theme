@@ -312,7 +312,7 @@ function shanti_sarvaka_create_user_menu($um) {
   // Filter out existing Account links
   $um = array_filter($um, function($item) use (&$um) {
     $k = array_search($item, $um);
-    if($k && preg_match('/(my|user) account/', str_to_lower($k))) {
+    if($k && preg_match('/(my|user) account/', strtolower($k))) {
       return false;
     } else {
       return true;
