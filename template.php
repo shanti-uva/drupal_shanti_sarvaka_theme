@@ -544,6 +544,7 @@ function shanti_sarvaka_select($variables) {
   $element['#attributes']['class'][] = 'form-control';
   $element['#attributes']['class'][] = 'form-select';
   $element['#attributes']['class'][] = 'ss-select';
+  $element['#attributes']['class'][] = 'selectpicker';
   element_set_attributes($element, array('id', 'name', 'size'));
 
   return '<select' . drupal_attributes($element['#attributes']) . '>' . form_select_options($element) . '</select>';

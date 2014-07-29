@@ -990,5 +990,104 @@ html.js input.form-autocomplete {
 
 
 
+/*-----------------------------------------------*/
+/*---- select dropdown -----*/
+.content-section .bootstrap-select.form-control{
+	height:27px;
+}
+.content-section .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
+.content-section .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100% !important;}
+.content-section .bootstrap-select .popover-title{ padding: 4px 14px; margin-bottom:5px;}
 
+.content-section .bootstrap-select .btn{ 
+	padding-left: 20px;
+	 color:#606060; 
+	background: transparent;
+	background-image:none;
+	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
+  background-image: -moz-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
+  background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
+  background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
+  background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+	/* 
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	*/
+	background-repeat: repeat-x;
+	border: 1px solid #ddd;
+	border-radius:25px;  	
+	border-color: #eeee #eee #ddd;
+	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
+	overflow:hidden;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.content-section .bootstrap-select .btn:hover{ 
+	border: 1px solid #ccc; 
+	background: #eee; 
+}
+	
+.content-section .bootstrap-select .btn:focus,
+.content-section .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; 
+	background: #f5f5f5;
+	background-image:none;
+}
+
+/*--- dropdown ---*/
+.content-section .dropdown-menu.open{ border-radius:10px;}
+.content-section .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
+
+.content-section .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;box-shadow:none;}
+.bootstrap-select.btn-group:not(.input-group-btn){ margin-bottom:0;}
+
+.content-section .bootstrap-select.btn-group .dropdown-menu{ height:auto; overflow:auto;}
+.content-section .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
+
+.content-section .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
+.content-section .selectpicker .caret:before{ color:#555; font-size:17px; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-10px; right:0px;}
+
+.content-section .selectpicker li{ padding:0; overflow:hidden;}
+.content-section .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
+
+.content-section .selectpicker>li>a>span.text{ padding-left:4px !important;}
+
+.content-section .selectpicker li a,
+.content-section .selectpicker li a span.text,
+.content-section .selectpicker li.selected a{ background: #fff !important;}
+
+.content-section .selectpicker li.selected a,
+.content-section .selectpicker li.selected a span.text{ font-weight:bold;}
+.content-section .selectpicker li.selected a i.icon{ font-weight:bold; color:#dc3c47;}
+
+.content-section .selectpicker li:hover,
+.content-section .selectpicker li a:hover,
+.content-section .selectpicker li a:active,
+.content-section .selectpicker li:hover span.text,
+.content-section .selectpicker li:active span.text,
+.content-section .selectpicker li a span.text:hover,
+.content-section .selectpicker li.selected a:hover,
+.content-section .selectpicker li.selected a:active{ color:#444; background: #eee !important;}
+
+.content-section .selectpicker li a span.text:hover,
+.content-section .selectpicker li.selected a span.text:hover{ color:#444; background: #eee !important;}
+
+.content-section .selectpicker>li>a i.check-mark,
+.content-section .selectpicker>li>a:hover i.check-mark,
+.content-section .selectpicker>li>a:focus i.check-mark { color:#ccc;}
+	
+.content-section .selectpicker>li.selected>a i.check-mark,
+.content-section .selectpicker>li.selected>a:hover i.check-mark,
+.content-section .selectpicker>li.selected>a:focus i.check-mark{ color:#dc3c47;}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:15px; margin-top:2px; }
+
+.content-section .selectpicker li a span.text,
+.content-section .selectpicker li a span.text:hover{ background:transparent; color:#444;}
+
+.bootstrap-select.btn-group .btn .filter-option{ font-size:.92em;}
+.bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
+.bootstrap-select.btn-group .btn .filter-option em{color:#dc3c47; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block; }
+
+.bootstrap-select.btn-group.show-tick i:first-child{ position:relative; top:2px;}
+
+/*--- END selectpicker ---*/
 
