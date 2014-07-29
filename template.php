@@ -309,7 +309,16 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
  * Called from shanti_sarvaka_preprocess_page
  */
 function shanti_sarvaka_create_user_menu($um) {
-  //dpm($um);
+  // Filter out existing Account links
+  $um = array_filter($um, function($item) use (&$um) {
+    $k = array_search($item, $um);
+    if($k && preg_match('/(My|User) account/', $k)) {
+      return false;
+    } else {
+      return true;
+    }
+  });
+  
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
     // Determine whether login is via password or shibboleth and create login link accordingly
@@ -325,17 +334,9 @@ function shanti_sarvaka_create_user_menu($um) {
       ),
       'below' => array(),
     );
+    
   // if logged in show account submenu at top of list
   } else {
-    // Filter out existing Account links
-    $um = array_filter($um, function($item) use (&$um) {
-      $k = array_search($item, $um);
-      if($k && preg_match('/My account/', $k)) {
-        return false;
-      } else {
-        return true;
-      }
-    });
     // Add theme custom ones
     $acctarray = array(
       'link' => array(
@@ -378,7 +379,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
   foreach($links as $n => $link) {
      $url = $link['link']['href'];
      if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
-     $target = (strpos($url, 'http') == 0) ? ' target="_blank"':'';
+     $target = (substr($url, 0, 1) == '/') ? '': ' target="_blank"';
      $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
      if(is_array($link['below']) && count($link['below']) > 0) {
         $linkhtml .= shanti_sarvaka_user_menu($link['below']);
