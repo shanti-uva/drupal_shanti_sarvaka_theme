@@ -637,3 +637,16 @@
 	
 }(jQuery));
 
+
+
+
+
+
+
+
+jQuery(function ($) {
+	// *** CONTENT *** hide responsive column for resources
+  $('[data-toggle=offcanvas]').click(function () {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
