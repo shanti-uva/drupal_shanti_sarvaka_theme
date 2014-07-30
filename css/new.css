@@ -41,16 +41,10 @@ body a:hover { color: #000F81; }
 }
 .show-more a{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:700;}
 
-
 article.main-content p { text-align: justify; } /* Justify paragraphs - this should be used sparingly */
 
-.main-content .content-section {
-	padding: 1em 2em 5em 2em;
-}
-
-.main-content .content-section .view-content{
-	max-width:58em;
-}
+.main-content .content-section { padding: 1em 2em 5em 2em;}
+.main-content .content-section .view-content{max-width:58em;}
 
 /* Header Top Bar 
 
@@ -81,25 +75,17 @@ h1.navbar-title.default .site-slogan {
 */
 /* Language Chooser */
 
-div.navbar nav.navtop div.block h2 {
-	display: none;
-}
+.navbar nav.navtop div.block h2 { display: none;}
+.navbar .lang ul.dropdown-menu { left: -2em;}
+.highlight:last-child { border-left-color: #d0d0d0;}
 
-.navbar .lang ul.dropdown-menu {
-	left: -2em;
-}
-
-div.highlight:last-child {
-	border-left-color: #d0d0d0;
-}
-
-.block .content .nav a:hover, .block .content .nav a:focus {
+.block .content .nav a{ }
+.block .content .nav a:hover, 
+.block .content .nav a:focus {
 	text-decoration: none;
 	background: #fff;
 	color: #444;
 }
-
-
 
 /* 
 div.banner-content {
@@ -122,22 +108,10 @@ div.banner-content button.btn-default {
 }
 
 /* Drupal Edit Tabs */
-article.main-content header ul.primary {
-	float: right;
-	margin-top: -1.12em;
-	margin-right: 2.5em;
-}
+article.main-content header ul.primary { float: right;margin-top: -1.12em;margin-right: 2.5em;}
 
 
-
-
-
-
-
-
-.breadwrap ol{
-	border:none;
-}
+.breadwrap ol{ border:none;}
 
 
 
@@ -149,17 +123,13 @@ div.sidebar {
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size:1.1em;
 }	
-
 div#sidebar-second {
 	background-image: none;
 	background-color: #fff;
 	max-width: 19em;
 	max-width:24em;
 }
-div.region-sidebar-second div.block {
-	/*border-bottom: thin #777 solid;*/
-	padding: 1em 1em .32em;
-}
+div.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 1em .32em;}
 
 div.region-sidebar-second div.block:after {
 	content: '';
@@ -170,10 +140,7 @@ div.region-sidebar-second div.block:after {
 	display: block;
 	margin-top: 1.25em;
 }
-
-div#sidebar-second button.form-submit {
-	
-}
+div#sidebar-second button.form-submit { }
 
 
 
@@ -192,9 +159,7 @@ div.treeview .block-facetapi h2 {
 	white-space: nowrap;
 }
 
-.treeview .facetapi-limit-link {
-	display: none;
-}
+.treeview .facetapi-limit-link {display: none;}
 
 ul.fancytree-container {
 	font-family: tahoma, arial, helvetica;
@@ -264,8 +229,6 @@ span.fancytree-node i.shanticon-cancel {
  -moz-column-gap: 1em;
  -webkit-column-gap: 1em;
 }
-
-
 .shanti-thumbnail { 
 	color:#444;
 	height: 18em !important;
@@ -339,8 +302,6 @@ span.fancytree-node i.shanticon-cancel {
 	position:relative;
 	top:2px;
 }
-
-
 .shanti-field-created{
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
 }
@@ -355,15 +316,12 @@ div.shanti-thumbnail-field.shanti-field-duration{
 	line-height: 1.25em;
 	margin-top: 0.38em;
 }
-
 .shanti-thumbnail-field.shanti-field-title a {
 	color: #333;
 	font-size: 1.1em;
 	font-weight: bold;
 }
-
 .shanti-thumbnail-link .overlay{
-	display:none;
 	
 	position:absolute:
 	top:0;
@@ -633,7 +591,7 @@ ul.ss-full-tabs li.active a {
 
 .carouseldiv .header {margin-top: .5em;}
 .carouseldiv .header p{ margin-bottom:.38em;}
-
+.carouseldiv .header p .show-more{ float:right;}
 .carouseldiv .header .title {
 	font-style:italic;
 	font-weight:bold;
