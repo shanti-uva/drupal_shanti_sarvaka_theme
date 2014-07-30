@@ -1,5 +1,5 @@
 html{ -webkit-font-smoothing: antialiased; overflow-y:scroll;}
-body{ font-family: "Museo Sans",sans-serif; font-weight:normal; overflow: hidden;}
+body{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; overflow: hidden;}
 body div.wrap-all{ position:relative;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline: 0 !important; /* outline: -2px auto -webkit-focus-ring-color !important; */}
@@ -37,7 +37,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 
 /*--- content elements ---*/
 .content-section h1, .content-section h2, .content-section h3, .content-section h4, .content-section h5, .content-section h6{ 
-	font-family: "Museo Sans",sans-serif; font-weight:500;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500;
 }
 .content-section h6 {
   font-weight: 700;
@@ -72,7 +72,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
-.content-section .btn{ font-family: "Museo Sans",sans-serif; }
+.content-section .btn{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 .content-section .btn-group{
 	-moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
 	box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
@@ -83,7 +83,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .content-section .btn{
   background-image: none; 
-  font-family: "Museo Sans",sans-serif;
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 .content-section .btn-default,
 .content-section .btn-primary,

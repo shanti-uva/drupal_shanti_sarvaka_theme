@@ -5,9 +5,9 @@
 
 /* common elements */
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-size:110%;}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal;}
 
-div.inline { display: inline-block; }
+div.inline { display: inline-block; } /*--- avoid using this */
 
 article.main-content p { text-align: justify; } /* Justify paragraphs */
 
@@ -21,21 +21,28 @@ body a:hover { color: #000F81; }
 .back-to-top { z-index: 1000; } /* Back to top tab */
 .back-to-top i {font-style:normal; top:-0.32em;}
 
-div.loader { height: 80%; min-height: 31em; padding-top: 1em;}
+.loader { height: 80%; min-height: 31em; padding-top: 1em;}
 
 .dfn, .italic{ font-style:italic !important; }
-.sans-serif{ font-family: "Museo Sans", sans-serif !important;}
-.serif{ font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important; }
+.sans-serif{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.serif{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
-
-
-/* Top Level Elements */
-
-/* testing use of class -----
-section.messages {
-	clear: both;
+/*--- LINK: add plus icon for show more link as seen on carousel ---*/
+.show-more{ text-transform: uppercase; font-size:.83em;}
+.show-more:after{ 
+	color:#5a65d1;	
+	font-size: 0.68em;
+	font-weight:normal;
+	padding-left:0.18em;
+	font-family: 'Glyphicons Halflings';
+	content: '\002b';
+	position:relative;
+	top:-1px;
 }
-*/
+.show-more a{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:700;}
+
+
+article.main-content p { text-align: justify; } /* Justify paragraphs - this should be used sparingly */
 
 .main-content .content-section {
 	padding: 1em 2em 5em 2em;
@@ -145,7 +152,7 @@ div.sidebar {
 
 div#sidebar-second {
 	background-image: none;
-	background-color: #ffffff;
+	background-color: #fff;
 	max-width: 19em;
 	max-width:24em;
 }
@@ -245,6 +252,10 @@ span.fancytree-node i.shanticon-cancel {
  -webkit-column-gap: .63em;
 }
 
+
+
+
+
 /* Gallery and thumbnails */
 .shanti-gallery{
 	width: 100%;
@@ -257,7 +268,6 @@ span.fancytree-node i.shanticon-cancel {
 
 .shanti-thumbnail { 
 	color:#444;
-	clear:both;
 	height: 18em !important;
 	float:left;
   max-width: 11.75em;
@@ -307,10 +317,10 @@ span.fancytree-node i.shanticon-cancel {
 	font-family:"Museo-Sans",sans-serif;
 }
 
-.shanti-thumbnail .body-wrap{clear:both;
-	padding: .38em .75em 25em 1em;
+.shanti-thumbnail .body-wrap{
+	padding: .38em .75em .5em 1em;
 }
-.shanti-thumbnail .footer-wrap {clear:both;
+.shanti-thumbnail .footer-wrap {
 	position:absolute;
 	bottom:0;
 	background:#f6f6f6;
@@ -322,11 +332,12 @@ span.fancytree-node i.shanticon-cancel {
 	/* text-shadow: 0 1px 0 #fff; */
 	color:#787878;
 	height:2.5em;
+	line-height:2em;
 }
 .shanti-thumbnail .footer-wrap i{
 	font-size:1.32em;
 	position:relative;
-	top:1px;
+	top:2px;
 }
 
 
@@ -597,7 +608,7 @@ ul.ss-full-tabs li.active a {
 /**
  ** Carousel Styles, loosely based on from http://codepen.io/redfrost/full/dbrgk  
  **/
-.carousel{ margin-bottom:1.25em; padding: 1.56em 2em; background-color: #fff; box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);}
+.carousel{ margin-bottom:1.25em; padding: 1.56em 2em; background-color: #fff; box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175);}
 .carousel .carousel-inner { padding-top: 0;}
 .carousel div { /* word-break: break-all; */}
 .carousel img { max-width:100%; float:right;}
@@ -622,41 +633,30 @@ ul.ss-full-tabs li.active a {
 
 .carouseldiv .header {margin-top: .5em;}
 .carouseldiv .header p{ margin-bottom:.38em;}
+
 .carouseldiv .header .title {
 	font-style:italic;
 	font-weight:bold;
 	font-size:120%;
 }
-.carouseldiv .header .show-more {
-	margin-bottom: 0;
-	position:relative;
-	top:0.5em;
-	float:right;
-}
-
-
-
-.carousel .caption .title h3 {
-	font-weight: 500;
-	margin: 0 0 0.63em;
-	font-size:1.63em;
-}
-
-.carousel .caption .title h3 a {
-	color: #333;
-}
-
-.carousel .caption .byline {
-	color: #777;
-	font-style: italic;
-	margin: -0.5em 0 .63em 0;
-}
-
-.carousel .caption .description p {
-
-}
-
+.carousel .caption .title h3 {font-weight: 500;margin: 0 0 0.63em;font-size:1.63em;}
+.carousel .caption .title h3 a {color: #333;}
+.carousel .caption .byline {color: #777;font-style: italic;margin: -0.5em 0 .63em 0;}
+.carousel .caption .description p {}
 /** End of Carousel Styles **/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -675,15 +675,6 @@ table.pagerer {
 	width:100%;
 	float:right;
 }
-
-article.main-content p { text-align: justify; } /* Justify paragraphs */
-/*
-body a, body a:visited, body a:active { color: #5b68ce; }
-
-body a:hover { color: #000F81; }*/
-
-/* Miscellaneous Styles */
-
 input.pagerer-page{
 	border:none;	
 	font-size:100%;
@@ -704,38 +695,31 @@ ul.pager li>a{
 	border:none;
 }
 
-table.pagerer { clear: both; } /** To get pagerer to appear under gallery of images */
-	
-.input-section label.radio-inline:first-child { width: auto; } /* radio button styles */
 
+
+
+
+
+
+
+/*
+.input-section label.radio-inline:first-child { width: auto; }
 .search-group .radio-inline > div { margin-right:0.25em; }
+*/
 
-#edit-masquerade-user-field {
-	width: 80%;
-	display: inline;
-}
+#edit-masquerade-user-field { width: 80%;display: inline;}
 
-html.js input.form-autocomplete {
-	background-position: 100% .5em;
-}
+html.js input.form-autocomplete { background-position: 100% .5em;}
 
 
-/*--- LINK: show more ---*/
-.show-more{ 
-	text-transform: uppercase;
-	font-size:.83em;
-}
-.show-more:after{ 
-	color:#5a65d1;	
-	font-size: 0.68em;
-	font-weight:normal;
-	padding-left:0.18em;
-	font-family: 'Glyphicons Halflings';
-	content: '\002b';
-	position:relative;
-	top:-1px;
-}
-.show-more a{ font-family: "Museo Sans",sans-serif;	font-weight:700;}
+
+
+
+
+
+
+
+
 
 
 
