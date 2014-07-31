@@ -366,11 +366,11 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 
 
 .feature-submit .btn.btn-default{ /*--- the select button ---*/
-	font-size:0.75em; background-color:#dc3c47;color:#fff; padding:3px 13px 2px; margin-top:7px; background-image:none;box-shadow:none;text-transform:uppercase;text-shadow:none;
+	font-size:0.75em; background-color:#dc3c47;color:#fff; padding:3px 13px 2px; margin-top:7px; background-image:none;-webkit-box-shadow:none;box-shadow:none;text-transform:uppercase;text-shadow:none;
 }
 .feature-submit .btn.btn-default>span{ font-size:1.62em;position:relative;top:3px;}
 .feature-submit .btn.btn-default.clear-form{ /*--- the clear button ---*/
-	border:none;background:transparent;padding:0;margin-top:5px;float:right;-webkit-box-shadow:none; font-weight:bold; box-shadow:none;color:#dc3c47;text-transform:capitalize; border-radius:0; border-collapse: separate;
+	border:none;background:transparent;padding:0;margin-top:5px;float:right;-webkit-box-shadow:none;box-shadow:none; font-weight:bold; color:#dc3c47;text-transform:capitalize; border-radius:0; border-collapse: separate;
 }
 .feature-submit .btn.btn-default.clear-form:hover{ color:#333;}
 .feature-submit .btn.btn-default.clear-form:active{ color:#dc3c47;}
