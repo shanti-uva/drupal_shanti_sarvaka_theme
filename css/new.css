@@ -33,7 +33,7 @@ body a:hover { color: #000F81; }
 	color:#5a65d1;	
 	font-size: 0.68em;
 	font-weight:normal;
-	padding-left:0.18em;
+	padding-left:0.25em;
 	font-family: 'Glyphicons Halflings';
 	content: '\002b';
 	position:relative;
@@ -208,7 +208,7 @@ span.fancytree-node i.shanticon-cancel {
 	cursor: pointer;
 }
 
-/* with right column */
+/* THumbnail Grid with (right) column */
 .search-results {
 	width: 100%;
 	-moz-column-width: 11em;
@@ -216,11 +216,6 @@ span.fancytree-node i.shanticon-cancel {
  -moz-column-gap: .63em;
  -webkit-column-gap: .63em;
 }
-
-
-
-
-
 /* Gallery and thumbnails */
 .shanti-gallery{
 	width: 100%;
@@ -231,13 +226,14 @@ span.fancytree-node i.shanticon-cancel {
 }
 .shanti-thumbnail { 
 	color:#444;
-	height: 18em !important;
+	height: 18em;
 	float:left;
   max-width: 11.75em;
 	padding: 0;
   margin:  0.25em 0.38em 1.25em;
   width:  100%;
 	border-radius:.32em;
+	border-collapse: separate;
 	background-color: #FFFFFF;	
 	display: block;
   position:relative;
@@ -274,6 +270,7 @@ span.fancytree-node i.shanticon-cancel {
 	width: 100%;
 	border: none;
 	border-radius: .32em .32em 0 0;
+	border-collapse: separate;
 }
 .shanti-thumbnail-info {
 	font-size: 0.75em;
@@ -289,18 +286,18 @@ span.fancytree-node i.shanticon-cancel {
 	background:#f6f6f6;
 	border-top:1px solid #e6e6e6;
 	border-radius:0 0 .32em .32em;
+	border-collapse: separate;
 	width:100%;
 	display:block;
-	padding:.44em 1em 1em;
+	padding:.25em 1em 0;
 	/* text-shadow: 0 1px 0 #fff; */
 	color:#787878;
 	height:2.5em;
-	line-height:2em;
 }
 .shanti-thumbnail .footer-wrap i{
 	font-size:1.32em;
 	position:relative;
-	top:2px;
+	top:1px;
 }
 .shanti-field-created{
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
@@ -353,8 +350,8 @@ div.shanti-thumbnail-field.shanti-field-duration{
 	width: 2em;
 	height: 1.88em;
 	border: none;
-	-webkit-border-radius: 0;
-	border-radius: 0 0.25em 0 0.25em;
+	border-radius: 0 0.25em;
+	border-collapse: separate;
 	color: white;
 	font-size:1.25em;
 	line-height:1.83em;
@@ -383,11 +380,11 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 #admin_footer .block { display: inline-block; padding: 0 0.5em; margin-right: thin solid #777; }
 
 /* Headers */
-h4 { 
+/*h4 { 
 	font-family: "Museo Sans",sans-serif; 
 	font-weight: bold;
 	text-transform: capitalize;
-	margin-top: .75em;
+	margin-top: 0;
 }
 
 h5, .h5 {
@@ -395,8 +392,10 @@ h5, .h5 {
 	font-weight: bold;
 	letter-spacing: 0.03em;
 }
+*/
 
 /** Form Fields **/
+/*
 .form-control {
 	width: auto;
 	border-radius: 1.5em;
@@ -404,7 +403,7 @@ h5, .h5 {
 	-moz-border-radius: 1.5em;
 	background-color: #ffffff;
 }
-
+*/
 input.form-control.form-text {
 	display: inline-block;
 }
@@ -412,8 +411,7 @@ input.form-control.form-text {
 .form-textarea-wrapper textarea {
 	/*width: auto;*/
 	border-radius: 0.38em;
-	-webkit-border-radius:  0.38em;
-	-moz-border-radius:  0.38em;
+	border-collapse: separate;
 }
 
 select.form-control.ss-select {
@@ -424,8 +422,7 @@ select.form-control.ss-select {
 
 select.form-control.ss-select[multiple] {
 	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
+	border-collapse: separate;
 }
 
 button.btn-primary, button.btn-success, button.btn-info, button.btn-warning, button.btn-danger {
@@ -497,6 +494,7 @@ div.field-accordion h4 span.ss-fieldset-toggle {
 	font-size: 90%;
 	padding: 0 4px 2px;
 	border-radius: 1.25em;
+	border-collapse: separate;
 	border: 1px solid grey;
 	background-color: #fff;
 	box-shadow: 2px 0 3px #aaa;
@@ -528,6 +526,7 @@ ul.ss-full-tabs li a {
 	font-weight: 777;
 	color: #999;
 	border-radius: 0;
+	border-collapse: separate;
 }
 
 ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
@@ -566,7 +565,7 @@ ul.ss-full-tabs li.active a {
 /**
  ** Carousel Styles, loosely based on from http://codepen.io/redfrost/full/dbrgk  
  **/
-.carousel{ margin-bottom:1.25em; padding: 1.56em 2em; background-color: #fff; box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175);}
+.carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background-color: #fff; box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175);}
 .carousel .carousel-inner { padding-top: 0;}
 .carousel div { /* word-break: break-all; */}
 .carousel img { max-width:100%; float:right;}
@@ -574,20 +573,21 @@ ul.ss-full-tabs li.active a {
 	height:1.88em;
 	top: 42%;
 	width:2em;
-	font-size: 2em;
-	line-height:1.75em;
+	font-size: 2.63em;
+	line-height:2.12em;
 	color: white;
 	font-weight: bold;
 	background-image: none;
-	border-radius: 0.25em;
 	text-shadow:none;
+	text-align:center;
 	border-radius:0;
+	border-collapse: separate;
 }
-.carousel a.carousel-control i {font-family:"FontAwesome";font-style:normal;}
 .carousel a.carousel-control.left {margin-left: -1.18em;}
 .carousel a.carousel-control.right {margin-right: -1.18em;}
-.carousel a.carousel-control.left i:before {content:'\f04a'; /* fa-play */}
-.carousel a.carousel-control.right i:before {content:'\f04e'; /* fa-play */}
+.carousel a.carousel-control i {font-family:"shanticon";font-style:normal;}
+.carousel a.carousel-control.left i:before {content:'\e641'; position:relative;right:-5px;}
+.carousel a.carousel-control.right i:before {content:'\e642'; position:relative;left:-5px;}
 
 .carouseldiv .header {margin-top: .5em;}
 .carouseldiv .header p{ margin-bottom:.38em;}
@@ -642,19 +642,35 @@ input.pagerer-page{
 ul.pager{
 	margin:0;
 	display:inline;
-	text-align: right;
+	text-align:right;
 	float:right;
 }
+ul.page li{ padding:0 1px;}
 ul.pager li>a{
 	padding:0.06em 0.5em;
 	border-radius:0;
+	border-collapse: separate;
 	margin:0;
 	background:transparent;
 	border:none;
 }
 
-
-
+.pager-first i,
+.pager-previous i,
+.pager-next i,
+.pager-last i{
+	font-family:'shanticon';
+	height:1em;
+	width:1em;
+	line-height:1.25em;
+	color:#222;
+	display:inline-block;
+	background:transparent;
+}
+.pager-first i:before{ content:"\e63d"; }
+.pager-previous i:before { content:"\e640"; }
+.pager-next i:before { content:"\e63f"; }
+.pager-last i:before { content:"\e63e"; }
 
 
 
@@ -676,90 +692,6 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 
 
-
-
-
-
-
-
-/*-----------------------------------------------------------*/
-/*--- START Default Font Styles for shanticon Collection ----*/
-/*-----------------------------------------------------------*/
-.icon{
-	font-family: 'shanticon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-/*--- increases the font 33% larger relative to the icon container ---*/
-.icon-lg {
-  font-size: 1.3333333333333333em;
-  line-height: 0.75em;
-  vertical-align: -30%;
-}
-.icon-2x {
-  font-size: 2em;
-}
-.icon-3x {
-  font-size: 3em;
-}
-.icon-4x {
-  font-size: 4em;
-}
-.icon-5x {
-  font-size: 5em;
-}
-.icon-fw {
-  width: 1.2857142857142858em;
-  text-align: center;
-}
-.icon-ul {
-  padding-left: 0;
-  margin-left: 2.142857142857143em;
-  list-style-type: none;
-}
-.icon-ul > li {
-  position: relative;
-}
-.icon-li {
-  position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
-  top: 0.14285714285714285em;
-  text-align: center;
-}
-.icon-li.icon-lg {
-  left: -1.8571428571428572em;
-}
-.icon-border {
-  padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
-  border-radius: .1em;
-}
-.icon.pull-left {
-  margin-right: .3em;
-}
-.icon.pull-right {
-  margin-left: .3em;
-}
-.icon-spin {
-  -webkit-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
-}
-
-/*---------------------------------------------------*/
-/*--- END Default Font Styles ----*/
-/*---------------------------------------------------*/
 
 
 .views-exposed-form label{ margin-bottom:0;font-size:90%;padding-left:.44em;font-family:"museo-sans",sans-serif;font-weight:500;}
@@ -853,6 +785,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
 	border-radius:1.56em;  	
+	border-collapse: separate;
 	border-color: #eeee #eee #ddd;
 	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
 	overflow:hidden;
@@ -871,7 +804,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 }
 
 /*--- dropdown ---*/
-.main-content .dropdown-menu.open{ border-radius:0.63em;}
+.main-content .dropdown-menu.open{ border-radius:0.63em;border-collapse: separate;}
 .main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:1.12em; overflow:hidden;}
 
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;box-shadow:none;}
@@ -928,4 +861,5 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 .bootstrap-select.btn-group.show-tick i:first-child{ position:relative; top:2px;}
 
 /*--- END selectpicker ---*/
+
 
