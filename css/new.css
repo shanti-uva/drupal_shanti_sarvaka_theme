@@ -833,29 +833,34 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 .main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
 .main-content .bootstrap-select .selectpicker{ line-height:1.75em; height:1.83em; padding:0; border:1px solid #ddd; width:100% !important;}
 
-.main-content .bootstrap-select.form-control{ height:1.83em;}
+.main-content .bootstrap-select.form-control{ 
+	height:1.83em;	
+	border-radius:1.56em;  	
+	border-color: transparent;
+	background-clip: padding-box;	 /* fix ie9 radius-corners */
+}
 .main-content .bootstrap-select .popover-title{ padding: .25em .88em; margin-bottom:.38em;}
 
+/* .main-content .bootstrap-select .btn.btn-default{ background:transparent;} */
 .main-content .bootstrap-select .btn{ 
 	padding-left: 1.25em;
-	 color:#606060; 
+	color:#606060; 
 	background: transparent;
 	background-image:none;
-	/*background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
+	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
   background-image: -moz-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
-  */
+  
 	/* 
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
 	*/
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
 	border-radius:1.56em;  	
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	background-clip: padding-box;	 /* fix ie9 radius-corners */
 	border-color: #eeee #eee #ddd;
-	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
 	overflow:hidden;
 	-webkit-box-shadow:none;
 	box-shadow:none;
