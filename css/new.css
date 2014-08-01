@@ -18,7 +18,7 @@ body a:hover { color: #000F81; }
 
 /* Miscellaneous Styles */
 
-.main-content .messages{ padding:0; border:none; /*  margin:0.12em 0 1em; border-bottom:1px solid #ccc; */ background-position: 0 0;}
+.main-content div.messages{ margin:0; padding:0; border:none; /*  margin:0.12em 0 1em; border-bottom:1px solid #ccc; */ background-position: 0 0;}
 
 div.error{ background:transparent;}
 
@@ -692,15 +692,14 @@ ul.pager{
 }
 ul.page li{ padding:0 1px;}
 ul.pager li>a{
+	color:#aaa;
 	padding:0.06em 0.5em;
-	border-radius:0;
-	border-collapse: separate;
 	margin:0;
 	background:transparent;
 	border:none;
 	border-radius:0.18em;
-	color:#707070;
-	border-radius:0.18em;
+	border-collapse: separate;
+	display:inline-block;
 }
 ul.pager li>a:hover{
 	color:#333;
@@ -708,6 +707,10 @@ ul.pager li>a:hover{
 	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 }
 ul.pager li>a:active{ -webkit-box-shadow:none;box-shadow:none;}
+
+ul.pager li>a i{ color:#999;}
+ul.pager li>a i:hover{ color:#444; }
+
 .pager-first i,
 .pager-previous i,
 .pager-next i,
