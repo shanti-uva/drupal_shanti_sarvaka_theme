@@ -75,10 +75,106 @@ h1.navbar-title.default .site-slogan {
 	padding-left: 2px;
 }
 */
-/* Language Chooser */
+
+
+/* Headers */
+/*h4 { 
+	font-family: "Museo Sans",sans-serif; 
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-top: 0;
+}
+
+h5, .h5 {
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+}
+*/
+
+/** Form Fields **/
+/*
+.form-control {
+	width: auto;
+	border-radius: 1.5em;
+	-webkit-border-radius: 1.5em;
+	-moz-border-radius: 1.5em;
+	background-color: #ffffff;
+}
+*/
+input.form-control.form-text {
+	display: inline-block;
+}
+
+.form-textarea-wrapper textarea {
+	/*width: auto;*/
+	border-radius: 0.38em;
+	border-collapse: separate;
+}
+
+select.form-control.ss-select {
+	width: auto;
+	margin-bottom: 0.5em;
+	height:1.5em;
+}
+
+select.form-control.ss-select[multiple] {
+	border-radius: 3px;
+	border-collapse: separate;
+}
+
+button.btn-primary, button.btn-success, button.btn-info, button.btn-warning, button.btn-danger {
+	padding: 0;
+	margin: 0 3px;
+}
+
+button.btn-primary {
+	background-image: none;
+	background-color: #4850bd;
+}
+
+button.btn-primary:hover {
+	background-color: #5b68ce; /* #5a65d1;*/
+}
+
+button.btn-primary i.icon {
+	display: inline-block;
+	font-weight: normal;
+	padding: 6px 6px 6px 8px; 
+}
+
+button.btn-primary span {
+	display: inline-block;
+	padding: 1px 8px;
+	background-color: rgba(255, 255, 255, .1);
+	font-size: 90%;
+}
+
+button#edit-delete:hover {
+	background-color: red;
+	border: thin solid red;
+}
+
+.form-text {
+	height: 1.83em;
+	line-height:1.44em;
+	background-color: #ffffff;
+	padding: .38em .75em;
+}
+
+textarea {
+	border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
 
 .navbar nav.navtop div.block h2 { display: none;}
-.navbar .lang ul.dropdown-menu { left: -2em;}
+.navbar .lang ul.dropdown-menu { left: -2em;} /* language menu */
 .highlight:last-child { border-left-color: #d0d0d0;}
 
 .block .content .nav a{ }
@@ -89,13 +185,7 @@ h1.navbar-title.default .site-slogan {
 	color: #444;
 }
 
-/* 
-div.banner-content {
-	margin-top: -1.8em;
-	position: absolute;
-	right: 26%;
-}
-*/
+
 
 div.banner-content button.btn-default {
 	background: rgba(120,120,120,0.3);
@@ -130,6 +220,7 @@ div#sidebar-second {
 	background-color: #fff;
 	max-width: 19em;
 	max-width:24em;
+	margin-left:1em;
 }
 div.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 1em .32em;}
 
@@ -209,6 +300,11 @@ span.fancytree-node i.shanticon-cancel {
 	display: inline-block;
 	cursor: pointer;
 }
+
+
+
+
+
 
 /* THumbnail Grid with (right) column */
 .search-results {
@@ -365,6 +461,16 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 }
 **/
 
+
+
+
+
+
+
+
+
+
+
 /* Admin */
 @media (max-width: 1040px) {
 	/* necessary styles to make admin menu work at smaller screen sizes */
@@ -377,94 +483,13 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 #admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
 #admin_footer .block { display: inline-block; padding: 0 0.5em; margin-right: thin solid #777; }
 
-/* Headers */
-/*h4 { 
-	font-family: "Museo Sans",sans-serif; 
-	font-weight: bold;
-	text-transform: capitalize;
-	margin-top: 0;
-}
 
-h5, .h5 {
-	font-size: 1.1em;
-	font-weight: bold;
-	letter-spacing: 0.03em;
-}
-*/
 
-/** Form Fields **/
-/*
-.form-control {
-	width: auto;
-	border-radius: 1.5em;
-	-webkit-border-radius: 1.5em;
-	-moz-border-radius: 1.5em;
-	background-color: #ffffff;
-}
-*/
-input.form-control.form-text {
-	display: inline-block;
-}
 
-.form-textarea-wrapper textarea {
-	/*width: auto;*/
-	border-radius: 0.38em;
-	border-collapse: separate;
-}
 
-select.form-control.ss-select {
-	width: auto;
-	margin-bottom: 0.5em;
-	height:1.5em;
-}
 
-select.form-control.ss-select[multiple] {
-	border-radius: 3px;
-	border-collapse: separate;
-}
 
-button.btn-primary, button.btn-success, button.btn-info, button.btn-warning, button.btn-danger {
-	padding: 0;
-	margin: 0 3px;
-}
 
-button.btn-primary {
-	background-image: none;
-	background-color: #4850bd;
-}
-
-button.btn-primary:hover {
-	background-color: #5b68ce; /* #5a65d1;*/
-}
-
-button.btn-primary i.icon {
-	display: inline-block;
-	font-weight: normal;
-	padding: 6px 6px 6px 8px; 
-}
-
-button.btn-primary span {
-	display: inline-block;
-	padding: 1px 8px;
-	background-color: rgba(255, 255, 255, .1);
-	font-size: 90%;
-}
-
-button#edit-delete:hover {
-	background-color: red;
-	border: thin solid red;
-}
-
-.form-text {
-	height: 1.83em;
-	line-height:1.44em;
-	background-color: #ffffff;
-	padding: .38em .75em;
-}
-
-textarea {
-	border: 1px solid #ccc;
-}
 
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 div.field-accordion {
@@ -561,8 +586,18 @@ ul.ss-full-tabs li.active a {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 /**
- ** Carousel Styles, loosely based on from http://codepen.io/redfrost/full/dbrgk  
+ ** Carousel Styles, loosely based on http://codepen.io/redfrost/full/dbrgk  
  **/
 .carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background-color: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175);}
 .carousel .carousel-inner { padding-top: 0;}
