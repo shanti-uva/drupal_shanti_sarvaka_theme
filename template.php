@@ -337,6 +337,13 @@ function shanti_sarvaka_create_user_menu($um) {
     
   // if logged in show account submenu at top of list
   } else {
+    // Add preferences menu
+    if(module_exists('user_prefs')) {
+      $pfarray = array(
+        'html' => user_prefs_form(),
+      );
+      array_unshift($um, $pfarray);
+    }
     // Add theme custom ones
     $acctarray = array(
       'link' => array(
@@ -377,16 +384,21 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
        </li>';
   }
   foreach($links as $n => $link) {
-     $url = $link['link']['href'];
-     if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
-     $target = (substr($url, 0, 1) == '/') ? '': ' target="_blank"';
-     $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
-     if(is_array($link['below']) && count($link['below']) > 0) {
-        $linkhtml .= shanti_sarvaka_user_menu($link['below']);
-     }
-     $linkhtml .= '</li>';
-     $html .= $linkhtml;
+    if(isset($link['html'])) {
+      $html .= $link['html'];
+      continue;
+    }
+    $url = $link['link']['href'];
+    if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
+    $target = (substr($url, 0, 1) == '/') ? '': ' target="_blank"';
+    $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
+    if(is_array($link['below']) && count($link['below']) > 0) {
+      $linkhtml .= shanti_sarvaka_user_menu($link['below']);
+    }
+    $linkhtml .= '</li>';
+    $html .= $linkhtml;   
   }
+  
   $html .= '</ul>';
   return $html;
 }

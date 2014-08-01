@@ -95,9 +95,9 @@
 	    backItemIcon: 'fa fa-angle-left',
 	    groupIcon: 'fa fa-angle-right',
 	    collapsed: false,
-	    preventItemClick: false
+	    preventItemClick: false,
 	  });
-	  
+
 	  // --- align the text
 	  $('#menu ul>li, #menu h2').css('text-align','left');
 	  $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
@@ -267,6 +267,10 @@
                   self.iCheck('update');
               }
               if(event.type ==="ifUnchecked"){
+                  self.trigger('click');  
+                  self.iCheck('update');
+              }     
+              if(event.type ==="ifChanged"){
                   self.trigger('click');  
                   self.iCheck('update');
               }                             
