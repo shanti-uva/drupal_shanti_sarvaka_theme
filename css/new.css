@@ -673,6 +673,7 @@ input.pagerer-page{
 	font-size:100%;
 	line-height:90%;
 	color: #5a65d1;
+	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 	border-radius:2px;
 }
@@ -696,8 +697,16 @@ ul.pager li>a{
 	margin:0;
 	background:transparent;
 	border:none;
+	border-radius:0.18em;
+	color:#707070;
+	border-radius:0.18em;
 }
-
+ul.pager li>a:hover{
+	color:#333;
+	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+}
+ul.pager li>a:hover{ -webkit-box-shadow:none;box-shadow:none;}
 .pager-first i,
 .pager-previous i,
 .pager-next i,
@@ -722,6 +731,7 @@ ul.pager li>a{
 	position:relative;
 	top: 0.12em
 }
+
 
 
 
