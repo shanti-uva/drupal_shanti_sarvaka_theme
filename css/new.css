@@ -218,12 +218,11 @@ div.sidebar {
 div#sidebar-second {
 	background-image: none;
 	background-color: #fff;
-	max-width: 19em;
+	/* max-width: 19em; */
 	max-width:24em;
-	margin-left:1em;
 }
 div.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 1em .32em;}
-
+/*
 div.region-sidebar-second div.block:after {
 	content: '';
 	width: 83%;
@@ -233,6 +232,7 @@ div.region-sidebar-second div.block:after {
 	display: block;
 	margin-top: 1.25em;
 }
+*/
 div#sidebar-second button.form-submit { }
 
 
@@ -672,6 +672,7 @@ input.pagerer-page{
 	border:none;	
 	font-size:100%;
 	color: #5a65d1;
+	box-shadow: 0 2px 3px #555;
 }
 
 ul.pager{
