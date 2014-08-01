@@ -18,6 +18,8 @@ body a:hover { color: #000F81; }
 
 /* Miscellaneous Styles */
 
+div.collimage{ padding-right:1em;}
+
 .main-content div.messages{ margin:0; padding:0; border:none; /*  margin:0.12em 0 1em; border-bottom:1px solid #ccc; */ background-position: 0 0;}
 
 div.error{ background:transparent;}
@@ -44,8 +46,6 @@ div.error{ background:transparent;}
 	top:-1px;
 }
 .show-more a{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:700;}
-
-article.main-content p { text-align: justify; } /* Justify paragraphs - this should be used sparingly */
 
 .main-content .content-section { padding: 1em 2em 5em 2em;}
 .main-content .content-section .view-content{max-width:58em;}
@@ -111,7 +111,7 @@ input.form-control.form-text {
 .form-textarea-wrapper textarea {
 	/*width: auto;*/
 	border-radius: 0.38em;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 }
 
 select.form-control.ss-select {
@@ -122,7 +122,7 @@ select.form-control.ss-select {
 
 select.form-control.ss-select[multiple] {
 	border-radius: 3px;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 }
 
 button.btn-primary, button.btn-success, button.btn-info, button.btn-warning, button.btn-danger {
@@ -333,12 +333,13 @@ span.fancytree-node i.shanticon-cancel {
   margin:  0.25em 0.38em 1.25em;
   width:  100%;
 	border-radius:.32em;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	background-color: #FFFFFF;	
 	display: block;
   position:relative;
   -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.4);
 	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.4);
+	border-collapse: separate; /* fix for ie9 shadow */
   -webkit-transition: box-shadow 150ms ease;
 	-moz-transition: box-shadow 150ms ease;
 	-ms-transition: box-shadow 150ms ease;
@@ -348,10 +349,12 @@ span.fancytree-node i.shanticon-cancel {
 .shanti-thumbnail:hover {
 	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  border-collapse: separate; /* fix for ie9 shadow */
 }
 .shanti-thumbnail:active {
   -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.5);
 	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.5);
+	border-collapse: separate; /* fix for ie9 shadow */
 }
 .shanti-thumbnail-image {
 	width: 100%;
@@ -367,7 +370,7 @@ span.fancytree-node i.shanticon-cancel {
 	width: 100%;
 	border: none;
 	border-radius: .32em .32em 0 0;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 }
 .shanti-thumbnail-info {
 	font-size: 0.75em;
@@ -383,7 +386,7 @@ span.fancytree-node i.shanticon-cancel {
 	background:#f6f6f6;
 	border-top:1px solid #e6e6e6;
 	border-radius:0 0 .32em .32em;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	width:100%;
 	display:block;
 	padding:.32em 1em 0;
@@ -447,7 +450,7 @@ div.shanti-thumbnail-field.shanti-field-duration{
 	height: 1.88em;
 	border: none;
 	border-radius: 0 0.25em;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	color: white;
 	font-size:1.25em;
 	line-height:1.83em;
@@ -519,11 +522,12 @@ div.field-accordion h4 span.ss-fieldset-toggle {
 	font-size: 90%;
 	padding: 0 4px 2px;
 	border-radius: 1.25em;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	border: 1px solid grey;
 	background-color: #fff;
 	-webkit-box-shadow: 2px 0 3px #aaa;
 	box-shadow: 2px 0 3px #aaa;
+	border-collapse: separate; /* fix for ie9 shadow */
 	display: inline-block;
 	cursor: pointer;
 	vertical-align: text-top;
@@ -552,7 +556,6 @@ ul.ss-full-tabs li a {
 	font-weight: 777;
 	color: #999;
 	border-radius: 0;
-	border-collapse: separate;
 }
 
 ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
@@ -601,7 +604,7 @@ ul.ss-full-tabs li.active a {
 /**
  ** Carousel Styles, loosely based on http://codepen.io/redfrost/full/dbrgk  
  **/
-.carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background-color: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175);}
+.carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background-color: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate; /* fix for ie9 shadow */}
 .carousel .carousel-inner { padding-top: 0;}
 .carousel div { /* word-break: break-all; */}
 .carousel img { max-width:100%; float:right;}
@@ -618,7 +621,6 @@ ul.ss-full-tabs li.active a {
 	text-shadow:none;
 	text-align:center;
 	border-radius:0;
-	border-collapse: separate;
 }
 .carousel a.carousel-control.left {margin-left: -1.18em;}
 .carousel a.carousel-control.right {margin-right: -1.18em;}
@@ -670,16 +672,17 @@ table.pagerer {
 	width:100%;
 	float:right;
 }
-input.pagerer-page{
+input.pagerer-page{ /* the input for page count */
 	border:none;	
-	font-size:100%;
-	line-height:90%;
-	color: #5a65d1;
+	color: #6d7afc;
 	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+	border-collapse: separate; /* fix for ie9 shadow */
 	border-radius:2px;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	min-width:2.5em;
 }
-/*input.pagerer-page:focus,*/
+input.pagerer-page:focus,
 input.pagerer-page::selection{ /* temp */
 	background:#fff;
 }
@@ -698,18 +701,19 @@ ul.pager li>a{
 	background:transparent;
 	border:none;
 	border-radius:0.18em;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	display:inline-block;
 }
 ul.pager li>a:hover{
 	color:#333;
 	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+	border-collapse: separate; /* fix for ie9 shadow */
 }
 ul.pager li>a:active{ -webkit-box-shadow:none;box-shadow:none;}
 
 ul.pager li>a i{ color:#999;}
-ul.pager li>a i:hover{ color:#444; }
+ul.pager li>a:hover i{ color:#444;}
 
 .pager-first i,
 .pager-previous i,
@@ -809,6 +813,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	margin:.44em .88em .18em 0;
 	-webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
 	box-shadow:         0 0 3px 0 rgba(50, 50, 50, 0.7);
+	border-collapse: separate; /* fix for ie9 shadow */
 }
 
 .views-submit-button .btn-primary{
@@ -836,18 +841,19 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	 color:#606060; 
 	background: transparent;
 	background-image:none;
-	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
+	/*background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
   background-image: -moz-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+  */
 	/* 
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
 	*/
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
 	border-radius:1.56em;  	
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	border-color: #eeee #eee #ddd;
 	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
 	overflow:hidden;
@@ -860,13 +866,13 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 }
 	
 .main-content .bootstrap-select .btn:focus,
-.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 0.25em 0 #5764de; box-shadow: 0 0 0.25em 0 #5764de; 
+.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 0.25em 0 #5764de; box-shadow: 0 0 0.25em 0 #5764de; border-collapse: separate; /* fix for ie9 shadow */
 	background: #f5f5f5;
 	background-image:none;
 }
 
 /*--- dropdown ---*/
-.main-content .dropdown-menu.open{ border-radius:0.63em;border-collapse: separate;}
+.main-content .dropdown-menu.open{ border-radius:0.63em;background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */}
 .main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:1.12em; overflow:hidden;}
 
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}

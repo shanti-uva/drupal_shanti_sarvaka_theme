@@ -76,6 +76,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .content-section .btn-group{
 	-moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
 	box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
+	border-collapse: separate; /* fix for ie9 shadow */
 }
 .content-section .btn-group > .btn{ 
 	-moz-box-shadow:none;
@@ -103,10 +104,13 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .content-section .btn-default {
 	border-radius:0.18em;
-	border-collapse: separate;
+	-webkit-background-clip: padding-box;
+  -moz-background-clip: padding; 
+  background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	border:1px solid #ddd;
-	-moz-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
 	box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
+	border-collapse: separate; /* fix for ie9 shadow */
 }
 .content-section .btn-default:hover,
 .content-section .btn-default:focus {
@@ -170,7 +174,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 #accordion .panel h6{ 
 	font-size:1em; 
-	font-family: "Mueso Sans", sans-serif;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	line-height:3.75em;
   border-top:1px solid #fff;
   border-bottom:1px solid #ccc;
@@ -194,7 +198,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   height: 18px;
   display: block;
   border-radius: 50%;
-  border-collapse: separate;
+  background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
   margin-right:20px;
   margin-left:5px;
   float: left;
@@ -232,7 +236,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   line-height:2.25em;
   padding: 12px;
 	border-radius:50%;
-	border-collapse: separate;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
   display: none;	
 }
 
@@ -303,6 +307,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	overflow:visible;
 	-webkit-box-shadow: 0px 3px 15px hsla(0, 0%, 0.0000%, 0.125);
 	box-shadow: 0px 3px 15px hsla(0, 0%, 0.0000%, 0.125);
+	border-collapse: separate; /* fix for ie9 shadow */
 	position:relative;
 	z-index:300;
 }
@@ -412,11 +417,12 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	border:1px solid #fff;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-	border-collapse: separate;
 	padding:10px 0 10px;
 	border-top:1px solid #ddd;
 	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.175);
 	box-shadow: 0 2px 4px rgba(0,0,0, 0.175);
+	border-collapse: separate; /* fix for ie9 shadow */
+	background-image:none;
 	background-image: -webkit-linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
 	background-image: -moz-linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
 	background-image: -ms-linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
@@ -539,6 +545,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   /* bottom shadow here, top shadow is off navba */
   -webkit-box-shadow: inset 0px -8px 15px -7px hsla(0, 0%, 0.0000%, 0.1110);
 	box-shadow: inset 0px -6px 10px -4px hsla(0, 0%, 0.0000%, 0.1110);
+	border-collapse: separate; /* fix for ie9 shadow */
 	position:relative; 
 	z-index:1;
 }
@@ -1006,6 +1013,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
+  border-collapse: separate; /* fix for ie9 shadow */
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .menu-accordion ul a:hover,
@@ -1042,8 +1050,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 ul.menu-main{ 	
   -webkit-box-shadow: -2px 3px 4px rgba(0,0,0,0.175);
 	box-shadow: -2px 3px 4px rgba(0,0,0,0.175);
-	border-collapse:separate; /* needed by ie9+ with box-shadow */
-	overflow:visible !important;
+	border-collapse: separate; /* needed by ie9+ with box-shadow */
+	overflow: visible !important;
 }
 
 
@@ -1133,9 +1141,11 @@ ul.menu-main>li>a:first-child {
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
 	border-radius:25px; 
-	border-collapse: separate; 	
+	background-clip: padding-box;	 	
 	border-color: #eeee #eee #ddd;
-	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
+	-webkit-background-clip: padding-box; /* background-clip, prevents gradient bleedout with radius corners */
+  -moz-background-clip: padding; 
+  background-clip: padding-box;
 	overflow:hidden;
 	-webkit-box-shadow:none;
 	box-shadow:none;
@@ -1146,13 +1156,13 @@ ul.menu-main>li>a:first-child {
 }
 	
 .main-content .bootstrap-select .btn:focus,
-.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; 
+.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; border-collapse: separate; /* fix for ie9 shadow */
 	background: #f5f5f5;
 	background-image:none;
 }
 
 /*--- dropdown ---*/
-.main-content .dropdown-menu.open{ border-radius:10px;border-collapse: separate;}
+.main-content .dropdown-menu.open{ border-radius:10px;background-clip: padding-box;	}
 .main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
 
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
@@ -1300,7 +1310,7 @@ ul.menu-main>li>a:first-child {
   padding: .2em .25em .15em;
   border: solid 0.08em #eeeeee;
   border-radius: .1em;
-  border-collapse: separate;
+  background-clip: padding-box;	
 }
 .icon.pull-left {
   margin-right: .3em;
@@ -1333,14 +1343,14 @@ ul.menu-main>li>a:first-child {
 @media screen and (max-width: 399px) {
 
 	.menu-icon{ border-left:none;}
-	.menu-icon a{ background:#fff;color:#777; width:1.88em !important; height:1.75em !important;min-height:1.75em !important; line-height:normal; padding:3px; margin:0 15px 0 0; -webkit-box-shadow: 0 0 4px 3px #d0d0d0; box-shadow: 0 0 4px 3px #d0d0d0;border-collapse:separate;border-radius:3px; border-collapse: separate;position:relative; top:9px; right:0; }
+	.menu-icon a{ background:#fff;color:#777; width:1.88em !important; height:1.75em !important;min-height:1.75em !important; line-height:normal; padding:3px; margin:0 15px 0 0; -webkit-box-shadow: 0 0 4px 3px #d0d0d0; box-shadow: 0 0 4px 3px #d0d0d0; border-collapse:separate; border-radius:3px; background-clip: padding-box;	position:relative; top:9px; right:0; }
 	.menu-icon a:hover{ color:#222; text-decoration:none;}
 	.menu-icon i{ font-size:1.32em !important; line-height:1.38em !important; width:1.75em !important; height:1.75em !important;min-height:1.75em !important;}
 	.menu-icon i:before{ content: "\e628";}
 	.menu-icon a:hover i:before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}	
 	.menu-icon.show-topmenu a:hover i:before{ color:#fff;}
-	.shanti-searchtoggle a{ border-radius:4px; border-collapse: separate;position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
+	.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box;	position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
 	.shanti-searchtoggle a:hover{ color:#222;background:#444;}
 	.shanti-searchtoggle i{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:700; padding:0;}
 	.shanti-searchtoggle i:before{ color:#eee; content: "\e630";}
@@ -1525,7 +1535,7 @@ ul.menu-main>li>a:first-child {
 	.content-resources ul.nav-pills li.active:first-child a { margin-top:0px; }
 	.content-resources ul.nav-pills li a i{ position:relative; top:4px;}
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; border-collapse: separate;background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:400; color:#fff; font-family:'Museo Sans',sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
+  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */ background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:400; color:#fff; font-family:'Museo Sans',sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
 	.view-resources.btn-default.show { width:200px; padding-left:35px; text-align:left; position:relative; left:-218px;}	
 	.view-resources.btn-default i.icon { display:none;}
 	.view-resources.btn-default i.icon:before{ font-family:'shanticon'; content: "\e610";}
@@ -1552,7 +1562,7 @@ ul.menu-main>li>a:first-child {
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:0; }
 	.navbar-default .menu-explore{ display:none !important; }
 	.menu-maintoggle{ display:none; }
-	.menu-toggle{ display:inline-block; -webkit-box-shadow: 0px 3px 10px hsla(0, 0%, 0.0000%, 0.14); box-shadow: 0px 3px 10px hsla(0, 0%, 0.0000%, 0.14); }   
+	.menu-toggle{ display:inline-block; -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.25); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.25);border-collapse: separate; /* fix for ie9 shadow */ }   
 	.navbar-default .navbar-nav>li>a{ background:transparent; }
 	.navbar-default h1 i.icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   .navbar-header h1.navbar-title a span{ font-size:0.83em; position:relative; top:-5px; }	 
