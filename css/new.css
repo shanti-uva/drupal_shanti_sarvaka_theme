@@ -18,7 +18,9 @@ body a:hover { color: #000F81; }
 
 /* Miscellaneous Styles */
 
-.main-content .messages{ margin:0.12em 1em; padding:0; border:none;}
+.main-content .messages{ margin:0.12em 0 1em; padding:0 0 1em; border:none; border-bottom:1px solid #999;}
+
+div.error{ background:transparent;}
 
 .back-to-top { z-index: 1000; } /* Back to top tab */
 .back-to-top i {font-style:normal; top:-0.32em;}
