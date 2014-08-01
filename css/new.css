@@ -671,8 +671,15 @@ table.pagerer {
 input.pagerer-page{
 	border:none;	
 	font-size:100%;
+	line-height:90%;
 	color: #5a65d1;
-	box-shadow: 0 2px 3px #555;
+	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+	border-radius:2px;
+}
+input.pagerer-page:focus,
+input.pagerer-page:active,
+input.pagerer-page::selection{ /* temp */
+	background:#fff;
 }
 
 ul.pager{
@@ -698,6 +705,7 @@ ul.pager li>a{
 	font-family:'shanticon';
 	height:1em;
 	width:1em;
+	font-size:1em;
 	line-height:1.25em;
 	color:#222;
 	display:inline-block;
@@ -708,7 +716,12 @@ ul.pager li>a{
 .pager-next i:before { content:"\e63f"; }
 .pager-last i:before { content:"\e63e"; }
 
-
+.pager-first i,
+.pager-last i{
+	font-size:1.25em;
+	position:relative;
+	top: 0.12em
+}
 
 
 
