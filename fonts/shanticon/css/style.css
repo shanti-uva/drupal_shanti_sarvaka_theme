@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'shanticon';
-	src:url('../fonts/shanticon.eot?-k6fulx');
-	src:url('../fonts/shanticon.eot?#iefix-k6fulx') format('embedded-opentype'),
-		url('../fonts/shanticon.woff?-k6fulx') format('woff'),
-		url('../fonts/shanticon.ttf?-k6fulx') format('truetype'),
-		url('../fonts/shanticon.svg?-k6fulx#shanticon') format('svg');
+	src:url('../fonts/shanticon.eot?-vz2s19');
+	src:url('../fonts/shanticon.eot?#iefix-vz2s19') format('embedded-opentype'),
+		url('../fonts/shanticon.woff?-vz2s19') format('woff'),
+		url('../fonts/shanticon.ttf?-vz2s19') format('truetype'),
+		url('../fonts/shanticon.svg?-vz2s19#shanticon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,45 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.shanticon-logo-shanti:before {
+	content: "\e60b";
+}
+.shanticon-arrow-end-left:before {
+	content: "\e63d";
+}
+.shanticon-arrow-end-right:before {
+	content: "\e63e";
+}
+.shanticon-arrow-dbl-right:before {
+	content: "\e63f";
+}
+.shanticon-arrow-dbl-left:before {
+	content: "\e640";
+}
+.shanticon-arrow-tri-left:before {
+	content: "\e641";
+}
+.shanticon-arrow-tri-right:before {
+	content: "\e642";
+}
+.shanticon-arrow-tip-right:before {
+	content: "\e643";
+}
+.shanticon-arrow-tip-left:before {
+	content: "\e644";
+}
+.shanticon-arrow-tip-up:before {
+	content: "\e645";
+}
+.shanticon-arrow-tip-down:before {
+	content: "\e646";
+}
+.shanticon-arrow-empty-right:before {
+	content: "\e647";
+}
+.shanticon-arrow-empty-left:before {
+	content: "\e648";
+}
 .shanticon-agents:before {
 	content: "\e600";
 }
@@ -39,7 +78,7 @@
 	content: "\e604";
 }
 .shanticon-arrow3-down:before {
-	content: "\e627";
+	content: "\e605";
 }
 .shanticon-arrow3-left:before {
 	content: "\e606";
@@ -56,11 +95,11 @@
 .shanticon-audio:before {
 	content: "\e60a";
 }
-.shanticon-audio-video:before {
-	content: "\e60b";
-}
 .shanticon-calendar:before {
 	content: "\e60c";
+}
+.shanticon-audio-video:before {
+	content: "\e649";
 }
 .shanticon-cancel:before {
 	content: "\e60d";
@@ -205,4 +244,16 @@
 }
 .shanticon-visuals:before {
 	content: "\e63c";
+}
+.shanticon-mail:before {
+	content: "\e64a";
+}
+.shanticon-googleplus:before {
+	content: "\e64b";
+}
+.shanticon-facebook:before {
+	content: "\e64c";
+}
+.shanticon-twitter:before {
+	content: "\e64d";
 }

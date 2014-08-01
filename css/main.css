@@ -1,5 +1,5 @@
 html{ -webkit-font-smoothing: antialiased; overflow-y:scroll;}
-body{ font-family: "Museo Sans",sans-serif; font-weight:normal; overflow: hidden;}
+body{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; overflow: hidden;}
 body div.wrap-all{ position:relative;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline: 0 !important; /* outline: -2px auto -webkit-focus-ring-color !important; */}
@@ -30,14 +30,14 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .content-section {
   padding: 0 0 30px 18px;
-  font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size:1.06em;
   min-height:100%; 
 }
 
 /*--- content elements ---*/
 .content-section h1, .content-section h2, .content-section h3, .content-section h4, .content-section h5, .content-section h6{ 
-	font-family: "Museo Sans",sans-serif; font-weight:500;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500;
 }
 .content-section h6 {
   font-weight: 700;
@@ -72,7 +72,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
-.content-section .btn{ font-family: "Museo Sans",sans-serif; }
+.content-section .btn{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 .content-section .btn-group{
 	-moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
 	box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
@@ -83,7 +83,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .content-section .btn{
   background-image: none; 
-  font-family: "Museo Sans",sans-serif;
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 .content-section .btn-default,
 .content-section .btn-primary,
@@ -103,6 +103,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .content-section .btn-default {
 	border-radius:0.18em;
+	border-collapse: separate;
 	border:1px solid #ddd;
 	-moz-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
 	box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
@@ -116,7 +117,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   background: #f0f0f0;
 }
 .content-section button.btn.dfn, /* default bootstrap class name for serif */
-.content-section button.btn.italic{ font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+.content-section button.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
 /*----- END Buttons -----*/
 /*-------------------------*/
@@ -135,9 +136,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .panel-body{ 
   background-color:#f0f0f0;
   border:none; 
-  -moz-border-radius:0;
-  -webkit-border-radius:0;
   border-radius:0; 
+  border-collapse: separate;
   width:100%; 
 }
 .panel-default .panel-heading{
@@ -149,12 +149,10 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .panel-group .panel+.panel{ margin-top:0;}
 .panel-group .panel{ 
   border:none;
-  -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  -moz-border-radius:0;
-  -webkit-border-radius:0;
   border-radius:0; 
+  border-collapse: separate;
   width:100%; 
   background-color:white;
   margin:0;
@@ -196,6 +194,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   height: 18px;
   display: block;
   border-radius: 50%;
+  border-collapse: separate;
   margin-right:20px;
   margin-left:5px;
   float: left;
@@ -233,6 +232,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   line-height:2.25em;
   padding: 12px;
 	border-radius:50%;
+	border-collapse: separate;
   display: none;	
 }
 
@@ -317,8 +317,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none; border-bottom-width:0;}
 
-.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
-.navbar-default h1 a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:1px 1px 1px #f0f0f0;}
+.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.navbar-default h1 a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-default h1 a.navbar-brand:hover{ color:#222;}
 .navbar-default h1 em{ display:none;}
 .navbar-default h1 a span{ 	
@@ -412,6 +412,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	border:1px solid #fff;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
+	border-collapse: separate;
 	padding:10px 0 10px;
 	border-top:1px solid #ddd;
 	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.175);
@@ -602,12 +603,12 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   line-height:21px;
   height:21px;
   font-size: .75em;
-  font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   *zoom: 1;
 }
 .breadwrap .breadcrumb li.first,
 .breadwrap .breadcrumb li:first-child{
-  font-family: "Museo Sans", sans-serif;
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size:1.12em;
   line-height:1em;
   height: 1.18em;
@@ -752,6 +753,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	height:3.63em;
 	border: none;
 	border-radius:0;
+	border-collapse: separate;
 	border-bottom:1px solid #e0e0e0;
 	background:#fff;
 	-webkit-transition: background-color 200ms;
@@ -822,7 +824,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	background:#fff;
 	border-top:1px solid #fff;
 	border-bottom:1px solid #c0c0c0;
-	font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; 
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; 
 	font-weight:normal; 
 	font-style:italic;
 	text-indent:0.75em;
@@ -864,7 +866,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 #menu .multilevelpushmenu_wrapper ul{
   -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.4);
   box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.4); 
-	border-collapse:separate; /* needed by ie9+ with box-shadow */
+	border-collapse:separate;
 }
 #menu .multilevelpushmenu_wrapper ul.hideshadow{
 	-webkit-box-shadow:none;
@@ -1002,6 +1004,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   padding: 10px 30px 10px 20px;
   color: #aaa;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
@@ -1093,7 +1096,7 @@ ul.menu-main li a .icon{
 }
 
 ul.menu-main>li>a:first-child {
-  font-family: "Minion-Pro", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; 
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; 
 	font-weight:normal; 
 	font-style:italic;
 	font-size:1.5em; 
@@ -1105,8 +1108,107 @@ ul.menu-main>li>a:first-child {
 /*----------------------------*/
 
 
+/*-----------------------------------------------*/
+/*---- select dropdown -----*/
+.main-content .bootstrap-select.form-control{
+	height:27px;
+}
+.main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
+.main-content .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100% !important;}
+.main-content .bootstrap-select .popover-title{ padding: 4px 14px; margin-bottom:5px;}
 
+.main-content .bootstrap-select .btn{ 
+	padding-left: 20px;
+	 color:#606060; 
+	background: transparent;
+	background-image:none;
+	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
+  background-image: -moz-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
+  background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
+  background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
+  background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+	/* 
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	*/
+	background-repeat: repeat-x;
+	border: 1px solid #ddd;
+	border-radius:25px; 
+	border-collapse: separate; 	
+	border-color: #eeee #eee #ddd;
+	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
+	overflow:hidden;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.main-content .bootstrap-select .btn:hover{ 
+	border: 1px solid #ccc; 
+	background: #eee; 
+}
+	
+.main-content .bootstrap-select .btn:focus,
+.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; 
+	background: #f5f5f5;
+	background-image:none;
+}
 
+/*--- dropdown ---*/
+.main-content .dropdown-menu.open{ border-radius:10px;border-collapse: separate;}
+.main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
+
+.main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
+.bootstrap-select.btn-group:not(.input-group-btn){ margin-bottom:0;}
+
+.main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; overflow:auto;}
+.main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
+
+.main-content .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
+.main-content .selectpicker .caret:before{ color:#555; font-size:17px; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-10px; right:0px;}
+
+.main-content .selectpicker li{ padding:0; overflow:hidden;}
+.main-content .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
+
+.main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
+
+.main-content .selectpicker li a,
+.main-content .selectpicker li a span.text,
+.main-content .selectpicker li.selected a{ background: #fff !important;}
+
+.main-content .selectpicker li.selected a,
+.main-content .selectpicker li.selected a span.text{ font-weight:bold;}
+.main-content .selectpicker li.selected a i.icon{ font-weight:bold; color:#dc3c47;}
+
+.main-content .selectpicker li:hover,
+.main-content .selectpicker li a:hover,
+.main-content .selectpicker li a:active,
+.main-content .selectpicker li:hover span.text,
+.main-content .selectpicker li:active span.text,
+.main-content .selectpicker li a span.text:hover,
+.main-content .selectpicker li.selected a:hover,
+.main-content .selectpicker li.selected a:active{ color:#444; background: #eee !important;}
+
+.main-content .selectpicker li a span.text:hover,
+.main-content .selectpicker li.selected a span.text:hover{ color:#444; background: #eee !important;}
+
+.main-content .selectpicker>li>a i.check-mark,
+.main-content .selectpicker>li>a:hover i.check-mark,
+.main-content .selectpicker>li>a:focus i.check-mark { color:#ccc;}
+	
+.main-content .selectpicker>li.selected>a i.check-mark,
+.main-content .selectpicker>li.selected>a:hover i.check-mark,
+.main-content .selectpicker>li.selected>a:focus i.check-mark{ color:#dc3c47;}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:15px; margin-top:2px; }
+
+.main-content .selectpicker li a span.text,
+.main-content .selectpicker li a span.text:hover{ background:transparent; color:#444;}
+
+.bootstrap-select.btn-group .btn .filter-option{ font-size:.92em;}
+.bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
+.bootstrap-select.btn-group .btn .filter-option em{color:#dc3c47; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block; }
+
+.bootstrap-select.btn-group.show-tick i:first-child{ position:relative; top:2px;}
+
+/*--- END selectpicker ---*/
 
 
 
@@ -1136,6 +1238,94 @@ ul.menu-main>li>a:first-child {
 
 
 
+
+/*-----------------------------------------------------------*/
+/*--- START Default Font Styles for shanticon Collection ----*/
+/*-----------------------------------------------------------*/
+.icon{
+	font-family: 'shanticon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*--- increases the font 33% larger relative to the icon container ---*/
+.icon-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -30%;
+}
+.icon-2x {
+  font-size: 2em;
+}
+.icon-3x {
+  font-size: 3em;
+}
+.icon-4x {
+  font-size: 4em;
+}
+.icon-5x {
+  font-size: 5em;
+}
+.icon-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+.icon-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+}
+.icon-ul > li {
+  position: relative;
+}
+.icon-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center;
+}
+.icon-li.icon-lg {
+  left: -1.8571428571428572em;
+}
+.icon-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+  border-collapse: separate;
+}
+.icon.pull-left {
+  margin-right: .3em;
+}
+.icon.pull-right {
+  margin-left: .3em;
+}
+.icon-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+/*---------------------------------------------------*/
+/*--- END Default Font Styles ----*/
+/*---------------------------------------------------*/
+
+
+
+
+
+
+
+
 /*------------------------------*/
 /*----- BEGIN RESPONSIVE -------*/
 /*------------------------------*/
@@ -1143,14 +1333,14 @@ ul.menu-main>li>a:first-child {
 @media screen and (max-width: 399px) {
 
 	.menu-icon{ border-left:none;}
-	.menu-icon a{ background:#fff;color:#777; width:1.88em !important; height:1.75em !important;min-height:1.75em !important; line-height:normal; padding:3px; margin:0 15px 0 0; -webkit-box-shadow: 0 0 4px 3px #d0d0d0; box-shadow: 0 0 4px 3px #d0d0d0;border-collapse:separate;border-radius:3px; position:relative; top:9px; right:0; }
+	.menu-icon a{ background:#fff;color:#777; width:1.88em !important; height:1.75em !important;min-height:1.75em !important; line-height:normal; padding:3px; margin:0 15px 0 0; -webkit-box-shadow: 0 0 4px 3px #d0d0d0; box-shadow: 0 0 4px 3px #d0d0d0;border-collapse:separate;border-radius:3px; border-collapse: separate;position:relative; top:9px; right:0; }
 	.menu-icon a:hover{ color:#222; text-decoration:none;}
 	.menu-icon i{ font-size:1.32em !important; line-height:1.38em !important; width:1.75em !important; height:1.75em !important;min-height:1.75em !important;}
 	.menu-icon i:before{ content: "\e628";}
 	.menu-icon a:hover i:before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}	
 	.menu-icon.show-topmenu a:hover i:before{ color:#fff;}
-	.shanti-searchtoggle a{ border-radius:4px; position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
+	.shanti-searchtoggle a{ border-radius:4px; border-collapse: separate;position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
 	.shanti-searchtoggle a:hover{ color:#222;background:#444;}
 	.shanti-searchtoggle i{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:700; padding:0;}
 	.shanti-searchtoggle i:before{ color:#eee; content: "\e630";}
@@ -1335,7 +1525,7 @@ ul.menu-main>li>a:first-child {
 	.content-resources ul.nav-pills li.active:first-child a { margin-top:0px; }
 	.content-resources ul.nav-pills li a i{ position:relative; top:4px;}
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background:#555; text-shadow:none; box-shadow:none; font-weight:400; color:#fff; font-family:'Museo Sans',sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
+  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; border-collapse: separate;background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:400; color:#fff; font-family:'Museo Sans',sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
 	.view-resources.btn-default.show { width:200px; padding-left:35px; text-align:left; position:relative; left:-218px;}	
 	.view-resources.btn-default i.icon { display:none;}
 	.view-resources.btn-default i.icon:before{ font-family:'shanticon'; content: "\e610";}
@@ -1423,7 +1613,4 @@ ul.menu-main>li>a:first-child {
 @media all and (orientation:landscape) {
 
 }
-
-
-
 

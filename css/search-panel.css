@@ -47,10 +47,10 @@ object.flip_label{ display:none;}
 #gen-search.extruder .text{ border:none; padding:0; text-shadow:none; background:#f8f8f8; color:#333;}
 
 /*--- big search button inline styles are loaded via main.js with icon markup  */
-#gen-search.extruder.right .flap{ cursor:pointer; display:block; background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px;margin:0 0 0 -7px; border-top-left-radius:44px;border-bottom-left-radius:44px;}
+#gen-search.extruder.right .flap{ cursor:pointer; display:block; background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px;margin:0 0 0 -7px; border-top-left-radius:44px;border-bottom-left-radius:44px;border-collapse: separate;}
 #gen-search.extruder.right .flap.on-flap{ border-collapse:separate;}
 #gen-search.extruder.right .flap span.flapLabel,
-#gen-search.extruder.right .flap.on-flap span.flapLabel{ width:37px !important;background:#505050; height:30px;display:block; padding:17px 38px 17px 0; margin:0;border-top-left-radius:20px;border-bottom-left-radius:20px;}
+#gen-search.extruder.right .flap.on-flap span.flapLabel{ width:37px !important;background:#505050; height:30px;display:block; padding:17px 38px 17px 0; margin:0;border-top-left-radius:20px;border-bottom-left-radius:20px;border-collapse: separate;}
 #gen-search.extruder.right.isOpened .flap{ width:48px;}
 #gen-search.extruder.right.isOpened .flap.on-flap span.flapLabel{ width:30px !important;}
 /*----- css for the flap is inserted inline, see js/main ---*/
@@ -81,19 +81,19 @@ object.flip_label{ display:none;}
 /*--- START :: Search Panel :: Input & View ----*/
 /*----------------------------------------------*/
 .input-section{ padding:0;border: 1px solid #e0e0e0;display:block;width:100%;}
-.input-section .input-group input.form-control:first-child{ -webkit-border-bottom-right-radius: 25px;-webkit-border-top-right-radius: 25px;border-bottom-right-radius: 25px;border-top-right-radius: 25px;}
+.input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px;border-collapse: separate;}
 .input-section .input-group{ padding: 0 12px 0 10px; display:block; width:100%; background:#f8f8f8;}
 .input-section .input-group input.form-control{
 	color:#777;
 	border: 1px solid #ccc;
 	border-radius: 25px;
+	border-collapse: separate;
 	font-size:1.06em;
 	height:35px; /* coordinate with button height below */
 	line-height:1.44em;
 	margin: 8px 0 0; 
 	padding:2px 60px 0 15px;
   width:100%;  
-  border-radius: 25px;
 	overflow: auto;
 	vertical-align:middle;
 	-webkit-box-shadow:0px 2px 5px #eee inset;
@@ -121,6 +121,7 @@ object.flip_label{ display:none;}
   border-radius: 25px;
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0; 
+	border-collapse: separate;
 	-webkit-box-shadow:none;
 	box-shadow:none;
 	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
@@ -228,7 +229,8 @@ object.flip_label{ display:none;}
 	*/
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
-	border-radius:25px;  	
+	border-radius:25px;  
+	border-collapse: separate;	
 	border-color: #eeee #eee #ddd;
 	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
 	overflow:hidden;
@@ -247,7 +249,7 @@ object.flip_label{ display:none;}
 }
 
 /*--- dropdown ---*/
-.input-section .dropdown-menu.open{ border-radius:10px;}
+.input-section .dropdown-menu.open{ border-radius:10px;border-collapse: separate;}
 .input-section .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
 
 .input-section .bootstrap-select.btn-group .dropdown-menu{ height:250px; overflow:auto;}
@@ -299,7 +301,7 @@ object.flip_label{ display:none;}
 .input-section .feature-group label{ color:#555; padding:0;margin:0; font-size:0.88em; line-height:12px;height:15px;}
 
 /*--- the feature dropdown-menu ---*/
-.feature-group .dropdown-menu{ height:320px; overflow:auto; border-radius:12px; padding:0; top:46px; left:0; width:100%; min-width:220px;}
+.feature-group .dropdown-menu{ height:320px; overflow:auto; border-radius:12px; border-collapse: separate; padding:0; top:46px; left:0; width:100%; min-width:220px;}
 /* .feature-group .dropdown-menu p{ font-size:.82em; line-height:normal; color:#222;}
 #gen-search .text .feature-message{ background-color:#fff; font-size:12px;padding:10px 17px 10px; margin:0; 
 border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
@@ -309,7 +311,7 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 .show-feature-tree .form-group.last{ /* padding-bottom:5px; */}
 /*--- bottom buttons ---*/
 .feature-submit{ padding:0 17px 7px; margin:0; border-top:1px solid #ccc; width:100%; background-color:#fff; height:40px; min-height:40px;
-	border-radius-bottom-left:12px; border-radius-bottom-right:12px; position:absolute; bottom:0; z-index:9999;
+	border-radius-bottom-left:12px; border-radius-bottom-right:12px; border-collapse: separate; position:absolute; bottom:0; z-index:9999;
 }
 
 .feature-group .tree-wrap{ height:312px; min-height:312px; /*--- height ---*/ padding:0; position:relative; }
@@ -364,11 +366,11 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 
 
 .feature-submit .btn.btn-default{ /*--- the select button ---*/
-	font-size:0.75em; background-color:#dc3c47;color:#fff; padding:3px 13px 2px; margin-top:7px; background-image:none;box-shadow:none;text-transform:uppercase;text-shadow:none;
+	font-size:0.75em; background-color:#dc3c47;color:#fff; padding:3px 13px 2px; margin-top:7px; background-image:none;-webkit-box-shadow:none;box-shadow:none;text-transform:uppercase;text-shadow:none;
 }
 .feature-submit .btn.btn-default>span{ font-size:1.62em;position:relative;top:3px;}
 .feature-submit .btn.btn-default.clear-form{ /*--- the clear button ---*/
-	border:none;background:transparent;padding:0;margin-top:5px;float:right;-webkit-box-shadow:none; font-weight:bold; box-shadow:none;color:#dc3c47;text-transform:capitalize; border-radius:0;
+	border:none;background:transparent;padding:0;margin-top:5px;float:right;-webkit-box-shadow:none;box-shadow:none; font-weight:bold; color:#dc3c47;text-transform:capitalize; border-radius:0; border-collapse: separate;
 }
 .feature-submit .btn.btn-default.clear-form:hover{ color:#333;}
 .feature-submit .btn.btn-default.clear-form:active{ color:#dc3c47;}
@@ -385,6 +387,7 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 	background-image:none;
 	border: 1px solid #ccc;
 	border-radius:18px;  	
+	border-collapse: separate;
 	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
 	overflow:hidden;
 	vertical-align:middle;	
@@ -588,6 +591,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	float:left;
 	position:relative; top:5px; right:2px;
   border-radius: 50%;
+  border-collapse: separate;
   width: 9px;
   height: 9px;
   display: block;
@@ -667,16 +671,5 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /*--------------------------------*/
 /*--- END SEARCH PANEL -----------*/
 /*--------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
 
 

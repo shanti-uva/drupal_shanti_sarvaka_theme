@@ -69,8 +69,7 @@
         </div> <!-- End of Banner Region -->
         
         <div class="row row-offcanvas row-offcanvas-right">
-          <!-- Message Area -->
-          <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
+          
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
             <div id="sidebar-first" class="region sidebar col-xs-6 <?php print $bsclass_sb1; ?>">
@@ -80,6 +79,8 @@
           
           <!-- Begin Page Content -->
           <section class="content-section <?php print $bsclass_main; ?>"> 
+          <!-- Message Area -->
+          <?php if (isset($messages)) { ?><div class="messages"><?php print $messages; ?></div> <?php } ?>
             <div class="tab-content">
               <article class="tab-pane main-col active" id="tab-overview">
                  <?php print render($page['content']); ?>
