@@ -9,7 +9,7 @@
 
 div.inline { display: inline-block; } /*--- avoid using this */
 
-article.main-content p { text-align: justify; } /* Justify paragraphs */
+/* article.main-content p { text-align: justify; }  Justify paragraphs */
 
 /* 
 body a, body a:visited, body a:active { color: #5a65d1; }
@@ -17,6 +17,8 @@ body a:hover { color: #000F81; }
 */
 
 /* Miscellaneous Styles */
+
+.main-content .messages{ margin:0.12em 1em; padding:0; border:none;}
 
 .back-to-top { z-index: 1000; } /* Back to top tab */
 .back-to-top i {font-style:normal; top:-0.32em;}
@@ -286,15 +288,14 @@ span.fancytree-node i.shanticon-cancel {
 	border-collapse: separate;
 	width:100%;
 	display:block;
-	padding:.25em 1em 0;
-	text-shadow: 0 1px 0 #000;
+	padding:.32em 1em 0;
 	color:#787878;
 	height:2.5em;
 }
 .shanti-thumbnail .footer-wrap i{
 	font-size:1.32em;
 	position:relative;
-	top:1px;
+	top:2px;
 }
 .shanti-field-created{
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
@@ -568,11 +569,12 @@ ul.ss-full-tabs li.active a {
 .carousel div { /* word-break: break-all; */}
 .carousel img { max-width:100%; float:right;}
 .carousel a.carousel-control { /*--- the carousel right-left button ---*/
-	height:1.88em;
-	top: 42%;
-	width:2em;
+	height:1.44em;
+	top: 50%;
+	margin-top:-0.68em;
+	width:1.75em;
 	font-size: 2.63em;
-	line-height:2.12em;
+	line-height:1.75em;
 	color: white;
 	font-weight: bold;
 	background-image: none;
@@ -623,7 +625,7 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: -0.5em 2em .5em;
+  margin: -0.5em 4em .5em 0;
   font-size:80%;
   font-family:"Museo Sans", sans-serif;	
   text-transform:uppercase;

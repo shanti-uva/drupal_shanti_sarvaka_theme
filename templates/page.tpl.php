@@ -70,7 +70,7 @@
         
         <div class="row row-offcanvas row-offcanvas-right">
           <!-- Message Area -->
-          <?php if (isset($messages)) { ?><section class="messages"><?php print $messages; ?></section> <?php } ?>
+          <?php if (isset($messages)) { ?><div class="messages"><?php print $messages; ?></div> <?php } ?>
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
             <div id="sidebar-first" class="region sidebar col-xs-6 <?php print $bsclass_sb1; ?>">
