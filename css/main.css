@@ -299,8 +299,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .header-banner{
 	border-collapse:separate;
 	overflow:visible;
-	-webkit-box-shadow: 0px 3px 15px hsla(0, 0%, 0.0000%, 0.125);
-	box-shadow: 0px 3px 15px hsla(0, 0%, 0.0000%, 0.125);
+	-webkit-box-shadow: 0px 3px 10px hsla(0, 0%, 0.0000%, 0.125);
+	box-shadow: 0px 3px 10px hsla(0, 0%, 0.0000%, 0.125);
 	border-collapse: separate; /* fix for ie9 shadow */
 	position:relative;
 	z-index:300;
@@ -548,23 +548,29 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .titlearea .page-title span { }
 .titlearea .page-title em {   
-	height:0.75em;
-  width:1.12em; 
-  position:relative; z-index:10; opacity: .5; display:inline-block; background: hsla(0, 0%, 0.0000%, 0.2);
+	height:1.5em;
+  width:1.75em; 
+	line-height:1.5em;
+  float:left;
+  margin-right: 0.38em;
+  text-align:center;
+  position:relative; top: 0.32em; z-index:10; display:inline-block; background: hsla(0, 0%, 0.0000%, 0.175);
 }
-.titlearea .page-title .icon {
+.main-content .titlearea .page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
   font-size:1em;
-  margin:0 5px 0 0;
+  height:1.5em;
+  line-height:1.5em;
+  margin:0 auto;
   /*background:#32ccca;*/  
-  height:0.75em;
-  width:1.12em;
   text-align:center;
-  display:inline-block;
-  float:left;
-  position:relative; z-index:1000; 
+	color:#fff; 
+	background: transparent !important;
 }
-
+.main-content .titlearea .page-title .icon:before{
+	background:transparent !important;
+	position:relative; left:0.06em; z-index:15; 
+}
 
 
 
