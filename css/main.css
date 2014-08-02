@@ -547,14 +547,14 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   padding:0;
 }
 .titlearea .page-title span { }
-.titlearea .page-title em { display:inline-block; background: hsla(0, 0%, 0.0000%, 0.2);}
+.titlearea .page-title em { position:relative; z-index:1000; opacity: .5; display:inline-block; background: hsla(0, 0%, 0.0000%, 0.2);}
 .titlearea .page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
   font-size:1em;
   margin:0 5px 0 0;
-  background:#32ccca;  
-  height:2em;
-  width:2.5em;
+  /*background:#32ccca;*/  
+  height:1em;
+  width:1.38em;
   text-align:center;
   display:inline-block;
 }
