@@ -115,14 +115,12 @@
 		// --- close the menu on outside click except button
 	  $('.menu-exploretoggle').click( function(event){
 	      event.stopPropagation();
-	      $('.collections').slideUp();
+	      $('.collections').slideUp(200);
 	  });
 	    
 	  $(document).click( function(){
 	      $('.menu-toggle').removeClass('show-topmenu');
 	      $('#menu').hide(100);
-	      // $('.collections').slideUp(200);
-	      // $(".collections").css('display','none');
 	  });  
 	        
 	  /* Initialize Language Buttons */

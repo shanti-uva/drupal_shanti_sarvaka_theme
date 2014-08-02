@@ -22,16 +22,9 @@ div.collimage{ padding-right:1em;}
 
 .main-content div.messages{ margin:0; padding:0; border:none; /*  margin:0.12em 0 1em; border-bottom:1px solid #ccc; */ background-position: 0 0;}
 
-div.error{ background:transparent;}
-
-.back-to-top { z-index: 1000; } /* Back to top tab */
-.back-to-top i {font-style:normal; top:-0.32em;}
-
-.loader { height: 80%; min-height: 31em; padding-top: 1em;}
-
-.dfn, .italic{ font-style:italic !important; }
-.sans-serif{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.serif{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+.content-section p a{  padding:0.18em;}
+.content-section p a:hover{  background:rgba(255,255,255, 0.7 ); color: #3d4590; -webkit-box-shadow:0 0 2px rgba(0,0,0, 0.4 ); box-shadow:0 0 2px rgba(0,0,0, 0.4 );}
+.content-section p a:active{ box-shadow:none; background:transparent; }
 
 /*--- LINK: add plus icon for show more link as seen on carousel ---*/
 .show-more{ text-transform: uppercase; font-size:.83em;}
@@ -46,6 +39,26 @@ div.error{ background:transparent;}
 	top:-1px;
 }
 .show-more a{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:700;}
+
+.link a{ padding:0.18em;}
+.link a:hover{ background:rgba(255,255,255, 0.7 ); color: #3d4590; -webkit-box-shadow:0 0 2px rgba(0,0,0, 0.4 ); box-shadow:0 0 2px rgba(0,0,0, 0.4 );}
+.link a:active{ box-shadow:none; background:transparent; }
+
+
+
+
+
+
+
+
+div.error{ background:transparent;}
+
+
+.loader { height: 80%; min-height: 31em; padding-top: 1em;}
+
+.dfn, .italic{ font-style:italic !important; }
+.sans-serif{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.serif{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
 .main-content .content-section { padding: 1em 2em 5em 2em;}
 .main-content .content-section .view-content{max-width:58em;}
@@ -333,7 +346,7 @@ span.fancytree-node i.shanticon-cancel {
   margin:  0.25em 0.38em 1.25em;
   width:  100%;
 	border-radius:.32em;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	background-clip: padding-box;
 	background-color: #FFFFFF;	
 	display: block;
   position:relative;
@@ -364,8 +377,8 @@ span.fancytree-node i.shanticon-cancel {
 .shanti-thumbnail-image a{
 	position:relative;
 	display:block;	
+	padding:0;
 }
-
 .shanti-thumbnail-image img {
 	width: 100%;
 	border: none;
@@ -374,7 +387,7 @@ span.fancytree-node i.shanticon-cancel {
 }
 .shanti-thumbnail-info {
 	font-size: 0.75em;
-	font-family:"Museo-Sans",sans-serif;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .shanti-thumbnail .body-wrap{
@@ -393,6 +406,7 @@ span.fancytree-node i.shanticon-cancel {
 	color:#787878;
 	height:2.5em;
 }
+.shanti-thumbnail .footer-wrap a{ color:#444; }
 .shanti-thumbnail .footer-wrap i{
 	font-size:1.32em;
 	position:relative;
@@ -417,6 +431,8 @@ div.shanti-thumbnail-field.shanti-field-duration{
 	font-size: 1.1em;
 	font-weight: bold;
 }
+.shanti-thumbnail-field.shanti-field-title a:hover{ -webkit-box-shadow:none; box-shadow:none;}
+
 .shanti-thumbnail-link .overlay{
 	
 	position:absolute:
@@ -549,7 +565,7 @@ ul.ss-full-tabs li {
 }
 
 ul.ss-full-tabs li a {
-	font-family: 'Museo Sans', sans-serif;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	border: none;
 	text-align: center;
 	font-size: larger;
@@ -664,16 +680,17 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: -0.5em 4em .5em 0;
+  margin: -0.5em 4em .32em 0;
   font-size:80%;
-  font-family:"Museo Sans", sans-serif;	
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
 	font-weight:700;
-	width:100%;
 	float:right;
 }
 input.pagerer-page{ /* the input for page count */
 	border:none;	
+	padding-top: 0.12em;
+	line-height:1.25em;
 	color: #6d7afc;
 	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
@@ -682,8 +699,7 @@ input.pagerer-page{ /* the input for page count */
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	min-width:2.5em;
 }
-input.pagerer-page:focus,
-input.pagerer-page::selection{ /* temp */
+input.pagerer-page:focus{
 	background:#fff;
 }
 
@@ -693,7 +709,7 @@ ul.pager{
 	text-align:right;
 	float:right;
 }
-ul.page li{ padding:0 1px;}
+ul.page li{ padding:0 1px; line-height:1em;}
 ul.pager li>a{
 	color:#aaa;
 	padding:0.06em 0.5em;
@@ -703,6 +719,8 @@ ul.pager li>a{
 	border-radius:0.18em;
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	display:inline-block;
+	position:relative;
+	top:-1px;
 }
 ul.pager li>a:hover{
 	color:#333;
@@ -712,7 +730,7 @@ ul.pager li>a:hover{
 }
 ul.pager li>a:active{ -webkit-box-shadow:none;box-shadow:none;}
 
-ul.pager li>a i{ color:#999;}
+ul.pager li>a i{ color:#999; position:relative; top: 0.12em}
 ul.pager li>a:hover i{ color:#444;}
 
 .pager-first i,
@@ -733,12 +751,10 @@ ul.pager li>a:hover i{ color:#444;}
 .pager-next i:before { content:"\e63f"; }
 .pager-last i:before { content:"\e63e"; }
 
+.pager-first,
+.pager-last{ position:relative;top:1px;}
 .pager-first i,
-.pager-last i{
-	font-size:1.25em;
-	position:relative;
-	top: 0.12em
-}
+.pager-last i{ font-size:1.25em;}
 
 
 
@@ -761,11 +777,8 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 
 
-.views-exposed-form label{ margin-bottom:0;font-size:90%;padding-left:.44em;font-family:"museo-sans",sans-serif;font-weight:500;}
-
-.views-exposed-widgets{
-	margin-bottom:.68em;
-}
+.views-exposed-form label{ margin-bottom:0;font-size:90%;padding-left:.44em; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500;}
+.views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .views-exposed-form .views-exposed-widget{
 	padding-top:0;
 	padding-bottom: 0.12em;
@@ -789,8 +802,8 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 .views-row:first-child{
 	/* padding-top:0;
-	margin-top:0.25em;
-	border-top:none; */
+	margin-top:0.25em; 
+	border-top:3px double #e0e0e0; */
 }
 
 .views-field-title{ 
@@ -805,7 +818,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 .views-field-title,
 .views-field-realname{
-	font-family: "museo-sans", sans-serif;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .views-field-field-images img{ 

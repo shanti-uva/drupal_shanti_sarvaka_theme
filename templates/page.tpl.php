@@ -52,7 +52,7 @@
           <!-- Banner Region -->
           <header class="col-sm-12 titlearea banner">
            <div role="banner">
-            <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php 
+            <h1 class="page-title"><em><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i></em><span><?php 
               print ($title == '')? $variables['default_title']:$title; ?></span></h1>
               <nav class="breadwrap" role="navigation">
                 <?php print shanti_sarvaka_get_breadcrumbs($variables); ?>

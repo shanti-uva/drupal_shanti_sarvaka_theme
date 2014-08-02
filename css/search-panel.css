@@ -125,7 +125,6 @@ object.flip_label{ display:none;}
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	-webkit-box-shadow:none;
 	box-shadow:none;
-	background-clip: padding-box; /* Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners */
 }
 .input-section .input-group .btn.btn-default:hover{ color:#dc3c47;}
 .input-section .input-group .btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}

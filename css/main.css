@@ -104,8 +104,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .content-section .btn-default {
 	border-radius:0.18em;
-	-webkit-background-clip: padding-box;
-  -moz-background-clip: padding; 
   background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	border:1px solid #ddd;
 	-webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
@@ -224,40 +222,36 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 /*---scroll to top ---*/
 .back-to-top {
   position: fixed;
-  bottom: 10px;
-  right: 15px;
-  z-index:100;
-  height:40px;
-  width:40px;
+  bottom: 1em;
+  right: 1em;
+  z-index:1000;
+  height:3.25em;
+  width:3.25em;
   color: #aaa;
   background: #ccc;
-  opacity:.5;
+  opacity: 0.5;
   font-size: 1em;
-  line-height:2.25em;
-  padding: 12px;
 	border-radius:50%;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	background-clip: padding-box;
   display: none;	
+  text-align:center;
 }
-
 .back-to-top:hover {
 	color:#fff;  
 	background: #ccc; 
-	opacity:.8;    
+	opacity: 0.8;    
   text-decoration:none;
 }
-
 .back-to-top i{ 
 	color:#fff;
 	font-size:2em;
+	line-height:1.44em;
   font-family: 'FontAwesome';
   font-weight:normal;
-  position: relative;
-  top: -8px;
-  right: 5px; 
+  margin:0 auto;
+  text-align:center; 
 }
 .back-to-top:hover i{ color:#fff;}
-
 .back-to-top i:before{  
   content: "\f077";
 }
@@ -539,28 +533,25 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   margin-right: 0;
 }
 .titlearea>div{
-  padding-top:8px;
-  padding-bottom:10px;
-  height:63px;
-  /* bottom shadow here, top shadow is off navba */
-  -webkit-box-shadow: inset 0px -8px 15px -7px hsla(0, 0%, 0.0000%, 0.1110);
-	box-shadow: inset 0px -6px 10px -4px hsla(0, 0%, 0.0000%, 0.1110);
-	border-collapse: separate; /* fix for ie9 shadow */
-	position:relative; 
-	z-index:1;
+  height:4.44em;
 }
 .titlearea .page-title {  
   font-weight: normal;
   font-size:1.5em;
-  line-height:1.5em;
+  line-height:2em;
   margin:0;
   padding:0;
 }
-.titlearea .page-title span{ }
+.titlearea .page-title span { }
+.titlearea .page-title em {   
+	margin:0 5px 0 0;
+  background:#a52d34;  
+  height:3em;
+  width:3.5em;
+  text-align:center;
+}
 .titlearea .page-title .icon {
-	padding:5px 9px 5px 7px;
-  margin:0 5px 0 0;
-  background:#a52d34;
+	/*padding:5px 9px 5px 7px;*/
   font-size:1em;
 }
 
@@ -583,7 +574,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	jBreadCrumbCustom Plugin Styles
 =======================================*/
 .breadwrap {
-  margin: 4px 0 0 15px;
+  margin: 0 0 0 15px;
   padding: 0;
   display: block;
   height: 1.18em;
@@ -967,7 +958,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 #menu .multilevelpushmenu_wrapper .levelHolderClass.rtl .backItemClass i{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:700; margin-right:5px;}
 #menu .multilevelpushmenu_wrapper .levelHolderClass.rtl .backItemClass i:before{ }
 #menu .multilevelpushmenu_wrapper .backItemClass, 
-#menu .multilevelpushmenu_wrapper .levelHolderClass.rtl{ font-family:"Museo Sans",sans-serif; font-weight:500; background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
+#menu .multilevelpushmenu_wrapper .levelHolderClass.rtl{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500; background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
 
 /*----- END top-menu override styles -----*/
 
@@ -1142,10 +1133,7 @@ ul.menu-main>li>a:first-child {
 	border: 1px solid #ddd;
 	border-radius:25px; 
 	background-clip: padding-box;	 	
-	border-color: #eeee #eee #ddd;
-	-webkit-background-clip: padding-box; /* background-clip, prevents gradient bleedout with radius corners */
-  -moz-background-clip: padding; 
-  background-clip: padding-box;
+	border-color: #eee #eee #ddd;
 	overflow:hidden;
 	-webkit-box-shadow:none;
 	box-shadow:none;
@@ -1162,7 +1150,7 @@ ul.menu-main>li>a:first-child {
 }
 
 /*--- dropdown ---*/
-.main-content .dropdown-menu.open{ border-radius:10px;background-clip: padding-box;	}
+.main-content .dropdown-menu.open{ border-radius:10px; background-clip: padding-box;	}
 .main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
 
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
@@ -1350,7 +1338,7 @@ ul.menu-main>li>a:first-child {
 	.menu-icon a:hover i:before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}	
 	.menu-icon.show-topmenu a:hover i:before{ color:#fff;}
-	.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box;	position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
+	.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box;position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
 	.shanti-searchtoggle a:hover{ color:#222;background:#444;}
 	.shanti-searchtoggle i{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:700; padding:0;}
 	.shanti-searchtoggle i:before{ color:#eee; content: "\e630";}
@@ -1535,7 +1523,7 @@ ul.menu-main>li>a:first-child {
 	.content-resources ul.nav-pills li.active:first-child a { margin-top:0px; }
 	.content-resources ul.nav-pills li a i{ position:relative; top:4px;}
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */ background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:400; color:#fff; font-family:'Museo Sans',sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
+  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background-clip: padding-box; background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:400; color:#fff; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
 	.view-resources.btn-default.show { width:200px; padding-left:35px; text-align:left; position:relative; left:-218px;}	
 	.view-resources.btn-default i.icon { display:none;}
 	.view-resources.btn-default i.icon:before{ font-family:'shanticon'; content: "\e610";}
@@ -1562,7 +1550,7 @@ ul.menu-main>li>a:first-child {
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:0; }
 	.navbar-default .menu-explore{ display:none !important; }
 	.menu-maintoggle{ display:none; }
-	.menu-toggle{ display:inline-block; -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.25); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.25);border-collapse: separate; /* fix for ie9 shadow */ }   
+	.menu-toggle{ display:inline-block; -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1);border-collapse: separate; /* fix for ie9 shadow */ }   
 	.navbar-default .navbar-nav>li>a{ background:transparent; }
 	.navbar-default h1 i.icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   .navbar-header h1.navbar-title a span{ font-size:0.83em; position:relative; top:-5px; }	 
