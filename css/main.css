@@ -554,7 +554,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   float:left;
   margin-right: 0.38em;
   text-align:center;
-  position:relative; top: 0.32em; z-index:10; display:inline-block; background: hsla(0, 0%, 0.0000%, 0.175);
+  position:relative; top: 0.32em; z-index:10; display:inline-block; background: hsla(0, 0%, 0.0000%, 0.1);
 }
 .main-content .titlearea .page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
