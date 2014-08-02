@@ -544,15 +544,17 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .titlearea .page-title span { }
 .titlearea .page-title em {   
-	margin:0 5px 0 0;
-  background:#a52d34;  
-  height:3em;
-  width:3.5em;
-  text-align:center;
+
 }
 .titlearea .page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
   font-size:1em;
+  margin:0 5px 0 0;
+  background:#32ccca;  
+  height:4em;
+  width:4.5em;
+  text-align:center;
+  display:inline-block;
 }
 
 
