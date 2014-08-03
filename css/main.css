@@ -37,7 +37,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 
 /*--- content elements ---*/
 .content-section h1, .content-section h2, .content-section h3, .content-section h4, .content-section h5, .content-section h6{ 
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
 }
 .content-section h6 {
   font-weight: 700;
@@ -547,9 +547,9 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .titlearea .page-title span { position:relative; top: 0.18em;}
 .titlearea .page-title em {   
-	height:1.5em;
-  width:1.56em; 
-	line-height:1.5em;
+	height:1.44em;
+  width:1.5em; 
+	line-height:1.44em;
   float:left;
   margin-right: 0.38em;
   text-align:center;
@@ -557,7 +557,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 }
 .main-content .titlearea .page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
-  font-size:90%;
+  font-size:80%;
   height:1.5em;
   line-height:1.5em;
   margin:0 auto;
