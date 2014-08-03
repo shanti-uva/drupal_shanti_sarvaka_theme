@@ -14,7 +14,7 @@
 .ext_wrapper{ height:auto; padding:0; }
 .extruder.right .extruder-content{ overflow:visible !important;  background:transparent !important; border:none; padding:0;width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate; /* fix for ie9 shadow */}
 .extruder.right.isOpened .extruder-content{ border-right-width:12px; background:transparent !important;}
-.extruder .text{ border:none; padding:0; text-shadow:none; width:275px; min-width:275px !important; /*---- default panel container width is set ----*/}
+.extruder .text{ border:none; padding:0; text-shadow:none; width:277px; min-width:277px !important; /*---- default panel container width is set ----*/}
 
 .extruder.right .flap span.flapLabel,
 .extruder.right .flap.on-flap span.flapLabel,
@@ -81,7 +81,7 @@ object.flip_label{ display:none;}
 /*--- START :: Search Panel :: Input & View ----*/
 /*----------------------------------------------*/
 .input-section{ padding:0;border: 1px solid #e0e0e0;display:block;width:100%;}
-.input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px;border-collapse: separate;}
+.input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}
 .input-section .input-group{ padding: 0 12px 0 10px; display:block; width:100%; background:#f8f8f8;}
 .input-section .input-group input.form-control{
 	color:#777;
@@ -96,8 +96,8 @@ object.flip_label{ display:none;}
   width:100%;  
 	overflow: auto;
 	vertical-align:middle;
-	-webkit-box-shadow:0px 2px 5px #eee inset;
-	box-shadow:0px 2px 5px #eee inset; 
+	-webkit-box-shadow:0 2px 5px #eee inset;
+	box-shadow:0 2px 5px #eee inset; 
 	border-collapse: separate; /* fix for ie9 shadow */
 	background: #fff;
 	-webkit-transition-property: all;
@@ -109,7 +109,7 @@ object.flip_label{ display:none;}
 .input-section .input-group input.form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
 /*--- button group ---*/
-.input-section .input-group .input-group-btns{ width:45px !important; /* set button width and position */ position:absolute; top:9px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
+.input-section .input-group .input-group-btn{ width:45px !important; /* set button width and position */ position:absolute; top:9px; right:12px; z-index:10; background:transparent; padding:0; margin:0;}
 
 /*--- button ---*/
 .input-section .input-group .btn.btn-default{ 
@@ -176,7 +176,7 @@ object.flip_label{ display:none;}
 .input-section .feature-group .toggle-link.feature-toggle{ float:right;padding:0 10px 0 0;margin:0;display:inline;position:relative;top:-1px;}
 .input-section .toggle-link.advanced-link{ margin:0;padding:0;position:relative;top:21px;left:-14px; float:right;}
 .input-section .feature-group .toggle-link.show-features i.icon:before, /*--- for feature types ---*/
-.input-section .toggle-link.show-advanced i.icon:before{content:'\f068';} /*--- advanced search plus ---*/
+.input-section .toggle-link.show-advanced i.icon:before{content:'\f068';} /*--- for advanced ---*/
 
 /***
 .input-section .feature-group .toggle-link.feature-toggle{ float:right;padding:0 10px 0 0;margin:0;display:inline;position:relative;top:-1px;}
@@ -287,95 +287,11 @@ object.flip_label{ display:none;}
 .input-section .selectpicker li a span:hover{ color:#fff;}
 
 
-/*--------------------------------------------------*/
-/*--- feature types tree and select dropdown -------*/
-/*--------------------------------------------------*/
-/*--- toggle styles are with advanced link ---*/
-.input-section .feature-group{ padding:0 0 1px;}
-/*--- feature search input ---*/
-.input-section .feature-group .form-control{ margin:13px 0 3px !important;}
-/*--- filtering button and readout above input ---*/
-.input-section .feature-group span.filter{ float:left;padding-left:15px;height:15px; position:relative;top:-2px; display:none;}
-.input-section .feature-group span#matches{ color:#555; font-size:0.82em; position:relative;top:-1px;}
-.input-section .feature-group label{ color:#555; padding:0;margin:0; font-size:0.88em; line-height:12px;height:15px;}
-
-/*--- the feature dropdown-menu ---*/
-.feature-group .dropdown-menu{ height:320px; overflow:auto; border-radius:12px; background-clip: padding-box; padding:0; top:46px; left:0; width:100%; min-width:220px;}
-/* .feature-group .dropdown-menu p{ font-size:.82em; line-height:normal; color:#222;}
-#gen-search .text .feature-message{ background-color:#fff; font-size:12px;padding:10px 17px 10px; margin:0; 
-border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
-
-.show-feature-tree{ padding:0; background:#f8f8f8; width:100%; margin-right:0.06em;} 
-.show-feature-tree .form-group{ border-top:1px solid #e0e0e0; margin:0 8px;}
-.show-feature-tree .form-group.last{ /* padding-bottom:5px; */}
-/*--- bottom buttons ---*/
-.feature-submit{ padding:0 17px 7px; margin:0; border-top:1px solid #ccc; width:100%; background-color:#fff; height:40px; min-height:40px;
-	border-radius-bottom-left:12px; border-radius-bottom-right:12px;background-clip: padding-box; position:absolute; bottom:0; z-index:9999;
-}
-
-.feature-group .tree-wrap{ height:312px; min-height:312px; /*--- height ---*/ padding:0; position:relative; }
-.feature-container{  height:312px; min-height:312px; /*--- height ---*/ padding:0;margin:0;}
-.feature-container #feature-tree1,
-.feature-container #feature-tree2,
-.feature-container #feature-tree3{ height:312px; min-height:312px; /*--- height ---*/ padding:0; margin:5px 0 0;} /***** container height ******/
-
-.feature-group ul.fancytree-container{ border:none; margin-bottom:12px;margin-left:5px;font-size:0.88em;}
-.feature-group .fancytree-container span.fancytree-title{ margin-left:0;padding-left:0;color:#222;}
-.feature-group .fancytree-container span.fancytree-title {
-    /*padding-left: 10px;
-    margin-left: 0px;*/
-}
-.feature-group span.fancytree-node{ border:none; display:block;}
-
-.feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected, 
-.feature-group span.fancytree-node.fancytree-selected:hover{ background:transparent;border:none;}
-
-#gen-search .text .feature-group { }
-#gen-search .text input.feature-name { }
-
-
-.feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active, 
-.feature-group span.fancytree-node.fancytree-active:hover{ background:transparent;border:none;}
-.feature-group .fancytree-container span.fancytree-node.fancytree-selected,
-.feature-group .fancytree-container span.fancytree-node.fancytree-selected:hover,
-.feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected, 
-.feature-group .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected:hover{ background:transparent;}
-
-/*--- highlighting ---*/ 
-.fancytree-node.fancytree-match{ } /* targets the filtered nodes */
-.fancytree-ext-filter span.fancytree-node.fancytree-submatch span.fancytree-title{ color:#777;} /*--- highlight parent node ---*/
-.fancytree-ext-filter span.fancytree-node.fancytree-match span.fancytree-title { color:#555;} /* fancytree-match is the class for the actual feature highlight - default is font-weight: bold; */
-
-.feature-group span.fancytree-icon{ background-image:none; margin:0; padding:0; width:0; height:0; line-height:0; display:none;}
-.feature-group .fancytree-container .glyphicon{ color: #888;font-size: 13px; position:relative; right:3px;}
-.feature-group .fancytree-container span.fancytree-node:hover > .glyphicon{ color: #333;}
-.feature-group .fancytree-container span.fancytree-node span.glyphicon.fancy-checkbox{ }
-.feature-group .fancytree-container span.fancytree-node span.glyphicon.glyphicon-share{ color:#000 !important;}
-.feature-group .fancytree-container span.fancytree-node span.glyphicon.glyphicon-check{ color:#c00 !important;}
-
-.fancytree-node.fancytree-active.fancytree-focused.fancytree-has-children.fancytree-exp-c.fancytree-ico-c{
-	background:transparent;
-}
-
-.feature-group span.fancytree-icon{ /*width:3px;display:inline;*/}
 
 
 
-
-
-
-.feature-submit .btn.btn-default{ /*--- the select button ---*/
-	font-size:0.75em; background-color:#dc3c47;color:#fff; padding:3px 13px 2px; margin-top:7px; background-image:none;-webkit-box-shadow:none;box-shadow:none;text-transform:uppercase;
-}
-.feature-submit .btn.btn-default>span{ font-size:1.62em;position:relative;top:3px;}
-.feature-submit .btn.btn-default.clear-form{ /*--- the clear button ---*/
-	border:none;background:transparent;padding:0;margin-top:5px;float:right;-webkit-box-shadow:none;box-shadow:none; font-weight:bold; color:#dc3c47; text-transform:capitalize; border-radius:0;
-}
-.feature-submit .btn.btn-default.clear-form:hover{ color:#333;}
-.feature-submit .btn.btn-default.clear-form:active{ color:#dc3c47;}
-
-.advanced-view .form-group.km-input{ padding:2px 5px 2px;} /*--- common input ---*/
-.advanced-view .form-group.km-input .form-control{ 
+.advanced-view .form-group.advanced-input{ padding:2px 5px 2px;} /*--- common input ---*/
+.advanced-view .form-group.advanced-input .form-control{ 
 	line-height:27px; 
 	height:27px; 
 	padding:0 15px; 
@@ -393,8 +309,10 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 	box-shadow:0px 2px 5px #eee inset;
 	border-collapse: separate; /* fix for ie9 shadow */
 }
-.advanced-view .form-group.km-input .form-control:hover{ border: 1px solid #ccc; color:#777;}
-.advanced-view .form-group.km-input .form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8; box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
+.advanced-view .form-group.advanced-input .form-control:hover{ border: 1px solid #ccc; color:#777;}
+.advanced-view .form-group.advanced-input .form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8; box-shadow: 0 0 4px #949bd8;}
+
+.advanced-view .form-group.advanced-input.select-type > span{ position:relative;top:3px;left:4px;color:#404040; }
 /*--- END advanced ---*/
 
 /*----------------------------------------------------*/
@@ -444,7 +362,8 @@ border-bottom:1px solid #ccc; position:relative; z-index:99999;} */
 
 /*---- START list table view ----*/
 .view-section table.table-responsive{ text-align:center; border:none;}
-.table-responsive>.table>tbody>tr>td{ white-space:nowrap;}
+.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.view-section table.table-results a{ font-style:italic;}
 
 .view-section table.table-results{ border:none; font-size:13px; line-height:20px; height:20px; margin-bottom:0; margin:0 2%; width:96%; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
 .view-section table.table-results a{ font-style:italic;}
@@ -574,8 +493,9 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	color:#444; 
 	margin:0 0 0 -24px; 
 	padding-left:15px; 
-	line-height:22px; 
-	height:20px; 
+	padding-top:2px;
+	line-height:1.5em; 
+	height:1.5em; 
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -584,8 +504,8 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section span.fancytree-title:before{
 	background: #fff;
 	color:transparent;
-	font-family: 'shanticons';
-	content: '\e625';
+	font-family: 'shanticon';
+	content: "\e625";
 	font-size: 1em;
 	float:left;
 	position:relative; top:5px; right:2px;

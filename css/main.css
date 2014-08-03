@@ -29,7 +29,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   min-height:100%;
 }
 .content-section {
-  /* padding: 0 0 30px 18px; */ padding: 1em 2em 5em 2em;
+  /* padding: 0 0 30px 18px; */ 
+  padding: 1em 2em 5em 2em;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size:1.06em;
   min-height:100%;
@@ -1123,76 +1124,168 @@ ul.menu-main>li>a:first-child {
 /*------------------------------------*/
 /*----- Audio/Video Thumbnails -------*/
 /*------------------------------------*/
-div.shanti-thumbnail { 
-  height: 270px;
-  width: 210px;
-  display: inline-block;
-  float: left;
-  padding: 0;
-  margin: 16px;
-  border: solid 1px #eee;
-  overflow: hidden;
-  background-color: #FFFFFF;
+
+/* THumbnail Grid with (right) column */
+.search-results {
+	width: 100%;
+	-moz-column-width: 11em;
+ -webkit-column-width: 11em;
+ -moz-column-gap: .63em;
+ -webkit-column-gap: .63em;
+}
+/* Gallery and thumbnails */
+.shanti-gallery{
+	width: 100%;
+	-moz-column-width: 12em;
+ -webkit-column-width: 12em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap: 1em;
+}
+.shanti-thumbnail { 
+	color:#444;
+	height: 18em;
+	float:left;
+  max-width: 11.75em;
+	padding: 0;
+  margin:  0.25em 0.38em 1.25em;
+  width:  100%;
+	border-radius:.32em;
+	background-clip: padding-box;
+	background-color: #FFFFFF;	
+	display: block;
+  position:relative;
+  -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.4);
+	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.4);
+	border-collapse: separate; /* fix for ie9 shadow */
+  -webkit-transition: box-shadow 150ms ease;
+	-moz-transition: box-shadow 150ms ease;
+	-ms-transition: box-shadow 150ms ease;
+	-o-transition: box-shadow 150ms ease;
+	transition: box-shadow 150ms ease; 
+}
+.shanti-thumbnail:hover {
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  border-collapse: separate; /* fix for ie9 shadow */
+}
+.shanti-thumbnail:active {
+  -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.5);
+	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.5);
+	border-collapse: separate; /* fix for ie9 shadow */
+}
+.shanti-thumbnail-image {
+	width: 100%;
+	overflow: hidden;
 }
 
-div.shanti-thumbnail div.shanti-thumbnail-image {
-  width: 100%;
-  overflow: hidden;
+.shanti-thumbnail-image a{
+	position:relative;
+	display:block;	
+	padding:0;
+}
+.shanti-thumbnail-image img {
+	width: 100%;
+	border: none;
+	border-radius: .32em .32em 0 0;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+}
+.shanti-thumbnail-info {
+	font-size: 0.75em;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
-div.shanti-thumbnail div.shanti-thumbnail-image img {
-  width: 100%;
-  border: solid 1px #eee;
-  border-radius: 5px 5px 0 0;
-  background-clip: padding-box;
+.shanti-thumbnail .body-wrap{
+	padding: .38em .75em .5em 1em;
+}
+.shanti-thumbnail .footer-wrap {
+	position:absolute;
+	bottom:0;
+	background:#f6f6f6;
+	border-top:1px solid #e6e6e6;
+	border-radius:0 0 .32em .32em;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	width:100%;
+	display:block;
+	padding:.32em 1em 0;
+	color:#787878;
+	height:2.5em;
+}
+.shanti-thumbnail .footer-wrap a{ color:#444; }
+.shanti-thumbnail .footer-wrap i{
+	font-size:1.32em;
+	position:relative;
+	top:2px;
+}
+.shanti-field-created{
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+}
+div.shanti-thumbnail-field.shanti-field-duration{
+	margin-top: 0.25em;
+}
+.shanti-field-created span.shanti-field-content {
+	color: #707070;
+}
+.shanti-thumbnail-field.shanti-field-title {
+	text-align: left;
+	line-height: 1.25em;
+	margin-top: 0.38em;
+}
+.shanti-thumbnail-field.shanti-field-title a {
+	color: #333;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.shanti-thumbnail-field.shanti-field-title a:hover{ -webkit-box-shadow:none; box-shadow:none;}
+
+.shanti-thumbnail-link .overlay{
+	
+	position:absolute:
+	top:0;
+	left:0;
+	z-index:10000;
+	width:100%;
+	height:100%;	
+	background:#555;
+	cursor:pointer;
+	text-align:center;
+	opacity:0.1;
+	color:#fff;
 }
 
-div.shanti-thumbnail:hover {
-  background-color: #eee;
-  border-color: #ddd;
+.shanti-thumbnail-link .overlay i{
 }
-
-div.shanti-thumbnail div.shanti-thumbnail-info {
-  padding: 6px 10px 4px;
-  font-size: small;
-}
-
-div.shanti-field-created span.shanti-field-content {
-  color: #999;
-}
-
-div.shanti-thumbnail-field.shanti-field-title {
-  text-align: left;
-  line-height: 1.25em;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-div.shanti-thumbnail-field.shanti-field-title a {
-  color: #333;
-  font-size: 1.1em;
-  font-weight: bold;
+.shanti-thumbnail-link .overlay:hover{
+	background:#eee;
+	opacity:1;
+	color:red;
 }
 
 /* Thumbnail icons */
-div.shanti-thumbnail-image i.thumbtype {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  /*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
-  width: 25px;
-  height: 25px;
-  border: thin solid #aaa;
-  border-radius: 3px;
-  background-clip: padding-box;
-  color: white;
-  padding-left: 2px;
-  padding-top: 3px;
+.shanti-thumbnail-image i.thumbtype {
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
+	width: 2em;
+	height: 1.88em;
+	border: none;
+	border-radius: 0 0.25em;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	color: white;
+	font-size:1.25em;
+	line-height:1.83em;
+	font-weight:normal;
+	text-align:center;
 }
+.shanti-thumbnail-image:hover i.thumbtype{
+	background-color: #f00; /* #32ccca */
+}
+/** Test
+section.content-section > div.tab-content > article:first-child > div.region:first-child > div.block:first-child {
+	font-size: 32px;
+}
+**/
 
-i.thumbtype {
-  background-color: rgba(50,204,202, 0.8) !important;
-}
 
 
 
@@ -1669,7 +1762,7 @@ i.thumbtype {
 
   .navbar-header h1.navbar-title a span{ font-size:0.93em; position:relative; top:-5px; }
 
-  .main-content .content-section { max-width: 47em; }
+  .main-content .content-section { max-width: 67em; }
     
 	.collections ul li a { font-size: 0.68em; line-height:2em;}	
  	.collections h4 {
