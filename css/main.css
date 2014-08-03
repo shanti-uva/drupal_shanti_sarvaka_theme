@@ -1116,6 +1116,10 @@ ul.menu-main>li>a:first-child {
 /*----- END NAVIGATION -------*/
 /*----------------------------*/
 
+
+
+
+
 /*------------------------------------*/
 /*----- Audio/Video Thumbnails -------*/
 /*------------------------------------*/
@@ -1130,6 +1134,71 @@ div.shanti-thumbnail {
   overflow: hidden;
   background-color: #FFFFFF;
 }
+
+div.shanti-thumbnail div.shanti-thumbnail-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+div.shanti-thumbnail div.shanti-thumbnail-image img {
+  width: 100%;
+  border: solid 1px #eee;
+  border-radius: 5px 5px 0 0;
+  background-clip: padding-box;
+}
+
+div.shanti-thumbnail:hover {
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+div.shanti-thumbnail div.shanti-thumbnail-info {
+  padding: 6px 10px 4px;
+  font-size: small;
+}
+
+div.shanti-field-created span.shanti-field-content {
+  color: #999;
+}
+
+div.shanti-thumbnail-field.shanti-field-title {
+  text-align: left;
+  line-height: 1.25em;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+div.shanti-thumbnail-field.shanti-field-title a {
+  color: #333;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Thumbnail icons */
+div.shanti-thumbnail-image i.thumbtype {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  /*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
+  width: 25px;
+  height: 25px;
+  border: thin solid #aaa;
+  border-radius: 3px;
+  background-clip: padding-box;
+  color: white;
+  padding-left: 2px;
+  padding-top: 3px;
+}
+
+i.thumbtype {
+  background-color: rgba(50,204,202, 0.8) !important;
+}
+
+
+
+
+
+
 
 /*-----------------------------------------------*/
 /*---- select dropdown -----*/
@@ -1231,10 +1300,6 @@ div.shanti-thumbnail {
 .bootstrap-select.btn-group.show-tick i:first-child{ position:relative; top:2px;}
 
 /*--- END selectpicker ---*/
-
-
-
-
 
 
 
@@ -1362,7 +1427,7 @@ div.shanti-thumbnail {
 	.menu-icon a:hover i:before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}	
 	.menu-icon.show-topmenu a:hover i:before{ color:#fff;}
-	.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box;position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
+	.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box; position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
 	.shanti-searchtoggle a:hover{ color:#222;background:#444;}
 	.shanti-searchtoggle i{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:700; padding:0;}
 	.shanti-searchtoggle i:before{ color:#eee; content: "\e630";}
@@ -1537,7 +1602,7 @@ div.shanti-thumbnail {
   #menu-main .panel-group,
   #menu-collections .panel-group{ padding:0 !important;}  
   
-  .content-resources { width:190px;}
+  .content-resources { width:13.5em;}
   .content-resources ul{ margin-top:25px;}
   
 	.content-resources ul.nav-pills li{ font-size: 1em; line-height: 1em; height: 2.63em;}
@@ -1547,7 +1612,7 @@ div.shanti-thumbnail {
 	.content-resources ul.nav-pills li.active:first-child a { margin-top:0px; }
 	.content-resources ul.nav-pills li a i{ position:relative; top:4px;}
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background-clip: padding-box; background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:400; color:#fff; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
+  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:400; color:#fff; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
 	.view-resources.btn-default.show { width:200px; padding-left:35px; text-align:left; position:relative; left:-218px;}	
 	.view-resources.btn-default i.icon { display:none;}
 	.view-resources.btn-default i.icon:before{ font-family:'shanticon'; content: "\e610";}
@@ -1604,7 +1669,7 @@ div.shanti-thumbnail {
 
   .navbar-header h1.navbar-title a span{ font-size:0.93em; position:relative; top:-5px; }
 
-  .main-content .content-section {/* max-width: 750px; */}
+  .main-content .content-section { max-width: 47em; }
     
 	.collections ul li a { font-size: 0.68em; line-height:2em;}	
  	.collections h4 {
