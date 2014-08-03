@@ -57,7 +57,7 @@
   
   <style>
     .titlearea {background: <?php print  $variables['base_color'];?> !important; } 
-    .titlearea .page-title .icon { background:  <?php print $variables['base_color']; ?> !important; } 
+    /* .titlearea .page-title .icon { background:  <?php print $variables['base_color']; ?> !important; } */
   </style>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

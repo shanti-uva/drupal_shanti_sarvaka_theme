@@ -29,10 +29,10 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   min-height:100%;
 }
 .content-section {
-  padding: 0 0 30px 18px;
+  /* padding: 0 0 30px 18px; */ padding: 1em 2em 5em 2em;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size:1.06em;
-  min-height:100%; 
+  min-height:100%;
 }
 
 /*--- content elements ---*/
@@ -74,8 +74,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 /*-------------------------*/
 .content-section .btn{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 .content-section .btn-group{
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
-	box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.25);
+	-webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.25);
+	box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.25);
 	border-collapse: separate; /* fix for ie9 shadow */
 }
 .content-section .btn-group > .btn{ 
@@ -106,8 +106,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	border-radius:0.18em;
   background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	border:1px solid #ddd;
-	-webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
-	box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.33);
+	-webkit-box-shadow: 0 0 25px 0 rgba(50, 50, 50, 0.33);
+	box-shadow: 0 0 25px 0 rgba(50, 50, 50, 0.33);
 	border-collapse: separate; /* fix for ie9 shadow */
 }
 .content-section .btn-default:hover,
@@ -139,7 +139,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   background-color:#f0f0f0;
   border:none; 
   border-radius:0; 
-  border-collapse: separate;
   width:100%; 
 }
 .panel-default .panel-heading{
@@ -154,7 +153,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   -webkit-box-shadow:none;
   box-shadow:none;
   border-radius:0; 
-  border-collapse: separate;
   width:100%; 
   background-color:white;
   margin:0;
@@ -196,7 +194,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   height: 18px;
   display: block;
   border-radius: 50%;
-  background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+  background-clip: padding-box;
   margin-right:20px;
   margin-left:5px;
   float: left;
@@ -256,7 +254,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   content: "\f077";
 }
 
-
 /*-- filtered message to upgrade older browsers --*/
 .progressive { 
   color:#fff;
@@ -299,9 +296,9 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .header-banner{
 	border-collapse:separate;
 	overflow:visible;
-	-webkit-box-shadow: 0px 3px 10px hsla(0, 0%, 0.0000%, 0.125);
-	box-shadow: 0px 3px 10px hsla(0, 0%, 0.0000%, 0.125);
-	border-collapse: separate; /* fix for ie9 shadow */
+	-webkit-box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.175);
+	box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.175);
+	border-collapse:separate;
 	position:relative;
 	z-index:300;
 }
@@ -310,7 +307,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	margin:0; 
 	background:#fff;
 	border:none; 
-	border-collapse:separate;
 	overflow:visible;
 }
 .navbar.navbar-default .navbar-collapse,
@@ -411,17 +407,17 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	border:1px solid #fff;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
+	background-clip: padding-box;
 	padding:10px 0 10px;
 	border-top:1px solid #ddd;
 	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.175);
 	box-shadow: 0 2px 4px rgba(0,0,0, 0.175);
-	border-collapse: separate; /* fix for ie9 shadow */
-	background-image:none;
-	background-image: -webkit-linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
-	background-image: -moz-linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
-	background-image: -ms-linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
-	background-image: -o-linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
-	background-image: linear-gradient(top, #ddd 0px, #f7f7f7 6px, #fff 18px);
+	border-collapse:separate;
+	background-image: -webkit-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
+	background-image: -moz-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
+	background-image: -ms-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
+	background-image: -o-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
+	background-image: linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
 }
 .navbar .lang ul.dropdown-menu{ /* language dropdown */ left:-62px; width:130px; min-width:130px;}
 
@@ -505,6 +501,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   margin:0;
   border:none;
   text-shadow:none;
+  -webkit-box-shadow:none;
   box-shadow:none;
   font-size: 1.44em;
   position: absolute;
@@ -730,15 +727,15 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .content-resources {
   padding-left: 0;
   padding-right: 0;
-  width:190px;
+  width:13.5em;
   background:#fff;
   min-height:700px;
   height:100%;
-	background-image: -webkit-linear-gradient(left, #ccc 0px, #ccc 9px, #fff 10px);
-	background-image: -moz-linear-gradient(left, #ccc 0px, #ccc 9px, #fff 10px);
-	background-image: -ms-linear-gradient(left, #ccc 0px, #ccc 9px, #fff 10px);
-	background-image: -o-linear-gradient(left, #ccc 0px, #ccc 9px, #fff 10px);
-	background-image: linear-gradient(left, #ccc 0px, #ccc 9px, #fff 10px);  
+	background-image: -webkit-linear-gradient(left, #ccc 0, #ccc 9px, #fff 10px);
+	background-image: -moz-linear-gradient(left, #ccc 0, #ccc 9px, #fff 10px);
+	background-image: -ms-linear-gradient(left, #ccc 0, #ccc 9px, #fff 10px);
+	background-image: -o-linear-gradient(left, #ccc 0, #ccc 9px, #fff 10px);
+	background-image: linear-gradient(left, #ccc 0, #ccc 9px, #fff 10px);  
 }
 .content-resources ul.nav-pills {  
   font-weight: 700;
@@ -765,7 +762,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	height:3.63em;
 	border: none;
 	border-radius:0;
-	border-collapse: separate;
 	border-bottom:1px solid #e0e0e0;
 	background:#fff;
 	-webkit-transition: background-color 200ms;
@@ -878,7 +874,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 #menu .multilevelpushmenu_wrapper ul{
   -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.4);
   box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.4); 
-	border-collapse:separate;
+	border-collapse:separate; /* needed by ie9+ with box-shadow */
 }
 #menu .multilevelpushmenu_wrapper ul.hideshadow{
 	-webkit-box-shadow:none;
@@ -1017,9 +1013,9 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   color: #aaa;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
   border-collapse: separate; /* fix for ie9 shadow */
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 .menu-accordion ul a:hover,
 .menu-accordion ul a:focus,
@@ -1055,8 +1051,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 ul.menu-main{ 	
   -webkit-box-shadow: -2px 3px 4px rgba(0,0,0,0.175);
 	box-shadow: -2px 3px 4px rgba(0,0,0,0.175);
-	border-collapse: separate; /* needed by ie9+ with box-shadow */
-	overflow: visible !important;
+	border-collapse:separate; /* needed by ie9+ with box-shadow */
+	overflow:visible !important;
 }
 
 
@@ -1120,6 +1116,20 @@ ul.menu-main>li>a:first-child {
 /*----- END NAVIGATION -------*/
 /*----------------------------*/
 
+/*------------------------------------*/
+/*----- Audio/Video Thumbnails -------*/
+/*------------------------------------*/
+div.shanti-thumbnail { 
+  height: 270px;
+  width: 210px;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 16px;
+  border: solid 1px #eee;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
 
 /*-----------------------------------------------*/
 /*---- select dropdown -----*/
