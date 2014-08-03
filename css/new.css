@@ -5,7 +5,7 @@
 
 /* common elements */
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:700;}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 div.inline { display: inline-block; } /*--- avoid using this */
 
