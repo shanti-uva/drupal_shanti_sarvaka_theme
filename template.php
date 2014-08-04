@@ -643,7 +643,7 @@ function shanti_sarvaka_fieldset($variables) {
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">
-        <i class="glyphicon glyphicon-plus">'        	
+        <i class="glyphicon glyphicon-plus"></i>'        	
            . $element['#title'] .
         '</a>
       </h4>
