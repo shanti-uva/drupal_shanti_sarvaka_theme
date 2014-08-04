@@ -297,8 +297,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .header-banner{
 	border-collapse:separate;
 	overflow:visible;
-	-webkit-box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.175);
-	box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.175);
+	-webkit-box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.1110);
+	box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.1110);
 	border-collapse:separate;
 	position:relative;
 	z-index:300;
