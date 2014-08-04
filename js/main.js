@@ -48,17 +48,17 @@
 	
 	// Initialization of UI components on page on load
 	jQuery(function($) {
-	  createTopLink();
-	  menuInit();
-	  responsiveMenusInit();
-	  iCheckInit();
+		createTopLink();
+		iCheckInit();
+		menuInit();
+		responsiveMenusInit();
 		mbExtruderInit();
 		searchInit();
 		//setSearchTabHeight();
 		fancytreeInit();
-	  miscInit();
-	  checkWidth();
-	  carouselInit();
+		miscInit();
+		checkWidth();
+		carouselInit();
 	});
 	
 	// *** CONTENT *** top link
@@ -88,14 +88,14 @@
 		});
 		// Initialize the multilevel main menu
 		$( '#menu' ).multilevelpushmenu({
-	    menuWidth: 250,
-	    menuHeight: '32em', // this height is determined by tallest menu, Preferences
-	    mode: 'cover',
-	    direction: 'rtl',
-	    backItemIcon: 'fa fa-angle-left',
-	    groupIcon: 'fa fa-angle-right',
-	    collapsed: false,
-	    preventItemClick: false,
+			menuWidth: 250,
+			menuHeight: '32em', // this height is determined by tallest menu, Preferences
+			mode: 'cover',
+			direction: 'rtl',
+			backItemIcon: 'fa fa-angle-left',
+			groupIcon: 'fa fa-angle-right',
+			collapsed: false,
+			preventItemClick: false,
 	  });
 
 	  // --- align the text
@@ -125,18 +125,18 @@
 	        
 	  /* Initialize Language Buttons */
 	  // Language Chooser Functionality with ICheck
-	  $('input.optionlang').on('ifChecked', function() {
-	  	var newLang = $(this).val().replace('lang:','');
-	  	var oldLang = Drupal.settings.pathPrefix;
-	  	var currentPage = window.location.pathname;
-	  	if(oldLang.length > 0) { 
-		  	// remove any current lang in url (format = "zh/")
-		  	var currentPage = currentPage.replace(RegExp(oldLang + "?$"), ''); // Take care of home page (no slash at end of line)
-		  	currentPage = currentPage.replace(oldLang, ''); // All other pages
-		  }
-	  	// Create New URL with new Lang Prefix
-	  	var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/'); 
-	  	window.location.pathname = newUrl;
+	  $('body').on('ifChecked', 'input.optionlang', function() {
+			var newLang = $(this).val().replace('lang:','');
+			var oldLang = Drupal.settings.pathPrefix;
+			var currentPage = window.location.pathname;
+			if(oldLang.length > 0) { 
+				// remove any current lang in url (format = "zh/")
+				var currentPage = currentPage.replace(RegExp(oldLang + "?$"), ''); // Take care of home page (no slash at end of line)
+				currentPage = currentPage.replace(oldLang, ''); // All other pages
+			  }
+			// Create New URL with new Lang Prefix
+			var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/'); 
+			window.location.pathname = newUrl;
 	  });
 	}
 	
@@ -258,27 +258,12 @@
 	          label_text = label.text();
 	
 	      label.remove();
-	      self.on('ifCreated ifClicked ifChanged ifChecked ifUnchecked ifDisabled ifEnabled ifDestroyed check ', 
-	      	function(event){                
-              if(event.type ==="ifChecked"){
-                  self.trigger('click');  
-                  self.iCheck('update');
-              }
-              if(event.type ==="ifUnchecked"){
-                  self.trigger('click');  
-                  self.iCheck('update');
-              }     
-              if(event.type ==="ifChanged"){
-                  self.trigger('click');  
-                  self.iCheck('update');
-              }                             
-          }).iCheck({
+	      self.iCheck({
 	          checkboxClass: "icheckbox_minimal-red",
 	          radioClass: "iradio_minimal-red",
 	          insert: "<div class='icheck_line-icon'></div>" + label_text
 	      });
 	  });
-		 
 	  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select used for multiselectors such as KMaps
 	
 	}
