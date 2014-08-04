@@ -482,8 +482,8 @@ ul.ss-full-tabs li.active a {
 .carousel a.carousel-control.left {margin-left: -1.18em;}
 .carousel a.carousel-control.right {margin-right: -1.18em;}
 .carousel a.carousel-control i {font-family:"shanticon"; font-style:normal;}
-.carousel a.carousel-control.left i:before {content:'\e641'; /*-- left arrow-tri icon */ position:relative; right:-5px;}
-.carousel a.carousel-control.right i:before {content:'\e642'; /*-- right arrow-tri icon */ position:relative; left:-5px;}
+.carousel a.carousel-control.left i:before {content:'\e641'; /*-- left arrow-tri icon */ position:relative; right:-0.32em;}
+.carousel a.carousel-control.right i:before {content:'\e642'; /*-- right arrow-tri icon */ position:relative; left:-0.32em;}
 
 .carouseldiv .header {margin-top: .5em;}
 .carouseldiv .header p{ margin-bottom:.38em;}
