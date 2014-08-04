@@ -124,6 +124,25 @@ h5, .h5 {
 	background-color: #ffffff;
 }
 */
+
+/* form table td.label styles addres the "Group Space" fields on ...node/add/collection*/
+form table td.label { 
+   display: inline-block;
+	color: #333; /* override bootstrap default label color of white */
+	font-size: 100%;
+	padding: 12px 0px;
+}
+
+form table td.label strong:after {
+	content: ':';
+	padding-right: 6px;
+}
+
+form table td.label div.description {
+	display: inline;
+	font-weight: normal;
+}
+
 input.form-control.form-text {
 	display: inline-block;
 }

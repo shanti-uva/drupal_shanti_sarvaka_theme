@@ -189,10 +189,18 @@ object.flip_label{ display:none;}
 /*--- iCheck :: radio and checkbox style overrides ---*/
 /*--- reset default size ---*/
 .icheckbox_minimal-red, 
-.iradio_minimal-red{ width:1.63em; height:1.63em;}
+.iradio_minimal-red{ 
+	/*width:1.63em; // Mark: This causes some of the other state of the button to appear on the left of the main radio button image */
+	height:1.63em;
+	margin-right: 4px;
+}
 
 .input-section .icheckbox_minimal-red, 
-.input-section .iradio_minimal-red{ width:1.44em; height:1.44em;}
+.input-section .iradio_minimal-red{ 
+	/* width:1.44em; // Mark: This causes some of the other state of the button to appear on the left of the main radio button image */
+	height:1.44em;
+	margin-right: 4px;
+}
 
 .input-section .radio-inline input,
 .input-section .radio input[type="radio"], 

@@ -471,6 +471,18 @@ function shanti_sarvaka_create_user_menu($um) {
       return true;
     }
   });
+  // Filter out any links with "My" in it to put in Account submenu
+  $mylinks = array_filter($um, function($item) use (&$um) {
+		$k = array_search($item, $um);
+		if($k && preg_match('/my\s/', strtolower($k)))  {
+			return true;		
+		} else {
+			return false;		
+		}
+  });
+  foreach($mylinks as $k => $item) {
+	unset($um[$k]);  
+  }
   
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
@@ -521,6 +533,18 @@ function shanti_sarvaka_create_user_menu($um) {
           ),
         ),
     );
+    // Add in any links with "My" in the title under account menu
+    $myarray = array();
+    foreach($mylinks as $n => $link) {
+		$myarray[$n] = array(
+		   'link' => array( 
+				'title'	=> $link['link']['title'],
+				'href' => $link['link']['href'],	
+			),
+			'below' => array(),
+		) ; 
+    }
+    array_splice($acctarray['below'], 1, 0, $myarray);
     array_unshift($um, $acctarray);
   }
   return shanti_sarvaka_user_menu($um, TRUE);
@@ -543,7 +567,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
     }
     $url = $link['link']['href'];
     if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
-    $target = (substr($url, 0, 1) == '/') ? '': ' target="_blank"';
+    $target = (substr($url, 0, 4) != 'http') ? '': ' target="_blank"';
     $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
     if(is_array($link['below']) && count($link['below']) > 0) {
       $linkhtml .= shanti_sarvaka_user_menu($link['below']);

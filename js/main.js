@@ -151,7 +151,7 @@
 	      accordionPanels:false,
 	      onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false });  },
 	      onExtContentLoad:function(){ 
-	      
+	      /*
 	      	$("input[type='radio']").each(function () {
 						var self = $(this),
 	          label = self.next(),
@@ -162,7 +162,7 @@
 		          radioClass: "iradio_minimal-red",
 		          insert: "<div class='icheck_line-icon'></div>" + label_text
 						});
-					});
+					});*/
 	      	
 	      },
 	      onExtClose:function(){},
@@ -254,14 +254,15 @@
 		
 	  $("input[type='checkbox'], input[type='radio']").each(function () {
 	      var self = $(this),
-	          label = self.next(),
-	          label_text = label.text();
-	
-	      label.remove();
+	          label = self.next('label');
+	   		if(label.length == 1) {
+	     		self = $(this).detach();
+	     		label.prepend(self);
+	     	}
 	      self.iCheck({
 	          checkboxClass: "icheckbox_minimal-red",
 	          radioClass: "iradio_minimal-red",
-	          insert: "<div class='icheck_line-icon'></div>" + label_text
+	          insert: "<div class='icheck_line-icon'></div>"
 	      });
 	  });
 	  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select used for multiselectors such as KMaps
