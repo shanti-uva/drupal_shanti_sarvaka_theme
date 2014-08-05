@@ -661,7 +661,7 @@ jQuery(function ($) {
  
  
 
-/* testing toggle on accordions ===================
+/* testing toggle on accordions */
 jQuery(function ($) {
     var $active = $('#accordionedit-drupal-login .panel-collapse.in').prev().addClass('active');
     
@@ -678,4 +678,4 @@ jQuery(function ($) {
         $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
     });
 });
-*/ 
+ 

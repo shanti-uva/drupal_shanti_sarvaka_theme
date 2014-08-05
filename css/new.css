@@ -235,7 +235,7 @@ ul.primary li a { height:1.75em; line-height:1.75em; padding:0.62em 1.25em;}
 	display:inline-block;
 	padding: 1.12em 2em;
 	height:4.75em;
-	line-height:3em;
+	line-height:2.62em;
 }
 
 
@@ -313,7 +313,7 @@ div#sidebar-second {
 	background-color: #fff;
 	/* max-width: 19em; */
 	max-width:24em;
-	padding:0;
+	padding:0 0 0 .32em;
 }
 div.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 1em .32em;}
 /*
