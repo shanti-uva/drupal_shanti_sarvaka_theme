@@ -658,7 +658,7 @@ jQuery(function ($) {
  
  
 jQuery(function ($) {
-	 if($('ul.primary').length() ) {
+	 if($('ul.primary').length() ) {     // if there are tabs ----
 		 $('body').addClass('showtabs');
 	 }
 });
