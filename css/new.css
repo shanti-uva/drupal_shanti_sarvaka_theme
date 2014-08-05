@@ -179,10 +179,16 @@ select.form-control.ss-select[multiple] {
 
 
 /*--- drupal edit tabs ---*/
-article.main-content header ul.tabs.primary { border:none; position:absolute; bottom:0; right:4em; margin-bottom:0.06em;}
-article.main-content header ul.tabs.primary li{ height:1.75em; line-height:1.75em; }
+article.main-content header ul.tabs.primary { border:none; position:absolute; bottom:0.18em; right:4em; margin:0;}
+article.main-content header ul.tabs.primary li{ height:1.75em; line-height:1.75em; position:relative; }
 article.main-content header ul.tabs.primary li a { color:#555; background:#eee; font-size:80%; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em; text-transform:uppercase;}
 article.main-content header ul.tabs.primary li a:hover{ background:#fff;color:#555; }
+
+article.main-content header ul.tabs.primary li.active a { color:#fff; background:#555; height:1.88em; position:relative; bottom:-1px; line-height:1.88em; padding:0.75em 1.25em 0.62em;}
+article.main-content header ul.tabs.primary li.active a:hover { color:#fff; background:#555;}
+
+article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; font-family:'shanticon'; content: "\e646"; color:#555; position:absolute; bottom:-0.56em; right:50%; margin-right:-0.5em;}
+
 .logged-in article.main-content header ul.tabs.primary { right:2em;}
 
 
