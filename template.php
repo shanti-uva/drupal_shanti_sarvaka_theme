@@ -612,7 +612,7 @@ function shanti_sarvaka_carousel($variables) {
     $html .= '<!-- Slide' . $n . ' --> 
       <div class="item ' . $active . '">
         <div class="caption col-md-7">
-          <div class="title"><h3><a href="' . $slide['path'] . '"><i class="shanticon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>   
+          <div class="title"><h3><a href="' . $slide['path'] . '"><i class="icon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>   
           <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>               
           <div class="description">' . $slide['summary'] . '</div>
           <div class="link show-more"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' </a></div>
@@ -696,11 +696,11 @@ function shanti_sarvaka_button($variables) {
   unset($element['#value']);
   $icon = '';
   if(strpos(strtolower($text), 'video') > 0) {
-    $icon = '<i class="shanticon shanticon-video"></i> ';
+    $icon = '<i class="icon shanticon-video"></i> ';
   } else if(strpos(strtolower($text), 'audio') > 0) {
-    $icon = '<i class="shanticon shanticon-audio"></i> ';
+    $icon = '<i class="icon shanticon-audio"></i> ';
   } else if(strpos(strtolower($text), 'collection') > 0) {
-    $icon = '<i class="shanticon shanticon-texts"></i> ';
+    $icon = '<i class="icon shanticon-texts"></i> ';
   } 
   $element['#attributes']['type'] = 'submit';
   element_set_attributes($element, array('id', 'name', 'value'));
