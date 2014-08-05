@@ -181,7 +181,7 @@ select.form-control.ss-select[multiple] {
 /*--- drupal edit tabs ---*/
 article.main-content header ul.tabs.primary { border:none; position:absolute; bottom: 0.06em; right:4em;}
 article.main-content header ul.tabs.primary li{ height:1.75em; line-height:1.75em; }
-article.main-content header ul.tabs.primary li a { border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em;}
+article.main-content header ul.tabs.primary li a { border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em; text-transform:uppercase; font-size:90%;}
 
 
 
