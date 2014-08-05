@@ -665,12 +665,11 @@ function shanti_sarvaka_fieldset($variables) {
   $output = '<div ' . drupal_attributes($element['#attributes']) . '> 
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">
-        <i class="glyphicon glyphicon-plus"></i>'        	
+      <h6 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">'        	
            . $element['#title'] .
         '</a>
-      </h4>
+      </h6>
     </div>
     <div id="' . $id . '" class="panel-collapse collapse' . $openclass . '">
       <div class="panel-body">';
