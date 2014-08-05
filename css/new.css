@@ -20,9 +20,6 @@ body a:hover { color: #000F81; }
 
 div.collimage{ padding-right:1em;}
 
-.main-content div.messages{ margin:0; padding:.25em 1em; border:none; background-position: 0 0; background-image:none; /*  margin:0.12em 0 1em; border-bottom:1px solid #ccc; */ }
-
-
 .content-section p{ font-size:110%;}
 /*--- anchor Links */
 .content-section p a{ 
@@ -61,7 +58,6 @@ div.collimage{ padding-right:1em;}
 
 
 
-div.error{ background:transparent;}
 
 
 .loader { height: 80%; min-height: 31em; padding-top: 1em;}
@@ -208,13 +204,14 @@ article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; fo
 .btn-primary:active,
 .btn-primary.active {
 	background-image:none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, .1);
   box-shadow:none;
 }
 
 .btn-primary{
 	padding: 0;
 	margin: 0.75em;	
+	border-radius:0.06em;
 	background-color: #5b68ce;
 	height:4em;
 	text-transform:uppercase;
@@ -234,7 +231,7 @@ article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; fo
 	height:4em;
 	width:3.5em; 
 	font-size:130%;
-	line-height:2.5em;
+	line-height:2.32em;
 	display:inline-block;
 	padding:0.5em;
 	float:left;
@@ -248,7 +245,8 @@ article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; fo
 	padding: 1em 1.56em;
 	height:5em;
 	line-height:3em;
-	float:right;
+	white-space:nowrap;
+	overflow:hidden;
 }
 
 
@@ -655,88 +653,6 @@ ul.ss-full-tabs li.active a {
 
 
 
-
-
-
-table.pagerer { 
-	clear: both;
-	color:#555;
-	text-align:right;
-  margin: -0.5em 4em .32em 0;
-  font-size:80%;
-  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
-  text-transform:uppercase;
-	font-weight:700;
-	float:right;
-}
-input.pagerer-page{ /* the input for page count */
-	border:none;	
-	padding-top: 0.12em;
-	line-height:1.25em;
-	color: #6d7afc;
-	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
-	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
-	border-collapse: separate; /* fix for ie9 shadow */
-	border-radius:2px;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
-	width:2.5em;
-}
-input.pagerer-page:focus{
-	background:#fff;
-}
-
-ul.pager{
-	margin:0;
-	display:inline;
-	text-align:right;
-	float:right;
-}
-ul.page li{ padding:0 1px; line-height:1em;}
-ul.pager li>a{
-	color:#aaa;
-	padding:0.06em 0.5em;
-	margin:0;
-	background:transparent;
-	border:none;
-	border-radius:0.18em;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
-	display:inline-block;
-	position:relative;
-	top:-1px;
-}
-ul.pager li>a:hover{
-	color:#333;
-	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
-	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
-	border-collapse: separate; /* fix for ie9 shadow */
-}
-ul.pager li>a:active{ -webkit-box-shadow:none;box-shadow:none;}
-
-ul.pager li>a i{ color:#999; position:relative; top: 0.12em}
-ul.pager li>a:hover i{ color:#444;}
-
-.pager-first i,
-.pager-previous i,
-.pager-next i,
-.pager-last i{
-	font-family:'shanticon';
-	height:1em;
-	width:1em;
-	font-size:1em;
-	line-height:1.25em;
-	color:#222;
-	display:inline-block;
-	background:transparent;
-}
-.pager-first i:before{ content:"\e63d"; }
-.pager-previous i:before { content:"\e640"; }
-.pager-next i:before { content:"\e63f"; }
-.pager-last i:before { content:"\e63e"; }
-
-.pager-first,
-.pager-last{ position:relative;top:1px;}
-.pager-first i,
-.pager-last i{ font-size:1.25em;}
 
 
 
