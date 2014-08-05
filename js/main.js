@@ -10,7 +10,7 @@
 	     ftListSelector: "ul.facetapi-mb-solr-facet-tree, ul.fancy-tree", // should change "mb-solr" to "fancy" for universality
 	     fancytrees: [],
 	     flyoutWidth: 310,
-	}
+	};
 	
 	/**
 	 * Extend Fancy Tree
