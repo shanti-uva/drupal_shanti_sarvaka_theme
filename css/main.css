@@ -544,7 +544,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   padding:0;
 }
 .titlearea .page-title span { position:relative; top: 0.18em;}
-.titlearea .page-title em {   
+.titlearea .page-title > em {   
 	height:1.44em;
   width:1.5em; 
 	line-height:1.44em;

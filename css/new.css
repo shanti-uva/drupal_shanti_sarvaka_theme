@@ -20,7 +20,7 @@ body a:hover { color: #000F81; }
 
 div.collimage{ padding-right:1em;}
 
-.main-content div.messages{ margin:0; padding:.18em 0.63em; border:none; background-position: 0 0; background-image:none; /*  margin:0.12em 0 1em; border-bottom:1px solid #ccc; */ }
+.main-content div.messages{ margin:0 0 .75em; padding:.25em 1em; border:none; background-position: 0 0; background-image:none; /*  margin:0.12em 0 1em; border-bottom:1px solid #ccc; */ }
 
 
 .content-section p{ font-size:110%;}
@@ -169,6 +169,16 @@ select.form-control.ss-select[multiple] {
 
 
 
+
+.logged-in .titlearea>div {
+  height:7em;  
+}
+
+article.main-content header ul.primary { border:none; position:absolute; bottom: 0.06em; right:1em;}
+
+ul.primary li{ height:1.75em; line-height:1.75em; border:none;}
+
+ul.primary li a { height:1.75em; line-height:1.75em; padding:0.62em 1.25em;}
 
 
 
