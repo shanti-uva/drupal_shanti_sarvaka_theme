@@ -170,20 +170,24 @@ select.form-control.ss-select[multiple] {
 
 
 
+
 .logged-in .titlearea>div {
   height:7em;  
 }
 
-article.main-content header ul.primary { border:none; position:absolute; bottom: 0.06em; right:1em;}
 
-ul.primary li{ height:1.75em; line-height:1.75em; border:none;}
 
-ul.primary li a { height:1.75em; line-height:1.75em; padding:0.62em 1.25em;}
+
+/*--- drupal edit tabs ---*/
+article.main-content header ul.tabs.primary { border:none; position:absolute; bottom: 0.06em; right:1em;}
+article.main-content header ul.tabs.primary li{ height:1.75em; line-height:1.75em; border:none;}
+article.main-content header ul.tabs.primary li a { height:1.75em; line-height:1.75em; padding:0.62em 1.25em;}
+
+
 
 
 
 /*  .btn-success, .btn-info, .btn-warning, .btn-danger  */
-
 
 .btn-primary {
   border:none;
@@ -233,7 +237,7 @@ ul.primary li a { height:1.75em; line-height:1.75em; padding:0.62em 1.25em;}
 	background-color: rgba(255, 255, 255, .1);
 	padding: 0;
 	display:inline-block;
-	padding: 1.12em 2em;
+	padding: 1.12em 1.56em;
 	height:4.75em;
 	line-height:2.62em;
 }
@@ -293,8 +297,6 @@ div.banner-content button.btn-default {
 	padding: 0.63em 1.25em;
 }
 
-/* Drupal Edit Tabs */
-article.main-content header ul.primary { float: right;margin-top: -1.12em;margin-right: 2.5em;}
 
 
 .breadwrap ol{ border:none;}
@@ -428,14 +430,13 @@ span.fancytree-node i.shanticon-cancel {
 
 
 
-
+.panel-group .panel{ background:transparent;}
 
 
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 div.field-accordion {
-  min-height: 2em;
 	margin: 0 0 6px;
-  padding: .38em 0;
+  padding: 0;
 	/* border-bottom: 1px solid #C0C0C0; */
 	background-color: #EEE;
 }
@@ -445,10 +446,53 @@ div.field-accordion div.panel-body .form-text {
 }
 
 div.field-accordion div.panel-heading {
-	min-height: 1.56em;
+	background:transparent;
 }
 
-div.field-accordion .form-item, div.field-accordion .form-actions {
+
+
+div.field-accordion div.panel-heading .panel-title a:before{
+	color:#5a65d1;	
+	font-size: 0.62em;
+	line-height:.75em;
+	font-weight:normal;
+	padding-right:0.62em;
+	font-family: 'Glyphicons Halflings';
+	content: '\002b'; /*-- plus icon */
+	position:relative;
+	top:-1px;	
+}
+
+
+.form-actions{ /* testing this at bottom of page for edit save buttons --*/
+	margin-top:3em;
+}
+
+
+/*--- show-hide toggle button ---*/
+a.show-annot, 
+a.hide-annot{
+	font-size:1em;
+	text-transform:uppercase;
+	font-family:sans-serif;
+	font-weight:bold;
+	margin-left:-0.5em;
+}
+a.show-annot:before, 
+a.hide-annot:before{
+	color:#5a65d1;	
+	font-size: 0.62em;
+	line-height:.75em;
+	font-weight:normal;
+	padding-right:0.62em;
+	font-family: 'Glyphicons Halflings';
+	content: '\002b'; /*-- plus icon */
+	position:relative;
+	top:-1px;
+}
+
+div.field-accordion .form-item, 
+div.field-accordion .form-actions {
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -472,6 +516,16 @@ div.field-accordion h4 span.ss-fieldset-toggle {
 div.field-accordion h4 span.ss-fieldset-toggle.open {
 	padding: 0 5px 1px;
 }
+
+
+
+
+
+
+
+
+
+
 
 /** Tabs **/
 ul.ss-full-tabs {

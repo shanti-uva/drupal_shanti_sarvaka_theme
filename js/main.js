@@ -657,6 +657,11 @@ jQuery(function ($) {
 
  
  
+jQuery(function ($) {
+	 if($('ul.primary').length() ) {
+		 $('body').addClass('showtabs');
+	 }
+});
  
  
  
