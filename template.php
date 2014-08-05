@@ -192,7 +192,12 @@ function shanti_sarvaka_preprocess(&$variables) {
   }
 }
 
+function shanti_sarvaka_preprocess_html(&$variables) {
+	//dpm($variables, 'in html preproc');
+}
+
 function shanti_sarvaka_preprocess_page(&$variables) {
+	//dpm($variables, 'in page preproc');
   // Figure out bootstrap column classes
   //dpm($variables, 'page vars');
   $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
@@ -693,7 +698,6 @@ function shanti_sarvaka_button($variables) {
   }
   $element = $variables['element'];
   $text = $element['#value'];
-  unset($element['#value']);
   $icon = '';
   if(strpos(strtolower($text), 'video') > 0) {
     $icon = '<i class="icon shanticon-video"></i> ';
