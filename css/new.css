@@ -232,21 +232,22 @@ article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; fo
 .btn-primary .shanticon {	
 	text-align:center;
 	height:4em;
-	width:4em; 
-	font-size:110%;
-	line-height:2em;
+	width:3.5em; 
+	font-size:130%;
+	line-height:2.5em;
 	display:inline-block;
-	padding:1em;
+	padding:0.5em;
 	float:left;
 }
 .btn-primary .icon:before{ }
 .btn-primary span {
+	font-size: 0.88em;
 	background-color: rgba(255, 255, 255, .1);
 	padding: 0;
 	display:inline-block;
 	padding: 1em 1.56em;
-	height:4em;
-	line-height:2.44em;
+	height:5em;
+	line-height:3em;
 	float:right;
 }
 
