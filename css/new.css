@@ -207,7 +207,6 @@ article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; fo
   background-color: rgba(255, 255, 255, .1);
   box-shadow:none;
 }
-
 .btn-primary{
 	padding: 0;
 	margin: 0.75em;	
@@ -219,14 +218,17 @@ article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; fo
 	font-size: 0.75em;
 	border-radius:0.06em;
 }
-
 .btn-primary:hover {
 	color:#fff;
-	background-color: #4850bd; /* #5a65d1;*/
+	background-color: #4850bd; /* darker */
+}
+.btn-primary:active,
+.btn-primary.active {
+	color:#fff;
+	background-color: #5b68ce;
 }
 
-.btn-primary .icon,
-.btn-primary .shanticon {	
+.btn-primary .icon {	
 	text-align:center;
 	height:4em;
 	width:3.5em; 
@@ -236,7 +238,6 @@ article.main-content header ul.tabs.primary li.active a:after{ font-size:2em; fo
 	padding:0.5em;
 	float:left;
 }
-.btn-primary .icon:before{ }
 .btn-primary span {
 	font-size: 0.88em;
 	background-color: rgba(255, 255, 255, .1);

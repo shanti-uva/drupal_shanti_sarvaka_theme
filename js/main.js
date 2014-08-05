@@ -265,7 +265,9 @@
 	          insert: "<div class='icheck_line-icon'></div>"
 	      });
 	  });
-	  $(".selectpicker").selectpicker(); // initiates jq-bootstrap-select used for multiselectors such as KMaps
+	  $(".selectpicker").selectpicker({
+		  dropupAuto: false
+	  }); // initiates jq-bootstrap-select used for multiselectors such as KMaps
 	
 	}
 	

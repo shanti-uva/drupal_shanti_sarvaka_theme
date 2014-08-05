@@ -1342,7 +1342,7 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
 .bootstrap-select.btn-group:not(.input-group-btn){ margin-bottom:0;}
 
-.main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; overflow:auto;}
+.main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; width:95%; overflow:auto;}
 .main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
 
 .main-content .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
