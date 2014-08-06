@@ -1,5 +1,5 @@
 html{ -webkit-font-smoothing: antialiased; overflow-y:scroll;}
-body{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; overflow: hidden;}
+body{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500; overflow: hidden;}
 body div.wrap-all{ position:relative;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline: 0 !important; /* outline: -2px auto -webkit-focus-ring-color !important; */}
@@ -530,8 +530,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .titlearea>div{
   height:4.44em;
   /* bottom shadow here, top shadow is off header-banner */
-  -webkit-box-shadow: inset 0 -6px 10px -4px hsla(0, 0%, 0.0000%, 0.1110);
-	box-shadow: inset 0 -6px 10px -4px hsla(0, 0%, 0.0000%, 0.1110);
+  -webkit-box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);
+	box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);
 	border-collapse: separate; /* fix for ie9 shadow */
 	position:relative; 
 	z-index:1;
@@ -539,29 +539,26 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 .titlearea .page-title {  
   font-weight: normal;
   font-size:1.68em;
-  line-height:1.75em;
+  line-height:1.68em;
   margin:0;
   padding:0;
 }
 .titlearea .page-title span { position:relative; top: 0.18em;}
 .titlearea .page-title > em {   
-	height:1.44em;
-  width:1.5em; 
-	line-height:1.44em;
-  float:left;
-  margin-right: 0.38em;
-  text-align:center;
-  position:relative; top: 0.32em; z-index:10; display:inline-block; background: hsla(0, 0%, 0.0000%, 0.175);
+
+  
 }
 .main-content .titlearea .page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
   font-size:80%;
-  height:1.5em;
+	height:1.75em;
+  width:1.75em;
   line-height:1.5em;
-  margin:0 auto;
+  margin:0 0.5em 0 0;
   text-align:center;
 	color:#fff; 
-	background: transparent !important;
+	float:left;
+	position:relative; top: 0.38em; z-index:10; display:inline-block; background: rgba(0, 0, 0, 0.175);
 }
 .main-content .titlearea .page-title .icon:before{
 	background:transparent !important;
@@ -844,8 +841,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	vertical-align:middle;
 	padding:0; 
 	margin:0;  
-	-webkit-box-shadow:-1px -2px 8px hsla(0, 0.0000%, 60.0000%, 0.7);
-	box-shadow:-1px -2px 8px hsla(0, 0.0000%, 60.0000%, 0.7);
+	-webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);
+	box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);
 	border-collapse:separate; /* for ie with box-shadow */
 	overflow:visible;
 }
@@ -1265,6 +1262,7 @@ div.shanti-thumbnail-field.shanti-field-duration{
 	position: absolute;
 	top: 0;
 	right: 0;
+	background-color: rgba(50,204,202, 0.8) !important;
 	/*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
 	width: 2em;
 	height: 1.88em;
@@ -1277,14 +1275,16 @@ div.shanti-thumbnail-field.shanti-field-duration{
 	font-weight:normal;
 	text-align:center;
 }
-.shanti-thumbnail-image:hover i.thumbtype{
-	background-color: #f00; /* #32ccca */
-}
+.shanti-thumbnail-image:hover i.thumbtype{ }
 /** Test
 section.content-section > div.tab-content > article:first-child > div.region:first-child > div.block:first-child {
 	font-size: 32px;
 }
 **/
+
+.shanti-thumbnail-image.shanti-field-audio i.thumbtype {
+	background-color: rgba(72, 80, 189, 0.8) !important;
+}
 
 
 
@@ -1500,7 +1500,7 @@ ul.pager li>a:hover i{ color:#444;}
 div.messages {
 	background-image:none;
 	margin:0; 
-	padding:.25em 1em; 
+	padding:0 1em; 
 	border:none;
 }
 
