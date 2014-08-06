@@ -32,13 +32,15 @@ settings[shanti_sarvaka_icon_class] = 'av'
 
 stylesheets[all][] =  css/bootstrap.min.css
 stylesheets[all][] =  css/bootstrap-theme.min.css
+stylesheets[all][] =  css/shanti-main.css
+stylesheets[all][] =  css/shanti-main-mb.css
+stylesheets[all][] =  css/shanti-search.css
+stylesheets[all][] =  css/shanti-search-mb.css
 stylesheets[all][] =  css/utils.css
-stylesheets[all][] =  css/search-panel.css
+stylesheets[all][] =  css/shanti-search.css
 stylesheets[all][] =  css/vjs.zencdn.nt-5.4-video-js.css
-stylesheets[all][] =  css/main.css
-stylesheets[all][] =  css/additional.css
+;stylesheets[all][] =  css/additional.css
 stylesheets[all][] =  fonts/shanticon/css/style.css
-stylesheets[all][] =  css/new.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
@@ -67,7 +69,10 @@ scripts[] = 'src/trunk8.min.js'
 scripts[] = 'js/vendor/bootstrap-paginator.min.js'
 scripts[] = 'js/vendor/vjs.zencdn.net-4.5-video.js'
 scripts[] = 'js/equalHeights.js'
-scripts[] = 'js/main.js'
 scripts[] = 'js/vendor/modernizr-2.6.2.min.js'
 scripts[] = 'js/vendor/jssor.slider.mini.js'
 scripts[] = 'js/hammer.min.js'
+scripts[] = 'js/shanti-main.js'
+scripts[] = 'js/shanti-main-mb.js'
+scripts[] = 'js/shanti-search.js'
+scripts[] = 'js/shanti-search-mb.js'
