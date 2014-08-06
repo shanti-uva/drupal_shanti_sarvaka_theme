@@ -31,7 +31,7 @@
   </section>  <!-- End Input Section -->
  <?php if(count($other_elements) > 0):  ?>
   <!-- Begin View Section -->
-  <section class="view-section" style="display:none;">             
+  <section class="view-section" style="display: block;">             
     <ul class="nav nav-tabs">
       <li class="treeview active"><a href=".treeview" data-toggle="tab" style="display: block;"><i class="icon shanticon-tree"></i>Tree</a></li>
       <li class="listview"><a href=".listview" data-toggle="tab" style="display: block;"><i class="icon shanticon-list"></i>List</a></li>
