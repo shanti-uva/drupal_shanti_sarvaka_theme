@@ -276,7 +276,7 @@
 	/* Initialize Extruder search fly-out */
 	function mbExtruderInit() {
 		var mywidth = ShantiSettings.flyoutWidth;
-		// $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block");
+	  $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block");
 		
 		// Initialize Search Flyout
 	  $("#gen-search").buildMbExtruder({
