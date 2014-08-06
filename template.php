@@ -197,9 +197,8 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
-	//dpm($variables, 'in page preproc');
-  // Figure out bootstrap column classes
   //dpm($variables, 'page vars');
+  // Figure out bootstrap column classes
   $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
   $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
   $variables['bsclass_main'] = 'col-sm-6';
@@ -208,6 +207,9 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
     $variables['bsclass_main'] = 'col-sm-9'; 
   }
+	// Add has_tabs var
+	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
+	
   // Add usermenu to main menu
   $um = menu_tree_all_data('user-menu');
   $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
@@ -517,7 +519,7 @@ function shanti_sarvaka_create_user_menu($um) {
     // Add theme custom ones
     $acctarray = array(
       'link' => array(
-        'title' => t('Account'),
+        'title' => t('My Account'),
         'href' => '#',
         
       ),
@@ -564,7 +566,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
   $html .= '<li><h3><em>Main Menu</em></h3> 
           <a class="link-blocker"></a>
        </li>';
-  }
+  } 
   foreach($links as $n => $link) {
     if(isset($link['html'])) {
       $html .= $link['html'];
@@ -575,6 +577,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
     $target = (substr($url, 0, 4) != 'http') ? '': ' target="_blank"';
     $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
     if(is_array($link['below']) && count($link['below']) > 0) {
+    	$linkhtml .= '<h2>' . $link['link']['title'] . '</h2>';
       $linkhtml .= shanti_sarvaka_user_menu($link['below']);
     }
     $linkhtml .= '</li>';

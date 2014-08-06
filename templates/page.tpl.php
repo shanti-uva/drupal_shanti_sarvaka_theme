@@ -47,7 +47,7 @@
     </header>
     
     <main class="main-wrapper container">
-      <article class="main-content" role="main">
+      <article class="main-content<?php if($has_tabs) { print ' has-tabs';} ?>" role="main">
         <div class="row">
           <!-- Banner Region -->
           <header class="col-sm-12 titlearea banner">
