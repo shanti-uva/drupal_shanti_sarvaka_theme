@@ -267,7 +267,7 @@
 	  });
 	  $(".selectpicker").selectpicker({
 		  dropupAuto: false
-	  }); // initiates jq-bootstrap-select used for multiselectors such as KMaps
+	  }); // initiates jq-bootstrap-select
 	
 	}
 	
@@ -276,7 +276,7 @@
 	/* Initialize Extruder search fly-out */
 	function mbExtruderInit() {
 		var mywidth = ShantiSettings.flyoutWidth;
-	  $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block");
+	  $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block"); // show hidden containers after loading to prevent content flash
 		
 		// Initialize Search Flyout
 	  $("#gen-search").buildMbExtruder({
