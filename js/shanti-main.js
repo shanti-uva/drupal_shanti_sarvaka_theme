@@ -516,15 +516,18 @@
 			$(el).addClass('basebg');
 		});
 		// Turn dev menu in admin footer into select
-		var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
-		$('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
-		var sel = $('#block-menu-devel select.devmenu');
-		sel.append('<option>Choose an option...</option>');
-		$.each(devmenu.children('li'), function() {
-			var opt = $('<option>' + $(this).text() + '</option>').attr('value', $(this).find('a').attr('href'));
-			sel.append(opt);
-		});
-		sel.change(function() { window.location.pathname = $(this).val(); });
+		if($('#admin-footer #block-menu-devel ul.menu').length > 0) { 
+			var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
+			$('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
+			var sel = $('#block-menu-devel select.devmenu');
+			sel.append('<option>Choose an option...</option>');
+			$.each(devmenu.children('li'), function() {
+				var opt = $('<option>' + $(this).text() + '</option>').attr('value', $(this).find('a').attr('href'));
+				sel.append(opt);
+			});
+			sel.change(function() { window.location.pathname = $(this).val(); });
+		}
+		// Adjust height of blocks in admin footer
 		$('#admin-footer div.block').each(function() {
 			$(this).height($(this).parent().height());
 		});
