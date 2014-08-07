@@ -131,6 +131,6 @@
 </footer>
 
 <!-- Admin Footer -->
-<div id="admin_footer">
+<div id="admin-footer">
   <?php print render($page['admin_footer']); ?> 
 </div>

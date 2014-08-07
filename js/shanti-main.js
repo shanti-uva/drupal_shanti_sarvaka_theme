@@ -515,13 +515,25 @@
 			});
 			$(el).addClass('basebg');
 		});
-		
+		// Turn dev menu in admin footer into select
+		var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
+		$('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
+		var sel = $('#block-menu-devel select.devmenu');
+		sel.append('<option>Choose an option...</option>');
+		$.each(devmenu.children('li'), function() {
+			var opt = $('<option>' + $(this).text() + '</option>').attr('value', $(this).find('a').attr('href'));
+			sel.append(opt);
+		});
+		sel.change(function() { window.location.pathname = $(this).val(); });
+		$('#admin-footer div.block').each(function() {
+			$(this).height($(this).parent().height());
+		});
 	}
 	
 	function loadFacetSearch(fdata) {
 		// fdata structure: {href: "/homepage?f[0]=im_field_subcollection%3A5", fname: "im_field_subcollection", fid: 5} 
 		var fname = fdata.fname;
-		var fid = fdata.fid
+		var fid = fdata.fid;
 		var dataurl = '/services/facet/' + fname + '/' + fid;
 		$.ajax({
 			url: dataurl,

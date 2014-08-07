@@ -1574,8 +1574,19 @@ div.messages ul li {
 } 
 
 
+#admin-footer { 
+	padding: 0; 
+	background-color: #f6d4ba;
+}
 
+#admin-footer .block h2, #admin-footer .block p, #admin-footer .block li { font-size: 90%; }
 
+#admin-footer .block { 
+	display: inline-block; 
+	padding: 0 0.5em; 
+	border-right: thin solid #777; 
+	vertical-align: top;
+}
 
 
 /*-----------------------------------------------------------*/

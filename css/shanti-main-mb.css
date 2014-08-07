@@ -423,9 +423,6 @@ span.fancytree-node i.shanticon-cancel {
 	}
 }
 
-#admin_footer { padding: 0; background-color: #f6d4ba; }
-#admin_footer .block h2, #admin_footer .block p, #admin_footer .block li { font-size: 90%; }
-#admin_footer .block { display: inline-block; padding: 0 0.5em; margin-right: thin solid #777; }
 
 #admin-menu{ 	
 	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.42);
