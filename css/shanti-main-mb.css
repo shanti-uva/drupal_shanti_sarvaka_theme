@@ -513,27 +513,30 @@ ul.ss-full-tabs li.active a {
 	
 	
 	
-/**
- ** Carousel Styles, loosely based on http://codepen.io/redfrost/full/dbrgk  
- **/
+
 .carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background-color: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate; }
 .carousel .carousel-inner { padding-top: 0;}
 .carousel div { /* word-break: break-all; */}
 .carousel img { max-width:100%; float:right;}
-.carousel a.carousel-control { /*--- the carousel right-left button ---*/
-	height:1.44em;
+.carousel a.carousel-control { /*--- right-left button ---*/
 	top: 50%;
 	margin-top:-0.68em;
 	width:1.75em;
 	font-size: 2.63em;
+	height:1.44em;
 	line-height:1.75em;
-	color: white;
-	font-weight: bold;
+	color: #fff;
 	background-image: none;
 	text-shadow:none;
 	text-align:center;
 	border-radius:0;
 }
+.carousel a.carousel-control .carousel-control:hover,
+.carousel a.carousel-control .carousel-control:focus{
+	opacity:3;
+	filter: alpha(opacity=30);
+}
+
 .carousel a.carousel-control.left {margin-left: -1.18em;}
 .carousel a.carousel-control.right {margin-right: -1.18em;}
 .carousel a.carousel-control i {font-family:"shanticon"; font-style:normal;}

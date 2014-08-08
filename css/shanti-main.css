@@ -1324,8 +1324,8 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em;}
 .pager-last i{ font-size:1.25em;}
 
 
-.pager-next{ margin-left:0.5em;}
-.pager-last{ margin-right:0.5em;}
+.pager-next{ margin-left:.38em;}
+.pager-previous{ margin-right:.38em;}
 
 
 
