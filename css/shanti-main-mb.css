@@ -261,8 +261,10 @@ div.region-sidebar-second div.block:after {
 */
 div#sidebar-second button.form-submit { }
 
+div#sidebar-second .btn.btn-primary{ display:block; width:80%;}
+div#sidebar-second .btn.btn-primary span{ width:80%;}
 
-
+div#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:90%;}
 
 
 /** Search Flyout **/
@@ -535,10 +537,10 @@ ul.ss-full-tabs li.active a {
 	text-align:center;
 	border-radius:0;
 }
-.carousel a.carousel-control .carousel-control:hover,
-.carousel a.carousel-control .carousel-control:focus{
-	opacity:3;
-	filter: alpha(opacity=30);
+.carousel a.carousel-control:hover,
+.carousel a.carousel-control:focus{
+	/*opacity:2;
+	filter: alpha(opacity=20);*/
 }
 
 .carousel a.carousel-control.left {margin-left: -1.18em;}
@@ -549,14 +551,14 @@ ul.ss-full-tabs li.active a {
 
 .carouseldiv .header {margin-top: 0.5em;}
 .carouseldiv .header p{ margin-bottom: 0.18em;}
-.carouseldiv .header p .show-more{ float:right; margin-right:2.5em; position:relative;top:.25em;}
+.carouseldiv .header p .show-more{ font-size:80%; float:right; margin-right:2.5em; position:relative;top:0.5em;}
 .carouseldiv .header .title {
 	font-style:italic;
 	font-weight:bold;
 	font-size:120%;
 }
-.carousel .caption .title h3 {font-weight: 500;margin: 0 0 0.63em;font-size:1.63em;}
-.carousel .caption .title h3 a {color: #333;}
+.carousel .caption .title h3 {font-weight:normal;font-weight: 500;margin: 0 0 0.63em;font-size:1.63em;}
+.carousel .caption .title h3 a {color: #404040;}
 .carousel .caption .byline {color: #777;font-style: italic;margin: -0.5em 0 .63em 0;}
 .carousel .caption .description p {}
 /** End of Carousel Styles **/
@@ -633,7 +635,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 .views-field-realname{
 	margin-bottom:0.25em;
-	margin-top:-0.25em;
+	margin-top:0em;
 	font-size:90%;
 	color:#808080;
 	font-style:italic;
@@ -774,7 +776,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 .main-content .selectpicker li a span.text,
 .main-content .selectpicker li a span.text:hover{ background:transparent; color:#444;}
 
-.bootstrap-select.btn-group .btn .filter-option{ font-size:.92em;}
+.bootstrap-select.btn-group .btn .filter-option{ font-size:.88em;}
 .bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
 .bootstrap-select.btn-group .btn .filter-option em{color:#dc3c47; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block; }
 
