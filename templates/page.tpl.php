@@ -4,15 +4,15 @@
    <header class="header-banner">
     <div class="navbar navbar-default" role="navigation"> 
      
-      <nav class="menu-buttons">
+      <nav class="navbar-buttons">
         <span class="shanti-searchtoggle menu-icon"><a href="#"><i class='icon shanticon-search'></i></a></span><!-- mobile < 400 : search -->
         <span class="menu-toggle menu-icon"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- desktop > 768 drilldown menu : main-menu -->
         <span class="menu-maintoggle menu-icon"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- mobile < 768 : main-menu -->
         <span class="menu-exploretoggle menu-explore"><a href="#"><span>Explore </span>Collections<i class="icon shanticon-directions"></i></a></span><!-- mobile < 768 : collections -->
       </nav>
 
-      <nav class="navbar-header">
-        <h1 class="navbar-title<?php if(!$variables['shanti_site']) { print " default"; } ?>">
+
+        <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
           <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<? print $site_name; ?> Homepage">
             <?php if($variables['shanti_site']): ?>
               <i class="icon shanticon-logo"></i><em>SHANTI</em>
@@ -22,7 +22,7 @@
             <?php if($site_slogan) { print '<span class="site-slogan">' . $site_slogan . '</span>' ;} ?>
           </a>
         </h1>
-      </nav>  
+  
       <!-- HEADER REGION -->
       <nav id="sarvaka-header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
          <form class="form">
@@ -47,7 +47,7 @@
     </header>
     
     <main class="main-wrapper container">
-      <article class="main-content<?php if($has_tabs) { print ' has-tabs';} ?>" role="main">
+      <article class="main-content" role="main">
         <div class="row">
           <!-- Banner Region -->
           <header class="col-sm-12 titlearea banner">

@@ -82,9 +82,9 @@
 	// Initialize the top bar menus
 	function menuInit() {
 		// Rearrange the button divs so that they are in the order blocks are added with a float-right css
-		var buttons = $('div.menu-buttons ul.navbar-right').detach();
+		var buttons = $('div.navbar-buttons ul.navbar-right').detach();
 		buttons.each(function() {
-			$('div.menu-buttons').prepend($(this));
+			$('div.navbar-buttons').prepend($(this));
 		});
 		// Initialize the multilevel main menu
 		$( '#menu' ).multilevelpushmenu({
@@ -652,6 +652,11 @@
 
 
 
+jQuery(function ($) {
+  if($('ul.tabs.primary').length ) {
+    $('.main-content').addClass('has-tabs');
+  }
+});
 
 
 
