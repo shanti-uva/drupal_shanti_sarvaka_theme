@@ -10,9 +10,13 @@
 div.collimage{ padding-right:1em;}
 
 .content-section p{ font-size:110%;}
-.content-section p a{ border-bottom:2px solid transparent;	-webkit-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;}
-.content-section p a:hover{ border-bottom:3px solid rgba(90, 101, 209, .2000); }
+.view-content a,
+.content-section p a{ border-bottom:2px solid transparent;	-webkit-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s;}
+.view-content a:hover,
+.content-section p a:hover{ color:#555; border-bottom:3px solid rgba(90, 101, 209, .2000); }
+.view-content a:active,
 .content-section p a:active{ border:none; }
+
 .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
 .show-more:after{ 
 	color:#5a65d1;	
@@ -629,12 +633,13 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 .views-field-realname{
 	margin-bottom:0.25em;
+	margin-top:-0.25em;
 	font-size:90%;
-	color:#666;
+	color:#808080;
+	font-style:italic;
 }
 
-.views-field-title,
-.views-field-realname{
+.views-field-title{
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
@@ -650,18 +655,22 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	font-size:100%;
 	position:relative;
 	top:-0.44em;
-	height:2.12em;
-	padding:.44em 1em;
+	height:2em;
+	padding:0;
 }
 
 .views-exposed-form input.form-control{
 	width:12em;
+	
 }
 
 .views-submit-button .btn-primary span{
-	padding:0;
+	padding:.75em 1.32em;
 	margin:0;
-	line-height:.75em;
+	line-height:0.93em;
+	height:2em;
+	display:inline-block;
+	background:transparent;
 }
 
 

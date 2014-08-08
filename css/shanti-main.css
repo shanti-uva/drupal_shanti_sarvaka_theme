@@ -35,6 +35,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   padding: 0.5em 2em 5em 2em;
   min-height:100%;
 }
+
 .content-section a {
   color: #5a65d1;
 }
@@ -1044,7 +1045,7 @@ ul.menu-main>li>a:first-child {
 .shanti-field-created{
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
 }
-div.shanti-thumbnail-field.shanti-field-duration{
+.shanti-thumbnail-field.shanti-field-duration{
 	margin-top: 0.25em;
 }
 .shanti-field-created span.shanti-field-content {
@@ -1061,6 +1062,19 @@ div.shanti-thumbnail-field.shanti-field-duration{
 	font-weight: bold;
 }
 .shanti-thumbnail-field.shanti-field-title a:hover{ -webkit-box-shadow:none; box-shadow:none;}
+
+.shanti-thumbnail-field.shanti-field-duration span{
+	
+}
+.shanti-thumbnail-field.shanti-field-duration span:before{
+	font-family: 'Glyphicons Halflings';
+	content: "\e023";
+	font-size:normal;
+	font-weight:normal;
+	position:relative;
+	top:1px;
+	color:#888;
+}
 
 .shanti-thumbnail-link .overlay{
 	
@@ -1118,7 +1132,9 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 
 
-
+.main-content input.form-control{
+	border-radius:1em;
+}
 
 
 /*-----------------------------------------------*/
@@ -1445,6 +1461,17 @@ div.messages ul li {
   margin-top:0;
   /*margin:-10px -20px 0 -2px;*/
 }
+
+.panel-group .panel-heading i{
+	font-size:80%;
+	position:relative;
+	top:0;
+	margin-right:.5em;
+}
+
+
+
+/*--- for Kmaps-style larger toggle panels ---*/
 #accordion .panel h6{ 
 	font-size:1em; 
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
