@@ -35,6 +35,9 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   padding: 0.5em 2em 5em 2em;
   min-height:100%;
 }
+.content-section a {
+  color: #5a65d1;
+}
 
 /*--- content elements ---*/
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ 
@@ -398,163 +401,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
 	background:transparent !important;
 	position:relative; left:0.06em; z-index:15; 
 }
-
-
-
-
-
-
-
-
-/*----- BEGIN accordion -----*/
-/*-------------------------*/
-.panel-group{
-  border:none;
-  width:100%;
-  background-color:white;
-  /*margin:-10px -20px 0 -2px;*/
-}
-.panel-body{ 
-  background-color:#f0f0f0;
-  border:none; 
-  border-radius:0; 
-  width:100%; 
-}
-.panel-default .panel-heading{
-	background-image:none;
-	background-color:#f2f2f2;
-  margin:0;
-  padding:0;
-}
-.panel-group .panel+.panel{ margin-top:0;}
-.panel-group .panel{ 
-  border:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  border-radius:0; 
-  width:100%; 
-  background-color:white;
-  margin:0;
-  padding:0;
-}
-.panel-group,
-.panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:transparent; border:none;}
-.panel-group .panel+.panel{ margin-top:0;}
-.panel-group{
-  border:none;
-  width:100%;
-  margin-top:0;
-  /*margin:-10px -20px 0 -2px;*/
-}
-#accordion .panel h6{ 
-	font-size:1em; 
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	line-height:3.75em;
-  border-top:1px solid #fff;
-  border-bottom:1px solid #ccc;
-  margin:0;
-  padding-left:20px;
-  height:60px;
-}
-#accordion h6 a {
-	color:#444;
-	font-size:1em; 
-	line-height:3.93em;  
-	font-weight:700;  
-	text-decoration: none;
-	display:block;
-}
-#accordion .panel h6 .glyphicon {
-  font-size: 0.63em;    
-  background: #fff;
-  color: #444;    
-  width: 18px;
-  height: 18px;
-  display: block;
-  border-radius: 50%;
-  background-clip: padding-box;
-  margin-right:20px;
-  margin-left:5px;
-  float: left;
-  position: relative;
-  top: 19px;
-  left: 0;
-  -webkit-box-shadow: 0 0 4px 3px #ddd;
-  box-shadow: 0 0 4px 3px #ddd;
-  border-collapse:separate;
-}
-#accordion .panel .accordion-toggle .glyphicon:before {
-  position: relative;
-  top: 4px;
-  left: 5px;
-}
-#accordion .panel .accordion-toggle .glyphicon.glyphicon-minus:before {
-  position: relative;
-  left: 4px;
-}
-/* END accordion */
-
-
-/*---scroll to top ---*/
-.back-to-top {
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-  z-index:1000;
-  height:3.25em;
-  width:3.25em;
-  color: #aaa;
-  background: #ccc;
-  opacity: 0.5;
-  font-size: 1em;
-	border-radius:50%;
-	background-clip: padding-box;
-  display: none;	
-  text-align:center;
-}
-.back-to-top:hover {
-	color:#fff;  
-	background: #ccc; 
-	opacity: 0.8;    
-  text-decoration:none;
-}
-.back-to-top i{ 
-	color:#fff;
-	font-size:2em;
-	line-height:1.5em;
-  font-family: 'FontAwesome';
-  font-weight:normal;
-  margin:0 auto;
-  text-align:center; 
-}
-.back-to-top:hover i{ color:#fff;}
-.back-to-top i:before{  
-  content: "\f077";
-}
-
-/*-- filtered message to upgrade older browsers --*/
-.progressive { 
-  color:#fff;
-  margin: 0.2em 0;
-  background: #5a65d1;
-  padding: 0.2em 0;
-  text-align:center;
-  width:100%;
-  font-weight:500;
-  margin:0 auto;
-  display:none;
-}
-.progressive a{ color:#fff;font-weight:normal;text-decoration:underline;}
-.progressive a:hover{ text-decoration:none;}
-
-/*-----------------------*/
-/*----- END CONTENT -----*/
-/*-----------------------*/
-
-
-
-
 
 
 
@@ -1401,6 +1247,7 @@ table.pagerer {
   font-size:80%;
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
+  font-weight:bold;
 	font-weight:700;
 	float:right;
 }
@@ -1429,7 +1276,7 @@ ul.pager{
 ul.page li{ padding:0 1px; line-height:1em;}
 ul.pager li>a{
 	color:#aaa;
-	padding:0.06em 0.5em;
+	padding:0.12em 0.5em;
 	margin:0;
 	background:transparent;
 	border:none;
@@ -1449,6 +1296,9 @@ ul.pager li>a:active{ -webkit-box-shadow:none;box-shadow:none;}
 
 ul.pager li>a i{ color:#999; position:relative; top: 0.12em}
 ul.pager li>a:hover i{ color:#444;}
+
+ul.pager .pager-first>a,
+ul.pager .pager-last>a{ padding:0.06em 0.5em;}
 
 .pager-first i,
 .pager-previous i,
@@ -1479,6 +1329,7 @@ ul.pager li>a:hover i{ color:#444;}
 
 
 
+
 /*--- END paging --*/
 
 
@@ -1488,10 +1339,10 @@ ul.pager li>a:hover i{ color:#444;}
 div.messages {
 	background-image:none;
 	margin:0; 
-	padding:0 1em; 
+	padding:0; 
 	border:none;
 }
-
+div.messages > div{ padding: 0.32em 1em;}
 div.status {
   background-image:none;
   /* border-color: #be7; */
@@ -1541,6 +1392,163 @@ div.messages ul li {
   list-style-image: none;
 }
 /*--- END System Messages ---*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- BEGIN accordion -----*/
+/*-------------------------*/
+.panel-group{
+  border:none;
+  width:100%;
+  background-color:white;
+  /*margin:-10px -20px 0 -2px;*/
+}
+.panel-body{ 
+  background-color:#f0f0f0;
+  border:none; 
+  border-radius:0; 
+  width:100%; 
+}
+.panel-default .panel-heading{
+	background-image:none;
+	background-color:#f2f2f2;
+  margin:0;
+  padding:0;
+}
+.panel-group .panel+.panel{ margin-top:0;}
+.panel-group .panel{ 
+  border:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  border-radius:0; 
+  width:100%; 
+  background-color:white;
+  margin:0;
+  padding:0;
+}
+.panel-group,
+.panel-default>.panel-heading+.panel-collapse .panel-body,
+.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:transparent; border:none;}
+.panel-group .panel+.panel{ margin-top:0;}
+.panel-group{
+  border:none;
+  width:100%;
+  margin-top:0;
+  /*margin:-10px -20px 0 -2px;*/
+}
+#accordion .panel h6{ 
+	font-size:1em; 
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	line-height:3.75em;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #ccc;
+  margin:0;
+  padding-left:20px;
+  height:60px;
+}
+#accordion h6 a {
+	color:#444;
+	font-size:1em; 
+	line-height:3.93em;  
+	font-weight:700;  
+	text-decoration: none;
+	display:block;
+}
+#accordion .panel h6 .glyphicon {
+  font-size: 0.63em;    
+  background: #fff;
+  color: #444;    
+  width: 18px;
+  height: 18px;
+  display: block;
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin-right:20px;
+  margin-left:5px;
+  float: left;
+  position: relative;
+  top: 19px;
+  left: 0;
+  -webkit-box-shadow: 0 0 4px 3px #ddd;
+  box-shadow: 0 0 4px 3px #ddd;
+  border-collapse:separate;
+}
+#accordion .panel .accordion-toggle .glyphicon:before {
+  position: relative;
+  top: 4px;
+  left: 5px;
+}
+#accordion .panel .accordion-toggle .glyphicon.glyphicon-minus:before {
+  position: relative;
+  left: 4px;
+}
+/* END accordion */
+
+
+/*---scroll to top ---*/
+.back-to-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index:1000;
+  height:3.25em;
+  width:3.25em;
+  color: #aaa;
+  background: #ccc;
+  opacity: 0.5;
+  font-size: 1em;
+	border-radius:50%;
+	background-clip: padding-box;
+  display: none;	
+  text-align:center;
+}
+.back-to-top:hover {
+	color:#fff;  
+	background: #ccc; 
+	opacity: 0.8;    
+  text-decoration:none;
+}
+.back-to-top i{ 
+	color:#fff;
+	font-size:2em;
+	line-height:1.5em;
+  font-family: 'FontAwesome';
+  font-weight:normal;
+  margin:0 auto;
+  text-align:center; 
+}
+.back-to-top:hover i{ color:#fff;}
+.back-to-top i:before{  
+  content: "\f077";
+}
+
+/*-- filtered message to upgrade older browsers --*/
+.progressive { 
+  color:#fff;
+  margin: 0.2em 0;
+  background: #5a65d1;
+  padding: 0.2em 0;
+  text-align:center;
+  width:100%;
+  font-weight:500;
+  margin:0 auto;
+  display:none;
+}
+.progressive a{ color:#fff;font-weight:normal;text-decoration:underline;}
+.progressive a:hover{ text-decoration:none;}
+
+/*-----------------------*/
+/*----- END CONTENT -----*/
+/*-----------------------*/
 
 
 

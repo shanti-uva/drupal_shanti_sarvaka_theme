@@ -11,7 +11,7 @@ div.collimage{ padding-right:1em;}
 
 .content-section p{ font-size:110%;}
 .content-section p a{ border-bottom:2px solid transparent;	-webkit-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;}
-.content-section p a:hover{ border-bottom:2px solid rgba(90, 101, 209, 0.5000); }
+.content-section p a:hover{ border-bottom:3px solid rgba(90, 101, 209, .2000); }
 .content-section p a:active{ border:none; }
 .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
 .show-more:after{ 

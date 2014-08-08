@@ -5,10 +5,10 @@
     <div class="navbar navbar-default" role="navigation"> 
      
       <nav class="navbar-buttons">
-        <span class="shanti-searchtoggle menu-icon"><a href="#"><i class='icon shanticon-search'></i></a></span><!-- mobile < 400 : search -->
-        <span class="menu-toggle menu-icon"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- desktop > 768 drilldown menu : main-menu -->
-        <span class="menu-maintoggle menu-icon"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- mobile < 768 : main-menu -->
-        <span class="menu-exploretoggle menu-explore"><a href="#"><span>Explore </span>Collections<i class="icon shanticon-directions"></i></a></span><!-- mobile < 768 : collections -->
+        <span class="menu-icon shanti-searchtoggle"><a href="#"><i class='icon shanticon-search'></i></a></span><!-- mobile < 400 : search -->
+        <span class="menu-icon menu-toggle"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- desktop > 768 drilldown menu : main-menu -->
+        <span class="menu-icon menu-maintoggle"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- mobile < 768 : main-menu -->
+        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore </span>Collections<i class="icon shanticon-directions"></i></a></span><!-- mobile < 768 : collections -->
       </nav>
 
 
