@@ -3,7 +3,7 @@ body{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans U
 body div.wrap-all{ position:relative;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline: 0 !important; /* outline: -2px auto -webkit-focus-ring-color !important; */}
-a,a:visited,a:hover,a:focus{text-decoration:none}
+a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 ::selection{
 	background: #999;
 	text-shadow: none;
@@ -1132,8 +1132,8 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	background-color: rgba(72, 80, 189, 0.8) !important;
 }
 
-
-
+.shanti-thumbnail a,
+.shanti-thumbnail a:hover{ border:none !important; }
 
 
 

@@ -40,7 +40,7 @@ object.flip_label{ display:none;}
 
 /*--- panel ---*/
 #gen-search { top: 0; }
-#gen-search.extruder.right{ margin-top:7px; }
+#gen-search.extruder.right{ margin-top: .63em; }
 #gen-search .ext_wrapper{ height:auto; padding:0; }
 #gen-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate; /* fix for ie9 shadow */}
 #gen-search.extruder.right.isOpened .extruder-content{ border-right-width:12px;}

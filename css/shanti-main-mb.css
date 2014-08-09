@@ -11,25 +11,14 @@ div.collimage{ padding-right:1em;}
 
 .content-section p{ font-size:110%;}
 
-ul li a,
-.field-item a,
-.view-content a,
-.content-section p a{ color:#5a65d1; border-bottom:2px solid transparent;	-webkit-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s;}
-ul li a:hover,
-.field-item a:hover,
-.view-content a:hover,
-.content-section p a:hover{ color:#555; border-bottom:3px solid rgba(90, 101, 209, .2000); }
-ul li a:active,
-.field-item a:active,
-.view-content a:active,
-.content-section p a:active{ border:none; }
 
-
+.main-content div:nth-child(2) a{ border-bottom:3px solid transparent;	-webkit-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s;}
+.main-content div:nth-child(2) a:hover{ color:#555; border-bottom:3px solid rgba(90, 101, 209, .2000); }
+.main-content div:nth-child(2) a:active{ border:none; }
 
 
 .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
-.show-more:after{ 
-	color:#5a65d1;	
+.show-more:after{ 	
 	font-size: 0.75em;
 	line-height: 0.75em;
 	font-weight:normal;
@@ -260,7 +249,7 @@ div.sidebar {
 	max-width:24em;
 	padding:0 0 0 .32em;
 }
-.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 1em .32em;}
+.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 2em .32em 1em;}
 /*
 div.region-sidebar-second div.block:after {
 	content: '';
@@ -274,7 +263,7 @@ div.region-sidebar-second div.block:after {
 */
 #sidebar-second button.form-submit { }
 
-#sidebar-second .btn.btn-primary{ display:block; width:80%;}
+#sidebar-second .btn.btn-primary{ display:block; width:100%;}
 #sidebar-second .btn.btn-primary span{ width:80%;}
 
 #sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:85%;}
@@ -620,11 +609,9 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	padding-top:0;
 	padding-bottom: 0.12em;
 }
-
 .views-exposed-form .views-exposed-widget.views-widget-per-page{
 	width:8em;
 }
-
 .views-row{
 	padding-top: 0.75em;
 	padding-bottom: 1em;
@@ -636,17 +623,14 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 .views-row:after{
 	clear:both;
 }
-
 .views-row:first-child{
 	/* padding-top:0;
 	margin-top:0.25em; 
 	border-top:3px double #e0e0e0; */
 }
-
 .views-field-title{ 
 	font-size:1.44em;
 }
-
 .views-field-realname{
 	margin-bottom:0.25em;
 	margin-top:0em;
@@ -654,11 +638,9 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	color:#808080;
 	font-style:italic;
 }
-
 .views-field-title{
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
-
 .views-field-field-images img{ 
 	float:left;
 	margin:.44em .88em .18em 0;
@@ -666,7 +648,6 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	box-shadow:         0 0 3px 0 rgba(50, 50, 50, 0.7);
 	border-collapse: separate; /* fix for ie9 shadow */
 }
-
 .views-submit-button .btn-primary{
 	font-size:100%;
 	position:relative;
@@ -674,12 +655,6 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	height:2em;
 	padding:0;
 }
-
-.views-exposed-form input.form-control{
-	width:12em;
-	
-}
-
 .views-submit-button .btn-primary span{
 	padding:.75em 1.32em;
 	margin:0;
@@ -687,6 +662,10 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	height:2em;
 	display:inline-block;
 	background:transparent;
+}
+
+.views-exposed-form input.form-control{
+	width:12em;	
 }
 
 
