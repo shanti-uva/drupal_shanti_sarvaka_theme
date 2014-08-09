@@ -10,18 +10,28 @@
 div.collimage{ padding-right:1em;}
 
 .content-section p{ font-size:110%;}
+
+ul li a,
+.field-item a,
 .view-content a,
-.content-section p a{ border-bottom:2px solid transparent;	-webkit-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s;}
+.content-section p a{ color:#5a65d1; border-bottom:2px solid transparent;	-webkit-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s;}
+ul li a:hover,
+.field-item a:hover,
 .view-content a:hover,
 .content-section p a:hover{ color:#555; border-bottom:3px solid rgba(90, 101, 209, .2000); }
+ul li a:active,
+.field-item a:active,
 .view-content a:active,
 .content-section p a:active{ border:none; }
+
+
+
 
 .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
 .show-more:after{ 
 	color:#5a65d1;	
-	font-size: 0.68em;
-	line-height:.75em;
+	font-size: 0.75em;
+	line-height: 0.75em;
 	font-weight:normal;
 	padding-left:0.25em;
 	font-family: 'Glyphicons Halflings';
@@ -82,7 +92,6 @@ form table td.label div.description {
 
 /*--- admin styles ---*/
 .has-tabs .titlearea>div { height:6.5em;}
-
 
 .main-content .content-section .view-content{max-width:58em;}
 
@@ -155,7 +164,7 @@ form table td.label div.description {
 	height:4em;
 	width:3.5em; 
 	font-size:130%;
-	line-height:2.32em;
+	line-height:2.25em;
 	display:inline-block;
 	padding:0.5em;
 	float:left;
@@ -165,11 +174,15 @@ form table td.label div.description {
 	background-color: rgba(255, 255, 255, .1);
 	padding: 0;
 	display:inline-block;
-	padding: 1em 1.56em;
+	width:auto;
+	padding: 1em 0;
 	height:5em;
 	line-height:3em;
 	white-space:nowrap;
 	overflow:hidden;
+	text-align:center;
+	margin:0 auto;
+	vertical-align:middle;
 }
 
 
@@ -241,13 +254,13 @@ div.sidebar {
 
 	z-index:1; /* covers the carousel slide button */
 }	
-div#sidebar-second {
+#sidebar-second {
 	background-color: #fff;
 	/* max-width: 19em; */
 	max-width:24em;
 	padding:0 0 0 .32em;
 }
-div.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 1em .32em;}
+.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 1em .32em;}
 /*
 div.region-sidebar-second div.block:after {
 	content: '';
@@ -259,12 +272,12 @@ div.region-sidebar-second div.block:after {
 	margin-top: 1.25em;
 }
 */
-div#sidebar-second button.form-submit { }
+#sidebar-second button.form-submit { }
 
-div#sidebar-second .btn.btn-primary{ display:block; width:80%;}
-div#sidebar-second .btn.btn-primary span{ width:80%;}
+#sidebar-second .btn.btn-primary{ display:block; width:80%;}
+#sidebar-second .btn.btn-primary span{ width:80%;}
 
-div#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:90%;}
+#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:85%;}
 
 
 /** Search Flyout **/
@@ -272,7 +285,7 @@ div#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:9
 	overflow: hidden !important;
 }
 
-div.treeview .block-facetapi h2 {
+.treeview .block-facetapi h2 {
 	font-size: 1.1em;
 	padding: 0 6px;
 	white-space: nowrap;
@@ -551,7 +564,7 @@ ul.ss-full-tabs li.active a {
 
 .carouseldiv .header {margin-top: 0.5em;}
 .carouseldiv .header p{ margin-bottom: 0.18em;}
-.carouseldiv .header p .show-more{ font-size:80%; float:right; margin-right:2.5em; position:relative;top:0.5em;}
+.carouseldiv .header p .show-more{ font-size:80%; float:right; margin-right:2.5em; position:relative; top:0.5em;}
 .carouseldiv .header .title {
 	font-style:italic;
 	font-weight:bold;
@@ -561,6 +574,7 @@ ul.ss-full-tabs li.active a {
 .carousel .caption .title h3 a {color: #404040;}
 .carousel .caption .byline {color: #777;font-style: italic;margin: -0.5em 0 .63em 0;}
 .carousel .caption .description p {}
+.carousel .caption a.show-more:hover{ color:#f00 !important;}
 /** End of Carousel Styles **/
 
 

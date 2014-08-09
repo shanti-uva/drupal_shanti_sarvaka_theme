@@ -36,10 +36,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none}
   min-height:100%;
 }
 
-.content-section a {
-  color: #5a65d1;
-}
-
 /*--- content elements ---*/
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ 
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
