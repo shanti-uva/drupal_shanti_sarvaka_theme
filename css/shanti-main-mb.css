@@ -1,14 +1,4 @@
-/**
- *   These are hacks created by Than to achieve certain stylistic results. Need to be checked by Mark and Gerard
- */
 
-
-.form-item .description{ margin-top:0.25em;padding-left:1em;}
-
-.radio, 
-.checkbox{ display:static; padding-left:10px; padding-right:10px; margin-top:0; margin-bottom:0;}
-th{ border-bottom:none;}
-/* common elements */
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
@@ -60,15 +50,11 @@ form table td.label div.description {
 	font-weight: normal;
 }
 
+.form-control{ line-height:2em; height:2em; padding:0.25em 1em 0; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .form-control.form-text {
 	display: inline-block;
 }
 
-.form-textarea-wrapper textarea {
-	/*width: auto;*/
-	border-radius: 0.38em;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
-}
 
 .form-control.ss-select {
 	width: auto;
@@ -78,9 +64,65 @@ form table td.label div.description {
 
 .form-control.ss-select[multiple] {
 	border-radius: 3px;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	background-clip: padding-box;
 }
 
+
+.form-textarea-wrapper textarea {
+	/*width: auto;*/
+	border-radius: 0.38em;
+	background-clip: padding-box;
+}
+html.js input.form-autocomplete{ background-position: 95% 2px;}
+
+.exposed-filters .form-item label{ float:none;}
+
+fieldset.form-wrapper legend{ margin-top:.5em; margin-bottom:0 !important;}
+fieldset.form-wrapper { margin-bottom:1em;}
+
+tr.region-title td{
+	color:#555; padding-top:0.5em; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+table .draggable a.tabledrag-handle {
+  height: 1.5em;
+  margin-top:.25em;
+}
+table .draggable a.tabledrag-handle:hover {
+  border:none !important;
+}
+
+.bootstrap-select.btn-group:not(.input-group-btn), 
+.bootstrap-select.btn-group[class*="span"] { margin-bottom:0 !important;}
+
+
+.form-item.form-type-select{ padding:0 0.75em 0 0; }
+.form-item .description{ margin-top:0.25em;padding-left:1em;}
+.form-item label{ margin: 0.5em 0 -0.75em 0.5em; font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.admin-menu .radio, 
+.admin-menu .checkbox{ padding-left:10px; padding-right:10px; margin-top:0; margin-bottom:0;}
+.admin-menu th{ border-bottom:none;}
+.admin-menu tr .form-item{ line-height:2.5em}
+
+table.sticky-table,
+table.sticky-header{ width:100%;}
+table.sticky-header th{ padding-left:1em;}
+
+#edit-delete:hover {
+	background-color: red;
+	border: thin solid red;
+}
+/*
+.form-text {
+	height: 1.83em;
+	line-height:1.44em;
+	background-color: #ffffff;
+	padding: .38em .75em;
+}
+*/
+textarea {
+	border: 1px solid #ccc;
+}
 
 
 
@@ -210,22 +252,23 @@ ul.primary li a{ margin-right:.25em;}
 
 
 
+/*
 
-#edit-delete:hover {
-	background-color: red;
-	border: thin solid red;
+div.banner-content button.btn-default {
+	background: rgba(120,120,120,0.3);
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 0.15em;
+	font-weight: normal;
+	text-shadow: none;
+	border: none;
+	padding: 0.63em 1.25em;
 }
 
-.form-text {
-	height: 1.83em;
-	line-height:1.44em;
-	background-color: #ffffff;
-	padding: .38em .75em;
-}
+*/
 
-textarea {
-	border: 1px solid #ccc;
-}
+
 
 
 
@@ -246,19 +289,6 @@ textarea {
 	color: #444;
 }
 
-
-
-div.banner-content button.btn-default {
-	background: rgba(120,120,120,0.3);
-	color: white;
-	text-transform: uppercase;
-	font-size: 0.7em;
-	letter-spacing: 0.15em;
-	font-weight: normal;
-	text-shadow: none;
-	border: none;
-	padding: 0.63em 1.25em;
-}
 
 
 
@@ -300,7 +330,7 @@ div.region-sidebar-second div.block:after {
 #sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:100%;}
 
 
-/** Search Flyout **/
+/** Search Flyout
 .treeview .block-facetapi {
 	overflow: hidden !important;
 }
@@ -360,7 +390,7 @@ span.fancytree-node i.shanticon-cancel {
 	cursor: pointer;
 }
 
-
+ **/
 
 
 
@@ -375,7 +405,9 @@ span.fancytree-node i.shanticon-cancel {
 /* Admin */
 @media (max-width: 1040px) {
 	/* necessary styles to make admin menu work at smaller screen sizes */
-	#admin-menu .dropdown .admin-menu-account, #admin-menu .dropdown .admin-menu-users, #admin-menu .dropdown .admin-menu-search {
+	#admin-menu .dropdown .admin-menu-account, 
+	#admin-menu .dropdown .admin-menu-users, 
+	#admin-menu .dropdown .admin-menu-search {
 		display: none;
 	}
 }
@@ -429,6 +461,9 @@ span.fancytree-node i.shanticon-cancel {
 .form-actions{ /* testing this at bottom of page for edit save buttons --*/
 	margin-top:3em;
 }
+
+
+
 
 
 /*--- show-hide toggle button ---*/
@@ -679,6 +714,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	box-shadow:         0 0 3px 0 rgba(50, 50, 50, 0.7);
 	border-collapse: separate; /* fix for ie9 shadow */
 }
+/*
 .views-submit-button .btn-primary{
 	font-size:100%;
 	position:relative;
@@ -694,10 +730,12 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	display:inline-block;
 	background:transparent;
 }
-
+*/
 .views-exposed-form input.form-control{
 	width:12em;	
 }
+
+.views-exposed-form .views-exposed-widget .btn.form-submit{ margin-top:0.25em;}
 
 
 
@@ -751,6 +789,8 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 /*--- dropdown ---*/
 .main-content .dropdown-menu.open{ border-radius:0.63em;background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */}
+.main-content .selectpicker li a,
+.main-content .selectpicker li a:hover{ border:none;}
 .main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:1.12em; overflow:hidden;}
 
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}

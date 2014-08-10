@@ -1259,7 +1259,7 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: 0 4em .25em 0;
+  margin: 0.25em 4em .25em 0;
   font-size:80%;
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
@@ -1356,7 +1356,7 @@ div.messages > div{ padding: 0.32em 1em;}
 
 div.messages {
 	background-image:none;
-	margin:0; 
+	margin:0.25em 0 0; 
 	padding:0; 
 	border:none;
 }
@@ -1376,7 +1376,7 @@ table tr.ok {
 
 div.warning {
   background-image: none;
-  background:#F9F1B6;
+  background:#F7F2CD;
   border:3px solid #fff;
 }
 div.warning,
@@ -1392,7 +1392,7 @@ div.error {
 	border:none;
   background-image: none;
   background:transparent;
-  background:#EAD0C4; /*--- new color ---*/
+  background:#F9E7E0; /*--- new color ---*/
   border:3px solid #fff;
 }
 div.error,
