@@ -5,8 +5,9 @@
 
 .form-item .description{ margin-top:0.25em;padding-left:1em;}
 
-
-
+.radio, 
+.checkbox{ display:static; padding-left:10px; padding-right:10px; margin-top:0; margin-bottom:0;}
+th{ border-bottom:none;}
 /* common elements */
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
@@ -279,7 +280,7 @@ div.sidebar {
 	max-width:24em;
 	padding:0 0 0 .32em;
 }
-.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 2em .32em 1em;}
+.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 2em .32em 1.25em;}
 /*
 div.region-sidebar-second div.block:after {
 	content: '';
@@ -293,10 +294,10 @@ div.region-sidebar-second div.block:after {
 */
 #sidebar-second button.form-submit { }
 
-#sidebar-second .btn.btn-primary{ display:block; width:100%;}
+#sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
 #sidebar-second .btn.btn-primary span{ width:80%;}
 
-#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:85%;}
+#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:100%;}
 
 
 /** Search Flyout **/

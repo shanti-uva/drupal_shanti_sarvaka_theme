@@ -1078,7 +1078,7 @@ ul.menu-main>li>a:first-child {
 	color:#888;
 }
 
-.shanti-thumbnail-link .overlay{	
+.shanti-thumbnail-link a .overlay{	
 	position:relative:
 	top:0;
 	display:block;
@@ -1093,9 +1093,8 @@ ul.menu-main>li>a:first-child {
 	float:left;
 }
 
-.shanti-thumbnail-link .overlay i{
-}
-.shanti-thumbnail-link .overlay:hover{
+.shanti-thumbnail-link a .overlay span{ }
+.shanti-thumbnail-link a .overlay:hover{
 	background:#eee;
 	opacity:1;
 	filter: alpha(opacity=100);
@@ -1353,16 +1352,18 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em;}
 
 
 /*--- BEGIN System Messages ---*/
+div.messages > div{ padding: 0.32em 1em;}
+
 div.messages {
 	background-image:none;
 	margin:0; 
 	padding:0; 
 	border:none;
 }
-div.messages > div{ padding: 0.32em 1em;}
 div.status {
   background-image:none;
-  /* border-color: #be7; */
+  background:#BAC9A9;   /*--- new color ---*/
+  border:3px solid #fff;
 }
 div.status,
 .ok {
@@ -1375,6 +1376,8 @@ table tr.ok {
 
 div.warning {
   background-image: none;
+  background:#F9F1B6;
+  border:3px solid #fff;
 }
 div.warning,
 .warning {
@@ -1386,8 +1389,11 @@ table tr.warning {
 }
 
 div.error {
+	border:none;
   background-image: none;
   background:transparent;
+  background:#EAD0C4; /*--- new color ---*/
+  border:3px solid #fff;
 }
 div.error,
 .error {
