@@ -1193,29 +1193,34 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 .main-content .selectpicker .caret:before{ color:#555; font-size:17px; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-10px; right:0px;}
 
 .main-content .selectpicker li{ padding:0; overflow:hidden;}
-.main-content .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
 
 .main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
 
-.main-content .selectpicker li a,
+
+.main-content .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
+/* .main-content .selectpicker li a,
 .main-content .selectpicker li a span.text,
-.main-content .selectpicker li.selected a{ background: #fff !important;}
+.main-content .selectpicker li.selected a{ background: transparent !important;}
+
+.main-content .selectpicker li a span.text{ background: transparent !important; color:#f00;} */
+
 
 .main-content .selectpicker li.selected a,
 .main-content .selectpicker li.selected a span.text{ font-weight:bold;}
 .main-content .selectpicker li.selected a i.icon{ font-weight:bold; color:#dc3c47;}
 
 .main-content .selectpicker li:hover,
-.main-content .selectpicker li a:hover,
-.main-content .selectpicker li a:active,
+.main-content .selectpicker li:active,
 .main-content .selectpicker li:hover span.text,
 .main-content .selectpicker li:active span.text,
-.main-content .selectpicker li a span.text:hover,
+.main-content .selectpicker li a:hover,
+.main-content .selectpicker li a:active,
+.main-content .selectpicker li a:hover span.text,
+.main-content .selectpicker li a:active span.text,
+
 .main-content .selectpicker li.selected a:hover,
 .main-content .selectpicker li.selected a:active{ color:#444; background: #eee !important;}
 
-.main-content .selectpicker li a span.text:hover,
-.main-content .selectpicker li.selected a span.text:hover{ color:#444; background: #eee !important;}
 
 .main-content .selectpicker>li>a i.check-mark,
 .main-content .selectpicker>li>a:hover i.check-mark,
@@ -1227,8 +1232,6 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:15px; margin-top:2px; }
 
-.main-content .selectpicker li a span.text,
-.main-content .selectpicker li a span.text:hover{ background:transparent; color:#444;}
 
 .bootstrap-select.btn-group .btn .filter-option{ font-size:.92em;}
 .bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
@@ -1352,11 +1355,14 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em;}
 
 
 /*--- BEGIN System Messages ---*/
-div.messages > div{ padding: 0.32em 1em;}
+div.messages > div{ padding: 0.32em 1em 1em;}
+
+.messages a{ font-weight:bold;}
+.messages a:hover{}
 
 div.messages {
 	background-image:none;
-	margin:0.25em 0 0; 
+	margin:0.32em 0 0; 
 	padding:0; 
 	border:none;
 }
@@ -1412,7 +1418,7 @@ div.messages ul {
   padding: 0;
 }
 div.messages ul li {
-  list-style-image: none;
+  list-style-image: none !important;
 }
 /*--- END System Messages ---*/
 

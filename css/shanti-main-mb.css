@@ -8,7 +8,7 @@ div.collimage{ padding-right:1em;}
 
 
 .main-content div:nth-child(2) a{ border-bottom:3px solid transparent;	-webkit-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s;}
-.main-content div:nth-child(2) a:hover{ color:#555; border-bottom:3px solid rgba(90, 101, 209, .2000); }
+.main-content div:nth-child(2) a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000); }
 .main-content div:nth-child(2) a:active{ border:none; }
 
 
@@ -75,9 +75,16 @@ form table td.label div.description {
 }
 html.js input.form-autocomplete{ background-position: 95% 2px;}
 
-.exposed-filters .form-item label{ float:none;}
 
-fieldset.form-wrapper legend{ margin-top:.5em; margin-bottom:0 !important;}
+#admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
+#admin-menu .dropdown .admin-menu-toolbar-category > a:hover { color:#fff;}
+
+#admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail{ background:#f5f5f5; color:#000; text-shadow:none;}
+
+input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; line-height:1.25em; height:1.5em; padding:0.56em 1em 0.5em !important; position:relative; top:1px;}
+
+
+fieldset.form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 fieldset.form-wrapper { margin-bottom:1em;}
 
 tr.region-title td{
@@ -96,9 +103,16 @@ table .draggable a.tabledrag-handle:hover {
 .bootstrap-select.btn-group[class*="span"] { margin-bottom:0 !important;}
 
 
+
+div.file-widget.form-managed-file{ padding-left:1.25em;}
+
+
 .form-item.form-type-select{ padding:0 0.75em 0 0; }
-.form-item .description{ margin-top:0.25em;padding-left:1em;}
-.form-item label{ margin: 0.5em 0 -0.75em 0.5em; font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-item .description{ margin-top:0.25em; margin-bottom:.75em; padding-left:1em;}
+.form-item label{ margin:0 0 -0.75em 0.5em; font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+
+.exposed-filters .form-item label{ float:none;}
+
 .admin-menu .radio, 
 .admin-menu .checkbox{ padding-left:10px; padding-right:10px; margin-top:0; margin-bottom:0;}
 .admin-menu th{ border-bottom:none;}
@@ -203,10 +217,10 @@ ul.primary li a{ margin-right:.25em;}
 .btn-primary{
 	padding: 0;
 	margin: 0.75em;	
+	height:2.56em;
+	line-height:1.56em;
 	border-radius:0.18em;
 	background-color: #5b68ce;
-	height:4em;
-	line-height:2.32em;
 	text-transform:uppercase;
 	color:#eee;
 	font-size: 0.75em;
@@ -215,11 +229,15 @@ ul.primary li a{ margin-right:.25em;}
 	color:#fff;
 	background-color: #4850bd; /* darker */
 }
+
+/*
 .btn-primary:active,
 .btn-primary.active {
-	color:#fff;
-	background-color: #5b68ce;
+	color:#505050;
+	background-color: #fff;
+	box-shadow: inset 0 0 9px rgba(50,50,50, .5 );
 }
+*/
 
 .btn-primary .icon {	
 	text-align:center;
@@ -234,21 +252,36 @@ ul.primary li a{ margin-right:.25em;}
 .btn-primary span {
 	font-size: 0.88em;
 	background-color: rgba(255, 255, 255, .1);
-	padding: 0;
 	display:inline-block;
 	width:auto;
-	padding: 1em 1.5em;
-	height:5em;
-	line-height:3em;
+	padding: .75em 1.5em;
+	height:2.56em;
+	line-height:1.56em;
 	white-space:nowrap;
 	overflow:hidden;
 	text-align:center;
-	margin:0 auto;
-	vertical-align:middle;
+	letter-spacing:0.06em;
+}
+.views-exposed-form .views-exposed-widget .btn-primary.form-submit{ margin-top:1.5em;}
+
+.btn-primary:active span,
+.btn-primary.active span{
+	background-color: rgba(255, 255, 255, .15);
 }
 
 
-
+/*--- BUTTON Large ---*/
+.views-exposed-form .views-exposed-widget .btn.btn-primary.btn-lg.form-submit{ margin-top:0.25em;}
+.btn.btn-primary.btn-lg{
+	margin: 0.75em;	
+	height:4em;
+	line-height:2.32em;
+}	
+.btn.btn-primary.btn-lg span {	
+	padding: 1em 1.5em;
+	height:5em;
+	line-height:3em;
+}
 
 
 
@@ -270,7 +303,13 @@ div.banner-content button.btn-default {
 
 
 
+#sidebar-second .btn.btn-primary.form-submit { margin-top:0.25em;}
+#sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	
+#sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:3em;}
 
+#sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
+#sidebar-second .btn.btn-primary span{ width:80%;}
+#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:100%;}
 
 
 
@@ -300,34 +339,21 @@ div.banner-content button.btn-default {
 
 
 /** Sidebars **/
-div.sidebar {
-
-	z-index:1; /* covers the carousel slide button */
-}	
+div.sidebar { z-index:1;}	
 #sidebar-second {
 	background-color: #fff;
-	/* max-width: 19em; */
 	max-width:24em;
 	padding:0 0 0 .32em;
 }
-.region-sidebar-second div.block {/*border-bottom: thin #777 solid;*/ padding: 1em 2em .32em 1.25em;}
-/*
-div.region-sidebar-second div.block:after {
-	content: '';
-	width: 83%;
-	margin-left: 9%;
-	height: 1px;
-	background-color: #aaa;
-	display: block;
-	margin-top: 1.25em;
-}
-*/
-#sidebar-second button.form-submit { }
+.region-sidebar-second div.block {padding: 1em 2em .32em 1.25em;}
 
-#sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
-#sidebar-second .btn.btn-primary span{ width:80%;}
 
-#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:100%;}
+
+
+
+
+
+
 
 
 /** Search Flyout
@@ -422,14 +448,24 @@ span.fancytree-node i.shanticon-cancel {
 }
 
 
+table.field-multiple-table { margin-bottom:2em;}
+table.field-multiple-table tbody{ border-top:none; }
+
+.bootstrap-select.form-control:not([class*="span"]),
+.field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
+
 
 
 .panel-group .panel{ background:transparent;}
 
 
+.form-actions{ /* testing this at bottom of page for edit save buttons --*/
+	margin-top:3em;
+}
+
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 .field-accordion {
-	margin: 0 0 6px;
+	margin: 1em 0;
   padding: 0;
 	/* border-bottom: 1px solid #C0C0C0; */
 	background-color: #eee;
@@ -442,25 +478,46 @@ span.fancytree-node i.shanticon-cancel {
 .field-accordion div.panel-heading {
 	background:transparent;
 }
-
-
-
 .field-accordion div.panel-heading .panel-title a:before{
 	color:#5a65d1;	
 	font-size: 0.62em;
 	line-height:.75em;
 	font-weight:normal;
 	padding-right:0.62em;
-	/* font-family: 'Glyphicons Halflings';
-	content: '\002b'; */
+	font-family: 'Glyphicons Halflings';
+	content: '\002b';
 	position:relative;
 	top:-1px;	
 }
 
 
-.form-actions{ /* testing this at bottom of page for edit save buttons --*/
-	margin-top:3em;
+
+.field-accordion .form-item, 
+.field-accordion .form-actions {
+	margin-top: auto;
+	margin-bottom: auto;
 }
+.field-accordion h4 span.ss-fieldset-toggle,
+.field-accordion h6 span.ss-fieldset-toggle {
+	font-size: 90%;
+	padding: 0 4px 2px;
+	border-radius: 1.25em;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	border: 1px solid grey;
+	background-color: #fff;
+	-webkit-box-shadow: 2px 0 3px #aaa;
+	box-shadow: 2px 0 3px #aaa;
+	border-collapse: separate; /* fix for ie9 shadow */
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: text-top;
+	margin-right: .25em;
+}
+.field-accordion h4 span.ss-fieldset-toggle.open,
+.field-accordion h6 span.ss-fieldset-toggle.open {
+	padding: 0 5px 1px;
+}
+
 
 
 
@@ -487,33 +544,6 @@ a.hide-annot:before{
 	position:relative;
 	top:-1px;
 }
-
-.field-accordion .form-item, 
-.field-accordion .form-actions {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-.field-accordion h4 span.ss-fieldset-toggle {
-	font-size: 90%;
-	padding: 0 4px 2px;
-	border-radius: 1.25em;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
-	border: 1px solid grey;
-	background-color: #fff;
-	-webkit-box-shadow: 2px 0 3px #aaa;
-	box-shadow: 2px 0 3px #aaa;
-	border-collapse: separate; /* fix for ie9 shadow */
-	display: inline-block;
-	cursor: pointer;
-	vertical-align: text-top;
-	margin-right: .25em;
-}
-
-.field-accordion h4 span.ss-fieldset-toggle.open {
-	padding: 0 5px 1px;
-}
-
 
 
 
@@ -658,7 +688,7 @@ ul.ss-full-tabs li.active a {
 
 #edit-masquerade-user-field { width: 80%;display: inline;}
 
-html.js input.form-autocomplete { background-position: 100% .5em;}
+html.js input.form-autocomplete { background-position: 99% .5em;}
 
 
 
@@ -675,8 +705,18 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	padding-top:0;
 	padding-bottom: 0.12em;
 }
-.views-exposed-form .views-exposed-widget.views-widget-per-page{
-	width:8em;
+.views-exposed-widget.views-widget-filter-status{
+	width:7em;
+	padding-top:0;
+}
+.views-exposed-widget.views-widget-per-page{
+	width:9em;
+}
+.views-exposed-widget.views-widget-sort-by{
+	width:10em;
+}
+.views-exposed-widget.views-widget-sort-order{
+	width:6.5em;
 }
 .views-row{
 	padding-top: 0.75em;
@@ -735,7 +775,6 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 	width:12em;	
 }
 
-.views-exposed-form .views-exposed-widget .btn.form-submit{ margin-top:0.25em;}
 
 
 
@@ -809,7 +848,7 @@ html.js input.form-autocomplete { background-position: 100% .5em;}
 
 .main-content .selectpicker li a,
 .main-content .selectpicker li a span.text,
-.main-content .selectpicker li.selected a{ background: #fff !important;}
+.main-content .selectpicker li.selected a{ background: transparent !important;} /*-- changed aug10 ---*/
 
 .main-content .selectpicker li.selected a,
 .main-content .selectpicker li.selected a span.text{ font-weight:bold;}
