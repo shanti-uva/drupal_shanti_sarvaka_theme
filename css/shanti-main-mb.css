@@ -107,7 +107,7 @@ table .draggable a.tabledrag-handle:hover {
 div.file-widget.form-managed-file{ padding-left:1.25em;}
 
 
-.form-item.form-type-select{ padding:0 0.75em 0 0; }
+.form-item.form-type-select{ padding:0 0.25em 0 0; }
 .form-item .description{ margin-top:0.25em; margin-bottom:.75em; padding-left:1em;}
 .form-item label{ margin:0 0 -0.75em 0.5em; font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
@@ -218,12 +218,13 @@ ul.primary li a{ margin-right:.25em;}
 	padding: 0;
 	margin: 0.75em;	
 	height:2.56em;
-	line-height:1.56em;
+	line-height:1.75em;
 	border-radius:0.18em;
 	background-color: #5b68ce;
 	text-transform:uppercase;
 	color:#eee;
 	font-size: 0.75em;
+	letter-spacing:0.12em;
 }
 .btn-primary:hover {
 	color:#fff;
@@ -254,11 +255,10 @@ ul.primary li a{ margin-right:.25em;}
 	background-color: rgba(255, 255, 255, .1);
 	display:inline-block;
 	width:auto;
-	padding: .75em 1.5em;
-	height:2.56em;
-	line-height:1.56em;
+	padding: .68em 1.5em;
+	height:2.88em;
+	line-height:1.88em;
 	white-space:nowrap;
-	overflow:hidden;
 	text-align:center;
 	letter-spacing:0.06em;
 }
@@ -266,7 +266,7 @@ ul.primary li a{ margin-right:.25em;}
 
 .btn-primary:active span,
 .btn-primary.active span{
-	background-color: rgba(255, 255, 255, .15);
+	background-color: rgba(255, 255, 255, .05);
 }
 
 
@@ -695,8 +695,13 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 
 
 
+.view-filters .views-exposed-widget.views-widget-filter-status{
 
+}
 
+.view-filters .bootstrap-select.form-control:not([class*="span"]) { 
+	padding-right:0; width:100% !important;
+}
 
 
 
@@ -707,17 +712,17 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	padding-bottom: 0.12em;
 }
 .views-exposed-widget.views-widget-filter-status{
-	width:7em;
+	width:6em;
 	padding-top:0;
 }
-.views-exposed-widget.views-widget-per-page{
-	width:9em;
-}
 .views-exposed-widget.views-widget-sort-by{
-	width:10em;
+	width:9.5em;
 }
 .views-exposed-widget.views-widget-sort-order{
-	width:6.5em;
+	width:5.5em;
+}
+.views-exposed-widget.views-widget-per-page{
+	width:8.5em;
 }
 .views-row{
 	padding-top: 0.75em;
