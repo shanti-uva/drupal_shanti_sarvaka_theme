@@ -1,33 +1,11 @@
 <!-- Search Tab -->
-<section id="gen-search" class="extruder right" role="search">
-  <!-- BEGIN Input Section -->                 
-  <section class="input-section" style="display:none;">                   
-    <!--<form class="form">
-         <fieldset>                       
-            <div class="search-group">                        
-                <div class="input-group">
-                    <input type="text" class="form-control kms" id="searchform" placeholder="Enter Search...">
-                    <span class="input-group-btns">
-                      <button type="button" class="btn btn-default" id="searchbutton"><i class="icon"></i></button>
-                      <button type="reset" class="searchreset">&times;</button>
-                    </span>
-                </div>
-                
-               <!-- search scope -->
-                <!--<div class="form-group">
-                 <label class="radio-inline" for="descscope"><input type="radio" id="descscope" name="srchscope" value="descriptions" data-value="descriptions" checked="checked">Descriptions</label>
-                 <label class="radio-inline" for="transscope"><input type="radio" id="transscope" name="srchscope" value="transcripts" data-value="transcripts">Transcripts</label>                      
-               </div>
-               
-           </div><!-- END search group -->
-          <!--</fieldset>
-         
-       </form>-->
-       <?php 
-        if(isset($search_form['#children'])) {
-          print $search_form['#children']; 
-        }
-       ?>
+<section id="gen-search" class="extruder right" role="search"> 
+   <?php 
+	    if(isset($search_form['#children'])) {
+	    	//dpm($search_form);
+	      print $search_form['#children']; 
+	    }
+   ?>
   </section>  <!-- End Input Section -->
  <?php if(count($other_elements) > 0):  ?>
   <!-- Begin View Section -->

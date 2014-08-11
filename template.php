@@ -302,13 +302,34 @@ function shanti_sarvaka_preprocess_block(&$variables) {
   }
 }
 
-
+/**
+ * Implements hook_form_alter: to alter search block
+ */
+function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+  	$form['actions']['submit']['#attributes'] = array("class" => array("search-block"));
+		/*$form['fieldset'] = array(
+			'#type' => 'fieldset',
+			'#collapsible' => FALSE,
+		);
+		$form['fieldset']['searchgroup'] = array(
+			'#type' => 'markup',
+			'#prefix' => '<div class="">',
+			'#suffix' => '</div>',
+		);
+		$form['fieldset']['searchgroup']['search_block_form'] = $form['search_block_form'];
+		unset($form['search_block_form']);
+		$form['fieldset']['searchgroup']['search_block_form']['#prefix'] = '<div class="input-group">';
+		$form['fieldset']['searchgroup']['search_block_form']['#suffix'] = '</div>';*/
+	}
+}
 /**
 * Changes the search form to use the "search" input element of HTML5.
-*/
+*
 function shanti_sarvaka_preprocess_search_block_form(&$variables) {
   //dpm($variables, 'vars in preprocess search block');
-}
+	dpm($variables, 'vars in search block form');
+}*/
 
 /*
 function shanti_sarvaka_preprocess_search_results(&$variables) {
@@ -348,6 +369,7 @@ function shanti_sarvaka_preprocess_image_style(&$vars) {
  *
  */
 function shanti_sarvaka_preprocess_button(&$vars) {
+	//if($vars['element']['#value'] == "Search") {  dpm($vars, 'vars in preprocess button'); }
   $vars['attributes']['class'][] = 'btn-primary'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
 }
   
@@ -690,18 +712,27 @@ function shanti_sarvaka_fieldset($variables) {
 }
 
 /**
+ * Theme Form for Search block form
+ */
+ /*
+function shanti_sarvaka_form($variables) {
+	$element = $variables['element'];
+	if($element['#form_id'] == 'search_block_form') {
+		dpm($variables, 'vars in form');
+		$variables['theme_hook_suggestions'][] = 'search-block';
+	}
+	return theme_form($variables);
+}
+*/
+/**
  * Theme buttons to use Bootstrap Markup
  */
- $bdone = 0;
+
 function shanti_sarvaka_button($variables) {
-  global $bdone;
-  if($bdone == 0) {
-    //dpm($variables, 'button');
-    $bdone = 1;
-  }
   $element = $variables['element'];
   $text = $element['#value'];
   $icon = '';
+//	if($element['#value'] == "Search") {  dpm($variables, 'vars in theme button'); }
   if(strpos(strtolower($text), 'video') > 0) {
     $icon = '<i class="icon shanticon-video"></i> ';
   } else if(strpos(strtolower($text), 'audio') > 0) {
@@ -713,12 +744,17 @@ function shanti_sarvaka_button($variables) {
   element_set_attributes($element, array('id', 'name', 'value'));
   $element['#attributes']['class'][] = 'btn';
   $element['#attributes']['class'][] = 'btn-primary';
+  $element['#attributes']['class'][] = 'btn-lg';
   $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
 
   return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . '<span>' . $text . '</span></button>';
+}
+
+function shanti_sarvaka_submit($variables) {
+	dpm($variables, 'vars in submit button');
 }
 
 function shanti_sarvaka_password($variables) {
