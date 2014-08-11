@@ -244,7 +244,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
    *        .basebg =  Set the background to theme's color
    *        .basecolor = Set Font color to theme's color
    *        ul.ss-full-tabs>li.active>a:after = Sets the color of the triangle under ss-full-tabs (bootstrap tabs)
-   *        i.thumbtype = Sets the color for the the thumbnail type icon in the upper right corner of gallery thumbnails
+   *        i.thumbtype = Sets the color for the the thumbnail type icon in the upper right corner of gallery thumbnails (deprecated)
    * 
    */
   drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; } ' .
