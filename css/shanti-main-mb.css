@@ -144,11 +144,12 @@ textarea {
 
 /*--- admin styles ---*/
 
-.admin-menu div.iradio_minimal-red,
-.admin-menu div.icheckbox_minimal-red{ 
+.admin-menu .table-select-processed div.iradio_minimal-red,
+.admin-menu .table-select-processed div.icheckbox_minimal-red{ 
 	margin-right:0.44em;
+	margin-left:1em;
 	position:relative;
-	top:-0.25em;
+	top:-0.12em;
 }
 
 .has-tabs .titlearea>div { height:6.5em;}
