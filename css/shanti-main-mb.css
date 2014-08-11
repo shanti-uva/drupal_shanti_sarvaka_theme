@@ -478,6 +478,7 @@ table.field-multiple-table tbody{ border-top:none; }
 .field-accordion div.panel-heading {
 	background:transparent;
 }
+.field-accordion div.panel-heading .panel-title a{ background:#fff;padding:.5em;display:block;width:100%;border-bottom:1px solid #ddd; box-shadow:0 2px 7px rgba(0,0,0,0.12500);}
 .field-accordion div.panel-heading .panel-title a:before{
 	color:#5a65d1;	
 	font-size: 0.62em;
@@ -495,7 +496,7 @@ table.field-multiple-table tbody{ border-top:none; }
 .field-accordion .form-item, 
 .field-accordion .form-actions {
 	margin-top: auto;
-	margin-bottom: auto;
+	margin-bottom: 1em; /*-- was auto */
 }
 .field-accordion h4 span.ss-fieldset-toggle,
 .field-accordion h6 span.ss-fieldset-toggle {
