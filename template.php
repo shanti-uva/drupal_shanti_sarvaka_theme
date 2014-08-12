@@ -369,8 +369,18 @@ function shanti_sarvaka_preprocess_image_style(&$vars) {
  *
  */
 function shanti_sarvaka_preprocess_button(&$vars) {
+	$element = &$vars['element'];
 	//if($vars['element']['#value'] == "Search") {  dpm($vars, 'vars in preprocess button'); }
-  $vars['attributes']['class'][] = 'btn-primary'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
+  $element['#attributes']['class'][] = 'btn';
+  $element['#attributes']['class'][] = 'btn-primary';
+  $element['#attributes']['class'][] = 'btn-lg';
+	if(!empty($element['#button_type'])) {
+  	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+	}
+  //$element['#attributes']['type'] = 'submit'; // Why am I making all buttons submit?
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
 }
   
 /**
@@ -740,15 +750,7 @@ function shanti_sarvaka_button($variables) {
   } else if(strpos(strtolower($text), 'collection') > 0) {
     $icon = '<i class="icon shanticon-texts"></i> ';
   } 
-  $element['#attributes']['type'] = 'submit';
   element_set_attributes($element, array('id', 'name', 'value'));
-  $element['#attributes']['class'][] = 'btn';
-  $element['#attributes']['class'][] = 'btn-primary';
-  $element['#attributes']['class'][] = 'btn-lg';
-  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
-  if (!empty($element['#attributes']['disabled'])) {
-    $element['#attributes']['class'][] = 'form-button-disabled';
-  }
 
   return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . '<span>' . $text . '</span></button>';
 }
