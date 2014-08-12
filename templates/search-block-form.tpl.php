@@ -35,7 +35,7 @@
 	<form class="form">
      <fieldset>                       
         <div class="search-group">                        
-            <div ><!-- add class="input-group" commented out because it makes button invisible -->
+            <div><!-- add class="input-group" commented out because it makes button invisible -->
 					  	<?php print $search['search_block_form']; ?>
 					  	<span class="input-group-btn">
 					  		<?php print $search['actions']; ?>
