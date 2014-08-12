@@ -35,12 +35,45 @@
 	<form class="form">
      <fieldset>                       
         <div class="search-group">                        
-            <div><!-- add class="input-group" commented out because it makes button invisible -->
+            <div class="input-group">
 					  	<?php print $search['search_block_form']; ?>
 					  	<span class="input-group-btn">
 					  		<?php print $search['actions']; ?>
 					  	</span>
+					  	 
 					  	<?php print $search['hidden']; ?>
+					  	
+               <!-- search scope -->
+               <div class="form-group">
+                   <label class="checkbox-inline"><input type="checkbox" id="summaryscope" name="summary-scope" checked="checked" data-value="summaries">Summaries</label>
+                   <label class="checkbox-inline" ><input type="checkbox" id="essayscope" name="essay-scope" data-value="essays">Essays</label>            
+                   <a href="#" class="advanced-link toggle-link"><i class="icon"></i>Advanced</a>           
+               </div>
+               
+               <div id="notification-wrapper"></div>
+                    
+               <section class="advanced-view" style="display:none;">                                              
+                      <div class="form-group"> 
+                        <label class="radio-inline" for="radios-0">
+                          <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                            All Text</label> 
+                        <label class="radio-inline" for="radios-1">
+                          <input type="radio" name="radios" id="radios-1" value="2">
+                            Name </label> 
+                      </div>
+                                                  
+                      <div class="form-group">
+                        <label class="radio-inline" for="radios-2">
+                          <input type="radio" name="radios2" id="radios-2" value="3" checked="checked">
+                            Contains</label> 
+                        <label class="radio-inline" for="radios-3">
+                          <input type="radio" name="radios2" id="radios-3" value="4">
+                            Starts With</label>
+                        <label class="radio-inline" for="radios-4">
+                          <input type="radio" name="radios2" id="radios-4" value="5">
+                            Exactly</label>                             
+                      </div>
+ 							</section>
 					  </div>
 				</div>
 			</fieldset>

@@ -307,7 +307,9 @@ function shanti_sarvaka_preprocess_block(&$variables) {
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
-  	$form['actions']['submit']['#attributes'] = array("class" => array("search-block"));
+//  	dpm($form,'form in alter of theme');
+  	$form['actions']['submit']['#attributes'] = array("class" => array("btn", "btn-default"));
+		$form['actions']['submit']['#value'] = 'search-icon';
 		/*$form['fieldset'] = array(
 			'#type' => 'fieldset',
 			'#collapsible' => FALSE,
@@ -371,9 +373,11 @@ function shanti_sarvaka_preprocess_image_style(&$vars) {
 function shanti_sarvaka_preprocess_button(&$vars) {
 	$element = &$vars['element'];
 	//if($vars['element']['#value'] == "Search") {  dpm($vars, 'vars in preprocess button'); }
-  $element['#attributes']['class'][] = 'btn';
-  $element['#attributes']['class'][] = 'btn-primary';
-  $element['#attributes']['class'][] = 'btn-lg';
+	if(!isset($element['#attributes']['class']) || (is_array($element['#attributes']['class']) && !in_array('btn', $element['#attributes']['class']))) {
+	  $element['#attributes']['class'][] = 'btn';
+	  $element['#attributes']['class'][] = 'btn-primary';
+	  $element['#attributes']['class'][] = 'btn-lg';
+	}
 	if(!empty($element['#button_type'])) {
   	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
 	}
@@ -742,7 +746,12 @@ function shanti_sarvaka_button($variables) {
   $element = $variables['element'];
   $text = $element['#value'];
   $icon = '';
-//	if($element['#value'] == "Search") {  dpm($variables, 'vars in theme button'); }
+	if($text == 'search-icon') {
+		$text = ''; 
+		$icon = '<i class="icon"></i>';
+	} else {
+		$text = '<span>' . $text . '</span>';
+	}
   if(strpos(strtolower($text), 'video') > 0) {
     $icon = '<i class="icon shanticon-video"></i> ';
   } else if(strpos(strtolower($text), 'audio') > 0) {
@@ -752,7 +761,7 @@ function shanti_sarvaka_button($variables) {
   } 
   element_set_attributes($element, array('id', 'name', 'value'));
 
-  return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . '<span>' . $text . '</span></button>';
+  return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . $text . '</button>';
 }
 
 function shanti_sarvaka_submit($variables) {
