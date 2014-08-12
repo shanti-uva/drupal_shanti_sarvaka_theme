@@ -452,7 +452,7 @@ span.fancytree-node i.shanticon-cancel {
 table.field-multiple-table { margin-bottom:2em;}
 table.field-multiple-table tbody{ border-top:none; }
 
-.bootstrap-select.form-control:not([class*="span"]),
+.bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
 .field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
 
 

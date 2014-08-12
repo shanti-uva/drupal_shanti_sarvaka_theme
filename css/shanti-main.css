@@ -971,7 +971,7 @@ ul.menu-main>li>a:first-child {
 }
 .shanti-thumbnail { 
 	color:#444;
-	height: 18em;
+	height: 19.5em;
 	float:left;
   max-width: 11.75em;
 	padding: 0;
@@ -1034,7 +1034,7 @@ ul.menu-main>li>a:first-child {
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	width:100%;
 	display:block;
-	padding:.32em 1em 0;
+	padding:.32em 1em 0 0.62em;
 	color:#787878;
 	height:2.5em;
 }
@@ -1065,17 +1065,22 @@ ul.menu-main>li>a:first-child {
 }
 .shanti-thumbnail-field.shanti-field-title a:hover{ -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-thumbnail-field.shanti-field-duration span{
-	
-}
+.shanti-thumbnail-field.shanti-field-created span:before,
 .shanti-thumbnail-field.shanti-field-duration span:before{
-	font-family: 'Glyphicons Halflings';
-	content: "\e023";
-	font-size:normal;
+	font-size:120%;
 	font-weight:normal;
+	color:#707070;
 	position:relative;
 	top:1px;
-	color:#888;
+	margin-right:0.32em;
+}
+.shanti-thumbnail-field.shanti-field-duration span:before{
+	font-family: 'shanticon';
+	content: "\e61c";
+}
+.shanti-thumbnail-field.shanti-field-created span:before{
+	font-family: 'shanticon';
+	content: "\e60c";
 }
 
 .shanti-thumbnail-link a .overlay{	
