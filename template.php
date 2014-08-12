@@ -307,24 +307,11 @@ function shanti_sarvaka_preprocess_block(&$variables) {
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
-//  	dpm($form,'form in alter of theme');
   	$form['actions']['submit']['#attributes'] = array("class" => array("btn", "btn-default"));
-		$form['actions']['submit']['#value'] = 'search-icon';
-		/*$form['fieldset'] = array(
-			'#type' => 'fieldset',
-			'#collapsible' => FALSE,
-		);
-		$form['fieldset']['searchgroup'] = array(
-			'#type' => 'markup',
-			'#prefix' => '<div class="">',
-			'#suffix' => '</div>',
-		);
-		$form['fieldset']['searchgroup']['search_block_form'] = $form['search_block_form'];
-		unset($form['search_block_form']);
-		$form['fieldset']['searchgroup']['search_block_form']['#prefix'] = '<div class="input-group">';
-		$form['fieldset']['searchgroup']['search_block_form']['#suffix'] = '</div>';*/
+		$form['actions']['submit']['#value'] = 'search-icon'; // This replaced by the icon code in shanti_sarvaka_button function
 	}
 }
+
 /**
 * Changes the search form to use the "search" input element of HTML5.
 *
@@ -764,10 +751,6 @@ function shanti_sarvaka_button($variables) {
   return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . $text . '</button>';
 }
 
-function shanti_sarvaka_submit($variables) {
-	dpm($variables, 'vars in submit button');
-}
-
 function shanti_sarvaka_password($variables) {
   //dpm($variables, 'vars in password');
   $element = $variables['element'];
@@ -790,6 +773,22 @@ function shanti_sarvaka_select($variables) {
   element_set_attributes($element, array('id', 'name', 'size'));
 
   return '<select' . drupal_attributes($element['#attributes']) . '>' . form_select_options($element) . '</select>';
+}
+
+function shanti_sarvaka_checkboxes($variables) {
+	//dpm($variables, 'vars in checkboxes');
+	$el = $variables['element'];
+	if(isset($el['#attributes']['class'][0]) && $el['#attributes']['class'][0] == 'shanti-options') {
+		$out = '';
+		foreach($el['#options'] as $n => $op) {
+			$oplc = str_replace(' ', '-', strtolower($op));
+			$field = (isset($el['#parents'][0])) ? $el['#parents'][0] : 'scope';
+			$out .= '<label class="checkbox-inline" ><input type="checkbox" id="' . $oplc . $field . '" name="' . $oplc . '-' . $field . '" data-value="' . $oplc . '">' . $op . '</label>';
+		}
+		return $out;
+ 	}
+	dpm(array($out, $variables), 'doing theme chck box');
+	return theme_checkboxes($variables);
 }
 
 function shanti_sarvaka_textfield($variables) {

@@ -44,11 +44,12 @@
 					  	<?php print $search['hidden']; ?>
 					  	
                <!-- search scope -->
-               <div class="form-group">
-                   <label class="checkbox-inline"><input type="checkbox" id="summaryscope" name="summary-scope" checked="checked" data-value="summaries">Summaries</label>
-                   <label class="checkbox-inline" ><input type="checkbox" id="essayscope" name="essay-scope" data-value="essays">Essays</label>            
-                   <a href="#" class="advanced-link toggle-link"><i class="icon"></i>Advanced</a>           
-               </div>
+               <?php if(isset($search['shanti_options'])): ?>
+	               <div class="form-group">
+	               		<?php print render($search['shanti_options']); ?>
+	                  <a href="#" class="advanced-link toggle-link"><i class="icon"></i>Advanced</a>           
+	               </div>
+	             <?php endif; ?>
                
                <div id="notification-wrapper"></div>
                     
