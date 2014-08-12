@@ -1264,11 +1264,9 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 /*--- BEGIN paging --*/
 
 table.pagerer { 
-	clear: both;
 	color:#555;
-	text-align:right;
-  margin: 0.25em 4em .25em 0;
-  font-size:80%;
+  margin: 0 4em .25em 0;
+  font-size:.88em;
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
   font-weight:bold;
