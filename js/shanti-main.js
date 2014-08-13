@@ -667,8 +667,10 @@ jQuery(function ($) {
   $('[data-toggle=offcanvas]').click(function () {
     $('.row-offcanvas').toggleClass('active');
   });
+});
 
 
+/*
  $(document).ready(function() {  
     	$('.carousel').hammer().on('swipeleft', function(){
   			$(this).carousel('next'); 
@@ -678,7 +680,7 @@ jQuery(function ($) {
   		})
  });
 });
-
+*/
 
 
 

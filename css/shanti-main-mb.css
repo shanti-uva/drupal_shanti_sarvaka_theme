@@ -636,9 +636,11 @@ ul.ss-full-tabs li.active a {
 	text-shadow:none;
 	text-align:center;
 	border-radius:0;
+	border:none !important;
 }
 .carousel a.carousel-control:hover,
 .carousel a.carousel-control:focus{
+	border:none !important;
 	/*opacity:2;
 	filter: alpha(opacity=20);*/
 }

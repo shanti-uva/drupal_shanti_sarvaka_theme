@@ -964,19 +964,20 @@ ul.menu-main>li>a:first-child {
 /* Gallery and thumbnails */
 .shanti-gallery{
 	width: 100%;
-	-moz-column-width: 12em;
+	float:left;
  -webkit-column-width: 12em;
+ -webkit-column-gap: 1em;  
+ -moz-column-width: 12em;
  -moz-column-gap: 1em;
- -webkit-column-gap: 1em;
 }
 .shanti-thumbnail { 
 	color:#444;
-	height: 19.5em;
 	float:left;
+  width:  100%;
   max-width: 11.75em;
+	height: 19.5em;
 	padding: 0;
   margin:  0.25em 0.38em 1.25em;
-  width:  100%;
 	border-radius:.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
@@ -1260,13 +1261,14 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 
 
 
-
 /*--- BEGIN paging --*/
 
 table.pagerer { 
+	clear: both;
 	color:#555;
-  margin: 0 4em .25em 0;
-  font-size:.88em;
+	text-align:right;
+  margin: 0.25em 4em .25em 0;
+  font-size:80%;
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
   font-weight:bold;
@@ -1295,7 +1297,7 @@ ul.pager{
 	text-align:right;
 	float:right;
 }
-ul.page li{ padding:0 1px; line-height:1em;}
+ul.pager li{ padding:0 1px; line-height:1em;}
 ul.pager li>a{
 	color:#aaa;
 	padding:0.12em 0.5em;
@@ -1307,12 +1309,14 @@ ul.pager li>a{
 	display:inline-block;
 	position:relative;
 	top:-1px;
+	border:none !important;
 }
 ul.pager li>a:hover{
 	color:#333;
 	-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 	box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
 	border-collapse: separate; /* fix for ie9 shadow */
+	border:none !important;
 }
 ul.pager li>a:active{ -webkit-box-shadow:none;box-shadow:none;}
 
@@ -1330,7 +1334,7 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em;}
 	height:1em;
 	width:1em;
 	font-size:1em;
-	line-height:1.25em;
+	line-height:1em;
 	color:#222;
 	display:inline-block;
 	background:transparent;
@@ -1990,9 +1994,18 @@ div.messages ul li {
 
 
 @media screen and (min-width: 1280px) {
-		.collections ul:first-child{ margin-left:7%; }
+	.collections ul:first-child{ margin-left:7%; }
+	
+	.shanti-gallery{
+		 -webkit-column-width: 13em;
+		 -webkit-column-gap: 1em;  
+		 -moz-column-width: 12em;
+		 -moz-column-gap: 1em;
+	}
+	.shanti-thumbnail { 
+	  max-width: 13em;
+	}
 }
-
 
 
 
