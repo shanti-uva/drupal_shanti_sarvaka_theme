@@ -1086,11 +1086,11 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	height:5em;
 	line-height:2.5em;
 	content: "\e60a";
-	  -webkit-transition: background 250ms ease;
-	-moz-transition: background 250ms ease;
-	-ms-transition: background 250ms ease;
-	-o-transition: background 250ms ease;
-	transition: background 250ms ease;
+	  -webkit-transition: color 250ms ease;
+	-moz-transition: color 250ms ease;
+	-ms-transition: color 250ms ease;
+	-o-transition: color 250ms ease;
+	transition: color 250ms ease;
 }
 .shanti-thumbnail-image a:hover .overlay:before{
 	color:rgba(255,255,255, 0.6000);
@@ -1128,7 +1128,7 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	width:100%;
 	display:block;
-	padding:.32em 1em 0 0.62em;
+	padding:.32em 1em 0 0.88em;
 	color:#787878;
 	height:2.5em;
 }
@@ -1159,13 +1159,8 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	font-size: 1.1em;
 	font-weight: bold;
 	padding:2px;
-	  -webkit-transition: background 150ms ease;
-	-moz-transition: background 150ms ease;
-	-ms-transition: background 150ms ease;
-	-o-transition: background 150ms ease;
-	transition: background 150ms ease;
 }
-.shanti-thumbnail-field.shanti-field-title a:hover{ background:rgba(0,0,0, 0.1000); color:#555; -webkit-box-shadow:none; box-shadow:none;}
+.shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
 .shanti-thumbnail-field.shanti-field-created span:before,
 .shanti-thumbnail-field.shanti-field-duration span:before{
