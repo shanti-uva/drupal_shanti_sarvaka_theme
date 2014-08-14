@@ -1086,11 +1086,11 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	height:5em;
 	line-height:2.5em;
 	content: "\e60a";
-	  -webkit-transition: background 350ms ease;
-	-moz-transition: background 350ms ease;
-	-ms-transition: background 350ms ease;
-	-o-transition: background 350ms ease;
-	transition: background 350ms ease;
+	  -webkit-transition: background 250ms ease;
+	-moz-transition: background 250ms ease;
+	-ms-transition: background 250ms ease;
+	-o-transition: background 250ms ease;
+	transition: background 250ms ease;
 }
 .shanti-thumbnail-image a:hover .overlay:before{
 	color:rgba(255,255,255, 0.6000);
