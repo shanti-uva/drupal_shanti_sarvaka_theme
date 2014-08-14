@@ -1022,12 +1022,12 @@ ul.menu-main>li>a:first-child {
 
 
 /* Thumbnail icons */
-.shanti-thumbnail-image i.thumbtype {
+.shanti-thumbnail-image i {
 	position: absolute;
 	top: 0;
 	right: 0;
 	z-index:100;
-	background-color: rgba(50,204,202, 0.8) !important;
+	background-color: transparent;
 	/*background-color: rgba( 50, 204, 202, 0.8); #32ccca */
 	width: 2em;
 	height: 1.88em;
@@ -1059,16 +1059,11 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	width:100%;
 	height:100%;
 	display:block;	
-	background: rgba(0,0,0, 0.0000);
+	background: transparent;
 	cursor:pointer;
 	text-align:center;
 	border-radius:.32em .32em 0 0;
 	background-clip: padding-box;
-	  -webkit-transition: box-shadow 150ms ease;
-	-moz-transition: box-shadow 150ms ease;
-	-ms-transition: box-shadow 150ms ease;
-	-o-transition: box-shadow 150ms ease;
-	transition: box-shadow 150ms ease;
 }
 .shanti-thumbnail-image a:hover .overlay{
 	background: rgba(0,0,0, 0.7000);
@@ -1081,11 +1076,23 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	text-align:center;
 	height:5em;
 	line-height:2.5em;
-	content: "\e624";
+	content: "\e60a";
+	  -webkit-transition: background 50ms ease;
+	-moz-transition: background 50ms ease;
+	-ms-transition: background 50ms ease;
+	-o-transition: background 50ms ease;
+	transition: background 50ms ease;
 }
 .shanti-thumbnail-image a:hover .overlay:before{
-	color:rgba(255,255,255, 0.4000);
+	color:rgba(255,255,255, 0.6000);
 }
+
+
+.shanti-thumbnail-image.shanti-field-video a:hover .overlay:before{
+	content: "\e63b";
+}
+
+
 
 
 .shanti-thumbnail-image img {
@@ -1140,11 +1147,11 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	font-size: 1.1em;
 	font-weight: bold;
 	padding:2px;
-	  -webkit-transition: box-shadow 150ms ease;
-	-moz-transition: box-shadow 150ms ease;
-	-ms-transition: box-shadow 150ms ease;
-	-o-transition: box-shadow 150ms ease;
-	transition: box-shadow 150ms ease;
+	  -webkit-transition: background 150ms ease;
+	-moz-transition: background 150ms ease;
+	-ms-transition: background 150ms ease;
+	-o-transition: background 150ms ease;
+	transition: background 150ms ease;
 }
 .shanti-thumbnail-field.shanti-field-title a:hover{ background:rgba(0,0,0, 0.1000); color:#555; -webkit-box-shadow:none; box-shadow:none;}
 
