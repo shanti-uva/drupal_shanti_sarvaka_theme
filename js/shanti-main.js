@@ -356,6 +356,7 @@
 	      $(".extruder-content").css("width","100% !important");
 	    }
 	}
+
 	
 	/** 
 	 * 
@@ -656,13 +657,17 @@ jQuery(function ($) {
   if($('ul.tabs.primary').length ) {
     $('.main-content').addClass('has-tabs');
   }
-});
 
 
+//	$('.shanti-thumbnail-link').hover( function() {
+//	      $(this).prev('.shanti-thumbnail').addClass('active-link');
+//	      },
+//	        function () {
+//	      $(this).prev('.shanti-thumbnail').removeClass('active-link');
+//	      }
+//	 );
 
 
-
-jQuery(function ($) {
 	// *** CONTENT *** hide responsive column for resources
   $('[data-toggle=offcanvas]').click(function () {
     $('.row-offcanvas').toggleClass('active');
@@ -672,7 +677,7 @@ jQuery(function ($) {
 
 
 jQuery(function ($) {
-	var myElement = document.getElementById('.carousel');
+	var myElement = document.getElementById('.carousel.slide');
 	
 	// create a simple instance
 	// by default, it only adds horizontal recognizers
@@ -711,13 +716,7 @@ jQuery(function ($) {
  
  
  
- 
- 
- 
- 
- 
- 
- 
+
  
  
  
