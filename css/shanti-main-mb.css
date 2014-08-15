@@ -23,19 +23,19 @@ div.collimage{ padding-right:1em;}
 
 
 .main-content .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
-.main-content .show-more a{ 	border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;
+.main-content .show-more a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;
 font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
 .main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000); }
 .main-content .show-more a:active{ border:none; }
 .main-content .show-more:after{ 	
-	font-size: 1.25em;
-	line-height: 0.62em;
-	font-weight:bold;
-	padding-left:0.32em;
-	font-family: 'shanticon';
-	content: '\e647'; /*-- plus icon */
+	font-size: 0.75em;
+	line-height: 0.75em;
+	font-weight:normal;
+	padding-left:0.25em;
+	font-family: 'Glyphicons Halflings';
+	content: '\002b'; /*-- plus icon */
 	position:relative;
-	top:0.18em;
+	top:-1px;
 	color: #5a65d1;
 }
 
