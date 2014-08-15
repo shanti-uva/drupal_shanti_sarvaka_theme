@@ -12,6 +12,16 @@ div.collimage{ padding-right:1em;}
 .main-content div:nth-child(2) a:active{ border:none; }
 
 
+.tab-content .content a,
+.tab-content .content a:hover{ border:none !important; text-decoration:none !important;}
+
+.tab-content ul.vertical-tabs-list li.selected a:hover strong{ text-decoration:none !important;}
+.tab-content ul.vertical-tabs-list li.selected a:hover{ border:none !important; text-decoration:none !important;	}
+.tab-content .vertical-tabs-panes a:hover{ text-decoration:underline;}
+
+table.features td.sign{ font-size:.75em;}
+
+
 .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
 .show-more:after{ 	
 	font-size: 0.75em;
@@ -50,12 +60,55 @@ form table td.label div.description {
 	font-weight: normal;
 }
 
-.form-control{ line-height:2em; height:2em; padding:0.25em 1em 0; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.form-control.form-text {
+
+
+
+input.form-control.form-text {
 	display: inline-block;
 }
 
+input.form-control,
+.form-textarea-wrapper textarea.form-textarea{
+	color:#777;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	background-clip: padding-box;
+	font-size:1.06em;
+	height:2em;
+	line-height:2em;
+	padding:0.25em 1em 0;
+  width:100%;  
+	overflow: auto;
+	-webkit-box-shadow:0 2px 5px #eee inset;
+	box-shadow:0 2px 5px #eee inset; 
+	border-collapse: separate;
+	background: #fff;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 400ms;
+	transition-property: all;
+	transition-duration: 400ms;
+	/*font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;*/
+}
+input.form-control:hover,
+.form-textarea-wrapper textarea.form-textarea:hover{ border: 1px solid #ccc; color:#777;}
+input.form-control:focus,
+.form-textarea-wrapper textarea.form-textarea:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
+
+.form-textarea-wrapper textarea.form-textarea {
+	height:auto;
+	padding:0.5em 1em 1em;
+	line-height:1.5em;
+	border-radius: .5em;
+	background-clip: padding-box;
+}
+
+
+
+
+
+
+/*
 .form-control.ss-select {
 	width: auto;
 	margin-bottom: 0.5em;
@@ -66,13 +119,9 @@ form table td.label div.description {
 	border-radius: 3px;
 	background-clip: padding-box;
 }
+*/
 
 
-.form-textarea-wrapper textarea {
-	/*width: auto;*/
-	border-radius: 0.38em;
-	background-clip: padding-box;
-}
 html.js input.form-autocomplete{ background-position: 95% 2px;}
 
 
@@ -84,8 +133,11 @@ html.js input.form-autocomplete{ background-position: 95% 2px;}
 input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; line-height:1.25em; height:1.5em; padding:0.56em 1em 0.5em !important; position:relative; top:1px;}
 
 
-fieldset.form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-fieldset.form-wrapper { margin-bottom:1em;}
+.form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-wrapper { margin-bottom:1em;}
+
+
+
 
 tr.region-title td{
 	color:#555; padding-top:0.5em; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
@@ -112,9 +164,10 @@ div.file-widget.form-managed-file{ padding-left:1.25em;}
 .form-item label{ margin:0 0 -0.75em 0.5em; font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 .exposed-filters .form-item label{ float:none;}
-
+/*
 .admin-menu .radio, 
 .admin-menu .checkbox{ padding-left:10px; padding-right:10px; margin-top:0; margin-bottom:0;}
+*/
 .admin-menu th{ border-bottom:none;}
 .admin-menu tr .form-item{ line-height:2.5em}
 
@@ -143,15 +196,15 @@ textarea {
 
 
 /*--- admin styles ---*/
-
+/*
 .admin-menu .table-select-processed div.iradio_minimal-red,
 .admin-menu .table-select-processed div.icheckbox_minimal-red{ 
 	margin-right:0.44em;
 	margin-left:1em;
 	position:relative;
-	top:-0.12em;
+	top:-0.25em;
 }
-
+*/
 
 .admin-menu .content table td{ padding:5px;}
 
@@ -159,7 +212,7 @@ textarea {
 .admin-menu .iradio_minimal-red{ 
 	margin-right: 5px;
 	position:relative;
-	top:-2px
+	top:-0.25em;
 }
 
 .admin-menu .has-tabs .titlearea>div { height:6.5em;}
@@ -498,7 +551,8 @@ table.field-multiple-table tbody{ border-top:none; }
 .field-accordion div.panel-heading {
 	background:transparent;
 }
-.field-accordion div.panel-heading .panel-title a{ background:#fff; color:#555; padding:.5em .5em .5em 1em; display:block; width:100%; border-bottom:1px solid #ddd; box-shadow:0 2px 7px rgba(0,0,0,0.12500);}
+.field-accordion div.panel-heading .panel-title a{ color: #5a65d1; background:#fff; padding:.5em .5em .5em 1em; display:block; width:100%; border-bottom:1px solid #ddd; box-shadow:0 2px 7px rgba(0,0,0,0.12500);}
+.field-accordion div.panel-heading .panel-title a:hover{ text-decoration:none !important;}
 .field-accordion div.panel-heading .panel-title a:before{
 	/* color:#5a65d1;	
 	font-size: 0.62em;
@@ -876,7 +930,7 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 .bootstrap-select.btn-group:not(.input-group-btn){ margin-bottom:0;}
 
 .main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; overflow:auto;}
-.main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
+.main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto; max-height:auto;}
 
 .main-content .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
 .main-content .selectpicker .caret:before{ color:#555; font-size:1em; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-0.75em; right:0;}
