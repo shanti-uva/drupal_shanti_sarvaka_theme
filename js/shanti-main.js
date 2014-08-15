@@ -678,18 +678,18 @@ jQuery(function ($) {
 
 /* testing toggle on accordions */
 jQuery(function ($) {
-    var $active = $('#accordionedit-drupal-login .panel-collapse.in').prev().addClass('active');
+    var $active = $('.panel-group .panel-collapse.in').prev().addClass('active');
     
     $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
     
-    $('#accordionedit-drupal-login .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+    $('.panel-group .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
     
-    $('#accordionedit-drupal-login').on('show.bs.collapse', function (e) {
-        $('#accordionedit-drupal-login .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+    $('.panel-group').on('show.bs.collapse', function (e) {
+        $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
     });
     
-    $('#accordionedit-drupal-login').on('hide.bs.collapse', function (e) {
+    $('.panel-group').on('hide.bs.collapse', function (e) {
         $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
     });
 });
