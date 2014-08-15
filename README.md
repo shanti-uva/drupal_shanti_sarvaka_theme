@@ -7,6 +7,9 @@ Development Begun: May 2014
 * **Lead:** Than Grove
 * **Developers:** Gerard Ketuma, Mark Ferrara
 
+# Requirements
+* jQuery Update (jquery v. 1.10.2) is required for the functioning of the Bootstrap interface.
+
 # Notes
 
 * Explore menu button in top bar is enabled by using the custom module https://github.com/shanti-uva/drupal_shanti_explore_menu

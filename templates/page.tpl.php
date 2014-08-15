@@ -110,7 +110,7 @@
     
 		  <!-- Search Flyout -->
 		  <?php 
-		    if($page['search_flyout']) {
+		    if(!empty($page['search_flyout'])) {
 		      print render($page['search_flyout']);
 		    }
 		  ?>
