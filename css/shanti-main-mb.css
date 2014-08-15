@@ -152,16 +152,24 @@ textarea {
 	top:-0.12em;
 }
 
-.page-admin .content table td{ padding:5px;}
 
-.page-admin .icheckbox_minimal-red, 
-.page-admin .iradio_minimal-red{ 
-	margin-right: 6px;
+.admin-menu .content table td{ padding:5px;}
+
+.admin-menu .icheckbox_minimal-red, 
+.admin-menu .iradio_minimal-red{ 
+	margin-right: 5px;
 	position:relative;
 	top:-2px
 }
 
-.has-tabs .titlearea>div { height:6.5em;}
+.admin-menu .has-tabs .titlearea>div { height:6.5em;}
+
+
+
+
+
+
+
 
 .main-content .content-section .view-content{max-width:58em;}
 
@@ -175,6 +183,8 @@ textarea {
 .main-content header ul.tabs.secondary li a { color:#555; background:rgba(255,255,255, 0.4000); font-size:80%; font-weight:bold; font-weight:700; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em; margin-right:.12em; text-transform:uppercase; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .main-content header ul.tabs.primary li a:hover,
 .main-content header ul.tabs.secondary li a:hover{ background:rgba(255,255,255, 0.7000); color:#555; }
+.main-content header ul.tabs.primary li a:active,
+.main-content header ul.tabs.secondary li a:active{ background:rgba(255,255,255, 0.9000); color:#555; }
 .main-content header ul.tabs.primary li.active a,
 .main-content header ul.tabs.secondary li.active a { color:#fff; background:#555; height:1.88em; position:relative; bottom:-1px; line-height:1.88em; padding:0.75em 1.25em 0.62em;}
 .main-content header ul.tabs.primary li.active a:hover,
@@ -488,9 +498,9 @@ table.field-multiple-table tbody{ border-top:none; }
 .field-accordion div.panel-heading {
 	background:transparent;
 }
-.field-accordion div.panel-heading .panel-title a{ background:#fff;padding:.5em;display:block;width:100%;border-bottom:1px solid #ddd; box-shadow:0 2px 7px rgba(0,0,0,0.12500);}
+.field-accordion div.panel-heading .panel-title a{ background:#fff; color:#555; padding:.5em .5em .5em 1em; display:block; width:100%; border-bottom:1px solid #ddd; box-shadow:0 2px 7px rgba(0,0,0,0.12500);}
 .field-accordion div.panel-heading .panel-title a:before{
-	color:#5a65d1;	
+	/* color:#5a65d1;	
 	font-size: 0.62em;
 	line-height:.75em;
 	font-weight:normal;
@@ -498,9 +508,21 @@ table.field-multiple-table tbody{ border-top:none; }
 	font-family: 'Glyphicons Halflings';
 	content: '\002b';
 	position:relative;
-	top:-1px;	
+	top:-1px;	*/
 }
 
+.field-accordion div.panel-heading .panel-title a i{
+	color:#5a65d1;	
+	font-size: 0.75em;
+	line-height:.75em;
+	font-weight:normal;
+	padding-right:0.5em;
+	font-family: 'Glyphicons Halflings';
+}
+.field-accordion div.panel-heading .panel-title a i:before{
+	position:relative;
+	top:-2px;		
+}
 
 
 .field-accordion .form-item, 

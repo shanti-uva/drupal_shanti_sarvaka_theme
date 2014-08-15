@@ -380,6 +380,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   font-weight: normal;
   font-size:1.68em;
   line-height:1.68em;
+  text-shadow:0 0 3px rgba(50,50,50, 0.225);
   margin:0;
   padding:0;
 }
@@ -999,8 +1000,8 @@ ul.menu-main>li>a:first-child {
 	transition: box-shadow 150ms ease; 
 }
 .shanti-thumbnail:hover {
-	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4250);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4250);
+	-webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2250);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2250);
 }
 .shanti-thumbnail:active {
   -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.5);
