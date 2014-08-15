@@ -454,7 +454,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   margin:0 4px 0 0;
   position:relative; top:-1px;
   font-style:normal;
-  font-weight:700;
+  font-weight:500;
 }
 .breadwrap ol:before,
 .breadwrap ol:after {
@@ -1063,11 +1063,11 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	text-align:center;
 	border-radius:.32em .32em 0 0;
 	background-clip: padding-box;
-		  -webkit-transition: background 250ms ease;
-	-moz-transition: background 250ms ease;
-	-ms-transition: background 250ms ease;
-	-o-transition: background 250ms ease;
-	transition: background 250ms ease;
+		  -webkit-transition: background 500ms ease;
+	-moz-transition: background 500ms ease;
+	-ms-transition: background 500ms ease;
+	-o-transition: background 500ms ease;
+	transition: background 500ms ease;
 }
 .shanti-thumbnail-image a:hover .overlay{
 	background: rgba(0,0,0, 0.7000);
@@ -1081,11 +1081,11 @@ section.content-section > div.tab-content > article:first-child > div.region:fir
 	height:5em;
 	line-height:2.5em;
 	content: "\e60a";
-	  -webkit-transition: color 450ms ease;
-	-moz-transition: color 450ms ease;
-	-ms-transition: color 250ms ease;
-	-o-transition: color 250ms ease;
-	transition: color 450ms ease;
+	  -webkit-transition: color 500ms ease;
+	-moz-transition: color 500ms ease;
+	-ms-transition: color 500ms ease;
+	-o-transition: color 500ms ease;
+	transition: color 500ms ease;
 }
 .shanti-thumbnail-image a:hover .overlay:before{
 	color:rgba(255,255,255, 0.6000);
