@@ -121,6 +121,40 @@
       <p>This is the style guide for implementing Shanti websites a la the Convoy design and describes the styles used in the Shanti Sarvaka Drupal theme. It is a work in progress.</p>
     </div><!--/.sg-about-->
     
+    <div class="sg-font-stacks sg-section">
+      <h2 class="sg-h2"><a id="sg-fontStacks" class="sg-anchor">Font Stacks</a></h2>
+      <p class="sg-font sg-font-primary">"Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;</p>
+      <p class="sg-font sg-font-secondary">Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;</p>
+      <p><strong>Font Sizes: Use percentages to make font sizes larger or smaller</strong> if it is not more appropriate to use the "em" measurement.</p> 
+      <p><strong>Please do not use</strong> the following font sizes in your css - these are not reliable.</p>
+        <ul>
+          <li>font-size: xx-small  /* absolute-size values */</li>
+          <li>font-size: x-small</li>
+          <li>font-size: small</li>
+          <li>font-size: medium</li>
+          <li>font-size: large</li>
+          <li>font-size: x-large</li>
+          <li>font-size: xx-large</li>
+          <li>font-size: larger    /* relative-size values */</li>
+          <li>font-size: smaller</li>
+        </ul>
+      <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+    </div><!--/.sg-font-stacks-->
+  </div><!--/.sg-info-->    
+
+
+  <div class="sg-base-styles">    
+    <h1 class="sg-h1">Base Styles</h1>
+    <?php showMarkup('base'); ?>
+  </div><!--/.sg-base-styles-->
+
+  <div class="sg-pattern-styles">
+    <h1 class="sg-h1">Pattern Styles<small> - Design and mark-up patterns unique to your site.</small></h1>
+    <?php showMarkup('patterns'); ?>
+    </div><!--/.sg-pattern-styles-->
+  </div><!--/.sg-body-->
+
+    
     <div class="sg-colors sg-section">
       <h2 class="sg-h2"><a id="sg-colors" class="sg-anchor">Colors</a></h2>
       <p>HTML Colors based on the color palette provided by Convoy.</p>
@@ -214,39 +248,6 @@
         </table>
         <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
     </div><!--/.sg-colors-->
-    
-    <div class="sg-font-stacks sg-section">
-      <h2 class="sg-h2"><a id="sg-fontStacks" class="sg-anchor">Font Stacks</a></h2>
-      <p class="sg-font sg-font-primary">"Museo Sans", sans-serif;</p>
-      <p class="sg-font sg-font-secondary">Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;</p>
-      <p><strong>Font Sizes:</strong> Font size is set to 100% = 1em = 16px. Use percentages to make font size larger or smaller. Avoid using 
-        preset font sizes as these vary widely across browsers and are not reliable.</p>
-      <p>Do not use the following css styles:</p>
-        <ul>
-          <li>font-size: xx-small  /* absolute-size values */</li>
-          <li>font-size: x-small</li>
-          <li>font-size: small</li>
-          <li>font-size: medium</li>
-          <li>font-size: large</li>
-          <li>font-size: x-large</li>
-          <li>font-size: xx-large</li>
-          <li>font-size: larger    /* relative-size values */</li>
-          <li>font-size: smaller</li>
-        </ul>
-      <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
-    </div><!--/.sg-font-stacks-->
-  </div><!--/.sg-info-->    
-
-  <div class="sg-base-styles">    
-    <h1 class="sg-h1">Base Styles</h1>
-    <?php showMarkup('base'); ?>
-  </div><!--/.sg-base-styles-->
-
-  <div class="sg-pattern-styles">
-    <h1 class="sg-h1">Pattern Styles<small> - Design and mark-up patterns unique to your site.</small></h1>
-    <?php showMarkup('patterns'); ?>
-    </div><!--/.sg-pattern-styles-->
-  </div><!--/.sg-body-->
 
   <script src="js/sg-plugins.js"></script>
   <script src="js/sg-scripts.js"></script>
