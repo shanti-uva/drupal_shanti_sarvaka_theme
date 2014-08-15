@@ -989,9 +989,9 @@ ul.menu-main>li>a:first-child {
 	background-color: #FFFFFF;	
 	display: block;
   position:relative;
-  -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.3750);
-	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.3750);
-	border-collapse: separate; /* fix for ie9 shadow */
+  -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.2750);
+	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.2750);
+	border-collapse: separate; 
   -webkit-transition: box-shadow 150ms ease;
 	-moz-transition: box-shadow 150ms ease;
 	-ms-transition: box-shadow 150ms ease;
@@ -999,14 +999,12 @@ ul.menu-main>li>a:first-child {
 	transition: box-shadow 150ms ease; 
 }
 .shanti-thumbnail:hover {
-	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4250);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4250);
-  border-collapse: separate; /* fix for ie9 shadow */
+	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4250);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4250);
 }
 .shanti-thumbnail:active {
   -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.5);
 	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.5);
-	border-collapse: separate; /* fix for ie9 shadow */
 }
 .shanti-thumbnail-image {
 	width: 100%;
