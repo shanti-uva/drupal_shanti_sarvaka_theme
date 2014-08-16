@@ -67,6 +67,7 @@ form table td.label div.description {
 .admin-menu .form-type-password-confirm label{ position:relative; top:1.12em;}
 .admin-menu .form-item-pass-pass1 label{ position:absolute; top:2em;}
 .admin-menu .form-type-password div{ display:inline-block;}
+.admin-menu .password-indicator{ margin-top:1em;}
 .admin-menu .password-indicator div{ position:relative; top:-0.68em;}
 .admin-menu .form-type-password .error{ color:#f00;}
 
@@ -133,7 +134,7 @@ input.form-control:focus,
 */
 
 
-html.js input.form-autocomplete{ background-position: 95% 0.62em;}
+html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
