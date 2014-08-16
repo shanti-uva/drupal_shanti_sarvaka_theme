@@ -133,7 +133,7 @@ input.form-control:focus,
 */
 
 
-html.js input.form-autocomplete{ background-position: 95% 2px;}
+html.js input.form-autocomplete{ background-position: 95% 0.62em;}
 
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
@@ -223,7 +223,8 @@ textarea {
 .admin-menu .iradio_minimal-red{ 
 	margin-right: 5px;
 	position:relative;
-	top:-0.25em;
+	top:-0.12em;
+	left:0;
 }
 
 .admin-menu .has-tabs .titlearea>div { height:6.5em;}

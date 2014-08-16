@@ -18,7 +18,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 .container:after{ clear:both !important;}
 
 
-.main-wrapper{ position:relative;}
+.main-wrapper{ position:relative; min-height:60em;}
 /*--- make heights equal of main two content columns, resources and content columns ---*/
 
 .main-content {
