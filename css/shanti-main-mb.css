@@ -63,7 +63,15 @@ form table td.label div.description {
 	font-weight: normal;
 }
 
+.admin-menu .form-type-password-confirm{ position:relative;}
+.admin-menu .form-type-password-confirm label{ position:relative; top:1.12em;}
+.admin-menu .form-item-pass-pass1 label{ position:absolute; top:2em;}
+.admin-menu .form-type-password div{ display:inline-block;}
+.admin-menu .password-indicator div{ position:relative; top:-0.68em;}
+.admin-menu .form-type-password .error{ color:#f00;}
 
+.admin-menu .form-type-password-confirm .password-strength-title{ position:relative; top:0.62em;}
+.admin-menu .form-type-password-confirm .password-strength-text{ position:relative; top:.62em;}
 
 
 input.form-control.form-text {
