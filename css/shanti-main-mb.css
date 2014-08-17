@@ -13,7 +13,7 @@ div.collimage{ padding-right:1em;}
 
 
 .admin-menu .tab-content .content a,
-.admin-menu .tab-content .content a:hover{ border:none !important; text-decoration:none !important;}
+.admin-menu .tab-content .content a:hover{ /*border:none !important; text-decoration:none !important;*/}
 
 .admin-menu .tab-content ul.vertical-tabs-list li.selected a:hover strong{ text-decoration:none !important;}
 .admin-menu .tab-content ul.vertical-tabs-list li.selected a:hover{ border:none !important; text-decoration:none !important;	}
@@ -25,7 +25,7 @@ div.collimage{ padding-right:1em;}
 .main-content .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
 .main-content .show-more a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;
 font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
-.main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000); }
+.main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000) !important; }
 .main-content .show-more a:active{ border:none; }
 .main-content .show-more:after{ 	
 	font-size: 0.75em;
@@ -77,6 +77,9 @@ form table td.label div.description {
 
 input.form-control.form-text {
 	display: inline-block;
+	font-size:1em;
+	line-height:1.93em;
+	height:2em;
 }
 
 input.form-control,
@@ -145,7 +148,7 @@ input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; lin
 */
 
 
-html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
+html.js input.form-autocomplete{ background-position: 99% 0.5em !important;}
 
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
@@ -402,10 +405,8 @@ div.banner-content button.btn-default {
 #sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:3em;}
 
 #sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
-#sidebar-second .btn.btn-primary span{ width:80%;}
-#sidebar-second .bootstrap-select.form-control:not([class*="span"]) { width:100%;}
-
-
+#sidebar-second .btn.btn-primary span{ width:80% !important;}
+#sidebar-second .bootstrap-select.form-control .selectpicker{ width:100% !important;}
 
 
 
@@ -542,15 +543,20 @@ span.fancytree-node i.shanticon-cancel {
 }
 
 
+
+.tabledrag-toggle-weight-wrapper{ margin-top:-1.32em;}
+
+
+tr.odd .form-item, tr.even .form-item{
+	margin-top:0.68em;
+}
+
 table.field-multiple-table { margin-bottom:2em;}
-table.field-multiple-table tbody{ border-top:none; }
-
-
-
+table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 .kaltura_status_ok{ background-image:none !important; border:none !important;}
 
-table.field-multiple-table tbody{ border:2px solid #ddd;}
+
 
 
 .form-actions{ /* testing this at bottom of page for edit save buttons --*/
@@ -778,7 +784,7 @@ ul.ss-full-tabs li.active a {
 .carousel a.carousel-control.left {margin-left: -1.18em;}
 .carousel a.carousel-control.right {margin-right: -1.18em;}
 .carousel a.carousel-control i {font-family:"shanticon"; font-style:normal;}
-.carousel a.carousel-control.left i:before {content:'\e641'; /*-- left arrow-tri icon */ position:relative; right:-0.32em;}
+.carousel a.carousel-control.left i:before {content:'\e641'; /*-- left arrow-tri icon */ position:relative; right:-0.32em; box-shadow:2px 0 5px rgba(0,0,0, 0.3000);}
 .carousel a.carousel-control.right i:before {content:'\e642'; /*-- right arrow-tri icon */ position:relative; left:-0.32em;}
 
 .carouseldiv .header {margin-top: 0.5em;}

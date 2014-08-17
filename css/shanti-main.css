@@ -1214,7 +1214,7 @@ ul.menu-main>li>a:first-child {
 	background:transparent;
 }
 .main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
-.main-content .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100% !important;}
+.main-content .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:50% !important;}
 .main-content .bootstrap-select .popover-title{ padding: 4px 14px; margin-bottom:5px;}
 
 .main-content .bootstrap-select .btn{ 
