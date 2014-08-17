@@ -1169,6 +1169,19 @@ ul.menu-main>li>a:first-child {
 }
 .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before{
+	font-family: 'shanticon';
+	content: "\e63b";
+	font-size:110%;
+	font-weight:normal;
+	font-weight:100;
+	position:relative;
+	left:-0.32em;
+	top:0;
+	color:#444;
+}
+
+
 .shanti-thumbnail-field.shanti-field-created span:before,
 .shanti-thumbnail-field.shanti-field-duration span:before{
 	font-size:120%;
@@ -1197,6 +1210,7 @@ ul.menu-main>li>a:first-child {
 /*---- select dropdown -----*/
 .main-content .bootstrap-select.form-control{
 	height:27px;
+	background:transparent;
 }
 .main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
 .main-content .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100% !important;}
@@ -1236,12 +1250,10 @@ ul.menu-main>li>a:first-child {
 }
 
 /*--- dropdown ---*/
-.main-content .dropdown-menu.open{ border-radius:10px; background-clip: padding-box;	}
-.main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
+.main-content .dropdown-menu.open{ border-radius:0.63em; background-clip: padding-box;	}
+.main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:1.12em; overflow:hidden;}
 
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
-.bootstrap-select.btn-group:not(.input-group-btn){ margin-bottom:0;}
-
 .main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; width:95%; overflow:auto;}
 .main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
 
@@ -1254,6 +1266,9 @@ ul.menu-main>li>a:first-child {
 
 
 .main-content .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
+.main-content .selectpicker li a,
+.main-content .selectpicker li a:hover{ border:none;}
+
 /* .main-content .selectpicker li a,
 .main-content .selectpicker li a span.text,
 .main-content .selectpicker li.selected a{ background: transparent !important;}
@@ -1273,7 +1288,6 @@ ul.menu-main>li>a:first-child {
 .main-content .selectpicker li a:active,
 .main-content .selectpicker li a:hover span.text,
 .main-content .selectpicker li a:active span.text,
-
 .main-content .selectpicker li.selected a:hover,
 .main-content .selectpicker li.selected a:active{ color:#444; background: #eee !important;}
 
@@ -1289,7 +1303,7 @@ ul.menu-main>li>a:first-child {
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:15px; margin-top:2px; }
 
 
-.bootstrap-select.btn-group .btn .filter-option{ font-size:.92em;}
+.bootstrap-select.btn-group .btn .filter-option{ font-size:.82em;}
 .bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
 .bootstrap-select.btn-group .btn .filter-option em{color:#dc3c47; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block; }
 
@@ -1513,7 +1527,7 @@ div.messages ul li {
 }
 .panel-default .panel-heading{
 	background-image:none;
-	background-color:#f2f2f2;
+	background:#f2f2f2;
   margin:0;
   padding:0;
 }
@@ -1545,6 +1559,9 @@ div.messages ul li {
 	top:0;
 	margin-right:.5em;
 }
+
+
+
 
 
 

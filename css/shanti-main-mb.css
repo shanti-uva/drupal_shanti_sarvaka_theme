@@ -1,4 +1,4 @@
-
+#admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
@@ -115,7 +115,18 @@ input.form-control:focus,
 	background-clip: padding-box;
 }
 
+input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; line-height:1.25em; height:1.5em; padding:0.56em 1em 0.5em !important; position:relative; top:1px;}
 
+.bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
+.field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
+
+.view-filters .bootstrap-select.form-control:not([class*="span"]) { 
+	padding-right:0; width:100%;
+}
+
+.views-exposed-form input.form-control{
+	width:12em;	
+}
 
 
 
@@ -142,7 +153,6 @@ html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail{ background:#f5f5f5; color:#000; text-shadow:none;}
 
-input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; line-height:1.25em; height:1.5em; padding:0.56em 1em 0.5em !important; position:relative; top:1px;}
 
 
 .form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
@@ -163,8 +173,6 @@ table .draggable a.tabledrag-handle:hover {
   border:none !important;
 }
 
-.bootstrap-select.btn-group:not(.input-group-btn), 
-.bootstrap-select.btn-group[class*="span"] { margin-bottom:0 !important;}
 
 
 
@@ -224,13 +232,13 @@ textarea {
 .admin-menu .iradio_minimal-red{ 
 	margin-right: 5px;
 	position:relative;
-	top:-0.12em;
+	top:-0.24em;
 	left:0;
 }
 
 .admin-menu .has-tabs .titlearea>div { height:6.5em;}
 
-
+.admin-menu .sticky-table a{ white-space:nowrap; font-size:90%; font-weight:bold;}
 
 
 
@@ -537,12 +545,12 @@ span.fancytree-node i.shanticon-cancel {
 table.field-multiple-table { margin-bottom:2em;}
 table.field-multiple-table tbody{ border-top:none; }
 
-.bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
-.field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
 
 
 
-.panel-group .panel{ background:transparent;}
+.kaltura_status_ok{ background-image:none !important; border:none !important;}
+
+table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 
 .form-actions{ /* testing this at bottom of page for edit save buttons --*/
@@ -557,6 +565,10 @@ table.field-multiple-table tbody{ border-top:none; }
 	background-color: #eee;
 }
 
+
+
+.field-accordion .panel-group .panel{ background:transparent;}
+
 .field-accordion div.panel-body .form-text {
 	background-color: #fff;
 }
@@ -564,7 +576,8 @@ table.field-multiple-table tbody{ border-top:none; }
 .field-accordion div.panel-heading {
 	background:transparent;
 }
-.field-accordion div.panel-heading .panel-title a{ color: #5a65d1; background:#fff; padding:.5em .5em .5em 1em; display:block; width:100%; border-bottom:1px solid #ddd; box-shadow:0 2px 7px rgba(0,0,0,0.12500);}
+.field-accordion div.panel-heading .panel-title{ position:relative; z-index:100; box-shadow:0 2px 7px rgba(0,0,0,0.1000);}
+.field-accordion div.panel-heading .panel-title a{ color: #5a65d1; background:#fff; padding:.5em .5em .5em 1em; display:block; width:100%; border-bottom:1px solid #ddd;}
 .field-accordion div.panel-heading .panel-title a:hover{ text-decoration:none !important;}
 .field-accordion div.panel-heading .panel-title a:before{
 	/* color:#5a65d1;	
@@ -592,10 +605,15 @@ table.field-multiple-table tbody{ border-top:none; }
 }
 
 
+
+.field-accordion .form-item{ }
+
 .field-accordion .form-item, 
 .field-accordion .form-actions {
 	margin-top: auto;
 	margin-bottom: 1em; /*-- was auto */
+	padding:0.68em .32em;
+	/*border:1px dashed #ccc; border-radius:0.12em;*/
 }
 .field-accordion h4 span.ss-fieldset-toggle,
 .field-accordion h6 span.ss-fieldset-toggle {
@@ -619,6 +637,11 @@ table.field-multiple-table tbody{ border-top:none; }
 }
 
 
+.admin-menu .panel .panel-group,
+.admin-menu .panel .panel-body,
+.admin-menu .panel.panel-default{ background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000); }
+
+.admin-menu .panel .panel-body{ background:#f7f7f7 !important;}
 
 
 
@@ -646,6 +669,15 @@ a.hide-annot:before{
 }
 
 
+
+
+
+
+
+
+
+
+.collectionnode .content .row { margin:0 !important;}
 
 
 
@@ -800,9 +832,7 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 
 }
 
-.view-filters .bootstrap-select.form-control:not([class*="span"]) { 
-	padding-right:0; width:100% !important;
-}
+
 
 
 
@@ -842,17 +872,15 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	border-top:3px double #e0e0e0; */
 }
 .views-field-title{ 
-	font-size:1.44em;
+	font-size:2em;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 .views-field-realname{
 	margin-bottom:0.25em;
-	margin-top:0em;
+	margin-top:1em;
 	font-size:90%;
 	color:#808080;
 	font-style:italic;
-}
-.views-field-title{
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 .views-field-field-images img{ 
 	float:left;
@@ -861,6 +889,8 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	box-shadow:         0 0 3px 0 rgba(50, 50, 50, 0.7);
 	border-collapse: separate; /* fix for ie9 shadow */
 }
+
+
 /*
 .views-submit-button .btn-primary{
 	font-size:100%;
@@ -878,120 +908,17 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	background:transparent;
 }
 */
-.views-exposed-form input.form-control{
-	width:12em;	
-}
 
 
 
 
-/*-----------------------------------------------*/
-/*---- select dropdown -----*/
-.main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
-.main-content .bootstrap-select .selectpicker{ line-height:1.75em; height:1.83em; padding:0; border:1px solid #ddd; width:100% !important;}
 
-.main-content .bootstrap-select.form-control{ 
-	height:1.83em;	
-	border-radius:1.56em;  	
-	border-color: transparent;
-	background-clip: padding-box;	 /* fix ie9 radius-corners */
-}
-.main-content .bootstrap-select .popover-title{ padding: .25em .88em; margin-bottom:.38em;}
+.fieldset-legend{ font-size:2em;}
 
-/* .main-content .bootstrap-select .btn.btn-default{ background:transparent;} */
-.main-content .bootstrap-select .btn{ 
-	padding-left: 1.25em;
-	color:#606060; 
-	background: transparent;
-	background-image:none;
-	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
-  background-image: -moz-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
-  background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
-  background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
-  background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
-  
-	/* 
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-	*/
-	background-repeat: repeat-x;
-	border: 1px solid #ddd;
-	border-radius:1.56em;  	
-	background-clip: padding-box;	 /* fix ie9 radius-corners */
-	border-color: #eeee #eee #ddd;
-	overflow:hidden;
-	-webkit-box-shadow:none;
-	box-shadow:none;
-}
-.main-content .bootstrap-select .btn:hover{ 
-	border: 1px solid #ccc; 
-	background: #eee; 
-}
-	
-.main-content .bootstrap-select .btn:focus,
-.main-content .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 0.25em 0 #5764de; box-shadow: 0 0 0.25em 0 #5764de; border-collapse: separate; /* fix for ie9 shadow */
-	background: #f5f5f5;
-	background-image:none;
-}
 
-/*--- dropdown ---*/
-.main-content .dropdown-menu.open{ border-radius:0.63em;background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */}
-.main-content .selectpicker li a,
-.main-content .selectpicker li a:hover{ border:none;}
-.main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:1.12em; overflow:hidden;}
 
-.main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
-.bootstrap-select.btn-group:not(.input-group-btn){ margin-bottom:0;}
 
-.main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; overflow:auto;}
-.main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto; max-height:auto;}
 
-.main-content .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
-.main-content .selectpicker .caret:before{ color:#555; font-size:1em; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-0.75em; right:0;}
 
-.main-content .selectpicker li{ padding:0; overflow:hidden;}
-.main-content .selectpicker li a{ color:#555; padding:0 1em; overflow:hidden; display:block; line-height:1.68em; height:1.56em;}
-
-.main-content .selectpicker>li>a>span.text{ padding-left: 0.25em !important;}
-
-.main-content .selectpicker li a,
-.main-content .selectpicker li a span.text,
-.main-content .selectpicker li.selected a{ background: transparent !important;} /*-- changed aug10 ---*/
-
-.main-content .selectpicker li.selected a,
-.main-content .selectpicker li.selected a span.text{ font-weight:bold;}
-.main-content .selectpicker li.selected a i.icon{ font-weight:bold; color:#dc3c47;}
-
-.main-content .selectpicker li:hover,
-.main-content .selectpicker li a:hover,
-.main-content .selectpicker li a:active,
-.main-content .selectpicker li:hover span.text,
-.main-content .selectpicker li:active span.text,
-.main-content .selectpicker li a span.text:hover,
-.main-content .selectpicker li.selected a:hover,
-.main-content .selectpicker li.selected a:active{ color:#444; background: #eee !important;}
-
-.main-content .selectpicker li a span.text:hover,
-.main-content .selectpicker li.selected a span.text:hover{ color:#444; background: #eee !important;}
-
-.main-content .selectpicker>li>a i.check-mark,
-.main-content .selectpicker>li>a:hover i.check-mark,
-.main-content .selectpicker>li>a:focus i.check-mark { color:#ccc;}
-	
-.main-content .selectpicker>li.selected>a i.check-mark,
-.main-content .selectpicker>li.selected>a:hover i.check-mark,
-.main-content .selectpicker>li.selected>a:focus i.check-mark{ color:#dc3c47;}
-
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a i.check-mark{ position:absolute; right:0.93em; margin-top:2px; }
-
-.main-content .selectpicker li a span.text,
-.main-content .selectpicker li a span.text:hover{ background:transparent; color:#444;}
-
-.bootstrap-select.btn-group .btn .filter-option{ font-size:.88em;}
-.bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
-.bootstrap-select.btn-group .btn .filter-option em{color:#dc3c47; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block; }
-
-.bootstrap-select.btn-group.show-tick i:first-child{ position:relative; top:2px;}
-
-/*--- END selectpicker ---*/
 
 
