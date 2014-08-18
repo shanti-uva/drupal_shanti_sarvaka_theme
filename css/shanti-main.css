@@ -1119,23 +1119,6 @@ ul.menu-main>li>a:first-child {
 .shanti-thumbnail .body-wrap{
 	padding: .38em .75em .5em 1em;
 }
-.shanti-thumbnail .footer-wrap {
-	position:absolute;
-	bottom:0;
-	background:#f6f6f6;
-	border-top:1px solid #e6e6e6;
-	border-radius:0 0 .32em .32em;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
-	width:100%;
-	display:block;
-	padding:.32em 1em 0 0.88em;
-	color:#787878;
-	height:2.5em;
-}
-.shanti-thumbnail .footer-wrap a{ color:#444; }
-.shanti-thumbnail .footer-wrap a:hover{ text-decoration:underline; }
-.shanti-thumbnail .footer-wrap a:active{ text-decoration:none; }
-.shanti-thumbnail .footer-wrap i{ font-size:1.32em;position:relative;top:2px;}
 
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { margin-left:-0.32em; line-height: 1.25em; margin-top: 0.38em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold; padding:2px;}
@@ -1146,7 +1129,7 @@ ul.menu-main>li>a:first-child {
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-created span:before{
 	font-family: 'shanticon';
 	content: "\e63b";
-	font-size:100%;
+	font-size:120%;
 	font-weight:normal;
 	position:relative;
 	left:-0.06em;
@@ -1176,7 +1159,23 @@ ul.menu-main>li>a:first-child {
 	margin-top: 0.32em;
 }
 
-
+.shanti-thumbnail .footer-wrap {
+	position:absolute;
+	bottom:0;
+	background:#f6f6f6;
+	border-top:1px solid #e6e6e6;
+	border-radius:0 0 .32em .32em;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	width:100%;
+	display:block;
+	padding:.32em 1em 0 0.88em;
+	color:#787878;
+	height:2.5em;
+}
+.shanti-thumbnail .footer-wrap a{ color:#444; }
+.shanti-thumbnail .footer-wrap a:hover{ text-decoration:underline; }
+.shanti-thumbnail .footer-wrap a:active{ text-decoration:none; }
+.shanti-thumbnail .footer-wrap i{ font-size:1.32em;position:relative;top:2px;}
 
 
 
@@ -1190,7 +1189,7 @@ ul.menu-main>li>a:first-child {
 .main-content .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100%;}
 
 .main-content table.field-multiple-table .bootstrap-select .selectpicker{ width:50%;}
-.main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ width:45%;}
+.main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ width:45% !important;}
 
 .admin-menu .main-content .views-field-title .bootstrap-select .selectpicker { width:100% !important;}
 

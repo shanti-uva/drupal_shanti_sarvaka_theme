@@ -378,6 +378,23 @@ div.banner-content button.btn-default {
 
 
 
+
+
+
+
+
+
+/** Sidebars **/
+div.sidebar { z-index:1;}	
+#sidebar-second {
+	background-color: #fff;
+	max-width:24em;
+	padding:0 0 0 .32em;
+}
+.region-sidebar-second div.block {padding: 1em 2em .32em 1.25em;}
+
+#sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.5em;}
+
 #sidebar-second .btn.btn-primary.form-submit { margin-top:0.25em;}
 #sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	
 #sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:3em;}
@@ -405,20 +422,6 @@ div.banner-content button.btn-default {
 
 
 .breadwrap ol{ border:none;}
-
-
-
-
-
-
-/** Sidebars **/
-div.sidebar { z-index:1;}	
-#sidebar-second {
-	background-color: #fff;
-	max-width:24em;
-	padding:0 0 0 .32em;
-}
-.region-sidebar-second div.block {padding: 1em 2em .32em 1.25em;}
 
 
 
@@ -767,7 +770,7 @@ ul.ss-full-tabs li.active a {
 
 .carouseldiv .header {margin-top: 0.5em;}
 .carouseldiv .header p{ margin-bottom: 0.18em;}
-.carouseldiv .header p .show-more{ font-size:85%; float:right; margin-right:2.5em; position:relative; top:0.5em;}
+.carouseldiv .header p .show-more{ font-size:85%; float:right; margin-right:2.5em; position:relative; top:0.25em;}
 .carouseldiv .header .title {
 	font-style:italic;
 	font-weight:bold;
@@ -777,6 +780,7 @@ ul.ss-full-tabs li.active a {
 .carousel .caption .title h3 a {color: #404040;}
 .carousel .caption .byline {color: #777;font-style: italic;margin: -0.5em 0 .63em 0;}
 .carousel .caption .description p {}
+
 .carousel .caption a.show-more:hover{ color:#f00 !important;}
 /** End of Carousel Styles **/
 
