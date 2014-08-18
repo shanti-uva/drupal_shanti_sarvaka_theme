@@ -4,7 +4,7 @@
 
 div.collimage{ padding-right:1em;}
 
-.content-section p{ font-size:110%;}
+.content-section p{ /* font-size:110%; */ }
 
 
 .main-content div:nth-child(2) a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;}
@@ -133,21 +133,6 @@ input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; lin
 
 
 
-
-/*
-.form-control.ss-select {
-	width: auto;
-	margin-bottom: 0.5em;
-	height:1.5em;
-}
-
-.form-control.ss-select[multiple] {
-	border-radius: 3px;
-	background-clip: padding-box;
-}
-*/
-
-
 html.js input.form-autocomplete{ background-position: 99% 0.5em !important;}
 
 
@@ -202,14 +187,7 @@ table.sticky-header th{ padding-left:1em;}
 	background-color: red;
 	border: thin solid red;
 }
-/*
-.form-text {
-	height: 1.83em;
-	line-height:1.44em;
-	background-color: #ffffff;
-	padding: .38em .75em;
-}
-*/
+
 textarea {
 	border: 1px solid #ccc;
 }
@@ -784,12 +762,12 @@ ul.ss-full-tabs li.active a {
 .carousel a.carousel-control.left {margin-left: -1.18em;}
 .carousel a.carousel-control.right {margin-right: -1.18em;}
 .carousel a.carousel-control i {font-family:"shanticon"; font-style:normal;}
-.carousel a.carousel-control.left i:before {content:'\e641'; /*-- left arrow-tri icon */ position:relative; right:-0.32em; box-shadow:2px 0 5px rgba(0,0,0, 0.3000);}
-.carousel a.carousel-control.right i:before {content:'\e642'; /*-- right arrow-tri icon */ position:relative; left:-0.32em;}
+.carousel a.carousel-control.left i:before {content:'\e641'; /*-- right arrow-tri icon */ position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
+.carousel a.carousel-control.right i:before {content:'\e642'; /*-- left arrow-tri icon */ position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
 
 .carouseldiv .header {margin-top: 0.5em;}
 .carouseldiv .header p{ margin-bottom: 0.18em;}
-.carouseldiv .header p .show-more{ font-size:80%; float:right; margin-right:2.5em; position:relative; top:0.5em;}
+.carouseldiv .header p .show-more{ font-size:85%; float:right; margin-right:2.5em; position:relative; top:0.5em;}
 .carouseldiv .header .title {
 	font-style:italic;
 	font-weight:bold;
@@ -856,7 +834,7 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	width:9.5em;
 }
 .views-exposed-widget.views-widget-sort-order{
-	width:5.5em;
+	width:6em;
 }
 .views-exposed-widget.views-widget-per-page{
 	width:8.5em;
@@ -878,7 +856,8 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	border-top:3px double #e0e0e0; */
 }
 .views-field-title{ 
-	font-size:2em;
+	font-size:1.5em;
+	margin-bottom:-0.5em;
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 .views-field-realname{
@@ -895,6 +874,8 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	box-shadow:         0 0 3px 0 rgba(50, 50, 50, 0.7);
 	border-collapse: separate; /* fix for ie9 shadow */
 }
+
+
 
 
 /*
@@ -914,13 +895,6 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	background:transparent;
 }
 */
-
-
-
-
-
-.fieldset-legend{ font-size:2em;}
-
 
 
 
