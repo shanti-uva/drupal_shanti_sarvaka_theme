@@ -787,7 +787,6 @@ function shanti_sarvaka_checkboxes($variables) {
 		}
 		return $out;
  	}
-	dpm(array($out, $variables), 'doing theme chck box');
 	return theme_checkboxes($variables);
 }
 
