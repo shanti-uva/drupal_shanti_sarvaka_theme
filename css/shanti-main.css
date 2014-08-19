@@ -1120,11 +1120,11 @@ ul.menu-main>li>a:first-child {
 	padding: .38em .75em .5em 1em;
 }
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { margin-left:-0.32em; line-height: 1.25em; margin-top: 0.38em;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold; padding:2px;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { margin-left:0; line-height: 1.25em; margin-top: 0.38em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,
+/*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before,
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-created span:before{
 	font-family: 'shanticon';
@@ -1135,14 +1135,14 @@ ul.menu-main>li>a:first-child {
 	left:-0.06em;
 	top:0;
 	margin-right:0.44em;
-	margin-left: 0.25em;
+	margin-left: 0.12em;
 	
 }
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title:hover a:before{ color:#555;}
+/*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title:hover a:before{ color:#555;}
 .shanti-thumbnail.audio .shanti-thumbnail-field.shanti-field-title a:before{
 	content: "\e60a";
 	margin-right:0.5em;
-}
+}*/
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before{
 	content: "\e61c";
 }
