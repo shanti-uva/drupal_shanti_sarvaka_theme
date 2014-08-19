@@ -383,8 +383,8 @@ function shanti_sarvaka_preprocess_button(&$vars) {
   */
 function shanti_sarvaka_item_list($variables) {
   // if it's a normal list return normal html
-  if(gettype($variables['items'][0]) == 'string' && strpos($variables['items'][0], 'facetapi-link') == -1) {
-   return theme_item_list($variables);
+  if(empty($variables['items'][0]) || (gettype($variables['items'][0]) == 'string' && strpos($variables['items'][0], 'facetapi-link') == -1)) {
+  	return theme_item_list($variables);
   }
   
   // Otherwise return list with out <div class="list-items">
