@@ -1120,7 +1120,7 @@ ul.menu-main>li>a:first-child {
 	padding: .38em .75em .5em 1em;
 }
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { margin-left:0; line-height: 1.25em; margin-top: 0.38em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { line-height: 1.25em; margin-top: 0.38em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
@@ -1310,7 +1310,7 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: 0.25em 4em .25em 0;
+  margin: 0.25em 4em .75em 0;
   font-size:80%;
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
