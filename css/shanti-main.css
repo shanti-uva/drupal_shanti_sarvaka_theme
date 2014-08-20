@@ -962,16 +962,6 @@ ul.menu-main>li>a:first-child {
 /*----- Audio/Video Thumbnails -------*/
 /*------------------------------------*/
 
-/* THumbnail Grid with (right) column */
-.search-results {
-	width: 100%;
-	-moz-column-width: 11em;
- -webkit-column-width: 11em;
- -moz-column-gap: .63em;
- -webkit-column-gap: .63em;
-}
-/* Gallery and thumbnails */
-
 .search-results,
 .shanti-gallery{
 	width: 100%;
@@ -996,7 +986,7 @@ ul.menu-main>li>a:first-child {
   max-width: 11.75em;
 	height: 19.5em;
 	padding: 0;
-  margin:  0.25em 0.38em 1.25em;
+  margin:  0.25em 0.5em 1.25em;
 	border-radius:.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
@@ -1124,7 +1114,7 @@ ul.menu-main>li>a:first-child {
 	padding: .38em .75em .5em 1em;
 }
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { line-height: 1.25em; margin:0 0.5em 0.5em -0.38em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { line-height: 1.25em; margin:0 0.5em 0.5em -0.25em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
