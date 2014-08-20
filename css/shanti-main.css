@@ -978,6 +978,8 @@ ul.menu-main>li>a:first-child {
  -webkit-column-gap: 1em;  
  -moz-column-width: 12em;
  -moz-column-gap: 1em;
+ column-width: 12em;
+ column-gap: 1em;
 }
 .search-results a,
 .search-results a:hover,
@@ -1120,7 +1122,7 @@ ul.menu-main>li>a:first-child {
 	padding: .38em .75em .5em 1em;
 }
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { line-height: 1.25em; margin-top: 0.38em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { border-left:3px solid #ccc; padding-left:0.5em; line-height: 1.25em; margin-top: 0.38em; margin-bottom:.5em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
@@ -1405,7 +1407,7 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em;}
 
 
 /*--- BEGIN System Messages ---*/
-div.messages > div{ padding: 0.44em 1em 0.62em;}
+div.messages > div{ padding: 0.44em 1em 0.5em;}
 
 .messages a{ font-weight:bold;}
 .messages a:hover{}
@@ -1479,10 +1481,15 @@ div.messages ul li {
 }
 /*--- END System Messages ---*/
 
+/*
+.main-content h1.element-invisible,
+.main-content h2.element-invisible,
+.main-content h3.element-invisible,
+.main-content h4.element-invisible,
+.main-content h5.element-invisible,
+.main-content h6.element-invisible{ display:none;}
 
-
-
-
+*/
 
 
 
@@ -2004,7 +2011,7 @@ div.messages ul li {
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:0; }
 	.navbar-default .menu-explore{ display:none !important; }
 	.menu-maintoggle{ display:none; }
-	.menu-toggle{ display:inline-block; -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1);border-collapse: separate; position:relative; z-index:300;}   
+	.menu-toggle{ display:inline-block; /* -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); */ border-collapse: separate; position:relative; z-index:300;}   
 	.navbar-default .navbar-nav>li>a{ background:transparent; }
 	.navbar-default h1 i.icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   h1.navbar-header a span{ font-size:0.83em; position:relative; top:-5px; }	 

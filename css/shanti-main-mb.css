@@ -75,18 +75,12 @@ form table td.label div.description {
 .admin-menu .form-type-password-confirm .password-strength-text{ position:relative; top:.62em;}
 
 
-input.form-control.form-text {
-	display: inline-block;
-	font-size:1em;
-	line-height:1.93em;
-	height:2em;
-}
 
 input.form-control,
 .form-textarea-wrapper textarea.form-textarea{
 	color:#777;
 	border: 1px solid #ccc;
-	border-radius: 25px;
+	border-radius: 1.5em;
 	background-clip: padding-box;
 	font-size:1.06em;
 	height:2em;
@@ -102,6 +96,7 @@ input.form-control,
 	-webkit-transition-duration: 400ms;
 	transition-property: all;
 	transition-duration: 400ms;
+	background-position: 99% 0.62em !important;
 	/*font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;*/
 }
 input.form-control:hover,
@@ -132,9 +127,9 @@ input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; lin
 }
 
 
-
-html.js input.form-autocomplete{ background-position: 99% 0.5em !important;}
-
+/*
+html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
+*/
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
 #admin-menu .dropdown .admin-menu-toolbar-category > a:hover { color:#fff;}
