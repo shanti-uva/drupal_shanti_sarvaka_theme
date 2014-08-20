@@ -1122,7 +1122,7 @@ ul.menu-main>li>a:first-child {
 	padding: .38em .75em .5em 1em;
 }
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { border-left:4px solid #888; border-right:4px solid #888; border-bottom:1px solid #888; padding:0.25em 0.25em 0.5em 0.62em; margin:0 0 0.5em -0.92em; line-height: 1.25em; background:#f7f7f7;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { border-left:4px solid #888; border-right:4px solid #888; border-bottom:1px solid #888; padding:0.38em 0.25em 0.5em 0.62em; margin:-0.32 -0.12em 0.5em -0.92em; line-height: 1.25em; background:#f7f7f7;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
