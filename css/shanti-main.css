@@ -2060,11 +2060,14 @@ div.messages ul li {
 @media screen and (min-width: 1280px) {
 	.collections ul:first-child{ margin-left:7%; }
 	
+	.search-results,
 	.shanti-gallery{
 		 -webkit-column-width: 13em;
 		 -webkit-column-gap: 1em;  
 		 -moz-column-width: 12em;
 		 -moz-column-gap: 1em;
+		 column-width: 12em;
+		 column-gap: 1em;
 	}
 	.shanti-thumbnail { 
 	  max-width: 13em;
