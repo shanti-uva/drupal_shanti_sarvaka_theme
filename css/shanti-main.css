@@ -971,9 +971,10 @@ ul.menu-main>li>a:first-child {
  -webkit-column-gap: .63em;
 }
 /* Gallery and thumbnails */
+
+.search-results,
 .shanti-gallery{
 	width: 100%;
-	float:left;
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
  -moz-column-width: 12em;
@@ -981,6 +982,7 @@ ul.menu-main>li>a:first-child {
  column-width: 12em;
  column-gap: 1em;
 }
+
 .search-results a,
 .search-results a:hover,
 .shanti-gallery a,
@@ -1161,7 +1163,7 @@ ul.menu-main>li>a:first-child {
 	margin-top: 0.32em;
 }
 
-.shanti-thumbnail .footer-wrap {
+.shanti-thumbnail .footer-wrap { 
 	position:absolute;
 	bottom:0;
 	background:#f6f6f6;
