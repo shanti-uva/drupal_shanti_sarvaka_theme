@@ -135,7 +135,7 @@ html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 #admin-menu .dropdown .admin-menu-toolbar-category > a:hover { color:#fff;}
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail{ background:#f5f5f5; color:#000; text-shadow:none;}
-
+#admin-menu .dropdown .admin-menu-toolbar-category.admin-menu-icon > a.active-trail{ background:#777;}
 
 
 .form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
@@ -491,30 +491,11 @@ span.fancytree-node i.shanticon-cancel {
 
 
 
-
-
-
-
-
-
-
-
-/* Admin */
-@media (max-width: 1040px) {
-	/* necessary styles to make admin menu work at smaller screen sizes */
-	#admin-menu .dropdown .admin-menu-account, 
-	#admin-menu .dropdown .admin-menu-users, 
-	#admin-menu .dropdown .admin-menu-search {
-		display: none;
-	}
-}
-
-
 #admin-menu{ 	
-	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.42);
-	box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.42);
+	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
+	box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
 	border-collapse:separate;
-	background:#444;
+	background:#333;
 	background-image:none;
 }
 
@@ -896,7 +877,15 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 */
 
 
-
+/* Admin */
+@media (max-width: 1040px) {
+	/* necessary styles to make admin menu work at smaller screen sizes */
+	#admin-menu .dropdown .admin-menu-account, 
+	#admin-menu .dropdown .admin-menu-users, 
+	#admin-menu .dropdown .admin-menu-search {
+		display: none;
+	}
+}
 
 
 
