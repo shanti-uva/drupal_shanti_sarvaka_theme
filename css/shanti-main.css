@@ -497,6 +497,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	font-weight:bold;
 }
 .breadwrap ol li a:hover{ color:#fff; }
+
 .breadwrap ul li span.wholegrain,
 .breadwrap ol li span.wholegrain {
   display: block;
@@ -513,7 +514,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	font-family:'FontAwesome';
 	font-size:1.68em;
 	font-weight:bold;
-	line-height:1em;
+	line-height:0.75em;
 	height:1em;
 	width:0.38em;
 	overflow:visible;
