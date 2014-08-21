@@ -307,6 +307,9 @@ function shanti_sarvaka_preprocess_block(&$variables) {
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
+		$form['#prefix'] = '<section class="input-section" style="display:none;"> ';
+		$form['#suffix'] = '</section>';
+		$form['#attributes']['class'][] = 'form';
   	$form['actions']['submit']['#attributes'] = array("class" => array("btn", "btn-default"));
 		$form['actions']['submit']['#value'] = 'search-icon'; // This replaced by the icon code in shanti_sarvaka_button function
 	}
@@ -791,31 +794,17 @@ function shanti_sarvaka_checkboxes($variables) {
 }
 
 function shanti_sarvaka_textfield($variables) {
-  $element = $variables['element'];
-  $element['#attributes']['type'] = 'text';
+  $element = &$variables['element'];
+	// Add place holder attribute with title
   if(!empty($element['#title'])) {
     $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
   }
-  element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
-  _form_set_class($element, array('form-control', 'form-text'));
-
-  $extra = '';
-  if ($element['#autocomplete_path'] && drupal_valid_path($element['#autocomplete_path'])) {
-    drupal_add_library('system', 'drupal.autocomplete');
-    $element['#attributes']['class'][] = 'form-autocomplete';
-
-    $attributes = array();
-    $attributes['type'] = 'hidden';
-    $attributes['id'] = $element['#attributes']['id'] . '-autocomplete';
-    $attributes['value'] = url($element['#autocomplete_path'], array('absolute' => TRUE));
-    $attributes['disabled'] = 'disabled';
-    $attributes['class'][] = 'autocomplete';
-    $extra = '<input' . drupal_attributes($attributes) . ' />';
-  }
-
-  $output = '<input' . drupal_attributes($element['#attributes']) . ' />';
-
-  return $output . $extra;
+	// Remove unnecessary attributes for search form
+	if($element['#parents'][0] == 'search_block_form') {
+		unset($element['#attributes']['title'], $element['#size'], $element['#maxlength']);
+	}
+  _form_set_class($element, array('form-control'));
+	return theme_textfield($variables);
 }
 
 /**
