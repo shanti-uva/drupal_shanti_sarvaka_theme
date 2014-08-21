@@ -299,11 +299,10 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   text-align:center;
   list-style-type: none;
   margin-bottom:15px !important;
-  float:left;
 }
 .collections ul li {
   margin: 0;
-  /* float:left; */
+  float:left;
   line-height:4.5em;
 }
 .collections ul li a { 
