@@ -525,9 +525,9 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   left:0;
 }
+
+
 .breadwrap ol li:last-child{ 
-  color:#fff;
-	background: none;
 	position:relative; top: -0.82em;
 	margin-right: 0;
 	padding-right: 0;
@@ -535,6 +535,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	line-height: 1em;
 	font-size:1.18em;
 }
+.breadwrap ol li:last-child a{ color:#eee;}
 .breadwrap ol li:last-child i{ 
 	background:transparent;
 }
