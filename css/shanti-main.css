@@ -459,7 +459,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   color:#f5f5f5;
 }
-.breadwrap .breadcrumb li:first-child a i:before{ content:'';}
 .breadwrap ol:before,
 .breadwrap ol:after {
   content: " ";
@@ -526,6 +525,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   left:0;
 }
+.breadwrap ol li:first-child i:before{ content:'';}
 
 .breadwrap ol li:last-child{ 
   color:#fff;
