@@ -826,7 +826,8 @@ function shanti_sarvaka_get_breadcrumbs($variables) {
 		$breadcrumbs[0] .= ':';
 	}
   foreach($breadcrumbs as $crumb) {
-    $output .= '<li>' . $crumb . ' <i class="fa fa-angle-right"></i></li>';
+  	$icon = ($breadcrumbs[0] == $crumb) ? '' : ' <i class="fa fa-angle-right"></i>';
+    $output .= "<li>$crumb$icon</li>";
   }
   $output .= '</ol>';
   return $output;
