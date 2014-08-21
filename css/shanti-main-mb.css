@@ -113,7 +113,7 @@ input.form-control:focus,
 	background-clip: padding-box;
 }
 
-input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; line-height:1.25em; height:1.5em; padding:0.56em 1em 0.5em !important; position:relative; top:1px;}
+input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; line-height:1.5em; height:1.75em; padding:0.75em 1em !important; position:relative; top:1px;}
 
 .bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
 .field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
@@ -877,16 +877,15 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 */
 
 
-/* Admin */
+/* Admin 
 @media (max-width: 1040px) {
-	/* necessary styles to make admin menu work at smaller screen sizes */
 	#admin-menu .dropdown .admin-menu-account, 
 	#admin-menu .dropdown .admin-menu-users, 
 	#admin-menu .dropdown .admin-menu-search {
 		display: none;
 	}
 }
-
+*/
 
 
 
