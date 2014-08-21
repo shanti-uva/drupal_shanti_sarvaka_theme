@@ -525,8 +525,6 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   left:0;
 }
-.breadwrap ol li:first-child i:before{ content:'';}
-
 .breadwrap ol li:last-child{ 
   color:#fff;
 	background: none;
@@ -540,10 +538,12 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 .breadwrap ol li:last-child i{ 
 	background:transparent;
 }
+
+.breadwrap ol li:first-child i:before,
 .breadwrap ol li:last-child i:before{
 	content: " ";
 	display:none;
-	background: none;
+	background: transparent;
 	width:0;
 	height:0;
 }
