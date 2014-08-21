@@ -1503,6 +1503,7 @@ div.messages ul li {
   border-radius:0; 
   width:100%; 
 }
+.panel.panel-default { overflow:visible; }
 .panel-default .panel-heading{
 	background-image:none;
 	background:#f2f2f2;
