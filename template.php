@@ -800,7 +800,7 @@ function shanti_sarvaka_textfield($variables) {
     $element['#attributes']['placeholder'] = t('Enter @title', array('@title' => $element['#title']));
   }
 	// Remove unnecessary attributes for search form
-	if($element['#parents'][0] == 'search_block_form') {
+	if(!empty($element['#parents']) && $element['#parents'][0] == 'search_block_form') {
 		unset($element['#attributes']['title'], $element['#size'], $element['#maxlength']);
 	}
   _form_set_class($element, array('form-control'));
@@ -823,7 +823,7 @@ function shanti_sarvaka_get_breadcrumbs($variables) {
     $breadcrumbs[0] = '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>';
   } 
   foreach($breadcrumbs as $crumb) {
-    $output .= '<li>' . $crumb . '</li>';
+    $output .= '<li><i class="icon"></i> ' . $crumb . '</li>';
   }
     
   $output .= '</ol>';
