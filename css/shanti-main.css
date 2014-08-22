@@ -377,20 +377,18 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	position:relative; 
 	z-index:1;
 }
-.titlearea .page-title {  
+.titlearea h1.page-title {  
   font-weight: normal;
   font-size:1.68em;
   line-height:1.68em;
   text-shadow:0 0 3px rgba(50,50,50, 0.225);
   margin:0;
   padding:0;
+  color:#f9f9f9;
 }
-.titlearea .page-title span { position:relative; top: 0.18em;}
-.titlearea .page-title > em {   
-
-  
-}
-.main-content .titlearea .page-title .icon {
+.titlearea h1.page-title span { position:relative; top: 0.18em;}
+.titlearea .page-title > em {  }
+.main-content .titlearea h1.page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
   font-size:80%;
 	height:1.75em;
@@ -402,7 +400,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	float:left;
 	position:relative; top: 0.38em; z-index:10; display:inline-block; background: rgba(0, 0, 0, 0.175);
 }
-.main-content .titlearea .page-title .icon:before{
+.main-content .titlearea h1.page-title .icon:before{
 	background:transparent !important;
 	position:relative; left:0.06em; z-index:15; 
 }

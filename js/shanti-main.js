@@ -672,6 +672,10 @@ jQuery(function ($) {
   $('[data-toggle=offcanvas]').click(function () {
     $('.row-offcanvas').toggleClass('active');
   });
+  
+  $('.advanced-view').css('display','block');
+  
+  
 });
 
 
