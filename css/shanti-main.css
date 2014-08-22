@@ -1519,7 +1519,7 @@ div.messages ul li {
 }
 .panel-group,
 .panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:transparent; border:none;}
+.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:#f7f7f7; border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
 .panel-group{
   border:none;
@@ -1534,6 +1534,13 @@ div.messages ul li {
 	top:0;
 	margin-right:.5em;
 }
+
+.panel-group,
+.panel-default>.panel-heading+.panel-collapse .panel-body,
+.panel-group .panel-heading+.panel-collapse .panel-body{ background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000); }
+/*
+.admin-menu .panel .panel-body{ background:#f7f7f7 !important;}
+*/
 
 
 
