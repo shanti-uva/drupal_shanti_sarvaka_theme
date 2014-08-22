@@ -823,7 +823,7 @@ function shanti_sarvaka_get_breadcrumbs($variables) {
     $breadcrumbs[0] = '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>';
   } 
 	if(count($breadcrumbs) > 1) { 
-		$breadcrumbs[0] .= ':';
+		$breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
 	}
   foreach($breadcrumbs as $crumb) {
   	$icon = ($breadcrumbs[0] == $crumb) ? '' : ' <i class="fa fa-angle-right"></i>';
