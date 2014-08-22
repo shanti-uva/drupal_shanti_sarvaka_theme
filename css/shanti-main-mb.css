@@ -899,4 +899,14 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 .advanced-view{ padding-top:0.5em;}
 
 .view-section .treeview h2{ font-size:1.5em;}
+h2 button.toggle-facet-label-search{
+	float:left;
+	margin-left:0.62em;
+	margin-right:.5em;
+	margin-bottom:0.5em;
+	position:relative;
+	top:0.25em;
+}
+
+
 
