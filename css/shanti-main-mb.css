@@ -1,3 +1,54 @@
+/*==========
+
+
+div.video-row {
+	margin-bottom: 18px; 
+}
+
+h3.node-desc {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+h4.node-desc-type {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+div.avinfo button.btn.play-transcript-btn {
+	margin-bottom: 12px;
+}
+
+button.play-transcript-btn i.shanticon {
+	margin-right: 6px;
+	padding: 18px 6px 6px 8px;
+	vertical-align: top;
+}
+
+button.play-transcript-btn span {
+	font-size: small;
+}
+
+div.row.avdate, div.row.avduration {
+	margin: 6px 0px 6px -10px;
+	color: #777;
+}
+
+div.collimage {
+	max-width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+
+div.avinfo {
+	margin-left: 20px;
+}
+
+
+============*/
+
+
 
 .breadwrap ol li i{background:#32ccca;}
 
@@ -314,7 +365,7 @@ ul.primary li a{ margin-right:.25em;}
 	box-shadow: inset 0 0 9px rgba(50,50,50, .5 );
 }
 */
-.btn-primary .shanticon,
+
 .btn-primary .icon {	
 	text-align:center;
 	height:4em;
@@ -361,16 +412,34 @@ ul.primary li a{ margin-right:.25em;}
 
 
 /*--- custom play transcript --*/
-.btn-primary.play-transcript-btn.form-submit{ 
+div.avinfo .btn-primary.play-transcript-btn.form-submit{ 
 	margin: 0.75em;	
 	height:4em;
 	line-height:2.32em;	
 }
-.btn-primary.play-transcript-btn.form-submit span{ 
+div.avinfo .btn-primary.play-transcript-btn.form-submit span{ 
 	padding: 1em 1.5em;
 	height:5em;
 	line-height:3em;
+	font-size: 0.88em;
 }
+div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
+	text-align:center;
+	height:4em;
+	width:3.5em; 
+	font-size:130%;
+	line-height:2.25em;
+	display:inline-block;
+	padding:0.5em;
+	margin:0;
+	float:left;
+	vertical-align:middle;
+}
+
+
+
+
+
 
 /*
 
@@ -914,6 +983,17 @@ h2 button.toggle-facet-label-search{
 	position:relative;
 	top:0.25em;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
