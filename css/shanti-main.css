@@ -38,7 +38,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 
 /*--- content elements ---*/
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ 
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
+	color: #444; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
 }
 
 .main-content input.form-control{
@@ -281,7 +281,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   background: #4c4b51;
   color: #fff;
   text-transform: uppercase;
-  padding: 0 0 0.62em;  
+  padding: 0 0 0.62em; 
   font-weight: bold; 
   font-weight: 700;
   border-bottom:1px solid #777;
@@ -446,17 +446,17 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   *zoom: 1;
 }
-.breadwrap .breadcrumb li.first,
 .breadwrap .breadcrumb li:first-child{
-  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size:1.12em;
-  line-height:1em;
-  height: 1.18em;
-  padding:0;
-  margin:0 4px 0 0;
-  position:relative; top:-2px;
-  font-style:normal;
   font-weight:700;
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size:1.32em;
+  height: 1.75em;
+  line-height:1.5em;
+  padding:0;
+  margin:0;
+  position:relative;
+  top:0;
+  color:#f5f5f5;
 }
 .breadwrap ol:before,
 .breadwrap ol:after {
@@ -486,13 +486,12 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   height: 1.75em;
   line-height:1.5em;
   padding:0;
-  margin:0 0.68em 0 0;
-  font-style:normal;
-  font-weight:500;
+  margin:0;
   position:relative;
   top:0;
   color:#f5f5f5;
 }
+
 .breadwrap ol li a {
   display: block;
   float: left;
@@ -502,10 +501,10 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	height: 1.18em;
 	line-height: 1.18em;
 	overflow: hidden;
-	font-weight:bold;
+	font-weight:500;
 }
 .breadwrap ol li a:hover{ color:#fff; }
-.breadwrap .breadcrumb li:first-child a{ margin-right:-0.32em; content:':';}
+.breadwrap .breadcrumb li:first-child a{ margin-right:-0.32em; content:':'; font-weight:700;}
 
 .breadwrap ul li span.wholegrain,
 .breadwrap ol li span.wholegrain {
@@ -523,7 +522,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	font-family:'FontAwesome';
 	font-size:1.68em;
 	font-weight:bold;
-	line-height:1em;
+	line-height:0.88em;
 	height:1em;
 	width:0.38em;
 	overflow:visible;
@@ -535,7 +534,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   left:0;
 }
-.breadwrap ol li.last-child a{ color:#f0f0f0;}
+.breadwrap ol li:last-child a{ color:#ccc; font-size: 0.92em; cursor:default;}
 
 .breadwrap ol li:last-child i{ 
 	background:transparent;

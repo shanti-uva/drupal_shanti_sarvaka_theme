@@ -891,3 +891,14 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	}
 }
 */
+
+
+.breadwrap .breadcrumb li:first-child a{ margin-right:-0.32em;}
+
+.input-section .search-group{ margin-top:-1em;}
+.input-section .search-group .form-group{ padding-left:1.25em;}
+.input-section .input-group .btn i:before{ position:relative; right:3px; }
+.advanced-view{ padding-top:0.25em;}
+
+
+
