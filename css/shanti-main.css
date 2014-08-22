@@ -496,6 +496,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	font-weight:bold;
 }
 .breadwrap ol li a:hover{ color:#fff; }
+.breadwrap .breadcrumb li:first-child a{ margin-right:-0.32em;}
+/* .breadwrap ol li a:after{ content:':';} */
 
 .breadwrap ul li span.wholegrain,
 .breadwrap ol li span.wholegrain {
@@ -525,10 +527,11 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   left:0;
 }
-
+.breadwrap ol li:first-child i{ background:transparent;}
 
 .breadwrap ol li:last-child{ 
-	position:relative; top: -0.82em;
+	position:relative;
+	top: -0.82em;
 	margin-right: 0;
 	padding-right: 0;
 	height: 1.5em;
