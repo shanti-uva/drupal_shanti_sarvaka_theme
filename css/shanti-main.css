@@ -281,7 +281,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   background: #4c4b51;
   color: #fff;
   text-transform: uppercase;
-  padding: 0;  
+  padding: 0 0 0.62em;  
   font-weight: bold; 
   font-weight: 700;
   border-bottom:1px solid #777;
@@ -523,7 +523,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	font-family:'FontAwesome';
 	font-size:1.68em;
 	font-weight:bold;
-	line-height:1em;
+	line-height:0.75em;
 	height:1em;
 	width:0.38em;
 	overflow:visible;
