@@ -281,7 +281,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   background: #4c4b51;
   color: #fff;
   text-transform: uppercase;
-  padding: 0 0 0.62em; 
+  padding: 0;  
   font-weight: bold; 
   font-weight: 700;
   border-bottom:1px solid #777;
@@ -304,7 +304,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   margin: 0;
   float:left;
   line-height:4.5em;
-  width:12%;
+  width:20%;
 }
 .collections ul li a { 
   color: #aaa;
@@ -333,8 +333,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   margin: 10px 0 15px !important;
   letter-spacing: 0.32em;
 }
-.collections button.close {
-  color: #fff;
+.collections button {
+  color: #ccc;
   background:transparent;
   background-image:none;
   width:25;
@@ -355,8 +355,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	transition: color 200ms;
 	font-family:'shanticon';
 }
-.collections button.close:hover {
-	color: #fff;
+.collections button:hover {
+	color:#eee;
 }
 /*--- END collections panel ---*/
 
@@ -446,18 +446,17 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   *zoom: 1;
 }
+.breadwrap .breadcrumb li.first,
 .breadwrap .breadcrumb li:first-child{
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size:1.32em;
-  height: 1.5em;
-  line-height:1.5em;
+  font-size:1.12em;
+  line-height:1em;
+  height: 1.18em;
   padding:0;
-  margin:0 0.68em 0 0;
+  margin:0 4px 0 0;
+  position:relative; top:-2px;
   font-style:normal;
-  font-weight:500;
-  position:relative;
-  top:0;
-  color:#f5f5f5;
+  font-weight:700;
 }
 .breadwrap ol:before,
 .breadwrap ol:after {
@@ -474,30 +473,39 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   float: none;
   position: relative;
   font-size: 1.25em;
-  height: 1.5em;
+  height: 1.75em;
   line-height: 1.06em;
   overflow: hidden;
   margin: 0;
   padding: 0 18px 0 0;
   text-shadow:0 0 1px rgba(50,50,50, 0.225);
 }
-
+.breadwrap .breadcrumb li:first-child{
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size:1.32em;
+  height: 1.75em;
+  line-height:1.5em;
+  padding:0;
+  margin:0 0.68em 0 0;
+  font-style:normal;
+  font-weight:500;
+  position:relative;
+  top:0;
+  color:#f5f5f5;
+}
 .breadwrap ol li a {
   display: block;
   float: left;
   font-size: 0.92em;
   color: #f0f0f0;
   text-decoration: none;
-	height: 1.5em;
-	line-height: 1.06em;
+	height: 1.18em;
+	line-height: 1.18em;
 	overflow: hidden;
-	margin:0;
-	padding:0;
 	font-weight:bold;
 }
 .breadwrap ol li a:hover{ color:#fff; }
-.breadwrap .breadcrumb li:first-child a{ margin-right:-0.32em;}
-/* .breadwrap ol li a:after{ content:':';} */
+.breadwrap .breadcrumb li:first-child a{ margin-right:-0.32em; content:':';}
 
 .breadwrap ul li span.wholegrain,
 .breadwrap ol li span.wholegrain {
@@ -511,11 +519,11 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	position: absolute;
 	right: 5px;
 	top: -3px;
-	z-index: 10000;
+	z-index: 10;
 	font-family:'FontAwesome';
 	font-size:1.68em;
 	font-weight:bold;
-	line-height:0.75em;
+	line-height:1em;
 	height:1em;
 	width:0.38em;
 	overflow:visible;
@@ -527,15 +535,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   left:0;
 }
-.breadwrap ol li:first-child i{ background:transparent;}
+.breadwrap ol li.last-child a{ color:#f0f0f0;}
 
-.breadwrap ol li:last-child{ 
-
-	margin-right: 0;
-	padding-right: 0;
-
-}
-.breadwrap ol li:last-child a{ color:#eee;}
 .breadwrap ol li:last-child i{ 
 	background:transparent;
 }
@@ -604,6 +605,9 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	background:#fff;
 	-webkit-transition: background-color 200ms;
 	transition: background-color 200ms;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+	font-weight:bold; 
+	font-weight:700;
 }
 .content-resources ul.nav-pills li a,
 .content-resources ul.nav-pills li a:hover {
@@ -644,7 +648,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	position:relative; top:-1px;
 	font-size: .82em;
 	font-family: sans-serif;
-	line-height: 1em;
+	line-height: 0.82em;
 	height: 1.63em;
 	text-shadow: 0 1px 1px #444;
   display: inline-block;
