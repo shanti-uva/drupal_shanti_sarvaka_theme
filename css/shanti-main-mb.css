@@ -397,7 +397,6 @@ ul.primary li a{ margin-right:.25em;}
 
 
 /*--- BUTTON Large ---*/
-.views-exposed-form .views-exposed-widget .btn.btn-primary.btn-lg.form-submit{ margin-top:0.25em;}
 .btn.btn-primary.btn-lg{
 	margin: 0.75em;	
 	height:4em;
@@ -410,24 +409,26 @@ ul.primary li a{ margin-right:.25em;}
 }
 
 
+.views-exposed-form .views-exposed-widget .btn.btn-primary.btn-lg.form-submit{ margin-top:0.25em;}
+
 
 /*--- custom play transcript --*/
 div.avinfo .btn-primary.play-transcript-btn.form-submit{ 
 	margin: 0.75em;	
-	height:4em;
+	height:5em;
 	line-height:2.32em;	
 }
 div.avinfo .btn-primary.play-transcript-btn.form-submit span{ 
 	padding: 1em 1.5em;
 	height:5em;
-	line-height:3em;
-	font-size: 0.88em;
+	line-height:1.25em;
+	font-size: 0.82em;
 }
 div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
 	text-align:center;
-	height:4em;
+	height:5em;
 	width:3.5em; 
-	font-size:130%;
+	font-size:150%;
 	line-height:2.25em;
 	display:inline-block;
 	padding:0.5em;
@@ -684,13 +685,6 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 .field-accordion h6 span.ss-fieldset-toggle.open {
 	padding: 0 5px 1px;
 }
-
-
-.admin-menu .panel .panel-group,
-.admin-menu .panel .panel-body,
-.admin-menu .panel.panel-default{ background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000); }
-
-.admin-menu .panel .panel-body{ background:#f7f7f7 !important;}
 
 
 
