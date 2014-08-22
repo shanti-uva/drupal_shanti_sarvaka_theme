@@ -530,13 +530,10 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 .breadwrap ol li:first-child i{ background:transparent;}
 
 .breadwrap ol li:last-child{ 
-	position:relative;
-	top: -0.82em;
+
 	margin-right: 0;
 	padding-right: 0;
-	height: 1.5em;
-	line-height: 1em;
-	font-size:1.18em;
+
 }
 .breadwrap ol li:last-child a{ color:#eee;}
 .breadwrap ol li:last-child i{ 
