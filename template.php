@@ -36,168 +36,18 @@ function shanti_sarvaka_preprocess(&$variables) {
   $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
   $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');
-  $variables['theme_path'] =$base; 
+  $variables['theme_path'] = $base; 
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
-  // Add to Header variables for favicons and MS settings
-  $elements = array(
-    'favicon-main' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon.ico', 
-        'rel' => 'shortcut icon',
-      ),
-    ),
-    'favicon-16-32-64' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon.ico', 
-        'rel' => 'icon',
-        'size' => '16x16 32x32 64x64',
-      ),
-    ),
-    'favicon-196' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-196.png', 
-        'rel' => 'icon',
-        'size' => '196x196',
-        'type' => 'image/png',
-      ),
-    ),
-    'favicon-160' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-160.png', 
-        'rel' => 'icon',
-        'size' => '160x160',
-        'type' => 'image/png',
-      ),
-    ),
-    'favicon-96' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-96.png', 
-        'rel' => 'icon',
-        'size' => '96x96',
-        'type' => 'image/png',
-      ),
-    ),
-    'favicon-64' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-64.png', 
-        'rel' => 'icon',
-        'size' => '64x64',
-        'type' => 'image/png',
-      ),
-    ),
-    'favicon-32' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-32.png', 
-        'rel' => 'icon',
-        'size' => '32x32',
-        'type' => 'image/png',
-      ),
-    ),
-    'favicon-16' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-16.png', 
-        'rel' => 'icon',
-        'size' => '16x16',
-        'type' => 'image/png',
-      ),
-    ),
-    'favicon-152' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-152.png', 
-        'rel' => 'apple-touch-icon',
-        'size' => '152x152',
-      ),
-    ),
-    'favicon-144' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-144.png', 
-        'rel' => 'apple-touch-icon',
-        'size' => '144x144',
-      ),
-    ),
-    'favicon-120' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-120.png', 
-        'rel' => 'apple-touch-icon',
-        'size' => '120x120',
-      ),
-    ),
-    'favicon-114' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-114.png', 
-        'rel' => 'apple-touch-icon',
-        'size' => '114x114',
-      ),
-    ),
-    'favicon-76' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-76.png', 
-        'rel' => 'apple-touch-icon',
-        'size' => '76x76',
-      ),
-    ),
-    'favicon-72' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-72.png', 
-        'rel' => 'apple-touch-icon',
-        'size' => '72x72',
-        'type' => 'image/png',
-      ),
-    ),
-    'favicon-57' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-57.png', 
-        'rel' => 'apple-touch-icon',
-      ),
-    ),
-    'ms-tile-color' => array(
-      '#tag' => 'meta', 
-      '#attributes' => array( 
-        'name' => 'msapplication-TileColor', 
-        'content' => '#FFFFFF',
-      ),
-    ),
-    'ms-tile-image' => array(
-      '#tag' => 'meta', 
-      '#attributes' => array( 
-        'name' => 'msapplication-TileImage', 
-        'content' => $base . 'images/favicons/favicon-144.png',
-      ),
-    ),
-    'ms-config' => array(
-      '#tag' => 'meta', 
-      '#attributes' => array( 
-        'name' => 'msapplication-config', 
-        'content' => $base . 'images/favicons/browserconfig.xml',
-      ),
-    ),
-  );
-  foreach($elements as $n => $el) {
-    drupal_add_html_head($el, $n);
-  }
+  
 }
 
 function shanti_sarvaka_preprocess_html(&$variables) {
-	//dpm($variables, 'in html preproc');
+	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
+	$variables['classes_array'][] =  $site_class;
+	_shanti_sarvaka_add_metatags();
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
-  //dpm($variables, 'page vars');
   // Figure out bootstrap column classes
   $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
   $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
@@ -873,4 +723,165 @@ function hex2rgb($hex) {
    $rgb = array($r, $g, $b);
    return implode(",", $rgb); // returns the rgb values separated by commas
    //return $rgb; // returns an array with the rgb values
+}
+
+function _shanti_sarvaka_add_metatags() {
+  global $base_url, $base_path;
+  $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
+	
+	// Add to Header variables for favicons and MS settings
+  $elements = array(
+    'favicon-main' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon.ico', 
+        'rel' => 'shortcut icon',
+      ),
+    ),
+    'favicon-16-32-64' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon.ico', 
+        'rel' => 'icon',
+        'size' => '16x16 32x32 64x64',
+      ),
+    ),
+    'favicon-196' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-196.png', 
+        'rel' => 'icon',
+        'size' => '196x196',
+        'type' => 'image/png',
+      ),
+    ),
+    'favicon-160' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-160.png', 
+        'rel' => 'icon',
+        'size' => '160x160',
+        'type' => 'image/png',
+      ),
+    ),
+    'favicon-96' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-96.png', 
+        'rel' => 'icon',
+        'size' => '96x96',
+        'type' => 'image/png',
+      ),
+    ),
+    'favicon-64' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-64.png', 
+        'rel' => 'icon',
+        'size' => '64x64',
+        'type' => 'image/png',
+      ),
+    ),
+    'favicon-32' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-32.png', 
+        'rel' => 'icon',
+        'size' => '32x32',
+        'type' => 'image/png',
+      ),
+    ),
+    'favicon-16' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-16.png', 
+        'rel' => 'icon',
+        'size' => '16x16',
+        'type' => 'image/png',
+      ),
+    ),
+    'favicon-152' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-152.png', 
+        'rel' => 'apple-touch-icon',
+        'size' => '152x152',
+      ),
+    ),
+    'favicon-144' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-144.png', 
+        'rel' => 'apple-touch-icon',
+        'size' => '144x144',
+      ),
+    ),
+    'favicon-120' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-120.png', 
+        'rel' => 'apple-touch-icon',
+        'size' => '120x120',
+      ),
+    ),
+    'favicon-114' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-114.png', 
+        'rel' => 'apple-touch-icon',
+        'size' => '114x114',
+      ),
+    ),
+    'favicon-76' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-76.png', 
+        'rel' => 'apple-touch-icon',
+        'size' => '76x76',
+      ),
+    ),
+    'favicon-72' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-72.png', 
+        'rel' => 'apple-touch-icon',
+        'size' => '72x72',
+        'type' => 'image/png',
+      ),
+    ),
+    'favicon-57' => array(
+      '#tag' => 'link', 
+      '#attributes' => array( 
+        'href' => $base . 'images/favicons/favicon-57.png', 
+        'rel' => 'apple-touch-icon',
+      ),
+    ),
+    'ms-tile-color' => array(
+      '#tag' => 'meta', 
+      '#attributes' => array( 
+        'name' => 'msapplication-TileColor', 
+        'content' => '#FFFFFF',
+      ),
+    ),
+    'ms-tile-image' => array(
+      '#tag' => 'meta', 
+      '#attributes' => array( 
+        'name' => 'msapplication-TileImage', 
+        'content' => $base . 'images/favicons/favicon-144.png',
+      ),
+    ),
+    'ms-config' => array(
+      '#tag' => 'meta', 
+      '#attributes' => array( 
+        'name' => 'msapplication-config', 
+        'content' => $base . 'images/favicons/browserconfig.xml',
+      ),
+    ),
+  );
+	$ct = 0;
+  foreach($elements as $n => $el) {
+  	$el['#weight'] = $ct;
+    drupal_add_html_head($el, $n);
+		$ct++;
+  }
 }
