@@ -415,7 +415,7 @@ ul.primary li a{ margin-right:.25em;}
 /*--- custom play transcript --*/
 div.avinfo .btn-primary.play-transcript-btn.form-submit{ 
 	margin: 0.75em;	
-	height:5em;
+	height:4em;
 	line-height:2.32em;	
 }
 div.avinfo .btn-primary.play-transcript-btn.form-submit span{ 
@@ -426,7 +426,7 @@ div.avinfo .btn-primary.play-transcript-btn.form-submit span{
 }
 div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
 	text-align:center;
-	height:5em;
+	height:4em;
 	width:3.5em; 
 	font-size:150%;
 	line-height:2.25em;
