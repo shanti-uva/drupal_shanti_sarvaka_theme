@@ -500,7 +500,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	overflow: hidden;
 	font-weight:500;
 }
-.breadwrap .breadcrumb li:first-child a{ margin-right:0.25em; content:':'; font-weight:700;}
+.breadwrap .breadcrumb li:first-child a{ margin-right:0.32em; font-weight:700;}
+.breadwrap .breadcrumb li:first-child a:after{ content:':'; }
 .breadwrap ol li a:hover{  }
 
 .breadwrap ul li span.wholegrain,
