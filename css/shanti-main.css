@@ -414,7 +414,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	jBreadCrumbCustom Plugin Styles
 =======================================*/
 .breadwrap {
-  margin: .32em 0 0 2em;
+  margin: .25em 0 0 2em;
   padding: 0;
   display: block;
   height: 1.18em;
@@ -487,28 +487,24 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   margin:0;
   position:relative;
   top:0;
-  color:#f5f5f5;
 }
 
 .breadwrap ol li a {
   display: block;
   float: left;
   font-size: 0.92em;
-  color: #f0f0f0;
+  color: #fff;
   text-decoration: none;
 	height: 1.18em;
 	line-height: 1.18em;
 	overflow: hidden;
 	font-weight:500;
 }
-.breadwrap ol li a:hover{ color:#fff; }
-.breadwrap .breadcrumb li:first-child a{ margin-right:-0.32em; content:':'; font-weight:700;}
+.breadwrap .breadcrumb li:first-child a{ margin-right:0.25em; content:':'; font-weight:700;}
+.breadwrap ol li a:hover{  }
 
 .breadwrap ul li span.wholegrain,
-.breadwrap ol li span.wholegrain {
-  display: block;
-  overflow: hidden;
-}
+.breadwrap ol li span.wholegrain { display: block; overflow: hidden;}
 
 .breadwrap ol li i{
 	color:#eee;
@@ -519,7 +515,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 	z-index: 10;
 	font-family:'FontAwesome';
 	font-size:1.68em;
-	font-weight:bold;
+	font-weight:normal;
+	font-weight:100;
 	line-height:0.88em;
 	height:1em;
 	width:0.38em;
@@ -532,14 +529,11 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   top:0;
   left:0;
 }
-.breadwrap ol li:last-child a{ color:#ccc; font-size: 0.92em; cursor:default;}
+.breadwrap ol li:last-child a{ color:#eee; font-size: 0.92em; cursor:default;}
 
-.breadwrap ol li:last-child i{ 
-	background:transparent;
-}
-
-.breadwrap ol li:first-child i:before,
-.breadwrap ol li:last-child i:before{
+.breadwrap ol li:last-child i{ background:transparent;}
+.breadwrap ol li:last-child i:before,
+.breadwrap ol li:first-child i:before{
 	content: " ";
 	display:none;
 	background: transparent;
