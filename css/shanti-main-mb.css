@@ -360,6 +360,18 @@ ul.primary li a{ margin-right:.25em;}
 
 
 
+/*--- custom play transcript --*/
+.btn-primary.play-transcript-btn.form-submit{ 
+	margin: 0.75em;	
+	height:4em;
+	line-height:2.32em;	
+}
+.btn-primary.play-transcript-btn.form-submit span{ 
+	padding: 1em 1.5em;
+	height:5em;
+	line-height:3em;
+}
+
 /*
 
 div.banner-content button.btn-default {
@@ -666,14 +678,14 @@ ul.ss-full-tabs li {
 
 ul.ss-full-tabs li a {
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	border: none;
+	border: none !important;
 	text-align: center;
 	font-size: larger;
 	font-weight: 777;
 	color: #999;
 	border-radius: 0;
 }
-
+ul.ss-full-tabs li a:hover{ border: none !important;}
 ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
 	top: 100%;
 	left: 50%;
@@ -693,14 +705,9 @@ ul.ss-full-tabs li.active a:after {
 	margin-left: -15px;
 }
 */
-ul.ss-full-tabs>li>a:hover, ul.ss-full-tabs>li.active>a:hover {
-	border: none;
-}
+ul.ss-full-tabs>li>a:hover, ul.ss-full-tabs>li.active>a:hover { border: none !important; }
+ul.ss-full-tabs li.active a { color: white;}
 
-ul.ss-full-tabs li.active a {
-	border: none;
-	color: white;
-}
 /** End of Tabs section **/
 	
 	
