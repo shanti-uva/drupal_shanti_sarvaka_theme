@@ -48,7 +48,11 @@ div.avinfo {
 
 ============*/
 
+.avinfo{ margin-left: 30px;}
+.avrating h2{ margin-bottom:0.18em;}
 
+ul.inline li a, 
+ul.links.inline li a{ font-weight:bold; }
 
 .breadwrap ol li i{background:#32ccca;}
 
@@ -419,7 +423,7 @@ div.avinfo .btn-primary.play-transcript-btn.form-submit{
 	line-height:2.32em;	
 }
 div.avinfo .btn-primary.play-transcript-btn.form-submit span{ 
-	padding: 1.12em 2em 1em;
+	padding: 1.12em 3em 1em;
 	height:5em;
 	line-height:1.5em;
 	font-size: 0.82em;
@@ -428,14 +432,13 @@ div.avinfo .btn-primary.play-transcript-btn.form-submit span{
 div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
 	text-align:center;
 	height:4em;
-	width:3.5em; 
+	width:3em; 
 	font-size:150%;
 	line-height:1.75em;
-	display:inline-block;
 	padding:0.5em;
 	margin:0;
 	float:left;
-	vertical-align:middle;
+	display:inline-block;
 }
 
 
@@ -873,14 +876,6 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 
 
 
-.view-filters .views-exposed-widget.views-widget-filter-status{
-
-}
-
-
-
-
-
 .views-exposed-form label{ margin-bottom:0;font-size:90%;padding-left:.44em; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500;}
 .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .views-exposed-form .views-exposed-widget{
@@ -968,7 +963,7 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 }
 */
 
-
+/*---- cusotmize mediabase search panel ----*/
 .input-section .search-group{ margin-top:-1em;}
 .input-section .search-group .form-group{ padding-left:1.5em;}
 .input-section .input-group .input-group-btn{ position:absolute; right:13px;}
