@@ -414,22 +414,23 @@ ul.primary li a{ margin-right:.25em;}
 
 /*--- custom play transcript --*/
 div.avinfo .btn-primary.play-transcript-btn.form-submit{ 
-	margin: 0.75em;	
+	margin: 0.75em 0.75em 0.75em 0;	
 	height:4em;
 	line-height:2.32em;	
 }
 div.avinfo .btn-primary.play-transcript-btn.form-submit span{ 
-	padding: 1em 1.5em;
+	padding: 1.12em 2em 1em;
 	height:5em;
-	line-height:1.25em;
+	line-height:1.5em;
 	font-size: 0.82em;
+	letter-spacing:0.12em;
 }
 div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
 	text-align:center;
 	height:4em;
 	width:3.5em; 
 	font-size:150%;
-	line-height:2.25em;
+	line-height:1.75em;
 	display:inline-block;
 	padding:0.5em;
 	margin:0;
@@ -749,16 +750,7 @@ ul.ss-full-tabs li a {
 	border-radius: 0;
 }
 ul.ss-full-tabs li a:hover{ border: none !important;}
-ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
+
 
 /*
 ul.ss-full-tabs li.active a:after {
@@ -768,9 +760,23 @@ ul.ss-full-tabs li.active a:after {
 	margin-left: -15px;
 }
 */
-ul.ss-full-tabs>li>a:hover, ul.ss-full-tabs>li.active>a:hover { border: none !important; }
 ul.ss-full-tabs li.active a { color: white;}
 
+ul.ss-full-tabs>li>a:hover, 
+ul.ss-full-tabs>li.active>a:hover { border: none !important;}
+ul.ss-full-tabs>li.active>a:hover { color: white !important;}
+
+ul.ss-full-tabs li.active a:after, 
+ul.ss-full-tabs li.active a:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
 /** End of Tabs section **/
 	
 	
