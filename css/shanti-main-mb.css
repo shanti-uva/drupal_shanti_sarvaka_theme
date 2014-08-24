@@ -45,14 +45,18 @@ div.avinfo {
 	margin-left: 20px;
 }
 
+these styles were migrated from mediabase.css to help monitor 
+this custom set of styles in the modules section 
 
 ============*/
 
-.avinfo{ margin-left: 30px;}
-.avrating h2{ margin-bottom:0.18em;}
+.avdate i,
+.avduration i{ margin-right:0.25em;}
+
+.avrating h5{ margin-bottom:0.12em;}
 
 ul.inline li a, 
-ul.links.inline li a{ font-weight:bold; }
+ul.links.inline li a{ font-weight:bold; } /*--- targeting login link for now, see if this oerks ---*/
 
 .breadwrap ol li i{background:#32ccca;}
 
@@ -741,6 +745,8 @@ ul.ss-full-tabs {
 ul.ss-full-tabs li {
 	width: 50%;
 	background-color: white;
+	  -webkit-transition: color 200ms;
+	transition: color 200ms;
 }
 
 ul.ss-full-tabs li a {
@@ -751,6 +757,8 @@ ul.ss-full-tabs li a {
 	font-weight: 777;
 	color: #999;
 	border-radius: 0;
+	  -webkit-transition: color 200ms;
+	transition: color 200ms;
 }
 ul.ss-full-tabs li a:hover{ border: none !important;}
 
