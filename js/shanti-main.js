@@ -436,12 +436,12 @@
 	  				return true;
 	  			}
 	  			return false;
-	  		})
+	  		});
 	  	// Search for string if over 2 chars long
 	  	} else if(sval.length > 2) {
 	  		$('span.fancytree-title mark').each(
 	          function () {
-	          	var parent = $(this).parent()
+	          	var parent = $(this).parent();
 	          	var children = parent.children('.facet-count, .element-invisible').remove();
 	            parent.text(parent.text());
 	            parent.append(children);
