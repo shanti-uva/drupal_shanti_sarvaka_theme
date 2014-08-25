@@ -211,9 +211,22 @@ function shanti_sarvaka_preprocess_image_style(&$vars) {
  *
  */
 function shanti_sarvaka_preprocess_button(&$vars) {
+	$btn_types = array('default', 'primary', 'info', 'success', 'warning', 'danger', 'link');
 	$element = &$vars['element'];
-	if(!isset($element['#attributes']['class']) || (is_array($element['#attributes']['class']) && !in_array('btn', $element['#attributes']['class']))) {
+	if(!isset($element['#attributes']['class']) || !is_array($element['#attributes']['class'])) {
+		$element['#attributes']['class'] = array();
+	}
+  if(!in_array('btn', $element['#attributes']['class'])) {
 	  $element['#attributes']['class'][] = 'btn';
+	}
+	// Check to see if it has any of the button classes already
+	$hasBtnClass = FALSE;
+	foreach($btn_types as $n => $type) {
+		if(in_array('btn-' . $type, $element['#attributes']['class'])) { $hasBtnClass = TRUE; }
+	}
+	// If not, assign btn-primary to it
+  if(!$hasBtnClass) {
+	  $element['#attributes']['class'][] = 'btn-primary';
 	}
 	if(!empty($element['#button_type'])) {
   	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
