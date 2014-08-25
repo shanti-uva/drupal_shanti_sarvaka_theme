@@ -284,24 +284,6 @@
 	      position: "right",
 	      closeOnExternalClick:false,
 	      closeOnClick:false,
-	      onExtOpen: function(event) {
-	      	if(!$('#sidebar-second').is(":visible")) { 
-		      	$('article.main-content section.content-section').animate({
-		      		'width': $('article.main-content section.content-section').width() - mywidth + 50 
-		      	});
-		      }
-	      },
-	      onExtClose: function(event) {
-	      	if(!$('#sidebar-second').is(":visible")) { 
-		      	$('article.main-content section.content-section').animate({
-		      			'width': $('article.main-content section.content-section').width() + mywidth 
-		      		}, 
-		      		500, 
-		      		function() { $(this).attr('style',''); 
-		      	});
-	      	}
-	      	$('#gen-search .on-flap').css("top", "0px");
-	      },
 	      width: mywidth, // width is set in two places, here and the css
 	      top: 0
 	  });
