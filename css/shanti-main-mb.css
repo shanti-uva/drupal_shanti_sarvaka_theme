@@ -79,12 +79,15 @@ div.collimage{ padding-right:1em;}
 .main-content div:nth-child(2) a:active{ border:none; }
 
 
-.admin-menu .tab-content .content a,
-.admin-menu .tab-content .content a:hover{ /*border:none !important; text-decoration:none !important;*/}
+.vertical-tabs .vertical-tabs-list .vertical-tab-button a,
+.vertical-tabs .vertical-tabs-list li.selected a{ border-bottom:none !important;}
+.vertical-tabs .vertical-tabs-list .vertical-tab-button a:hover,
+.vertical-tabs .vertical-tabs-list li.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
 
-.admin-menu .tab-content ul.vertical-tabs-list li.selected a:hover strong{ text-decoration:none !important;}
-.admin-menu .tab-content ul.vertical-tabs-list li.selected a:hover{ border:none !important; text-decoration:none !important;	}
-.admin-menu .tab-content .vertical-tabs-panes a:hover{ text-decoration:underline;}
+.vertical-tabs .vertical-tabs-list li.selected a:hover,
+.vertical-tabs .vertical-tabs-list .vertical-tab-button a:-webkit-any-link{ text-decoration:none !important;}
+
+/* .admin-menu .vertical-tabs-panes a:hover{ text-decoration: underline;} */
 
 .admin-menu table.features td.sign{ font-size:.75em;}
 
@@ -247,6 +250,7 @@ th.checkbox{
 	padding-left:5px;
 	text-align:left;
 	line-height:1.12em;
+	width:12%;
 }
 
 td.checkbox .form-type-checkbox .icheckbox_minimal-red{
@@ -286,10 +290,6 @@ textarea {
 }
 
 
-#admin-footer input.form-control, 
-#admin-footer .form-textarea-wrapper textarea.form-textarea{
-	height:2.12em;
-}
 
 
 /*--- admin styles ---*/
@@ -303,6 +303,9 @@ textarea {
 }
 */
 
+
+.admin-menu #block-system-help.block.block-system{ margin-top:1.75em;}
+
 .admin-menu .content table td{ padding:5px;}
 
 .admin-menu .icheckbox_minimal-red, 
@@ -312,6 +315,9 @@ textarea {
 	top:-0.24em;
 	left:0;
 }
+
+.admin-menu .table-select-processed th:first-child .icheckbox_minimal-red { margin-left:10px;}
+
 
 .admin-menu .has-tabs .titlearea>div { height:6.5em;}
 
@@ -639,7 +645,7 @@ span.fancytree-node i.shanticon-cancel {
 
 
 
-.tabledrag-toggle-weight-wrapper{ margin-top:-1.32em;}
+.tabledrag-toggle-weight-wrapper{ margin-top:-1em;}
 
 
 tr.odd .form-item, tr.even .form-item{
@@ -902,10 +908,10 @@ ul.ss-full-tabs li.active a:before {
 
 
 
-
-
-
-
+div.fieldset-wrapper{ padding-top:10px;}
+/*
+.form-item.form-type-checkbox.form-item-flexslider-debug{ padding-top:10px;}
+*/
 
 
 
@@ -914,10 +920,14 @@ ul.ss-full-tabs li.active a:before {
 .input-section label.radio-inline:first-child { width: auto; }
 .search-group .radio-inline > div { margin-right:0.25em; }
 */
+#admin-footer input.form-control, 
+#admin-footer .form-textarea-wrapper textarea.form-textarea{
+	width: 95%; display: inline; height:2.12em;
+	background-position: 97% .56em !important;
+}
+/* #edit-masquerade-user-field { width: 95%; display: inline; height:2.12em;} */
 
-#edit-masquerade-user-field { width: 80%;display: inline;}
 
-html.js input.form-autocomplete { background-position: 99% .5em;}
 
 
 
