@@ -241,16 +241,18 @@ div.file-widget.form-managed-file{ padding-left:1.25em;}
 
 th.checkbox,
 td.checkbox{ display:table-cell;}
+
 th.checkbox{
 	padding-right: 20px;
 	padding-left:5px;
 	text-align:left;
+	line-height:1.12em;
 }
 
 td.checkbox .form-type-checkbox .icheckbox_minimal-red{
 	display:block;
 }
-td.checkbox .form-type-checkbox .icheckbox_minimal-red.disabled{ }
+td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-bottom:4px;}
 
 .admin-menu table thead{ }
 .admin-menu table tr{ }
@@ -270,6 +272,14 @@ table.sticky-header th{ padding-left:1em;}
 	background-color: red;
 	border: thin solid red;
 }
+
+#module-filter-tabs a,
+#module-filter-tabs a:hover{ border-bottom:none;}
+
+
+
+
+
 
 textarea {
 	border: 1px solid #ccc;
@@ -434,15 +444,21 @@ ul.primary li a{ margin-right:.25em;}
 /*--- BUTTON Large ---*/
 .btn.btn-primary.btn-lg{
 	margin: 0.75em;	
+	/*
 	height:4em;
 	line-height:2.32em;
+	-------------------temporary 
+	*/
+	height:2.56em;
+	line-height:1.75em;
 }	
+/* ------ temp
 .btn.btn-primary.btn-lg span {	
 	padding: 1em 1.5em;
 	height:5em;
 	line-height:3em;
 }
-
+*/
 
 .views-exposed-form .views-exposed-widget .btn.btn-primary.btn-lg.form-submit{ margin-top:0.25em;}
 
