@@ -360,7 +360,7 @@ function shanti_sarvaka_create_user_menu($um) {
 		}
   });
   foreach($mylinks as $k => $item) {
-	unset($um[$k]);  
+		unset($um[$k]);  
   }
   
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
@@ -418,7 +418,7 @@ function shanti_sarvaka_create_user_menu($um) {
 		$myarray[$n] = array(
 		   'link' => array( 
 				'title'	=> $link['link']['title'],
-				'href' => $link['link']['href'],	
+				'href' => url($link['link']['href']),	
 			),
 			'below' => array(),
 		) ; 
@@ -538,6 +538,13 @@ function shanti_sarvaka_fieldset($variables) {
   if(!isset($element['#attributes']['class']) || !is_array($element['#attributes']['class'])) {
     $element['#attributes']['class'] = array();
   }
+
+	// Change class container-inline to container (specifically for vbo operations but doing in all situations)
+	$key = array_search('container-inline', $element['#attributes']['class']);
+	if($key !== FALSE) {
+		$element['#attributes']['class'][$key] = 'container';
+	}
+	
   $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group'));
   $element['#attributes']['id'] = 'accordion' . $id;
   
