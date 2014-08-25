@@ -212,16 +212,12 @@ function shanti_sarvaka_preprocess_image_style(&$vars) {
  */
 function shanti_sarvaka_preprocess_button(&$vars) {
 	$element = &$vars['element'];
-	//if($vars['element']['#value'] == "Search") {  dpm($vars, 'vars in preprocess button'); }
 	if(!isset($element['#attributes']['class']) || (is_array($element['#attributes']['class']) && !in_array('btn', $element['#attributes']['class']))) {
 	  $element['#attributes']['class'][] = 'btn';
-	  $element['#attributes']['class'][] = 'btn-primary';
-	  $element['#attributes']['class'][] = 'btn-lg';
 	}
 	if(!empty($element['#button_type'])) {
   	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
 	}
-  //$element['#attributes']['type'] = 'submit'; // Why am I making all buttons submit?
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
