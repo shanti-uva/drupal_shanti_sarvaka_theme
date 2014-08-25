@@ -1,3 +1,5 @@
+.breadwrap ol li i{background:#32ccca;}
+
 /*==========
 
 
@@ -56,11 +58,12 @@ this custom set of styles in the modules section
 .avrating h5{ margin-bottom:0.12em;}
 
 ul.inline li a, 
-ul.links.inline li a{ font-weight:bold; } /*--- targeting login link for now, see if this oerks ---*/
+div.compact-link a,
+ul.links.inline li a,
+.tabledrag-toggle-weight-wrapper a{ font-weight:bold; } /*--- targeting login link for now, see if this oerks ---*/
 
-.breadwrap ol li i{background:#32ccca;}
 
-
+#edit-filters--2.filters.form-wrapper{ float:none;} /*--- admin page viewing / adding users ---*/
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
@@ -235,7 +238,28 @@ div.file-widget.form-managed-file{ padding-left:1.25em;}
 .admin-menu .radio, 
 .admin-menu .checkbox{ padding-left:10px; padding-right:10px; margin-top:0; margin-bottom:0;}
 */
-.admin-menu th{ border-bottom:none;}
+
+th.checkbox,
+td.checkbox{ display:table-cell;}
+th.checkbox{
+	padding-right: 20px;
+	padding-left:5px;
+	text-align:left;
+}
+
+td.checkbox .form-type-checkbox .icheckbox_minimal-red{
+	display:block;
+}
+td.checkbox .form-type-checkbox .icheckbox_minimal-red.disabled{ }
+
+.admin-menu table thead{ }
+.admin-menu table tr{ }
+.admin-menu table tr td.permission .form-item{ 
+	line-height:normal;
+	margin-top:0;
+}
+
+
 .admin-menu tr .form-item{ line-height:2.5em}
 
 table.sticky-table,
@@ -252,7 +276,10 @@ textarea {
 }
 
 
-
+#admin-footer input.form-control, 
+#admin-footer .form-textarea-wrapper textarea.form-textarea{
+	height:2.12em;
+}
 
 
 /*--- admin styles ---*/
@@ -745,8 +772,6 @@ ul.ss-full-tabs {
 ul.ss-full-tabs li {
 	width: 50%;
 	background-color: white;
-	  -webkit-transition: color 200ms;
-	transition: color 200ms;
 }
 
 ul.ss-full-tabs li a {
@@ -757,8 +782,6 @@ ul.ss-full-tabs li a {
 	font-weight: 777;
 	color: #999;
 	border-radius: 0;
-	  -webkit-transition: color 200ms;
-	transition: color 200ms;
 }
 ul.ss-full-tabs li a:hover{ border: none !important;}
 
