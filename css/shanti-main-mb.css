@@ -78,15 +78,12 @@ div.collimage{ padding-right:1em;}
 .main-content div:nth-child(2) a:active{ border:none; }
 
 
-.vertical-tabs .vertical-tabs-list .vertical-tab-button a,
-.vertical-tabs .vertical-tabs-list li.selected a{ border-bottom:none !important;}
-.vertical-tabs .vertical-tabs-list .vertical-tab-button a:hover,
-.vertical-tabs .vertical-tabs-list li.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
+.vertical-tab-button a,
+.vertical-tab-button.selected a{ border-bottom:none !important;outline: 0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.vertical-tab-button a:hover,
+.vertical-tab-button.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
 
-.vertical-tabs .vertical-tabs-list li.selected a:hover,
-.vertical-tabs .vertical-tabs-list .vertical-tab-button a:-webkit-any-link{ text-decoration:none !important;}
-
-/* .admin-menu .vertical-tabs-panes a:hover{ text-decoration: underline;} */
+/* html .main-content .vertical-tabs .vertical-tabs-list li.vertical-tab-button a:-webkit-any-link{ text-decoration:none !important;} */
 
 .admin-menu table.features td.sign{ font-size:.75em;}
 
@@ -255,6 +252,13 @@ a.tabledrag-handle .handle:before{
 }
 a.tabledrag-handle,
 a.tabledrag-handle:hover{ border:none !important;}
+
+a.admin-update, 
+a.features-storage, 
+span.features-storage, 
+span.features-component-list span{
+	-webkit-border-radius:0; border-radius:0;
+}
 
 
 div.file-widget.form-managed-file{ padding-left:1.25em;}
@@ -700,11 +704,11 @@ form .field-multiple-table td.field-multiple-drag{
 table.tableheader-processed td{ /*width:25%;*/} /*---- testing this ----*/
 
 
+#edit-name.form-control{ margin-top:0.5em;}
 
+#edit-actions.form-actions{ margin-top:1em;}
 
-
-
-
+input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
 
 #admin-menu{ 	
 	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
@@ -715,7 +719,7 @@ table.tableheader-processed td{ /*width:25%;*/} /*---- testing this ----*/
 }
 
 
-.tabledrag-toggle-weight-wrapper{ margin-top:-1em;}
+.tabledrag-toggle-weight-wrapper{ margin-top:-0.5em;}
 
 
 tr.odd .form-item, tr.even .form-item{
