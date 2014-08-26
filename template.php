@@ -627,6 +627,10 @@ function shanti_sarvaka_button($variables) {
   } else if(strpos(strtolower($text), 'collection') > 0) {
     $icon = '<i class="icon shanticon-texts"></i> ';
   } 
+	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
   element_set_attributes($element, array('id', 'name', 'value'));
 
   return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . $text . '</button>';
