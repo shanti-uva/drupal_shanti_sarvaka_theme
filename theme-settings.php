@@ -42,7 +42,12 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#description'   => t('Icon in title banner for this site. Use the class name as listed on the <a href="@link" target="_blank">Shanticon Reference Page</a> without the "shanticon-" prefix.', 
         array("@link" => $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/fonts/shanticon/bin/demo.html')),
   );
-  
+  $form['shanti_sarvaka_slogan'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Site slogan'),
+    '#default_value' => theme_get_setting('shanti_sarvaka_slogan'),
+    '#description'   => t("The slogan to display on the header"),
+  );
   /** old method
   $form['shanti_sarvaka_icon_code'] = array(
     '#type'          => 'textfield',
