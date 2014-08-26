@@ -207,6 +207,20 @@ function shanti_sarvaka_preprocess_image_style(&$vars) {
 }
 
 /**
+ * Implements theme_preprocess_fieldset
+ * 		Changes class from container-inline to container
+ */
+function shanti_sarvaka_preprocess_fieldset(&$vars) {
+	if(!empty($vars['element']['#attributes']['class'])) {
+		foreach($vars['element']['#attributes']['class'] as $n => &$cnm) {
+			if($cnm == 'container-inline') {
+				$cnm = 'container';
+			}
+		}
+	}
+}
+
+/**
  * Modify buttons so they have Bootstrap style .btn classess with BEM syntax for variations
  *
  */
@@ -533,9 +547,7 @@ function shanti_sarvaka_carousel($variables) {
  **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
- /* if(strpos($element['#title'], 'Access') > -1)  {
-    dpm($element);
-  }*/
+	
   // If not collapsible or no title for heading then just format as normal field set
   if( empty($element['#collapsible']) || empty($element['#title']) ) {
     return theme_fieldset($variables);
@@ -551,16 +563,16 @@ function shanti_sarvaka_fieldset($variables) {
   if(!isset($element['#attributes']['class']) || !is_array($element['#attributes']['class'])) {
     $element['#attributes']['class'] = array();
   }
-
-	// Change class container-inline to container (specifically for vbo operations but doing in all situations)
-	$key = array_search('container-inline', $element['#attributes']['class']);
-	if($key !== FALSE) {
-		$element['#attributes']['class'][$key] = 'container';
+	
+	foreach($element['#attributes']['class'] as $n => &$class) {
+		if($class == 'container-inline') {
+			$class = 'container';
+		}
 	}
 	
   $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group'));
   $element['#attributes']['id'] = 'accordion' . $id;
-  
+
   // Create markup
   $output = '<div ' . drupal_attributes($element['#attributes']) . '> 
   <div class="panel panel-default">

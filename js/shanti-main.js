@@ -259,7 +259,7 @@
 	     		self = $(this).detach();
 	     		label.prepend(self);
 	     	}
-	      self.iCheck({
+	      self.icheck({
 	          checkboxClass: "icheckbox_minimal-red",
 	          radioClass: "iradio_minimal-red",
 	          insert: "<div class='icheck_line-icon'></div>"
