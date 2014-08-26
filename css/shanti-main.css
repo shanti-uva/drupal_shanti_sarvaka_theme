@@ -1630,22 +1630,24 @@ div.messages ul li {
 .panel-group{
   border:none;
   width:100%;
-  background-color:white;
+  margin-top:0;
   /*margin:-10px -20px 0 -2px;*/
 }
 .panel-body{ 
-  background-color:#f0f0f0;
+  background-color:#f9f9f9;
   border:none; 
   border-radius:0; 
   width:100%; 
 }
-.panel.panel-default { overflow:visible; }
+.panel.panel-default { overflow:visible; background:transparent !important;}
 .panel-default .panel-heading{
-	background-image:none;
-	background:#f2f2f2;
+	background-image: none;
+	background: transparent;
   margin:0;
   padding:0;
 }
+.panel-default>.panel-heading{ background:transparent !important;}
+
 .panel-group .panel+.panel{ margin-top:0;}
 .panel-group .panel{ 
   border:none;
@@ -1653,20 +1655,15 @@ div.messages ul li {
   box-shadow:none;
   border-radius:0; 
   width:100%; 
-  background-color:white;
+  /* background-color:white; */
   margin:0;
   padding:0;
 }
 .panel-group,
-.panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:#f7f7f7; border:none;}
+.panel-default .panel-heading+.panel-collapse .panel-body,
+.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0;border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
-.panel-group{
-  border:none;
-  width:100%;
-  margin-top:0;
-  /*margin:-10px -20px 0 -2px;*/
-}
+
 
 .panel-group .panel-heading i{
 	font-size:80%;
@@ -1677,7 +1674,7 @@ div.messages ul li {
 
 .panel-group,
 .panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000); }
+.panel-group .panel-heading+.panel-collapse .panel-body{ /*background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000);*/ }
 /*
 .admin-menu .panel .panel-body{ background:#f7f7f7 !important;}
 */
