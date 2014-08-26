@@ -60,8 +60,7 @@ this custom set of styles in the modules section
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight,
-.tabledrag-toggle-weight-wrapper a{ font-weight:bold; } /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ font-weight:bold; font-weight:700; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 
 
@@ -432,6 +431,8 @@ html input[type="button"].form-submit:hover,
 */
 
 
+input[type=file].form-file{ margin-bottom:5px;}
+
 html input[type="button"].form-submit{
 	font-size: 70%;
 	display:inline-block;
@@ -526,7 +527,7 @@ div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
 
 
 
-
+button.field-add-more-submit{ margin-left:1em;}
 
 
 /*
@@ -595,7 +596,10 @@ div.sidebar { z-index:1;}
 
 
 
-
+.main-content table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
+	width:70px;
+	margin-left:20px;
+}
 
 
 
@@ -797,7 +801,7 @@ div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; bord
 	border:none; 
 	border-top:1px solid #fff; 
 	/*margin:0 -2em; */
-	padding:0 2em; 
+	padding:0; 
 }
 .field-widget-options-select{
 	border-bottom:1px solid #ddd; 
@@ -1081,7 +1085,7 @@ div.fieldset-wrapper{ padding-top:10px;}
   margin-bottom:0;
   font-size:90%;
   padding-left:.44em;
-  font-family: museo-sans-900, "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-weight:500;
   text-transform: uppercase;
   margin-bottom: 10px;

@@ -79,7 +79,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   /* padding: 0 0 30px 18px; */ 
   padding: 0.5em 2em 5em 2em;
   min-height:100%;
-  font-family: museo-sans-300, "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 /*--- content elements ---*/
@@ -255,13 +255,13 @@ input[type="text"] {
   -webkit-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);
   box-shadow: inset 0px 1px 7px -4px rgba(0,0,0,1);
-  font-family: museo-sans-300, sans-serif;
+  "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
 }
 label.option div div {
   background: none;
 }
 label {
-  font-family: museo-sans-900, sans-serif;
+  "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
 }
 option:hover,
 option:checked,
