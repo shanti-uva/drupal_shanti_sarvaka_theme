@@ -133,7 +133,7 @@ input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; lin
 
 
 
-html.js input.form-autocomplete{ background-position: 99% 0.5em !important;}
+html.js input.form-autocomplete{ background-position: 99% 0.5em;}
 
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
@@ -824,7 +824,15 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 
 
 
-.views-exposed-form label{ margin-bottom:0;font-size:90%;padding-left:.44em; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500;}
+.views-exposed-form label{
+  margin-bottom:0;
+  font-size:90%;
+  padding-left:.44em;
+  font-family: museo-sans-900, "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-weight:500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .views-exposed-form .views-exposed-widget{
 	padding-top:0;
