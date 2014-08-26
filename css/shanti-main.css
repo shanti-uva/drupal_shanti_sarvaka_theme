@@ -1,6 +1,7 @@
 /*---------------------*/
 /*--- BEGIN font face ---*/
 /*---------------------*/
+/*
 @font-face {
   font-family: 'museo-sans-300';
   src: url('../fonts/Museosans/museosans-300-webfont.eot');
@@ -41,6 +42,7 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
 /*--- END font face ---*/
 
 html{ -webkit-font-smoothing: antialiased; overflow-y:scroll;}
