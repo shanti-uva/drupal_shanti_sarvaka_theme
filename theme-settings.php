@@ -11,6 +11,12 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#default_value' => theme_get_setting('shanti_sarvaka_shanti_site'),
     '#description'   => t("Check if you want Shanti Logo and title to appear in top bar"),
   );
+  $form['shanti_sarvaka_site_body_tag'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Unique Body Tag for Site'),
+    '#default_value' => theme_get_setting('shanti_sarvaka_site_body_tag'),
+    '#description'   => t("A unique class identifying the site to add to the body tag"),
+  );
   $form['shanti_sarvaka_default_title'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Default Title for Banner'),

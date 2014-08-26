@@ -1,3 +1,70 @@
+.breadwrap ol li i{background:#32ccca;}
+
+/*==========
+
+
+div.video-row {
+	margin-bottom: 18px; 
+}
+
+h3.node-desc {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+h4.node-desc-type {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+div.avinfo button.btn.play-transcript-btn {
+	margin-bottom: 12px;
+}
+
+button.play-transcript-btn i.shanticon {
+	margin-right: 6px;
+	padding: 18px 6px 6px 8px;
+	vertical-align: top;
+}
+
+button.play-transcript-btn span {
+	font-size: small;
+}
+
+div.row.avdate, div.row.avduration {
+	margin: 6px 0px 6px -10px;
+	color: #777;
+}
+
+div.collimage {
+	max-width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+
+div.avinfo {
+	margin-left: 20px;
+}
+
+these styles were migrated from mediabase.css to help monitor 
+this custom set of styles in the modules section 
+
+============*/
+
+.avdate i,
+.avduration i{ margin-right:0.25em;}
+
+.avrating h5{ margin-bottom:0.12em;}
+
+ul.inline li a, 
+div.compact-link a,
+ul.links.inline li a,
+.tabledrag-toggle-weight-wrapper a{ font-weight:bold; } /*--- targeting login link for now, see if this oerks ---*/
+
+
+#edit-filters--2.filters.form-wrapper{ float:none;} /*--- admin page viewing / adding users ---*/
+
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
@@ -12,12 +79,15 @@ div.collimage{ padding-right:1em;}
 .main-content div:nth-child(2) a:active{ border:none; }
 
 
-.admin-menu .tab-content .content a,
-.admin-menu .tab-content .content a:hover{ /*border:none !important; text-decoration:none !important;*/}
+.vertical-tabs .vertical-tabs-list .vertical-tab-button a,
+.vertical-tabs .vertical-tabs-list li.selected a{ border-bottom:none !important;}
+.vertical-tabs .vertical-tabs-list .vertical-tab-button a:hover,
+.vertical-tabs .vertical-tabs-list li.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
 
-.admin-menu .tab-content ul.vertical-tabs-list li.selected a:hover strong{ text-decoration:none !important;}
-.admin-menu .tab-content ul.vertical-tabs-list li.selected a:hover{ border:none !important; text-decoration:none !important;	}
-.admin-menu .tab-content .vertical-tabs-panes a:hover{ text-decoration:underline;}
+.vertical-tabs .vertical-tabs-list li.selected a:hover,
+.vertical-tabs .vertical-tabs-list .vertical-tab-button a:-webkit-any-link{ text-decoration:none !important;}
+
+/* .admin-menu .vertical-tabs-panes a:hover{ text-decoration: underline;} */
 
 .admin-menu table.features td.sign{ font-size:.75em;}
 
@@ -26,7 +96,7 @@ div.collimage{ padding-right:1em;}
 .main-content .show-more a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;
 font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
 .main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000) !important; }
-.main-content .show-more a:active{ border:none; }
+.main-content .show-more a:active{ border:none !important; }
 .main-content .show-more:after{ 	
 	font-size: 0.75em;
 	line-height: 0.75em;
@@ -75,18 +145,12 @@ form table td.label div.description {
 .admin-menu .form-type-password-confirm .password-strength-text{ position:relative; top:.62em;}
 
 
-input.form-control.form-text {
-	display: inline-block;
-	font-size:1em;
-	line-height:1.93em;
-	height:2em;
-}
 
 input.form-control,
 .form-textarea-wrapper textarea.form-textarea{
 	color:#777;
 	border: 1px solid #ccc;
-	border-radius: 25px;
+	border-radius: 1.5em;
 	background-clip: padding-box;
 	font-size:1.06em;
 	height:2em;
@@ -102,6 +166,7 @@ input.form-control,
 	-webkit-transition-duration: 400ms;
 	transition-property: all;
 	transition-duration: 400ms;
+	background-position: 99% 0.62em !important;
 	/*font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;*/
 }
 input.form-control:hover,
@@ -118,7 +183,7 @@ input.form-control:focus,
 	background-clip: padding-box;
 }
 
-input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; line-height:1.25em; height:1.5em; padding:0.56em 1em 0.5em !important; position:relative; top:1px;}
+input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; line-height:1.5em; height:1.75em; padding:0.75em 1em !important; position:relative; top:1px;}
 
 .bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
 .field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
@@ -132,15 +197,13 @@ input.admin-menu-search.form-control.form-text{ font-size:1.06em !important; lin
 }
 
 
-
-html.js input.form-autocomplete{ background-position: 99% 0.5em;}
-
+html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
 #admin-menu .dropdown .admin-menu-toolbar-category > a:hover { color:#fff;}
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail{ background:#f5f5f5; color:#000; text-shadow:none;}
-
+#admin-menu .dropdown .admin-menu-toolbar-category.admin-menu-icon > a.active-trail{ background:#777;}
 
 
 .form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
@@ -176,7 +239,31 @@ div.file-widget.form-managed-file{ padding-left:1.25em;}
 .admin-menu .radio, 
 .admin-menu .checkbox{ padding-left:10px; padding-right:10px; margin-top:0; margin-bottom:0;}
 */
-.admin-menu th{ border-bottom:none;}
+
+th.checkbox,
+td.checkbox{ display:table-cell;}
+
+th.checkbox{
+	padding-right: 20px;
+	padding-left:5px;
+	text-align:left;
+	line-height:1.12em;
+	width:12%;
+}
+
+td.checkbox .form-type-checkbox .icheckbox_minimal-red{
+	display:block;
+}
+td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-bottom:4px;}
+
+.admin-menu table thead{ }
+.admin-menu table tr{ }
+.admin-menu table tr td.permission .form-item{ 
+	line-height:normal;
+	margin-top:0;
+}
+
+
 .admin-menu tr .form-item{ line-height:2.5em}
 
 table.sticky-table,
@@ -188,10 +275,17 @@ table.sticky-header th{ padding-left:1em;}
 	border: thin solid red;
 }
 
+#module-filter-tabs a,
+#module-filter-tabs a:hover{ border-bottom:none;}
+
+
+
+
+
+
 textarea {
 	border: 1px solid #ccc;
 }
-
 
 
 
@@ -207,6 +301,9 @@ textarea {
 }
 */
 
+
+.admin-menu #block-system-help.block.block-system{ margin-top:1.75em;}
+
 .admin-menu .content table td{ padding:5px;}
 
 .admin-menu .icheckbox_minimal-red, 
@@ -216,6 +313,9 @@ textarea {
 	top:-0.24em;
 	left:0;
 }
+
+.admin-menu .table-select-processed th:first-child .icheckbox_minimal-red { margin-left:10px;}
+
 
 .admin-menu .has-tabs .titlearea>div { height:6.5em;}
 
@@ -346,17 +446,54 @@ ul.primary li a{ margin-right:.25em;}
 
 
 /*--- BUTTON Large ---*/
-.views-exposed-form .views-exposed-widget .btn.btn-primary.btn-lg.form-submit{ margin-top:0.25em;}
 .btn.btn-primary.btn-lg{
 	margin: 0.75em;	
+	/*
 	height:4em;
 	line-height:2.32em;
+	-------------------temporary 
+	*/
+	height:2.56em;
+	line-height:1.75em;
 }	
+/* ------ temp
 .btn.btn-primary.btn-lg span {	
 	padding: 1em 1.5em;
 	height:5em;
 	line-height:3em;
 }
+*/
+
+.views-exposed-form .views-exposed-widget .btn.btn-primary.btn-lg.form-submit{ margin-top:0.25em;}
+
+
+/*--- custom play transcript --*/
+div.avinfo .btn-primary.play-transcript-btn.form-submit{ 
+	margin: 0.75em 0.75em 0.75em 0;	
+	height:4em;
+	line-height:2.32em;	
+}
+div.avinfo .btn-primary.play-transcript-btn.form-submit span{ 
+	padding: 1.12em 3em 1em;
+	height:5em;
+	line-height:1.5em;
+	font-size: 0.82em;
+	letter-spacing:0.12em;
+}
+div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
+	text-align:center;
+	height:4em;
+	width:3em; 
+	font-size:150%;
+	line-height:1.75em;
+	padding:0.5em;
+	margin:0;
+	float:left;
+	display:inline-block;
+}
+
+
+
 
 
 
@@ -496,36 +633,17 @@ span.fancytree-node i.shanticon-cancel {
 
 
 
-
-
-
-
-
-
-
-
-/* Admin */
-@media (max-width: 1040px) {
-	/* necessary styles to make admin menu work at smaller screen sizes */
-	#admin-menu .dropdown .admin-menu-account, 
-	#admin-menu .dropdown .admin-menu-users, 
-	#admin-menu .dropdown .admin-menu-search {
-		display: none;
-	}
-}
-
-
 #admin-menu{ 	
-	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.42);
-	box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.42);
+	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
+	box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
 	border-collapse:separate;
-	background:#444;
+	background:#333;
 	background-image:none;
 }
 
 
 
-.tabledrag-toggle-weight-wrapper{ margin-top:-1.32em;}
+.tabledrag-toggle-weight-wrapper{ margin-top:-1em;}
 
 
 tr.odd .form-item, tr.even .form-item{
@@ -624,13 +742,6 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 }
 
 
-.admin-menu .panel .panel-group,
-.admin-menu .panel .panel-body,
-.admin-menu .panel.panel-default{ background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000); }
-
-.admin-menu .panel .panel-body{ background:#f7f7f7 !important;}
-
-
 
 
 /*--- show-hide toggle button ---*/
@@ -685,24 +796,15 @@ ul.ss-full-tabs li {
 
 ul.ss-full-tabs li a {
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	border: none;
+	border: none !important;
 	text-align: center;
 	font-size: larger;
 	font-weight: 777;
 	color: #999;
 	border-radius: 0;
 }
+ul.ss-full-tabs li a:hover{ border: none !important;}
 
-ul.ss-full-tabs li.active a:after, ul.ss-full-tabs li.active a:before {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
 
 /*
 ul.ss-full-tabs li.active a:after {
@@ -712,13 +814,22 @@ ul.ss-full-tabs li.active a:after {
 	margin-left: -15px;
 }
 */
-ul.ss-full-tabs>li>a:hover, ul.ss-full-tabs>li.active>a:hover {
-	border: none;
-}
+ul.ss-full-tabs li.active a { color: white;}
 
-ul.ss-full-tabs li.active a {
-	border: none;
-	color: white;
+ul.ss-full-tabs>li>a:hover, 
+ul.ss-full-tabs>li.active>a:hover { border: none !important;}
+ul.ss-full-tabs>li.active>a:hover { color: white !important;}
+
+ul.ss-full-tabs li.active a:after, 
+ul.ss-full-tabs li.active a:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
 }
 /** End of Tabs section **/
 	
@@ -795,10 +906,10 @@ ul.ss-full-tabs li.active a {
 
 
 
-
-
-
-
+div.fieldset-wrapper{ padding-top:10px;}
+/*
+.form-item.form-type-checkbox.form-item-flexslider-debug{ padding-top:10px;}
+*/
 
 
 
@@ -807,18 +918,14 @@ ul.ss-full-tabs li.active a {
 .input-section label.radio-inline:first-child { width: auto; }
 .search-group .radio-inline > div { margin-right:0.25em; }
 */
-
-#edit-masquerade-user-field { width: 80%;display: inline;}
-
-html.js input.form-autocomplete { background-position: 99% .5em;}
-
-
-
-
-
-.view-filters .views-exposed-widget.views-widget-filter-status{
-
+#admin-footer input.form-control, 
+#admin-footer .form-textarea-wrapper textarea.form-textarea{
+	width: 95%; display: inline; height:2.12em;
+	background-position: 97% .56em !important;
 }
+/* #edit-masquerade-user-field { width: 95%; display: inline; height:2.12em;} */
+
+
 
 
 
@@ -907,6 +1014,40 @@ html.js input.form-autocomplete { background-position: 99% .5em;}
 	background:transparent;
 }
 */
+
+
+/* Admin 
+@media (max-width: 1040px) {
+	#admin-menu .dropdown .admin-menu-account, 
+	#admin-menu .dropdown .admin-menu-users, 
+	#admin-menu .dropdown .admin-menu-search {
+		display: none;
+	}
+}
+*/
+
+/*---- cusotmize mediabase search panel ----*/
+.input-section .search-group{ margin-top:-1em;}
+.input-section .search-group .form-group{ padding-left:1.5em;}
+.input-section .input-group .input-group-btn{ position:absolute; right:13px;}
+.advanced-view{ padding-top:0.5em;}
+
+.view-section .treeview h2{ font-size:1.5em;}
+h2 button.toggle-facet-label-search{
+	float:left;
+	margin-left:0.62em;
+	margin-right:.5em;
+	margin-bottom:0.5em;
+	position:relative;
+	top:0.25em;
+}
+
+
+
+
+
+
+
 
 
 

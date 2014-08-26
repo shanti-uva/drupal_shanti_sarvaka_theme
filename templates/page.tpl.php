@@ -89,6 +89,7 @@
           <?php if (isset($messages)) { ?><div class="messages"><?php print $messages; ?></div> <?php } ?>
             <div class="tab-content">
               <article class="tab-pane main-col active" id="tab-overview">
+              	 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                  <?php print render($page['content']); ?>
               </article>
             </div>

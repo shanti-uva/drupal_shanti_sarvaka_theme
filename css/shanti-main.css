@@ -84,7 +84,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 
 /*--- content elements ---*/
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ 
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
+	color: #444; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
 }
 
 .main-content input.form-control{
@@ -421,7 +421,8 @@ select:focus option:checked:hover {
   background: #4c4b51;
   color: #fff;
   text-transform: uppercase;
-  padding: 0;  
+  padding: 0 0 0.62em; 
+  font-weight: bold; 
   font-weight: 700;
   border-bottom:1px solid #777;
   white-space:nowrap;
@@ -437,13 +438,13 @@ select:focus option:checked:hover {
   margin: 0 auto;
   text-align:center;
   list-style-type: none;
-  margin-bottom:15px !important;
-  float:left;
+  margin-bottom:10px !important;
 }
 .collections ul li {
   margin: 0;
   float:left;
   line-height:4.5em;
+  width:20%;
 }
 .collections ul li a { 
   color: #aaa;
@@ -472,8 +473,8 @@ select:focus option:checked:hover {
   margin: 10px 0 15px !important;
   letter-spacing: 0.32em;
 }
-.collections button.close {
-  color: #fff;
+.collections button {
+  color: #ccc;
   background:transparent;
   background-image:none;
   width:25;
@@ -494,8 +495,8 @@ select:focus option:checked:hover {
 	transition: color 200ms;
 	font-family:'shanticon';
 }
-.collections button.close:hover {
-	color: #fff;
+.collections button:hover {
+	color:#eee;
 }
 /*--- END collections panel ---*/
 
@@ -516,20 +517,18 @@ select:focus option:checked:hover {
 	position:relative; 
 	z-index:1;
 }
-.titlearea .page-title {  
+.titlearea h1.page-title {  
   font-weight: normal;
   font-size:1.68em;
   line-height:1.68em;
   text-shadow:0 0 3px rgba(50,50,50, 0.225);
   margin:0;
   padding:0;
+  color:#f9f9f9;
 }
-.titlearea .page-title span { position:relative; top: 0.18em;}
-.titlearea .page-title > em {   
-
-  
-}
-.main-content .titlearea .page-title .icon {
+.titlearea h1.page-title span { position:relative; top: 0.18em;}
+.titlearea .page-title > em {  }
+.main-content .titlearea h1.page-title .icon {
 	/*padding:5px 9px 5px 7px;*/
   font-size:80%;
 	height:1.75em;
@@ -541,7 +540,7 @@ select:focus option:checked:hover {
 	float:left;
 	position:relative; top: 0.38em; z-index:10; display:inline-block; background: rgba(0, 0, 0, 0.175);
 }
-.main-content .titlearea .page-title .icon:before{
+.main-content .titlearea h1.page-title .icon:before{
 	background:transparent !important;
 	position:relative; left:0.06em; z-index:15; 
 }
@@ -555,7 +554,7 @@ select:focus option:checked:hover {
 	jBreadCrumbCustom Plugin Styles
 =======================================*/
 .breadwrap {
-  margin: .32em 0 0 2em;
+  margin: .25em 0 0 2em;
   padding: 0;
   display: block;
   height: 1.18em;
@@ -585,16 +584,14 @@ select:focus option:checked:hover {
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   *zoom: 1;
 }
-.breadwrap .breadcrumb li.first,
 .breadwrap .breadcrumb li:first-child{
+  font-weight:700;
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size:1.32em;
-  height: 1.5em;
+  height: 1.75em;
   line-height:1.5em;
   padding:0;
-  margin:0 0.68em 0 0;
-  font-style:normal;
-  font-weight:500;
+  margin:0;
   position:relative;
   top:0;
   color:#f5f5f5;
@@ -614,33 +611,41 @@ select:focus option:checked:hover {
   float: none;
   position: relative;
   font-size: 1.25em;
-  height: 1.5em;
+  height: 1.75em;
   line-height: 1.06em;
   overflow: hidden;
   margin: 0;
   padding: 0 18px 0 0;
   text-shadow:0 0 1px rgba(50,50,50, 0.225);
 }
+.breadwrap .breadcrumb li:first-child{
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size:1.32em;
+  height: 1.75em;
+  line-height:1.5em;
+  padding:0;
+  margin:0;
+  position:relative;
+  top:0;
+}
 
 .breadwrap ol li a {
   display: block;
   float: left;
   font-size: 0.92em;
-  color: #f0f0f0;
+  color: #fff;
   text-decoration: none;
-	height: 1.5em;
-	line-height: 1.06em;
+	height: 1.18em;
+	line-height: 1.18em;
 	overflow: hidden;
-	margin:0;
-	padding:0;
-	font-weight:bold;
+	font-weight:500;
 }
-.breadwrap ol li a:hover{ color:#fff; }
+.breadwrap .breadcrumb li:first-child a{ margin-right:0.32em; font-weight:700;}
+.breadwrap .breadcrumb li:first-child a:after{ /* content:':'; */ }
+.breadwrap ol li a:hover{  }
+
 .breadwrap ul li span.wholegrain,
-.breadwrap ol li span.wholegrain {
-  display: block;
-  overflow: hidden;
-}
+.breadwrap ol li span.wholegrain { display: block; overflow: hidden;}
 
 .breadwrap ol li i{
 	color:#eee;
@@ -648,11 +653,12 @@ select:focus option:checked:hover {
 	position: absolute;
 	right: 5px;
 	top: -3px;
-	z-index: 10000;
+	z-index: 10;
 	font-family:'FontAwesome';
 	font-size:1.68em;
-	font-weight:bold;
-	line-height:1em;
+	font-weight:normal;
+	font-weight:100;
+	line-height:0.88em;
 	height:1em;
 	width:0.38em;
 	overflow:visible;
@@ -664,27 +670,14 @@ select:focus option:checked:hover {
   top:0;
   left:0;
 }
+.breadwrap ol li:last-child a{ color:#eee; font-size: 0.92em; cursor:default;}
 
-.breadwrap ol li.last,
-.breadwrap ol li:last-child{ 
-  color:#fff;
-	background: none;
-	position:relative; top: -0.82em;
-	margin-right: 0;
-	padding-right: 0;
-	height: 1.5em;
-	line-height: 1em;
-	font-size:1.18em;
-}
-.breadwrap ol li.last i,
-.breadwrap ol li:last-child i{ 
-	background:transparent;
-}
-.breadwrap ol li.last i:before,
-.breadwrap ol li:last-child i:before{
+.breadwrap ol li:last-child i{ background:transparent;}
+.breadwrap ol li:last-child i:before,
+.breadwrap ol li:first-child i:before{
 	content: " ";
 	display:none;
-	background: none;
+	background: transparent;
 	width:0;
 	height:0;
 }
@@ -744,6 +737,9 @@ select:focus option:checked:hover {
 	background:#fff;
 	-webkit-transition: background-color 200ms;
 	transition: background-color 200ms;
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+	font-weight:bold; 
+	font-weight:700;
 }
 .content-resources ul.nav-pills li a,
 .content-resources ul.nav-pills li a:hover {
@@ -784,7 +780,7 @@ select:focus option:checked:hover {
 	position:relative; top:-1px;
 	font-size: .82em;
 	font-family: sans-serif;
-	line-height: 1em;
+	line-height: 0.82em;
 	height: 1.63em;
 	text-shadow: 0 1px 1px #444;
   display: inline-block;
@@ -1102,23 +1098,17 @@ ul.menu-main>li>a:first-child {
 /*----- Audio/Video Thumbnails -------*/
 /*------------------------------------*/
 
-/* THumbnail Grid with (right) column */
-.search-results {
-	width: 100%;
-	-moz-column-width: 11em;
- -webkit-column-width: 11em;
- -moz-column-gap: .63em;
- -webkit-column-gap: .63em;
-}
-/* Gallery and thumbnails */
+.search-results,
 .shanti-gallery{
 	width: 100%;
-	float:left;
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
  -moz-column-width: 12em;
  -moz-column-gap: 1em;
+ column-width: 12em;
+ column-gap: 1em;
 }
+
 .search-results a,
 .search-results a:hover,
 .shanti-gallery a,
@@ -1132,7 +1122,7 @@ ul.menu-main>li>a:first-child {
   max-width: 11.75em;
 	height: 19.5em;
 	padding: 0;
-  margin:  0.25em 0.38em 1.25em;
+  margin:  0.25em 0.5em 1.25em;
 	border-radius:.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
@@ -1260,11 +1250,11 @@ ul.menu-main>li>a:first-child {
 	padding: .38em .75em .5em 1em;
 }
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { margin-left:-0.32em; line-height: 1.25em; margin-top: 0.38em;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold; padding:2px;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { line-height: 1.25em; margin:0 0.5em 0.5em -0.25em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,
+/*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before,
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-created span:before{
 	font-family: 'shanticon';
@@ -1275,14 +1265,14 @@ ul.menu-main>li>a:first-child {
 	left:-0.06em;
 	top:0;
 	margin-right:0.44em;
-	margin-left: 0.25em;
+	margin-left: 0.12em;
 	
 }
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title:hover a:before{ color:#555;}
+/*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title:hover a:before{ color:#555;}
 .shanti-thumbnail.audio .shanti-thumbnail-field.shanti-field-title a:before{
 	content: "\e60a";
 	margin-right:0.5em;
-}
+}*/
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before{
 	content: "\e61c";
 }
@@ -1299,7 +1289,7 @@ ul.menu-main>li>a:first-child {
 	margin-top: 0.32em;
 }
 
-.shanti-thumbnail .footer-wrap {
+.shanti-thumbnail .footer-wrap { 
 	position:absolute;
 	bottom:0;
 	background:#f6f6f6;
@@ -1450,7 +1440,7 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: 0.25em 4em .25em 0;
+  margin: 0.25em 4em .75em 0;
   font-size:80%;
   font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
@@ -1545,7 +1535,7 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em;}
 
 
 /*--- BEGIN System Messages ---*/
-div.messages > div{ padding: 0.44em 1em 0.62em;}
+div.messages > div{ padding: 0.44em 1em 0.5em;}
 
 .messages a{ font-weight:bold;}
 .messages a:hover{}
@@ -1619,10 +1609,15 @@ div.messages ul li {
 }
 /*--- END System Messages ---*/
 
+/*
+.main-content h1.element-invisible,
+.main-content h2.element-invisible,
+.main-content h3.element-invisible,
+.main-content h4.element-invisible,
+.main-content h5.element-invisible,
+.main-content h6.element-invisible{ display:none;}
 
-
-
-
+*/
 
 
 
@@ -1644,6 +1639,7 @@ div.messages ul li {
   border-radius:0; 
   width:100%; 
 }
+.panel.panel-default { overflow:visible; }
 .panel-default .panel-heading{
 	background-image:none;
 	background:#f2f2f2;
@@ -1663,7 +1659,7 @@ div.messages ul li {
 }
 .panel-group,
 .panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:transparent; border:none;}
+.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:#f7f7f7; border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
 .panel-group{
   border:none;
@@ -1678,6 +1674,13 @@ div.messages ul li {
 	top:0;
 	margin-right:.5em;
 }
+
+.panel-group,
+.panel-default>.panel-heading+.panel-collapse .panel-body,
+.panel-group .panel-heading+.panel-collapse .panel-body{ background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000); }
+/*
+.admin-menu .panel .panel-body{ background:#f7f7f7 !important;}
+*/
 
 
 
@@ -2144,7 +2147,7 @@ div.messages ul li {
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:0; }
 	.navbar-default .menu-explore{ display:none !important; }
 	.menu-maintoggle{ display:none; }
-	.menu-toggle{ display:inline-block; -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1);border-collapse: separate; position:relative; z-index:300;}   
+	.menu-toggle{ display:inline-block; /* -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); */ border-collapse: separate; position:relative; z-index:300;}   
 	.navbar-default .navbar-nav>li>a{ background:transparent; }
 	.navbar-default h1 i.icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   h1.navbar-header a span{ font-size:0.83em; position:relative; top:-5px; }	 
@@ -2191,11 +2194,14 @@ div.messages ul li {
 @media screen and (min-width: 1280px) {
 	.collections ul:first-child{ margin-left:7%; }
 	
+	.search-results,
 	.shanti-gallery{
 		 -webkit-column-width: 13em;
 		 -webkit-column-gap: 1em;  
 		 -moz-column-width: 12em;
 		 -moz-column-gap: 1em;
+		 column-width: 12em;
+		 column-gap: 1em;
 	}
 	.shanti-thumbnail { 
 	  max-width: 13em;

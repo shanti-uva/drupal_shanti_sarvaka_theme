@@ -284,24 +284,6 @@
 	      position: "right",
 	      closeOnExternalClick:false,
 	      closeOnClick:false,
-	      onExtOpen: function(event) {
-	      	if(!$('#sidebar-second').is(":visible")) { 
-		      	$('article.main-content section.content-section').animate({
-		      		'width': $('article.main-content section.content-section').width() - mywidth + 50 
-		      	});
-		      }
-	      },
-	      onExtClose: function(event) {
-	      	if(!$('#sidebar-second').is(":visible")) { 
-		      	$('article.main-content section.content-section').animate({
-		      			'width': $('article.main-content section.content-section').width() + mywidth 
-		      		}, 
-		      		500, 
-		      		function() { $(this).attr('style',''); 
-		      	});
-	      	}
-	      	$('#gen-search .on-flap').css("top", "0px");
-	      },
 	      width: mywidth, // width is set in two places, here and the css
 	      top: 0
 	  });
@@ -454,12 +436,12 @@
 	  				return true;
 	  			}
 	  			return false;
-	  		})
+	  		});
 	  	// Search for string if over 2 chars long
 	  	} else if(sval.length > 2) {
 	  		$('span.fancytree-title mark').each(
 	          function () {
-	          	var parent = $(this).parent()
+	          	var parent = $(this).parent();
 	          	var children = parent.children('.facet-count, .element-invisible').remove();
 	            parent.text(parent.text());
 	            parent.append(children);
@@ -672,6 +654,10 @@ jQuery(function ($) {
   $('[data-toggle=offcanvas]').click(function () {
     $('.row-offcanvas').toggleClass('active');
   });
+  
+  $('.advanced-view').css('display','block');
+  
+  
 });
 
 
@@ -701,26 +687,19 @@ jQuery(function ($) {
 
 jQuery(function ($) {
 	var myElement = document.getElementById('.carousel.slide');
-	
-	// create a simple instance
-	// by default, it only adds horizontal recognizers
-	var mc = new Hammer(myElement);
-	
-	// let the pan gesture support all directions.
-	// this will block the vertical scrolling on a touch-device while on the element
-	mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-	
-	// listen to events...
-	mc.on("panleft panright panup pandown tap press", function(ev) {
-	    myElement.textContent = ev.type +" gesture detected.";
-	});
+	if(myElement) {
+		// create a simple instance
+		// by default, it only adds horizontal recognizers
+		var mc = new Hammer(myElement);
+		
+		// let the pan gesture support all directions.
+		// this will block the vertical scrolling on a touch-device while on the element
+		mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+		
+		// listen to events...
+		mc.on("panleft panright panup pandown tap press", function(ev) {
+		    myElement.textContent = ev.type +" gesture detected.";
+		});
+	} 
 });
 
-
- 
- 
- 
- 
- 
- 
- 

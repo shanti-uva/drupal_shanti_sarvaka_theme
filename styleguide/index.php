@@ -71,24 +71,24 @@
 <meta charset="utf-8">
   <title>Style Guide Boilerplate</title>
   <meta name="viewport" content="width=device-width">
-  <script type="text/javascript" src="http://mediabase.dev/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
-  <script type="text/javascript" src="http://mediabase.dev/sites/all/themes/shanti_sarvaka/js/vendor/bootstrap.min.js?n8ic4w"></script>
-  <link rel="shortcut icon" href="http://mediabase.dev/sites/all/themes/shanti_sarvaka/favicon.ico" type="image/vnd.microsoft.icon" />
+  <script type="text/javascript" src="/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+  <script type="text/javascript" src="/sites/all/themes/shanti_sarvaka/js/vendor/bootstrap.min.js?n8ic4w"></script>
+  <link rel="shortcut icon" href="/sites/all/themes/shanti_sarvaka/favicon.ico" type="image/vnd.microsoft.icon" />
   <!-- Style Guide Boilerplate Styles -->
   <link rel="stylesheet" href="css/sg-style.css">
   
   <!-- Custom Styles for Style Guide -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Styles from theme -->
-  <style type="text/css" media="all">@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/bootstrap.min.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/bootstrap-theme.min.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/utils.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/search-panel.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/vjs.zencdn.nt-5.4-video-js.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/main.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/additional.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/fonts/shanticon/css/style.css?n8i3ik");
-@import url("http://mediabase.dev/sites/all/themes/shanti_sarvaka/css/new.css?n8i3ik");</style>
+  <style type="text/css" media="all">@import url("/sites/all/themes/shanti_sarvaka/css/bootstrap.min.css");
+@import url("/sites/all/themes/shanti_sarvaka/css/bootstrap-theme.min.css");
+@import url("/sites/all/themes/shanti_sarvaka/css/utils.css");
+@import url("/sites/all/themes/shanti_sarvaka/css/vjs.zencdn.nt-5.4-video-js.css");
+@import url("/sites/all/themes/shanti_sarvaka/css/shanti-main.css");
+@import url("/sites/all/themes/shanti_sarvaka/css/shanti-main-mb.css");
+@import url("/sites/all/themes/shanti_sarvaka/css/shanti-search.css");
+@import url("/sites/all/themes/shanti_sarvaka/css/shanti-search-mb.css");
+@import url("/sites/all/themes/shanti_sarvaka/fonts/shanticon/css/style.css");
 </head>
 <body>
     

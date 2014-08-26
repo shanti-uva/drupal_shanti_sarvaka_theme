@@ -42,12 +42,12 @@ object.flip_label{ display:none;}
 #gen-search { top: 0; }
 #gen-search.extruder.right{ margin-top: .63em; }
 #gen-search .ext_wrapper{ height:auto; padding:0; }
-#gen-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate; /* fix for ie9 shadow */}
+#gen-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate;}
 #gen-search.extruder.right.isOpened .extruder-content{ border-right-width:12px;}
 #gen-search.extruder .text{ border:none; padding:0; text-shadow:none; background:#f8f8f8; color:#333;}
 
 /*--- big search button inline styles are loaded via main.js with icon markup  */
-#gen-search.extruder.right .flap{ cursor:pointer; display:block; background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px;margin:0 0 0 -7px; border-top-left-radius:44px;border-bottom-left-radius:44px;border-collapse: separate;}
+#gen-search.extruder.right .flap{ cursor:pointer; display:block; background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px;margin:0 0 0 -7px; border-top-left-radius:44px;border-bottom-left-radius:44px;border-collapse: separate; -webkit-box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); border-collapse: separate;}
 #gen-search.extruder.right .flap.on-flap{ border-collapse:separate;}
 #gen-search.extruder.right .flap span.flapLabel,
 #gen-search.extruder.right .flap.on-flap span.flapLabel{ width:37px !important;background:#505050; height:30px;display:block; padding:17px 38px 17px 0; margin:0;border-top-left-radius:20px;border-bottom-left-radius:20px;border-collapse: separate;}
@@ -155,11 +155,11 @@ object.flip_label{ display:none;}
 
 .input-section .form-group{ margin-bottom:7px;padding-left:0;}
 .input-section .search-group{ height:80px;}
-.input-section .search-group .form-group{ padding-left:10px;}
+.input-section .search-group .form-group{ padding-left:0.75em;}
 .input-section .search-group .checkbox-inline:first-child{ margin-right: 5px;}
 .input-section .search-group .checkbox-inline>div{ margin-right: 4px;}
 /*----- Advanced Options -----*/
-.advanced-view{ /*** height:275px;  height can help control cross-browser issues ***/ padding:0 0 10px; background:#f8f8f8; width:100%; margin-right:4px;}
+.advanced-view{ /*** height:275px;  height can help control cross-browser issues ***/ padding:0 0 .62em; background:#f8f8f8; width:100%; margin-right:0.25em;}
 .advanced-view .form-group{ border-top:1px solid #e0e0e0; margin:0 8px;}
 .advanced-view .form-group.last{ padding-bottom:0;}
 
