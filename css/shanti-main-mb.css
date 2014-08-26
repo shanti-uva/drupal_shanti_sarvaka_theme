@@ -192,6 +192,7 @@ input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; lin
 .bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
 .field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
 
+#block-system-help p,
 .field-accordion .panel-body p{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
 .field-accordion .form-item label{ margin-top:1em;}
 
@@ -232,7 +233,28 @@ table .draggable a.tabledrag-handle:hover {
   border:none !important;
 }
 
+table.tabledrag-processed{ text-transform:capitalize;}
 
+
+a.tabledrag-handle .handle{
+	background:none;
+	height:1em;
+	width:1em;
+	font-family: 'Glyphicons Halflings';
+	color:#999;
+	font-size:0.86em;
+	line-height:1em;
+	padding:0;
+	margin:0 2em;
+	display:inline-block;
+	position:relative;
+	top:0;
+}
+a.tabledrag-handle .handle:before{
+	content: "\e068";
+}
+a.tabledrag-handle,
+a.tabledrag-handle:hover{ border:none !important;}
 
 
 div.file-widget.form-managed-file{ padding-left:1.25em;}

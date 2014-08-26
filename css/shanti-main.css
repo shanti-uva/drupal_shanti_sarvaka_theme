@@ -1548,6 +1548,7 @@ div.messages {
 	padding:0; 
 	border:none;
 	box-shadow:0 0 3px #ccc;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 div.status {
   background-image:none;
