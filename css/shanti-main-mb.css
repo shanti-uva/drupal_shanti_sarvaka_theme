@@ -60,10 +60,9 @@ this custom set of styles in the modules section
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
-.tabledrag-toggle-weight-wrapper a{ font-weight:bold; } /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ font-weight:bold; font-weight:700; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 
-#edit-filters--2.filters.form-wrapper{ float:none;} /*--- admin page viewing / adding users ---*/
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
@@ -79,15 +78,12 @@ div.collimage{ padding-right:1em;}
 .main-content div:nth-child(2) a:active{ border:none; }
 
 
-.vertical-tabs .vertical-tabs-list .vertical-tab-button a,
-.vertical-tabs .vertical-tabs-list li.selected a{ border-bottom:none !important;}
-.vertical-tabs .vertical-tabs-list .vertical-tab-button a:hover,
-.vertical-tabs .vertical-tabs-list li.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
+.vertical-tab-button a,
+.vertical-tab-button.selected a{ border-bottom:none !important;outline: 0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.vertical-tab-button a:hover,
+.vertical-tab-button.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
 
-.vertical-tabs .vertical-tabs-list li.selected a:hover,
-.vertical-tabs .vertical-tabs-list .vertical-tab-button a:-webkit-any-link{ text-decoration:none !important;}
-
-/* .admin-menu .vertical-tabs-panes a:hover{ text-decoration: underline;} */
+/* html .main-content .vertical-tabs .vertical-tabs-list li.vertical-tab-button a:-webkit-any-link{ text-decoration:none !important;} */
 
 .admin-menu table.features td.sign{ font-size:.75em;}
 
@@ -135,7 +131,7 @@ form table td.label div.description {
 
 .admin-menu .form-type-password-confirm{ position:relative;}
 .admin-menu .form-type-password-confirm label{ position:relative; top:1.12em;}
-.admin-menu .form-item-pass-pass1 label{ position:absolute; top:2em;}
+.admin-menu .form-item-pass-pass1 label{ position:absolute; top:2.5em;}
 .admin-menu .form-type-password div{ display:inline-block;}
 .admin-menu .password-indicator{ margin-top:1em;}
 .admin-menu .password-indicator div{ position:relative; top:-0.68em;}
@@ -145,7 +141,7 @@ form table td.label div.description {
 .admin-menu .form-type-password-confirm .password-strength-text{ position:relative; top:.62em;}
 
 
-
+input.form-text,
 input.form-control,
 .form-textarea-wrapper textarea.form-textarea{
 	color:#777;
@@ -175,6 +171,11 @@ input.form-control:focus,
 .form-textarea-wrapper textarea.form-textarea:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
 
+.main-content .selectpicker .caret::before{
+	color: #5b68ce;
+}
+
+
 .form-textarea-wrapper textarea.form-textarea {
 	height:auto;
 	padding:0.5em 1em 1em;
@@ -188,6 +189,10 @@ input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; lin
 .bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
 .field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
 
+#block-system-help p,
+.field-accordion .panel-body p{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.field-accordion .form-item label{ margin-top:1em;}
+
 .view-filters .bootstrap-select.form-control:not([class*="span"]) { 
 	padding-right:0; width:100%;
 }
@@ -197,9 +202,7 @@ input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; lin
 }
 
 
-/*
 html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
-*/
 
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
 #admin-menu .dropdown .admin-menu-toolbar-category > a:hover { color:#fff;}
@@ -208,8 +211,9 @@ html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 #admin-menu .dropdown .admin-menu-toolbar-category.admin-menu-icon > a.active-trail{ background:#777;}
 
 
+#admin-menu #edit-filters--2.filters.form-wrapper{ float:none;} /*--- admin page viewing / adding users ---*/
+
 .form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.form-wrapper { margin-bottom:1em;}
 
 
 
@@ -226,7 +230,35 @@ table .draggable a.tabledrag-handle:hover {
   border:none !important;
 }
 
+table.tabledrag-processed{ text-transform:capitalize;}
 
+
+a.tabledrag-handle .handle{
+	background:none;
+	height:1em;
+	width:1em;
+	font-family: 'Glyphicons Halflings';
+	color:#999;
+	font-size:0.86em;
+	line-height:1em;
+	padding:0;
+	margin:0 2em;
+	display:inline-block;
+	position:relative;
+	top:0;
+}
+a.tabledrag-handle .handle:before{
+	content: "\e068";
+}
+a.tabledrag-handle,
+a.tabledrag-handle:hover{ border:none !important;}
+
+a.admin-update, 
+a.features-storage, 
+span.features-storage, 
+span.features-component-list span{
+	-webkit-border-radius:0; border-radius:0;
+}
 
 
 div.file-widget.form-managed-file{ padding-left:1.25em;}
@@ -234,7 +266,7 @@ div.file-widget.form-managed-file{ padding-left:1.25em;}
 
 .form-item.form-type-select{ padding:0 0.25em 0 0; }
 .form-item .description{ margin-top:0.25em; margin-bottom:.75em; padding-left:1em;}
-.form-item label{ margin:0 0 -0.75em 0.5em; font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-item label{ margin:0 0 -0.75em 1.5em; font-size:90%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 .exposed-filters .form-item label{ float:none;}
 /*
@@ -264,9 +296,9 @@ td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-bottom:4px;}
 	line-height:normal;
 	margin-top:0;
 }
+.admin-menu table tr.odd.add-new:last-child{ border-bottom:20px solid transparent;}
 
-
-.admin-menu tr .form-item{ line-height:2.5em}
+.admin-menu tr .form-item{ line-height:normal;}
 
 table.sticky-table,
 table.sticky-header{ width:100%;}
@@ -312,7 +344,7 @@ textarea {
 .admin-menu .iradio_minimal-red{ 
 	margin-right: 5px;
 	position:relative;
-	top:-0.24em;
+	top:-0.18em;
 	left:0;
 }
 
@@ -368,29 +400,35 @@ ul.primary li a{ margin-right:.25em;}
 
 /*  .btn-success, .btn-info, .btn-warning, .btn-danger  */
 
-.btn{ 
+.btn,
+html input[type="button"].form-submit{ 
 	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
 	font-weight:normal; 
 	font-weight:500;
 	text-transform: uppercase;
 }
 
-.btn-primary {
+.btn-primary,
+html input[type="button"].form-submit {
   border:none;
 	background-image:none;
   background-color: transparent;
 }
+html input[type="button"].form-submit:hover,
 .btn-primary:hover,
+html input[type="button"].form-submit:focus,
 .btn-primary:focus {
 	background-image:none;
   background-color: transparent;
 }
+html input[type="button"].form-submit:active,
 .btn-primary:active,
 .btn-primary.active {
 	background-image:none;
   background-color: rgba(255, 255, 255, .1);
   box-shadow:none;
 }
+html input[type="button"].form-submit,
 .btn-primary{
 	padding: 0;
 	margin: 0.75em;	
@@ -403,6 +441,7 @@ ul.primary li a{ margin-right:.25em;}
 	font-size: 0.75em;
 	letter-spacing:0.12em;
 }
+html input[type="button"].form-submit:hover,
 .btn-primary:hover {
 	color:#fff;
 	background-color: #4850bd; /* darker */
@@ -417,6 +456,23 @@ ul.primary li a{ margin-right:.25em;}
 }
 */
 
+
+input[type=file].form-file{ margin-bottom:5px;}
+
+html input[type="button"].form-submit{
+	font-size: 70%;
+	display:inline-block;
+	width:auto;
+	padding: .68em 1.5em;
+	height:2.88em;
+	line-height:1.88em;
+	white-space:nowrap;
+	text-align:center;
+	letter-spacing:0.06em;
+}	
+	
+	
+
 .btn-primary .icon {	
 	text-align:center;
 	height:4em;
@@ -427,6 +483,7 @@ ul.primary li a{ margin-right:.25em;}
 	padding:0.5em;
 	float:left;
 }
+
 .btn-primary span {
 	font-size: 0.88em;
 	background-color: rgba(255, 255, 255, .1);
@@ -496,7 +553,7 @@ div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
 
 
 
-
+button.field-add-more-submit{ margin-left:1em;}
 
 
 /*
@@ -565,7 +622,10 @@ div.sidebar { z-index:1;}
 
 
 
-
+.main-content table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
+	width:70px;
+	margin-left:20px;
+}
 
 
 
@@ -634,6 +694,21 @@ span.fancytree-node i.shanticon-cancel {
  **/
 
 
+#field-available-from-values td,
+#field-available-from-values td,
+#field-pbcore-title-values td,
+table.tableheader-processed td,
+form .field-multiple-table td.field-multiple-drag{
+	/*width:auto;*/
+}
+table.tableheader-processed td{ /*width:25%;*/} /*---- testing this ----*/
+
+
+#edit-name.form-control{ margin-top:0.5em;}
+
+#edit-actions.form-actions{ margin-top:1em;}
+
+input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
 
 #admin-menu{ 	
 	-webkit-box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
@@ -644,12 +719,11 @@ span.fancytree-node i.shanticon-cancel {
 }
 
 
-
-.tabledrag-toggle-weight-wrapper{ margin-top:-1em;}
+.tabledrag-toggle-weight-wrapper{ margin-top:-0.5em;}
 
 
 tr.odd .form-item, tr.even .form-item{
-	margin-top:0.68em;
+	/*margin-top:0.68em;*/
 }
 
 table.field-multiple-table { margin-bottom:2em;}
@@ -657,36 +731,73 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 .kaltura_status_ok{ background-image:none !important; border:none !important;}
 
-
+#kmap_annotation_json { margin-left:2em;} /* textbox on bottom */
 
 
 .form-actions{ /* testing this at bottom of page for edit save buttons --*/
 	margin-top:3em;
+	margin-left:3em;
 }
 
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 .field-accordion {
-	margin: 1em 0;
+	margin: 0;
   padding: 0;
 	/* border-bottom: 1px solid #C0C0C0; */
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
+.field-accordion.panel-group{ /*margin:0 -2em; padding:0 2em;*/ border-bottom:1px solid #ddd; border-top:1px solid #fff;}
+
+#video-node-form > div{ border-top:1px solid #ddd;}
+
+.vertical-tabs-panes{ margin-bottom:2em;}
 
 
-.field-accordion .panel-group .panel{ background:transparent;}
-
-.field-accordion div.panel-body .form-text {
-	background-color: #fff;
+.field-accordion .panel-body{
+	/*margin:0 2em;*/
+	padding:15px;
+	 
 }
-
-.field-accordion div.panel-heading {
+.field-accordion .panel-heading{
+	margin:0;
+	padding:0;
 	background:transparent;
+	width:100%;
 }
-.field-accordion div.panel-heading .panel-title{ position:relative; z-index:100; box-shadow:0 2px 7px rgba(0,0,0,0.1000);}
-.field-accordion div.panel-heading .panel-title a{ color: #5a65d1; background:#fff; padding:.5em .5em .5em 1em; display:block; width:100%; border-bottom:1px solid #ddd;}
-.field-accordion div.panel-heading .panel-title a:hover{ text-decoration:none !important;}
-.field-accordion div.panel-heading .panel-title a:before{
+
+.node-form.node-video-form > div{ /*margin:0 -2em;*/ } /*--- main layout tool for edge-edge accordions */
+
+#field-workflow-add-more-wrapper fieldset legend{ /*--- rare section header between accordion panel groups */
+	/*margin:0 -2em; 
+	padding:0 2em;*/
+	border-top:1px solid #fff; 
+	border-bottom:1px solid #ddd;
+	height:4em;
+	line-height:4.25em;
+	display:block;
+	width:100%;
+	text-transform:uppercase;
+	padding-left:0.32em;
+	padding-top:0.5em;
+	font-weight:bold;
+}
+#field-workflow-add-more-wrapper fieldset legend span{ margin:0;padding:0;}
+
+.field-name-field-workflow{
+
+}
+
+.field-accordion .panel-collapse{  margin:0 0 1em;}  /*--- spacing at bottom below inset shaded content */
+
+.field-accordion .panel-group .panel{ background:transparent; }
+
+.field-accordion .panel-body .form-text{ background-color: #fff; }
+
+.field-accordion .panel-heading h6.panel-title{ position:relative; z-index:100; width:100%; font-size:1.44em; text-transform:capitalize; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-style:italic;}
+.field-accordion .panel-heading h6.panel-title a{ font-weight:bold; display:block; width:100%; line-height:2.62em; height:2.5em; letter-spacing:-0.06em; border:none!important;}
+.field-accordion .panel-heading h6.panel-title a:hover{ text-decoration:none; border:none!important;}
+.field-accordion .panel-heading h6.panel-title a:before{
 	/* color:#5a65d1;	
 	font-size: 0.62em;
 	line-height:.75em;
@@ -697,31 +808,94 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 	position:relative;
 	top:-1px;	*/
 }
-
-.field-accordion div.panel-heading .panel-title a i{
+div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; border-bottom:1px solid #fff;}
+/*
+.field-accordion .panel-heading .panel-title a i{
 	color:#5a65d1;	
 	font-size: 0.75em;
 	line-height:.75em;
 	font-weight:normal;
 	padding-right:0.5em;
-	font-family: 'Glyphicons Halflings';
 }
-.field-accordion div.panel-heading .panel-title a i:before{
+.field-accordion .panel-heading .panel-title a i:before{
 	position:relative;
 	top:-2px;		
 }
+*/
+
+.field-widget-group-audience{
+	border:none; 
+	border-top:1px solid #fff; 
+	/*margin:0 -2em; */
+	padding:0; 
+}
+.field-widget-options-select{
+	border-bottom:1px solid #ddd; 
+	/*margin:0 -2em; */
+	padding:0; 
+}
 
 
 
-.field-accordion .form-item{ }
+#edit-picture .fieldset-wrapper{
+	border-bottom:1px solid #ddd;
+	/*margin:0 -2em;
+	padding:0 2em;*/
+}
+
+
+
+
+
+.field-accordion .panel-heading h6.panel-title a i.glyphicon {
+  font-size: 0.5em;    
+  background: #fff;
+  color: #606060;    
+  width: 18px;
+  height: 18px;
+  display: block;
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin-right:20px;
+  margin-left:5px;
+  float: left;
+  position: relative;
+  top: 17px;
+  left: 0;
+  -webkit-box-shadow: 0 0 4px 3px #ddd;
+  box-shadow: 0 0 4px 3px #ddd;
+  border-collapse:separate;
+}
+.field-accordion .panel-heading h6.panel-title a i.glyphicon:before {
+  position: relative;
+  top: 3px;
+  left: 4px;
+}
+.field-accordion .panel-heading h6.panel-title a i.glyphicon.glyphicon-minus:before {
+  position: relative;
+  left: 3px;
+}
+
+
+
+
+
+
+.field-accordion fieldset .fieldset-legend{ margin-left:1em;}
+
+
+
+
 
 .field-accordion .form-item, 
 .field-accordion .form-actions {
 	margin-top: auto;
-	margin-bottom: 1em; /*-- was auto */
-	padding:0.68em .32em;
+	margin-bottom: 0.5em; /*-- was auto */
+	/* padding:0.68em .32em; */
 	/*border:1px dashed #ccc; border-radius:0.12em;*/
 }
+.field-accordion .form-item{ }
+
 .field-accordion h4 span.ss-fieldset-toggle,
 .field-accordion h6 span.ss-fieldset-toggle {
 	font-size: 90%;
@@ -776,9 +950,9 @@ a.hide-annot:before{
 
 
 
-
+/*
 .collectionnode .content .row { margin:0 !important;}
-
+*/
 
 
 
@@ -907,9 +1081,9 @@ ul.ss-full-tabs li.active a:before {
 
 
 
-
-div.fieldset-wrapper{ padding-top:10px;}
 /*
+div.fieldset-wrapper{ padding-top:10px;}
+
 .form-item.form-type-checkbox.form-item-flexslider-debug{ padding-top:10px;}
 */
 
@@ -933,7 +1107,15 @@ div.fieldset-wrapper{ padding-top:10px;}
 
 
 
-.views-exposed-form label{ margin-bottom:0;font-size:90%;padding-left:.44em; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500;}
+.views-exposed-form label{
+  margin-bottom:0;
+  font-size:90%;
+  padding-left:.44em;
+  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-weight:500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .views-exposed-form .views-exposed-widget{
 	padding-top:0;

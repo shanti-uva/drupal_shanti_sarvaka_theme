@@ -35,7 +35,7 @@ function shanti_sarvaka_preprocess(&$variables) {
   $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
   $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
-  $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');
+  $variables['site_slogan'] = theme_get_setting('shanti_sarvaka_slogan');
   $variables['theme_path'] = $base; 
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
   

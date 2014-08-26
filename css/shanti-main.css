@@ -1,3 +1,50 @@
+/*---------------------*/
+/*--- BEGIN font face ---*/
+/*---------------------*/
+/*
+@font-face {
+  font-family: 'museo-sans-300';
+  src: url('../fonts/Museosans/museosans-300-webfont.eot');
+  src: url('../fonts/Museosans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Museosans/museosans-300-webfont.woff') format('woff'),
+       url('../fonts/Museosans/museosans-300-webfont.ttf') format('truetype'),
+       url('../fonts/Museosans/museosans-300-webfont.woff#museosans_300') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo-sans-700';
+  src: url('../fonts/Museosans/museosans-700-webfont.eot');
+  src: url('../fonts/Museosans/museosans-700-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Museosans/museosans-700-webfont.woff') format('woff'),
+       url('../fonts/Museosans/museosans-700-webfont.ttf') format('truetype'),
+       url('../fonts/Museosans/museosans-700-webfont.woff#museosans_700') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo-sans-900';
+  src: url('../fonts/Museosans/museosans-900-webfont.eot');
+  src: url('../fonts/Museosans/museosans-900-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Museosans/museosans-900-webfont.woff') format('woff'),
+       url('../fonts/Museosans/museosans-900-webfont.ttf') format('truetype'),
+       url('../fonts/Museosans/museosans-900-webfont.woff#museosans_900') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droidserif';
+  src: url('../fonts/Droidserif/droidserif-webfont.eot');
+  src: url('../fonts/Droidserif/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Droidserif/droidserif-webfont.woff') format('woff'),
+       url('../fonts/Droidserif/droidserif-webfont.ttf') format('truetype'),
+       url('../fonts/Droidserif/droidserif-webfont.woff#droidserif') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+/*--- END font face ---*/
+
 html{ -webkit-font-smoothing: antialiased; overflow-y:scroll;}
 body{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500; overflow: hidden;}
 body div.wrap-all{ position:relative;}
@@ -34,6 +81,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   /* padding: 0 0 30px 18px; */ 
   padding: 0.5em 2em 5em 2em;
   min-height:100%;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 /*--- content elements ---*/
@@ -130,8 +178,102 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 /*----- END Buttons -----*/
 /*-------------------------*/
 
+/*----- Custom Inputs -----*/
+/*-------------------------*/
 
-
+.select-wrapper {
+  position: relative;
+  float: left;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border: 1px solid #CCC;
+  padding: 0 2px 0 10px;
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat;
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -moz-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f4f6f5));
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -webkit-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -o-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, linear-gradient(to bottom, #fff, #f4f6f5);
+}
+.select-wrapper .holder {
+  display: none;
+  margin: 0 35px 0 5px;
+  white-space: nowrap;            
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  line-height: 28px;
+}
+.select-wrapper, 
+.select-wrapper select {
+  width: 293px;
+  height: 30px;
+  line-height: 30px;
+ }
+.select-wrapper select {
+  margin: 0;
+  position: absolute;
+  z-index: 2;          
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+  /* CSS hacks for older browsers */
+  _noFocusLine: expression(this.hideFocus=true); 
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  width: 92%;
+  margin-left: 1px;
+  margin-top: -1px;
+  left: 0;
+  width: 100%;
+}
+input[type='radio'] {
+  opacity: 0;
+  float: left;
+  width: 18px;
+}
+input[type='radio'] + label,
+label.option div,
+label.option div.hover {
+  margin-left: -15px;
+  clear: none;
+  padding: 5px 0 4px 35px;
+  cursor: pointer;
+  background: url(../images/default_radio_btn.png) no-repeat;
+  background-position: left center;
+}
+input[type='radio']:checked + label,
+label.option div.checked {
+  background: url(../images/selected_radio_btn.png) no-repeat;
+  background-position: left center;
+}
+input[type="text"] {
+  -webkit-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);
+  box-shadow: inset 0px 1px 7px -4px rgba(0,0,0,1);
+  "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
+}
+label.option div div {
+  background: none;
+}
+label {
+  "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
+}
+option:hover,
+option:checked,
+option:checked:hover,
+select:focus option:checked:hover {
+  background: #008a96;
+  color: #fff;
+}
+/*----- END Custom Inputs -----*/
+/*-------------------------*/
 
 /*--- BEGIN header ---*/
 .header-banner{
@@ -1406,6 +1548,7 @@ div.messages {
 	padding:0; 
 	border:none;
 	box-shadow:0 0 3px #ccc;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 div.status {
   background-image:none;
@@ -1490,22 +1633,24 @@ div.messages ul li {
 .panel-group{
   border:none;
   width:100%;
-  background-color:white;
+  margin-top:0;
   /*margin:-10px -20px 0 -2px;*/
 }
 .panel-body{ 
-  background-color:#f0f0f0;
+  background-color:#f9f9f9;
   border:none; 
   border-radius:0; 
   width:100%; 
 }
-.panel.panel-default { overflow:visible; }
+.panel.panel-default { overflow:visible; background:transparent !important;}
 .panel-default .panel-heading{
-	background-image:none;
-	background:#f2f2f2;
+	background-image: none;
+	background: transparent;
   margin:0;
   padding:0;
 }
+.panel-default>.panel-heading{ background:transparent !important;}
+
 .panel-group .panel+.panel{ margin-top:0;}
 .panel-group .panel{ 
   border:none;
@@ -1513,20 +1658,15 @@ div.messages ul li {
   box-shadow:none;
   border-radius:0; 
   width:100%; 
-  background-color:white;
+  /* background-color:white; */
   margin:0;
   padding:0;
 }
 .panel-group,
-.panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0; background-color:#f7f7f7; border:none;}
+.panel-default .panel-heading+.panel-collapse .panel-body,
+.panel-group .panel-heading+.panel-collapse .panel-body{ margin:0;border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
-.panel-group{
-  border:none;
-  width:100%;
-  margin-top:0;
-  /*margin:-10px -20px 0 -2px;*/
-}
+
 
 .panel-group .panel-heading i{
 	font-size:80%;
@@ -1537,7 +1677,7 @@ div.messages ul li {
 
 .panel-group,
 .panel-default>.panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body{ background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000); }
+.panel-group .panel-heading+.panel-collapse .panel-body{ /*background:#f7f7f7 !important; box-shadow:0 1px 3px rgba(0,0,0, 0.1000);*/ }
 /*
 .admin-menu .panel .panel-body{ background:#f7f7f7 !important;}
 */
