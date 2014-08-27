@@ -348,7 +348,7 @@ textarea {
 	left:0;
 }
 
-.admin-menu .table-select-processed th:first-child .icheckbox_minimal-red { margin-left:10px;}
+.admin-menu .table-select-processed th:first-child .icheckbox_minimal-red { margin-left:6px;}
 
 
 .admin-menu .has-tabs .titlearea>div { height:6.5em;}
