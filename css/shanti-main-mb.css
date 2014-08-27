@@ -185,8 +185,8 @@ input.form-control:focus,
 
 input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; line-height:1.5em; height:1.75em; padding:0.75em 1em !important; position:relative; top:1px;}
 
-.bootstrap-select.form-control:not([class*="span"]){ width:8em !important;}
-.field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
+.bootstrap-select.form-control:not([class*="span"]){ width:100%;}
+.field-widget-text-textfield.form-wrapper input.form-control{ /* width:80% !important; */}
 
 #block-system-help p,
 .field-accordion .panel-body p{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
