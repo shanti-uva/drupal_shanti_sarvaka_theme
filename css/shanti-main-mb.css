@@ -60,7 +60,7 @@ this custom set of styles in the modules section
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight{ font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 
 
@@ -88,7 +88,7 @@ div.collimage{ padding-right:1em;}
 .admin-menu table.features td.sign{ font-size:.75em;}
 
 
-.main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
+.main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-1%;}
 .main-content .show-more a{ border-bottom:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
 .main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000) !important; }
 .main-content .show-more a:active{ border:none !important; }
@@ -420,27 +420,22 @@ html input[type="button"].form-submit{
 	text-transform: uppercase;
 }
 
-.btn-primary,
-html input[type="button"].form-submit {
+.btn-primary{
   border:none;
 	background-image:none;
   background-color: transparent;
 }
-html input[type="button"].form-submit:hover,
 .btn-primary:hover,
-html input[type="button"].form-submit:focus,
 .btn-primary:focus {
 	background-image:none;
   background-color: transparent;
 }
-html input[type="button"].form-submit:active,
 .btn-primary:active,
 .btn-primary.active {
 	background-image:none;
   background-color: rgba(255, 255, 255, .1);
   box-shadow:none;
 }
-html input[type="button"].form-submit,
 .btn-primary{
 	padding: 0;
 	margin: 0.75em;	
@@ -453,7 +448,6 @@ html input[type="button"].form-submit,
 	font-size: 0.75em;
 	letter-spacing:0.12em;
 }
-html input[type="button"].form-submit:hover,
 .btn-primary:hover {
 	color:#fff;
 	background-color: #4850bd; /* darker */
@@ -514,6 +508,7 @@ html input[type="button"].form-submit{
 	text-align:center;
 	height:4em;
 	width:3.5em; 
+	max-width:3.5em;
 	font-size:130%;
 	line-height:2.25em;
 	display:inline-block;

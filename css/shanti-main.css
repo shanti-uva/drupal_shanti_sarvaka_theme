@@ -1073,13 +1073,13 @@ ul.menu-main>li>a:first-child {
 
 .search-results,
 .shanti-gallery{
-	width: 100%;
+	width: 100%;/*
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
  -moz-column-width: 12em;
  -moz-column-gap: 1em;
  column-width: 12em;
- column-gap: 1em;
+ column-gap: 1em; */
  /*position:relative;
  top:2em;*/
  -webkit-margin-before: 0;
@@ -1107,7 +1107,7 @@ ul.menu-main>li>a:first-child {
 	border-radius:.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
-	display: block;
+	display: inline-block;
   position:relative;
   -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.2750);
 	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.2750);
