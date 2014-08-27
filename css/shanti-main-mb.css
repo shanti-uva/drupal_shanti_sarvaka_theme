@@ -185,7 +185,7 @@ input.form-control:focus,
 
 input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; line-height:1.5em; height:1.75em; padding:0.75em 1em !important; position:relative; top:1px;}
 
-.bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
+.bootstrap-select.form-control:not([class*="span"]){ width:8em !important;}
 .field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
 
 #block-system-help p,
@@ -212,8 +212,9 @@ html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 
 #admin-menu #edit-filters--2.filters.form-wrapper{ float:none;} /*--- admin page viewing / adding users ---*/
 
-.form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-wrapper legend{ color:#505050; margin-top:1.25em; margin-bottom:0 !important; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
+.form-wrapper legend .fieldset-legend{ font-size:100%;}
 
 
 
@@ -343,7 +344,7 @@ textarea {
 .admin-menu .iradio_minimal-red{ 
 	margin-right: 5px;
 	position:relative;
-	top:-0.18em;
+	top:0;
 	left:0;
 }
 
@@ -354,8 +355,7 @@ textarea {
 
 .admin-menu .sticky-table a{ white-space:nowrap; font-size:90%; font-weight:bold;}
 
-
-
+form table td.label{ padding-top:0.68em !important;}
 
 
 
