@@ -60,13 +60,13 @@ this custom set of styles in the modules section
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight{ font-weight:bold; font-weight:700; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 div.collimage{ padding-right:1em;}
 
@@ -79,7 +79,7 @@ div.collimage{ padding-right:1em;}
 
 
 .vertical-tab-button a,
-.vertical-tab-button.selected a{ border-bottom:none !important;outline: 0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.vertical-tab-button.selected a{ border-bottom:none !important;outline: 0 !important; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:700;}
 .vertical-tab-button a:hover,
 .vertical-tab-button.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
 
@@ -90,7 +90,7 @@ div.collimage{ padding-right:1em;}
 
 .main-content .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
 .main-content .show-more a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;
-font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
+font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
 .main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000) !important; }
 .main-content .show-more a:active{ border:none !important; }
 .main-content .show-more:after{ 	
@@ -107,7 +107,7 @@ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode
 
 .loader { height: 80%; min-height: 31em; padding-top: 1em;}
 .dfn, .italic{ font-style:italic !important; }
-.sans-serif{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.sans-serif{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .serif{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
 
@@ -213,13 +213,13 @@ html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 
 #admin-menu #edit-filters--2.filters.form-wrapper{ float:none;} /*--- admin page viewing / adding users ---*/
 
-.form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 
 
 
 tr.region-title td{
-	color:#555; padding-top:0.5em; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	color:#555; padding-top:0.5em; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 table .draggable a.tabledrag-handle {
@@ -266,7 +266,7 @@ div.file-widget.form-managed-file{ padding-left:1.25em;}
 
 .form-item.form-type-select{ padding:0 0.25em 0 0; }
 .form-item .description{ margin-top:0.25em; margin-bottom:.75em; padding-left:1em;}
-.form-item label{ margin:0 0 -0.75em 1.5em; font-size:90%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-item label{ margin:0 0 -0.75em 1.5em; font-size:90%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 .exposed-filters .form-item label{ float:none;}
 /*
@@ -369,7 +369,7 @@ textarea {
 .main-content header ul.tabs.primary li,
 .main-content header ul.tabs.secondary li{ height:1.75em; line-height:1.75em; position:relative;}
 .main-content header ul.tabs.primary li a,
-.main-content header ul.tabs.secondary li a { color:#555; background:rgba(255,255,255, 0.4000); font-size:80%; font-weight:bold; font-weight:700; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em; margin-right:.12em; text-transform:uppercase; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content header ul.tabs.secondary li a { color:#555; background:rgba(255,255,255, 0.4000); font-size:80%; font-weight:bold; font-weight:700; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em; margin-right:.12em; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .main-content header ul.tabs.primary li a:hover,
 .main-content header ul.tabs.secondary li a:hover{ background:rgba(255,255,255, 0.7000); color:#555; }
 .main-content header ul.tabs.primary li a:active,
@@ -402,7 +402,7 @@ ul.primary li a{ margin-right:.25em;}
 
 .btn,
 html input[type="button"].form-submit{ 
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
 	font-weight:normal; 
 	font-weight:500;
 	text-transform: uppercase;
@@ -971,11 +971,11 @@ ul.ss-full-tabs li {
 }
 
 ul.ss-full-tabs li a {
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	border: none !important;
 	text-align: center;
 	font-size: larger;
-	font-weight: 777;
+	font-weight: 700;
 	color: #999;
 	border-radius: 0;
 }
@@ -1111,7 +1111,7 @@ div.fieldset-wrapper{ padding-top:10px;}
   margin-bottom:0;
   font-size:90%;
   padding-left:.44em;
-  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-weight:500;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1132,7 +1132,7 @@ div.fieldset-wrapper{ padding-top:10px;}
 	width:6em;
 }
 .views-exposed-widget.views-widget-per-page{
-	width:8.5em;
+	width:10.5em;
 }
 .views-row{
 	padding-top: 0.75em;
@@ -1153,7 +1153,7 @@ div.fieldset-wrapper{ padding-top:10px;}
 .views-field-title{ 
 	font-size:1.5em;
 	margin-bottom:-0.5em;
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 .views-field-realname{
 	margin-bottom:0.25em;
