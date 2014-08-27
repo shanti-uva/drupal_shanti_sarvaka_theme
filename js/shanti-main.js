@@ -657,7 +657,7 @@ jQuery(function ($) {
   
   $('.advanced-view').css('display','block');
   
-  
+  $('fieldset.container-inline').removeClass('container-inline');
 });
 
 
