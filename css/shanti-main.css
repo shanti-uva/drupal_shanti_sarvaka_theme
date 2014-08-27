@@ -255,13 +255,13 @@ label.option div.hover {
   clear: none;
   padding: 5px 0 4px 35px;
   cursor: pointer;
-  background: url(../images/default_radio_btn.png) no-repeat;
-  background-position: left center;
+  /*background: url(../images/default_radio_btn.png) no-repeat;
+  background-position: left center;*/
 }
 input[type='radio']:checked + label,
 label.option div.checked {
-  background: url(../images/selected_radio_btn.png) no-repeat;
-  background-position: left center;
+  /*background: url(../images/selected_radio_btn.png) no-repeat;
+  background-position: left center;*/
 }
 input[type="text"] {
   -webkit-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);
