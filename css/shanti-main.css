@@ -1,7 +1,7 @@
 /*---------------------*/
 /*--- BEGIN font face ---*/
 /*---------------------*/
-/*
+
 @font-face {
   font-family: 'museo-sans-300';
   src: url('../fonts/Museosans/museosans-300-webfont.eot');
@@ -52,11 +52,11 @@
   font-weight: normal;
   font-style: normal;
 }
-*/
+
 /*--- END font face ---*/
 
 html{ -webkit-font-smoothing: antialiased; overflow-y:scroll;}
-body{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500; overflow: hidden;}
+body{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500; overflow: hidden;}
 body div.wrap-all{ position:relative;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline: 0 !important; /* outline: -2px auto -webkit-focus-ring-color !important; */}
@@ -91,23 +91,11 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   /* padding: 0 0 30px 18px; */ 
   padding: 0.5em 2em 5em 2em;
   min-height:100%;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 /*--- content elements ---*/
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ 
-	color: #444; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
-}
-
-.main-content input.form-control{
-	border-radius:1em;
-}
-
-
-.content-section h6 {
-  font-weight: bold;
-  font-weight: 700;
-  text-transform: uppercase;
+	color: #444; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:500;
 }
 
 .content-section iframe {
@@ -140,7 +128,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
-.content-section .btn{ background-image:none; font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
+.content-section .btn{ background-image:none; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 .content-section .btn-group{
 	-webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.25);
 	box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.25);
@@ -267,13 +255,13 @@ input[type="text"] {
   -webkit-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);
   box-shadow: inset 0px 1px 7px -4px rgba(0,0,0,1);
-  "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
+  "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
 }
 label.option div div {
   background: none;
 }
 label {
-  "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
+  "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;
 }
 option:hover,
 option:checked,
@@ -749,7 +737,7 @@ select:focus option:checked:hover {
 	background:#fff;
 	-webkit-transition: background-color 200ms;
 	transition: background-color 200ms;
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
 	font-weight:bold; 
 	font-weight:700;
 }
@@ -954,7 +942,7 @@ select:focus option:checked:hover {
 #menu .multilevelpushmenu_wrapper .levelHolderClass.rtl .backItemClass i{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:700; margin-right:5px;}
 #menu .multilevelpushmenu_wrapper .levelHolderClass.rtl .backItemClass i:before{ }
 #menu .multilevelpushmenu_wrapper .backItemClass, 
-#menu .multilevelpushmenu_wrapper .levelHolderClass.rtl{ font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500; background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
+#menu .multilevelpushmenu_wrapper .levelHolderClass.rtl{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:500; background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
 
 /*----- END top-menu override styles -----*/
 
@@ -1119,8 +1107,14 @@ ul.menu-main>li>a:first-child {
  -moz-column-gap: 1em;
  column-width: 12em;
  column-gap: 1em;
- position:relative;
- top:5em;
+ /*position:relative;
+ top:2em;*/
+ -webkit-margin-before: 0;
+ -webkit-margin-after: 0;
+ -webkit-margin-start: 0;
+ -webkit-margin-end: 0;
+ -webkit-padding-start: 0;
+ 
 }
 
 .search-results a,
@@ -1257,7 +1251,7 @@ ul.menu-main>li>a:first-child {
 }
 .shanti-thumbnail-info {
 	font-size: 0.75em;
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .shanti-thumbnail .body-wrap{
@@ -1321,6 +1315,17 @@ ul.menu-main>li>a:first-child {
 .shanti-thumbnail .footer-wrap a:active{ text-decoration:none; }
 .shanti-thumbnail .footer-wrap i{ font-size:1.32em;position:relative;top:2px;}
 
+
+
+
+
+
+
+
+
+.main-content input.form-control{
+	border-radius:1em;
+}
 
 
 /*-----------------------------------------------*/
@@ -1456,7 +1461,7 @@ table.pagerer {
 	text-align:right;
   margin: 0.25em 4em .75em 0;
   font-size:80%;
-  font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
+  font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
   font-weight:bold;
 	font-weight:700;
@@ -1702,7 +1707,7 @@ div.messages ul li {
 /*--- for Kmaps-style larger toggle panels ---*/
 #accordion .panel h6{ 
 	font-size:1em; 
-	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	line-height:3.75em;
   border-top:1px solid #fff;
   border-bottom:1px solid #ccc;
