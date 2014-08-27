@@ -79,7 +79,7 @@ div.collimage{ padding-right:1em;}
 
 
 .vertical-tab-button a,
-.vertical-tab-button.selected a{ border-bottom:none !important;outline: 0 !important; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal; font-weight:700;}
+.vertical-tab-button.selected a{ border-bottom:none !important;outline: 0 !important; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .vertical-tab-button a:hover,
 .vertical-tab-button.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
 
@@ -88,9 +88,8 @@ div.collimage{ padding-right:1em;}
 .admin-menu table.features td.sign{ font-size:.75em;}
 
 
-.main-content .show-more{ text-transform: uppercase; font-size:.83em; display:inline;}
-.main-content .show-more a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;
-font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
+.main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
+.main-content .show-more a{ border-bottom:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
 .main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000) !important; }
 .main-content .show-more a:active{ border:none !important; }
 .main-content .show-more:after{ 	
