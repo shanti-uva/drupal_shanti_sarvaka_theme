@@ -284,6 +284,10 @@ th.checkbox{
 	line-height:1.12em;
 	width:12%;
 }
+td.checkbox .form-type-checkbox .icheckbox_minimal-red{
+	display:block;
+}
+td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-top:5px;}
 
 .admin-menu table thead{ }
 .admin-menu table tr{ }
@@ -299,6 +303,18 @@ table.sticky-table,
 table.sticky-header{ width:100%;}
 table.sticky-header th{ padding-left:1em;}
 
+table.sticky-table td ul{ 
+	margin-bottom:0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+table.sticky-table td ul li{
+	line-height:1em;
+}
+
 #edit-delete:hover {
 	background-color: red;
 	border: thin solid red;
@@ -308,7 +324,9 @@ table.sticky-header th{ padding-left:1em;}
 #module-filter-tabs a:hover{ border-bottom:none;}
 
 
-
+.table-select-processed.tableheader-processed{
+	margin-top:1.5em;	
+}
 
 
 
@@ -638,8 +656,10 @@ div.sidebar { z-index:1;}
 
 .breadwrap ol{ border:none;}
 
-
-
+/* tables in admin */
+span.filter-option.pull-left{
+	width:3.25em;
+}
 
 .main-content table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
 	width:70px;
@@ -851,7 +871,7 @@ div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; bord
 .field-widget-options-select{
 	border-bottom:1px solid #ddd; 
 	/*margin:0 -2em; */
-	padding:0; 
+	padding:0 0 0.75em;; 
 }
 
 
