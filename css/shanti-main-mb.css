@@ -60,7 +60,7 @@ this custom set of styles in the modules section
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight{ font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 
 
@@ -88,7 +88,7 @@ div.collimage{ padding-right:1em;}
 .admin-menu table.features td.sign{ font-size:.75em;}
 
 
-.main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
+.main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-1%;}
 .main-content .show-more a{ border-bottom:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	font-weight:bold; font-weight:700; }
 .main-content .show-more a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000) !important; }
 .main-content .show-more a:active{ border:none !important; }
@@ -185,7 +185,7 @@ input.form-control:focus,
 
 input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; line-height:1.5em; height:1.75em; padding:0.75em 1em !important; position:relative; top:1px;}
 
-.bootstrap-select.form-control:not([class*="span"]){ width:100% !important;}
+.bootstrap-select.form-control:not([class*="span"]){ width:100%;}
 .field-widget-text-textfield.form-wrapper input.form-control{ width:80% !important;}
 
 #block-system-help p,
@@ -212,8 +212,9 @@ html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 
 #admin-menu #edit-filters--2.filters.form-wrapper{ float:none;} /*--- admin page viewing / adding users ---*/
 
-.form-wrapper legend{ margin-top:1.25em; margin-bottom:0 !important; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-wrapper legend{ color:#505050; margin-top:1.25em; margin-bottom:0 !important; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
+.form-wrapper legend .fieldset-legend{ font-size:100%;}
 
 
 
@@ -283,11 +284,10 @@ th.checkbox{
 	line-height:1.12em;
 	width:12%;
 }
-
 td.checkbox .form-type-checkbox .icheckbox_minimal-red{
 	display:block;
 }
-td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-bottom:4px;}
+td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-top:5px;}
 
 .admin-menu table thead{ }
 .admin-menu table tr{ }
@@ -303,6 +303,18 @@ table.sticky-table,
 table.sticky-header{ width:100%;}
 table.sticky-header th{ padding-left:1em;}
 
+table.sticky-table td ul{ 
+	margin-bottom:0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+table.sticky-table td ul li{
+	line-height:1em;
+}
+
 #edit-delete:hover {
 	background-color: red;
 	border: thin solid red;
@@ -312,7 +324,9 @@ table.sticky-header th{ padding-left:1em;}
 #module-filter-tabs a:hover{ border-bottom:none;}
 
 
-
+.table-select-processed.tableheader-processed{
+	margin-top:1.5em;	
+}
 
 
 
@@ -343,7 +357,7 @@ textarea {
 .admin-menu .iradio_minimal-red{ 
 	margin-right: 5px;
 	position:relative;
-	top:-0.18em;
+	top:0;
 	left:0;
 }
 
@@ -354,12 +368,11 @@ textarea {
 
 .admin-menu .sticky-table a{ white-space:nowrap; font-size:90%; font-weight:bold;}
 
+form table td.label{ padding-top:0.68em !important;}
 
 
 
-
-
-.main-content .content-section .view-content{max-width:58em;}
+.main-content .content-section .view-content{max-width:100%;}
 
 
 /*--- drupal edit tabs ---*/
@@ -407,27 +420,22 @@ html input[type="button"].form-submit{
 	text-transform: uppercase;
 }
 
-.btn-primary,
-html input[type="button"].form-submit {
+.btn-primary{
   border:none;
 	background-image:none;
   background-color: transparent;
 }
-html input[type="button"].form-submit:hover,
 .btn-primary:hover,
-html input[type="button"].form-submit:focus,
 .btn-primary:focus {
 	background-image:none;
   background-color: transparent;
 }
-html input[type="button"].form-submit:active,
 .btn-primary:active,
 .btn-primary.active {
 	background-image:none;
   background-color: rgba(255, 255, 255, .1);
   box-shadow:none;
 }
-html input[type="button"].form-submit,
 .btn-primary{
 	padding: 0;
 	margin: 0.75em;	
@@ -440,11 +448,35 @@ html input[type="button"].form-submit,
 	font-size: 0.75em;
 	letter-spacing:0.12em;
 }
-html input[type="button"].form-submit:hover,
 .btn-primary:hover {
 	color:#fff;
 	background-color: #4850bd; /* darker */
 }
+
+
+
+html input[type="button"].form-submit{
+	padding: 0;
+	margin: 0.75em;	
+	height:2.56em;
+	line-height:1.75em;
+	border-radius:0.18em;
+	background-color: #fff;
+	text-transform:uppercase;
+	color:#555;
+	font-size: 0.75em;
+	letter-spacing:0.12em;
+}
+html input[type="button"].form-submit:hover{
+	color:#333;
+	background-color: #f0f0f0; /* darker */
+}
+html input[type="button"].form-submit:active{
+	background-image:none;
+  background-color: #fff;
+  box-shadow:none;
+}
+
 
 /*
 .btn-primary:active,
@@ -476,6 +508,7 @@ html input[type="button"].form-submit{
 	text-align:center;
 	height:4em;
 	width:3.5em; 
+	max-width:3.5em;
 	font-size:130%;
 	line-height:2.25em;
 	display:inline-block;
@@ -618,8 +651,10 @@ div.sidebar { z-index:1;}
 
 .breadwrap ol{ border:none;}
 
-
-
+/* tables in admin */
+span.filter-option.pull-left{
+	width:3.25em;
+}
 
 .main-content table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
 	width:70px;
@@ -831,7 +866,7 @@ div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; bord
 .field-widget-options-select{
 	border-bottom:1px solid #ddd; 
 	/*margin:0 -2em; */
-	padding:0; 
+	padding:0 0 0.75em;; 
 }
 
 

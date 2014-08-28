@@ -66,12 +66,12 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   margin-left: 0;
   margin-right: 0;
   min-height:100%;
-  font-size:1.06em;
+  font-size:1em;
 }
-.content-section { padding: 0.5em 2em 5em 2em; min-height:100%;}
-.tab-content{ padding-top:0.75em;}
+.content-section { padding: 0.5em 2% 5em; min-height:100%;}
+.tab-content{ padding-top:10px;}
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:500; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .content-section iframe {border: none;}
 .content-section .google-maps {
   position: relative;
@@ -87,7 +87,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   height: 100% !important;
 }
 .container-narrow > hr {
-  margin: 2em 0;
+  margin: 3% 0;
 }
 
 
@@ -181,9 +181,7 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   line-height: 30px;
  }
 .select-wrapper select {
-  margin: 0;
-  position: absolute;
-  z-index: 2;          
+  margin: -1px 0 0 1px;          
   cursor: pointer;
   outline: none;
   opacity: 0;
@@ -193,9 +191,8 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
   -moz-opacity: 0;
-  width: 92%;
-  margin-left: 1px;
-  margin-top: -1px;
+  position: absolute;
+  z-index: 2;
   left: 0;
   width: 100%;
 }
@@ -209,7 +206,7 @@ label.option div,
 label.option div.hover {
   margin-left: -15px;
   clear: none;
-  padding: 5px 0 4px 35px;
+  padding: 5px 0 4px 15px;
   cursor: pointer;
   /*background: url(../images/default_radio_btn.png) no-repeat;
   background-position: left center;*/
@@ -449,8 +446,8 @@ select:focus option:checked:hover {
   color: #ccc;
   background:transparent;
   background-image:none;
-  width:25;
-  height:25;
+  width:1em;
+  height:1em;
   padding:0;
   margin:0;
   border:none;
@@ -1076,13 +1073,13 @@ ul.menu-main>li>a:first-child {
 
 .search-results,
 .shanti-gallery{
-	width: 100%;
+	width: 100%;/*
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
  -moz-column-width: 12em;
  -moz-column-gap: 1em;
  column-width: 12em;
- column-gap: 1em;
+ column-gap: 1em; */
  /*position:relative;
  top:2em;*/
  -webkit-margin-before: 0;
@@ -1092,6 +1089,12 @@ ul.menu-main>li>a:first-child {
  -webkit-padding-start: 0;
  
 }
+.search-results div,
+.shanti-gallery div{
+	display:inline;
+	float:left;
+}
+
 
 .search-results a,
 .search-results a:hover,
@@ -1110,7 +1113,7 @@ ul.menu-main>li>a:first-child {
 	border-radius:.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
-	display: block;
+	display: inline-block;
   position:relative;
   -webkit-box-shadow: 0 3px 3px rgba(50, 50, 50, 0.2750);
 	box-shadow:         0 3px 3px rgba(50, 50, 50, 0.2750);
@@ -1234,9 +1237,19 @@ ul.menu-main>li>a:first-child {
 	padding: .38em .75em .5em 1em;
 }
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { line-height: 1.25em; margin:0 0.5em 0.5em 0;}
+
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0.75em 0.5em 0; letter-spacing:-0.12em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
+
+.shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:0.62em;}
+.shanti-thumbnail .shanti-field-group-audience > a.shanti-thumbail-link:before{
+	font-family: 'Glyphicons Halflings';
+	content: "\e144"; /*-- link icon */
+	color:#333;
+	width:1.32em;
+	height:1.32em;
+}
 
 /*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before,
@@ -1416,6 +1429,7 @@ table.pagerer {
   font-weight:bold;
 	font-weight:700;
 	float:right;
+	width:100%;
 }
 input.pagerer-page{ /* the input for page count */
 	border:none;	
