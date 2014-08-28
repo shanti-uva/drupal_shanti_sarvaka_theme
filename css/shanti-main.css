@@ -1244,7 +1244,7 @@ ul.shanti-gallery > div{
 
 .shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:0.62em; font-family: 'Glyphicons Halflings';}
 .shanti-thumbnail .shanti-field-group-audience a:hover{ text-decoration:underline;}
-.shanti-thumbnail .shanti-field-group-audience a.shanti-thumbail-link:before{
+.shanti-thumbnail .shanti-field-group-audience a:not(.shanti-thumbail-link):before{
 	font-family: 'Glyphicons Halflings';
 	content: "\e144"; /*-- link icon */
 	color:#333;
