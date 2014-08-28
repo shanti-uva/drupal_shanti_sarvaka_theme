@@ -1239,19 +1239,20 @@ ul.shanti-gallery > div{
 }
 
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0.75em 0.5em 0.5em 0; letter-spacing:-0.12em;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0 0.5em 0.38em 0; letter-spacing:-0.06em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #606060; font-size: 0.93em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
 .shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:1em;}
 .shanti-thumbnail .shanti-field-group-audience a:hover{ text-decoration:underline;}
-.shanti-thumbnail .shanti-field-group-audience a.icon-link:before{
+.shanti-thumbnail .shanti-field-group-audience a.shanti-thumbnail-link+a:before{
 	font-family: 'Glyphicons Halflings';
 	content: "\e144"; /*-- link icon */
 	color:#333;
 	width:1.32em;
 	height:1.32em;
 	display:inline-block;
+	margin:1px 4px 0 2px;
 }
 
 /*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
@@ -1431,7 +1432,7 @@ table.pagerer {
   text-transform:uppercase;
   font-weight:bold;
 	font-weight:700;
-	/* float:right; */
+	float:right;
 	width:100%;
 }
 input.pagerer-page{ /* the input for page count */
@@ -1454,7 +1455,7 @@ ul.pager{
 	margin:0;
 	display:inline;
 	text-align:right;
-	float:right;
+	/* float:right; */
 }
 ul.pager li{ padding:0 1px; line-height:1.12em;}
 ul.pager li>a{
