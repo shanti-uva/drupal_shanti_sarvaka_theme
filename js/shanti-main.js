@@ -569,6 +569,7 @@
 		});
 	}
 	
+	// *** SEARCH *** Initialization
 	function searchInit() {
 		// Handle Search form Submit
 		$('#gen-search form button#searchbutton').click(function() { $(this).parents('form').eq(0).submit(); });
@@ -580,6 +581,20 @@
 			event.preventDefault();
 			window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
 		});
+		
+	 	// --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
+    searchTabHeight();
+    $(window).bind('load orientationchange resize', searchTabHeight );
+	  
+	  // --- advanced search toggle icons, open/close, view change height
+	  $(".advanced-link").click(function () {
+	      $(this).toggleClass("show-advanced",'fast');
+	      $(".advanced-view").slideToggle('fast');
+	      $(".advanced-view").toggleClass("show-options");
+	      $(".view-wrap").toggleClass("short-wrap"); // ----- toggle class for managing view-section height      
+	      searchTabHeight();
+	  }); 
+	
 	}
 
 // *** SEARCH *** adapt search panel height to viewport
@@ -599,19 +614,6 @@
 		$(".view-wrap.short-wrap").css('height', comboHeight);            
   } 
 	 	
-	 	// --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
-    searchTabHeight();
-    $(window).bind('load orientationchange resize', searchTabHeight );
-	  
-	  // --- advanced search toggle icons, open/close, view change height
-	  $(".advanced-link").click(function () {
-	      $(this).toggleClass("show-advanced",'fast');
-	      $(".advanced-view").slideToggle('fast');
-	      $(".advanced-view").toggleClass("show-options");
-	      $(".view-wrap").toggleClass("short-wrap"); // ----- toggle class for managing view-section height      
-	      searchTabHeight();
-	  }); 
-	
 	function doAjaxSearch(qstr, type) {
 		var surl = '/services/ajaxsearch';
 		$.ajax({
@@ -662,7 +664,7 @@ jQuery(function ($) {
     $('.row-offcanvas').toggleClass('active');
   });
   
-  $('.advanced-view').css('display','block');
+  //$('.advanced-view').css('display','block');
   
   // $('fieldset.container-inline').removeClass('container-inline');
   
