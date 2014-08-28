@@ -1243,7 +1243,7 @@ ul.shanti-gallery > div{
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #606060; font-size: 0.93em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:1em;}
+.shanti-thumbnail .shanti-field-group-audience a{ display:block; font-size:0.82em; line-height:1em;}
 .shanti-thumbnail .shanti-field-group-audience a:hover{ text-decoration:underline;}
 .shanti-thumbnail .shanti-field-group-audience a.shanti-thumbnail-link+a:before{
 	font-family: 'Glyphicons Halflings';
@@ -1252,6 +1252,7 @@ ul.shanti-gallery > div{
 	width:1.32em;
 	height:1.32em;
 	display:inline-block;
+	margin:1px 4px 0 2px;
 }
 
 /*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
