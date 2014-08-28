@@ -1256,7 +1256,9 @@ h2 button.toggle-facet-label-search{
 
 
 
-
+.shanti-filters table td:last-child{
+	width:100%;
+}
 
 
 
