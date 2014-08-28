@@ -1137,7 +1137,8 @@ ul.shanti-gallery > div{
 	overflow: hidden;
 }
 .shanti-thumbnail-image img {
-	width: 100%;
+	/*width: 100%;*/
+	height: 140px;
 	border: none;
 	border-radius: .32em .32em 0 0;
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
