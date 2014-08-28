@@ -1428,7 +1428,7 @@ table.pagerer {
   text-transform:uppercase;
   font-weight:bold;
 	font-weight:700;
-	float:right;
+	/* float:right; */
 	width:100%;
 }
 input.pagerer-page{ /* the input for page count */
