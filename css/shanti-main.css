@@ -1071,9 +1071,12 @@ ul.menu-main>li>a:first-child {
 /*----- Audio/Video Thumbnails -------*/
 /*------------------------------------*/
 
-.search-results,
-.shanti-gallery{
-	width: 100%;/*
+ul.search-results,
+ul.shanti-gallery{
+	width: 100%;
+	margin:0;
+	padding:0;
+	/*
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
  -moz-column-width: 12em;
@@ -1089,11 +1092,13 @@ ul.menu-main>li>a:first-child {
  -webkit-padding-start: 0;
  
 }
+/*
 ul.search-results > div,
 ul.shanti-gallery > div{
 	display:inline;
 	float:left;
 }
+*/
 
 
 .search-results a,
@@ -1109,8 +1114,8 @@ ul.shanti-gallery > div{
   max-width: 11.75em;
 	height: 19.5em;
 	padding: 0;
-  margin:  0.25em 0.5em 1.25em;
-	border-radius:.32em;
+  margin:  1.25em 1em;
+	border-radius: 0.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
 	display: inline-block;

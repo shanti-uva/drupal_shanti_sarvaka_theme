@@ -1257,7 +1257,7 @@ h2 button.toggle-facet-label-search{
 
 
 
-
+.shanti-filters table tbody{ border-top: none;}
 
 .shanti-filters table td:nth-child(2){
 	width:100%;
