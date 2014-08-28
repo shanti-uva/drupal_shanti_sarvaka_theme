@@ -1118,7 +1118,7 @@ div#block-system-main.block.block-system{
   max-width: 11.75em;
 	height: 19.5em;
 	padding: 0;
-  margin:  0 1em;
+  margin: 5px 1% 15px;
 	border-radius: 0.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
@@ -1249,6 +1249,7 @@ div#block-system-main.block.block-system{
 
 .shanti-thumbnail .body-wrap{
 	padding: .38em .75em .5em 1em;
+	overflow:auto;
 }
 
 
