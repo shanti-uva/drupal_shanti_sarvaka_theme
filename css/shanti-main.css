@@ -1239,11 +1239,11 @@ ul.shanti-gallery > div{
 }
 
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0.75em 0.5em 0.5em 0; letter-spacing:-0.06em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0.18em 0.5em 0.5em 0; letter-spacing:-0.06em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #606060; font-size: 0.93em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-thumbnail .shanti-field-group-audience a{ display:block; font-size:0.82em; line-height:1em;}
+.shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:1em;}
 .shanti-thumbnail .shanti-field-group-audience a:hover{ text-decoration:underline;}
 .shanti-thumbnail .shanti-field-group-audience a.shanti-thumbnail-link+a:before{
 	font-family: 'Glyphicons Halflings';
