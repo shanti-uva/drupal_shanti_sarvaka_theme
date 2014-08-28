@@ -46,6 +46,14 @@
 	// End of namespace closure
 	} (jQuery));
 	
+	// Behaviors for the theme
+	Drupal.behaviors.shantiSarvaka = {
+	  attach: function (context, settings) {
+			var h = $('div.region-sidebar-second').height();
+			console.log(context, h);
+	  }
+	};
+
 	// Initialization of UI components on page on load
 	jQuery(function($) {
 		createTopLink();
@@ -660,7 +668,7 @@ jQuery(function ($) {
   // $('fieldset.container-inline').removeClass('container-inline');
   
   $('.shanti-thumbnail').unwrap();
-  $('.shanti-thumbnail')find('a:eq(1)').addClass('icon-link');
+  $('.shanti-thumbnail').find('a:eq(1)').addClass('icon-link');
 });
 
 
