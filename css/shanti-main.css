@@ -1140,11 +1140,13 @@ ul.shanti-gallery > div{
 .shanti-thumbnail-image {
 	width: 100%;
 	overflow: hidden;
+	border-radius: .32em .32em 0 0;
 }
 .shanti-thumbnail-image img {
 	/*width: 100%;*/
 	height: 140px;
 	border: none;
+	overflow: hidden;
 	border-radius: .32em .32em 0 0;
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 }
@@ -1153,7 +1155,9 @@ ul.shanti-gallery > div{
 .shanti-thumbnail-image a{
 	position:relative;
 	display:block;	
+	overflow: hidden;
 	padding:0;
+	border-radius: .32em .32em 0 0;
 }
 .shanti-thumbnail-image i {
 	position: absolute;
