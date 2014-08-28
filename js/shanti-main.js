@@ -659,7 +659,7 @@ jQuery(function ($) {
   
   // $('fieldset.container-inline').removeClass('container-inline');
   
-  $('.shanti-thumbnail').first('div').remove();
+  $('.shanti-gallery').first('div').remove();
 });
 
 
