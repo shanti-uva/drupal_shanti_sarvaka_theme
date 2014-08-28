@@ -393,7 +393,7 @@ function shanti_sarvaka_create_user_menu($um) {
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
     // Determine whether login is via password or shibboleth and create login link accordingly
-    $loginlink = url('user');
+    $loginlink = 'user';
     if(module_exists('shib_auth')) {
       $loginlink = shib_auth_generate_login_url();
     }
@@ -426,14 +426,14 @@ function shanti_sarvaka_create_user_menu($um) {
           'profile' => array(
             'link' => array(
               'title' => t('Profile'),
-              'href' => url('user'),
+              'href' => 'user',
             ),
             'below' => array(),
           ),
           'logout' => array(
             'link' => array(
               'title' => t('Log out'),
-              'href' => url('user/logout'),
+              'href' => 'user/logout',
             ),
             'below' => array(),
           ),
@@ -445,7 +445,7 @@ function shanti_sarvaka_create_user_menu($um) {
 		$myarray[$n] = array(
 		   'link' => array( 
 				'title'	=> $link['link']['title'],
-				'href' => url($link['link']['href']),	
+				'href' => $link['link']['href'],	
 			),
 			'below' => array(),
 		) ; 
@@ -471,7 +471,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
       $html .= $link['html'];
       continue;
     }
-    $url = $link['link']['href'];
+    $url = url($link['link']['href']);
     if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
     $target = (substr($url, 0, 4) != 'http') ? '': ' target="_blank"';
     $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
