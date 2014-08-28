@@ -671,7 +671,7 @@ jQuery(function ($) {
   // $('fieldset.container-inline').removeClass('container-inline');
   
   $('.shanti-thumbnail').unwrap();
-  $('.shanti-thumbnail').find('a:eq(1)').addClass('icon-link');
+  $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
 });
 
 
