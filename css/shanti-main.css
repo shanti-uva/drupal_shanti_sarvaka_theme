@@ -1089,8 +1089,8 @@ ul.menu-main>li>a:first-child {
  -webkit-padding-start: 0;
  
 }
-.search-results div,
-.shanti-gallery div{
+ul.search-results > div,
+ul.shanti-gallery > div{
 	display:inline;
 	float:left;
 }
@@ -1238,7 +1238,7 @@ ul.menu-main>li>a:first-child {
 }
 
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0.75em 0.5em 0; letter-spacing:-0.12em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0.75em 0.5em -0.5em; letter-spacing:-0.12em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
