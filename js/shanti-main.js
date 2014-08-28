@@ -46,10 +46,12 @@
 	// End of namespace closure
 	} (jQuery));
 	
+	
 	// Behaviors for the theme
 	Drupal.behaviors.shantiSarvaka = {
 	  attach: function (context, settings) {
-			//var h = $('div.region-sidebar-second').height();
+			var h = $('div.region-sidebar-second').height();
+			console.log(context, h);
 	  }
 	};
 
