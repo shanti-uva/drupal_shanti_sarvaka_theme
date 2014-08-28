@@ -660,7 +660,7 @@ jQuery(function ($) {
   // $('fieldset.container-inline').removeClass('container-inline');
   
   $('.shanti-thumbnail').unwrap();
-  $('.shanti-thumbnail')find('a:eq(1)').addClass('icon-link');
+  $('.shanti-thumbnail .shanti-field-content')find('a').eq(1).addClass('icon-link');
 });
 
 
