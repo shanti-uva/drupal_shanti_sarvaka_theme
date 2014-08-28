@@ -317,7 +317,7 @@
 	  }
 	
 	  // --- set class on dropdown menu for icon
-	  $(".extruder.right .flap").hover( function() {
+	  $('.shanti-field-title a').hover( function() {
 	      $(this).addClass('on-hover');
 	      },
 	        function () {
@@ -672,6 +672,15 @@ jQuery(function ($) {
   
   // $('.shanti-thumbnail').unwrap();
   $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
+  
+  $('.shanti-field-title a').hover( function() {
+	      $(this).parent().find('.shanti-thumbnail-image').addClass('on-hover');
+	      },
+	        function () {
+	      $(this).parent().find('.shanti-thumbnail-image').removeClass('on-hover');
+	      }
+	 );
+	 
 });
 
 
