@@ -1089,6 +1089,12 @@ ul.menu-main>li>a:first-child {
  -webkit-padding-start: 0;
  
 }
+.search-results div,
+.shanti-gallery div{
+	display:inline;
+	float:left;
+}
+
 
 .search-results a,
 .search-results a:hover,
@@ -1232,12 +1238,18 @@ ul.menu-main>li>a:first-child {
 }
 
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.06em; margin:0 0.5em 0.5em 0; letter-spacing:-0.12em;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em;line-height: 1.18em; margin:0.75em 0.5em 0; letter-spacing:-0.12em;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
 .shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:0.62em;}
-
+.shanti-thumbnail .shanti-field-group-audience > a.shanti-thumbail-link:before{
+	font-family: 'Glyphicons Halflings';
+	content: "\e144"; /*-- link icon */
+	color:#333;
+	width:1.32em;
+	height:1.32em;
+}
 
 /*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before,
