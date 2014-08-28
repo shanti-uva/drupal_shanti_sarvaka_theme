@@ -1145,12 +1145,12 @@ div.fieldset-wrapper{ padding-top:10px;}
 
 .views-exposed-form label{
   margin-bottom:0;
-  font-size:90%;
+  font-size:0.82em;
   padding-left:.44em;
   font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-weight:500;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .views-exposed-form .views-exposed-widget{

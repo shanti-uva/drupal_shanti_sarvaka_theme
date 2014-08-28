@@ -1249,6 +1249,7 @@ ul.shanti-gallery > div{
 	font-family: 'Glyphicons Halflings';
 	content: "\e144"; /*-- link icon */
 	color:#333;
+	font-size:1.12em;
 	width:1.32em;
 	height:1.32em;
 	display:inline-block;
