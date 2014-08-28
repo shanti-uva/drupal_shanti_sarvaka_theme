@@ -1242,7 +1242,7 @@ ul.shanti-gallery > div{
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #444; font-size: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:0.62em; font-family: 'Glyphicons Halflings';}
+.shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:0.62em;}
 .shanti-thumbnail .shanti-field-group-audience a:hover{ text-decoration:underline;}
 .shanti-thumbnail .shanti-field-group-audience a:not(.shanti-thumbail-link):before{
 	font-family: 'Glyphicons Halflings';
