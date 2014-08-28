@@ -1431,7 +1431,7 @@ table.pagerer {
   text-transform:uppercase;
   font-weight:bold;
 	font-weight:700;
-	/* float:right; */
+	float:right;
 	width:100%;
 }
 input.pagerer-page{ /* the input for page count */
@@ -1454,7 +1454,7 @@ ul.pager{
 	margin:0;
 	display:inline;
 	text-align:right;
-	float:right;
+	/* float:right; */
 }
 ul.pager li{ padding:0 1px; line-height:1.12em;}
 ul.pager li>a{
