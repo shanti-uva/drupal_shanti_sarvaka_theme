@@ -674,10 +674,10 @@ jQuery(function ($) {
   $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
   
   $('.shanti-field-title a').hover( function() {
-	      $(this).parent().find('.shanti-thumbnail-image').addClass('on-hover');
+	      $(this).parent('.shanti-thumbnail').addClass('title-hover');
 	      },
 	        function () {
-	      $(this).parent().find('.shanti-thumbnail-image').removeClass('on-hover');
+	      $(this).parent('.shanti-thumbnail').removeClass('title-hover');
 	      }
 	 );
 	 
