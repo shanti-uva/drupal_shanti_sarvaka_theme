@@ -265,7 +265,7 @@ div.file-widget.form-managed-file{ padding-left:1.25em;}
 
 
 .form-item.form-type-select{ padding:0 0.25em 0 0; }
-.form-item .description{ margin-top:0.25em; margin-bottom:.75em; padding-left:1em;}
+.form-item .description{ font-size:0.93em; margin-top:0.25em; margin-bottom:.75em; padding-left:1em;}
 .form-item label{ margin:0 0 -0.75em 1.5em; font-size:90%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 .exposed-filters .form-item label{ float:none;}
@@ -366,7 +366,7 @@ textarea {
 
 .admin-menu .has-tabs .titlearea>div { height:6.5em;}
 
-.admin-menu .sticky-table a{ white-space:nowrap; font-size:90%; font-weight:bold;}
+.admin-menu .sticky-table a{ white-space:nowrap; font-weight:bold;}
 
 form table td.label{ padding-top:0.68em !important;}
 
@@ -439,8 +439,8 @@ html input[type="button"].form-submit{
 .btn-primary{
 	padding: 0;
 	margin: 0.75em;	
-	height:2.56em;
-	line-height:1.75em;
+	height:3em;
+	line-height:2em;
 	border-radius:0.18em;
 	background-color: #5b68ce;
 	text-transform:uppercase;
@@ -517,14 +517,12 @@ html input[type="button"].form-submit{
 }
 
 .btn-primary span {
-	font-size: 0.88em;
+	font-size: 1;
 	background-color: rgba(255, 255, 255, .1);
 	display:inline-block;
 	width:auto;
-	padding: .68em 1.5em;
+	padding: .62em 1.5em;
 	margin:0;
-	height:2.88em;
-	line-height:1.88em;
 	white-space:nowrap;
 	text-align:center;
 	letter-spacing:0.06em;
@@ -787,7 +785,16 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 #video-node-form > div{ border-top:1px solid #ddd;}
 
-.vertical-tabs-panes{ margin-bottom:2em;}
+.vertical-tabs-panes{ margin-bottom:2em; font-size:1.06em}
+
+.vertical-tabs a{ border-bottom:none !important;}
+.vertical-tabs a:hover{ text-decoration:underline; border-bottom:none !important;}
+.vertical-tabs .vertical-tab-button.selected a:hover,
+.vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:hover{ text-decoration:none;}
+
+.vertical-tabs table.features div.feature div.description{ color:#666;}
+
+table.features-admin th{ padding-top:.75em;}
 
 
 .field-accordion .panel-body{
@@ -887,29 +894,28 @@ div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; bord
   font-size: 0.5em;    
   background: #fff;
   color: #606060;    
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   display: block;
   border-radius: 50%;
   background-clip: padding-box;
   margin-right:20px;
-  margin-left:5px;
   float: left;
   position: relative;
-  top: 17px;
-  left: 0;
+  top: 13px;
+  left: 10px;
   -webkit-box-shadow: 0 0 4px 3px #ddd;
   box-shadow: 0 0 4px 3px #ddd;
   border-collapse:separate;
 }
 .field-accordion .panel-heading h6.panel-title a i.glyphicon:before {
   position: relative;
-  top: 3px;
-  left: 4px;
+  top: 5px;
+  left: 6px;
 }
 .field-accordion .panel-heading h6.panel-title a i.glyphicon.glyphicon-minus:before {
   position: relative;
-  left: 3px;
+  left: 5px;
 }
 
 
