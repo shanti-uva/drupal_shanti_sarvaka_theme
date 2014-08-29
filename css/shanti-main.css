@@ -1157,7 +1157,6 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 }
 
-
 .shanti-thumbnail-image a{
 	position:relative;	
 	overflow: hidden;
@@ -1169,24 +1168,19 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	top: 0;
 	right: 0;
 	z-index:100;
-	background-color: rgba( 50, 204, 202, 0.8); /* #32ccca */
+	background-color: rgba( 50, 204, 202, 0.8);
 	width: 2em;
 	height: 1.88em;
 	border: none;
 	border-radius: 0 0.25em;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
+	background-clip: padding-box;
 	color: white;
 	font-size:1.25em;
 	line-height:1.83em;
 	font-weight:normal;
 	text-align:center;
 }
-.shanti-thumbnail-image:hover i{ }
-
-.shanti-thumbnail.audio .shanti-thumbnail-image i {
-	background-color: rgba(72, 80, 189, 0.8) !important;
-}
-
+.shanti-thumbnail.audio .shanti-thumbnail-image i { background-color: rgba(72, 80, 189, 0.8) !important;}
 
 .shanti-thumbnail-image a .overlay{	
 	position:absolute;
@@ -1208,13 +1202,6 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 }
 .shanti-thumbnail-image a:hover .overlay{
 	background: rgba(0,0,0, 0.7000);
-}
-.shanti-thumbnail-image.shanti-field-video a .overlay:before{ 
-		  -webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;	
 }
 
 .shanti-thumbnail-image a .overlay:before{
@@ -1243,25 +1230,24 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 .shanti-thumbnail-image a:active .overlay:before{
 	color:rgba(255,255,255, 0.7500);
 }
+
+
+
 .shanti-thumbnail-info {
 	font-size: 0.75em;
 	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
-.shanti-thumbnail .shanti-field-created{
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-}
-.shanti-thumbnail .body-wrap{
-	padding: .38em .75em .5em 1em;
-	overflow:auto;
-}
+.shanti-thumbnail .body-wrap{ padding: .38em .75em .5em 1em; overflow:auto;}
+.shanti-field-created{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
 
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0.5em 0.38em 0; letter-spacing:-0.06em;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1em; font-weight: bold;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
+.shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0.5em 0.38em 0; letter-spacing:-0.06em;}
+.shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1em; font-weight: bold;}
+.shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:1em;}
-.shanti-thumbnail .shanti-field-group-audience a:hover{ text-decoration:underline;}
-.shanti-thumbnail .shanti-field-group-audience a.shanti-thumbnail-link+a:before{
+.shanti-field-group-audience a{ font-size:0.82em; line-height:1.32em;}
+.shanti-field-group-audience a:hover{ text-decoration:underline;}
+
+.shanti-field-group-audience a.shanti-thumbnail-link+a:before{
 	font-family: 'Glyphicons Halflings';
 	content: "\e144"; /*-- link icon */
 	color:#666;
@@ -1273,10 +1259,8 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	position:relative;
 	top:2px;
 }
-
-/*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before,
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-created span:before{
+.shanti-thumbnail-field.shanti-field-duration span:before,
+.shanti-thumbnail-field.shanti-field-created span:before{
 	font-family: 'shanticon';
 	content: "\e63b";
 	font-size:120%;
@@ -1286,22 +1270,16 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	top:0;
 	margin-right:4px;	
 }
-/*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title:hover a:before{ color:#555;}
-.shanti-thumbnail.audio .shanti-thumbnail-field.shanti-field-title a:before{
-	content: "\e60a";
-	margin-right:0.5em;
-}*/
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration span:before{
+.shanti-thumbnail-field.shanti-field-duration span:before{
 	content: "\e61c";
 	position:relative;
 	top:0.06em;
 }
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-created span:before{
+.shanti-thumbnail-field.shanti-field-created span:before{
 	content: "\e60c";
 	margin-right: 0.56em !important;
 	top:0.06em;
 }
-
 
 
 .shanti-thumbnail .footer-wrap { 
@@ -1317,7 +1295,7 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	color:#787878;
 	height:2.5em;
 }
-.shanti-thumbnail .footer-wrap a{ color:#444; }
+.shanti-thumbnail .footer-wrap a{ color:#444; display:inline;}
 .shanti-thumbnail .footer-wrap a:hover{ text-decoration:underline; }
 .shanti-thumbnail .footer-wrap a:active{ text-decoration:none; }
 .shanti-thumbnail .footer-wrap i{ font-size:1.32em;position:relative;top:2px;}
