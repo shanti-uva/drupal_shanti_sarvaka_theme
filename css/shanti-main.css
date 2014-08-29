@@ -1254,7 +1254,7 @@ div#block-system-main.block.block-system{
 
 
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0 0.5em 0.38em 0; letter-spacing:-0.06em;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #606060; font-size: 0.93em; line-height: 1em; font-weight: bold;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #606060; font-size: 0.93em; line-height: 1.12em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
 .shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:1em;}
@@ -1267,7 +1267,9 @@ div#block-system-main.block.block-system{
 	width:1.32em;
 	height:1.32em;
 	display:inline-block;
-	margin:1px 4px 0 2px;
+	margin:0 4px 0 2px;
+	position:relative;
+	top:2px;
 }
 
 /*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
@@ -1742,7 +1744,7 @@ div.messages ul li {
 .back-to-top {
   position: fixed;
   bottom: 1em;
-  right: 1em;
+  right: 1.5em;
   z-index:1000;
   height:3.25em;
   width:3.25em;
@@ -2195,12 +2197,12 @@ div.messages ul li {
 	
 	.search-results,
 	.shanti-gallery{
-		 -webkit-column-width: 13em;
+		 /*-webkit-column-width: 13em;
 		 -webkit-column-gap: 1em;  
 		 -moz-column-width: 12em;
 		 -moz-column-gap: 1em;
 		 column-width: 12em;
-		 column-gap: 1em;
+		 column-gap: 1em;*/
 	}
 	.shanti-thumbnail { 
 	  max-width: 13em;
