@@ -214,9 +214,9 @@ html.js input.form-autocomplete{ background-position: 99% 0.62em !important;}
 
 .form-wrapper legend{ color:#505050; margin-top:1.25em; margin-bottom:0 !important; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
-.form-wrapper legend .fieldset-legend{ font-size:100%;}
+.form-wrapper legend .fieldset-legend{ font-size:100%; margin-top:1em; }
 
-
+fieldset.form-wrapper{ margin-bottom:1em;}
 
 tr.region-title td{
 	color:#555; padding-top:0.5em; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
