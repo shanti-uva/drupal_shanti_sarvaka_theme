@@ -1102,8 +1102,9 @@ ul.shanti-gallery > div{
 */
 
 div#block-system-main.block.block-system{
-	float:none;
+	float:left;
 }
+body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 
 
 .search-results a,
