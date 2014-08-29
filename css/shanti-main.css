@@ -1070,7 +1070,8 @@ ul.menu-main>li>a:first-child {
 /*------------------------------------*/
 /*----- Audio/Video Thumbnails -------*/
 /*------------------------------------*/
-
+.search-results,
+.shanti-gallery,
 ul.search-results,
 ul.shanti-gallery{
 	width: 100%;
@@ -1108,7 +1109,7 @@ div#block-system-main.block.block-system{
 .search-results a,
 .search-results a:hover,
 .shanti-gallery a,
-.shanti-gallery a:hover{ border:none !important; }
+.shanti-gallery a:hover{ color:#555; border:none !important; 	display:block;}
 
 
 .shanti-thumbnail { 
@@ -1157,8 +1158,7 @@ div#block-system-main.block.block-system{
 
 
 .shanti-thumbnail-image a{
-	position:relative;
-	display:block;	
+	position:relative;	
 	overflow: hidden;
 	padding:0;
 	border-radius: .32em .32em 0 0;
@@ -1254,9 +1254,8 @@ div#block-system-main.block.block-system{
 	overflow:auto;
 }
 
-
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0.5em 0.38em 0; letter-spacing:-0.06em;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { color: #606060; font-size: 0.93em; line-height: 1.25em; font-weight: bold;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1.25em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
 .shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:1em;}
@@ -1264,8 +1263,8 @@ div#block-system-main.block.block-system{
 .shanti-thumbnail .shanti-field-group-audience a.shanti-thumbnail-link+a:before{
 	font-family: 'Glyphicons Halflings';
 	content: "\e144"; /*-- link icon */
-	color:#333;
-	font-size:1.38em;
+	color:#666;
+	font-size:1.25em;
 	width:1.32em;
 	height:1.32em;
 	display:inline-block;
@@ -1440,7 +1439,7 @@ table.pagerer {
 	clear: both;
 	color:#555;
 	text-align:right;
-  margin: 0.25em 4em .75em 0;
+  margin: 0 4em 0 0;
   font-size:80%;
   font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
   text-transform:uppercase;
