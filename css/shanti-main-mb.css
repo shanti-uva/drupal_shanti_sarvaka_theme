@@ -521,7 +521,7 @@ html input[type="button"].form-submit{
 	background-color: rgba(255, 255, 255, .1);
 	display:inline-block;
 	width:auto;
-	padding: .68em 0;
+	padding: .68em 1.5em;
 	margin:0;
 	height:2.88em;
 	line-height:1.88em;

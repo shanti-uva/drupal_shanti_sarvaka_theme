@@ -1246,7 +1246,9 @@ div#block-system-main.block.block-system{
 	font-size: 0.75em;
 	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
-
+.shanti-thumbnail .shanti-field-created{
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
 .shanti-thumbnail .body-wrap{
 	padding: .38em .75em .5em 1em;
 	overflow:auto;
@@ -1263,13 +1265,13 @@ div#block-system-main.block.block-system{
 	font-family: 'Glyphicons Halflings';
 	content: "\e144"; /*-- link icon */
 	color:#333;
-	font-size:1.25em;
+	font-size:1.38em;
 	width:1.32em;
 	height:1.32em;
 	display:inline-block;
-	margin:0 4px 0 2px;
+	margin-right:4px;
 	position:relative;
-	top:0;
+	top:2px;
 }
 
 /*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:before,*/
@@ -1282,9 +1284,7 @@ div#block-system-main.block.block-system{
 	position:relative;
 	left:-0.06em;
 	top:0;
-	margin-right:0.38em;
-	margin-left: 0.12em;
-	
+	margin-right:4px;	
 }
 /*.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title:hover a:before{ color:#555;}
 .shanti-thumbnail.audio .shanti-thumbnail-field.shanti-field-title a:before{
@@ -1302,12 +1302,7 @@ div#block-system-main.block.block-system{
 	top:0.06em;
 }
 
-.shanti-thumbnail .shanti-field-created{
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-duration{
-	margin-top: 0.18em;
-}
+
 
 .shanti-thumbnail .footer-wrap { 
 	position:absolute;
