@@ -1148,7 +1148,7 @@ div#block-system-main.block.block-system{
 }
 .shanti-thumbnail-image img {
 	/*width: 100%;*/
-	height: 140px;
+	height: 100%;
 	border: none;
 	overflow: hidden;
 	border-radius: .32em .32em 0 0;
