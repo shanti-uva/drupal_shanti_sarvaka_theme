@@ -1241,10 +1241,10 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 .shanti-field-created{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
 
 .shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0.5em 0.38em 0; letter-spacing:-0.06em;}
-.shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1em; font-weight: bold;}
+.shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1.18em; font-weight: bold;}
 .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
-.shanti-field-group-audience a{ font-size:0.82em; line-height:1.32em;}
+.shanti-field-group-audience a{ font-size:0.82em; line-height:1.75em;}
 .shanti-field-group-audience a:hover{ text-decoration:underline;}
 
 .shanti-field-group-audience a.shanti-thumbnail-link+a:before{
