@@ -147,9 +147,9 @@ input.form-control,
 	border: 1px solid #ccc;
 	border-radius: 1.5em;
 	background-clip: padding-box;
-	font-size:0.88em;
-	height:1.75em;
-	line-height:1.75em;
+	font-size:1em;
+	height:2em;
+	line-height:2em;
 	padding:0.18em 0.75em 0;
   width:100%;  
 	overflow: auto;
