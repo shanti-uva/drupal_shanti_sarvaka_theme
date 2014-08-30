@@ -887,6 +887,15 @@ div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; bord
 }
 
 
+div.form-item.form-type-select.form-item-fields-group-group-type{
+	width:7.5em;
+}
+
+div.form-item.form-type-select.form-item-fields-group-group-parent{
+	width:10em;
+}
+
+
 
 
 
