@@ -147,10 +147,10 @@ input.form-control,
 	border: 1px solid #ccc;
 	border-radius: 1.5em;
 	background-clip: padding-box;
-	font-size:1em;
+	font-size:1.06em;
 	height:2em;
 	line-height:2em;
-	padding:0.18em 0.75em 0;
+	padding:0.25em 1em 0;
   width:100%;  
 	overflow: auto;
 	-webkit-box-shadow:0 2px 5px #eee inset;
@@ -349,7 +349,7 @@ textarea {
 */
 
 
-.admin-menu .block.block-system{ float:left; margin-top:1.75em; width:100%;}
+.admin-menu #block-system-main.block.block-system{ float:left; margin-top:1.75em; width:100%;}
 
 
 .admin-menu .content table td{ padding:5px;}
@@ -448,7 +448,6 @@ html input[type="button"].form-submit{
 	color:#eee;
 	font-size: 0.75em;
 	letter-spacing:0.12em;
-	
 }
 .btn-primary:hover {
 	color:#fff;
@@ -519,16 +518,16 @@ html input[type="button"].form-submit{
 }
 
 .btn-primary span {
+	font-size: 1;
 	background-color: rgba(255, 255, 255, .1);
+	display:inline-block;
+	width:auto;
 	padding: .62em 1.5em;
 	margin:0;
 	white-space:nowrap;
 	text-align:center;
+	letter-spacing:0.06em;
 	display:inline-block;
-	text-align:center; 
-	height: 5em; 
-	line-height:3em;
-	float:right;
 }
 .views-exposed-form .views-exposed-widget .btn-primary.form-submit{ margin-top:1.5em;}
 
@@ -626,8 +625,8 @@ div.sidebar { z-index:1;}
 #sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.5em;}
 
 #sidebar-second .btn.btn-primary.form-submit { margin-top:0.25em;}
-/* #sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	 */
-#sidebar-second .btn.btn-primary span {	text-align:center; padding: 0.75em 1.32em; height: 5em; line-height:3em;}
+#sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	
+#sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:3em;}
 
 #sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
 #sidebar-second .btn.btn-primary span{ width:80% !important;}
