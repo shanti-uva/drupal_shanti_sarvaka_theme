@@ -14,7 +14,7 @@ var warnedAbout = {};
 jQuery.migrateWarnings = [];
 
 // Set to true to prevent console output; migrateWarnings still maintained
-// jQuery.migrateMute = false;
+jQuery.migrateMute = true;
 
 // Show a message on the console so devs know we're active
 if ( !jQuery.migrateMute && window.console && window.console.log ) {
@@ -23,7 +23,7 @@ if ( !jQuery.migrateMute && window.console && window.console.log ) {
 
 // Set to false to disable traces that appear with warnings
 if ( jQuery.migrateTrace === undefined ) {
-	jQuery.migrateTrace = true;
+	jQuery.migrateTrace = false; // was true (ndg8f, 2014-08-30)
 }
 
 // Forget any warnings we've already given; public
