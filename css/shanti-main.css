@@ -1075,9 +1075,8 @@ ul.menu-main>li>a:first-child {
 ul.search-results,
 ul.shanti-gallery{
 	width: 100%;
-	margin:0 auto;
+	margin:0;
 	padding:0;
-	text-align:center;
 	/*
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
@@ -1111,18 +1110,17 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 .search-results a,
 .search-results a:hover,
 .shanti-gallery a,
-.shanti-gallery a:hover{ color:#555; border:none !important; text-align:center;	display:block; }
+.shanti-gallery a:hover{ color:#555; border:none !important; 	display:block;}
 
 
 .shanti-thumbnail { 
 	color:#444;
 	float:left;
-	text-align:left;
   width:  100%;
-  max-width: 11.5em;
-	height: 20em;
+  max-width: 11.75em;
+	height: 19.5em;
 	padding: 0;
-  margin: 8px;
+  margin: 5px 1% 15px;
 	border-radius: 0.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
@@ -1236,7 +1234,6 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 
 
 .shanti-thumbnail-info {
-	text-align:left;
 	font-size: 0.75em;
 	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
@@ -2182,9 +2179,9 @@ div.messages ul li {
 		 column-width: 12em;
 		 column-gap: 1em;*/
 	}
-	/*.shanti-thumbnail { 
-	  max-width: 14em;
-	}*/
+	.shanti-thumbnail { 
+	  max-width: 13em;
+	}
 }
 
 
