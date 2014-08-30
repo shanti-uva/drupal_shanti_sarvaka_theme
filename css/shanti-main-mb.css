@@ -518,15 +518,11 @@ html input[type="button"].form-submit{
 }
 
 .btn-primary span {
-	font-size: 1;
 	background-color: rgba(255, 255, 255, .1);
-	display:inline-block;
-	width:auto;
 	padding: .62em 1.5em;
 	margin:0;
 	white-space:nowrap;
 	text-align:center;
-	letter-spacing:0.06em;
 	display:inline-block;
 }
 .views-exposed-form .views-exposed-widget .btn-primary.form-submit{ margin-top:1.5em;}
