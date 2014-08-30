@@ -448,6 +448,7 @@ html input[type="button"].form-submit{
 	color:#eee;
 	font-size: 0.75em;
 	letter-spacing:0.12em;
+	
 }
 .btn-primary:hover {
 	color:#fff;
@@ -524,6 +525,10 @@ html input[type="button"].form-submit{
 	white-space:nowrap;
 	text-align:center;
 	display:inline-block;
+	text-align:center; 
+	height: 5em; 
+	line-height:3em;
+	float:right;
 }
 .views-exposed-form .views-exposed-widget .btn-primary.form-submit{ margin-top:1.5em;}
 
@@ -621,7 +626,7 @@ div.sidebar { z-index:1;}
 #sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.5em;}
 
 #sidebar-second .btn.btn-primary.form-submit { margin-top:0.25em;}
-#sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	
+/* #sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	 */
 #sidebar-second .btn.btn-primary span {	text-align:center; padding: 0.75em 1.32em; height: 5em; line-height:3em;}
 
 #sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
