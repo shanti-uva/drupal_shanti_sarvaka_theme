@@ -626,7 +626,7 @@ div.sidebar { z-index:1;}
 
 #sidebar-second .btn.btn-primary.form-submit { margin-top:0.25em;}
 #sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	
-#sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:3em;}
+#sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:2.38em;}
 
 #sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
 #sidebar-second .btn.btn-primary span{ width:80% !important;}

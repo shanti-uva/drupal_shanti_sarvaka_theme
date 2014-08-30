@@ -2183,6 +2183,14 @@ div.messages ul li {
 	.shanti-thumbnail { 
 	  max-width: 13em;
 	}
+	#sidebar-second .btn.btn-primary,
+	#sidebar-second .btn.btn-primary span{
+		font-size:.62em;
+	}
+	#sidebar-second .btn.btn-primary span{
+		width:95%;
+	}
+	
 }
 
 
