@@ -349,7 +349,8 @@ textarea {
 */
 
 
-.admin-menu #block-system-help.block.block-system{ float:left; margin-top:1.75em;}
+.admin-menu .block.block-system{ float:left; margin-top:1.75em; width:100%;}
+
 
 .admin-menu .content table td{ padding:5px;}
 
@@ -886,7 +887,7 @@ div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; bord
 	padding:0 2em;*/
 }
 
-
+/*
 div.form-item.form-type-select.form-item-fields-group-group-type{
 	width:7.5em;
 }
@@ -894,6 +895,8 @@ div.form-item.form-type-select.form-item-fields-group-group-type{
 div.form-item.form-type-select.form-item-fields-group-group-parent{
 	width:10em;
 }
+*/
+
 
 
 
