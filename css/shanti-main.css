@@ -1075,8 +1075,9 @@ ul.menu-main>li>a:first-child {
 ul.search-results,
 ul.shanti-gallery{
 	width: 100%;
-	margin:0;
+	margin:0 auto;
 	padding:0;
+	text-align:center;
 	/*
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
@@ -1110,17 +1111,17 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 .search-results a,
 .search-results a:hover,
 .shanti-gallery a,
-.shanti-gallery a:hover{ color:#555; border:none !important; 	display:block;}
+.shanti-gallery a:hover{ color:#555; border:none !important; text-align:center;	display:block; }
 
 
 .shanti-thumbnail { 
 	color:#444;
 	float:left;
   width:  100%;
-  max-width: 11.75em;
-	height: 19.5em;
+  max-width: 16em;
+	height: 20em;
 	padding: 0;
-  margin: 5px 1% 15px;
+  margin: 8px;
 	border-radius: 0.32em;
 	background-clip: padding-box;
 	background-color: #FFFFFF;	
@@ -2180,7 +2181,7 @@ div.messages ul li {
 		 column-gap: 1em;*/
 	}
 	.shanti-thumbnail { 
-	  max-width: 13em;
+	  max-width: 16em;
 	}
 }
 
