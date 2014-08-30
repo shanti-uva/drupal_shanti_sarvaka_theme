@@ -306,7 +306,7 @@ select:focus option:checked:hover {
 
 
 .navbar-collapse{ padding:0;}
-.navbar-default .navbar-nav>li{ border-left:1px solid #ddd; /* line-height:1.25em; height:3.5em; height:50px; */}
+.navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background-color: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
 .navbar-default .navbar-nav>li>a{ 
 	color:#666; 
 	display:inline-block; 
