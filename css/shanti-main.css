@@ -1103,6 +1103,7 @@ ul.shanti-gallery > div{
 
 div#block-system-main.block.block-system{
 	float:left;
+	width:100%;
 }
 body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 
@@ -1117,8 +1118,8 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	color:#444;
 	float:left;
   width:  100%;
-  max-width: 11.75em;
-	height: 19.5em;
+  max-width: 10.5em;
+	height: 20.5em;
 	padding: 0;
   margin: 5px 1% 15px;
 	border-radius: 0.32em;
@@ -2158,6 +2159,10 @@ div.messages ul li {
 	.collections ul li a { font-size: 0.68em; line-height:2em;}	
  	.collections h4 {
 		font-size:1.12em;
+	}
+	
+	.btn.btn-primary{
+		font-size:0.75em;
 	}
 	
 }
