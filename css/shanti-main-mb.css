@@ -349,7 +349,7 @@ textarea {
 */
 
 
-.admin-menu #block-system-help.block.block-system{ margin-top:1.75em;}
+.admin-menu #block-system-help.block.block-system{ float:left; margin-top:1.75em;}
 
 .admin-menu .content table td{ padding:5px;}
 
