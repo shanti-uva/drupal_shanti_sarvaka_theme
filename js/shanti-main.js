@@ -50,8 +50,8 @@
 	// Behaviors for the theme
 	Drupal.behaviors.shantiSarvaka = {
 	  attach: function (context, settings) {
-			var h = $('div.region-sidebar-second').height();
-			console.log(context, h);
+			//var h = $('div.region-sidebar-second').height();
+			//console.log(context, h);
 	  }
 	};
 
