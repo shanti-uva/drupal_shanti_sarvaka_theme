@@ -1106,7 +1106,14 @@ div#block-system-main.block.block-system{
 	width:100%;
 }
 body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
-
+	
+	#sidebar-second .btn.btn-primary,
+	#sidebar-second .btn.btn-primary span{
+		font-size:0.75em;
+	}
+	#sidebar-second .btn.btn-primary span{
+		width:100%;
+	}
 
 .search-results a,
 .search-results a:hover,
@@ -2183,14 +2190,6 @@ div.messages ul li {
 	.shanti-thumbnail { 
 	  max-width: 13em;
 	}
-	#sidebar-second .btn.btn-primary,
-	#sidebar-second .btn.btn-primary span{
-		font-size:1em;
-	}
-	#sidebar-second .btn.btn-primary span{
-		width:100%;
-	}
-	
 }
 
 
