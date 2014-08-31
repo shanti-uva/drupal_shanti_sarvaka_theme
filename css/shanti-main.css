@@ -400,6 +400,7 @@ select:focus option:checked:hover {
   position: relative;
   display:none;
 }
+.collections div:first-child{ padding-bottom:10px;}
 .collections .row { margin:0;}
 .collections ul {
   margin: 0 auto;
