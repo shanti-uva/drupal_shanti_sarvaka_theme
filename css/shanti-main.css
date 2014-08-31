@@ -1231,7 +1231,8 @@ ul.shanti-gallery > div{
 	font-size: 0.75em;
 	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
-.shanti-thumbnail .body-wrap{ padding: .38em .75em .5em 1em; overflow:auto;}
+.shanti-thumbnail .body-wrap{ padding: .38em .75em 1.5em 1em;}
+
 .shanti-field-created{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
 
 .shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em; letter-spacing:-0.12em;}
