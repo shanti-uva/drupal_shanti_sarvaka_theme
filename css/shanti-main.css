@@ -2185,10 +2185,10 @@ div.messages ul li {
 	}
 	#sidebar-second .btn.btn-primary,
 	#sidebar-second .btn.btn-primary span{
-		font-size:.62em;
+		font-size:1em;
 	}
 	#sidebar-second .btn.btn-primary span{
-		width:95%;
+		width:100%;
 	}
 	
 }

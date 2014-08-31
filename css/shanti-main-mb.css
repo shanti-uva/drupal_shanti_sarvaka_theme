@@ -446,7 +446,7 @@ html input[type="button"].form-submit{
 	background-color: #5b68ce;
 	text-transform:uppercase;
 	color:#eee;
-	font-size: 0.75em;
+	font-size: 0.88em;
 	letter-spacing:0.12em;
 }
 .btn-primary:hover {
@@ -518,7 +518,7 @@ html input[type="button"].form-submit{
 }
 
 .btn-primary span {
-	font-size: 1;
+	font-size: 0.88em;
 	background-color: rgba(255, 255, 255, .1);
 	display:inline-block;
 	width:auto;
@@ -620,17 +620,17 @@ div.sidebar { z-index:1;}
 	max-width:24em;
 	padding:0 0 0 .32em;
 }
-.region-sidebar-second div.block {padding: 1em 2em .32em 1.25em;}
+.region-sidebar-second div.block { padding: 1em 2em .32em 1.25em; }
 
 #sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.5em;}
 
 #sidebar-second .btn.btn-primary.form-submit { margin-top:0.25em;}
-#sidebar-second .btn.btn-primary { margin: 0.75em;	height:4em;line-height:2.32em;}	
-#sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:2.38em;}
+#sidebar-second .btn.btn-primary { margin: 0.75em 0.75em 0.75em 0;	height:4em; line-height:2.32em; display:block; width:100%; }	
+#sidebar-second .btn.btn-primary span {	padding: 1em 1.5em; height:5em; line-height:2.38em; }
 
-#sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0;}
-#sidebar-second .btn.btn-primary span{ width:80% !important;}
-#sidebar-second .bootstrap-select.form-control .selectpicker{ width:100% !important;}
+#sidebar-second .btn.btn-primary{ display:block; width:100%; margin-left:0; }
+#sidebar-second .btn.btn-primary span{ width:80% !important; }
+#sidebar-second .bootstrap-select.form-control .selectpicker{ width:100% !important; }
 
 
 
