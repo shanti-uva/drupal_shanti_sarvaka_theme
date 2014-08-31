@@ -1111,7 +1111,7 @@ ul.shanti-gallery > div{
 	float:left;
   width:  100%;
   /* max-width: 11.75em; */
-	height: 18.5em;
+	height: auto;
 	padding: 0;
   margin: 0;
 	border-radius: 0.32em;
