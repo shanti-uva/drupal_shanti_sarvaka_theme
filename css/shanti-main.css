@@ -1077,6 +1077,7 @@ ul.shanti-gallery{
 	width: 100%;
 	margin:0;
 	padding:0;
+	position:relative;
 	/*
  -webkit-column-width: 12em;
  -webkit-column-gap: 1em;  
@@ -1101,22 +1102,6 @@ ul.shanti-gallery > div{
 }
 */
 
-div#block-system-main.block.block-system{
-	float:left;
-	width:100%;
-}
-body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
-	
-	#sidebar-second .btn.btn-primary,
-	#sidebar-second .btn.btn-primary span{
-		font-size:0.75em;
-	}
-	#sidebar-second .btn.btn-primary span{
-		width:100%;
-	}
-
-.search-results a,
-.search-results a:hover,
 .shanti-gallery a,
 .shanti-gallery a:hover{ color:#555; border:none !important; 	display:block;}
 
@@ -1142,6 +1127,7 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	-ms-transition: box-shadow 500ms ease;
 	-o-transition: box-shadow 500ms ease;
 	transition: box-shadow 500ms ease; 
+	display:none;
 }
 .shanti-thumbnail:hover {
 	-webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2250);
@@ -1157,8 +1143,8 @@ body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 	border-radius: .32em .32em 0 0;
 }
 .shanti-thumbnail-image img {
-	/*width: 100%;*/
-	height: 100%;
+	width: 100%;
+	height: auto;
 	border: none;
 	overflow: hidden;
 	border-radius: .32em .32em 0 0;
@@ -1816,6 +1802,30 @@ div.messages ul li {
 	border-right: thin solid #777; 
 	vertical-align: top;
 }
+
+
+
+
+
+
+div#block-system-main.block.block-system{
+	float:left;
+	width:100%;
+}
+body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
+	
+#sidebar-second .btn.btn-primary,
+#sidebar-second .btn.btn-primary span{
+	font-size:0.75em;
+}
+#sidebar-second .btn.btn-primary span{
+	width:100%;
+}
+
+
+
+
+
 
 
 /*-----------------------------------------------------------*/
