@@ -716,7 +716,7 @@ jQuery(function ($) {
           container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
           offset: 15, // Optional, the distance between grid items
           outerOffset: 10, // Optional the distance from grid to parent
-          flexibleWidth: '50%' // Optional, the maximum width of a grid item
+          flexibleWidth: '30%' // Optional, the maximum width of a grid item
         };
 
         // Get a reference to your grid items.
@@ -725,7 +725,7 @@ jQuery(function ($) {
         var $window = $(window);
         $window.resize(function() {
           var windowWidth = $window.width(),
-              newOptions = { flexibleWidth: '50%' };
+              newOptions = { flexibleWidth: '30%' };
 
           // Breakpoint
           if (windowWidth < 1024) {
