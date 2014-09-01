@@ -328,7 +328,7 @@ select:focus option:checked:hover {
 
 .navbar-default .navbar-nav>li.login>a{ padding-top:20px; } 
 .navbar-default .navbar-nav>li.highlight>a{ background:#eee;color:#444;}
-.navbar-default .navbar-nav li.explore>a>i.icon{ font-size:17px; position:relative;left:4px;top:2px;}
+.navbar-default .navbar-nav li.explore>a>i.icon{ font-size:17px; position:relative;left:1px;top:2px;}
 
 
 .navbar-default .navbar-nav>li.highlight>a:hover{ background:#fff;color:#444;}
@@ -339,7 +339,7 @@ select:focus option:checked:hover {
 .navbar-default .navbar-nav>li.highlight:last-child{ border-left-color:#d0d0d0;}
 
 .navbar-default .navbar-nav>li.lang>a{ padding-right:10px;}
-.navbar-default .navbar-nav li.explore>a{ padding-right:20px;}
+.navbar-default .navbar-nav li.explore>a{ padding-right:17px;}
 .navbar-default .navbar-nav li>a>i.shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
 /*--- END navbar tabs ---*/
 

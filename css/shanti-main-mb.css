@@ -529,7 +529,7 @@ html input[type="button"].form-submit{
 	letter-spacing:0.06em;
 	display:inline-block;
 }
-.views-exposed-form .views-exposed-widget .btn-primary.form-submit{ margin-top:1.5em;}
+.views-exposed-form .views-exposed-widget .btn-primary.form-submit{ margin-top:1em;}
 
 .btn-primary:active span,
 .btn-primary.active span{
