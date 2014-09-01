@@ -1283,8 +1283,8 @@ h2 button.toggle-facet-label-search{
 
 
 
-
-
+/*--- search advanced - this fixes first text strong from wrapping ---*/
+.input-section label.radio-inline:first-child{ width:6.25em; min-width:6.25em;}
 
 
 

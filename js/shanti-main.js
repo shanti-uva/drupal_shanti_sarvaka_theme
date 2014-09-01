@@ -312,7 +312,7 @@
 	          $(".extruder .text").css("width","100%");
 	        });
 	          // styles inline for now, forces
-	        $(".flap").prepend("<span style='font-size:1.18em; position:absolute; left:0.82em; top:0.62em; z-index:10;'><i class='icon shanticon-search'></i></span>");
+	        $(".flap").prepend("<span style=''><i class='icon shanticon-search'></i></span>");
 	        $(".flap").addClass("on-flap");
 	  }
 	
