@@ -86,50 +86,51 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
 
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
-.content-section .btn{ background-image:none; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
-.content-section .btn-group{
-	-webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.25);
+.main-content .btn{ background-image:none; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
+.main-content .btn-group{
+	/*-webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.25);
 	box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.25);
-	border-collapse: separate;
+	border-collapse: separate;*/
 }
-.content-section .btn-group > .btn{ 
+.main-content .btn-group > .btn{ 
 	-webkit-box-shadow:none;
 	box-shadow:none;
+	border-left:none;
 }
-.content-section .btn-default,
-.content-section .btn-primary,
-.content-section .btn-success,
-.content-section .btn-info,
-.content-section .btn-warning,
-.content-section .btn-danger{
+.main-content .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
+
+.main-content .btn-default,
+.main-content .btn-primary,
+.main-content .btn-success,
+.main-content .btn-info,
+.main-content .btn-warning,
+.main-content .btn-danger{
 	text-shadow:none;
 	-webkit-box-shadow:none;
 	box-shadow:none;
 	background-image:none;
 	/* filter:none; set none for IE */
 }
-.content-section .btn:active,
-.content-section .btn.active {
+.main-content .btn:active,
+.main-content .btn.active {
   background-image: none; 
 }
-.content-section .btn-default {
-	border-radius:0.18em;
-  background-clip: padding-box;
+.main-content .btn-default {
 	border:1px solid #ddd;
-	-webkit-box-shadow: 0 0 25px 0 rgba(50, 50, 50, 0.33);
-	box-shadow: 0 0 25px 0 rgba(50, 50, 50, 0.33);
+	-webkit-box-shadow: 0 0 25px 0 rgba(50, 50, 50, 0.175);
+	box-shadow: 0 0 25px 0 rgba(50, 50, 50, 0.175);
 	border-collapse: separate;
 }
-.content-section .btn-default:hover,
-.content-section .btn-default:focus {
+.main-content .btn-default:hover,
+.main-content .btn-default:focus {
   /* border-color: transparent; */
 }
-.content-section .btn-default:active,
-.content-section .btn-default.active {
-  background: #f0f0f0;
+.main-content .btn-default:active,
+.main-content .btn-default.active {
+  background: #d0d0d0;
 }
-.content-section button.btn.dfn, /* default bootstrap class name for serif */
-.content-section button.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+.main-content button.btn.dfn, /* default bootstrap class name for serif */
+.main-content button.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
 /*----- END Buttons -----*/
 /*-------------------------*/
@@ -1291,6 +1292,7 @@ ul.shanti-gallery{
 .main-content .bootstrap-select .popover-title{ padding: 4px 14px; margin-bottom:5px;}
 
 .main-content .bootstrap-select .btn{ 
+	margin:0;
 	padding-left: 20px;
 	color:#606060; 
 	background: transparent;
