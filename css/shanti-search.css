@@ -402,7 +402,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .col-xs-6 { width: 85%;font-size: 0.6em; padding-right: 0;/*padding-left: 0em;*//*margin-left: -2em;*/}
 .view-section .pagination>li>a, .pagination>li>span { padding: 0.5em 0.8em;}
 .view-section .pagination { margin-left: 1em;margin-top: 0.3em;margin-bottom: 0.1em;margin-right: -0.5em;}
-.view-section .dataTables_info {font-size: 0.82em;margin-left: 1em;}
+.view-section .dataTables_info {font-size: 0.82em; margin-left: 1em; margin-bottom:20px;}
 .view-section .row {margin-right: 0;/*margin-left: 0em;*/}
 /* .listview td.sorting_1 { min-width: 12em;} */
 .view-section div.title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
