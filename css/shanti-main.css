@@ -1077,33 +1077,15 @@ ul.shanti-gallery{
 	padding:0;
 	position:relative;
 	list-style-type:none;
-	/*
- -webkit-column-width: 12em;
- -webkit-column-gap: 1em;  
- -moz-column-width: 12em;
- -moz-column-gap: 1em;
- column-width: 12em;
- column-gap: 1em; */
- /*position:relative;
- top:2em;*/
- -webkit-margin-before: 0;
- -webkit-margin-after: 0;
- -webkit-margin-start: 0;
- -webkit-margin-end: 0;
- -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
  
 }
-/*
-ul.search-results > div,
-ul.shanti-gallery > div{
-	display:inline;
-	float:left;
-}
-*/
-
 .shanti-gallery a,
 .shanti-gallery a:hover{ color:#555; border:none !important; 	display:block;}
-
 
 .shanti-thumbnail { 
 	color:#444;

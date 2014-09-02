@@ -40,39 +40,34 @@ object.flip_label{ display:none;}
 
 /*--- panel ---*/
 #gen-search { top: 0; }
-#gen-search.extruder.right{ margin-top: 0.56em; }
+#gen-search.extruder.right{ margin-top: .63em; }
 #gen-search .ext_wrapper{ height:auto; padding:0; }
 #gen-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate;}
 #gen-search.extruder.right.isOpened .extruder-content{ border-right-width:12px;}
 #gen-search.extruder .text{ border:none; padding:0; text-shadow:none; background:#f8f8f8; color:#333;}
 
 /*--- big search button inline styles are loaded via main.js with icon markup  */
-#gen-search.extruder.right .flap{ background:#fff; width:3.12em; height:2.68em; padding: 0.32em 0 0.32em 0.32em; margin:0 0 0 -0.44em; cursor:pointer; display:block; border-top-left-radius:2.75em;border-bottom-left-radius:2.75em; -webkit-box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); border-collapse: separate;}
-#gen-search.extruder.right .flap.on-flap{ }
+#gen-search.extruder.right .flap{ background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px; margin:0 0 0 -7px; cursor:pointer; display:block; border-top-left-radius:44px;border-bottom-left-radius:44px;border-collapse: separate; -webkit-box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); border-collapse: separate;}
+#gen-search.extruder.right .flap.on-flap{ border-collapse:separate;}
 #gen-search.extruder.right .flap span.flapLabel,
-#gen-search.extruder.right .flap.on-flap span.flapLabel{ background:#505050; width:2.44em !important; height:2em; display:block; padding:0; margin:0; border-top-left-radius:1.25em;border-bottom-left-radius:1.25em;border-collapse: separate;}
-@-moz-document url-prefix() { /*--- firefox only hack ---*/
-	#gen-search.extruder.right .flap.on-flap span.flapLabel {
-		height:2.06em;
-	}
-}
-#gen-search.extruder.right.isOpened .flap{ width:2.5em;}
-#gen-search.extruder.right.isOpened .flap.on-flap span.flapLabel{ width:2.12em !important;}
+#gen-search.extruder.right .flap.on-flap span.flapLabel{ background:#505050; height:30px; width:37px !important; padding:17px 38px 17px 0; margin:0; display:block; border-top-left-radius:20px; border-bottom-left-radius:20px;border-collapse: separate;}
+#gen-search.extruder.right.isOpened .flap{ width:48px;}
+#gen-search.extruder.right.isOpened .flap.on-flap span.flapLabel{ width:30px !important;}
 /*----- css for the flap is inserted inline, see js/main ---*/
 #gen-search.extruder.right .flap>span,
 #gen-search.extruder.right .flap.on-flap>span{ color:#ddd;-webkit-transition: all .3s ease-out; -moz-transition: all .3s ease-out; transition: all .3s ease-out;}
 #gen-search.extruder.right .flap.on-hover>span,
 #gen-search.extruder.right .flap.on-hover.on-flap>span{ color:#fff;background:#444;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
 
-#gen-search.extruder.right .flap.on-flap>span>i.icon{ font-size:1.18em; position:absolute; left:0.82em; top:0.68em; z-index:10;}
+#gen-search.extruder.right .flap>span i.icon{ font-size:21px; position:absolute; left:17px; top:14px; z-index:10;}
 
-#menu-main.extruder.right{ margin-top:39px;color:#888 !important;}
-#menu-main.extruder.right .extruder-content{ background:transparent !important;color:#888 !important;overflow:visible !important; box-shadow:none !important; }
+#menu-main.extruder.right{ margin-top:39px; color:#888 !important;}
+#menu-main.extruder.right .extruder-content{ background:transparent !important; color:#888 !important; overflow:visible !important; box-shadow:none !important; }
 #menu-main.extruder.right.isOpened .extruder-content{ color:#888 !important;}
 #menu-main.extruder .text{ color:#888 !important;}
 
-#menu-collections.extruder.right{ margin-top:39px;color:#888 !important;}
-#menu-collections.extruder.right .extruder-content{ color:#888 !important;background:transparent !important;overflow:visible !important; box-shadow:none !important; }
+#menu-collections.extruder.right{ margin-top:39px; color:#888 !important;}
+#menu-collections.extruder.right .extruder-content{ color:#888 !important; background:transparent !important; overflow:visible !important; box-shadow:none !important; }
 #menu-collections.extruder.right.isOpened .extruder-content{ color:#fff !important;}
 #menu-collections.extruder .text{ color:#888 !important;}
 /*----------------------------------------------*/
