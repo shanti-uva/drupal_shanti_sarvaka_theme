@@ -1122,6 +1122,9 @@ ul.ss-full-tabs li a {
 	font-weight: 700;
 	color: #999;
 	border-radius: 0;
+	-webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	transition: all 1s ease;
 }
 ul.ss-full-tabs li a:hover{ border: none !important;}
 
@@ -1159,6 +1162,18 @@ ul.ss-full-tabs li.active a:before {
 	
 .videoHolder .largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:"play";} 	
 .videoHolder .icon-play::before{ font-family:'shanticon'; content: "\e647";}
+
+.field-name-field-tags div{ display:inline-block;}
+.field-name-field-tags > div{ display:inline-block;float:left;}
+.field-name-field-tags .field-item a{ display:inline-block; float:left; padding:0.06em 0.5em;}
+
+
+
+
+
+
+
+
 
 	
 	
