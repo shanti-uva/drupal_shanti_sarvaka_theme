@@ -55,9 +55,16 @@ this custom set of styles in the modules section
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
-
-.avrating h5{ margin-bottom:0.12em;}
-
+.avduration::after, .avrating::after {
+	border-bottom: 1px solid silver;
+	width: 175px;
+	margin: 4px;
+}
+div.row.avrating h5, .avshare div h5 { font-weight: bold; margin-bottom:0.12em;}
+.avshare div h5 span {color: #5a65d1; font-size: 0.9em; font-weight: normal;}
+.avshare ul {padding: 5px;}
+.avshare ul li {line-height: 1.5em; list-style-type: none;}
+.avshare ul li i.icon {font-size: 1.5em;}
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
@@ -1374,6 +1381,54 @@ h2 button.toggle-facet-label-search{
 div.form-item.form-type-select.form-item-spaces-features-transcripts-settings{
 	width:7em;
 }
+
+/*-- Moved from mediabase.css in mediabase modules --*/
+/* CSS styles for formatting mediabase nodes for the Shanti Sarvka theme */
+
+div.video-row {
+	margin-bottom: 18px; 
+}
+
+h3.node-desc {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+h4.node-desc-type {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+div.avinfo button.btn.play-transcript-btn {
+	margin-bottom: 12px;
+}
+
+button.play-transcript-btn i.shanticon {
+	margin-right: 6px;
+	padding: 18px 6px 6px 8px;
+	vertical-align: top;
+}
+
+button.play-transcript-btn span {
+	font-size: small;
+}
+
+div.row.avdate, div.row.avduration {
+	margin: 6px 0px 6px -10px;
+	color: #777;
+}
+
+div.collimage {
+	max-width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+
+div.avinfo {
+	margin-left: 20px;
+}
+
 
 
 

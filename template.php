@@ -738,6 +738,58 @@ function shanti_sarvaka_pagerer_mini($variables) {
   return $html;
 }
 
+/**
+ * Service links formating
+ */
+function shanti_sarvaka_service_links_node_format($variables) {
+	//dpm($variables, 'vars in service link function');
+  $links = $variables['links'];
+  $label = $variables['label'];
+  $view_mode = $variables['view_mode'];
+  $node_type = $variables['node_type'];
+	
+  $result = array();
+  foreach($links as $n => $l) {
+  	$type = str_replace('service-links-','',$n);
+		$icon = '';
+		$text = '';
+		switch($type) {
+			case "facebook":
+				$icon = 'shanticon-facebook';
+				$text = t("Facebook");
+				break;
+			case "google-plus":
+				$icon = "shanticon-googleplus";
+				$text = t("Google+");
+				break;
+			case "twitter":
+				$icon = "shanticon-twitter";
+				$text = t("Twitter");
+				break;
+		}
+		$icon = '<i class="icon ' . $icon . '"></i>';
+		$l['html'] = TRUE;
+    $result[] = l($icon . ' ' . $text, $l['href'], $l);
+  }
+	$html = '';
+	foreach ($result as $n => $link) {
+		$html .= '<li>' . $link . '</li>';
+	}
+  return $html;
+}
+
+function shanti_sarvaka_links($variables) {
+	if(isset($variables['links']['forward_link'])) {
+		$link = $variables['links']['forward_link'];
+		$link['html'] = TRUE;
+		unset($link['title']);
+		$title = '<i class="icon shanticon-mail"></i> E-mail';
+		return '<li>' . l($title, $link['href'], $link) . '</li>';
+	} else {
+		return theme_links($variables);
+	}
+}
+
 /** Miscellaneous functions **/
 
 function hex2rgb($hex) {
