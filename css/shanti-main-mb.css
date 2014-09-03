@@ -585,28 +585,50 @@ html input[type=file].form-file{ margin-bottom:5px;}
 
 
 /*--- custom play transcript --*/
-div.avinfo .btn-primary.play-transcript-btn.form-submit{ 
-	margin: 0.75em 0.75em 0.75em 0;	
-	line-height:2.32em;	
+div.avinfo .btn-primary.play-transcript-btn{ 
+	padding:0;
+	width:auto;
+	line-height:2em;	
+	text-transform:uppercase;
+	color:#eee;
+	font-size: 0.88em;
+	display:inline-block;
+	white-space:nowrap;
+	text-align:center;
+	letter-spacing:0.06em;
+	overflow:hidden;
+	position:relative;
 }
-div.avinfo .btn-primary.play-transcript-btn.form-submit span{ 
-	padding: 1.12em 3em 1em;
+div.avinfo .btn-primary.play-transcript-btn i.shanticon{
+	text-align:center;
+	width:3.12em; 
+	font-size:130%;
+	line-height:2.5em;
+	display:inline-block;
+	padding: 0.06em;
+	background-color: #4954bb;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	border-radius:0.25em 0 0 0.25em;
+}
+div.avinfo .btn-primary.play-transcript-btn span{ 
+	padding:1.25em 2.5em 1em 8.62em;
+	margin:0;
 	line-height:1.5em;
-	font-size: 0.82em;
+	font-size:70%;
+	background:transparent;
+	display:block;
 	letter-spacing:0.12em;
 }
-div.avinfo .btn-primary.play-transcript-btn.form-submit i.shanticon{
-	text-align:center;
-	width:3em; 
-	font-size:150%;
-	line-height:1.75em;
-	padding:0.5em;
-	margin:0;
-	float:left;
-	display:inline-block;
+.btn.btn-primary.play-transcript-btn:hover{ background-color: #4c54c7;}
+.btn.btn-primary.play-transcript-btn:hover i.shanticon{ background-color: #373d91;}
+
+.btn.btn-primary.play-transcript-btn:active span,
+.btn.btn-primary.play-transcript-btn.active span{
+	background-color: rgba(255, 255, 255, .07);
 }
-
-
 
 
 .main-content .btn-default.btn-red{ opacity:.80; background:#dc3c47; color:#fff; -webkit-box-shadow:none;box-shadow:none;}
