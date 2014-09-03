@@ -12,14 +12,14 @@
 .extruder.right,
 .extruder.right.isOpened{ }
 .ext_wrapper{ height:auto; padding:0; }
-.extruder.right .extruder-content{ overflow:visible !important;  background:transparent !important; border:none; padding:0;width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate; /* fix for ie9 shadow */}
+.extruder.right .extruder-content{ overflow:visible !important; background:transparent !important; border:none; padding:0;width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate; /* fix for ie9 shadow */}
 .extruder.right.isOpened .extruder-content{ border-right-width:12px; background:transparent !important;}
 .extruder .text{ border:none; padding:0; text-shadow:none; width:277px; min-width:277px !important; /*---- default panel container width is set ----*/}
 
-.extruder.right .flap span.flapLabel,
-.extruder.right .flap.on-flap span.flapLabel,
 .extruder.right .flap,
 .extruder.right.isOpened .flap,
+.extruder.right .flap span.flapLabel,
+.extruder.right .flap.on-flap span.flapLabel,
 .extruder.right.isOpened .flap.on-flap span.flapLabel,
 .extruder.right .flap>span,
 .extruder.right .flap.on-flap>span,
@@ -28,6 +28,7 @@
 
 object.flip_label{ display:none;}
 .extruder.right.open-collections{ margin-top:280px;}
+
 /*--- handle ---*/
  div.text.ui-resizable{ }
  div.text.ui-resizable,
@@ -35,8 +36,6 @@ object.flip_label{ display:none;}
 .ui-resizable-handle.ui-resizable-w{ cursor:col-resize; position:absolute; left:1px; top:10px; /* top:85%; */ z-index:900; width:6px; height:97%;}
 .ui-resizable-handle.ui-resizable-w:hover{ }
 .ui-resizable-handle.ui-resizable-w:active{ background:#fafafa;}
-
-
 
 /*--- panel ---*/
 #gen-search { top: 0; }
@@ -168,7 +167,7 @@ object.flip_label{ display:none;}
 /*--- toggle links for search panel ---*/
 .input-section .toggle-link{ background:#f8f8f8;color:#dc3c47;font-size:0.93em;display:block;text-align:right;font-weight:600; line-height:0.88em; height:1.12em; margin:0;padding:0 25px 0 0;text-decoration:none;font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
 .input-section .toggle-link:hover{ text-decoration:none !important; color:#555;}
-.input-section .toggle-link i{ font-family:'FontAwesome'; }
+.input-section .toggle-link i{ font-family:'FontAwesome';}
 .input-section .toggle-link i.icon:before{ color:#dc3c47; font-family:'FontAwesome'; content:"\f067"; font-size:0.68em; margin-right:0.12em;}
 .input-section .toggle-link:hover i.icon:before{ color:#555;}
 /*---------------------------*/

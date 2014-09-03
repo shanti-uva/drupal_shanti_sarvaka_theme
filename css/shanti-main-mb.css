@@ -456,9 +456,7 @@ html input[type=file].form-file{ margin-bottom:5px;}
 	text-transform: uppercase;
 	background-clip: padding-box;
 	display:inline-block;
-	width:auto;
 	white-space:nowrap;
-	position:relative;
 }
 .btn-primary{
   border:none;
@@ -489,6 +487,10 @@ html input[type=file].form-file{ margin-bottom:5px;}
 	line-height:2em;
 	font-size: 0.68em;	
 	letter-spacing:0.06em;
+	display:inline-block;
+	text-align:center;
+	position:relative;
+	width:auto;
 }
 .btn-primary:hover {
 	color:#fff;
@@ -498,12 +500,9 @@ html input[type=file].form-file{ margin-bottom:5px;}
 	background-color: #434bb1;
 }
 
-.btn-primary{
-	background-color: #5b68ce;
-}
-.btn-default{
-	color: #555;
-}
+.btn-primary{ background-color: #5b68ce;}
+.btn-default{ color: #555;}
+
 /*
 .btn-primary:active,
 .btn-primary.active {
@@ -524,6 +523,7 @@ html input[type=file].form-file{ margin-bottom:5px;}
 	text-align:center;
 	letter-spacing:0.06em;
 	overflow:hidden;
+	position:relative;
 }
 .btn.btn-primary .icon {	
 	text-align:center;
