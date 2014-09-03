@@ -758,6 +758,10 @@ function shanti_sarvaka_service_links_node_format($variables) {
 				$icon = 'shanticon-facebook';
 				$text = t("Facebook");
 				break;
+			case "forward":
+				$icon = 'shanticon-mail';
+				$text = t("Email");
+				break;
 			case "google-plus":
 				$icon = "shanticon-googleplus";
 				$text = t("Google+");
@@ -776,18 +780,6 @@ function shanti_sarvaka_service_links_node_format($variables) {
 		$html .= '<li>' . $link . '</li>';
 	}
   return $html;
-}
-
-function shanti_sarvaka_links($variables) {
-	if(isset($variables['links']['forward_link'])) {
-		$link = $variables['links']['forward_link'];
-		$link['html'] = TRUE;
-		unset($link['title']);
-		$title = '<i class="icon shanticon-mail"></i> E-mail';
-		return '<li>' . l($title, $link['href'], $link) . '</li>';
-	} else {
-		return theme_links($variables);
-	}
 }
 
 /** Miscellaneous functions **/
