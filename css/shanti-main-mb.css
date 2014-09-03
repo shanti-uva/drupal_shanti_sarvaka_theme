@@ -1,5 +1,5 @@
 
-.breadwrap ol li i{background:#32ccca;}
+.breadwrap ol li i { background:#32ccca;}
 
 /*==========
 
@@ -1099,7 +1099,7 @@ a.hide-annot:before{
 
 /** Tabs **/
 ul.ss-full-tabs {
-	margin: 1.12em .32em;
+	margin: 1.12em .32em 2em;
 }
 
 ul.ss-full-tabs li {
@@ -1137,7 +1137,7 @@ ul.ss-full-tabs li.active a:after,
 ul.ss-full-tabs li.active a:before {
 	top: 100%;
 	left: 50%;
-	border: solid transparent;
+	border-top: 1px solid transparent;
 	content: " ";
 	height: 0;
 	width: 0;
@@ -1145,19 +1145,14 @@ ul.ss-full-tabs li.active a:before {
 	pointer-events: none;
 }
 /** End of Tabs section **/
+
+.node-video .tab-content{border-top:1px solid #ddd;}
+.node-video > div{ border-bottom:1px solid #f7f7f7;}
+.node-video{ padding-top:10px;}	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+.videoHolder .largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:"play";} 	
+.videoHolder .icon-play::before{ font-family:'shanticon'; content: "\e647";}
+
 	
 	
 
@@ -1271,13 +1266,14 @@ div.fieldset-wrapper{ padding-top:10px;}
 .views-exposed-widget.views-widget-per-page{
 	width:10.5em;
 }
+
+
 .views-row{
 	padding-top: 0.75em;
 	padding-bottom: 1em;
 	margin:0 auto;
 	border-top:1px solid #fff;
-	border-bottom:1px solid #ccc;
-	
+	border-bottom:1px solid #ccc;	
 	min-height:10em;
 }
 .views-row:after{
@@ -1308,9 +1304,12 @@ div.fieldset-wrapper{ padding-top:10px;}
 	border-collapse: separate; /* fix for ie9 shadow */
 }
 
+/*--- view collections page ---*/
+.view-collections .views-row{ min-height:14em;}
 
-
-
+div.field.field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{
+	padding:5px;
+}
 /*
 .views-submit-button .btn-primary{
 	font-size:100%;
