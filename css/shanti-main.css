@@ -1083,7 +1083,7 @@ ul.shanti-gallery{
 	background-color: #fff;	
 	float:left;
   width:  100%;
-  /* max-width: 11.75em; */
+  max-width: 170px;
 	min-height: 18em;
 	padding: 0;
   margin: 0;
