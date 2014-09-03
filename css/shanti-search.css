@@ -124,11 +124,14 @@ object.flip_label{ display:none;}
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	-webkit-box-shadow:none;
 	box-shadow:none;
+	padding:0;
+	margin:0;
+	font-size:14px;
 }
 .input-section .input-group .btn.btn-default:hover{ color:#dc3c47;}
-.input-section .input-group .btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
-.input-section .input-group .btn i.icon{ font-family: 'Glyphicons Halflings';}
-.input-section .input-group .btn i:before{ content: "\e080"; position:relative; right:0.06em; top:0.32em;}
+.input-section .input-group .btn.btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
+.input-section .input-group .btn.btn-default i.icon{ font-family: 'Glyphicons Halflings';}
+.input-section .input-group .btn.btn-default i:before{ content: "\e080"; position:relative; right:0.06em; top:0.32em;}
 .input-section .input-group .btn.btn-default:active i.icon, 
 .input-section .input-group .btn.btn-default.active i.icon{ color:#777;}
 /*--- clear all button ---*/
