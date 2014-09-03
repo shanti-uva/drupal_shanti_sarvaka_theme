@@ -1,3 +1,4 @@
+
 .breadwrap ol li i{background:#32ccca;}
 
 /*==========
@@ -334,7 +335,9 @@ textarea {
 	border: 1px solid #ccc;
 }
 
+.admin-menu table.spaces td.option{ width:4%;}
 
+.admin-menu .content table td{ padding:5px; text-align:left;}
 
 
 /*--- admin styles ---*/
@@ -350,9 +353,6 @@ textarea {
 
 .admin-menu .block.block-system{ float:left;}
 .admin-menu #block-system-main.block.block-system{ margin-top:1.75em; width:100%;}
-
-
-.admin-menu .content table td{ padding:5px;}
 
 .admin-menu .icheckbox_minimal-red, 
 .admin-menu .iradio_minimal-red{ 
@@ -454,13 +454,7 @@ html input[type=file].form-file{ margin-bottom:5px;}
 	font-weight:normal; 
 	font-weight:500;
 	text-transform: uppercase;
-	border-radius:0.25em;
 	background-clip: padding-box;
-	padding: 0.75em 1em 0.62em;
-	margin: 0.75em;	
-	line-height:2em;
-	font-size: 0.68em;	
-	letter-spacing:0.06em;
 	display:inline-block;
 	width:auto;
 	white-space:nowrap;
@@ -484,10 +478,17 @@ html input[type=file].form-file{ margin-bottom:5px;}
 }
 
 
+.btn-black,
+.btn-red,
+.btn-default,
 .btn-primary{
-	background-color: #5b68ce;
 	color:#eee;
-	padding-right: 2em; padding-left: 2em;
+	border-radius:0.25em;
+	padding: 0.75em 2em 0.62em;
+	margin: 0.75em;	
+	line-height:2em;
+	font-size: 0.68em;	
+	letter-spacing:0.06em;
 }
 .btn-primary:hover {
 	color:#fff;
@@ -497,7 +498,12 @@ html input[type=file].form-file{ margin-bottom:5px;}
 	background-color: #434bb1;
 }
 
-
+.btn-primary{
+	background-color: #5b68ce;
+}
+.btn-default{
+	color: #555;
+}
 /*
 .btn-primary:active,
 .btn-primary.active {
@@ -1333,6 +1339,14 @@ h2 button.toggle-facet-label-search{
 
 /*--- search advanced - this fixes first text strong from wrapping ---*/
 .input-section label.radio-inline:first-child{ width:6.25em; min-width:6.25em;}
+
+
+
+div.form-item.form-type-select.form-item-spaces-features-transcripts-settings{
+	width:7em;
+}
+
+
 
 
 
