@@ -62,9 +62,10 @@ this custom set of styles in the modules section
 }
 div.row.avrating h5, .avshare div h5 { font-weight: bold; margin-bottom:0.12em;}
 .avshare div h5 span {color: #5a65d1; font-size: 0.9em; font-weight: normal;}
-.avshare ul {padding: 5px;}
-.avshare ul li {line-height: 1.5em; list-style-type: none;}
-.avshare ul li i.icon { font-size: 1.56em; margin-right:2px; position:relative; top:0.18em;}
+.avshare ul { list-style-type: none;}
+.avshare ul li { }
+.avshare ul li a{ color:#555;}
+.avshare ul li i.icon { font-size: 1.62em; margin-right:2px; position:relative; top:0.18em;}
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
