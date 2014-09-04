@@ -747,8 +747,11 @@ function shanti_sarvaka_service_links_node_format($variables) {
   $label = $variables['label'];
   $view_mode = $variables['view_mode'];
   $node_type = $variables['node_type'];
-	
-  $result = array();
+	// get Thumbnail image from meta_og_image tag if there
+	$headels = drupal_add_html_head();
+	$thumbnail = (isset($headels['meta_og_image'])) ? $headels['meta_og_image']['#attributes']['content'] : '';
+
+  $html = '';
   foreach($links as $n => $l) {
   	$type = str_replace('service-links-','',$n);
 		$icon = '';
@@ -757,6 +760,7 @@ function shanti_sarvaka_service_links_node_format($variables) {
 			case "facebook":
 				$icon = 'shanticon-facebook';
 				$text = t("Facebook");
+				if(!empty($thumbnail)) { $l['query']['images[0]'] = $thumbnail; }
 				break;
 			case "forward":
 				$icon = 'shanticon-mail';
@@ -773,12 +777,8 @@ function shanti_sarvaka_service_links_node_format($variables) {
 		}
 		$icon = '<i class="icon ' . $icon . '"></i>';
 		$l['html'] = TRUE;
-    $result[] = l($icon . ' ' . $text, $l['href'], $l);
+    $html .= '<li>' . l($icon . ' ' . $text, $l['href'], $l) . '</li>';
   }
-	$html = '';
-	foreach ($result as $n => $link) {
-		$html .= '<li>' . $link . '</li>';
-	}
   return $html;
 }
 
