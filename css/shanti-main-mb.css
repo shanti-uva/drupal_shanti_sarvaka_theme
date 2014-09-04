@@ -642,11 +642,11 @@ a.btn:hover{ border-bottom:none !important;}
 
 .btn-group-lg .btn-group:first-child .btn,
 .btn-group-xlg .btn-group:first-child .btn{
-	border-radius:0.18em 0 0 0.18em; 
+	border-radius:0.25em 0 0 0.25em; 
 }
 .btn-group-lg .btn-group:last-child .btn,
 .btn-group-xlg .btn-group:last-child .btn{
-	border-radius:0 0.18em 0.18em 0;
+	border-radius:0 0.25em 0.25em 0;
 }
 
 .btn-group-xlg .btn.btn-primary{  margin:0; padding:0;}
