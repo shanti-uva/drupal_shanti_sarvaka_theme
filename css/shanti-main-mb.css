@@ -539,7 +539,7 @@ a.btn:hover{ border-bottom:none !important;}
 
 .btn.btn-default:hover,
 .btn-group-lg .btn.btn-default:hover,
-.btn-group-lg .btn.btn-default.btn-icon:hover{ background:#eee;}
+.btn-group-lg .btn.btn-default.btn-icon:hover{ background:#ddd;}
 
 .btn.btn-default:active, .btn.btn-default.active,
 .btn-group-lg .btn.btn-default:active, .btn-group-lg .btn.btn-default.active,
