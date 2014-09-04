@@ -563,6 +563,19 @@ a.btn:hover{ border-bottom:none !important;}
 	background: rgba(255, 255, 255, .07);
 }
 
+
+.btn.btn-primary.btn-icon.btn-wrap span{
+	padding:1.38em 3em 1.25em 8em;
+	margin:0;
+	line-height:1.5em;
+	font-size:70%;
+	background:transparent;
+	display:block;
+}
+
+
+
+
 .btn.btn-xs{
 	font-size:60%;
 	line-height:130%;
