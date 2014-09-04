@@ -60,12 +60,20 @@ this custom set of styles in the modules section
 	width: 175px;
 	margin: 4px;
 }
+.fivestar-basic div.fivestar-widget > div,
+.fivestar-basic div.fivestar-widget > div a{ font-family:'FontAwesome'; color:#ccc; text-indent:0; background-image: none !important;  border-bottom:none !important;}
+.fivestar-basic div.fivestar-widget > div a{ display:inline-block; font-size:1em; letter-spacing:0.5em;}
+.fivestar-basic div.fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
 
-.fivestar-basic div.fivestar-widget .star, 
-.fivestar-basic div.fivestar-widget .star a{ color:#555; background-image:none !important; }
-.fivestar-basic div.fivestar-widget .star a{ font-family:"FontAwesome"; font-size:1em;  border-bottom:none !important;}
-.fivestar-basic div.fivestar-widget .star a:hover{ color:#5a65d1; border-bottom:none !important;}
-.fivestar-basic div.fivestar-widget .star a:before{ color:#555; content: "\f005";}
+.fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-family:'shanticon'; }
+.fivestar-basic div.fivestar-widget .cancel a:before{ content: "\e610";}
+.fivestar-basic div.fivestar-widget .star a:before{ content: "\f005";}
+
+.fivestar-basic div.fivestar-widget .star.on a{ color:#555; }
+
+
+
+
 
 div.row.avrating h5, 
 .avshare div h5 { font-weight: bold; margin-bottom:0.12em;}
