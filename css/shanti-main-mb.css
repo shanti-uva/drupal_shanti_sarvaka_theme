@@ -64,15 +64,18 @@ div.row.avrating h5, .avshare div h5 { font-weight: bold; margin-bottom:0.12em;}
 .avshare div h5 span {color: #5a65d1; font-size: 0.9em; font-weight: normal;}
 .avshare ul { list-style-type: none; padding-left: 12px;}
 .avshare ul li { }
-.avshare ul li a{ color:#555;}
+.avshare ul li a{ color:#555; font-weight:bold; border-bottom:none;}
 .avshare ul li a:hover{ color:#5a65d1;}
-.avshare ul li i.icon { font-size: 1.62em; margin-right:2px; position:relative; top:0.18em;}
+.avshare ul li a i.icon { color:#32ccca; border-bottom:none; font-size: 1.62em; margin-right:2px; position:relative; top:0.18em;}
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
 a.tabledrag-toggle-weight{ color:#606060; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
-
+.shanticon-twitter,
+.shanticon-facebook,
+.shanticon-email,
+.shanticon-google{ color:#32ccca;}
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
@@ -1323,7 +1326,6 @@ ul.ss-full-tabs li.active a:before {
 
 .node-video .tab-content{border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
-.node-video{ padding-top:10px;}	
 	
 .videoHolder .largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:"play";} 	
 .videoHolder .icon-play::before{ font-family:'shanticon'; content: "\e647";}
