@@ -1,6 +1,7 @@
 name = Shanti Sarvaka 
 description = A responsive Drupal 7 theme for all Shanti@UVa sites, built with Bootstrap.
 core = 7.x
+version = 1.x
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions

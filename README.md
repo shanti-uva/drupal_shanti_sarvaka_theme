@@ -2,6 +2,8 @@
 
 A Bootstrap-based Drupal theme for all of Shanti's restyling from Convoy.
 
+Base on Bootstrap v3.1.1
+
 Development Begun: May 2014
 
 * **Lead:** Than Grove
