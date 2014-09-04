@@ -53,6 +53,12 @@ this custom set of styles in the modules section
 
 ============*/
 
+
+
+
+
+
+
 .avdate i,
 .avduration i{ margin-right:0.25em;}
 .avduration::after, .avrating::after {
@@ -1002,6 +1008,14 @@ span.fancytree-node i.shanticon-cancel {
 
  **/
 
+.form-actions{ /* testing this at bottom of page for edit save buttons --*/
+	margin-top:3em;
+	margin-left:0;
+}
+ 
+#locale-translation-filter-form .form-item-translation{ width:22em;}
+#locale-translation-filter-form .form-actions{ margin-left:0; padding: 1.25em 0 0 1em; /* padding typo override */ }
+
 
 #field-available-from-values td,
 #field-available-from-values td,
@@ -1015,7 +1029,7 @@ table.tableheader-processed td{ /*width:25%;*/} /*---- testing this ----*/
 
 #edit-name.form-control{ margin-top:0.5em;}
 
-#edit-actions.form-actions{ margin-top:1em;}
+#edit-actions.form-actions{ margin-top:0.5em;}
 
 input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
 
@@ -1043,10 +1057,7 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 #kmap_annotation_json { margin-left:2em;} /* textbox on bottom */
 
 
-.form-actions{ /* testing this at bottom of page for edit save buttons --*/
-	margin-top:3em;
-	margin-left:3em;
-}
+
 
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 .field-accordion {
