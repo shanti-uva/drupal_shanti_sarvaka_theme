@@ -58,7 +58,9 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   min-height:100%;
   font-size:1em;
 }
-.content-section { padding: 0.5em 2% 5em; min-height:100%;}
+.content-section { padding: 10px 25px; min-height:100%;}
+
+/* .content-section .row{ margin-left:0; margin-right:0;} */
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .content-section iframe {border: none;}
