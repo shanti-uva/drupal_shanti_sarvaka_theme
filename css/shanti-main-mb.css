@@ -361,7 +361,7 @@ textarea {
 */
 
 .admin-menu .block.block-system{ float:left;}
-.admin-menu #block-system-main.block.block-system{ margin-top:1.75em; width:100%;}
+.admin-menu #block-system-main.block.block-system{ /*margin-top:1.75em;*/ width:100%;}
 
 .admin-menu .icheckbox_minimal-red, 
 .admin-menu .iradio_minimal-red{ 
@@ -543,7 +543,7 @@ a.btn:hover{ border-bottom:none !important;}
 */
 .btn.btn-primary.btn-icon{
 	padding:0;
-	margin:0.5em;
+	margin:0.75em;
 	width:auto;
 	line-height:2em;	
 	text-transform:uppercase;
@@ -618,7 +618,7 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group-lg .btn.btn-primary{
 	width:100%;
 	border-radius:0.25em 0 0 0.25em;
-	margin:0 -0.32em 0 0;
+	margin:0;
 	padding-top:0.18em;
 	padding-bottom:0.18em;
 	border-radius:0;
@@ -730,9 +730,10 @@ a.btn:hover{ border-bottom:none !important;}
 	background: rgba(255, 255, 255, .07);
 }
 
+
 .btn-group-sm,
 .btn-group-lg,
-.btn-group-xlg{ margin:0.5em;}
+.btn-group-xlg{ margin:0;}
 
 .btn-group-sm .btn-group:first-child .btn,
 .btn-group-lg .btn-group:first-child .btn,
@@ -831,7 +832,7 @@ div.sidebar { z-index:1;}
 }
 #sidebar-second div.block { padding: 1em 2em .32em 1em; }
 
-#sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.5em;}
+#sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.12em;}
 
 #sidebar-second .btn.btn-primary.form-submit { margin-top:0.25em;}
 
