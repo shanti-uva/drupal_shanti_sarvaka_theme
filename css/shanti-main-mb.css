@@ -53,6 +53,12 @@ this custom set of styles in the modules section
 
 ============*/
 
+
+
+
+
+
+
 .avdate i,
 .avduration i{ margin-right:0.25em;}
 .avduration::after, .avrating::after {
@@ -60,12 +66,20 @@ this custom set of styles in the modules section
 	width: 175px;
 	margin: 4px;
 }
+.fivestar-basic div.fivestar-widget > div,
+.fivestar-basic div.fivestar-widget > div a{ font-family:'FontAwesome'; color:#ccc; text-indent:0; background-image: none !important;  border-bottom:none !important;}
+.fivestar-basic div.fivestar-widget > div a{ display:inline-block; font-size:1em; letter-spacing:0.5em;}
+.fivestar-basic div.fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
 
-.fivestar-basic div.fivestar-widget .star, 
-.fivestar-basic div.fivestar-widget .star a{ color:#555; background-image:none !important; }
-.fivestar-basic div.fivestar-widget .star a{ font-family:"FontAwesome"; font-size:1em;  border-bottom:none !important;}
-.fivestar-basic div.fivestar-widget .star a:hover{ color:#5a65d1; border-bottom:none !important;}
-.fivestar-basic div.fivestar-widget .star a:before{ color:#555; content: "\f005";}
+.fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-family:'shanticon'; }
+.fivestar-basic div.fivestar-widget .cancel a:before{ content: "\e610";}
+.fivestar-basic div.fivestar-widget .star a:before{ content: "\f005";}
+
+.fivestar-basic div.fivestar-widget .star.on a{ color:#555; }
+
+
+
+
 
 div.row.avrating h5, 
 .avshare div h5 { font-weight: bold; margin-bottom:0.12em;}
@@ -78,7 +92,7 @@ div.row.avrating h5,
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight{ color:#606060; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 .shanticon-twitter,
 .shanticon-facebook,
@@ -994,6 +1008,14 @@ span.fancytree-node i.shanticon-cancel {
 
  **/
 
+.form-actions{ /* testing this at bottom of page for edit save buttons --*/
+	margin-top:3em;
+	margin-left:0;
+}
+ 
+#locale-translation-filter-form .form-item-translation{ width:22em;}
+#locale-translation-filter-form .form-actions{ margin-left:0; padding: 1.25em 0 0 1em; /* padding typo override */ }
+
 
 #field-available-from-values td,
 #field-available-from-values td,
@@ -1007,7 +1029,7 @@ table.tableheader-processed td{ /*width:25%;*/} /*---- testing this ----*/
 
 #edit-name.form-control{ margin-top:0.5em;}
 
-#edit-actions.form-actions{ margin-top:1em;}
+#edit-actions.form-actions{ margin-top:0.5em;}
 
 input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
 
@@ -1020,8 +1042,8 @@ input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-heig
 }
 
 
-.tabledrag-toggle-weight-wrapper{ margin-top:-0.5em;}
-
+.tabledrag-toggle-weight-wrapper{ margin-top:-0.62em;}
+.tabledrag-toggle-weight-wrapper a{ color: #5a65d1;}
 
 tr.odd .form-item, tr.even .form-item{
 	/*margin-top:0.68em;*/
@@ -1035,10 +1057,7 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 #kmap_annotation_json { margin-left:2em;} /* textbox on bottom */
 
 
-.form-actions{ /* testing this at bottom of page for edit save buttons --*/
-	margin-top:3em;
-	margin-left:3em;
-}
+
 
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 .field-accordion {
