@@ -635,6 +635,42 @@ a.btn:hover{ border-bottom:none !important;}
 
 
 
+
+.btn.btn-sm{
+	line-height:3em;
+	padding:0.82em 3em;
+}	
+
+.btn-group-sm .btn-group .btn{
+	line-height:3.25em;
+	padding:1em 1.5em;
+	border-radius:0;
+}
+.btn-group-sm .btn-group .btn.btn-primary{
+	width:100%;
+	border-radius:0.25em 0 0 0.25em;
+	margin:0 -0.32em 0 0;
+	padding-top:0.18em;
+	padding-bottom:0.18em;
+	border-radius:0;
+}
+
+.btn-group-sm .btn-group .btn.btn-default.btn-icon{
+	font-size:0.62em; padding:0.56em; line-height:1.5em; background:white;
+}
+.btn-group-sm .btn.btn-default.btn-icon i.icon{
+	font-size: 2.25em;
+	line-height:2em;
+	height:2em;
+	padding:0;	
+}
+
+
+
+
+
+
+
 .btn-group-xlg .btn.btn-primary{  margin:0; padding:0;}
 .btn-group-xlg .btn.btn-primary i.icon{ font-size:1.68em; position:static; float:left; line-height:2.75em}
 .btn-group-xlg .btn.btn-primary:hover i.icon{ background: #434bb1; color:#fff;}
@@ -643,7 +679,8 @@ a.btn:hover{ border-bottom:none !important;}
 
 .btn-group-xlg .btn-group+.btn-group{ margin:0;} /* not -1px */
 
-.btn-group-xlg .btn-group:last-child a.btn.btn-primary{ margin-left:1px;}
+.btn-group-xlg .btn-group a.btn.btn-primary{ margin-left:1px;}
+.btn-group-xlg .btn-group:first-child a.btn.btn-primary{ margin-left:0;}
 
 /*--- custom play transcript button set --*/
 .btn-group-lg .btn-primary.btn-icon{ 
@@ -692,19 +729,24 @@ a.btn:hover{ border-bottom:none !important;}
 	background: rgba(255, 255, 255, .07);
 }
 
+.btn-group-sm,
 .btn-group-lg,
 .btn-group-xlg{ margin:0.5em;}
 
+.btn-group-sm .btn-group:first-child .btn,
 .btn-group-lg .btn-group:first-child .btn,
 .btn-group-xlg .btn-group:first-child .btn{
-	border-radius:0.25em 0 0 0.25em; 
+	border-radius: 0.25em 0 0 0.25em; 
 }
+.btn-group-sm .btn-group:last-child .btn,
 .btn-group-lg .btn-group:last-child .btn,
 .btn-group-xlg .btn-group:last-child .btn{
-	border-radius:0 0.25em 0.25em 0;
+	border-radius: 0 0.25em 0.25em 0;
 }
 
-
+.btn-group-lg.btn-group-transcript .btn-group:first-child{
+	width:1.5%;
+}
 
 /*
 .views-exposed-form .views-exposed-widget .btn.btn-primary{ margin-top:1em;}
