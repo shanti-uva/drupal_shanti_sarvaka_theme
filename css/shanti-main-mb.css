@@ -92,7 +92,7 @@ div.row.avrating h5,
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight{ color:#606060; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 .shanticon-twitter,
 .shanticon-facebook,
@@ -1042,8 +1042,8 @@ input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-heig
 }
 
 
-.tabledrag-toggle-weight-wrapper{ margin-top:-0.5em;}
-
+.tabledrag-toggle-weight-wrapper{ margin-top:-0.62em;}
+.tabledrag-toggle-weight-wrapper a{ color: #5a65d1;}
 
 tr.odd .form-item, tr.even .form-item{
 	/*margin-top:0.68em;*/
