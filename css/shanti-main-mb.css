@@ -492,7 +492,8 @@ html input[type=file].form-file{ margin-bottom:5px;}
 
 a.btn,
 a.btn:hover{ border-bottom:none !important;}
-
+.btn-group-lg a.btn.btn-default,
+.btn-group-lg a.btn.btn-default:hover{ border-bottom:1px solid #ddd !important;}
 
 .btn-black,
 .btn-red,
@@ -703,8 +704,7 @@ a.btn:hover{ border-bottom:none !important;}
 	border-radius:0 0.25em 0.25em 0;
 }
 
-.btn-group-lg a.btn.btn-default,
-.btn-group-lg a.btn.btn-default:hover{ border-bottom:1px solid #ddd;}
+
 
 /*
 .views-exposed-form .views-exposed-widget .btn.btn-primary{ margin-top:1em;}
