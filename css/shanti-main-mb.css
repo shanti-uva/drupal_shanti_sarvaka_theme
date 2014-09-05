@@ -53,12 +53,6 @@ this custom set of styles in the modules section
 
 ============*/
 
-
-
-
-
-
-
 .avdate i,
 .avduration i{ margin-right:0.25em;}
 .avduration::after, .avrating::after {
@@ -76,10 +70,6 @@ this custom set of styles in the modules section
 .fivestar-basic div.fivestar-widget .star a:before{ content: "\f005";}
 
 .fivestar-basic div.fivestar-widget .star.on a{ color:#555; }
-
-
-
-
 
 div.row.avrating h5, 
 .avshare div h5 { font-weight: bold; margin-bottom:0.12em;}
@@ -549,7 +539,7 @@ a.btn:hover{ border-bottom:none !important;}
 
 .btn.btn-default:hover,
 .btn-group-lg .btn.btn-default:hover,
-.btn-group-lg .btn.btn-default.btn-icon:hover{ background:#eee;}
+.btn-group-lg .btn.btn-default.btn-icon:hover{ background:#ddd;}
 
 .btn.btn-default:active, .btn.btn-default.active,
 .btn-group-lg .btn.btn-default:active, .btn-group-lg .btn.btn-default.active,
@@ -738,7 +728,7 @@ a.btn:hover{ border-bottom:none !important;}
 	border-radius:0.25em 0 0 0.25em;
 }
 .btn-group-lg .btn-primary.btn-icon span{ 
-	padding:1.25em 2.5em 1.25em 8.25em;
+	padding:1.25em 1.5em 1.25em 7em;
 	margin:1px 0 0 0;
 	line-height:1.62em;
 	font-size:70%;
@@ -758,7 +748,7 @@ a.btn:hover{ border-bottom:none !important;}
 
 .btn-group-sm,
 .btn-group-lg,
-.btn-group-xlg{ margin:0;}
+.btn-group-xlg{ margin:0;display:block; width:100%;}
 
 .btn-group-sm .btn-group:first-child .btn,
 .btn-group-lg .btn-group:first-child .btn,
@@ -771,9 +761,16 @@ a.btn:hover{ border-bottom:none !important;}
 	border-radius: 0 0.25em 0.25em 0;
 }
 
-.btn-group-lg.btn-group-transcript .btn-group:first-child{
-	width:1.5%;
-}
+
+
+
+
+.btn-group > .btn{ margin:0;}
+.btn-group > .btn-group + .btn-group .btn,
+.btn-group.btn-group-lg >.btn-group + .btn-group .btn{ margin-left:2px;}
+.btn-group.btn-group-xlg >.btn-group + .btn-group .btn{ margin-left:1px;}
+
+
 
 /*
 .views-exposed-form .views-exposed-widget .btn.btn-primary{ margin-top:1em;}
@@ -1199,8 +1196,8 @@ div.form-item.form-type-select.form-item-fields-group-group-parent{
   margin-right:20px;
   float: left;
   position: relative;
-  top: 13px;
-  left: 10px;
+  top: 15px;
+  left: 7px;
   -webkit-box-shadow: 0 0 4px 3px #ddd;
   box-shadow: 0 0 4px 3px #ddd;
   border-collapse:separate;
