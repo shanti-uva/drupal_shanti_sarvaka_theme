@@ -1,58 +1,6 @@
 
 .breadwrap ol li i { background:#32ccca;}
 
-/*==========
-
-
-div.video-row {
-	margin-bottom: 18px; 
-}
-
-h3.node-desc {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1em;
-}
-
-h4.node-desc-type {
-	text-transform: uppercase;
-	font-size: 0.8em;
-}
-
-div.avinfo button.btn.play-transcript-btn {
-	margin-bottom: 12px;
-}
-
-button.play-transcript-btn i.shanticon {
-	margin-right: 6px;
-	padding: 18px 6px 6px 8px;
-	vertical-align: top;
-}
-
-button.play-transcript-btn span {
-	font-size: small;
-}
-
-div.row.avdate, div.row.avduration {
-	margin: 6px 0px 6px -10px;
-	color: #777;
-}
-
-div.collimage {
-	max-width: 50%;
-	float: left;
-	padding-right: 20px;
-}
-
-div.avinfo {
-	margin-left: 20px;
-}
-
-these styles were migrated from mediabase.css to help monitor 
-this custom set of styles in the modules section 
-
-============*/
-
 .avdate i,
 .avduration i{ margin-right:0.25em;}
 .avduration::after, .avrating::after {
@@ -255,8 +203,8 @@ table .draggable a.tabledrag-handle:hover {
   border:none !important;
 }
 
-table.tabledrag-processed{ text-transform:capitalize;}
-
+table.tabledrag-processed{ width:100%; text-transform:capitalize;}
+#edit-filters-order{ padding-bottom:15px;}
 
 a.tabledrag-handle .handle{
 	background:none;
@@ -481,31 +429,15 @@ html input[type=file].form-file{ margin-bottom:5px;}
 	background-clip: padding-box;
 	display:inline-block;
 	white-space:nowrap;
+	border-radius:0.25em;	
+	color:#eee;
+	padding: 0.75em 2em 0.62em;
+	margin: 0.75em;	
+	line-height:2em;
+	font-size: 0.68em;	
+	letter-spacing:0.06em;
+	display:inline-block;
 }
-.btn-black,
-.btn-red,
-.btn-default,
-.btn-primary{
-  border:none;
-	background-image:none;
-  background: transparent;
-}
-.btn-black:hover,
-.btn-black:focus,
-.btn-red:hover,
-.btn-red:focus,
-.btn-default:hover,
-.btn-default:focus,
-.btn-primary:hover {
-	background-image:none;
-  background: transparent;
-}
-.btn-primary:active,
-.btn-primary.active {
-	background-image:none;
-  box-shadow:none;
-}
-
 a.btn,
 a.btn:hover{ border-bottom:none !important;}
 .btn-group-lg a.btn.btn-default,
@@ -515,47 +447,38 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-red,
 .btn-default,
 .btn-primary{
-	color:#eee;
-	border-radius:0.25em;
-	padding: 0.75em 2em 0.62em;
-	margin: 0.75em;	
-	line-height:2em;
-	font-size: 0.68em;	
-	letter-spacing:0.06em;
-	display:inline-block;
-} 
-
+  border:none;
+	background-image:none;
+  background: transparent;
+}
+.btn-black:hover, .btn-black:focus, .btn-black.focus,
+.btn-red:hover, .btn-red:focus, .btn-red.focus,
+.btn-default:hover, .btn-default:focus, .btn-default.focus,
+.btn-primary:hover, .btn-primary:active, .btn-primary.active {
+	background-image:none;
+  background: transparent;
+}
 
 .btn-primary{ background:#5b68ce;}
-.btn-primary:hover {
-	color:#fff;
-	background: #4850bd; /* darker */
-}
+.btn-primary:hover { color:#fff;background: #4850bd;}
 .btn-primary:active, .btn-primary.active{ background:#434bb1;}
 
-.btn.btn-default,
-.btn-group-lg .btn.btn-default{ background:#fff; color:#555;}
-
-
+.btn.btn-default{ background:#fff; color:#555;}
 .btn.btn-default:hover,
-.btn-group-lg .btn.btn-default:hover,
-.btn-group-lg .btn.btn-default.btn-icon:hover{ background:#ddd;}
-
+.btn-group .btn.btn-default.btn-icon:hover{ background:#ddd;}
 .btn.btn-default:active, .btn.btn-default.active,
-.btn-group-lg .btn.btn-default:active, .btn-group-lg .btn.btn-default.active,
-.btn-group-lg .btn.btn-default.btn-icon:active, .btn.btn-default.btn-icon.active{ background:#ccc;}
+.btn-group .btn.btn-default:active, .btn-group .btn.btn-default.active,
+.btn-group .btn.btn-default.btn-icon:active, .btn.btn-default.btn-icon.active{ background:#ccc;}
 
 .btn-clear{ background:transparent; color:#555;}
 
+.btn-group > .btn{ border-radius:0; margin:0;}
+.btn-group > .btn-primary + .btn-primary{ border-left:1px solid #6c7bff;}
 
-/*
-.btn-primary:active,
-.btn-primary.active {
-	color:#505050;
-	background: #fff;
-	box-shadow: inset 0 0 9px rgba(50,50,50, .5 );
-}
-*/
+.btn-group-sm,
+.btn-group-lg,
+.btn-group-xlg{ margin:0;}
+
 .btn.btn-primary.btn-icon{
 	padding:0;
 	margin:0.75em;
@@ -620,11 +543,14 @@ a.btn:hover{ border-bottom:none !important;}
 	line-height:130%;
 	padding-top:0.88em;
 }	
+.btn.btn-sm{
+	line-height:3em;
+	padding:0.82em 3em;
+}	
 .btn.btn-lg{
 	line-height:3em;
 	padding:0.82em 3em;
 }	
-
 .btn-group-lg .btn{
 	line-height:3.25em;
 	padding:1em 1.5em;
@@ -632,13 +558,10 @@ a.btn:hover{ border-bottom:none !important;}
 }
 .btn-group-lg .btn.btn-primary{
 	width:100%;
-	border-radius:0.25em 0 0 0.25em;
 	margin:0;
 	padding-top:0.18em;
 	padding-bottom:0.18em;
-	border-radius:0;
 }
-
 .btn-group-lg .btn.btn-default.btn-icon{
 	font-size:0.62em; padding:0.56em; line-height:1.5em; background:white;
 }
@@ -652,51 +575,18 @@ a.btn:hover{ border-bottom:none !important;}
 
 
 
-.btn.btn-sm{
+
+
+.btn-group-sm > .btn{
 	line-height:3em;
 	padding:0.82em 3em;
-}	
-
-.btn-group-sm .btn-group .btn{
-	line-height:3.25em;
-	padding:1em 1.5em;
-	border-radius:0;
-}
-.btn-group-sm .btn-group .btn.btn-primary{
-	width:100%;
-	border-radius:0.25em 0 0 0.25em;
-	margin:0 -0.32em 0 0;
-	padding-top:0.18em;
-	padding-bottom:0.18em;
-	border-radius:0;
-}
-
-.btn-group-sm .btn-group .btn.btn-default.btn-icon{
-	font-size:0.62em; padding:0.56em; line-height:1.5em; background:white;
-}
-.btn-group-sm .btn.btn-default.btn-icon i.icon{
-	font-size: 2.25em;
-	line-height:2em;
-	height:2em;
-	padding:0;	
 }
 
 
+.btn-group-xlg .btn.btn-primary i.icon{ padding:0; font-size:1.68em; position:static; float:left; line-height:2.75em; background:transparent;}
+.btn-group-xlg > .btn.btn-primary{ padding: 0.75em 0.5em 0.62em;}
 
-
-
-
-
-.btn-group-xlg .btn.btn-primary{  margin:0; padding:0;}
-.btn-group-xlg .btn.btn-primary i.icon{ font-size:1.68em; position:static; float:left; line-height:2.75em}
-.btn-group-xlg .btn.btn-primary:hover i.icon{ background: #434bb1; color:#fff;}
-.btn-group-xlg .btn.btn-primary:active i.icon,
-.btn-group-xlg .btn.btn-primary.active i.icon{ background: #373d94;}
-
-.btn-group-xlg .btn-group+.btn-group{ margin:0;} /* not -1px */
-
-.btn-group-xlg .btn-group a.btn.btn-primary{ margin-left:1px;}
-.btn-group-xlg .btn-group:first-child a.btn.btn-primary{ margin-left:0;}
+/* .btn-group-xlg .btn-group+.btn-group{ margin:0;}  not -1px */
 
 /*--- custom play transcript button set --*/
 .btn-group-lg .btn-primary.btn-icon{ 
@@ -746,10 +636,8 @@ a.btn:hover{ border-bottom:none !important;}
 }
 
 
-.btn-group-sm,
-.btn-group-lg,
-.btn-group-xlg{ margin:0;display:block; width:100%;}
 
+/*
 .btn-group-sm .btn-group:first-child .btn,
 .btn-group-lg .btn-group:first-child .btn,
 .btn-group-xlg .btn-group:first-child .btn{
@@ -760,16 +648,16 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group-xlg .btn-group:last-child .btn{
 	border-radius: 0 0.25em 0.25em 0;
 }
+*/
 
 
-
-
+/*
 
 .btn-group > .btn{ margin:0;}
 .btn-group > .btn-group + .btn-group .btn,
 .btn-group.btn-group-lg >.btn-group + .btn-group .btn{ margin-left:2px;}
 .btn-group.btn-group-xlg >.btn-group + .btn-group .btn{ margin-left:1px;}
-
+*/
 
 
 /*
@@ -1024,7 +912,7 @@ form .field-multiple-table td.field-multiple-drag{
 table.tableheader-processed td{ /*width:25%;*/} /*---- testing this ----*/
 
 
-#edit-name.form-control{ margin-top:0.5em;}
+#edit-name.form-control{ }
 
 #edit-actions.form-actions{ margin-top:0.5em;}
 
@@ -1039,12 +927,9 @@ input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-heig
 }
 
 
-.tabledrag-toggle-weight-wrapper{ margin-top:-0.62em;}
+.tabledrag-toggle-weight-wrapper{ display:inline; float:right; /* margin-top:-0.62em; */}
 .tabledrag-toggle-weight-wrapper a{ color: #5a65d1;}
 
-tr.odd .form-item, tr.even .form-item{
-	/*margin-top:0.68em;*/
-}
 
 table.field-multiple-table { margin-bottom:2em;}
 table.field-multiple-table tbody{ border:2px solid #ddd;}
@@ -1055,7 +940,7 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 #admin-menu > div > .dropdown > li > a{ padding: 2px 7px 3px;}
 
-
+#edit-filter-settings-title{ margin-bottom:0 !important;}
 
 /** Field Groups. See shanti_sarvaka_fieldset() function */
 .field-accordion {
@@ -1135,6 +1020,8 @@ table.features-admin th{ padding-top:.75em;}
 	position:relative;
 	top:-1px;	*/
 }
+
+div.vertical-tabs{ margin-top:0;}
 div.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; border-bottom:1px solid #fff;}
 /*
 .field-accordion .panel-heading .panel-title a i{
@@ -1584,9 +1471,8 @@ h2 button.toggle-facet-label-search{
 
 
 
-div.form-item.form-type-select.form-item-spaces-features-transcripts-settings{
-	width:7em;
-}
+div.form-item.form-type-select.form-item-spaces-features-transcripts-settings{ width:7em;}
+
 
 
 
