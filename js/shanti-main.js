@@ -46,16 +46,18 @@
 	// End of namespace closure
 	} (jQuery));
 	
-	
-	// Behaviors for the theme
+/**
+ *  Behaviors for the theme
+ */
 	Drupal.behaviors.shantiSarvaka = {
 	  attach: function (context, settings) {
-			//var h = $('div.region-sidebar-second').height();
-			//console.log(context, h);
+	  	// Not used yet...
 	  }
 	};
 
-	// Initialization of UI components on page on load
+/**
+ * Initialization of UI components on page load
+ */
 	jQuery(function($) {
 		createTopLink();
 		iCheckInit();
@@ -68,8 +70,10 @@
 		miscInit();
 		checkWidth();
 		carouselInit();
+		popoversInit();
 	});
 	
+  
 	// *** CONTENT *** top link
 	function createTopLink() {
 	  var offset = 420;
@@ -258,6 +262,7 @@
 		//	   });
 	    
 	}
+	
 	// Initialize iCheck form graphics
 	function iCheckInit() {
 		
@@ -640,6 +645,24 @@
     $('.carousel').carousel({
       interval: 8000,
     });
+	}
+	
+/** 
+ *  Popover: set the popover defaults and initialize
+ */
+	function popoversInit() {
+	  $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
+	  $.fn.popover.Constructor.DEFAULTS.placement = 'right';
+	  $.fn.popover.Constructor.DEFAULTS.html = true;
+	  $.fn.popover.Constructor.DEFAULTS.delay.hide = '5000';
+	  $.fn.popover.Constructor.DEFAULTS.container = 'body';
+	
+		$('span.popover-link').popover({
+			'content': function() {
+				return '<div>' + $(this).next('div.popover').html() + '</div>';
+			}
+		});
+		
 	}
 	
 }(jQuery));

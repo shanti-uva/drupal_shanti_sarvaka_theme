@@ -1642,5 +1642,41 @@ div.avdesc { margin: 0px 12px;}
 
 .avplace .field, .avplace .field .field-items, .avplace .field .field-item { display: inline; }
 
+span.popover-link {
+	margin-left: 4px;
+	margin-right: 6px;
+}
+
+span.popover-link span {
+	position: relative;
+	background: #5a65d1;
+	border: none;
+	height: 1em;
+	width: 1em;
+	border-radius: 1px;
+	color: white;
+	font-size: 0.9em;
+	padding: 3px 1px 0px;
+	border-radius: 2px;
+}
+
+span.popover-link span:after, span.popover-link span:before {
+  display: inline-block;
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+span.popover-link span:after {
+	border-color: rgba(90, 101, 209, 0);
+	border-right-color: #5a65d1;
+	border-width: 4px;
+	margin-top: -4px;
+}
 
 
