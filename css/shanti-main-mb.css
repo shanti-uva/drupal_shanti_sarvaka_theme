@@ -1053,6 +1053,7 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 #kmap_annotation_json { margin-left:2em;} /* textbox on bottom */
 
+#admin-menu > div > .dropdown > li > a{ padding: 2px 7px 3px;}
 
 
 
@@ -1586,6 +1587,22 @@ h2 button.toggle-facet-label-search{
 div.form-item.form-type-select.form-item-spaces-features-transcripts-settings{
 	width:7em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-- Moved from mediabase.css in mediabase modules --*/
 /* CSS styles for formatting mediabase nodes for the Shanti Sarvka theme */

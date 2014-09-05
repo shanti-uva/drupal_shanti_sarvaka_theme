@@ -81,9 +81,17 @@ a,a:visited,a:hover,a:focus{text-decoration:none;color: #5a65d1;}
   margin: 3% 0;
 }
 
+ul { 
+	list-style: square inside none;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 20px;
+	margin-left:20px;
+}
 
-
-
+.element-invisible{ display:none;margin:0;padding:0;height:0;min-height:0;line-height:0;border:none;}
 
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
