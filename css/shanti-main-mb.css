@@ -1637,10 +1637,13 @@ div.avinfo {
 	margin-left: 20px;
 }
 
+div.avdesc { margin: 0px 12px;}
+
 #pb-core-desc-readmore {float:right; font-size: 90%; font-style: italic;}
 
-.field-name-field-pbcore-description > .field-items > .field-item {margin-bottom: 12px;}
+.field-name-field-pbcore-description > .field-items > .field-item {margin-bottom: 12px; text-align: justify;}
 
+.avplace .field, .avplace .field .field-items, .avplace .field .field-item { display: inline; }
 
 
 
