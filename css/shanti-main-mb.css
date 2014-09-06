@@ -40,7 +40,7 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-
+.main-content h5, .main-content h6{ font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 div.collimage{ padding-right:1em;}
 
 .content-section p{ /* font-size:110%; */ }
@@ -680,6 +680,7 @@ div.avinfo .btn-primary.play-transcript-btn{
 	letter-spacing:0.06em;
 	overflow:hidden;
 	position:relative;
+	margin:0 !important;
 }
 div.avinfo .btn-primary.play-transcript-btn i.shanticon{
 	text-align:center;
@@ -740,6 +741,17 @@ div.sidebar { z-index:1;}
 	max-width:24em;
 	padding:0 0 0 .32em;
 }
+#sidebar-second ul { 
+	list-style: square inside none;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 10px;
+	padding-left:10px;
+}
+#sidebar-second ul li a,
+#sidebar-second ul li a:hover{ border-bottom-width:1px !important;}
 #sidebar-second div.block { padding: 1em 2em .32em 1em; }
 
 #sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.12em;}
@@ -1239,8 +1251,8 @@ ul.ss-full-tabs li.active a:before {
 .node-video .tab-content{border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
 	
-.videoHolder .largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:"play";} 	
-.videoHolder .icon-play::before{ font-family:'shanticon'; content: "\e647";}
+a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:"play";} 	
+a.icon-play.comp.largePlayBtn::before{ font-family:'shanticon'; content: "\e647";}
 
 .field-name-field-tags div{ display:inline-block;}
 .field-name-field-tags > div{ display:inline-block;float:left;}
@@ -1410,6 +1422,8 @@ div.fieldset-wrapper{ padding-top:10px;}
 
 div.field.field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{
 	padding:5px;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ddd;
 }
 /*
 .views-submit-button .btn-primary{
@@ -1508,20 +1522,6 @@ h4.node-desc-type {
 	font-size: 0.8em;
 }
 
-div.avinfo button.btn.play-transcript-btn {
-	margin-bottom: 12px;
-}
-
-button.play-transcript-btn i.shanticon {
-	margin-right: 6px;
-	padding: 18px 6px 6px 8px;
-	vertical-align: top;
-}
-
-button.play-transcript-btn span {
-	font-size: small;
-}
-
 div.row.avdate, div.row.avduration {
 	margin: 6px 0px 6px -10px;
 	color: #777;
@@ -1533,11 +1533,8 @@ div.collimage {
 	padding-right: 20px;
 }
 
-div.avinfo {
-	margin-left: 20px;
-}
 
-div.avdesc { margin: 0px 12px;}
+div.avdesc { margin: 0px 12px; padding-left:20px;}
 
 #pb-core-desc-readmore {float:right; font-size: 90%; font-style: italic;}
 
