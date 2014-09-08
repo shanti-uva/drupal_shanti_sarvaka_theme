@@ -10,12 +10,17 @@
 		var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
 		if(items.length > 1) { 
 			items.first().nextAll().hide();
-			items.last().after('<p id="pb-core-desc-readmore"><a href="#" class="show-more">Show More</a><a href="#" style="display:none;" class="show-less">Show Less</a></p>');
-			$("#pb-core-desc-readmore a").click(function(e) {
+			items.last().after('<p id="pb-core-desc-readmore"><a href="#" class="show-more-toggle">(Show More)</a></p>');
+			$(".show-more-toggle").click(function (e) {
 				var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
 				items.first().nextAll('.field-item').slideToggle();
-				$("#pb-core-desc-readmore a").toggle();
-				e.preventDefault();
+		     if($(".avdesc").hasClass("show-more-height")) {
+		         $(this).text("(Show Less)");
+		     } else {
+		         $(this).text("(Show More)");
+		     }
+		     $(".avdesc").toggleClass("show-more-height");
+				 e.preventDefault();
 			});
 		}
 	}
