@@ -37,7 +37,8 @@ function shanti_sarvaka_preprocess(&$variables) {
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
   $variables['theme_path'] = $base; 
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
-  
+	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
+	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
 }
 
 function shanti_sarvaka_preprocess_html(&$variables) {
@@ -701,7 +702,7 @@ function shanti_sarvaka_get_breadcrumbs($variables) {
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
   $output = '<ol class="breadcrumb">';
   if(!$variables['is_front']) {
-    $breadcrumbs[0] = '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>';
+    array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
   } 
 	if(count($breadcrumbs) > 1) { 
 		$breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);

@@ -14,7 +14,9 @@
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
 	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<? print $site_name; ?> Homepage">
 	          <?php if($variables['shanti_site']): ?>
-	            <i class="icon shanticon-logo"></i><em>SHANTI</em>
+	            <i class="icon shanticon-logo"></i><em>SHANTI</em><?php if($variables['use_admin_site_title']) {
+		            	print "<span class=\"site-title\">{$site_name}</span>";
+		            } ?>
 	          <?php else: ?>
 	            <img src="<?php print $logo; ?>" class="site-logo" /> <span class="site-title"><?php print $site_name; ?></span>
 	          <?php endif; ?>
@@ -56,7 +58,12 @@
           <header class="col-sm-12 titlearea banner">
            <div role="banner">
             <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php 
-              print ($title == '')? $variables['default_title']:$title; ?></span></h1>
+            	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
+            		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
+            	} else {
+            		print ($title == '')? $variables['default_title']:$title; 
+            	}
+              ?></span></h1>
               <nav class="breadwrap" role="navigation">
                 <?php print shanti_sarvaka_get_breadcrumbs($variables); ?>
               </nav>
