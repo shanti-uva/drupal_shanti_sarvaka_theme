@@ -53,7 +53,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
   $variables['bsclass_main'] = 'col-sm-6';
   if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = 'col-xs-12'; 
+    $variables['bsclass_main'] = ''; 
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
     $variables['bsclass_main'] = 'col-sm-9'; 
   }

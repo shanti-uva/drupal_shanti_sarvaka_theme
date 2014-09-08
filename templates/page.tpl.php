@@ -91,7 +91,7 @@
           <?php endif; ?>
           
           <!-- Begin Page Content -->
-          <section class="content-section <?php print $bsclass_main; ?>"> 
+          <section class="content-section<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>"> 
           <!-- Message Area -->
           <?php if (isset($messages)) { ?><div class="messages"><?php print $messages; ?></div> <?php } ?>
             <div class="tab-content">
