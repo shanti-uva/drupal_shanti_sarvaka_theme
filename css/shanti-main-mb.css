@@ -718,6 +718,7 @@ a.btn:hover{ border-bottom:none !important;}
 
 
 /*--- custom play transcript --*/
+div.avinfo{ display:inline; float:left; margin-right:15px;}
 div.avinfo .btn-primary.play-transcript-btn{ 
 	padding:0;
 	width:auto;
