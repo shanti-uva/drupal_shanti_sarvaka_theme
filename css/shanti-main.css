@@ -59,7 +59,7 @@ i{ font-style:normal;}
   min-height:100%;
   font-size:1em;
 }
-.content-section { padding: 10px 25px; min-height:100%;}
+.content-section { padding: 10px 25px 50px; min-height:100%;}
 
 /* .content-section .row{ margin-left:0; margin-right:0;} */
 
@@ -490,11 +490,11 @@ select:focus option:checked:hover {
 }
 .titlearea h1.page-title {  
   font-weight: normal;
-  font-size:1.68em;
+  font-size:1.56em;
   line-height:1.68em;
   text-shadow:0 0 3px rgba(50,50,50, 0.225);
   margin:0;
-  padding:0;
+  padding:5px 0 0;
   color:#f9f9f9;
 }
 .titlearea h1.page-title span { position:relative; top: 0.18em;}
@@ -505,12 +505,12 @@ select:focus option:checked:hover {
 	height:1.75em;
   width:1.75em;
   line-height:1.75em;
-  margin:0 0.5em 0 0;
+  margin:0 7px 0 0;
   text-align:center;
 	color:#fff; 
 	float:left;
 	position:relative; 
-	top: 0.38em; 
+	top: 3px; 
 	z-index:10; 
 	display:inline-block; 
 	background: rgba(0, 0, 0, 0.175);

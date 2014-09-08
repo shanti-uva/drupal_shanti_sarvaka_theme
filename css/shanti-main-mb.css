@@ -1251,14 +1251,15 @@ ul.ss-full-tabs li.active a:before {
 }
 /** End of Tabs section **/
 
-.node-video .tab-content{border-top:1px solid #ddd;}
+.node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
-	
-a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:"play";} 	
-a.icon-play.comp.largePlayBtn::before{ font-family:'shanticon'; content: "\e647";}
 
+/*--- button on video window ---*/
+a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background-color:#32ccca !important; content:"play";} 	
+a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
+
+.field-name-field-tags > div{ float:left;}
 .field-name-field-tags div{ display:inline-block;}
-.field-name-field-tags > div{ display:inline-block;float:left;}
 .field-name-field-tags .field-item a{ display:inline-block; float:left; padding:0.06em 0.5em;}
 
 
