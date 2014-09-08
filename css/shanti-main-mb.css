@@ -6,11 +6,8 @@
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
-.avduration::after, .avrating::after {
-	border-bottom: 1px solid silver;
-	width: 175px;
-	margin: 4px;
-}
+.avduration::after, .avrating::after {border-bottom: 1px solid silver;width: 175px;margin: 4px;}
+
 .fivestar-basic div.fivestar-widget > div,
 .fivestar-basic div.fivestar-widget > div a{ font-family:'FontAwesome'; color:#ccc; text-indent:0; background-image: none !important;  border-bottom:none !important;}
 .fivestar-basic div.fivestar-widget > div a{ display:inline-block; font-size:1em; letter-spacing:0.5em;}
@@ -30,6 +27,7 @@ div.row.avrating h5,
 .avshare ul li a{ color:#555; font-weight:bold;border-bottom:none !important;}
 .avshare ul li a:hover{ color:#5a65d1;border-bottom:none !important;}
 .avshare ul li a i.icon { color:#5a65d1; font-size: 1.5em; margin-right:3px; position:relative; top:3px;}
+
 ul.inline li a, 
 div.compact-link a,
 ul.links.inline li a,
@@ -40,14 +38,64 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 .shanticon-email,
 .shanticon-google{ color:#32ccca;}
 
+.node-video .tab-content{ border-top:1px solid #ddd;}
+.node-video > div{ border-bottom:1px solid #f7f7f7;}
+
+/*--- button on video window ---*/
+a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background-color:#32ccca !important; content:"play";} 	
+a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
+
+.field-name-field-tags{ padding:5px;}
+.field-name-field-tags > div{ float:left;}
+.field-name-field-tags div{ display:inline-block;}
+.field-name-field-tags .field-item a{ display:inline-block; float:left; padding:0.06em 0.5em;}
+
+div.field.field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{
+	padding:5px;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ddd;
+}
+/*--- END video page template ---*/
+
+
+
+
+/** Tabs **/
+ul.ss-full-tabs {margin: 1.12em .32em 2em;}
+ul.ss-full-tabs li {width: 50%;background: white;}
+ul.ss-full-tabs li a {
+	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	border: none !important;
+	text-align: center;
+	font-size: larger;
+	font-weight: 700;
+	color: #999;
+	border-radius: 0;
+	-webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	transition: all 1s ease;
+}
+ul.ss-full-tabs li a:hover{ border: none !important;}
+/* ul.ss-full-tabs li.active a:after {border-color: rgba(50,204,202,0);border-top-color: #32ccca;border-width: 15px;margin-left: -15px;} */
+ul.ss-full-tabs li.active a { color: white;}
+ul.ss-full-tabs>li>a:hover, 
+ul.ss-full-tabs>li.active>a:hover { border: none !important;}
+ul.ss-full-tabs>li.active>a:hover { color: white !important;}
+ul.ss-full-tabs li.active a:after, 
+ul.ss-full-tabs li.active a:before {top: 100%;left: 50%;border-top: 1px solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
+/** End of Tabs section **/
+
+
+
+
+
+
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .main-content h5, .main-content h6{ font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+
 div.collimage{ padding-right:1em;}
-
-.content-section p{ /* font-size:110%; */ }
-
 
 .main-content div:nth-child(2) a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;}
 .main-content div:nth-child(2) a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000); }
@@ -835,7 +883,7 @@ span.filter-option.pull-left{
 	width:3.25em;
 }
 
-.main-content table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
+table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
 	width:70px;
 	margin-left:20px;
 }
@@ -1189,83 +1237,6 @@ a.hide-annot:before{
 
 
 
-/*
-.collectionnode .content .row { margin:0 !important;}
-*/
-
-
-
-
-
-
-
-/** Tabs **/
-ul.ss-full-tabs {
-	margin: 1.12em .32em 2em;
-}
-
-ul.ss-full-tabs li {
-	width: 50%;
-	background: white;
-}
-
-ul.ss-full-tabs li a {
-	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	border: none !important;
-	text-align: center;
-	font-size: larger;
-	font-weight: 700;
-	color: #999;
-	border-radius: 0;
-	-webkit-transition: all 1s ease; 
-	-moz-transition: all 1s ease; 
-	transition: all 1s ease;
-}
-ul.ss-full-tabs li a:hover{ border: none !important;}
-
-
-/*
-ul.ss-full-tabs li.active a:after {
-	border-color: rgba(50,204,202,0);
-	border-top-color: #32ccca;
-	border-width: 15px;
-	margin-left: -15px;
-}
-*/
-ul.ss-full-tabs li.active a { color: white;}
-
-ul.ss-full-tabs>li>a:hover, 
-ul.ss-full-tabs>li.active>a:hover { border: none !important;}
-ul.ss-full-tabs>li.active>a:hover { color: white !important;}
-
-ul.ss-full-tabs li.active a:after, 
-ul.ss-full-tabs li.active a:before {
-	top: 100%;
-	left: 50%;
-	border-top: 1px solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-/** End of Tabs section **/
-
-.node-video .tab-content{ border-top:1px solid #ddd;}
-.node-video > div{ border-bottom:1px solid #f7f7f7;}
-
-/*--- button on video window ---*/
-a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background-color:#32ccca !important; content:"play";} 	
-a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
-
-.field-name-field-tags > div{ float:left;}
-.field-name-field-tags div{ display:inline-block;}
-.field-name-field-tags .field-item a{ display:inline-block; float:left; padding:0.06em 0.5em;}
-
-
-
-
-
 
 
 
@@ -1424,11 +1395,7 @@ div.fieldset-wrapper{ padding-top:10px;}
 /*--- view collections page ---*/
 .view-collections .views-row{ min-height:14em;}
 
-div.field.field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{
-	padding:5px;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #ddd;
-}
+
 /*
 .views-submit-button .btn-primary{
 	font-size:100%;
