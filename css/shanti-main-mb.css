@@ -3,10 +3,10 @@
 
 
 /*--- video view page --*/
-.avinfo{ display:inline; float:left; margin-right:15px;}
-.avinfo .trans-btn{ padding-bottom:5px;}
+.avinfo{ display:inline; float:left; margin-right:15px; max-width:680px;}
+.avinfo .trans-btn{ padding-bottom:5px; margin-left:0;}
 
-.avplace i.icon.shanticon-menu3{ padding:3px;position:relative;top:1px;}
+.avplace i.icon.shanticon-menu3{ position:relative; top:0; font-size:0.88em;}
 .avdesc .popover .parents{ font-size:80%;}
 
 .avdate i,
@@ -45,6 +45,8 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
+.node-video ul.links.inline{ position:relative; top:10px;}
+.node-video ul.links.inline a{ font-size:90%;}
 
 /*--- button on video window ---*/
 a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background-color:#32ccca !important; content:"play";} 	
@@ -65,29 +67,39 @@ div.field.field-name-field-pbcore-title.field-type-field-collection.field-label-
 
 
 
-/** Tabs **/
-ul.ss-full-tabs {margin: 1.12em .32em 2em;}
-ul.ss-full-tabs li {width: 50%;background: white;}
-ul.ss-full-tabs li a {
-	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	border: none !important;
-	text-align: center;
-	font-size: larger;
-	font-weight: 700;
-	color: #999;
-	border-radius: 0;
+/*--- Large Tabs video view ---*/
+ul.ss-full-tabs { margin: 1.12em .32em 1.5em;}
+ul.ss-full-tabs li {
+	width: 50%;
+	background: white; 
+	position:relative;
+	font-family:'shanticon';
 	-webkit-transition: all 1s ease; 
 	-moz-transition: all 1s ease; 
 	transition: all 1s ease;
+	color:#32ccca;
 }
-ul.ss-full-tabs li a:hover{ border: none !important;}
-/* ul.ss-full-tabs li.active a:after {border-color: rgba(50,204,202,0);border-top-color: #32ccca;border-width: 15px;margin-left: -15px;} */
-ul.ss-full-tabs li.active a { color: white;}
+ul.ss-full-tabs li.active:before { font-size:2em; content: "\e646"; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em !important; border: none !important;}
+ul.ss-full-tabs li a {
+	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size:1.25em;
+	border: none !important;
+	text-align: center;
+	font-weight:bold;
+	font-weight: 700;
+	color: #aaa;
+	border-radius: 0;
+}
+ul.ss-full-tabs li a:hover { border: none !important;}
+ul.ss-full-tabs li.active a {  
+	color:#fff !important;
+}
 ul.ss-full-tabs>li>a:hover, 
 ul.ss-full-tabs>li.active>a:hover { border: none !important;}
-ul.ss-full-tabs>li.active>a:hover { color: white !important;}
-ul.ss-full-tabs li.active a:after, 
-ul.ss-full-tabs li.active a:before {top: 100%;left: 50%;border-top: 1px solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
+ul.ss-full-tabs li.active a:after {content: " ";border: none !important;margin:0 !important;position:static;}
+ul.ss-full-tabs li.active a:before { content:" "; border: none !important;margin:0 !important;position:static;}
+
+ul.ss-full-tabs > li.active > a:after{ border:none !important; margin:0 !important;}
 /** End of Tabs section **/
 
 
@@ -97,8 +109,6 @@ ul.ss-full-tabs li.active a:before {top: 100%;left: 50%;border-top: 1px solid tr
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;}
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ font-weight:normal; font-weight:500; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.main-content h5, .main-content h6{ font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 div.collimage{ padding-right:1em;}
 
@@ -134,9 +144,7 @@ div.collimage{ padding-right:1em;}
 }
 
 .loader { height: 80%; min-height: 31em; padding-top: 1em;}
-.dfn, .italic{ font-style:italic !important; }
-.sans-serif{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.serif{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+
 
 
 /* form table td.label styles addres the "Group Space" fields on ...node/add/collection*/
