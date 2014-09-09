@@ -528,6 +528,17 @@
 		$('#admin-footer div.block').each(function() {
 			$(this).height($(this).parent().height());
 		});
+		
+		// Collapse/Expand All Buttons For Bootstrap Collapsible Divs
+		// Assumes Buttons are in a child div that is a sibling of the collapsible divs.
+		$('div.expcoll-btns button').click(function() {
+			var divs = $(this).parent().parent().find('div.collapse');
+			if($(this).hasClass('expand')) {
+				$(divs).addClass('in');
+			} else {
+				$(divs).removeClass('in');
+			}
+		});
 	}
 	
 	function loadFacetSearch(fdata) {

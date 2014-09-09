@@ -39,15 +39,6 @@ function shanti_sarvaka_preprocess(&$variables) {
   global $base_url, $base_path;
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
   $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
-  $variables['breadcrumb'] = menu_get_active_breadcrumb();
-  $variables['breadcrumb'][] = ($variables['is_front'])? 'Home' : drupal_get_title();
-  $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
-  $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
-  $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
-  $variables['theme_path'] = $base; 
-  $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
-	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
-	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
 }
 
 function shanti_sarvaka_preprocess_html(&$variables) {
@@ -57,6 +48,17 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
+  global $base_url, $base_path;
+  $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
+  $variables['breadcrumb'] = menu_get_active_breadcrumb();
+  $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
+  $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
+  $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
+  $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
+  $variables['theme_path'] = $base; 
+  $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
+	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
+	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
   // Figure out bootstrap column classes
   $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
   $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
