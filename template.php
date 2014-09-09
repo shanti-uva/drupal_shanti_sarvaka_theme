@@ -552,13 +552,18 @@ function shanti_sarvaka_carousel($variables) {
 
 /**
  * Provides markup for the info popups from icons etc.
+ * 	Variables:
+ * 		- label 	(string) 	: Label shown and header of popover
+ * 		- desc 		(string) 	: Description of item
+ * 		- tree 		(array) 	: ancestor tree
+ * 		- links 	(array) 	: links to show in footer stripes
  */
 function shanti_sarvaka_info_popover($variables) {
 	//dpm($variables, 'vars in popover theme function');
 	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
 						<div class=\"popover\">
 							<h5>{$variables['label']}</h5>
-							<p>{$variables['desc']}</p>
+							{$variables['desc']}
 							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>
 								<ul>";
 	foreach($variables['tree']['items'] as $n => $link) {
