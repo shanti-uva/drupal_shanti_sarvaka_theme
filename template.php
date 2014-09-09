@@ -637,34 +637,29 @@ function shanti_sarvaka_form($variables) {
 	return theme_form($variables);
 }
 */
+
 /**
  * Theme buttons to use Bootstrap Markup
  */
-
 function shanti_sarvaka_button($variables) {
   $element = $variables['element'];
   $text = $element['#value'];
+	/*if(strpos($text, 'reate') > -1) {
+		dpm($variables, 'butn vars');
+	}*/
+	$element['#attributes']['type'] = array('button');
+	//$element['#attributes']['class'] = array('btn', 'btn-primary');
   $icon = '';
-	if($text == 'search-icon') {
-		$text = ''; 
-		$icon = '<i class="icon"></i>';
-	} else {
-		$text = '<span>' . $text . '</span>';
-	}
-  if(strpos(strtolower($text), 'video') > 0) {
-    $icon = '<i class="icon shanticon-video"></i> ';
-  } else if(strpos(strtolower($text), 'audio') > 0) {
-    $icon = '<i class="icon shanticon-audio"></i> ';
-  } else if(strpos(strtolower($text), 'collection') > 0) {
-    $icon = '<i class="icon shanticon-texts"></i> ';
-  } 
-	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if(!empty($element['#icon'])) {
+  	$icon = "<i class=\"icon shanticon-{$element['#icon']}\"></i> ";
+		$element['#attributes']['class'][] = 'btn-icon';
+  }
+	$element['#attributes']['class'][] = "form-{$element['#button_type']}";
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
   element_set_attributes($element, array('id', 'name', 'value'));
-
-  return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . $text . '</button>';
+  return '<button ' . drupal_attributes($element['#attributes']) . '>' . $icon . '<span>' . $text . '</span></button>';
 }
 
 function shanti_sarvaka_password($variables) {
