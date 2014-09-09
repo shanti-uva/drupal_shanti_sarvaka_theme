@@ -3,11 +3,13 @@
 
 
 /*--- video view page --*/
-.avinfo{ display:inline; float:left; margin-right:15px; max-width:680px;}
+.avinfo{ display:inline; float:left; margin-right:15px;}
 .avinfo .trans-btn{ padding-bottom:5px;}
-.avinfo .btn{ margin-left:0;}
+.avinfo .btn.btn-primary.btn-icon{ margin-left:0;}
 .avplace i.icon.shanticon-menu3{ position:relative; top:0; font-size:0.88em;}
-.avdesc .popover .parents{ font-size:80%;}
+
+.avdesc{  max-width:780px;}
+.avdesc .popover .parents{ }
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
@@ -23,9 +25,8 @@
 .fivestar-basic div.fivestar-widget .star a:before{ content: "\f005";}
 
 .fivestar-basic div.fivestar-widget .star.on a{ color:#555;}
-
-div.row.avrating h5, 
-.avshare div h5{ font-weight: bold; margin-bottom:0.12em;}
+ 
+.avinfo div h5{ margin-bottom:0.12em;}
 .avshare div h5 span{ color: #5a65d1; font-size: 0.9em; font-weight: normal;}
 .avshare ul{ list-style-type: none; padding-left:0; margin-top:5px;}
 .avshare ul li{}
