@@ -1,11 +1,14 @@
-
+/* custom theme colors */
 .breadwrap ol li i{ background:#32ccca;}
+ul.ss-full-tabs li{ color:#32ccca;}
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#32ccca;}
+/* END custom theme colors */
 
 
 /*--- video view page --*/
 .avinfo{ display:inline; float:left; margin-right:15px;}
 .avinfo .trans-btn{ padding-bottom:5px;}
-.avinfo .btn.btn-primary.btn-icon{ margin-left:0;}
+.avinfo .btn.btn-primary.btn-icon{ margin:5px 0;}
 .avplace i.icon.shanticon-menu3{ position:relative; top:0; font-size:0.88em;}
 
 .avdesc{  max-width:780px;}
@@ -39,10 +42,7 @@ div.compact-link a,
 ul.links.inline li a,
 a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
-.shanticon-twitter,
-.shanticon-facebook,
-.shanticon-email,
-.shanticon-google{ color:#32ccca;}
+
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
@@ -53,7 +53,9 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background-color:#32ccca !important; content:"play";} 	
 a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 
-.field-name-field-tags{ padding:5px;}
+
+
+.field-name-field-tags{ padding:10px 10px 0;}
 .field-name-field-tags > div{ float:left;}
 .field-name-field-tags div{ display:inline-block;}
 .field-name-field-tags .field-item a{ display:inline-block; float:left; padding:0.06em 0.5em;}
@@ -412,23 +414,38 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-default:hover, .btn-default:focus, .btn-default.focus,
 .btn-primary:hover, .btn-primary:active, .btn-primary.active{ background-image:none;background: transparent;}
 
-.btn-primary{ background:#5b68ce;}
-.btn-primary:hover{ color:#fff;background: #4850bd;}
-.btn-primary:active, .btn-primary.active{ background:#434bb1;}
+.btn.btn-primary{ background:#5b68ce;}
+.btn.btn-primary:hover{ color:#fff;background: #4850bd;}
+.btn.btn-primary:active, .btn.btn-primary.active{ background:#434bb1;}
 
 .btn-clear{ background:transparent; color:#555;}
 
-.btn.btn-primary.btn-icon{ padding:0;margin:0.75em;width:auto;line-height:2em;	text-transform:uppercase;color:#eee;font-size: 0.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:0.06em;overflow:hidden;position:relative;}
-.btn.btn-primary .icon{ text-align:center;width:3.12em; font-size:130%;line-height:2.75em;display:inline-block;padding: 0.12em;background: #4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:0.25em 0 0 0.25em;}
-.btn.btn-primary.btn-icon span{ padding:1em 2em 0.75em 7em;margin:0;line-height:2.88em;font-size:80%;background:transparent;display:block;}
+.btn.btn-icon{ padding:0;margin:0.75em;width:auto;line-height:2em;text-transform:uppercase;color:#eee;font-size: 0.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:0.06em;overflow:hidden;position:relative;}
+.btn .icon{ text-align:center;width:3.12em; font-size:130%;line-height:2.75em;display:inline-block;padding: 0.12em;background: #4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:0.25em 0 0 0.25em;}
+.btn.btn-icon span{ padding:1em 2em 0.75em 7em;margin:0;line-height:2.88em;font-size:80%;background:transparent;display:block;}
+.btn.btn-icon:hover{ background: #4c54c7;}
+.btn.btn-icon:hover i.icon{ background: #373d91;}
+.btn.btn-icon:active span,
+.btn.btn-icon.active span{ background: rgba(255, 255, 255, .08);}
+
+.btn.btn-primary.btn-icon{ color:#eee;}
+.btn.btn-primary .icon{ background: #4954bb;}
 .btn.btn-primary.btn-icon:hover{ background: #4c54c7;}
 .btn.btn-primary.btn-icon:hover i.icon{ background: #373d91;}
 .btn.btn-primary.btn-icon:active span,
-.btn.btn-primary.btn-icon.active span{ background: rgba(255, 255, 255, .07);}
+.btn.btn-primary.btn-icon.active span{ background: rgba(255, 255, 255, .08);}
+
+.btn.btn-default.btn-icon{ color:#777;}
+.btn.btn-default .icon{ background: #fff;}
+.btn.btn-default.btn-icon:hover{ background: #ddd;}
+.btn.btn-default.btn-icon:hover i.icon{ background: #ddd;}
+.btn.btn-default.btn-icon:active span,
+.btn.btn-default.btn-icon.active span{ background: #ccc;}
+
 
 .btn.btn-primary.btn-icon.btn-wrap span{ padding:1.38em 3em 1.25em 8em;margin:0;line-height:1.5em;font-size:70%;background:transparent;display:block;}
 
-.btn.btn-xs{ font-size:60%;line-height:130%;padding-top:0.88em;}	
+.btn.btn-xs{ font-size:60%;line-height:130%;padding-top:0.88em;font-weight:bold;font-weight:700;}	
 .btn.btn-sm{ line-height:3em;padding:0.82em 3em;}	
 .btn.btn-lg{ line-height:3em;padding:0.82em 3em;}	
 
@@ -507,8 +524,6 @@ div.sidebar{ z-index:1;}
 #sidebar-second div.block{ padding: 1em 2em .32em 1em;}
 
 #sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.12em;}
-
-#sidebar-second .btn.btn-primary.form-submit{ margin-top:0.25em;}
 
 #sidebar-second .bootstrap-select.form-control .selectpicker{ width:100% !important;}
 
