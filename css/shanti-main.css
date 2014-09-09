@@ -63,7 +63,9 @@ i{ font-style:normal;}
 
 /* .content-section .row{ margin-left:0; margin-right:0;} */
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:500; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content h5, .main-content h6{ font-weight:bold; font-weight:700;}
+
 .content-section iframe {border: none;}
 .content-section .google-maps {
   position: relative;
@@ -93,6 +95,13 @@ ul {
 }
 
 .element-invisible{ display:none;margin:0;padding:0;height:0;min-height:0;line-height:0;border:none;}
+
+.dfn, .italic{ font-style:italic !important; }
+.sans-serif{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.serif{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+
+
+
 
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
@@ -537,7 +546,6 @@ select:focus option:checked:hover {
   width:96%;
   background:transparent;
 }
-
 .breadwrap .breadcrumb > li + li:before {
   /* override breadcrumb class from Bootstrap 3 */
   content: " ";
@@ -545,7 +553,6 @@ select:focus option:checked:hover {
   color: #999999;
   display: none;
 }
-
 .breadwrap ol {
   margin: 0;
   padding: 0;
@@ -558,6 +565,7 @@ select:focus option:checked:hover {
   font-size: .75em;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   *zoom: 1;
+  border:none;
 }
 .breadwrap .breadcrumb li:first-child{
   font-weight:700;
