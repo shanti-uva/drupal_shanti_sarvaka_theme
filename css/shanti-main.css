@@ -546,7 +546,6 @@ select:focus option:checked:hover {
   width:96%;
   background:transparent;
 }
-
 .breadwrap .breadcrumb > li + li:before {
   /* override breadcrumb class from Bootstrap 3 */
   content: " ";
@@ -554,7 +553,6 @@ select:focus option:checked:hover {
   color: #999999;
   display: none;
 }
-
 .breadwrap ol {
   margin: 0;
   padding: 0;
@@ -567,6 +565,7 @@ select:focus option:checked:hover {
   font-size: .75em;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   *zoom: 1;
+  border:none;
 }
 .breadwrap .breadcrumb li:first-child{
   font-weight:700;
