@@ -8,8 +8,8 @@
 .avinfo .btn.btn-primary.btn-icon{ margin-left:0;}
 .avplace i.icon.shanticon-menu3{ position:relative; top:0; font-size:0.88em;}
 
-.avdesc{  max-width:680px;}
-.avdesc .popover .parents{ font-size:80%;}
+.avdesc{  max-width:780px;}
+.avdesc .popover .parents{ }
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
