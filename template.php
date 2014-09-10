@@ -651,17 +651,13 @@ function shanti_sarvaka_form($variables) {
 function shanti_sarvaka_button($variables) {
   $element = $variables['element'];
   $text = $element['#value'];
-	/*if(strpos($text, 'reate') > -1) {
-		dpm($variables, 'butn vars');
-	}*/
-	$element['#attributes']['type'] = array('button');
+	//$element['#attributes']['type'] = array('button');
 	//$element['#attributes']['class'] = array('btn', 'btn-primary');
   $icon = '';
   if(!empty($element['#icon'])) {
   	$icon = "<i class=\"icon shanticon-{$element['#icon']}\"></i> ";
 		$element['#attributes']['class'][] = 'btn-icon';
   }
-	$element['#attributes']['class'][] = "form-{$element['#button_type']}";
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
