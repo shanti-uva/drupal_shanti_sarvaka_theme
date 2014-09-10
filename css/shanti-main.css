@@ -276,13 +276,11 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 /*--- BEGIN banner header ---*/
 .titlearea { color: #f9f9f9;position: relative;padding:0;margin:0;}
-.titlearea>div{ height:4.44em; /* bottom shadow here, top shadow is off header-banner */ -webkit-box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);border-collapse: separate; /* fix for ie9 shadow */position:relative; z-index:1;}
+.titlearea>div{ height:65px; /* bottom shadow here, top shadow is off header-banner */ -webkit-box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);border-collapse: separate; /* fix for ie9 shadow */position:relative; z-index:1;}
 .titlearea h1.page-title { font-weight: normal;font-size:1.56em;line-height:1.68em;text-shadow:0 0 3px rgba(50,50,50, 0.225);margin:0;padding:5px 0 0;color:#f9f9f9;}
 .titlearea h1.page-title span { position:relative; top: 0.18em;}
 .main-content .titlearea h1.page-title .icon { font-size:80%;height:1.75em;width:1.75em;line-height:1.75em;margin:0 7px 0 0;text-align:center;color:#fff; float:left;position:relative; top: 3px; z-index:10; display:inline-block; background: rgba(0, 0, 0, 0.175);}
 .main-content .titlearea h1.page-title .icon:before{background:transparent !important;position:relative; left:0.06em; z-index:15; }
-
-
 
 
 
@@ -1403,11 +1401,10 @@ form table td.label{ padding-top:0.68em !important;}
 
 
 /*--- drupal edit tabs ---*/
-.admin-menu .has-tabs .titlearea>div{ height:6.5em;}
-
-article.main-content header ul.tabs.primary{ right:4em; position:absolute;} /* not loggen in */
-.logged-in article.main-content header ul.tabs.primary{ right:2em; position:absolute;} /* login */
-.logged-in article.main-content header ul.tabs.secondary{ left:2em; position:absolute;} /* login */
+.titlarea.has-tabs > div{ height:100px;}
+article.main-content header ul.tabs.primary{ right:50px; position:absolute;} /* not loggen in */
+.logged-in article.main-content header ul.tabs.primary{ right:30px; position:absolute;} /* login */
+.logged-in article.main-content header ul.tabs.secondary{ left:30px; position:absolute;} /* login */
 
 .main-content header ul.tabs.primary,
 .main-content header ul.tabs.secondary{ display:inline; border:none; position:absolute; bottom:0.18em; z-index:2; float:left;margin:0;}

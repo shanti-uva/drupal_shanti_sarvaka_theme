@@ -27,7 +27,7 @@ ul.ss-full-tabs li{ color:#32ccca;}
 /** End of Carousel Styles **/
 
 /*--- view collections page ---*/
-.view-collections .views-exposed-form label{ margin-bottom:0;font-size:0.82em;padding-left:.44em;font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;font-weight:500;text-transform: uppercase;margin-bottom: 0;}
+.view-collections .views-exposed-form label{ margin-bottom:0;font-size:0.82em;padding-left:.44em;font-weight:normal;font-weight:500;text-transform: uppercase;/* font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; */}
 .view-collections .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .view-collections .views-exposed-form .views-exposed-widget{ padding-top:0;padding-bottom: 0.12em;}
 .view-collections .views-exposed-form input.form-control{ width:12em;	}
