@@ -127,11 +127,11 @@
 
     
   <!-- LOAD menus -->
-  <section id="menu-main" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">   </section>  
-  <section id="menu-collections" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">    </section>
+  <section id="menu-main" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">   </section>  
+  <section id="menu-collections" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">    </section>
 
-  <section id="menu" role="navigation" style="display:none;">
-    <nav id="menu-drill">                
+  <section id="menu" style="display:none;">
+    <nav id="menu-drill" role="navigation">                
      <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->

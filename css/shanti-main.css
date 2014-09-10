@@ -143,12 +143,10 @@ ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-af
 .select-wrapper select {
   margin: -1px 0 0 1px;          
   cursor: pointer;
-  outline: none;
-  opacity: 0;
-  /* CSS hacks for older browsers */
-  _noFocusLine: expression(this.hideFocus=true); 
+  outline: none; 
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  opacity: 0;
   position: absolute;
   z-index: 2;
   left: 0;
@@ -194,21 +192,17 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a{ background:#39373f; color:#fff;}
 .menu-icon.show-topmenu a i:before{ color:#fff;}
 
-.navbar-default .menu-explore{ border-left:1px solid #ddd; display:inline;float:right;}
-.navbar-default .menu-explore a{ color:#666; display:inline-block; font-weight:600; font-size:0.88em; line-height:1em; height:50px; margin:0;padding:14px 20px 0 16px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;}
-.navbar-default .menu-explore .open a,
-.navbar-default .menu-explore a:hover{ color:#555; background:#f0f0f0; text-decoration:none;}
-.navbar-default .menu-explore i.icon{ font-size:17px; position:relative;left:6px;top:2px;}
+
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background-color: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
 .navbar-default .navbar-nav>li>a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px;margin:0;padding:15px 0 0 15px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:bold;}
 .navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>li>a:hover{ background:#f0f0f0;}
+.navbar-default .navbar-nav>li>a:hover{ background:#f0f0f0;color:#444;}
 .navbar-default .navbar-nav>li:last-child>a{ padding-left:15px;padding-right:40px;}
 .navbar-default .navbar-nav>li.login>a{ padding-top:20px; } 
-.navbar-default .navbar-nav>li.highlight>a{ background:#eee;color:#444;}
+.navbar-default .navbar-nav>li.highlight>a{ background:#eee;}
 .navbar-default .navbar-nav li.explore>a>i.icon{ font-size:17px; position:relative;left:0;top:2px;}
-.navbar-default .navbar-nav>li.highlight>a:hover{ background:#fff;color:#444;}
+.navbar-default .navbar-nav>li.highlight>a:hover{ background:#fff;}
 .navbar-default .navbar-nav>li.highlight.show-topmenu a{ background:#555; color:#fff;}
 .navbar-default .navbar-nav>li.highlight.show-topmenu a i:before{ color:#fff;}
 .navbar-default .navbar-nav>li.highlight.lang:active,
@@ -217,6 +211,12 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar-default .navbar-nav>li.lang>a{ padding-right:10px;}
 .navbar-default .navbar-nav li.explore>a{ padding-right:15px;}
 .navbar-default .navbar-nav li>a>i.shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
+
+.navbar-default .menu-explore{ border-left:1px solid #ddd; display:inline;float:right;}
+.navbar-default .menu-explore a{ color:#666; display:inline-block; font-weight:600; font-size:0.88em; line-height:1em; height:50px; margin:0;padding:14px 20px 0 16px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;}
+.navbar-default .menu-explore .open a,
+.navbar-default .menu-explore a:hover{ color:#555; background:#f0f0f0; text-decoration:none;}
+.navbar-default .menu-explore i.icon{ font-size:17px; position:relative;left:6px;top:2px;}
 /*--- END navbar tabs ---*/
 
 /*--- BEGIN dropdown menu ---*/
@@ -1537,7 +1537,7 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group-lg .btn.btn-default.btn-icon{ font-size:0.62em; padding:0.56em; line-height:1.5em; background:white;}
 .btn-group-lg .btn.btn-default.btn-icon i.icon{ font-size: 2.25em;line-height:2em;height:2em;padding:0;	position:relative;}
 
-.btn-group-lg.btn-group.btn-group-justified.btn-group-transcript > .btn-group:nth-child(1){ width:1.5%;}
+.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:1.5%;}
 
 .btn-group-sm > .btn{ line-height:3em;padding:0.82em 3em;}
 
