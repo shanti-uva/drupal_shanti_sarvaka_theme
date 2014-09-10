@@ -681,6 +681,7 @@
 
 /*--- increase the height for admin tabs ---*/
 jQuery(function ($) {
+  
   if($('ul.tabs.primary').length ) {
     $('.titlearea').addClass('has-tabs');
   }
