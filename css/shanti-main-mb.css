@@ -218,7 +218,8 @@ ul.ss-full-tabs.nav-tabs>ul>li>a{ margin:0;}
 /* collections page thumbnail - remove responsive class */
 div.collimage{ max-width: 50%;float: left;padding-right: 20px;}
 
-.main-content div:nth-child(2) a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; border:5px solid #f00;}
+/* this targets all links inside the center container content-section */
+.main-content div:nth-child(2) a{  border-top:1px solid #f00; /*-- temp ---*/ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;}
 .main-content div:nth-child(2) a:hover{ border-bottom:3px solid rgba(90, 101, 209, .3000);}
 .main-content div:nth-child(2) a:active{ border:none;}
 
