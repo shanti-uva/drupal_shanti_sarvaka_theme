@@ -1535,7 +1535,7 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group-lg .btn{ line-height:3.25em;padding:1em 1.5em;border-radius:0;}
 .btn-group-lg .btn.btn-primary{ width:100%;margin:0;padding-top:0.18em;padding-bottom:0.18em;}
 .btn-group-lg .btn.btn-default.btn-icon{ font-size:0.62em; padding:0.56em; line-height:1.5em; background:white;}
-.btn-group-lg .btn.btn-default.btn-icon i.icon{ font-size: 2.25em;line-height:2em;height:2em;padding:0;	}
+.btn-group-lg .btn.btn-default.btn-icon i.icon{ font-size: 2.25em;line-height:2em;height:2em;padding:0;	position:relative;}
 
 .btn-group-sm > .btn{ line-height:3em;padding:0.82em 3em;}
 
