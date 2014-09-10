@@ -681,19 +681,10 @@
 
 /*--- increase the height for admin tabs ---*/
 jQuery(function ($) {
+  
   if($('ul.tabs.primary').length ) {
-    $('.main-content').addClass('has-tabs');
+    $('.titlearea').addClass('has-tabs');
   }
-
-
-//	$('.shanti-thumbnail-link').hover( function() {
-//	      $(this).prev('.shanti-thumbnail').addClass('active-link');
-//	      },
-//	        function () {
-//	      $(this).prev('.shanti-thumbnail').removeClass('active-link');
-//	      }
-//	 );
-
 
 	// *** CONTENT *** hide responsive column for resources
   $('[data-toggle=offcanvas]').click(function () {
