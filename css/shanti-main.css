@@ -199,8 +199,6 @@ ul {
   _noFocusLine: expression(this.hideFocus=true); 
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -khtml-opacity: 0;
-  -moz-opacity: 0;
   position: absolute;
   z-index: 2;
   left: 0;
@@ -1462,7 +1460,7 @@ ul.pager li>a i{ color:#999; position:relative; top: 0.12em}
 ul.pager li>a:hover i{ color:#444;}
 
 ul.pager .pager-first>a,
-ul.pager .pager-last>a{ padding:0.06em 0.5em;}
+ul.pager .pager-last>a{ padding:0.06em 0.5em; position:relative; top: 0.18em}
 
 .pager-first i,
 .pager-previous i,
