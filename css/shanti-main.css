@@ -1059,7 +1059,7 @@ div.video-row{ margin-bottom: 18px;}
 .avinfo .btn.btn-primary.btn-icon{ margin:5px 0;}
 .avplace i.icon.shanticon-menu3{ position:relative; top:0; font-size:0.88em;}
 
-.avdesc{ margin: 0px 12px; padding-left:20px; max-width:780px;}
+.avdesc{ margin: 0px;}
 .avdesc .popover .parents{ }
 
 .avdate i,
@@ -2240,6 +2240,8 @@ a.hide-annot:before{
 @media screen and (max-width: 830px) {
 
 	 h1.navbar-header a span{ display:none;}
+	 .btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:2%;}
+
 	
 }
 
