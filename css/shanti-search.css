@@ -41,16 +41,16 @@ object.flip_label{ display:none;}
 #gen-search { top: 0; }
 #gen-search.extruder.right{ margin-top: 10px; }
 #gen-search .ext_wrapper{ height:auto; padding:0; }
-#gen-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate;}
+#gen-search.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%; -webkit-box-shadow:-4px 4px 5px hsla(0, 0.0000%, 60.0000%, 0.2000);box-shadow:-4px 4px 5px hsla(0, 0.0000%, 60.0000%, 0.2000); border-collapse: separate;}
 #gen-search.extruder.right.isOpened .extruder-content{ border-right-width:12px;}
 #gen-search.extruder .text{ border:none; padding:0; text-shadow:none; background:#f8f8f8; color:#333;}
 
 /*--- big search button inline styles are loaded via main.js with icon markup  */
-#gen-search.extruder.right .flap{ background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px; margin:0 0 0 -7px; cursor:pointer; display:block; border-top-left-radius:44px;border-bottom-left-radius:44px;border-collapse: separate; -webkit-box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); box-shadow: -2px 0 4px rgba(0,0,0, 0.1250); border-collapse: separate;}
+#gen-search.extruder.right .flap{ background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px; margin:0 0 0 -7px; cursor:pointer; display:block; border-top-left-radius:44px;border-bottom-left-radius:44px;border-collapse: separate; -webkit-box-shadow: -4px 0 4px rgba(0,0,0, 0.1250); box-shadow: -4px 0 4px rgba(0,0,0, 0.1250); border-collapse: separate;}
 #gen-search.extruder.right .flap.on-flap{ border-collapse:separate;}
 #gen-search.extruder.right .flap span.flapLabel,
 #gen-search.extruder.right .flap.on-flap span.flapLabel{ background:#505050; height:30px; width:37px !important; padding:17px 38px 17px 0; margin:0; display:block; border-top-left-radius:20px; border-bottom-left-radius:20px;border-collapse: separate;}
-#gen-search.extruder.right.isOpened .flap{ width:48px;}
+#gen-search.extruder.right.isOpened .flap{ width:48px; margin:0 0 0 -8px;}
 #gen-search.extruder.right.isOpened .flap.on-flap span.flapLabel{ width:30px !important;}
 /*----- css for the flap is inserted inline, see js/main ---*/
 #gen-search.extruder.right .flap>span,
@@ -339,6 +339,7 @@ object.flip_label{ display:none;}
 .view-section .tab-content{ background:#f8f8f8; padding:0; border: 1px solid #ddd; border-width:0 1px 1px;}
 .view-section .tab-content .tab-pane{ padding:0;}
 .view-section .tab-content .tab-pane.treeview{ }
+.view-section .nav-tabs{ margin-top:0 !important;}
 .view-section .nav-tabs>li{ width:35%; max-width:130px; font-size:1.06em; line-height:1.5em; letter-spacing:0.06em;}
 .view-section .nav-tabs>li>a{
 	color:#777;
