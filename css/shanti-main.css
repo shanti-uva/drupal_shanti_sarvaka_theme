@@ -816,7 +816,7 @@ ul.shanti-gallery{
 
 
 
-.main-content input.form-control{
+input.form-control{
 	border-radius:1em;
 	background-clip:padding-box;
 }
@@ -1240,7 +1240,7 @@ input.form-control,
 	height:2em;
 	line-height:2em;
 	padding:0.25em 1em 0;
-  width:100%;  
+  max-width:25em;  
 	overflow: auto;
 	-webkit-box-shadow:0 2px 5px #eee inset;
 	box-shadow:0 2px 5px #eee inset; 
