@@ -97,7 +97,7 @@ ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-af
 /*-------------------------*/
 .main-content .btn{ background-image:none; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 .main-content .btn-group > .btn{ -webkit-box-shadow:none;box-shadow:none;border-left:none;}
-.main-content .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
+/*.main-content .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}*/
 .main-content .btn-default,
 .main-content .btn-primary,
 .main-content .btn-success,
