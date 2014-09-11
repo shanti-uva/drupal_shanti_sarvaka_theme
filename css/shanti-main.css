@@ -91,33 +91,6 @@ ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-af
 
 .element-invisible{ display:none;margin:0;padding:0;height:0;min-height:0;line-height:0;border:none;}
 
-
-
-/*----- BEGIN Buttons -----*/
-/*-------------------------*/
-.main-content .btn{ background-image:none; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
-.main-content .btn-group > .btn{ -webkit-box-shadow:none;box-shadow:none;border-left:none;}
-/*.main-content .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}*/
-.main-content .btn-default,
-.main-content .btn-primary,
-.main-content .btn-success,
-.main-content .btn-info,
-.main-content .btn-warning,
-.main-content .btn-danger{ text-shadow:none;-webkit-box-shadow:none;box-shadow:none;background-image:none;/* filter:none; set none for IE */}
-.main-content .btn:active,
-.main-content .btn.active { background-image: none; }
-.main-content .btn-default { border:1px solid #ddd;-webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.175);box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.175);border-collapse: separate;}
-.main-content .btn-default:hover,
-.main-content .btn-default:focus {/* border-color: transparent; */}
-.main-content .btn-default:active,
-.main-content .btn-default.active { background: #d0d0d0;}
-.main-content button.btn.dfn, /* default bootstrap class name for serif */
-.main-content button.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
-/*----- END Buttons -----*/
-/*-------------------------*/
-
-
-
 /*----- Custom Inputs -----*/
 /*-------------------------*/
 .select-wrapper {
@@ -1474,6 +1447,27 @@ html input[type=file].form-file{ margin-bottom:5px;}
 
 
 
+/*----- BEGIN Buttons -----*/
+/*-------------------------*/
+.main-content .btn{ background-image:none; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
+.main-content .btn-group > .btn{ -webkit-box-shadow:none;box-shadow:none;border-left:none;}
+/*.main-content .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}*/
+.main-content .btn-default,
+.main-content .btn-primary,
+.main-content .btn-success,
+.main-content .btn-info,
+.main-content .btn-warning,
+.main-content .btn-danger{ text-shadow:none;-webkit-box-shadow:none;box-shadow:none;background-image:none;/* filter:none; set none for IE */}
+.main-content .btn:active,
+.main-content .btn.active { background-image: none; }
+.main-content .btn-default { border:1px solid #ddd;-webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.175);box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.175);border-collapse: separate;}
+.main-content .btn-default:hover,
+.main-content .btn-default:focus {/* border-color: transparent; */}
+.main-content .btn-default:active,
+.main-content .btn-default.active { background: #d0d0d0;}
+.main-content button.btn.dfn, /* default bootstrap class name for serif */
+.main-content button.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+
 .btn{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;text-transform: uppercase;background-clip: padding-box;display:inline-block;white-space:nowrap;border-radius:0.25em;	color:#eee;padding: 0.75em 2em 0.62em;margin: 0.75em;	line-height:2em;font-size: 0.68em;	letter-spacing:0.06em;display:inline-block;}
 a.btn,
 a.btn:hover{ border-bottom:none !important;}
@@ -1522,7 +1516,7 @@ a.btn:hover{ border-bottom:none !important;}
 .btn.btn-sm{ line-height:3em;padding:0.82em 3em;}	
 .btn.btn-lg{ line-height:3em;padding:0.82em 3em;}	
 
-.btn.btn-default{ background:#fff; color:#555;}
+.btn.btn-default{ background:#fff; color:#555; border-radius:0.25em; border:1px solid transparent;}
 .btn.btn-default:hover,
 .btn-group .btn.btn-default.btn-icon:hover{ background:#ddd;}
 .btn.btn-default:active, .btn.btn-default.active,
@@ -1530,25 +1524,24 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group .btn.btn-default.btn-icon:active, .btn.btn-default.btn-icon.active{ background:#ccc;}
 
 .btn-group > .btn{ border-radius:0; margin:0;}
-.btn-group > .btn-primary + .btn-primary{ border-left:1px solid #6c7bff;}
+.btn-group > .btn-primary + .btn-primary{ border-left:1px solid #4e5ab4;}
 
-.btn-group-lg a.btn.btn-default,
-.btn-group-lg a.btn.btn-default:hover{ border-bottom:1px solid #ddd !important;}
+.btn-group > .btn.btn-default{border: 1px solid #ddd; border-left:none;}
+.btn-group:nth-child(1) > .btn.btn-default{ border-left: 1px solid #ddd;}
 
 .btn-group-sm,
 .btn-group-lg,
 .btn-group-xlg{ margin:0;}
-.btn-group-lg .btn{ line-height:3.25em;padding:1em 1.5em;border-radius:0;}
+.btn-group-lg .btn{ line-height:3em;padding:1em 1.5em;border-radius:0;}
 .btn-group-lg .btn.btn-primary{ width:100%;margin:0;padding-top:0.18em;padding-bottom:0.18em;}
 .btn-group-lg .btn.btn-default.btn-icon{ font-size:0.62em; padding:0.56em; line-height:1.5em; background:white;}
-.btn-group-lg .btn.btn-default.btn-icon i.icon{ font-size: 2.25em;line-height:2em;height:2em;padding:0;	position:relative;}
-
-.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:1.5%;}
+.btn-group-lg .btn.btn-default.btn-icon i.icon{ font-size: 2.25em;line-height:2em;height:2em;padding:0;	position:relative;background:transparent}
+.btn-group-lg .btn.btn-default.btn-icon:active{ color:#222;}
 
 .btn-group-sm > .btn{ line-height:3em;padding:0.82em 3em;}
 
 .btn-group-xlg .btn.btn-primary i.icon{ padding:0; font-size:1.68em; position:static; float:left; line-height:2.75em; background:transparent;}
-.btn-group-xlg > .btn.btn-primary{ padding: 0.75em 0.5em 0.62em;}
+.btn-group-xlg > .btn.btn-primary{ padding: 0.75em 0.5em 0.62em; border-radius:0.25em;}
 
 /*--- custom play transcript button set --*/
 .btn-group-lg .btn-primary.btn-icon{ padding:0;width:100%;line-height:2em;	text-transform:uppercase;color:#eee;font-size: 0.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:0.06em;overflow:hidden;position:relative;}
@@ -1559,23 +1552,24 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group-lg .btn-primary.btn-icon:active span,
 .btn-group-lg .btn-primary.btn-icon.active span{ background: rgba(255, 255, 255, .07);}
 
-.main-content .btn-default.btn-red{ opacity:.80; background:#dc3c47; color:#fff; -webkit-box-shadow:none;box-shadow:none;}
-.main-content .btn-default.btn-red:hover{ opacity:.90;}
-.main-content .btn-default.btn-red:active{ opacity:1;}
+.btn-default.btn-red{ opacity:.80; background:#dc3c47; color:#fff; -webkit-box-shadow:none;box-shadow:none;}
+.btn-default.btn-red:hover{ opacity:.90;}
+.btn-default.btn-red:active{ opacity:1;}
 
-.main-content .btn-default.btn-black{ opacity:.80; background:#555; color:#fff; -webkit-box-shadow:none;box-shadow:none;}
-.main-content .btn-default.btn-black:hover{ opacity:.90;}
-.main-content .btn-default.btn-black:active{ opacity:1;}
+.btn-default.btn-black{ opacity:.80; background:#555; color:#fff; -webkit-box-shadow:none;box-shadow:none;}
+.btn-default.btn-black:hover{ opacity:.90;}
+.btn-default.btn-black:active{ opacity:1;}
 
-.main-content .btn-default.btn-plain,
-.main-content .btn-default.btn-plain:hover,
-.main-content .btn-default.btn-plain:active{ background:transparent; border:none; -webkit-box-shadow:none;box-shadow:none;}
+.btn-default.btn-plain,
+.btn-default.btn-plain:hover,
+.btn-default.btn-plain:active{ background:transparent; border:none; -webkit-box-shadow:none;box-shadow:none;}
 
 button.field-add-more-submit{ margin-left:1em;}
 
-
-
-
+.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:1.5%;}
+/*-------------------------*/
+/*----- END Buttons -----*/
+/*-------------------------*/
 
 
 /** Sidebars **/
@@ -1603,99 +1597,6 @@ div.sidebar{ z-index:1;}
 #sidebar-second .bootstrap-select.form-control .selectpicker{ width:100% !important;}
 
 /** END Sidebars **/
-
-
-
-
-
-
-.navbar nav.navtop div.block h2{ display: none;}
-.navbar .lang ul.dropdown-menu{ left: -2em;} /* language menu */
-.highlight:last-child{ border-left-color: #d0d0d0;}
-
-.block .content .nav a{}
-.block .content .nav a:hover, 
-.block .content .nav a:focus{ text-decoration: none;background: #fff;color: #444;}
-
-
-
-
-
-
-/* tables in admin */
-span.filter-option.pull-left{ width:3.25em;}
-
-table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{ 
-	width:70px;
-	margin-left:20px;
-}
-
-.bootstrap-select.btn-group .btn .filter-option{ font-size:1em;}
-
-
-
-
-
-span.field-label-span { /* temp */
-	font-weight: bold;font-weight:700;
-}
-
-div.expcoll-btns { /* temp */
-	text-align: right;
-}
-
-
-
-
-
-
-
-.form-actions{ /* testing this at bottom of page for edit save buttons --*/
-	margin-top:3em;
-	margin-left:0;
-}
- 
-#locale-translation-filter-form .form-item-translation{ width:22em;}
-#locale-translation-filter-form .form-actions{ margin-left:0; padding: 1.25em 0 0 1em; /* padding typo override */}
-
-
-#edit-name.form-control{}
-
-#edit-actions.form-actions{ margin-top:0.5em;}
-
-input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
-
-
-
-
-
-#field-available-from-values td,
-#field-available-from-values td,
-#field-pbcore-title-values td,
-table.tableheader-processed td,
-form .field-multiple-table td.field-multiple-drag{/*width:auto;*/}
-table.tableheader-processed td{ /*width:25%;*/} /*---- testing this ----*/
-
-.tabledrag-toggle-weight-wrapper{ display:inline; float:right; /* margin-top:-0.62em; */}
-.tabledrag-toggle-weight-wrapper a{ color: #5a65d1;}
-
-
-table.field-multiple-table{ margin-bottom:2em;}
-table.field-multiple-table tbody{ border:2px solid #ddd;}
-
-
-
-
-
-
-.kaltura_status_ok{ background-image:none !important; border:none !important;}
-
-#kmap_annotation_json{ margin-left:2em;} /* textbox on bottom */
-
-
-#edit-filter-settings-title{ margin-bottom:0 !important;}
-
-
 
 
 
@@ -1803,43 +1704,8 @@ table.features-admin th{ padding-top:.75em;}
 .field-accordion h4 span.ss-fieldset-toggle.open,
 .field-accordion h6 span.ss-fieldset-toggle.open{ padding: 0 5px 1px;}
 
-
-
-
-
-
-
-
-/*--- show-hide toggle button ---*/
-a.show-annot, 
-a.hide-annot{ 
-	font-size:1em;
-	text-transform:uppercase;
-	font-family:sans-serif;
-	font-weight:bold;
-	font-weight:700;
-	margin-left:-0.5em;
-}
-a.show-annot:before, 
-a.hide-annot:before{ 
-	color:#5a65d1;	
-	font-size: 0.62em;
-	line-height:.75em;
-	font-weight:normal;
-	padding-right:0.62em;
-	font-family: 'Glyphicons Halflings';
-	content: '\002b'; /*-- plus icon */
-	position:relative;
-	top:-1px;
-}
-
-
-
-
 .shanti-filters table tbody{ border-top: none;}
 .shanti-filters table td:nth-child(2){ width:100%;}
-
-
 
 
 /****************************/
