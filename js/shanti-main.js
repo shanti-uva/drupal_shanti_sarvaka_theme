@@ -696,6 +696,8 @@ jQuery(function ($) {
 	      }
 	 );
 	 
+	// $('table.sticky-header').css('width','100%');
+	 
 });
 
 jQuery(function ($) {
