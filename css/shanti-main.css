@@ -1060,7 +1060,7 @@ div.video-row{ margin-bottom: 18px;}
 .avplace i.icon.shanticon-menu3{ position:relative; top:0; font-size:0.88em;}
 
 .avdesc{ margin: 0px;}
-.avdesc .popover .parents{ }
+.avdesc .popover i.icon.shanticon-menu3{ font-size:0.68em; padding:1px;}
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
