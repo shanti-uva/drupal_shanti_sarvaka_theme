@@ -1060,11 +1060,15 @@ div.video-row{ margin-bottom: 18px;}
 .avplace i.icon.shanticon-menu3{ position:relative; top:0; font-size:0.88em;}
 
 .avdesc{ margin: 0px;}
-.avdesc .popover i.icon.shanticon-menu3{ font-size:0.68em; padding:1px;}
+.avdesc .popover-link i.icon.shanticon-menu3{ font-size:0.44em; padding:1px;}
+.avdesc .popover .parent ul{ float:left;}
+.avdesc .popover .parent ul li{ float:left;}
+.avdesc .popover .parent ul li a{ float:left;}
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
-.avduration::after, .avrating::after{ border-bottom: 1px solid silver;width: 175px;margin: 4px;}
+.avduration::after, 
+.avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;}
 
 .fivestar-basic div.fivestar-widget > div,
 .fivestar-basic div.fivestar-widget > div a{ font-family:'FontAwesome'; color:#ccc; text-indent:0; background-image: none !important;  border-bottom:none !important;}
