@@ -1363,6 +1363,7 @@ textarea{ border: 1px solid #ccc;}
 
 .admin-menu .icheckbox_minimal-red, 
 .admin-menu .iradio_minimal-red{ margin-right: 5px;position:relative;top:-2px;left:0;}
+.admin-menu .icheckbox_minimal-red.disabled{ filter:alpha(opacity=50);opacity:0.5; border:1px dashed #aaa;}
 
 .admin-menu .table-select-processed th:first-child .icheckbox_minimal-red{ margin-left:6px;}
 
@@ -1611,20 +1612,21 @@ div.sidebar{ z-index:1;}
 .vertical-tab-button a:hover,
 .vertical-tab-button.selected a:hover{ border-bottom:none !important; text-decoration:none !important;	}
 .vertical-tabs{ margin-top:0;}
-.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; border-bottom:1px solid #fff;}
-.vertical-tabs-panes{ margin-bottom:2em; font-size:1.06em}
+.vertical-tabs-panes.vertical-tabs-processed{ border-top:1px solid #ddd; /* border-bottom:1px solid #fff; */}
+.vertical-tabs-panes{ margin-bottom:2em; font-size:1em}
 .vertical-tabs a{ border-bottom:none !important;}
+.vertical-tabs a.admin-update{ }
 .vertical-tabs a:hover{ text-decoration:underline; border-bottom:none !important;}
 .vertical-tabs .vertical-tab-button.selected a:hover,
 .vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:hover{ text-decoration:none;}
-
 .vertical-tabs table.features div.feature div.description{ color:#666;}
-
-
-.admin-menu table.features td.sign{ font-size:.75em;}
-
-table.features-admin th{ padding-top:.75em;}
-
+table.features .admin-check, 
+table.features .admin-default, 
+table.features .admin-overridden, 
+table.features .admin-rebuilding, 
+table.features .admin-needs-review{ font-size:80%; padding-top:0.32em;}
+table.features th{ padding-top:.75em;}
+table.features td.sign{ font-size:0.75em;}
 
 
 
@@ -1745,7 +1747,7 @@ table.features-admin th{ padding-top:.75em;}
 /** ADMIN TOPBAR - FOOTER **/
 /****************************/
 
-#admin-menu input.admin-menu-search.form-control.form-text{ font-size:0.88em !important; line-height:1.5em; height:1.75em; padding:0.75em 1em !important; position:relative; top:1px;}
+#admin-menu input.admin-menu-search.form-control.form-text{ font-size:0.93em !important; line-height:1.5em; height:1.75em; padding:0.75em 1em !important; position:relative; top:1px;}
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;background-clip:padding-box;}
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}

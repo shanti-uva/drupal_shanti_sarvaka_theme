@@ -194,7 +194,7 @@ object.flip_label{ display:none;}
 .icheckbox_minimal-red, 
 .iradio_minimal-red{ 
 	/*width:1.63em; // Mark: This causes some of the other state of the button to appear on the left of the main radio button image */
-	height:1.63em;
+	height:20px;
 	margin-right: 4px;
 }
 
