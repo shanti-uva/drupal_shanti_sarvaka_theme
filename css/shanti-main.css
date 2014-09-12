@@ -1039,7 +1039,9 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avinfo .trans-btn{ padding-bottom:5px;}
 .avinfo .btn.btn-primary.btn-icon{ margin:5px 0;}
 
-.avdesc{ margin: 0px;}
+.avdesc{ margin: 0px; max-width:800px;}
+
+.avdesc div:last-child{ margin-left:165px;}
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
@@ -1048,10 +1050,10 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .fivestar-basic .fivestar-widget > div,
 .fivestar-basic .fivestar-widget > div a{ font-family:'FontAwesome'; color:#ccc; text-indent:0; background-image: none !important;  border-bottom:none !important;}
-.fivestar-basic .fivestar-widget > div a{ display:inline-block; font-size:1em; letter-spacing:0.5em;}
+.fivestar-basic .fivestar-widget > div a{ display:inline-block; font-size:1em; letter-spacing:0.75em;}
 .fivestar-basic .fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
 
-.fivestar-basic .fivestar-widget .cancel a{ color:#777; font-family:'shanticon';}
+.fivestar-basic .fivestar-widget .cancel a{ color:#777; font-size:70%; font-family:'shanticon';}
 .fivestar-basic .fivestar-widget .cancel a:before{ content: "\e60f";}
 .fivestar-basic .fivestar-widget .star a:before{ content: "\f005";}
 .fivestar-basic .fivestar-widget .star.on a{ color:#555;}
