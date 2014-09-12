@@ -1052,7 +1052,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-basic .fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
 
 .fivestar-basic .fivestar-widget .cancel a{ color:#777; font-family:'shanticon';}
-.fivestar-basic .fivestar-widget .cancel a:before{ content: "\e610";}
+.fivestar-basic .fivestar-widget .cancel a:before{ content: "\e60f";}
 .fivestar-basic .fivestar-widget .star a:before{ content: "\f005";}
 .fivestar-basic .fivestar-widget .star.on a{ color:#555;}
  
@@ -1114,7 +1114,8 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 
 .btn-group.btn-group-lg.btn-group-justified.btn-group-transcript{
 	width:100%;
-	margin-top:-2.18em;
+	margin-top:0;
+	/* margin-top:-2.18em; */
 }
 
 
@@ -1337,6 +1338,9 @@ a.features-storage,
 .form-item.form-type-select{ padding:0 0.25em 0 0;}
 .form-item .description{ font-size:0.93em; margin-top:0.25em; margin-bottom:.75em; padding-left:1em; max-width:50em;}
 .form-item label{ color:#555; /*margin:0 0 -0.75em 1.5em;*/ margin:0 0 0 25px; font-size:80%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+
+
+.form-item.form-type-textfield label{ margin-left:12px;}
 
 .form-item.form-type-select label{ position:relative; top:3px; margin:0 10px;}
 .form-item label.option.icheck-label.icheck{ font-size:80% !important; }
