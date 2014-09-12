@@ -1041,7 +1041,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .avdesc{ margin: 0px; max-width:800px;}
 
-.avdesc + div:nth-child(1){ margin-left:165px;}
+.avdesc > div + div{ margin-left:165px;}
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
