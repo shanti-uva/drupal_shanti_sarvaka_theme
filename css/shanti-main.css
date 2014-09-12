@@ -1266,7 +1266,7 @@ input.form-control,
 	transition-duration: 400ms;
 	background-position: 99% 0.62em !important;
 }
-.form-textarea-wrapper textarea.form-textarea{ height:auto;padding:0.5em 1em 1em;line-height:1.5em;border-radius: .5em;background-clip: padding-box;}
+.form-textarea-wrapper textarea.form-textarea{ width:100%;height:auto;padding:0.5em 1em 1em;line-height:1.5em;border-radius: .5em;background-clip: padding-box;}
 
 input.form-control:hover,
 .form-textarea-wrapper textarea.form-textarea:hover{ border: 1px solid #ccc; color:#777;}
@@ -1492,6 +1492,8 @@ html input[type=file].form-file{ margin-bottom:5px;}
 .btn{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;text-transform: uppercase;display:inline-block;white-space:nowrap;border-radius:0.25em;background-clip:padding-box;color:#eee;padding: 0.75em 2em 0.62em;margin: 0.75em;	line-height:2em;font-size: 0.68em;	letter-spacing:0.06em;display:inline-block;}
 a.btn,
 a.btn:hover{ border-bottom:none !important;}
+
+.btn.btn-block{ width:100% !important;}
 
 .btn-black,
 .btn-red,
