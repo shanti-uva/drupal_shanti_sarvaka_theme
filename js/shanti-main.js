@@ -698,6 +698,9 @@ jQuery(function ($) {
 	 
 	// $('table.sticky-header').css('width','100%');
 	 
+	 $('.node-video').on('click','.ss-full-tabs', function(event){
+	 			$('.shanti-gallery').imagesLoaded();
+	 });
 });
 
 jQuery(function ($) {
