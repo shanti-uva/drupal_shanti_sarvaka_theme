@@ -1381,7 +1381,7 @@ textarea{ border: 1px solid #ccc;}
 
 .admin-menu .icheckbox_minimal-red, 
 .admin-menu .iradio_minimal-red{ margin-right: 5px;position:relative;top:-2px;left:0;}
-.admin-menu .icheckbox_minimal-red.disabled{ filter:alpha(opacity=50);opacity:0.5; border:1px dashed #aaa;}
+.admin-menu .icheckbox_minimal-red.disabled{ background-position: -80px 0;/* border:1px dashed #ccc;*/}
 
 .admin-menu .table-select-processed th:first-child .icheckbox_minimal-red{ margin-left:6px;}
 
@@ -1394,7 +1394,7 @@ form table td.label{ padding-top:0.68em !important;}
 
 .main-content .content-section .view-content{ max-width:100%;}
 
-
+.form-type-checkbox .description{ margin-top:0; margin-left:0;}
 
 
 
@@ -1787,7 +1787,12 @@ table.features td.sign{ font-size:0.75em;}
 }
 #admin-menu > div > .dropdown > li > a{ padding: 2px 7px 3px;}
 /* Admin */
-@media screen and (max-width: 1040px){ 
+@media screen and (max-width: 1040px){  
+	#admin-menu .dropdown .admin-menu-search{ 
+		display: none;
+	}
+}
+@media screen and (max-width: 850px){
 	#admin-menu .dropdown .admin-menu-account, 
 	#admin-menu .dropdown .admin-menu-users, 
 	#admin-menu .dropdown .admin-menu-search{ 
