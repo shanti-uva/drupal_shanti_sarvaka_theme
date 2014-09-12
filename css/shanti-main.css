@@ -1471,7 +1471,6 @@ html input[type="button"].form-submit:active{ background-image:none;background: 
 html input[type=file].form-file{ margin-bottom:5px;}
 
 
-.btn{ background-image:none; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 .btn-group > .btn{ -webkit-box-shadow:none;box-shadow:none;border-left:none;}
 .btn-default,
 .btn-primary,
@@ -1481,8 +1480,6 @@ html input[type=file].form-file{ margin-bottom:5px;}
 .btn-danger{ text-shadow:none;-webkit-box-shadow:none;box-shadow:none;background-image:none;/* filter:none; set none for IE */}
 .btn:active,
 .btn.active { background-image: none; }
-
-.btn-stacked{ margin:0 5px;}
 
 .btn-default { border:1px solid #ddd;-webkit-box-shadow: 0 0 7px 0 rgba(50, 50, 50, 0.175);box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.175);border-collapse: separate;}
 .btn-default.no-shadow,
@@ -1494,10 +1491,7 @@ html input[type=file].form-file{ margin-bottom:5px;}
 .btn-default:active,
 .btn-default.active { background: #d0d0d0; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1); box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1);border-collapse: separate;}
 
-.btn.dfn, /* default bootstrap class */
-.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
-
-.btn{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;text-transform: uppercase;display:inline-block;white-space:nowrap;border-radius:0.25em;background-clip:padding-box;color:#eee;padding: 0.75em 2em 0.62em;margin: 0.75em;	line-height:2em;font-size: 0.68em;	letter-spacing:0.06em;display:inline-block;}
+.btn{ background-image:none; font-weight:normal; text-transform: uppercase; display:inline-block; white-space:nowrap; border-radius:0.25em; background-clip:padding-box; color:#eee;padding: 0.75em 2em 0.62em;margin: 0.75em;	line-height:2em;font-size: 0.68em;letter-spacing:0.06em; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 a.btn,
 a.btn:hover{ border-bottom:none !important;}
 
@@ -1602,7 +1596,10 @@ button.field-add-more-submit{ margin-left:1em;}
 
 .btn.btn-block{ width:100% !important;}
 .btn.btn-stacked{ margin:0 5px !important;}
-
+.btn.dfn, /* default bootstrap class */
+.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+.btn.btn-stacked{ margin:0 5px;}
+.btn.btn-capitalize{ text-transform:capitalize;}
 /*-------------------------*/
 /*----- END Buttons -----*/
 /*-------------------------*/
