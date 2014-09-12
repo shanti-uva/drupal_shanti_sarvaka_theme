@@ -698,7 +698,7 @@ jQuery(function ($) {
 	 
 	// $('table.sticky-header').css('width','100%');
 	 
-	 $('.node-video').on('click','.ss-full-tabs', function(event){
+	 if($('.node-video').length ){
 	 			$('.shanti-gallery').imagesLoaded();
 	 });
 });
