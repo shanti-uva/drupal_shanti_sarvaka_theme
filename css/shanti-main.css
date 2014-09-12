@@ -1481,11 +1481,17 @@ html input[type=file].form-file{ margin-bottom:5px;}
 .btn-danger{ text-shadow:none;-webkit-box-shadow:none;box-shadow:none;background-image:none;/* filter:none; set none for IE */}
 .btn:active,
 .btn.active { background-image: none; }
-.btn-default { border:1px solid #ddd;-webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.175);box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.175);border-collapse: separate;}
+
+.btn-default { border:1px solid #ddd;-webkit-box-shadow: 0 0 15px 7px rgba(50, 50, 50, 0.175);box-shadow: 0 0 15px  7px rgba(50, 50, 50, 0.175);border-collapse: separate;}
+.btn-default.no-shadow,
+.btn-default.no-shadow:hover,
+.btn-default.no-shadow:active{ -webkit-box-shadow:none;box-shadow:none;}
+
 .btn-default:hover,
 .btn-default:focus { }
 .btn-default:active,
 .btn-default.active { background: #d0d0d0;}
+
 .btn.dfn, /* default bootstrap class */
 .btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
