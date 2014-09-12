@@ -42,7 +42,7 @@ ul.ss-full-tabs li{ color:#32ccca;}
 .view-collections .views-field-realname{ margin-bottom:0.25em;margin-top:1em;font-size:90%;color:#808080;font-style:italic;}
 .view-collections .views-field-field-images img{ float:left;margin:.44em .88em .18em 0;-webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);box-shadow:         0 0 3px 0 rgba(50, 50, 50, 0.7);border-collapse: separate; /* fix for ie9 shadow */}
 /* collections page thumbnail - remove responsive class */
-.view-collections div.collimage{ max-width:50%; float:left; padding-right: 20px;}
+.view-collections .collimage{ max-width:50%; float:left; padding-right: 20px;}
 
 /*---- cusotmize mediabase search panel ----*/
 .input-section .search-group{ margin-top:-1em;}
@@ -68,7 +68,7 @@ ul.ss-full-tabs li{ color:#32ccca;}
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
-.navbar nav.navtop div.block h2{ display: none;}
+.navbar nav.navtop .block h2{ display: none;}
 .navbar .lang ul.dropdown-menu{ left: -2em;} /* language menu */
 .highlight:last-child{ border-left-color: #d0d0d0;}
 
@@ -79,7 +79,7 @@ ul.ss-full-tabs li{ color:#32ccca;}
 
 
 /* tables in admin */
-span.filter-option.pull-left{ width:3.25em;}
+.filter-option.pull-left{ width:3.25em;}
 
 table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{ 
 	width:70px;
@@ -90,11 +90,11 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 
 
-span.field-label-span { /* temp */
+.field-label-span { /* temp */
 	font-weight: bold;font-weight:700;
 }
 
-div.expcoll-btns { /* temp */
+.expcoll-btns { /* temp */
 	text-align: right;
 }
 
@@ -134,6 +134,7 @@ table.field-multiple-table{ margin-bottom:2em;}
 table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 
+.kaltura-thumb-wrap{ clear:none;}
 
 .kaltura_status_ok{ background-image:none !important; border:none !important;}
 

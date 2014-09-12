@@ -18,9 +18,9 @@
 
 .extruder.right .flap,
 .extruder.right.isOpened .flap,
-.extruder.right .flap span.flapLabel,
-.extruder.right .flap.on-flap span.flapLabel,
-.extruder.right.isOpened .flap.on-flap span.flapLabel,
+.extruder.right .flap .flapLabel,
+.extruder.right .flap.on-flap .flapLabel,
+.extruder.right.isOpened .flap.on-flap .flapLabel,
 .extruder.right .flap>span,
 .extruder.right .flap.on-flap>span,
 .extruder.right .flap.on-hover>span,
@@ -30,9 +30,9 @@ object.flip_label{ display:none;}
 .extruder.right.open-collections{ margin-top:280px;}
 
 /*--- handle ---*/
- div.text.ui-resizable{ }
- div.text.ui-resizable,
-.isOpened div.text.ui-resizable{ position:static;} /*--- NOTE this is super important to keep the right edge pinned while expanding width */
+ .text.ui-resizable{ }
+ .text.ui-resizable,
+.isOpened .text.ui-resizable{ position:static;} /*--- NOTE this is super important to keep the right edge pinned while expanding width */
 .ui-resizable-handle.ui-resizable-w{ cursor:col-resize; position:absolute; left:1px; top:10px; /* top:85%; */ z-index:900; width:6px; height:97%;}
 .ui-resizable-handle.ui-resizable-w:hover{ }
 .ui-resizable-handle.ui-resizable-w:active{ background:#fafafa;}
@@ -48,10 +48,10 @@ object.flip_label{ display:none;}
 /*--- big search button inline styles are loaded via main.js with icon markup  */
 #gen-search.extruder.right .flap{ background:#fff; height:48px; width:45px; padding: 7px 0 7px 7px; margin:0 0 0 -7px; cursor:pointer; display:block; border-top-left-radius:44px;border-bottom-left-radius:44px;border-collapse: separate; -webkit-box-shadow: -4px 0 4px rgba(0,0,0, 0.1250); box-shadow: -4px 0 4px rgba(0,0,0, 0.1250); border-collapse: separate;}
 #gen-search.extruder.right .flap.on-flap{ border-collapse:separate;}
-#gen-search.extruder.right .flap span.flapLabel,
-#gen-search.extruder.right .flap.on-flap span.flapLabel{ background:#505050; height:30px; width:37px !important; padding:17px 38px 17px 0; margin:0; display:block; border-top-left-radius:20px; border-bottom-left-radius:20px;border-collapse: separate;}
+#gen-search.extruder.right .flap .flapLabel,
+#gen-search.extruder.right .flap.on-flap .flapLabel{ background:#505050; height:30px; width:37px !important; padding:17px 38px 17px 0; margin:0; display:block; border-top-left-radius:20px; border-bottom-left-radius:20px;border-collapse: separate;}
 #gen-search.extruder.right.isOpened .flap{ width:48px; margin:0 0 0 -8px;}
-#gen-search.extruder.right.isOpened .flap.on-flap span.flapLabel{ width:30px !important;}
+#gen-search.extruder.right.isOpened .flap.on-flap .flapLabel{ width:30px !important;}
 /*----- css for the flap is inserted inline, see js/main ---*/
 #gen-search.extruder.right .flap>span,
 #gen-search.extruder.right .flap.on-flap>span{ color:#ddd;-webkit-transition: all .3s ease-out; -moz-transition: all .3s ease-out; transition: all .3s ease-out;}
@@ -413,7 +413,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .pagination { margin-left: 1em;margin-top: 0.3em;margin-bottom: 0.1em;margin-right: -0.5em;}
 .view-section .row {margin-right: 0;/*margin-left: 0em;*/}
 /* .listview td.sorting_1 { min-width: 12em;} */
-.view-section div.title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
+.view-section .title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
 .view-section .row {/*margin: 1em 1em 1em 1em;*/}
 .view-section .popover-content {font-family: sans-serif;font-size: smaller;}
 .view-section .popover-content > blockquote p {font-size: 13px;}
@@ -464,7 +464,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     line-height:8px; 
     height:15px;
 }
-.view-section .popover-content span.associated:first-child .badge{ }
+.view-section .popover-content .associated:first-child .badge{ }
 
 .view-section .popover-content span.associated{ /* background:#f0f0f0; */ text-align:center; float:right; position:relative; top:-4px; height:35px !important; margin:0 0 5px 0; border-left:1px solid #ddd; }
 .view-section .popover-content span.associated+span.associated{ }
@@ -499,13 +499,13 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section ul.fancytree-container ul{ padding-top:0; margin-top:0;}
 .view-section ul.fancytree-container li{ }
 
-.view-section span.fancytree-icon{ margin:0; padding:0; width:0; height:0; line-height:0; display:none;} /*--- remove checkbox ---*/
-.view-section span.fancytree-node{ border:none; display:block;}
+.view-section .fancytree-icon{ margin:0; padding:0; width:0; height:0; line-height:0; display:none;} /*--- remove checkbox ---*/
+.view-section .fancytree-node{ border:none; display:block;}
 
-.view-section span.fancytree-expander:before{ }
-.view-section span.fancytree-node.fancytree-active{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
+.view-section .fancytree-expander:before{ }
+.view-section .fancytree-node.fancytree-active{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
 
-.view-section span.fancytree-title{ 
+.view-section .fancytree-title{ 
 	color:#444; 
 	margin:0 0 0 -24px; 
 	padding-left:15px; 
@@ -516,8 +516,8 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	-moz-box-sizing: content-box;
   box-sizing: content-box;
 }
-.view-section span.fancytree-title:hover{ color:#000;}
-.view-section span.fancytree-title:before{
+.view-section .fancytree-title:hover{ color:#000;}
+.view-section .fancytree-title:before{
 	background: #fff;
 	color:transparent;
 	font-family: 'shanticon';
@@ -535,11 +535,11 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
   box-shadow:0 0 2px 1px #aaa;
   border-collapse: separate;
 }
-.view-section span.fancytree-title:hover:before {
+.view-section .fancytree-title:hover:before {
     background: #777; -webkit-box-shadow:none; box-shadow:none;
 }
-.view-section .fancytree-statusnode-wait span.fancytree-title:before,
-.view-section .fancytree-statusnode-error span.fancytree-title:before{ 
+.view-section .fancytree-statusnode-wait .fancytree-title:before,
+.view-section .fancytree-statusnode-error .fancytree-title:before{ 
   width:0;
   height:0;
   display: none;
@@ -548,11 +548,11 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
   box-shadow:none;	
   background:transparent;
 }
-.view-section span.fancytree-has-children>span.fancytree-title {
+.view-section .fancytree-has-children>span.fancytree-title {
     padding-left: 10px;
     margin-left: -15px;
 }
-.view-section span.fancytree-has-children span.fancytree-title:before {
+.view-section .fancytree-has-children span.fancytree-title:before {
     content: none;
     position: relative;
     top: 0;
@@ -564,15 +564,15 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     box-shadow: 0 0 3px 0 #aaa;
     border-collapse: separate;
 }
-.view-section span.fancytree-active span.fancytree-title {
+.view-section .fancytree-active .fancytree-title {
     color: #000;
 }
-.view-section span.fancytree-active.fancytree-has-children span.fancytree-title:before {
+.view-section .fancytree-active.fancytree-has-children .fancytree-title:before {
     content: none;
     text-shadow: none;
     display: none;
 }
-.view-section span.fancytree-active span.fancytree-title:before {
+.view-section .fancytree-active .fancytree-title:before {
     background: #f4222c;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -586,11 +586,11 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     position: relative;
     top: 4px;
 }
-.view-section ul.fancytree-container span.fancytree-node:hover > .glyphicon {
+.view-section ul.fancytree-container .fancytree-node:hover > .glyphicon {
     color: #333;
 }
-.view-section ul.fancytree-container span.fancytree-node.fancytree-active:focus > .glyphicon,
-.view-section ul.fancytree-container span.fancytree-node.fancytree-active .glyphicon {
+.view-section ul.fancytree-container .fancytree-node.fancytree-active:focus > .glyphicon,
+.view-section ul.fancytree-container .fancytree-node.fancytree-active .glyphicon {
     color: #dc3c47;
     background: transparent;
 }
