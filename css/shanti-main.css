@@ -1530,18 +1530,14 @@ a.btn:hover{ border-bottom:none !important;}
 .btn.btn-default.btn-icon:active span,
 .btn.btn-default.btn-icon.active span{ background: #ccc;}
 
-
 .btn.btn-primary.btn-icon.btn-wrap span{ padding:1.32em 3em 1.12em 8em;margin:0;line-height:1.5em;font-size:70%;background:transparent;display:block;}
-
-.btn.btn-sm{ font-size:60%;line-height:130%;padding-top:0.88em;font-weight:bold;font-weight:700;}	
-.btn.btn-lg{ line-height:3em;padding:0.82em 3em;}	
 
 .btn.btn-default{ background:#fff; color:#555; border-radius:0.25em; background-clip:padding-box;border:1px solid transparent;}
 .btn.btn-default:hover,
 .btn-group .btn.btn-default.btn-icon:hover{ background:#ddd;}
 .btn.btn-default:active, .btn.btn-default.active,
 .btn-group .btn.btn-default:active, .btn-group .btn.btn-default.active,
-.btn-group .btn.btn-default.btn-icon:active, .btn.btn-default.btn-icon.active{ background:#ccc;}
+.btn-group .btn.btn-default.btn-icon:active, .btn.btn-default.btn-icon.active{ background:#ccc; -webkit-box-shadow:none; box-shadow:none;}
 
 .btn-group > .btn{ border-radius:0; margin:0;}
 .btn-group > .btn-primary + .btn-primary{ border-left:1px solid #4e5ab4;}
@@ -1549,8 +1545,8 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group > .btn.btn-default{border: 1px solid #ddd; border-left:none;}
 .btn-group:nth-child(1) > .btn.btn-default{ border-left: 1px solid #ddd;}
 
-
-
+.btn.btn-sm{ font-size:60%;line-height:130%;padding-top:0.88em;font-weight:bold;font-weight:700;}	
+.btn.btn-lg{ line-height:3em;padding:0.82em 3em;}	
 .btn-group-sm,
 .btn-group-lg,
 .btn-group-xlg{ margin:0;}
@@ -1588,6 +1584,7 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-plain:active{ background:transparent; -webkit-box-shadow:none;box-shadow:none; }
 .btn-plain:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
 .btn-plain:active{ border-color: transparent;}
+.btn.btn-plain.btn-lg{ font-size:1.12em;}
 
 button.field-add-more-submit{ margin-left:1em;}
 
