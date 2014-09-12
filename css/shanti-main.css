@@ -1586,7 +1586,7 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-plain,
 .btn-plain:hover,
 .btn-plain:active{ background:transparent; -webkit-box-shadow:none;box-shadow:none; }
-.btn-plain:hover{ color:#3e4793; border-color: rgba(90, 101, 209, .3000);}
+.btn-plain:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
 .btn-plain:active{ border-color: transparent;}
 
 button.field-add-more-submit{ margin-left:1em;}
