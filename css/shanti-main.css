@@ -67,12 +67,12 @@ i{ font-style:normal;}
 
 /* this targets all links inside the center container content-section */
 .main-content div:nth-child(2) a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;}
-.main-content div:nth-child(2) a:hover{ color:#3e4793; border-color: rgba(90, 101, 209, .3000);}
-.main-content div:nth-child(2) a:active{ border-color:transparent;}
+.main-content div:nth-child(2) a:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
+.main-content div:nth-child(2) a:active{ border-bottom-color:transparent;}
 .main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-1%;}
-.main-content .show-more a{ border-color:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.main-content .show-more a:hover{ border-color: rgba(90, 101, 209, .3000) !important;}
-.main-content .show-more a:active{ border-color:transparent !important;}
+.main-content .show-more a{ border-bottom-color:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content .show-more a:hover{ border-bottom-color: rgba(90, 101, 209, .3000) !important;}
+.main-content .show-more a:active{ border-bottom-color:transparent !important;}
 .main-content .show-more:after{ 	font-size: 0.75em;line-height: 0.75em;font-weight:normal;padding-left:0.25em;font-family: 'Glyphicons Halflings';content: '\002b'; /*-- plus icon */position:relative;top:-1px;color: #5a65d1;}
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:500; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
@@ -148,7 +148,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .header-banner{ border-collapse:separate;overflow:visible;-webkit-box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.1110);box-shadow: 0 3px 10px hsla(0, 0%, 0.0000%, 0.1110);border-collapse:separate;position:relative;z-index:300;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
-.navbar.navbar-default.navbar-static-top{ border-bottom: none; border-bottom-width:0;}
+.navbar.navbar-default.navbar-static-top{ border-bottom: none;}
 .navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
 .navbar-default h1 a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-default h1 a.navbar-brand:hover{ color:#222;}
@@ -1493,7 +1493,7 @@ html input[type=file].form-file{ margin-bottom:5px;}
 
 .btn{ background-image:none; font-weight:normal; text-transform: uppercase; display:inline-block; white-space:nowrap; border-radius:0.25em; background-clip:padding-box; color:#eee;padding: 0.75em 2em 0.62em;margin: 0.75em;	line-height:2em;font-size: 0.68em;letter-spacing:0.06em; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 a.btn,
-a.btn:hover{ border-bottom:none !important;}
+a.btn:hover{ border:none !important;}
 
 .btn-black,
 .btn-red,
@@ -1583,7 +1583,7 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-plain:hover,
 .btn-plain:active{ background:transparent; -webkit-box-shadow:none;box-shadow:none; }
 .btn-plain:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
-.btn-plain:active{ border-color: transparent;}
+.btn-plain:active{ border-bottom-color: transparent;}
 .btn.btn-plain.btn-lg{ font-size:1.12em;}
 
 button.field-add-more-submit{ margin-left:1em;}
