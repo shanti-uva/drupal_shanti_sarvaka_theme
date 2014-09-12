@@ -698,9 +698,9 @@ jQuery(function ($) {
 	 
 	// $('table.sticky-header').css('width','100%');
 	 
-	 if($('.node-video').length ){
-	 			$('.shanti-gallery').imagesLoaded();
-	 });
+	// if($('.node-video').length ){
+	// 			$('.shanti-gallery').imagesLoaded();
+	// });
 });
 
 jQuery(function ($) {

@@ -1039,7 +1039,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avinfo .trans-btn{ padding-bottom:5px;}
 .avinfo .btn.btn-primary.btn-icon{ margin:5px 0;}
 
-.avdesc{ margin: 0px; max-width:635px;}
+.avdesc{ margin: 0px;}
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}
