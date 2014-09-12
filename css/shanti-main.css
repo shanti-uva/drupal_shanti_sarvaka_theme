@@ -1585,7 +1585,6 @@ a.btn:hover{ border:none !important;}
 .btn-plain:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
 .btn-plain:active{ border-bottom-color: transparent;}
 .btn.btn-plain.btn-lg{ font-size:1.12em;}
-a.btn.btn-plain{ margin:1px 0;}
 
 button.field-add-more-submit{ margin-left:1em;}
 
@@ -1593,7 +1592,7 @@ button.field-add-more-submit{ margin-left:1em;}
 .btn-group-lg.btn-group-transcript > .btn-group:nth-child(1) .btn{ border-left:none;}
 
 .btn.btn-block{ width:100% !important;}
-.btn.btn-stacked{ margin:0 5px !important;}
+.btn.btn-stacked{ margin:1px 5px !important;}
 .btn.dfn, /* default bootstrap class */
 .btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 .btn.btn-stacked{ margin:0 5px;}
