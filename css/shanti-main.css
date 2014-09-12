@@ -1539,8 +1539,7 @@ a.btn:hover{ border-bottom:none !important;}
 
 .btn.btn-primary.btn-icon.btn-wrap span{ padding:1.32em 3em 1.12em 8em;margin:0;line-height:1.5em;font-size:70%;background:transparent;display:block;}
 
-.btn.btn-xs{ font-size:60%;line-height:130%;padding-top:0.88em;font-weight:bold;font-weight:700;}	
-.btn.btn-sm{ line-height:3em;padding:0.82em 3em;}	
+.btn.btn-sm{ font-size:60%;line-height:130%;padding-top:0.88em;font-weight:bold;font-weight:700;}	
 .btn.btn-lg{ line-height:3em;padding:0.82em 3em;}	
 
 .btn.btn-default{ background:#fff; color:#555; border-radius:0.25em; background-clip:padding-box;border:1px solid transparent;}
