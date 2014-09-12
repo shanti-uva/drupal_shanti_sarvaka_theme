@@ -3,19 +3,11 @@
 .page-csc-search .header-banner {
   min-width: 1250px;
 }
+.page-csc-search div#block-system-main.block.block-system {
+  float: none;
+}
 .page-csc-search input[type="text"] {
   font-size: 0.9em;
-}
-.page-csc-search .main-content .selectpicker li.selected,
-.page-csc-search .main-content .selectpicker li.selected a,
-.page-csc-search .main-content .selectpicker li.selected span.text,
-.page-csc-search .main-content .selectpicker li.selected span.text:hover
-.page-csc-search  .main-content .selectpicker li a:hover
-.page-csc-search  .main-content .selectpicker li span:hover {
-  background: #008a96 !important;
-  background-image: none;
-  color: #fff;
-  font-weight: bold;
 }
 .page-csc-search .breadwrap,
 .page-csc-search .bootstrap-select.btn-group .btn .caret {
@@ -25,10 +17,23 @@
   margin: 0;
 }
 .page-csc-search .main-content .bootstrap-select .btn {
-  padding-left: 15px;
-  background: none;
-  border: none;
-  outline: 0;
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat;
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -moz-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f4f6f5));
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -webkit-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -o-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, linear-gradient(to bottom, #fff, #f4f6f5);
+  border: 1px solid #CCC;
+  height: 29px;
+}
+.page-csc-search .main-content .bootstrap-select .btn:hover,
+.page-csc-search .main-content .bootstrap-select .btn:focus {
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat;
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -moz-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f4f6f5));
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -webkit-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -o-linear-gradient(top, #fff, #f4f6f5);
+  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, linear-gradient(to bottom, #fff, #f4f6f5);
 }
 #block-csc-views-custom-sort-filter .bootstrap-select.select-wrapper {
   width: 197px !important;
@@ -50,6 +55,7 @@
   background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -o-linear-gradient(top, #fff, #f4f6f5);
   background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, linear-gradient(to bottom, #fff, #f4f6f5);
   height: 29px;
+  background-position: 91% center;
 }
 #block-csc-views-custom-sort-filter .bootstrap-select.select-wrapper ul,
 #block-csc-views-custom-sort-filter .bootstrap-select.select-wrapper label {
@@ -58,6 +64,11 @@
 #block-csc-views-custom-sort-filter .bootstrap-select.select-wrapper label {
   display: block;
   padding: 0 15px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+#block-csc-views-custom-sort-filter .bootstrap-select.select-wrapper ul li.selected {
+  background: #eee;
 }
 .page-csc-search .tab-content {
   padding-top: 0;
@@ -69,6 +80,7 @@
   text-transform: capitalize;
   font-size: 0.9em;
   font-family: museo-sans-300, sans-serif;
+  padding-top: 1px;
 }
 .page-csc-search .select-wrapper, 
 .page-csc-search .select-wrapper select {
@@ -90,11 +102,6 @@
   position: absolute;
   top: 0;
 }
-
-.page-csc-search .main-content  a:hover,
-.page-csc-search .main-content div:nth-child(2) a:hover {
-  border-bottom: none;
-}
 .operation-option-container {
   padding: 10px 0;
 }
@@ -108,6 +115,11 @@
   float: left;
   display: inline-block;
   max-width: 100%;
+  min-height: 890px;
+}
+.page-csc-search.page-csc-search-biblio .main-content .content-section .view-content,
+.page-csc-search.page-csc-search-biblio .main-content .content-section .view-empty {
+  min-height: 680px;
 }
 .page-csc-search .main-content .content-section .view-content.expanded {
   width: 100%;
@@ -248,7 +260,7 @@
 .page-csc-search .views-field-field-zotero-tags a,
 .page-csc-search.page-csc-search-biblio a {
   font-family: museo-sans-700, sans-serif;
-  font-size: 0.875em;
+  font-size: 0.9em;
 }
 .page-csc-search .views-field-biblio-abst-e {
   margin: 55px 0 25px 0;
@@ -263,6 +275,7 @@
   min-height: 40px;
 }
 #block-csc-views-custom-taxonomy-breadcrumb a,
+#block-csc-views-custom-taxonomy-breadcrumb span,
 #block-csc-views-custom-taxonomy-breadcrumb {
   font-size: 1em;
   color: #40adb6;
@@ -476,7 +489,7 @@
   color: #333;
   font-size: 0.938em;
   margin: 0 2px;
-  font-family: museo-sans-300, sans-serif;
+  font-family: museo-sans-700, sans-serif;
 }
 .custom-footer-pager .custom-footer-pager-right span {
   font-weight: bold;
@@ -491,10 +504,13 @@
   text-align: center;
   border: none;
   color: #008a96;
+  font-family: museo-sans-900, sans-serif;
+  font-size: 1em;
 }
 .custom-footer-pager .custom-footer-pager-left {
   padding: 12px 55px 12px 0;
   border-right: 1px solid #FFF;
+  font-family: museo-sans-300, sans-serif;
 }
 .custom-footer-pager .custom-footer-pager-right {
   border-left: 1px solid #FFF;
@@ -527,6 +543,7 @@
   margin-top: -119px;
   width: 500px;
   margin-left: -218px;
+  display: block;
 }
 .page-csc-search #block-views-exp-biblio-search-api-page  #edit-search-api-views-fulltext-wrapper label {
   display: none;
@@ -539,17 +556,24 @@
   float: right;
   display: inline-block;
 }
+.page-csc-search.page-csc-search-biblio #block-views-exp-biblio-search-api-page {
+  width: 0;
+  margin-right: 322px;
+}
 .page-csc-search #block-views-exp-biblio-search-api-page #edit-search-api-views-fulltext-wrapper a.clear-search-text {
   margin-top: 15px;
   right: 15px;
 }
+.page-csc-search #block-views-exp-biblio-search-api-page .views-exposed-form label,
 .page-csc-search #block-views-exp-biblio-search-api-page #edit-advanced-search-fieldset label {
   display: inline-block;
   font-family: museo-sans-900, sans-serif;
   margin-left: 0;
   padding-bottom: 0;
   margin-bottom: 7px;
+  font-size: 1em;
 }
+
 .page-csc-search #block-views-exp-biblio-search-api-page #edit-advanced-search-fieldset label.option {
   font-weight: normal;
   font-family: museo-sans-300, sans-serif;
@@ -594,8 +618,8 @@
 }
 .page-csc-search #block-views-exp-biblio-search-api-page #edit-search-api-views-fulltext-wrapper .form-item-search-api-views-fulltext input.throbbing {
   background: #fff url(../images/ajax-loader.gif) no-repeat;
-  background-position: 2% center;
   background-size: 5%;
+  background-position: 2% center !important;
 }
 .page-csc-search #block-views-exp-biblio-search-api-page .advanced-search-cta-container {
   height: 40px;
@@ -651,6 +675,7 @@
   float: left;
   font-size: 1.165em;
   color: #008a96;
+  font-family: museo-sans-700, sans-serif;
 }
 .page-csc-search .inner-filer-container .filter-header .toggle-filter-btn,
 .toggle-filter-btn-open {
@@ -719,7 +744,7 @@
 }
 #edit-field-zotero-tags-wrapper label.publication-year-label {
   font-size: 1em;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .page-csc-search .inner-filer-container #edit-field-zotero-tags-wrapper {
   padding-bottom: 33px;
@@ -815,6 +840,17 @@ label.publication-year-label {
   margin-left: 5px;
   z-index: -1;
   height: 25px;
+  width: 25px;
+}
+.page-csc-search label.option div,
+.page-csc-search label.option div.hover {
+  background: url(../images/default_radio_btn.png) no-repeat;
+}
+.page-csc-search label.option div.checked {
+  background: url(../images/active_radio_btn.png) no-repeat;
+}
+.page-csc-search label.option div div {
+  background: none;
 }
 #date-range-slider .ui-slider-range .start-year,
 #date-range-slider .ui-slider-range .end-year,
@@ -862,16 +898,16 @@ label.publication-year-label {
   width: 100%;
 }
 #edit-advanced-search-fieldset ::-webkit-input-placeholder {
-  font-size: 0.9em; 
+  font-size: 1em; 
 }
 #edit-advanced-search-fieldset :-moz-placeholder {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 #edit-advanced-search-fieldset ::-moz-placeholder {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 #edit-advanced-search-fieldset :-ms-input-placeholder {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 #block-views-exp-biblio-search-api-page #autocomplete,
 #autocomplete {
@@ -964,6 +1000,7 @@ a.open-search-field {
   float: left;
   line-height: 30px;
   font-size: 0.85em;
+  font-family: museo-sans-300, sans-serif;
 }
 .detail-level-container ul {
   list-style: none;
