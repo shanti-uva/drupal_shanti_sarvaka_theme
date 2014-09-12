@@ -679,35 +679,50 @@
 }(jQuery));
 
 
-/*--- increase the height for admin tabs ---*/
 jQuery(function ($) {
-  
+  /*--- increase the height for admin tabs ---*/
+
   if($('ul.tabs.primary').length ) {
     $('.titlearea').addClass('has-tabs');
   }
 
-	// *** CONTENT *** hide responsive column for resources
+  $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
+  
+  $('.shanti-field-title a').hover( function() {
+	      $(this).closest('.shanti-thumbnail').addClass('title-hover');
+	      },
+	        function () {
+	      $(this).closest('.shanti-thumbnail').removeClass('title-hover');
+	      }
+	 );
+	 
+	// $('table.sticky-header').css('width','100%');
+	 
+	// if($('.node-video').length ){
+	// 			$('.shanti-gallery').imagesLoaded();
+	// });
+});
+
+jQuery(function ($) {
+	// hide responsive column for resources
   $('[data-toggle=offcanvas]').click(function () {
     $('.row-offcanvas').toggleClass('active');
   });
   
-  //$('.advanced-view').css('display','block');
-  
-  // $('fieldset.container-inline').removeClass('container-inline');
-  
-  // $('.shanti-thumbnail').unwrap();
-  $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
-  
-  $('.shanti-field-title a').hover( function() {
-	      $(this).prev('.shanti-thumbnail').addClass('title-hover');
-	      },
-	        function () {
-	      $(this).prev('.shanti-thumbnail').removeClass('title-hover');
-	      }
-	 );
-	 
+	// IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width	
+	(function () {
+	  'use strict';
+	  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	    var msViewportStyle = document.createElement('style')
+	    msViewportStyle.appendChild(
+	      document.createTextNode(
+	        '@-ms-viewport{width:auto!important}'
+	      )
+	    )
+	    document.querySelector('head').appendChild(msViewportStyle)
+	  }
+	})();
 });
-
 
 
 /* testing toggle on accordions */

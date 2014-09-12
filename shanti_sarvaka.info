@@ -37,8 +37,8 @@ stylesheets[all][] =  css/utils.css
 stylesheets[all][] =  css/vjs.zencdn.nt-5.4-video-js.css
 stylesheets[all][] =  fonts/shanticon/css/style.css
 stylesheets[all][] =  css/search-bibliography.css
-stylesheets[all][] =  css/shanti-main.css
 stylesheets[all][] =  css/shanti-search.css
+stylesheets[all][] =  css/shanti-main.css
 stylesheets[all][] =  css/shanti-search-mb.css
 stylesheets[all][] =  css/shanti-main-mb.css
 
