@@ -942,7 +942,8 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em; position:relative; top: 0.06em}
 
 
 /*--- BEGIN System Messages ---*/
-.messages > div{ padding: 0.44em 1em 0.5em;}
+.content-section > .messages{ padding:0; border:none !important;}
+.messages > div{ padding: 10px 20px 10px 45px; background-position: 8px 8px;}
 .messages a{ font-weight:bold;font-weight:700;}
 .messages a:hover{}
 .messages { background-image:none;margin:0.32em 0 0.5em; padding:0; border:none;-webkit-box-shadow:0 0 3px #ccc;box-shadow:0 0 3px #ccc;border-collapse: separate;}
@@ -1335,8 +1336,9 @@ a.features-storage,
 
 .form-item.form-type-select{ padding:0 0.25em 0 0;}
 .form-item .description{ font-size:0.93em; margin-top:0.25em; margin-bottom:.75em; padding-left:1em; max-width:50em;}
-.form-item label{ color:#555; margin:0 0 -0.75em 1.5em; font-size:80%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-item label{ color:#555; /*margin:0 0 -0.75em 1.5em;*/ margin:0 0 0 25px; font-size:80%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
+.form-item.form-type-select label{ position:relative; top:3px; margin:0 10px;}
 .form-item label.option.icheck-label.icheck{ font-size:80% !important; }
 
 th.checkbox,
@@ -1549,6 +1551,8 @@ a.btn:hover{ border-bottom:none !important;}
 .btn-group > .btn.btn-default{border: 1px solid #ddd; border-left:none;}
 .btn-group:nth-child(1) > .btn.btn-default{ border-left: 1px solid #ddd;}
 
+
+
 .btn-group-sm,
 .btn-group-lg,
 .btn-group-xlg{ margin:0;}
@@ -1587,6 +1591,7 @@ a.btn:hover{ border-bottom:none !important;}
 button.field-add-more-submit{ margin-left:1em;}
 
 .btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:1.5%;}
+.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1) .btn{ border-left:none;}
 
 form .buttons
 
@@ -1764,7 +1769,7 @@ table.features td.sign{ font-size:0.75em;}
 /** ADMIN TOPBAR - FOOTER **/
 /****************************/
 
-#admin-menu input.admin-menu-search.form-control.form-text{ font-size:1em; line-height:1.56em; height:1.75em; padding: 0.82em 1em 0.62em !important;}
+#admin-menu input.admin-menu-search.form-control.form-text{ background:#eee; font-size:1em; line-height:1.56em; height:1.75em; padding: 0.82em 1em 0.62em;}
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;background-clip:padding-box;}
 #admin-menu .dropdown .admin-menu-toolbar-category > a{ text-shadow:none;color:#ccc;}
