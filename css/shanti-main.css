@@ -28,7 +28,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
+@font-face {
   font-family: 'museo-sans-900';
   src: url('../fonts/Museosans/museosans-900-webfont.eot');
   src: url('../fonts/Museosans/museosans-900-webfont.eot?#iefix') format('embedded-opentype'),
@@ -37,7 +37,7 @@
        url('../fonts/Museosans/museosans-900-webfont.woff#museosans_900') format('svg');
   font-weight: normal;
   font-style: normal;
-} */
+}
 @font-face {
   font-family: 'droidserif';
   src: url('../fonts/Droidserif/droidserif-webfont.eot');
@@ -1104,6 +1104,7 @@ ul.shanti-gallery > div{
 div#block-system-main.block.block-system{
 	float:left;
 }
+body.page-admin-modules div#block-system-main.block.block-system{ float:none;}
 
 
 .search-results a,
@@ -1255,7 +1256,7 @@ div#block-system-main.block.block-system{
 }
 
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0.5em 0.38em 0; letter-spacing:-0.06em;}
-.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1.25em; font-weight: bold;}
+.shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1em; font-weight: bold;}
 .shanti-thumbnail .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
 .shanti-thumbnail .shanti-field-group-audience a{ font-size:0.82em; line-height:1em;}

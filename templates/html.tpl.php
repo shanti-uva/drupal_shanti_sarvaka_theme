@@ -52,8 +52,8 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <?php print $scripts; ?>
   <?php print $styles; ?>
-  
   <style>
     .titlearea {background: <?php print  $variables['base_color'];?> !important; } 
     /* .titlearea .page-title .icon { background:  <?php print $variables['base_color']; ?> !important; } */
@@ -64,6 +64,5 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <?php print $scripts; ?>
 </body>
 </html>
