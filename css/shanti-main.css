@@ -2130,7 +2130,7 @@ table.features td.sign{ font-size:0.75em;}
 	.navbar-default .menu-explore{ display:none !important; }
 	.menu-maintoggle{ display:none; }
 	.menu-toggle{ display:inline-block; /* -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); */ border-collapse: separate; position:relative; z-index:300;}   
-	.navbar-default .navbar-nav>li>a{ background:transparent; }
+	/*.navbar-default .navbar-nav>li>a{ background:transparent; }*/
 	.navbar-default h1 i.icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   h1.navbar-header a span{ font-size:0.83em; position:relative; top:-5px; }	 
 
