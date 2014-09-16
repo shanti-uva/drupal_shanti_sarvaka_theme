@@ -211,7 +211,7 @@
 		        	<h5>Collection</h5>
 		        	<?php print $coll->title; ?>
 		        </div>
-		      <? endif; ?>
+		      <?php endif; ?>
 	      	<div class="subcollection">
 	      		<h5>Subcollection: </h5> 
 	      		<?php
