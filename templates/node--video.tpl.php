@@ -212,14 +212,12 @@
 	      <div>
 	        <h6><?php print t('Video Overview'); ?></h6>
 	        <div class="avpbcoredesc">
-<<<<<<< HEAD
-	        		<?php if(!empty($content['field_pbcore_description'])):
+	        		<?php if(!empty($content['field_pbcore_description'])) { 
 	        				print str_replace('clearfix', '', render($content['field_pbcore_description'])); 
-								else:
+								} else{ 
 	        				print '<p class="default-msg">' . t('No overview available.') . '</p>';
-								endif;
+								}
 	        		?>
-=======
 	        		<?php 
 	        		//dpm($content, 'content in template');
 	        		print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
@@ -254,7 +252,6 @@
 							$content['group_details']['field_characteristic']['#label_display'] = 'above';
 							show($content['group_details']['field_characteristic']);
 	        	?>
->>>>>>> parent of 6dc578d... Changing <strong> headers to <h5>
 	        </div>
 	        <?php if (!empty($coll)): ?>
 		        <div class="avcollection">
