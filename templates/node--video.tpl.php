@@ -223,15 +223,17 @@
 		      		?>
 		      	</div>
 		      <?php endif; ?>
-	        <div class="avplace">
-	          	<i class="icon shanticon-places"></i> 
-	          	<?php 
-								$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
-	          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
-								$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
-								show($content['group_details']['field_pbcore_coverage_spatial']);
-	          	?>
-	        </div>
+		      <?php if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
+		        <div class="avplace">
+		          	<i class="icon shanticon-places"></i> 
+		          	<?php 
+									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
+		          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
+									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
+									show($content['group_details']['field_pbcore_coverage_spatial']);
+		          	?>
+		        </div>
+		      <?php endif; ?>
 	        <div class="avsubjects">
 	        	<i class="icon shanticon-subjects"></i> 
 	        	<?php
