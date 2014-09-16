@@ -237,15 +237,17 @@
 		          	?>
 		        </div>
 		      <?php endif; ?>
-	        <div class="avsubjects">
-	        	<i class="icon shanticon-subjects"></i> 
-	        	<?php
-	        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
-	        		print render($content['group_details']['field_characteristic']); 
-							$content['group_details']['field_characteristic']['#label_display'] = 'above';
-							show($content['group_details']['field_characteristic']);
-	        	?>
-	        </div>
+	        <?php if(!empty($content['group_details']['field_characteristic'])): ?>
+		        <div class="avsubjects">
+		        	<i class="icon shanticon-subjects"></i> 
+		        	<?php
+		        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
+		        		print render($content['group_details']['field_characteristic']); 
+								$content['group_details']['field_characteristic']['#label_display'] = 'above';
+								show($content['group_details']['field_characteristic']);
+		        	?>
+		        </div>
+		      <?php endif; ?>
 	      </div>
       </div> <!-- End of avdesc -->
       <div>
