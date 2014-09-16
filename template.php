@@ -256,9 +256,6 @@ function shanti_sarvaka_preprocess_button(&$vars) {
 	if(!empty($element['#button_type'])) {
   	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
 	}
-  if (!empty($element['#attributes']['disabled'])) {
-    $element['#attributes']['class'][] = 'form-button-disabled';
-  }
 }
   
 /**
