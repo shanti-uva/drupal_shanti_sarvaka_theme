@@ -566,7 +566,7 @@ function shanti_sarvaka_info_popover($variables) {
 							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>
 								<ul>";
 	foreach($variables['tree']['items'] as $n => $link) {
-		$html .= "<li>{$link}</li>";
+		$html .= "<li>{$link}/</li>";
 	}
 	$html .= "</ul> </div> <div class=\"popover-footer\"> <ul>";
 	foreach($variables['links'] as $label => $info) {
