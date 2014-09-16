@@ -210,14 +210,51 @@
 	        <?php endif; ?>
 	      </div> <!-- End of avinfo -->
 	      <div>
-	        <h5><?php print t('Video Overview'); ?></h5>
+	        <h6><?php print t('Video Overview'); ?></h6>
 	        <div class="avpbcoredesc">
+<<<<<<< HEAD
 	        		<?php if(!empty($content['field_pbcore_description'])):
 	        				print str_replace('clearfix', '', render($content['field_pbcore_description'])); 
 								else:
 	        				print '<p class="default-msg">' . t('No overview available.') . '</p>';
 								endif;
 	        		?>
+=======
+	        		<?php 
+	        		//dpm($content, 'content in template');
+	        		print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
+	        </div>
+	        <div class="avcollection">
+	        	<?php 
+	        		print render($content['group_details']['collection_ancestor']); ?>
+	        </div>
+	      	<div class="subcollection">
+	      		<strong>Subcollection: </strong> 
+	      		<?php
+	        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
+	        		print render($content['group_details']['field_subcollection']); 
+							$content['group_details']['field_subcollection']['#label_display'] = 'above';
+							show($content['group_details']['field_subcollection']);
+	      		?>
+	        </div>
+	        <div class="avplace">
+	          	<i class="icon shanticon-places"></i> 
+	          	<?php 
+								$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
+	          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
+								$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
+								show($content['group_details']['field_pbcore_coverage_spatial']);
+	          	?>
+	        </div>
+	        <div class="avsubjects">
+	        	<i class="icon shanticon-subjects"></i> 
+	        	<?php
+	        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
+	        		print render($content['group_details']['field_characteristic']); 
+							$content['group_details']['field_characteristic']['#label_display'] = 'above';
+							show($content['group_details']['field_characteristic']);
+	        	?>
+>>>>>>> parent of 6dc578d... Changing <strong> headers to <h5>
 	        </div>
 	        <?php if (!empty($coll)): ?>
 		        <div class="avcollection">
