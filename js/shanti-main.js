@@ -665,7 +665,7 @@
 	  $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
 	  $.fn.popover.Constructor.DEFAULTS.placement = 'right';
 	  $.fn.popover.Constructor.DEFAULTS.html = true;
-	  $.fn.popover.Constructor.DEFAULTS.delay.hide = '5000';
+	  $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 5000 };
 	  $.fn.popover.Constructor.DEFAULTS.container = 'body';
 	
 		$('span.popover-link').popover({
@@ -673,7 +673,13 @@
 				return '<div>' + $(this).next('div.popover').html() + '</div>';
 			}
 		});
-		
+	 // Hide popovers if anything but a popover is clicked
+	 $('body').click(function(e) {
+			var target = $(e.target);
+			if(target.parents('div.popover').length == 0 && !target.hasClass('popover')) {
+				$('div.popover').hide();
+			}
+		});
 	}
 	
 }(jQuery));
