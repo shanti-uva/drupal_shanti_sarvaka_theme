@@ -1508,7 +1508,7 @@ a.btn:hover{ border:none !important;}
 .btn.btn-primary:hover{ color:#fff;background: #4850bd;}
 .btn.btn-primary:active, .btn.btn-primary.active{ background:#434bb1;}
 
-.btn.btn-icon{ padding:0;margin:0.75em;width:auto;line-height:2em;text-transform:uppercase;color:#eee;font-size: 0.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:0.06em;overflow:hidden;position:relative;}
+.btn.btn-icon{ padding:0;margin:0.75em 0;width:auto;line-height:2em;text-transform:uppercase;color:#eee;font-size: 0.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:0.06em;overflow:hidden;position:relative;}
 .btn .icon{ text-align:center;width:3.12em; font-size:130%;line-height:2.75em;display:inline-block;padding: 0.12em;background: #4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:0.25em 0 0 0.25em;background-clip:padding-box;}
 .btn.btn-icon span{ padding:1em 2em 0.75em 7em;margin:0;line-height:2.88em;font-size:80%;background:transparent;display:block;}
 .btn.btn-icon:hover{ background: #4c54c7;}

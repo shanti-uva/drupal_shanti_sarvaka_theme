@@ -171,12 +171,13 @@
       </div>
       <div class="avdesc clearfix">
       	<!-- Info/Description row -->
+	      <!-- info column -->
 	      <div class="avinfo">
 	        <?php if($variables['has_transcript']): ?>
 	          <div class="trans-btn">
 	            <form action="<?php print $transcript_url; ?>" method="post">
 	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
-	            		<i class="icon shanticon-texts"></i> <span>Play with <br/>Transcript</span>
+	            		<i class="icon shanticon-texts"></i><span>Play with<br/>Transcript</span>
 	          		</button>
 	            </form>
 	          </div>
@@ -249,10 +250,9 @@
       </div> <!-- End of avdesc -->
       <div>
         <ul class="nav nav-tabs ss-full-tabs" role="tablist">
+          <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Videos'); ?></a></li>
           <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>
-          <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Items'); ?></a></li>
-        </ul>
-        
+        </ul>        
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane" id="related">
@@ -266,20 +266,20 @@
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
           	<div class="expcoll-btns">
-          		<button type="button" class="btn btn-default btn-xs expand"> Expand All</button>
-          		<button type="button" class="btn btn-default btn-xs collapse"> Collapse All</button>
+          		<button type="button" class="btn btn-default btn-sm expand"> Expand All</button>
+          		<button type="button" class="btn btn-default btn-sm collapse"> Collapse All</button>
           	</div>
           <?php
             print render($content);
 						/*
 						dpm($content, 'content var');
-						dpm($variables, 'var var');*/
+						dpm($variables, 'var var'); */
           ?>
           </div> <!-- End of #details -->
         </div>
       </div>
   </div>
-  <div class="clearfix"></div>
+
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
