@@ -172,7 +172,7 @@
       <div class="avdesc clearfix">
       	<!-- Info/Description row -->
 	      <div class="avinfo">
-	        <?php if($variables['has_transcript']): ?>
+	        <?php if(isset($variables['has_transcript']) && $variables['has_transcript']): ?>
 	          <div class="trans-btn">
 	            <form action="<?php print $transcript_url; ?>" method="post">
 	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
