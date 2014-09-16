@@ -212,11 +212,11 @@
 	      <div>
 	        <h5><?php print t('Video Overview'); ?></h5>
 	        <div class="avpbcoredesc">
-	        		<?php if(!empty($content['field_pbcore_description'])) {
-	        			print str_replace('clearfix', '', render($content['field_pbcore_description'])); 
-	        			} else {
+	        		<?php if(!empty($content['field_pbcore_description'])):
+	        				print str_replace('clearfix', '', render($content['field_pbcore_description'])); 
+								else:
 	        				print '<p class="default-msg">' . t('No overview available.') . '</p>';
-	        			}
+								endif;
 	        		?>
 	        </div>
 	        <?php if (!empty($coll)): ?>
@@ -272,11 +272,11 @@
         <div class="tab-content">
           <div class="tab-pane" id="related">
             <?php
-              if(isset($variables['suggestions'])) {
+              if(isset($variables['suggestions'])):
                 print $variables['suggestions'];
-              } else {
+							else:
                 print t('<p>No Suggested Items Found</p>');
-              }
+							endif;
             ?>
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
