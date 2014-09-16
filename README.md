@@ -11,6 +11,7 @@ Development Begun: May 2014
 
 # Requirements
 * jQuery Update (jquery v. 1.10.2) is required for the functioning of the Bootstrap interface.
+* Custom Sarvaka Modules: https://github.com/shanti-uva/drupal_shanti_sarvaka_modules
 
 # Notes
 
