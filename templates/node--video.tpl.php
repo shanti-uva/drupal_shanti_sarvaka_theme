@@ -212,15 +212,17 @@
 		        	<?php print $coll->title; ?>
 		        </div>
 		      <?php endif; ?>
-	      	<div class="subcollection">
-	      		<h5>Subcollection: </h5> 
-	      		<?php
-	        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
-	        		print render($content['group_details']['field_subcollection']); 
-							$content['group_details']['field_subcollection']['#label_display'] = 'above';
-							show($content['group_details']['field_subcollection']);
-	      		?>
-	        </div>
+		      <?php if(!empty($content['group_details']['field_subcollection'])): ?>
+		      	<div class="subcollection">
+		      		<h5>Subcollection: </h5> 
+		      		<?php
+		        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
+		        		print render($content['group_details']['field_subcollection']); 
+								$content['group_details']['field_subcollection']['#label_display'] = 'above';
+								show($content['group_details']['field_subcollection']);
+		      		?>
+		      	</div>
+		      <?php endif; ?>
 	        <div class="avplace">
 	          	<i class="icon shanticon-places"></i> 
 	          	<?php 
