@@ -172,7 +172,7 @@
       <div class="avdesc clearfix">
       	<!-- Info/Description row -->
 	      <div class="avinfo">
-	        <?php if(isset($variables['has_transcript']) && $variables['has_transcript']): ?>
+	        <?php if($variables['has_transcript']): ?>
 	          <div class="trans-btn">
 	            <form action="<?php print $transcript_url; ?>" method="post">
 	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
@@ -181,22 +181,12 @@
 	            </form>
 	          </div>
 	        <?php endif; ?>
-	        <?php if(isset($variables['media_create_date'])): ?>
-	        	<div class="avdate">
-	        		<i class="icon shanticon-calendar" title="<?php print t('Creation Date'); ?>"></i> 
-	        		<?php print date('d M Y', $variables['media_create_date']);  ?>
-	        	</div>
-	        <?php endif; ?>
-	        <?php if(!empty($node->duration['formatted'])): ?>
-	        <div class="avduration">
-	        	<i class="icon shanticon-hourglass" title="<?php print t('Duration'); ?>"></i> <?php print $node->duration['formatted'];  ?></div>
-	        <?php endif; ?>
-	        <?php if(isset($content['field_rating'])): ?>
-		        <div class="avrating">
-		            <h5>Rating</h5>
-		            <?php print render($content['field_rating']); ?>
-		        </div>
-		      <?php endif; ?>
+	        <div class="avdate"><i class="icon shanticon-calendar"></i> <?php print date('d M Y', $variables['media_create_date']);  ?></div>
+	        <div class="avduration"><i class="icon shanticon-hourglass"></i> <?php print $node->duration['formatted'];  ?></div>
+	        <div class="avrating">
+	            <h5>Rating</h5>
+	            <?php print render($content['field_rating']); ?>
+	        </div>
 	        <?php if(!empty($content['service_links'])): ?>
 	          <div class="avshare">
 	          	<div class="share-links">
@@ -212,12 +202,6 @@
 	      <div>
 	        <h6><?php print t('Video Overview'); ?></h6>
 	        <div class="avpbcoredesc">
-	        		<?php if(!empty($content['field_pbcore_description'])) { 
-	        				print str_replace('clearfix', '', render($content['field_pbcore_description'])); 
-								} else{ 
-	        				print '<p class="default-msg">' . t('No overview available.') . '</p>';
-								}
-	        		?>
 	        		<?php 
 	        		//dpm($content, 'content in template');
 	        		print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
@@ -253,47 +237,6 @@
 							show($content['group_details']['field_characteristic']);
 	        	?>
 	        </div>
-	        <?php if (!empty($coll)): ?>
-		        <div class="avcollection">
-		        	<h5>Collection</h5> 
-		        	<div class="field-items"><div class="field-item">
-			        	<?php print $coll->title; ?>
-			        </div></div>
-			      </div>
-			    <? endif; ?>
-	        <?php if (!empty($content['group_details']['field_subcollection'])): ?>
-		      	<div class="subcollection">
-		      		<h5>Subcollection</h5> 
-		      		<?php
-		        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
-		        		print render($content['group_details']['field_subcollection']); 
-								$content['group_details']['field_subcollection']['#label_display'] = 'above';
-								show($content['group_details']['field_subcollection']);
-		      		?>
-		        </div>
-			    <? endif; ?>
-	        <?php if (!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
-		        <div class="avplace">
-		          	<i class="icon shanticon-places" title="<?php print t('Places'); ?>"></i> 
-		          	<?php 
-									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
-		          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
-									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
-									show($content['group_details']['field_pbcore_coverage_spatial']);
-		          	?>
-		        </div>
-			    <? endif; ?>
-	        <?php if (!empty($content['group_details']['field_characteristic'])): ?>
-		        <div class="avsubjects">
-		        	<i class="icon shanticon-subjects" title="<?php print t('Subjects'); ?>"></i> 
-		        	<?php
-		        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
-		        		print render($content['group_details']['field_characteristic']); 
-								$content['group_details']['field_characteristic']['#label_display'] = 'above';
-								show($content['group_details']['field_characteristic']);
-		        	?>
-		        </div>
-			    <? endif; ?>
 	      </div>
       </div> <!-- End of avdesc -->
       <div>
@@ -306,11 +249,11 @@
         <div class="tab-content">
           <div class="tab-pane" id="related">
             <?php
-              if(isset($variables['suggestions'])):
+              if(isset($variables['suggestions'])) {
                 print $variables['suggestions'];
-							else:
+              } else {
                 print t('<p>No Suggested Items Found</p>');
-							endif;
+              }
             ?>
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
