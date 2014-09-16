@@ -225,7 +225,7 @@
 		      <?php endif; ?>
 		      <?php if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
 		        <div class="avplace">
-		          	<i class="icon shanticon-places"></i> 
+		          	<i class="icon shanticon-places" title="places"></i> 
 		          	<?php 
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
 		          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
@@ -236,7 +236,7 @@
 		      <?php endif; ?>
 	        <?php if(!empty($content['group_details']['field_characteristic'])): ?>
 		        <div class="avsubjects">
-		        	<i class="icon shanticon-subjects"></i> 
+		        	<i class="icon shanticon-subjects" title="subjects"></i> 
 		        	<?php
 		        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
 		        		print render($content['group_details']['field_characteristic']); 
