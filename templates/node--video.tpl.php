@@ -200,18 +200,20 @@
 	        <?php endif; ?>
 	      </div> <!-- End of avinfo -->
 	      <div>
-	        <h6><?php print t('Video Overview'); ?></h6>
+	        <h5><?php print t('Video Overview'); ?></h5>
 	        <div class="avpbcoredesc">
 	        		<?php 
 	        		//dpm($content, 'content in template');
 	        		print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
 	        </div>
-	        <div class="avcollection">
-	        	<?php 
-	        		print render($content['group_details']['collection_ancestor']); ?>
-	        </div>
+	        <?php if(isset($coll)): ?>
+		        <div class="avcollection">
+		        	<h5>Collection</h5>
+		        	<?php print $coll->title; ?>
+		        </div>
+		      <? endif; ?>
 	      	<div class="subcollection">
-	      		<strong>Subcollection: </strong> 
+	      		<h5>Subcollection: </h5> 
 	      		<?php
 	        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
 	        		print render($content['group_details']['field_subcollection']); 
