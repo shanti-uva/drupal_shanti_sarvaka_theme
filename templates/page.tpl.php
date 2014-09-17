@@ -23,7 +23,7 @@
 	          <?php if($site_slogan) { print '<span class="site-slogan">' . $site_slogan . '</span>' ;} ?>
 	        </a>
 	      </h1>
-	  
+
 	      <!-- HEADER REGION -->
 	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
 	         <form class="form">
@@ -55,7 +55,7 @@
         <div class="row">
           
           <!-- Banner Region -->
-          <header class="col-sm-12 titlearea banner">
+          <header class="col-sm-12 titlearea banner<?php print $variables['banner_class']; ?>">
            <div role="banner">
             <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php 
             	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {

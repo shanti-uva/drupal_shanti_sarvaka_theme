@@ -48,6 +48,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
+	//dpm($variables, 'vars in preprocess page');
   global $base_url, $base_path;
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
   $variables['breadcrumb'] = menu_get_active_breadcrumb();
@@ -71,10 +72,18 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
 	
+	// Add menu blocks in banner to secondary tabs
+	if(empty($variables['tabs']['#secondary'])) { $variables['tabs']['#secondary'] = array(); }
+	$variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
+	if(count($variables['tabs']['#secondary']) > 0) {
+		$variables['banner_class'] = ' has-tabs';
+	}
+  //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
+	
   // Add usermenu to main menu
   $um = menu_tree_all_data('user-menu');
   $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
-  
+	
   // Set Loginout_link
   $variables['loginout_link'] = l(t('Logout'), 'user/logout');
   if(!$variables['logged_in']) {
@@ -151,16 +160,55 @@ function shanti_sarvaka_preprocess_region(&$variables) {
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
-  // Header blocks
-  // If needed, for site custom blocks added to header, can customize icon, bootstrap class, and wrapping markup
-  // If we want to allow certain blocks to be "dropped" into the header and not just hard-coded like explore, language chooser, and options
-  // Otherwise delete
-  if(isset($block->region) && $block->region == 'header') {
-    $variables['bs_class'] = '';
-    $variables['follow_markup'] = '';
-    $variables['icon_class'] = 'shanticon-menu';
-    $variables['prev_markup'] = '';
-  }
+	if(isset($block->region)) {
+		$region = $block->region;
+		// Header blocks
+	  // If needed, for site custom blocks added to header, can customize icon, bootstrap class, and wrapping markup
+	  // If we want to allow certain blocks to be "dropped" into the header and not just hard-coded like explore, language chooser, and options
+	  // Otherwise delete
+	  if($region == 'header') {
+	    $variables['bs_class'] = '';
+	    $variables['follow_markup'] = '';
+	    $variables['icon_class'] = 'shanticon-menu';
+	    $variables['prev_markup'] = '';
+	  }
+	}
+}
+
+/**
+ * Converts block menus in banner to secondary tab links
+ */
+function shanti_sarvaka_banner_tabs(&$banner) {
+	$links = array();
+	$menus = array();
+	$current_path = current_path();
+	// find menu blocks in banner and conver to secondary tab links
+	foreach($banner as $itemnm => $item) {
+		if(substr($itemnm, 0, 5) == 'menu_') {
+			$menus[] = $itemnm;
+			foreach($item as $n => $link) {
+				if(is_numeric($n)) {
+					$is_active = ($link['#original_link']['router_path'] == $current_path) ? TRUE : FALSE;
+					$linkout = array(
+						'#theme' => 'menu_local_task',
+						'#link' => array(
+							'path' => $link['#original_link']['router_path'],
+							'title' => $link['#title'],
+							'href' => $link['#href'],
+							'localized_options' => array(),
+						),
+						'#active' => $is_active,
+					);
+					$links[] = $linkout;
+				}
+			}
+		}
+	}
+	// unset menu blocks in banner so they do display as regular blocks
+	foreach($menus as $n => $menunm) {
+		unset($banner[$menunm]);
+	}
+	return $links;
 }
 
 /**

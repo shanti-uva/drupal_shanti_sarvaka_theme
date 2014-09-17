@@ -46,6 +46,18 @@
 	// End of namespace closure
 	} (jQuery));
 	
+	// Work around for Modules that use pre 1.8 jQuery
+	// From https://github.com/cowboy/jquery-bbq/issues/52
+	jQuery.browser = {};
+    (function () {
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+    
 /**
  *  Behaviors for the theme
  */
