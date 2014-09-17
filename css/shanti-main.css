@@ -1140,8 +1140,6 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .avdesc .popover-link{ 
 	margin-left: 8px;
 	margin-right: 6px;
-}
-.avdesc .popover-link span{ 
 	background: #5a65d1;
 	border: none;
 	height: 1em;
