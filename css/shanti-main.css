@@ -1053,7 +1053,9 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-basic .fivestar-widget > div a{ display:inline-block; font-size:1em; letter-spacing:0.75em;}
 .fivestar-basic .fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
 
-.fivestar-basic .fivestar-widget .cancel a{ color:#777; font-size:70%; font-family:'shanticon';}
+.fivestar-basic .fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon';}
+.fivestar-basic .fivestar-widget .cancel a:hover{ color:red;}
+
 .fivestar-basic .fivestar-widget .cancel a:before{ content: "\e60f";}
 .fivestar-basic .fivestar-widget .star a:before{ content: "\f005";}
 .fivestar-basic .fivestar-widget .star.on a{ color:#555;}
@@ -1148,21 +1150,20 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	padding: 0;
 	border-radius: 2px;
 	background-clip:padding-box;
-	position:relative;
 }
-.avdesc .popover-link span:after, 
+ 
 .avdesc .popover-link span:before{ 
-	right: 100%;
-	top: 30%;
+	left: -0.5em;
+	top: 0;
 	content: " ";
 	height: 0;
 	width: 0;
-	position: absolute;
+	position: relative;
 	pointer-events: none;
-}
-.avdesc .popover-link span:after{ 
-	border: 1px solid #5a65d1;
-	border-width: 2px 4px 2px 0;
+	display:block;
+	border-color: #5a65d1;
+	border-style: solid;
+	border-width: 0.35em 0.45em 0.35em 0;
 }
 
 

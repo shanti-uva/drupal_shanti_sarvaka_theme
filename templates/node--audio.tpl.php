@@ -204,7 +204,7 @@
 	          </div>
 	      	<?php endif; ?>
         </div> <!-- End of avinfo -->
-        <div>
+        <div class="video-overview">
 	        <h5><?php print t('Audio Overview'); ?></h5>
 	        <div class="avpbcoredesc">
 	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>

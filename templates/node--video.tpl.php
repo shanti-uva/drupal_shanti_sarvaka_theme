@@ -200,7 +200,7 @@
 	          </div>
 	        <?php endif; ?>
 	      </div> <!-- End of avinfo -->
-	      <div>
+	      <div class="video-overview">
 	        <h5><?php print t('Video Overview'); ?></h5>
 	        <div class="avpbcoredesc">
 	        		<?php 
