@@ -1131,17 +1131,13 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 
-.avdesc .popover h5{ font-size:1.18em; font-weight:bold;}
+.avdesc .popover h5{ font-size:1.32em; font-weight:bold;}
 .avdesc .popover .parents ul{ }
 .avdesc .popover .parents ul li{ float:left;}
 .avdesc .popover .parents ul li a{ float:left;}
-.avdesc .popover-link i.icon.shanticon-menu3{ padding:1px; font-size:0.56em;}
-.avdesc .popover-link i.icon.shanticon-menu3:before{ padding:0; height:.1em; line-height:.1em;}
+.avdesc .popover-link i.shanticon-menu3{ color:white; padding:1px; font-size:1em;}
+.avdesc .popover-link i.shanticon-menu3:before{ }
 .avdesc .popover-link{ 
-	margin-left: 8px;
-	margin-right: 6px;
-}
-.avdesc .popover-link span{ 
 	background: #5a65d1;
 	border: none;
 	height: 1em;
@@ -1149,21 +1145,24 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	color: white;
 	padding: 0;
 	border-radius: 2px;
-	background-clip:padding-box;
+	position:relative;
 }
- 
+.avdesc .popover-link span{
+	font-family: 'shanticon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color:#5a65d1;
+	font-size:0.25em;
+}
 .avdesc .popover-link span:before{ 
-	left: -0.5em;
+	left: 0;
 	top: 0;
-	content: " ";
-	height: 0;
-	width: 0;
+	content: "\e644";
 	position: relative;
-	pointer-events: none;
-	display:block;
-	border-color: #5a65d1;
-	border-style: solid;
-	border-width: 0.35em 0.45em 0.35em 0;
 }
 
 
