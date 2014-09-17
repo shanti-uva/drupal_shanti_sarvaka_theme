@@ -1148,6 +1148,15 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	border-radius: 1px;
 	background-clip:padding-box;
 }
+.avdesc .popover-link span{
+	font-family: 'shanticon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
 .avdesc .popover-link span:before{ 
 	left: -0.25em;
 	top: 0;
