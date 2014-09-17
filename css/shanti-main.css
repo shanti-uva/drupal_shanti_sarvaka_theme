@@ -1138,7 +1138,6 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .avdesc .popover-link i.icon.shanticon-menu3{ padding:1px; font-size:0.56em;}
 .avdesc .popover-link i.icon.shanticon-menu3:before{ padding:0; height:.1em; line-height:.1em;}
 .avdesc .popover-link{ 
-	margin-left: 0;
 	background: #5a65d1;
 	border: none;
 	height: 0.5em;
@@ -1146,7 +1145,6 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	color: white;
 	padding: 0;
 	border-radius: 1px;
-	background-clip:padding-box;
 }
 .avdesc .popover-link span{
 	font-family: 'shanticon';
@@ -1156,9 +1154,11 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	color:#5a65d1;
+	font-size:0.18em;
 }
 .avdesc .popover-link span:before{ 
-	left: -0.25em;
+	left: 0;
 	top: 0;
 	content: "\e644";
 	position: relative;
