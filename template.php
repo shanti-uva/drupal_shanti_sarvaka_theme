@@ -257,12 +257,45 @@ function shanti_sarvaka_preprocess_button(&$vars) {
   	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
 	}
 }
-  
+
+/**
+ * Change styles applied to transcript search results.
+ */
+function shanti_sarvaka_preprocess_apachesolr_search_snippets(&$vars) {
+        if ($vars['doc']->entity_type == 'tcu') {
+                $button = '<div class="btn-group btn-group-lg btn-group-justified btn-group-transcript">';
+                $button .= '<div class="btn-group">';
+                $button .= '<button class="btn btn-default btn-icon">';
+                $button .= '<i class="icon shanticon-play-video"></i>';
+                $button .= '</button>';
+                $button .= '</div>';
+                $button .= '</div>';
+                $vars['transcripts_search_snippet']['#linktext'] = $button;
+                $vars['transcripts_search_snippet']['#attached'] = array(
+                        'css' => array(drupal_get_path('theme', 'shanti_sarvaka') .'/css/transcripts-search-snippet.css'),
+                );
+        }
+}
+
+/**
+ * Add js for play transcript button toggle
+ */
+function shanti_sarvaka_preprocess_transcripts_video_controls($vars) {
+        drupal_add_js("
+                (function ($) {
+                        $('.play-transcript').click(function() {
+                                $('i.icon', this).toggleClass('shanticon-play-video shanticon-play-transcript');
+                        });
+                }(jQuery));
+        ", 'inline');
+}
+ 
+ 
 /**
  * THEMING FUNCTIONS
  */
- 
- /**
+
+/**
   * Implements THEME_item_list to theme the facet links within a facetapi block
   */
 function shanti_sarvaka_item_list($variables) {
@@ -713,6 +746,45 @@ function shanti_sarvaka_textfield($variables) {
 	}
   _form_set_class($element, array('form-control'));
 	return theme_textfield($variables);
+}
+
+function shanti_sarvaka_transcripts_play_transcript($vars) {
+        $out = "<button class='btn btn-primary btn-icon play-transcript without-transcript'>";
+        $out .= "<i class='icon shanticon-play-video'></i>";
+        $out .= "<span>" . t('Hide<br/>transcript') . "</span>";
+        $out .= "</button>";
+        return $out;
+}
+function shanti_sarvaka_transcripts_previous_tcu($vars) {
+        $out = "<button class='btn btn-default btn-icon previous' title='Previous line'>";
+        $out .= "<i class='icon shanticon-arrow-left'></i>";
+        $out .= "</button>";
+        return $out;
+}
+function shanti_sarvaka_transcripts_same_tcu($vars) {
+        $out = "<button class='btn btn-default btn-icon sameagain' title='Same line'>";
+        $out .= "<i class='icon shanticon-spin3'></i>";
+        $out .= "</button>";
+        return $out;
+}
+function shanti_sarvaka_transcripts_next_tcu($vars) {
+        $out = "<button class='btn btn-default btn-icon next' title='Next line'>";
+        $out .= "<i class='icon shanticon-arrow-right'></i>";
+        $out .= "</button>";
+        return $out;
+}
+function shanti_sarvaka_form_transcripts_controller_mode_selector_alter(&$form, &$form_state) {
+        $form['mode_selector']['#title'] = '';
+        $form['mode_selector']['#attributes']['data-header'] = t('Select a transcript view');
+        $form['#attached']['css'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/css/transcripts-mode-selector.css';
+        $form['#attached']['js'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/js/transcripts-mode-selector.js';
+}
+function shanti_sarvaka_form_transcripts_controller_tier_selector_alter(&$form, &$form_state) {
+        $form['tier_selector']['#title'] = '';
+        $form['tier_selector']['#attributes']['multiple'] = '';
+        $form['tier_selector']['#attributes']['data-header'] = t('Choose languages to display');
+        $form['#attached']['css'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/css/transcripts-tier-selector.css';
+        $form['#attached']['js'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/js/transcripts-tier-selector.js';
 }
 
 /**
