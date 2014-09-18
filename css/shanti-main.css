@@ -70,7 +70,7 @@ i{ font-style:normal;}
 .main-content div:nth-child(2) a:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
 .main-content div:nth-child(2) a:active{ border-bottom-color:transparent;}
 .main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-1%;}
-.main-content .show-more a{ border-bottom-color:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content .show-more a{ border-bottom:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .main-content .show-more a:hover{ border-bottom-color: rgba(90, 101, 209, .3000) !important;}
 .main-content .show-more a:active{ border-bottom-color:transparent !important;}
 .main-content .show-more:after{ 	font-size: 0.75em;line-height: 0.75em;font-weight:normal;padding-left:0.25em;font-family: 'Glyphicons Halflings';content: '\002b'; /*-- plus icon */position:relative;top:-1px;color: #5a65d1;}
@@ -1054,13 +1054,13 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-basic div.fivestar-widget .star a:hover{ color:#5a65d1; border-bottom:none !important;}
 .fivestar-basic div.fivestar-widget .star a:before,
 .fivestar-basic div.fivestar-widget .star span:before{ content: "\f005"; background-image: none !important;}
-.fivestar-basic div.fivestar-widget .star a.on,
+.fivestar-basic div.fivestar-widget .star.on a,
 .fivestar-basic div.fivestar-widget .star span.on{ color:#555; background-image: none !important;}
 
 .fivestar-static-form-item .form-item .description{ padding-left:0;}
 
-.fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon';}
-.fivestar-basic div.fivestar-widget .cancel a:hover{ color:red;}
+.fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon'; background-image: none !important;}
+.fivestar-basic div.fivestar-widget .cancel a:hover{ color:red;  background-image: none !important;}
 .fivestar-basic div.fivestar-widget .cancel a:before{ content: "\e60f";}
 
 
@@ -1140,6 +1140,8 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 
+.node-video .popover-title{ background:#f0f0f0;}
+.node-video .popover-content{ background:#ccc;}
 
 .node-video .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:4px; left:-1px;}
 .node-video .popover-link{ 
