@@ -699,11 +699,11 @@
 
 jQuery(function ($) {
   /*--- increase the height for admin tabs ---*/
-
+	/*
   if($('ul.tabs.primary').length ) {
     $('.titlearea').addClass('has-tabs');
   }
-
+	*/
   $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
   
   $('.shanti-field-title a').hover( function() {
