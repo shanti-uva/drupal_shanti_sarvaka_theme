@@ -75,9 +75,10 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 	// Add menu blocks in banner to secondary tabs
 	if(empty($variables['tabs']['#secondary'])) { $variables['tabs']['#secondary'] = array(); }
 	$variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
-	if(count($variables['tabs']['#secondary']) > 0) {
-		$variables['banner_class'] = ' has-tabs';
-	}
+	
+	// Set banner_class variable depending on whether there are tabs or not
+	$variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
+	
   //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
 	
   // Add usermenu to main menu
@@ -139,7 +140,6 @@ function shanti_sarvaka_preprocess_region(&$variables) {
   switch ($variables['region']) {
     case 'sidebar_second':
       //dpm($variables, '2nd side vars');
-      
       break;
       
     case 'search_flyout':
