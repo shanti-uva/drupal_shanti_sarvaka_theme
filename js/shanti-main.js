@@ -678,7 +678,7 @@
 	  $.fn.popover.Constructor.DEFAULTS.placement = 'right';
 	  $.fn.popover.Constructor.DEFAULTS.html = true;
 	  $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 5000 };
-	  $.fn.popover.Constructor.DEFAULTS.container = 'body';
+	  // $.fn.popover.Constructor.DEFAULTS.container = 'body';
 	
 		$('span.popover-link').popover({
 			'content': function() {
