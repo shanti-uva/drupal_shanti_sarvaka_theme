@@ -1048,24 +1048,26 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avduration::after, 
 .avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;}
 
-.fivestar-widget > div,
-.fivestar-widget > div a,
-.fivestar-widget > div span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none !important;}
-.fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
-.fivestar-widget > div a:before,
-.fivestar-widget > div span:before{ content: "\f005";}
-.fivestar-widget > div.on a,
-.fivestar-widget > div.on span{ color:#555;}
+.fivestar-basic div.fivestar-widget > .star,
+.fivestar-basic div.fivestar-widget > .star a,
+.fivestar-basic div.fivestar-widget > .star span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none !important;}
+.fivestar-basic div.fivestar-widget > .star a:hover{ color:#5a65d1; border-bottom:none !important;}
+.fivestar-basic div.fivestar-widget > .star a:before,
+.fivestar-basic div.fivestar-widget > .star span:before{ content: "\f005";}
+.fivestar-basic div.fivestar-widget > .star.on a,
+.fivestar-basic div.fivestar-widget > .star.on span{ color:#555;}
 
 .fivestar-static-form-item .form-item .description{ padding-left:0;}
 
-.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon';}
-.fivestar-widget .cancel a:hover{ color:red;}
-.fivestar-widget .cancel a:before{ content: "\e60f";}
+.fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon';}
+.fivestar-basic div.fivestar-widget .cancel a:hover{ color:red;}
+.fivestar-basic div.fivestar-widget .cancel a:before{ content: "\e60f";}
 
 
  
-.avinfo div h5{ margin-bottom:0.12em;}
+.avinfo div h5,
+.video-overview h5{ margin-bottom:0.12em !important;}
+
 .avshare div h5 span{ color: #5a65d1; font-size: 0.9em; font-weight: normal;}
 .avshare ul{ list-style-type: none; padding-left:0; margin-top:5px;}
 .avshare ul li{}
@@ -1092,8 +1094,8 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 
 
 /* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} */
-
-.video-overview .show-more-toggle{ text-transform:uppercase; font-size:0.88em; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.pb-core-desc-readmore{ margin:-10px 0 20px;}
+.video-overview .show-more-toggle{ color:#454fa4; text-transform:uppercase; font-size:0.88em; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .video-overview .show-more-toggle:after{ 	
 	font-size: 0.62em;
 	line-height: 0.75em;
