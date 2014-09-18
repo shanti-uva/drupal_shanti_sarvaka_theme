@@ -188,7 +188,8 @@ function shanti_sarvaka_banner_tabs(&$banner) {
 			$menus[] = $itemnm;
 			foreach($item as $n => $link) {
 				if(is_numeric($n)) {
-					$is_active = ($link['#original_link']['router_path'] == $current_path) ? TRUE : FALSE;
+					$is_active = ($link['#original_link']['router_path'] == $current_path || ($link['#href'] == "<front>" && drupal_is_front_page())) ? TRUE : FALSE;
+					//dpm($link, 'link');
 					$linkout = array(
 						'#theme' => 'menu_local_task',
 						'#link' => array(
