@@ -1131,12 +1131,8 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 
-.avdesc .popover h5{ font-size:1.32em; font-weight:bold;}
-.avdesc .popover .parents ul{ }
-.avdesc .popover .parents ul li{ float:left;}
-.avdesc .popover .parents ul li a{ float:left;}
+
 .avdesc .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:3px; left:1px;}
-.avdesc .popover-link i.shanticon-menu3:before{ }
 .avdesc .popover-link{ 
 	background: #5a65d1;
 	border: none;
@@ -1160,7 +1156,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	text-transform: none;
 	line-height: 1;
 	color:#5a65d1;
-	font-size:0.56em;
+	font-size:0.68em;
 	position:relative;
 	top:-7px;
 	left:-6px;
@@ -1171,6 +1167,15 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	content: "\e644";
 	/*position: relative;*/
 }
+.avdesc .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:3px; left:1px;}
+.avdesc .popover h5{ font-size:2em; font-weight:bold;}
+.avdesc .popover .parents{ }
+.avdesc .popover .parents ul strong{ font-weight:bold; float:left;}
+.avdesc .popover .parents ul{ float:left; clear:both; display:inline-block;margin:0;padding:0;}
+.avdesc .popover .parents ul li{ float:left; display:inline-block;padding:0;}
+.avdesc .popover .parents ul li a{ float:left; display:block;margin:0;padding:0;}
+
+
 
 
 /*--- Large Tabs Video View ---*/
