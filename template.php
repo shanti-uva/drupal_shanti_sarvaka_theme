@@ -248,11 +248,11 @@ function shanti_sarvaka_preprocess_search_result(&$variables) {
         $coll->url = $base_path . drupal_get_path_alias('node/' . $coll->nid);
     }
     $variables['coll'] = $coll;
-  } else if (isset($variables['result']['fields']['is_eid'])) {
+  } else if (isset($variables['result']['fields']['entity_type']) && $variables['result']['fields']['entity_type'] == 'tcu') {
     // TODO: Must add thumbnail and collection variables for TCU hits in transcripts
-    $nid = $variables['result']['fields']['is_eid'];
     $variables['result']['thumb_url'] ='';
     $variables['coll'] = FALSE;
+    $variables['classes_array'][] = 'list-group-item';
   } else {
     // Any other options?
     //dpm($variables);
@@ -795,6 +795,10 @@ function shanti_sarvaka_textfield($variables) {
 	}
   _form_set_class($element, array('form-control'));
 	return theme_textfield($variables);
+}
+
+function shanti_sarvaka_apachesolr_search_snippets($vars) {
+  return implode(' ... ', $vars['flattened_snippets']);
 }
 
 function shanti_sarvaka_transcripts_play_transcript($vars) {
