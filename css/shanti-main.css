@@ -1053,9 +1053,9 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-basic div.fivestar-widget > .star span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none !important;}
 .fivestar-basic div.fivestar-widget > .star a:hover{ color:#5a65d1; border-bottom:none !important;}
 .fivestar-basic div.fivestar-widget > .star a:before,
-.fivestar-basic div.fivestar-widget > .star span:before{ content: "\f005";}
-.fivestar-basic div.fivestar-widget > .star.on a,
-.fivestar-basic div.fivestar-widget > .star.on span{ color:#555;}
+.fivestar-basic div.fivestar-widget > .star span:before{ content: "\f005"; background-image: none !important;}
+.fivestar-basic div.fivestar-widget > .star.on a:before,
+.fivestar-basic div.fivestar-widget > .star.on span:before{ color:#555; background-image: none !important;}
 
 .fivestar-static-form-item .form-item .description{ padding-left:0;}
 
@@ -1094,10 +1094,10 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 
 
 /* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} */
-.pb-core-desc-readmore{ margin:-10px 0 20px;}
-.video-overview .show-more-toggle{ color:#454fa4; text-transform:uppercase; font-size:0.88em; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+#pb-core-desc-readmore{ margin:-10px 0 20px;}
+.video-overview .show-more-toggle{ color:#454fa4; text-transform:uppercase; font-size:0.68em; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .video-overview .show-more-toggle:after{ 	
-	font-size: 0.62em;
+	font-size: 0.88em;
 	line-height: 0.75em;
 	font-weight:normal;
 	padding-left:0.25em;
