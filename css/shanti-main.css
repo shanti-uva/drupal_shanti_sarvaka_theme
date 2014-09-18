@@ -1048,17 +1048,22 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avduration::after, 
 .avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;}
 
-.fivestar-basic .fivestar-widget > div,
-.fivestar-basic .fivestar-widget > div a{ font-family:'FontAwesome'; color:#ccc; text-indent:0; background-image: none !important;  border-bottom:none !important;}
-.fivestar-basic .fivestar-widget > div a{ display:inline-block; font-size:1em; letter-spacing:0.75em;}
-.fivestar-basic .fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
+.fivestar-widget > div,
+.fivestar-widget > div a,
+.fivestar-widget > div span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none !important;}
+.fivestar-widget > div a:hover{ color:#5a65d1; border-bottom:none !important;}
+.fivestar-widget > div a:before,
+.fivestar-widget > div span:before{ content: "\f005";}
+.fivestar-widget > div.on a,
+.fivestar-widget > div.on span{ color:#555;}
 
-.fivestar-basic .fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon';}
-.fivestar-basic .fivestar-widget .cancel a:hover{ color:red;}
+.fivestar-static-form-item .form-item .description{ padding-left:0;}
 
-.fivestar-basic .fivestar-widget .cancel a:before{ content: "\e60f";}
-.fivestar-basic .fivestar-widget .star a:before{ content: "\f005";}
-.fivestar-basic .fivestar-widget .star.on a{ color:#555;}
+.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon';}
+.fivestar-widget .cancel a:hover{ color:red;}
+.fivestar-widget .cancel a:before{ content: "\e60f";}
+
+
  
 .avinfo div h5{ margin-bottom:0.12em;}
 .avshare div h5 span{ color: #5a65d1; font-size: 0.9em; font-weight: normal;}
@@ -1087,8 +1092,9 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 
 
 /* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} */
-.pb-core-desc-readmore a{ font-weight:bold; text-transform:uppercase;}
-.pb-core-desc-readmore:after{ 	
+
+.video-overview .show-more-toggle{ font-weight:bold; text-transform:uppercase; font-size:1em;}
+.video-overview .show-more-toggle:after{ 	
 	font-size: 0.75em;
 	line-height: 0.75em;
 	font-weight:normal;
@@ -1100,7 +1106,8 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 	color: #5a65d1;
 }
 
-/* a.show-more-toggle:after{} */
+.video-overview h5{ font-weight:bold; text-transform:uppercase; font-size:1em;}
+
 
 .avplace .field, 
 .avplace .field .field-items, 
