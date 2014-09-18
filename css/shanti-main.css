@@ -1093,7 +1093,7 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 
 /* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} */
 
-.video-overview .show-more-toggle{ text-transform:uppercase; font-size:1em;  font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.video-overview .show-more-toggle{ text-transform:uppercase; font-size:0.88em; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .video-overview .show-more-toggle:after{ 	
 	font-size: 0.62em;
 	line-height: 0.75em;
@@ -1139,8 +1139,8 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 
-.avdesc .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:4px; left:-1px;}
-.avdesc .popover-link{ 
+.node-video .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:4px; left:-1px;}
+.node-video .popover-link{ 
 	background: #5a65d1;
 	border: none;
 	height: 0.93em;
@@ -1154,7 +1154,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	left:0.44em;
 	margin-right:15px;
 }
-.avdesc .popover-link span{
+.node-video .popover-link span{
 	font-family: 'shanticon';
 	speak: none;
 	font-style: normal;
@@ -1168,19 +1168,19 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	top:-0.68em;
 	left:-0.68em;
 }
-.avdesc .popover-link span:before{ 
+.node-video .popover-link span:before{ 
 	left: 0;
 	top: 0;
 	content: "\e644";
 	position: relative;
 }
-.avdesc .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:0.32em; left:-0.25em;}
-.avdesc .popover h5{ font-size:2em; font-weight:bold;}
-.avdesc .popover .parents{ }
-.avdesc .popover .parents ul strong{ float:left; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.avdesc .popover .parents ul{ float:left; clear:both; display:inline-block;margin:0;padding:0;}
-.avdesc .popover .parents ul li{ float:left; display:inline-block;padding:0;}
-.avdesc .popover .parents ul li a{ float:left; display:block;margin:0;padding:0;}
+.node-video .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:0.32em; left:-0.25em;}
+.node-video .popover h5{ font-size:2em; font-weight:bold;}
+.node-video .popover .parents{ }
+.node-video .popover .parents ul strong{ float:left; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.node-video .popover .parents ul{ float:left; clear:both; display:inline-block;margin:0;padding:0;}
+.node-video .popover .parents ul li{ float:left; display:inline-block;padding:0;}
+.node-video .popover .parents ul li a{ float:left; display:block;margin:0;padding:0;}
 
 
 
