@@ -1048,10 +1048,14 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avduration::after, 
 .avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;}
 
-.fivestar-basic div.fivestar-widget .star,{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none !important;}
-.fivestar-basic div.fivestar-widget .star:hover{ color:#5a65d1; border-bottom:none !important;}
-.fivestar-basic div.fivestar-widget .star:before{ content: "\f005";}
-.fivestar-basic div.fivestar-widget .star.on{ color:#555; background-image: none !important;}
+.fivestar-basic div.fivestar-widget .star,
+.fivestar-basic div.fivestar-widget .star a,
+.fivestar-basic div.fivestar-widget .star span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none !important;}
+.fivestar-basic div.fivestar-widget .star a:hover{ color:#5a65d1; border-bottom:none !important;}
+.fivestar-basic div.fivestar-widget .star a:before,
+.fivestar-basic div.fivestar-widget .star span:before{ content: "\f005"; background-image: none !important;}
+.fivestar-basic div.fivestar-widget .star a.on,
+.fivestar-basic div.fivestar-widget .star span.on{ color:#555; background-image: none !important;}
 
 .fivestar-static-form-item .form-item .description{ padding-left:0;}
 
