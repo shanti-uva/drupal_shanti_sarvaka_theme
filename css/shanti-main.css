@@ -1037,7 +1037,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .avinfo{ display:inline; float:left; margin-right:15px;}
 .avinfo .trans-btn{ padding-bottom:5px;}
-.avinfo .btn.btn-primary.btn-icon{ margin:5px 0;}
+.avinfo .btn.btn-primary.btn-icon{ margin:0 0 5px;}
 
 .avdesc{ margin: 0px; max-width:800px;}
 
@@ -1115,6 +1115,12 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 .avplace .field .field-items, 
 .avplace .field .field-item{ display: inline;}
 
+.avsubjects .shanticon-subjects::before{ float:left; margin:2px 5px 0 0;}
+
+.avsubjects,
+.avplace{ margin-top:10px;}
+
+
 .field-name-field-pbcore-description > .field-items > .field-item{ margin-bottom: 12px;}
 .field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{ padding:5px;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
 
@@ -1125,12 +1131,7 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 .transcript-controls table tbody,
 .transcript-player table tbody{ border-top:none;}
 
-.btn-group.btn-group-lg.btn-group-justified.btn-group-transcript{
-	width:100%;
-	margin-top:0;
-	/* margin-top:-2.18em; */
-}
-
+.btn-group.btn-group-lg.btn-group-justified.btn-group-transcript{ width:100%; margin-top:0;}
 
 
 

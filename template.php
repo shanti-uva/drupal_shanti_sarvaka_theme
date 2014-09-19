@@ -49,7 +49,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 
 function shanti_sarvaka_preprocess_page(&$variables) {
 	//dpm($variables, 'vars in preprocess page');
-  global $base_url, $base_path;
+  global $base_url, $base_path, $base_theme_info;
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
   $variables['breadcrumb'] = menu_get_active_breadcrumb();
   $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
@@ -57,6 +57,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
   $variables['theme_path'] = $base; 
+	$variables['base_theme'] = (empty($base_theme_info)) ? FALSE : $base_theme_info[0]->name;
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
 	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
 	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
