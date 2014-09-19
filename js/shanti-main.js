@@ -678,13 +678,13 @@
 	  $.fn.popover.Constructor.DEFAULTS.placement = 'right';
 	  $.fn.popover.Constructor.DEFAULTS.html = true;
 	  $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 5000 };
-	  // $.fn.popover.Constructor.DEFAULTS.container = 'body';
-	
-		$('span.popover-link').popover({
-			'content': function() {
-				return '<div>' + $(this).next('div.popover').html() + '</div>';
-			}
+
+		$('span.popover-link').each(function() {
+			var content = '<div>' + $(this).next('div.popover').html() + '</div>';
+			$(this).popover({'content': content});
 		});
+		$('div.popover').remove(); // remove hidden popover content once they have all been initialized
+		$('span.popover-link').on('show.bs.popover', function(){ $('div.popover').hide();}); // When popover is shown, hide all others
 	 // Hide popovers if anything but a popover is clicked
 	 $('body').click(function(e) {
 			var target = $(e.target);
