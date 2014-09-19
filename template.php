@@ -836,6 +836,7 @@ function shanti_sarvaka_form_transcripts_controller_tier_selector_alter(&$form, 
         $form['tier_selector']['#title'] = '';
         $form['tier_selector']['#attributes']['multiple'] = '';
         $form['tier_selector']['#attributes']['data-header'] = t('Choose languages to display');
+	$form['tier_selector']['#attributes']['data-selected-text-format'] = 'count > 2';
         $form['#attached']['css'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/css/transcripts-tier-selector.css';
         $form['#attached']['js'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/js/transcripts-tier-selector.js';
 }
