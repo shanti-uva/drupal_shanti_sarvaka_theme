@@ -799,9 +799,17 @@ function shanti_sarvaka_textfield($variables) {
 }
 
 function shanti_sarvaka_apachesolr_search_snippets($vars) {
-  return implode(' ... ', $vars['flattened_snippets']);
+	return implode(' ... ', $vars['flattened_snippets']);
 }
-
+function shanti_sarvaka_transcripts_video_controls($vars) {
+        $out = "<div style='width: 480px;' class='btn-group btn-group-lg btn-group-justified btn-group-transcript'>";
+        $out .= "<div class='btn-group'>" .$vars['element']['#play']. "</div>";
+        $out .= "<div class='btn-group'>" .$vars['element']['#prev']. "</div>";
+        $out .= "<div class='btn-group'>" .$vars['element']['#same']. "</div>";
+        $out .= "<div class='btn-group'>" .$vars['element']['#next']. "</div>";
+        $out .= "</div>";
+        return $out;
+}
 function shanti_sarvaka_transcripts_play_transcript($vars) {
         $out = "<button class='btn btn-primary btn-icon play-transcript without-transcript'>";
         $out .= "<i class='icon shanticon-play-video'></i>";
@@ -839,7 +847,6 @@ function shanti_sarvaka_form_transcripts_controller_tier_selector_alter(&$form, 
         $form['tier_selector']['#attributes']['data-header'] = t('Choose languages to display');
 	$form['tier_selector']['#attributes']['data-selected-text-format'] = 'count > 2';
         $form['#attached']['css'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/css/transcripts-tier-selector.css';
-        $form['#attached']['js'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/js/transcripts-tier-selector.js';
 }
 
 /**
