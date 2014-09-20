@@ -250,8 +250,8 @@
       </div> <!-- End of avdesc -->
       <div>
         <ul class="nav nav-tabs ss-full-tabs" role="tablist">
+          <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>          
           <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Videos'); ?></a></li>
-          <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>
         </ul>        
         <!-- Tab panes -->
         <div class="tab-content">
