@@ -795,8 +795,13 @@ jQuery(function ($) {
 
         // Call the layout function.
         handler.wookmark(options);
+        
       });
     })(jQuery);
+    
+        $('.node-video ul.ss-full-tabs > li:last').click(function (event) {
+        	handler.wookmark(options);
+        });
 });
 
  
