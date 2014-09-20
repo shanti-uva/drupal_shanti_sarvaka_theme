@@ -1197,12 +1197,13 @@ border-bottom:1px solid #ccc;
 .node-video .popover-content .parents ul li{ font-size:0.75em; line-height:1.18em; float:left; display:inline;padding:0;padding:0;margin:0;word-break:break-all;}
 .node-video .popover-content .parents ul li a{ font-size:1em; float:left; display:inline;margin:0;padding:0 1px;white-space:normal;word-break:break-all;}
 
-.node-video .popover-content .popover-footer{ float:left; margin:10px -14px 0; width:272px; max-width:272px;}
+.node-video .popover-content .popover-footer{ float:left; margin:0 -14px; width:272px; max-width:272px;}
 .node-video .popover-content .popover-footer ul{ list-style-type:none; margin:10px 0 0; padding:0;}
-.node-video .popover-content .popover-footer ul li{ font-size:0.88em; line-height:2.75em; padding:0 0 0 15px; margin:0; background:#4c4b51; color:#fff; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.node-video .popover-content .popover-footer ul li{ border-bottom:1px solid #404040; font-size:0.88em; line-height:2.75em; padding:0 0 0 15px; margin:0; background:#4c4b51; color:#fff; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .node-video .popover-content .popover-footer ul li a{ color:#fff; border-bottom:none;}
 .node-video .popover-content .popover-footer ul li i.icon{ color:#fff;}
 
+.node-video .popover-content .popover-footer ul li:last-child{ border-radius:0 0 4px 4px; border-bottom:none;}
 .node-video .popover-content .popover-footer ul li:hover{ background:#404040;}
 
 /*--- Large Tabs Video View ---*/
