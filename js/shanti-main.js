@@ -798,8 +798,8 @@ jQuery(function ($){
         handler.wookmark(options);
                 
       });
-	});
-})(jQuery);
+	};
+});
 
 
 jQuery(function ($){    
