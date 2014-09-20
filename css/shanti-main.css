@@ -1179,7 +1179,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 }
 .node-video .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:0.32em; left:-0.25em;}
 
-.node-video .popover{ border:none;padding:none;}
+.node-video .popover{ border:none;padding:0;}
 
 /*---- popover content area ----*/
 .node-video .popover-content h5{ font-size:1em; text-transform:capitalize; font-weight:bold; margin:0; padding:0; line-height:2.5em; border-bottom:1px solid #ccc;}
@@ -1193,7 +1193,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .node-video .popover-content .parents ul li a{ border-bottom-width:1px; font-size:1em; float:left; display:inline;margin:0;padding:0 1px;white-space:normal;word-break:break-all;}
 .node-video .popover-content .parents ul li a:hover{}
 
-.node-video .popover-content .popover-footer{ float:left; margin:0 -15px; width:276px; max-width:276px;}
+.node-video .popover-content .popover-footer{ float:left; margin:0 -15px; width:277px; max-width:277px;}
 .node-video .popover-content .popover-footer ul{ list-style-type:none; margin:10px 0 0; padding:0;}
 .node-video .popover-content .popover-footer ul li{ border-bottom:1px solid #404040; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; background:#4c4b51; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .node-video .popover-content .popover-footer ul li a{ color:#ddd; border-bottom:none;display:inline-block;}
@@ -1231,16 +1231,16 @@ ul.ss-full-tabs li a{
 	color: #aaa;
 	border-radius: 0;
 }
-ul.ss-full-tabs li a:hover{ color:#555; border: none !important;}
+ul.ss-full-tabs li a:hover{ color:#555; border: none;}
 ul.ss-full-tabs li.active a{ 
 	color:#fff !important;
 }
 ul.ss-full-tabs>li>a:hover, 
-ul.ss-full-tabs>li.active>a:hover{ border: none !important;}
-ul.ss-full-tabs li.active a:after{ content: " ";border: none !important;margin:0 !important;position:static;}
-ul.ss-full-tabs li.active a:before{ content:" "; border: none !important;margin:0 !important;position:static;}
+ul.ss-full-tabs>li.active>a:hover{ border: none;}
+ul.ss-full-tabs li.active a:after{ content: " ";border: none;margin:0 !important;position:static;}
+ul.ss-full-tabs li.active a:before{ content:" "; border: none;margin:0 !important;position:static;}
 
-ul.ss-full-tabs > li.active > a:after{ border:none !important; margin:0 !important;}
+ul.ss-full-tabs > li.active > a:after{ border:none; margin:0 !important;}
 
 ul.ss-full-tabs.nav-tabs{ border:none;}
 ul.ss-full-tabs.nav-tabs>ul>li>a{ margin:0;}
