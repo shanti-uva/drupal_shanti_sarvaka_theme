@@ -796,7 +796,7 @@ jQuery(function ($){
         // Call the layout function.
         handler.wookmark(options);
     
-        $('.node-video ul.ss-full-tabs > li:last').click(function (event) {
+        $('.node-video ul.ss-full-tabs > li:last').on('click', function () {
         	handler.wookmark(options);
         });
                 
