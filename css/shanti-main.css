@@ -1194,8 +1194,9 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .node-video .popover-content .popover-footer{ float:left; margin:0 -14px; width:272px; max-width:272px;}
 .node-video .popover-content .popover-footer ul{ list-style-type:none; margin:10px 0 0; padding:0;}
 .node-video .popover-content .popover-footer ul li{ border-bottom:1px solid #404040; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; background:#4c4b51; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.node-video .popover-content .popover-footer ul li a{ color:#ddd; border-bottom:none;}
+.node-video .popover-content .popover-footer ul li a{ color:#ddd; border-bottom:none;display:inline-block;}
 .node-video .popover-content .popover-footer ul li a:hover{ color:#eee;}
+.node-video .popover-content .popover-footer ul li a:active{ color:#fff;}
 
 .node-video .popover-content .popover-footer ul li i.icon{ color:#eee;margin-right:5px;}
 
