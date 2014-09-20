@@ -1141,7 +1141,6 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 
-.node-video .popover-title{ }
 
 .node-video .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:4px; left:-1px;}
 .node-video .popover-link{ 
@@ -1179,30 +1178,35 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	position: relative;
 }
 .node-video .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:0.32em; left:-0.25em;}
-.node-video .popover-content p{ font-size: 0.93em;
-margin-top: 10px;
-color: #333;}
-.node-video .popover-content h5{ font-size:1em; font-weight:bold;
-	margin:0;
-padding:0;
-line-height:2.5em;
-border-bottom:1px solid #ccc;
-}
-.node-video .popover-content .parents{ }
+
+.node-video .popover{ border:none;padding:0;}
+
+/*---- popover content area ----*/
+.node-video .popover-content h5{ font-size:1em; text-transform:capitalize; font-weight:bold; margin:0; padding:0; line-height:2.5em; border-bottom:1px solid #ccc;}
+.node-video .popover-content p{ font-size: 0.88em; margin-top: 10px; color: #333;}
+
 .node-video .popover-content .parents strong{ color: #454fa4; font-size:0.75em; margin-top:-0.06em; display:inline; float:left; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .node-video .popover-content .parents strong:after{ content:":"; margin-right:1px;}
 
 .node-video .popover-content .parents ul{ display:inline;list-style:none;margin:0;padding:0;}
 .node-video .popover-content .parents ul li{ font-size:0.75em; line-height:1.18em; float:left; display:inline;padding:0;padding:0;margin:0;word-break:break-all;}
-.node-video .popover-content .parents ul li a{ font-size:1em; float:left; display:inline;margin:0;padding:0 1px;white-space:normal;word-break:break-all;}
+.node-video .popover-content .parents ul li a{ border-bottom-width:1px; font-size:1em; float:left; display:inline;margin:0;padding:0 1px;white-space:normal;word-break:break-all;}
+.node-video .popover-content .parents ul li a:hover{}
 
-.node-video .popover-content .popover-footer{ float:left; margin:10px -15px; width:100%;}
-.node-video .popover-content .popover-footer ul{ list-style: none; margin:5px 0; padding:0;}
-.node-video .popover-content .popover-footer ul li{ }
-.node-video .popover-content .popover-footer ul li a{ }
+.node-video .popover-content .popover-footer{ float:left; margin:0 -15px; width:277px; max-width:277px;}
+.node-video .popover-content .popover-footer ul{ list-style-type:none; margin:10px 0 0; padding:0;}
+.node-video .popover-content .popover-footer ul li{ border-bottom:1px solid #404040; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; background:#4c4b51; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.node-video .popover-content .popover-footer ul li a{ color:#ddd; border-bottom:none;display:inline-block;}
+/*.node-video .popover-content .popover-footer ul li a:hover{ color:#eee;}
+.node-video .popover-content .popover-footer ul li a:active{ color:#fff;}
+*/
 
-
-
+.node-video .popover-content .popover-footer ul li i.icon{ color:#eee;margin-right:5px;}
+.node-video .popover-content .popover-footer ul li:hover i.icon{ color:#fff;}
+.node-video .popover-content .popover-footer ul li:last-child{ border-radius:0 0 4px 4px; border-bottom:none;}
+.node-video .popover-content .popover-footer ul li:hover{ background:#404040;}
+.node-video .popover-content .popover-footer ul li:hover a{ color:#eee;}
+.node-video .popover-content .popover-footer ul li:active a{ color:#fff;}
 
 /*--- Large Tabs Video View ---*/
 ul.ss-full-tabs{ margin: 1.12em .32em 1.5em;}
@@ -1227,16 +1231,16 @@ ul.ss-full-tabs li a{
 	color: #aaa;
 	border-radius: 0;
 }
-ul.ss-full-tabs li a:hover{ border: none !important;}
+ul.ss-full-tabs li a:hover{ color:#555; border: none;}
 ul.ss-full-tabs li.active a{ 
 	color:#fff !important;
 }
 ul.ss-full-tabs>li>a:hover, 
-ul.ss-full-tabs>li.active>a:hover{ border: none !important;}
-ul.ss-full-tabs li.active a:after{ content: " ";border: none !important;margin:0 !important;position:static;}
-ul.ss-full-tabs li.active a:before{ content:" "; border: none !important;margin:0 !important;position:static;}
+ul.ss-full-tabs>li.active>a:hover{ border: none;}
+ul.ss-full-tabs li.active a:after{ content: " ";border: none;margin:0 !important;position:static;}
+ul.ss-full-tabs li.active a:before{ content:" "; border: none;margin:0 !important;position:static;}
 
-ul.ss-full-tabs > li.active > a:after{ border:none !important; margin:0 !important;}
+ul.ss-full-tabs > li.active > a:after{ border:none; margin:0 !important;}
 
 ul.ss-full-tabs.nav-tabs{ border:none;}
 ul.ss-full-tabs.nav-tabs>ul>li>a{ margin:0;}
@@ -1448,7 +1452,7 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.primary,
 .main-content header ul.tabs.secondary{ display:inline; border:none; position:absolute; bottom:0.18em; z-index:2; float:left;margin:0;}
 .main-content header ul.tabs.primary li,
-.main-content header ul.tabs.secondary li{ height:1.75em; line-height:1.75em; position:relative;}
+.main-content header ul.tabs.secondary li{ /*height:1.75em; line-height:1.75em;*/ position:relative;}
 .main-content header ul.tabs.primary li a,
 .main-content header ul.tabs.secondary li a{ color:#555; background:rgba(255,255,255, 0.4000); font-size:80%; font-weight:bold; font-weight:700; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em; margin-right:.12em; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .main-content header ul.tabs.primary li a:hover,

@@ -764,8 +764,9 @@ jQuery(function ($) {
  
  
  
-jQuery(function ($) {
-    (function ($){
+
+jQuery(function ($){
+	function sarvakaGallery() {
       $('.shanti-gallery').imagesLoaded(function() {
         // Prepare layout options.
         var options = {
@@ -795,12 +796,17 @@ jQuery(function ($) {
 
         // Call the layout function.
         handler.wookmark(options);
+                
       });
-    })(jQuery);
-});
+	});
+})(jQuery);
 
- 
- 
+
+jQuery(function ($){    
+    $('ul.ss-full-tabs > li:last').find('a').on('click', function () {
+    	$.sarvakaGallery();
+    }); 
+});  
  
  
 
