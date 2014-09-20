@@ -1190,13 +1190,18 @@ border-bottom:1px solid #ccc;
 }
 .node-video .popover-content .parents{ }
 .node-video .popover-content .parents strong{ color: #454fa4; font-size:0.75em; margin-top:-0.06em; display:inline; float:left; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.node-video .popover-content .parents strong:after{ ":" margin-right:1px;}
+.node-video .popover-content .parents strong:after{ content:":"; margin-right:1px;}
 
-.node-video .popover-content .parents ul{ display:inline;margin:0;padding:0;}
-.node-video .popover-content .parents ul li{ font-size:0.75em; line-height:1.06em; float:left; display:inline;padding:0;padding:0;margin:0;word-break:break-all;}
+.node-video .popover-content .parents ul{ display:inline;list-style:none;margin:0;padding:0;}
+.node-video .popover-content .parents ul li{ font-size:0.75em; line-height:1.18em; float:left; display:inline;padding:0;padding:0;margin:0;word-break:break-all;}
 .node-video .popover-content .parents ul li a{ font-size:1em; float:left; display:inline;margin:0;padding:0 1px;white-space:normal;word-break:break-all;}
 
-.node-video .popover-content div.popover-footer{ float:left;}
+.node-video .popover-content .popover-footer{ float:left; margin:10px -15px; width:100%;}
+.node-video .popover-content .popover-footer ul{ list-style: none; margin:5px 0; padding:0;}
+.node-video .popover-content .popover-footer ul li{ }
+.node-video .popover-content .popover-footer ul li a{ }
+
+
 
 
 /*--- Large Tabs Video View ---*/
