@@ -766,6 +766,7 @@ jQuery(function ($) {
  
 
 jQuery(function ($){
+	function sarvakaGallery() {
       $('.shanti-gallery').imagesLoaded(function() {
         // Prepare layout options.
         var options = {
@@ -797,13 +798,14 @@ jQuery(function ($){
         handler.wookmark(options);
                 
       });
+	});
 })(jQuery);
 
 
 jQuery(function ($){    
-        $('.node-video ul.ss-full-tabs > li:last').on('click', function () {
-        	handler.wookmark(options);
-        }); 
+    $('ul.ss-full-tabs > li:last').find('a').on('click', function () {
+    	$.sarvakaGallery();
+    }); 
 });  
  
  
