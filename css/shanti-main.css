@@ -1059,9 +1059,9 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .fivestar-static-form-item .form-item .description{ padding-left:0;}
 
-.fivestar-average-stars .cancel a{ color:#777; font-size:75%; font-family:'shanticon'; background-image: none !important;}
-.fivestar-average-stars .cancel a:hover{ color:red;  background-image: none !important;}
-.fivestar-average-stars .cancel a:before{ content: "\e60f";}
+.fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon'; background-image: none !important;}
+.fivestar-basic div.fivestar-widget .cancel a:hover{ color:red;  background-image: none !important;}
+.fivestar-basic div.fivestar-widget .cancel a:before{ content: "\e60f";}
 
 
  
@@ -1104,7 +1104,7 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 	font-family: 'Glyphicons Halflings';
 	content: '\002b'; /*-- plus icon */
 	position:relative;
-	top:-1px;
+	top:0;
 	color: #5a65d1;
 }
 
@@ -1211,9 +1211,9 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 /*--- Large Tabs Video View ---*/
-.ss-full-tabs.nav-tabs{ margin: 1.12em .32em 1.5em; border:none;}
+.ss-full-tabs.nav-tabs{ margin: 1.12em .32em 2.5em; border:none;}
 
-.ss-full-tabs.nav-tabs>li{ width:50%; margin:0; background:#fff; border:none; 	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+.ss-full-tabs.nav-tabs>li{ width:50%; margin:0; background:#fff; border:none; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	font-size:1em;
 	text-align: center;
 	font-weight:bold;
@@ -1228,20 +1228,15 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .ss-full-tabs.nav-tabs>li.active>a:focus{ border:none; color:#fff;}
 
 
-.ss-full-tabs li.active{ /*--- background: see custom local color css file ---*/ }
+.ss-full-tabs li.active{ background:#32ccca; /*--- reference: custom local color css file ---*/ }
 
 .ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca; font-family:'shanticon'; font-size:2em; content: "\e646"; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em; border: none;}
 
-
-.ss-full-tabs.nav-tabs>li>a{ 
-	border: none;
-	border-radius: 0;
-	margin:0;
-	color:#777;
-	display:block; 
-}
+.ss-full-tabs.nav-tabs>li>a{ border:none;border-radius: 0;margin:0;color:#777;display:block; }
 .ss-full-tabs.nav-tabs>li>a:hover{ color:#555; border:none; margin:0;}
 
+.btn-group-details { float:right;position:relative;top:-20px;}
+.btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.75em; font-weight:bold; font-weight: 700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 /*----------------------------*/
 /*--- END video view page --*/
@@ -2172,7 +2167,7 @@ table.features td.sign{ font-size:0.75em;}
 	.menu-toggle{ display:inline-block; /* -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); */ border-collapse: separate; position:relative; z-index:300;}   
 	/*.navbar-default .navbar-nav>li>a{ background:transparent; }*/
 	.navbar-default h1 i.icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
-  h1.navbar-header a span{ font-size:0.83em; position:relative; top:-5px; }	 
+  h1.navbar-header a span{ font-size:0.75em; position:relative; top:-5px; }	 
 
 	.collections h4 {
 		color:#eee;
@@ -2199,7 +2194,7 @@ table.features td.sign{ font-size:0.75em;}
 
 @media screen and (min-width: 992px) {
 
-  h1.navbar-header a span{ font-size:0.93em; position:relative; top:-5px; }
+  /* h1.navbar-header a span{ font-size:0.93em; position:relative; top:-5px; } */
 
   .main-content .content-section { /*max-width: 67em;*/ }
     

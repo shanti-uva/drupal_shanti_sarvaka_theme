@@ -268,6 +268,9 @@
             ?>
           </div> <!-- End of #related --> 
           <div class="tab-pane active" id="details">
+          	<div class="toggle-accordions">
+          		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand"> Expand All</button>
+          	</div>
           <?php
             print render($content);
           ?>

@@ -265,9 +265,9 @@
             ?>
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
-          	<div class="expcoll-btns">
-          		<button type="button" class="btn btn-default btn-sm expand"> Expand All</button>
-          		<button type="button" class="btn btn-default btn-sm collapse"> Collapse All</button>
+          	<div class="btn-group-details">
+          		<a href="/node/185/edit" class="btn btn-default btn-sm btn-edit-details">Edit</a>
+          		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand">Expand All</button>
           	</div>
           <?php
             print render($content);
