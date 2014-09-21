@@ -802,7 +802,7 @@ jQuery(function ($){
 
 
 jQuery(function ($){    
-    $('ul.ss-full-tabs > li:last').find('a').on('click', function () {
+    $('.ss-full-tabs > .rel-video').on('click', function () {
     	$.imagesLoaded();
     }); 
 });  
