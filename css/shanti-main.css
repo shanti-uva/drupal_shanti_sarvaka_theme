@@ -153,7 +153,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar-default h1 a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-default h1 a.navbar-brand:hover{ color:#222;}
 .navbar-default h1 em{ display:none;}
-.navbar-default h1 a span{ font-size:0.93em;line-height:1em;height:1em;padding: 0 0 0 18px;position:relative; top:-7px;white-space:nowrap;}  
+.navbar-default h1 a span{ font-size:0.75em;line-height:1em;height:1em;padding: 0 0 0 18px;position:relative; top:-7px;white-space:nowrap;}  
 
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; float:right; padding:0; border-left:1px solid #d0d0d0;}
@@ -1452,9 +1452,9 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.primary li,
 .main-content header ul.tabs.secondary li{ /*height:1.75em; line-height:1.75em;*/ position:relative;}
 .main-content header ul.tabs.primary li a,
-.main-content header ul.tabs.secondary li a{ color:#555; background:rgba(255,255,255, 0.4000); font-size:80%; font-weight:bold; font-weight:700; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em 0.38em; margin-right:.12em; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content header ul.tabs.secondary li a{ color:#555; background:rgba(255,255,255, 0.7000); font-size:80%; font-weight:bold; font-weight:700; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em 0.38em; margin-right:.12em; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .main-content header ul.tabs.primary li a:hover,
-.main-content header ul.tabs.secondary li a:hover{ background:rgba(255,255,255, 0.7000); color:#555;}
+.main-content header ul.tabs.secondary li a:hover{ background:rgba(255,255,255, 0.4000); color:#555;}
 .main-content header ul.tabs.primary li a:active,
 .main-content header ul.tabs.secondary li a:active{ background:rgba(255,255,255, 0.9000); color:#555;}
 .main-content header ul.tabs.primary li.active a,
@@ -1464,7 +1464,7 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.primary li.active a:after,
 .main-content header ul.tabs.secondary li.active a:after{ font-size:2em; font-family:'shanticon'; content: "\e646"; color:#555; position:absolute; bottom:-0.56em; right:50%; margin-right:-0.5em;}
 
-.main-content header ul.tabs.secondary{ position:relative; bottom:0; line-height:1.5em;height:1.75em; float:left;}
+.main-content header ul.tabs.secondary{ position:relative; bottom:-2px; line-height:1.5em; height:1.75em; float:left;}
 .main-content header ul.secondary li{ border-right:none; padding:0; line-height:1.5em; height:1.75em;}
 .main-content header ul.tabs.secondary li a{ color:#444; background:rgba(255,255,255, .7000); font-weight:normal; line-height:1.25em; height:1.75em; float:left; padding:0.38em 1em; margin-right:1px;}
 .main-content header ul.tabs.secondary li a:hover{ color:#444; background:rgba(255,255,255, .4000);}
@@ -1473,7 +1473,7 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.secondary li.active a:after{ content:"";}
 .main-content header ul.tabs.secondary li.active a:hover{ color:#666; background:#f7f7f7;}
 
-ul.primary li a{ margin-right:.25em;}
+/*ul.primary li a{ margin-right:.25em;}*/
 
 
 
