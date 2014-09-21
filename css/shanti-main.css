@@ -1232,12 +1232,12 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 .ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca; font-family:'shanticon'; font-size:2em; content: "\e646"; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em; border: none;}
 
-.ss-full-tabs.nav-tabs>li>a{ border:none;border-radius: 0;margin:0;color:#777;display:block; }
-.ss-full-tabs.nav-tabs>li>a:hover{ color:#555; border:none; margin:0;}
+.ss-full-tabs.nav-tabs>li>a{ border:none;border-radius: 0;margin:0;color:#999;display:block; }
+.ss-full-tabs.nav-tabs>li>a:hover{ color:#777; border:none; margin:0;}
 
-.btn-group-details { float:right;position:relative;top:-20px;}
+.btn-group-details { float:right;position:relative;top:-35px;}
 .btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-weight: 700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-
+.btn-group-details a.btn.btn-sm{ width:10em; font-weight:bold; font-weight: 700;}
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/

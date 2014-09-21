@@ -139,7 +139,7 @@
 
 <?php // Full Mode Display ?>
 <?php else: ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
 
@@ -255,7 +255,7 @@
       <div>
         <ul class="nav nav-tabs ss-full-tabs" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>
-          <li class="rel-video"><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Videos'); ?></a></li>
+          <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Audios'); ?></a></li>
         </ul>
         
         <!-- Tab panes -->
@@ -271,7 +271,8 @@
           </div> <!-- End of #related --> 
           <div class="tab-pane active" id="details">
           	<div class="toggle-accordions">
-          		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand"> Expand All</button>
+          		<button type="button" onClick="location.href='/node/185/edit'" value="click here" class="btn btn-default btn-sm btn-edit-details">Edit</button>
+          		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand">Expand All</button>
           	</div>
           <?php
             print render($content);
