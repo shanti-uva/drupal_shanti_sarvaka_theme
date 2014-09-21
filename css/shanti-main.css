@@ -1039,7 +1039,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avinfo .trans-btn{ padding-bottom:5px;}
 .avinfo .btn.btn-primary.btn-icon{ margin:0 0 5px;}
 
-.avdesc{ margin: 0px; max-width:800px;}
+.avdesc{ margin: 5px 0 0; max-width:800px;}
 
 .avdesc > div + div{ margin-left:165px;}
 
@@ -1236,7 +1236,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .ss-full-tabs.nav-tabs>li>a:hover{ color:#555; border:none; margin:0;}
 
 .btn-group-details { float:right;position:relative;top:-20px;}
-.btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.75em; font-weight:bold; font-weight: 700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-weight: 700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 
 /*----------------------------*/
 /*--- END video view page --*/

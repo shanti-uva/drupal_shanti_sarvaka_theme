@@ -156,7 +156,7 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    
+  <div class="mms-wrap-left">  
     <?php
       //dpm($content);
       // We hide the comments and links now so that we can render them later.
@@ -249,7 +249,9 @@
 		        </div>
 		      <?php endif; ?>
 	      </div>
+	    </div><!--- End mms-wrap-left -->	    
       </div> <!-- End of avdesc -->
+            
       <div>
         <ul class="nav nav-tabs ss-full-tabs" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>
@@ -278,7 +280,6 @@
         </div>
       </div>
   </div>
-  <div class="clearfix"></div>
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
