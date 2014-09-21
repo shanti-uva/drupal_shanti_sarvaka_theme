@@ -1048,20 +1048,20 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avduration::after, 
 .avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;}
 
-.fivestar-basic div.fivestar-widget-static .star,
-.fivestar-basic div.fivestar-widget .star a,
-.fivestar-basic div.fivestar-widget-static .star span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none;}
-.fivestar-basic div.fivestar-widget .star a:hover{ color:#5a65d1; border-bottom:none;}
-.fivestar-basic div.fivestar-widget .star a:before,
-.fivestar-basic div.fivestar-widget-static .star span:before{ content: "\f005"; background-image: none !important;}
-.fivestar-basic div.fivestar-widget .star.on a,
-.fivestar-basic div.fivestar-widget-static .star span.on{ color:#555; background-image: none !important;}
+.fivestar-average-stars .star,
+.fivestar-average-stars .star a,
+.fivestar-average-stars .star span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none;}
+.fivestar-average-stars .star a:hover{ color:#5a65d1; border-bottom:none;}
+.fivestar-average-stars .star a:before,
+.fivestar-average-stars .star span:before{ content: "\f005"; background-image: none !important;}
+.fivestar-average-stars .star.on a,
+.fivestar-average-stars .star span.on{ color:#555; background-image: none !important;}
 
 .fivestar-static-form-item .form-item .description{ padding-left:0;}
 
-.fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon'; background-image: none !important;}
-.fivestar-basic div.fivestar-widget .cancel a:hover{ color:red;  background-image: none !important;}
-.fivestar-basic div.fivestar-widget .cancel a:before{ content: "\e60f";}
+.fivestar-average-stars .cancel a{ color:#777; font-size:75%; font-family:'shanticon'; background-image: none !important;}
+.fivestar-average-stars .cancel a:hover{ color:red;  background-image: none !important;}
+.fivestar-average-stars .cancel a:before{ content: "\e60f";}
 
 
  
@@ -1443,22 +1443,22 @@ form table td.label{ padding-top:0.68em !important;}
 
 /*--- drupal edit tabs ---*/
 .main-content header.has-tabs > div{ height:90px;}
-.main-content header ul.tabs.primary{  float:right; position:relative; bottom:-7px; z-index:2;}
+.main-content header ul.tabs.primary{  float:right; position:relative; bottom:-4px; z-index:2;}
 .main-content header.has-tabs ul.tabs.primary, 
 .logged-in .main-content header ul.tabs.primary{ right:25px;} 
 .logged-in .main-content header ul.tabs.secondary{ left:25px;}
 .main-content header ul.tabs.primary,
 .main-content header ul.tabs.secondary{ display:inline; border:none; margin:0;}
 .main-content header ul.tabs.primary li,
-.main-content header ul.tabs.secondary li{ /*height:1.75em; line-height:1.75em;*/ position:relative;}
+.main-content header ul.tabs.secondary li{ height:1.75em; line-height:1.75em; position:relative;}
 .main-content header ul.tabs.primary li a,
-.main-content header ul.tabs.secondary li a{ color:#555; background:rgba(255,255,255, 0.7000); font-size:80%;  margin-right:.12em; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em 0.44em; text-transform:uppercase; font-weight:bold; font-weight:700;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content header ul.tabs.secondary li a{ color:#555; background:rgba(255,255,255, 0.7000); font-size:80%;  margin-right:.12em; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em 0.38em; text-transform:uppercase; font-weight:bold; font-weight:700;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
 .main-content header ul.tabs.primary li a:hover,
-.main-content header ul.tabs.secondary li a:hover{ background:rgba(255,255,255, 0.4000); color:#555;}
+.main-content header ul.tabs.secondary li a:hover{ background:rgba(255,255,255, 0.4000);}
 .main-content header ul.tabs.primary li a:active,
-.main-content header ul.tabs.secondary li a:active{ background:rgba(255,255,255, 0.9000); color:#555;}
+.main-content header ul.tabs.secondary li a:active{ background:rgba(255,255,255, 0.9000);}
 .main-content header ul.tabs.primary li.active a,
-.main-content header ul.tabs.secondary li.active a{ color:#fff; background:#555; position:relative; bottom:-1px;}
+.main-content header ul.tabs.secondary li.active a{ color:#fff; background:#555; position:relative; bottom:0;}
 .main-content header ul.tabs.primary li.active a:hover,
 .main-content header ul.tabs.secondary li.active a:hover{ color:#fff; background:#555;}
 .main-content header ul.tabs.primary li.active a:after,
