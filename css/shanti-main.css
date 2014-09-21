@@ -1210,7 +1210,13 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 /*--- Large Tabs Video View ---*/
 .ss-full-tabs.nav-tabs{ margin: 1.12em .32em 1.5em; border:none;}
-.ss-full-tabs.nav-tabs>li{ margin:0; background:#fff; border:none;}
+.ss-full-tabs.nav-tabs>li{ margin:0; background:#fff; border:none; 	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size:1em;
+	text-align: center;
+	font-weight:bold;
+	font-weight: 700;
+	color: #aaa;
+}
 .ss-full-tabs.nav-tabs>li:hover{ background:#fff; border:none; margin:0; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .ss-full-tabs.nav-tabs>li.active,
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
@@ -1220,13 +1226,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .ss-full-tabs.nav-tabs>li.active>a:focus{ border:none; color:#fff;}
 
 .ss-full-tabs.nav-tabs>ul>li>a{ 
-	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	font-size:1em;
 	border: none;
-	text-align: center;
-	font-weight:bold;
-	font-weight: 700;
-	color: #aaa;
 	border-radius: 0;
 	margin:0;
 }
