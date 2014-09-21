@@ -249,7 +249,7 @@
 	      </div>
       </div> <!-- End of avdesc -->
       <div>
-        <ul class="nav nav-tabs ss-full-tabs" role="tablist">
+        <ul class="nav nav-tabs nav-justified ss-full-tabs" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>          
           <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Videos'); ?></a></li>
         </ul>        

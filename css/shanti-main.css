@@ -1209,20 +1209,14 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .node-video .popover-content .popover-footer ul li:active a{ color:#fff;}
 
 /*--- Large Tabs Video View ---*/
-ul.ss-full-tabs{ margin: 1.12em .32em 1.5em;}
-ul.ss-full-tabs li{ 
-	width: 50%;
-	background: white; 
-	position:relative;
-	font-family:'shanticon';
+.ss-full-tabs.nav-tabs{ margin: 1.12em .32em 1.5em;}
+.ss-full-tabs.nav-tabs>li{ 
 	-webkit-transition: all 1s ease; 
 	-moz-transition: all 1s ease; 
 	transition: all 1s ease;
-	color:#32ccca;
+	margin:0;
 }
-ul.ss-full-tabs li.active{ /*--- background: see custom local color css file ---*/ }
-ul.ss-full-tabs li.active:before{ font-size:2em; content: "\e646"; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em !important; border: none !important;}
-ul.ss-full-tabs li a{ 
+.ss-full-tabs.nav-tabs>li a{ 
 	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	font-size:1em;
 	border: none;
@@ -1232,20 +1226,19 @@ ul.ss-full-tabs li a{
 	color: #aaa;
 	border-radius: 0;
 }
-ul.ss-full-tabs li a:hover{ color:#555; border: none;}
-ul.ss-full-tabs li.active a{ 
-	color:#fff !important;
-}
-ul.ss-full-tabs>li>a:hover, 
-ul.ss-full-tabs>li.active>a:hover{ border: none;}
-ul.ss-full-tabs li.active a:after{ content: " ";border: none;margin:0 !important;position:static;}
-ul.ss-full-tabs li.active a:before{ content:" "; border: none;margin:0 !important;position:static;}
+.ss-full-tabs.nav-tabs>li a:hover{ color:#555; border: none;}
 
-ul.ss-full-tabs > li.active > a:after{ border:none; margin:0 !important;}
+.ss-full-tabs.nav-tabs>li.active>a, 
+.ss-full-tabs.nav-tabs>li.active>a:hover, 
+.ss-full-tabs.nav-tabs>li.active>a:focus{ border:none; background:#32ccca; color:#fff;}
 
-ul.ss-full-tabs.nav-tabs{ border:none;}
-ul.ss-full-tabs.nav-tabs>ul>li>a{ margin:0;}
-/** End of Tabs section **/
+.ss-full-tabs li.active{ /*--- background: see custom local color css file ---*/ }
+
+.ss-full-tabs.nav-tabs{ border:none;}
+.ss-full-tabs.nav-tabs>ul>li>a{ margin:0;}
+
+.ss-full-tabs.nav-tabs>li.active:before{ font-family:'shanticon'; font-size:2em; content: "\e646"; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em; border: none;}
+
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/
