@@ -1217,7 +1217,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	font-weight: 700;
 	color: #aaa;
 }
-.ss-full-tabs.nav-tabs>li:hover{ background:#fff; border:none; margin:0; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.ss-full-tabs.nav-tabs>li:hover{ background:#fff; border:none !important; margin:0 !important; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .ss-full-tabs.nav-tabs>li.active,
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
 
@@ -1230,7 +1230,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	border-radius: 0;
 	margin:0;
 }
-.ss-full-tabs.nav-tabs>li a:hover{ color:#555; border:none; margin:0;}
+.ss-full-tabs.nav-tabs>li a:hover{ color:#555; border:none !important; margin:0 !important;}
 
 .ss-full-tabs li.active{ /*--- background: see custom local color css file ---*/ }
 
