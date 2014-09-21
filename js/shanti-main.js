@@ -677,7 +677,7 @@
 	  $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
 	  $.fn.popover.Constructor.DEFAULTS.placement = 'right';
 	  $.fn.popover.Constructor.DEFAULTS.html = true;
-	  $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 5000 };
+	  $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 500000 };
 
 		$('span.popover-link').each(function() {
 			var content = '<div>' + $(this).next('div.popover').html() + '</div>';

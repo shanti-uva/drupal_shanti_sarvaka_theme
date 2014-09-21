@@ -1182,7 +1182,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .node-video .popover{ border:none;padding:0;}
 
 /*---- popover content area ----*/
-.node-video .popover-content h5{ font-size:1em; text-transform:capitalize; font-weight:bold; margin:0; padding:0; line-height:2.5em; border-bottom:1px solid #ccc;}
+.node-video .popover-content h5{ font-size:1.06em; text-transform:capitalize; font-weight:bold; margin:0; padding:0; line-height:2.5em; border-bottom:1px solid #ccc;}
 .node-video .popover-content p{ font-size: 0.88em; margin-top: 10px; color: #333;}
 
 .node-video .popover-content .parents strong{ color: #454fa4; font-size:0.75em; margin-top:-0.25em; display:inline; float:left; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
