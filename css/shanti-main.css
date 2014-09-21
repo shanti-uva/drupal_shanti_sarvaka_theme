@@ -1443,12 +1443,12 @@ form table td.label{ padding-top:0.68em !important;}
 
 /*--- drupal edit tabs ---*/
 .main-content header.has-tabs > div{ height:90px;}
-.main-content header ul.tabs.primary{ right:50px; position:absolute;}
+.main-content header ul.tabs.primary{  float:right; position:relative; top:10px;}
 .main-content header.has-tabs ul.tabs.primary, 
 .logged-in .main-content header ul.tabs.primary{ right:25px;} 
 .logged-in .main-content header ul.tabs.secondary{ left:25px;}
 .main-content header ul.tabs.primary,
-.main-content header ul.tabs.secondary{ display:inline; border:none; position:absolute; bottom:0.18em; z-index:2; float:left;margin:0;}
+.main-content header ul.tabs.secondary{ display:inline; border:none; position:absolute; bottom:0.18em; z-index:2; margin:0;}
 .main-content header ul.tabs.primary li,
 .main-content header ul.tabs.secondary li{ /*height:1.75em; line-height:1.75em;*/ position:relative;}
 .main-content header ul.tabs.primary li a,
@@ -1464,7 +1464,7 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.primary li.active a:after,
 .main-content header ul.tabs.secondary li.active a:after{ font-size:2em; font-family:'shanticon'; content: "\e646"; color:#555; position:absolute; bottom:-0.56em; right:50%; margin-right:-0.5em;}
 
-.main-content header ul.tabs.secondary{ position:absolute; bottom:.25em;line-height:1.5em;height:1.75em;}
+.main-content header ul.tabs.secondary{ position:absolute; bottom:.25em;line-height:1.5em;height:1.75em; float:left;}
 .main-content header ul.secondary li{ border-right:none; padding:0; line-height:1.5em; height:1.75em;}
 .main-content header ul.tabs.secondary li a{ color:#444; background:rgba(255,255,255, .7000); font-weight:normal; line-height:1.12em; height:1.75em; float:left; padding:0.38em 1em; margin-right:1px;}
 .main-content header ul.tabs.secondary li a:hover{ color:#444; background:rgba(255,255,255, .4000);}
@@ -1643,13 +1643,13 @@ button.field-add-more-submit{ margin-left:1em;}
 
 
 /** Sidebars **/
-.sidebar{ z-index:1;}	
+.sidebar{ /*z-index:1;*/}	
 #sidebar-second{ 
 	background: #fff;
 	max-width:24em;
 	padding:0 0 0 .32em;
-	z-index:1;
 }
+.front #sidebar-second{ z-index:1; } /* hide carousel nav arrows */
 #sidebar-second ul{ 
 	list-style: square inside none;
 	-webkit-margin-before: 1em;
