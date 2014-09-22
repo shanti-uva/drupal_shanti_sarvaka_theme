@@ -50,7 +50,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 function shanti_sarvaka_preprocess_page(&$variables) {
 	//dpm($variables, 'vars in preprocess page');
   global $base_url, $base_path, $base_theme_info;
-  $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
+  $base = $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/'; // took out $base_url .  from beginning as not necessary, ndg (2019-09-22)
   $variables['breadcrumb'] = menu_get_active_breadcrumb();
   $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
   $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
