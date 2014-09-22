@@ -39,7 +39,7 @@ i{ font-style:normal;}
 ::selection{background: #999;text-shadow: none;color: white;}
 ::moz-selection{background: #999;text-shadow: none;color: white;}
 .container{ width:100%; background:#eee;}
-.container:after{ clear:both !important;}
+.container:after{ clear:both;}
 .main-wrapper{ position:relative; min-height:54em;}
 .main-content {
   color: #333;
@@ -58,13 +58,13 @@ i{ font-style:normal;}
 .main-content div:nth-child(2) a{ border-bottom:3px solid transparent;	-webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s;}
 .main-content div:nth-child(2) a:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
 .main-content div:nth-child(2) a:active{ border-bottom-color:transparent;}
-.main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-1%;}
+.main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
 .main-content .show-more a{ border-bottom:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-weight:bold;  font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .main-content .show-more a:hover{ border-bottom-color: rgba(90, 101, 209, .3000) !important;}
 .main-content .show-more a:active{ border-bottom-color:transparent !important;}
 .main-content .show-more:after{ 	font-size: 0.75em;line-height: 0.75em;font-weight:normal;padding-left:0.25em;font-family: 'Glyphicons Halflings';content: '\002b'; /*-- plus icon */position:relative;top:-1px;color: #5a65d1;}
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal;  font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .main-content h5, .main-content h6{ font-weight:bold; }
 
 .content-section iframe {border: none;}
@@ -123,7 +123,7 @@ input[type='radio']:checked + label,
 label.option div.checked { /* background: url(../images/selected_radio_btn.png) no-repeat;background-position: left center; */}
 input[type='text'] { -webkit-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);box-shadow: inset 0px 1px 7px -4px rgba(0,0,0,1);border-collapse:separate;font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:normal;}
 label.option div div { background: none;}
-label { font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:normal; }
+label { font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:normal;}
 option:hover,
 option:checked,
 option:checked:hover,
@@ -138,7 +138,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
-.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-weight:normal; font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;}
+.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;}
 .navbar-default h1 a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-default h1 a.navbar-brand:hover{ color:#222;}
 .navbar-default h1 em{ display:none;}
@@ -158,7 +158,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li>a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px;margin:0;padding:15px 0 0 15px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>li>a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px;margin:0;padding:15px 0 0 15px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:bold; }
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>li>a:hover{ background:#f0f0f0;color:#444;}
 .navbar-default .navbar-nav>li:last-child>a{ padding-left:15px;padding-right:40px;}
@@ -176,7 +176,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar-default .navbar-nav li>a>i.shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
 
 .navbar-default .menu-explore{ border-left:1px solid #ddd; display:inline;float:right;}
-.navbar-default .menu-explore a{ color:#666; display:inline-block; font-weight:normal;font-size:0.88em; line-height:1em; height:50px; margin:0;padding:14px 20px 0 16px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;}
+.navbar-default .menu-explore a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px; margin:0;padding:14px 20px 0 16px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;}
 .navbar-default .menu-explore .open a,
 .navbar-default .menu-explore a:hover{ color:#555; background:#f0f0f0; text-decoration:none;}
 .navbar-default .menu-explore i.icon{ font-size:17px; position:relative;left:6px;top:2px;}
@@ -222,7 +222,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 
 /*--- BEGIN collections panel ---*/
-.collections { background: #4c4b51;color: #fff;text-transform: uppercase;padding: 0 0 0.62em; font-weight: bold; border-bottom:1px solid #777;white-space:nowrap;border:8px solid #39373f;margin-left: 0;margin-right: 0;overflow: auto;position: relative;display:none;}
+.collections { background: #4c4b51;color: #fff;text-transform: uppercase;padding: 0 0 0.62em; font-weight: bold;border-bottom:1px solid #777;white-space:nowrap;border:8px solid #39373f;margin-left: 0;margin-right: 0;overflow: auto;position: relative;display:none;}
 .collections div:first-child{ padding-bottom:10px;}
 .collections .row { margin:0;}
 .collections ul { margin: 0 auto;text-align:center;list-style-type: none;margin-bottom:10px !important;}
@@ -284,6 +284,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 }
 .breadwrap .breadcrumb li:first-child{
 	font-weight:bold;
+  
   font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
   font-size:1.32em;
   height: 1.75em;
@@ -437,6 +438,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 	transition: background-color 200ms;
 	font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; 
 	font-weight:bold; 
+	
 }
 .content-resources ul.nav-pills li a,
 .content-resources ul.nav-pills li a:hover {
@@ -479,7 +481,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*---- top-menu wrapper ----*/
 #menu{ width:250px;position:absolute;z-index:200;right:0;top:50px;border:none;padding:0;overflow:visible;}
 #menu h3,
-#menu h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0; font-weight:normal; font-style:italic;text-indent:0.75em;font-size:1.56em; line-height:2.68em; height:2.63em;position:relative; z-index:200;vertical-align:middle;padding:0; margin:0;  -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; overflow:visible; font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;}
+#menu h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; font-weight:normal; font-style:italic;text-indent:0.75em;font-size:1.56em; line-height:2.68em; height:2.63em;position:relative; z-index:200;vertical-align:middle;padding:0; margin:0;  -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; /* for ie with box-shadow */overflow:visible;}
 #menu h2 a{ cursor:default; background:#fff; color:#444;display:block;font-size:1.56em; font-weight:normal; font-style:italic;line-height:2.75em; height:2.63em; padding:0; margin:0; vertical-align:middle;}
 #menu a.link-blocker{ cursor:default; position:absolute; top:0; right:0; z-index:99999; width:100%;height:54px; background:transparent;} /* prevent clicking the search button through the h3 */
 #menu .multilevelpushmenu_wrapper ul{ background:#fff;}
@@ -1201,7 +1203,6 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	font-size:1em;
 	text-align: center;
 	font-weight:bold;
-	font-weight: 700;
 	-webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;
 }
 .ss-full-tabs.nav-tabs>li:hover{ background:#fff; border:none; margin:0;}
@@ -1221,7 +1222,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .ss-full-tabs.nav-tabs>li>a:hover{ color:#777; border:none; margin:0;}
 
 .btn-group-details { float:right;position:relative;top:-20px;}
-.btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-weight: 700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+.btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/
@@ -1449,7 +1450,7 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.secondary li a:hover{ color:#444; background:rgba(255,255,255, .4000);}
 .main-content header ul.tabs.secondary li.active a{ color:#666; background:#f7f7f7;  font-weight:normal; padding:0.38em 1.25em 0.38em 2em; position:relative; bottom:0;}
 .main-content header ul.tabs.secondary li.active a:before{ font-size:1.12em; color:#666; font-family:'shanticon'; content: '\e643'; position:absolute; left:0.63em; top:0.32em; margin:0;}
-.main-content header ul.tabs.secondary li.active a:after{ content:'';}
+.main-content header ul.tabs.secondary li.active a:after{ content:' ';}
 .main-content header ul.tabs.secondary li.active a:hover{ color:#666; background:#f7f7f7;}
 
 /*ul.primary li a{ margin-right:.25em;}*/

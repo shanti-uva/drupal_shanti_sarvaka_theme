@@ -790,8 +790,7 @@ jQuery(function ($) {
  
 
 jQuery(function ($){
-    $('.shanti-gallery').imagesLoaded(function() {
-        
+    $('.shanti-gallery').imagesLoaded(function() {        
         // Prepare layout options.
         var options = {
           itemWidth: 160, // Optional min width of a grid item
@@ -823,7 +822,6 @@ jQuery(function ($){
                 
     });
 });
-
 
 jQuery(function ($){    
     $('.ss-full-tabs > .rel-video').on('click', function () {

@@ -19,7 +19,7 @@
 .carouseldiv .header p{ margin-bottom: 0.18em;}
 .carouseldiv .header p .show-more{ font-size:85%; float:right; margin-right:2.5em; position:relative; top:0.25em;}
 .carouseldiv .header .title{ font-style:italic;font-weight:bold;font-size:120%;}
-.carousel .caption .title h3{ font-weight:normal;font-weight: 500;margin: 0 0 0.63em;font-size:1.63em;}
+.carousel .caption .title h3{ font-weight:normal;margin: 0 0 0.63em;font-size:1.63em;}
 .carousel .caption .title h3 a{ color: #404040;}
 .carousel .caption .byline{ color: #777;font-style: italic;margin: -0.5em 0 .63em 0;}
 .carousel .caption .description p{}
