@@ -27,7 +27,7 @@
 /** End of Carousel Styles **/
 
 /*--- view collections page ---*/
-.view-collections .views-exposed-form label{ margin-bottom:0;font-size:0.82em;padding-left:.44em;font-weight:normal;font-weight:500;text-transform: uppercase;/* font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; */}
+.view-collections .views-exposed-form label{ margin-bottom:0;font-size:0.82em;padding-left:.44em;font-weight:normal;text-transform: uppercase;/* font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; */}
 .view-collections .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .view-collections .views-exposed-form .views-exposed-widget{ padding-top:0;padding-bottom: 0.12em;}
 .view-collections .views-exposed-form input.form-control{ width:12em;	}
@@ -91,7 +91,7 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 
 .field-label-span { /* temp */
-	font-weight: bold;font-weight:700;
+	font-weight: bold;
 }
 
 
@@ -149,7 +149,6 @@ a.hide-annot{
 	text-transform:uppercase;
 	font-family:sans-serif;
 	font-weight:bold;
-	font-weight:700;
 	margin-left:-0.5em;
 }
 a.show-annot:before, 
