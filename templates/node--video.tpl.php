@@ -268,7 +268,7 @@
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
           	<div class="btn-group-details">
-          		<button type="button" onClick="location.href='/node/185/edit'" value="click here" class="btn btn-default btn-sm btn-edit-details">Edit</button>
+          		<button type="button" onClick="location.href='/node/185/edit'" value="click here" class="btn btn-default btn-sm btn-edit-details">Edit Details</button>
           		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand">Expand All</button>
           	</div>
           <?php

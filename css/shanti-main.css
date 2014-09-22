@@ -41,7 +41,7 @@
 }
 
 html{ -webkit-font-smoothing: antialiased; overflow-y:scroll;}
-body{ font-family: "droidserif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-weight:normal; overflow: hidden;}
+body{ font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; font-weight:normal; overflow: hidden;}
 body .wrap-all{ position:relative;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline: 0 !important; /* outline: -2px auto -webkit-focus-ring-color !important; */}
@@ -70,12 +70,12 @@ i{ font-style:normal;}
 .main-content div:nth-child(2) a:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
 .main-content div:nth-child(2) a:active{ border-bottom-color:transparent;}
 .main-content .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-1%;}
-.main-content .show-more a{ border-bottom:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content .show-more a{ border-bottom:3px solid transparent; -webkit-transition: border 0.2s ease 0s; transition: border 0.2s ease 0s; font-weight:bold; font-weight:700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .main-content .show-more a:hover{ border-bottom-color: rgba(90, 101, 209, .3000) !important;}
 .main-content .show-more a:active{ border-bottom-color:transparent !important;}
 .main-content .show-more:after{ 	font-size: 0.75em;line-height: 0.75em;font-weight:normal;padding-left:0.25em;font-family: 'Glyphicons Halflings';content: '\002b'; /*-- plus icon */position:relative;top:-1px;color: #5a65d1;}
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:500; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{ color: #444; font-weight:normal; font-weight:500; font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .main-content h5, .main-content h6{ font-weight:bold; font-weight:700;}
 
 .content-section iframe {border: none;}
@@ -86,8 +86,8 @@ i{ font-style:normal;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 20px;padding-left:20px;}
 
 .dfn, .italic{ font-style:italic !important; }
-.sans-serif{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.serif{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+.sans-serif{ font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+.serif{ font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; }
 
 .element-invisible{ display:none;margin:0;padding:0;height:0;min-height:0;line-height:0;border:none;}
 
@@ -132,9 +132,9 @@ label.option div,
 label.option div.hover { margin-left: -15px;clear: none;padding: 5px 0 4px 15px;cursor: pointer; /* background: url(../images/default_radio_btn.png) no-repeat;background-position: left center; */}
 input[type='radio']:checked + label,
 label.option div.checked { /* background: url(../images/selected_radio_btn.png) no-repeat;background-position: left center; */}
-input[type="text"] { -webkit-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);box-shadow: inset 0px 1px 7px -4px rgba(0,0,0,1);border-collapse:separate;font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;}
+input[type='text'] { -webkit-box-shadow: inset 0px 2px 6px -4px rgba(0,0,0,1);box-shadow: inset 0px 1px 7px -4px rgba(0,0,0,1);border-collapse:separate;font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:normal;}
 label.option div div { background: none;}
-label { font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;}
+label { font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:normal;}
 option:hover,
 option:checked,
 option:checked:hover,
@@ -149,7 +149,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
-.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family: "droidserif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;}
 .navbar-default h1 a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-default h1 a.navbar-brand:hover{ color:#222;}
 .navbar-default h1 em{ display:none;}
@@ -160,7 +160,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
 .menu-icon a:hover{ text-decoration:none; background:#fff;}
 .menu-icon i{ padding:0; margin:0; color:#505050; font-size:2em; line-height:0.93em;}
-.menu-icon i:before{ content: "\e627";}
+.menu-icon i:before{ content: '\e627';}
 /* .menu-icon a:hover i:before{ color:#222;} */
 .menu-icon a:active i:before{ color:#555;}
 .menu-icon.show-topmenu a{ background:#39373f; color:#fff;}
@@ -169,7 +169,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li>a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px;margin:0;padding:15px 0 0 15px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:bold; font-weight:700;}
+.navbar-default .navbar-nav>li>a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px;margin:0;padding:15px 0 0 15px;background:#fff;-webkit-transition: background-color 0.2s ease 0s;transition: background-color 0.2s ease 0s;text-transform:uppercase;font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:bold; font-weight:700;}
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>li>a:hover{ background:#f0f0f0;color:#444;}
 .navbar-default .navbar-nav>li:last-child>a{ padding-left:15px;padding-right:40px;}
@@ -238,11 +238,11 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .collections .row { margin:0;}
 .collections ul { margin: 0 auto;text-align:center;list-style-type: none;margin-bottom:10px !important;}
 .collections ul li { margin: 0;float:left;line-height:4.5em;width:20%;}
-.collections ul li a { color: #aaa;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
+.collections ul li a { color: #aaa;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; }
 .collections ul li a:hover { text-decoration: none;color: #fff;}
 .collections ul .icon { color: #aaa;margin-right:8px;font-size:1.5em;position:relative;top:2px;}
 .collections ul li a:hover .icon{ color:#fff;}
-.collections h4 { color:#eee;text-align: center;margin: 10px 0 15px !important;letter-spacing: 0.32em;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
+.collections h4 { color:#eee;text-align: center;margin: 10px 0 15px !important;letter-spacing: 0.32em;font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; }
 .collections button { color: #ccc;background:transparent;background-image:none;width:1em;height:1em;padding:0;margin:0;border:none;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;font-size: 1.44em;position: absolute;top: 5px;right: 15px;cursor:pointer;display:inline-block;-webkit-transition: color 200ms;transition: color 200ms;font-family:'shanticon';}
 .collections button:hover { color:#eee;}
 /*--- END collections panel ---*/
@@ -273,7 +273,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 }
 .breadwrap .breadcrumb > li + li:before {
   /* override breadcrumb class from Bootstrap 3 */
-  content: " ";
+  content: ' ';
   padding: 0 5px;
   color: #999999;
   display: none;
@@ -288,7 +288,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   line-height:21px;
   height:21px;
   font-size: .75em;
-  font-family: "droidserif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   font-weight:normal;
   *zoom: 1;
   border:none;
@@ -296,7 +296,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .breadwrap .breadcrumb li:first-child{
 	font-weight:bold;
   font-weight:700;
-  font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
   font-size:1.32em;
   height: 1.75em;
   line-height:1.5em;
@@ -308,7 +308,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 }
 .breadwrap ol:before,
 .breadwrap ol:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
@@ -329,7 +329,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   text-shadow:0 0 1px rgba(50,50,50, 0.225);
 }
 .breadwrap .breadcrumb li:first-child{
-  font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
   font-weight:normal;
   font-size:1.32em;
   height: 1.75em;
@@ -376,7 +376,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 	display: inline-block;
 }
 .breadwrap ol li i:before{
-	content: "\f105";
+	content: '\f105';
   position:relative;
   top:0;
   left:0;
@@ -386,7 +386,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .breadwrap ol li:last-child i{ background:transparent;}
 .breadwrap ol li:last-child i:before,
 .breadwrap ol li:first-child i:before{
-	content: " ";
+	content: ' ';
 	display:none;
 	background: transparent;
 	width:0;
@@ -449,7 +449,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 	background:#fff;
 	-webkit-transition: background-color 200ms;
 	transition: background-color 200ms;
-	font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+	font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; 
 	font-weight:bold; 
 	font-weight:700;
 }
@@ -482,7 +482,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 	top:4px;
 }
 .content-resources ul.nav-pills li a i:before{ position:relative; top:0;}
-.content-resources ul li.maps a i:before { content: "\e61a"; margin-left:-2px;} /* temp */
+.content-resources ul li.maps a i:before { content: '\e61a'; margin-left:-2px;} /* temp */
 .content-resources ul.nav-pills > li > a > .badge{ margin-left: 7px;position:relative; top:-1px;font-size: .82em;font-family: sans-serif;line-height: 0.82em;height: 1.63em;text-shadow: 0 1px 1px #444;display: inline-block;color: #fff;background: #777;}
 .content-resources ul.nav-pills > .active > a > .badge { background:#505050;}
 .content-resources ul.nav-pills > li > a > .badge:empty { display: none;}
@@ -494,7 +494,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*---- top-menu wrapper ----*/
 #menu{ width:250px;position:absolute;z-index:200;right:0;top:50px;border:none;padding:0;overflow:visible;}
 #menu h3,
-#menu h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-weight:normal; font-style:italic;text-indent:0.75em;font-size:1.56em; line-height:2.68em; height:2.63em;position:relative; z-index:200;vertical-align:middle;padding:0; margin:0;  -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; /* for ie with box-shadow */overflow:visible;}
+#menu h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; font-weight:normal; font-style:italic;text-indent:0.75em;font-size:1.56em; line-height:2.68em; height:2.63em;position:relative; z-index:200;vertical-align:middle;padding:0; margin:0;  -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; /* for ie with box-shadow */overflow:visible;}
 #menu h2 a{ cursor:default; background:#fff; color:#444;display:block;font-size:1.56em; font-weight:normal; font-style:italic;line-height:2.75em; height:2.63em; padding:0; margin:0; vertical-align:middle;}
 #menu a.link-blocker{ cursor:default; position:absolute; top:0; right:0; z-index:99999; width:100%;height:54px; background:transparent;} /* prevent clicking the search button through the h3 */
 #menu .multilevelpushmenu_wrapper ul{ background:#fff;}
@@ -526,7 +526,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 #menu .multilevelpushmenu_wrapper .levelHolderClass.rtl .backItemClass i{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold; font-weight:700; margin-right:5px;}
 #menu .multilevelpushmenu_wrapper .levelHolderClass.rtl .backItemClass i:before{ }
 #menu .multilevelpushmenu_wrapper .backItemClass, 
-#menu .multilevelpushmenu_wrapper .levelHolderClass.rtl{ font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight:normal;font-weight:500; background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
+#menu .multilevelpushmenu_wrapper .levelHolderClass.rtl{ font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-weight:normal;font-weight:500; background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
 /*----- END top-menu override styles -----*/
 
 
@@ -604,16 +604,16 @@ ul.menu-main li.form-group .radio-inline{ padding:0; display:block; line-height:
 ul.menu-main li.form-group .radio-inline>div{ position:relative; top:-2px; right:7px; font-size:.88em; } /* graphic replacement */
 ul.menu-main .arrow { float: right; }
 ul.menu-main > li a .fa.arrow { font-size: 1.5em; position:relative; right:-15px; top:0px;	}
-ul.menu-main .fa.arrow:before { content:"\f104";}
-ul.menu-main .active > a > .fa.arrow:before { content:"\f107";}
+ul.menu-main .fa.arrow:before { content:'\f104';}
+ul.menu-main .active > a > .fa.arrow:before { content:'\f107';}
 ul.menu-main .plus-times { float:right ;position:relative; top:3px; right:15px;}
-ul.menu-main .fa.plus-times:before {content: "\f067";}
+ul.menu-main .fa.plus-times:before {content: '\f067';}
 ul.menu-main .active > a > .fa.plus-times { -webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); }
 ul.menu-main .plus-minus { float: right; }
-ul.menu-main .fa.plus-minus:before { content: "\f067"; }
-ul.menu-main .active > a > .fa.plus-minus:before { content: "\f068"; }
+ul.menu-main .fa.plus-minus:before { content: '\f067'; }
+ul.menu-main .active > a > .fa.plus-minus:before { content: '\f068'; }
 ul.menu-main li a .icon{ margin-right:12px;font-size:1.25em;position:relative;top:2px;}
-ul.menu-main>li>a:first-child { font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-weight:normal; font-style:italic;font-size:1.5em; line-height:1.5em; height:2.44em;}
+ul.menu-main>li>a:first-child { font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; font-weight:normal; font-style:italic;font-size:1.5em; line-height:1.5em; height:2.44em;}
 /*----------------------------*/
 /*----- END NAVIGATION -------*/
 /*----------------------------*/
@@ -742,21 +742,21 @@ ul.shanti-gallery{
 	text-align:center;
 	height:5em;
 	line-height:2.25em;
-	content: "\e60a";
+	content: '\e60a';
 	  -webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
 	transition: all 300ms ease;
 }
-.shanti-thumbnail-image.shanti-field-video a .overlay:before{ content: "\e63b";}
+.shanti-thumbnail-image.shanti-field-video a .overlay:before{ content: '\e63b';}
 
 .shanti-thumbnail-image a:hover .overlay:before{
 	color:rgba(255,255,255, 0.6000);
 	font-size:4em !important;
 }
 .shanti-thumbnail-image.shanti-field-video a:hover .overlay:before{
-	content: "\e63b";
+	content: '\e63b';
 }
 .shanti-thumbnail-image a:active .overlay:before{
 	color:rgba(255,255,255, 0.7500);
@@ -766,10 +766,10 @@ ul.shanti-gallery{
 
 .shanti-thumbnail-info {
 	font-size: 0.75em;
-	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 }
 .shanti-thumbnail .body-wrap{ padding: .38em .75em .5em 1em; overflow:auto;}
-.shanti-field-created{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.shanti-field-created{ font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;}
 
 .shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em; letter-spacing:-0.12em;}
 .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1.18em; font-weight: bold;font-weight:700;}
@@ -780,7 +780,7 @@ ul.shanti-gallery{
 
 .shanti-field-group-audience a.shanti-thumbnail-link+a:before{
 	font-family: 'Glyphicons Halflings';
-	content: "\e144"; /*-- link icon */
+	content: '\e144'; /*-- link icon */
 	color:#666;
 	font-size:1.25em;
 	width:1.32em;
@@ -793,7 +793,7 @@ ul.shanti-gallery{
 .shanti-thumbnail-field.shanti-field-duration span:before,
 .shanti-thumbnail-field.shanti-field-created span:before{
 	font-family: 'shanticon';
-	content: "\e63b";
+	content: '\e63b';
 	font-size:120%;
 	font-weight:normal;
 	position:relative;
@@ -802,11 +802,11 @@ ul.shanti-gallery{
 	margin-right:4px;	
 }
 .shanti-thumbnail-field.shanti-field-duration span:before{
-	content: "\e61c";
+	content: '\e61c';
 	position:relative;
 	top:0.06em;
 }
-.shanti-thumbnail-field.shanti-field-created span:before{ content: "\e60c";margin-right: 0.56em !important;top:0.06em;}
+.shanti-thumbnail-field.shanti-field-created span:before{ content: '\e60c';margin-right: 0.56em !important;top:0.06em;}
 .shanti-thumbnail .footer-wrap { position:absolute;bottom:0;background:#f6f6f6;border-top:1px solid #e6e6e6;border-radius:0 0 .32em .32em;background-clip: padding-box;width:100%;display:block;padding:.32em 1em 0 0.88em;color:#787878;height:2.5em;}
 .shanti-thumbnail .footer-wrap a{ color:#444; display:inline;}
 .shanti-thumbnail .footer-wrap a:hover{ text-decoration:underline; }
@@ -870,8 +870,8 @@ input.form-control{
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
 .main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; width:95%; overflow:auto;}
 .main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
-.main-content .selectpicker .caret{ border:none; font-family: 'shanticon'; content: "\e609";}
-.main-content .selectpicker .caret:before{ color: #5b68ce; font-size:17px; font-family: 'shanticon'; content: "\e609"; position:absolute; top:-10px; right:0px;}
+.main-content .selectpicker .caret{ border:none; font-family: 'shanticon'; content: '\e609';}
+.main-content .selectpicker .caret:before{ color: #5b68ce; font-size:17px; font-family: 'shanticon'; content: '\e609'; position:absolute; top:-10px; right:0px;}
 .main-content .selectpicker li{ padding:0; overflow:hidden;}
 .main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
 .main-content .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
@@ -902,15 +902,15 @@ input.form-control{
 .bootstrap-select.btn-group .btn .filter-option i{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
 .bootstrap-select.btn-group .btn .filter-option em{color:#dc3c47; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block; }
 .bootstrap-select.btn-group.show-tick i:first-child{ position:relative; top:2px;}
-.bootstrap-select.form-control:not([class*="span"]){ max-width:25em;}
+.bootstrap-select.form-control:not([class*='span']){ max-width:25em;}
 
-.view-filters .bootstrap-select.form-control:not([class*="span"]){ padding-right:0; width:100%;}
+.view-filters .bootstrap-select.form-control:not([class*='span']){ padding-right:0; width:100%;}
 /*--- END selectpicker ---*/
 
 
 
 /*--- BEGIN paging --*/
-table.pagerer { clear: both;color:#555;text-align:right;margin: 0 4em 0 0;font-size:80%;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	text-transform:uppercase;font-weight:bold;font-weight:700;float:right;width:100%;}
+table.pagerer { clear: both;color:#555;text-align:right;margin: 0 4em 0 0;font-size:80%;font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;	text-transform:uppercase;font-weight:bold;font-weight:700;float:right;width:100%;}
 input.pagerer-page{ /* the input for page count */ border:none;	padding-top: 0.12em;line-height:1.25em;color: #6d7afc;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;border-radius:2px;background-clip: padding-box;	width:2.68em;}
 input.pagerer-page:focus{background:#fff;}
 ul.pager{ margin:0;display:inline;text-align:right;float:right;}
@@ -926,10 +926,10 @@ ul.pager .pager-last>a{ padding:0.06em 0.5em; position:relative; top: 0.06em}
 .pager-previous i,
 .pager-next i,
 .pager-last i{ font-family:'shanticon';height:1em;width:1em;font-size:1em;line-height:1em;color:#222;display:inline-block;background:transparent;}
-.pager-first i:before{ content:"\e63d"; }
-.pager-previous i:before { content:"\e640"; }
-.pager-next i:before { content:"\e63f"; }
-.pager-last i:before { content:"\e63e"; }
+.pager-first i:before{ content:'\e63d'; }
+.pager-previous i:before { content:'\e640'; }
+.pager-next i:before { content:'\e63f'; }
+.pager-last i:before { content:'\e63e'; }
 .pager-first,
 .pager-last{ position:relative;top:1px;}
 .pager-first i,
@@ -1002,7 +1002,7 @@ table tr.error { background: #fef5f1;}
 .back-to-top:hover { color:#fff; background: #ccc; filter:alpha(opacity=80); opacity: 0.8; text-decoration:none;}
 .back-to-top i{ color:#fff;font-size:2em;line-height:1.5em;font-family: 'FontAwesome';font-weight:normal;margin:0 auto;text-align:center; }
 .back-to-top:hover i{ color:#fff;}
-.back-to-top i:before{ content: "\f077";}
+.back-to-top i:before{ content: '\f077';}
 
 /*-- filtered message to upgrade older browsers --*/
 .progressive { color:#fff;margin: 0.2em 0;background: #5a65d1;padding: 0.2em 0;text-align:center;width:100%;font-weight:normal;margin:0 auto;display:none;}
@@ -1053,7 +1053,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-average-stars .star span{ font-family:'FontAwesome'; color:#ccc; text-indent:0; display:inline-block; font-size:1em; letter-spacing:0.75em; background-image: none !important;border-bottom:none;}
 .fivestar-average-stars .star a:hover{ color:#5a65d1; border-bottom:none;}
 .fivestar-average-stars .star a:before,
-.fivestar-average-stars .star span:before{ content: "\f005"; background-image: none !important;}
+.fivestar-average-stars .star span:before{ content: '\f005'; background-image: none !important;}
 .fivestar-average-stars .star.on a,
 .fivestar-average-stars .star span.on{ color:#555; background-image: none !important;}
 
@@ -1061,7 +1061,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-size:75%; font-family:'shanticon'; background-image: none !important;}
 .fivestar-basic div.fivestar-widget .cancel a:hover{ color:red;  background-image: none !important;}
-.fivestar-basic div.fivestar-widget .cancel a:before{ content: "\e60f";}
+.fivestar-basic div.fivestar-widget .cancel a:before{ content: '\e60f';}
 
 
  
@@ -1078,12 +1078,12 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 ul.inline li a, 
 .compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;font-weight:700;text-transform:capitalize; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;font-weight:700;text-transform:capitalize; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 
 /*--- button on video window ---*/
-a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:"play";} 	
-a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
+a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:'play';} 	
+a.icon-play:before{ font-family:'shanticon'; content: '\e647';}
 
 
 
@@ -1093,9 +1093,9 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 .field-name-field-tags .field-item a{ display:inline-block; float:left; padding:0.06em 0.5em;}
 
 
-/* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;} */
+/* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold; font-weight:700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;} */
 #pb-core-desc-readmore{ margin:-10px 0 20px;}
-.video-overview .show-more-toggle{ color:#454fa4; text-transform:uppercase; font-size:0.68em; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.video-overview .show-more-toggle{ color:#454fa4; text-transform:uppercase; font-size:0.68em; font-weight:bold; font-weight:700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .video-overview .show-more-toggle:after{ 	
 	font-size: 0.88em;
 	line-height: 0.75em;
@@ -1108,7 +1108,7 @@ a.icon-play:before{ font-family:'shanticon'; content: "\e647";}
 	color: #5a65d1;
 }
 
-.video-overview h5{ text-transform:uppercase; font-size:0.88em; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.video-overview h5{ text-transform:uppercase; font-size:0.88em; font-weight:bold; font-weight:700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 
 
 .avplace .field, 
@@ -1173,7 +1173,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .node-video .popover-link span:before{ 
 	left: 0;
 	top: 0.12em;
-	content: "\e644";
+	content: '\e644';
 	position: relative;
 }
 .node-video .popover-link i.shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:0.32em; left:-1px;}
@@ -1184,8 +1184,8 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .node-video .popover-content h5{ font-size:1.06em; text-transform:capitalize; font-weight:bold; margin:0; padding:0; line-height:2.5em; border-bottom:1px solid #ccc;}
 .node-video .popover-content p{ font-size: 0.88em; margin-top: 10px; color: #333;}
 
-.node-video .popover-content .parents strong{ color: #454fa4; font-size:0.75em; margin-top:-0.25em; display:inline; float:left; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.node-video .popover-content .parents strong:after{ content:":"; margin-right:1px;}
+.node-video .popover-content .parents strong{ color: #454fa4; font-size:0.75em; margin-top:-0.25em; display:inline; float:left; font-weight:bold; font-weight:700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+.node-video .popover-content .parents strong:after{ content:':'; margin-right:1px;}
 
 .node-video .popover-content .parents ul{ display:inline;list-style:none;margin:0;padding:0;}
 .node-video .popover-content .parents ul li{ font-size:0.75em; line-height:1.18em; float:left; display:inline;padding:0;padding:0;margin:0;white-space:pre-line;}
@@ -1194,7 +1194,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 .node-video .popover-content .popover-footer{ float:left; margin:5px -15px 0; width:277px; max-width:277px;}
 .node-video .popover-content .popover-footer ul{ list-style-type:none; margin:10px 0 0; padding:0;}
-.node-video .popover-content .popover-footer ul li{  background:#505050; border-bottom:1px solid #404040; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.node-video .popover-content .popover-footer ul li{  background:#505050; border-bottom:1px solid #404040; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .node-video .popover-content .popover-footer ul li a{ color:#ddd; border-bottom:none;display:inline-block;}
 /*.node-video .popover-content .popover-footer ul li a:hover{ color:#eee;}
 .node-video .popover-content .popover-footer ul li a:active{ color:#fff;}
@@ -1212,7 +1212,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 /*--- Large Tabs Video View ---*/
 .ss-full-tabs.nav-tabs{ margin: 1.12em .32em 2.5em; border:none;}
 
-.ss-full-tabs.nav-tabs>li{ width:50%; margin:0; background:#fff; border:none; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+.ss-full-tabs.nav-tabs>li{ width:50%; margin:0; background:#fff; border:none; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 	font-size:1em;
 	text-align: center;
 	font-weight:bold;
@@ -1230,14 +1230,13 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 .ss-full-tabs li.active{ background:#32ccca; /*--- reference: custom local color css file ---*/ }
 
-.ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca; font-family:'shanticon'; font-size:2em; content: "\e646"; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em; border: none;}
+.ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca; font-family:'shanticon'; font-size:2em; content: '\e646'; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em; border: none;}
 
 .ss-full-tabs.nav-tabs>li>a{ border:none;border-radius: 0;margin:0;color:#999;display:block; }
 .ss-full-tabs.nav-tabs>li>a:hover{ color:#777; border:none; margin:0;}
 
 .btn-group-details { float:right;position:relative;top:-20px;}
-.btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-weight: 700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
-.btn-group-details a.btn.btn-sm{ width:10em; font-weight:bold; font-weight: 700;}
+.btn-group-details .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-weight: 700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/
@@ -1261,7 +1260,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 
-/* form table td.label styles address the "Group Space" fields on ...node/add/collection*/
+/* form table td.label styles address the 'Group Space' fields on ...node/add/collection*/
 form table td.label{ display: inline-block;color: #333; /* override bootstrap default label color of white */font-size: 100%;padding: 12px 0px;}
 form table td.label strong:after{ content: ':';padding-right: 6px;}
 form table td.label .description{ display: inline;font-weight: normal;}
@@ -1308,7 +1307,7 @@ input.form-control:hover,
 input.form-control:focus,
 .form-textarea-wrapper textarea.form-textarea:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; }
 
-.form-wrapper legend{ border-bottom-width:2px; color:#444; margin-top:1.25em; margin-bottom:8px !important; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-wrapper legend{ border-bottom-width:2px; color:#444; margin-top:1.25em; margin-bottom:8px !important; font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .form-wrapper legend .fieldset-legend{ font-size:100%; margin-top:1em;}
 
 fieldset.form-wrapper{ margin-bottom:1em;}
@@ -1331,7 +1330,7 @@ html.js input.form-autocomplete{ background-position: 99% 0.56em !important;}
 
 
 
-tr.region-title td{ color:#555; padding-top:0.5em; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+tr.region-title td{ color:#555; padding-top:0.5em; font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 
 #edit-filters-order{ padding-bottom:15px;}
 
@@ -1352,7 +1351,7 @@ table .draggable a.tabledrag-handle .handle{
 	position:relative;
 	top:0;
 }
-a.tabledrag-handle .handle:before{ content: "\e068";}
+a.tabledrag-handle .handle:before{ content: '\e068';}
 a.tabledrag-handle,
 a.tabledrag-handle:hover{ border:none !important;}
 
@@ -1367,7 +1366,7 @@ a.features-storage,
 
 .form-item.form-type-select{ padding:0 0.25em 0 0;}
 .form-item .description{ font-size:0.93em; margin-top:0.25em; margin-bottom:.75em; padding-left:1em; max-width:50em;}
-.form-item label{ color:#555; /*margin:0 0 -0.75em 1.5em;*/ margin:0 0 0 25px; font-size:80%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.form-item label{ color:#555; /*margin:0 0 -0.75em 1.5em;*/ margin:0 0 0 25px; font-size:80%; font-weight:bold; font-weight:700; text-transform:uppercase; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 
 
 .form-item.form-type-textfield label{ margin-left:12px;}
@@ -1438,7 +1437,7 @@ form table td.label{ padding-top:0.68em !important;}
 
 /*--- drupal edit tabs ---*/
 .main-content header.has-tabs > div{ height:90px;}
-.main-content header ul.tabs.primary{  float:right; position:relative; bottom:-4px; z-index:2;}
+.main-content header ul.tabs.primary{  float:right; position:relative; bottom:-5px; z-index:2;}
 .main-content header.has-tabs ul.tabs.primary, 
 .logged-in .main-content header ul.tabs.primary{ right:25px;} 
 .logged-in .main-content header ul.tabs.secondary{ left:25px;}
@@ -1447,7 +1446,7 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.primary li,
 .main-content header ul.tabs.secondary li{ height:1.75em; line-height:1.75em; position:relative;}
 .main-content header ul.tabs.primary li a,
-.main-content header ul.tabs.secondary li a{ color:#555; background:rgba(255,255,255, 0.7000); font-size:80%;  margin-right:.12em; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em 0.38em; text-transform:uppercase; font-weight:bold; font-weight:700;font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.main-content header ul.tabs.secondary li a{ color:#555; background:rgba(255,255,255, 0.7000); font-size:80%;  margin-right:.12em; border:none; height:1.75em; line-height:1.75em; padding:0.62em 1.25em 0.38em; text-transform:uppercase; font-weight:bold; font-weight:700;font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .main-content header ul.tabs.primary li a:hover,
 .main-content header ul.tabs.secondary li a:hover{ background:rgba(255,255,255, 0.4000);}
 .main-content header ul.tabs.primary li a:active,
@@ -1457,15 +1456,15 @@ form table td.label{ padding-top:0.68em !important;}
 .main-content header ul.tabs.primary li.active a:hover,
 .main-content header ul.tabs.secondary li.active a:hover{ color:#fff; background:#555;}
 .main-content header ul.tabs.primary li.active a:after,
-.main-content header ul.tabs.secondary li.active a:after{ font-size:2em; font-family:'shanticon'; content: "\e646"; color:#555; position:absolute; bottom:-0.56em; right:50%; margin-right:-0.5em;}
+.main-content header ul.tabs.secondary li.active a:after{ font-size:2em; font-family:'shanticon'; content: '\e646'; color:#555; position:absolute; bottom:-0.56em; right:50%; margin-right:-0.5em;}
 
 .main-content header ul.tabs.secondary{ position:relative; bottom:-2px; z-index:2; line-height:1.5em; height:1.75em; float:left;}
 .main-content header ul.secondary li{ border-right:none; padding:0; line-height:1.5em; height:1.75em;}
 .main-content header ul.tabs.secondary li a{ color:#444; background:rgba(255,255,255, .7000); font-weight:normal; line-height:1.25em; height:1.75em; float:left; padding:0.38em 1em; margin-right:1px;}
 .main-content header ul.tabs.secondary li a:hover{ color:#444; background:rgba(255,255,255, .4000);}
 .main-content header ul.tabs.secondary li.active a{ color:#666; background:#f7f7f7;  font-weight:normal; padding:0.38em 1.25em 0.38em 2em; position:relative; bottom:0;}
-.main-content header ul.tabs.secondary li.active a:before{ font-size:1.12em; color:#666; font-family:'shanticon'; content: "\e643"; position:absolute; left:0.63em; top:0.32em; margin:0;}
-.main-content header ul.tabs.secondary li.active a:after{ content:"";}
+.main-content header ul.tabs.secondary li.active a:before{ font-size:1.12em; color:#666; font-family:'shanticon'; content: '\e643'; position:absolute; left:0.63em; top:0.32em; margin:0;}
+.main-content header ul.tabs.secondary li.active a:after{ content:'';}
 .main-content header ul.tabs.secondary li.active a:hover{ color:#666; background:#f7f7f7;}
 
 /*ul.primary li a{ margin-right:.25em;}*/
@@ -1482,8 +1481,8 @@ form table td.label{ padding-top:0.68em !important;}
 
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
-html input[type="button"].form-submit{ 
-	font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+html input[type='button'].form-submit{ 
+	font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; 
 	font-weight:normal; 
 	text-transform: uppercase;
 	padding: .68em 1.5em;
@@ -1500,8 +1499,8 @@ html input[type="button"].form-submit{
 	text-align:center;
 	letter-spacing:0.06em;
 }
-html input[type="button"].form-submit:hover{ color:#333;background: #f0f0f0;}
-html input[type="button"].form-submit:active{ background-image:none;background: #fff;-webkit-box-shadow:none;box-shadow:none;}
+html input[type='button'].form-submit:hover{ color:#333;background: #f0f0f0;}
+html input[type='button'].form-submit:active{ background-image:none;background: #fff;-webkit-box-shadow:none;box-shadow:none;}
 
 html input[type=file].form-file{ margin-bottom:5px;}
 
@@ -1526,7 +1525,7 @@ html input[type=file].form-file{ margin-bottom:5px;}
 .btn-default:active,
 .btn-default.active { background: #d0d0d0; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1); box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1);border-collapse: separate;}
 
-.btn{ background-image:none; font-weight:normal; text-transform: uppercase; display:inline-block; white-space:nowrap; border-radius:0.25em; background-clip:padding-box; color:#eee;padding: 0.75em 2em 0.62em;margin: 0.75em;	line-height:2em;font-size: 0.68em;letter-spacing:0.06em; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
+.btn{ background-image:none; font-weight:normal; text-transform: uppercase; display:inline-block; white-space:nowrap; border-radius:0.25em; background-clip:padding-box; color:#eee;padding: 0.75em 2em 0.62em;margin: 0.75em;	line-height:2em;font-size: 0.68em;letter-spacing:0.06em; font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; }
 a.btn,
 a.btn:hover{ border:none !important;}
 
@@ -1629,7 +1628,7 @@ button.field-add-more-submit{ margin-left:1em;}
 .btn.btn-block{ width:100% !important;}
 .btn.btn-stacked{ margin:1px 5px !important;}
 .btn.dfn, /* default bootstrap class */
-.btn.italic{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+.btn.italic{ font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; }
 .btn.btn-stacked{ margin:0 5px;}
 .btn.btn-capitalize{ text-transform:capitalize;}
 /*-------------------------*/
@@ -1667,7 +1666,7 @@ button.field-add-more-submit{ margin-left:1em;}
 
 
 .vertical-tab-button a,
-.vertical-tab-button.selected a{ border-bottom:none;outline: 0 !important; font-weight:bold; font-weight:700; font-family: "museo-sans-700", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+.vertical-tab-button.selected a{ border-bottom:none;outline: 0 !important; font-weight:bold; font-weight:700; font-family: 'museo-sans-700', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
 .vertical-tab-button a:hover,
 .vertical-tab-button.selected a:hover{ border-bottom:none; text-decoration:none !important;	}
 .vertical-tabs{ margin-top:0;}
@@ -1690,7 +1689,7 @@ table.features td.sign{ font-size:0.75em;}
 
 
 #block-system-help p,
-.field-accordion .panel-body p{ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.field-accordion .panel-body p{ font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;}
 .field-accordion .form-item label{ margin-top:1em;}
 
 .field-accordion{ margin: 0;padding: 0;}
@@ -1718,7 +1717,7 @@ table.features td.sign{ font-size:0.75em;}
 
 .field-accordion .panel-collapse{ margin:0 0 1em;}  /*--- spacing at bottom below inset shaded content */
 
-.field-accordion .panel-heading h6.panel-title{ position:relative; z-index:100; width:100%; font-size:1.44em; text-transform:capitalize; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-style:italic;}
+.field-accordion .panel-heading h6.panel-title{ position:relative; z-index:100; width:100%; font-size:1.44em; text-transform:capitalize; font-family: 'droidserif', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; font-style:italic;}
 .field-accordion .panel-heading h6.panel-title a{ font-weight:bold; font-weight:700;display:block; width:100%; line-height:2.62em; height:2.5em; letter-spacing:-0.06em; border:none!important;}
 .field-accordion .panel-heading h6.panel-title a:hover{ text-decoration:none; border:none!important;}
 
@@ -1948,14 +1947,14 @@ table.features td.sign{ font-size:0.75em;}
 	.menu-icon a{ background:#fff;color:#777; width:1.88em !important; height:1.75em !important;min-height:1.75em !important; line-height:normal; padding:3px; margin:0 15px 0 0; -webkit-box-shadow: 0 0 4px 3px #d0d0d0; box-shadow: 0 0 4px 3px #d0d0d0; border-collapse:separate; border-radius:3px; background-clip: padding-box;	position:relative; top:9px; right:0; }
 	.menu-icon a:hover{ color:#222; text-decoration:none;}
 	.menu-icon i{ font-size:1.32em !important; line-height:1.38em !important; width:1.75em !important; height:1.75em !important;min-height:1.75em !important;}
-	.menu-icon i:before{ content: "\e628";}
+	.menu-icon i:before{ content: '\e628';}
 	.menu-icon a:hover i:before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}	
 	.menu-icon.show-topmenu a:hover i:before{ color:#fff;}
 	.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box; position:relative; top:8px; background:#656565; padding:0px; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
 	.shanti-searchtoggle a:hover{ color:#222;background:#444;}
 	.shanti-searchtoggle i{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:bold;font-weight:700; padding:0;}
-	.shanti-searchtoggle i:before{ color:#eee; content: "\e630";}
+	.shanti-searchtoggle i:before{ color:#eee; content: '\e630';}
 	.shanti-searchtoggle a:hover i:before{ color:#fff;}
 	.shanti-searchtoggle .menu-icon.show-topmenu a{ background:#000;}		
 	.shanti-searchtoggle .menu-icon.show-topmenu a i:before{ color:#fff;}
@@ -2137,15 +2136,15 @@ table.features td.sign{ font-size:0.75em;}
 	.content-resources ul.nav-pills li.active:first-child a { margin-top:0px; }
 	.content-resources ul.nav-pills li a i{ position:relative; top:4px;}
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family: "museo-sans-500", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
+  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family: 'museo-sans-500', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }  
 	.view-resources.btn-default.show { width:200px; padding-left:35px; text-align:left; position:relative; left:-218px;}	
 	.view-resources.btn-default i.icon { display:none;}
-	.view-resources.btn-default i.icon:before{ font-family:'shanticon'; content: "\e610";}
+	.view-resources.btn-default i.icon:before{ font-family:'shanticon'; content: '\e610';}
 	.view-resources.btn-default.show i.icon{ color:#fff; font-size:1.12em; width:10px; height:10px; display:inline; position:absolute; top:2px; right:5px; }
 	.view-resources.btn-default .header{ }	
 	.view-resources.btn-default i.fa { float:left; font-size:1.5em; margin-right:10px; position:relative; top:-1px; }
-	.view-resources.btn-default i.fa:before { content: "\f138"; }
-	.view-resources.btn-default:hover i.fa:before { content:"\f13a"; }	
+	.view-resources.btn-default i.fa:before { content: '\f138'; }
+	.view-resources.btn-default:hover i.fa:before { content:'\f13a'; }	
 	.view-resources.btn-default span { float:left; }
 	.view-resources.btn-default .badge { float:right; font-size: .68em; background:transparent; border:1px solid #ddd; padding:3px 7px; margin-right:15px; margin-top:1px; height:1.88em; line-height: .75em; font-weight:normal; -webkit-transition: all .2s ease-out;-moz-transition: all .2s ease-out;transition: all .2s ease-out; }
 	.view-resources.btn-default.show .badge { color:transparent; border-color:transparent; }
