@@ -270,13 +270,13 @@
             ?>
           </div> <!-- End of #related --> 
           <div class="tab-pane active" id="details">
-          	<div class="toggle-accordions">
-          		<button type="button" onClick="location.href='/node/185/edit'" value="click here" class="btn btn-default btn-sm btn-edit-details">Edit Details</button>
+          	<div class="btn-group expand-collapse">
+          		<button type="button" value="click here" class="btn btn-default btn-sm btn-edit-details">Edit Details</button>
           		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand">Expand All</button>
           	</div>
-          <?php
-            print render($content);
-          ?>
+          	<div class="panel-group" id="av-details">
+           		<?php $content['group_details']['#attributes']['class'][] = "in"; print render($content); ?>
+            </div>
           </div> <!-- End of #details -->
         </div>
       </div>

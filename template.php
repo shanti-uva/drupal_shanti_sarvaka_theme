@@ -688,26 +688,28 @@ function shanti_sarvaka_fieldset($variables) {
 		}
 	}
 	
-  $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group'));
+  $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group', 'panel', 'panel-default'));
   $element['#attributes']['id'] = 'accordion' . $id;
-
+  $isin = '';
+	if($key = array_search("in", $element['#attributes']['class'])) {
+		$isin = ' in';
+	}
   // Create markup
   $output = '<div ' . drupal_attributes($element['#attributes']) . '> 
-  <div class="panel panel-default">
     <div class="panel-heading">
       <h6 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">'        	
+        <a data-toggle="collapse" data-parent="#av-details" href="#' . $id . '">'        	
            . $element['#title'] .
         '</a>
       </h6>
     </div>
-    <div id="' . $id . '" class="panel-collapse collapse' . $openclass . '">
+    <div id="' . $id . '" class="panel-collapse collapse' . $isin . '">
       <div class="panel-body">';
    $output .= $element['#children'];
     if (isset($element['#value'])) {
       $output .= $element['#value'];
     }
-   $output .= '</div></div></div></div>';
+   $output .= '</div></div></div>';
    return $output;
 }
 
