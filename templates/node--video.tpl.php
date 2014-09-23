@@ -94,7 +94,7 @@
 	             alt="<?php print $title; ?>" 
 	             src="<?php if(isset($variables['thumbnail_url'])) { print $variables['thumbnail_url']; } ?>" 
 	             typeof="foaf:Image" class="k-no-rotate">
-	         <i class="icon shanticon-video"></i> 
+	         <span class="icon shanticon-video"></span>  
 	      </a>
 	    </div>
 	    <div class="shanti-thumbnail-info">      
@@ -128,7 +128,7 @@
     <div class="footer-wrap">  
       <?php if(isset($variables['place_link'])): ?>
         <div class="shanti-thumbnail-field shanti-field-place">        
-         <span class="field-content"><i class="icon shanticon-places"></i> 
+         <span class="field-content"><span class="icon shanticon-places"></span>  
            <?php print render($variables['place_link']); ?>
          </span>
         </div>
@@ -177,13 +177,13 @@
 	          <div class="trans-btn">
 	            <form action="<?php print $transcript_url; ?>" method="post">
 	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
-	            		<i class="icon shanticon-texts"></i><span>Play with<br/>Transcript</span>
+	            		<span class="icon shanticon-texts"></span> <span>Play with<br/>Transcript</span>
 	          		</button>
 	            </form>
 	          </div>
 	        <?php endif; ?>
-	        <div class="avdate"><i class="icon shanticon-calendar"></i> <?php print date('d M Y', $variables['media_create_date']);  ?></div>
-	        <div class="avduration"><i class="icon shanticon-hourglass"></i> <?php print $node->duration['formatted'];  ?></div>
+	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
+	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
 	            <h5>Rating</h5>
 	            <?php print render($content['field_rating']); ?>
@@ -226,7 +226,7 @@
 		      <?php endif; ?>
 		      <?php if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
 		        <div class="avplace">
-		          	<i class="icon shanticon-places" title="places"></i> 
+		          	<span class="icon shanticon-places" title="places"></span>  
 		          	<?php 
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
 		          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
@@ -237,7 +237,7 @@
 		      <?php endif; ?>
 	        <?php if(!empty($content['group_details']['field_characteristic'])): ?>
 		        <div class="avsubjects">
-		        	<i class="icon shanticon-subjects" title="subjects"></i> 
+		        	<span class="icon shanticon-subjects" title="subjects"></span>  
 		        	<?php
 		        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
 		        		print render($content['group_details']['field_characteristic']); 
