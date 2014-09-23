@@ -480,7 +480,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 #menu .multilevelpushmenu_wrapper li a:hover{ color:#444;}
 #menu .multilevelpushmenu_wrapper li:first-child a,
 #menu .multilevelpushmenu_wrapper li.myaccount>a{ border-top:none;}
-#menu .multilevelpushmenu_wrapper li i { font-size:2em;line-height:1.18em; height:4em;margin-right:7px;}
+#menu .multilevelpushmenu_wrapper li .icon { font-size:2em;line-height:1.18em; height:4em;margin-right:7px;}
 #menu .multilevelpushmenu_wrapper li.form-group { font-size:0.88em;line-height:2em; height:2em;vertical-align:middle;padding: 1px 5px 1px 25px;margin:0;display:block;}
 #menu .multilevelpushmenu_wrapper li:last-child{ border-bottom:none;}
 #menu .multilevelpushmenu_wrapper li.form-group.last{ line-height:0.5em; height:0.5em;}
@@ -666,7 +666,7 @@ ul.shanti-gallery{
 	border-radius: .32em .32em 0 0;
 	background-clip:padding-box;
 }
-.shanti-thumbnail-image i {
+.shanti-thumbnail-image .icon {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -683,7 +683,7 @@ ul.shanti-gallery{
 	font-weight:normal;
 	text-align:center;
 }
-.shanti-thumbnail.audio .shanti-thumbnail-image i { background: rgba(72, 80, 189, 0.8) !important;}
+.shanti-thumbnail.audio .shanti-thumbnail-image .icon{ background: rgba(72, 80, 189, 0.8) !important;}
 
 .shanti-thumbnail-image a .overlay{	
 	position:absolute;
@@ -1015,10 +1015,10 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .avdesc{ margin: 5px 0 0; max-width:800px;}
 
-.avdesc > div + div{ margin-left:165px;}
+.avdesc .video-overview{ margin-left:175px;}
 
-.avdate i,
-.avduration i{ margin-right:0.25em;}
+.avdate .icon,
+.avduration .icon{ margin-right:0.25em;}
 .avduration::after, 
 .avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;}
 
