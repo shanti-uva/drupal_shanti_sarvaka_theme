@@ -270,7 +270,7 @@
             ?>
           </div> <!-- End of #related --> 
           <div class="tab-pane active" id="details">
-          	<div class="btn-group expand-collapse">
+          	<div class="btn-group-details expand-collapse">
           		<button type="button" value="click here" class="btn btn-default btn-sm btn-edit-details">Edit Details</button>
           		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand">Expand All</button>
           	</div>
