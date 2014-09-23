@@ -168,7 +168,7 @@
       <div class="video-row">
           <?php print render($content['field_audio']); ?>
       </div>
-      <div class="avdesc">
+      <div class="avdesc clearfix">
       	<!-- Info/Description row -->
         <div class="avinfo">
           <?php if($variables['has_transcript']): ?>

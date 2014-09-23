@@ -169,7 +169,7 @@
       <div class="video-row">
           <?php print render($content['field_video']); ?>
       </div>
-      <div class="avdesc">
+      <div class="avdesc clearfix">
       	<!-- Info/Description row -->
 	      <!-- info column -->
 	      <div class="avinfo">
