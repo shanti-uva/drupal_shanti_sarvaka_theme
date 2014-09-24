@@ -766,12 +766,12 @@ jQuery(function ($) {
 /* toggle icon on accordions */
 jQuery(function ($) {
 		
-		$('.btn-toggle-acc').click(function () {
+		$('.btn-toggle-accordion').click(function () {
 	
 	    $(this).toggleClass('expand');
     
       
-	    if($('.btn-toggle-acc').hasClass('expand')) {
+	    if($('.btn-toggle-accordion').hasClass('expand')) {
 	        
 	        $(this).text('Expand All');
 	        $('.panel-collapse').collapse('hide');	
