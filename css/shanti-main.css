@@ -216,7 +216,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   /* override breadcrumb class from Bootstrap 3 */
   content: ' ';
   padding: 0 5px;
-  color: #999999;
+  color: #999;
   display: none;
 }
 .breadwrap ol {
@@ -1181,7 +1181,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 /*--- Large Tabs Video View ---*/
-.ss-full-tabs.nav-tabs{ margin: 1.12em .32em 2.5em; border:none;}
+.ss-full-tabs.nav-tabs{ margin: 1.12em 0 2.5em; border:none;}
 
 .ss-full-tabs.nav-tabs>li{ width:50%; margin:0; background:#fff; border:none; font-family:'museo-sans-700','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-size:1em;

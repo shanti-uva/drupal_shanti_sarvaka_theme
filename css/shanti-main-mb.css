@@ -1,6 +1,7 @@
 /* custom theme colors */
-.breadwrap ol li i{ background:#32ccca;}
-.ss-full-tabs li.active{ }
+.breadwrap ol li .icon{ background:#32ccca;}
+.ss-full-tabs.nav-tabs>li.active,
+.ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#32ccca;}
 /* END custom theme colors */
 
@@ -13,8 +14,8 @@
 .carousel a.carousel-control.left{ margin-left: -1.18em;}
 .carousel a.carousel-control.right{ margin-right: -1.18em;}
 .carousel a.carousel-control i{ font-family:'shanticon'; font-style:normal;}
-.carousel a.carousel-control.left i:before{ content:'\e641'; /*-- right arrow-tri icon */ position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
-.carousel a.carousel-control.right i:before{ content:'\e642'; /*-- left arrow-tri icon */ position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
+.carousel a.carousel-control.left .icon:before{ content:'\e641'; /*-- right arrow-tri icon */ position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
+.carousel a.carousel-control.right .icon:before{ content:'\e642'; /*-- left arrow-tri icon */ position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
 .carouseldiv .header{ margin-top: 0.5em;}
 .carouseldiv .header p{ margin-bottom: 0.18em;}
 .carouseldiv .header p .show-more{ font-size:85%; float:right; margin-right:2.5em; position:relative; top:0.25em;}
