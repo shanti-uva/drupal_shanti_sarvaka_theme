@@ -272,7 +272,11 @@
           		<button type="button" class="btn btn-default btn-sm btn-toggle-accordion expand">Expand All</button>
           	</div>
           	<div class="panel-group" id="av-details">
-		          <?php $content['group_details']['#attributes']['class'][] = "in"; print render($content); ?>
+		          <?php 
+		          	$content['group_details']['#attributes']['class'][] = "in"; 
+								dpm($content, 'content in template');
+		          	print render($content); 
+		          ?>
 		        </div>
           </div> <!-- End of #details -->
         </div>
