@@ -274,7 +274,7 @@
           	<div class="panel-group" id="av-details">
 		          <?php 
 		          	$content['group_details']['#attributes']['class'][] = "in"; 
-								dpm($content, 'content in template');
+								//dpm($content, 'content in template');
 		          	print render($content); 
 		          ?>
 		        </div>
