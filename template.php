@@ -712,7 +712,7 @@ function shanti_sarvaka_fieldset($variables) {
    $output .= '</div></div></div>';
    return $output;
 }
-
+ 
 /**
  * Theme Form for Search block form
  */
