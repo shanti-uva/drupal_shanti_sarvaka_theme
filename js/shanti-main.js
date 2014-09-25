@@ -285,11 +285,13 @@
 	     		self = $(this).detach();
 	     		label.prepend(self);
 	     	}
-	      self.icheck({
-	          checkboxClass: "icheckbox_minimal-red",
-	          radioClass: "iradio_minimal-red",
-	          insert: "<div class='icheck_line-icon'></div>"
-	      });
+	     	if(typeof(self.icheck) != "undefined") {
+		      self.icheck({
+		          checkboxClass: "icheckbox_minimal-red",
+		          radioClass: "iradio_minimal-red",
+		          insert: "<div class='icheck_line-icon'></div>"
+		      });
+		    }
 	  });
 	  $(".selectpicker").selectpicker({
 		  dropupAuto: false
