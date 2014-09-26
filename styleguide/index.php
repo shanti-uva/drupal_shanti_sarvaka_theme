@@ -1,4 +1,5 @@
 <?php
+
   // Build out URI to reload from form dropdown
   // Need full url for this to work in Opera Mini
   $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
@@ -73,25 +74,26 @@
   <meta name="viewport" content="width=device-width">
   <script type="text/javascript" src="/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
   <script type="text/javascript" src="/sites/all/themes/shanti_sarvaka/js/vendor/bootstrap.min.js?n8ic4w"></script>
-  <link rel="shortcut icon" href="/sites/all/themes/shanti_sarvaka/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="shortcut icon" href="/sites/all/themes/shanti_sarvaka/favicon.ico" type="image/vnd.microsoft.icon" >
   <!-- Style Guide Boilerplate Styles -->
   <link rel="stylesheet" href="css/sg-style.css">
   
   <!-- Custom Styles for Style Guide -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Styles from theme -->
-  <style type="text/css" media="all">@import url("/sites/all/themes/shanti_sarvaka/css/bootstrap.min.css");
-@import url("/sites/all/themes/shanti_sarvaka/css/bootstrap-theme.min.css");
-@import url("/sites/all/themes/shanti_sarvaka/css/utils.css");
-@import url("/sites/all/themes/shanti_sarvaka/css/vjs.zencdn.nt-5.4-video-js.css");
-@import url("/sites/all/themes/shanti_sarvaka/css/shanti-main.css");
-@import url("/sites/all/themes/shanti_sarvaka/css/shanti-main-mb.css");
-@import url("/sites/all/themes/shanti_sarvaka/css/shanti-search.css");
-@import url("/sites/all/themes/shanti_sarvaka/css/shanti-search-mb.css");
-@import url("/sites/all/themes/shanti_sarvaka/fonts/shanticon/css/style.css");
+  <style type="text/css" media="all">
+  	@import url("/sites/all/themes/shanti_sarvaka/css/bootstrap.min.css");
+		@import url("/sites/all/themes/shanti_sarvaka/css/bootstrap-theme.min.css");
+		@import url("/sites/all/themes/shanti_sarvaka/css/utils.css");
+		@import url("/sites/all/themes/shanti_sarvaka/css/vjs.zencdn.nt-5.4-video-js.css");
+		@import url("/sites/all/themes/shanti_sarvaka/css/shanti-main.css");
+		@import url("/sites/all/themes/shanti_sarvaka/css/shanti-main-mb.css");
+		@import url("/sites/all/themes/shanti_sarvaka/css/shanti-search.css");
+		@import url("/sites/all/themes/shanti_sarvaka/css/shanti-search-mb.css");
+		@import url("/sites/all/themes/shanti_sarvaka/fonts/shanticon/css/style.css");
+</style>
 </head>
 <body>
-    
 <div id="top" class="sg-header sg-container">
   <h1 class="sg-logo"><span>Shanti Convoy Design</span> STYLE GUIDE (Shanti Sarvaka Theme)</h1>
   <form id="js-sg-nav" action=""  method="post" class="sg-nav">
