@@ -335,6 +335,12 @@ function shanti_sarvaka_preprocess_transcripts_video_controls($vars) {
                 (function ($) {
                         $('.play-transcript').click(function() {
                                 $('i.icon', this).toggleClass('shanticon-play-video shanticon-play-transcript');
+                                if ($(this).hasClass('without-transcript')) {
+                                	$('span', this).html(Drupal.t('Show<br/>transcript'));
+                                }
+                                else {
+                                	$('span', this).html(Drupal.t('Hide<br/>transcript'));
+                                }
                         });
                 }(jQuery));
         ", 'inline');
@@ -800,9 +806,6 @@ function shanti_sarvaka_textfield($variables) {
 	return theme_textfield($variables);
 }
 
-function shanti_sarvaka_apachesolr_search_snippets($vars) {
-	return implode(' ... ', $vars['flattened_snippets']);
-}
 function shanti_sarvaka_transcripts_video_controls($vars) {
         $out = "<div style='width: 480px;' class='btn-group btn-group-lg btn-group-justified btn-group-transcript'>";
         $out .= "<div class='btn-group'>" .$vars['element']['#play']. "</div>";
