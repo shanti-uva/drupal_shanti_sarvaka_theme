@@ -28,8 +28,8 @@
   font-weight: normal;
   font-style: normal;
 }
-html{ -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;font-size: 62.5%;-webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
-body{ font-size: 14px; line-height: 1.42857143; color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',Palatino,'Palatino Linotype',Georgia,serif; font-weight:normal; overflow: hidden;}
+html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
+body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',Palatino,'Palatino Linotype',Georgia,serif; font-weight:normal; overflow: hidden;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline:0 !important;}
 a,a:visited,a:hover,a:focus{text-decoration:none;color:#454fa4;}
@@ -64,7 +64,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .content-section { padding: 10px 25px 50px; min-height:100%;}
 
 /* this targets all links inside the center container content-section */
-.content-section a{ border-bottom:1px solid transparent;-webkit-transition: border 200ms ease 0s; transition: border 200ms ease 0s;}
+.content-section a{ border-bottom:2px solid transparent;-webkit-transition: border 200ms ease 0s; transition: border 200ms ease 0s;}
 .content-section a:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
 .content-section a:active{ border-bottom-color:transparent;}
 .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
@@ -814,9 +814,6 @@ input.form-control{
   background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
   background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
-	/* 
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-	*/
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
 	border-radius:25px; 
@@ -971,9 +968,9 @@ table tr.error { background: #fef5f1;}
 /*---scroll to top ---*/
 .back-to-top { position: fixed;bottom: 1em;right: 1.5em;z-index:1000;height:3.25em;width:3.25em;color: #aaa;background: #ccc;filter:alpha(opacity=50);opacity: 0.5;font-size: 1em;border-radius:50%;background-clip: padding-box;display: none;	text-align:center;}
 .back-to-top:hover { color:#fff; background: #ccc; filter:alpha(opacity=80); opacity: 0.8; text-decoration:none;}
-.back-to-top .glyphicon{ color:#fff;font-size:2em;line-height:1.5em;font-family:'FontAwesome';font-weight:normal;margin:0 auto;text-align:center;}
-.back-to-top:hover .glyphicon{ color:#fff;}
-.back-to-top .glyphicon:before{ content: '\f077';}
+.back-to-top .fa{ color:#fff;font-size:2em;line-height:1.5em;font-family:'FontAwesome';font-weight:normal;margin:0 auto;text-align:center;}
+.back-to-top:hover .fa{ color:#fff;}
+.back-to-top .fa:before{ content: '\f077';}
 
 /*-- filtered message to upgrade older browsers --*/
 .progressive { color:#fff;margin: 0.2em 0;background: #5a65d1;padding: 0.2em 0;text-align:center;width:100%;font-weight:normal;margin:0 auto;display:none;}
@@ -1066,10 +1063,10 @@ a.icon-play:before{ font-family:'shanticon'; content: '\e647';}
 
 /* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold;  font-family:'museo-sans-700','Helvetica Neue',Helvetica,Arial,sans-serif;} */
 #pb-core-desc-readmore{ margin:-10px 0 20px;}
-.video-overview .show-more-toggle{ color:#454fa4; text-transform:uppercase; font-size:0.68em; font-weight:bold;  font-family:'museo-sans-700','Helvetica Neue',Helvetica,Arial,sans-serif;}
+.video-overview .show-more-toggle{ color:#454fa4; text-transform:uppercase; font-size:0.93em; font-weight:bold;  font-family:'museo-sans-700','Helvetica Neue',Helvetica,Arial,sans-serif;}
 .video-overview .show-more-toggle:after{ 	
-	font-size: 0.88em;
-	line-height: 0.75em;
+	font-size: 1em;
+	line-height: 0.88em;
 	font-weight:normal;
 	padding-left:0.25em;
 	font-family:'Glyphicons Halflings';
@@ -1191,14 +1188,14 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 }
 .ss-full-tabs.nav-tabs>li:hover{ background:#fff; border:none; margin:0;}
 .ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
+.ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca; } /* mediabase theme color set here - customize your local color in child-theme css file ---*/
 
 .ss-full-tabs.nav-tabs>li.active>a, 
 .ss-full-tabs.nav-tabs>li.active>a:hover, 
 .ss-full-tabs.nav-tabs>li.active>a:focus{ border:none; color:#fff;}
 
 
-.ss-full-tabs li.active{ background:#32ccca; /*--- reference: custom local color css file ---*/}
+.ss-full-tabs li.active{ background:#32ccca;} /* mediabase theme color set here - customize your local color in child-theme css file ---*/
 
 .ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca; font-family:'shanticon'; font-size:2em; content: '\e646'; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em; border: none;}
 

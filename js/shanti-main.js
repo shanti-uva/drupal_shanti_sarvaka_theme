@@ -766,27 +766,22 @@ jQuery(function ($) {
 
 
 /* toggle icon on accordions */
-jQuery(function ($) {
-		
+jQuery(function ($) {		
 		$('.btn-toggle-accordion').click(function () {
-	
-	    $(this).toggleClass('expand');
+
+    $(this).toggleClass('expand');   
     
-      
-	    if($('.btn-toggle-accordion').hasClass('expand')) {
-	        
-	        $(this).text('Expand All');
-	        $('.panel-collapse').collapse('hide');	
-	        $('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-	
-		    } else {
-	        
-	        $(this).text('Collapse All');
-	        $('.panel-collapse').collapse('show');
-	        $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-	    }
-		});
-  
+    if($('.btn-toggle-accordion').hasClass('expand')) {
+        
+        $(this).text('Expand All');
+        $('.panel-collapse').collapse('hide');	
+        $('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');	
+	    } else {	        
+        $(this).text('Collapse All');
+        $('.panel-collapse').collapse('show');
+        $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+    }
+	});  
 });	
  
  
