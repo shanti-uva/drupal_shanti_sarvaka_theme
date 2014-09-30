@@ -534,11 +534,12 @@
 			
 			// Carousel Init and controls
 	    $('.carousel').carousel({
-	      interval: 8000,
+	      interval: 6000,
 	    });
 	    $('.carousel .control-box-2 .carousel-pause').click(function () {
 	    		var carousel = $(this).parents('.carousel');
 	    		if($(this).hasClass('paused')) {
+	        	carousel.carousel('next');
 	        	carousel.carousel('cycle');
 	    		} else {
 	        	carousel.carousel('pause');
