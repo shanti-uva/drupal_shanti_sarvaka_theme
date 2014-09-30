@@ -127,8 +127,8 @@
 
     
   <!-- LOAD menus -->
-  <section id="menu-main" class="{ url:'<?php if($base_theme) { print 'sites/all/themes/' . $base_theme; } else { print $theme_path; } ?>/js/menus/menu-ajax.php'} menu-accordion">   </section>  
-  <section id="menu-collections" class="{ url:'<?php if($base_theme) { print 'sites/all/themes/' . $base_theme; } else { print $theme_path; } ?>/js/menus/menu-ajax.php'} menu-accordion">    </section>
+  <section id="menu-main" class="{ url:'<?php if($base_theme) { print 'sites/all/themes/' . $base_theme; } else { print $theme_path; } ?>js/inc/menus/menu-ajax.php'} menu-accordion">   </section>  
+  <section id="menu-collections" class="{ url:'<?php if($base_theme) { print 'sites/all/themes/' . $base_theme; } else { print $theme_path; } ?>js/inc/menus/menu-ajax.php'} menu-accordion">    </section>
 
   <section id="menu" style="display:none;">
     <nav id="menu-drill" role="navigation">                
