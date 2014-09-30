@@ -696,7 +696,7 @@
 		});
 	}
 	
-}(jQuery));
+} (jQuery));
 
 
 jQuery(function ($) {
