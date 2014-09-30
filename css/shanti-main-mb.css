@@ -25,6 +25,8 @@
 .carousel .caption .byline{ color: #777;font-style: italic;margin: -0.5em 0 .63em 0;}
 .carousel .caption .description p{}
 .carousel .caption a.show-more:hover{ color:#f00 !important;}
+.carousel .control-box-2 button.carousel-pause { margin: 6px 50% -6px; border-radius: 20px; padding: 6px; }
+.carousel .control-box-2 button.carousel-pause i { padding-left: 1px; }
 /** End of Carousel Styles **/
 
 /*--- view collections page ---*/

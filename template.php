@@ -630,7 +630,11 @@ function shanti_sarvaka_carousel($variables) {
               <div class="control-box">                            
                   <a data-slide="prev" href="#collection-carousel" class="carousel-control left basebg"><i class="icon"></i></a>
                   <a data-slide="next" href="#collection-carousel" class="carousel-control right basebg"><i class="icon"></i></a>
-              </div><!-- /.control-box -->   
+              </div><!-- /.control-box --> 
+              
+              <div class="control-box-2">                            
+                  <button class="btn btn-default btn-sm carousel-pause"><i class="glyphicon glyphicon-pause"></i></button>
+              </div><!-- /.control-box-2 -->   
             </div><!-- /#collection-carousel -->
         </div><!-- /.span12 -->          
         </div><!-- /.row --> 

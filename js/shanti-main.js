@@ -532,9 +532,19 @@
 		  // call Check Width
 			checkWidth();
 			
-			// Carousel Init
+			// Carousel Init and controls
 	    $('.carousel').carousel({
 	      interval: 8000,
+	    });
+	    $('.carousel .control-box-2 .carousel-pause').click(function () {
+	    		var carousel = $(this).parents('.carousel');
+	    		if($(this).hasClass('paused')) {
+	        	carousel.carousel('cycle');
+	    		} else {
+	        	carousel.carousel('pause');
+	    		}
+	    		$(this).toggleClass('paused');
+	        $(this).find('i').toggleClass('glyphicon-pause glyphicon-play');
 	    });
 		}
 	};
