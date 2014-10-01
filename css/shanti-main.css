@@ -31,7 +31,7 @@
 }
 
 html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
-body{ color:#333; text-rendering: optimizeLegibility; font-family:Palatino,'Palatino Linotype',Georgia,serif; font-weight:normal; overflow: hidden;}
+body{ color:#333; text-rendering: optimizeLegibility; font-family: 'droidserif', Palatino,'Palatino Linotype',Georgia,serif; font-weight:normal; overflow: hidden;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline:0 !important;}
 a,a:visited,a:hover,a:focus{text-decoration:none;color:#454fa4;}
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6{ color:#444;font-weight:normal;text-rendering:optimizeleg
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 20px;padding-left:20px;}
 
-/*
+
 iframe {border: none;}
 input[type='radio'] { filter:alpha(opacity=0); opacity:0;float: left;width: 18px;}
 input[type='radio'] + label,
@@ -56,7 +56,7 @@ option:hover,
 option:checked,
 option:checked:hover,
 select:focus option:checked:hover { background: #008a96;color: #fff;}
-*/
+
 
 .wrap-all{ position:relative;}
 .container{ width:100%; background:#eee;}
@@ -81,7 +81,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 .dfn, .italic{ font-style:italic !important; }
 .sans-serif{ font-family:'museo-sans-500',Helvetica,Arial,sans-serif;}
-.serif{ font-family:Palatino, 'Palatino Linotype', Georgia, serif; }
+.serif{ font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif; }
 
 .element-invisible{ display:none;margin:0;padding:0;height:0;min-height:0;line-height:0;border:none;}
 
@@ -92,7 +92,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
-.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family:Palatino,'Palatino Linotype',Georgia,serif;}
+.navbar-default h1 {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family: 'droidserif', Palatino,'Palatino Linotype',Georgia,serif;}
 .navbar-default h1 a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-default h1 a.navbar-brand:hover{ color:#222;}
 .navbar-default h1 em{ display:none;}
@@ -231,7 +231,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   line-height:21px;
   height:21px;
   font-size: .75em;
-  font-family:Palatino, 'Palatino Linotype', Georgia, serif;
+  font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif;
   font-weight:normal;
   *zoom: 1;
   border:none;
@@ -434,7 +434,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*---- top-menu wrapper ----*/
 #menu{ width:250px;position:absolute;z-index:200;right:0;top:50px;border:none;padding:0;overflow:visible;}
 #menu h3,
-#menu h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-family:Palatino, 'Palatino Linotype', Georgia, serif; font-weight:normal; font-style:italic;text-indent:0.75em;font-size:1.56em; line-height:2.68em; height:2.63em;position:relative; z-index:200;vertical-align:middle;padding:0; margin:0;  -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; /* for ie with box-shadow */overflow:visible;}
+#menu h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif; font-weight:normal; font-style:italic;text-indent:0.75em;font-size:1.56em; line-height:2.68em; height:2.63em;position:relative; z-index:200;vertical-align:middle;padding:0; margin:0;  -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; /* for ie with box-shadow */overflow:visible;}
 #menu h2 a{ cursor:default; background:#fff; color:#444;display:block;font-size:1.56em; font-weight:normal; font-style:italic;line-height:2.75em; height:2.63em; padding:0; margin:0; vertical-align:middle;}
 #menu a.link-blocker{ cursor:default; position:absolute; top:0; right:0; z-index:99999; width:100%;height:54px; background:transparent;} /* prevent clicking the search button through the h3 */
 #menu .multilevelpushmenu_wrapper ul{ background:#fff;}
@@ -553,7 +553,7 @@ ul.menu-main .plus-minus { float: right;}
 ul.menu-main .fa.plus-minus:before { content: '\f067';}
 ul.menu-main .active > a > .fa.plus-minus:before { content: '\f068';}
 ul.menu-main li a .icon{ margin-right:12px;font-size:1.25em;position:relative;top:2px;}
-ul.menu-main>li>a:first-child { font-family:Palatino, 'Palatino Linotype', Georgia, serif; font-weight:normal; font-style:italic;font-size:1.5em; line-height:1.5em; height:2.44em;}
+ul.menu-main>li>a:first-child { font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif; font-weight:normal; font-style:italic;font-size:1.5em; line-height:1.5em; height:2.44em;}
 /*----------------------------*/
 /*----- END NAVIGATION -------*/
 /*----------------------------*/
@@ -709,9 +709,9 @@ ul.shanti-gallery{
 	font-family:'museo-sans-500',Helvetica,Arial,sans-serif;
 }
 .shanti-thumbnail .body-wrap{ padding: .38em .75em .5em 1em; overflow:auto;}
-.shanti-field-created{ font-family:Palatino, 'Palatino Linotype', Georgia, serif;}
+.shanti-field-created{ font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif;}
 
-.shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em; letter-spacing:-0.12em;}
+.shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em;}
 .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1.18em; font-weight: bold;}
 .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
@@ -1597,7 +1597,7 @@ button.field-add-more-submit{ margin-left:1em;}
 .btn.btn-block{ width:100% !important;}
 .btn.btn-stacked{ margin:1px 5px !important;}
 .btn.dfn, /* default bootstrap class */
-.btn.italic{ font-family:Palatino, 'Palatino Linotype', Georgia, serif;}
+.btn.italic{ font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif;}
 .btn.btn-stacked{ margin:0 5px;}
 .btn.btn-capitalize{ text-transform:capitalize;}
 /*-------------------------*/
@@ -1658,7 +1658,7 @@ table.features td.sign{ font-size:0.75em;}
 
 
 #block-system-help p,
-.field-accordion .panel-body p{ font-family:Palatino, 'Palatino Linotype', Georgia, serif;}
+.field-accordion .panel-body p{ font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif;}
 .field-accordion .form-item label{ margin-top:1em;}
 
 .field-accordion{ margin: 0;padding: 0;}
@@ -1686,7 +1686,7 @@ table.features td.sign{ font-size:0.75em;}
 
 .field-accordion .panel-collapse{ margin:0 0 1em;}  /*--- spacing at bottom below inset shaded content */
 
-.field-accordion .panel-heading h6.panel-title{ position:relative; z-index:100; width:100%; font-size:1.44em; text-transform:capitalize; font-family:Palatino, 'Palatino Linotype', Georgia, serif; font-style:italic;}
+.field-accordion .panel-heading h6.panel-title{ position:relative; z-index:100; width:100%; font-size:1.44em; text-transform:capitalize; font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif; font-style:italic;}
 .field-accordion .panel-heading h6.panel-title a{ font-weight:bold; display:block; width:100%; line-height:2.62em; height:2.5em; letter-spacing:-0.06em; border:none!important;}
 .field-accordion .panel-heading h6.panel-title a:hover{ text-decoration:none; border:none!important;}
 
