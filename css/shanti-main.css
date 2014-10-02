@@ -35,8 +35,8 @@ body{ color:#333; text-rendering: optimizeLegibility; font-family: 'droidserif',
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline:0 !important;}
 a,a:visited,a:hover,a:focus{text-decoration:none;color:#454fa4;}
-:selection{background: #999;text-shadow:none;color: white;}
-:moz-selection{background: #999;text-shadow:none;color:white;}
+:selection{background: #f1c40f;text-shadow:none;color: #111;}
+:moz-selection{background: #f1c40f;text-shadow:none;color:white;}
 h1, h2, h3, h4, h5, h6{ color:#444;font-weight:normal;text-rendering:optimizelegibility;font-family:'museo-sans-500',Helvetica,Arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 20px;padding-left:20px;}
@@ -711,7 +711,7 @@ ul.shanti-gallery{
 .shanti-thumbnail .body-wrap{ padding: .38em .75em .5em 1em; overflow:auto;}
 .shanti-field-created{ font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif;}
 
-.shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em;}
+.shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em; letter-spacing:0.06em;}
 .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1.18em; font-weight: bold;}
 .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
