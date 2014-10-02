@@ -36,7 +36,7 @@ body{ color:#333; text-rendering: optimizeLegibility; font-family: 'droidserif',
 *:focus{ outline:0 !important;}
 a,a:visited,a:hover,a:focus{text-decoration:none;color:#454fa4;}
 :selection{background: #f1c40f;text-shadow:none;color: #111;}
-:moz-selection{background: #f1c40f;text-shadow:none;color:white;}
+:moz-selection{background: #f1c40f;text-shadow:none;color:#111;}
 h1, h2, h3, h4, h5, h6{ color:#444;font-weight:normal;text-rendering:optimizelegibility;font-family:'museo-sans-500',Helvetica,Arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 20px;padding-left:20px;}
