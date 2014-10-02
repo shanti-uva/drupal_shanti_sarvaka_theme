@@ -203,9 +203,7 @@
 	      <div class="video-overview">
 	        <h5><?php print t('Video Overview'); ?></h5>
 	        <div class="avpbcoredesc">
-	        		<?php 
-	        		//dpm($content, 'content in template');
-	        		print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
+	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
 	        </div>
 	        <?php if(isset($coll)): ?>
 		        <div class="avcollection">
@@ -215,7 +213,7 @@
 		      <?php endif; ?>
 		      <?php if(!empty($content['group_details']['field_subcollection'])): ?>
 		      	<div class="subcollection">
-		      		<h5>Subcollection: </h5> 
+		      		<span class="icon shanticon-create" title="places"></span>
 		      		<?php
 		        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
 		        		print render($content['group_details']['field_subcollection']); 
@@ -274,7 +272,10 @@
           	<div class="panel-group" id="av-details">
 		          <?php 
 		          	$content['group_details']['#attributes']['class'][] = "in"; 
-								//dpm($content, 'content in template');
+								/*
+								 * TODO: Deal with titles. Right now displays first title in current language in mediabase.module hook_node_view
+								 */
+								hide($content['group_details']['field_pbcore_title']);
 		          	print render($content); 
 		          ?>
 		        </div>

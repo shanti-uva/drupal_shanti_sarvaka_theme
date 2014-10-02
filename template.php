@@ -675,7 +675,6 @@ function shanti_sarvaka_info_popover($variables) {
  **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
-	
   // If not collapsible or no title for heading then just format as normal field set
   if( empty($element['#collapsible']) || empty($element['#title']) ) {
     return theme_fieldset($variables);
