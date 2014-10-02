@@ -711,7 +711,7 @@ ul.shanti-gallery{
 .shanti-thumbnail .body-wrap{ padding: .38em .75em .5em 1em; overflow:auto;}
 .shanti-field-created{ font-family: 'droidserif', Palatino, 'Palatino Linotype', Georgia, serif;}
 
-.shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em; letter-spacing:0.06em;}
+.shanti-thumbnail-field.shanti-field-title { font-size:1em; line-height: 1em; margin:0.25em 0 0.38em; letter-spacing:-0.06em;}
 .shanti-thumbnail-field.shanti-field-title a { font-size: 0.93em; line-height: 1.18em; font-weight: bold;}
 .shanti-thumbnail-field.shanti-field-title a:hover{ color:rgba(90, 101, 209, .9000); -webkit-box-shadow:none; box-shadow:none;}
 
