@@ -632,6 +632,12 @@
 		        $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
 		    }
 			});  
+			// Open first accordion
+			if($(".collapsible.in").length == 0) {
+				$(".collapsible").eq(0).find('h6.panel-title a').click();
+				console.info('clicked');
+			}
+			
 			//-----
 			
 			$('.shanti-gallery').imagesLoaded(function() {        
