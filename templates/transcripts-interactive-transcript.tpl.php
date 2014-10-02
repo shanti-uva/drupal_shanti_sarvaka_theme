@@ -6,15 +6,20 @@
 					<?php print $video_tag; ?>
 					<?php print render($video_controls); ?>
 				</td>
-				<td class='t-wrap'>
-					<?php print render($transcript_controls); ?>
-                                        <?php if (count($hits)): ?>
-                                                <?php print render($hits); ?>
-                                                <div style='display:none;'?><?php print render($transcript); ?></div>
-                                        <?php else: ?>
-                                                <?php print render($transcript); ?>
-                                        <?php endif; ?>
-				</td>
+                                <td class='t-wrap'>
+                                        <ul class='nav nav-tabs' role='tablist'>
+                                                <li class='active'><a href='#transcript' role='tab' data-toggle='tab'>Transcript</a></li>
+                                                <li><a href='#hits' role='tab' data-toggle='tab'>Search</a></li>
+                                        </ul>
+                                        <div class='t-stuff tab-content'>
+                                                <div class='tab-pane active' id='transcript'>
+                                                        <?php print render($transcript); ?>
+                                                </div>
+                                                <div class='tab-pane' id='hits'>
+                                                        <?php print render($hits); ?>
+                                                </div>
+                                        </div>
+                                </td>
 			</tr>
 		</table>
 	</div>
