@@ -2,20 +2,20 @@
 	<div id='<?php print $trid; ?>' class='transcript-player' data-defaultMode='<?php print $default_mode; ?>' data-hello='<?php print $hello; ?>'>
 		<table>
 			<tr>
-				<td class='v-wrap' style='padding-right: 20px;'>
+				<td class='video-wrapper' style='padding-right: 20px;'>
 					<?php print $video_tag; ?>
 					<?php print render($video_controls); ?>
 				</td>
-                                <td class='t-wrap'>
+                                <td class='transcript-wrapper'>
                                         <ul class='nav nav-tabs' role='tablist'>
-                                                <li class='active'><a href='#transcript' role='tab' data-toggle='tab'>Transcript</a></li>
-                                                <li><a href='#hits' role='tab' data-toggle='tab'>Search</a></li>
+                                                <li class='active'><a href='#transcript-<?php print $trid; ?>' role='tab' data-toggle='tab'>Transcript</a></li>
+                                                <li><a href='#hits-<?php print $trid; ?>' role='tab' data-toggle='tab'>Search</a></li>
                                         </ul>
-                                        <div class='t-stuff tab-content'>
-                                                <div class='tab-pane active' id='transcript'>
+                                        <div class='transcript-content tab-content'>
+                                                <div class='tab-pane active' id='transcript-<?php print $trid; ?>'>
                                                         <?php print render($transcript); ?>
                                                 </div>
-                                                <div class='tab-pane' id='hits'>
+                                                <div class='tab-pane' id='hits-<?php print $trid; ?>'>
                                                         <?php print render($hits); ?>
                                                 </div>
                                         </div>
