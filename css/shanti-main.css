@@ -69,7 +69,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 /* this targets all links inside the center container content-section */
 .content-section a{ border-bottom:2px solid transparent;-webkit-transition: border 200ms ease 0s; transition: border 200ms ease 0s;}
-.content-section a:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
+.content-section a:hover{ border-bottom-color: #f1c40f;}
 .content-section a:active{ border-bottom-color:transparent;}
 .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
 .show-more a{ font-weight:bold; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
