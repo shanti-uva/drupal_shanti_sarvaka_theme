@@ -34,7 +34,9 @@ html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparen
 body{ color:#333; text-rendering: optimizeLegibility; font-family: 'droidserif', Palatino,'Palatino Linotype',Georgia,serif; font-weight:normal; overflow: hidden;}
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline:0 !important;}
-a,a:visited,a:hover,a:focus{text-decoration:none;color:#454fa4;}
+a,a:visited{text-decoration:none;color:#454fa4;}
+a:hover,a:focus{text-decoration:none;color:#f1c40f;}
+
 ::selection{background: #f1c40f;text-shadow:none;color: #111;}
 ::moz-selection{background: #f1c40f;text-shadow:none;color:#111;}
 h1, h2, h3, h4, h5, h6{ color:#444;font-weight:normal;text-rendering:optimizelegibility;font-family:'museo-sans-500',Helvetica,Arial,sans-serif;}
@@ -67,7 +69,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 /* this targets all links inside the center container content-section */
 .content-section a{ border-bottom:2px solid transparent;-webkit-transition: border 200ms ease 0s; transition: border 200ms ease 0s;}
-.content-section a:hover{ color:#3e4793; border-bottom-color: rgba(90, 101, 209, .3000);}
+.content-section a:hover{ border-bottom-color: #f1c40f;}
 .content-section a:active{ border-bottom-color:transparent;}
 .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
 .show-more a{ font-weight:bold; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
