@@ -44,7 +44,12 @@ function shanti_sarvaka_preprocess(&$variables) {
 function shanti_sarvaka_preprocess_html(&$variables) {
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
-	_shanti_sarvaka_add_metatags();
+	// Adding Bootstrap CDN Resoures
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
+	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
+	drupal_set_title("test");
+	_shanti_sarvaka_add_metatags(); // Adds favicon meta tags
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {

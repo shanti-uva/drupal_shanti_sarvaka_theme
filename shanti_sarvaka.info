@@ -20,19 +20,14 @@ regions[page_bottom]    = Page bottom
 regions[footer]         = Footer
 regions[admin_footer]   = Admin Footer
 
-;;;;;;;;;;;;;;;;;;;;;
-;; Theme Settings
-;;;;;;;;;;;;;;;;;;;;;
-
-settings[shanti_sarvaka_base_color] = '#dc3c47'
-settings[shanti_sarvaka_icon_class] = 'av'
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] =  css/bootstrap.min.css
-stylesheets[all][] =  css/bootstrap-theme.min.css
+; Bootstrap CDN css/js assets added in template.php file
+;stylesheets[all][] =  css/bootstrap.min.css
+;stylesheets[all][] =  css/bootstrap-theme.min.css
 stylesheets[all][] =  css/utils.css
 stylesheets[all][] =  css/vjs.zencdn.nt-5.4-video-js.css
 stylesheets[all][] =  fonts/shanticon/css/style.css
@@ -46,36 +41,43 @@ stylesheets[all][] =  css/shanti-main-mb.css
 ;;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = 'js/inc/jquery/jquery-ui.min.js'
-scripts[] = 'js/inc/jquery/jquery-migrate-1.2.1.js'
-scripts[] = 'js/inc/bootstrap/bootstrap.min.js'
-scripts[] = 'js/inc/menus/jquery.multilevelpushmenu.min.js'
-scripts[] = 'js/inc/extruder/jquery.hoverIntent.min.js'
-scripts[] = 'js/inc/extruder/jquery.mb.flipText.js'
-scripts[] = 'js/inc/extruder/mbExtruder.js'
-scripts[] = 'js/inc/fancytree/jquery.fancytree.js'
-scripts[] = 'js/inc/fancytree/jquery.fancytree.glyph.js'
-scripts[] = 'js/inc/fancytree/jquery.fancytree.filter.js'
-scripts[] = 'js/inc/fancytree/jquery.fancytree.edit.js'
-scripts[] = 'js/inc/fancytree/jquery.fancytree.clearfacetfilter.js'
-scripts[] = 'js/inc/menus/metisMenu.js'
-scripts[] = 'js/inc/check/icheck.min.js'
-scripts[] = 'js/inc/select/bootstrap-select.min.js'
-scripts[] = 'js/inc/jquery/jquery.highlight.js'
-scripts[] = 'js/inc/jquery/jquery.tablesorter.min.js'
-scripts[] = 'js/inc/datatables/jquery.dataTables.min.js'
-scripts[] = 'js/inc/datatables/dataTables.bootstrap.js'
-scripts[] = 'js/inc/other/trunk8.min.js'
-;scripts[] = 'js/inc/jquery/jquery.ba-hashchange.min.js'
-scripts[] = 'js/inc/bootstrap/bootstrap-paginator.min.js'
-scripts[] = 'js/inc/other/vjs.zencdn.net-4.5-video.js'
-scripts[] = 'js/inc/other/equalHeights.js'
-scripts[] = 'js/inc/jquery/jquery.imagesloaded.js'
-scripts[] = 'js/inc/jquery/jquery.wookmark.min.js'	
-scripts[] = 'js/inc/other/modernizr-2.6.2.min.js'
-scripts[] = 'js/inc/other/jssor.slider.mini.js'
-scripts[] = 'js/inc/other/hammer.min.js'
-scripts[] = 'js/shanti-main.js'
-scripts[] = 'js/shanti-search.js'
-scripts[] = 'js/shanti-main-mb.js'
-scripts[] = 'js/shanti-search-mb.js'
+scripts[] = js/inc/jquery/jquery-ui.min.js
+scripts[] = js/inc/jquery/jquery-migrate-1.2.1.js
+;scripts[] = js/inc/bootstrap/bootstrap.min.js
+scripts[] = js/inc/menus/jquery.multilevelpushmenu.min.js
+scripts[] = js/inc/extruder/jquery.hoverIntent.min.js
+scripts[] = js/inc/extruder/jquery.mb.flipText.js
+scripts[] = js/inc/extruder/mbExtruder.js
+scripts[] = js/inc/fancytree/jquery.fancytree.js
+scripts[] = js/inc/fancytree/jquery.fancytree.glyph.js
+scripts[] = js/inc/fancytree/jquery.fancytree.filter.js
+scripts[] = js/inc/fancytree/jquery.fancytree.edit.js
+scripts[] = js/inc/fancytree/jquery.fancytree.clearfacetfilter.js
+scripts[] = js/inc/menus/metisMenu.js
+scripts[] = js/inc/check/icheck.min.js
+scripts[] = js/inc/select/bootstrap-select.min.js
+scripts[] = js/inc/jquery/jquery.highlight.js
+scripts[] = js/inc/jquery/jquery.tablesorter.min.js
+scripts[] = js/inc/datatables/jquery.dataTables.min.js
+scripts[] = js/inc/datatables/dataTables.bootstrap.js
+scripts[] = js/inc/other/trunk8.min.js
+;scripts[] = js/inc/jquery/jquery.ba-hashchange.min.js
+scripts[] = js/inc/bootstrap/bootstrap-paginator.min.js
+scripts[] = js/inc/other/vjs.zencdn.net-4.5-video.js
+scripts[] = js/inc/other/equalHeights.js
+scripts[] = js/inc/jquery/jquery.imagesloaded.js
+scripts[] = js/inc/jquery/jquery.wookmark.min.js	
+scripts[] = js/inc/other/modernizr-2.6.2.min.js
+scripts[] = js/inc/other/jssor.slider.mini.js
+scripts[] = js/inc/other/hammer.min.js
+scripts[] = js/shanti-main.js
+scripts[] = js/shanti-search.js
+scripts[] = js/shanti-main-mb.js
+scripts[] = js/shanti-search-mb.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Theme Settings
+;;;;;;;;;;;;;;;;;;;;;
+
+settings[shanti_sarvaka_base_color] = '#dc3c47'
+settings[shanti_sarvaka_icon_class] = 'av'
