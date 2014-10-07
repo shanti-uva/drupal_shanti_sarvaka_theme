@@ -881,6 +881,7 @@ input.form-control{
 
 
 /*--- BEGIN paging --*/
+.shanti-filters { min-height: 30px; }
 .shanti-filters table{ float:right;} /* for firefox */
 table.pagerer { clear: both;color:#555;text-align:right;margin: 0 4em 0 0;font-size:80%;font-family:'museo-sans-700',Helvetica,Arial,sans-serif;	text-transform:uppercase;font-weight:bold;float:right;width:100%;}
 input.pagerer-page{ /* the input for page count */ border:none;	padding-top: 0.12em;line-height:1.25em;color: #6d7afc;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;border-radius:2px;background-clip: padding-box;	width:2.68em;}
