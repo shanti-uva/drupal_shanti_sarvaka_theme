@@ -277,6 +277,7 @@
           	<div class="panel-group" id="av-details">
            		<?php 
 		          	$content['group_details']['#attributes']['class'][] = "in"; 
+								
 								/*
 								 * TODO: Deal with titles. Right now displays first title in current language in mediabase.module hook_node_view
 								 */

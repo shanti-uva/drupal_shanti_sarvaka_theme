@@ -275,6 +275,7 @@
 								/*
 								 * TODO: Deal with titles. Right now displays first title in current language in mediabase.module hook_node_view
 								 */
+								 //dpm($content, 'content in template');
 								hide($content['group_details']['field_pbcore_title']);
 		          	print render($content); 
 		          ?>
