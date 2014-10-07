@@ -35,7 +35,7 @@ body{ color:#333; text-rendering: optimizeLegibility; font-family: 'droidserif',
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:focus{ outline:0 !important;}
 a,a:visited{text-decoration:none;color:#454fa4;}
-a:hover,a:focus{text-decoration:none;}
+a:hover,a:focus{text-decoration:none;color:#cc522f;}
 
 ::selection{background: #999;text-shadow:none;color:white;}
 ::moz-selection{background: #999;text-shadow:none;color:white;}
