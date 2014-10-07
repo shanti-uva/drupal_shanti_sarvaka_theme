@@ -266,7 +266,7 @@
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
           	<div class="btn-group avnode-details-buttons">
-          		<button type="button" value="click here" class="btn btn-default btn-sm btn-edit-details">Edit Details</button>
+          		<button type="button" value="click here" class="btn btn-default btn-sm btn-edit-details">Customize</button>
           		<button type="button" class="btn btn-default btn-sm btn-toggle-accordion expand">Expand All</button>
           	</div>
           	<div class="panel-group" id="av-details">
