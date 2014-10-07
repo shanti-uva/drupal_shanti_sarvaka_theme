@@ -260,15 +260,8 @@
         
         <!-- Tab panes -->
         <div class="tab-content">
-         <div class="tab-pane" id="related">
-            <?php
-              if(isset($variables['suggestions'])) {
-                print $variables['suggestions'];
-              } else {
-                print t('<p>No Suggested Items Found</p>');
-              }
-            ?>
-          </div> <!-- End of #related --> 
+         <div class="tab-pane mlt" id="related" data-nid="<?php print $node->nid;?>">
+         </div> <!-- End of #related --> 
           <div class="tab-pane active" id="details">
           	<div class="btn-group avnode-details-buttons">
           		<button type="button" value="click here" class="btn btn-default btn-sm btn-edit-details">Customize</button>

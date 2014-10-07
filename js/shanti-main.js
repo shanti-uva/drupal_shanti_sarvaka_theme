@@ -551,6 +551,44 @@
 	};
 
 	/**
+	 * Gallery: Initialize a gallery of images
+	 */
+	Drupal.behaviors.shanti_sarvaka_galleryinit = {
+		attach: function (context, settings) {	
+				$('.shanti-gallery').imagesLoaded(function() {    
+		        // Prepare layout options.
+		        var options = {
+		          itemWidth: 160, // Optional min width of a grid item
+		          autoResize: true, // This will auto-update the layout when the browser window is resized.
+		          container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
+		          offset: 15, // Optional, the distance between grid items
+		          outerOffset: 10, // Optional the distance from grid to parent
+		          flexibleWidth: '30%' // Optional, the maximum width of a grid item
+		        };
+		
+		        // Get a reference to your grid items.
+		        var handler = $('.shanti-gallery li');
+		
+		        var $window = $(window);
+		        $window.resize(function() {
+		          var windowWidth = $window.width(),
+		              newOptions = { flexibleWidth: '30%' };
+		
+		          // Breakpoint
+		          if (windowWidth < 1024) {
+		            newOptions.flexibleWidth = '100%';
+		          }
+		
+		          handler.wookmark(newOptions);
+		        });
+		
+		        // Call the layout function.
+		        handler.wookmark(options);
+	    	});
+	   }
+	};
+	
+	/**
 	 * Other: All of below if from Mark's separate Jquery() functions
 	 */
 	Drupal.behaviors.shanti_sarvaka_otherinit = {
@@ -640,39 +678,6 @@
 			
 			//-----
 			
-			$('.shanti-gallery').imagesLoaded(function() {        
-        // Prepare layout options.
-        var options = {
-          itemWidth: 160, // Optional min width of a grid item
-          autoResize: true, // This will auto-update the layout when the browser window is resized.
-          container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
-          offset: 15, // Optional, the distance between grid items
-          outerOffset: 10, // Optional the distance from grid to parent
-          flexibleWidth: '30%' // Optional, the maximum width of a grid item
-        };
-
-        // Get a reference to your grid items.
-        var handler = $('.shanti-gallery li');
-
-        var $window = $(window);
-        $window.resize(function() {
-          var windowWidth = $window.width(),
-              newOptions = { flexibleWidth: '30%' };
-
-          // Breakpoint
-          if (windowWidth < 1024) {
-            newOptions.flexibleWidth = '100%';
-          }
-
-          handler.wookmark(newOptions);
-        });
-
-        // Call the layout function.
-        handler.wookmark(options);
-                
-    	});
-    	//----
-    	
     	$('.ss-full-tabs > .rel-video').on('click', function () {
 	    	$.imagesLoaded();
 	    });

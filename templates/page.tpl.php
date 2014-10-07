@@ -111,7 +111,7 @@
           <?php endif; ?>
         </div>
         
-        <a href="#" class="back-to-top"><i class="icon"></i></a>
+        <a href="#" class="back-to-top"><i class="icon fa"></i></a>
       </article>
 
 
