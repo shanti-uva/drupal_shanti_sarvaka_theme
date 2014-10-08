@@ -143,7 +143,10 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 #edit-filter-settings-title{ margin-bottom:0 !important;}
 
-/* --- Video Edit form --*/
+/* ---------------------- */
+/* -- Video Edit form --- */
+/* ---------------------- */
+
 .btn-icon .glyphicon {
 	font-size: 1.5em;
 	margin-top: -2px;
@@ -172,6 +175,28 @@ div.file-widget.form-managed-file > * {
 .node-form .form-item .description {
 	padding-left: 1.75em;
 }
+
+/* Title Group */
+div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language {
+	float: left;
+	border: none;
+}
+
+div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label {
+	display: block;
+	padding: 0px 0px 8px 0px;
+}
+
+div.field-name-field-title button.dropdown-toggle.selectpicker, div.field-name-field-title-type button.dropdown-toggle.selectpicker, div.field-name-field-language button.dropdown-toggle.selectpicker {
+	width: 90% !important;
+	margin-left: 5%;
+}
+/* in progess
+div.field-name-field-title button.btn btn-primary form-submit
+*/
+/* ----------------------------*/
+/* -- End of Video Edit form --*/
+/* ----------------------------*/
 
 /*--- show-hide toggle button ---*/
 a.show-annot, 

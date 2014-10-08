@@ -802,9 +802,7 @@ function shanti_sarvaka_form($variables) {
 function shanti_sarvaka_button($variables) {
   $element = $variables['element'];
   $text = $element['#value'];
-
-	//$element['#attributes']['type'] = array('button');
-	//$element['#attributes']['class'] = array('btn', 'btn-primary');
+	// Deal with custom #icon field
   $icon = '';
   if(!empty($element['#icon'])) {
   	$iconclass = $element['#icon'];
@@ -818,9 +816,11 @@ function shanti_sarvaka_button($variables) {
   	$icon = "<span class=\"{$iconclass}\"></span> ";
 		$element['#attributes']['class'][] = 'btn-icon';
   }
+	// Attributes
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
+	dpr($element);
 	// Add type "submit" to ajax buttons so that they get selected by views ajax.js for processing. 
 	// See https://www.drupal.org/node/1692198 and https://issues.shanti.virginia.edu/browse/MB-550
 	if(in_array('form-submit', $element['#attributes']['class']) && empty($element['#attributes']['type'])) {
