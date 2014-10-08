@@ -808,17 +808,21 @@ function shanti_sarvaka_button($variables) {
   $icon = '';
   if(!empty($element['#icon'])) {
   	$iconclass = $element['#icon'];
-		if(strpos($iconclass, 'shanticon') > -1) { $iconclass = 'icon ' . $iconclass; }
-		if(strpos($iconclass, 'glyphicon') > -1) { $iconclass = 'glyphicon ' . $iconclass; }
-		if(strpos($iconclass, 'fa') > -1) { $iconclass = 'fa ' . $iconclass; }
-		$text = '';
+		if(strpos($iconclass, 'glyphicon') > -1) {
+			 $iconclass = 'glyphicon ' . $iconclass; 
+		} elseif(strpos($iconclass, 'fa-') > -1) {
+			 $iconclass = 'fa ' . $iconclass; 
+		} else {
+			$iconclass = 'icon shanticon-' . $iconclass; 
+		}
   	$icon = "<span class=\"{$iconclass}\"></span> ";
 		$element['#attributes']['class'][] = 'btn-icon';
   }
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
-	// Add type "submit" to ajax buttons so that they get selected by views ajax.js for processing. See https://www.drupal.org/node/1692198
+	// Add type "submit" to ajax buttons so that they get selected by views ajax.js for processing. 
+	// See https://www.drupal.org/node/1692198 and https://issues.shanti.virginia.edu/browse/MB-550
 	if(in_array('form-submit', $element['#attributes']['class']) && empty($element['#attributes']['type'])) {
 		$element['#attributes']['type'] = 'submit';
 	}
