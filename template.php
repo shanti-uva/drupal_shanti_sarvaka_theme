@@ -63,6 +63,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
   $variables['theme_path'] = $base; 
 	$variables['base_theme'] = (empty($base_theme_info)) ? FALSE : $base_theme_info[0]->name;
+	$variables['base_theme_path'] = (empty($base_theme_info)) ? FALSE : $base_path . 'sites/all/themes/' . $base_theme_info[0]->name . '/';
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
 	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
 	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');

@@ -1813,6 +1813,10 @@ table.features td.sign{ font-size:0.75em;}
 	background-position:97% .56em !important;
 }
 
+/*-- Prevent views dialog transparency --*/
+.views-ui-dialog, .views-ui-dialog *, #views-ajax-popup {
+	background-color: white;
+}
 
 /*-----------------------------------------------------------*/
 /*--- START Default Font Styles for shanticon Collection ----*/
