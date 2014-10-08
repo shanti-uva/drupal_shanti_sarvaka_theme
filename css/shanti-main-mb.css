@@ -143,7 +143,35 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 #edit-filter-settings-title{ margin-bottom:0 !important;}
 
+/* --- Video Edit form --*/
+.btn-icon .glyphicon {
+	font-size: 1.5em;
+	margin-top: -2px;
+}
+button.btn.btn-delete {
+	max-width: 3em;
+	max-height: 3em;
+}
 
+button.btn.btn-delete:hover {
+	background-color: red !important;
+}
+
+input.form-inline {
+	display: inline;
+}
+
+div.file-widget.form-managed-file > * {
+	display: inline;
+}
+
+.node-form .form-item .file-widget.form-managed-file {
+	padding-left: 1.75em;
+}
+
+.node-form .form-item .description {
+	padding-left: 1.75em;
+}
 
 /*--- show-hide toggle button ---*/
 a.show-annot, 

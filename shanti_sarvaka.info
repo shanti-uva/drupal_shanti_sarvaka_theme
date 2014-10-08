@@ -3,6 +3,8 @@ description = A responsive Drupal 7 theme for all Shanti@UVa sites, built with B
 core = 7.x
 version = 1.x
 
+dependencies[] = jquery_update
+
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;

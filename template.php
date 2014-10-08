@@ -726,7 +726,62 @@ function shanti_sarvaka_fieldset($variables) {
    $output .= '</div></div></div>';
    return $output;
 }
- 
+
+/** 
+ * Field theme functions
+ */
+function shanti_sarvaka_file_widget($variables) {
+  $element = $variables['element'];
+  $output = '';
+	if(isset($element['remove_button'])) {
+		$element['remove_button']['#icon'] = 'glyphicon-trash';
+		$element['remove_button']['#attributes']['class'][] = 'btn-delete';
+		$element['remove_button']['#attributes']['class'][] = 'btn-sm';
+	}
+	$filelink = "";
+	if(!empty($element['filename'])) {
+		// change file name to disabled input
+		$element['filename']['#markup'] = '<input class="text-full form-control form-inline" placeholder="File Name" type="text" id="' . $element['#field_name'] . '_value" name="filename_display" disabled value="' . 
+		$element['#default_value']['filename'] . '" size="60" maxlength="255"> ';
+		$filelink = '(<a href="' . file_create_url($element['#default_value']['uri']) . '" target="_blank">View File</a>) ';
+	} else {
+		$markup = explode(' | ', $element['filefield_sources_list']['#markup']);
+		if(count($markup) == 2) {
+			$element['filefield_sources_list']['#markup'] = "<div class=\"filefield-sources-list\">" . $markup[1] . ' or ';
+		}
+	}
+  // The "form-managed-file" class is required for proper Ajax functionality.
+  $output .= '<div class="file-widget form-managed-file clearfix">';
+  if ($element['fid']['#value'] != 0) {
+    // Add the file size after the file name.
+    $element['filename']['#markup'] .= ' <span class="file-size">(' . format_size($element['#file']->filesize) . ')</span> <span class="file-link">(<a href="' . file_create_url($element['#default_value']['uri']) . '" target="_blank">View File</a>)</span> ';
+  }
+  $output .= drupal_render_children($element);
+  $output .= '</div>';
+  //dpr(json_encode($element));
+  return $output;
+}
+
+
+function shanti_sarvaka_file_managed_file($variables) {
+  $element = $variables['element'];
+dpr('in file managed');
+  $attributes = array();
+  if (isset($element['#id'])) {
+    $attributes['id'] = $element['#id'];
+  }
+  if (!empty($element['#attributes']['class'])) {
+    $attributes['class'] = (array) $element['#attributes']['class'];
+  }
+  $attributes['class'][] = 'form-managed-file';
+
+  // This wrapper is required to apply JS behaviors and CSS styling.
+  $output = '';
+  $output .= '<div' . drupal_attributes($attributes) . '>';
+  $output .= drupal_render_children($element);
+  $output .= '</div>';
+  return $output;
+}
 /**
  * Theme Form for Search block form
  */
@@ -747,11 +802,17 @@ function shanti_sarvaka_form($variables) {
 function shanti_sarvaka_button($variables) {
   $element = $variables['element'];
   $text = $element['#value'];
+
 	//$element['#attributes']['type'] = array('button');
 	//$element['#attributes']['class'] = array('btn', 'btn-primary');
   $icon = '';
   if(!empty($element['#icon'])) {
-  	$icon = "<i class=\"icon shanticon-{$element['#icon']}\"></i> ";
+  	$iconclass = $element['#icon'];
+		if(strpos($iconclass, 'shanticon') > -1) { $iconclass = 'icon ' . $iconclass; }
+		if(strpos($iconclass, 'glyphicon') > -1) { $iconclass = 'glyphicon ' . $iconclass; }
+		if(strpos($iconclass, 'fa') > -1) { $iconclass = 'fa ' . $iconclass; }
+		$text = '';
+  	$icon = "<span class=\"{$iconclass}\"></span> ";
 		$element['#attributes']['class'][] = 'btn-icon';
   }
   if (!empty($element['#attributes']['disabled'])) {
