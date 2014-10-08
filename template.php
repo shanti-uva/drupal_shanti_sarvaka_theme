@@ -818,6 +818,10 @@ function shanti_sarvaka_button($variables) {
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
+	// Add type "submit" to ajax buttons so that they get selected by views ajax.js for processing. See https://www.drupal.org/node/1692198
+	if(in_array('form-submit', $element['#attributes']['class']) && empty($element['#attributes']['type'])) {
+		$element['#attributes']['type'] = 'submit';
+	}
   element_set_attributes($element, array('id', 'name', 'value'));
   return '<button ' . drupal_attributes($element['#attributes']) . '>' . $icon . '<span>' . $text . '</span></button>';
 }
