@@ -177,19 +177,24 @@ div.file-widget.form-managed-file > * {
 }
 
 /* Title Group */
-div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language {
+
+div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
 	float: left;
 	border: none;
 }
 
-div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label {
+div.field-type-field-collection tr.draggable td div[class*="field-type-"] label { /* was: div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label */
 	display: block;
 	padding: 0px 0px 8px 0px;
 }
 
-div.field-name-field-title button.dropdown-toggle.selectpicker, div.field-name-field-title-type button.dropdown-toggle.selectpicker, div.field-name-field-language button.dropdown-toggle.selectpicker {
+div.field-type-field-collection tr.draggable td div[class*="field-type-"] button.dropdown-toggle.selectpicker { /* was div.field-name-field-title button.dropdown-toggle.selectpicker, div.field-name-field-title-type button.dropdown-toggle.selectpicker, div.field-name-field-language button.dropdown-toggle.selectpicker */
 	width: 90% !important;
 	margin-left: 5%;
+}
+
+div.field-type-field-collection tr.draggable td div.field-type-text-long {
+	width: 75%;
 }
 
 form.node-form button.btn-delete {

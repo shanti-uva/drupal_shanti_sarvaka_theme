@@ -824,6 +824,7 @@ function shanti_sarvaka_button($variables) {
 		$element['#attributes']['class'][] = 'btn-delete';
 		$element['#attributes']['class'][] = 'btn-sm';
 		$element['#attributes']['class'][] = 'btn-icon';
+		$element['#attributes']['title'] = t('Remove this field value');
   	$icon = "<span class=\"icon shanticon-trash\"></span> ";
 		$text = "";
 	}
