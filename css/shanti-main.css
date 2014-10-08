@@ -1814,7 +1814,7 @@ table.features td.sign{ font-size:0.75em;}
 }
 
 /*-- Prevent views dialog transparency --*/
-.views-ui-dialog, .views-ui-dialog * {
+.views-ui-dialog, .views-ui-dialog *, #views-ajax-popup {
 	background-color: white;
 }
 
