@@ -147,17 +147,10 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 /* -- Video Edit form --- */
 /* ---------------------- */
 
+/* Glyphicon fix */
 .btn-icon .glyphicon {
 	font-size: 1.5em;
 	margin-top: -2px;
-}
-button.btn.btn-delete {
-	max-width: 3em;
-	max-height: 3em;
-}
-
-button.btn.btn-delete:hover {
-	background-color: red !important;
 }
 
 input.form-inline {
@@ -197,15 +190,49 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 	width: 75%;
 }
 
+/* Remove button (Trashcan icon) */
 form.node-form button.btn-delete {
-	margin-top: 4.24em;
+	float: right; 
+	max-width: 3em;
+	max-height: 3em;
 	min-height: 22px;
+	margin-left: 3em;
+}
+
+/* tr.draggable are field groups where user can add any number of fields */
+form.node-form tr.draggable button.btn-delete {
+	margin-top: 3em;
 }
 
 form.node-form button.btn-delete span.icon {
 	padding: 0;
 	margin: -4px;
 }
+
+form.node-form button.btn-delete span.icon:hover {
+	background-color: red !important;
+}
+
+/* Details Field Group */
+
+div.collection-details-audience {
+	width: 100%;
+	background-color: #f0f0f0;
+	padding: 12px 8px 8px 10px;
+}
+
+.form-item.form-type-select.form-item-group-audience-und label {
+	display: block;
+	max-width: 100%;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 100%;
+	color: #333;
+	font-family: 'droidserif', Palatino,'Palatino Linotype',Georgia,serif;
+	text-transform: none;
+}
+
 /* ----------------------------*/
 /* -- End of Video Edit form --*/
 /* ----------------------------*/

@@ -182,6 +182,7 @@ function shanti_sarvaka_preprocess_block(&$variables) {
 	}
 }
 
+
 /**
  * Converts block menus in banner to secondary tab links
  */
@@ -223,12 +224,18 @@ function shanti_sarvaka_banner_tabs(&$banner) {
  * Implements hook_form_alter: to alter search block
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
+	//dpm($form_id);
   if ($form_id == 'search_block_form') {
 		$form['#prefix'] = '<section class="input-section" style="display:none;"> ';
 		$form['#suffix'] = '</section>';
 		$form['#attributes']['class'][] = 'form';
   	$form['actions']['submit']['#attributes'] = array("class" => array("btn", "btn-default"));
 		$form['actions']['submit']['#value'] = 'search-icon'; // This replaced by the icon code in shanti_sarvaka_button function
+	}
+	if(in_array($form_id, array('video_node_form','audio_node_form'))) {
+		$form['#groups']['group_media']->weight = -10;
+		$form['group_audience']['#weight'] = -5;
+		//dpm($form, 'a/v edit form');
 	}
 }
 

@@ -589,6 +589,56 @@
 	};
 	
 	/**
+	 * Accordion Init: only called on document load
+	 */
+	Drupal.behaviors.shanti_sarvaka_accordion = {
+		attach: function (context, settings) {
+		
+	    if(context == window.document) {
+					
+				/* testing toggle on accordions */
+	
+		    var $active = $('.panel-group .panel-collapse.in').prev().addClass('active');
+		    
+		    $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
+		    
+		    $('.panel-group .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+		    
+		    $('.panel-group').on('show.bs.collapse', function (e) {
+		        $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+		        $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+		    });
+		    
+		    $('.panel-group').on('hide.bs.collapse', function (e) {
+		        $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+		    });
+
+				/* toggle icon on accordions */
+				$('.btn-toggle-accordion').click(function () {
+			
+			    $(this).toggleClass('expand');   
+			    
+			    if($('.btn-toggle-accordion').hasClass('expand')) {
+			        
+			        $(this).text('Expand All');
+			        $('.panel-collapse').collapse('hide');	
+			        $('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');	
+				    } else {	        
+			        $(this).text('Collapse All');
+			        $('.panel-collapse').collapse('show');
+			        $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+			    }
+				});  
+				
+				// Open first accordion if none opened
+				if($(".collapsible.in").length == 0) {
+					$(".collapsible").eq(0).find('h6.panel-title a').click();
+				}
+			}
+		}
+	};
+	
+	/**
 	 * Other: All of below if from Mark's separate Jquery() functions
 	 */
 	Drupal.behaviors.shanti_sarvaka_otherinit = {
@@ -636,51 +686,10 @@
 			})();
 			//----
 			
-			/* testing toggle on accordions */
-
-	    var $active = $('.panel-group .panel-collapse.in').prev().addClass('active');
-	    
-	    $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
-	    
-	    $('.panel-group .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
-	    
-	    $('.panel-group').on('show.bs.collapse', function (e) {
-	        $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-	        $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-	    });
-	    
-	    $('.panel-group').on('hide.bs.collapse', function (e) {
-	        $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-	    });
-	    //------
-
-			/* toggle icon on accordions */
-			$('.btn-toggle-accordion').click(function () {
-		
-		    $(this).toggleClass('expand');   
-		    
-		    if($('.btn-toggle-accordion').hasClass('expand')) {
-		        
-		        $(this).text('Expand All');
-		        $('.panel-collapse').collapse('hide');	
-		        $('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');	
-			    } else {	        
-		        $(this).text('Collapse All');
-		        $('.panel-collapse').collapse('show');
-		        $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-		    }
-			});  
-			
-			// Open first accordion if none opened
-			if($(".collapsible.in").length == 0) {
-				$(".collapsible").eq(0).find('h6.panel-title a').click();
-			}
-			
-			//-----
-			
+			/*
     	$('.ss-full-tabs > .rel-video').on('click', function () {
 	    	$.imagesLoaded();
-	    });
+	    });*/
 	    //----
 	    
 	    var myElement = document.getElementById('.carousel.slide');
