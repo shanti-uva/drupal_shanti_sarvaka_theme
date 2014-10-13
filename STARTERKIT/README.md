@@ -1,31 +1,16 @@
-# Shanti Sarvaka Theme
+# Starter Kit for a Sub-Theme of the Shanti Sarvaka Theme
 
-A Bootstrap-based Drupal theme for all of Shanti's restyling from Convoy.
+This folder should be used to create a sub-theme for the Shanti Sarvaka theme. 
+The folder should be copied into the sites .../sites/all/themes/ folder and renamed from STARTERKIT to the name of the sub-theme
+Within this folder there are several files that have STARTERKIT as part of the name.
+Each instance of "STARTERKIT" should be replaced with your sub-theme's name.
 
-Base on Bootstrap v3.1.1
+The following items should replace "STARTERKIT" with the sub-theme's name:
 
-Development Begun: May 2014
-
-* **Lead:** Than Grove
-* **Developers:** Gerard Ketuma, Mark Ferrara
-
-# Requirements
-* jQuery Update (jquery v. 1.10.2) is required for the functioning of the Bootstrap interface.
-* Custom Sarvaka Modules: https://github.com/shanti-uva/drupal_shanti_sarvaka_modules
-
-# Notes
-
-* Explore menu button and preference menu are part of Shanti Sarvaka modules which must be enabled
-* Options can be added to search form by modules using hook_form_alter on 'search_block_form' and adding a 'shanti_options' element to the form array
-_Example is:_
-```
-$form['shanti_options'] = array(
-			'scope' => array(
-				'#type' => 'checkboxes',
-				'#options' => array(t('Descriptions'), t('Transcripts')),
-				'#attributes' => array('class' => array('shanti-options')),
-			),
-		);
-```
-
+* Name of the STARTERKIT folder
+* STARTERKIT.info (as well as settings in the file to the following files and the file names themselves):
+* shanti-main-STARTERKIT.css
+* shanti-search-STARTERKIT.css
+* shanti-main-STARTERKIT.js
+* shanti-search-STARTERKIT.js
 
