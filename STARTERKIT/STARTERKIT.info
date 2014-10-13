@@ -1,4 +1,4 @@
-name = Shanti Sarvaka STARTERLOT
+name = Shanti Sarvaka STARTERKIT
 description = A sub-theme of the Drupal 7 Shanti Sarvaka Theme
 core = 7.x
 base theme = shanti_sarvaka
@@ -27,8 +27,8 @@ regions[admin_footer]   = Admin Footer
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] =  css/shanti-search-STARTERKIT.css
 stylesheets[all][] =  css/shanti-main-STARTERKIT.css
+stylesheets[all][] =  css/shanti-search-STARTERKIT.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts

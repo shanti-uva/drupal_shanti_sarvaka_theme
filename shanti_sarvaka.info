@@ -36,8 +36,6 @@ stylesheets[all][] =  fonts/shanticon/css/style.css
 stylesheets[all][] =  css/search-bibliography.css
 stylesheets[all][] =  css/shanti-search.css
 stylesheets[all][] =  css/shanti-main.css
-stylesheets[all][] =  css/shanti-search-mb.css
-stylesheets[all][] =  css/shanti-main-mb.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
@@ -74,8 +72,6 @@ scripts[] = js/inc/other/jssor.slider.mini.js
 scripts[] = js/inc/other/hammer.min.js
 scripts[] = js/shanti-main.js
 scripts[] = js/shanti-search.js
-scripts[] = js/shanti-main-mb.js
-scripts[] = js/shanti-search-mb.js
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Theme Settings
