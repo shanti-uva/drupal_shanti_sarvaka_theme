@@ -8,9 +8,8 @@ Each instance of "STARTERKIT" should be replaced with your sub-theme's name.
 The following items should replace "STARTERKIT" with the sub-theme's name:
 
 * Name of the STARTERKIT folder
-* STARTERKIT.info (as well as settings in the file to the following files and the file names themselves):
+* STARTERKIT.info (as well as settings in this file for the following files and the file names themselves):
 * shanti-main-STARTERKIT.css
 * shanti-search-STARTERKIT.css
 * shanti-main-STARTERKIT.js
 * shanti-search-STARTERKIT.js
-
