@@ -55,7 +55,12 @@
   <?php endif; ?>
   <span class="field-items-span"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
-      <span class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></span>
+      <span class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php 
+	      if(!empty($item['#icon'])) {
+	      	print '<span class="icon shanticon-' . $item['#icon'] . '"></span> ';
+	      }
+      	print render($item); 
+      ?></span>
     <?php endforeach; ?>
   </span>
 </div>
