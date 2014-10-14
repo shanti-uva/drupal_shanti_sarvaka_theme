@@ -238,18 +238,6 @@ function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
 	}
 }
 
-/**
-* Changes the search form to use the "search" input element of HTML5.
-*
-function shanti_sarvaka_preprocess_search_block_form(&$variables) {
-  //dpm($variables, 'vars in preprocess search block');
-	dpm($variables, 'vars in search block form');
-}*/
-
-/*
-function shanti_sarvaka_preprocess_search_results(&$variables) {
-  dpm($variables, 'vars34');
-}*/
 
 function shanti_sarvaka_preprocess_search_result(&$variables) {
   global $base_path;
@@ -770,7 +758,6 @@ function shanti_sarvaka_file_widget($variables) {
 
 function shanti_sarvaka_file_managed_file($variables) {
   $element = $variables['element'];
-dpr('in file managed');
   $attributes = array();
   if (isset($element['#id'])) {
     $attributes['id'] = $element['#id'];
