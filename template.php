@@ -16,12 +16,11 @@ function shanti_sarvaka_theme() {
     ),
     'info_popup' => array(
 			'variables' => array(
-				'title' => '',
-				'desc' => '',
-				'parent_head' => '',
-				'parents' => array(),
-				'links' => array(),
-			)
+				'label' => '', 
+				'desc' => '', 
+				'tree' => array(), 
+				'links' => '',
+			),
 		),
   );
   return $items;
