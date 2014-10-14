@@ -93,7 +93,7 @@
           <!-- Begin Page Content -->
           <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>"> 
           <!-- Message Area -->
-          <?php if (isset($messages)) { ?><div class="messages"><?php print $messages; ?></div> <?php } ?>
+          <?php if (!empty($messages)) { print "<div class=\"messages\">$messages</div>"; } ?>
             <div class="tab-content">
               <article class="tab-pane main-col active" id="tab-overview">
               	 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
