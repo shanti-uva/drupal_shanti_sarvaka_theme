@@ -51,16 +51,22 @@
 ?>
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
-    <span class="field-label-span"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</span>
+  	<?php if(!empty($element['#icon'])) { print "<span class=\"icon shanticon-{$element['#icon']}\"></span>"; } ?>
+    <span class="field-label-span"<?php print $title_attributes; ?>><?php
+     	print $label; 
+    ?>&nbsp;</span>
   <?php endif; ?>
   <span class="field-items-span"<?php print $content_attributes; ?>>
-    <?php foreach ($items as $delta => $item): ?>
-      <span class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php 
-	      if(!empty($item['#icon'])) {
-	      	print '<span class="icon shanticon-' . $item['#icon'] . '"></span> ';
-	      }
-      	print render($item); 
-      ?></span>
-    <?php endforeach; ?>
+  	<?php if($element['#label_display'] == 'hidden'): ?>
+	    <?php foreach ($items as $delta => $item): ?>
+	      <span class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></span>
+	    <?php endforeach; ?>
+	  <?php else: ?>
+	  	<ul>
+	    <?php foreach ($items as $delta => $item): ?>
+	      <li class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></li>
+	    <?php endforeach; ?>
+	    </ul>
+	  <?php endif; ?>
   </span>
 </div>
