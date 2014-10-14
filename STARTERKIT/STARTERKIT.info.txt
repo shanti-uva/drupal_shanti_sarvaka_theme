@@ -2,7 +2,7 @@ name = Shanti Sarvaka STARTERKIT
 description = A sub-theme of the Drupal 7 Shanti Sarvaka Theme
 core = 7.x
 base theme = shanti_sarvaka
-version = 1.x
+version = 7.x-1.x
 
 dependencies[] = jquery_update ; requires jquery v 1.10+
 
