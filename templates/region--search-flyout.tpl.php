@@ -1,5 +1,5 @@
 <!-- Search Tab -->
-<section id="gen-search" class="extruder right" role="search"> 
+<section id="gen-search" class="extruder right" role="search" style="display:none;"> 
  <?php 
     if(isset($search_form['#children'])) {
     	//dpm(render($search_form));
