@@ -252,6 +252,22 @@ function shanti_sarvaka_html_head_alter(&$head_elements) {
 }
 
 /**
+ * Implements theme_html_tag for following reasons:
+ * 		 1. remove closing slash from meta tags
+ */
+function shanti_sarvaka_html_tag($variables) {
+	$element = $variables['element'];
+	// remove closing / from meta tags.
+	if($element['#tag'] == 'meta') {
+		$html = theme_html_tag($variables);
+		$html = str_replace('/>', '>', $html);
+		return $html;
+	} else {
+		return theme_html_tag($variables);
+	}
+}
+
+/**
  * Implements hook_form_alter: to alter search block
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
