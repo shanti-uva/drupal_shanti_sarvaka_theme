@@ -247,7 +247,7 @@ function shanti_sarvaka_banner_tabs(&$banner) {
  * Implements hook_html_head_alter
  */
 function shanti_sarvaka_html_head_alter(&$head_elements) {
-	dpm($head_elements, 'head elements');
+	//dpm($head_elements, 'head elements');
 	$head_elements['system_meta_content_type']['#attributes'] = array('charset' => 'UTF-8') ; // recommended for HTML5
 }
 
