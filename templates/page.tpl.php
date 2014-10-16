@@ -12,7 +12,7 @@
 	      </nav>
 	
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
-	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<? print $site_name; ?> Homepage">
+	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<?php print $site_name; ?> Homepage">
 	          <?php if($variables['shanti_site']): ?>
 	            <i class="icon shanticon-logo"></i><em>SHANTI</em><?php if($variables['use_admin_site_title']) {
 		            	print "<span class=\"site-title\">{$site_name}</span>";
