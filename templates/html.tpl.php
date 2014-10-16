@@ -49,7 +49,7 @@
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-<head profile="<?php print $grddl_profile; ?>">
+<head> <!-- head had attribute: profile="<?php print $grddl_profile; ?>" -->
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
