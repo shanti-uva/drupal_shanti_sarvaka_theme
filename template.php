@@ -67,7 +67,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	foreach($metas as $key => $details) {
 		drupal_add_html_head($details, $key);
 	}
-	_shanti_sarvaka_add_metatags(); // Adds favicon meta tags
+	//_shanti_sarvaka_add_metatags(); // Adds favicon meta tags NOT needed automatically picked up by device
 	// Adding Bootstrap CDN Resoures
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
