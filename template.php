@@ -41,14 +41,38 @@ function shanti_sarvaka_preprocess(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_html(&$variables) {
+	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
+	// Add Meta Tags
+	$metas = array(
+		'ie_edge' => array(
+			'#type' => 'html_tag',
+			'#tag' => 'meta',
+			'#attributes' => array(
+				'http-equiv' => 'X-UA-Compatible',
+				'content' => 'IE=edge',
+			),
+			'#weight' => -999, // meta content type UTF-8 is weight: -1000. This puts the tag just after that
+		),
+		'viewport' => array(
+			'#type' => 'html_tag',
+			'#tag' => 'meta',
+			'#attributes' => array(
+				'content' => 'width=device-width, initial-scale=1',
+			),
+			'#weight' => -998,
+		),
+	);
+	foreach($metas as $key => $details) {
+		drupal_add_html_head($details, $key);
+	}
+	_shanti_sarvaka_add_metatags(); // Adds favicon meta tags
 	// Adding Bootstrap CDN Resoures
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
 	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
-	drupal_set_title("test");
-	_shanti_sarvaka_add_metatags(); // Adds favicon meta tags
+
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
@@ -217,6 +241,14 @@ function shanti_sarvaka_banner_tabs(&$banner) {
 		unset($banner[$menunm]);
 	}
 	return $links;
+}
+
+/**
+ * Implements hook_html_head_alter
+ */
+function shanti_sarvaka_html_head_alter(&$head_elements) {
+	dpm($head_elements, 'head elements');
+	$head_elements['system_meta_content_type']['#attributes'] = array('charset' => 'UTF-8') ; // recommended for HTML5
 }
 
 /**
