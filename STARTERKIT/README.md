@@ -13,3 +13,4 @@ The following items should replace "STARTERKIT" with the sub-theme's name:
 * shanti-search-STARTERKIT.css
 * shanti-main-STARTERKIT.js
 * shanti-search-STARTERKIT.js
+* Name of form alter function (STARTERKIT_form_system_theme_settings_alter) in theme-settings.php
