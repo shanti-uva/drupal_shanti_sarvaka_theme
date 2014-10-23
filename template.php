@@ -277,7 +277,8 @@ function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
 		$form['#suffix'] = '</section>';
 		$form['#attributes']['class'][] = 'form';
   	$form['actions']['submit']['#attributes'] = array("class" => array("btn", "btn-default"));
-		$form['actions']['submit']['#value'] = 'search-icon'; // This replaced by the icon code in shanti_sarvaka_button function
+		$form['actions']['submit']['#value'] = ''; // This replaced by the icon code in shanti_sarvaka_button function
+		$form['actions']['submit']['#icon'] = 'glyphicon-chevron-right';
 	}
 	if(in_array($form_id, array('video_node_form','audio_node_form'))) {
 		$form['#groups']['group_media']->weight = -10;
