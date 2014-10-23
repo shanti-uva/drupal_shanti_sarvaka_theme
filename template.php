@@ -107,7 +107,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 	$variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
 	
 	// Set banner_class variable depending on whether there are tabs or not
-	$variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
+	$variables['banner_class'] = (empty($variables['tabs']['#primary'])) ? '': ' has-tabs';
 	
   //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
 	
