@@ -55,7 +55,7 @@
         <div class="row">
           
           <!-- Banner Region -->
-          <header class="col-sm-12 titlearea banner<?php print $variables['banner_class']; ?>">
+          <header class="col-xs-12 titlearea banner<?php print $variables['banner_class']; ?>">
            <div role="banner">
             <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php 
             	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
