@@ -115,9 +115,12 @@ body.page-csc-search {
 }
 .page-csc-search  .bootstrap-select.btn-group .btn .filter-option {
   text-transform: capitalize;
-  font-size: 0.9em;
+  font-size: 1.3em;
   font-family: museo-sans-300, sans-serif;
   padding-top: 1px;
+}
+.page-csc-search  #edit-advanced-option .bootstrap-select.btn-group .btn .filter-option {
+  line-height: 100%;
 }
 .page-csc-search .select-wrapper, 
 .page-csc-search .select-wrapper select {
@@ -245,6 +248,9 @@ body.page-csc-search {
   text-transform: uppercase;
   width: 73%;
 }
+.page-csc-search .views-exposed-form button:hover {
+  background: #333333;
+}
 .page-csc-search .views-exposed-form #edit-advanced-search-fieldset button {
   width: 100%;
 }
@@ -255,7 +261,7 @@ body.page-csc-search {
   padding: 5px 0;
   font-family: museo-sans-700, sans-serif;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1.5em;
   height: auto;
   line-height: 100%;
 }
@@ -1164,7 +1170,6 @@ a#long-detail.active {
   font-weight: normal;
   font-size: 1em;
   height: auto;
-  line-height: 100%;
   padding: 5px 0;
 }
 #csc-views-advanced-search-form .form-item label.option {

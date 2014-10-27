@@ -60,7 +60,7 @@
           });
         }
       });
-      $(".selectpicker").selectpicker({
+      $(".selectpicker:not(#gen-search .selectpicker)").selectpicker({
         dropupAuto: false
       }); // initiates jq-bootstrap-select
     }
