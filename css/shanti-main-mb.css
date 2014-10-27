@@ -1,8 +1,5 @@
 .breadwrap ol li i{background:#32ccca;}
 
-/*==========
-
-
 div.video-row {
 	margin-bottom: 18px; 
 }
@@ -47,10 +44,10 @@ div.avinfo {
 	margin-left: 20px;
 }
 
+/*
 these styles were migrated from mediabase.css to help monitor 
 this custom set of styles in the modules section 
-
-============*/
+*/
 
 .avdate i,
 .avduration i{ margin-right:0.25em;}

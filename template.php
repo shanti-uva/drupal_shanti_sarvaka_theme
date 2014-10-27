@@ -14,6 +14,14 @@ function shanti_sarvaka_theme() {
     'carousel' => array(
       'render element' => 'element',
     ),
+    'info_popup' => array(
+			'variables' => array(
+				'label' => '', 
+				'desc' => '', 
+				'tree' => array(), 
+				'links' => '',
+			),
+		),
   );
   return $items;
 }
@@ -30,39 +38,83 @@ function shanti_sarvaka_preprocess(&$variables) {
   global $base_url, $base_path;
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
   $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
+}
+
+function shanti_sarvaka_preprocess_html(&$variables) {
+	//dpm($variables, 'vars in html');
+	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
+	$variables['classes_array'][] =  $site_class;
+	// Add Meta Tags
+	$metas = array(
+		'ie_edge' => array(
+			'#type' => 'html_tag',
+			'#tag' => 'meta',
+			'#attributes' => array(
+				'http-equiv' => 'X-UA-Compatible',
+				'content' => 'IE=edge',
+			),
+			'#weight' => -999, // meta content type UTF-8 is weight: -1000. This puts the tag just after that
+		),
+		'viewport' => array(
+			'#type' => 'html_tag',
+			'#tag' => 'meta',
+			'#attributes' => array(
+				'content' => 'width=device-width, initial-scale=1',
+			),
+			'#weight' => -998,
+		),
+	);
+	foreach($metas as $key => $details) {
+		drupal_add_html_head($details, $key);
+	}
+	//_shanti_sarvaka_add_metatags(); // Adds favicon meta tags NOT needed automatically picked up by device
+	// Adding Bootstrap CDN Resoures
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
+	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
+
+}
+
+function shanti_sarvaka_preprocess_page(&$variables) {
+	//dpm($variables, 'vars in preprocess page');
+  global $base_url, $base_path, $base_theme_info;
+  $base = $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/'; // took out $base_url .  from beginning as not necessary, ndg (2019-09-22)
   $variables['breadcrumb'] = menu_get_active_breadcrumb();
-  $variables['breadcrumb'][] = ($variables['is_front'])? 'Home' : drupal_get_title();
+  $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
   $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
   $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
   $variables['theme_path'] = $base; 
+	$variables['base_theme'] = (empty($base_theme_info)) ? FALSE : $base_theme_info[0]->name;
+	$variables['base_theme_path'] = (empty($base_theme_info)) ? FALSE : $base_path . 'sites/all/themes/' . $base_theme_info[0]->name . '/';
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
-  
-}
-
-function shanti_sarvaka_preprocess_html(&$variables) {
-	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
-	$variables['classes_array'][] =  $site_class;
-	_shanti_sarvaka_add_metatags();
-}
-
-function shanti_sarvaka_preprocess_page(&$variables) {
+	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
+	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
   // Figure out bootstrap column classes
   $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
   $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
   $variables['bsclass_main'] = 'col-sm-6';
   if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = 'col-xs-12'; 
+    $variables['bsclass_main'] = ''; 
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
     $variables['bsclass_main'] = 'col-sm-9'; 
   }
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
 	
+	// Add menu blocks in banner to secondary tabs
+	if(empty($variables['tabs']['#secondary'])) { $variables['tabs']['#secondary'] = array(); }
+	$variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
+	
+	// Set banner_class variable depending on whether there are tabs or not
+	$variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
+
+  //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
+	
   // Add usermenu to main menu
   $um = menu_tree_all_data('user-menu');
   $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
-  
+	
   // Set Loginout_link
   $variables['loginout_link'] = l(t('Logout'), 'user/logout');
   if(!$variables['logged_in']) {
@@ -119,48 +171,121 @@ function shanti_sarvaka_preprocess_region(&$variables) {
     case 'sidebar_second':
       //dpm($variables, '2nd side vars');
       break;
+    case 'search_flyout':
+      $elements = $variables['elements'];
+      // Separate out search block "element" from others to display it in a different part of the flyout region template
+      $variables['other_elements'] = array();
+      foreach($elements as $n => $el) {
+        if($n == 'search_form') {
+          $variables['search_form'] = $variables['elements']['search_form'];
+        } else if (substr($n, 0, 1) != '#') { // Elements without a # in the name are blocks added to the region
+          array_push($variables['other_elements'], $variables['elements'][$n]);
+        }
+      }
+      unset($variables['elements']['search_form']);
+      break;
   }
 }
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
-  // Header blocks
-  // If needed, for site custom blocks added to header, can customize icon, bootstrap class, and wrapping markup
-  // If we want to allow certain blocks to be "dropped" into the header and not just hard-coded like explore, language chooser, and options
-  // Otherwise delete
-  if(isset($block->region) && $block->region == 'header') {
-    $variables['bs_class'] = '';
-    $variables['follow_markup'] = '';
-    $variables['icon_class'] = 'shanticon-menu';
-    $variables['prev_markup'] = '';
-  }
+	if(isset($block->region)) {
+		$region = $block->region;
+		// Header blocks
+	  // If needed, for site custom blocks added to header, can customize icon, bootstrap class, and wrapping markup
+	  // If we want to allow certain blocks to be "dropped" into the header and not just hard-coded like explore, language chooser, and options
+	  // Otherwise delete
+	  if($region == 'header') {
+	    $variables['bs_class'] = '';
+	    $variables['follow_markup'] = '';
+	    $variables['icon_class'] = 'shanticon-menu';
+	    $variables['prev_markup'] = '';
+	  }
+	}
+}
+
+
+/**
+ * Converts block menus in banner to secondary tab links
+ */
+function shanti_sarvaka_banner_tabs(&$banner) {
+	$links = array();
+	$menus = array();
+	$current_path = current_path();
+	// find menu blocks in banner and conver to secondary tab links
+	foreach($banner as $itemnm => $item) {
+		if(substr($itemnm, 0, 5) == 'menu_') {
+			$menus[] = $itemnm;
+			foreach($item as $n => $link) {
+				if(is_numeric($n)) {
+					$is_active = ($link['#original_link']['router_path'] == $current_path || ($link['#href'] == "<front>" && drupal_is_front_page())) ? TRUE : FALSE;
+					//dpm($link, 'link');
+					$linkout = array(
+						'#theme' => 'menu_local_task',
+						'#link' => array(
+							'path' => $link['#original_link']['router_path'],
+							'title' => $link['#title'],
+							'href' => $link['#href'],
+							'localized_options' => array(),
+						),
+						'#active' => $is_active,
+					);
+					$links[] = $linkout;
+				}
+			}
+		}
+	}
+	// unset menu blocks in banner so they do display as regular blocks
+	foreach($menus as $n => $menunm) {
+		unset($banner[$menunm]);
+	}
+	return $links;
+}
+
+/**
+ * Implements hook_html_head_alter
+ */
+function shanti_sarvaka_html_head_alter(&$head_elements) {
+	//dpm($head_elements, 'head elements');
+	$head_elements['system_meta_content_type']['#attributes'] = array('charset' => 'UTF-8') ; // recommended for HTML5
+}
+
+/**
+ * Implements theme_html_tag for following reasons:
+ * 		 1. remove closing slash from meta tags
+ */
+function shanti_sarvaka_html_tag($variables) {
+	$element = $variables['element'];
+	// remove closing / from meta tags.
+	if($element['#tag'] == 'meta') {
+		$html = theme_html_tag($variables);
+		$html = str_replace('/>', '>', $html);
+		return $html;
+	} else {
+		return theme_html_tag($variables);
+	}
 }
 
 /**
  * Implements hook_form_alter: to alter search block
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
+	//dpm($form_id);
   if ($form_id == 'search_block_form') {
 		$form['#prefix'] = '<section class="input-section" style="display:none;"> ';
 		$form['#suffix'] = '</section>';
 		$form['#attributes']['class'][] = 'form';
   	$form['actions']['submit']['#attributes'] = array("class" => array("btn", "btn-default"));
-		$form['actions']['submit']['#value'] = 'search-icon'; // This replaced by the icon code in shanti_sarvaka_button function
+		$form['actions']['submit']['#value'] = ''; // This replaced by the icon code in shanti_sarvaka_button function
+		$form['actions']['submit']['#icon'] = 'glyphicon-chevron-right';
+	}
+	if(in_array($form_id, array('video_node_form','audio_node_form'))) {
+		$form['#groups']['group_media']->weight = -10;
+		$form['group_audience']['#weight'] = -5;
+		//dpm($form, 'a/v edit form');
 	}
 }
 
-/**
-* Changes the search form to use the "search" input element of HTML5.
-*
-function shanti_sarvaka_preprocess_search_block_form(&$variables) {
-  //dpm($variables, 'vars in preprocess search block');
-	dpm($variables, 'vars in search block form');
-}*/
-
-/*
-function shanti_sarvaka_preprocess_search_results(&$variables) {
-  dpm($variables, 'vars34');
-}*/
 
 function shanti_sarvaka_preprocess_search_result(&$variables) {
   global $base_path;
@@ -172,11 +297,11 @@ function shanti_sarvaka_preprocess_search_result(&$variables) {
         $coll->url = $base_path . drupal_get_path_alias('node/' . $coll->nid);
     }
     $variables['coll'] = $coll;
-  } else if (isset($variables['result']['fields']['is_eid'])) {
+  } else if (isset($variables['result']['fields']['entity_type']) && $variables['result']['fields']['entity_type'] == 'tcu') {
     // TODO: Must add thumbnail and collection variables for TCU hits in transcripts
-    $nid = $variables['result']['fields']['is_eid'];
     $variables['result']['thumb_url'] ='';
     $variables['coll'] = FALSE;
+    $variables['classes_array'][] = 'list-group-item';
   } else {
     // Any other options?
     //dpm($variables);
@@ -229,16 +354,13 @@ function shanti_sarvaka_preprocess_button(&$vars) {
 	if(!empty($element['#button_type'])) {
   	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
 	}
-  if (!empty($element['#attributes']['disabled'])) {
-    $element['#attributes']['class'][] = 'form-button-disabled';
-  }
 }
-  
+
 /**
  * THEMING FUNCTIONS
  */
- 
- /**
+
+/**
   * Implements THEME_item_list to theme the facet links within a facetapi block
   */
 function shanti_sarvaka_item_list($variables) {
@@ -517,12 +639,43 @@ function shanti_sarvaka_carousel($variables) {
               <div class="control-box">                            
                   <a data-slide="prev" href="#collection-carousel" class="carousel-control left basebg"><i class="icon"></i></a>
                   <a data-slide="next" href="#collection-carousel" class="carousel-control right basebg"><i class="icon"></i></a>
-              </div><!-- /.control-box -->   
+              </div><!-- /.control-box --> 
+              
+              <div class="control-box-2">                            
+                  <button class="btn btn-default btn-sm carousel-pause"><i class="glyphicon glyphicon-pause"></i></button>
+              </div><!-- /.control-box-2 -->   
             </div><!-- /#collection-carousel -->
         </div><!-- /.span12 -->          
         </div><!-- /.row --> 
         </div><!-- /.container -->';
   return $html;
+}
+
+/**
+ * Provides markup for the info popups from icons etc.
+ * 	Variables:
+ * 		- label 	(string) 	: Label shown and header of popover
+ * 		- desc 		(string) 	: Description of item
+ * 		- tree 		(array) 	: ancestor tree
+ * 		- links 	(array) 	: links to show in footer stripes
+ */
+function shanti_sarvaka_info_popover($variables) {
+	//dpm($variables, 'vars in popover theme function');
+	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
+						<div class=\"popover\">
+							<h5>{$variables['label']}</h5>
+							{$variables['desc']}
+							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>
+								<ul>";
+	foreach($variables['tree']['items'] as $n => $link) {
+		$html .= "<li>{$link}/</li>";
+	}
+	$html .= "</ul> </div> <div class=\"popover-footer\"> <ul>";
+	foreach($variables['links'] as $label => $info) {
+		$html .= "<li><i class=\"icon shanticon-{$info['icon']}\"></i> " . l($label, $info['href']) . "</li>";
+	}
+	$html .= "</ul> </div> </div>";
+	return $html;
 }
 
 /** 
@@ -531,7 +684,6 @@ function shanti_sarvaka_carousel($variables) {
  **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
-	
   // If not collapsible or no title for heading then just format as normal field set
   if( empty($element['#collapsible']) || empty($element['#title']) ) {
     return theme_fieldset($variables);
@@ -554,29 +706,83 @@ function shanti_sarvaka_fieldset($variables) {
 		}
 	}
 	
-  $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group'));
+  $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group', 'panel', 'panel-default'));
   $element['#attributes']['id'] = 'accordion' . $id;
-
+  $isin = '';
+	if($key = array_search("in", $element['#attributes']['class'])) {
+		$isin = ' in';
+	}
   // Create markup
   $output = '<div ' . drupal_attributes($element['#attributes']) . '> 
-  <div class="panel panel-default">
     <div class="panel-heading">
       <h6 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#' . $id . '">'        	
+        <a data-toggle="collapse" data-parent="#av-details" href="#' . $id . '">'        	
            . $element['#title'] .
         '</a>
       </h6>
     </div>
-    <div id="' . $id . '" class="panel-collapse collapse' . $openclass . '">
+    <div id="' . $id . '" class="panel-collapse collapse' . $isin . '">
       <div class="panel-body">';
    $output .= $element['#children'];
     if (isset($element['#value'])) {
       $output .= $element['#value'];
     }
-   $output .= '</div></div></div></div>';
+   $output .= '</div></div></div>';
    return $output;
 }
 
+/** 
+ * Field theme functions
+ */
+function shanti_sarvaka_file_widget($variables) {
+  $element = $variables['element'];
+  $output = '';
+	if(isset($element['remove_button'])) {
+		$element['remove_button']['#icon'] = 'glyphicon-trash';
+	}
+	$filelink = "";
+	if(!empty($element['filename'])) {
+		// change file name to disabled input
+		$element['filename']['#markup'] = '<input class="text-full form-control form-inline" placeholder="File Name" type="text" id="' . $element['#field_name'] . '_value" name="filename_display" disabled value="' . 
+		$element['#default_value']['filename'] . '" size="60" maxlength="255"> ';
+		$filelink = '(<a href="' . file_create_url($element['#default_value']['uri']) . '" target="_blank">View File</a>) ';
+	} else {
+		$markup = explode(' | ', $element['filefield_sources_list']['#markup']);
+		if(count($markup) == 2) {
+			$element['filefield_sources_list']['#markup'] = "<div class=\"filefield-sources-list\">" . $markup[1] . ' or ';
+		}
+	}
+  // The "form-managed-file" class is required for proper Ajax functionality.
+  $output .= '<div class="file-widget form-managed-file clearfix">';
+  if ($element['fid']['#value'] != 0) {
+    // Add the file size after the file name.
+    $element['filename']['#markup'] .= ' <span class="file-size">(' . format_size($element['#file']->filesize) . ')</span> <span class="file-link">(<a href="' . file_create_url($element['#default_value']['uri']) . '" target="_blank">View File</a>)</span> ';
+  }
+  $output .= drupal_render_children($element);
+  $output .= '</div>';
+  //dpr(json_encode($element));
+  return $output;
+}
+
+
+function shanti_sarvaka_file_managed_file($variables) {
+  $element = $variables['element'];
+  $attributes = array();
+  if (isset($element['#id'])) {
+    $attributes['id'] = $element['#id'];
+  }
+  if (!empty($element['#attributes']['class'])) {
+    $attributes['class'] = (array) $element['#attributes']['class'];
+  }
+  $attributes['class'][] = 'form-managed-file';
+
+  // This wrapper is required to apply JS behaviors and CSS styling.
+  $output = '';
+  $output .= '<div' . drupal_attributes($attributes) . '>';
+  $output .= drupal_render_children($element);
+  $output .= '</div>';
+  return $output;
+}
 /**
  * Theme Form for Search block form
  */
@@ -590,34 +796,47 @@ function shanti_sarvaka_form($variables) {
 	return theme_form($variables);
 }
 */
+
 /**
  * Theme buttons to use Bootstrap Markup
  */
-
 function shanti_sarvaka_button($variables) {
   $element = $variables['element'];
   $text = $element['#value'];
+	// Deal with custom #icon field
   $icon = '';
-	if($text == 'search-icon') {
-		$text = ''; 
-		$icon = '<i class="icon"></i>';
-	} else {
-		$text = '<span>' . $text . '</span>';
-	}
-  if(strpos(strtolower($text), 'video') > 0) {
-    $icon = '<i class="icon shanticon-video"></i> ';
-  } else if(strpos(strtolower($text), 'audio') > 0) {
-    $icon = '<i class="icon shanticon-audio"></i> ';
-  } else if(strpos(strtolower($text), 'collection') > 0) {
-    $icon = '<i class="icon shanticon-texts"></i> ';
-  } 
-	$element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if(!empty($element['#icon'])) {
+  	$iconclass = $element['#icon'];
+		if(strpos($iconclass, 'glyphicon') > -1) {
+			 $iconclass = 'glyphicon ' . $iconclass; 
+		} elseif(strpos($iconclass, 'fa-') > -1) {
+			 $iconclass = 'fa ' . $iconclass; 
+		} else {
+			$iconclass = 'icon shanticon-' . $iconclass; 
+		}
+  	$icon = "<span class=\"{$iconclass}\"></span> ";
+		$element['#attributes']['class'][] = 'btn-icon';
+  }
+	// Attributes
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
+	//dpr($element);
+	if(strpos($element['#id'], 'remove-button') > -1) {
+		$element['#attributes']['class'][] = 'btn-delete';
+		$element['#attributes']['class'][] = 'btn-sm';
+		$element['#attributes']['class'][] = 'btn-icon';
+		$element['#attributes']['title'] = t('Remove this field value');
+  	$icon = "<span class=\"icon shanticon-trash\"></span> ";
+		$text = "";
+	}
+	// Add type "submit" to ajax buttons so that they get selected by views ajax.js for processing. 
+	// See https://www.drupal.org/node/1692198 and https://issues.shanti.virginia.edu/browse/MB-550
+	if(in_array('form-submit', $element['#attributes']['class']) && empty($element['#attributes']['type'])) {
+		$element['#attributes']['type'] = 'submit';
+	}
   element_set_attributes($element, array('id', 'name', 'value'));
-
-  return '<button' . drupal_attributes($element['#attributes']) . ' >' . $icon . $text . '</button>';
+  return '<button ' . drupal_attributes($element['#attributes']) . '>' . $icon . '<span>' . $text . '</span></button>';
 }
 
 function shanti_sarvaka_password($variables) {
@@ -686,7 +905,7 @@ function shanti_sarvaka_get_breadcrumbs($variables) {
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
   $output = '<ol class="breadcrumb">';
   if(!$variables['is_front']) {
-    $breadcrumbs[0] = '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>';
+    array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
   } 
 	if(count($breadcrumbs) > 1) { 
 		$breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
@@ -720,6 +939,50 @@ function shanti_sarvaka_pagerer_mini($variables) {
   $html = str_replace('PREVIOUS_HERE','<i class="icon"></i>', $html);
   $html = str_replace('NEXT_HERE','<i class="icon"></i>', $html);
   $html = str_replace('LAST_HERE','<i class="icon"></i>', $html);
+  return $html;
+}
+
+/**
+ * Service links formating
+ */
+function shanti_sarvaka_service_links_node_format($variables) {
+	//dpm($variables, 'vars in service link function');
+  $links = $variables['links'];
+  $label = $variables['label'];
+  $view_mode = $variables['view_mode'];
+  $node_type = $variables['node_type'];
+	// get Thumbnail image from meta_og_image tag if there
+	$headels = drupal_add_html_head();
+	$thumbnail = (isset($headels['meta_og_image'])) ? $headels['meta_og_image']['#attributes']['content'] : '';
+
+  $html = '';
+  foreach($links as $n => $l) {
+  	$type = str_replace('service-links-','',$n);
+		$icon = '';
+		$text = '';
+		switch($type) {
+			case "facebook":
+				$icon = 'shanticon-facebook';
+				$text = t("Facebook");
+				if(!empty($thumbnail)) { $l['query']['images[0]'] = $thumbnail; }
+				break;
+			case "forward":
+				$icon = 'shanticon-mail';
+				$text = t("Email");
+				break;
+			case "google-plus":
+				$icon = "shanticon-googleplus";
+				$text = t("Google+");
+				break;
+			case "twitter":
+				$icon = "shanticon-twitter";
+				$text = t("Twitter");
+				break;
+		}
+		$icon = '<i class="icon ' . $icon . '"></i>';
+		$l['html'] = TRUE;
+    $html .= '<li>' . l($icon . ' ' . $text, $l['href'], $l) . '</li>';
+  }
   return $html;
 }
 

@@ -12,16 +12,18 @@
 	      </nav>
 	
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
-	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<? print $site_name; ?> Homepage">
+	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<?php print $site_name; ?> Homepage">
 	          <?php if($variables['shanti_site']): ?>
-	            <i class="icon shanticon-logo"></i><em>SHANTI</em>
+	            <i class="icon shanticon-logo"></i><em>SHANTI</em><?php if($variables['use_admin_site_title']) {
+		            	print "<span class=\"site-title\">{$site_name}</span>";
+		            } ?>
 	          <?php else: ?>
 	            <img src="<?php print $logo; ?>" class="site-logo" /> <span class="site-title"><?php print $site_name; ?></span>
 	          <?php endif; ?>
 	          <?php if($site_slogan) { print '<span class="site-slogan">' . $site_slogan . '</span>' ;} ?>
 	        </a>
 	      </h1>
-	  
+
 	      <!-- HEADER REGION -->
 	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
 	         <form class="form">
@@ -53,10 +55,15 @@
         <div class="row">
           
           <!-- Banner Region -->
-          <header class="col-sm-12 titlearea banner">
+          <header class="col-sm-12 titlearea banner<?php print $variables['banner_class']; ?>">
            <div role="banner">
             <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php 
-              print ($title == '')? $variables['default_title']:$title; ?></span></h1>
+            	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
+            		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
+            	} else {
+            		print ($title == '')? $variables['default_title']:$title; 
+            	}
+              ?></span></h1>
               <nav class="breadwrap" role="navigation">
                 <?php print shanti_sarvaka_get_breadcrumbs($variables); ?>
               </nav>
@@ -84,9 +91,9 @@
           <?php endif; ?>
           
           <!-- Begin Page Content -->
-          <section class="content-section <?php print $bsclass_main; ?>"> 
+          <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>"> 
           <!-- Message Area -->
-          <?php if (isset($messages)) { ?><div class="messages"><?php print $messages; ?></div> <?php } ?>
+          <?php if (!empty($messages)) { print "<div class=\"messages\">$messages</div>"; } ?>
             <div class="tab-content">
               <article class="tab-pane main-col active" id="tab-overview">
               	 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
@@ -104,7 +111,7 @@
           <?php endif; ?>
         </div>
         
-        <a href="#" class="back-to-top"><i class="icon"></i></a>
+        <a href="#" class="back-to-top"><i class="icon fa"></i></a>
       </article>
 
 
@@ -120,17 +127,15 @@
 
     
   <!-- LOAD menus -->
-  <section id="menu-main" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">   </section>  
-  <section id="menu-collections" role="navigation" class="{ url:'<?php print $theme_path; ?>/js/menus/menu-ajax.php'} menu-accordion">    </section>
+  <section id="menu-main" class="{ url:'<?php if(!empty($base_theme_path)) { print $base_theme_path; } else { print $theme_path; } ?>js/inc/menus/menu-ajax.php'} menu-accordion">   </section>  
+  <section id="menu-collections" class="{ url:'<?php if(!empty($base_theme_path)) { print $base_theme_path; } else { print $theme_path; } ?>js/inc/menus/menu-ajax.php'} menu-accordion">    </section>
 
-  <section id="menu" role="navigation" style="display:none;">
-    <nav id="menu-drill">                
+  <section id="menu" style="display:none;">
+    <nav id="menu-drill" role="navigation">                
      <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->
 </div> <!-- End wrap-all -->
-
-
 
 <!-- Footer -->
 <footer class="footer">

@@ -1,159 +1,151 @@
-(function ($) {
-	// Behaviors for the theme
-  Drupal.behaviors.shantiSarvaka = {
+(function ($) {  
+  /**
+   *  Settings for the theme
+   */
+  Drupal.behaviors.shanti_sarvaka = {
     attach: function (context, settings) {
-      /** 
-      * Taken from Kmaps Aardvark Site
-      * Adapted to Shanti Sarvaka Mediabase by Than Grove (beginning 2014-05-22)
-      **/
-      var ShantiSettings = {
+      // Initialize settings.
+      settings.shanti_sarvaka = $.extend({
         kmapsUrl: "http://subjects.kmaps.virginia.edu",
         mmsUrl: "http://mms.thlib.org",
         placesUrl: "http://places.kmaps.virginia.edu",
         ftListSelector: "ul.facetapi-mb-solr-facet-tree, ul.fancy-tree", // should change "mb-solr" to "fancy" for universality
         fancytrees: [],
         flyoutWidth: 310,
-      };
-      /**
-      * Extend Fancy Tree
-      * Adds clearFacetFilter function
-      */
-      // Consider to use [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/)
-      $.ui.fancytree._FancytreeClass.prototype.clearFacetFilter = function() {
-        var tree = this,
-          treeOptions = tree.options;
-        // "unwrap" the <mark>ed text
-        tree.$div.eq(0).find('span.fancytree-title mark').each(
-          function () {
-            var parent = $(this).parent();
-            var children = parent.children().remove(); // took out children selector: '.facet-count, .element-invisible'
-            parent.text(parent.text());
-            parent.append(children);
-          }
-        );
-        if (tree.activeNode) {
-          tree.activeNode.setActive(false);
-        }
-        tree.clearFilter();
-        tree.rootNode.visit(function (node) {
-          $(node.li).find('span.facet-count').text(node.data.count);
-          //node.setExpanded(false);
-        });
-      };
-      // End of namespace closure
-      //// Initialization of UI components on page on load
-      mbExtruderInit();
-      createTopLink();
-      iCheckInit();
-      menuInit();
-      responsiveMenusInit();
-      //searchInit(); Removed custom search because we are using Drupal based auto complete field and views result
-      //setSearchTabHeight();
-      //fancytreeInit();
-      miscInit();
-      checkWidth();
-      carouselInit();
-      // *** CONTENT *** top link
-      function createTopLink() {
-      var offset = 420;
-      var duration = 500;
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
-          $('.back-to-top').fadeIn(duration);
+        topLinkOffset: 420,
+        topLinkDuration: 500,
+      }, settings.shanti_sarvaka || {});
+    }
+  };
+  
+  /**
+   * Back to Top Link functionality
+   */
+  Drupal.behaviors.shanti_sarvaka_toplink = {
+    attach: function (context, settings) {
+      var offset = settings.shanti_sarvaka.topLinkOffset;
+      var duration = settings.shanti_sarvaka.topLinkDuration;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery('.back-to-top').fadeIn(duration);
         } else {
-          $('.back-to-top').fadeOut(duration);
+          jQuery('.back-to-top').fadeOut(duration);
         }
       });
-      $('.back-to-top').click(function(event) {
+      jQuery('.back-to-top').click(function(event) {
         event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, duration);
+        jQuery('html, body').animate({scrollTop: 0}, duration);
         return false;
       });
-      }
-      // Initialize the top bar menus
-      function menuInit() {
-        // Rearrange the button divs so that they are in the order blocks are added with a float-right css
-        var buttons = $('div.navbar-buttons ul.navbar-right').detach();
-        buttons.each(function() {
-          $('div.navbar-buttons').prepend($(this));
-        });
-        // Initialize the multilevel main menu
-        $( '#menu' ).multilevelpushmenu({
-          menuWidth: 250,
-          menuHeight: '32em', // this height is determined by tallest menu, Preferences
-          mode: 'cover',
-          direction: 'rtl',
-          backItemIcon: 'fa fa-angle-left',
-          groupIcon: 'fa fa-angle-right',
-          collapsed: false,
-          preventItemClick: false,
-        });
-        // --- align the text
-        $('#menu ul>li, #menu h2').css('text-align','left');
-        $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
-        // --- close the menu on outside click except button
-        $('.menu-toggle').click( function(event){
+    }
+  };
+  
+  /**
+   * ICheck init
+   */
+  Drupal.behaviors.shanti_sarvaka_icheck = {
+    attach: function (context, settings) {
+      $("input[type='checkbox'], input[type='radio']").each(function () {
+        var self = $(this),
+        label = self.next('label');
+        if(label.length == 1) {
+          self = $(this).detach();
+          label.prepend(self);
+        }
+        if(typeof(self.icheck) != "undefined") {
+          self.icheck({
+            checkboxClass: "icheckbox_minimal-red",
+            radioClass: "iradio_minimal-red",
+            insert: "<div class='icheck_line-icon'></div>"
+          });
+        }
+      });
+      $(".selectpicker").selectpicker({
+        dropupAuto: false
+      }); // initiates jq-bootstrap-select
+    }
+  };
+  
+  /**
+   * Multi Level Push Menu
+   */
+  Drupal.behaviors.shanti_sarvaka_mlpmenu = {
+    attach: function (context, settings) {
+      // Rearrange the button divs so that they are in the order blocks are added with a float-right css
+      var buttons = $('div.navbar-buttons ul.navbar-right').detach();
+      buttons.each(function() {
+        $('div.navbar-buttons').prepend($(this));
+      });
+      // Initialize the multilevel main menu
+      $( '#menu' ).multilevelpushmenu({
+        menuWidth: 250,
+        menuHeight: '32em', // this height is determined by tallest menu, Preferences
+        mode: 'cover',
+        direction: 'rtl',
+        backItemIcon: 'fa fa-angle-left',
+        groupIcon: 'fa fa-angle-right',
+        collapsed: false,
+        preventItemClick: false,
+      });
+  
+      // --- align the text
+      $('#menu ul>li, #menu h2').css('text-align','left');
+      $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
+    
+      // --- close the menu on outside click except button
+      $('.menu-toggle').click( function(event){
           event.stopPropagation();
           $('#menu').toggle(50);
           $('.menu-toggle').toggleClass('show-topmenu');
           $('.collections').slideUp(200);
           $('.menu-exploretoggle').removeClass('show-topmenu');
-         });
-        // --- close the menu on outside click except button
-        $('.menu-exploretoggle').click( function(event){
+       });
+    
+      // --- close the menu on outside click except button
+      $('.menu-exploretoggle').click( function(event){
           event.stopPropagation();
           $('.collections').slideUp(200);
-        });
-          
-        $(document).click( function(){
+      });
+        
+      $(document).click( function(){
           $('.menu-toggle').removeClass('show-topmenu');
           $('#menu').hide(100);
-        });  
+      });  
             
-        /* Initialize Language Buttons */
-        // Language Chooser Functionality with ICheck
-        $('body').on('ifChecked', 'input.optionlang', function() {
-          var newLang = $(this).val().replace('lang:','');
-          var oldLang = Drupal.settings.pathPrefix;
-          var currentPage = window.location.pathname;
-          if(oldLang.length > 0) { 
+      /* Initialize Language Buttons */
+      // Language Chooser Functionality with ICheck
+      $('body').on('ifChecked', 'input.optionlang', function() {
+        var newLang = $(this).val().replace('lang:','');
+        var oldLang = Drupal.settings.pathPrefix;
+        var currentPage = window.location.pathname;
+        if(oldLang.length > 0) { 
           // remove any current lang in url (format = "zh/")
           var currentPage = currentPage.replace(RegExp(oldLang + "?$"), ''); // Take care of home page (no slash at end of line)
           currentPage = currentPage.replace(oldLang, ''); // All other pages
           }
-          // Create New URL with new Lang Prefix
-          var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/'); 
-          window.location.pathname = newUrl;
-        });
-      }
-      // Initialize the responsive menus with mbExtruder
-      function responsiveMenusInit() {
-        $("#menu-main").buildMbExtruder({
-          positionFixed: false,
-          position: "right",
-          width: 280,    
-          hidePanelsOnClose:false,
-          accordionPanels:false,
-          onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false });  },
-          onExtContentLoad:function(){ 
-          /*
-            $("input[type='radio']").each(function () {
-            var self = $(this),
-            label = self.next(),
-            label_text = label.text();
-            label.remove();
-            self.iCheck({
-              // checkboxClass: "icheckbox_minimal-red",
-              radioClass: "iradio_minimal-red",
-              insert: "<div class='icheck_line-icon'></div>" + label_text
-            });
-            });*/
-            
-          },
-          onExtClose:function(){},
-          top: 0
-        }); 
-        $("#menu-collections").buildMbExtruder({
+        // Create New URL with new Lang Prefix
+        var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/'); 
+        window.location.pathname = newUrl;
+      });
+    }
+  };
+  
+  /**
+   * Responsive Menus with MbExtruder
+   */
+  Drupal.behaviors.shanti_sarvaka_respmenu = {
+    attach: function (context, settings) {
+      $("#menu-main").buildMbExtruder({
+        positionFixed: false,
+        position: "right",
+        width: 280,      
+        hidePanelsOnClose:false,
+        accordionPanels:false,
+        onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false });  },
+        onExtClose:function(){},
+        top: 0
+      }); 
+      $("#menu-collections").buildMbExtruder({
           positionFixed: false,
           position: "right",
           width:280, // width is set in two places, here and the css
@@ -163,160 +155,94 @@
           onExtContentLoad:function(){  },
           onExtClose:function(){},
           top: 0
-        });	
-        // this is for the responsive button
-        $(".shanti-searchtoggle").click(function () { 
-          if($("#kmaps-search.extruder").hasClass("isOpened")){   
-            $("#kmaps-search").closeMbExtruder();
-            $(".shanti-searchtoggle").removeClass("show-topmenu");    
-          } else {    
+      });  
+      // this is for the responsive button
+      $(".shanti-searchtoggle").click(function () {   
+          if($("#gen-search.extruder").hasClass("isOpened")){   
+            $("#gen-search").closeMbExtruder();
+            $(".shanti-searchtoggle").removeClass("show-topmenu");        
+          } else {      
             $("#menu-main").closeMbExtruder();
             $("#menu-collections").closeMbExtruder();
-            $("#kmaps-search").openMbExtruder();
+            $("#gen-search").openMbExtruder();
             $(".shanti-searchtoggle").addClass("show-topmenu");
             $(".menu-maintoggle,.menu-exploretoggle").removeClass("show-topmenu");
-            // $("#menu-main").load("./menus-ajax.html");    
+            // $("#menu-main").load("./menus-ajax.html");        
             // $(".menu-collections-wrap .accordion-toggle").addClass("collapsed");
             // $(".menu-collections-wrap .panel-collapse").removeClass("in").css('height','0');
             return false;
           }
-        });   
-        $('body').on('click','.menu-maintoggle',function(){   
-          if($("#menu-main.extruder").hasClass("isOpened")){  
+      });   
+      $('body').on('click','.menu-maintoggle',function(){   
+          if($("#menu-main.extruder").hasClass("isOpened")){    
             $("#menu-main").closeMbExtruder();
-            $(".menu-maintoggle").removeClass("show-topmenu");   
-          } else {   
+            $(".menu-maintoggle").removeClass("show-topmenu");     
+          } else {     
             $("#menu-main").openMbExtruder();
-            $("#kmaps-search").closeMbExtruder();
+            $("#gen-search").closeMbExtruder();
             $("#menu-collections").closeMbExtruder();
             $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
-            $(".menu-commons").addClass("active");    
+            
+            $(".menu-commons").addClass("active");
+            
             $(".menu-collections").removeClass("active");
-            $(".menu-collections > ul").removeClass("in"); 
+            $(".menu-collections > ul").removeClass("in");
+            
             // $("#menu-main").load("/menus-ajax.html #menu-accordion");
             $(".menu-maintoggle").addClass("show-topmenu");
             $(".menu-exploretoggle, .shanti-searchtoggle").removeClass("show-topmenu");
             return false;
           }
-        });
-        $(".menu-exploretoggle").click(function () {   
+      });
+      $(".menu-exploretoggle").click(function () {   
           if($("#menu-collections.extruder").hasClass("isOpened")){   
+            
             $("#menu-collections").closeMbExtruder();
             $(".menu-exploretoggle").removeClass("show-topmenu");
-            // $(".bottom-trim").remove();        
-          } else {    
+            // $(".bottom-trim").remove();                
+          } else {        
             $(".menu-commons, .menu-preferences").css('display','none');
             $(".menu-collections").css('display','block');
+            
             $(".menu-collections").addClass("active");
             $(".menu-collections > ul").addClass("in");
+            
             $("#menu-collections").openMbExtruder();
-            $("#menu-main").closeMbExtruder();    
-            $("#kmaps-search").closeMbExtruder();
+            $("#menu-main").closeMbExtruder();        
+            $("#gen-search").closeMbExtruder();
+            
             $(".menu-exploretoggle").addClass("show-topmenu");  
-            $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");  
+            $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");    
             
             // $(".menu-collections").find("ul").append("<li class='bottom-trim'></li>");  
             return false;
           }
-        });   
-        // --- ajax call for collections list
-        // $( "#kmaps-collections").load( "/sites/all/themes/shanti_theme/js/menus/menu-ajax.php .menu-collections > ul");  	
-        //	   $('body').on('click','.explore>a, .closecollections',function(){
-        //	     $(".collections").slideToggle(200);    
-        //	   }); 
-      }
-      // Initialize iCheck form graphics
-      function iCheckInit() {
-        $("input[type='checkbox'], input[type='radio']").each(function () {
-          var self = $(this),
-            label = self.next('label');
-          if(label.length == 1) {
-            self = $(this).detach();
-            label.prepend(self);
-          }
-          self.icheck({
-            checkboxClass: "icheckbox_minimal-red",
-            radioClass: "iradio_minimal-red",
-            insert: "<div class='icheck_line-icon'></div>"
-          });
-        });
-        $(".selectpicker").selectpicker({
-          dropupAuto: false
-        }); // initiates jq-bootstrap-select
-      }
-      /* Initialize Extruder search fly-out */
-      function mbExtruderInit() {
-        var mywidth = ShantiSettings.flyoutWidth;
-        $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block"); // show hidden containers after loading to prevent content flash
-        // Initialize Search Flyout
-        $("#gen-search").buildMbExtruder({
-          positionFixed: false,
-          position: "right",
-          closeOnExternalClick:false,
-          closeOnClick:false,
-          width: mywidth, // width is set in two places, here and the css
-          top: 0
-        });
-        // Make it resizeable
-        $("div.extruder-content > div.text").resizable({ handles: "w",
-          resize: function (event, ui) {
-            $('span.fancytree-title').trunk8({ tooltip:false });
-          }
-         });
-        // Bind event listener
-        $(".extruder-content").resize(checkWidth);
-        if (!$(".extruder.right").hasClass("isOpened")) {
-          $(".flap").click( function() {
-            $(".extruder .text").css("width","100%");
-          });
-          // styles inline for now, forces
-          $(".flap").prepend("<span style='font-size:21px; position:absolute; left:17px; top:12px; z-index:10;'><i class='icon shanticon-search'></i></span>");
-          $(".flap").addClass("on-flap");
-        }
-        // --- set class on dropdown menu for icon
-        $('.shanti-field-title a').hover(function() {
-            $(this).addClass('on-hover');
-        },
-        function () {
-          $(this).removeClass('on-hover');
-        });
-        // --- set class on dropdown menu for icon
-        $(".extruder.right .flap").hover(function() {
-            $(this).addClass('on-hover');
-          },
-          function () {
-            $(this).removeClass('on-hover');
-          }
-        );
-      }
-      /** Function to check width of Extruder and resize content accordingly */
-      function checkWidth() {
-        var panelWidth = $(".text").width();
-        if( panelWidth > 275 ) {
-          $(".extruder-content").css("width","100%");
-        } else
-        if( panelWidth <= 275 ) {
-          $(".extruder-content").css("width","100% !important");
-        }
-      }
-      /** 
-       * 
-       * Initialize Fancy tree in fly out 
-       * 
-       * 		API call examples: 
-       * 			Get a node: var node = $.ui.fancytree.getNode(el);
-       *    Activate a node: node.setActive(true); // Performs activate action too
-       *    Show a node: node.makeVisible(); // Opens tree to node and scrolls to it without performing action
-       **/
-      function fancytreeInit() {
-        // Facet Tree in Search Flyout
-        var divs = $(ShantiSettings.ftListSelector).parent();
-        divs.each(function() {
-          // Find the container div for the fancy tree
-          var facettype = $(this).children('ul').attr('id').split('-').pop();
-          $(this).attr('id', facettype + '-facet-content-div'); 
-          // Initiate the Fancy Tree
-          var tree = $(this).fancytree({
+      });
+    }
+  };
+  
+  /**
+   * Fancy Tree Init
+   * 
+   * Initialize Fancy tree in fly out 
+   * 
+   *     API call examples: 
+   *       Get a node: var node = $.ui.fancytree.getNode(el);
+   *      Activate a node: node.setActive(true); // Performs activate action too
+   *      Show a node: node.makeVisible(); // Opens tree to node and scrolls to it without performing action
+   **/
+  Drupal.behaviors.shanti_sarvaka_fancytree = {
+    attach: function (context, settings) {
+      // Facet Tree in Search Flyout
+      var divs = $(Drupal.settings.shanti_sarvaka.ftListSelector).parent();
+      
+      divs.each(function() {
+        // Find the container div for the fancy tree
+        var facettype = $(this).children('ul').attr('id').split('-').pop();
+        $(this).attr('id', facettype + '-facet-content-div');
+        
+        // Initiate the Fancy Tree
+        var tree = $(this).fancytree({
           activeVisible: true, // Make sure, active nodes are visible (expanded).
           aria: false, // Enable WAI-ARIA support.
           autoActivate: true, // Automatically activate a node when it is focused (using keys).
@@ -338,15 +264,15 @@
           filter: { mode: 'hide' },
           generateIds: true, // Generate id attributes like <span id='fancytree-id-KEY'>
           glyph: {
-            map: {
-              doc: "",
-              docOpen: "",
-              error: "glyphicon glyphicon-warning-sign",
-              expanderClosed: "glyphicon glyphicon-plus-sign",
-              expanderOpen: "glyphicon glyphicon-minus-sign",
-              folder: "",
-              folderOpen: "",
-            }
+              map: {
+                  doc: "",
+                  docOpen: "",
+                  error: "glyphicon glyphicon-warning-sign",
+                  expanderClosed: "glyphicon glyphicon-plus-sign",
+                  expanderOpen: "glyphicon glyphicon-minus-sign",
+                  folder: "",
+                  folderOpen: "",
+              }
           },
           idPrefix: "ftid", // Used to generate node id´s like <span id='fancytree-id-<key>'>.
           icons: true, // Display node icons.
@@ -356,265 +282,319 @@
           selectMode: 2, // 1:single, 2:multi, 3:multi-hier
           tabbable: true, // Whole tree behaves as one single control
           titlesTabbable: false, // Node titles can receive keyboard focus
-          });
-          ShantiSettings.fancytrees.push($(tree).fancytree('getTree'));
-        });   
-        // Set facet link title attributes on mouseover
-        $('ul.fancytree-container').on('mouseover', 'span.fancytree-title', function() {
-          if($(this).find('span.element-invisible').length == 1) {
-            var title = $(this).find('span.element-invisible').text();
-            $(this).attr('title', title);
-            $(this).find('span.element-invisible').remove();
-          }
         });
-        // Initiate Facet Label Search Toggles
-        $('div.block-facetapi').on('click', 'button.toggle-facet-label-search', function(e) {
-          if($(this).prev('input').is(':hidden')) {
-            $(this).prev('input').slideDown({duration: 400, queue: false}).animate({ width: '50%', queue: false });
-            e.preventDefault();
-          } else {
-            $(this).prev('input').animate({ width: '0%', queue: false }).slideUp({duration: 400, queue: false});
-            e.preventDefault();
-          }
-        });
-        // When text is entered into the facet label filter box perform a filter
-        $('div.block-facetapi').on('keyup', 'input.facet-label-search', function (e) {
-          var sval = $(this).val();
-          var tree = $(this).parents('div.block-facetapi').find('div.content').fancytree('getTree');
-          // If sval is a number search for facet by id
-          if(!isNaN(sval)) {
-            tree.applyFilter(function (node) {
-              if(node.data.fid == sval) {
+        Drupal.settings.shanti_sarvaka.fancytrees.push($(tree).fancytree('getTree'));
+      });
+      
+      // Set facet link title attributes on mouseover
+      $('ul.fancytree-container').on('mouseover', 'span.fancytree-title', function() {
+        if($(this).find('span.element-invisible').length == 1) {
+          var title = $(this).find('span.element-invisible').text();
+          $(this).attr('title', title);
+          $(this).find('span.element-invisible').remove();
+        }
+      });
+      
+      // Initiate Facet Label Search Toggles
+      $('div.block-facetapi').on('click', 'button.toggle-facet-label-search', function(e) {
+        if($(this).prev('input').is(':hidden')) {
+          $(this).prev('input').slideDown({duration: 400, queue: false}).animate({ width: '50%', queue: false });
+          e.preventDefault();
+        } else {
+          $(this).prev('input').animate({ width: '0%', queue: false }).slideUp({duration: 400, queue: false});
+          e.preventDefault();
+        }
+      });
+      
+      // When text is entered into the facet label filter box perform a filter
+      $('div.block-facetapi').on('keyup', 'input.facet-label-search', function (e) {
+        var sval = $(this).val();
+        var tree = $(this).parents('div.block-facetapi').find('div.content').fancytree('getTree');
+        // If sval is a number search for facet by id
+        if(!isNaN(sval)) {
+          tree.applyFilter(function (node) {
+            if(node.data.fid == sval) {
               return true;
-              }
-              return false;
-            });
-            // Search for string if over 2 chars long
-          } else if(sval.length > 2) {
-            $('span.fancytree-title mark').each(
+            }
+            return false;
+          });
+        // Search for string if over 2 chars long
+        } else if(sval.length > 2) {
+          $('span.fancytree-title mark').each(
               function () {
                 var parent = $(this).parent();
                 var children = parent.children('.facet-count, .element-invisible').remove();
                 parent.text(parent.text());
                 parent.append(children);
               }
-            );
-            tree.applyFilter(sval);
-            $('span.fancytree-title').highlight(sval, { element: 'mark' });
-            // if sval is empty clear filter
-          } else if (sval.length == 0) {
-            tree.clearFacetFilter();
-          }
-        });
-        // Activate the remove facet links
-        $('div.block-facetapi').on('click', 'i.icon.shanticon-cancel', function() {
-          //console.log('clicked');
-          var tree = $(this).parents('ul.ui-fancytree').parents('div.content').fancytree('getTree');
-          var nodeId = $(this).parents('li').eq(0).attr('id').replace('ftid','');
-          var node = tree.getNodeByKey(nodeId);
+          );
+          tree.applyFilter(sval);
+          $('span.fancytree-title').highlight(sval, { element: 'mark' });
+        // if sval is empty clear filter
+        } else if(sval.length == 0) {
           tree.clearFacetFilter();
-          //node.setActive(true);
-          node.setExpanded(true);
-          node.setSelected(false);
-          //$(node.span).removeClass('fancytree-active fancytree-focused fancytree-selected');
-          $('article.main-content section.content-section').html($('#original-content').html());
-          $('#original-content').remove();
-          $(this).remove();
-          //console.log(tree, nodeId, node.data);
-        });
-      }
-      function miscInit() {
-        // *** GLOBAL ** conditional IE message
-        // show-hide the IE message for older browsers
-        // this could be improved with conditional for - lte IE7 - so it does not self-hide
-        $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
-        $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
-        // Change collapsible div icon from +/- depending on state
-        $('div.panel-collapse').on('hide.bs.collapse', function () {
-          $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
-          $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
-        });
-        $('div.panel-collapse').on('show.bs.collapse', function () {
-          $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
-          $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
-        });
-        // Add class and event handler to bootstrap tabs for formatting
-        $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
-        $('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-          var el = e.target;
-          $(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
-            $(this).removeClass('basebg');
-          });
-          $(el).addClass('basebg');
-        });
-        // Turn dev menu in admin footer into select
-        if($('#admin-footer #block-menu-devel ul.menu').length > 0) { 
-          var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
-          $('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
-          var sel = $('#block-menu-devel select.devmenu');
-          sel.append('<option>Choose an option...</option>');
-          $.each(devmenu.children('li'), function() {
-            var opt = $('<option>' + $(this).text() + '</option>').attr('value', $(this).find('a').attr('href'));
-            sel.append(opt);
-          });
-          sel.change(function() { window.location.pathname = $(this).val(); });
         }
-        // Adjust height of blocks in admin footer
-        $('#admin-footer div.block').each(function() {
-          $(this).height($(this).parent().height());
+      });
+      
+      // Activate the remove facet links
+      $('div.block-facetapi').on('click', 'i.icon.shanticon-cancel', function() {
+        //console.log('clicked');
+        var tree = $(this).parents('ul.ui-fancytree').parents('div.content').fancytree('getTree');
+        var nodeId = $(this).parents('li').eq(0).attr('id').replace('ftid','');
+        var node = tree.getNodeByKey(nodeId);
+        tree.clearFacetFilter();
+        //node.setActive(true);
+        node.setExpanded(true);
+        node.setSelected(false);
+        //$(node.span).removeClass('fancytree-active fancytree-focused fancytree-selected');
+        $('article.main-content section.content-section').html($('#original-content').html());
+        $('#original-content').remove();
+        $(this).remove();
+        //console.log(tree, nodeId, node.data);
+      });
+    }
+  };
+  
+  /**
+   * Popovers Init
+   */
+  Drupal.behaviors.shanti_sarvaka_popovers = {
+    attach: function (context, settings) {
+      $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
+      $.fn.popover.Constructor.DEFAULTS.placement = 'right';
+      $.fn.popover.Constructor.DEFAULTS.html = true;
+      $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 500000 };
+  
+      $('span.popover-link').each(function() {
+        var content = '<div>' + $(this).next('div.popover').html() + '</div>';
+        $(this).popover({'content': content});
+      });
+      $('div.popover').remove(); // remove hidden popover content once they have all been initialized
+      $('span.popover-link').on('show.bs.popover', function(){ $('div.popover').hide();}); // When popover is shown, hide all others
+       // Hide popovers if anything but a popover is clicked
+       $('body').click(function(e) {
+          var target = $(e.target);
+          if(target.parents('div.popover').length == 0 && !target.hasClass('popover')) {
+            $('div.popover').hide();
+          }
+       });
+    }
+  };
+  
+  /**
+   * Miscellaneous Init
+   */
+  Drupal.behaviors.shanti_sarvaka_miscinit = {
+    attach: function (context, settings) {
+      // *** GLOBAL ** conditional IE message
+      // show-hide the IE message for older browsers
+      // this could be improved with conditional for - lte IE7 - so it does not self-hide
+      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
+      $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
+      // Change collapsible div icon from +/- depending on state
+      $('div.panel-collapse').on('hide.bs.collapse', function () {
+        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
+        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
+      });
+      $('div.panel-collapse').on('show.bs.collapse', function () {
+        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
+        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
+      });
+      
+      // Add class and event handler to bootstrap tabs for formatting
+      $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
+      $('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+        var el = e.target;
+        $(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
+          $(this).removeClass('basebg');
         });
+        $(el).addClass('basebg');
+      });
+      // Turn dev menu in admin footer into select
+      if($('#admin-footer #block-menu-devel ul.menu').length > 0) { 
+        var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
+        $('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
+        var sel = $('#block-menu-devel select.devmenu');
+        sel.append('<option>Choose an option...</option>');
+        $.each(devmenu.children('li'), function() {
+          var opt = $('<option>' + $(this).text() + '</option>').attr('value', $(this).find('a').attr('href'));
+          sel.append(opt);
+        });
+        sel.change(function() { window.location.pathname = $(this).val(); });
       }
-      function loadFacetSearch(fdata) {
-        // fdata structure: {href: "/homepage?f[0]=im_field_subcollection%3A5", fname: "im_field_subcollection", fid: 5} 
-        var fname = fdata.fname;
-        var fid = fdata.fid;
-        var dataurl = '/services/facet/' + fname + '/' + fid;
-        $.ajax({
-          url: dataurl,
-          beforeSend: function() {
-          if($('article.main-content #original-content').length == 0) {
-            $('article.main-content').append('<div id="original-content" style="display:none; width: 0px; height: 0px;"></div>');
-            $('#original-content').html($('article.main-content section.content-section').html());
+      // Adjust height of blocks in admin footer
+      $('#admin-footer div.block').each(function() {
+        $(this).height($(this).parent().height());
+      });
+      
+      // Collapse/Expand All Buttons For Bootstrap Collapsible Divs
+      // Assumes Buttons are in a child div that is a sibling of the collapsible divs.
+      $('div.expcoll-btns button').click(function() {
+        var divs = $(this).parent().parent().find('div.collapse');
+        if($(this).hasClass('expand')) {
+          $(divs).addClass('in');
+        } else {
+          $(divs).removeClass('in');
+        }
+      });
+      
+      // call Check Width
+      checkWidth();
+      
+      // Carousel Init and controls
+      $('.carousel').carousel({
+        interval: 6000,
+      });
+      $('.carousel .control-box-2 .carousel-pause').click(function () {
+          var carousel = $(this).parents('.carousel');
+          if($(this).hasClass('paused')) {
+            carousel.carousel('next');
+            carousel.carousel('cycle');
+          } else {
+            carousel.carousel('pause');
           }
-          $('article.main-content section.content-section').html('<div class="loader"><i class="fa fa-spinner fa-spin"></i> Loading ...</div>');
-          }
-        }).done(function(json) {
-          $('article.main-content section.content-section').html(json.html);
-          if(fid != 'clear') {
-            var facets = new Array();
-            for (var fn in json.facets) {
-              var facet =json.facets[fn];
-              facets[facet.fid] = facet.count;
+          $(this).toggleClass('paused');
+          $(this).find('i').toggleClass('glyphicon-pause glyphicon-play');
+      });
+    }
+  };
+
+  /**
+   * Gallery: Initialize a gallery of images
+   */
+  Drupal.behaviors.shanti_sarvaka_galleryinit = {
+    attach: function (context, settings) {  
+      $('.shanti-gallery').imagesLoaded(function() {    
+          // Prepare layout options.
+          var options = {
+            itemWidth: 160, // Optional min width of a grid item
+            autoResize: true, // This will auto-update the layout when the browser window is resized.
+            container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
+            offset: 15, // Optional, the distance between grid items
+            outerOffset: 10, // Optional the distance from grid to parent
+            flexibleWidth: '30%' // Optional, the maximum width of a grid item
+          };
+  
+          // Get a reference to your grid items.
+          var handler = $('.shanti-gallery li');
+  
+          var $window = $(window);
+          $window.resize(function() {
+            var windowWidth = $window.width(),
+                newOptions = { flexibleWidth: '30%' };
+  
+            // Breakpoint
+            if (windowWidth < 1024) {
+              newOptions.flexibleWidth = '100%';
             }
-            var ulclass = 'ul.facetapi-facet-' + fdata.fname.replace(/\_/g,'-');
-            var tree = $(ulclass).parent('div.content').fancytree('getTree');
-            tree.applyFilter(function(node) {
-              if(node.data.fid in facets) {
-                var ctel = $(node.li).find('.facet-count').eq(0);
-                if(ctel) {
-                  //node.data.originalcount = ctel.text(); // a data field that store original count for facet
-                  ctel.html(facets[node.data.fid]);
-                  if(node.data.fid == fid) {
-                    ctel.parent().after(' <i class="icon shanticon-cancel" title="Remove this facet"></i>');
-                  }
-                }
-                return true;
-              }
-              return false;
-            });
-            var title = $('section.content-section div.content h3:first-child').detach();
-            $('h1.page-title span').text(title.text());
-          }
-          //console.info({'ulclass': ulclass, 'tree':tree, 'fdata':fdata, 'data':json});
-        });
-      }
-      // *** SEARCH *** Initialization
-      function searchInit() {
-        // Handle Search form Submit
-        $('#gen-search form button#searchbutton').click(function() { $(this).parents('form').eq(0).submit(); });
-        $('#gen-search form').on('submit', function(event) {
-          // TODO: Implement Ajax searching
-          // In order to implement Ajax searching need to use hash to create unique bookmarks. Check out Jquery BBQ (though tis old).
-          // See doAjaxSearch function below => partial implementation
-          //doAjaxSearch($(this).find('input[type=text]').val(), $(this).find('input[name=srchscope]').val());
-          event.preventDefault();
-          window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
-        });
-        // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
-        searchTabHeight();
-        $(window).bind('load orientationchange resize', searchTabHeight );
+  
+            handler.wookmark(newOptions);
+          });
+  
+          // Call the layout function.
+          handler.wookmark(options);
+      });
+    }
+  };
+
+  /**
+   * Accordion Init: only called on document load
+   */
+  Drupal.behaviors.shanti_sarvaka_accordion = {
+    attach: function (context, settings) {
+    
+      if(context == window.document) {
+          
+        /* testing toggle on accordions */
+  
+        var $active = $('.panel-group .panel-collapse.in').prev().addClass('active');
         
-        // --- advanced search toggle icons, open/close, view change height
-        $(".advanced-link").click(function () {
-          $(this).toggleClass("show-advanced",'fast');
-          $(".advanced-view").slideToggle('fast');
-          $(".advanced-view").toggleClass("show-options");
-          $(".view-wrap").toggleClass("short-wrap"); // ----- toggle class for managing view-section height    
-          searchTabHeight();
-        }); 
-      }
-      // *** SEARCH *** adapt search panel height to viewport
-      function searchTabHeight() {
-        var height = $(window).height();
-        var srchtab = (height) - 80;
-        var viewheight = (height) -  211;
-        // var advHeight = $(".advanced-view").show().height();
-        var comboHeight = (viewheight) - 126;  
-        srchtab = parseInt(srchtab) + 'px';
-        $("#gen-search").find(".text").css('height',srchtab);
-        viewheight = parseInt(viewheight) + 'px';
-        comboHeight = parseInt(comboHeight) + 'px';
-        $(".view-wrap").css('height', viewheight);
-        $(".view-wrap.short-wrap").css('height', comboHeight);      
-      } 
-      function doAjaxSearch(qstr, type) {
-        var surl = '/services/ajaxsearch';
-        $.ajax({
-          url: surl,
-          data: {'query': qstr, 'type': type},
-          dataType: 'json',
-          beforeSend: function() {
-            if($('article.main-content #original-content').length == 0) {
-              $('article.main-content').append('<div id="original-content" style="display:none; width: 0px; height: 0px;"></div>');
-              $('#original-content').html($('article.main-content section.content-section').html());
-            }
-            $('article.main-content section.content-section').html('<div class="loader"><i class="fa fa-spinner fa-spin"></i> Loading ...</div>');
-          },
-          success: function(json) {
-            $('article.main-content section.content-section').html(json.html);
+        $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
+        
+        $('.panel-group .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+        
+        $('.panel-group').on('show.bs.collapse', function (e) {
+            $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+            $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+        });
+        
+        $('.panel-group').on('hide.bs.collapse', function (e) {
+            $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+        });
+
+        /* toggle icon on accordions */
+        $('.btn-toggle-accordion').click(function () {
+      
+          $(this).toggleClass('expand');   
+          
+          if($('.btn-toggle-accordion').hasClass('expand')) {
+              
+              $(this).text('Expand All');
+              $('.panel-collapse').collapse('hide');  
+              $('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');  
+            } else {          
+              $(this).text('Collapse All');
+              $('.panel-collapse').collapse('show');
+              $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
           }
-        });
+        });  
+        
+        // Open first accordion if none opened
+        if($(".collapsible.in").length == 0) {
+          $(".collapsible").eq(0).find('h6.panel-title a').click();
+        }
       }
-      function carouselInit() {
-        // Carousel Auto-Cycle
-        $('.carousel').carousel({
-          interval: 8000,
-        });
-      }
-      if($('ul.tabs.primary').length ) {
-        $('.main-content').addClass('has-tabs');
-      }
-      //	$('.shanti-thumbnail-link').hover( function() {
-      //	    $(this).prev('.shanti-thumbnail').addClass('active-link');
-      //	    },
-      //	    function () {
-      //	    $(this).prev('.shanti-thumbnail').removeClass('active-link');
-      //	    }
-      //	 );
-      // *** CONTENT *** hide responsive column for resources
+    }
+  };
+
+  /**
+   * Other: All of below if from Mark's separate Jquery() functions
+   */
+  Drupal.behaviors.shanti_sarvaka_otherinit = {
+    attach: function (context, settings) {      
+      $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
+      
+      $('.shanti-field-title a').hover( function() {
+            $(this).closest('.shanti-thumbnail').addClass('title-hover');
+            },
+              function () {
+            $(this).closest('.shanti-thumbnail').removeClass('title-hover');
+            }
+       );
+       
+      // $('table.sticky-header').css('width','100%');
+       
+      // if($('.node-video').length ){
+      //       $('.shanti-gallery').imagesLoaded();
+      // });
+      //-------
+      
+      // hide responsive column for resources
       $('[data-toggle=offcanvas]').click(function () {
         $('.row-offcanvas').toggleClass('active');
       });
       
-      //$('.advanced-view').css('display','block');
-      
-      // $('fieldset.container-inline').removeClass('container-inline');
-      
-      // $('.shanti-thumbnail').unwrap();
-      $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
-      
-      $('.shanti-field-title a').hover( function() {
-        $(this).parent('.shanti-thumbnail').addClass('title-hover');
-        },
-          function () {
-        $(this).parent('.shanti-thumbnail').removeClass('title-hover');
+      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width  
+      (function () {
+        'use strict';
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+          var msViewportStyle = document.createElement('style');
+          msViewportStyle.appendChild(
+            document.createTextNode(
+              '@-ms-viewport{width:auto!important}'
+            )
+          );
+          document.querySelector('head').appendChild(msViewportStyle);
         }
-      );
-      /* testing toggle on accordions */
-      var $active = $('.panel-group .panel-collapse.in').prev().addClass('active');
-    
-      $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
+      })();
+      //----
       
-      $('.panel-group .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+      /*
+      $('.ss-full-tabs > .rel-video').on('click', function () {
+        $.imagesLoaded();
+      });*/
+      //----
       
-      $('.panel-group').on('show.bs.collapse', function (e) {
-        $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-        $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-      });
-      
-      $('.panel-group').on('hide.bs.collapse', function (e) {
-        $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-      });
       var myElement = document.getElementById('.carousel.slide');
       if(myElement) {
         // create a simple instance
@@ -627,17 +607,61 @@
         
         // listen to events...
         mc.on("panleft panright panup pandown tap press", function(ev) {
-          myElement.textContent = ev.type +" gesture detected.";
+            myElement.textContent = ev.type +" gesture detected.";
         });
-      }
-      // Make Drupal rebind autocomplete behavior.
-      $('#edit-advanced-search-api-views-fulltext-autocomplete').removeClass('autocomplete-processed');
-      $('#edit-advanced-search-api-views-fulltext').keyup(function() {
-        Drupal.behaviors.autocomplete.attach(document);
-      });
+      } 
     }
-  }
+  };
+
+  // *** Common Functions for Shanti Sarvaka ***
+  /** Function to check width of Extruder and resize content accordingly */
+  checkWidth = function() {
+  var panelWidth = $(".text").width();
+    if( panelWidth > 275 ) {
+        $(".extruder-content").css("width","100%");
+      } else
+    if( panelWidth <= 275 ) {
+        $(".extruder-content").css("width","100% !important");
+      }
+  };
+  
+
+  // *** SEARCH *** adapt search panel height to viewport
+  searchTabHeight = function() {
+    var height = $(window).height();
+    var srchtab = (height) - 80;
+    var viewheight = (height) -  211;
+    // var advHeight = $(".advanced-view").show().height();
+    var comboHeight = (viewheight) - 126;
+    
+    srchtab = parseInt(srchtab) + 'px';
+    $("#gen-search").find(".text").css('height',srchtab);
+    
+    viewheight = parseInt(viewheight) + 'px';
+    comboHeight = parseInt(comboHeight) + 'px';
+    $(".view-wrap").css('height', viewheight);
+    $(".view-wrap.short-wrap").css('height', comboHeight);            
+  } ;
+     
+  doAjaxSearch = function(qstr, type) {
+    var surl = '/services/ajaxsearch';
+    $.ajax({
+      url: surl,
+      data: {'query': qstr, 'type': type},
+      dataType: 'json',
+      beforeSend: function() {
+        if($('article.main-content #original-content').length == 0) {
+          $('article.main-content').append('<div id="original-content" style="display:none; width: 0px; height: 0px;"></div>');
+          $('#original-content').html($('article.main-content section.content-section').html());
+        }
+        $('article.main-content section.content-section').html('<div class="loader"><i class="fa fa-spinner fa-spin"></i> Loading ...</div>');
+      },
+      success: function(json) {
+        $('article.main-content section.content-section').html(json.html);
+      }
+    });
+  };
 }(jQuery));
 
 
-	
+  
