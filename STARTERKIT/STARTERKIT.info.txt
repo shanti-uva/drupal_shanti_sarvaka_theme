@@ -1,0 +1,47 @@
+name = Shanti Sarvaka STARTERKIT
+description = A sub-theme of the Drupal 7 Shanti Sarvaka Theme
+core = 7.x
+base theme = shanti_sarvaka
+version = 7.x-1.x
+
+dependencies[] = jquery_update ; requires jquery v 1.10+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header]         = Top Bar Header
+regions[banner]         = Color Strip Banner
+regions[content]        = Content
+regions[search_flyout]  = Search Fly Out
+regions[sidebar_first]  = Primary Sidebar
+regions[sidebar_second] = Secondary Sidebar
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+regions[footer]         = Footer
+regions[admin_footer]   = Admin Footer
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] =  css/shanti-main-STARTERKIT.css
+stylesheets[all][] =  css/shanti-search-STARTERKIT.css
+
+;;;;;;;;;;;;;;;;;;;;;;
+;;; Scripts
+;;;;;;;;;;;;;;;;;;;;;;
+scripts[] = js/shanti-main-STARTERKIT.js
+scripts[] = js/shanti-search-STARTERKIT.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Theme Settings   
+;;;;;;;;;;;;;;;;;;;;;
+;
+; These theme settings can be changed in the admin interface as well.
+; Furthermore, base color is primarily determined in CSS
+;
+;settings[shanti_sarvaka_base_color] = '#dc3c47' 
+;settings[shanti_sarvaka_icon_class] = 'av'
