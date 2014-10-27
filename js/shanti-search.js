@@ -13,7 +13,7 @@
 		  $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block"); // show hidden containers after loading to prevent content flash
 			
 			// Initialize Search Flyout
-		  $("#gen-search").buildMbExtruder({
+		  $("#search-flyout").buildMbExtruder({
 		      positionFixed: false,
 		      position: "right",
 		      closeOnExternalClick:false,
@@ -60,7 +60,7 @@
 		      }
 		  );
 		  // Show Flyout tab hidden on load
-		  $('#gen-search').show();
+		  $('#search-flyout').show();
 		}
 	};
 
@@ -70,8 +70,8 @@
 	Drupal.behaviors.sarvakaSearchInit = {
 		attach: function (context, settings) {
 			// Handle Search form Submit
-			$('#gen-search form button#searchbutton:not(form#csc-views-advanced-search-form)').click(function() { $(this).parents('form').eq(0).submit(); });
-			$('#gen-search form:not(form#csc-views-advanced-search-form)').on('submit', function(event) {
+			$('#search-flyout form button#searchbutton:not(form#csc-views-advanced-search-form)').click(function() { $(this).parents('form').eq(0).submit(); });
+			$('#search-flyout form:not(form#csc-views-advanced-search-form)').on('submit', function(event) {
 				// TODO: Implement Ajax searching
 				// In order to implement Ajax searching need to use hash to create unique bookmarks. Check out Jquery BBQ (though tis old).
 				// See doAjaxSearch function below => partial implementation

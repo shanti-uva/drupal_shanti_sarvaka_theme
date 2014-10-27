@@ -158,13 +158,13 @@
       });  
       // this is for the responsive button
       $(".shanti-searchtoggle").click(function () {   
-          if($("#gen-search.extruder").hasClass("isOpened")){   
-            $("#gen-search").closeMbExtruder();
+          if($("#search-flyout.extruder").hasClass("isOpened")){   
+            $("#search-flyout").closeMbExtruder();
             $(".shanti-searchtoggle").removeClass("show-topmenu");        
           } else {      
             $("#menu-main").closeMbExtruder();
             $("#menu-collections").closeMbExtruder();
-            $("#gen-search").openMbExtruder();
+            $("#search-flyout").openMbExtruder();
             $(".shanti-searchtoggle").addClass("show-topmenu");
             $(".menu-maintoggle,.menu-exploretoggle").removeClass("show-topmenu");
             // $("#menu-main").load("./menus-ajax.html");        
@@ -179,7 +179,7 @@
             $(".menu-maintoggle").removeClass("show-topmenu");     
           } else {     
             $("#menu-main").openMbExtruder();
-            $("#gen-search").closeMbExtruder();
+            $("#search-flyout").closeMbExtruder();
             $("#menu-collections").closeMbExtruder();
             $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
             
@@ -209,7 +209,7 @@
             
             $("#menu-collections").openMbExtruder();
             $("#menu-main").closeMbExtruder();        
-            $("#gen-search").closeMbExtruder();
+            $("#search-flyout").closeMbExtruder();
             
             $(".menu-exploretoggle").addClass("show-topmenu");  
             $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");    
@@ -635,7 +635,7 @@
     var comboHeight = (viewheight) - 126;
     
     srchtab = parseInt(srchtab) + 'px';
-    $("#gen-search").find(".text").css('height',srchtab);
+    $("#search-flyout").find(".text").css('height',srchtab);
     
     viewheight = parseInt(viewheight) + 'px';
     comboHeight = parseInt(comboHeight) + 'px';

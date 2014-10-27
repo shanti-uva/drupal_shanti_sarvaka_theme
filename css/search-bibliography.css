@@ -58,7 +58,7 @@ body.page-csc-search {
   border: 1px solid #CCC;
   height: 29px;
 }
-#gen-search.extruder #csc-views-advanced-search-form .text {
+#search-flyout.extruder #csc-views-advanced-search-form .text {
   background: none;
 }
 .page-csc-search .main-content .bootstrap-select .btn:hover,
@@ -1215,7 +1215,7 @@ a#long-detail.active {
   margin: 10px 0;
   font-weight: bold;
 }
-#gen-search {
+#search-flyout {
   z-index: 9999999 !important; /* Override inline z-index value of search flyout region */
 }
 #csc-views-advanced-search-form .bootstrap-select.btn-group .btn .caret {
