@@ -166,26 +166,17 @@ function shanti_sarvaka_preprocess_node(&$variables) {
   $variables['date'] = Date('j M Y', $variables['node']->created);
 }
 
+/** Unnecessary 
 function shanti_sarvaka_preprocess_region(&$variables) {
   switch ($variables['region']) {
     case 'sidebar_second':
       //dpm($variables, '2nd side vars');
       break;
     case 'search_flyout':
-      $elements = $variables['elements'];
-      // Separate out search block "element" from others to display it in a different part of the flyout region template
-      $variables['other_elements'] = array();
-      foreach($elements as $n => $el) {
-        if($n == 'search_form') {
-          $variables['search_form'] = $variables['elements']['search_form'];
-        } else if (substr($n, 0, 1) != '#') { // Elements without a # in the name are blocks added to the region
-          array_push($variables['other_elements'], $variables['elements'][$n]);
-        }
-      }
-      unset($variables['elements']['search_form']);
       break;
   }
 }
+*/
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
@@ -819,7 +810,7 @@ function shanti_sarvaka_button($variables) {
   }
 	// Attributes
   if (!empty($element['#attributes']['disabled'])) {
-    $element['#attributes']['class'][] = 'form-button-disabled';
+  	$element['#attributes']['class'][] = 'form-button-disabled';
   }
 	//dpr($element);
 	if(strpos($element['#id'], 'remove-button') > -1) {
