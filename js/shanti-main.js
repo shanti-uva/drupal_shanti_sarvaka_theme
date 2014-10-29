@@ -505,20 +505,21 @@
     
       if(context == window.document) {
           
-        /* testing toggle on accordions */
-  
-        var $active = $('.panel-group .panel-collapse.in').prev().addClass('active');
+        /* Select only accordions not in vertical tabs */
+  			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
+        var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
         
         $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
         
-        $('.panel-group .panel-heading').once('expgylph').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+        accorddivs.find('.panel-heading').once('expgylph').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
 
-        $('.panel-group').on('show.bs.collapse', function (e) {
-            $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+        accorddivs.on('show.bs.collapse', function (e) {
+  					var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
+            accorddivs.find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
         
-        $('.panel-group').on('hide.bs.collapse', function (e) {
+        accorddivs.on('hide.bs.collapse', function (e) {
             $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
 

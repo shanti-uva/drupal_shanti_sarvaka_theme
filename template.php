@@ -261,7 +261,6 @@ function shanti_sarvaka_html_tag($variables) {
  * Implements hook_form_alter: to alter search block
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
-	//dpm($form_id);
   if ($form_id == 'search_block_form') {
 		$form['#prefix'] = '<section class="input-section" style="display:none;"> ';
 		$form['#suffix'] = '</section>';
@@ -669,14 +668,64 @@ function shanti_sarvaka_info_popover($variables) {
 	return $html;
 }
 
+/**
+ * Vertical Tabs function
+ * 	Uses CSS classes from https://github.com/dbtek/bootstrap-vertical-tabs and requires bootstrap.vertical-tabs.min.css of that project
+ */
+function shanti_sarvaka_vertical_tabs($variables) {
+  $element = $variables['element'];
+	//dpm($element, 'element');
+	
+	// Get the vertical tabs field group's children
+	$nchild = element_children($element['group']);
+	
+	// Nav Tabs
+	$output = '<div class="vertical-tab-container clearfix"><div class="col-xs-3"> <!-- required for floating -->
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs tabs-left">';
+  $first = TRUE; 
+	foreach($nchild as $n) {
+		$child = $element['group'][$n];
+		$class = ($first) ? ' class="active"':'';
+		$output .= '<li' . $class . '><a href="#' . $child['#id'] . '" data-toggle="tab">' . $child['#title'] . '</a></li>';
+		$first = FALSE;
+	}
+	$output .= '</ul></div>';
+	
+	// Content Panes
+	$output .= '<div class="col-xs-9">
+    <!-- Tab panes -->
+    <div class="tab-content">';
+	$first = TRUE;
+	foreach($nchild as $n) {
+		$child = $element['group'][$n];
+		$fnames = element_children($child);
+		$childhtml = '<div class="vertical-tab group-' . $element['#id'] . ' ' . $child['#attributes']['class'][0] . '">';
+		$childhtml .= '<fieldset><legend>' . $child['#title'] . '</legend> ';
+		foreach($fnames as $fnm) {
+			$childhtml .= render($child[$fnm]);
+		}
+		$childhtml .= '</fieldset></div>';
+		$class = ($first) ? ' active':'';
+		$output .= '<div class="tab-pane' . $class . '" id="' . $child['#id'] . '">' . $childhtml . '</div>';
+		$first = FALSE;
+	}
+	$output .= '</div></div></div>';
+	return $output;
+}
+
 /** 
  * Fieldset Groups: Markup collapsible fieldsets according to Bootstrap 
  *     non-collapsible fieldsets get formatted per core 
  **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
+	//dpm($element, 'element in fieldset preprocess');
+	
   // If not collapsible or no title for heading then just format as normal field set
-  if( empty($element['#collapsible']) || empty($element['#title']) ) {
+  // Additional settings are for vertical tabs
+  if( empty($element['#collapsible']) || empty($element['#title']) || 
+  		(isset($element['#group']) && $element['#group'] == 'additional_settings') ) {
     return theme_fieldset($variables);
   }
   

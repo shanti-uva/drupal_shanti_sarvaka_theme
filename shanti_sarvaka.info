@@ -30,6 +30,7 @@ regions[admin_footer]   = Admin Footer
 ; Bootstrap CDN css/js assets added in template.php file
 ;stylesheets[all][] =  css/bootstrap.min.css
 ;stylesheets[all][] =  css/bootstrap-theme.min.css
+stylesheets[all][] =  css/bootstrap.vertical-tabs.min.css
 stylesheets[all][] =  css/utils.css
 stylesheets[all][] =  css/vjs.zencdn.nt-5.4-video-js.css
 stylesheets[all][] =  fonts/shanticon/css/style.css
