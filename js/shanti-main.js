@@ -511,8 +511,8 @@
         
         $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
         
-        $('.panel-group .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
-        
+        $('.panel-group .panel-heading').once('expgylph').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+
         $('.panel-group').on('show.bs.collapse', function (e) {
             $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
@@ -541,8 +541,11 @@
         
         // Open first accordion if none opened
         if($(".collapsible.in").length == 0) {
-          $(".collapsible").eq(0).find('h6.panel-title a').click();
+          $(".collapsible").eq(0).find('h6.panel-title a').once("openfirst").click();
+        	
         }
+        // Shiva site gets doubly glypicons. So need to be removed
+        $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
       }
     }
   };
