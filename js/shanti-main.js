@@ -665,6 +665,32 @@
       }
     });
   };
+  
+  
+  /**
+   * Format numbers with ssfmtnum class
+   */
+  Drupal.behaviors.shanti_sarvaka_format_numbers = {
+    attach: function (context, settings) {
+      $('.ssfmtnum').each(function() {
+      	if($(this).text().indexOf(',') == -1) {
+      		var txt = $(this).text(),
+      				len = txt.length,
+      				i = len - 1,
+      				fmtnum = '';
+      		while(i >= 0) {
+		        fmtnum = txt.charAt(i) + fmtnum;
+		        if ((len - i) % 3 === 0 && i > 0) {
+		        	fmtnum = "," + fmtnum;
+		        }
+		        --i;
+			    }
+			    $(this).text(fmtnum);
+      	}
+      });
+    }
+  };
+  
 }(jQuery));
 
 
