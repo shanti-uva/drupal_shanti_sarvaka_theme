@@ -78,7 +78,7 @@ Drupal.behaviors.sarvakaMbextruder = {
         // In order to implement Ajax searching need to use hash to create unique bookmarks. Check out Jquery BBQ (though tis old).
         // See doAjaxSearch function below => partial implementation
         //doAjaxSearch($(this).find('input[type=text]').val(), $(this).find('input[name=srchscope]').val());
-        // event.preventDefault();
+        event.preventDefault();
         // `window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
       });
       
