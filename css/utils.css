@@ -77,12 +77,12 @@ table.dataTable thead .sorting_desc_disabled {
 	cursor: pointer;
 }
 
-table.dataTable thead .sorting { background: url('../images/sort_both.png') no-repeat center right; }
-table.dataTable thead .sorting_asc { background: url('../images/sort_asc.png') no-repeat center right; }
-table.dataTable thead .sorting_desc { background: url('../images/sort_desc.png') no-repeat center right; }
+table.dataTable thead .sorting { background: url('../js/inc/datatables/images/sort_both.png') no-repeat center right; }
+table.dataTable thead .sorting_asc { background: url('../js/inc/datatables/images/sort_asc.png') no-repeat center right; }
+table.dataTable thead .sorting_desc { background: url('../js/inc/datatables/images/sort_desc.png') no-repeat center right; }
 
-table.dataTable thead .sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
-table.dataTable thead .sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_asc_disabled { background: url('../js/inc/datatables/images/sort_asc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_desc_disabled { background: url('../js/inc/datatables/images/sort_desc_disabled.png') no-repeat center right; }
 
 table.dataTable thead > tr > th {
 	padding-left: 18px;
@@ -460,7 +460,7 @@ span.fancytree-drag-helper-img,
   vertical-align: top;
   background-repeat: no-repeat;
   background-position: left;
-  background-image: url("icons.gif");
+  background-image: url("../js/inc/fancytree/images/icons.gif");
   background-position: 0em 0em;
 }
 /* Used by iconclass option */
@@ -495,7 +495,7 @@ span.fancytree-expander {
   cursor: default;
 }
 .fancytree-loading span.fancytree-expander {
-  background-image: url("loading.gif");
+  background-image: url("../js/inc/fancytree/images/loading.gif");
 }
 /*------------------------------------------------------------------------------
  * Checkbox icon
@@ -527,7 +527,7 @@ span.fancytree-icon {
 /* Folders */
 /* Status node icons */
 .fancytree-statusnode-wait span.fancytree-icon {
-  background-image: url("loading.gif");
+  background-image: url("../js/inc/fancytree/images/loading.gif");
 }
 /*------------------------------------------------------------------------------
  * Node titles and highlighting
@@ -748,7 +748,7 @@ table.fancytree-ext-table.fancytree-treefocus tbody tr.fancytree-selected {
     padding: 0;
     width: 18px;
     height: 18px;
-    background: url(../js/inc/check/skins/minimal/red.png) no-repeat;
+    background: url("../js/inc/check/skins/minimal/red.png") no-repeat;
     border: none;
     cursor: pointer;
 }
@@ -791,7 +791,7 @@ table.fancytree-ext-table.fancytree-treefocus tbody tr.fancytree-selected {
 @media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     .icheckbox_minimal-red,
     .iradio_minimal-red {
-        background-image: url(../js/inc/check/skins/minimal/red@2x.png);
+        background-image: url("../js/inc/check/skins/minimal/red@2x.png");
         -webkit-background-size: 200px 20px;
         background-size: 200px 20px;
     }
@@ -806,7 +806,7 @@ table.fancytree-ext-table.fancytree-treefocus tbody tr.fancytree-selected {
 /***** START Extruder for Search Panel ******/
 /*-----------------------------------------*/
 /*--- KMAP plugin ops --- MIT GPL Copyright(c)2001-2014 /www_pupunzi_com Matteo Bicocchi * last modified: 07/01/14 ---*/
-.extruder{position:fixed;cursor:default;background:url("../elements/extruder_blank.png")}.extruder .header{height:27px}.extruder .extruder-content{display:none;background:#000}.extruder.open .extruder-content{-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder .footer{display:none;height:10px;background:#000;border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:8px;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.top .flap{color:#fff;font:18px/28px Arial,Helvetica,sans-serif;text-align:center;display:block;margin:auto;padding:0 5px 5px 5px;height:30px;width:180px;background:#000;cursor:pointer;border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:8px;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;text-shadow:2px 2px 2px #333}.extruder.top .extruder-content{border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:8px}.extruder.bottom .flap{position:relative;color:white;font:18px/28px Arial,Helvetica,sans-serif;text-align:center;display:block;margin:auto;margin-top:1px;padding:0 5px 5px 5px;height:30px;width:180px;background:#000;cursor:pointer;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:0;text-shadow:2px 2px 2px #333;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.bottom .footer{border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:0;position:relative;margin-top:-5px}.extruder.bottom .extruder-content{border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:0}.extruder.bottom .ext_wrapper{bottom:0}.extruder.left{height:100%;background:url("../elements/extruder_blank.png")}.extruder.left.open .extruder-content{-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.left .extruder-content{border-right:3px solid #000}.extruder.left .ext_wrapper{height:100%}.extruder.left .footer{display:none}.extruder.left .flap{font-size:18px;color:white;top:0;padding:10px 0 10px 10px;margin-right:-37px;background:#000;width:30px;position:absolute;right:0;border-top-left-radius:0;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:8px;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.left .flap .flapLabel{background:#000}.extruder.right{height:100%;background:url("../elements/extruder_blank.png")}.extruder.right .extruder-content{border-left:3px solid #000}.extruder.right.open .extruder-content{-moz-box-shadow:-2px 0 5px #999;box-shadow:-2px 0 5px #999;}.extruder.right .ext_wrapper{height:100%;right:0}.extruder.right .footer{display:none}.extruder.right .flap{font-size:18px;color:white;top:0;padding:10px 0 10px 10px;background:#000;width:30px;position:absolute;left:-37px;border-top-left-radius:8px;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:0;-moz-box-shadow:-2px 0 5px #999;box-shadow:-2px 0 5px #999;}.extruder.right .flap .flapLabel{background:#000}.extruder .voice{font:18px/24px Arial,Helvetica,sans-serif;color:white;padding:5px;padding-left:10px;height:27px;border-bottom:1px solid #333;text-shadow:2px 2px 2px #333}.extruder .voice:last-child{border-bottom:0}.extruder .voice .disabled{cursor:default}.extruder .text{background:#222;font:14px/16px Arial,Helvetica,sans-serif;color:gray;padding:10px;border-bottom:1px solid #333;text-shadow:2px 2px 2px #333}.extruder .voice.hover{background:url("../elements/extruder_voiceHover.png") no-repeat top}.extruder .voice.sel{background:url("../elements/extruder_voiceHover.png") no-repeat top}.extruder .voice img{float:left;margin-right:15px}.extruder .voice a.label{display:block;height:30px;color:white;padding-top:0;text-decoration:none}.extruder .voice span.label{display:block;height:30px;color:#d0cfcf;padding-top:0;text-decoration:none}.extruder .voice{position:relative}.extruder .settingsBtn{display:block;position:absolute;width:36px;height:36px;background:url("../elements/settingsBtn.png") no-repeat bottom;cursor:pointer;right:-3px;top:-4px}.extruder .optionsPanel{background:url("../elements/fuzz.gif");display:none;border-bottom:1px solid #333}.extruder .voice.sel{background:url("../elements/extruder_voiceHover.png") no-repeat top}.optionsPanel .panelVoice a{text-decoration:none;display:block;color:#ccc;padding:8px;padding-left:20px;font-size:16px;text-shadow:2px 2px 2px #333;border-bottom:1px solid #000;cursor:pointer}.optionsPanel .panelVoice a:hover{color:#fff;background:url("../elements/red_op_50.png")}:focus{outline:0}
+.extruder{position:fixed;cursor:default;background:url("../js/inc/extruder/images/extruder_blank.png")}.extruder .header{height:27px}.extruder .extruder-content{display:none;background:#000}.extruder.open .extruder-content{-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder .footer{display:none;height:10px;background:#000;border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:8px;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.top .flap{color:#fff;font:18px/28px Arial,Helvetica,sans-serif;text-align:center;display:block;margin:auto;padding:0 5px 5px 5px;height:30px;width:180px;background:#000;cursor:pointer;border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:8px;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;text-shadow:2px 2px 2px #333}.extruder.top .extruder-content{border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:8px}.extruder.bottom .flap{position:relative;color:white;font:18px/28px Arial,Helvetica,sans-serif;text-align:center;display:block;margin:auto;margin-top:1px;padding:0 5px 5px 5px;height:30px;width:180px;background:#000;cursor:pointer;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:0;text-shadow:2px 2px 2px #333;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.bottom .footer{border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:0;position:relative;margin-top:-5px}.extruder.bottom .extruder-content{border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:0}.extruder.bottom .ext_wrapper{bottom:0}.extruder.left{height:100%;background:url("../js/inc/extruder/images/extruder_blank.png")}.extruder.left.open .extruder-content{-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.left .extruder-content{border-right:3px solid #000}.extruder.left .ext_wrapper{height:100%}.extruder.left .footer{display:none}.extruder.left .flap{font-size:18px;color:white;top:0;padding:10px 0 10px 10px;margin-right:-37px;background:#000;width:30px;position:absolute;right:0;border-top-left-radius:0;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:8px;-moz-box-shadow:2px 0 5px #999;box-shadow:2px 0 5px #999;}.extruder.left .flap .flapLabel{background:#000}.extruder.right{height:100%;background:url("../js/inc/extruder/images/extruder_blank.png")}.extruder.right .extruder-content{border-left:3px solid #000}.extruder.right.open .extruder-content{-moz-box-shadow:-2px 0 5px #999;box-shadow:-2px 0 5px #999;}.extruder.right .ext_wrapper{height:100%;right:0}.extruder.right .footer{display:none}.extruder.right .flap{font-size:18px;color:white;top:0;padding:10px 0 10px 10px;background:#000;width:30px;position:absolute;left:-37px;border-top-left-radius:8px;border-top-right-radius:0;border-bottom-left-radius:8px;border-bottom-right-radius:0;-moz-box-shadow:-2px 0 5px #999;box-shadow:-2px 0 5px #999;}.extruder.right .flap .flapLabel{background:#000}.extruder .voice{font:18px/24px Arial,Helvetica,sans-serif;color:white;padding:5px;padding-left:10px;height:27px;border-bottom:1px solid #333;text-shadow:2px 2px 2px #333}.extruder .voice:last-child{border-bottom:0}.extruder .voice .disabled{cursor:default}.extruder .text{background:#222;font:14px/16px Arial,Helvetica,sans-serif;color:gray;padding:10px;border-bottom:1px solid #333;text-shadow:2px 2px 2px #333}.extruder .voice.hover{background:url("../js/inc/extruder/images/extruder_voiceHover.png") no-repeat top}.extruder .voice.sel{background:url("../js/inc/extruder/images/extruder_voiceHover.png") no-repeat top}.extruder .voice img{float:left;margin-right:15px}.extruder .voice a.label{display:block;height:30px;color:white;padding-top:0;text-decoration:none}.extruder .voice span.label{display:block;height:30px;color:#d0cfcf;padding-top:0;text-decoration:none}.extruder .voice{position:relative}.extruder .settingsBtn{display:block;position:absolute;width:36px;height:36px;background:url("../js/inc/extruder/images/settingsBtn.png") no-repeat bottom;cursor:pointer;right:-3px;top:-4px}.extruder .optionsPanel{background:url("../js/inc/extruder/images/fuzz.gif");display:none;border-bottom:1px solid #333}.extruder .voice.sel{background:url("../js/inc/extruder/images/extruder_voiceHover.png") no-repeat top}.optionsPanel .panelVoice a{text-decoration:none;display:block;color:#ccc;padding:8px;padding-left:20px;font-size:16px;text-shadow:2px 2px 2px #333;border-bottom:1px solid #000;cursor:pointer}.optionsPanel .panelVoice a:hover{color:#fff;background:url("../js/inc/extruder/images/red_op_50.png")}:focus{outline:0}
 /*-----------------------------------------*/
 /***** END Extruder for Search Panel ******/
 /*-----------------------------------------*/
