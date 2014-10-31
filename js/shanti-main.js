@@ -60,6 +60,14 @@
           });
         }
       });
+    }
+  };
+  
+  /**
+   * Select Picker
+   */
+  Drupal.behaviors.shanti_sarvaka_select = {
+    attach: function (context, settings) {
       $(".selectpicker:not(#search-flyout .selectpicker)").selectpicker({
         dropupAuto: false
       }); // initiates jq-bootstrap-select

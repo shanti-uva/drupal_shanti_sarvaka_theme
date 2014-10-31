@@ -650,21 +650,20 @@ function shanti_sarvaka_carousel($variables) {
  * 		- links 	(array) 	: links to show in footer stripes
  */
 function shanti_sarvaka_info_popover($variables) {
-	//dpm($variables, 'vars in popover theme function');
 	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
 						<div class=\"popover\">
 							<h5>{$variables['label']}</h5>
 							{$variables['desc']}
-							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong> ";
+							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>";
 	
 	foreach($variables['tree']['items'] as $n => $link) {
-		$html .= " {$link}";
+		$html .= "{$link}";
 	}
-	$html .= " </div> <div class=\"popover-footer\"> <ul>";
+	$html .= "</div><div class=\"popover-footer\"><ul>";
 	foreach($variables['links'] as $label => $info) {
 		$html .= "<li><i class=\"icon shanticon-{$info['icon']}\"></i> " . l($label, $info['href']) . "</li>";
 	}
-	$html .= "</ul> </div> </div>";
+	$html .= "</ul></div></div>";
 	return $html;
 }
 
