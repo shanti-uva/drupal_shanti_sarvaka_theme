@@ -71,6 +71,10 @@ Drupal.behaviors.sarvakaMbextruder = {
    */
   Drupal.behaviors.sarvakaSearchInit = {
     attach: function (context, settings) {
+       // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
+      searchTabHeight();
+      $(window).bind('load orientationchange resize', searchTabHeight );
+    	/*
       // Handle Search form Submit
       $('#search-flyout form button#searchbutton:not(form#csc-views-advanced-search-form)').click(function() { $(this).parents('form').eq(0).submit(); });
       $('#search-flyout form:not(form#csc-views-advanced-search-form)').on('submit', function(event) {
@@ -81,11 +85,8 @@ Drupal.behaviors.sarvakaMbextruder = {
         event.preventDefault();
         // `window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
       });
-      
-       // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
-      searchTabHeight();
-      $(window).bind('load orientationchange resize', searchTabHeight );
-      
+      */
+      /*
       // --- advanced search toggle icons, open/close, view change height
       $(".advanced-link").click(function () {
           $(this).toggleClass("show-advanced",'fast');
@@ -98,6 +99,7 @@ Drupal.behaviors.sarvakaMbextruder = {
       $('#edit-advanced-search-api-views-fulltext').keyup(function() {
         Drupal.behaviors.autocomplete.attach(document);
       });
+      */
     }
   };
 })(jQuery);
