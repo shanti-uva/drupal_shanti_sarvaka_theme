@@ -37,7 +37,7 @@ function shanti_sarvaka_theme() {
 function shanti_sarvaka_preprocess(&$variables) {
   global $base_url, $base_path;
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
-  $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
+  //$variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
 }
 
 function shanti_sarvaka_preprocess_html(&$variables) {
@@ -148,6 +148,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
    *        i.thumbtype = Sets the color for the the thumbnail type icon in the upper right corner of gallery thumbnails (deprecated)
    * 
    */
+   /* Now should be set in childe theme css
   drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; } ' .
                  '.basecolor { color: ' . $variables['base_color'] . '!important; }  ' . 
                  ' ul.ss-full-tabs>li.active>a:after {
@@ -159,6 +160,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
                       'type' => 'inline',
                       'preprocess' => FALSE,
                     ));
+	  */
 }
 
 function shanti_sarvaka_preprocess_node(&$variables) {
