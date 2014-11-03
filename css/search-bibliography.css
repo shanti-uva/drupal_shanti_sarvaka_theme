@@ -280,9 +280,10 @@ body.page-csc-search {
   color: #008a96;
 }
 .page-csc-search .views-field-title span,
+.page-csc-search .views-field-title span a,
 .page-csc-search-biblio h2 {
   font-family: droidserif, sans-serif;
-  font-size: 1em;
+  font-size: 1.26em;
 }
 .page-csc-search .views-field-title span a {
   color: #333;
@@ -292,6 +293,7 @@ body.page-csc-search {
   padding-left: 30px;
   background: url(../images/tag_icon.png) no-repeat;
   overflow: hidden;
+  background-position: left 14px;
 }
 .page-csc-search .views-field-field-zotero-tags ul {
   list-style: none;
@@ -522,11 +524,27 @@ body.page-csc-search {
   position: relative;
   z-index: 1;
 }
-#block-csc-views-custom-sort-filter,
+#block-csc-views-custom-sort-filter {
+  padding: 35px 24px 8px 42px;
+}
 .page-csc-search .view-empty {
   padding: 35px 24px 8px 24px;
 }
-#block-csc-views-custom-sort-filter .content {
+#block-csc-views-custom-sort-filter .content .left-side {
+  width: auto;
+  float: left;
+  display: inline-block;
+}
+#block-csc-views-custom-sort-filter .content .left-side h1 {
+  font-family: museo-sans-900, sans-serif;
+  text-transform: uppercase;
+  color: #ccc;
+  margin: 0;
+  font-size: 2.30em;
+}
+#block-csc-views-custom-sort-filter .content .right-side {
+  width: auto;
+  display: inline-block;
   float: right;
 }
 #block-csc-views-custom-sort-filter .select-wrapper,
