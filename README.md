@@ -1,8 +1,10 @@
 # Shanti Sarvaka Theme
 
+The base theme for SHANTI's Digital Ecology of apps 
+
 A Bootstrap-based Drupal theme for all of Shanti's restyling from Convoy.
 
-Base on Bootstrap v3.1.1
+Based on Bootstrap v3.x
 
 Development Begun: May 2014
 
