@@ -44,7 +44,8 @@ stylesheets[all][] =  css/shanti-main.css
 
 scripts[] = js/inc/jquery/jquery-ui.min.js
 scripts[] = js/inc/jquery/jquery-migrate-1.2.1.js
-;scripts[] = js/inc/bootstrap/bootstrap.min.js
+; bootstrap js added in template.php file through CDN call
+;scripts[] = js/inc/bootstrap/bootstrap.min.js 
 scripts[] = js/inc/menus/jquery.multilevelpushmenu.min.js
 scripts[] = js/inc/extruder/jquery.hoverIntent.min.js
 scripts[] = js/inc/extruder/jquery.mb.flipText.js
@@ -63,7 +64,7 @@ scripts[] = js/inc/datatables/jquery.dataTables.min.js
 scripts[] = js/inc/datatables/dataTables.bootstrap.js
 scripts[] = js/inc/other/trunk8.min.js
 ;scripts[] = js/inc/jquery/jquery.ba-hashchange.min.js
-scripts[] = js/inc/bootstrap/bootstrap-paginator.min.js
+;scripts[] = js/inc/bootstrap/bootstrap-paginator.min.js
 scripts[] = js/inc/other/vjs.zencdn.net-4.5-video.js
 scripts[] = js/inc/other/equalHeights.js
 scripts[] = js/inc/jquery/jquery.imagesloaded.js
@@ -78,5 +79,5 @@ scripts[] = js/shanti-search.js
 ;; Theme Settings
 ;;;;;;;;;;;;;;;;;;;;;
 
-settings[shanti_sarvaka_base_color] = '#dc3c47'
+;settings[shanti_sarvaka_base_color] = '#dc3c47'
 settings[shanti_sarvaka_icon_class] = 'av'
