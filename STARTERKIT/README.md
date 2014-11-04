@@ -29,14 +29,10 @@ ul.ss-full-tabs>li.active>a:after {
   border-color: #32ccca;
   border-top-color: #32ccca;
 } 
-i.thumbtype { background-color: rgba(50,204,202, 0.8); }
 .breadwrap ol li .icon{ background:#32ccca;}
 .ss-full-tabs.nav-tabs>li.active,
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#32ccca;}
 
 ```
-
-Since i.thumbtype uses an alpha setting one has to convert the color Hex Code to RGBA (see e.g. http://www.javascripter.net/faq/hextorgb.htm)
-
 
