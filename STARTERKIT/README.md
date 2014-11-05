@@ -15,24 +15,16 @@ The following items should replace "STARTERKIT" with the sub-theme's name:
 * shanti-search-STARTERKIT.js
 * Name of form alter function (STARTERKIT_form_system_theme_settings_alter) in theme-settings.php
 
+
 # Custom Theme Colors
+Drupal Sub themes of Sarvaka Theme should add the following CSS to the top of their custom CSS (shanti-main-xxx.css) file as below. 
+Change the Mediabase's color shown here to the subtheme's custom color:
 
-Child themes should add the following CSS to the top of their custom CSS (shanti-main-....css) file as following, 
-changing the color code #32ccca (which is Mediabase's color) to the site's custom color:
-
-```
-/* custom theme colors */
-.titlearea {background: #32ccca; } 
-.basebg { background-color: #32ccca; } 
-.basecolor { color: #32ccca; }   
-ul.ss-full-tabs>li.active>a:after {
-  border-color: #32ccca;
-  border-top-color: #32ccca;
-} 
-.breadwrap ol li .icon{ background:#32ccca;}
-.ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#32ccca;}
-
-```
-
+/* BEGIN subtheme colors */
+.titlearea,
+.breadwrap ol li .icon,
+.carousel a.carousel-control,
+.ss-full-tabs.nav-tabs>li.active a,
+.ss-full-tabs.nav-tabs>li.active a:hover{ background:#32ccca;}
+.ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca;}
+/* END subtheme colors */
