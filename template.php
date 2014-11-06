@@ -37,7 +37,7 @@ function shanti_sarvaka_theme() {
 function shanti_sarvaka_preprocess(&$variables) {
   global $base_url, $base_path;
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
-  $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
+  //$variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
 }
 
 function shanti_sarvaka_preprocess_html(&$variables) {
@@ -69,9 +69,9 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	}
 	//_shanti_sarvaka_add_metatags(); // Adds favicon meta tags NOT needed automatically picked up by device
 	// Adding Bootstrap CDN Resoures
-	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
-	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
-	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
+	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
 
 }
 
@@ -148,6 +148,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
    *        i.thumbtype = Sets the color for the the thumbnail type icon in the upper right corner of gallery thumbnails (deprecated)
    * 
    */
+   /* Now should be set in childe theme css
   drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; } ' .
                  '.basecolor { color: ' . $variables['base_color'] . '!important; }  ' . 
                  ' ul.ss-full-tabs>li.active>a:after {
@@ -159,6 +160,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
                       'type' => 'inline',
                       'preprocess' => FALSE,
                     ));
+	  */
 }
 
 function shanti_sarvaka_preprocess_node(&$variables) {
@@ -166,26 +168,17 @@ function shanti_sarvaka_preprocess_node(&$variables) {
   $variables['date'] = Date('j M Y', $variables['node']->created);
 }
 
+/** Unnecessary 
 function shanti_sarvaka_preprocess_region(&$variables) {
   switch ($variables['region']) {
     case 'sidebar_second':
       //dpm($variables, '2nd side vars');
       break;
     case 'search_flyout':
-      $elements = $variables['elements'];
-      // Separate out search block "element" from others to display it in a different part of the flyout region template
-      $variables['other_elements'] = array();
-      foreach($elements as $n => $el) {
-        if($n == 'search_form') {
-          $variables['search_form'] = $variables['elements']['search_form'];
-        } else if (substr($n, 0, 1) != '#') { // Elements without a # in the name are blocks added to the region
-          array_push($variables['other_elements'], $variables['elements'][$n]);
-        }
-      }
-      unset($variables['elements']['search_form']);
       break;
   }
 }
+*/
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
@@ -270,7 +263,6 @@ function shanti_sarvaka_html_tag($variables) {
  * Implements hook_form_alter: to alter search block
  */
 function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
-	//dpm($form_id);
   if ($form_id == 'search_block_form') {
 		$form['#prefix'] = '<section class="input-section" style="display:none;"> ';
 		$form['#suffix'] = '</section>';
@@ -660,22 +652,67 @@ function shanti_sarvaka_carousel($variables) {
  * 		- links 	(array) 	: links to show in footer stripes
  */
 function shanti_sarvaka_info_popover($variables) {
-	//dpm($variables, 'vars in popover theme function');
 	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
 						<div class=\"popover\">
 							<h5>{$variables['label']}</h5>
-							{$variables['desc']}
-							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>
-								<ul>";
+							<div class=\"popover-body\">
+							<div class=\"desc\">{$variables['desc']}</div>
+							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>";
+	
 	foreach($variables['tree']['items'] as $n => $link) {
-		$html .= "<li>{$link}/</li>";
+		$html .= "{$link}";
 	}
-	$html .= "</ul> </div> <div class=\"popover-footer\"> <ul>";
+	$html .= "</div></div><div class=\"popover-footer\"><ul>";
 	foreach($variables['links'] as $label => $info) {
 		$html .= "<li><i class=\"icon shanticon-{$info['icon']}\"></i> " . l($label, $info['href']) . "</li>";
 	}
-	$html .= "</ul> </div> </div>";
+	$html .= "</ul></div></div>";
 	return $html;
+}
+/**
+ * Vertical Tabs function
+ * 	Uses CSS classes from https://github.com/dbtek/bootstrap-vertical-tabs and requires bootstrap.vertical-tabs.min.css of that project
+ */
+function shanti_sarvaka_vertical_tabs($variables) {
+  $element = $variables['element'];
+	//dpm($element, 'element');
+	
+	// Get the vertical tabs field group's children
+	$nchild = element_children($element['group']);
+	
+	// Nav Tabs
+	$output = '<div class="vertical-tab-container clearfix"><div class="col-xs-3"> <!-- required for floating -->
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs tabs-left">';
+  $first = TRUE; 
+	foreach($nchild as $n) {
+		$child = $element['group'][$n];
+		$class = ($first) ? ' class="active"':'';
+		$output .= '<li' . $class . '><a href="#' . $child['#id'] . '" data-toggle="tab">' . $child['#title'] . '</a></li>';
+		$first = FALSE;
+	}
+	$output .= '</ul></div>';
+	
+	// Content Panes
+	$output .= '<div class="col-xs-9">
+    <!-- Tab panes -->
+    <div class="tab-content">';
+	$first = TRUE;
+	foreach($nchild as $n) {
+		$child = $element['group'][$n];
+		$fnames = element_children($child);
+		$childhtml = '<div class="vertical-tab group-' . $element['#id'] . ' ' . $child['#attributes']['class'][0] . '">';
+		$childhtml .= '<fieldset><legend>' . $child['#title'] . '</legend> ';
+		foreach($fnames as $fnm) {
+			$childhtml .= render($child[$fnm]);
+		}
+		$childhtml .= '</fieldset></div>';
+		$class = ($first) ? ' active':'';
+		$output .= '<div class="tab-pane' . $class . '" id="' . $child['#id'] . '">' . $childhtml . '</div>';
+		$first = FALSE;
+	}
+	$output .= '</div></div></div>';
+	return $output;
 }
 
 /** 
@@ -684,8 +721,12 @@ function shanti_sarvaka_info_popover($variables) {
  **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
+	//dpm($element, 'element in fieldset preprocess');
+	
   // If not collapsible or no title for heading then just format as normal field set
-  if( empty($element['#collapsible']) || empty($element['#title']) ) {
+  // Additional settings are for vertical tabs
+  if( empty($element['#collapsible']) || empty($element['#title']) || 
+  		(isset($element['#group']) && $element['#group'] == 'additional_settings') ) {
     return theme_fieldset($variables);
   }
   
@@ -819,7 +860,7 @@ function shanti_sarvaka_button($variables) {
   }
 	// Attributes
   if (!empty($element['#attributes']['disabled'])) {
-    $element['#attributes']['class'][] = 'form-button-disabled';
+  	$element['#attributes']['class'][] = 'form-button-disabled';
   }
 	//dpr($element);
 	if(strpos($element['#id'], 'remove-button') > -1) {

@@ -1,8 +1,10 @@
 # Shanti Sarvaka Theme
 
+The base theme for SHANTI's Digital Ecology of apps 
+
 A Bootstrap-based Drupal theme for all of Shanti's restyling from Convoy.
 
-Base on Bootstrap v3.1.1
+Based on Bootstrap v3.x
 
 Development Begun: May 2014
 
@@ -27,5 +29,6 @@ $form['shanti_options'] = array(
 			),
 		);
 ```
+* A JS function is included to format all numbers with class .ssfmtnum to insert commas
 
 

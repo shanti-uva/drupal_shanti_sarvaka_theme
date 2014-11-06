@@ -1,4 +1,4 @@
-(function ($) {  
+(function ($) {
   /**
    *  Settings for the theme
    */
@@ -17,7 +17,7 @@
       }, settings.shanti_sarvaka || {});
     }
   };
-  
+
   /**
    * Back to Top Link functionality
    */
@@ -39,7 +39,7 @@
       });
     }
   };
-  
+
   /**
    * ICheck init
    */
@@ -60,12 +60,20 @@
           });
         }
       });
-      $(".selectpicker:not(#gen-search .selectpicker)").selectpicker({
+    }
+  };
+
+  /**
+   * Select Picker
+   */
+  Drupal.behaviors.shanti_sarvaka_select = {
+    attach: function (context, settings) {
+      $(".selectpicker:not(#search-flyout .selectpicker)").selectpicker({
         dropupAuto: false
       }); // initiates jq-bootstrap-select
     }
   };
-  
+
   /**
    * Multi Level Push Menu
    */
@@ -87,11 +95,11 @@
         collapsed: false,
         preventItemClick: false,
       });
-  
+
       // --- align the text
       $('#menu ul>li, #menu h2').css('text-align','left');
       $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
-    
+
       // --- close the menu on outside click except button
       $('.menu-toggle').click( function(event){
           event.stopPropagation();
@@ -100,36 +108,36 @@
           $('.collections').slideUp(200);
           $('.menu-exploretoggle').removeClass('show-topmenu');
        });
-    
+
       // --- close the menu on outside click except button
       $('.menu-exploretoggle').click( function(event){
           event.stopPropagation();
           $('.collections').slideUp(200);
       });
-        
+
       $(document).click( function(){
           $('.menu-toggle').removeClass('show-topmenu');
           $('#menu').hide(100);
-      });  
-            
+      });
+
       /* Initialize Language Buttons */
       // Language Chooser Functionality with ICheck
       $('body').on('ifChecked', 'input.optionlang', function() {
         var newLang = $(this).val().replace('lang:','');
         var oldLang = Drupal.settings.pathPrefix;
         var currentPage = window.location.pathname;
-        if(oldLang.length > 0) { 
+        if(oldLang.length > 0) {
           // remove any current lang in url (format = "zh/")
           var currentPage = currentPage.replace(RegExp(oldLang + "?$"), ''); // Take care of home page (no slash at end of line)
           currentPage = currentPage.replace(oldLang, ''); // All other pages
           }
         // Create New URL with new Lang Prefix
-        var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/'); 
+        var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/');
         window.location.pathname = newUrl;
       });
     }
   };
-  
+
   /**
    * Responsive Menus with MbExtruder
    */
@@ -138,13 +146,13 @@
       $("#menu-main").buildMbExtruder({
         positionFixed: false,
         position: "right",
-        width: 280,      
+        width: 280,
         hidePanelsOnClose:false,
         accordionPanels:false,
         onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false });  },
         onExtClose:function(){},
         top: 0
-      }); 
+      });
       $("#menu-collections").buildMbExtruder({
           positionFixed: false,
           position: "right",
@@ -155,78 +163,78 @@
           onExtContentLoad:function(){  },
           onExtClose:function(){},
           top: 0
-      });  
+      });
       // this is for the responsive button
-      $(".shanti-searchtoggle").click(function () {   
-          if($("#gen-search.extruder").hasClass("isOpened")){   
-            $("#gen-search").closeMbExtruder();
-            $(".shanti-searchtoggle").removeClass("show-topmenu");        
-          } else {      
+      $(".shanti-searchtoggle").click(function () {
+          if($("#search-flyout.extruder").hasClass("isOpened")){
+            $("#search-flyout").closeMbExtruder();
+            $(".shanti-searchtoggle").removeClass("show-topmenu");
+          } else {
             $("#menu-main").closeMbExtruder();
             $("#menu-collections").closeMbExtruder();
-            $("#gen-search").openMbExtruder();
+            $("#search-flyout").openMbExtruder();
             $(".shanti-searchtoggle").addClass("show-topmenu");
             $(".menu-maintoggle,.menu-exploretoggle").removeClass("show-topmenu");
-            // $("#menu-main").load("./menus-ajax.html");        
+            // $("#menu-main").load("./menus-ajax.html");
             // $(".menu-collections-wrap .accordion-toggle").addClass("collapsed");
             // $(".menu-collections-wrap .panel-collapse").removeClass("in").css('height','0');
             return false;
           }
-      });   
-      $('body').on('click','.menu-maintoggle',function(){   
-          if($("#menu-main.extruder").hasClass("isOpened")){    
+      });
+      $('body').on('click','.menu-maintoggle',function(){
+          if($("#menu-main.extruder").hasClass("isOpened")){
             $("#menu-main").closeMbExtruder();
-            $(".menu-maintoggle").removeClass("show-topmenu");     
-          } else {     
+            $(".menu-maintoggle").removeClass("show-topmenu");
+          } else {
             $("#menu-main").openMbExtruder();
-            $("#gen-search").closeMbExtruder();
+            $("#search-flyout").closeMbExtruder();
             $("#menu-collections").closeMbExtruder();
             $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
-            
+
             $(".menu-commons").addClass("active");
-            
+
             $(".menu-collections").removeClass("active");
             $(".menu-collections > ul").removeClass("in");
-            
+
             // $("#menu-main").load("/menus-ajax.html #menu-accordion");
             $(".menu-maintoggle").addClass("show-topmenu");
             $(".menu-exploretoggle, .shanti-searchtoggle").removeClass("show-topmenu");
             return false;
           }
       });
-      $(".menu-exploretoggle").click(function () {   
-          if($("#menu-collections.extruder").hasClass("isOpened")){   
-            
+      $(".menu-exploretoggle").click(function () {
+          if($("#menu-collections.extruder").hasClass("isOpened")){
+
             $("#menu-collections").closeMbExtruder();
             $(".menu-exploretoggle").removeClass("show-topmenu");
-            // $(".bottom-trim").remove();                
-          } else {        
+            // $(".bottom-trim").remove();
+          } else {
             $(".menu-commons, .menu-preferences").css('display','none');
             $(".menu-collections").css('display','block');
-            
+
             $(".menu-collections").addClass("active");
             $(".menu-collections > ul").addClass("in");
-            
+
             $("#menu-collections").openMbExtruder();
-            $("#menu-main").closeMbExtruder();        
-            $("#gen-search").closeMbExtruder();
-            
-            $(".menu-exploretoggle").addClass("show-topmenu");  
-            $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");    
-            
-            // $(".menu-collections").find("ul").append("<li class='bottom-trim'></li>");  
+            $("#menu-main").closeMbExtruder();
+            $("#search-flyout").closeMbExtruder();
+
+            $(".menu-exploretoggle").addClass("show-topmenu");
+            $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");
+
+            // $(".menu-collections").find("ul").append("<li class='bottom-trim'></li>");
             return false;
           }
       });
     }
   };
-  
+
   /**
    * Fancy Tree Init
-   * 
-   * Initialize Fancy tree in fly out 
-   * 
-   *     API call examples: 
+   *
+   * Initialize Fancy tree in fly out
+   *
+   *     API call examples:
    *       Get a node: var node = $.ui.fancytree.getNode(el);
    *      Activate a node: node.setActive(true); // Performs activate action too
    *      Show a node: node.makeVisible(); // Opens tree to node and scrolls to it without performing action
@@ -235,12 +243,12 @@
     attach: function (context, settings) {
       // Facet Tree in Search Flyout
       var divs = $(Drupal.settings.shanti_sarvaka.ftListSelector).parent();
-      
+
       divs.each(function() {
         // Find the container div for the fancy tree
         var facettype = $(this).children('ul').attr('id').split('-').pop();
         $(this).attr('id', facettype + '-facet-content-div');
-        
+
         // Initiate the Fancy Tree
         var tree = $(this).fancytree({
           activeVisible: true, // Make sure, active nodes are visible (expanded).
@@ -285,7 +293,7 @@
         });
         Drupal.settings.shanti_sarvaka.fancytrees.push($(tree).fancytree('getTree'));
       });
-      
+
       // Set facet link title attributes on mouseover
       $('ul.fancytree-container').on('mouseover', 'span.fancytree-title', function() {
         if($(this).find('span.element-invisible').length == 1) {
@@ -294,7 +302,7 @@
           $(this).find('span.element-invisible').remove();
         }
       });
-      
+
       // Initiate Facet Label Search Toggles
       $('div.block-facetapi').on('click', 'button.toggle-facet-label-search', function(e) {
         if($(this).prev('input').is(':hidden')) {
@@ -305,7 +313,7 @@
           e.preventDefault();
         }
       });
-      
+
       // When text is entered into the facet label filter box perform a filter
       $('div.block-facetapi').on('keyup', 'input.facet-label-search', function (e) {
         var sval = $(this).val();
@@ -335,7 +343,7 @@
           tree.clearFacetFilter();
         }
       });
-      
+
       // Activate the remove facet links
       $('div.block-facetapi').on('click', 'i.icon.shanticon-cancel', function() {
         //console.log('clicked');
@@ -354,7 +362,7 @@
       });
     }
   };
-  
+
   /**
    * Popovers Init
    */
@@ -364,9 +372,10 @@
       $.fn.popover.Constructor.DEFAULTS.placement = 'right';
       $.fn.popover.Constructor.DEFAULTS.html = true;
       $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 500000 };
-  
+      $.fn.popover.Constructor.DEFAULTS.template = '<div class="popover resource-popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>';
+
       $('span.popover-link').each(function() {
-        var content = '<div>' + $(this).next('div.popover').html() + '</div>';
+        var content = $(this).next('div.popover').html();
         $(this).popover({'content': content});
       });
       $('div.popover').remove(); // remove hidden popover content once they have all been initialized
@@ -380,7 +389,7 @@
        });
     }
   };
-  
+
   /**
    * Miscellaneous Init
    */
@@ -400,18 +409,20 @@
         $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
         $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
       });
-      
+
+      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
       // Add class and event handler to bootstrap tabs for formatting
-      $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
-      $('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-        var el = e.target;
-        $(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
-          $(this).removeClass('basebg');
-        });
-        $(el).addClass('basebg');
-      });
+      // $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
+      // $('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+      //   var el = e.target;
+      //   $(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
+      //     $(this).removeClass('basebg');
+      //   });
+      //   $(el).addClass('basebg');
+      // });
+
       // Turn dev menu in admin footer into select
-      if($('#admin-footer #block-menu-devel ul.menu').length > 0) { 
+      if($('#admin-footer #block-menu-devel ul.menu').length > 0) {
         var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
         $('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
         var sel = $('#block-menu-devel select.devmenu');
@@ -426,7 +437,7 @@
       $('#admin-footer div.block').each(function() {
         $(this).height($(this).parent().height());
       });
-      
+
       // Collapse/Expand All Buttons For Bootstrap Collapsible Divs
       // Assumes Buttons are in a child div that is a sibling of the collapsible divs.
       $('div.expcoll-btns button').click(function() {
@@ -437,10 +448,10 @@
           $(divs).removeClass('in');
         }
       });
-      
+
       // call Check Width
       checkWidth();
-      
+
       // Carousel Init and controls
       $('.carousel').carousel({
         interval: 6000,
@@ -463,8 +474,8 @@
    * Gallery: Initialize a gallery of images
    */
   Drupal.behaviors.shanti_sarvaka_galleryinit = {
-    attach: function (context, settings) {  
-      $('.shanti-gallery').imagesLoaded(function() {    
+    attach: function (context, settings) {
+      $('.shanti-gallery').imagesLoaded(function() {
           // Prepare layout options.
           var options = {
             itemWidth: 160, // Optional min width of a grid item
@@ -474,23 +485,23 @@
             outerOffset: 10, // Optional the distance from grid to parent
             flexibleWidth: '30%' // Optional, the maximum width of a grid item
           };
-  
+
           // Get a reference to your grid items.
           var handler = $('.shanti-gallery li');
-  
+
           var $window = $(window);
           $window.resize(function() {
             var windowWidth = $window.width(),
                 newOptions = { flexibleWidth: '30%' };
-  
+
             // Breakpoint
             if (windowWidth < 1024) {
               newOptions.flexibleWidth = '100%';
             }
-  
+
             handler.wookmark(newOptions);
           });
-  
+
           // Call the layout function.
           handler.wookmark(options);
       });
@@ -502,47 +513,51 @@
    */
   Drupal.behaviors.shanti_sarvaka_accordion = {
     attach: function (context, settings) {
-    
+
       if(context == window.document) {
-          
-        /* testing toggle on accordions */
-  
-        var $active = $('.panel-group .panel-collapse.in').prev().addClass('active');
-        
+
+        /* Select only accordions not in vertical tabs */
+  			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
+        var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
+
         $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
-        
-        $('.panel-group .panel-heading').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
-        
-        $('.panel-group').on('show.bs.collapse', function (e) {
-            $('.panel-group .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+
+        accorddivs.find('.panel-heading').once('expgylph').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+
+        accorddivs.on('show.bs.collapse', function (e) {
+  					var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
+            accorddivs.find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
-        
-        $('.panel-group').on('hide.bs.collapse', function (e) {
+
+        accorddivs.on('hide.bs.collapse', function (e) {
             $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
 
         /* toggle icon on accordions */
         $('.btn-toggle-accordion').click(function () {
-      
-          $(this).toggleClass('expand');   
-          
+
+          $(this).toggleClass('expand');
+
           if($('.btn-toggle-accordion').hasClass('expand')) {
-              
+
               $(this).text('Expand All');
-              $('.panel-collapse').collapse('hide');  
-              $('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');  
-            } else {          
+              $('.panel-collapse').collapse('hide');
+              $('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+            } else {
               $(this).text('Collapse All');
               $('.panel-collapse').collapse('show');
               $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
           }
-        });  
-        
+        });
+
         // Open first accordion if none opened
         if($(".collapsible.in").length == 0) {
-          $(".collapsible").eq(0).find('h6.panel-title a').click();
+          $(".collapsible").eq(0).find('h6.panel-title a').once("openfirst").click();
+
         }
+        // Shiva site gets doubly glypicons. So need to be removed
+        $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
       }
     }
   };
@@ -551,9 +566,9 @@
    * Other: All of below if from Mark's separate Jquery() functions
    */
   Drupal.behaviors.shanti_sarvaka_otherinit = {
-    attach: function (context, settings) {      
+    attach: function (context, settings) {
       $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
-      
+
       $('.shanti-field-title a').hover( function() {
             $(this).closest('.shanti-thumbnail').addClass('title-hover');
             },
@@ -561,20 +576,20 @@
             $(this).closest('.shanti-thumbnail').removeClass('title-hover');
             }
        );
-       
+
       // $('table.sticky-header').css('width','100%');
-       
+
       // if($('.node-video').length ){
       //       $('.shanti-gallery').imagesLoaded();
       // });
       //-------
-      
+
       // hide responsive column for resources
       $('[data-toggle=offcanvas]').click(function () {
         $('.row-offcanvas').toggleClass('active');
       });
-      
-      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width  
+
+      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width
       (function () {
         'use strict';
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
@@ -588,28 +603,28 @@
         }
       })();
       //----
-      
+
       /*
       $('.ss-full-tabs > .rel-video').on('click', function () {
         $.imagesLoaded();
       });*/
       //----
-      
+
       var myElement = document.getElementById('.carousel.slide');
       if(myElement) {
         // create a simple instance
         // by default, it only adds horizontal recognizers
         var mc = new Hammer(myElement);
-        
+
         // let the pan gesture support all directions.
         // this will block the vertical scrolling on a touch-device while on the element
         mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-        
+
         // listen to events...
         mc.on("panleft panright panup pandown tap press", function(ev) {
             myElement.textContent = ev.type +" gesture detected.";
         });
-      } 
+      }
     }
   };
 
@@ -624,7 +639,7 @@
         $(".extruder-content").css("width","100% !important");
       }
   };
-  
+
 
   // *** SEARCH *** adapt search panel height to viewport
   searchTabHeight = function() {
@@ -633,16 +648,16 @@
     var viewheight = (height) -  211;
     // var advHeight = $(".advanced-view").show().height();
     var comboHeight = (viewheight) - 126;
-    
+
     srchtab = parseInt(srchtab) + 'px';
-    $("#gen-search").find(".text").css('height',srchtab);
-    
+    $("#search-flyout").find(".text").css('height',srchtab);
+
     viewheight = parseInt(viewheight) + 'px';
     comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
-    $(".view-wrap.short-wrap").css('height', comboHeight);            
+    $(".view-wrap.short-wrap").css('height', comboHeight);
   } ;
-     
+
   doAjaxSearch = function(qstr, type) {
     var surl = '/services/ajaxsearch';
     $.ajax({
@@ -661,7 +676,32 @@
       }
     });
   };
+
+
+  /**
+   * Format numbers with ssfmtnum class
+   */
+  Drupal.behaviors.shanti_sarvaka_format_numbers = {
+    attach: function (context, settings) {
+      $('.ssfmtnum').each(function() {
+      	if($(this).text().indexOf(',') == -1) {
+      		var txt = $(this).text(),
+      				len = txt.length,
+      				i = len - 1,
+      				fmtnum = '';
+      		while(i >= 0) {
+		        fmtnum = txt.charAt(i) + fmtnum;
+		        if ((len - i) % 3 === 0 && i > 0) {
+		        	fmtnum = "," + fmtnum;
+		        }
+		        --i;
+			    }
+			    $(this).text(fmtnum);
+      	}
+      });
+    }
+  };
+
 }(jQuery));
 
 
-  

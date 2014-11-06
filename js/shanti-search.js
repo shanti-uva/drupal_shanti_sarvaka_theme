@@ -12,7 +12,7 @@ Drupal.behaviors.sarvakaMbextruder = {
     $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block"); // show hidden containers after loading to prevent content flash
       
     // Initialize Search Flyout
-    $("#gen-search").buildMbExtruder({
+    $("#search-flyout").buildMbExtruder({
       positionFixed: false,
       position: "right",
       closeOnExternalClick:false,
@@ -58,9 +58,9 @@ Drupal.behaviors.sarvakaMbextruder = {
         $(this).removeClass('on-hover');
     });
     // Show Flyout tab hidden on load
-    $('#gen-search').show();
+    $('#search-flyout').show();
     // Inizialize bootstrap elements inside flyout region
-    $('#gen-search .selectpicker').selectpicker({
+    $('#search-flyout .selectpicker').selectpicker({
       dropupAuto: false,
     }); // initiates jq-bootstrap-select
   }
@@ -71,21 +71,22 @@ Drupal.behaviors.sarvakaMbextruder = {
    */
   Drupal.behaviors.sarvakaSearchInit = {
     attach: function (context, settings) {
+       // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
+      searchTabHeight();
+      $(window).bind('load orientationchange resize', searchTabHeight );
+    	/*
       // Handle Search form Submit
-      $('#gen-search form button#searchbutton:not(form#csc-views-advanced-search-form)').click(function() { $(this).parents('form').eq(0).submit(); });
-      $('#gen-search form:not(form#csc-views-advanced-search-form)').on('submit', function(event) {
+      $('#search-flyout form button#searchbutton:not(form#csc-views-advanced-search-form)').click(function() { $(this).parents('form').eq(0).submit(); });
+      $('#search-flyout form:not(form#csc-views-advanced-search-form)').on('submit', function(event) {
         // TODO: Implement Ajax searching
         // In order to implement Ajax searching need to use hash to create unique bookmarks. Check out Jquery BBQ (though tis old).
         // See doAjaxSearch function below => partial implementation
         //doAjaxSearch($(this).find('input[type=text]').val(), $(this).find('input[name=srchscope]').val());
         event.preventDefault();
-        window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
+        // `window.location.pathname = '/search/' + $(this).find('input[name=srchscope]').val() + '/' + $(this).find('input[type=text]').val();
       });
-      
-       // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
-      searchTabHeight();
-      $(window).bind('load orientationchange resize', searchTabHeight );
-      
+      */
+      /*
       // --- advanced search toggle icons, open/close, view change height
       $(".advanced-link").click(function () {
           $(this).toggleClass("show-advanced",'fast');
@@ -98,6 +99,7 @@ Drupal.behaviors.sarvakaMbextruder = {
       $('#edit-advanced-search-api-views-fulltext').keyup(function() {
         Drupal.behaviors.autocomplete.attach(document);
       });
+      */
     }
   };
 })(jQuery);

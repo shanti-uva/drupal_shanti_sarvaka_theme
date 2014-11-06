@@ -54,10 +54,6 @@
   <title><?php print $head_title; ?></title>
   <?php print $scripts; ?>
   <?php print $styles; ?>
-  <style>
-    .titlearea {background: <?php print  $variables['base_color'];?> !important; } 
-    /* .titlearea .page-title .icon { background:  <?php print $variables['base_color']; ?> !important; } */
-  </style>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <!--[if lte IE 8]><p class="progressive">It appears you are using an older browser. Please consider a upgrading to a modern version of your browser to best appreciate this website. Thank you -</p><![endif]-->

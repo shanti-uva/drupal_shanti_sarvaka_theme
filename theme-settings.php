@@ -45,12 +45,14 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#default_value' => theme_get_setting('shanti_sarvaka_breadcrumb_intro'),
     '#description'   => t("The text to display in front of the breadcrumbs"),
   );
+	/** Set in SubTheme CSS
   $form['shanti_sarvaka_base_color'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Base Color'),
     '#default_value' => theme_get_setting('shanti_sarvaka_base_color'),
     '#description'   => t("The base color for the banner of this site"),
   );
+	 **/
   $form['shanti_sarvaka_icon_class'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Icon Class Name for Banner'),
