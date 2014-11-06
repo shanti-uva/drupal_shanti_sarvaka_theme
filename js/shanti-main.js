@@ -372,9 +372,10 @@
       $.fn.popover.Constructor.DEFAULTS.placement = 'right';
       $.fn.popover.Constructor.DEFAULTS.html = true;
       $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 500000 };
+      $.fn.popover.Constructor.DEFAULTS.template = '<div class="popover resource-popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>';
 
       $('span.popover-link').each(function() {
-        var content = '<div>' + $(this).next('div.popover').html() + '</div>';
+        var content = $(this).next('div.popover').html();
         $(this).popover({'content': content});
       });
       $('div.popover').remove(); // remove hidden popover content once they have all been initialized

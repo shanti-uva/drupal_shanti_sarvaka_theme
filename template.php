@@ -653,10 +653,9 @@ function shanti_sarvaka_carousel($variables) {
  */
 function shanti_sarvaka_info_popover($variables) {
 	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
-						<div class=\"popover resource-popover\">
-						  <div class=\"arrow\"></div>
+						<div class=\"popover\">
 							<h5>{$variables['label']}</h5>
-							<div class=\"popover-content\">
+							<div class=\"popover-body\">
 							<div class=\"desc\">{$variables['desc']}</div>
 							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>";
 	
