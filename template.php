@@ -653,22 +653,23 @@ function shanti_sarvaka_carousel($variables) {
  */
 function shanti_sarvaka_info_popover($variables) {
 	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
-						<div class=\"popover\">
+						<div class=\"popover resource-popover\">
+						  <div class=\"arrow\"></div>
 							<h5>{$variables['label']}</h5>
-							{$variables['desc']}
+							<div class=\"popover-content\">
+							<div class=\"desc\">{$variables['desc']}</div>
 							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>";
 	
 	foreach($variables['tree']['items'] as $n => $link) {
 		$html .= "{$link}";
 	}
-	$html .= "</div><div class=\"popover-footer\"><ul>";
+	$html .= "</div></div><div class=\"popover-footer\"><ul>";
 	foreach($variables['links'] as $label => $info) {
 		$html .= "<li><i class=\"icon shanticon-{$info['icon']}\"></i> " . l($label, $info['href']) . "</li>";
 	}
 	$html .= "</ul></div></div>";
 	return $html;
 }
-
 /**
  * Vertical Tabs function
  * 	Uses CSS classes from https://github.com/dbtek/bootstrap-vertical-tabs and requires bootstrap.vertical-tabs.min.css of that project
