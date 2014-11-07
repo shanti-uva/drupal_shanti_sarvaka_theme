@@ -829,11 +829,11 @@ input.form-control{
 /*---- select dropdown -----*/
 .main-content .bootstrap-select.form-control{ height:27px;background:transparent;}
 .main-content .bootstrap-select{ width:100%; padding:0; margin-top:0;margin-bottom:0;}
-.main-content .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100%;}
-.main-content table.field-multiple-table .bootstrap-select .selectpicker{ width:50%;}
-.main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ width:45% !important;}
+.main-content .bootstrap-select > .btn{ line-height:27px; height:27px; border:1px solid #ddd; padding:0 25px 0 0; /*  width:100%; padding:0; commented out for Video Edit page edits */}
+.main-content table.field-multiple-table .bootstrap-select > .btn{ /* width:50%; */}
+.main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ font-size:1.1rem; max-width:25rem !important; /* width:45% !important; commented out for Video Edit page edits */}
 
-.admin-menu .main-content .views-field-title .bootstrap-select .selectpicker { width:100% !important;}
+.admin-menu .main-content .views-field-title .bootstrap-select > .btn { /* width:100% !important; commented out for Video Edit page edits */}
 
 .main-content .bootstrap-select .popover-title{ padding: 4px 14px; margin-bottom:5px;}
 .main-content .bootstrap-select .btn{
@@ -867,10 +867,10 @@ input.form-control{
 .main-content .dropdown-menu.open{ border-radius:0.63em; background-clip: padding-box;	}
 .main-content .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:1.12em; overflow:hidden;}
 .main-content .bootstrap-select.btn-group{ margin-top:0;margin-bottom:0;-webkit-box-shadow:none;box-shadow:none;}
-.main-content .bootstrap-select.btn-group .dropdown-menu{ height:auto; width:95%; overflow:auto;}
-.main-content .bootstrap-select.btn-group .dropdown-menu.open{ height:auto;}
+.main-content .bootstrap-select.btn-group .dropdown-menu{ /* height:auto; removed to fix Edit Video - width:95%; overflow:auto; */}
+.main-content .bootstrap-select.btn-group .dropdown-menu.open{ /* height:auto; */}
 .main-content .selectpicker .caret{ border:none; font-family:'shanticon'; content: '\e609';}
-.main-content .selectpicker .caret:before{ color: #5b68ce; font-size:17px; font-family:'shanticon'; content: '\e609'; position:absolute; top:-10px; right:0px;}
+.main-content .selectpicker .caret:before{ color: #5b68ce; font-size:17px; font-family:'shanticon'; content: '\e609'; position:absolute; top:-11px; right:-5px; /* adjusted position for Video Edit page edits */}
 .main-content .selectpicker li{ padding:0; overflow:hidden;}
 .main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
 .main-content .selectpicker li a{ color:#555; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
@@ -1201,7 +1201,6 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .popover-footer ul li a{ color:#ddd; border-bottom:none;display:inline-block;}
 
 
-
 /*--- Large Tabs Video View ---*/
 .nav-justified{ margin: 1.12em 0 1.75rem;}
 .nav-justified>li{ /* width:50%; */background:#fff;font-family:'museo-sans-700',Helvetica,Arial,sans-serif;font-size:1em;-webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s}
@@ -1250,9 +1249,9 @@ input.form-control,
 	border: 1px solid #ccc;
 	border-radius: 1.5em;
 	background-clip: padding-box;
-	font-size:1.06em;
+	font-size:0.9em; /* note made smaller for Video Edit page */
 	height:2em;
-	line-height:2em;
+	line-height:1.5em; /* note made smaller for Video Edit page */
 	padding:0.25em 1em 0;
   max-width:25em;
 	overflow: auto;
