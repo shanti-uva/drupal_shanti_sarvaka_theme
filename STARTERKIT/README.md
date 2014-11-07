@@ -23,8 +23,8 @@ Change the Mediabase's color shown here to the subtheme's custom color:
 /* BEGIN subtheme colors */
 .titlearea,
 .breadwrap ol li .icon,
-.carousel a.carousel-control,
-.ss-full-tabs.nav-tabs>li.active a,
-.ss-full-tabs.nav-tabs>li.active a:hover{ background:#32ccca;}
-.ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca;}
+.carousel-control,
+.nav-justified>li.active a,
+.nav-justified>li.active a:hover{ background:#32ccca;}
+.nav-justified>li.active:before{ color:#32ccca;}
 /* END subtheme colors */
