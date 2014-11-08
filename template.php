@@ -662,13 +662,13 @@ function shanti_sarvaka_info_popover($variables) {
 	foreach($variables['tree']['items'] as $n => $link) {
 		$html .= "{$link}";
 	}
-	$html .= "</div></div><div class=\"popover-footer\"><ul>";
+	$html .= "</div></div><div class=\"popover-footer\">";
 	foreach($variables['links'] as $label => $info) {
 		$options = array();
 		if(!empty($info['external'])) { $options['attributes'] = array('target' => '_blank'); }
-		$html .= "<li><i class=\"icon shanticon-{$info['icon']}\"></i> " . l($label, $info['href'], $options) . "</li>";
+		$html .= "<div><a href=\"#\" class=\"icon shanticon-{$info['icon']}\">" . l($label, $info['href'], $options) . "</a></div>";
 	}
-	$html .= "</ul></div></div>";
+	$html .= "</div></div>";
 	return $html;
 }
 /**
