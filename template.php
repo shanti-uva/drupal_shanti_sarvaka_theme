@@ -653,8 +653,7 @@ function shanti_sarvaka_carousel($variables) {
  */
 function shanti_sarvaka_info_popover($variables) {
 	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
-						<div class=\"popover\">
-							<h5>{$variables['label']}</h5>
+						<div class=\"popover\" data-title=\"{$variables['label']}\">
 							<div class=\"popover-body\">
 							<div class=\"desc\">{$variables['desc']}</div>
 							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>";
@@ -664,13 +663,15 @@ function shanti_sarvaka_info_popover($variables) {
 	}
 	$html .= "</div></div><div class=\"popover-footer\">";
 	foreach($variables['links'] as $label => $info) {
-		$options = array();
-		if(!empty($info['external'])) { $options['attributes'] = array('target' => '_blank'); }
-		$html .= "<div><a href=\"#\" class=\"icon shanticon-{$info['icon']}\">" . l($label, $info['href'], $options) . "</a></div>";
+		$options = array('attributes' => array());
+		if(!empty($info['external'])) { $options['attributes']['target'] = '_blank'; }
+		$options['attributes']['class'] = "icon shanticon-{$info['icon']}";
+		$html .= "<div>" . l($label, $info['href'], $options) . "</div>";
 	}
 	$html .= "</div></div>";
 	return $html;
 }
+
 /**
  * Vertical Tabs function
  * 	Uses CSS classes from https://github.com/dbtek/bootstrap-vertical-tabs and requires bootstrap.vertical-tabs.min.css of that project

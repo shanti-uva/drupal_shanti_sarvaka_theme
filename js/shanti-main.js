@@ -371,11 +371,13 @@
       $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
       $.fn.popover.Constructor.DEFAULTS.placement = 'right';
       $.fn.popover.Constructor.DEFAULTS.html = true;
-      $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 500000 };
+      $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 60000 };
+      $.fn.popover.Constructor.DEFAULTS.template = '<div class="popover resource-popover" role="tooltip"><div class="arrow"></div><h5 class="popover-title"></h5><div class="popover-content"></div></div>';
 
       $('span.popover-link').each(function() {
-        var content = '<div>' + $(this).next('div.popover').html() + '</div>';
-        $(this).popover({'content': content});
+        var content = $(this).next('div.popover').html();
+        var title = $(this).next('div.popover').attr('data-title');
+        $(this).popover({'title': title, 'content': content});
       });
       $('div.popover').remove(); // remove hidden popover content once they have all been initialized
       $('span.popover-link').on('show.bs.popover', function(){ $('div.popover').hide();}); // When popover is shown, hide all others
