@@ -453,78 +453,80 @@
    */
   Drupal.behaviors.shanti_sarvaka_miscinit = {
     attach: function (context, settings) {
-      // *** GLOBAL ** conditional IE message
-      // show-hide the IE message for older browsers
-      // this could be improved with conditional for - lte IE7 - so it does not self-hide
-      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
-      $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
-      // Change collapsible div icon from +/- depending on state
-      $('div.panel-collapse').on('hide.bs.collapse', function () {
-        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
-        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
-      });
-      $('div.panel-collapse').on('show.bs.collapse', function () {
-        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
-        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
-      });
-
-      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
-      // Add class and event handler to bootstrap tabs for formatting
-      // $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
-      // $('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-      //   var el = e.target;
-      //   $(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
-      //     $(this).removeClass('basebg');
-      //   });
-      //   $(el).addClass('basebg');
-      // });
-
-      // Turn dev menu in admin footer into select
-      if($('#admin-footer #block-menu-devel ul.menu').length > 0) {
-        var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
-        $('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
-        var sel = $('#block-menu-devel select.devmenu');
-        sel.append('<option>Choose an option...</option>');
-        $.each(devmenu.children('li'), function() {
-          var opt = $('<option>' + $(this).text() + '</option>').attr('value', $(this).find('a').attr('href'));
-          sel.append(opt);
-        });
-        sel.change(function() { window.location.pathname = $(this).val(); });
-      }
-      // Adjust height of blocks in admin footer
-      $('#admin-footer div.block').each(function() {
-        $(this).height($(this).parent().height());
-      });
-
-      // Collapse/Expand All Buttons For Bootstrap Collapsible Divs
-      // Assumes Buttons are in a child div that is a sibling of the collapsible divs.
-      $('div.expcoll-btns button').click(function() {
-        var divs = $(this).parent().parent().find('div.collapse');
-        if($(this).hasClass('expand')) {
-          $(divs).addClass('in');
-        } else {
-          $(divs).removeClass('in');
-        }
-      });
-
-      // call Check Width
-      Drupal.ShantiSarvaka.checkWidth();
-
-      // Carousel Init and controls
-      $('.carousel').carousel({
-        interval: 6000,
-      });
-      $('.carousel .control-box-2 .carousel-pause').click(function () {
-          var carousel = $(this).parents('.carousel');
-          if($(this).hasClass('paused')) {
-            carousel.carousel('next');
-            carousel.carousel('cycle');
-          } else {
-            carousel.carousel('pause');
-          }
-          $(this).toggleClass('paused');
-          $(this).find('i').toggleClass('glyphicon-pause glyphicon-play');
-      });
+    	if(context == document) { 
+	      // *** GLOBAL ** conditional IE message
+	      // show-hide the IE message for older browsers
+	      // this could be improved with conditional for - lte IE7 - so it does not self-hide
+	      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
+	      $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
+	      // Change collapsible div icon from +/- depending on state
+	      $('div.panel-collapse').on('hide.bs.collapse', function () {
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
+	      });
+	      $('div.panel-collapse').on('show.bs.collapse', function () {
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
+	      });
+	
+	      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
+	      // Add class and event handler to bootstrap tabs for formatting
+	      // $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
+	      // $('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+	      //   var el = e.target;
+	      //   $(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
+	      //     $(this).removeClass('basebg');
+	      //   });
+	      //   $(el).addClass('basebg');
+	      // });
+	
+	      // Turn dev menu in admin footer into select
+	      if($('#admin-footer #block-menu-devel ul.menu').length > 0) {
+	        var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
+	        $('#admin-footer #block-menu-devel ul.menu').replaceWith('<select class="devmenu"></select>');
+	        var sel = $('#block-menu-devel select.devmenu');
+	        sel.append('<option>Choose an option...</option>');
+	        $.each(devmenu.children('li'), function() {
+	          var opt = $('<option>' + $(this).text() + '</option>').attr('value', $(this).find('a').attr('href'));
+	          sel.append(opt);
+	        });
+	        sel.change(function() { window.location.pathname = $(this).val(); });
+	      }
+	      // Adjust height of blocks in admin footer
+	      $('#admin-footer div.block').each(function() {
+	        $(this).height($(this).parent().height());
+	      });
+	
+	      // Collapse/Expand All Buttons For Bootstrap Collapsible Divs
+	      // Assumes Buttons are in a child div that is a sibling of the collapsible divs.
+	      $('div.expcoll-btns button').click(function() {
+	        var divs = $(this).parent().parent().find('div.collapse');
+	        if($(this).hasClass('expand')) {
+	          $(divs).addClass('in');
+	        } else {
+	          $(divs).removeClass('in');
+	        }
+	      });
+	
+	      // call Check Width
+	      Drupal.ShantiSarvaka.checkWidth();
+	
+	      // Carousel Init and controls
+	      $('.carousel').carousel({
+	        interval: 6000,
+	      });
+	      $('.carousel .control-box-2 .carousel-pause').click(function () {
+	          var carousel = $(this).parents('.carousel');
+	          if($(this).hasClass('paused')) {
+	            carousel.carousel('next');
+	            carousel.carousel('cycle');
+	          } else {
+	            carousel.carousel('pause');
+	          }
+	          $(this).toggleClass('paused');
+	          $(this).find('i').toggleClass('glyphicon-pause glyphicon-play');
+	      });
+	    }
     }
   };
 
@@ -533,7 +535,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_galleryinit = {
     attach: function (context, settings) {
-      $('.shanti-gallery').imagesLoaded(function() {
+      $('.shanti-gallery', context).imagesLoaded(function() {
           // Prepare layout options.
           var options = {
             itemWidth: 160, // Optional min width of a grid item
@@ -625,64 +627,66 @@
    */
   Drupal.behaviors.shanti_sarvaka_otherinit = {
     attach: function (context, settings) {
-      $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
-
-      $('.shanti-field-title a').hover( function() {
-            $(this).closest('.shanti-thumbnail').addClass('title-hover');
-            },
-              function () {
-            $(this).closest('.shanti-thumbnail').removeClass('title-hover');
-            }
-       );
-
-      // $('table.sticky-header').css('width','100%');
-
-      // if($('.node-video').length ){
-      //       $('.shanti-gallery').imagesLoaded();
-      // });
-      //-------
-
-      // hide responsive column for resources
-      $('[data-toggle=offcanvas]').click(function () {
-        $('.row-offcanvas').toggleClass('active');
-      });
-
-      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width
-      (function () {
-        'use strict';
-        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-          var msViewportStyle = document.createElement('style');
-          msViewportStyle.appendChild(
-            document.createTextNode(
-              '@-ms-viewport{width:auto!important}'
-            )
-          );
-          document.querySelector('head').appendChild(msViewportStyle);
-        }
-      })();
-      //----
-
-      /*
-      $('.ss-full-tabs > .rel-video').on('click', function () {
-        $.imagesLoaded();
-      });*/
-      //----
-
-      var myElement = document.getElementById('.carousel.slide');
-      if(myElement) {
-        // create a simple instance
-        // by default, it only adds horizontal recognizers
-        var mc = new Hammer(myElement);
-
-        // let the pan gesture support all directions.
-        // this will block the vertical scrolling on a touch-device while on the element
-        mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-
-        // listen to events...
-        mc.on("panleft panright panup pandown tap press", function(ev) {
-            myElement.textContent = ev.type +" gesture detected.";
-        });
-      }
+    	if(context == document) { 
+	      $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
+	
+	      $('.shanti-field-title a').hover( function() {
+	            $(this).closest('.shanti-thumbnail').addClass('title-hover');
+	            },
+	              function () {
+	            $(this).closest('.shanti-thumbnail').removeClass('title-hover');
+	            }
+	       );
+	
+	      // $('table.sticky-header').css('width','100%');
+	
+	      // if($('.node-video').length ){
+	      //       $('.shanti-gallery').imagesLoaded();
+	      // });
+	      //-------
+	
+	      // hide responsive column for resources
+	      $('[data-toggle=offcanvas]').click(function () {
+	        $('.row-offcanvas').toggleClass('active');
+	      });
+	
+	      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width
+	      (function () {
+	        'use strict';
+	        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	          var msViewportStyle = document.createElement('style');
+	          msViewportStyle.appendChild(
+	            document.createTextNode(
+	              '@-ms-viewport{width:auto!important}'
+	            )
+	          );
+	          document.querySelector('head').appendChild(msViewportStyle);
+	        }
+	      })();
+	      //----
+	
+	      /*
+	      $('.ss-full-tabs > .rel-video').on('click', function () {
+	        $.imagesLoaded();
+	      });*/
+	      //----
+	
+	      var myElement = document.getElementById('.carousel.slide');
+	      if(myElement) {
+	        // create a simple instance
+	        // by default, it only adds horizontal recognizers
+	        var mc = new Hammer(myElement);
+	
+	        // let the pan gesture support all directions.
+	        // this will block the vertical scrolling on a touch-device while on the element
+	        mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+	
+	        // listen to events...
+	        mc.on("panleft panright panup pandown tap press", function(ev) {
+	            myElement.textContent = ev.type +" gesture detected.";
+	        });
+	      }
+	    }
     }
   };
 
@@ -691,7 +695,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_format_numbers = {
     attach: function (context, settings) {
-      $('.ssfmtnum').each(function() {
+      $('.ssfmtnum', context).each(function() {
       	if($(this).text().indexOf(',') == -1) {
       		var txt = $(this).text(),
       				len = txt.length,
