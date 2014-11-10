@@ -4,7 +4,7 @@
  * @file
  * template.php
  */
- 
+
 /**
  * Implements hook_theme
  *    Registers carousel theme function
@@ -16,9 +16,9 @@ function shanti_sarvaka_theme() {
     ),
     'info_popup' => array(
 			'variables' => array(
-				'label' => '', 
-				'desc' => '', 
-				'tree' => array(), 
+				'label' => '',
+				'desc' => '',
+				'tree' => array(),
 				'links' => '',
 			),
 		),
@@ -29,7 +29,7 @@ function shanti_sarvaka_theme() {
 /**
  * PREPROCESS FUNCTIONS
  */
- 
+
 /*
  * Implements hook_preprocess
  * Add theme_path to all templates
@@ -84,7 +84,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
   $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
-  $variables['theme_path'] = $base; 
+  $variables['theme_path'] = $base;
 	$variables['base_theme'] = (empty($base_theme_info)) ? FALSE : $base_theme_info[0]->name;
 	$variables['base_theme_path'] = (empty($base_theme_info)) ? FALSE : $base_path . 'sites/all/themes/' . $base_theme_info[0]->name . '/';
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
@@ -95,26 +95,26 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
   $variables['bsclass_main'] = 'col-sm-6';
   if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = ''; 
+    $variables['bsclass_main'] = '';
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = 'col-sm-9'; 
+    $variables['bsclass_main'] = 'col-sm-9';
   }
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
-	
+
 	// Add menu blocks in banner to secondary tabs
 	if(empty($variables['tabs']['#secondary'])) { $variables['tabs']['#secondary'] = array(); }
 	$variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
-	
+
 	// Set banner_class variable depending on whether there are tabs or not
 	$variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
 
   //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
-	
+
   // Add usermenu to main menu
   $um = menu_tree_all_data('user-menu');
   $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
-	
+
   // Set Loginout_link
   $variables['loginout_link'] = l(t('Logout'), 'user/logout');
   if(!$variables['logged_in']) {
@@ -134,28 +134,28 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     $data = module_invoke('locale', 'block_view', 'language');
     $block = block_load('locale', 'language');
     shanti_sarvaka_block_view_locale_language_alter($data, $block);
-    $variables['language_switcher'] = '<li class="dropdown lang highlight" id="block-locale-language">  
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native . 
+    $variables['language_switcher'] = '<li class="dropdown lang highlight" id="block-locale-language">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native .
         '</span><i class="icon shanticon-arrowselect"></i></a>' . $data['content'] . '</li>';
   }
-  
+
   /**
    * Add Custom CSS with Theme Setting for Site's Default/Base Color. These include:
-   * 
+   *
    *        .basebg =  Set the background to theme's color
    *        .basecolor = Set Font color to theme's color
    *        ul.ss-full-tabs>li.active>a:after = Sets the color of the triangle under ss-full-tabs (bootstrap tabs)
    *        i.thumbtype = Sets the color for the the thumbnail type icon in the upper right corner of gallery thumbnails (deprecated)
-   * 
+   *
    */
    /* Now should be set in childe theme css
   drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; } ' .
-                 '.basecolor { color: ' . $variables['base_color'] . '!important; }  ' . 
+                 '.basecolor { color: ' . $variables['base_color'] . '!important; }  ' .
                  ' ul.ss-full-tabs>li.active>a:after {
                     border-color: rgba(' . hex2rgb($variables['base_color']) . ', 0) !important;
                     border-top-color: ' . $variables['base_color'] . ' !important;
                     border-width: 15px !important;
-                    margin-left: -15px !important; 
+                    margin-left: -15px !important;
                   }  i.thumbtype { background-color: rgba(' . hex2rgb($variables['base_color']) . ', 0.8) !important; }', array(
                       'type' => 'inline',
                       'preprocess' => FALSE,
@@ -168,7 +168,7 @@ function shanti_sarvaka_preprocess_node(&$variables) {
   $variables['date'] = Date('j M Y', $variables['node']->created);
 }
 
-/** Unnecessary 
+/** Unnecessary
 function shanti_sarvaka_preprocess_region(&$variables) {
   switch ($variables['region']) {
     case 'sidebar_second':
@@ -360,7 +360,7 @@ function shanti_sarvaka_item_list($variables) {
   if(empty($variables['items'][0]) || (gettype($variables['items'][0]) == 'string' && strpos($variables['items'][0], 'facetapi-link') == -1)) {
   	return theme_item_list($variables);
   }
-  
+
   // Otherwise return list with out <div class="list-items">
   //dpm($variables, 'variables in facet list');
   $items = $variables['items'];
@@ -425,7 +425,7 @@ function shanti_sarvaka_block_view_locale_language_alter(&$data, $block) {
   //dpm(array($data, $block));
   global $language;  // Currently chosen language
   $currentCode = $language->language; // ISO 2 letter code
-  $currentName = $language->native; 
+  $currentName = $language->native;
   $languages = language_list(); // List of all enabled languages
   $markup = '<ul class="dropdown-menu">';
   $n = 0;
@@ -443,10 +443,10 @@ function shanti_sarvaka_block_view_locale_language_alter(&$data, $block) {
 /** Explore Menu Theme Functions works with Shanti Explore Menu Module**/
 function shanti_sarvaka_menu_tree__shanti_explore_menu($variables) {
   if(module_exists('explore_menu')) {
-    $html = '<section class="' 
-              . variable_get('explore_section_class', EXPLORE_SECTION_CLASS) . '"><nav class="row" role="navigation"> ' 
-              . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4>' 
-              . variable_get('explore_div_title', EXPLORE_DIV_TITLE) . '</h4>' 
+    $html = '<section class="'
+              . variable_get('explore_section_class', EXPLORE_SECTION_CLASS) . '"><nav class="row" role="navigation"> '
+              . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4>'
+              . variable_get('explore_div_title', EXPLORE_DIV_TITLE) . '</h4>'
               . '<div class="shanti-collections"><ul>'
               . $variables['tree'] . '</ul></div></div><button class="close"> <i class="icon shanticon-cancel"></i> </button></nav></section>';
     return $html;
@@ -461,7 +461,7 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
   return '<li><a href="' . $href . '"><i class="icon shanticon-' . $class . '"></i>' . $title . '</a></li>';
 }
 
-/** 
+/**
  * Update user menu tree with properly nested account and log in/out links. Then create markup
  * Called from shanti_sarvaka_preprocess_page
  */
@@ -479,15 +479,15 @@ function shanti_sarvaka_create_user_menu($um) {
   $mylinks = array_filter($um, function($item) use (&$um) {
 		$k = array_search($item, $um);
 		if($k && preg_match('/my\s/', strtolower($k)))  {
-			return true;		
+			return true;
 		} else {
-			return false;		
+			return false;
 		}
   });
   foreach($mylinks as $k => $item) {
-		unset($um[$k]);  
+		unset($um[$k]);
   }
-  
+
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
     // Determine whether login is via password or shibboleth and create login link accordingly
@@ -503,7 +503,7 @@ function shanti_sarvaka_create_user_menu($um) {
       ),
       'below' => array(),
     );
-    
+
   // if logged in show account submenu at top of list
   } else {
     // Add preferences menu
@@ -518,7 +518,7 @@ function shanti_sarvaka_create_user_menu($um) {
       'link' => array(
         'title' => t('My Account'),
         'href' => '#',
-        
+
       ),
       'below' => array(
           'profile' => array(
@@ -541,12 +541,12 @@ function shanti_sarvaka_create_user_menu($um) {
     $myarray = array();
     foreach($mylinks as $n => $link) {
 		$myarray[$n] = array(
-		   'link' => array( 
+		   'link' => array(
 				'title'	=> $link['link']['title'],
-				'href' => $link['link']['href'],	
+				'href' => $link['link']['href'],
 			),
 			'below' => array(),
-		) ; 
+		) ;
     }
     array_splice($acctarray['below'], 1, 0, $myarray);
     array_unshift($um, $acctarray);
@@ -560,10 +560,10 @@ function shanti_sarvaka_create_user_menu($um) {
 function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
   $html = '<ul>';
   if($toplevel) {
-  $html .= '<li><h3><em>Main Menu</em></h3> 
+  $html .= '<li><h3><em>Main Menu</em></h3>
           <a class="link-blocker"></a>
        </li>';
-  } 
+  }
   foreach($links as $n => $link) {
     if(isset($link['html'])) {
       $html .= $link['html'];
@@ -578,9 +578,9 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
       $linkhtml .= shanti_sarvaka_user_menu($link['below']);
     }
     $linkhtml .= '</li>';
-    $html .= $linkhtml;   
+    $html .= $linkhtml;
   }
-  
+
   $html .= '</ul>';
   return $html;
 }
@@ -597,48 +597,48 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
  *    summary
  *    img
  *    itemcount
- *    
+ *
  */
 function shanti_sarvaka_carousel($variables) {
   $el = $variables['element'];
   $html = '<div class="container-fluid carouseldiv">
       <div class="row">
         <div class="col-md-12">
-      
+
           <div class="header">
               <p><span class="title">' . $el['title'] . '</span>
               <span class="link show-more">' . $el['link'] . '</span></p>
           </div>
-              
+
           <div class="carousel slide row" id="collection-carousel">
               <div class="carousel-inner">';
   foreach($el['slides'] as $n => $slide) {
     $active = ($n == 0) ? 'active' : '';
-    $html .= '<!-- Slide' . $n . ' --> 
+    $html .= '<!-- Slide' . $n . ' -->
       <div class="item ' . $active . '">
         <div class="caption col-md-7">
-          <div class="title"><h3><a href="' . $slide['path'] . '"><i class="icon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>   
-          <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>               
+          <div class="title"><h3><a href="' . $slide['path'] . '"><i class="icon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>
+          <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>
           <div class="description">' . $slide['summary'] . '</div>
           <div class="link show-more"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' </a></div>
-        </div>                 
+        </div>
         <div class="bannerImage col-md-5">
             <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>
-        </div>                
+        </div>
      </div><!-- /Slide' . $n . ' --> ';
   }
   $html .= '</div>
-              <div class="control-box">                            
+              <div class="control-box">
                   <a data-slide="prev" href="#collection-carousel" class="carousel-control left basebg"><i class="icon"></i></a>
                   <a data-slide="next" href="#collection-carousel" class="carousel-control right basebg"><i class="icon"></i></a>
-              </div><!-- /.control-box --> 
-              
-              <div class="control-box-2">                            
+              </div><!-- /.control-box -->
+
+              <div class="control-box-2">
                   <button class="btn btn-default btn-sm carousel-pause"><i class="glyphicon glyphicon-pause"></i></button>
-              </div><!-- /.control-box-2 -->   
+              </div><!-- /.control-box-2 -->
             </div><!-- /#collection-carousel -->
-        </div><!-- /.span12 -->          
-        </div><!-- /.row --> 
+        </div><!-- /.span12 -->
+        </div><!-- /.row -->
         </div><!-- /.container -->';
   return $html;
 }
@@ -652,12 +652,12 @@ function shanti_sarvaka_carousel($variables) {
  * 		- links 	(array) 	: links to show in footer stripes
  */
 function shanti_sarvaka_info_popover($variables) {
-	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span><i class=\"icon shanticon-menu3\"></i></span></span>
+	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span class=\"popover-link-tip\"></span><span class=\"icon shanticon-menu3\"></span></span>
 						<div class=\"popover\" data-title=\"{$variables['label']}\">
 							<div class=\"popover-body\">
 							<div class=\"desc\">{$variables['desc']}</div>
-							<div class=\"parents\"><strong>" . $variables['tree']['label']. "</strong>";
-	
+							<div class=\"parents clearfix\"><strong>" . $variables['tree']['label']. "</strong>";
+
 	foreach($variables['tree']['items'] as $n => $link) {
 		$html .= "{$link}";
 	}
@@ -666,7 +666,7 @@ function shanti_sarvaka_info_popover($variables) {
 		$options = array('attributes' => array());
 		if(!empty($info['external'])) { $options['attributes']['target'] = '_blank'; }
 		$options['attributes']['class'] = "icon shanticon-{$info['icon']}";
-		$html .= "<div>" . l($label, $info['href'], $options) . "</div>";
+		$html .= "<div class=\"popover-footer-button\">" . l($label, $info['href'], $options) . "</div>";
 	}
 	$html .= "</div></div>";
 	return $html;
@@ -679,15 +679,15 @@ function shanti_sarvaka_info_popover($variables) {
 function shanti_sarvaka_vertical_tabs($variables) {
   $element = $variables['element'];
 	//dpm($element, 'element');
-	
+
 	// Get the vertical tabs field group's children
 	$nchild = element_children($element['group']);
-	
+
 	// Nav Tabs
 	$output = '<div class="vertical-tab-container clearfix"><div class="col-xs-3"> <!-- required for floating -->
     <!-- Nav tabs -->
     <ul class="nav nav-tabs tabs-left">';
-  $first = TRUE; 
+  $first = TRUE;
 	foreach($nchild as $n) {
 		$child = $element['group'][$n];
 		$class = ($first) ? ' class="active"':'';
@@ -695,7 +695,7 @@ function shanti_sarvaka_vertical_tabs($variables) {
 		$first = FALSE;
 	}
 	$output .= '</ul></div>';
-	
+
 	// Content Panes
 	$output .= '<div class="col-xs-9">
     <!-- Tab panes -->
@@ -718,38 +718,38 @@ function shanti_sarvaka_vertical_tabs($variables) {
 	return $output;
 }
 
-/** 
- * Fieldset Groups: Markup collapsible fieldsets according to Bootstrap 
- *     non-collapsible fieldsets get formatted per core 
+/**
+ * Fieldset Groups: Markup collapsible fieldsets according to Bootstrap
+ *     non-collapsible fieldsets get formatted per core
  **/
 function shanti_sarvaka_fieldset($variables) {
   $element = $variables['element'];
 	//dpm($element, 'element in fieldset preprocess');
-	
+
   // If not collapsible or no title for heading then just format as normal field set
   // Additional settings are for vertical tabs
-  if( empty($element['#collapsible']) || empty($element['#title']) || 
+  if( empty($element['#collapsible']) || empty($element['#title']) ||
   		(isset($element['#group']) && $element['#group'] == 'additional_settings') ) {
     return theme_fieldset($variables);
   }
-  
-  // Set icon and status classes 
+
+  // Set icon and status classes
   $openclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " in";
   $icon = (isset($element['#collapsed']) && $element['#collapsed']) ? "+" : "-";
   $iconclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " open";
-  
+
   // Set attribute values
   $id = (isset($element['#id'])) ? $element['#id'] : uniqid('mb');
   if(!isset($element['#attributes']['class']) || !is_array($element['#attributes']['class'])) {
     $element['#attributes']['class'] = array();
   }
-	
+
 	foreach($element['#attributes']['class'] as $n => &$class) {
 		if($class == 'container-inline') {
 			$class = 'container';
 		}
 	}
-	
+
   $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group', 'panel', 'panel-default'));
   $element['#attributes']['id'] = 'accordion' . $id;
   $isin = '';
@@ -757,10 +757,10 @@ function shanti_sarvaka_fieldset($variables) {
 		$isin = ' in';
 	}
   // Create markup
-  $output = '<div ' . drupal_attributes($element['#attributes']) . '> 
+  $output = '<div ' . drupal_attributes($element['#attributes']) . '>
     <div class="panel-heading">
       <h6 class="panel-title">
-        <a data-toggle="collapse" data-parent="#av-details" href="#' . $id . '">'        	
+        <a data-toggle="collapse" data-parent="#av-details" href="#' . $id . '">'
            . $element['#title'] .
         '</a>
       </h6>
@@ -775,7 +775,7 @@ function shanti_sarvaka_fieldset($variables) {
    return $output;
 }
 
-/** 
+/**
  * Field theme functions
  */
 function shanti_sarvaka_file_widget($variables) {
@@ -787,7 +787,7 @@ function shanti_sarvaka_file_widget($variables) {
 	$filelink = "";
 	if(!empty($element['filename'])) {
 		// change file name to disabled input
-		$element['filename']['#markup'] = '<input class="text-full form-control form-inline" placeholder="File Name" type="text" id="' . $element['#field_name'] . '_value" name="filename_display" disabled value="' . 
+		$element['filename']['#markup'] = '<input class="text-full form-control form-inline" placeholder="File Name" type="text" id="' . $element['#field_name'] . '_value" name="filename_display" disabled value="' .
 		$element['#default_value']['filename'] . '" size="60" maxlength="255"> ';
 		$filelink = '(<a href="' . file_create_url($element['#default_value']['uri']) . '" target="_blank">View File</a>) ';
 	} else {
@@ -852,11 +852,11 @@ function shanti_sarvaka_button($variables) {
   if(!empty($element['#icon'])) {
   	$iconclass = $element['#icon'];
 		if(strpos($iconclass, 'glyphicon') > -1) {
-			 $iconclass = 'glyphicon ' . $iconclass; 
+			 $iconclass = 'glyphicon ' . $iconclass;
 		} elseif(strpos($iconclass, 'fa-') > -1) {
-			 $iconclass = 'fa ' . $iconclass; 
+			 $iconclass = 'fa ' . $iconclass;
 		} else {
-			$iconclass = 'icon shanticon-' . $iconclass; 
+			$iconclass = 'icon shanticon-' . $iconclass;
 		}
   	$icon = "<span class=\"{$iconclass}\"></span> ";
 		$element['#attributes']['class'][] = 'btn-icon';
@@ -874,7 +874,7 @@ function shanti_sarvaka_button($variables) {
   	$icon = "<span class=\"icon shanticon-trash\"></span> ";
 		$text = "";
 	}
-	// Add type "submit" to ajax buttons so that they get selected by views ajax.js for processing. 
+	// Add type "submit" to ajax buttons so that they get selected by views ajax.js for processing.
 	// See https://www.drupal.org/node/1692198 and https://issues.shanti.virginia.edu/browse/MB-550
 	if(in_array('form-submit', $element['#attributes']['class']) && empty($element['#attributes']['type'])) {
 		$element['#attributes']['type'] = 'submit';
@@ -945,13 +945,13 @@ function shanti_sarvaka_textfield($variables) {
  */
 function shanti_sarvaka_get_breadcrumbs($variables) {
   global $base_url;
-  
+
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
   $output = '<ol class="breadcrumb">';
   if(!$variables['is_front']) {
     array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
-  } 
-	if(count($breadcrumbs) > 1) { 
+  }
+	if(count($breadcrumbs) > 1) {
 		$breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
 	}
 	$lidx = count($breadcrumbs) - 1;
@@ -971,7 +971,7 @@ function shanti_sarvaka_facetapi_count($variables) {
 
 /**
  * Implements theme_pagerer_mini to replace text links with icons
- * 
+ *
  */
 function shanti_sarvaka_pagerer_mini($variables) {
   $variables['tags']['first'] = "FIRST_HERE";
@@ -1053,152 +1053,152 @@ function hex2rgb($hex) {
 function _shanti_sarvaka_add_metatags() {
   global $base_url, $base_path;
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
-	
+
 	// Add to Header variables for favicons and MS settings
   $elements = array(
     'favicon-main' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon.ico', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon.ico',
         'rel' => 'shortcut icon',
       ),
     ),
     'favicon-16-32-64' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon.ico', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon.ico',
         'rel' => 'icon',
         'size' => '16x16 32x32 64x64',
       ),
     ),
     'favicon-196' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-196.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-196.png',
         'rel' => 'icon',
         'size' => '196x196',
         'type' => 'image/png',
       ),
     ),
     'favicon-160' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-160.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-160.png',
         'rel' => 'icon',
         'size' => '160x160',
         'type' => 'image/png',
       ),
     ),
     'favicon-96' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-96.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-96.png',
         'rel' => 'icon',
         'size' => '96x96',
         'type' => 'image/png',
       ),
     ),
     'favicon-64' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-64.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-64.png',
         'rel' => 'icon',
         'size' => '64x64',
         'type' => 'image/png',
       ),
     ),
     'favicon-32' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-32.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-32.png',
         'rel' => 'icon',
         'size' => '32x32',
         'type' => 'image/png',
       ),
     ),
     'favicon-16' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-16.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-16.png',
         'rel' => 'icon',
         'size' => '16x16',
         'type' => 'image/png',
       ),
     ),
     'favicon-152' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-152.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-152.png',
         'rel' => 'apple-touch-icon',
         'size' => '152x152',
       ),
     ),
     'favicon-144' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-144.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-144.png',
         'rel' => 'apple-touch-icon',
         'size' => '144x144',
       ),
     ),
     'favicon-120' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-120.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-120.png',
         'rel' => 'apple-touch-icon',
         'size' => '120x120',
       ),
     ),
     'favicon-114' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-114.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-114.png',
         'rel' => 'apple-touch-icon',
         'size' => '114x114',
       ),
     ),
     'favicon-76' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-76.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-76.png',
         'rel' => 'apple-touch-icon',
         'size' => '76x76',
       ),
     ),
     'favicon-72' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-72.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-72.png',
         'rel' => 'apple-touch-icon',
         'size' => '72x72',
         'type' => 'image/png',
       ),
     ),
     'favicon-57' => array(
-      '#tag' => 'link', 
-      '#attributes' => array( 
-        'href' => $base . 'images/favicons/favicon-57.png', 
+      '#tag' => 'link',
+      '#attributes' => array(
+        'href' => $base . 'images/favicons/favicon-57.png',
         'rel' => 'apple-touch-icon',
       ),
     ),
     'ms-tile-color' => array(
-      '#tag' => 'meta', 
-      '#attributes' => array( 
-        'name' => 'msapplication-TileColor', 
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'msapplication-TileColor',
         'content' => '#FFFFFF',
       ),
     ),
     'ms-tile-image' => array(
-      '#tag' => 'meta', 
-      '#attributes' => array( 
-        'name' => 'msapplication-TileImage', 
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'msapplication-TileImage',
         'content' => $base . 'images/favicons/favicon-144.png',
       ),
     ),
     'ms-config' => array(
-      '#tag' => 'meta', 
-      '#attributes' => array( 
-        'name' => 'msapplication-config', 
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'msapplication-config',
         'content' => $base . 'images/favicons/browserconfig.xml',
       ),
     ),
