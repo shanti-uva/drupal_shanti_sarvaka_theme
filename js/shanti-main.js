@@ -261,7 +261,7 @@
             //console.info(node.data);
             $('i.icon.shanticon-cancel').remove(); // remove existing cancel icons
             loadFacetSearch(node.data);
-            searchTabHeight();
+            Drupal.ShantiSarvaka.searchTabHeight();
             return false;
           },
           clickFolderMode: 3, // 1:activate, 2:expand, 3:activate and expand, 4:activate (dblclick expands)
@@ -461,7 +461,7 @@
       });
 
       // call Check Width
-      checkWidth();
+      Drupal.ShantiSarvaka.checkWidth();
 
       // Carousel Init and controls
       $('.carousel').carousel({
@@ -641,7 +641,7 @@
 
   // *** Common Functions for Shanti Sarvaka ***
   /** Function to check width of Extruder and resize content accordingly */
-  checkWidth = function() {
+  Drupal.ShantiSarvaka.checkWidth = function() {
   var panelWidth = $(".text").width();
     if( panelWidth > 275 ) {
         $(".extruder-content").css("width","100%");
@@ -653,7 +653,7 @@
 
 
   // *** SEARCH *** adapt search panel height to viewport
-  searchTabHeight = function() {
+  Drupal.ShantiSarvaka.searchTabHeight = function() {
     var height = $(window).height();
     var srchtab = (height) - 80;
     var viewheight = (height) -  211;
@@ -668,26 +668,6 @@
     $(".view-wrap").css('height', viewheight);
     $(".view-wrap.short-wrap").css('height', comboHeight);
   } ;
-
-  doAjaxSearch = function(qstr, type) {
-    var surl = '/services/ajaxsearch';
-    $.ajax({
-      url: surl,
-      data: {'query': qstr, 'type': type},
-      dataType: 'json',
-      beforeSend: function() {
-        if($('article.main-content #original-content').length == 0) {
-          $('article.main-content').append('<div id="original-content" style="display:none; width: 0px; height: 0px;"></div>');
-          $('#original-content').html($('article.main-content section.content-section').html());
-        }
-        $('article.main-content section.content-section').html('<div class="loader"><i class="fa fa-spinner fa-spin"></i> Loading ...</div>');
-      },
-      success: function(json) {
-        $('article.main-content section.content-section').html(json.html);
-      }
-    });
-  };
-
 
   /**
    * Format numbers with ssfmtnum class

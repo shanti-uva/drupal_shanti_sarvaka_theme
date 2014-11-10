@@ -30,7 +30,7 @@ Drupal.behaviors.sarvakaMbextruder = {
     });
           
     // Bind event listener
-    $(".extruder-content").resize(checkWidth);
+    $(".extruder-content").resize(Drupal.ShantiSarvaka.checkWidth);
      
     if (!$(".extruder.right").hasClass("isOpened")) {
       $(".flap").click( function() {
@@ -72,8 +72,8 @@ Drupal.behaviors.sarvakaMbextruder = {
   Drupal.behaviors.sarvakaSearchInit = {
     attach: function (context, settings) {
        // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
-      searchTabHeight();
-      $(window).bind('load orientationchange resize', searchTabHeight );
+      Drupal.ShantiSarvaka.searchTabHeight();
+      $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.searchTabHeight );
     	/*
       // Handle Search form Submit
       $('#search-flyout form button#searchbutton:not(form#csc-views-advanced-search-form)').click(function() { $(this).parents('form').eq(0).submit(); });
@@ -93,7 +93,7 @@ Drupal.behaviors.sarvakaMbextruder = {
           $(".advanced-view").slideToggle('fast');
           $(".advanced-view").toggleClass("show-options");
           $(".view-wrap").toggleClass("short-wrap"); // ----- toggle class for managing view-section height      
-          searchTabHeight();
+          Drupal.ShantiSarvaka.searchTabHeight();
       });
       $('#edit-advanced-search-api-views-fulltext-autocomplete').removeClass('autocomplete-processed');
       $('#edit-advanced-search-api-views-fulltext').keyup(function() {
