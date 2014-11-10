@@ -50,7 +50,6 @@
 	        topLinkDuration: 500,
 	      }, settings.shanti_sarvaka || {});
 	      
-	      
 	      $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
 	      $.fn.popover.Constructor.DEFAULTS.placement = 'right';
 	      $.fn.popover.Constructor.DEFAULTS.html = true;
@@ -65,20 +64,22 @@
    */
   Drupal.behaviors.shanti_sarvaka_toplink = {
     attach: function (context, settings) {
-      var offset = settings.shanti_sarvaka.topLinkOffset;
-      var duration = settings.shanti_sarvaka.topLinkDuration;
-      jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-          jQuery('.back-to-top').fadeIn(duration);
-        } else {
-          jQuery('.back-to-top').fadeOut(duration);
-        }
-      });
-      jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-      });
+    	if(context == document) { 
+	      var offset = settings.shanti_sarvaka.topLinkOffset;
+	      var duration = settings.shanti_sarvaka.topLinkDuration;
+	      jQuery(window).scroll(function() {
+	        if (jQuery(this).scrollTop() > offset) {
+	          jQuery('.back-to-top').fadeIn(duration);
+	        } else {
+	          jQuery('.back-to-top').fadeOut(duration);
+	        }
+	      });
+	      jQuery('.back-to-top').click(function(event) {
+	        event.preventDefault();
+	        jQuery('html, body').animate({scrollTop: 0}, duration);
+	        return false;
+	      });
+	    }
     }
   };
 
@@ -87,7 +88,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_icheck = {
     attach: function (context, settings) {
-      $("input[type='checkbox'], input[type='radio']").each(function () {
+      $("input[type='checkbox'], input[type='radio']", context).each(function () {
         var self = $(this),
         label = self.next('label');
         if(label.length == 1) {
@@ -110,7 +111,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_select = {
     attach: function (context, settings) {
-      $(".selectpicker:not(#search-flyout .selectpicker)").selectpicker({
+      $(".selectpicker:not(#search-flyout .selectpicker)", context).selectpicker({
         dropupAuto: false
       }); // initiates jq-bootstrap-select
     }
