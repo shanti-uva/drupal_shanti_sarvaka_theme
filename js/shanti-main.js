@@ -1,4 +1,37 @@
 (function ($) {
+	
+  // *** Common Functions for Shanti Sarvaka ***
+  Drupal.ShantiSarvaka = {};
+  
+  //** Function to check width of Extruder and resize content accordingly */
+  Drupal.ShantiSarvaka.checkWidth = function() {
+  var panelWidth = $(".text").width();
+    if( panelWidth > 275 ) {
+        $(".extruder-content").css("width","100%");
+      } else
+    if( panelWidth <= 275 ) {
+        $(".extruder-content").css("width","100% !important");
+      }
+  };
+
+
+  // *** SEARCH *** adapt search panel height to viewport
+  Drupal.ShantiSarvaka.searchTabHeight = function() {
+    var height = $(window).height();
+    var srchtab = (height) - 80;
+    var viewheight = (height) -  211;
+    // var advHeight = $(".advanced-view").show().height();
+    var comboHeight = (viewheight) - 126;
+
+    srchtab = parseInt(srchtab) + 'px';
+    $("#search-flyout").find(".text").css('height',srchtab);
+
+    viewheight = parseInt(viewheight) + 'px';
+    comboHeight = parseInt(comboHeight) + 'px';
+    $(".view-wrap").css('height', viewheight);
+    $(".view-wrap.short-wrap").css('height', comboHeight);
+  } ;
+
   /**
    *  Settings for the theme
    */
@@ -638,36 +671,6 @@
       }
     }
   };
-
-  // *** Common Functions for Shanti Sarvaka ***
-  /** Function to check width of Extruder and resize content accordingly */
-  Drupal.ShantiSarvaka.checkWidth = function() {
-  var panelWidth = $(".text").width();
-    if( panelWidth > 275 ) {
-        $(".extruder-content").css("width","100%");
-      } else
-    if( panelWidth <= 275 ) {
-        $(".extruder-content").css("width","100% !important");
-      }
-  };
-
-
-  // *** SEARCH *** adapt search panel height to viewport
-  Drupal.ShantiSarvaka.searchTabHeight = function() {
-    var height = $(window).height();
-    var srchtab = (height) - 80;
-    var viewheight = (height) -  211;
-    // var advHeight = $(".advanced-view").show().height();
-    var comboHeight = (viewheight) - 126;
-
-    srchtab = parseInt(srchtab) + 'px';
-    $("#search-flyout").find(".text").css('height',srchtab);
-
-    viewheight = parseInt(viewheight) + 'px';
-    comboHeight = parseInt(comboHeight) + 'px';
-    $(".view-wrap").css('height', viewheight);
-    $(".view-wrap.short-wrap").css('height', comboHeight);
-  } ;
 
   /**
    * Format numbers with ssfmtnum class
