@@ -114,14 +114,13 @@
         <a href="#" class="back-to-top"><i class="icon fa"></i></a>
       </article>
 
-
-    
 		  <!-- Search Flyout -->
-		  <?php 
-		    if(!empty($page['search_flyout'])) {
-		      print render($page['search_flyout']);
-		    }
-		  ?>
+		  <?php if(!empty($page['search_flyout'])): ?>
+		      <!--print render($page['search_flyout']); -->
+				<div id="search-flyout" class="region extruder right" role="search" style="display: none;"> 
+				   <?php print render($page['search_flyout']); ?>
+				</div>
+	    <?php endif; ?>
 
     </main> <!-- End Main Content -->
 
