@@ -122,62 +122,64 @@
    */
   Drupal.behaviors.shanti_sarvaka_mlpmenu = {
     attach: function (context, settings) {
-      // Rearrange the button divs so that they are in the order blocks are added with a float-right css
-      var buttons = $('div.navbar-buttons ul.navbar-right').detach();
-      buttons.each(function() {
-        $('div.navbar-buttons').prepend($(this));
-      });
-      // Initialize the multilevel main menu
-      $( '#menu' ).multilevelpushmenu({
-        menuWidth: 250,
-        menuHeight: '32em', // this height is determined by tallest menu, Preferences
-        mode: 'cover',
-        direction: 'rtl',
-        backItemIcon: 'fa fa-angle-left',
-        groupIcon: 'fa fa-angle-right',
-        collapsed: false,
-        preventItemClick: false,
-      });
-
-      // --- align the text
-      $('#menu ul>li, #menu h2').css('text-align','left');
-      $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
-
-      // --- close the menu on outside click except button
-      $('.menu-toggle').click( function(event){
-          event.stopPropagation();
-          $('#menu').toggle(50);
-          $('.menu-toggle').toggleClass('show-topmenu');
-          $('.collections').slideUp(200);
-          $('.menu-exploretoggle').removeClass('show-topmenu');
-       });
-
-      // --- close the menu on outside click except button
-      $('.menu-exploretoggle').click( function(event){
-          event.stopPropagation();
-          $('.collections').slideUp(200);
-      });
-
-      $(document).click( function(){
-          $('.menu-toggle').removeClass('show-topmenu');
-          $('#menu').hide(100);
-      });
-
-      /* Initialize Language Buttons */
-      // Language Chooser Functionality with ICheck
-      $('body').on('ifChecked', 'input.optionlang', function() {
-        var newLang = $(this).val().replace('lang:','');
-        var oldLang = Drupal.settings.pathPrefix;
-        var currentPage = window.location.pathname;
-        if(oldLang.length > 0) {
-          // remove any current lang in url (format = "zh/")
-          var currentPage = currentPage.replace(RegExp(oldLang + "?$"), ''); // Take care of home page (no slash at end of line)
-          currentPage = currentPage.replace(oldLang, ''); // All other pages
-          }
-        // Create New URL with new Lang Prefix
-        var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/');
-        window.location.pathname = newUrl;
-      });
+    	if(context == document) { 
+	      // Rearrange the button divs so that they are in the order blocks are added with a float-right css
+	      var buttons = $('div.navbar-buttons ul.navbar-right', context).detach();
+	      buttons.each(function() {
+	        $('div.navbar-buttons').prepend($(this));
+	      });
+	      // Initialize the multilevel main menu
+	      $( '#menu' ).multilevelpushmenu({
+	        menuWidth: 250,
+	        menuHeight: '32em', // this height is determined by tallest menu, Preferences
+	        mode: 'cover',
+	        direction: 'rtl',
+	        backItemIcon: 'fa fa-angle-left',
+	        groupIcon: 'fa fa-angle-right',
+	        collapsed: false,
+	        preventItemClick: false,
+	      });
+	
+	      // --- align the text
+	      $('#menu ul>li, #menu h2').css('text-align','left');
+	      $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
+	
+	      // --- close the menu on outside click except button
+	      $('.menu-toggle').click( function(event){
+	          event.stopPropagation();
+	          $('#menu').toggle(50);
+	          $('.menu-toggle').toggleClass('show-topmenu');
+	          $('.collections').slideUp(200);
+	          $('.menu-exploretoggle').removeClass('show-topmenu');
+	       });
+	
+	      // --- close the menu on outside click except button
+	      $('.menu-exploretoggle').click( function(event){
+	          event.stopPropagation();
+	          $('.collections').slideUp(200);
+	      });
+	
+	      $(document).click( function(){
+	          $('.menu-toggle').removeClass('show-topmenu');
+	          $('#menu').hide(100);
+	      });
+	
+	      /* Initialize Language Buttons */
+	      // Language Chooser Functionality with ICheck
+	      $('body').on('ifChecked', 'input.optionlang', function() {
+	        var newLang = $(this).val().replace('lang:','');
+	        var oldLang = Drupal.settings.pathPrefix;
+	        var currentPage = window.location.pathname;
+	        if(oldLang.length > 0) {
+	          // remove any current lang in url (format = "zh/")
+	          var currentPage = currentPage.replace(RegExp(oldLang + "?$"), ''); // Take care of home page (no slash at end of line)
+	          currentPage = currentPage.replace(oldLang, ''); // All other pages
+	          }
+	        // Create New URL with new Lang Prefix
+	        var newUrl = (Drupal.settings.basePath + newLang + currentPage).replace(/\/\//g, '/');
+	        window.location.pathname = newUrl;
+	      });
+	    }
     }
   };
 
@@ -186,7 +188,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_respmenu = {
     attach: function (context, settings) {
-      $("#menu-main").buildMbExtruder({
+      $("#menu-main", context).buildMbExtruder({
         positionFixed: false,
         position: "right",
         width: 280,
@@ -196,7 +198,7 @@
         onExtClose:function(){},
         top: 0
       });
-      $("#menu-collections").buildMbExtruder({
+      $("#menu-collections", context).buildMbExtruder({
           positionFixed: false,
           position: "right",
           width:280, // width is set in two places, here and the css
@@ -208,7 +210,7 @@
           top: 0
       });
       // this is for the responsive button
-      $(".shanti-searchtoggle").click(function () {
+      $(".shanti-searchtoggle", context).click(function () {
           if($("#search-flyout.extruder").hasClass("isOpened")){
             $("#search-flyout").closeMbExtruder();
             $(".shanti-searchtoggle").removeClass("show-topmenu");
@@ -224,28 +226,30 @@
             return false;
           }
       });
-      $('body').on('click','.menu-maintoggle',function(){
-          if($("#menu-main.extruder").hasClass("isOpened")){
-            $("#menu-main").closeMbExtruder();
-            $(".menu-maintoggle").removeClass("show-topmenu");
-          } else {
-            $("#menu-main").openMbExtruder();
-            $("#search-flyout").closeMbExtruder();
-            $("#menu-collections").closeMbExtruder();
-            $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
-
-            $(".menu-commons").addClass("active");
-
-            $(".menu-collections").removeClass("active");
-            $(".menu-collections > ul").removeClass("in");
-
-            // $("#menu-main").load("/menus-ajax.html #menu-accordion");
-            $(".menu-maintoggle").addClass("show-topmenu");
-            $(".menu-exploretoggle, .shanti-searchtoggle").removeClass("show-topmenu");
-            return false;
-          }
-      });
-      $(".menu-exploretoggle").click(function () {
+      if(context == document) { 
+	      $('body').on('click','.menu-maintoggle',function(){
+	          if($("#menu-main.extruder").hasClass("isOpened")){
+	            $("#menu-main").closeMbExtruder();
+	            $(".menu-maintoggle").removeClass("show-topmenu");
+	          } else {
+	            $("#menu-main").openMbExtruder();
+	            $("#search-flyout").closeMbExtruder();
+	            $("#menu-collections").closeMbExtruder();
+	            $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
+	
+	            $(".menu-commons").addClass("active");
+	
+	            $(".menu-collections").removeClass("active");
+	            $(".menu-collections > ul").removeClass("in");
+	
+	            // $("#menu-main").load("/menus-ajax.html #menu-accordion");
+	            $(".menu-maintoggle").addClass("show-topmenu");
+	            $(".menu-exploretoggle, .shanti-searchtoggle").removeClass("show-topmenu");
+	            return false;
+	          }
+	      });
+	    }
+      $(".menu-exploretoggle", context).click(function () {
           if($("#menu-collections.extruder").hasClass("isOpened")){
 
             $("#menu-collections").closeMbExtruder();
