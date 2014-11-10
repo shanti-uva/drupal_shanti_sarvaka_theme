@@ -114,6 +114,7 @@
       $(".selectpicker:not(#search-flyout .selectpicker)", context).selectpicker({
         dropupAuto: false
       }); // initiates jq-bootstrap-select
+      
     }
   };
 
