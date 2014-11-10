@@ -389,6 +389,7 @@
       	var pophtml = $(this).next('div.popover');
       	var popfooter = pophtml.find('.popover-footer').detach();
       	pophtml.find('.popover-content').after(popfooter);
+      	popfooter.show();
       });
        // Hide popovers if anything but a popover is clicked
        $('body').click(function(e) {
