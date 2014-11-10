@@ -1083,9 +1083,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 
 
-.avinfo div h5,
-.video-overview h5{ margin-bottom:0.25em;}
-
+.avinfo div h5{ margin-bottom:0.25em;}
 .avshare div h5 span{ color: #5a65d1; font-size: 0.9em; font-weight: normal;}
 .avshare ul{ list-style-type: none; padding-left:0; margin-top:5px;}
 .avshare ul li{}
@@ -1126,7 +1124,7 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 	color: #5a65d1;
 }
 
-.video-overview h5{ text-transform:uppercase; font-size:0.88em; font-weight:bold;  font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
+.video-overview-title { margin-bottom:0.25em; text-transform:uppercase; font-size:0.88em; font-weight:bold;  font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 
 
 .avplace .field,
@@ -1163,63 +1161,60 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .popover-link{
 	background: #5a65d1;
 	border: none;
-	height: 0.93em;
-	width: 1.06em;
+	height: 1rem;
+	width: 1.05rem;
 	color: white;
 	padding: 0;
-	border-radius: 2px;
 	display:inline-block;
 	position:relative;
-	top:0.32em;
-	left:0.44em;
-	margin-right:15px;
+	left:0;
+	top:0.1rem;
+	margin-left:0.6rem;
+	margin-right:0.4rem;
+	font-size:1rem;
 }
-.popover-link span{
-	font-family:'shanticon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	color:#5a65d1;
-	font-size:0.68em;
+.popover-link-tip{
+	border-bottom: 0.5rem solid transparent;
+	border-top: 0rem solid transparent;
+	border-right:0.5rem solid #5a65d1;
+	font-size:0.01rem;
 	position:relative;
-	top:-0.68em;
-	left:-0.68em;
+	bottom:1rem;
+	right: 0.5rem;
+	height:0; width:0;
 }
-.popover-link span:before{
-	left: 0;
-	top: 0.12em;
-	content: '\e644'; /* shanticon-menu3 */
-	position: relative;
+.popover-link .icon{
+	color:white;
+	font-size:0.7rem;
+	position:relative;
+	bottom:0.2rem;
+	right:.32rem;
 }
-.popover-link .icon{ color:white; font-size:1.06em; position:relative; top:0.32em; left:-1px;}
-.resource-popover{ border:none;padding:0;}
-.resource-popover h5{ font-size:1.06em; text-transform:capitalize; margin:0; padding:0; line-height:2.5em; border-bottom:1px solid #ccc;}
-.resource-popover p{ font-size: 0.88em; font-weight: normal; margin-top: 0.75rem; line-height:1.25em;}
-.resource-popover .parents strong{ color: #454fa4; font-size:0.75em;margin-top:-0.12em; display:inline; float:left; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
-.resource-popover .parents strong:after{ content:':'; margin-right:0.18em;}
-.resource-popover .parents a{ font-size:0.75em; line-height:1.44em; border-bottom-width:0px; float:left; display:inline;word-wrap:normal;white-space:normal;}
-.resource-popover .parents a:after{ content:'/'; margin:0 0.18em;}
-.popover-footer{ float:left; margin:5px -15px 0; width:277px; max-width:277px;}
-.popover-footer ul{ list-style-type:none; margin:0.75rem 0 0; padding:0;}
-.popover-footer ul li{  background:#505050; border-bottom:1px solid #404040; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
-.popover-footer ul li:hover{ background:#404040;}
-.popover-footer ul li:hover a{ color:#eee;}
-.popover-footer ul li:active a{ color:#fff;}
-.popover-footer ul li:hover .icon{ color:#fff;}
-.popover-footer ul li .icon{ color:#eee;margin-right:5px;}
-.popover-footer ul li:last-child{ border-radius:0 0 4px 4px; border-bottom:none;}
-.popover-footer ul li a{ color:#ddd; border-bottom:none;display:inline-block;}
+.popover-link icon:before{
 
+}
+
+.related-resources-popover{ border:none;padding:0;}
+.related-resources-popover .popover-title{ font-size:1.38rem; padding:12px 14px 0px; font-family: 'museo-sans-500',Helvetica,Arial,sans-serif; background:transparent; border:none;}
+.related-resources-popover p { border-top:1px solid #ccc; padding-top:1rem; font-size: 0.88em; margin-top:0; line-height:1.25em;}
+.related-resources-popover .parents strong{ color: #454fa4; font-size:0.75em;margin-top:-0.12em; display:inline; float:left; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
+.related-resources-popover .parents strong:after{ content:':'; margin-right:0.18em;}
+.related-resources-popover .parents a{ font-size:0.75em; line-height:1.44em; border-bottom-width:0px; float:left; display:inline; word-wrap:break-word; white-space:normal;}
+.related-resources-popover .parents a:after{ content:'/'; margin:0 0.18em;}
+.popover-footer{ margin:10px -14px -14px;}
+.popover-footer-button{ background:#505050; border-bottom:1px solid #444; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
+.popover-footer-button:hover{ background:#404040;}
+.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:inline-block;}
+.popover-footer-button .icon:before{ color:#eee; margin-right:5px;}
+.popover-footer-button:hover .icon{ color:#fff;}
+.popover-footer-button:last-child{ border-radius:0 0 4px 4px; border-bottom:none;}
 
 /*--- Large Tabs Video View ---*/
 .nav-justified{ margin: 1.12em 0 1.75rem;}
 .nav-justified>li{ /* width:50%; */background:#fff;font-family:'museo-sans-700',Helvetica,Arial,sans-serif;font-size:1em;-webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s}
 .nav-justified>li:hover,
 .nav-justified>li:active{ }
-.nav-justified>li>a{ border:none;border-radius:0;color:#999;}
+.nav-justified>li>a{ border:none !important;border-radius:0;color:#999;}
 .nav-justified>li>a:hover,
 .nav-justified>li>a:active{ background:#fff;color:#777;}
 .nav-justified>li.active:before{ font-family:'shanticon'; font-size:2em; content: '\e646'; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em;}
