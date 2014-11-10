@@ -1025,6 +1025,19 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /****************************/
 /**** BEGIN MB migration ****/
 /****************************/
@@ -1086,9 +1099,9 @@ ul.links.inline li a,
 a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
 
 
-/*--- button on video window ---*/
-a.icon-play.comp.largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:'play';}
-a.icon-play:before{ font-family:'shanticon'; content: '\e647';}
+/*--- button on video window --- NOT WORKING YET ---*/
+.largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:'play';}
+.largePlayBtn:before{ font-family:'shanticon'; content: '\e647';}
 
 
 
@@ -1206,19 +1219,19 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .nav-justified>li{ /* width:50%; */background:#fff;font-family:'museo-sans-700',Helvetica,Arial,sans-serif;font-size:1em;-webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s}
 .nav-justified>li:hover,
 .nav-justified>li:active{ }
-.nav-justified>li>a{ border:none !important;border-radius:0;color:#999;}
+.nav-justified>li>a{ border:none;border-radius:0;color:#999;}
 .nav-justified>li>a:hover,
 .nav-justified>li>a:active{ background:#fff;color:#777;}
 .nav-justified>li.active:before{ font-family:'shanticon'; font-size:2em; content: '\e646'; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em;}
 .nav-justified>li.active>a,
 .nav-justified>li.active>a:hover,
-.nav-justified>li.active>a:focus{ color:#fff;}
+.nav-justified>li.active>a:focus{ border-radius:0; color:#fff;}
 
 /* Example: mediabase subtheme color is set here on the justified tabs ---*/
 .nav-justified>li.active>a{ /*background:#32ccca;*/}
 .nav-justified>li.active:before{ /*color:#32ccca;*/}
 
-.avnode-details-buttons { float:right;position:relative;top:-1rem;right:2rem; /* temp */ display:none !important;}
+.avnode-details-buttons { float:right;position:relative;top:-1rem;right:2rem; /* hide buttons - temp */ display:none !important;}
 .avnode-details-buttons .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 
 /*----------------------------*/
@@ -1363,7 +1376,7 @@ table.sticky-table td ul{
 }
 table.sticky-table td ul li{ line-height:1em;}
 
-#edit-delete:hover{ background: red;border: thin solid red;}
+#edit-delete:hover{ background: red; border-color: red;}
 
 #module-filter-tabs a,
 #module-filter-tabs a:hover{ border-bottom:none;}
