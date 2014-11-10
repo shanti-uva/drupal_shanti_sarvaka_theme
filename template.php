@@ -656,12 +656,12 @@ function shanti_sarvaka_info_popover($variables) {
 						<div class=\"popover\" data-title=\"{$variables['label']}\">
 							<div class=\"popover-body\">
 							<div class=\"desc\">{$variables['desc']}</div>
-							<div class=\"parents clearfix\"><strong>" . $variables['tree']['label']. "</strong>";
+							<div class=\"parents clearfix\"><p><strong>" . $variables['tree']['label']. "</strong>";
 
 	foreach($variables['tree']['items'] as $n => $link) {
 		$html .= "{$link}";
 	}
-	$html .= "</div></div><div class=\"popover-footer\">";
+	$html .= "</p></div></div><div class=\"popover-footer\">";
 	foreach($variables['links'] as $label => $info) {
 		$options = array('attributes' => array());
 		if(!empty($info['external'])) { $options['attributes']['target'] = '_blank'; }
