@@ -37,17 +37,26 @@
    */
   Drupal.behaviors.shanti_sarvaka = {
     attach: function (context, settings) {
-      // Initialize settings.
-      settings.shanti_sarvaka = $.extend({
-        kmapsUrl: "http://subjects.kmaps.virginia.edu",
-        mmsUrl: "http://mms.thlib.org",
-        placesUrl: "http://places.kmaps.virginia.edu",
-        ftListSelector: "ul.facetapi-mb-solr-facet-tree, ul.fancy-tree", // should change "mb-solr" to "fancy" for universality
-        fancytrees: [],
-        flyoutWidth: 310,
-        topLinkOffset: 420,
-        topLinkDuration: 500,
-      }, settings.shanti_sarvaka || {});
+    	if(context == document) {
+	      // Initialize settings.
+	      settings.shanti_sarvaka = $.extend({
+	        kmapsUrl: "http://subjects.kmaps.virginia.edu",
+	        mmsUrl: "http://mms.thlib.org",
+	        placesUrl: "http://places.kmaps.virginia.edu",
+	        ftListSelector: "ul.facetapi-mb-solr-facet-tree, ul.fancy-tree", // should change "mb-solr" to "fancy" for universality
+	        fancytrees: [],
+	        flyoutWidth: 310,
+	        topLinkOffset: 420,
+	        topLinkDuration: 500,
+	      }, settings.shanti_sarvaka || {});
+	      
+	      
+	      $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
+	      $.fn.popover.Constructor.DEFAULTS.placement = 'right';
+	      $.fn.popover.Constructor.DEFAULTS.html = true;
+	      $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 60000 };
+	      $.fn.popover.Constructor.DEFAULTS.template = '<div class="popover related-resources-popover" role="tooltip"><div class="arrow"></div><h5 class="popover-title"></h5><div class="popover-content"></div></div>';
+			}
     }
   };
 
@@ -401,13 +410,8 @@
    */
   Drupal.behaviors.shanti_sarvaka_popovers = {
     attach: function (context, settings) {
-      $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
-      $.fn.popover.Constructor.DEFAULTS.placement = 'right';
-      $.fn.popover.Constructor.DEFAULTS.html = true;
-      $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 60000 };
-      $.fn.popover.Constructor.DEFAULTS.template = '<div class="popover related-resources-popover" role="tooltip"><div class="arrow"></div><h5 class="popover-title"></h5><div class="popover-content"></div></div>';
-
-      $('span.popover-link').each(function() {
+    	
+      $('span.popover-link', context).each(function() {
         var content = $(this).next('div.popover').html();
         var title = $(this).next('div.popover').attr('data-title');
         $(this).popover({'title': title, 'content': content});
