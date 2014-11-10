@@ -380,7 +380,16 @@
         $(this).popover({'title': title, 'content': content});
       });
       $('div.popover').remove(); // remove hidden popover content once they have all been initialized
-      $('span.popover-link').on('show.bs.popover', function(){ $('div.popover').hide();}); // When popover is shown, hide all others
+      // show.bs called immediately upon click. Hide all other popovers.
+      $('span.popover-link').on('show.bs.popover', function(){ 
+      	$('div.popover').hide();
+      }); 
+      // shown.bs is after popup is rendered. Move footer outside of content
+      $('span.popover-link').on('shown.bs.popover', function(){ 
+      	var pophtml = $(this).next('div.popover');
+      	var popfooter = pophtml.find('.popover-footer').detach();
+      	pophtml.find('.popover-content').after(popfooter);
+      });
        // Hide popovers if anything but a popover is clicked
        $('body').click(function(e) {
           var target = $(e.target);
