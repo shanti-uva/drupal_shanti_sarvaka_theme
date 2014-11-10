@@ -1205,7 +1205,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 .related-resources-popover .parents a:after{ content:'/'; margin:0 0.18em;}
 .related-resources-popover .parents a:hover,
 .related-resources-popover .parents a:active{ color: rgb(207, 47, 30);}
-.popover-footer{ margin:0px;}
+.popover-footer{ margin:0 -14px -9px;}
 .popover-footer-button{ background:#505050; border-bottom:1px solid #444; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 .popover-footer-button:hover{ background:#404040;}
 .popover-footer-button .icon{ color:#ddd; border-bottom:none; display:inline-block;}

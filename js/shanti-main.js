@@ -427,12 +427,13 @@
       	$('div.popover').hide();
       }); 
       // shown.bs is after popup is rendered. Move footer outside of content
+      /*
       $('span.popover-link').on('shown.bs.popover', function(){ 
       	var pophtml = $(this).next('div.popover');
       	var popfooter = pophtml.find('.popover-footer').detach();
       	pophtml.find('.popover-content').after(popfooter);
       	popfooter.show();
-      });
+      });*/
        // Hide popovers if anything but a popover is clicked
        $('body').click(function(e) {
           var target = $(e.target);
