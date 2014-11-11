@@ -1179,7 +1179,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	border-right:0.5rem solid #5a65d1;
 	font-size:0.01rem;
 	position:relative;
-	bottom:1rem;
+	bottom:0.9rem;
 	right: 0.5rem;
 	height:0; width:0;
 }
@@ -1190,10 +1190,6 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	bottom:0.2rem;
 	right:.32rem;
 }
-.popover-link icon:before{
-
-}
-
 .related-resources-popover{ border:none;padding:0;}
 .related-resources-popover .popover-title{ font-size:1.38rem; padding:12px 14px 0px; font-family: 'museo-sans-500',Helvetica,Arial,sans-serif; background:transparent; border:none;}
 .related-resources-popover p { border-top:1px solid #ccc; padding-top:1rem; font-size: 0.88em; margin-top:0; line-height:1.25em;}
