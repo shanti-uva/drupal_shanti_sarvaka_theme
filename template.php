@@ -322,6 +322,20 @@ function shanti_sarvaka_preprocess_fieldset(&$vars) {
 }
 
 /**
+ * Implements preprocess field
+ */
+function shanti_sarvaka_preprocess_field(&$vars) {
+	// Add <p> around text_long and replace newline characters with <p> markup
+	if($vars['element']['#field_type'] == 'text_long') {
+		foreach($vars['items'] as $n => &$item) {
+			$emu = &$item['#markup'];
+			$emu = '<p>' . $emu . '</p>';
+			$emu = preg_replace('/\n/','</p><p>', $emu);
+		}
+	}
+}
+
+/**
  * Modify buttons so they have Bootstrap style .btn classess with BEM syntax for variations
  *
  */
