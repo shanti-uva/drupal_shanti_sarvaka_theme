@@ -1177,9 +1177,9 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 	border-bottom: 0.5rem solid transparent;
 	border-top: 0rem solid transparent;
 	border-right:0.5rem solid #5a65d1;
-	font-size:0.01rem;
+	font-size:0rem;
 	position:relative;
-	bottom:0.9rem;
+	bottom:1rem;
 	right: 0.5rem;
 	height:0; width:0;
 }
