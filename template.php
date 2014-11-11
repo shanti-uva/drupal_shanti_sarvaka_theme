@@ -460,6 +460,7 @@ function shanti_sarvaka_menu_tree__shanti_explore_menu($variables) {
     $html = '<section class="'
               . variable_get('explore_section_class', EXPLORE_SECTION_CLASS) . '"><nav class="row" role="navigation"> '
               . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4>'
+              . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4 class"collections-title">'
               . variable_get('explore_div_title', EXPLORE_DIV_TITLE) . '</h4>'
               . '<div class="shanti-collections"><ul>'
               . $variables['tree'] . '</ul></div></div><button class="close"> <i class="icon shanticon-cancel"></i> </button></nav></section>';
