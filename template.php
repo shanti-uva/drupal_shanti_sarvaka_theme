@@ -804,7 +804,7 @@ function shanti_sarvaka_file_widget($variables) {
 		$element['filename']['#markup'] = '<input class="text-full form-control form-inline" placeholder="File Name" type="text" id="' . $element['#field_name'] . '_value" name="filename_display" disabled value="' .
 		$element['#default_value']['filename'] . '" size="60" maxlength="255"> ';
 		$filelink = '(<a href="' . file_create_url($element['#default_value']['uri']) . '" target="_blank">View File</a>) ';
-	} else {
+	} else if (!empty($element['filefield_sources_list']['#markup'])){
 		$markup = explode(' | ', $element['filefield_sources_list']['#markup']);
 		if(count($markup) == 2) {
 			$element['filefield_sources_list']['#markup'] = "<div class=\"filefield-sources-list\">" . $markup[1] . ' or ';
@@ -959,7 +959,6 @@ function shanti_sarvaka_textfield($variables) {
  */
 function shanti_sarvaka_get_breadcrumbs($variables) {
   global $base_url;
-
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
   $output = '<ol class="breadcrumb">';
   if(!$variables['is_front']) {
