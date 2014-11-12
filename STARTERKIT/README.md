@@ -23,9 +23,9 @@ Change the Mediabase's color shown here to the subtheme's custom color:
 /* BEGIN subtheme colors */
 .titlearea,
 .carousel-control,
-.breadwrap ol li .icon,
+.breadcrumb .icon,
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:focus{ background:#32ccca;}
+.nav-justified>li.active a:active{ background:#32ccca;}
 .nav-justified>li.active:before{ color:#32ccca;}
 /* END subtheme colors */
