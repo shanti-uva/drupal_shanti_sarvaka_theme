@@ -207,7 +207,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .collections ul .icon { color: #aaa;margin-right:8px;font-size:1.5em;position:relative;top:2px;}
 .collections ul li a:hover .icon,
 .collections ul li a:focus .icon{ color:#fff;}
-.collections h4 { color:#eee; display:inline; text-align: center; margin: 10px 0 15px !important;letter-spacing: 0.32em;}
+.collections h4 { color:#eee; text-align: center; margin: 10px 0 15px; letter-spacing: 0.4rem;}
 .collections .close { color: #ccc;background:transparent;background-image:none;width:1em;height:1em;padding:0;margin:0;border:none;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;font-size: 1.44em;position: absolute;top: 5px;right: 15px;cursor:pointer;display:inline-block;-webkit-transition: color 200ms ease 0s;-moz-transition: color 200ms ease 0s;-o-transition: color 200ms ease 0s;transition: color 200ms ease 0s;}
 .collections .close:hover,
 .collections .close:focus { color:#eee;}
@@ -237,14 +237,15 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   width:96%;
   background:transparent;
 }
-.breadwrap .breadcrumb > li + li:before {
+.breadcrumb{ background:transparent;}
+.breadcrumb > li + li:before {
   /* override breadcrumb class from Bootstrap 3 */
   content: ' ';
   padding: 0 5px;
   color: #999;
   display: none;
 }
-.breadwrap ol {
+.breadcrumb {
   margin: 0;
   padding: 0;
   white-space: nowrap;
@@ -259,7 +260,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   *zoom: 1;
   border:none;
 }
-.breadwrap .breadcrumb li:first-child{
+.breadcrumb li:first-child{
 	font-weight:bold;
 
   font-family:'museo-sans-700',Helvetica,Arial,sans-serif;
@@ -272,17 +273,17 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   top:0;
   color:#f5f5f5;
 }
-.breadwrap ol:before,
-.breadwrap ol:after {
+.breadcrumb:before,
+.breadcrumb:after {
   content: ' ';
   display: table;
 }
 
-.breadwrap ol:after {
+.breadcrumb:after {
   clear: both;
 }
 
-.breadwrap ol li {
+.breadcrumb li {
   display: inline-block;
   float: none;
   position: relative;
@@ -294,7 +295,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   padding: 0 18px 0 0;
   text-shadow:0 0 1px rgba(50,50,50, 0.225);
 }
-.breadwrap .breadcrumb li:first-child{
+.breadcrumb li:first-child{
   font-family:'museo-sans-500',Helvetica,Arial,sans-serif;
   font-weight:normal;
   font-size:1.32em;
@@ -306,7 +307,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
   top:0;
 }
 
-.breadwrap ol li a {
+.breadcrumb li a {
   display: block;
   float: left;
   font-size: 0.92em;
@@ -317,14 +318,14 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 	overflow: hidden;
 	font-weight:normal;
 }
-.breadwrap .breadcrumb li:first-child a{ margin-right:0.32em; font-weight:bold;}
-.breadwrap .breadcrumb li:first-child a:after{ /* content:':'; */}
-.breadwrap ol li a:hover{ }
-
-.breadwrap ul li .wholegrain,
-.breadwrap ol li .wholegrain { display: block; overflow: hidden;}
-
-.breadwrap ol li .icon{
+.breadcrumb li a:hover,
+.breadcrumb li a:focus{ text-decoration:underline;}
+.breadcrumb li:last-child a:hover,
+.breadcrumb li:last-child a:focus{ text-decoration:none;}
+.breadcrumb li:first-child a{ margin-right:0.32em; font-weight:bold;}
+/* .breadwrap ul li span,
+.breadwrap ol li span { display: block; overflow: hidden;} */
+.breadcrumb .icon{
 	color:#eee;
 	background:#dc3c47;
 	position: absolute;
@@ -340,17 +341,16 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 	overflow:visible;
 	display: inline-block;
 }
-.breadwrap ol li .icon:before{
+.breadcrumb .icon:before{
 	content: '\f105';
   position:relative;
   top:0;
   left:0;
 }
-.breadwrap ol li:last-child a{ font-size: 0.92em; cursor:default;}
-
-.breadwrap ol li:last-child .icon{ background:transparent;}
-.breadwrap ol li:last-child .icon:before,
-.breadwrap ol li:first-child .icon:before{
+.breadcrumb li:last-child a{ font-size: 0.92em; cursor:default;}
+.breadcrumb li:last-child .icon{ background:transparent;}
+.breadcrumb li:last-child .icon:before,
+.breadcrumb li:first-child .icon:before{
 	content: ' ';
 	display:none;
 	background: transparent;
@@ -2031,72 +2031,17 @@ table.features td.sign{ font-size:0.75em;}
   }
 	.menu-explore a span{ display:none;}
 
-
-	/* --- BEGIN breadcrumbs ---- */
-	/* -------------------------- */
-  .breadwrap .breadcrumb > li + li:before {
-    display: none;
-  }
-
-  .breadwrap ul,
-  .breadwrap ol {
-    margin: 0;
-    padding: 0;
-    white-space: normal;
-    height: auto;
-    /* *zoom: 1; */
-  }
-
-  .breadwrap ul:before,
-  .breadwrap ul:after,
-  .breadwrap ol:before,
-  .breadwrap ol:after {
-    display: none;
-  }
-
-  .breadwrap ul li,
-  .breadwrap ol li {
-    display: block;
-    float: none;
-    height: 26px;
-    line-height: 26px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .breadwrap ul li + li,
-  .breadwrap ol li + li {
-    margin: 6px 0 0;
-  }
-
-  .breadwrap ul li:after,
-  .breadwrap ol li:after {
-    display: none;
-  }
-
-  .breadwrap ul li .chevronOverlay,
-  .breadwrap ol li .chevronOverlay {
-    display: none;
-  }
-
-  .breadwrap ul li span,
-  .breadwrap ol li span {
-    display: block;
-    overflow: hidden;
-  }
-
-  .breadwrap ul li a,
-  .breadwrap ol li a {
-    height: auto;
-    line-height: inherit;
-    float: none;
-  }
-
-  .breadwrap ul li.last,
-  .breadwrap ol li.last {
-    margin: 6px 0 0;
-  }
-
+  .breadcrumb > li + li:before{ display: none; }
+  .breadcrumb { margin: 0; padding: 0; white-space: normal; height: auto; }
+  .breadcrumb:before{ display: none;}
+  .breadcrumb li,
+  .breadcrumb li{ display: block; float: none; height: 26px; line-height: 26px; margin: 0; padding: 0; }
+  .breadcrumb li + li{ margin: 6px 0 0; }
+  .breadcrumb li:after{ display: none; }
+  .breadcrumb li .chevronOverlay{ display: none; }
+  .breadcrumb li span{ display: block; overflow: hidden;}
+  .breadcrumb li a{ height: auto; line-height: inherit; float: none;}
+  .breadcrumb li.last { margin: 6px 0 0;}
 
 }
 
@@ -2142,7 +2087,7 @@ table.features td.sign{ font-size:0.75em;}
 	.menu-toggle{ display:none;}
 	.titlearea{ min-height:55px;}
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
-  .breadwrap .breadcrumb li:first-child{ font-size:1em;}
+  .breadcrumb li:first-child{ font-size:1em;}
 
 	.collections.container{ border:none; display:none; line-height:0 !important; height:0 !important;}
 
