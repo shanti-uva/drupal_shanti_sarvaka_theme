@@ -936,6 +936,22 @@ function shanti_sarvaka_checkboxes($variables) {
 	return theme_checkboxes($variables);
 }
 
+function shanti_sarvaka_radios($variables) {
+	//dpm($variables, 'vars in radios');
+	$el = $variables['element'];
+	if(isset($el['#attributes']['class'][0]) && $el['#attributes']['class'][0] == 'shanti-options') {
+		$out = '';
+		foreach($el['#options'] as $n => $op) {
+			$checked = (isset($el['#default_value']) && $n == $el['#default_value']) ? ' checked="checked"' : '';
+			$oplc = str_replace(' ', '-', strtolower($op));
+			$field = (isset($el['#parents'][0])) ? $el['#parents'][0] : 'scope';
+			$out .= '<label class="radio-inline" ><input type="radio" id="' . $oplc . $field . '" name="' . $field . '"' . $checked . ' data-value="' . $oplc . '">' . $op . '</label>';
+		}
+		return $out;
+ 	}
+	return theme_checkboxes($variables);
+}
+
 function shanti_sarvaka_textfield($variables) {
   $element = &$variables['element'];
 	// Add place holder attribute with title
