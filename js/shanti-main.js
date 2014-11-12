@@ -1,8 +1,8 @@
 (function ($) {
-	
+
   // *** Common Functions for Shanti Sarvaka ***
   Drupal.ShantiSarvaka = {};
-  
+
   //** Function to check width of Extruder and resize content accordingly */
   Drupal.ShantiSarvaka.checkWidth = function() {
   var panelWidth = $(".text").width();
@@ -49,7 +49,7 @@
 	        topLinkOffset: 420,
 	        topLinkDuration: 500,
 	      }, settings.shanti_sarvaka || {});
-	      
+
 	      $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
 	      $.fn.popover.Constructor.DEFAULTS.placement = 'right';
 	      $.fn.popover.Constructor.DEFAULTS.html = true;
@@ -64,7 +64,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_toplink = {
     attach: function (context, settings) {
-    	if(context == document) { 
+    	if(context == document) {
 	      var offset = settings.shanti_sarvaka.topLinkOffset;
 	      var duration = settings.shanti_sarvaka.topLinkDuration;
 	      jQuery(window).scroll(function() {
@@ -114,7 +114,7 @@
       $(".selectpicker:not(#search-flyout .selectpicker)", context).selectpicker({
         dropupAuto: false
       }); // initiates jq-bootstrap-select
-      
+
     }
   };
 
@@ -123,7 +123,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_mlpmenu = {
     attach: function (context, settings) {
-    	if(context == document) { 
+    	if(context == document) {
 	      // Rearrange the button divs so that they are in the order blocks are added with a float-right css
 	      var buttons = $('div.navbar-buttons ul.navbar-right', context).detach();
 	      buttons.each(function() {
@@ -140,11 +140,11 @@
 	        collapsed: false,
 	        preventItemClick: false,
 	      });
-	
+
 	      // --- align the text
 	      $('#menu ul>li, #menu h2').css('text-align','left');
 	      $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
-	
+
 	      // --- close the menu on outside click except button
 	      $('.menu-toggle').click( function(event){
 	          event.stopPropagation();
@@ -153,18 +153,18 @@
 	          $('.collections').slideUp(200);
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
-	
+
 	      // --- close the menu on outside click except button
 	      $('.menu-exploretoggle').click( function(event){
 	          event.stopPropagation();
 	          $('.collections').slideUp(200);
 	      });
-	
+
 	      $(document).click( function(){
 	          $('.menu-toggle').removeClass('show-topmenu');
 	          $('#menu').hide(100);
 	      });
-	
+
 	      /* Initialize Language Buttons */
 	      // Language Chooser Functionality with ICheck
 	      $('body').on('ifChecked', 'input.optionlang', function() {
@@ -227,7 +227,7 @@
             return false;
           }
       });
-      if(context == document) { 
+      if(context == document) {
 	      $('body').on('click','.menu-maintoggle',function(){
 	          if($("#menu-main.extruder").hasClass("isOpened")){
 	            $("#menu-main").closeMbExtruder();
@@ -237,12 +237,12 @@
 	            $("#search-flyout").closeMbExtruder();
 	            $("#menu-collections").closeMbExtruder();
 	            $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
-	
+
 	            $(".menu-commons").addClass("active");
-	
+
 	            $(".menu-collections").removeClass("active");
 	            $(".menu-collections > ul").removeClass("in");
-	
+
 	            // $("#menu-main").load("/menus-ajax.html #menu-accordion");
 	            $(".menu-maintoggle").addClass("show-topmenu");
 	            $(".menu-exploretoggle, .shanti-searchtoggle").removeClass("show-topmenu");
@@ -287,10 +287,10 @@
    *      Activate a node: node.setActive(true); // Performs activate action too
    *      Show a node: node.makeVisible(); // Opens tree to node and scrolls to it without performing action
    **/
-  /** NDG: Taking out Nov. 10 because no longer need fancy tree in theme: 
+  /** NDG: Taking out Nov. 10 because no longer need fancy tree in theme:
   Drupal.behaviors.shanti_sarvaka_fancytree = {
     attach: function (context, settings) {
-    	
+
       // Facet Tree in Search Flyout
       var divs = $(Drupal.settings.shanti_sarvaka.ftListSelector).parent();
 
@@ -418,7 +418,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_popovers = {
     attach: function (context, settings) {
-    	
+
       $('span.popover-link', context).each(function() {
         var content = $(this).next('div.popover').html();
         var title = $(this).next('div.popover').attr('data-title');
@@ -426,18 +426,18 @@
       });
       $('div.popover', context).remove(); // remove hidden popover content once they have all been initialized
       // show.bs called immediately upon click. Hide all other popovers.
-      $('span.popover-link', context).on('show.bs.popover', function(){ 
+      $('span.popover-link', context).on('show.bs.popover', function(){
       	$('div.popover').hide();
-      }); 
+      });
       // shown.bs is after popup is rendered. Move footer outside of content
       /*
-      $('span.popover-link').on('shown.bs.popover', function(){ 
+      $('span.popover-link').on('shown.bs.popover', function(){
       	var pophtml = $(this).next('div.popover');
       	var popfooter = pophtml.find('.popover-footer').detach();
       	pophtml.find('.popover-content').after(popfooter);
       	popfooter.show();
       });*/
-      if(context == document) { 
+      if(context == document) {
 	       // Hide popovers if anything but a popover is clicked
 	       $('body').click(function(e) {
 	          var target = $(e.target);
@@ -454,7 +454,7 @@
    */
   Drupal.behaviors.shanti_sarvaka_miscinit = {
     attach: function (context, settings) {
-    	if(context == document) { 
+    	if(context == document) {
 	      // *** GLOBAL ** conditional IE message
 	      // show-hide the IE message for older browsers
 	      // this could be improved with conditional for - lte IE7 - so it does not self-hide
@@ -469,7 +469,7 @@
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
 	      });
-	
+
 	      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
 	      // Add class and event handler to bootstrap tabs for formatting
 	      // $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
@@ -480,7 +480,7 @@
 	      //   });
 	      //   $(el).addClass('basebg');
 	      // });
-	
+
 	      // Turn dev menu in admin footer into select
 	      if($('#admin-footer #block-menu-devel ul.menu').length > 0) {
 	        var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
@@ -497,7 +497,7 @@
 	      $('#admin-footer div.block').each(function() {
 	        $(this).height($(this).parent().height());
 	      });
-	
+
 	      // Collapse/Expand All Buttons For Bootstrap Collapsible Divs
 	      // Assumes Buttons are in a child div that is a sibling of the collapsible divs.
 	      $('div.expcoll-btns button').click(function() {
@@ -508,10 +508,10 @@
 	          $(divs).removeClass('in');
 	        }
 	      });
-	
+
 	      // call Check Width
 	      Drupal.ShantiSarvaka.checkWidth();
-	
+
 	      // Carousel Init and controls
 	      $('.carousel').carousel({
 	        interval: 6000,
@@ -543,7 +543,7 @@
             autoResize: true, // This will auto-update the layout when the browser window is resized.
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
             offset: 15, // Optional, the distance between grid items
-            outerOffset: 10, // Optional the distance from grid to parent
+            outerOffset: 0, // Optional the distance from grid to parent
             flexibleWidth: '30%' // Optional, the maximum width of a grid item
           };
 
@@ -628,9 +628,9 @@
    */
   Drupal.behaviors.shanti_sarvaka_otherinit = {
     attach: function (context, settings) {
-    	if(context == document) { 
+    	if(context == document) {
 	      $('.shanti-field-group-audience > div').find('a:eq(1)').addClass('icon-link');
-	
+
 	      $('.shanti-field-title a').hover( function() {
 	            $(this).closest('.shanti-thumbnail').addClass('title-hover');
 	            },
@@ -638,19 +638,19 @@
 	            $(this).closest('.shanti-thumbnail').removeClass('title-hover');
 	            }
 	       );
-	
+
 	      // $('table.sticky-header').css('width','100%');
-	
+
 	      // if($('.node-video').length ){
 	      //       $('.shanti-gallery').imagesLoaded();
 	      // });
 	      //-------
-	
+
 	      // hide responsive column for resources
 	      $('[data-toggle=offcanvas]').click(function () {
 	        $('.row-offcanvas').toggleClass('active');
 	      });
-	
+
 	      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width
 	      (function () {
 	        'use strict';
@@ -665,23 +665,23 @@
 	        }
 	      })();
 	      //----
-	
+
 	      /*
 	      $('.ss-full-tabs > .rel-video').on('click', function () {
 	        $.imagesLoaded();
 	      });*/
 	      //----
-	
+
 	      var myElement = document.getElementById('.carousel.slide');
 	      if(myElement) {
 	        // create a simple instance
 	        // by default, it only adds horizontal recognizers
 	        var mc = new Hammer(myElement);
-	
+
 	        // let the pan gesture support all directions.
 	        // this will block the vertical scrolling on a touch-device while on the element
 	        mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-	
+
 	        // listen to events...
 	        mc.on("panleft panright panup pandown tap press", function(ev) {
 	            myElement.textContent = ev.type +" gesture detected.";
