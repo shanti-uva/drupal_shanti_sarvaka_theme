@@ -609,4 +609,23 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /*--- END SEARCH PANEL -----------*/
 /*--------------------------------*/
 
+/** Ajax Throbber **/
 
+.ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
+	display: inline-block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+}
+
+.ajax-progress {
+	margin: 4px 0 0 -10px;
+}
+
+.ajax-progress .throbber {
+	height: 20px;
+	width: 20px;
+	background:transparent url('../images/ajax-loader.gif') no-repeat center center;
+	color: #000;
+	z-index: 501;
+}
