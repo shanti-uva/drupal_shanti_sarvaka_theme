@@ -457,16 +457,17 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail-image a:focus .overlay:before{color:rgba(255,255,255,0.6000);font-size:4em !important}
 .shanti-thumbnail-image a:active .overlay:before{color:rgba(255,255,255,0.7500)}
 .shanti-thumbnail-info{font-size:.75em;font-family:'museo-sans-500',helvetica,arial,sans-serif}
-.shanti-thumbnail .body-wrap{padding:.35rem .8rem .6rem 1.1rem;overflow:auto}
-.shanti-field-created{font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif}
-.shanti-thumbnail-link{font-size:0.93em;line-height:1.5em;font-weight:bold;margin:0.2rem 0 0.3rem;letter-spacing:-.06em;}
+.shanti-thumbnail .body-wrap{padding:.35rem .8rem .6rem 0.9rem;overflow:auto}
+.shanti-thumbnail-link{/* video title */font-size:0.93em;line-height:1.5em;font-weight:bold;margin:0.2rem 0;letter-spacing:-0.1rem;}
 .shanti-thumbnail-link:hover,.shanti-thumbnail-link:focus{color:rgba(90,101,209,.9000);-webkit-box-shadow:none;box-shadow:none}
-.shanti-field-group-audience a{font-size:.82em;line-height:1.38em}
-.shanti-field-group-audience a:hover{text-decoration:underline}
-.shanti-field-group-audience a.shanti-thumbnail-link+a:before{font-family:'Glyphicons Halflings';content:'\e144';color:#666;font-size:1.25em;width:1.32em;height:1.32em;display:inline-block;margin-right:4px;position:relative;top:2px}
-.shanti-thumbnail-field.shanti-field-duration span:before,.shanti-thumbnail-field.shanti-field-created span:before{font-family:'shanticon';content:'\e63b';font-size:120%;font-weight:normal;position:relative;left:-0.1rem;top:0;margin-right:0.4rem;}
-.shanti-thumbnail-field.shanti-field-duration span:before{content:'\e61c';position:relative;top:.06em}
-.shanti-thumbnail-field.shanti-field-created span:before{content:'\e60c';margin-right:.56em !important;top:.06em}
+.shanti-field-group-audience a{font-size:0.82em;line-height:1.38em}
+.shanti-field-group-audience a:hover,
+.shanti-field-group-audience a:focus{text-decoration:underline}
+.shanti-field-group-audience a.shanti-thumbnail-link+a:before{font-family:'Glyphicons Halflings';content:'\e144';color:#666;font-size:1.25em;width:1.32em;height:1.32em;display:inline-block;margin-right:0.2rem;position:relative;left:0.1rem;top:0.05rem;}
+.shanti-field-duration span:before,.shanti-field-created span:before{font-family:'shanticon';content:'\e63b';font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.2rem;}
+.shanti-field-duration span:before{content:'\e61c';}
+.shanti-field-created span:before{content:'\e60c';margin-right:0.6rem;}
+.shanti-field-created{color:#444;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif}
 .shanti-thumbnail .footer-wrap{position:absolute;bottom:0;background:#f6f6f6;border-top:1px solid #e6e6e6;border-radius:0 0 .32em .32em;background-clip:padding-box;width:100%;display:block;padding:.32em 1em 0 .88em;color:#787878;height:2.5em}
 .shanti-thumbnail .footer-wrap a{display:inline;}
 .shanti-thumbnail .footer-wrap a:hover,.shanti-thumbnail .footer-wrap a:focus{text-decoration:underline}
@@ -785,7 +786,7 @@ button.field-add-more-submit{ margin-left:1em;}
 .pagerer { /* table */ font-size:0.92em;text-transform:uppercase;}
 .pagerer-page{ /* the input for page count */ border-radius:2px; border:none;	font-size:0.88em;padding-top: 0.12em;line-height:1.25em;color: #6d7afc; width:2.68em !important; position:relative; top:-0.1rem; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;}
-.pager{ /* unordered list */ margin:0 1rem 0 0;display:inline;text-align:right;float:right;}
+.pager{ /* unordered list */ margin:-0.2rem 1rem 0 0;display:inline;text-align:right;float:right;}
 .pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .pager li>a{ color:#aaa;padding:0.12em 0.5em;margin:0;background:transparent;border:none;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;border:none !important;}
 .pager li>a:hover,
