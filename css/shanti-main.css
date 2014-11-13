@@ -44,7 +44,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .container:after{ clear:both;}
 .main-wrapper{ position:relative; min-height:54em;}
 .main-content{ position:relative;margin-left: 0;margin-right: 0;min-height:100%;/*font-size:1em;*/}
-.content-section { padding: 10px 25px 50px; min-height:100%;}
+.content-section { padding: 0.72rem 1.8rem 0; min-height:100%;}
 .content-section a{ border-bottom:1px solid transparent;-webkit-transition: border 200ms ease 0s; transition: border 200ms ease 0s;}
 .content-section a:hover,
 .content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
@@ -441,7 +441,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*------------------------------------*/
 .shanti-gallery{width:100%;margin:0;padding:0;position:relative;list-style-type:none;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0}
 .shanti-gallery a{color:#555;border:none!important;display:block}
-.shanti-thumbnail{color:#444;background:#fff;float:left;width:100%;max-width:170px;min-height:18em;padding:0;margin:0;border-radius:.4rem;background-clip:padding-box;list-style-type:none;position:relative;-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.2750);box-shadow:0 3px 3px rgba(50,50,50,0.2750);border-collapse:separate;-webkit-transition:box-shadow 200ms ease;-moz-transition:box-shadow 200ms ease;-ms-transition:box-shadow 200ms ease;-o-transition:box-shadow 200ms ease;transition:box-shadow 200ms ease}
+.shanti-thumbnail{color:#444;background:#fff;float:left;width:100%;max-width:170px;min-height:18em;padding:0;margin:0 1rem 1rem 0;border-radius:.4rem;background-clip:padding-box;list-style-type:none;position:relative;-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.2750);box-shadow:0 3px 3px rgba(50,50,50,0.2750);border-collapse:separate;-webkit-transition:box-shadow 200ms ease;-moz-transition:box-shadow 200ms ease;-ms-transition:box-shadow 200ms ease;-o-transition:box-shadow 200ms ease;transition:box-shadow 200ms ease}
 .shanti-thumbnail:hover,.shanti-thumbnail:focus{-webkit-box-shadow:0 4px 7px rgba(0,0,0,0.2250);box-shadow:0 4px 7px rgba(0,0,0,0.2250)}
 .shanti-thumbnail:active{-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.5);box-shadow:0 3px 3px rgba(50,50,50,0.5)}
 .shanti-thumbnail-image{width:100%;overflow:hidden;border-radius:.4rem .4rem 0 0;background-clip:padding-box}
@@ -796,7 +796,8 @@ button.field-add-more-submit{ margin-left:1em;}
 .pager li>a:hover .icon,
 .pager li>a:focus .icon{ color:#444;}
 .pager .pager-first>a,
-.pager .pager-last>a{ /*padding:0.06em 0.5em;*/ position:relative; top: 0.1rem; margin-right:1rem;}
+.pager .pager-last>a{ position:relative; top: 0.1rem;}
+.pager .pager-last>a{ margin-right:1rem;}
 .pager-first .icon,
 .pager-previous .icon,
 .pager-next .icon,
@@ -1158,26 +1159,26 @@ form table td.label{ padding-top:0.68em !important;}
 .sidebar{ /*z-index:1;*/}
 .region-sidebar-second{ background: #fff;}
 #sidebar-second{
-	/*background: #fff;*/
-	max-width:24em;
-	padding:0 0 0 .32em;
+	background: #fff;
+	/*max-width:29rem;*/
+	padding:0 0 0 0.6rem;
 }
 .front #sidebar-second{ z-index:1;} /* hide carousel nav arrows */
 #sidebar-second ul{
 	list-style: square inside none;
-	-webkit-margin-before: 1em;
-	-webkit-margin-after: 1em;
+	-webkit-margin-before: 1rem;
+	-webkit-margin-after: 1rem;
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
-	-webkit-padding-start: 10px;
-	padding-left:10px;
+	-webkit-padding-start:0.7143rem;
+	padding-left:0.7143rem;
 }
 #sidebar-second ul li a,
 #sidebar-second ul li a:hover,
 #sidebar-second ul li a:focus{ border-bottom-width:1px !important;}
-#sidebar-second .block{ padding: 1em 2em .32em 1em;}
+#sidebar-second .block{ padding: 1rem 2rem .3rem 1rem;}
 
-#sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.12em;}
+#sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.1rem;}
 
 #sidebar-second .bootstrap-select.form-control .selectpicker{ width:100% !important;}
 
