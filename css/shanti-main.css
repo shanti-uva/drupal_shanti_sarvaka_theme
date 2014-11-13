@@ -600,7 +600,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 
 /*--- BEGIN paging --*/
 .shanti-filters { height:2.75em; margin-bottom:0.5rem}
-.shanti-filters table{ float:right;}
+.shanti-filters table{ float:right;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 /*.shanti-filters table,
 .shanti-filters .label,
 .shanti-filters .count{ font-family:'museo-sans-500',helvetica,arial,sans-serif;}*/
@@ -608,7 +608,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-filters td{ white-space: nowrap;}
 .shanti-filters table td:nth-child(2){ width:100%;}
 
-.shanti-filters td .label{ color:#444;font-weight:bold;font-size:85%;text-transform: uppercase;}
+.shanti-filters td .label{ color:#555;}
 .shanti-filters td .count{ font-size: 90%; padding-right:1rem;}
 .shanti-filters .ajax-progress{ display: inline; float:right}
 
@@ -622,7 +622,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .pagerer-page{ /* the input for page count */ border-radius:2px; border:none;	padding-top: 0.12em;line-height:1.25em;color: #6d7afc;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;	width:2.68em;}
 .pagerer-page:focus{background:#fff;}
 .pager{ /* unordered list */ margin:0 1rem 0 0;display:inline;text-align:right;float:right;}
-.pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-500',helvetica,arial,sans-serif;}
+.pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .pager li>a{ color:#aaa;padding:0.12em 0.5em;margin:0;background:transparent;border:none;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;border:none !important;}
 .pager li>a:hover,
 .pager li>a:focus{ color:#333;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;}
