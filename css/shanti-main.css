@@ -84,7 +84,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .content-section a:active{ border-bottom-color:transparent;}
 .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
 .show-more a{ font-weight:bold; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
-.show-more:after{ color: #5a65d1; font-size: 0.75em;padding-left:0.32em;font-family:'Glyphicons Halflings';content: '\002b'; /*-- plus icon */position:relative;top:-1px;}
+.show-more:after{ color: #5a65d1; font-size: 0.75em;padding-left:0.32em;font-family:'Glyphicons Halflings';content: '\002b'; /*-- plus icon */}
 
 .content-section label{ font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 
@@ -1257,11 +1257,13 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 /*--- END video view page --*/
 /*----------------------------*/
 
+
+
 /* form table td.label styles address the 'Group Space' fields on ...node/add/collection*/
 form table td.label{ display: inline-block;color: #333; /* override bootstrap default label color of white */font-size: 100%;padding: 12px 0;}
 form table td.label strong:after{ content: ':';padding-right: 6px;}
 form table td.label .description{ display: inline;font-weight: normal;}
-
+/*
 .form-type-password-confirm{ position:relative;}
 .form-type-password-confirm label{ position:relative; top:1.12em;}
 .form-item-pass-pass1 label{ position:absolute; top:2.5em;}
@@ -1272,7 +1274,7 @@ form table td.label .description{ display: inline;font-weight: normal;}
 
 .form-type-password-confirm .password-strength-title{ position:relative; top:0.62em;}
 .form-type-password-confirm .password-strength-text{ position:relative; top:0.62em;}
-
+*/
 
 input.form-text,
 input.form-control,
@@ -1282,10 +1284,10 @@ input.form-control,
 	border-radius: 1.5em;
 	background-clip: padding-box;
 	font-size:0.9em; /* note made smaller for Video Edit page */
-	height:2em;
-	line-height:1.5em; /* note made smaller for Video Edit page */
+	height:2.25em;
+	line-height:1.12em; /* note made smaller for Video Edit page */
 	padding:0.25em 1em 0;
-  max-width:25em;
+  max-width:35em;
 	overflow: auto;
 	-webkit-box-shadow:0 2px 5px #eee inset;
 	box-shadow:0 2px 5px #eee inset;
