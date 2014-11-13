@@ -619,9 +619,9 @@ function shanti_sarvaka_carousel($variables) {
       <div class="row">
         <div class="col-md-12">
 
-          <div class="header">
-              <p><span class="title">' . $el['title'] . '</span>
-              <span class="link show-more">' . $el['link'] . '</span></p>
+          <div class="carousel-header">
+              <p><span class="carousel-feature-collections">' . $el['title'] . '</span>
+              <span class="show-more">' . $el['link'] . '</span></p>
           </div>
 
           <div class="carousel slide row" id="collection-carousel">
@@ -631,10 +631,10 @@ function shanti_sarvaka_carousel($variables) {
     $html .= '<!-- Slide' . $n . ' -->
       <div class="item ' . $active . '">
         <div class="caption col-md-7">
-          <div class="title"><h3><a href="' . $slide['path'] . '"><i class="icon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>
+          <div><h3 class="carousel-caption-title"><a href="' . $slide['path'] . '"><i class="icon shanticon-stack"></i> ' . $slide['title'] . '</a></h3></div>
           <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>
-          <div class="description">' . $slide['summary'] . '</div>
-          <div class="link show-more"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' </a></div>
+          <div class="carousel-description">' . $slide['summary'] . '</div>
+          <div class="show-more"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' </a></div>
         </div>
         <div class="bannerImage col-md-5">
             <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>
@@ -648,7 +648,7 @@ function shanti_sarvaka_carousel($variables) {
               </div><!-- /.control-box -->
 
               <div class="control-box-2">
-                  <button class="btn btn-default btn-sm carousel-pause"><i class="glyphicon glyphicon-pause"></i></button>
+                  <button class="btn btn-default btn-sm carousel-pause"><span class="glyphicon glyphicon-pause"></span></button>
               </div><!-- /.control-box-2 -->
             </div><!-- /#collection-carousel -->
         </div><!-- /.span12 -->

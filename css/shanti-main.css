@@ -49,7 +49,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .content-section a:hover,
 .content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
 .content-section a:active{ border-bottom-color:transparent;}
-.show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
+.show-more{ text-transform:uppercase; font-size:.83em; display:inline;}
 .show-more a{ font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .show-more:after{ color: #5a65d1; font-size: 0.75em;padding-left:0.32em;font-family:'Glyphicons Halflings';content: '\002b'; /*-- plus icon */}
 
@@ -468,7 +468,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail-field.shanti-field-duration span:before{content:'\e61c';position:relative;top:.06em}
 .shanti-thumbnail-field.shanti-field-created span:before{content:'\e60c';margin-right:.56em !important;top:.06em}
 .shanti-thumbnail .footer-wrap{position:absolute;bottom:0;background:#f6f6f6;border-top:1px solid #e6e6e6;border-radius:0 0 .32em .32em;background-clip:padding-box;width:100%;display:block;padding:.32em 1em 0 .88em;color:#787878;height:2.5em}
-.shanti-thumbnail .footer-wrap a{color:#444;display:inline}
+.shanti-thumbnail .footer-wrap a{display:inline;}
 .shanti-thumbnail .footer-wrap a:hover,.shanti-thumbnail .footer-wrap a:focus{text-decoration:underline}
 .shanti-thumbnail .footer-wrap .icon{font-size:1.32em;position:relative;top:2px}
 /*-------------------------*/
@@ -709,8 +709,6 @@ button.field-add-more-submit{ margin-left:1em;}
 .main-content .bootstrap-select > .btn{ line-height:2.5em; height:2.5em; padding:0 2.38em 0 0; /*  width:100%; padding:0; commented out for Video Edit page edits */}
 .main-content table.field-multiple-table .bootstrap-select > .btn{ /* width:50%; */}
 .main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ font-size:0.88em; max-width:25rem !important; /* width:45% !important; commented out for Video Edit page edits */}
-
-.admin-menu .main-content .views-field-title .bootstrap-select > .btn { /* width:100% !important; commented out for Video Edit page edits */}
 
 .main-content .bootstrap-select .popover-title{ padding: 0.3rem 1.2rem; margin-bottom:0.2rem;}
 .main-content .bootstrap-select .btn{margin:0;padding-left:1.5rem;color:#606060;background:transparent;background-image:none;background-image:-webkit-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-moz-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-ms-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-o-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-repeat:repeat-x;border:1px solid #ddd;border-color:#fff #eee #ddd;border-radius:25px;background-clip:padding-box;overflow:hidden;-webkit-box-shadow:none;box-shadow:none}
@@ -1142,10 +1140,14 @@ form table td.label{ padding-top:0.68em !important;}
 /* overwrite mb_location-selector module in mediabase */
 .location-selector-item{ padding: 0.2em 0.6em 0.1em 0.4em; border:1px solid #ddd; margin-right:0.3em; line-height:normal;}
 
+/* view My Content in My Workflow etc */
 .views-table td.active{ background:transparent;}
+.views-table th{ font-size:0.88em;}
+.views-field{ font-size:0.93em;}
+.views-field img{ margin:0.2rem;}
+.views-field-realname,td.views-field-created,td.views-field-changed{ font-size:0.82em;}
 
-
-
+.admin-menu .views-field-title .bootstrap-select > .btn { /* width:100% !important; commented out for Video Edit page edits */}
 
 
 
