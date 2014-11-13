@@ -84,7 +84,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .content-section a:active{ border-bottom-color:transparent;}
 .show-more{ text-transform:uppercase; font-size:.83em; display:inline; letter-spacing:-0.06em;}
 .show-more a{ font-weight:bold; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
-.show-more:after{ color: #5a65d1; font-size: 0.75em;padding-left:0.32em;font-family:'Glyphicons Halflings';content: '\002b'; /*-- plus icon */}
+.show-more:after{ color: #5a65d1; font-size: 0.75em;padding-left:0.32em;font-family:'Glyphicons Halflings';content: '\002b'; /*-- plus icon */position:relative;top:-1px;}
 
 .content-section label{ font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 
@@ -905,6 +905,20 @@ input.form-control{
 .shanti-filters table,
 .shanti-filters .label,
 .shanti-filters .count{  font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
+.shanti-filters table tbody{ border-top: none;}
+.shanti-filters td{ white-space: nowrap;}
+.shanti-filters table td:nth-child(2){ width:100%;}
+
+.shanti-filters td .label{ color: #444;font-weight: bold;font-size: 90%;text-transform: uppercase;}
+.shanti-filters td .count{ font-size: 90%; padding-right:1rem;}
+.shanti-filters .ajax-progress{ display: inline; float:right}
+
+.form-item-sort-bef-combine .btn{ width: 15rem;}
+.form-item-sort-bef-combine label{ display: none;}
+.form-item-sort-bef-combine .dropdown-menu.open .disabled{ background-color: #d0d0d0;}
+
+
+
 .pagerer { /* table */ color:#555;margin-right:4rem;text-align:right;float:right;font-size:0.92em;text-transform:uppercase;width:100%;}
 .pagerer-page{ /* the input for page count */ border-radius:2px; border:none;	padding-top: 0.12em;line-height:1.25em;color: #6d7afc;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;	width:2.68em;}
 .pagerer-page:focus{background:#fff;}
@@ -934,14 +948,11 @@ input.form-control{
 .pager-next{ margin-left:.38em;}
 .pager-previous{ margin-right:.38em;}
 
-.shanti-filters td{ white-space: nowrap;}
-.shanti-filters td .label{ color: #444;font-weight: bold;font-size: 90%;text-transform: uppercase;}
-.shanti-filters td .count{ font-size: 90%;padding-right:1rem;}
-.shanti-filters .ajax-progress{ display: inline-block;}
 
-.form-item-sort-bef-combine{ min-width: 140px;}
-.form-item-sort-bef-combine label{ display: none;}
-.dropdown-menu.open .disabled{ background-color: #d0d0d0;}
+
+
+
+
 /*--- END paging --*/
 
 
@@ -1257,13 +1268,11 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 /*--- END video view page --*/
 /*----------------------------*/
 
-
-
 /* form table td.label styles address the 'Group Space' fields on ...node/add/collection*/
 form table td.label{ display: inline-block;color: #333; /* override bootstrap default label color of white */font-size: 100%;padding: 12px 0;}
 form table td.label strong:after{ content: ':';padding-right: 6px;}
 form table td.label .description{ display: inline;font-weight: normal;}
-/*
+
 .form-type-password-confirm{ position:relative;}
 .form-type-password-confirm label{ position:relative; top:1.12em;}
 .form-item-pass-pass1 label{ position:absolute; top:2.5em;}
@@ -1274,7 +1283,7 @@ form table td.label .description{ display: inline;font-weight: normal;}
 
 .form-type-password-confirm .password-strength-title{ position:relative; top:0.62em;}
 .form-type-password-confirm .password-strength-text{ position:relative; top:0.62em;}
-*/
+
 
 input.form-text,
 input.form-control,
@@ -1284,10 +1293,10 @@ input.form-control,
 	border-radius: 1.5em;
 	background-clip: padding-box;
 	font-size:0.9em; /* note made smaller for Video Edit page */
-	height:2.25em;
-	line-height:1.12em; /* note made smaller for Video Edit page */
+	height:2em;
+	line-height:1.5em; /* note made smaller for Video Edit page */
 	padding:0.25em 1em 0;
-  max-width:35em;
+  max-width:25em;
 	overflow: auto;
 	-webkit-box-shadow:0 2px 5px #eee inset;
 	box-shadow:0 2px 5px #eee inset;
@@ -1719,6 +1728,19 @@ button.field-add-more-submit{ margin-left:1em;}
 .vertical-tab-container .nav-tabs>li>a{ border:none !important;}
 .vertical-tab-container .nav-tabs>li>a:hover{ border:none !important;}
 
+
+
+
+
+
+
+
+
+
+
+/****************************************/
+/** admin stuff to sort and-or migrate **/
+/****************************************/
 table.features .admin-check,
 table.features .admin-default,
 table.features .admin-overridden,
@@ -1726,7 +1748,6 @@ table.features .admin-rebuilding,
 table.features .admin-needs-review{ font-size:80%; padding-top:0.32em;}
 table.features th{ padding-top:.75em;}
 table.features td.sign{ font-size:0.75em;}
-
 
 
 #block-system-help p,
@@ -1813,21 +1834,21 @@ table.features td.sign{ font-size:0.75em;}
 .field-accordion h4 .ss-fieldset-toggle.open,
 .field-accordion h6 .ss-fieldset-toggle.open{ padding: 0 5px 1px;}
 
-.shanti-filters table tbody{ border-top: none;}
-.shanti-filters table td:nth-child(2){ width:100%;}
-
 
 /****************************/
 /**** END MB migration ****/
-/****************************/
-
-/*-----------------------*/
-/*----- END CONTENT -----*/
-/*-----------------------*/
 
 
 
 
+
+/* My Stuff Account Collections page - 50% columns for drop-select */
+.view-my-workflow .field-accordion .form-item{
+ display:inline;
+ width:50%;
+ float:left;
+}
+.view-my-workflow .field-accordion .form-item label{ display:block;}
 
 
 
