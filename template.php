@@ -14,7 +14,7 @@ function shanti_sarvaka_theme() {
     'carousel' => array(
       'render element' => 'element',
     ),
-    'info_popup' => array(
+    'info_popover' => array(
 			'variables' => array(
 				'label' => '',
 				'desc' => '',
