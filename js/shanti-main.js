@@ -455,14 +455,14 @@
   Drupal.behaviors.shanti_sarvaka_miscinit = {
     attach: function (context, settings) {
     	if(context == document) {
-    		
+
 	      // Shanti-filters title keyword search field: use description for placeholder text
-    		$('.shanti-filters .views-exposed-form .form-item input.form-text').each(function() { 
-    			var desc = $(this).parent().parent().next('.description'); 
-    			$(this).attr({'placeholder': $.trim(desc.text()), 'size':'15'}); 
+    		$('.shanti-filters .views-exposed-form .form-item input.form-text').each(function() {
+    			var desc = $(this).parent().parent().next('.description');
+    			$(this).attr({'placeholder': $.trim(desc.text()), 'size':'15'});
     			desc.remove();
     		});
-    		
+
 	      // *** GLOBAL ** conditional IE message
 	      // show-hide the IE message for older browsers
 	      // this could be improved with conditional for - lte IE7 - so it does not self-hide
@@ -533,9 +533,9 @@
 	            carousel.carousel('pause');
 	          }
 	          $(this).toggleClass('paused');
-	          $(this).find('i').toggleClass('glyphicon-pause glyphicon-play');
+	          $(this).find('span').toggleClass('glyphicon-pause glyphicon-play');
 	      });
-	      
+
 	    }
     }
   };

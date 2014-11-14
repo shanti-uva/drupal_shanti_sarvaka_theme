@@ -1144,10 +1144,11 @@ form table td.label{ padding-top:0.68em !important;}
 
 /* view My Content in My Workflow etc */
 .views-table td.active{ background:transparent;}
-.views-table th{ font-size:0.88em;}
-.views-field{ font-size:0.93em;}
+.views-table th{ font-size:0.88em;padding:0 0.3rem;}
+.views-field{ padding:0 0.5rem 0 0; font-size:0.93em;}
 .views-field img{ margin:0.2rem;}
-.views-field-realname,td.views-field-created,td.views-field-changed{ font-size:0.82em;}
+.views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type{ font-size:0.82em;}
+.views-field.views-field-title{ width:40%;}
 
 .admin-menu .views-field-title .bootstrap-select > .btn { /* width:100% !important; commented out for Video Edit page edits */}
 
