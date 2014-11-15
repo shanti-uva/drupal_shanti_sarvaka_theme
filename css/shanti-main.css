@@ -792,29 +792,20 @@ button.field-add-more-submit{margin-left:1em}
 
 /***** BEGIN System Messages *****/
 .content-section > .messages{ padding:0; border:none !important;}
+.messages{ margin:0.32em 0 0.5em; padding:0; border:none;-webkit-box-shadow:0 0 3px #ccc;box-shadow:0 0 3px #ccc;border-collapse: separate;}
+.messages ul{ margin: 0 0 0 1em; /* LTR */padding: 0;}
+.messages ul li{ list-style-image: none !important;}
 .messages > div{ padding: 10px 20px 10px 45px; background-position: 8px 8px;}
 .messages a{ font-weight:bold;}
 .messages a:hover{}
-.messages { background-image:none;margin:0.32em 0 0.5em; padding:0; border:none;-webkit-box-shadow:0 0 3px #ccc;box-shadow:0 0 3px #ccc;border-collapse: separate;}
-.status { background-image:none;background:#BAC9A9;   /*--- new color ---*/border:3px solid #fff;-webkit-box-shadow: inset 0 -1px 3px rgba(0,0,0, 0.1000);box-shadow: inset 0 -1px 3px rgba(0,0,0, 0.1000);border-collapse: separate;}
+.warning,
 .status,
-.ok { color: #234600;}
-.status,
-table tr.ok { background: #f8fff0;}
-
-.warning{ background-image: none; background: #fffce5; color: #840; /* background:#F7F2CD; */ border:3px solid #fff;-webkit-box-shadow: inset 0 -1px 3px rgba(0,0,0, 0.1);box-shadow: inset 0 -1px 3px rgba(0,0,0, 0.1);border-collapse: separate;}
-.error { color: #8c2e0b; border:none;background-image: none;background:transparent;background:#F9E7E0; /*--- new color ---*/border:3px solid #fff;-webkit-box-shadow: inset 0 -1px 3px rgba(0,0,0, 0.1000);box-shadow: inset 0 -1px 3px rgba(0,0,0, 0.1000);border-collapse: separate;}
+.error{ border:3px solid #fff; padding:0 0.6rem 0.1rem;-webkit-box-shadow: inset 0 -1px 2px rgba(0,0,0, 0.1);box-shadow: inset 0 -1px 2px rgba(0,0,0, 0.1);border-collapse: separate;}
+.status { color: #234600; background:#BAC9A9;}
+.warning{ color: #840; background: #fffce5;}
+.error { color: #8c2e0b; background:#fef5f1;border:3px solid #fff;}
 .error p.error { color: #333;}
-.error,
-table tr.error { background: #fef5f1;}
-.messages ul { margin: 0 0 0 1em; /* LTR */padding: 0;}
-.messages ul li { list-style-image: none !important;}
-
-/*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
-.contextual-links-wrapper{ position:absolute; top:-0.15rem !important;}
-.contextual-links-wrapper a:hover, .contextual-links-wrapper a:focus{ border-bottom:none !important;}
-/* admin make checkboxes plain in features table */
-.admin-menu .content .features .status{ padding:0; background:transparent; border:none; box-shadow:none; -webkit-box-shadow:none;}
+table tr.ok { color: #234600; background: #f8fff0;}
 /*--- END System Messages ---*/
 
 
@@ -1057,6 +1048,15 @@ td.checkbox{ display:table-cell;}
 th.checkbox{ padding-right: 20px;padding-left:5px;text-align:left;line-height:1.12em;width:12%;}
 td.checkbox .form-type-checkbox .icheckbox_minimal-red{ display:block;}
 td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-top:5px;}
+
+
+
+/*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
+.contextual-links-wrapper{ position:absolute; top:-0.15rem !important;}
+.contextual-links-wrapper a:hover, .contextual-links-wrapper a:focus{ border-bottom:none !important;}
+
+/* admin make checkboxes plain in features table */
+.admin-menu .content .features .status{ padding:0; background:transparent; border:none; box-shadow:none; -webkit-box-shadow:none;}
 
 .admin-menu table tr td.permission .form-item{ line-height:normal;margin-top:0;}
 .admin-menu table tr.odd.add-new:last-child{ border-bottom:20px solid transparent;}
