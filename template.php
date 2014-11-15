@@ -619,10 +619,7 @@ function shanti_sarvaka_carousel($variables) {
       <div class="row">
         <div class="col-md-12">
 
-          <div class="carousel-header">
-              <p><span class="carousel-feature-collections">' . $el['title'] . '</span>
-              <span class="show-more">' . $el['link'] . '</span></p>
-          </div>
+          <div class="carousel-header show-more"><span>' . $el['title'] . '</span>' . $el['link'] . '</div>
 
           <div class="carousel slide row" id="collection-carousel">
               <div class="carousel-inner">';
@@ -634,7 +631,7 @@ function shanti_sarvaka_carousel($variables) {
           <div><h3 class="carousel-title"><a href="' . $slide['path'] . '"><span class="icon shanticon-stack"></span> ' . $slide['title'] . '</a></h3></div>
           <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>
           <div class="carousel-description">' . $slide['summary'] . '</div>
-          <div class="show-more"><a class="" href="' . $slide['path'] . '">' . t('View Collection') . ' </a></div>
+          <p class="show-more h5"><a href="' . $slide['path'] . '">' . t('View Collection') . ' </a></p>
         </div>
         <div class="carousel-main-image col-xs-12 col-sm-5 col-md-4 col-lg-3">
             <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>
