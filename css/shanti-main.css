@@ -601,32 +601,23 @@ button.field-add-more-submit{margin-left:1em}
 .carousel-pause .glyphicon{ padding-left:0.1rem}
 
 
-@media (max-width:479px) {
-
-}
-@media (max-width:529px) {
+@media (max-width:600px) {
   .carousel .col-sm-7{ min-width:100%;}
   .carousel .col-sm-5{ min-width:100%;}
   .carousel-main-image{ min-width:100%;margin:0;padding:0;}
-  .carousel-main-image img{ margin:0;padding:0;}
 }
-@media (max-width:579px) {
-  .carousel-main-content{ float:none;}
-}
-@media (max-width:629px) {
-
-}
-@media (max-width:679px) {
+@media (max-width:700px) {
   .carousel .col-sm-7{padding-left:5px;padding-right:5px;}
   .carousel .col-sm-5{padding-left:5px;padding-right:5px;}
   .carousel-main-image img{ margin-left:0.5rem;}
+   .carousel-main-content{ float:none;}
 }
 @media (max-width:767px) {
   .carousel .col-sm-7{ width:50%;}
   .carousel .col-sm-5{ width:50%;}
 	.carousel-description p{ font-size:0.93em;}
 	.carousel-title{ margin: 0 0 0.3rem;font-size:1.25em;}
-	.carousel .byline{ font-size:70%;margin: -0.5em 0 .63em 0;}
+	.carousel .byline{ font-size:70%;margin: -0.1em 0 .63em 0;}
 	.carousel-main-content{ float:left;}
 	.carousel-description p{height:11.25em;overflow:hidden;}
 }
