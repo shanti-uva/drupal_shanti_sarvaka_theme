@@ -271,9 +271,11 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /**** Horizontal Tabs Bootstrap *****/
 .nav-justified{ margin: 1.12em 0 1.75rem;}
 .nav-justified>li{ background:#fff;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-size:1em;-webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s}
+.nav-justified>li{ background:#fff;border-right:1px solid #ddd;font-size:1em;font-family:'museo-sans-700',helvetica,arial,sans-serif;-webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s}
 .nav-justified>li>a{ border:none !important;border-radius:0;color:#999;}
 .nav-justified>li>a:hover,
 .nav-justified>li>a:active{ background:#fff;color:#777;}
+.nav-justified>li.active{ border-right:none;}
 .nav-justified>li.active:before{ font-family:'shanticon'; font-size:2em; content: '\e646'; position:absolute; left:50%; top:100%; margin:-0.56em 0 0 -0.5em;}
 .nav-justified>li.active>a,
 .nav-justified>li.active>a:hover,
