@@ -44,6 +44,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
+	
 	// Add Meta Tags
 	$metas = array(
 		'ie_edge' => array(
@@ -64,9 +65,13 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 			'#weight' => -998,
 		),
 	);
+	
 	foreach($metas as $key => $details) {
 		drupal_add_html_head($details, $key);
 	}
+	
+  drupal_add_library('system', 'ui');
+	
 	//_shanti_sarvaka_add_metatags(); // Adds favicon meta tags NOT needed automatically picked up by device
 	// Adding Bootstrap CDN Resoures
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
