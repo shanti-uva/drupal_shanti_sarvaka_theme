@@ -933,9 +933,16 @@ function shanti_sarvaka_checkboxes($variables) {
 	return theme_checkboxes($variables);
 }
 
+function shanti_sarvaka_radio($vars) {
+	$radio = theme_radio($vars);
+	return '<label class="radio-inline" >' . $radio . '</label>';
+}
+
+/*
 function shanti_sarvaka_radios($variables) {
 	//dpm($variables, 'vars in radios');
 	$el = $variables['element'];
+	dpm($el, 'element');
 	if(isset($el['#attributes']['class'][0]) && $el['#attributes']['class'][0] == 'shanti-options') {
 		$out = '';
 		foreach($el['#options'] as $n => $op) {
@@ -947,7 +954,7 @@ function shanti_sarvaka_radios($variables) {
 		return $out;
  	}
 	return theme_checkboxes($variables);
-}
+}*/
 
 function shanti_sarvaka_textfield($variables) {
   $element = &$variables['element'];
