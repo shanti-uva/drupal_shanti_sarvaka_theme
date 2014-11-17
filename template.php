@@ -617,7 +617,7 @@ function shanti_sarvaka_carousel($variables) {
   $el = $variables['element'];
   $html = '<div class="container-fluid carouseldiv">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12">
 
           <div class="carousel-header show-more"><span>' . $el['title'] . '</span>' . $el['link'] . '</div>
 
