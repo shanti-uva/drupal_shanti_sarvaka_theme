@@ -606,16 +606,24 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
 
 /**
  * Implements hook_carousel, custom theme function for carousels defined above in hook_theme
- * Element array has child called "slides". Each slide has the following variables:
- *    nid
- *    title
- *    author
- *    date
- *    link
- *    path
- *    summary
- *    img
- *    itemcount
+ * $variables['element'] = array(
+ * 	'title' => 'title above carousel',
+ * 	'link'  => 'link in upper right corner above carousel',
+ * 	'slides' => array(
+ * 		'0' => array (
+ * 			nid: Node ID
+ *      title: title of node
+ *      author: author of node
+ *      date: date node created
+ *      path: path linking to node
+ *      summary: description 
+ *      img: 400 x 300 resized/cropped image
+ *      itemcount: number of items contained, if a group (opt.)
+ * 		),
+ * 		etc...
+ * 	)
+ * );
+ *    
  *
  */
 function shanti_sarvaka_carousel($variables) {
@@ -630,11 +638,12 @@ function shanti_sarvaka_carousel($variables) {
               <div class="carousel-inner">';
   foreach($el['slides'] as $n => $slide) {
     $active = ($n == 0) ? 'active' : '';
+		$itemcount = (!empty($slide['itemcount'])) ? ', ' . $slide['itemcount'] : '';
     $html .= '<!-- Slide' . $n . ' -->
       <div class="item ' . $active . '">
         <div class="carousel-main-content col-sm-7 col-md-8 col-lg-9">
           <div><h3 class="carousel-title"><a href="' . $slide['path'] . '"><span class="icon shanticon-stack"></span> ' . $slide['title'] . '</a></h3></div>
-          <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . ', ' . $slide['itemcount'] . '</div>
+          <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . $itemcount . '</div>
           <div class="carousel-description">' . $slide['summary'] . '</div>
           <p class="show-more h5"><a href="' . $slide['path'] . '">' . t('View Collection') . ' </a></p>
         </div>
