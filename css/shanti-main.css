@@ -884,9 +884,9 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 
 
 .pagerer { /* table */ float:right;font-size:0.88em;text-transform:uppercase;}
-.pagerer-page{ /* the input for page count */ border-radius:2px; border:none;	font-size:0.88em;padding-top: 0.12em;line-height:1.25em;color: #6d7afc; width:2.68em !important; position:relative; top:-0.1rem; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
+.pagerer-page{ /* the input for page count */ border-radius:2px; border:none;	font-size:0.88em;padding-top: 0.12em;line-height:1.25em;color: #6d7afc; width:2.68em !important; position:relative; top:-1rem; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;}
-.pager{ /* unordered list */ /*margin:-0.2rem 1rem 0 0;display:inline;*/text-align:right;float:right;}
+.pager{ /* unordered list */ /*margin:-0.2rem 1rem 0 0;display:inline;*/text-align:right;float:right;position:relative;right:1rem;}
 .pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .pager li>a{ border:none;color:#aaa;padding:0.12em 0.5em;margin:0;background:transparent;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;}
 .pager li>a:hover,
