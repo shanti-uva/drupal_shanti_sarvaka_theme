@@ -696,8 +696,8 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 /*--- carousel-feature-detail right-side teaser boxes ---*/
 .carousel-related-resource-group{ padding-right:0 !important;margin-left:0;}
 .carousel-resource-item{ padding-left:0 !important;}
-.carousel-resource-item span{ display:block;width:100%;float:left;height:13rem;overflow:hidden;margin-bottom:0.8rem;}
-.carousel-resource-item img{ background:#eee;width:100%;height:auto;}
+.carousel-resource-item span{ display:block;height:25rem;width:100%;float:left;overflow:hidden;margin-bottom:0.8rem;}
+.carousel-resource-item img{ background:#eee;width:auto;height:100%;}
 .carousel-resource-item p{ color:#555; font-size:0.88em;}
 .carousel-resource-item h6{ color:#888;font-size:0.82em;margin:0.4rem 0 0.7rem;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .carousel-resource-item h5{ color:#606060;font-size:1em;margin:0.3rem 0 0.5rem;}
@@ -745,35 +745,31 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .carousel-feature-slides.small-slides p{ height:25%;}
 /*----- END small carousel slides -----*/
 
-.carousel-feature-slides li div a{}
-
-@media (min-width:350px) {
-}
 
 @media (min-width:400px) {
 	.feature-slide .carousel-header span{ font-size:1.06em;}
-	.carousel-resource-item span{ height:12.5rem;}
+	.carousel-resource-item span{ height:28rem;}
 }
 
-@media (max-width:480px) {
+@media (max-width:479px) {
 	.carousel-related-resource-group .col-xs-6{ width:100%;}
 }
 
 @media (min-width:480px) {
-
-}
-
-@media (min-width:550px) {
-	.carousel-resource-item span{ height:15rem;}
+	.carousel-resource-item span{ height:17rem;}
 }
 
 @media (min-width:640px) {
+	.carousel-resource-item span{ height:24rem;}
+}
 
+@media (max-width:767px) {
+	.carousel-feature-detail > .container-fluid{ padding-left:0;padding-right:0;}
 }
 
 @media (min-width:768px) {
 	.feature-slide .carousel-header span{ font-size:1.12em;}
-	.carousel-resource-item span{ height:11rem;}
+	.carousel-resource-item span{ height:12rem;}
 	.carousel-resource-item img{ width:16.5rem;}
 	.carousel-related-resource-group{ padding-left:2.5rem;}
 	.carousel-feature-slides p{ font-size:0.82em;}
@@ -1289,7 +1285,7 @@ form table td.label{ padding-top:0.68em !important;}
 .views-field{ padding:0 0.5rem 0 0; font-size:0.93em;}
 .views-field img{ margin:0.2rem;}
 .views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type{ font-size:0.82em;}
-.views-field.views-field-title{ width:40%;}
+.views-table.cols-8 .views-field.views-field-title{ width:40%;}
 
 .admin-menu .views-field-title .bootstrap-select > .btn { /* width:100% !important; commented out for Video Edit page edits */}
 
