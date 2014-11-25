@@ -617,7 +617,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
  *      date: date node created
  *      path: path linking to node
  *      summary: description 
- *      img: 400 x 300 resized/cropped image
+ *      img: url to a 400 x 300 resized/cropped image for src attribute
  *      itemcount: number of items contained, if a group (opt.)
  * 		),
  * 		etc...
@@ -673,8 +673,8 @@ function shanti_sarvaka_carousel($variables) {
  * 	Variables:
  * 		- label 	(string) 	: Label shown and header of popover
  * 		- desc 		(string) 	: Description of item
- * 		- tree 		(array) 	: ancestor tree
- * 		- links 	(array) 	: links to show in footer stripes
+ * 		- tree 		(array) 	: Ancestor tree of preformatted links: <a href="..">name</a>
+ * 		- links 	(array) 	: Series of links to show in footer stripes
  */
 function shanti_sarvaka_info_popover($variables) {
 	$html = "<span>{$variables['label']}</span><span class=\"popover-link\"><span class=\"popover-link-tip\"></span><span class=\"icon shanticon-menu3\"></span></span>
