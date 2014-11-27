@@ -51,7 +51,7 @@
 	      }, settings.shanti_sarvaka || {});
 
 	      $.fn.popover.Constructor.DEFAULTS.trigger = 'hover';
-	      $.fn.popover.Constructor.DEFAULTS.placement = 'right';
+	      $.fn.popover.Constructor.DEFAULTS.placement = 'auto';
 	      $.fn.popover.Constructor.DEFAULTS.html = true;
 	      $.fn.popover.Constructor.DEFAULTS.delay = { "show": 100, "hide": 60000 };
 	      $.fn.popover.Constructor.DEFAULTS.template = '<div class="popover related-resources-popover" role="tooltip"><div class="arrow"></div><h5 class="popover-title"></h5><div class="popover-content"></div></div>';
