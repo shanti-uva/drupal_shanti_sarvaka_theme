@@ -212,7 +212,7 @@ function shanti_sarvaka_banner_tabs(&$banner) {
 	$current_path = current_path();
 	// find menu blocks in banner and conver to secondary tab links
 	foreach($banner as $itemnm => $item) {
-		if(substr($itemnm, 0, 5) == 'menu_') {
+		if($itemnm == 'system_navigation' || substr($itemnm, 0, 5) == 'menu_') {
 			$menus[] = $itemnm;
 			foreach($item as $n => $link) {
 				if(is_numeric($n)) {
