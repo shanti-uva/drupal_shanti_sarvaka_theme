@@ -1115,6 +1115,9 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 
 
 .field-name-field-pbcore-description > .field-items > .field-item{ margin-bottom: 12px;}
+
+.field.field-type-image { margin-right: 10px; }
+
 .field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{ padding:5px;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
 
 .form-item.form-type-select.form-item-spaces-features-transcripts-settings{ width:7em;}

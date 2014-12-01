@@ -337,6 +337,9 @@ function shanti_sarvaka_preprocess_field(&$vars) {
 			$emu = '<p>' . $emu . '</p>';
 			$emu = preg_replace('/\n/','</p><p>', $emu);
 		}
+	} elseif ($vars['element']['#field_type'] == 'image') {
+		$vars['classes_array'][] = 'img-thumbnail';
+		$vars['classes_array'][] = 'pull-left';
 	}
 }
 
@@ -820,6 +823,9 @@ function shanti_sarvaka_form($variables) {
 	return theme_form($variables);
 }
 */
+/*function shanti_sarvaka_field__image($variables) {
+	
+}*/
 
 /**
  * Theme buttons to use Bootstrap Markup
