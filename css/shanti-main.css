@@ -699,11 +699,11 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .carousel-related-resource-group{ padding-right:0 !important;margin-left:0;}
 .carousel-resource-item{padding-top:0.75rem;padding-left:0 !important;}
 .carousel-resource-item span{ display:block;height:25rem;width:100%;float:left;overflow:hidden;margin-bottom:0.8rem;}
-.carousel-resource-item img{ background:#eee;width:auto;height:100%;border:3px solid transparent;}
+.carousel-resource-item img{ background:#eee;width:auto;height:100%;border:3px solid #fff;}
 .carousel-resource-item a:hover img{ border:3px solid #32ccca;}
 .carousel-resource-item p{ color:#555; font-size:0.88em;}
 .carousel-resource-item h6{ color:#888;font-size:0.82em;margin:0.4rem 0 0.7rem;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.carousel-resource-item h5{ color:#606060;font-size:1em;margin:0.3rem 0 0.5rem;}
+.carousel-resource-item h5{ color:#606060;font-size:0.93em;margin:0.3rem 0 0.5rem;}
 .carousel-resource-item p, .carousel-resource-item h6, .carousel-resource-item h5{ padding-left:0.4rem;}
 .carousel-resource-item a:hover h6,.carousel-resource-item a:focus h6{ }
 .carousel-resource-item a:hover h5,.carousel-resource-item a:focus h5{ color:rgb(207, 47, 30);}
