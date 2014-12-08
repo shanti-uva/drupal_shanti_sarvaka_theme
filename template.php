@@ -187,6 +187,9 @@ function shanti_sarvaka_preprocess_region(&$variables) {
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
+	/*if(isset($block->region) && $block->region == 'sidebar_second') {
+		dpm($variables, 'block vars');
+	}*/
 	if(isset($block->region)) {
 		$region = $block->region;
 		// Header blocks
