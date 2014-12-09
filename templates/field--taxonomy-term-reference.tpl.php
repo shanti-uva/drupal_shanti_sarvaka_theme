@@ -3,7 +3,7 @@
 /**
  * field--taxonomy-term-reference Template for Shanti Sarvaka
  * 	Replace divs with spans so multiple entries in a field can be on the same line
- * 
+ * 	
  * from field module:
  * 
  * @file field.tpl.php
@@ -61,7 +61,7 @@
   	<?php if($element['#label_display'] == 'above'): ?>
 	  	<ul>
 	    <?php foreach ($items as $delta => $item): ?>
-	      <li class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></li>
+	     <li class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></li>
 	    <?php endforeach; ?>
 	    </ul>
 	  <?php else: ?>
