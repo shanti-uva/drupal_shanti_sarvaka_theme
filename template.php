@@ -171,6 +171,8 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 function shanti_sarvaka_preprocess_node(&$variables) {
   //dpm($variables, 'in node preprocess');
   $variables['date'] = Date('j M Y', $variables['node']->created);
+	/*$b = block_get_blocks_by_region('sidebar_second');
+	dpm($b, 'sidebar blocks');*/
 }
 
 /** Unnecessary
@@ -188,10 +190,10 @@ function shanti_sarvaka_preprocess_region(&$variables) {
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
 	/*if(isset($block->region) && $block->region == 'sidebar_second') {
-		dpm($variables, 'block vars');
+		dpm($variables, $variables['block_html_id']);
 	}*/
-	if(isset($block->region)) {
-		$region = $block->region;
+	$region = $block->region;
+	if( $region ) {
 		// Header blocks
 	  // If needed, for site custom blocks added to header, can customize icon, bootstrap class, and wrapping markup
 	  // If we want to allow certain blocks to be "dropped" into the header and not just hard-coded like explore, language chooser, and options
