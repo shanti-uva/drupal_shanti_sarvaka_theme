@@ -835,6 +835,7 @@ function shanti_sarvaka_form($variables) {
  * Theme buttons to use Bootstrap Markup
  */
 function shanti_sarvaka_button($variables) {
+	//dpm($variables, 'vars in button');
   $element = $variables['element'];
   $text = $element['#value'];
 	// Deal with custom #icon field
@@ -856,7 +857,7 @@ function shanti_sarvaka_button($variables) {
   	$element['#attributes']['class'][] = 'form-button-disabled';
   }
 	//dpr($element);
-	if(strpos($element['#id'], 'remove-button') > -1) {
+	if(strpos($element['#id'], 'remove-button') > -1 || $element['#value'] == 'Remove') {
 		$element['#attributes']['class'][] = 'btn-delete';
 		$element['#attributes']['class'][] = 'btn-sm';
 		$element['#attributes']['class'][] = 'btn-icon';
