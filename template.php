@@ -510,9 +510,10 @@ function shanti_sarvaka_create_user_menu($um) {
 			return false;
 		}
   });
+	/*
   foreach($mylinks as $k => $item) {
 		unset($um[$k]);
-  }
+  }*/
 
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
@@ -542,7 +543,7 @@ function shanti_sarvaka_create_user_menu($um) {
     // Add theme custom ones
     $acctarray = array(
       'link' => array(
-        'title' => t('My Account'),
+        'title' => t('Account'),
         'href' => '#',
 
       ),
@@ -564,7 +565,7 @@ function shanti_sarvaka_create_user_menu($um) {
         ),
     );
     // Add in any links with "My" in the title under account menu
-    $myarray = array();
+    /*$myarray = array();
     foreach($mylinks as $n => $link) {
 		$myarray[$n] = array(
 		   'link' => array(
@@ -573,9 +574,10 @@ function shanti_sarvaka_create_user_menu($um) {
 			),
 			'below' => array(),
 		) ;
-    }
-    array_splice($acctarray['below'], 1, 0, $myarray);
+    }*/
+    //array_splice($acctarray['below'], 1, 0, $myarray);
     array_unshift($um, $acctarray);
+		//array_unshift($um, $myarray);
   }
   return shanti_sarvaka_user_menu($um, TRUE);
 }
