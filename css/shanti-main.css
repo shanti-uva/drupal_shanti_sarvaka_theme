@@ -678,6 +678,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 
 
 /*--- BEGIN: top-tier of 2-tier carousel ---*/
+.feature-carousel-tabpanel{ margin-bottom:1.5rem;}
 .feature-slide .carousel-header{ margin-top:0.5rem;}
 .feature-slide .carousel-header span{ font-size:0.93em;}
 
@@ -687,8 +688,9 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .feature-slide-title a{ color: #404040;border:none;}
 .feature-slide-title a span:before{ color:#555;content:'\e62c';}
 .feature-slide-title-byline{ font-size:1em;display:block;color: #777;font-style: italic;margin: 1rem 0 0.2rem;}
+.feature-slide-detail-content{ margin-bottom:1rem;}
 .feature-slide-description{ font-size:0.93em;margin-bottom:0;overflow:hidden;}
-.feature-slide-detail-content .go-to-link a{ font-size:0.82em;font-weight:bold;margin-bottom:1rem;}
+.feature-slide-detail-content .go-to-link a{ font-size:0.82em;font-weight:bold;}
 .feature-slide-detail-content .go-to-link a:hover,.carousel-main-content .go-to-link a:focus{ color: rgb(207, 47, 30);}
 
 /*--- top-tier carousel-feature-detail right-side teaser boxes ---*/
@@ -719,10 +721,10 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 
 /*--- lower-tier of 2-tier carousel ---*/
 .carousel-feature-slides{ margin-top:1rem !important;}
-.carousel-feature-slides li div a{ font-family:'shanticon'; border:3px solid transparent;position:relative;display:block; margin:1rem 1rem 1rem 0;-webkit-transition: border 500ms ease 0s; transition: border 500ms ease 0s;}
+.carousel-feature-slides li div a{ font-family:'shanticon'; border:5px solid transparent;position:relative;display:block; margin:1rem 1rem 1rem 0;-webkit-transition: border 500ms ease 0s; transition: border 500ms ease 0s;}
 .carousel-feature-slides li div a:last-child{ margin-right:0;}
-.carousel-feature-slides li div a:hover,.carousel-feature-slides li div a:focus{ border:3px solid #32ccca;}
-.carousel-feature-slides li.active div a{ background:#32ccca; padding:2px;}
+.carousel-feature-slides li div a:hover,.carousel-feature-slides li div a:focus,
+.carousel-feature-slides li.active div a{ border-color: #32ccca;}
 .carousel-feature-slides li.active div a:before{ color:#32ccca;font-size:3rem;content:'\e645';position:absolute;left:50%;top: -2.8rem;margin-left:-1.5rem;}
 .carousel-feature-slides img{ background:#fff;border-bottom:1px solid #aaa;}
 .carousel-feature-slides p{ background:#fff;color:#444;font-size:0.75em;width:100%;padding:0.5rem 1rem;margin:0;overflow:hidden;}
@@ -745,9 +747,9 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .feature-slide.tab-pane.active{ display:block !important;}
 
 /*----- BEGIN small carousel slides -----*/
-.carousel-feature-slides.small-slides li span{ height:75%;}
-.carousel-feature-slides.small-slides img{ height:auto;}
-.carousel-feature-slides.small-slides p{ height:25%;}
+/* .carousel-feature-slides.bx-small-slides li span{ height:75%;}
+.carousel-feature-slides.bx-small-slides img{ height:auto;}
+.carousel-feature-slides.bx-small-slides p{ height:25%;} */
 /*----- END small carousel slides -----*/
 
 
