@@ -731,7 +731,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .carousel-feature-slides p span{ display:block;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
 .carousel-feature-slides p strong{ margin-right:0.4rem;}
 
-.bx-wrapper .bx-viewport{ height: auto; /*position:relative;*/ left:0 !important; box-shadow:none !important; background:transparent !important; border:none !important;}
+.bx-wrapper .bx-viewport{ height: auto !important; /*position:relative;*/ left:0 !important; box-shadow:none !important; background:transparent !important; border:none !important;}
 .bx-wrapper .bx-pager{ position:absolute; bottom:-2.5rem;}
 /*--- carousel control buttons ---*/
 .bx-controls-direction a{ color:#eee;font-size:0 !important;text-indent:0 !important;display:block;margin-top: -2rem !important;position:relative;top:50%;opacity:0.6;filter:alpha(opacity=60);background:#32ccca !important; width:5rem !important;height:5rem !important;background-image: none;text-shadow:none;text-align:center;border-radius:0;border:none;}
