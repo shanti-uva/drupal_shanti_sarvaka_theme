@@ -590,9 +590,9 @@
   			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
         var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
 
-        $active.find('a').prepend('<i class="glyphicon glyphicon-minus"></i>');
+        $active.find('a').prepend('<span class="glyphicon glyphicon-minus"></span>');
 
-        accorddivs.find('.panel-heading').once('expgylph').not($active).find('a').prepend('<i class="glyphicon glyphicon-plus"></i>');
+        accorddivs.find('.panel-heading').once('expgylph').not($active).find('a').prepend('<span class="glyphicon glyphicon-plus"></span>');
 
         accorddivs.on('show.bs.collapse', function (e) {
   					var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
