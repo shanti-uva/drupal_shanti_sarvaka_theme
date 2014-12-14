@@ -168,7 +168,7 @@ object.flip_label{ display:none;}
 .advanced-view .form-group{ border-top:1px solid #e0e0e0; margin:0 8px;}
 .advanced-view .form-group.last{ padding-bottom:0;}
 
-.input-section label{ color:#444; font-size:13px; line-height:30px; height:28px; padding-right:0; margin-right:0;}
+.input-section label{ color:#444; font-size:13px; line-height:30px; height:28px; padding-right:0; margin-left:0px; margin-right:0; text-transform:capitalize;}
 
 /*--- toggle links for search panel ---*/
 .input-section .toggle-link{ background:#f8f8f8;color:#dc3c47;font-size:0.93em;display:block;text-align:right;font-weight:600; line-height:0.88em; height:1.12em; margin:0;padding:0 25px 0 0;text-decoration:none;font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
