@@ -50,7 +50,7 @@
 
 
     <!-- Begin Content Region -->
-    <main class="main-wrapper container">
+    <main class="main-wrapper container-fluid">
       <article class="main-content" role="main">
         <div class="row">
 
