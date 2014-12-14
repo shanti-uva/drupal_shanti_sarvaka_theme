@@ -132,7 +132,7 @@ object.flip_label{ display:none;}
 .input-section .input-group .btn.btn-default:hover{ background:#eee; color:#d00;}
 .input-section .input-group .btn.btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
 .input-section .input-group .btn.btn-default .icon{ font-family: 'Glyphicons Halflings' !important;	background:transparent;}
-.input-section .input-group .btn.btn-default .icon:before{ content: "\e080"; position:relative; right:0.25rem; top:-0.5rem;}
+.input-section .input-group .btn.btn-default .icon:before{ content: '\e080'; position:relative; right:0.25rem; top:-0.56rem;}
 .input-section .input-group .btn.btn-default:active .icon,
 .input-section .input-group .btn.btn-default.active .icon{ color:#777;}
 /*--- clear all button ---*/
@@ -168,13 +168,13 @@ object.flip_label{ display:none;}
 .advanced-view .form-group{ border-top:1px solid #e0e0e0; margin:0 8px;}
 .advanced-view .form-group.last{ padding-bottom:0;}
 
-.input-section label{ color:#444; font-size:13px; line-height:30px; height:28px; padding-right:0; margin-left:0px; margin-right:0; text-transform:capitalize;}
+.input-section label{ color:#444; font-size:12px; line-height:30px; height:28px; padding-right:0; margin-left:0px; margin-right:0; text-transform:capitalize;}
 
 /*--- toggle links for search panel ---*/
-.input-section .toggle-link{ background:#f8f8f8;color:#dc3c47;font-size:0.93em;display:block;text-align:right;font-weight:600; line-height:0.88em; height:1.12em; margin:0;padding:0 25px 0 0;text-decoration:none;font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.input-section .toggle-link{ background:#f8f8f8;color:#d00;font-size:0.82em;display:block;text-align:right;font-weight:600; line-height:0.93em; height:1.12em; margin:0;padding:0 25px 0 0;text-decoration:none;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .input-section .toggle-link:hover{ text-decoration:none !important; color:#555;}
 .input-section .toggle-link .icon{ font-family:'FontAwesome';}
-.input-section .toggle-link .icon:before{ color:#dc3c47; font-family:'FontAwesome'; content:"\f067"; font-size:0.68em; margin-right:0.12em;}
+.input-section .toggle-link .icon:before{ color:#d00; font-family:'FontAwesome'; content:'\f067'; font-size:0.82em; margin-right:0.25em;}
 .input-section .toggle-link:hover .icon:before{ color:#555;}
 /*---------------------------*/
 /*--- custom sizes & position ---*/
@@ -202,13 +202,13 @@ object.flip_label{ display:none;}
 
 .input-section .icheckbox_minimal-red,
 .input-section .iradio_minimal-red{
-	height:1.44em;
+	height:1.5em;
 	margin-right: 4px;
 }
 
 .input-section .radio-inline input,
-.input-section .radio input[type="radio"],
-.input-section .radio-inline input[type="radio"]{ margin-left:5px;}
+.input-section .radio input[type='radio'],
+.input-section .radio-inline input[type='radio']{ margin-left:5px;}
 
 .input-section .checkbox-inline,
 .input-section .radio-inline{ padding:0 0 0 3px;}
@@ -220,7 +220,7 @@ object.flip_label{ display:none;}
 .input-section .radio-inline>div,
 .input-section .checkbox-inline>div{ position:relative; top:-2px; margin:0;padding:0;} /* graphic icon */
 
-.input-section label.radio-inline:first-child{ width:6.25em; min-width:6.25em; max-width:15em; padding-left:4px;}
+.input-section label.radio-inline:first-child{ width:6.62em; min-width:6.62em; max-width:15em; padding-left:3px;}
 
 /*-----------------------------------------------*/
 /*---- select dropdown -----*/
@@ -259,7 +259,7 @@ object.flip_label{ display:none;}
 	background-image:none;
 }
 
-.input-section .bootstrap-select.btn-group:not(.input-group-btn){ margin-top:1rem;}
+.input-section .bootstrap-select.btn-group:not(.input-group-btn){ margin-top:0.82rem;}
 
 /*--- dropdown ---*/
 .input-section .dropdown-menu.open{ border-radius:10px;background-clip: padding-box;}
@@ -268,7 +268,7 @@ object.flip_label{ display:none;}
 .input-section .bootstrap-select.btn-group .dropdown-menu{ height:250px; overflow:auto;}
 
 .input-section .selectpicker .caret{ border:none; }
-.input-section .selectpicker .caret:before{ color:#dc3c47; font-size:17px; font-family: 'shanti-icons'; content: "\e620"; /* icon dbl caret */ position:absolute; top:-10px; right:0px;}
+.input-section .selectpicker .caret:before{ color:#d00; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon dbl caret */ position:absolute; top:-11px; right:0px;}
 
 .input-section .selectpicker li{ padding:0; overflow:hidden;}
 .input-section .selectpicker li a{ color:#444; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
@@ -290,7 +290,7 @@ object.flip_label{ display:none;}
 .input-section .selectpicker li:hover span.text,
 .input-section .selectpicker li:active span.text{ color:#fff !important; background: transparent !important; }
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color:#dc3c47;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color:#d00;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:focus .check-mark{ color:#fff;}
  /* search errors */
@@ -326,7 +326,7 @@ object.flip_label{ display:none;}
 .advanced-view .form-group.advanced-input .form-control:hover{ border: 1px solid #ccc; color:#777;}
 .advanced-view .form-group.advanced-input .form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8; box-shadow: 0 0 4px #949bd8;}
 
-.advanced-view .form-group.advanced-input.select-type > span{ position:relative;top:3px;left:4px;color:#404040; }
+.advanced-view .form-group.advanced-input.select-type > span{ font-size: 0.93em; position:relative;top:6px;left:4px; }
 /*--- END advanced ---*/
 
 /*----------------------------------------------------*/
@@ -365,7 +365,7 @@ object.flip_label{ display:none;}
 .view-section .nav-tabs>li>a:focus{  border-color:#ddd; border-top:2px solid #ccc; color:#333; background:white;}
 .view-section .nav-tabs>li.active>a,
 .view-section .nav-tabs>li.active>a:hover,
-.view-section .nav-tabs>li.active>a:focus{ color:#dc3c47; font-size:14px; background:#f8f8f8; text-decoration:none; border-color:#ddd; border-top:2px solid #e36159; border-bottom-color:transparent;}
+.view-section .nav-tabs>li.active>a:focus{ color:#d00; font-size:14px; background:#f8f8f8; text-decoration:none; border-color:#ddd; border-top:2px solid #e36159; border-bottom-color:transparent;}
 .view-section .listview>div,
 .view-section .treeview>div{ padding:0; overflow:auto;}
 .view-section .listview>div{ padding-top:7px;}
@@ -377,19 +377,19 @@ object.flip_label{ display:none;}
 
 /*---- START list table view ----*/
 .view-section table.table-responsive{ text-align:center; border:none;}
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .view-section table.table-results a{ font-style:italic;}
 
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; height:20px; margin-bottom:0; margin:0 2%; width:96%; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.view-section table.table-results{ border:none; font-size:13px; line-height:20px; height:20px; margin-bottom:0; margin:0 2%; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .view-section table.table-results a{ font-style:italic;}
 .view-section table.table-results tbody>tr,
 .view-section table.table-results thead tr th,
 .view-section table.table-results tbody>tr>td{ line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
 .view-section table.table-results tbody tr:hover{ background: #fff;}
-.view-section table.table-results thead tr th:after{ color:#555; font-family: 'kmaps-icons'; content: "\e620"; font-size: 14px; margin-left:0; position:relative; top:2px;}
+.view-section table.table-results thead tr th:after{ color:#555; font-family: 'kmaps-icons'; content: '\e620'; font-size: 14px; margin-left:0; position:relative; top:2px;}
 .view-section table.table-results thead tr th{ color:#333;}
 .view-section table.table-results thead tr th:hover,
-.view-section table.table-results thead tr th:hover:after{ color:#dc3c47; cursor:pointer;}
+.view-section table.table-results thead tr th:hover:after{ color:#d00; cursor:pointer;}
 
 .view-section .table>thead>tr{ border-bottom:2px solid #ddd;}
 .view-section .table>thead>tr>th{ border-bottom:none;}
@@ -453,7 +453,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     margin-right: 0;
     color: #888;
 }
-.view-section .popover-title .kmapid-display:before {color: #888;/*content: "kmapid: "*/}
+.view-section .popover-title .kmapid-display:before {color: #888;/*content: 'kmapid: '*/}
 .view-section .popover-content .badge {
     margin:0 5px;
     position: relative;
@@ -499,7 +499,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /*------------------------------*/
 /*---- START :: Search Tree ----*/
 /*------------------------------*/
-.view-section ul.fancytree-container{ margin:0; background:transparent; border:none; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+.view-section ul.fancytree-container{ margin:0; background:transparent; border:none; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; }
 .view-section ul.fancytree-container ul{ padding-top:0; margin-top:0;}
 .view-section ul.fancytree-container li{ }
 
@@ -525,7 +525,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	background: #fff;
 	color:transparent;
 	font-family: 'shanticon';
-	content: "\e625";
+	content: '\e625';
 	font-size: 1em;
 	float:left;
 	position:relative; top:4px; right:2px;
@@ -595,13 +595,13 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 }
 .view-section ul.fancytree-container .fancytree-node.fancytree-active:focus > .glyphicon,
 .view-section ul.fancytree-container .fancytree-node.fancytree-active .glyphicon {
-    color: #dc3c47;
+    color: #d00;
     background: transparent;
 }
 /*--- hihglight search text ---*/
 /*.view-section span.fancytree-title > em,*/
 .view-section mark {
-    color: #dc3c47;
+    color: #d00;
     font-style: normal;
     padding: 0;
     background: transparent;
