@@ -9,7 +9,7 @@
 
 Drupal.behaviors.sarvakaMbextruder = {
   attach: function (context, settings) {
-  	if(context == document) { 
+  	if(context == document) {
 	    var mywidth = Drupal.settings.shanti_sarvaka.flyoutWidth;
 	    $(".input-section, .view-section, .view-section .nav-tabs>li>a").css("display","block"); // show hidden containers after loading to prevent content flash
 			// Remove extruder div content so as to preserve AJAX events
@@ -32,19 +32,19 @@ Drupal.behaviors.sarvakaMbextruder = {
 	        $('span.fancytree-title').trunk8({ tooltip:false });
 	      }
 	    });
-	          
+
 	    // Bind event listener
 	    $(".extruder-content").resize(Drupal.ShantiSarvaka.checkWidth);
-	     
+
 	    if (!$(".extruder.right").hasClass("isOpened")) {
 	      $(".flap").click( function() {
 	        $(".extruder .text").css("width","100%");
 	      });
 	      // styles inline for now, forces
-	      $(".flap").prepend("<span><i class='icon shanticon-search'></i></span>");
+	      $(".flap").prepend("<span><span class='icon shanticon-search'></span></span>");
 	      $(".flap").addClass("on-flap");
 	    }
-	    
+
 	    // --- set class on dropdown menu for icon
 	    $('.shanti-field-title a').hover( function() {
 	      $(this).addClass('on-hover');
@@ -52,9 +52,9 @@ Drupal.behaviors.sarvakaMbextruder = {
 	    function () {
 	      $(this).removeClass('on-hover');
 	    });
-	      
+
 	    // --- set class on dropdown menu for icon
-	    $(".extruder.right .flap").hover( 
+	    $(".extruder.right .flap").hover(
 	      function () {
 	        $(this).addClass('on-hover');
 	      },
@@ -77,12 +77,12 @@ Drupal.behaviors.sarvakaMbextruder = {
 
   Drupal.behaviors.sarvakaSearchInit = {
     attach: function (context, settings) {
-    	if(context == document) { 
+    	if(context == document) {
 	       // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
 	      Drupal.ShantiSarvaka.searchTabHeight();
 	      $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.searchTabHeight );
 	    }
     }
   };
-  
+
 })(jQuery);
