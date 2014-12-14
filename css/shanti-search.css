@@ -164,7 +164,7 @@ object.flip_label{ display:none;}
 .input-section .search-group .radio-inline:first-child{ width: auto;  margin-right: 5px;}
 .input-section .search-group .radio-inline>div{ margin-right: 4px;}
 /*----- Advanced Options -----*/
-.advanced-view{ /*** height:275px;  height can help control cross-browser issues ***/ padding:0 0 .62em; background:#f8f8f8; width:100%; margin-right:0.25em;}
+.advanced-view{ /*** height:275px;  height can help control cross-browser issues ***/ padding:0; background:#f8f8f8; width:100%; margin-right:0.25em;}
 .advanced-view .form-group{ border-top:1px solid #e0e0e0; margin:0 8px;}
 .advanced-view .form-group.last{ padding-bottom:0;}
 
@@ -220,7 +220,7 @@ object.flip_label{ display:none;}
 .input-section .radio-inline>div,
 .input-section .checkbox-inline>div{ position:relative; top:-2px; margin:0;padding:0;} /* graphic icon */
 
-.input-section label.radio-inline:first-child{ width:6em; min-width:6em; max-width:15em; padding-left:4px;}
+.input-section label.radio-inline:first-child{ width:6.25em; min-width:6.25em; max-width:15em; padding-left:4px;}
 
 /*-----------------------------------------------*/
 /*---- select dropdown -----*/
@@ -258,6 +258,8 @@ object.flip_label{ display:none;}
 	background: #f5f5f5;
 	background-image:none;
 }
+
+.input-section .bootstrap-select.btn-group:not(.input-group-btn){ margin-top:1rem;}
 
 /*--- dropdown ---*/
 .input-section .dropdown-menu.open{ border-radius:10px;background-clip: padding-box;}
