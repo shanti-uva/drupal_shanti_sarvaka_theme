@@ -44,7 +44,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
-	
+
 	// Add Meta Tags
 	$metas = array(
 		'ie_edge' => array(
@@ -65,13 +65,13 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 			'#weight' => -998,
 		),
 	);
-	
+
 	foreach($metas as $key => $details) {
 		drupal_add_html_head($details, $key);
 	}
-	
+
   drupal_add_library('system', 'ui');
-	
+
 	//_shanti_sarvaka_add_metatags(); // Adds favicon meta tags NOT needed automatically picked up by device
 	// Adding Bootstrap CDN Resoures
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
@@ -140,7 +140,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     shanti_sarvaka_block_view_locale_language_alter($data, $block);
     $variables['language_switcher'] = '<li class="dropdown lang highlight" id="block-locale-language">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native .
-        '</span><i class="icon shanticon-arrowselect"></i></a>' . $data['content'] . '</li>';
+        '</span><span class="icon shanticon-arrowselect"></span></a>' . $data['content'] . '</li>';
   }
 
   /**
@@ -474,7 +474,7 @@ function shanti_sarvaka_menu_tree__shanti_explore_menu($variables) {
               . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4 class"collections-title">'
               . variable_get('explore_div_title', EXPLORE_DIV_TITLE) . '</h4>'
               . '<div class="shanti-collections"><ul>'
-              . $variables['tree'] . '</ul></div></div><button class="close"> <i class="icon shanticon-cancel"></i> </button></nav></section>';
+              . $variables['tree'] . '</ul></div></div><button class="close"> <span class="icon shanticon-cancel"></span> </button></nav></section>';
     return $html;
   }
 }
@@ -484,7 +484,7 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
   $href = $variables['element']['#href'];
   $title = $variables['element']['#title'];
   $class = explore_menu_get_iconclass($title);
-  return '<li><a href="' . $href . '"><i class="icon shanticon-' . $class . '"></i>' . $title . '</a></li>';
+  return '<li><a href="' . $href . '"><span class="icon shanticon-' . $class . '"></span>' . $title . '</a></li>';
 }
 
 /**
@@ -625,14 +625,14 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
  *      author: author of node
  *      date: date node created
  *      path: path linking to node
- *      summary: description 
+ *      summary: description
  *      img: url to a 400 x 300 resized/cropped image for src attribute
  *      itemcount: number of items contained, if a group (opt.)
  * 		),
  * 		etc...
  * 	)
  * );
- *    
+ *
  *
  */
 function shanti_sarvaka_carousel($variables) {
@@ -830,7 +830,7 @@ function shanti_sarvaka_form($variables) {
 }
 */
 /*function shanti_sarvaka_field__image($variables) {
-	
+
 }*/
 
 /**
@@ -972,7 +972,7 @@ function shanti_sarvaka_get_breadcrumbs($variables) {
 	$lidx = count($breadcrumbs) - 1;
 	$breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
   foreach($breadcrumbs as $crumb) {
-  	$icon = ($breadcrumbs[0] == $crumb) ? '' : ' <i class="icon shanticon-arrow3-right"></i>';
+  	$icon = ($breadcrumbs[0] == $crumb) ? '' : ' <span class="icon shanticon-arrow3-right"></span>';
     $output .= "<li>$crumb$icon</li>";
   }
   $output .= '</ol>';
@@ -994,10 +994,10 @@ function shanti_sarvaka_pagerer_mini($variables) {
   $variables['tags']['next'] = "NEXT_HERE";
   $variables['tags']['last'] = "LAST_HERE";
   $html = _pagerer_theme_handler('pagerer_mini', $variables);
-  $html = str_replace('FIRST_HERE','<i class="icon"></i>', $html);
-  $html = str_replace('PREVIOUS_HERE','<i class="icon"></i>', $html);
-  $html = str_replace('NEXT_HERE','<i class="icon"></i>', $html);
-  $html = str_replace('LAST_HERE','<i class="icon"></i>', $html);
+  $html = str_replace('FIRST_HERE','<span class="icon"></span>', $html);
+  $html = str_replace('PREVIOUS_HERE','<span class="icon"></span>', $html);
+  $html = str_replace('NEXT_HERE','<span class="icon"></span>', $html);
+  $html = str_replace('LAST_HERE','<span class="icon"></span>', $html);
   return $html;
 }
 
@@ -1038,7 +1038,7 @@ function shanti_sarvaka_service_links_node_format($variables) {
 				$text = t("Twitter");
 				break;
 		}
-		$icon = '<i class="icon ' . $icon . '"></i>';
+		$icon = '<span class="icon ' . $icon . '"></span>';
 		$l['html'] = TRUE;
     $html .= '<li>' . l($icon . ' ' . $text, $l['href'], $l) . '</li>';
   }

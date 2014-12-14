@@ -5,16 +5,16 @@
     <div class="navbar navbar-default" role="navigation">
 
 	      <nav class="navbar-buttons">
-	        <span class="menu-icon shanti-searchtoggle"><a href="#"><i class='icon shanticon-search'></i></a></span><!-- mobile < 400 : search -->
-	        <span class="menu-icon menu-toggle"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- desktop > 768 drilldown menu : main-menu -->
-	        <span class="menu-icon menu-maintoggle"><a href="#"><i class="icon shanticon-menu"></i></a></span><!-- mobile < 768 : main-menu -->
-	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore </span>Collections<i class="icon shanticon-directions"></i></a></span><!-- mobile < 768 : collections -->
+	        <span class="menu-icon shanti-searchtoggle"><a href="#"><span class='icon shanticon-search'></span></a></span><!-- mobile < 400 : search -->
+	        <span class="menu-icon menu-toggle"><a href="#"><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
+	        <span class="menu-icon menu-maintoggle"><a href="#"><span class="icon shanticon-menu"></span></a></span><!-- mobile < 768 : main-menu -->
+	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore </span>Collections<span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
 	      </nav>
 
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
 	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<?php print $site_name; ?> Homepage">
 	          <?php if($variables['shanti_site']): ?>
-	            <i class="icon shanticon-logo"></i><em>SHANTI</em><?php if($variables['use_admin_site_title']) {
+	            <span class="icon shanticon-logo"></span><em>SHANTI</em><?php if($variables['use_admin_site_title']) {
 		            	print "<span class=\"site-title\">{$site_name}</span>";
 		            } ?>
 	          <?php else: ?>
@@ -31,7 +31,7 @@
 	          <ul class="nav navbar-nav navbar-right">
 	            <?php if(module_exists('explore_menu')): ?>
 	              <li id="collexplink" class="explore closed"><a href="#"><?php print $variables['explore_menu_link']; ?>
-	                <i class="icon shanticon-directions"></i></a></li>
+	                <span class="icon shanticon-directions"></span></a></li>
 			            <?php endif; ?>
 			            <?php  if(isset($variables['language_switcher'])) { print $variables['language_switcher']; }  ?>
 
@@ -57,7 +57,7 @@
           <!-- Banner Region -->
           <header class="col-xs-12 titlearea banner<?php print $variables['banner_class']; ?>">
            <div role="banner">
-            <h1 class="page-title"><i class="icon shanticon-<?php print $variables['icon_class']; ?>"></i><span><?php
+            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><span><?php
             	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
             		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
             	} else {
@@ -111,7 +111,7 @@
           <?php endif; ?>
         </div>
 
-        <a href="#" class="back-to-top"><i class="icon fa"></i></a>
+        <a href="#" class="back-to-top"><span class="icon fa"></span></a>
       </article>
 
 		  <!-- Search Flyout -->
