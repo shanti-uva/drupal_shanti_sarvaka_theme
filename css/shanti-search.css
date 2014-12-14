@@ -2,7 +2,7 @@
 /*--- START :: Sliding Panel ---*/
 /*----------------------------------------------*/
 /*--- clear default extruder styles -----*/
-.extruder, .extruder.right,.extruder .extruder-content, .extruder.right .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover{ overflow:visible; background-image:none; background:transparent;} 
+.extruder, .extruder.right,.extruder .extruder-content, .extruder.right .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover{ overflow:visible; background-image:none; background:transparent;}
 .extruder.open .extruder-content, .extruder.right.open .extruder-content,.extruder.right .flap,.extruder .voice,.extruder.right .text,.optionsPanel .panelVoice a{ -webkit-box-shadow:none;box-shadow:none; text-transform:none;}
 .extruder.right .extruder-content,.panel-default .panel-heading,.extruder.right .panel-heading,.extruder.right .panel-group,.extruder.right .panel-group .panel,.extruder.right .panel-default>.panel-heading{ border:none;}
 
@@ -90,13 +90,13 @@ object.flip_label{ display:none;}
 	font-size:1.06em;
 	height:35px; /* coordinate with button height below */
 	line-height:1.44em;
-	margin: 8px 0 0; 
+	margin: 8px 0 0;
 	padding:2px 60px 0 15px;
-  width:100%;  
+  width:100%;
 	overflow: auto;
 	vertical-align:middle;
 	-webkit-box-shadow:0 2px 5px #eee inset;
-	box-shadow:0 2px 5px #eee inset; 
+	box-shadow:0 2px 5px #eee inset;
 	border-collapse: separate; /* fix for ie9 shadow */
 	background: #fff;
 	-webkit-transition-property: all;
@@ -111,17 +111,18 @@ object.flip_label{ display:none;}
 .input-section .input-group .input-group-btn{ width:45px !important; /* set button width and position */ position:absolute; top:9px; right:12px; z-index:10; background:transparent; padding:0; margin:0;}
 
 /*--- button ---*/
-.input-section .input-group .btn.btn-default{ 
-	display:block; 
-	height:33px; /* 2px less than search input height above */		
+.input-section .input-group .btn.btn-default,
+.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+	display:block;
+	height:33px; /* 2px less than search input height above */
 	color:#888;
-	width:100%; 
+	width:100%;
 	border: 1px solid #e5e5e5;
 	border-width:0 0 0 1px;
   border-radius: 25px;
 	border-bottom-left-radius: 0;
-	border-top-left-radius: 0; 
-	background-clip: padding-box;	
+	border-top-left-radius: 0;
+	background-clip: padding-box;
 	-webkit-box-shadow:none;
 	box-shadow:none;
 	padding:0;
@@ -133,11 +134,11 @@ object.flip_label{ display:none;}
 .input-section .input-group .btn.btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
 .input-section .input-group .btn.btn-default .glyphicon{ font-family: 'Glyphicons Halflings';}
 .input-section .input-group .btn.btn-default .glyphicon:before{ content: "\e080"; position:relative; right:0.06em; top:0.32em;}
-.input-section .input-group .btn.btn-default:active .glyphicon.icon, 
+.input-section .input-group .btn.btn-default:active .glyphicon.icon,
 .input-section .input-group .btn.btn-default.active .glyphicon.icon{ color:#777;}
 /*--- clear all button ---*/
 .input-section .feature-group .feature-reset,
-.input-section .input-group .searchreset{ 
+.input-section .input-group .searchreset{
 	border:none;
 	background:transparent;
 	background-image:none;
@@ -147,7 +148,7 @@ object.flip_label{ display:none;}
 	right:46px;
 	top:9px;
 	z-index:10000;
-	font-size:1.5em; 
+	font-size:1.5em;
 	color:#ccc;
 	display:none;
 	padding:0;margin:0;
@@ -193,28 +194,28 @@ object.flip_label{ display:none;}
 
 /*--- iCheck :: radio and checkbox style overrides ---*/
 /*--- reset default size ---*/
-.icheckbox_minimal-red, 
-.iradio_minimal-red{ 
+.icheckbox_minimal-red,
+.iradio_minimal-red{
 	height:20px;
 	width:20px;
 	margin-right: 4px;
 }
 
-.input-section .icheckbox_minimal-red, 
-.input-section .iradio_minimal-red{ 
+.input-section .icheckbox_minimal-red,
+.input-section .iradio_minimal-red{
 	height:1.44em;
 	margin-right: 4px;
 }
 
 .input-section .radio-inline input,
-.input-section .radio input[type="radio"], 
+.input-section .radio input[type="radio"],
 .input-section .radio-inline input[type="radio"]{ margin-left:5px;}
 
 .input-section .checkbox-inline,
 .input-section .radio-inline{ padding:0 0 0 3px;}
 /* .input-section .checkbox-inline{ margin-left:1px;} */
 
-.input-section .radio-inline+.radio-inline, 
+.input-section .radio-inline+.radio-inline,
 .input-section .checkbox-inline+.checkbox-inline{ margin-left:0.06em;}
 
 .input-section .radio-inline>div,
@@ -226,33 +227,33 @@ object.flip_label{ display:none;}
 /*---- select dropdown -----*/
 .input-section .bootstrap-select{ width:100%; padding:0 5px 0 5px; margin-top:4px;margin-bottom:0;}
 .input-section .bootstrap-select .selectpicker{ line-height:27px; height:27px; padding:0; border:1px solid #ddd; width:100% !important;}
-.input-section .bootstrap-select .btn{ 
+.input-section .bootstrap-select .btn{
 	padding-left: 15px;
 	color:#666;
 	background: transparent;
 	background-image:none;
-	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%); 
-  background-image: -moz-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
-  background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
-  background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);  
+	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+  background-image: -moz-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+  background-image: -ms-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
   background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
-	/* 
+	/*
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
 	*/
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
-	border-radius:25px;  
+	border-radius:25px;
 	border-color: #eeee #eee #ddd;
   background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	overflow:hidden;
 	-webkit-box-shadow:none;
 	box-shadow:none;
 }
-.input-section .bootstrap-select .btn:hover{ 
-	border: 1px solid #ccc; 
-	background: #eee; 
+.input-section .bootstrap-select .btn:hover{
+	border: 1px solid #ccc;
+	background: #eee;
 }
-	
+
 .input-section .bootstrap-select .btn:focus,
 .input-section .bootstrap-select .btn.active{ outline:none !important; border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px 0 #5764de; box-shadow: 0 0 4px 0 #5764de; border-collapse: separate; /* fix for ie9 shadow */
 	background: #f5f5f5;
@@ -303,20 +304,20 @@ object.flip_label{ display:none;}
 
 
 .advanced-view .form-group.advanced-input{ padding:2px 5px 2px;} /*--- common input ---*/
-.advanced-view .form-group.advanced-input .form-control{ 
-	line-height:27px; 
-	height:27px; 
-	padding:0 15px; 
+.advanced-view .form-group.advanced-input .form-control{
+	line-height:27px;
+	height:27px;
+	padding:0 15px;
 	margin:2px 0;
 	width:100% !important;
 	color:#666;
 	background: #fff;
 	background-image:none;
 	border: 1px solid #ccc;
-	border-radius:18px;  	
+	border-radius:18px;
 	background-clip: padding-box;
 	overflow:hidden;
-	vertical-align:middle;	
+	vertical-align:middle;
 	-webkit-box-shadow:0px 2px 5px #eee inset;
 	box-shadow:0px 2px 5px #eee inset;
 	border-collapse: separate; /* fix for ie9 shadow */
@@ -345,7 +346,7 @@ object.flip_label{ display:none;}
 .view-section .nav-tabs>li>a{
 	color:#777;
 	font-size:14px;
-	line-height:25px;	
+	line-height:25px;
 	margin-right: 2px;
 	font-weight:bold;
 	padding:10px 0 5px 0;
@@ -359,10 +360,10 @@ object.flip_label{ display:none;}
 	transition: background-color 100ms;
 
 }
-.view-section .nav-tabs>li>a:hover, 
+.view-section .nav-tabs>li>a:hover,
 .view-section .nav-tabs>li>a:focus{  border-color:#ddd; border-top:2px solid #ccc; color:#333; background:white;}
-.view-section .nav-tabs>li.active>a, 
-.view-section .nav-tabs>li.active>a:hover, 
+.view-section .nav-tabs>li.active>a,
+.view-section .nav-tabs>li.active>a:hover,
 .view-section .nav-tabs>li.active>a:focus{ color:#dc3c47; font-size:14px; background:#f8f8f8; text-decoration:none; border-color:#ddd; border-top:2px solid #e36159; border-bottom-color:transparent;}
 .view-section .listview>div,
 .view-section .treeview>div{ padding:0; overflow:auto;}
@@ -460,10 +461,10 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     font-family: sans-serif;
     letter-spacing: 0.06em;
     border:1px solid #c0c0c0;
-    background:#f9f9f9; 
+    background:#f9f9f9;
     color:#444;
     padding:2px 6px;
-    line-height:8px; 
+    line-height:8px;
     height:15px;
 }
 .view-section .popover-content .associated:first-child .badge{ }
@@ -507,13 +508,13 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .fancytree-expander:before{ }
 .view-section .fancytree-node.fancytree-active{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
 
-.view-section .fancytree-title{ 
-	color:#444; 
-	margin:0 0 0 -24px; 
-	padding-left:15px; 
+.view-section .fancytree-title{
+	color:#444;
+	margin:0 0 0 -24px;
+	padding-left:15px;
 	padding-top:2px;
-	line-height:1.5em; 
-	height:1.5em; 
+	line-height:1.5em;
+	height:1.5em;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -541,13 +542,13 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     background: #777; -webkit-box-shadow:none; box-shadow:none;
 }
 .view-section .fancytree-statusnode-wait .fancytree-title:before,
-.view-section .fancytree-statusnode-error .fancytree-title:before{ 
+.view-section .fancytree-statusnode-error .fancytree-title:before{
   width:0;
   height:0;
   display: none;
   color:transparent;
   -webkit-box-shadow:none;
-  box-shadow:none;	
+  box-shadow:none;
   background:transparent;
 }
 .view-section .fancytree-has-children>span.fancytree-title {
