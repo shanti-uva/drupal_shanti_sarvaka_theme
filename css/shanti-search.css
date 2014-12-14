@@ -90,7 +90,7 @@ object.flip_label{ display:none;}
 	font-size:1.06em;
 	height:35px; /* coordinate with button height below */
 	line-height:1.44em;
-	margin: 8px 0 0;
+	margin: 14px 0 0;
 	padding:2px 60px 0 15px;
   width:100%;
 	overflow: auto;
@@ -108,34 +108,33 @@ object.flip_label{ display:none;}
 .input-section .input-group input.form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
 /*--- button group ---*/
-.input-section .input-group .input-group-btn{ width:45px !important; /* set button width and position */ position:absolute; top:9px; right:12px; z-index:10; background:transparent; padding:0; margin:0;}
+.input-section .input-group .input-group-btn{ width:45px !important; /* set button width and position */ position:absolute; top:15px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
 
 /*--- button ---*/
-.input-section .input-group .btn.btn-default,
-.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+.input-section .input-group .btn.btn-default{
 	display:block;
 	height:33px; /* 2px less than search input height above */
-	color:#888;
+	color:#aaa;
 	width:100%;
 	border: 1px solid #e5e5e5;
 	border-width:0 0 0 1px;
-  border-radius: 25px;
-	border-bottom-left-radius: 0;
-	border-top-left-radius: 0;
+	border-radius:0;
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
 	background-clip: padding-box;
 	-webkit-box-shadow:none;
 	box-shadow:none;
 	padding:0;
 	margin:0;
-	font-size:14px;
+	font-size:1.7rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 .input-section .input-group .btn.btn-default:hover{ background:#eee; color:#dc3c47;}
 .input-section .input-group .btn.btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
-.input-section .input-group .btn.btn-default .glyphicon{ font-family: 'Glyphicons Halflings';}
-.input-section .input-group .btn.btn-default .glyphicon:before{ content: "\e080"; position:relative; right:0.06em; top:0.32em;}
-.input-section .input-group .btn.btn-default:active .glyphicon.icon,
-.input-section .input-group .btn.btn-default.active .glyphicon.icon{ color:#777;}
+.input-section .input-group .btn.btn-default .glyphicon{ font-family: 'Glyphicons Halflings';	background:transparent;}
+.input-section .input-group .btn.btn-default .glyphicon:before{ content: "\e080"; position:relative; right:0.12rem; top:0.25rem;}
+.input-section .input-group .btn.btn-default:active .glyphicon,
+.input-section .input-group .btn.btn-default.active .glyphicon{ color:#777;}
 /*--- clear all button ---*/
 .input-section .feature-group .feature-reset,
 .input-section .input-group .searchreset{
@@ -158,7 +157,7 @@ object.flip_label{ display:none;}
 /*-----------------------------------------------*/
 
 .input-section .form-group{ margin-bottom:7px;padding-left:0;}
-.input-section .search-group{ height:80px;}
+.input-section .search-group{ height:86px;}
 .input-section .search-group .form-group{ padding-left:0.75em;}
 .input-section .search-group .checkbox-inline:first-child{ margin-right: 5px;}
 .input-section .search-group .checkbox-inline>div{ margin-right: 4px;}
