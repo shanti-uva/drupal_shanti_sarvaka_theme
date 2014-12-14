@@ -126,15 +126,15 @@ object.flip_label{ display:none;}
 	box-shadow:none;
 	padding:0;
 	margin:0;
-	font-size:1.7rem;
+	font-size:1.2rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
-.input-section .input-group .btn.btn-default:hover{ background:#eee; color:#dc3c47;}
+.input-section .input-group .btn.btn-default:hover{ background:#eee; color:#d00;}
 .input-section .input-group .btn.btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
-.input-section .input-group .btn.btn-default .glyphicon{ font-family: 'Glyphicons Halflings';	background:transparent;}
-.input-section .input-group .btn.btn-default .glyphicon:before{ content: "\e080"; position:relative; right:0.12rem; top:0.25rem;}
-.input-section .input-group .btn.btn-default:active .glyphicon,
-.input-section .input-group .btn.btn-default.active .glyphicon{ color:#777;}
+.input-section .input-group .btn.btn-default .icon{ font-family: 'Glyphicons Halflings' !important;	background:transparent;}
+.input-section .input-group .btn.btn-default .icon:before{ content: "\e080"; position:relative; right:0.25rem; top:-0.5rem;}
+.input-section .input-group .btn.btn-default:active .icon,
+.input-section .input-group .btn.btn-default.active .icon{ color:#777;}
 /*--- clear all button ---*/
 .input-section .feature-group .feature-reset,
 .input-section .input-group .searchreset{
