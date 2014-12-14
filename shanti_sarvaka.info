@@ -1,4 +1,4 @@
-name = Shanti Sarvaka 
+name = Shanti Sarvaka
 description = A responsive Drupal 7 theme for all Shanti@UVa sites, built with Bootstrap.
 core = 7.x
 version = 1.x
@@ -45,7 +45,7 @@ stylesheets[all][] =  css/shanti-main.css
 scripts[] = js/inc/jquery/jquery-ui.min.js
 scripts[] = js/inc/jquery/jquery-migrate-1.2.1.js
 ; bootstrap js added in template.php file through CDN call
-;scripts[] = js/inc/bootstrap/bootstrap.min.js 
+;scripts[] = js/inc/bootstrap/bootstrap.min.js
 scripts[] = js/inc/menus/jquery.multilevelpushmenu.min.js
 scripts[] = js/inc/extruder/jquery.hoverIntent.min.js
 scripts[] = js/inc/extruder/jquery.mb.flipText.js
@@ -68,7 +68,7 @@ scripts[] = js/inc/other/trunk8.min.js
 scripts[] = js/inc/other/vjs.zencdn.net-4.5-video.js
 scripts[] = js/inc/other/equalHeights.js
 scripts[] = js/inc/jquery/jquery.imagesloaded.js
-scripts[] = js/inc/jquery/jquery.wookmark.min.js	
+scripts[] = js/inc/jquery/jquery.wookmark.min.js
 scripts[] = js/inc/other/modernizr-2.6.2.min.js
 scripts[] = js/inc/other/jssor.slider.mini.js
 scripts[] = js/inc/other/hammer.min.js
