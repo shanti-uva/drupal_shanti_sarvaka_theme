@@ -867,7 +867,7 @@ function shanti_sarvaka_button($variables) {
   	$element['#attributes']['class'][] = 'form-button-disabled';
   }
 	//dpr($element);
-	if(strpos($element['#id'], 'remove-button') > -1 || $element['#value'] == 'Remove') {
+	if((!empty($element['#id']) && strpos($element['#id'], 'remove-button') > -1) || $element['#value'] == 'Remove') {
 		$element['#attributes']['class'][] = 'btn-delete';
 		$element['#attributes']['class'][] = 'btn-sm';
 		$element['#attributes']['class'][] = 'btn-icon';
