@@ -696,8 +696,8 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     font-weight: normal;
     opacity: 0;
     position: relative;
-    left:7px;
-    top:-10px;
+    left:4rem;
+    top:200px;
     text-align: center;
     width: 130px;
 }
@@ -782,7 +782,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /*--- END SEARCH PANEL -----------*/
 /*--------------------------------*/
 
-/** Ajax Throbber **/
+/** Ajax Throbber 
 
 .ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
 	display: inline-block;
@@ -802,3 +802,4 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	color: #000;
 	z-index: 501;
 }
+**/
