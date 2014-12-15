@@ -166,6 +166,10 @@
 	      });
 
 	      /* Initialize Language Buttons */
+	     
+				// Language menu drop down init
+				$('#block-locale-language .dropdown-toggle').dropdown();
+
 	      // Language Chooser Functionality with ICheck
 	      $('body').on('ifChecked', 'input.optionlang', function() {
 	        var newLang = $(this).val().replace('lang:','');
@@ -455,7 +459,7 @@
   Drupal.behaviors.shanti_sarvaka_miscinit = {
     attach: function (context, settings) {
     	if(context == document) {
-
+								
 	      // Shanti-filters title keyword search field: use description for placeholder text
     		$('.shanti-filters .views-exposed-form .form-item input.form-text').each(function() {
     			var desc = $(this).parent().parent().next('.description');
