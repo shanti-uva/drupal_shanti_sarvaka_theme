@@ -609,6 +609,175 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /*---- END treeview -----*/
 
 
+
+/* ----- overlay timer ------ */
+/* ----- search loading ----- */
+
+@-moz-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+@-o-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+@-webkit-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+@keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+@-moz-keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+@-o-keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+@-webkit-keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+@keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+.loading-container,
+.loading {
+    height: 130px;
+    position: relative; top:-100px;
+    width: 130px;
+    border-radius: 100%;
+    background-clip: padding-box;
+}
+.loading-container { margin: 40px auto; }
+.loading {
+    border: 2px solid transparent;
+    border-color: transparent #777 transparent #777;
+    -moz-animation: rotate-loading 1s linear 0s infinite normal;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: rotate-loading 1s linear 0s infinite normal;
+    -o-transform-origin: 50% 50%;
+    -webkit-animation: rotate-loading 1s linear 0s infinite normal;
+    -webkit-transform-origin: 50% 50%;
+    animation: rotate-loading 1s linear 0s infinite normal;
+    transform-origin: 50% 50%;
+}
+.loading-container:hover .loading {
+    border-color: transparent #999 transparent #999;
+}
+.loading-container .loading,
+.loading-container:hover .loading {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#loading-text {
+    -moz-animation: loading-text-opacity 2s linear 0s infinite normal;
+    -o-animation: loading-text-opacity 2s linear 0s infinite normal;
+    -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
+    animation: loading-text-opacity 2s linear 0s infinite normal;
+    color: #555;
+    font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    opacity: 0;
+    position: relative;
+    left:7px;
+    top:-10px;
+    text-align: center;
+    width: 130px;
+}
+/* ----- END search loading ----- */
+
+
+
+
+/* ----- BEGIN tooltip popover on search view-section ----- */
+.search-popover{ display:none; }
+.search-popover > .popover-title{ background:#f7f7f7; font-size:0.88em; line-height:1.12em; padding:12px 12px 7px; position:relative;}
+.search-popover > .popover-title .kmapid-display {
+	position:absolute; top:2px; right:10px;
+  font-size: 0.75em;
+  white-space:nowrap;
+  margin: 0;
+  color: #707070;
+}
+.search-popover > .popover-title .kmapid-display:before { /* content: "" */ }
+.search-popover > .popover-content{
+	font-family: "Museo Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size: 0.75em;
+	padding-top:4px 12px;
+}
+.search-popover > .popover-content > p {
+	padding:0 8px;
+	margin:5px 0 0;
+	font-size: 1.18em;
+	border-left:4px solid #f0f0f0;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+.search-popover > .popover-content > .kmap-path{
+	display:inline;
+	font-size: 0.93em;
+	line-height:1em;
+	-ms-word-break: break-all;
+  word-break: break-all;
+}
+.search-popover > .counts-display {
+  display: block;
+  float: right;
+  clear: both;
+  white-space:nowrap;
+  margin-left: 0;
+  margin-right: 0;
+  color: #888;
+}
+.search-popover > .popover-content .info-wrap { min-width: 18em;}
+.search-popover > .popover-content .counts-display { display:block; height: 4.12em; padding:5px; margin-top:2px;}
+.search-popover > .popover-content .badge {
+  margin:0 5px;
+  position: relative;
+  top: 22px;
+  font-size: 0.88em;
+  font-family: sans-serif;
+  line-height:1.18em;
+  height:1.56em;
+  letter-spacing: 0.06em;
+  border:1px solid #c0c0c0;
+  background:#f9f9f9;
+  color:#111;
+  padding:1px 6px;
+	font-weight:normal;
+}
+.search-popover > .popover-content .associated{ /* background:#f0f0f0; */ text-align:center; float:right; position:relative; top:5px; height:36px; margin:0 0 5px 0; border-left:1px solid #ddd; }
+.search-popover > .popover-content .associated:first-child{
+	margin-right:-17px;
+}
+.search-popover > .popover-content .associated i{
+	font-size:1.56em;
+	position:absolute;
+	bottom:17px;
+	color:#808080;
+	margin:0 0 0 7px;
+}
+/*--- END trunk8 */
+/*-----------------*/
+/*--- END Table ---*/
+
+
 /*--------------------------------*/
 /*--- END SEARCH PANEL -----------*/
 /*--------------------------------*/
