@@ -29,6 +29,7 @@
  * @see template_preprocess_search_block_form()
  */
 ?>
+
      <fieldset>
 
         <div class="search-group">
