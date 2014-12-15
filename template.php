@@ -44,7 +44,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
-
+	
 	// Add Meta Tags
 	$metas = array(
 		'ie_edge' => array(
@@ -65,11 +65,11 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 			'#weight' => -998,
 		),
 	);
-
+	
 	foreach($metas as $key => $details) {
 		drupal_add_html_head($details, $key);
 	}
-
+	
   drupal_add_library('system', 'ui');
 
 	//_shanti_sarvaka_add_metatags(); // Adds favicon meta tags NOT needed automatically picked up by device
@@ -81,6 +81,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
+	//dpm($variables, 'vars in preprocess page');
   global $base_url, $base_path, $base_theme_info;
   $base = $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/'; // took out $base_url .  from beginning as not necessary, ndg (2019-09-22)
   $variables['breadcrumb'] = menu_get_active_breadcrumb();
@@ -129,10 +130,10 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     }
   }
   // If explore menu module installed set variables for its markup
-  if(module_exists('explore_menu')) {
+  /*if(module_exists('explore_menu')) {
     $variables['explore_menu_link'] = variable_get('explore_link_text', EXPLORE_LINK_TEXT);
     $variables['explore_menu'] = menu_tree('shanti-explore-menu');
-  }
+  }*/
   // Preload and render the language switcher to include in header (in page template)
   if(module_exists('locale')) {
     $data = module_invoke('locale', 'block_view', 'language');
@@ -170,8 +171,6 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 function shanti_sarvaka_preprocess_node(&$variables) {
   //dpm($variables, 'in node preprocess');
   $variables['date'] = Date('j M Y', $variables['node']->created);
-	/*$b = block_get_blocks_by_region('sidebar_second');
-	dpm($b, 'sidebar blocks');*/
 }
 
 /** Unnecessary
@@ -188,11 +187,8 @@ function shanti_sarvaka_preprocess_region(&$variables) {
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
-	/*if(isset($block->region) && $block->region == 'sidebar_second') {
-		dpm($variables, $variables['block_html_id']);
-	}*/
-	$region = $block->region;
-	if( $region ) {
+	if(isset($block->region)) {
+		$region = $block->region;
 		// Header blocks
 	  // If needed, for site custom blocks added to header, can customize icon, bootstrap class, and wrapping markup
 	  // If we want to allow certain blocks to be "dropped" into the header and not just hard-coded like explore, language chooser, and options
@@ -203,6 +199,17 @@ function shanti_sarvaka_preprocess_block(&$variables) {
 	    $variables['icon_class'] = 'shanticon-menu';
 	    $variables['prev_markup'] = '';
 	  }
+	}
+	// Add enabled languages for language chooser block ($language == current lang; $languages = array of all enabled langs)
+	if($variables['block_html_id'] == 'block-locale-language') {
+		global $language;
+		$variables['language'] = $language;
+		$variables['languages'] = array();
+		foreach(language_list() as $abbr => $lang) {
+			if($lang->enabled == 1) {
+				$variables['languages'][] = $lang;
+			}
+		}	
 	}
 }
 
@@ -625,14 +632,14 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
  *      author: author of node
  *      date: date node created
  *      path: path linking to node
- *      summary: description
+ *      summary: description 
  *      img: url to a 400 x 300 resized/cropped image for src attribute
  *      itemcount: number of items contained, if a group (opt.)
  * 		),
  * 		etc...
  * 	)
  * );
- *
+ *    
  *
  */
 function shanti_sarvaka_carousel($variables) {
@@ -830,7 +837,7 @@ function shanti_sarvaka_form($variables) {
 }
 */
 /*function shanti_sarvaka_field__image($variables) {
-
+	
 }*/
 
 /**
