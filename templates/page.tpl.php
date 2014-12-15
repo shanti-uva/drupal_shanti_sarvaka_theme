@@ -29,15 +29,8 @@
 	         <form class="form">
 	         <fieldset>
 	          <ul class="nav navbar-nav navbar-right">
-	            <?php if(module_exists('explore_menu')): ?>
-	              <li id="collexplink" class="explore closed"><a href="#"><?php print $variables['explore_menu_link']; ?>
-	                <span class="icon shanticon-directions"></span></a></li>
-			            <?php endif; ?>
-			            <?php  if(isset($variables['language_switcher'])) { print $variables['language_switcher']; }  ?>
-
-			            <!-- TODO: Need to hardcode user menu/options here as well -->
-			            <!-- If admin puts blocks in  header, render here -->
-			            <?php print render($page['header']);  ?>
+		            <!-- If admin puts blocks in  header, render here -->
+		            <?php print render($page['header']);  ?>
 	          </ul>
 	         </fieldset>
 	         </form>
