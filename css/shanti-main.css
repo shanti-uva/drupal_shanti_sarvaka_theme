@@ -89,24 +89,24 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a .icon:before{ color:#fff;}
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li>a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px;margin:0;padding:15px 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus{ background:#f0f0f0;color:#444;}
-.navbar-default .navbar-nav>li:last-child>a{ padding-left:15px;}
-.navbar-default .navbar-nav>.login>a{ padding-top:20px;}
-.navbar-default .navbar-nav>.highlight>a{ background:#eee;}
-.navbar-default .navbar-nav .explore>a>i.icon{ font-size:17px; position:relative;left:0;top:2px;}
-.navbar-default .navbar-nav>.highlight>a:hover,
-.navbar-default .navbar-nav>.highlight>a:focus{ background:#fff;}
+.navbar-default .navbar-nav>li a{ color:#666; display:inline-block; font-size:0.88em; line-height:4.32em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>.open a,
+.navbar-default .navbar-nav>li a:hover,
+.navbar-default .navbar-nav>li a:focus{ background:#f0f0f0;color:#444;}
+/* .navbar-default .navbar-nav>li:last-child>a{ padding-left:15px;} */
+.navbar-default .navbar-nav>.login a{ padding-top:20px;}
+.navbar-default .navbar-nav>.highlight a{ background:#eee;}
+.navbar-default .navbar-nav>.highlight a:hover,
+.navbar-default .navbar-nav>.highlight a:focus{ background:#fff;}
 .navbar-default .navbar-nav>.highlight.show-topmenu a{ background:#555; color:#fff;}
 .navbar-default .navbar-nav>.highlight.show-topmenu a .icon:before{ color:#fff;}
 .navbar-default .navbar-nav>.highlight.lang:active,
 .navbar-default .navbar-nav>.highlight:active{ background:#fff;}
 .navbar-default .navbar-nav>.highlight:last-child{ border-left-color:#d0d0d0;}
 .navbar-default .navbar-nav>.lang>a{ padding-right:10px;}
-.navbar-default .navbar-nav .explore>a{ padding-right:15px;}
-.navbar-default .navbar-nav li>a>.shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
+.navbar-default .navbar-nav .explore a{ padding-right:1.4rem;}
+.navbar-default .navbar-nav .explore .icon{ font-size:1.32em;position:relative;top:0.3rem;}
+.navbar-default .navbar-nav li a .shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
 .navbar-default .menu-explore{ border-left:1px solid #ddd; float:right;}
 .navbar-default .menu-explore a{ color:#666; display:inline-block; font-size:0.88em; line-height:1em; height:50px; margin:0;padding:14px 20px 0 16px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;}
 .navbar-default .menu-explore .open a,

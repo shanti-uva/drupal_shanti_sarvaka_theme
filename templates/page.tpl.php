@@ -8,7 +8,7 @@
 	        <span class="menu-icon shanti-searchtoggle"><a href="#"><span class='icon shanticon-search'></span></a></span><!-- mobile < 400 : search -->
 	        <span class="menu-icon menu-toggle"><a href="#"><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
 	        <span class="menu-icon menu-maintoggle"><a href="#"><span class="icon shanticon-menu"></span></a></span><!-- mobile < 768 : main-menu -->
-	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore </span>Collections<span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
+	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
 	      </nav>
 
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
