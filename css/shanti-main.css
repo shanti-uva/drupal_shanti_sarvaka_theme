@@ -50,7 +50,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .main-wrapper:after{ clear:both;}
 .main-content{ position:relative;margin:0 auto;min-height:100%;/*font-size:1em;*/}
 .content-section { height:100%; min-height:100%;}
-.content-section.equal-height > .tab-content{ padding-top:1rem;}
+.content-section.equal-height > .tab-content{ padding-top:1rem;padding-bottom:5rem;}
 
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
@@ -194,7 +194,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 /**** kmaps side-col ****/
 .content-resources{padding-left:0;padding-right:0;margin-left:-15px;width:13.5em;background:#fff;min-height:700px;height:100%;background-image:-webkit-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-moz-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-ms-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-o-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);}
-.content-resources .nav-pills{font-weight:bold;text-transform:uppercase;}
+.content-resources .nav-pills{font-weight:bold;text-transform:uppercase;margin:0;}
 .content-resources .nav-pills li{margin:0;padding:0 0 0 1px;font-size:1em;line-height:1em;height:2.75em;white-space:nowrap;border-left:10px solid transparent;}
 .content-resources .nav-pills li.active{border-left:10px solid #cb3a46;}
 .content-resources .nav-pills li a{display:block;padding:1px 0 0 15px;background:#fff;font-size:.75em;line-height:3.68em;height:3.63em;border:none;border-radius:0;border-bottom:1px solid #e0e0e0;-webkit-transition:background 200ms ease 0;-moz-transition:background 200ms ease 0;-o-transition:background 200ms ease 0;transition:background 200ms ease 0;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:bold;}
@@ -230,7 +230,7 @@ header ul.tabs.secondary li a:focus{ background:#fff;}
 header ul.tabs.secondary li.active a{ color:#fff; background:#555;}
 header ul.tabs.secondary li.active a:hover,
 header ul.tabs.secondary li.active a:focus{ color:#fff; background:#555;}
-header ul.tabs.secondary li.active a:after{ font-size:2.5em; font-family:'shanticon'; content: '\e646'; color:#555; position:absolute; bottom:-1em; right:50%; margin-right:-1.5rem;}
+header ul.tabs.secondary li.active a:after{ font-size:2.5em; font-family:'shanticon'; content: '\e646'; color:#555; position:absolute; bottom:-9em; right:50%; margin-right:-1.5rem;}
 
 header ul.tabs.primary{ float:right; position:relative; bottom:-1.35rem; right:2rem; z-index:2;}
 header ul.tabs.primary li{ float:right;margin-right:0.2rem;}
