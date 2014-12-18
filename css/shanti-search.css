@@ -93,6 +93,7 @@ object.flip_label{ display:none;}
 	margin: 14px 0 0;
 	padding:2px 60px 0 15px;
   width:100%;
+  max-width:100%;
 	overflow: auto;
 	vertical-align:middle;
 	-webkit-box-shadow:0 2px 5px #eee inset;
@@ -295,7 +296,9 @@ object.flip_label{ display:none;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:focus .check-mark{ color:#fff;}
  /* search errors */
 .input-section .notification-wrapper{ padding: 0 15px;}
-.input-section .alert{ margin:0 10px 10px;}
+.input-section .alert{ margin:0 10px 10px;padding: 10px 15px;text-shadow: 0 1px 0 rgba(255,255,255,.4);}
+.input-section .alert-danger{ color: #922b0f;background-image: linear-gradient(to bottom,#ffeab0 0,#ffb881 100%);border-color: #ffb584;}
+.input-section .alert-danger .close{ position:relative;top:-0.1rem;right:-.5rem;}
 
 .input-section .selectpicker li a span{ background:transparent !important; color:#444;}
 .input-section .selectpicker li a span:hover{ color:#fff;}
@@ -386,7 +389,7 @@ object.flip_label{ display:none;}
 .view-section table.table-results thead tr th,
 .view-section table.table-results tbody>tr>td{ line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
 .view-section table.table-results tbody tr:hover{ background: #fff;}
-.view-section table.table-results thead tr th:after{ color:#555; font-family: 'kmaps-icons'; content: '\e620'; font-size: 14px; margin-left:0; position:relative; top:2px;}
+.view-section table.table-results thead tr th:after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}
 .view-section table.table-results thead tr th{ color:#333;}
 .view-section table.table-results thead tr th:hover,
 .view-section table.table-results thead tr th:hover:after{ color:#d00; cursor:pointer;}
