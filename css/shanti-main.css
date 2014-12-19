@@ -462,7 +462,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button{ background:#505050; border-bottom:1px solid #444; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ background:#404040;}
-.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:inline-block;}
+.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:block; width:100%; line-height:3.12em; height: 3.25em;}
 .popover-footer-button .icon:before{ color:#eee; margin-right:5px;}
 .popover-footer-button:hover .icon,
 .popover-footer-button:focus .icon{ color:#fff;}
