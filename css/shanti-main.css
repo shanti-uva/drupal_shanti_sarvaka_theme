@@ -12,11 +12,12 @@ a:hover,a:focus{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a:hover,
 .content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
 .content-section a:active{ border-bottom-color:transparent;}
-/* .content-section .messages{ display:none;} */
+/*.content-section .messages{ display:none;}*/
 
 :selection{background: #999;text-shadow:none;color:white;}
 :moz-selection{background: #999;text-shadow:none;color:white;}
-h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
+h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;text-transform:uppercase;}
+h1{ text-transform:capitalize;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
@@ -313,7 +314,7 @@ header ul.tabs.primary li.active a:focus{ color:#666; background:#f7f7f7;}
 /*---- top-menu wrapper ----*/
 .menu-main-desk{ width:250px;position:absolute;z-index:200;right:0;top:50px;border:none;padding:0;overflow:visible;}
 .menu-main-desk h3,
-.menu-main-desk h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-size:1.32em;line-height:3.44em; height:3.12em; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; font-style:italic;text-indent:1.4rem;position:relative; z-index:200;padding:0; margin:0; -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; overflow:visible;}
+.menu-main-desk h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-size:1.32em;line-height:3.32em; height:3.12em; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; font-style:italic;text-indent:1.4rem;position:relative; z-index:200;padding:0; margin:0; -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; overflow:visible;}
 .menu-main-desk h2 a{ cursor:default; background:#fff; color:#444;display:block;font-size:1.56em;font-weight:normal;font-style:italic;line-height:2.75em; height:2.63em; padding:0; margin:0; /*vertical-align:middle;*/}
 .menu-main-desk .link-blocker{ cursor:default; position:absolute; top:0; right:0; z-index:99999; width:100%;height:54px; background:transparent;} /* prevent clicking the search button through the h3 */
 .multilevelpushmenu_wrapper,
@@ -323,13 +324,13 @@ header ul.tabs.primary li.active a:focus{ color:#666; background:#f7f7f7;}
 .menu-main-desk li { border-top: none;background:#fff;display:block;font-size:1em;line-height:3em; height:4em;padding:0 !important;}
 .menu-main-desk li:hover,
 .menu-main-desk li:focus{ background:#f7f7f7;color:#555;}
-.menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.93em;line-height:2.44em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.18em;text-transform:uppercase;}
+.menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.93em;line-height:2.44em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.5em;text-transform:uppercase;}
 .menu-main-desk li a:hover,
 .menu-main-desk li a:focus{ color:#444;}
 .menu-main-desk li:first-child a,
 .menu-main-desk .myaccount>a{ border-top:none;}
 .menu-main-desk li .icon { font-size:2em;line-height:1.18em; height:4em;margin-right:7px;}
-.menu-main-desk l.form-group { font-size:0.88em;line-height:2em; height:2em;padding: 1px 5px 1px 25px;margin:0;display:block;}
+.menu-main-desk .form-group { font-size:0.88em;line-height:2em; height:2em;padding: 1px 5px 1px 25px;margin:0;display:block;}
 .menu-main-desk li:last-child{ border-bottom:none;}
 .menu-main-desk .form-group.last{ line-height:0.5em; height:0.5em;}
 .menu-main-desk .form-group.last:hover,
@@ -342,10 +343,12 @@ header ul.tabs.primary li.active a:focus{ color:#666; background:#f7f7f7;}
 .menu-main-desk .drop-hdr:focus{ background:#fff; color:#555;}
 .menu-main-desk .drop-hdr:first-child{ -webkit-box-shadow:none;box-shadow:none; border-top:none;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass{ position:absolute; top:0; right:-10px; z-index:202;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass a{ color:#dc3c47; font-size:.83em; line-height:2.5em; height:4em; background:none;padding-right:15px; border:none; font-weight:bold; text-transform:uppercase;}
+.menu-main-desk .levelHolderClass.rtl .backItemClass a{ color:#dc3c47; font-size:.83em; line-height:2.5em; height:4em; background:none;padding-right:18px; border:none; font-weight:bold; text-transform:uppercase;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:hover,
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:focus{ color:#555;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:active{ color:#dc3c47;}
+.menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left{ position:relative;top:8px;left:-8px;}
+.menu-main-desk .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.4rem;right:1.3rem;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass .icon{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold;  margin-right:5px;}
 .menu-main-desk .backItemClass,
 .menu-main-desk .levelHolderClass.rtl{ font-family:'museo-sans-500',helvetica,arial,sans-serif; font-weight:normal;background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
@@ -459,7 +462,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button{ background:#505050; border-bottom:1px solid #444; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ background:#404040;}
-.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:inline-block;}
+.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:block; width:100%; line-height:3.12em; height: 3.25em;}
 .popover-footer-button .icon:before{ color:#eee; margin-right:5px;}
 .popover-footer-button:hover .icon,
 .popover-footer-button:focus .icon{ color:#fff;}
