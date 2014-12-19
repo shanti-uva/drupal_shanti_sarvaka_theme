@@ -187,7 +187,7 @@
 						.attr( { "style" : "text-align: " + ( ( instance.settings.direction == 'rtl' ) ? "right" : "left" ) } )
 					    .text( this.title )
 					    .appendTo( $levelHolder ),
-					    $titleIcon = $( "<i />" )
+					    $titleIcon = $( "<span />" )
 					    .prop( { "class" : ( ( instance.settings.direction == 'rtl' ) ? "floatLeft" : "floatRight" ) + " cursorPointer " + this.icon } )
 					    .prependTo( $title );
 					$titleIcon.bind( clickEventType ,  function(e){
@@ -300,7 +300,7 @@
 				    .prop( { "href" : "#" } )
 				    .text( instance.settings.backText )
 				    .appendTo( $backItem ),
-				    $backItemIcon = $( "<i />" )
+					    $backItemIcon = $( "<span />" )
 				    .prop( { "class" : ( ( instance.settings.direction == 'rtl' ) ? "floatLeft " : "floatRight " ) + instance.settings.backItemIcon } )
 				    .prependTo( $backItemAnchor );
 				$backItemAnchor.bind( clickEventType , function(e){
@@ -326,7 +326,7 @@
 
 			// Create item group DOM element
 			function createItemGroupIcon( $itemAnchor ) {
-				var $itemGroupIcon = $( "<i />" )
+				var $itemGroupIcon = $( "<span />" )
 					.attr( { "class" : ( ( instance.settings.direction == 'rtl' ) ? " floatRight iconSpacing_rtl " : " floatLeft iconSpacing_ltr " ) + instance.settings.groupIcon } )
 					.prependTo( $itemAnchor );
 			}
@@ -346,7 +346,7 @@
 				    .prop( { "href" : item.link } )
 				    .text( item.name )
 				    .appendTo( $item ),
-				    $itemIcon = $( "<i />" )
+				    $itemIcon = $( "<span />" )
 					.prop( { "class" : ( ( instance.settings.direction == 'rtl' ) ? "floatLeft " : "floatRight " ) + item.icon } )
 				    .prependTo( $itemAnchor );
 				if(item.items) {
