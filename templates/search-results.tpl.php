@@ -25,15 +25,9 @@
 ?>
 <?php if ($search_results): ?>
   <h2><?php print t('Search results');?></h2>
-  <?php if ($search_page['page_id'] == 'transcripts'): ?>
-    <ul class="list-group search-results <?php print $module; ?>-results">
-      <?php print $search_results; ?>
-    </ul>
-  <?php else: ?>
     <ul class="shanti-gallery search-results <?php print $module; ?>-results">
       <?php print $search_results; ?>
     </ul>
-  <?php endif; ?>
   <?php print $pager; ?>
 <?php else : ?>
   <h2><?php print t('Your search yielded no results');?></h2>
