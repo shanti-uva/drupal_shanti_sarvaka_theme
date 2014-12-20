@@ -1067,8 +1067,10 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 /*--- BEGIN video view page --*/
 /*----------------------------*/
 /* .mms-wrap-left {float:left;} */
-.mms-wrap-left {float:left; width:800px;}
-.transcript-container {overflow:scroll; height:800px;}
+.mms-wrapper {display:table-cell;}
+.mms-right {display:table-cell; vertical-align:top;}
+.mms-wrap-left {display:table-cell; width:800px;}
+.transcript-container {height:800px; overflow:scroll;}
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
