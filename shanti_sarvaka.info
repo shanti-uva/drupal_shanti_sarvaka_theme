@@ -28,14 +28,14 @@ regions[admin_footer]   = Admin Footer
 ;;;;;;;;;;;;;;;;;;;;;
 
 ; Bootstrap CDN css/js assets added in template.php file
-;stylesheets[all][] =  css/bootstrap.min.css
-;stylesheets[all][] =  css/bootstrap-theme.min.css
+; stylesheets[all][] =  css/bootstrap.min.css
+; stylesheets[all][] =  css/bootstrap-theme.min.css
 stylesheets[all][] =  css/bootstrap.vertical-tabs.min.css
 stylesheets[all][] =  css/utils.css
 stylesheets[all][] =  css/vjs.zencdn.nt-5.4-video-js.css
 stylesheets[all][] =  fonts/font-awesome-4.0.3/css/font-awesome.min.css
 stylesheets[all][] =  fonts/shanticon/css/style.css
-stylesheets[all][] =  css/search-bibliography.css
+; stylesheets[all][] =  css/search-bibliography.css - need to migrate this to subtheme
 stylesheets[all][] =  css/shanti-search.css
 stylesheets[all][] =  css/shanti-main.css
 
@@ -43,10 +43,15 @@ stylesheets[all][] =  css/shanti-main.css
 ;;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = js/inc/jquery/jquery-ui.min.js
-scripts[] = js/inc/jquery/jquery-migrate-1.2.1.js
 ; bootstrap js added in template.php file through CDN call
 ; scripts[] = js/inc/bootstrap/bootstrap.min.js
+; scripts[] = js/inc/datatables/jquery.dataTables.min.js - no longer using Data tables
+; scripts[] = js/inc/datatables/dataTables.bootstrap.js - no longer using Data tables
+; scripts[] = js/inc/jquery/jquery.ba-hashchange.min.js
+; scripts[] = js/inc/bootstrap/bootstrap-paginator.min.js
+
+scripts[] = js/inc/jquery/jquery-ui.min.js
+scripts[] = js/inc/jquery/jquery-migrate-1.2.1.js
 scripts[] = js/inc/menus/jquery.multilevelpushmenu.min.js
 scripts[] = js/inc/extruder/jquery.hoverIntent.min.js
 scripts[] = js/inc/extruder/jquery.mb.flipText.js
@@ -61,11 +66,7 @@ scripts[] = js/inc/check/icheck.min.js
 scripts[] = js/inc/select/bootstrap-select.min.js
 scripts[] = js/inc/jquery/jquery.highlight.js
 scripts[] = js/inc/jquery/jquery.tablesorter.min.js
-; scripts[] = js/inc/datatables/jquery.dataTables.min.js - no longer using Data tables
-; scripts[] = js/inc/datatables/dataTables.bootstrap.js - no longer using Data tables
 scripts[] = js/inc/other/trunk8.min.js
-;scripts[] = js/inc/jquery/jquery.ba-hashchange.min.js
-;scripts[] = js/inc/bootstrap/bootstrap-paginator.min.js
 scripts[] = js/inc/other/vjs.zencdn.net-4.5-video.js
 scripts[] = js/inc/other/equalHeights.js
 scripts[] = js/inc/jquery/jquery.imagesloaded.js
@@ -73,6 +74,7 @@ scripts[] = js/inc/jquery/jquery.wookmark.min.js
 scripts[] = js/inc/other/modernizr-2.6.2.min.js
 scripts[] = js/inc/other/jssor.slider.mini.js
 scripts[] = js/inc/other/hammer.min.js
+scripts[] = js/inc/other/jquery.bxslider-rahisified.js
 scripts[] = js/shanti-main.js
 scripts[] = js/shanti-search.js
 
