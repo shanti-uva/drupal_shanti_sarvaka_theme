@@ -747,7 +747,7 @@ function shanti_sarvaka_fieldset($variables) {
 		}
 	}
 
-  $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel-group', 'panel', 'panel-default'));
+  $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel', 'panel-default'));
   $element['#attributes']['id'] = 'accordion' . $id;
   $isin = '';
 	if($key = array_search("in", $element['#attributes']['class'])) {
