@@ -756,9 +756,9 @@ function shanti_sarvaka_fieldset($variables) {
   // Create markup
   $output = '<div ' . drupal_attributes($element['#attributes']) . '>
     <div class="panel-heading">
-      <h6 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#av-details" href="#' . $id . '">'
-           . $element['#title'] .
+      <h6>
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#av-details" href="#' . $id . '"><span class="glyphicon glyphicon-plus"></span>'
+            . $element['#title'] .
         '</a>
       </h6>
     </div>
