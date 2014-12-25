@@ -503,7 +503,7 @@
         });
 				*/
 				
-        /*  - mark hide 12/24 -- toggle icon on accordions --
+        /*-- toggle icon on accordions -- */
         $('.btn-toggle-accordion').click(function () {
 
           $(this).toggleClass('expand');
@@ -519,7 +519,7 @@
               $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
           }
         });
-        */
+        
 
         // Open first accordion if none opened
         if($(".collapsible.in").length == 0) {
