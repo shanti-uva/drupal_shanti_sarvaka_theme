@@ -336,7 +336,8 @@
 	      // this could be improved with conditional for - lte IE7 - so it does not self-hide
 	      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
 	      $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
-	      // Change collapsible div icon from +/- depending on state
+	      
+	      /* Change collapsible div icon from +/- depending on state
 	      $('div.panel-collapse').on('hide.bs.collapse', function () {
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
@@ -345,7 +346,8 @@
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
 	      });
-
+        */
+        
 	      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
 	      // Add class and event handler to bootstrap tabs for formatting
 	      // $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
@@ -452,9 +454,37 @@
   Drupal.behaviors.shantiSarvakaAccordion = {
     attach: function (context, settings) {
 
-      if(context == window.document) {
 
-        /* Select only accordions not in vertical tabs */
+      // *** CONTENT *** accordion toggle
+				$.fn.accordionFx = function() {
+				    return this.each(function(span, accordion) {
+				        $(".accordion-toggle", accordion).click(function(ev) {
+				            var link = ev.target;
+				            var header = $(link).closest(".panel-heading");
+				            var chevState = $(".glyphicon", header)
+				                .toggleClass('glyphicon-plus glyphicon-minus');
+				            $(".glyphicon", accordion)
+				                .not(chevState)
+				                .removeClass("glyphicon-minus")
+				                .addClass("glyphicon-plus");
+				        });
+				    });
+				};
+				
+				jQuery(function ($) {
+					$('#accordion').accordionFx();
+				});
+
+        // Open first accordion if none opened
+        if($(".collapsible.in").length == 0) {
+          $(".collapsible").eq(0).find('h6.panel-title a').once("openfirst").click();
+
+        }
+        // Shiva site gets doubly glypicons. So need to be removed
+        $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
+
+
+        /* - mark hide 12/24 - Select only accordions not in vertical tabs 
   			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
         var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
 
@@ -471,8 +501,9 @@
         accorddivs.on('hide.bs.collapse', function (e) {
             $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
-
-        /* toggle icon on accordions */
+				*/
+				
+        /*  - mark hide 12/24 -- toggle icon on accordions --
         $('.btn-toggle-accordion').click(function () {
 
           $(this).toggleClass('expand');
@@ -488,6 +519,7 @@
               $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
           }
         });
+        */
 
         // Open first accordion if none opened
         if($(".collapsible.in").length == 0) {
@@ -496,7 +528,6 @@
         }
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
-      }
     }
   };
 
