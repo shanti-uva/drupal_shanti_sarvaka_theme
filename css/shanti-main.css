@@ -1032,11 +1032,11 @@ table tr.ok { color: #234600; background: #f8fff0;}
 .panel-group .panel+.panel{ margin-top:0;}
 .panel-group .panel-heading .glyphicon{font-size:80%;position:relative;top:0;margin-right:.5em;}
 /*--- for Kmaps-style larger toggle panels ---*/
-#accordion .panel h6{ font-size:1em; line-height:3.75em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;padding-left:20px;height:60px;}
-#accordion h6 a { color:#444;font-size:1em; line-height:3.93em; border:none; font-weight:bold;  text-decoration: none;display:block;}
-#accordion .panel h6 .glyphicon { font-size: 0.63em; background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;margin-right:20px;margin-left:5px;float: left;position: relative;top: 19px;left: 0;-webkit-box-shadow: 0 0 4px 3px #ddd;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
-#accordion .panel .accordion-toggle .glyphicon:before { position: relative;top: 4px;left: 5px;}
-#accordion .panel .accordion-toggle .glyphicon.glyphicon-minus:before { position: relative;left: 4px;}
+.panel-group .panel h6{ font-size:1em; line-height:3.75em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;padding-left:20px;height:60px;}
+.panel-group .panel h6 a { color:#444;font-size:1em; line-height:3.93em; border:none; font-weight:bold;  text-decoration: none;display:block;}
+.panel-group .panel h6 .glyphicon { font-size: 0.63em; background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;margin-right:20px;margin-left:5px;float: left;position: relative;top: 19px;left: 0;-webkit-box-shadow: 0 0 4px 3px #ddd;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
+.panel-group .panel .accordion-toggle .glyphicon:before { position: relative;top: 4px;left: 5px;}
+.panel-group .panel .accordion-toggle .glyphicon.glyphicon-minus:before { position: relative;left: 4px;}
 /* END accordion */
 
 
