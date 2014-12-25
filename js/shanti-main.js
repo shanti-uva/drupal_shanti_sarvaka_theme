@@ -454,6 +454,11 @@
   Drupal.behaviors.shantiSarvakaAccordion = {
     attach: function (context, settings) {
 
+        // Open first accordion if none opened
+        $("#av-details .field-accordion").each(function(index, element){
+				  $(element).addClass(index == 0 ? "in" : "").once();
+				  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
+				});
 
       // *** CONTENT *** accordion toggle
 				$.fn.accordionFx = function() {
@@ -475,10 +480,6 @@
 					$('#accordion, #av-details').accordionFx();
 				});
 
-        // Open first accordion if none opened
-        $("#av-details .field-accordion").each(function(index, element){
-				  $(element).addClass(index == 0 ? "in" : "").next(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
-				});
         
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
