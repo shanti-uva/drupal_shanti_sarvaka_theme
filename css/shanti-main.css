@@ -1021,7 +1021,7 @@ table tr.ok { color: #234600; background: #f8fff0;}
 /*-------------------------*/
 .panel-group{ border:none;width:100%;margin-top:0;/*margin:-10px -20px 0 -2px;*/}
 .panel-body{ background:#f9f9f9;border:none; border-radius:0; width:100%;}
-.panel.panel-default { overflow:visible; background:transparent !important;margin: 13px 0 -13px;}
+.panel.panel-default { overflow:visible; background:transparent !important;}
 .panel-default .panel-heading{ background-image: none; background: transparent;margin:0;padding:0;}
 .panel-default>.panel-heading{ background:transparent !important;}
 .panel-group .panel+.panel{ margin-top:0;}
@@ -1372,106 +1372,6 @@ form table td.label{ padding-top:0.68em !important;}
 
 
 
-/****************************************/
-/** admin stuff to sort and-or migrate **/
-/****************************************/
-table.features .admin-check,
-table.features .admin-default,
-table.features .admin-overridden,
-table.features .admin-rebuilding,
-table.features .admin-needs-review{ font-size:80%; padding-top:0.32em;}
-table.features th{ padding-top:.75em;}
-table.features td.sign{ font-size:0.75em;}
-
-
-#block-system-help p,
-.field-accordion .panel-body p{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.field-accordion .form-item label{ margin-top:1em;}
-/* mark hide 12/24
-.field-accordion{ margin: 0;padding: 0;}
-.field-accordion.panel-group{ /*margin:0 -2em; padding:0 2em; / border-bottom:1px solid #ddd; border-top:1px solid #fff;}
-.field-accordion.panel-group .panel{ background:transparent;}
-
-.field-accordion .panel-body{ padding:15px;}
-.field-accordion .panel-heading{ margin:0;padding:0;background:transparent;width:100%;}
-.field-accordion .panel-body .form-text{ background: #fff;}
-*/
-
-#field-workflow-add-more-wrapper fieldset legend{ /*--- rare section header between accordion panel groups */
-	border-top:1px solid #fff;
-	border-bottom:1px solid #ddd;
-	height:4em;
-	line-height:4.25em;
-	display:block;
-	width:100%;
-	text-transform:uppercase;
-	padding-left:0.32em;
-	padding-top:0.5em;
-	font-weight:bold;
-
-}
-#field-workflow-add-more-wrapper fieldset legend span{ margin:0;padding:0;}
-
-.field-accordion .panel-collapse{ margin:0 0 1em;}  /*--- spacing at bottom below inset shaded content */
-
-.field-accordion .panel-heading h6.panel-title{ position:relative; z-index:100; width:100%; font-size:1.44em; text-transform:capitalize; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-style:italic;}
-.field-accordion .panel-heading h6.panel-title a{ font-weight:bold; display:block; width:100%; line-height:2.62em; height:2.5em; letter-spacing:-0.06em; border:none!important;}
-.field-accordion .panel-heading h6.panel-title a:hover,
-.field-accordion .panel-heading h6.panel-title a:focus{ text-decoration:none; border:none!important;}
-
-.field-widget-group-audience{ border:none; border-top:1px solid #fff; padding:0;}
-.field-widget-options-select{ border-bottom:1px solid #ddd; padding:0 0 0.75em;}
-
-#edit-picture .fieldset-wrapper{ border-bottom:1px solid #ddd;}
-
-.field-accordion .panel-heading h6.panel-title a .glyphicon{
-  font-size: 0.5em;
-  background: #fff;
-  color: #606060;
-  width: 21px;
-  height: 21px;
-  display: block;
-  border-radius: 50%;
-  background-clip: padding-box;
-  margin-right:20px;
-  float: left;
-  position: relative;
-  top: 15px;
-  left: 7px;
-  -webkit-box-shadow: 0 0 4px 3px #ddd;
-  box-shadow: 0 0 4px 3px #ddd;
-  border-collapse:separate;
-}
-.field-accordion .panel-heading h6.panel-title a .glyphicon:before{ position: relative;top: 5px;left: 6px;}
-.field-accordion .panel-heading h6.panel-title a .glyphicon.glyphicon-minus:before{ position: relative;left: 5px;}
-
-.field-accordion fieldset .fieldset-legend{ margin-left:1em;}
-
-.field-accordion .form-item,
-.field-accordion .form-actions{ margin-top: auto;margin-bottom: 0.5em;}
-
-.field-accordion h4 .ss-fieldset-toggle,
-.field-accordion h6 .ss-fieldset-toggle{
-	font-size: 90%;
-	padding: 0 4px 2px;
-	border-radius: 1.25em;
-	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
-	border: 1px solid #ddd;
-	background: #fff;
-	-webkit-box-shadow: 2px 0 3px #aaa;
-	box-shadow: 2px 0 3px #aaa;
-	border-collapse: separate;
-	display: inline-block;
-	cursor: pointer;
-	vertical-align: text-top;
-	margin-right: .25em;
-}
-.field-accordion h4 .ss-fieldset-toggle.open,
-.field-accordion h6 .ss-fieldset-toggle.open{ padding: 0 5px 1px;}
-
-
-/****************************/
-/**** END MB migration ****/
 
 
 
