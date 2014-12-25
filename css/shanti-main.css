@@ -1387,14 +1387,15 @@ table.features td.sign{ font-size:0.75em;}
 #block-system-help p,
 .field-accordion .panel-body p{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .field-accordion .form-item label{ margin-top:1em;}
-
+/* mark hide 12/24
 .field-accordion{ margin: 0;padding: 0;}
-.field-accordion.panel-group{ /*margin:0 -2em; padding:0 2em;*/ border-bottom:1px solid #ddd; border-top:1px solid #fff;}
-.field-accordion .panel-group .panel{ background:transparent;}
+.field-accordion.panel-group{ /*margin:0 -2em; padding:0 2em; / border-bottom:1px solid #ddd; border-top:1px solid #fff;}
+.field-accordion.panel-group .panel{ background:transparent;}
 
 .field-accordion .panel-body{ padding:15px;}
 .field-accordion .panel-heading{ margin:0;padding:0;background:transparent;width:100%;}
 .field-accordion .panel-body .form-text{ background: #fff;}
+*/
 
 #field-workflow-add-more-wrapper fieldset legend{ /*--- rare section header between accordion panel groups */
 	border-top:1px solid #fff;
