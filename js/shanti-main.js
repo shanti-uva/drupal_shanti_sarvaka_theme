@@ -472,7 +472,7 @@
 				};
 				
 				jQuery(function ($) {
-					$('#accordion').accordionFx();
+					$('#accordion', '#av-details').accordionFx();
 				});
 
         // Open first accordion if none opened
