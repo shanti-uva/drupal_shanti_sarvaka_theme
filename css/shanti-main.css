@@ -1767,15 +1767,6 @@ table.features td.sign{ font-size:0.75em;}
   #menu-main .panel-group,
   #menu-collections .panel-group{ padding:0 !important;}
 
-  .content-resources { width:13.5em;}
-  .content-resources ul{ margin-top:25px;}
-
-	.content-resources ul.nav-pills li{ font-size: 1em; line-height: 1em; height: 2.63em;}
-  .content-resources ul.nav-pills li a{ font-size: 0.75em; line-height: 3.63em; height:3.5em; padding:0 0 0 10px; }
-  /* .content-resources ul.nav-pills li.active { }
-  .content-resources ul.nav-pills li.active a { } */
-	.content-resources ul.nav-pills li.active:first-child a { margin-top:0; }
-	.content-resources ul.nav-pills li a .icon{ position:relative; top:4px;}
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
   .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }
 	.view-resources.btn-default.show { width:200px; padding-left:35px; text-align:left; position:relative; left:-218px;}
