@@ -476,10 +476,10 @@
 				});
 
         // Open first accordion if none opened
-        if($(".collapsible.in").length == 0) {
-          $(".collapsible").eq(0).find('h6 a').once("openfirst").click();
-
-        }
+        $("#av-details .field-accordion").each(function(index, element){
+				  $(element).addClass(index == 0 ? "in" : "");
+				});
+        
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
 
