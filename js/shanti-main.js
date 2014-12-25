@@ -472,12 +472,12 @@
 				};
 				
 				jQuery(function ($) {
-					$('#accordion', '#av-details').accordionFx();
+					$('#accordion, #av-details').accordionFx();
 				});
 
         // Open first accordion if none opened
         if($(".collapsible.in").length == 0) {
-          $(".collapsible").eq(0).find('h6.panel-title a').once("openfirst").click();
+          $(".collapsible").eq(0).find('h6 a').once("openfirst").click();
 
         }
         // Shiva site gets doubly glypicons. So need to be removed
@@ -519,15 +519,7 @@
               $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
           }
         });
-        
 
-        // Open first accordion if none opened
-        if($(".collapsible.in").length == 0) {
-          $(".collapsible").eq(0).find('h6.panel-title a').once("openfirst").click();
-
-        }
-        // Shiva site gets doubly glypicons. So need to be removed
-        $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
     }
   };
 
