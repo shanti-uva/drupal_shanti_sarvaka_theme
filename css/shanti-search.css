@@ -266,8 +266,8 @@ object.flip_label{ display:none;}
 .input-section .dropdown-menu.open{ border-radius:10px;background-clip: padding-box; overflow:auto;}
 .input-section .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
 
-.input-section .bootstrap-select.btn-group .dropdown-menu{ height:270px; overflow:auto;}
-
+.input-section .bootstrap-select.btn-group .dropdown-menu{ height:270px;}
+.input-section .bootstrap-select.btn-group .dropdown-menu.open{  overflow:auto !important;}
 .input-section .selectpicker .caret{ border:none; }
 .input-section .selectpicker .caret:before{ color:#d00; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon sorting arrows */ position:absolute; top:-11px; right:0px;}
 
