@@ -263,13 +263,13 @@ object.flip_label{ display:none;}
 .input-section .bootstrap-select.btn-group:not(.input-group-btn){ margin-top:0.82rem;}
 
 /*--- dropdown ---*/
-.input-section .dropdown-menu.open{ border-radius:10px;background-clip: padding-box;}
+.input-section .dropdown-menu.open{ border-radius:10px;background-clip: padding-box; overflow:auto;}
 .input-section .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
 
-.input-section .bootstrap-select.btn-group .dropdown-menu{ height:250px; overflow:auto;}
+.input-section .bootstrap-select.btn-group .dropdown-menu{ height:270px; overflow:auto;}
 
 .input-section .selectpicker .caret{ border:none; }
-.input-section .selectpicker .caret:before{ color:#d00; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon dbl caret */ position:absolute; top:-11px; right:0px;}
+.input-section .selectpicker .caret:before{ color:#d00; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon sorting arrows */ position:absolute; top:-11px; right:0px;}
 
 .input-section .selectpicker li{ padding:0; overflow:hidden;}
 .input-section .selectpicker li a{ color:#444; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
@@ -297,7 +297,7 @@ object.flip_label{ display:none;}
  /* search errors */
 .input-section .notification-wrapper{ padding: 0 15px;}
 .input-section .alert{ margin:0 10px 10px;padding: 10px 15px;text-shadow: 0 1px 0 rgba(255,255,255,.4);}
-.input-section .alert-danger{ color: #922b0f;background-image: linear-gradient(to bottom,#ffeab0 0,#ffb881 100%);border-color: #ffb584;}
+.input-section .alert-danger{ color: #922b0f;background-image: linear-gradient(to bottom,#ffeab0 0,#ffb881 100%);}
 .input-section .alert-danger .close{ position:relative;top:-0.1rem;right:-.5rem;}
 
 .input-section .selectpicker li a span{ background:transparent !important; color:#444;}
