@@ -297,7 +297,7 @@ object.flip_label{ display:none;}
  /* search errors */
 .input-section .notification-wrapper{ padding: 0 15px;}
 .input-section .alert{ margin:0 10px 10px;padding: 10px 15px;text-shadow: 0 1px 0 rgba(255,255,255,.4);}
-.input-section .alert-danger{ color: #922b0f;background-image: linear-gradient(to bottom,#ffeab0 0,#ffb881 100%);}
+.input-section .alert-danger{ /*color: #922b0f;background-image: linear-gradient(to bottom,#ffeab0 0,#ffb881 100%);*/ background-image: none; border-color:transparent;}
 .input-section .alert-danger .close{ position:relative;top:-0.1rem;right:-.5rem;}
 
 .input-section .selectpicker li a span{ background:transparent !important; color:#444;}
