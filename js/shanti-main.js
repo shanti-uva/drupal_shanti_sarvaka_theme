@@ -415,6 +415,7 @@
    */
   Drupal.behaviors.shantiSarvakaGalleryInit = {
     attach: function (context, settings) {
+    	//console.log(context, settings);
       $('.shanti-gallery', context).imagesLoaded(function() {
           // Prepare layout options.
           var options = {
@@ -423,9 +424,9 @@
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
             offset: 15, // Optional, the distance between grid items
             outerOffset: 0, // Optional the distance from grid to parent
-            flexibleWidth: '30%' // Optional, the maximum width of a grid item
+            flexibleWidth: '30%', // Optional, the maximum width of a grid item
+            ignoreInactiveItems: false,
           };
-
           // Get a reference to your grid items.
           var handler = $('.shanti-gallery li');
           
