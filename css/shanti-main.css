@@ -518,6 +518,21 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*-------------------------*/
 
 
+
+/*----------------------------------------*/
+/*----- BEGIN transcript search results --*/
+/*----------------------------------------*/
+.transcript-search-result {display:table;width:100%;}
+.transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
+.transcript-search-result .search-snippet-info {display:table-cell;vertical-align:top;}
+.transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;width:200px;}
+
+/*----------------------------------------*/
+/*--- END transcript search results ------*/
+/*----------------------------------------*/
+
+
+
 /*-------------------------*/
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
