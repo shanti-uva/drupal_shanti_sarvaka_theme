@@ -467,8 +467,8 @@
 				        $(".accordion-toggle", accordion).click(function(ev) {
 				            var link = ev.target;
 				            var header = $(link).closest(".panel-heading");
-				            var chevState = $(".glyphicon", header)
-				                .toggleClass('glyphicon-plus glyphicon-minus');
+				            var chevState = $(".glyphicon", header).toggleClass('glyphicon-plus glyphicon-minus');
+				            
 				            $(".glyphicon", accordion)
 				                .not(chevState)
 				                .removeClass("glyphicon-minus")
@@ -478,7 +478,7 @@
 				};
 				
 				jQuery(function ($) {
-					$('#accordion, #av-details').accordionFx();
+					$('.field-accordion, #accordion').accordionFx();
 				});
 
         

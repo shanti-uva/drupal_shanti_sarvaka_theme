@@ -1354,7 +1354,16 @@ form table td.label{ padding-top:0.68em !important;}
 .views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type{ font-size:0.82em;}
 .views-table.cols-8 .views-field.views-field-title{ width:40%;}
 
-.admin-menu .views-field-title .bootstrap-select > .btn { /* width:100% !important; commented out for Video Edit page edits */}
+.admin-menu .views-field-title .bootstrap-select > .btn { /* width:100% !important; ----- commented out for Video Edit page edits --*/}
+
+.field-multiple-table tr.odd,
+.field-multiple-table tr.even{ background:#f7f7f7;}
+
+
+
+
+
+
 
 
 
