@@ -287,6 +287,9 @@ header ul.tabs.primary li.active a:focus{ color:#666; background:#f7f7f7;}
 .vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:focus{ text-decoration:none;}
 .vertical-tabs table.features .feature .description{ color:#666;}
 
+.vertical-tabs ul.vertical-tabs-list .selected strong{ color:inherit;}
+.vertical-tabs ul.vertical-tabs-list li a:hover strong{ text-decoration:none;}
+
 .vertical-tab-container .nav-tabs>li{ border-right:1px solid  #ddd;}
 .vertical-tab-container .nav-tabs>li>a{ border:none !important;}
 .vertical-tab-container .nav-tabs>li>a:hover{ border:none !important;}
@@ -518,6 +521,21 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*-------------------------*/
 
 
+
+/*----------------------------------------*/
+/*----- BEGIN transcript search results --*/
+/*----------------------------------------*/
+.transcript-search-result {display:table;width:100%;}
+.transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
+.transcript-search-result .search-snippet-info {display:table-cell;vertical-align:top;}
+.transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;width:200px;}
+
+/*----------------------------------------*/
+/*--- END transcript search results ------*/
+/*----------------------------------------*/
+
+
+
 /*-------------------------*/
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
@@ -579,6 +597,8 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .btn-group-lg .btn-primary.btn-icon{padding:0;width:100%;line-height:2em;text-transform:uppercase;color:#eee;font-size:.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:.06em;overflow:hidden;position:relative;}
 .btn-group-lg .btn-primary.btn-icon .shanticon{text-align:center;width:3.12em;font-size:130%;line-height:2.5em;display:inline-block;padding:.06em;background:#4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:.25em 0 0 .25em;background-clip:padding-box;}
 .btn-group-lg .btn-primary.btn-icon span:last-child{padding:1.25em 1.5em 1.25em 7em;margin:1px 0 0;line-height:1.62em;font-size:70%;background:transparent;display:block;letter-spacing:.12em;width:100%;}
+.btn-group-lg.btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} /*--- set up for new video transcript controls --*/
+
 .btn-group-lg .btn-primary.btn-icon:hover,.btn-group-lg .btn-primary.btn-icon:focus{background:#4c54c7;}
 .btn-group-lg .btn-primary.btn-icon:hover .shanticon,.btn-group-lg .btn-primary.btn-icon:focus .shanticon{background:#373d91;}
 .btn-group-lg .btn-primary.btn-icon:active span,.btn-group-lg .btn-primary.btn-icon.active span{background:rgba(255,255,255,.07);}
@@ -609,7 +629,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 /*-------------------------*/
 
 /* custom buttons */
-.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){width:1.5%;}
+/*.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){width:1.5%;} no longer using this wider transcript button on videos */
 .btn-group-lg.btn-group-transcript > .btn-group:nth-child(1) .btn{border-left:none;}
 .btn.field-add-more-submit{margin-left:1em;}
 
@@ -1030,13 +1050,14 @@ table tr.ok { color: #234600; background: #f8fff0;}
 .panel-default .panel-heading+.panel-collapse .panel-body,
 .panel-group .panel-heading+.panel-collapse .panel-body{ margin:0;border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
-.panel-group .panel-heading .glyphicon{font-size:80%;position:relative;top:0;margin-right:.5em;}
-/*--- for Kmaps-style larger toggle panels ---*/
-.panel-group .panel.panel-default h6{ font-size:1em; line-height:3.75em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;padding-left:20px;height:60px;}
-.panel-group .panel.panel-default h6 a { color:#444;font-size:1em; line-height:3.93em; border:none; font-weight:bold;  text-decoration: none;display:block;}
-.panel-group .panel.panel-default h6 .glyphicon { font-size: 0.63em; background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;margin-right:20px;margin-left:5px;float: left;position: relative;top: 19px;left: 0;-webkit-box-shadow: 0 0 4px 3px #ddd;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
-.panel-group .panel.panel-default .accordion-toggle .glyphicon:before { position: relative;top: 4px;left: 5px;}
-.panel-group .panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus:before { position: relative;left: 4px;}
+/*--- for larger toggle panels ---*/
+.panel.panel-default h6{ text-transform:uppercase;font-size:1em; line-height:4em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;padding-left:20px;height:60px;}
+.panel.panel-default h6 a { color:#444;border:none;display:block;}
+.panel.panel-default h6 .glyphicon { font-size: 0.63em; margin-right:9px;background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;float:left;position:relative;top: 19px;left: 0;-webkit-box-shadow: 0 0 4px 3px #ddd;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
+.panel.panel-default .accordion-toggle .glyphicon:before { position: relative;top: 4px;left: 5px;}
+.panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus:before { position: relative;left: 4px;}
+
+.panel.field-group-fieldset{ margin-bottom:0;}
 /* END accordion */
 
 
@@ -1067,11 +1088,11 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 /*----------------------------*/
 /*--- BEGIN video view page --*/
 /*----------------------------*/
-/* .mms-wrap-left {float:left;} */
-.mms-wrapper {display:table-cell;}
-.mms-right {display:table-cell; vertical-align:top;}
-.mms-wrap-left {display:table-cell; width:800px;}
-.transcript-container {height:800px; overflow:scroll;}
+/* .av-main-wrap-left {float:left;} */
+.av-main-wrapper {}
+.av-main-transcript-section {padding-left:1rem;}
+.av-main-video-section {/*width:800px;*/}
+.transcript-container {height:800px; overflow-x:auto;}
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
@@ -1720,7 +1741,7 @@ form table td.label{ padding-top:0.68em !important;}
 @media screen and (max-width: 830px) {
 
 	 .navbar-header a span{ display:none;}
-	 .btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:2%;}
+	 /*-- .btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:2%;} ---*/
 
 
 }
