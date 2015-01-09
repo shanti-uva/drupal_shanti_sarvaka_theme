@@ -1086,7 +1086,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-wrapper {}
 .av-main-transcript-section {padding-left:0;}
 .av-main-video-section {/*width:800px;*/}
-.transcript-container { height:800px; overflow-x:auto;margin-top:-1.5rem;}
+.transcript-container { height:800px; overflow-x:auto;}
 
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
