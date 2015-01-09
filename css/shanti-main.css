@@ -1087,7 +1087,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-transcript-section {padding-left:0;}
 .av-main-video-section {/*width:800px;*/}
 .transcript-container { height:800px; overflow-x:auto;}
-
+.transcript-container ul:first-child{ -webkit-margin-before: 0;}
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
