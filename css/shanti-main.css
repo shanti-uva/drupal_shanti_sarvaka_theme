@@ -522,20 +522,6 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 
 
 
-/*----------------------------------------*/
-/*----- BEGIN transcript search results --*/
-/*----------------------------------------*/
-.transcript-search-result {display:table;width:100%;}
-.transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
-.transcript-search-result .search-snippet-info {display:table-cell;vertical-align:top;}
-.transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;width:200px;}
-
-/*----------------------------------------*/
-/*--- END transcript search results ------*/
-/*----------------------------------------*/
-
-
-
 /*-------------------------*/
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
@@ -597,7 +583,6 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .btn-group-lg .btn-primary.btn-icon{padding:0;width:100%;line-height:2em;text-transform:uppercase;color:#eee;font-size:.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:.06em;overflow:hidden;position:relative;}
 .btn-group-lg .btn-primary.btn-icon .shanticon{text-align:center;width:3.12em;font-size:130%;line-height:2.5em;display:inline-block;padding:.06em;background:#4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:.25em 0 0 .25em;background-clip:padding-box;}
 .btn-group-lg .btn-primary.btn-icon span:last-child{padding:1.25em 1.5em 1.25em 7em;margin:1px 0 0;line-height:1.62em;font-size:70%;background:transparent;display:block;letter-spacing:.12em;width:100%;}
-.btn-group-lg.btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} /*--- set up for new video transcript controls --*/
 
 .btn-group-lg .btn-primary.btn-icon:hover,.btn-group-lg .btn-primary.btn-icon:focus{background:#4c54c7;}
 .btn-group-lg .btn-primary.btn-icon:hover .shanticon,.btn-group-lg .btn-primary.btn-icon:focus .shanticon{background:#373d91;}
@@ -628,10 +613,10 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 /*----- END Buttons -----*/
 /*-------------------------*/
 
-/* custom buttons */
-/*.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){width:1.5%;} no longer using this wider transcript button on videos */
-.btn-group-lg.btn-group-transcript > .btn-group:nth-child(1) .btn{border-left:none;}
 .btn.field-add-more-submit{margin-left:1em;}
+
+
+
 
 
 
@@ -918,7 +903,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content table.field-multiple-table .bootstrap-select > .btn{ /* width:50%; */}
 .main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ font-size:0.88em; max-width:25rem !important; /* width:45% !important; commented out for Video Edit page edits */}
 
-.main-content .bootstrap-select .popover-title{ padding: 0.3rem 1.2rem; margin-bottom:0.2rem;}
+.main-content .bootstrap-select .popover-title{ font-size:0.93em; padding: 0.3rem 1.2rem; margin-bottom:0.2rem;}
 .main-content .bootstrap-select .btn{margin:0;padding-left:1.5rem;color:#606060;background:transparent;background-image:none;background-image:-webkit-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-moz-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-ms-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-o-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-repeat:repeat-x;border:1px solid #ddd;border-color:#fff #eee #ddd;border-radius:25px;background-clip:padding-box;overflow:hidden;-webkit-box-shadow:none;box-shadow:none}
 .main-content .bootstrap-select .btn:hover,
 .main-content .bootstrap-select .btn:focus{border:1px solid #ccc;background:#eee}.main-content .bootstrap-select .btn:focus,
@@ -1084,15 +1069,25 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 /**********************************************/
 /**** REVIEW - mix including MB migration *****/
 /**********************************************/
+.transcript-controls table tbody,
+.transcript-player table tbody{ border-top:none;}
+.transcript-controls .btn-group.btn-group-lg{ width:100%; margin-top:0;}
+.transcript-controls .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
+.btn-group-lg.btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} /*--- set up for new video transcript controls --*/
+.btn-group-lg.btn-group-transcript .btn.btn-icon .icon{width:auto;}
 
-/*----------------------------*/
-/*--- BEGIN video view page --*/
-/*----------------------------*/
+.transcript-search-result {display:table;width:100%;}
+.transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
+.transcript-search-result .search-snippet-info {display:table-cell;vertical-align:top;}
+.transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;width:200px;}
+
+
 /* .av-main-wrap-left {float:left;} */
 .av-main-wrapper {}
-.av-main-transcript-section {padding-left:1rem;}
+.av-main-transcript-section {padding-left:0;}
 .av-main-video-section {/*width:800px;*/}
-.transcript-container {height:800px; overflow-x:auto;}
+.transcript-container { height:800px; overflow-x:auto;margin-top:-1.5rem;}
+
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
@@ -1101,18 +1096,21 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .video-row{ margin-bottom: 12px;}
 
-.avinfo{ float:left; margin-right:15px;}
+.avinfo{ padding-left:0 !important;}
+.video-overview{ padding-left:5px !important;}
 .avinfo .trans-btn{ padding-bottom:5px;}
 .avinfo .btn.btn-primary.btn-icon{ margin:0 0 5px;}
+.avinfo > h5:first-child{ margin:0;}
+.avinfo > h5{margin-bottom:0.3rem;}
+.avinfo .transcripts-processed .form-item{ margin-top:0.5rem;}
+.avinfo .transcripts-processed{ margin-left:0;}
 
 .avdesc{ margin: 5px 0 0; max-width:800px;}
 
-.avdesc .video-overview{ margin-left:175px;}
-
 .avdate .icon,
 .avduration .icon{ margin-right:0.25em;}
-.avduration::after,
-.avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;}
+/* .avduration::after,
+.avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;} */
 
 .fivestar-average-stars .star,
 .fivestar-average-stars .star a,
@@ -1133,7 +1131,6 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-basic div.fivestar-widget .cancel a:active{ color:red;}
 .fivestar-basic div.fivestar-widget .cancel a:before{ content: '\e60f';}
 
-.avinfo div h5{ margin-bottom:0.25em;}
 .avshare div h5 span{ color: #5a65d1; font-size: 0.9em; font-weight: normal;}
 .avshare ul{ list-style-type: none; padding-left:0; margin-top:5px;}
 .avshare ul li{}
@@ -1173,14 +1170,6 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 .field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{ padding:5px;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
 
 .form-item.form-type-select.form-item-spaces-features-transcripts-settings{ width:7em;}
-
-.transcripts-processed{ margin-left:0;}
-
-.transcript-controls table tbody,
-.transcript-player table tbody{ border-top:none;}
-
-.btn-group.btn-group-lg.btn-group-justified.btn-group-transcript{ width:100%; margin-top:0;}
-
 
 
 
