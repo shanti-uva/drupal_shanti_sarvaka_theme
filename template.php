@@ -967,7 +967,7 @@ function shanti_sarvaka_textfield($variables) {
  * Implements HOOK_breadcrumbs
  * Customizes output of breadcrumbs
  */
-function shanti_sarvaka_get_breadcrumbs($variables) {
+function shanti_sarvaka_breadcrumb($variables) {
   global $base_url;
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
   $output = '<ol class="breadcrumb">';
