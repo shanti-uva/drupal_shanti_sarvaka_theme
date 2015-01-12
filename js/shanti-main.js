@@ -415,6 +415,7 @@
    */
   Drupal.behaviors.shantiSarvakaGalleryInit = {
     attach: function (context, settings) {
+    	//console.log(context, settings);
       $('.shanti-gallery', context).imagesLoaded(function() {
           // Prepare layout options.
           var options = {
@@ -423,9 +424,9 @@
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
             offset: 15, // Optional, the distance between grid items
             outerOffset: 0, // Optional the distance from grid to parent
-            flexibleWidth: '30%' // Optional, the maximum width of a grid item
+            flexibleWidth: '30%', // Optional, the maximum width of a grid item
+            ignoreInactiveItems: false,
           };
-
           // Get a reference to your grid items.
           var handler = $('.shanti-gallery li');
           
@@ -460,14 +461,14 @@
 				  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
 				});
 
-      // *** CONTENT *** accordion toggle
+        // Icon toggling with accordions
 				$.fn.accordionFx = function() {
 				    return this.each(function(span, accordion) {
 				        $(".accordion-toggle", accordion).click(function(ev) {
 				            var link = ev.target;
 				            var header = $(link).closest(".panel-heading");
-				            var chevState = $(".glyphicon", header)
-				                .toggleClass('glyphicon-plus glyphicon-minus');
+				            var chevState = $(".glyphicon", header).toggleClass('glyphicon-plus glyphicon-minus');
+				            
 				            $(".glyphicon", accordion)
 				                .not(chevState)
 				                .removeClass("glyphicon-minus")
@@ -477,7 +478,7 @@
 				};
 				
 				jQuery(function ($) {
-					$('#accordion, #av-details').accordionFx();
+					$('.field-accordion, #accordion').accordionFx();
 				});
 
         
@@ -650,6 +651,20 @@
 
     }
   };
+  
+  if (typeof kWidget != 'undefined')
+	kWidget.domReady(function(){
+	function calcPlayerSize() {
+		for (var player in kWidget.readyWidgets) {
+	       var elm = document.getElementById(player);
+			elm.style.width = "auto";
+			elm.style.height = (elm.clientWidth/16.0)*9+"px";
+	   }
+	}
+	window.addEventListener("resize", calcPlayerSize, false);
+	calcPlayerSize();
+	});
+
   
 }(jQuery));
 
