@@ -971,7 +971,7 @@ function shanti_sarvaka_breadcrumb($variables) {
   global $base_url;
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
   $output = '<ol class="breadcrumb">';
-  if(!$variables['is_front']) {
+  if(empty($variables['is_front'])) {
     array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
   }
 	if(count($breadcrumbs) > 1) {
