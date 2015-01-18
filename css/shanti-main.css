@@ -1074,7 +1074,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .transcript-controls .btn-group.btn-group-lg{ width:100%; margin-top:0;}
 .transcript-controls .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
 .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} /*--- set up for new video transcript controls --*/
-.btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ position:static;line-height:1;}
+.btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ position:static;line-height:1;width:auto;background:transparent;}
 
 .transcript-search-result {display:table;width:100%;}
 .transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
