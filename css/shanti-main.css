@@ -1069,30 +1069,12 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 /**********************************************/
 /**** REVIEW - mix including MB migration *****/
 /**********************************************/
-.transcript-controls table tbody,
-.transcript-player table tbody{ border-top:none;}
-.transcript-controls .btn-group.btn-group-lg{ width:100%; margin-top:0;}
-.transcript-controls .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
- /*--- .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} set up for new video transcript controls --*/
-.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em .75em;}
-.btn-group-transcript .btn.btn-icon span{ width:15%; position:static;}
-.btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
-.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
-
-.btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
-
-.transcript-search-result {display:table;width:100%;}
-.transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
-.transcript-search-result .search-snippet-info {display:table-cell;vertical-align:top;}
-.transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;width:200px;}
-
 
 /* .av-main-wrap-left {float:left;} */
 .av-main-wrapper {}
 .av-main-transcript-section {padding-left:0;}
 .av-main-video-section {/*width:800px;*/}
-.transcript-container { height:800px; overflow-x:auto;}
-.transcript-container ul:first-child{ -webkit-margin-before: 0;}
+
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 .node-video > div{ border-bottom:1px solid #f7f7f7;}
