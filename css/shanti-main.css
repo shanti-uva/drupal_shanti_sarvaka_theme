@@ -1081,7 +1081,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
 
-.transcript-search-result {display:table;width:100%;}
+.transcript-search-result {display:static;width:100%;}
 .transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
 .transcript-search-result .search-snippet-info {display:table-cell;vertical-align:top;}
 .transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;width:200px;}
