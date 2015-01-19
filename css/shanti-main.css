@@ -1073,7 +1073,8 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .transcript-player table tbody{ border-top:none;}
 .transcript-controls .btn-group.btn-group-lg{ width:100%; margin-top:0;}
 .transcript-controls .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
-.btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} /*--- set up for new video transcript controls --*/
+ /*--- .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} set up for new video transcript controls --*/
+ .btn-group-transcript .btn.btn-icon span{ width:17%; position:static;}
 .btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ position:static;line-height:1;width:auto;background:transparent;}
 
 .transcript-search-result {display:table;width:100%;}
@@ -1131,7 +1132,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-basic div.fivestar-widget .cancel a:active{ color:red;}
 .fivestar-basic div.fivestar-widget .cancel a:before{ content: '\e60f';}
 
-.avshare div h5 span{ color: #5a65d1; font-size: 0.9em; font-weight: normal;}
+.avshare div h5 span{ color: #5a65d1; font-size:0.9em; font-weight:normal;}
 .avshare ul{ list-style-type: none; padding-left:0; margin-top:5px;}
 .avshare ul li{}
 .avshare ul li a{ color:#555; font-weight:bold;border-bottom:none;}
