@@ -1077,6 +1077,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em .75em;}
 .btn-group-transcript .btn.btn-icon span{ width:15%; position:static;}
 .btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:4rem;}
 
 .transcript-search-result {display:table;width:100%;}
 .transcript-search-result .shanti-thumbnail-image {display:table-cell;vertical-align:top;width:200px;}
