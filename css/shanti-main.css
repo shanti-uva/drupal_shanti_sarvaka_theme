@@ -1445,7 +1445,24 @@ form table td.label{ padding-top:0.68em !important;}
 
 .admin-menu .content table td{background:transparent;}
 
+/**
+ * 	New Tabs at bottom
+ */
+.drupal-tabs {
+	margin: -40px 0px 20px;
+}
 
+.drupal-tabs ul.primary {
+	border: none;
+}
+
+.drupal-tabs ul.primary li a  {
+	color: #454fa4;
+}
+
+.drupal-tabs ul.primary li a.active {
+  color: #000;
+}
 /*----------------------------------*/
 /*--- START shanticon icon font ----*/
 /*----------------------------------*/

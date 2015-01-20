@@ -63,10 +63,6 @@
               <div class="banner-content">
                 <?php print render($page['banner']); ?>
               </div>
-              <?php
-                // For view/edit tabs
-                print render($tabs);
-              ?>
             </div>
           </header>
 
@@ -131,6 +127,12 @@
 
 <!-- Footer -->
 <footer class="footer">
+	<div class="drupal-tabs">
+		<?php
+	    // For view/edit tabs
+	    print render($tabs);
+	  ?>
+  </div>
   <div>
     <p>© COPYRIGHT 2014</p>
     <?php print render($page['footer']); ?>
