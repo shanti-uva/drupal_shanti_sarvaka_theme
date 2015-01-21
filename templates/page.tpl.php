@@ -50,13 +50,13 @@
           <!-- Banner Region -->
           <header class="col-xs-12 titlearea banner<?php print $variables['banner_class']; ?>">
            <div role="banner">
-            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><span><?php
+            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><?php
             	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
             		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
             	} else {
             		print ($title == '')? $variables['default_title']:$title;
             	}
-              ?></span></h1>
+              ?></h1>
               <nav class="breadwrap" role="navigation">
                 <?php print theme('breadcrumb', array('breadcrumb' => $breadcrumb)); ?>
               </nav>
