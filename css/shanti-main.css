@@ -156,9 +156,9 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*--- BEGIN banner header ---*/
 .titlearea { color: #f9f9f9;position: relative;padding:0;margin:0;}
 .titlearea>div{ height:65px; /* bottom shadow here, top shadow is off header-banner */ -webkit-box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);border-collapse: separate; position:relative; z-index:1;}
-.page-title { font-weight: normal;font-size:1.56em;line-height:1.68em;text-shadow:0 0 3px rgba(50,50,50, 0.225);margin:0;padding:5px 0 0;color:#f9f9f9;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;padding-right:4rem;}
+.page-title { font-weight: normal;font-size:1.56em;line-height:1.32em;text-shadow:0 0 3px rgba(50,50,50, 0.225);margin:0;padding:5px 0 0;color:#f9f9f9;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;padding-right:4rem;}
 /*.page-title span { position:relative; top: 0.18em;}*/
-.page-title .icon { font-size:80%;line-height:1.75em;margin:0 7px 0 0;width:1.75em; height:1.75em;text-align:center;color:#fff; float:left;position:relative; top: 0.5rem; z-index:10; display:block; background: rgba(0, 0, 0, 0.175);}
+.page-title .icon { font-size:80%;line-height:1.75em;margin:0 7px 0 0;width:1.75em; height:1.75em;text-align:center;color:#fff; float:left;position:relative; top: 0; z-index:10; display:block; background: rgba(0, 0, 0, 0.175);}
 .page-title .icon:before{background:transparent !important;position:relative; left:0.06em; z-index:15;}
 
 
