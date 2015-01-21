@@ -50,19 +50,24 @@
           <!-- Banner Region -->
           <header class="col-xs-12 titlearea banner<?php print $variables['banner_class']; ?>">
            <div role="banner">
-            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><?php
+            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><span class="page-title-text
+            "><?php
             	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
             		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
             	} else {
             		print ($title == '')? $variables['default_title']:$title;
             	}
-              ?></h1>
+              ?></span></h1>
               <nav class="breadwrap" role="navigation">
                 <?php print theme('breadcrumb', array('breadcrumb' => $breadcrumb)); ?>
               </nav>
               <div class="banner-content">
                 <?php print render($page['banner']); ?>
               </div>
+              <?php
+                // For view/edit tabs
+                print render($tabs);
+              ?>
             </div>
           </header>
 
@@ -127,12 +132,6 @@
 
 <!-- Footer -->
 <footer class="footer">
-	<div class="drupal-tabs">
-		<?php
-	    // For view/edit tabs
-	    print render($tabs);
-	  ?>
-  </div>
   <div>
     <p>© COPYRIGHT 2014</p>
     <?php print render($page['footer']); ?>
