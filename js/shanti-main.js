@@ -386,6 +386,11 @@
 	          $(divs).removeClass('in');
 	        }
 	      });
+	      
+	      
+				$('.searchtrans').click( function(){  
+					$('.transcripts-ui-search-form .input-group').toggleClass('show');		
+				});
 
 	      // call Check Width
 	      Drupal.ShantiSarvaka.checkWidth();
@@ -665,9 +670,6 @@
 	calcPlayerSize();
 	});
 
-	$('.searchtrans').click( function(){  
-		$('.transcripts-ui-search-form .input-group').toggleClass('show');		
-	});
 		
 }(jQuery));
 
