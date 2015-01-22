@@ -665,7 +665,10 @@
 	calcPlayerSize();
 	});
 
-  
+	$('.searchtrans').click( function(event){  
+		$('.transcripts-ui-search-form .input-group').toggleClass('show hide');		
+	});
+		
 }(jQuery));
 
 
