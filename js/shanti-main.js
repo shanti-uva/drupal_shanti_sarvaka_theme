@@ -665,8 +665,8 @@
 	calcPlayerSize();
 	});
 
-	$('.searchtrans').click( function(event){  
-		$('.transcripts-ui-search-form .input-group').toggleClass('show hide');		
+	$('.searchtrans').click( function(){  
+		$('.transcripts-ui-search-form .input-group').toggleClass('show');		
 	});
 		
 }(jQuery));
