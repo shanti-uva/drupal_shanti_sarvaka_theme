@@ -389,7 +389,7 @@
 	      
 	      
 				$('.searchtrans').click( function(){  
-					$('.transcripts-ui-search-form .input-group').toggleClass('show');		
+					$('.transcripts-ui-search-form').toggleClass('show');		
 				});
 
 	      // call Check Width
