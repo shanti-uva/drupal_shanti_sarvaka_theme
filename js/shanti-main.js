@@ -478,7 +478,7 @@
 				};
 				
 				jQuery(function ($) {
-					$('.field-accordion, #accordion').accordionFx();
+					$('.field-accordion, #av-details, #accordion').accordionFx();
 				});
 
         
