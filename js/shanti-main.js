@@ -459,7 +459,7 @@
         // Icon toggling with accordions
 				$.fn.accordionFx = function() {
 				    return this.each(function(span, accordion) {
-				        $(".accordion-toggle", accordion).click(function(ev) {
+				        $("#accordion .accordion-toggle", accordion).click(function(ev) {
 				            var link = ev.target;
 				            var header = $(link).closest(".panel-heading");
 				            var chevState = $(".glyphicon", header).toggleClass('glyphicon-plus glyphicon-minus');
