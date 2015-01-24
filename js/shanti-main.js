@@ -459,7 +459,7 @@
         // Icon toggling with accordions
 				$.fn.accordionFx = function() {
 				    return this.each(function(span, accordion) {
-				        $("#accordion .accordion-toggle", accordion).click(function(ev) {
+				        $(".accordion-toggle", accordion).click(function(ev) {
 				            var link = ev.target;
 				            var header = $(link).closest(".panel-heading");
 				            var chevState = $(".glyphicon", header).toggleClass('glyphicon-plus glyphicon-minus');
@@ -491,13 +491,8 @@
         /* - mark hide 12/24 - Select only accordions not in vertical tabs */
   			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
         var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
-
-        $active.find('a').prepend('<span class="glyphicon glyphicon-minus"></span>');
-
-        accorddivs.find('.panel-heading').once('expgylph').not($active).find('a').prepend('<span class="glyphicon glyphicon-plus"></span>');
-
+        
         accorddivs.on('show.bs.collapse', function (e) {
-  					var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
             accorddivs.find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
             $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
