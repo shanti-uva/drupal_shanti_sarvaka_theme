@@ -473,7 +473,7 @@
 				};
 				
 				jQuery(function ($) {
-					$('.field-accordion, #av-details, #accordion').accordionFx();
+					$('.field-accordion, #accordion').accordionFx();
 				});
 
         
@@ -486,7 +486,9 @@
 				  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
 				});
 
-        /* - mark hide 12/24 - Select only accordions not in vertical tabs 
+
+
+        /* - mark hide 12/24 - Select only accordions not in vertical tabs */
   			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
         var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
 
@@ -503,7 +505,9 @@
         accorddivs.on('hide.bs.collapse', function (e) {
             $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
-				*/
+				
+				
+				
 				
         /*-- toggle icon on accordions -- */
         $('.btn-toggle-accordion').click(function () {
