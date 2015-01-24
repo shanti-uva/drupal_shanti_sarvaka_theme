@@ -477,15 +477,15 @@
 				});
         
         // Shiva site gets doubly glypicons. So need to be removed
-        // $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
+    // $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
 
         // Open first accordion if none opened
-        $("#av-details .field-accordion").each(function(index, element){
-				  $(element).addClass(index == 0 ? "in" : "").once();
-				  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
-				});
+    //    $("#av-details .field-accordion").each(function(index, element){
+		//		  $(element).addClass(index == 0 ? "in" : "").once();
+		//		  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
+		//		});
 
-        /* - mark hide 12/24 - Select only accordions not in vertical tabs */
+        /* - mark hide 12/24 - Select only accordions not in vertical tabs 
   			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
         var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
         
@@ -497,7 +497,7 @@
         accorddivs.on('hide.bs.collapse', function (e) {
             $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
-				
+				*/
 				
 				
 				
