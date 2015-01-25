@@ -59,6 +59,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 		'viewport' => array(
 			'#type' => 'html_tag',
 			'#tag' => 'meta',
+			'#name' => 'viewport',
 			'#attributes' => array(
 				'content' => 'width=device-width, initial-scale=1',
 			),
@@ -480,7 +481,7 @@ function shanti_sarvaka_menu_tree__shanti_explore_menu($variables) {
   if(module_exists('explore_menu')) {
     $html = '<section class="'
               . variable_get('explore_section_class', EXPLORE_SECTION_CLASS) . '"><nav class="row" role="navigation"> '
-              . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4 class"collections-title">'
+              . '<div class="' . variable_get('explore_div_class', EXPLORE_DIV_CLASS) . '"> <h4 class="collections-title">'
               . variable_get('explore_div_title', EXPLORE_DIV_TITLE) . '</h4>'
               . '<div class="shanti-collections"><ul>'
               . $variables['tree'] . '</ul></div></div><button class="close"> <span class="icon shanticon-cancel"></span> </button></nav></section>';
@@ -1084,7 +1085,7 @@ function _shanti_sarvaka_add_metatags() {
       '#tag' => 'link',
       '#attributes' => array(
         'href' => $base . 'images/favicons/favicon.ico',
-        'rel' => 'shortcut icon',
+        'rel' => 'icon',
       ),
     ),
     'favicon-16-32-64' => array(
