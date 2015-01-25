@@ -75,7 +75,7 @@
 
 
         <!-- Begin Content Row -->
-        <div class="row row-offcanvas row-offcanvas-left">
+        
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
@@ -103,7 +103,7 @@
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
-        </div>
+        
 
         <a href="#" class="back-to-top"><span class="icon fa"></span></a>
       </article>
