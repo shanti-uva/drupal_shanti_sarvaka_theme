@@ -2,19 +2,19 @@
    <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#kmaps-search">Skip to search</a></span>
     <!-- Header Region -->
    <header class="header-banner">
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default">
 
-	      <nav class="navbar-buttons">
-	        <span class="menu-icon shanti-searchtoggle"><a href="#"><span class='icon shanticon-search'></span></a></span><!-- mobile < 400 : search -->
-	        <span class="menu-icon menu-toggle"><a href="#"><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
-	        <span class="menu-icon menu-maintoggle"><a href="#"><span class="icon shanticon-menu"></span></a></span><!-- mobile < 768 : main-menu -->
+	      <nav class="navbar-buttons" role="navigation">
+	        <span class="menu-icon shanti-searchtoggle"><a href="#"><span class="sr-only">Search</span><span class='icon shanticon-search'></span></a></span><!-- mobile < 400 : search -->
+	        <span class="menu-icon menu-toggle"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
+	        <span class="menu-icon menu-maintoggle"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- mobile < 768 : main-menu -->
 	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
 	      </nav>
 
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
 	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<?php print $site_name; ?> Homepage">
 	          <?php if($variables['shanti_site']): ?>
-	            <span class="icon shanticon-logo"></span><em>SHANTI</em><?php if($variables['use_admin_site_title']) {
+	            <span class="icon shanticon-logo"></span><span class="shanti">SHANTI</span><?php if($variables['use_admin_site_title']) {
 		            	print "<span class=\"site-title\">{$site_name}</span>";
 		            } ?>
 	          <?php else: ?>
@@ -25,7 +25,7 @@
 	      </h1>
 
 	      <!-- HEADER REGION -->
-	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
+	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop" role="navigation"> <!-- desktop display > 768 -->
 	         <form class="form">
 	         <fieldset>
 	          <ul class="nav navbar-nav navbar-right">
@@ -50,8 +50,8 @@
           <!-- Banner Region -->
           <header class="col-xs-12 titlearea banner<?php print $variables['banner_class']; ?>">
            <div role="banner">
-            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><span class="page-title-text
-            "><?php
+            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><span class="page-title-text">
+            <?php
             	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
             		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
             	} else {
