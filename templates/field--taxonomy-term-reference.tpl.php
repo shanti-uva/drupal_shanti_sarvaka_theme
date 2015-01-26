@@ -57,7 +57,7 @@
      	print $label; 
     ?>&nbsp;</span>
   <?php endif; ?>
-  <span class="field-items-span"<?php print $content_attributes; ?>>
+  <div class="field-items-span"<?php print $content_attributes; ?>>
   	<?php if($element['#label_display'] == 'above'): ?>
 	  	<ul>
 	    <?php foreach ($items as $delta => $item): ?>
@@ -66,8 +66,8 @@
 	    </ul>
 	  <?php else: ?>
 	    <?php foreach ($items as $delta => $item): ?>
-	      <span class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></span>
+	      <div class="field-item-span <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
 	    <?php endforeach; ?>
 	  <?php endif; ?>
-  </span>
+  </div>
 </div>
