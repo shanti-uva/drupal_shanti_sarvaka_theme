@@ -419,6 +419,7 @@
       $('.shanti-gallery', context).imagesLoaded(function() {
           // Prepare layout options.
           var options = {
+          	align: 'left',
             itemWidth: 160, // Optional min width of a grid item
             autoResize: true, // This will auto-update the layout when the browser window is resized.
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
