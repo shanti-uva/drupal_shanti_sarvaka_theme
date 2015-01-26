@@ -625,7 +625,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 /*------------------------*/
 .carousel{ margin-bottom:0.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
 .carousel-header{ margin: 0;}
-.carousel-header span{ font-style:italic;font-weight:bold;font-size:1.em;margin-left:0.5rem;}
+.carousel-header span{ font-style:italic;font-weight:bold;font-size:1em;margin-left:0.5rem;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
 
 .carousel-main-content{  float:left; padding-left:0 !important;}
