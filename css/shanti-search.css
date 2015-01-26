@@ -692,7 +692,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.loading-text {
+#loading-text {
     -moz-animation: loading-text-opacity 2s linear 0s infinite normal;
     -o-animation: loading-text-opacity 2s linear 0s infinite normal;
     -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
@@ -703,10 +703,8 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     font-weight: normal;
     opacity: 0;
     position: relative;
-    left:4rem;
     top:200px;
     text-align: center;
-    width: 130px;
 }
 /* ----- END search loading ----- */
 
