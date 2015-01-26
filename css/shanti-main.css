@@ -1137,6 +1137,8 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 .field-name-field-tags div{ display:inline-block;}
 .field-name-field-tags .field-item a{ /*display:inline-block;*/ float:left; padding:0.06em 0.5em;}
 
+.field-item-span{ display:inline;}
+
 /* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;} */
 .video-overview .desc-readmore{ margin:-10px 0 20px;}
 
