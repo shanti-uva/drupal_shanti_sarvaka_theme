@@ -61,6 +61,7 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 			'#tag' => 'meta',
 			'#name' => 'viewport',
 			'#attributes' => array(
+				'name' => 'viewport',
 				'content' => 'width=device-width, initial-scale=1',
 			),
 			'#weight' => -998,

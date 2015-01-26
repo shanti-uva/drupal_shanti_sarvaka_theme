@@ -287,19 +287,19 @@
   Drupal.behaviors.shantiSarvakaPopovers = {
     attach: function (context, settings) {
 
-      $('span.popover-link', context).each(function() {
+      $('.popover-link', context).each(function() {
         var content = $(this).next('div.popover').html();
         var title = $(this).next('div.popover').attr('data-title');
         $(this).popover({'title': title, 'content': content});
       });
       $('div.popover', context).remove(); // remove hidden popover content once they have all been initialized
       // show.bs called immediately upon click. Hide all other popovers.
-      $('span.popover-link', context).on('show.bs.popover', function(){
+      $('.popover-link', context).on('show.bs.popover', function(){
       	$('div.popover').hide();
       });
       // shown.bs is after popup is rendered. Move footer outside of content
       /*
-      $('span.popover-link').on('shown.bs.popover', function(){
+      $('.popover-link').on('shown.bs.popover', function(){
       	var pophtml = $(this).next('div.popover');
       	var popfooter = pophtml.find('.popover-footer').detach();
       	pophtml.find('.popover-content').after(popfooter);
