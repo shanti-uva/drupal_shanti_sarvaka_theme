@@ -35,10 +35,10 @@
         <div class="search-group">
           <div class="input-group">
 				  	<?php print $search['search_block_form']; ?>
-				  	<span class="input-group-btn">
+				  	<div class="input-group-btn">
 				  		<?php print $search['actions']; ?>
 				  		<button type="reset" class="btn searchreset"><span class="icon"></span></button>
-				  	</span>
+				  	</div>
 
 				  	<?php print $search['hidden']; ?>
 
