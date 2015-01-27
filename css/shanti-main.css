@@ -1061,9 +1061,9 @@ ul.shanti-gallery > div{
 #block-system-main.block.block-system{ float:left;width:100%;}
 body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
-
-
-
+/*--- testing - transcripts search results but should apply across site */
+.page-search .form-item.form-type-checkbox.form-item-retain-filters{ display:block; margin:0;}
+.page-search .container-inline.form-wrapper div{ display:inline-block;}
 
 
 
