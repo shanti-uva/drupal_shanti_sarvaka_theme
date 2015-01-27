@@ -208,7 +208,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 }
 */
 
-.breadwrap{margin:.25em 0 0 2em;padding:0;display:block;height:1.18em;overflow:hidden;width:96%;background:transparent;}
+.breadwrap{margin:.5em 0 0 2em;padding:0;display:block;height:1.18em;overflow:hidden;width:96%;background:transparent;}
 .breadcrumb{margin:0;padding:0;white-space:nowrap;width:100%;overflow:hidden;background:transparent;line-height:21px;height:21px;font-size:.75em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;font-weight:normal;/**zoom:1;*/border:none;}
 .breadcrumb:before,
 .breadcrumb:after{content:' ';display:table;}
@@ -903,7 +903,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content table.field-multiple-table .bootstrap-select > .btn{ /* width:50%; */}
 .main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ font-size:0.88em; max-width:25rem !important; /* width:45% !important; commented out for Video Edit page edits */}
 
-.main-content .bootstrap-select .popover-title{ font-size:0.93em; padding: 0.3rem 1.2rem; margin-bottom:0.2rem;}
+.main-content .bootstrap-select .popover-title{ font-size:0.93em; padding: 0.5rem 1.2rem 0.2rem; margin-bottom:0.2rem;}
 .main-content .bootstrap-select .btn{margin:0;padding-left:1.5rem;color:#606060;background:transparent;background-image:none;background-image:-webkit-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-moz-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-ms-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:-o-linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-image:linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-repeat:repeat-x;border:1px solid #ddd;border-color:#fff #eee #ddd;border-radius:25px;background-clip:padding-box;overflow:hidden;-webkit-box-shadow:none;box-shadow:none}
 .main-content .bootstrap-select .btn:hover,
 .main-content .bootstrap-select .btn:focus{border:1px solid #ccc;background:#eee}.main-content .bootstrap-select .btn:focus,
