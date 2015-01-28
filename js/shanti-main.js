@@ -658,16 +658,14 @@
     attach: function (context, settings) {
     	if(context == document) {  
 				  if (typeof kWidget != 'undefined')
-					kWidget.domReady(function(){
-					function calcPlayerSize() {
-						for (var player in kWidget.readyWidgets) {
-					       var elm = document.getElementById(player);
+					kWidget.addReadyCallback(function(playerId){
+						function calcPlayerSize() {
+					       		var elm = document.getElementById(playerId);
 							elm.style.width = "auto";
 							elm.style.height = (elm.clientWidth/16.0)*9+"px";
-					   }
-					}
-					window.addEventListener("resize", calcPlayerSize, false);
-					calcPlayerSize();
+						}
+						window.addEventListener("resize", calcPlayerSize, false);
+						calcPlayerSize();
 					});
 	    }
     }
