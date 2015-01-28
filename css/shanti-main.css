@@ -19,10 +19,11 @@ a:hover,a:focus{text-decoration:none;color: rgb(207, 47, 30);}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+h1, h2{ font-size:1.5em; margin:0;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
 label{ color:#555;font-size:80%;font-family:'museo-sans-500',helvetica,arial,sans-serif;text-transform:uppercase;margin:0 0 0 1rem;}
 
-input.form-text,input.form-control,textarea.form-textarea{color:#777;border:1px solid #ccc;border-radius:1.5em;background-clip:padding-box;font-size:.9em;height:2em;line-height:1.5em;padding:.25em 1em 0;max-width:35em;overflow:auto;-webkit-box-shadow:0 2px 5px #eee inset;box-shadow:0 2px 5px #eee inset;border-collapse:separate;background:#fff;-webkit-transition-property:all;-webkit-transition-duration:400ms;transition-property:all;transition-duration:400ms;background-position:99% .62em !important;}
+input.form-text,input.form-control,textarea.form-textarea{color:#777;border:1px solid #ccc;border-radius:1.5em;background-clip:padding-box;font-size:.9em;font-family:'museo-sans-500',helvetica,arial,sans-serif;height:2em;line-height:1.5em;padding:.25em 1em 0;max-width:35em;overflow:auto;-webkit-box-shadow:0 2px 5px #eee inset;box-shadow:0 2px 5px #eee inset;border-collapse:separate;background:#fff;-webkit-transition-property:all;-webkit-transition-duration:400ms;transition-property:all;transition-duration:400ms;background-position:99% .62em !important;}
 textarea.form-textarea{max-width:100%;height:auto;padding:.6rem 1.2rem 1.2rem;border-radius:.5em;}
 input.form-control:hover,textarea.form-textarea:hover{ background:#f9f9f9; border:1px solid #c0c0c0;}
 input.form-control:focus,textarea.form-textarea:focus{ background:#fff; border:1px solid #9097d3;-webkit-box-shadow:0 0 4px #949bd8;box-shadow:0 0 4px #949bd8;border-collapse:separate;}
@@ -1060,11 +1061,13 @@ ul.shanti-gallery > div{
 #block-system-main.block.block-system{ float:left;width:100%;}
 body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
-
-
-
-
-
+/*--- testing - transcripts search results but should apply across site */
+.page-search .form-item.form-type-checkbox.form-item-retain-filters{ display:block; margin:0;position:relative;top:-0.8rem;}
+.page-search .container-inline.form-wrapper div{ display:inline-block;}
+.page-search .container-inline.form-wrapper .btn{ padding: .44em 2em .32em;}
+.page-search .form-control.form-text{ height:2.2em;}
+.page-search .form-item.form-type-checkbox label{ text-transform:capitalize;}
+.page-search .form-item.form-type-textfield.form-item-keys{ margin-top:-0.5rem;}
 
 /**********************************************/
 /**** REVIEW - mix including MB migration *****/

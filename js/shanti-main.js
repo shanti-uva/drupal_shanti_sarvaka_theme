@@ -657,19 +657,17 @@
   Drupal.behaviors.shantiSarvakaOtherInit = {
     attach: function (context, settings) {
     	if(context == document) {  
-				  if (typeof kWidget != 'undefined') {
-						kWidget.domReady(function(){
+			  if (typeof kWidget != 'undefined') {
+					kWidget.addReadyCallback(function(playerId) {
 						function calcPlayerSize() {
-							for (var player in kWidget.readyWidgets) {
-						       var elm = document.getElementById(player);
-								elm.style.width = "auto";
-								elm.style.height = (elm.clientWidth/16.0)*9+"px";
-						   }
+					    var elm = document.getElementById(playerId);
+							elm.style.width = "auto";
+							elm.style.height = (elm.clientWidth/16.0)*9+"px";
 						}
 						window.addEventListener("resize", calcPlayerSize, false);
 						calcPlayerSize();
-						});
-					}
+					});
+				}
 	    }
     }
   };
