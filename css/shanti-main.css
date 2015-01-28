@@ -1065,8 +1065,9 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .page-search .form-item.form-type-checkbox.form-item-retain-filters{ display:block; margin:0;position:relative;top:-0.8rem;}
 .page-search .container-inline.form-wrapper div{ display:inline-block;}
 .page-search .container-inline.form-wrapper .btn{ padding: .44em 2em .32em;}
-.page-search .form-control.form-text{ margin-top:0 !important;height:2.2em;}
+.page-search .form-control.form-text{ height:2.2em;}
 .page-search .form-item.form-type-checkbox label{ text-transform:capitalize;}
+.page-search .form-item.form-type-textfield.form-item-keys{ margin-top:-0.5rem;}
 
 /**********************************************/
 /**** REVIEW - mix including MB migration *****/
