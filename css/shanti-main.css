@@ -1065,7 +1065,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .page-search .form-item.form-type-checkbox.form-item-retain-filters{ display:block; margin:0;position:relative;top:-0.8rem;}
 .page-search .container-inline.form-wrapper div{ display:inline-block;}
 .page-search #edit-keys.form-control.form-text{ margin-top:0;height:2.7em;}
-.page-search .option.icheck-label.icheck{ text-transform:capitalize;}
+.page-search .form-item.form-type-checkbox label{ text-transform:capitalize;}
 
 /**********************************************/
 /**** REVIEW - mix including MB migration *****/
