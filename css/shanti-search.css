@@ -153,8 +153,32 @@ object.flip_label{ display:none;}
 	display:none;
 	padding:0;margin:0;
 }
-.input-section .input-group .searchreset .icon:before{ content: "\e60f";}
+.input-section .input-group .btn.searchreset:active,
+.input-section .input-group .btn.searchreset.active{ box-shadow:none; background-image:none;}
+.input-section .input-group .btn.searchreset .icon{ font-size:1.25em; color:#aaa; }
+.input-section .input-group .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
+
 .input-section .feature-group .feature-reset{ position:absolute; top:23px;right:11px;}
+
+.input-section .feature-group .feature-reset{
+	border:none;
+	background:transparent;
+	background-image:none;
+	width:15px;
+	height:15px;
+	position:absolute;
+	right:13px;
+	top:22px;
+	z-index:10000;
+	display:none;
+	padding:0;
+	margin:0;
+}
+.input-section .feature-group .feature-reset i.icon{ font-size:1.25em; color:#c0c0c0; }
+.input-section .feature-group .feature-reset i.icon:before{ font-family: 'shanticon'; content: "\e610"; }
+
+
+
 
 /*-----------------------------------------------*/
 
