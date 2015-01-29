@@ -80,9 +80,9 @@ object.flip_label{ display:none;}
 /*--- START :: Search Panel :: Input & View ----*/
 /*----------------------------------------------*/
 .input-section{ padding:0;border: 1px solid #e0e0e0;display:block;width:100%;}
-.input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}
+/*.input-section .input-group .form-control{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}*/
 .input-section .input-group{ padding: 0 12px 0 10px; display:block; width:100%; background:#f8f8f8;}
-.input-section .input-group input.form-control{
+.input-section .input-group .form-control{
 	color:#777;
 	border: 1px solid #ccc;
 	border-radius: 25px;
@@ -105,8 +105,8 @@ object.flip_label{ display:none;}
 	transition-property: all;
 	transition-duration: 400ms;
 }
-.input-section .input-group input.form-control:hover{ border: 1px solid #ccc; color:#777;}
-.input-section .input-group input.form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
+.input-section .input-group .form-control:hover{ border: 1px solid #ccc; color:#777;}
+.input-section .input-group .form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
 /*--- button group ---*/
 .input-section .input-group .input-group-btn{ width:45px !important; /* set button width and position */ position:absolute; top:15px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
