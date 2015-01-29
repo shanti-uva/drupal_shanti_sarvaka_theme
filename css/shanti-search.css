@@ -158,8 +158,6 @@ object.flip_label{ display:none;}
 .input-section .input-group .btn.searchreset .icon{ font-size:1.25em; color:#aaa; }
 .input-section .input-group .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
 
-.input-section .feature-group .feature-reset{ position:absolute; top:23px;right:11px;}
-
 .input-section .feature-group .feature-reset{
 	border:none;
 	background:transparent;
@@ -173,9 +171,10 @@ object.flip_label{ display:none;}
 	display:none;
 	padding:0;
 	margin:0;
+	position:absolute; top:23px; right:11px;
 }
-.input-section .feature-group .feature-reset i.icon{ font-size:1.25em; color:#c0c0c0; }
-.input-section .feature-group .feature-reset i.icon:before{ font-family: 'shanticon'; content: "\e610"; }
+.input-section .feature-group .feature-reset .icon{ font-size:1.25em; color:#c0c0c0; }
+.input-section .feature-group .feature-reset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
 
 
 
