@@ -654,7 +654,7 @@
   };
 
 
-  Drupal.behaviors.shantiSarvakaOtherInit = {
+   Drupal.behaviors.shantiSarvakaKalturaLoading = {
     attach: function (context, settings) {
     	if(context == document) {  
 			  if (typeof kWidget != 'undefined') {
