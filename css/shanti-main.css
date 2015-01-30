@@ -1157,6 +1157,8 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 .avsubjects,
 .avplace{ margin-top:10px;}
 
+.avsubjects .field-items-span,
+.avplace .field-items-span{ display: inline;}
 
 .field-name-field-pbcore-description > .field-items > .field-item{ margin-bottom: 12px;}
 .field-name-field-pbcore-title.field-type-field-collection.field-label-hidden{ padding:5px;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
