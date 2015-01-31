@@ -86,45 +86,4 @@ Drupal.behaviors.sarvakaMbextruder = {
   };
 
 
-// --- kms, KMAPS MAIN SEARCH INPUT ---
-//  Drupal.behaviors.sarvakaSearchReset = {
-//    attach: function (context, settings) {
-//    	if(context == document) {
-//				var kms = $("#searchform"); // the main search input
-//			  $(kms).data("holder",$(kms).attr("placeholder"));
-//
-//			  // --- features inputs - focusin / focusout
-//			  $(kms).focusin(function(){
-//			      $(kms).attr("placeholder","");
-//			      $("button.searchreset").show("fast");
-//			  });
-//			  $(kms).focusout(function(){
-//			      $(kms).attr("placeholder",$(kms).data("holder"));
-//			      $("button.searchreset").hide();
-//
-//			    var str = "Enter Search...";
-//			    var txt = $(kms).val();
-//
-//			    if (str.indexOf(txt) > -1) {
-//			      $("button.searchreset").hide();
-//			    return true;
-//			    } else {
-//			      $("button.searchreset").show(100);
-//			    return false;
-//			    }
-//			  });
-//			  // --- close and clear all
-//			  $("button.searchreset").click(function(){
-//			    $(kms).attr("placeholder",$(kms).data("holder"));
-//			    $("button.searchreset").hide();
-//			    $(".alert").hide();
-//			        searchUtil.clearSearch();
-//			        $('#tree').fancytree("getTree").clearFilter();
-//			  });
-//	    }
-//    }
-//  };
-
-
-
 })(jQuery);
