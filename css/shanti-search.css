@@ -140,13 +140,12 @@ object.flip_label{ display:none;}
 .input-section .feature-group .feature-reset,
 .input-section .input-group .searchreset{
 	border:none;
-	background: #eee;
-	border-radius:50%;
+	background:transparent;
 	background-image:none;
 	width:15px;
 	height:15px;
 	position:absolute;
-	right:49px;
+	right:46px;
 	top:9px;
 	z-index:10000;
 	font-size:1.5em;
@@ -538,16 +537,15 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .fancytree-node.fancytree-active{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
 
 
-.view-section .fancytree-node .ajax-progress{ position:relative;top:-21px; right:5px; background:#fff;}
-.view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:relative;right:21px;}
+.view-section .fancytree-node .ajax-progress{ position:absolute; left:4.8rem; background:#fff;}
+.view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; left:4.8rem;}
 
 .view-section .fancytree-title{
 	color:#444;
 	margin:0 0 0 -24px;
 	padding-left:15px;
-	padding-top:2px;
 	line-height:1.5em;
-	height:1.5em;
+	height:1.62em;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
   box-sizing: content-box;
