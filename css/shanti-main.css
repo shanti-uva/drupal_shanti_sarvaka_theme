@@ -1037,8 +1037,8 @@ table tr.ok { color: #234600; background: #f8fff0;}
 .panel-group .panel-heading+.panel-collapse .panel-body{ margin:0;border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
 /*--- for larger toggle panels ---*/
-.panel.panel-default h6{ text-transform:uppercase;font-size:1em; line-height:4em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;padding-left:20px;height:60px;}
-.panel.panel-default h6 a { color:#444;border:none;display:block;}
+.panel.panel-default h6{ text-transform:uppercase;font-size:1em; line-height:4em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;height:60px;}
+.panel.panel-default h6 a { color:#444;border:none;display:block;padding-left:2rem;}
 .panel.panel-default h6 .glyphicon { font-size: 0.63em; margin-right:9px;background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;float:left;position:relative;top: 19px;left: 0;-webkit-box-shadow: 0 0 4px 3px #ddd;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
 .panel.panel-default .accordion-toggle .glyphicon:before { position: relative;top: 4px;left: 5px;}
 .panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus:before { position: relative;left: 4px;}
