@@ -537,8 +537,8 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .fancytree-node.fancytree-active{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
 
 
-.view-section .fancytree-node .ajax-progress{ position:absolute; left:4.8rem; background:#fff;}
-.view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; left:4.8rem;}
+.view-section .fancytree-node .ajax-progress{ position:absolute; right:1rem; background:#fff;}
+.view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:1rem;}
 
 .view-section .fancytree-title{
 	color:#444;
