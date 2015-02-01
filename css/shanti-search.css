@@ -140,7 +140,7 @@ object.flip_label{ display:none;}
 .input-section .feature-group .feature-reset,
 .input-section .input-group .searchreset{
 	border:none;
-	background:#ddd;
+	background:#eee;
 	background-image:none;
 	width:15px;
 	height:15px;
@@ -559,7 +559,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	content: '\e625';
 	font-size: 1em;
 	float:left;
-	position:relative; top:4px; right:2px;
+	position:relative; top:5px; right:2px;
   border-radius: 50%;
   background-clip: padding-box;
   width: 9px;
