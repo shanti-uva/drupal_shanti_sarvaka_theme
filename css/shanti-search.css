@@ -316,9 +316,9 @@ object.flip_label{ display:none;}
 .input-section .selectpicker li:hover span.text,
 .input-section .selectpicker li:active span.text{ background: transparent !important; }
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color:#d00;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:focus .check-mark{ color:#d00;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark{ color:#d00;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover i.check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:focus i.check-mark{ color:#d00;}
  /* search errors */
 .input-section .notification-wrapper{ padding: 0 15px;}
 .input-section .alert{ margin:0 10px 10px;padding: 10px 15px;text-shadow: 0 1px 0 rgba(255,255,255,.4);}
