@@ -52,7 +52,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .main-wrapper:after{ clear:both;}
 .main-content{ position:relative;margin:0 auto;min-height:100%;/*font-size:1em;*/}
 .content-section { height:100%; min-height:100%;}
-.content-section.equal-height > .tab-content{ padding-top:1rem;padding-bottom:5rem;}
+.content-section.equal-height > .tab-content{ padding-top:1.7rem;padding-bottom:5rem;}
 
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
@@ -944,7 +944,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content .selectpicker>li.selected>a .check-mark,
 .main-content .selectpicker>li.selected>a:hover .check-mark,
 .main-content .selectpicker>li.selected>a:focus .check-mark{ color:#dc3c47;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ position:absolute; right:15px; margin-top:2px;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ position:absolute; right:1rem; top:0.5rem; margin-top:0;display:inline-block;}
 .bootstrap-select.btn-group .btn .filter-option{ font-size:1em;}
 .bootstrap-select.btn-group .btn .filter-option .icon,
 .bootstrap-select.btn-group .btn .filter-option span{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
