@@ -944,7 +944,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content .selectpicker>li.selected>a .check-mark,
 .main-content .selectpicker>li.selected>a:hover .check-mark,
 .main-content .selectpicker>li.selected>a:focus .check-mark{ color:#dc3c47;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ position:absolute; right:1rem; top:0.5rem; margin-top:0;display:inline-block;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ position:absolute; right:15px; top:0.5rem; margin-top:0;display:inline-block;}
 .bootstrap-select.btn-group .btn .filter-option{ font-size:1em;}
 .bootstrap-select.btn-group .btn .filter-option .icon,
 .bootstrap-select.btn-group .btn .filter-option span{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
