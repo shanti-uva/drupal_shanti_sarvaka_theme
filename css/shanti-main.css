@@ -944,11 +944,6 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content .selectpicker>li.selected>a .check-mark,
 .main-content .selectpicker>li.selected>a:hover .check-mark,
 .main-content .selectpicker>li.selected>a:focus .check-mark{ color:#dc3c47;}
-.main-content .selectpicker>li>a .icon-ok.check-mark:before{ color:#ccc;}
-.main-content .selectpicker>li.selected>a .icon-ok.check-mark{ margin-top: 0; top:0.5rem;}
-.main-content .selectpicker>li.selected>a:hover .icon-ok.check-mark:before,
-.main-content .selectpicker>li.selected>a:active .icon-ok.check-mark:before{ color:#aaa;}
-
 .bootstrap-select.btn-group .btn .filter-option{ font-size:1em;}
 .bootstrap-select.btn-group .btn .filter-option .icon,
 .bootstrap-select.btn-group .btn .filter-option span{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
@@ -956,7 +951,9 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .bootstrap-select.btn-group.show-tick .icon:first-child{ position:relative; top:2px;}
 .bootstrap-select.form-control:not([class*='span']){ max-width:25em;}
 
-
+.main-content .selectpicker>li.selected>a .icon-ok.check-mark{ margin-top: 0; top:0.5rem;}
+.main-content .selectpicker>li.selected>a:hover .icon-ok.check-mark:before,
+.main-content .selectpicker>li.selected>a:active .icon-ok.check-mark:before{ color:#aaa;}
 
 .view-filters .bootstrap-select.form-control:not([class*='span']){ padding-right:0; width:100%;}
 /*--- END selectpicker ---*/
