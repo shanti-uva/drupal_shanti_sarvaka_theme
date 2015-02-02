@@ -316,7 +316,7 @@ object.flip_label{ display:none;}
 .input-section .selectpicker li:hover span.text,
 .input-section .selectpicker li:active span.text{ background: transparent !important; }
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark{ color:#d00;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark{ color:#d00;margin-top:0 !important;top:0.5rem;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover i.check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:focus i.check-mark{ color:#d00;}
  /* search errors */
