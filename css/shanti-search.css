@@ -291,7 +291,7 @@ object.flip_label{ display:none;}
 .input-section .dropdown-menu.open{ border-radius:10px;background-clip: padding-box; overflow:auto;}
 .input-section .selectpicker .dropdown-menu>li>a span.text{ margin-right:0; padding-left:18px; overflow:hidden;}
 
-.input-section .bootstrap-select.btn-group .dropdown-menu{ height:270px;}
+.input-section .bootstrap-select.btn-group .dropdown-menu{ height:265px;}
 .input-section .bootstrap-select.btn-group .dropdown-menu.open{  overflow:auto !important;}
 .input-section .selectpicker .caret{ border:none; }
 .input-section .selectpicker .caret:before{ color:#d00; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon sorting arrows */ position:absolute; top:-11px; right:0px;}
@@ -308,13 +308,13 @@ object.flip_label{ display:none;}
 .input-section .selectpicker li,
 .input-section .selectpicker li a:active,
 .input-section .selectpicker li.selected a:hover,
-.input-section .selectpicker li.selected a:active{ color:#444 !important;}
+.input-section .selectpicker li.selected a:active{ color:#444;}
 
 .input-section .selectpicker li a span.text:hover,
-.input-section .selectpicker li.selected a span.text:hover{ color:#fff !important;}
+.input-section .selectpicker li.selected a span.text:hover{ color:#fff;}
 
 .input-section .selectpicker li:hover span.text,
-.input-section .selectpicker li:active span.text{ color:#fff !important; background: transparent !important; }
+.input-section .selectpicker li:active span.text{ background: transparent !important; }
 
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color:#d00;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .check-mark,
