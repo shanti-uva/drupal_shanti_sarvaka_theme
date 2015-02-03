@@ -454,7 +454,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-link{background:#5a65d1;border:none;height:1rem;width:1.05rem;color:white;padding:0;display:inline-block;position:relative;left:0;top:.1rem;margin-left:.6rem;margin-right:.4rem;font-size:1rem;}
 .popover-link-tip{border-bottom:.5rem solid transparent;border-top:0 solid transparent;border-right:.5rem solid #5a65d1;font-size:0;position:relative;bottom:1rem;right:.5rem;height:0;width:0;}
 .popover-link .icon{color:white;font-size:.7rem;position:relative;bottom:.2rem;right:.32rem;}.related-resources-popover{ border:none;padding:0;}
-.related-resources-popover .popover-title{ font-size:1.38rem; padding:12px 14px 0; font-family: 'museo-sans-500',Helvetica,Arial,sans-serif; background:transparent; border:none;}
+.related-resources-popover .popover-title{ font-size:1.32rem; padding:12px 14px 0; font-family: 'museo-sans-500',Helvetica,Arial,sans-serif; background:transparent; border:none;}
 .related-resources-popover .desc p { border-top:1px solid #ccc; padding-top:1rem; font-size: 0.88em; line-height:1.25em;}
 .related-resources-popover .parents{ line-height: 1em; }
 .related-resources-popover .parents p{margin-bottom:0;}
@@ -468,7 +468,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button{ background:#505050; border-bottom:1px solid #444; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ background:#404040;}
-.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:block; width:100%; line-height:3.12em; height: 3.25em;}
+.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:block; width:100%; font-size:1.18em; line-height:2.62em; height: 3.25em;}
 .popover-footer-button .icon:before{ color:#eee; margin-right:5px;}
 .popover-footer-button:hover .icon,
 .popover-footer-button:focus .icon{ color:#fff;}
@@ -946,7 +946,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content .selectpicker>li.selected>a .check-mark,
 .main-content .selectpicker>li.selected>a:hover .check-mark,
 .main-content .selectpicker>li.selected>a:focus .check-mark{ color:#dc3c47;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:#ddd;position:absolute; right:15px; top:0.5rem; margin-top:0;display:inline-block;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:#ddd;position:absolute; right:15px; top:0.5rem; margin-top:0 !important; display:inline-block;}
 .bootstrap-select.btn-group .btn .filter-option{ font-size:1em;}
 .bootstrap-select.btn-group .btn .filter-option .icon,
 .bootstrap-select.btn-group .btn .filter-option span{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
