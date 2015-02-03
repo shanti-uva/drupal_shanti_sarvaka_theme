@@ -686,6 +686,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .loading {
     height: 150px;
     position: relative;
+    top:-150px;
     width: 150px;
     border-radius: 100%;
 }
@@ -693,7 +694,6 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .loading-container { margin: 40px auto; position:relative;}
  
 .loading {
-		 top:-150px;
     border: 2px solid transparent;
     border-color: transparent #ccc transparent #ccc;
     -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
