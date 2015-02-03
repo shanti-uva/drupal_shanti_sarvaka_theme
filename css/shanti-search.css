@@ -694,7 +694,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
  
 .loading {
     border: 2px solid transparent;
-    border-color: transparent #fff transparent #FFF;
+    border-color: transparent #ccc transparent #ccc;
     -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
     -moz-transform-origin: 50% 50%;
     -o-animation: rotate-loading 1.5s linear 0s infinite normal;
