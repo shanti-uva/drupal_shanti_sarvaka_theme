@@ -143,6 +143,8 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .collections ul { margin: 0 auto;text-align:center;list-style-type: none;margin-bottom:10px !important;}
 .collections ul li { margin: 0;float:left;line-height:4.5em;width:20%;}
 .collections ul li a { color: #aaa;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:focus, 
+.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
 .collections ul li a:hover,
 .collections ul li a:focus { text-decoration: none;color: #fff;}
 .collections ul .icon { color: #aaa;margin-right:8px;font-size:1.5em;position:relative;top:2px;}
@@ -1641,7 +1643,8 @@ form table td.label{ padding-top:0.68em !important;}
   .collections ul:first-child{ margin-left:2%; }
 	.collections ul li { line-height:1.75em; width:20%; }
   .collections ul li a { font-size: 0.68em; line-height:2.25em;}
-
+	.collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:focus, 
+	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
 }
 
 
@@ -1745,6 +1748,8 @@ form table td.label{ padding-top:0.68em !important;}
   .main-content .content-section { /*max-width: 67em;*/ }
 
 	.collections ul li a { font-size: 0.68em; line-height:2em;}
+	.collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:focus, 
+	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
  	.collections h4 {
 		font-size:1.12em;
 	}
