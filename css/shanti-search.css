@@ -109,7 +109,7 @@ object.flip_label{ display:none;}
 .input-section .input-group input.form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
 /*--- button group ---*/
-.input-section .input-group .input-group-btn{ width:45px !important; /* set button width and position */ position:absolute; top:15px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
+.input-section .input-group .input-group-btn{ width:45px !important; height:35px; position:absolute; top:15px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
 
 /*--- button ---*/
 .input-section .input-group .btn.btn-default{
@@ -131,33 +131,31 @@ object.flip_label{ display:none;}
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 .input-section .input-group .btn.btn-default:hover{ background:#eee; color:#d00;}
-.input-section .input-group .btn.btn-default:active, .input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
+.input-section .input-group .btn.btn-default:active, 
+.input-section .input-group .btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
 .input-section .input-group .btn.btn-default .icon{ font-family: 'Glyphicons Halflings' !important;	background:transparent;}
 .input-section .input-group .btn.btn-default .icon:before{ content: '\e080'; position:relative; right:0.25rem; top:-0.56rem;}
 .input-section .input-group .btn.btn-default:active .icon,
 .input-section .input-group .btn.btn-default.active .icon{ color:#777;}
 /*--- clear all button ---*/
-.input-section .feature-group .feature-reset,
 .input-section .input-group .searchreset{
 	border:none;
-	background:#eee;
+	background:#ddd;
+	position:relative;
+	top:-2.3rem;
+	left: -1.8rem;
 	background-image:none;
-	width:15px;
-	height:15px;
-	position:absolute;
-	right:49px;
-	top:9px;
-	z-index:10000;
-	font-size:1.5em;
-	color:#ccc;
 	display:none;
-	padding:0;margin:0;
+	padding:0;
+	margin:0;
 	border-radius:50%;
 }
-.input-section .input-group .btn.searchreset:active,
-.input-section .input-group .btn.searchreset.active{ box-shadow:none; background-image:none;}
-.input-section .input-group .btn.searchreset .icon{ font-size:1.25em; color:#aaa; }
-.input-section .input-group .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
+.input-section .search-group .searchreset .icon{ cursor:pointer;}
+.input-section .search-group .searchreset .icon:before,
+.input-section .search-group .searchreset .icon:after{ background:#aaa; position:absolute;top:0.7rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.input-section .search-group .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
+.input-section .input-group .searchreset:hover,
+.input-section .input-group .searchreset:active{ border:1px solid #ccc;}
 
 .input-section .feature-group .feature-reset{
 	border:none;
