@@ -152,7 +152,7 @@ object.flip_label{ display:none;}
 }
 .input-section .search-group .searchreset .icon{ cursor:pointer;}
 .input-section .search-group .searchreset .icon:before,
-.input-section .search-group .searchreset .icon:after{ background:#aaa; position:absolute;top:0.7rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.input-section .search-group .searchreset .icon:after{ background:#aaa; position:absolute;top:0.2rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .input-section .search-group .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .input-section .input-group .searchreset:hover,
 .input-section .input-group .searchreset:active{ border:1px solid #ccc;}
