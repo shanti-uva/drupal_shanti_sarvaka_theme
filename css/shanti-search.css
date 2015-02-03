@@ -149,6 +149,9 @@ object.flip_label{ display:none;}
 	padding:0;
 	margin:0;
 }
+.input-section .input-group .searchreset:active,
+.input-section .input-group .searchreset.active{ background:transparent;border:none;background-image:none;}
+
 .input-section .search-group .searchreset .icon{ cursor:pointer; width: 1.75rem;
 height: 1.75rem;
 border-radius: 50%;
