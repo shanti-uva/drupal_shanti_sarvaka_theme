@@ -686,12 +686,11 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .loading {
     height: 150px;
     position: relative;
-    top:-300px;
     width: 150px;
     border-radius: 100%;
 }
  
-.loading-container { margin: 40px auto; position:relative;}
+.loading-container { margin: -200px auto 0;}
  
 .loading {
     border: 2px solid transparent;
