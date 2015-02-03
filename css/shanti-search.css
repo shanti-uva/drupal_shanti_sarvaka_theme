@@ -699,7 +699,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     border-radius: 100%;
 }
  
-.loading-container { margin: -130px auto 0;}
+.loading-container { margin: -180px auto 0;}
  
 .loading {
     border: 2px solid transparent;
