@@ -732,9 +732,8 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     opacity: 0;
     position: absolute;
     text-align: center;
-    text-transform: uppercase;
     top: 0;
-    width: 100px;
+    width: 130px;
 }/* ----- END search loading ----- */
 
 
