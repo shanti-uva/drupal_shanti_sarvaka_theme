@@ -495,7 +495,7 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
   $href = $variables['element']['#href'];
   $title = $variables['element']['#title'];
   $class = explore_menu_get_iconclass($title);
-	if($variables['element']['#attributes']['disabled'] == 'disabled') {
+	if(!empty($variables['element']['#attributes']['disabled'])) {
 		return '<li><a href="#" class="disabled"><span class="icon shanticon-' . $class . '"></span>' . $title . '</a></li>';
 	}
   return '<li><a href="' . $href . '"><span class="icon shanticon-' . $class . '"></span>' . $title . '</a></li>';
