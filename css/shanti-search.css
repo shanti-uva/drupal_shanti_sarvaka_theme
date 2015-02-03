@@ -685,7 +685,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .loading-container,
 .loading {
     height: 130px;
-    position: relative; top:-400px;
+    position: relative; top:-200px;
     width: 130px;
     border-radius: 100%;
     background-clip: padding-box;
@@ -726,7 +726,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     opacity: 0;
     position: relative;
     left:4rem;
-    top:0px;
+    top:-100px;
     text-align: center;
     width: 130px;
 }
