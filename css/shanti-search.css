@@ -723,7 +723,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     -o-animation: loading-text-opacity 2s linear 0s infinite normal;
     -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
     animation: loading-text-opacity 2s linear 0s infinite normal;
-    color: #ffffff;
+    color: #aaa;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 10px;
     font-weight: bold;
