@@ -191,7 +191,7 @@ background:transparent;
 
 .input-section .form-group{ margin-bottom:7px;padding-left:0;}
 .input-section .search-group{ height:86px;}
-.input-section .search-group .form-group{ padding-left:0.75em;}
+.input-section .search-group .form-group{ padding-left:1.5em;}
 .input-section .search-group .checkbox-inline:first-child{ margin-right: 5px;}
 .input-section .search-group .checkbox-inline>div{ margin-right: 4px;}
 .input-section .search-group .radio-inline:first-child{ width: auto;  margin-right: 5px;}
