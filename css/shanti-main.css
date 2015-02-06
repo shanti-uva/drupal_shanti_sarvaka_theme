@@ -967,7 +967,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .shanti-filters table td:nth-child(2){ width:100%;}
 .shanti-filters td .label{ color:#555;font-size: 0.88em;text-transform:uppercase;letter-spacing: -0.1rem;}
 .shanti-filters td .count{ font-size: 0.88em; padding-right:1rem;text-transform:capitalize;}
-.shanti-filters .ajax-progress{ /*display: inline;*/ float:right}
+.shanti-filters .ajax-progress{ /*display: inline;*/ position:absolute;top:0;right:0;}
 .form-item-sort-bef-combine .btn{ width: 15rem;}
 .form-item-sort-bef-combine label{ display: none;}
 .form-item-sort-bef-combine .dropdown-menu.open .disabled{ background-color: #d0d0d0;}
