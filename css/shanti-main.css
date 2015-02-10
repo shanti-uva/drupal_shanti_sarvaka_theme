@@ -1457,10 +1457,8 @@ form table td.label{ padding-top:0.68em !important;}
 .admin-menu .content table td{background:transparent;}
 
 
-/*----------------------------------*/
-/*--- START shanticon icon font ----*/
-/*----------------------------------*/
-/*--- shanticon icon font ---*/
+
+/*--- shanticon icon font default styles mimic .fa from fontawesome ---*/
 .icon{
 	font-family:'shanticon';
 	speak: none;
@@ -1472,66 +1470,7 @@ form table td.label{ padding-top:0.68em !important;}
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-/* --- will remove, now not needed for shanticon set --
-	-------------------------------
-	.icon-lg {
-  font-size: 1.3333333333333333em;
-  line-height: 0.75em;
-  vertical-align: -30%;
-}
-.icon-2x {
-  font-size: 2em;
-}
-.icon-3x {
-  font-size: 3em;
-}
-.icon-4x {
-  font-size: 4em;
-}
-.icon-5x {
-  font-size: 5em;
-}
-.icon-fw {
-  width: 1.2857142857142858em;
-  text-align: center;
-}
-.icon-ul {
-  padding-left: 0;
-  margin-left: 2.142857142857143em;
-  list-style-type: none;
-}
-.icon-ul > li {
-  position: relative;
-}
-.icon-li {
-  position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
-  top: 0.14285714285714285em;
-  text-align: center;
-}
-.icon-li.icon-lg {
-  left: -1.8571428571428572em;
-}
-.icon-border {
-  padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
-  border-radius: .1em;
-  background-clip: padding-box;
-}
-.icon.pull-left {
-  margin-right: .3em;
-}
-.icon.pull-right {
-  margin-left: .3em;
-}
-.icon-spin {
-  -webkit-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
-}
---------------------------------------*/
+
 
 /*---------------------------------------------------*/
 /*--- END Default Font Styles ----*/
@@ -1841,6 +1780,10 @@ background:transparent;
 .transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:2.25em;}
 .transcript-search-result .shanti-thumbnail-image a:hover .overlay::before,
 .transcript-search-result .shanti-thumbnail-image a:focus .overlay::before{ font-size:3.5em !important;}
+
+
+object.KalturaDynamicPlayer{ width:100% !important;}
+
 
 
 /*------------------------------*/
