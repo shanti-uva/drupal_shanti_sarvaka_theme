@@ -51,7 +51,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .main-wrapper{ background:#eee; position:relative; min-height:60em;}
 .main-wrapper:after{ clear:both;}
 .main-content{ position:relative;margin:0 auto;}
-.content-section.equal-height > .tab-content{ padding-top:1.7rem;padding-bottom:5rem;}
+.content-section.equal-height > .tab-content{ padding-top:0;padding-bottom:5rem;}
 
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
@@ -1940,22 +1940,6 @@ object.KalturaDynamicPlayer{ width:100% !important;}
   #menu-main .panel-group,
   #menu-collections .panel-group{ padding:0 !important;}
 
-	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-  .view-resources.btn-default { width:230px; display:block; padding:4px 8px 2px 60px; position:relative; top:0; left:-66px; font-size:.75em; line-height:1.75em; height:2.25em; background-image:none; border:none; border-radius:0; background:#555; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; }
-	.view-resources.btn-default.show { width:200px; padding-left:35px; text-align:left; position:relative; left:-218px;}
-	.view-resources.btn-default .icon { display:none;}
-	.view-resources.btn-default .icon:before{ font-family:'shanticon'; content: '\e610';}
-	.view-resources.btn-default.show .icon{ color:#fff; font-size:1.12em; width:10px; height:10px; /* display:inline; */ position:absolute; top:2px; right:5px; }
-	.view-resources.btn-default .header{ }
-	.view-resources.btn-default .fa { float:left; font-size:1.5em; margin-right:10px; position:relative; top:-1px; }
-	.view-resources.btn-default .fa:before { content: '\f138'; }
-	.view-resources.btn-default:hover .fa:before,
-	.view-resources.btn-default:focus .fa:before { content:'\f13a'; }
-	.view-resources.btn-default span { float:left; }
-	.view-resources.btn-default .badge { float:right; font-size: .68em; background:transparent; border:1px solid #ddd; padding:3px 7px; margin-right:15px; margin-top:1px; height:1.88em; line-height: .75em; font-weight:normal; -webkit-transition: all .2s ease-out;-moz-transition: all .2s ease-out;transition: all .2s ease-out; }
-	.view-resources.btn-default.show .badge { color:transparent; border-color:transparent; }
-	.view-resources.btn-default:hover,
-	.view-resources.btn-default:focus { background: #444; color:#fff;}
 
 }
 
