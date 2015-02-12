@@ -98,13 +98,13 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
 	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
   // Figure out bootstrap column classes
-  $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
-  $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
+  $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? '' : '';
+  $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? '' : '';
   $variables['bsclass_main'] = 'col-sm-6';
   if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
     $variables['bsclass_main'] = '';
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = 'col-sm-9';
+    $variables['bsclass_main'] = '';
   }
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
