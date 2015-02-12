@@ -79,13 +79,13 @@
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar col-xs-6 <?php print $bsclass_sb1; ?>">
+            <div id="sidebar-first" class="region sidebar col-xs-6 col-sm-3 col-lg-2 <?php print $bsclass_sb1; ?>">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="content-section col-xs-6<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>">
+          <section class="content-section col-xs-6 col-sm-12 col-lg-10<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>">
 	        
 	        <button type="button" class="btn btn-default btn-xs visible-xs view-resources" data-toggle="offcanvas">
             <i class="fa"></i>
