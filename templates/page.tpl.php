@@ -85,7 +85,7 @@
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>">
+          <section class="content-section col-xs-6 col-sm-12 col-lg-10<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>">
 	        
 	        <button type="button" class="btn btn-default btn-xs visible-xs view-resources" data-toggle="offcanvas">
             <i class="fa"></i>
@@ -107,7 +107,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas col-xs-6<?php print $bsclass_sb2; ?>">
+            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas col-xs-6 col-sm-3 col-lg-2<?php print $bsclass_sb2; ?>">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
