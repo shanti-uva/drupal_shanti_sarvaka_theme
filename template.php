@@ -104,7 +104,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
     $variables['bsclass_main'] = '';
   } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = '';
+    $variables['bsclass_main'] = 'col-sm-12';
   }
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
