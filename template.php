@@ -1342,8 +1342,3 @@ function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_sta
 function shanti_sarvaka_find_replace($markup, $element) {
         return str_replace($element['#find'], $element['#replace'], $markup);
 }
-function shanti_sarvaka_form_transcripts_ui_viewer_selector_alter(&$form, &$form_state) {
-        $form['viewer_selector']['#title'] = '';
-        $form['viewer_selector']['#attributes']['data-header'] = t('Select View');
-        $form['#attached']['js'][] = drupal_get_path('theme', 'shanti_sarvaka') .'/js/transcripts-ui-viewer-selector.js';
-}
