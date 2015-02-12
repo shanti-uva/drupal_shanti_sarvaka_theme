@@ -107,7 +107,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas col-xs-6 col-sm-3 col-lg-2<?php print $bsclass_sb2; ?>">
+            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas col-xs-6<?php print $bsclass_sb2; ?>">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
