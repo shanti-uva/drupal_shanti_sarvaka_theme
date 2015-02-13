@@ -166,51 +166,6 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 
 
 
-
-
-/* Float Clearing moved here from utils 12/18 mark - not sure where this is used, or if it is
-.module:after{
-	clear: both;
-	content: ".";
-	display: block;
-	height: 0;
-	visibility: hidden;
-}
-*/
-
-/* Breadcrumb Styles review - moved here from utils on 12/18 by mark 
-.breadcrumb{
-	margin: 0;
-	padding: 0;
-	float: left;
-	display: block;
-	height: 21px;
-	overflow: hidden;
-	width: 990px;
-	padding:5px;
-	border:solid 1px #dedede;
-	background:#fff;
-}
-.breadcrumb ul{
-	margin: 0;
-	padding: 0;
-	height: 21px;
-	display: block;
-}
-.breadcrumb ul li{
-	display: block;
-	float: left;
-	position: relative;
-	height: 21px;
-	overflow: hidden;
-	line-height: 21px;
-	margin: 0px 6px 0px 0;
-	padding: 0px 10px 0px 0;
-	font-size: .9167em;
-	background: url(images/Chevron.gif) no-repeat 100% 0;
-}
-*/
-
 .breadwrap{margin:.5em 0 0 2em;padding:0;display:block;height:1.18em;overflow:hidden;width:96%;background:transparent;}
 .breadcrumb{margin:0;padding:0;white-space:nowrap;width:100%;overflow:hidden;background:transparent;line-height:21px;height:21px;font-size:.75em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;font-weight:normal;/**zoom:1;*/border:none;}
 .breadcrumb:before,
