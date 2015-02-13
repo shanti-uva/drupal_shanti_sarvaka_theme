@@ -51,7 +51,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .main-wrapper{ background:#eee; position:relative; min-height:60em;}
 .main-wrapper:after{ clear:both;}
 .main-content{ position:relative;margin:0 auto;}
-.content-section.equal-height > .tab-content{ padding-top:0;padding-bottom:5rem;}
+.content-section.equal-height > .tab-content{ padding-top: 1.5rem;padding-bottom:5rem;}
 
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
