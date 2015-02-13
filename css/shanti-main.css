@@ -708,8 +708,8 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 
 
 /*--- BEGIN: top-tier of 2-tier carousel ---*/
-.feature-carousel-tabpanel{ margin-bottom:1.5rem;margin-top:0.7rem;}
-.feature-slide .carousel-header{ margin-top:0.5rem;}
+.feature-carousel-tabpanel{ margin-bottom:1.5rem;margin-top:0;}
+.feature-slide .carousel-header{ margin-top:0;}
 .feature-slide .carousel-header span{ font-size:0.93em;}
 
 .feature-slide-detail{ padding: 1.56em 2em; margin-bottom:0.25em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
