@@ -544,10 +544,6 @@
 
 	      // $('table.sticky-header').css('width','100%');
 
-	      // if($('.node-video').length ){
-	      //       $('.shanti-gallery').imagesLoaded();
-	      // });
-	      //-------
 
 	      // hide responsive column for resources
 	      $('[data-toggle=offcanvas]').click(function () {
@@ -567,13 +563,7 @@
 	          document.querySelector('head').appendChild(msViewportStyle);
 	        }
 	      })();
-	      //----
 
-	      /*
-	      $('.ss-full-tabs > .rel-video').on('click', function () {
-	        $.imagesLoaded();
-	      });*/
-	      //----
 
 	      var myElement = document.getElementById('.carousel.slide');
 	      if(myElement) {
