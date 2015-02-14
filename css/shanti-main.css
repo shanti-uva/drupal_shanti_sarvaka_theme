@@ -204,7 +204,7 @@ header ul.tabs.secondary{ border:none; display:inline; margin:0; padding:0; }
 header ul.tabs.primary li,
 header ul.tabs.secondary li{ border:none; padding:0;}
 header ul.tabs.primary li a,
-header ul.tabs.secondary li a{ border:none; font-size:1rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: inset 0px -18px 30px -23px rgba(50, 50, 50, 0.5); text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;}
+header ul.tabs.secondary li a{ border:none; font-size:1rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;}
 
 header ul.tabs.secondary{ position:relative; bottom:-0.45rem; left:1.75rem; z-index:2;}
 header ul.tabs.secondary li{ float:left;margin-right:0.15rem;}
