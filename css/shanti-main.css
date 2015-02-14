@@ -1034,7 +1034,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 /**********************************************/
 
 /* .av-main-wrap-left {float:left;} */
-.av-main-wrapper {}
+.av-main-wrapper { padding-top:1rem;}
 .av-main-transcript-section { }
 .av-main-video-section { }
 
