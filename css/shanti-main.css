@@ -1867,10 +1867,11 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 @media screen and (max-width: 767px) {
 
+  .content-section { padding-left:10px;}
+
 	.navbar-header a span{ position:relative; top:0;}
 	.menu-maintoggle{ display:inline;}
 	.menu-toggle{ display:none;}
-	.titlearea{ min-height:55px;}
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
   .breadcrumb li:first-child{ font-size:1em;}
 
