@@ -1037,7 +1037,8 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-wrapper { padding-top:1rem;}
 .av-main-transcript-section { }
 .av-main-video-section { }
-
+/*--- toggle button for resource column - tetsting dev ---*/
+button.btn.btn-default.visible-sm.view-resources{ display:none;}
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 /*.node-video > div{ border-bottom:1px solid #f7f7f7;}*/
