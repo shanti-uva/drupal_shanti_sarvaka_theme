@@ -1041,6 +1041,9 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
+
+.node-video h2{ font-size:1.25em;position:relative;top:0.5rem;}
+
 /*.node-video > div{ border-bottom:1px solid #f7f7f7;}*/
 .node-video ul.links.inline{ position:relative; top:10px;}
 .node-video ul.links.inline a{ font-size:90%;}
