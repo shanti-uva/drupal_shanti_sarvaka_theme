@@ -1037,6 +1037,9 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-wrapper { padding-top:1rem;}
 .av-main-transcript-section { }
 .av-main-video-section { }
+
+
+
 /*--- toggle button for resource column - tetsting dev ---*/
 .mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
 
@@ -1046,7 +1049,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 	line-height:1.12em;
 	font-size: 1.18em;
 	position: relative;
-	top: -0.3rem;
+	top: -0.75rem;
 }
 
 /*.node-video > div{ border-bottom:1px solid #f7f7f7;}*/
