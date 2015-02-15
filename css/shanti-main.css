@@ -1047,10 +1047,8 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .node-video .tab-content{ border-top:1px solid #ddd;}
 
 .node-video > h2{ 
-	line-height:1.12em;
+	line-height:0.25em;
 	font-size: 1.18em;
-	position: relative;
-	top: -0.75rem;
 }
 
 /*.node-video > div{ border-bottom:1px solid #f7f7f7;}*/
