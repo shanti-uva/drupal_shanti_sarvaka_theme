@@ -74,7 +74,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-.header-banner{ position:relative; z-index:300; overflow:visible; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px rgb(0, 0, 0); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
+.header-banner{ position:relative; z-index:300; overflow:visible; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); margin-top:0.7rem; box-shadow: 0 3px 10px rgb(0, 0, 0); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
@@ -1421,7 +1421,7 @@ form table td.label{ padding-top:0.68em !important;}
 .view-my-workflow .views-exposed-form .views-exposed-widget{ float:none;}
 
 
-.admin-menu .content table td{background:transparent;}
+.admin-menu .content table td{ background:transparent;}
 
 
 
@@ -1911,9 +1911,12 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 }
 
-@media screen and (min-width: 768px) {
 
   html body.admin-menu{ margin-top:2rem !important;} /* accounts for height of admin bar */
+
+@media screen and (min-width: 768px) {
+
+  html body.admin-menu{ margin-top:4rem !important;} /* accounts for height of admin bar */
   
 	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
