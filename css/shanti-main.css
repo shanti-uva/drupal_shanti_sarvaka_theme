@@ -200,12 +200,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 /*----- BEGIN navigation -----*/
 /*----------------------------*/
 
-.has-tabs div.banner-tabs{ width:100%;
-	background: #4CA6FB !important; /* match banner color in app */
-	height:2.5rem;
-	margin-top:0.9rem;
-	opacity:0.6;
-}
+.has-tabs div.banner-tabs{ width:100%; background: #4CA6FB !important; /* match banner color in app */ height:2.5rem;margin-top:0.9rem;opacity:0.6;}
 
 /**** Titlebar Tabs ****/
 header ul.tabs.primary,
