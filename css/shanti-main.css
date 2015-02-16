@@ -214,14 +214,14 @@ header ul.tabs.primary{ float:right; }
 header ul.tabs.primary li{ float:right;}
 
 header ul.tabs.primary li a:hover,
-header ul.tabs.secondary li a:focus,
-header ul.tabs.primary li a:hover,
+header ul.tabs.primary li a:focus,
+header ul.tabs.secondary li a:hover,
 header ul.tabs.secondary li a:focus{ background:rgba(255,255,255, .6000);}
 header ul.tabs.primary li.active a,
 header ul.tabs.secondary li.active a{ background:#f7f7f7;}
 header ul.tabs.primary li.active a:hover,
-header ul.tabs.secondary li.active a:focus,
-header ul.tabs.primary li.active a:hover,
+header ul.tabs.primary li.active a:focus,
+header ul.tabs.secondary li.active a:hover,
 header ul.tabs.secondary li.active a:focus{ background:#f7f7f7;}
 
 /***** Vertical Tabs *****/
