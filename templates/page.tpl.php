@@ -64,10 +64,12 @@
               <div class="banner-content">
                 <?php print render($page['banner']); ?>
               </div>
-              <?php
-                // For view/edit tabs
-                print render($tabs);
-              ?>
+              <div class="banner-tabs">
+                <?php
+                  // For view/edit tabs
+                  print render($tabs);
+                ?>
+              </div>
             </div>
           </header>
 
