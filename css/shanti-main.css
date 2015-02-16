@@ -227,7 +227,7 @@ header ul.tabs.secondary li a.active:after{ font-size:2.5em; font-family:'shanti
 
 header ul.tabs.primary{ float:right; position: absolute; bottom: -2.55rem; right:2rem; z-index:2;}
 header ul.tabs.primary li{ float:right;margin-right:0.2rem;}
-header ul.tabs.primary li a{ color:#444; background:rgba(255,255,255, .7000); line-height:2.8rem; height:2.5rem; padding:0 1.7rem;}
+header ul.tabs.primary li a{ color:#444; background:rgba(255,255,255, .8000); line-height:2.8rem; height:2.5rem; padding:0 1.7rem;}
 header ul.tabs.primary li a:hover,
 header ul.tabs.primary li a:focus{ background:rgba(255,255,255, .8000);}
 header ul.tabs.primary li.active a{ color:#666; background:#f7f7f7;}
