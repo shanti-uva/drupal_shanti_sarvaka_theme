@@ -74,7 +74,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-.header-banner{ position:relative; z-index:300; overflow:visible; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px rgb(0, 0, 0); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
+.header-banner{ position:relative; z-index:300; overflow:visible; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); margin-top:0.7rem; box-shadow: 0 3px 10px rgb(0, 0, 0); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
@@ -96,7 +96,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a .icon:before{ color:#fff;}
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.32em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.56em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
 .navbar-default .navbar-nav>li a:focus{ background:#f0f0f0;color:#444;}
@@ -1421,7 +1421,7 @@ form table td.label{ padding-top:0.68em !important;}
 .view-my-workflow .views-exposed-form .views-exposed-widget{ float:none;}
 
 
-.admin-menu .content table td{background:transparent;}
+.admin-menu .content table td{ background:transparent;}
 
 
 
@@ -1765,6 +1765,8 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 /*------------------------------*/
 
 
+  html body.admin-menu{ margin-top:4.5rem !important;} /* accounts for height of admin bar */
+
 
 
 /*------------------------------*/
@@ -1879,7 +1881,7 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 @media screen and (max-width: 767px) {
 
   .content-section { padding-left:10px;}
-  html body.admin-menu{ margin-top:55px !important;}
+  
 	.navbar-header a span{ position:relative; top:0;}
 	.menu-maintoggle{ display:inline;}
 	.menu-toggle{ display:none;}
@@ -1911,8 +1913,12 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 }
 
+
+
 @media screen and (min-width: 768px) {
 
+  html body.admin-menu{ margin-top:2rem !important;} /* accounts for height of admin bar */
+  
 	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	.navbar-default .menu-explore{ display:none !important; }
