@@ -200,7 +200,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 /*----- BEGIN navigation -----*/
 /*----------------------------*/
 
-.has-tabs div.banner-tabs{ border-bottom:1px solid #ccc; width:100%; background: #ccc !important; /* match banner color in app */ height:2rem;margin-top:0.7rem;opacity:0.6;}
+.has-tabs div.banner-tabs{ border-bottom:1px solid #ccc; width:100%; background: #ddd !important; /* match banner color in app */ height:2rem;margin-top:0.7rem;opacity:0.6;}
 
 /**** Titlebar Tabs ****/
 header ul.tabs.primary,
@@ -218,11 +218,11 @@ header ul.tabs.primary li a:focus,
 header ul.tabs.secondary li a:hover,
 header ul.tabs.secondary li a:focus{ background:rgba(255,255,255, .6000);}
 header ul.tabs.primary li.active a,
-header ul.tabs.secondary li.active a{ background:#eee;}
+header ul.tabs.secondary li.active a{ background:rgba(255,255,255, 1.000);}
 header ul.tabs.primary li.active a:hover,
 header ul.tabs.primary li.active a:focus,
 header ul.tabs.secondary li.active a:hover,
-header ul.tabs.secondary li.active a:focus{ background:#eee;}
+header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);}
 
 /***** Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section mediabase */
@@ -585,7 +585,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .carousel-header{ margin: 0;}
 .carousel-header span{ font-style:italic;font-weight:bold;font-size:1em;margin-left:0.5rem;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
-.carousel-inner{ height:230px;}
+.carousel-inner{ height:230px; overflow:visible;}
 
 .carousel-main-content{  float:left; padding-left:0 !important;}
 .carousel-title{ font-size:1em;font-weight:normal;margin: 0 0 0.8rem;}
