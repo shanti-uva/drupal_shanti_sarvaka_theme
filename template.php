@@ -97,15 +97,25 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
 	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
 	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
-  // Figure out bootstrap column classes
-  $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? '' : '';
-  $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? '' : '';
-  $variables['bsclass_main'] = 'col-sm-6';
-  if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = '';
-  } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = '';
-  }
+  // Figure out bootstrap column classes. Define class variables
+  $variables['bsclass_main'] = $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = '';
+	// if both side columns exist
+	if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
+  	$variables['bsclass_main'] = 'col-xs-12 col-md-8';
+  	$variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-12 col-md-2';
+	// If first side column exists
+	} else if ($variables['page']['sidebar_first']) {
+  	$variables['bsclass_main'] = 'col-xs-12 col-md-10';
+  	$variables['bsclass_sb1'] = 'col-xs-12 col-md-2';
+		$variables['bsclass_sb2'] = '';
+	// If second side column exists
+	} else if ($variables['page']['sidebar_second']) {
+  	$variables['bsclass_main'] = 'col-xs-12 col-md-10';
+  	$variables['bsclass_sb1'] = '';
+		$variables['bsclass_sb2'] = 'col-xs-12 col-md-2';
+	} 
+	// If no side columns keep default all classes blank
+	
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
 
