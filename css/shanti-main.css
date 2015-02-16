@@ -1879,7 +1879,7 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 @media screen and (max-width: 767px) {
 
   .content-section { padding-left:10px;}
-  html body.admin-menu{ margin-top:55px !important;}
+  
 	.navbar-header a span{ position:relative; top:0;}
 	.menu-maintoggle{ display:inline;}
 	.menu-toggle{ display:none;}
@@ -1913,6 +1913,8 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 @media screen and (min-width: 768px) {
 
+  html body.admin-menu{ margin-top:2rem !important;} /* accounts for height of admin bar */
+  
 	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	.navbar-default .menu-explore{ display:none !important; }
