@@ -218,11 +218,11 @@ header ul.tabs.primary li a:focus,
 header ul.tabs.secondary li a:hover,
 header ul.tabs.secondary li a:focus{ background:rgba(255,255,255, .6000);}
 header ul.tabs.primary li.active a,
-header ul.tabs.secondary li.active a{ background:#eee;}
+header ul.tabs.secondary li.active a{ background:rgba(255,255,255, 1.000);}
 header ul.tabs.primary li.active a:hover,
 header ul.tabs.primary li.active a:focus,
 header ul.tabs.secondary li.active a:hover,
-header ul.tabs.secondary li.active a:focus{ background:#eee;}
+header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);}
 
 /***** Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section mediabase */
