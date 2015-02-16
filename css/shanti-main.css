@@ -96,7 +96,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a .icon:before{ color:#fff;}
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.32em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.56em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
 .navbar-default .navbar-nav>li a:focus{ background:#f0f0f0;color:#444;}
@@ -1765,7 +1765,7 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 /*------------------------------*/
 
 
-  html body.admin-menu{ margin-top:4rem !important;} /* accounts for height of admin bar */
+  html body.admin-menu{ margin-top:4.5rem !important;} /* accounts for height of admin bar */
 
 
 
