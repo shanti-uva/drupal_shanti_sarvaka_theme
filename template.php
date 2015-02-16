@@ -613,7 +613,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
     }
     $url = url($link['link']['href']);
     if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
-    $target = (substr($url, 0, 4) != 'http') ? '': ' target="_blank"';
+    $target = (substr($url, 0, 4) != 'http' || strpos($url, 'Shibboleth.sso') > -1) ? '': ' target="_blank"';
     $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
     if(is_array($link['below']) && count($link['below']) > 0) {
     	$linkhtml .= '<h2>' . $link['link']['title'] . '</h2>';
