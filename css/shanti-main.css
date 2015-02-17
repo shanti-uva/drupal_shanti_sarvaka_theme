@@ -1766,9 +1766,6 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 
 
-html body{ margin-top:-8px !important;}
-html body.admin-menu{ margin-top:4.5rem !important;} /* accounts for height of admin bar */
-
 
 
 /*------------------------------*/
@@ -1919,7 +1916,6 @@ html body.admin-menu{ margin-top:4.5rem !important;} /* accounts for height of a
 
 @media screen and (min-width: 768px) {
 
-  html body.admin-menu{ margin-top:2rem !important;} /* accounts for height of admin bar */
   
 	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
