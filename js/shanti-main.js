@@ -759,7 +759,15 @@
 	  }
 	};
 	
-
+	
+	
+	Drupal.behaviors.kmapsOffCanvasButton = {
+	  attach: function (context, settings) {
+			if($(".feature-carousel-tabpanel").length ) {
+				$("button.btn.btn-default.view-resources").css( {'display':'none !important'} );
+			}
+	  }
+	};
   
   		
 }(jQuery));
