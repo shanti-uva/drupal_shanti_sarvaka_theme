@@ -1769,6 +1769,7 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 html body{ margin-top: 0 !important;}
 html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of admin bar */
 
+.view-resources.btn-default.noshow { display:none !important;}
 
 
 /*------------------------------*/
