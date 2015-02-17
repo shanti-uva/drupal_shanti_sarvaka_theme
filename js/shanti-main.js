@@ -764,7 +764,7 @@
 	Drupal.behaviors.kmapsOffCanvasButton = {
 	  attach: function (context, settings) {
 			if($(".feature-carousel-tabpanel").length ) {
-				$(".view-resources.btn-default").css(('display','none !important;'));
+				$(".view-resources.btn-default").hide();
 			}
 	  }
 	};
