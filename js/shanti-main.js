@@ -773,7 +773,7 @@
 	Drupal.behaviors.kmapsOverviewPageFormat = {
 	  attach: function (context, settings) {
 			if($(".main-overview-image").length = 0 ) {
-				$(".openlayermap").css('margin-top','-4rem');
+				$(".openlayermap").css('margin-top','0 !important');
 			}
 	  }
 	};
