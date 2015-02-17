@@ -1765,7 +1765,9 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 /*------------------------------*/
 
 
-  html body.admin-menu{ margin-top:4.5rem !important;} /* accounts for height of admin bar */
+
+html body{ margin-top:0 !important;}
+html body.admin-menu{ margin-top:4.5rem !important;} /* accounts for height of admin bar */
 
 
 
