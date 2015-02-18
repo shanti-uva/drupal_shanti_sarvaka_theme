@@ -137,7 +137,7 @@ object.flip_label{ display:none;}
 .input-section .input-group .btn.btn-default .icon:before{ content: '\e080'; position:relative; right:0.25rem; top:-0.56rem;}
 .input-section .input-group .btn.btn-default:active .icon,
 .input-section .input-group .btn.btn-default.active .icon{ color:#777;}
-/*--- clear all button ---*/
+/*--- clear all / cancel button ---*/
 .input-section .input-group .searchreset{
 	border:none;
 	background:transparent;

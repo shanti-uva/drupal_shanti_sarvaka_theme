@@ -424,10 +424,10 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button a{ font-family: "museo-sans-700",helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ background:#505050;}
-.popover-footer-button a > .icon{ font-family:'shanticon'; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1em; line-height:2.5em; height: 2.75em;}
-.popover-footer-button a > .icon:before{ font-family:'shanticon';color:#eee; margin-right:8px;}
-.popover-footer-button:hover a > .icon,
-.popover-footer-button:focus a > .icon{ color:#fff;}
+.popover-footer-button a .icon{ font-family:'shanticon'; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1em; line-height:2.5em; height: 2.75em;}
+.popover-footer-button a .icon:before{ color:#eee; margin-right:8px;}
+.popover-footer-button:hover a .icon,
+.popover-footer-button:focus a .icon{ color:#fff;}
 .popover-footer-button:last-child{ border-radius:0 0 0 4px; border-bottom:none;}
 /*----------------------------*/
 /*----- END Popovers -------*/
