@@ -769,5 +769,14 @@
 	  }
 	};
 	
+	
+	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
+	  attach: function (context, settings) {
+			if($(".openlayermap").length ) {
+				$(".openlayermap #sidebar_wrapper").css('display','block !important');
+			}
+	  }
+	};
+	
   		
 }(jQuery));
