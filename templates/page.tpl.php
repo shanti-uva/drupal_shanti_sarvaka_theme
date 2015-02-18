@@ -90,8 +90,8 @@
           <section class="col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
 	        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
-            <span class="icon shanticon-arrow-end-left"></span>
-            <span class="header">RESOURCES</span>
+            <span class="icon shanticon-arrow-end-right"></span>
+            <span class="header">Resources</span>
             <span class="badge">13489</span>
             <!-- <span class="icon"></span> -->
           </button>
