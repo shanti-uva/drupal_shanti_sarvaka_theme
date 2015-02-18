@@ -81,19 +81,19 @@
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar col-xs-6 col-sm-3 col-lg-2 <?php print $bsclass_sb1; ?>">
+            <div id="sidebar-first" class="region sidebar<?php print " $bsclass_sb1"; ?>">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="col-xs-12<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>">
+          <section class="col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
 	        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
-            <i class="fa"></i>
-            <span class="header">RESOURCES</span>
+            <span class="icon"></span>
+            <span class="header">Resources</span>
             <span class="badge">13489</span>
-            <i class="icon"></i>
+            <!-- <span class="icon"></span> -->
           </button>
           
           <!-- Message Area -->
@@ -109,7 +109,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas col-xs-6 col-sm-3 col-lg-2<?php print $bsclass_sb2; ?>">
+            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?>">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>

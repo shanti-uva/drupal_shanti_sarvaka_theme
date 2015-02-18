@@ -748,5 +748,26 @@
 	  }
 	};
   
+  
+  
+  
+  Drupal.behaviors.kmapsOffCanvasToggle = {
+	  attach: function (context, settings) {
+			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
+			  $(this).toggleClass( "show",'fast' );
+			});
+	  }
+	};
+	
+	
+	
+	Drupal.behaviors.kmapsOffCanvasButton = {
+	  attach: function (context, settings) {
+			if($(".feature-carousel-tabpanel").length ) {
+				$("button.view-resources").remove();
+			}
+	  }
+	};
+	
   		
 }(jQuery));

@@ -74,7 +74,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-.header-banner{ position:relative; z-index:300; overflow:visible; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px rgb(0, 0, 0); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
+.header-banner{ position:relative; z-index:300; overflow:visible; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); margin-top:0 !important; box-shadow: 0 3px 10px rgb(0, 0, 0); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
@@ -83,7 +83,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:focus{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header a span{ font-size:0.75em;line-height:1em;height:1em;padding: 0 0 0 18px;position:relative; top:-7px;white-space:nowrap;}
+.navbar-header a span{ font-size:0.75em;line-height:1em;height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left:1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
@@ -96,7 +96,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a .icon:before{ color:#fff;}
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.32em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.56em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
 .navbar-default .navbar-nav>li a:focus{ background:#f0f0f0;color:#444;}
@@ -200,7 +200,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 /*----- BEGIN navigation -----*/
 /*----------------------------*/
 
-.has-tabs div.banner-tabs{ border-bottom:1px solid #4CA6FB; width:100%; background: #4CA6FB !important; /* match banner color in app */ height:2rem;margin-top:0.7rem;opacity:0.6;}
+.has-tabs div.banner-tabs{ border-bottom:1px solid #ccc; width:100%; background: #ddd !important; /* match banner color in app */ height:2rem;margin-top:0.7rem;opacity:0.6;}
 
 /**** Titlebar Tabs ****/
 header ul.tabs.primary,
@@ -208,7 +208,7 @@ header ul.tabs.secondary{ position: absolute; bottom: -2rem; right:2rem; z-index
 header ul.tabs.primary li,
 header ul.tabs.secondary li{ float:left; margin-right:0.2rem; border:none; padding:0;}
 header ul.tabs.primary li a,
-header ul.tabs.secondary li a{ color:#222; background:rgba(255,255,255, .3000); line-height:2.1rem; height:2rem; padding:0 1.5rem; border:none; font-size:0.9rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; /*border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;*/}
+header ul.tabs.secondary li a{ color:#222; background:rgba(0,0,0, 0.1000); line-height:2.15rem; height:2rem; padding:0 1.5rem; border:none; font-size:0.9rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; /*border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;*/}
 
 header ul.tabs.primary{ float:right; }
 header ul.tabs.primary li{ float:right;}
@@ -218,11 +218,11 @@ header ul.tabs.primary li a:focus,
 header ul.tabs.secondary li a:hover,
 header ul.tabs.secondary li a:focus{ background:rgba(255,255,255, .6000);}
 header ul.tabs.primary li.active a,
-header ul.tabs.secondary li.active a{ background:#eee;}
+header ul.tabs.secondary li.active a{ background:rgba(255,255,255, 1.000);}
 header ul.tabs.primary li.active a:hover,
 header ul.tabs.primary li.active a:focus,
 header ul.tabs.secondary li.active a:hover,
-header ul.tabs.secondary li.active a:focus{ background:#eee;}
+header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);}
 
 /***** Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section mediabase */
@@ -420,9 +420,10 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .related-resources-popover .parents a:hover,
 .related-resources-popover .parents a:active{ color: rgb(207, 47, 30);}
 .popover-footer{ margin:10px -14px -9px;}
-.popover-footer-button{ background:#505050; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.popover-footer-button{ background:#404040; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.popover-footer-button a{ font-family: "museo-sans-700",helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
-.popover-footer-button:focus{ background:#404040;}
+.popover-footer-button:focus{ background:#505050;}
 .popover-footer-button .icon{ color:#ddd; border-bottom:none; display:block; width:100%; font-size:1em; line-height:2.5em; height: 2.75em;}
 .popover-footer-button .icon:before{ color:#eee; margin-right:8px;}
 .popover-footer-button:hover .icon,
@@ -585,7 +586,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .carousel-header{ margin: 0;}
 .carousel-header span{ font-style:italic;font-weight:bold;font-size:1em;margin-left:0.5rem;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
-.carousel-inner{ height:230px;}
+.carousel-inner{ height:230px; overflow:visible;}
 
 .carousel-main-content{  float:left; padding-left:0 !important;}
 .carousel-title{ font-size:1em;font-weight:normal;margin: 0 0 0.8rem;}
@@ -1421,7 +1422,7 @@ form table td.label{ padding-top:0.68em !important;}
 .view-my-workflow .views-exposed-form .views-exposed-widget{ float:none;}
 
 
-.admin-menu .content table td{background:transparent;}
+.admin-menu .content table td{ background:transparent;}
 
 
 
@@ -1766,6 +1767,11 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 
 
+html body{ margin-top: 0 !important;}
+html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of admin bar */
+
+.view-resources.btn-default.noshow { display:none !important;}
+
 
 /*------------------------------*/
 /*----- BEGIN RESPONSIVE -------*/
@@ -1879,7 +1885,7 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 @media screen and (max-width: 767px) {
 
   .content-section { padding-left:10px;}
-  html body.admin-menu{ margin-top:55px !important;}
+  
 	.navbar-header a span{ position:relative; top:0;}
 	.menu-maintoggle{ display:inline;}
 	.menu-toggle{ display:none;}
@@ -1911,8 +1917,12 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 }
 
+
+
 @media screen and (min-width: 768px) {
 
+   html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
+  
 	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	.navbar-default .menu-explore{ display:none !important; }
