@@ -424,7 +424,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button a{ font-family: "museo-sans-700",helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ background:#505050;}
-.popover-footer-button .icon{ color:#ddd; border-bottom:none; display:block; width:100%; font-size:1em; line-height:2.5em; height: 2.75em;}
+.popover-footer-button .icon{ font-family:'shanticon'; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1em; line-height:2.5em; height: 2.75em;}
 .popover-footer-button .icon:before{ color:#eee; margin-right:8px;}
 .popover-footer-button:hover .icon,
 .popover-footer-button:focus .icon{ color:#fff;}
