@@ -770,10 +770,18 @@
 	};
 	
 	
-	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
+//	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
+//	  attach: function (context, settings) {
+//			if($(".openlayermap").length ) {
+//				$(".openlayermap #sidebar_wrapper").css('display','block !important');
+//			}
+//	  }
+//	};
+	
+	Drupal.behaviors.kmapsPageNotFound = {
 	  attach: function (context, settings) {
-			if($(".openlayermap").length ) {
-				$(".openlayermap #sidebar_wrapper").css('display','block !important');
+			if($(".page-title:contains('Page not found')").length ) {
+				$("button.view-resources").css('display','none');
 			}
 	  }
 	};
