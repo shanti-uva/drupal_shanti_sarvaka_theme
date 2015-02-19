@@ -184,7 +184,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .breadcrumb li:first-child a{margin-right:.32em;font-weight:bold;line-height: 1.44em;}
 .breadcrumb .icon{color:#eee;background:#dc3c47;position:absolute;right:5px;top:-3px;z-index:10;font-family:'FontAwesome';font-size:1.68em;font-weight:normal;line-height:.88em;height:1em;width:.38em;overflow:visible;display:inline-block;}
 .breadcrumb .icon:before{content:'\f105';position:relative;top:0;left:0;}
-.breadcrumb li:last-child a{ color:#fff;font-size:.92em;cursor:default;font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.breadcrumb li:last-child a{ color:#fff;font-size:.92em;cursor:default;font-weight:bold;font-family:arial,tahoma,helvetica,sans-serif;}
 .breadcrumb li:last-child .icon{background:transparent;}
 .breadcrumb li:last-child .icon:before,
 .breadcrumb li:first-child .icon:before{content:' ';display:none;background:transparent;width:0;height:0;}
