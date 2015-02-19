@@ -184,7 +184,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .breadcrumb li:first-child a{margin-right:.32em;font-weight:bold;line-height: 1.44em;}
 .breadcrumb .icon{color:#eee;background:#dc3c47;position:absolute;right:5px;top:-3px;z-index:10;font-family:'FontAwesome';font-size:1.68em;font-weight:normal;line-height:.88em;height:1em;width:.38em;overflow:visible;display:inline-block;}
 .breadcrumb .icon:before{content:'\f105';position:relative;top:0;left:0;}
-.breadcrumb li:last-child a{ color:#fff;font-size:.92em;cursor:default;font-weight:bold;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
+.breadcrumb li:last-child a{ color:#fff;font-size:.92em;cursor:default;font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .breadcrumb li:last-child .icon{background:transparent;}
 .breadcrumb li:last-child .icon:before,
 .breadcrumb li:first-child .icon:before{content:' ';display:none;background:transparent;width:0;height:0;}
@@ -420,10 +420,10 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .related-resources-popover .parents a:hover,
 .related-resources-popover .parents a:active{ color: rgb(207, 47, 30);}
 .popover-footer{ margin:10px -14px -9px;}
-.popover-footer-button{ background:#404040; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.popover-footer-button{ background:#111; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .popover-footer-button a{ color:#f0f0f0; font-family: "museo-sans-700",helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
-.popover-footer-button:focus{ color:#fff; background:#000;}
+.popover-footer-button:focus{ color:#fff; background:#333;}
 .popover-footer-button .icon{ font-family:'shanticon'; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1em; line-height:2.5em; height: 2.75em;}
 .popover-footer-button .icon:before{ color:#eee; margin-right:8px;}
 .popover-footer-button:hover .icon,
