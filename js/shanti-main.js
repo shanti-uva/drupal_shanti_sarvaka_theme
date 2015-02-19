@@ -778,13 +778,13 @@
 //	  }
 //	};
 	
-	Drupal.behaviors.kmapsPageNotFound = {
-	  attach: function (context, settings) {
-			if($('.page-title-text:contains("Page not found")').length ) {
-				$('button.view-resources').css('display','none');
-			}
-	  }
-	};
+//	Drupal.behaviors.kmapsPageNotFound = {
+//	  attach: function (context, settings) {
+//			if($('.page-title-text:contains("Page not found")').length ) {
+//				$('button.view-resources').css('display','none');
+//			}
+//	  }
+//	};
 	
   		
 }(jQuery));
