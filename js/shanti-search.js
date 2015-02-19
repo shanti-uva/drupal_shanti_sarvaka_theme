@@ -26,15 +26,18 @@ Drupal.behaviors.sarvakaMbextruder = {
 	    // Add back in extruder content
 	    $('#search-flyout .text').append(mbContent);
 	    // Make it resizeable
-	    $("div.extruder-content > div.text").resizable({
-	      handles: "w",
-	      resize: function (event, ui) {
-	        $('span.fancytree-title').trunk8({ tooltip:false });
-	      }
-	    });
-
-	    // Bind event listener
-	    $(".extruder-content").resize(Drupal.ShantiSarvaka.checkWidth);
+	    try { 
+		    if($("div.extruder-content > div.text").length > 0) {
+			    $("div.extruder-content > div.text").resizable({
+			      handles: "w",
+			      resize: function (event, ui) {
+			        $('span.fancytree-title').trunk8({ tooltip:false });
+			      }
+			    });
+				}
+		    // Bind event listener
+		    $(".extruder-content").resize(Drupal.ShantiSarvaka.checkWidth);
+		   } catch (e) { console.error('Resizeable not a function error caught! shanti-search.js line 31');}
 
 	    if (!$(".extruder.right").hasClass("isOpened")) {
 	      $(".flap").click( function() {
