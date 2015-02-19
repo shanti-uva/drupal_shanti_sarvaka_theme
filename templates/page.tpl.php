@@ -91,7 +91,7 @@
 	        
 	        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
             <span class="icon"></span>
-            <span class="header">Resources</span>
+            <span class="header"><em>R</em>esources</span>
             <span class="badge">13489</span>
             <!-- <span class="icon"></span> -->
           </button>
