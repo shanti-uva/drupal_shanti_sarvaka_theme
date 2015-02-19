@@ -394,7 +394,7 @@ ul.menu-main .plus-minus { float: right;}
 ul.menu-main .fa.plus-minus:before { content: '\f067';}
 ul.menu-main .active > a > .fa.plus-minus:before { content: '\f068';}
 ul.menu-main li a .icon{ margin-right:12px;font-size:1.25em;position:relative;top:2px;}
-ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; font-style:italic;font-size:1.5em; line-height:1.5em; height:2.44em;}
+ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; font-style:italic;font-size:1.38em; line-height:1.5em; height:2.44em;}
 /***** END Menu Accordion for small mobile *****/
 
 /*----------------------------*/
