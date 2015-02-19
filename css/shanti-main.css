@@ -1891,7 +1891,7 @@ html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of a
 	.menu-maintoggle{ display:inline;}
 	.menu-toggle{ display:none;}
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
-  .breadcrumb li:first-child{ font-size:1em;}
+  /*.breadcrumb li:first-child{ font-size:1em;}*/
 
 	.collections.container{ border:none; display:none; line-height:0 !important; height:0 !important;}
 
