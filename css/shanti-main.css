@@ -429,7 +429,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button .icon:before{ color:#eee; margin-right:8px;}
 .popover-footer-button:hover .icon,
 .popover-footer-button:focus .icon{ color:#fff;}
-.popover-footer-button:last-child{ border-radius:0 0 0 4px; border-bottom:none;}
+.popover-footer-button:last-child{ border-radius: 0 0 0.7rem 0.7rem; border-bottom:none; }
 /*----------------------------*/
 /*----- END Popovers -------*/
 /*----------------------------*/
