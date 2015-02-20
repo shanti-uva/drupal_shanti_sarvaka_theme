@@ -78,7 +78,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
-.navbar-header {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 20px; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.navbar-header {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 10px; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .navbar-header a.navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:focus{ color:#222;}
@@ -426,7 +426,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .related-resources-popover .parents a:active{ color: rgb(207, 47, 30);}
 .popover-footer{ margin:10px -14px -9px;}
 .popover-footer-button{ background:#111; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 1.3rem; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
-.popover-footer-button a{ color:#f0f0f0; font-family: "museo-sans-700",helvetica,arial,sans-serif;}
+.popover-footer-button a{ color:#f0f0f0; font-weight:bold; font-family: "museo-sans-700",helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ color:#fff; background:#333;}
 .popover-footer-button .icon{ font-family:'shanticon'; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1em; line-height:2.5em; height: 2.75em;}
