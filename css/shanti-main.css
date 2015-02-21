@@ -169,7 +169,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 
 
 
-.breadwrap{margin: .8rem 0 0 3rem;padding:0;display:block;height:1.18em;overflow:hidden;width:96%;background:transparent;}
+.breadwrap{margin:1rem 0 0 3rem;padding:0;display:block;height:1.18em;overflow:hidden;width:96%;background:transparent;}
 .breadcrumb{margin:0;padding:0;white-space:nowrap;width:100%;overflow:hidden;background:transparent;font-size:.75em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;font-weight:normal;/**zoom:1;*/border:none;}
 .breadcrumb:before,
 .breadcrumb:after{content:' ';display:table;}
