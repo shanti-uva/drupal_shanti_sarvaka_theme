@@ -194,6 +194,8 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .breadcrumb li:first-child .icon:before{content:' ';display:none;background:transparent;width:0;height:0;}
 .breadcrumb > li + li:before{content:' ';padding:0 5px;color:#999;display:none;}
 
+.breadcrumb .ajax-loading{ display:none;}
+
 /*-------------------------------------*/
 /*----- END header -----*/
 /*-------------------------------------*/
