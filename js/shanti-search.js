@@ -23,6 +23,9 @@ Drupal.behaviors.sarvakaMbextruder = {
 	      width: mywidth, // width is set in two places, here and the css
 	      top: 0
 	    });
+	     
+	     extruder.css("zIndex",10100);
+	    
 	    // Add back in extruder content
 	    $('#search-flyout .text').append(mbContent);
 	    // Make it resizeable
