@@ -175,7 +175,7 @@ background:transparent;
 	position:absolute;
 	right:13px;
 	top:22px;
-	z-index:10000;
+	/*z-index:10000;*/
 	display:none;
 	padding:0;
 	margin:0;
