@@ -96,7 +96,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a .icon:before{ color:#fff;}
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.93em; line-height:4.56em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.93em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
 .navbar-default .navbar-nav>li a:focus{ background:#f0f0f0;color:#444;}
@@ -278,7 +278,7 @@ header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);
 
 /*----- BEGIN responsive navigations ----*/
 /*---- top-menu wrapper ----*/
-.menu-main-desk{ width:250px;position:absolute;z-index:20000;right:0;top:50px;border:none;padding:0;overflow:visible;}
+.menu-main-desk{ width:250px;position:absolute;z-index:10200;right:0;top:50px;border:none;padding:0;overflow:visible;}
 .menu-main-desk h3,
 .menu-main-desk h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-size:1.32em;line-height:3.32em; height:3.12em; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; font-style:italic;text-indent:1.4rem;position:relative; z-index:200;padding:0; margin:0; -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; overflow:visible;}
 .menu-main-desk h2 a{ cursor:default; background:#fff; color:#444;display:block;font-size:1.56em;font-weight:normal;font-style:italic;line-height:2.75em; height:2.63em; padding:0; margin:0; /*vertical-align:middle;*/}
