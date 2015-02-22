@@ -411,6 +411,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*----------------------------*/
 /*----- BEGIN Popovers -------*/
 /*----------------------------*/
+.popover{ position:absolute; z-index:10200}
 .popover-link{background:#5a65d1;border:none;height:1rem;width:1.25rem;color:white;padding:0;display:inline-block;position:relative;left:0;top:0.1rem;margin-left:0.6rem;margin-right:1rem;font-size:1rem;}
 .popover-link-tip{border-bottom:0.5rem solid transparent;border-top:0 solid transparent;border-right:.5rem solid #5a65d1;font-size:0;position:relative;bottom:1rem;right:0.5rem;height:0;width:0;}
 .popover-link .icon{color:white;font-size:0.7rem;position:relative;bottom:0.2rem;right:0.25rem;}
