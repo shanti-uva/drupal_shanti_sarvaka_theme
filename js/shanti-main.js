@@ -478,10 +478,7 @@
 				    });
 				};
 				
-				jQuery(function ($) {
-					$('.field-accordion, #accordion').accordionFx();
-				});
-
+				$('.field-accordion, #accordion').accordionFx();
         
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
