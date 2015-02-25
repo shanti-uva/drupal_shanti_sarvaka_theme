@@ -482,7 +482,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail .footer-wrap a:hover,
 .shanti-thumbnail .footer-wrap a:focus{text-decoration:underline;}
 .shanti-thumbnail .footer-wrap .icon{font-size:1.32em;position:relative;top:2px;}
-.shanti-gallery .ajax-progress{ display:none;}
+.shanti-gallery .ajax-progress{ display:inline-block;}
 /*-------------------------*/
 /*--- END video gallery ---*/
 /*-------------------------*/
