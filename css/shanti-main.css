@@ -482,7 +482,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail .footer-wrap a:hover,
 .shanti-thumbnail .footer-wrap a:focus{text-decoration:underline;}
 .shanti-thumbnail .footer-wrap .icon{font-size:1.32em;position:relative;top:2px;}
-.shanti-gallery .ajax-progress{ display:inline-block; position:absolute; top:5rem; left:50%;}
+.shanti-gallery .ajax-progress{ display:none; position:absolute; top:5rem; left:50%;}
 /*-------------------------*/
 /*--- END video gallery ---*/
 /*-------------------------*/
@@ -926,6 +926,8 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 
 /*--- BEGIN paging --*/
 .shanti-filters { height:1.75em; margin-bottom:2rem;position:relative;top:-1rem;}
+.logged-in .shanti-filters { top:-2.5rem;}
+
 .shanti-filters table{ float:right;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .shanti-filters table tbody{ border-top: none;}
 .shanti-filters td{ white-space: nowrap;}
