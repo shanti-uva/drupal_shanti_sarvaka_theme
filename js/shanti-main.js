@@ -88,7 +88,7 @@
    */
   Drupal.behaviors.shantiSarvakaIcheck = {
     attach: function (context, settings) {
-      $("input[type='checkbox'], input[type='radio']", context).each(function () {
+      $("input[type='checkbox'], input[type='radio']", context).once('icheck').each(function () {
         var self = $(this),
         label = self.next('label');
         if(label.length == 1) {
@@ -99,8 +99,18 @@
           self.icheck({
             checkboxClass: "icheckbox_minimal-red",
             radioClass: "iradio_minimal-red",
-            insert: "<div class='icheck_line-icon'></div>"
+            insert: "<div class='icheck_line-icon'></div>",
+            checkedClass: 'checked',
           });
+          // In MB /my-content/collections/ Icheck is not show check when clicked fixing this here
+          /*$('div.icheck-item').once('icheckfix').on('mousedown', function() { 
+          	if($(this).hasClass('checked')) {
+          		$(this).addClass('rm-icheck');
+          		setTimeout(function() { $('.rm-icheck').removeClass('checked rm-icheck'); }, 500);
+          	} else {
+          		$(this).addClass('checked'); 
+          	}
+          });*/
         }
       });
     }
