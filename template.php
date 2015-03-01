@@ -41,10 +41,12 @@ function shanti_sarvaka_preprocess(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_html(&$variables) {
+	global $base_url, $base_path;
 	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
-	
+	$base = $base_url . $base_path;
+	$variables['modernizer'] = '<script type="text/javascript" src="' . $base . 'sites/all/themes/shanti_sarvaka/js/inc/other/modernizr-2.6.2.min.js?njzbwq"></script>';
 	// Add Meta Tags
 	$metas = array(
 		'ie_edge' => array(
@@ -79,7 +81,9 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
 	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
-
+	//$path = drupal_get_path('theme','shanti_sarvaka') . '/js/inc/other/modernizr-2.6.2.min.js';
+	//drupal_add_js($path);
+	//drupal_add_js(drupal_get_path('theme','shanti_sarvaka') . '/js/inc/other/modernizr-2.6.2.min.js',  array('type' => 'file', 'scope' => 'header', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -99));
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
@@ -97,15 +101,25 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
 	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
 	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
-  // Figure out bootstrap column classes
-  $variables['bsclass_sb1'] = ($variables['page']['sidebar_first']) ? 'col-sm-3' : '';
-  $variables['bsclass_sb2'] = ($variables['page']['sidebar_second']) ? 'col-sm-3' : '';
-  $variables['bsclass_main'] = 'col-sm-6';
-  if(!$variables['bsclass_sb1'] && !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = '';
-  } elseif (!$variables['bsclass_sb1'] || !$variables['bsclass_sb2']) {
-    $variables['bsclass_main'] = 'col-sm-9';
-  }
+  // Figure out bootstrap column classes. Define class variables
+  $variables['bsclass_main'] = $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = '';
+	// if both side columns exist
+	if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
+  	$variables['bsclass_main'] = 'col-xs-12 col-md-8';
+  	$variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-12 col-md-3';
+	// If first side column exists
+	} else if ($variables['page']['sidebar_first']) {
+  	$variables['bsclass_main'] = 'col-xs-12 col-md-9';
+  	$variables['bsclass_sb1'] = 'col-xs-12 col-md-3';
+		$variables['bsclass_sb2'] = '';
+	// If second side column exists
+	} else if ($variables['page']['sidebar_second']) {
+  	$variables['bsclass_main'] = 'col-xs-12 col-md-9';
+  	$variables['bsclass_sb1'] = '';
+		$variables['bsclass_sb2'] = 'col-xs-12 col-md-3';
+	} 
+	// If no side columns keep default all classes blank
+	
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
 
@@ -1238,4 +1252,107 @@ function _shanti_sarvaka_add_metatags() {
     drupal_add_html_head($el, $n);
 		$ct++;
   }
+}
+
+function shanti_sarvaka_preprocess_apachesolr_search_snippets(&$vars) {
+        if ($vars['doc']->entity_type == 'tcu') {
+                $vars['transcripts_apachesolr_search_snippet']['link']['#text'] = t('Transcript');
+        }
+}
+function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
+        $out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
+        $out .= drupal_render($vars['element']['content']['transcript_options']);
+        $out .= drupal_render($vars['element']['content']['transcript_navigation']);
+        $out .= "</div>";
+        $out .= "<div class='transcript-search-wrapper'>" .drupal_render($vars['element']['content']['transcript_search']). "</div>";
+        return $out;
+}
+function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
+        //speaker name selector
+        //transcript tier selector
+        $out = "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
+        foreach ($vars['element']['data_tiers'] as $key => $val) {
+                $out .= "<option value='{$key}'>{$val}</option>";
+        }
+        $out .= "</select>";
+        return $out;
+}
+function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
+        $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
+        $out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
+        $out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
+        $out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
+        $out .= "<button type='button' class='btn btn-default btn-icon searchtrans' title='Search Transcript'><span class='icon shanticon-magnify'></span></button>";
+        return $out;
+}
+function shanti_sarvaka_transcripts_ui_transcript_search($vars) {
+        $out = drupal_render($vars['element']['search_form']);
+        return $out;
+}
+function shanti_sarvaka_transcripts_apachesolr_link_tcu($vars) {
+    $mins = floor ($vars['element']['#time'] / 60);
+    $secs = $vars['element']['#time'] % 60;
+    $time = sprintf ("%d:%02d", $mins, $secs);
+    $classes = 'btn btn-primary';
+    $classes .= $vars['element']['#timecoded'] ? ' timed' : ' untimed';
+    $out = "<a href='" . $vars['element']['#linkurl'] . "' class='" .$classes. "' role='button'>";
+    $out .= "<span class='glyphicon glyphicon-play'></span> ";
+    $out .= $time;
+    if (isset($vars['element']['#text'])) {
+        $out .= " " . $vars['element']['#text'];
+    }
+    $out .= "</a>";
+    return $out;
+}
+function shanti_sarvaka_transcripts_ui_play_tcu($vars) {
+        $mins = floor ($vars['element']['#time'] / 60);
+        $secs = $vars['element']['#time'] % 60;
+        $time = sprintf ("%d:%02d", $mins, $secs);
+        $classes = 'btn btn-default btn-icon play-tcu';
+        $classes .= $vars['element']['#timecoded'] ? ' timed' : ' untimed';
+        $out = "<button type='button' class='" .$classes. "' title='Play line'><span class='glyphicon glyphicon-play'></span> ";
+        $out .= $time;
+        if (isset($vars['element']['#text'])) {
+                $out .= " " . $vars['element']['#text'];
+        }
+        $out .= "</button>";
+        return $out;
+}
+function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
+        $form['search']['input']['buttons']['go']['#attributes']['class'][] = 'searchbutton';
+        $form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'></span>";
+        $form['search']['input']['buttons']['go']['#find'] = 'btn-primary';
+        $form['search']['input']['buttons']['go']['#replace'] = 'btn-default';
+        $form['search']['input']['buttons']['go']['#post_render'][] = 'shanti_sarvaka_find_replace';
+
+        $form['search']['input']['buttons']['reset']['#inner'] = "<span class='icon'></span>";
+        $form['search']['input']['buttons']['reset']['#find'] = 'btn-primary';
+        $form['search']['input']['buttons']['reset']['#replace'] = 'searchreset';
+        $form['search']['input']['buttons']['reset']['#post_render'][] = 'shanti_sarvaka_find_replace';
+
+        $form['search']['navigate']['buttons']['next']['#attributes']['class'][] = 'nextresult';
+        $form['search']['navigate']['buttons']['next']['#inner'] = "<span class='icon'></span>";
+        $form['search']['navigate']['buttons']['next']['#find'] = 'btn-primary';
+        $form['search']['navigate']['buttons']['next']['#replace'] = 'btn-default';
+        $form['search']['navigate']['buttons']['next']['#post_render'][] = 'shanti_sarvaka_find_replace';
+
+        $form['search']['navigate']['buttons']['previous']['#attributes']['class'][] = 'previousresult';
+        $form['search']['navigate']['buttons']['previous']['#inner'] = "<span class='icon'></span>";
+        $form['search']['navigate']['buttons']['previous']['#find'] = 'btn-primary';
+        $form['search']['navigate']['buttons']['previous']['#replace'] = 'btn-default';
+        $form['search']['navigate']['buttons']['previous']['#post_render'][] = 'shanti_sarvaka_find_replace';
+
+        $form['search']['form_id'] = $form['form_id'];
+        unset($form['form_id']);
+
+        $form['search']['form_build_id'] = $form['form_build_id'];
+        unset($form['form_build_id']);
+
+        if (isset($form['form_token'])) {
+                $form['search']['form_token'] = $form['form_token'];
+                unset($form['form_token']);
+        }
+}
+function shanti_sarvaka_find_replace($markup, $element) {
+        return str_replace($element['#find'], $element['#replace'], $markup);
 }

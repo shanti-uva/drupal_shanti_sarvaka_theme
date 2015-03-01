@@ -238,7 +238,7 @@ if (!jQuery.browser) {
         extruder= $(this);
         extruderContent=extruder.html();
 
-        extruder.css("zIndex",100);
+        extruder.css("zIndex",10100);
 
         var isVertical = this.options.position=="left" || this.options.position=="right";
 

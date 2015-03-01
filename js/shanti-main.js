@@ -88,7 +88,7 @@
    */
   Drupal.behaviors.shantiSarvakaIcheck = {
     attach: function (context, settings) {
-      $("input[type='checkbox'], input[type='radio']", context).each(function () {
+      $("input[type='checkbox'], input[type='radio']", context).once('icheck').each(function () {
         var self = $(this),
         label = self.next('label');
         if(label.length == 1) {
@@ -99,8 +99,18 @@
           self.icheck({
             checkboxClass: "icheckbox_minimal-red",
             radioClass: "iradio_minimal-red",
-            insert: "<div class='icheck_line-icon'></div>"
+            insert: "<div class='icheck_line-icon'></div>",
+            checkedClass: 'checked',
           });
+          // In MB /my-content/collections/ Icheck is not show check when clicked fixing this here
+          /*$('div.icheck-item').once('icheckfix').on('mousedown', function() { 
+          	if($(this).hasClass('checked')) {
+          		$(this).addClass('rm-icheck');
+          		setTimeout(function() { $('.rm-icheck').removeClass('checked rm-icheck'); }, 500);
+          	} else {
+          		$(this).addClass('checked'); 
+          	}
+          });*/
         }
       });
     }
@@ -479,7 +489,7 @@
 				};
 				
 				$('.field-accordion, #accordion').accordionFx();
-        
+
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
 
@@ -541,10 +551,6 @@
 
 	      // $('table.sticky-header').css('width','100%');
 
-	      // if($('.node-video').length ){
-	      //       $('.shanti-gallery').imagesLoaded();
-	      // });
-	      //-------
 
 	      // hide responsive column for resources
 	      $('[data-toggle=offcanvas]').click(function () {
@@ -564,13 +570,7 @@
 	          document.querySelector('head').appendChild(msViewportStyle);
 	        }
 	      })();
-	      //----
 
-	      /*
-	      $('.ss-full-tabs > .rel-video').on('click', function () {
-	        $.imagesLoaded();
-	      });*/
-	      //----
 
 	      var myElement = document.getElementById('.carousel.slide');
 	      if(myElement) {
@@ -646,6 +646,11 @@
 				hideControlOnEnd: true,
 			  breaks: [{screen:0, slides:1, pager:false},{screen:400, slides:2},{screen:550, slides:3},{screen:768, slides:4},{screen:1050, slides:5}]
       });
+      
+      // --- hide breadcrumbs when carousel is present
+      if($('#carousel-feature-slides').length ) { 
+	      $('.breadcrumb').css('display','none');
+      }
 
     }
   };
@@ -671,7 +676,127 @@
     }
   };
   
-		
+  
+
+  Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+	        $('.searchtrans').click( function(){
+	                $('.transcript-search-wrapper').slideToggle();
+	        });
+      }
+    }
+  };
+
+
+  Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+          $('.tier-selector .filter-option').replaceWith('<span class="fa fa-comments-o"></span>');
+      }
+    }
+  };  
+  
+  
+	Drupal.behaviors.shantiSarvakaMbTrimDesc = {
+	  attach: function (context, settings) {
+	  	// Pb core description trimming
+			if($('.field-name-field-pbcore-description .field-item').length > 1) {
+				var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
+				if(items.length > 1 ) {
+					items.first().nextAll().hide();
+					items.last().after('<p id="pb-core-desc-readmore" class="show-more"><a href="#">' + Drupal.t('Show More') + '</a></p>');
+					if(!$(".avdesc").hasClass("show-more-height")) { $(".avdesc").addClass("show-more-height"); }
+					$(".show-more > a").click(function (e) {
+						var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
+						items.first().nextAll('.field-item').slideToggle();
+						//console.log($(".avdesc").attr('class'));
+				     if($(".avdesc").hasClass("show-more-height")) {
+				         $(this).text(Drupal.t('Show Less'));
+				     } else {
+				         $(this).text(Drupal.t('Show More'));
+				     }
+				     $(".avdesc").toggleClass("show-more-height");
+						 e.preventDefault();
+					});
+				}
+			}
+			
+			// Description Trimming
+			/* This makes there be multiple "Show More"s on Dreams page 
+				Could perhaps use } else { if needed for other situations
+					
+			$('.description.trim').each(function() {
+			 	if($(this).text().length > 1000 && $(this).find('p').length > 1 && $(this).find('div.show-more').length == 0) {
+			 		var p1 = $(this).find('p').first();
+			 		p1.siblings('p').hide();
+			 		$(this).append('<div class="show-more"><a href="#">Show more</a></div>');
+			 	}
+			});
+			$('.description.trim .show-more a').each(function() {
+				$(this).click(function(event) {
+					event.preventDefault();
+					$(this).parent('.show-more').toggleClass('less');
+					var parent = $(this).parents('.description.trim');
+					var ps = parent.find('p').first().siblings('p');
+					ps.slideToggle();
+					var txt = $(this).text();
+					txt = (txt.indexOf('more') > -1) ? 'Show less' : 'Show more';
+					$(this).text(txt);
+				});
+			});
+			*/
+		}
+	};
+
+	// Applies wookmark js to related videos tab div by calling Drupal behaviors
+	Drupal.behaviors.shantiSarvakaMbRelatedTab = {
+		attach: function (context, settings) {
+			if(context == window.document) {
+				$('a#related-tab').on('shown.bs.tab', function(e) {
+					Drupal.attachBehaviors('#related');
+				});
+			}
+	  }
+	};
+  
+  
+  
+  
+  Drupal.behaviors.kmapsOffCanvasToggle = {
+	  attach: function (context, settings) {
+			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
+			  $(this).toggleClass( "show",'fast' );
+			});
+	  }
+	};
+	
+	
+	
+	Drupal.behaviors.kmapsOffCanvasButton = {
+	  attach: function (context, settings) {
+			if($(".feature-carousel-tabpanel").length ) {
+				$("button.view-resources").remove();
+			}
+	  }
+	};
+	
+	
+//	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
+//	  attach: function (context, settings) {
+//			if($(".openlayermap").length ) {
+//				$(".openlayermap #sidebar_wrapper").css('display','block !important');
+//			}
+//	  }
+//	};
+	
+//	Drupal.behaviors.kmapsPageNotFound = {
+//	  attach: function (context, settings) {
+//			if($('.page-title-text:contains("Page not found")').length ) {
+//				$('button.view-resources').css('display','none');
+//			}
+//	  }
+//	};
+	
+  		
 }(jQuery));
-
-

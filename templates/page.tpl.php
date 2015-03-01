@@ -64,10 +64,12 @@
               <div class="banner-content">
                 <?php print render($page['banner']); ?>
               </div>
-              <?php
-                // For view/edit tabs
-                print render($tabs);
-              ?>
+              <div class="banner-tabs">
+                <?php
+                  // For view/edit tabs
+                  print render($tabs);
+                ?>
+              </div>
             </div>
           </header>
 
@@ -79,13 +81,21 @@
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar col-xs-6 <?php print $bsclass_sb1; ?>">
+            <div id="sidebar-first" class="region sidebar<?php print " $bsclass_sb1"; ?>">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print ' ' . $bsclass_main; } ?>">
+          <section class="col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
+	        
+	        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
+            <span class="icon"></span>
+            <span class="header"><em>R</em>esources</span>
+            <span class="badge">13489</span>
+            <!-- <span class="icon"></span> -->
+          </button>
+          
           <!-- Message Area -->
           <?php if (!empty($messages)) { print "<div class=\"messages\">$messages</div>"; } ?>
             <div class="tab-content">
@@ -99,7 +109,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas col-xs-6 <?php print $bsclass_sb2; ?>">
+            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?>">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
@@ -133,7 +143,7 @@
 <!-- Footer -->
 <footer class="footer">
   <div>
-    <p>© COPYRIGHT 2014</p>
+    <p>&copy; Copyright 2014</p>
     <?php print render($page['footer']); ?>
   </div>
 </footer>
