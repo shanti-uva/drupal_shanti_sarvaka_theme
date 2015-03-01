@@ -31,7 +31,8 @@ Drupal.behaviors.sarvakaMbextruder = {
 			    $("div.extruder-content > div.text").resizable({
 			      handles: "w",
 			      resize: function (event, ui) {
-			        $('span.fancytree-title').trunk8({ tooltip:false });
+			      	$('#search-flyout .extruder-content').css('width','');
+			        //$('span.fancytree-title').trunk8({ tooltip:false });
 			      }
 			    });
 				}
