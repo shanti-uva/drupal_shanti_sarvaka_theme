@@ -536,7 +536,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /*------------------------------*/
 .view-section .fancytree-container{ margin:0; background:transparent; border:none; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; }
 .view-section .fancytree-container ul{ padding-top:0; margin-top:0;}
-.view-section .fancytree-container li{ padding:0;line-height:1.68em;}
+.view-section .fancytree-container li{ padding:0;line-height:1.68em;overflow:hidden;}
 
 .view-section .fancytree-icon{ margin:0; padding:0; width:0; height:0; line-height:0; display:none;} /*--- remove checkbox ---*/
 .view-section .fancytree-node{ border:none; display:block;}
@@ -545,7 +545,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .fancytree-node.fancytree-active{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
 
 
-.view-section .fancytree-node .ajax-progress{ position:absolute; right:1rem; background:#fff;}
+.view-section .fancytree-node .ajax-progress{ position:absolute; right:1rem; background:#fff;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:1rem;}
 
 .view-section .fancytree-title{
