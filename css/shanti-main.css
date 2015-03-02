@@ -14,8 +14,8 @@ a:hover,a:focus{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a:active{ border-bottom-color:transparent;}
 /*.content-section .messages{ display:none;}*/
 
-:selection{background: #999;text-shadow:none;color:white;}
-:moz-selection{background: #999;text-shadow:none;color:white;}
+::selection{background: #999 !important;text-shadow:none !important;color:white !important;}
+::moz-selection{background: #999 !important;text-shadow:none !important;color:white !important;}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
