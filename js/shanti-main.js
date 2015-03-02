@@ -783,7 +783,7 @@
 	// --- unhiding breadcrumbs: inline styles keeps the breadcrumbs markup from flash on load when at homepages where we do not want them
 	Drupal.behaviors.breadcrumbsFlickrControl = {
 	  attach: function (context, settings) {
-			$('.breadwrap').show( "slow" );
+			$('.breadwrap').show( "fast" );
 	  }
 	};
 
