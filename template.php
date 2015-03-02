@@ -520,6 +520,9 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
  * Called from shanti_sarvaka_preprocess_page
  */
 function shanti_sarvaka_create_user_menu($um) {
+	global $user;
+	$uname = (module_exists('realname')) ? realname_load($user) : $user->name;
+	
   // Filter out existing Account links
   $um = array_filter($um, function($item) use (&$um) {
     $k = array_search($item, $um);
@@ -585,7 +588,7 @@ function shanti_sarvaka_create_user_menu($um) {
           ),
           'logout' => array(
             'link' => array(
-              'title' => t('Log out'),
+              'title' => t('Log out @name', array('@name' => $uname)),
               'href' => 'user/logout',
             ),
             'below' => array(),
@@ -614,6 +617,14 @@ function shanti_sarvaka_create_user_menu($um) {
  * Function to create markup for responsive main menu from Drupal's user menu
  */
 function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
+	global $user;
+	$uname = (module_exists('realname')) ? realname_load($user) : $user->name;
+	
+	foreach($links as $key => &$value) {
+		if(strpos($key, 'Log out') > -1 && isset($value['link']['title'])) {
+			$value['link']['title'] .= " $uname";
+		}
+	}
   $html = '<ul>';
   if($toplevel) {
   $html .= '<li><h3><em>Main Menu</em></h3>
