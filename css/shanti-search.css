@@ -536,7 +536,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /*------------------------------*/
 .view-section .fancytree-container{ margin:0; background:transparent; border:none; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; }
 .view-section .fancytree-container ul{ padding-top:0; margin-top:0;}
-.view-section .fancytree-container li{ padding:0;line-height:1.62em;}
+.view-section .fancytree-container li{ padding:0;line-height:1.68em;}
 
 .view-section .fancytree-icon{ margin:0; padding:0; width:0; height:0; line-height:0; display:none;} /*--- remove checkbox ---*/
 .view-section .fancytree-node{ border:none; display:block;}
