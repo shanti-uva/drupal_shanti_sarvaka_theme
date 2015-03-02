@@ -58,7 +58,7 @@
             		print ($title == '')? $variables['default_title']:$title;
             	}
               ?></span></h1>
-              <nav class="breadwrap" role="navigation">
+              <nav class="breadwrap" role="navigation" style="display:none;">
                 <?php print theme('breadcrumb', array('breadcrumb' => $breadcrumb)); ?>
               </nav>
               <div class="banner-content">

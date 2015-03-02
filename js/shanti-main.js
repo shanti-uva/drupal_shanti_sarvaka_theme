@@ -770,9 +770,7 @@
 			});
 	  }
 	};
-	
-	
-	
+
 	Drupal.behaviors.kmapsOffCanvasButton = {
 	  attach: function (context, settings) {
 			if($(".feature-carousel-tabpanel").length ) {
@@ -780,7 +778,15 @@
 			}
 	  }
 	};
-	
+		
+		      
+	// --- unhiding breadcrumbs: inline styles keeps the breadcrumbs markup from flash on load when at homepages where we do not want them
+	Drupal.behaviors.breadcrumbsFlickrControl = {
+	  attach: function (context, settings) {
+			$('.breadwrap').show( "fast" );
+	  }
+	};
+
 	
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
