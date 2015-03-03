@@ -550,13 +550,15 @@ function shanti_sarvaka_create_user_menu($um) {
   if(user_is_anonymous()) {
     // Determine whether login is via password or shibboleth and create login link accordingly
     $loginlink = 'user';
+		$lisuff = '';
     if(module_exists('shib_auth')) {
       $loginlink = shib_auth_generate_login_url();
+			$lisuff = t('via Netbadge');
     }
     // Add login link to bottom of links array
     $um[] = array(
       'link' => array(
-        'title' => t('Log in'),
+        'title' => t('Log in @suffix', array('@suffix' => $lisuff)),
         'href' => $loginlink,
       ),
       'below' => array(),
