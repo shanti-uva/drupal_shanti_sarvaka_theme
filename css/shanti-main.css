@@ -1034,7 +1034,7 @@ ul.shanti-gallery > div{
 body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 
 /*--- testing - transcripts search results but should apply across site */
-.page-search .form-item.form-type-checkbox.form-item-retain-filters{ display:block; margin:0;position:relative;top:-0.8rem;}
+.page-search .form-item.form-type-checkbox.form-item-retain-filters{   display:none; /* temporary hide */  margin:0;position:relative;top:-0.8rem;}
 .page-search .container-inline.form-wrapper div{ display:inline-block;}
 .page-search .container-inline.form-wrapper .btn{ padding: .44em 2em .32em;}
 .page-search .form-control.form-text{ height:2.2em;}
@@ -1486,8 +1486,8 @@ form table td.label{ padding-top:0.68em !important;}
 .av-main-transcript-section .dropdown-menu.open{ border-radius:0;min-width:18rem;}
 .av-main-transcript-section .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
 .av-main-transcript-section .selectpicker li a{ line-height:2.62em; height:2.62em;}
-.av-main-transcript-section .selectpicker .caret:before{ color:#555;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
-.av-main-transcript-section .selectpicker .fa:before{ font-size:2.5em;color: #5b68ce;position: relative;left:0.5rem;}
+.av-main-transcript-section .selectpicker .caret:before{ color: #5b68ce;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
+.av-main-transcript-section .selectpicker .fa:before{ font-size:2.5em;color:#606060;position: relative;left:0.5rem;}
 
 .av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark{ color:#ddd;margin-top: 0; top:0.5rem;}
 .av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ }
@@ -1498,7 +1498,7 @@ form table td.label{ padding-top:0.68em !important;}
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
-.av-main-transcript-section .speaker-tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51);padding:0;}
+.av-main-transcript-section .speaker-tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51); padding:0;}
 .av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:2%;width:23%;overflow:hidden;text-overflow: ellipsis;white-space:nowrap;}
 
 
@@ -1746,7 +1746,7 @@ background:transparent;
 .transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
 
 .transcripts-apachesolr-search-snippet .tiers strong,
-.transcripts-apachesolr-search-snippet .tiers mark{ background:#ff0;background: rgba(255, 255, 0, 0.51); padding:0;}
+.transcripts-apachesolr-search-snippet .tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51);padding:0;}
 
 .transcript-search-result { display:table;width:100%;padding:0 1rem;min-height:13.5rem;}
 .transcript-search-result .search-snippet-info,
