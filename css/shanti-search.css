@@ -585,7 +585,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
   border-collapse: separate;
 }
 .view-section .fancytree-title:hover:before {
-    background: rgba(32, 132, 131, 0.71); -webkit-box-shadow:none; box-shadow:none;
+    background: #777; -webkit-box-shadow:none; box-shadow:none;
 }
 .view-section .fancytree-statusnode-wait .fancytree-title:before,
 .view-section .fancytree-statusnode-error .fancytree-title:before{
