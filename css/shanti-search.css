@@ -548,6 +548,13 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:1rem; background:#fff;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:1rem;}
 
+
+.view-section .fancytree-title a{ color:#444;}
+.view-section .fancytree-title a:hover,
+.view-section .fancytree-title a:active{ color:#111;}
+	
+	
+
 .view-section .fancytree-title{
 	color:#444;
 	margin:0 0 0 -24px;
@@ -558,7 +565,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	-moz-box-sizing: content-box;
   box-sizing: content-box;
 }
-.view-section .fancytree-title:hover{ color:#000;}
+.view-section .fancytree-title:hover{ color:#111;}
 .view-section .fancytree-title:before{
 	background: #fff;
 	color:transparent;
@@ -578,7 +585,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
   border-collapse: separate;
 }
 .view-section .fancytree-title:hover:before {
-    background: #777; -webkit-box-shadow:none; box-shadow:none;
+    background: rgba(32, 132, 131, 0.71); -webkit-box-shadow:none; box-shadow:none;
 }
 .view-section .fancytree-statusnode-wait .fancytree-title:before,
 .view-section .fancytree-statusnode-error .fancytree-title:before{
@@ -621,7 +628,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 }
 
 .view-section ul.fancytree-container .glyphicon {
-    color: rgba(32, 132, 131, 0.71);
+    color: #666;
     font-family: 'Glyphicons Halflings';
     font-size: 15px;
     margin-right: 12px;
@@ -629,17 +636,17 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     top: 4px;
 }
 .view-section ul.fancytree-container .fancytree-node:hover > .glyphicon {
-    color: #606060;
+    color: #888;
 }
 .view-section ul.fancytree-container .fancytree-node.fancytree-active:focus > .glyphicon,
 .view-section ul.fancytree-container .fancytree-node.fancytree-active .glyphicon {
-    color: rgba(32, 132, 131, 0.71);
+    color: #666;
     background: transparent;
 }
 /*--- hihglight search text ---*/
 /*.view-section span.fancytree-title > em,*/
 .view-section mark {
-    color: rgba(32, 132, 131, 0.71);
+    color: #ff0;
     font-style: normal;
     padding: 0;
     background: transparent;
