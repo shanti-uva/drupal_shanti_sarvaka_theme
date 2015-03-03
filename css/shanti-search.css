@@ -400,7 +400,7 @@ background:transparent;
 .view-section .nav-tabs>li>a:focus{  border-color:#ddd; border-top:2px solid #ccc; color:#333; background:white;}
 .view-section .nav-tabs>li.active>a,
 .view-section .nav-tabs>li.active>a:hover,
-.view-section .nav-tabs>li.active>a:focus{ color:rgba(32, 132, 131, 0.71);font-size:14px; background:#f8f8f8; text-decoration:none; border-top:2px solid rgba(32, 132, 131, 0.71); border-bottom-color:transparent;}
+.view-section .nav-tabs>li.active>a:focus{ color: #1d7877;font-size:14px; background:#f8f8f8; text-decoration:none; border-top:2px solid #1d7877; border-bottom-color:transparent;}
 .view-section .listview>div,
 .view-section .treeview>div{ padding:0; overflow:auto;}
 .view-section .listview>div{ padding-top:7px;}
