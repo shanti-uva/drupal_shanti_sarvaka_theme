@@ -621,7 +621,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 }
 
 .view-section ul.fancytree-container .glyphicon {
-    color: #666;
+    color: rgba(32, 132, 131, 0.71);
     font-family: 'Glyphicons Halflings';
     font-size: 15px;
     margin-right: 12px;
@@ -629,17 +629,17 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     top: 4px;
 }
 .view-section ul.fancytree-container .fancytree-node:hover > .glyphicon {
-    color: #888;
+    color: #606060;
 }
 .view-section ul.fancytree-container .fancytree-node.fancytree-active:focus > .glyphicon,
 .view-section ul.fancytree-container .fancytree-node.fancytree-active .glyphicon {
-    color: #d00;
+    color: rgba(32, 132, 131, 0.71);
     background: transparent;
 }
 /*--- hihglight search text ---*/
 /*.view-section span.fancytree-title > em,*/
 .view-section mark {
-    color: #d00;
+    color: rgba(32, 132, 131, 0.71);
     font-style: normal;
     padding: 0;
     background: transparent;
