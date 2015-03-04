@@ -1746,7 +1746,7 @@ background:transparent;
 .transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
 
 .transcripts-apachesolr-search-snippet .tiers strong,
-.transcripts-apachesolr-search-snippet .tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51);padding:0;}
+.transcripts-apachesolr-search-snippet .tiers mark{ background:transparent; font-weight:bold; border-bottom:2px solid #000; /*background: rgba(255, 255, 0, 0.51);*/ padding:0;}
 
 .transcript-search-result { display:table;width:100%;padding:0 1rem;min-height:13.5rem;}
 .transcript-search-result .search-snippet-info,
