@@ -887,7 +887,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content .bootstrap-select.btn-group .dropdown-menu{ /* height:auto; removed to fix Edit Video - width:95%; overflow:auto; */}
 .main-content .bootstrap-select.btn-group .dropdown-menu.open{ /* height:auto; */}
 .main-content .selectpicker .caret{ border:none; font-family:'shanticon'; content: '\e609';}
-.main-content .selectpicker .caret:before{ color: rgba(32, 132, 131, 0.71); font-size:1.62em; font-family:'shanticon'; content: '\e609'; position:absolute; top:-0.62em; right:-0.3rem; /* adjusted position for Video Edit page edits */}
+.main-content .selectpicker .caret:before{ color:#5b68ce; font-size:1.62em; font-family:'shanticon'; content: '\e609'; position:absolute; top:-0.62em; right:-0.3rem; /* adjusted position for Video Edit page edits */}
 .main-content .selectpicker li{ padding:0; overflow:hidden;}
 .main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
 .main-content .selectpicker li a{ color:#555; padding:0 1.25rem; overflow:hidden; display:block; line-height:1.75em; height:1.75em;}
