@@ -144,8 +144,8 @@ object.flip_label{ display:none;}
         background:transparent;
         background-image:none;
         position:absolute;
-        right:7.2rem;
-        top:0.6rem;
+        right:5rem;
+        top:0.9rem;
         z-index:10;
         padding:0;
         margin:0;
