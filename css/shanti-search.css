@@ -644,13 +644,14 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     background: transparent;
 }
 /*--- hihglight search text ---*/
-/*.view-section span.fancytree-title > em,*/
+/*.view-section span.fancytree-title > em,
 .view-section mark {
     color: #ff0;
     font-style: normal;
     padding: 0;
     background: transparent;
 }
+*/
 /*---- END treeview -----*/
 
 
