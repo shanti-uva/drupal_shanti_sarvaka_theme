@@ -467,10 +467,10 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail-image a:active .overlay:before{color:rgba(255,255,255,0.7500);}
 .shanti-thumbnail-info{font-size:.75em;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .shanti-thumbnail .body-wrap{padding:.35rem .8rem .6rem 0.9rem;overflow:auto;}
-.shanti-thumbnail-link{/* video title */font-size:0.93em;line-height:1.5em;font-weight:bold;margin:0.2rem 0;letter-spacing:-0.1rem;}
+.shanti-thumbnail-link{/* video title */font-size:1em;line-height:1.38em;font-weight:bold;margin:0.2rem 0;letter-spacing:-0.1rem;}
 .shanti-thumbnail-link:hover,
 .shanti-thumbnail-link:focus{color:rgba(90,101,209,.9000);-webkit-box-shadow:none;box-shadow:none;}
-.shanti-field-group-audience a{font-size:0.82em;line-height:1.38em;}
+.shanti-field-group-audience a{font-size:0.93em;line-height:1.38em;}
 .shanti-field-group-audience a:hover,
 .shanti-field-group-audience a:focus{text-decoration:underline;}
 .shanti-field-group-audience a.shanti-thumbnail-link+a:before{font-family:'Glyphicons Halflings';content:'\e144';color:#666;font-size:1.25em;width:1.32em;height:1.32em;display:inline-block;margin-right:0.2rem;position:relative;left:0.1rem;top:0.05rem;}
