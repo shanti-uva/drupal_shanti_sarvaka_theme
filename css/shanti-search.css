@@ -137,34 +137,38 @@ object.flip_label{ display:none;}
 .input-section .input-group .btn.btn-default .icon:before{ content: '\e080'; position:relative; right:0.25rem; top:-0.56rem;}
 .input-section .input-group .btn.btn-default:active .icon,
 .input-section .input-group .btn.btn-default.active .icon{ color:#777;}
-/*--- clear all / cancel button ---*/
-.input-section .input-group .searchreset{
-	border:none;
-	background:transparent;
-	position:relative;
-	top:-2.4rem;
-	left: -2.2rem;
-	background-image:none;
-	display:none;
-	padding:0;
-	margin:0;
-	border-radius:50%;
-}
-.input-section .input-group .searchreset:active,
-.input-section .input-group .searchreset.active{ background:transparent;border:none;background-image:none;box-shadow:none;}
 
-.input-section .search-group .searchreset .icon{ cursor:pointer; width: 1.75rem;
-height: 1.75rem;
+/*--- reset search button ---*/
+.input-section .input-group-btn .searchreset {
+        border:none;
+        background:transparent;
+        background-image:none;
+        position:absolute;
+        right:7.2rem;
+        top:0.6rem;
+        z-index:10;
+        padding:0;
+        margin:0;
+        display:none;
+        border-radius:50%;
+}
+.input-section .input-group-btn .searchreset:hover,
+.input-section .input-group-btn .searchreset:active{ color:#777;}
+.input-section .input-group-btn .searchreset:active,
+.input-section .input-group-btn .searchreset.active{ background:transparent;border:none;background-image:none;box-shadow:none;}
+
+.input-section .input-group-btn .searchreset .icon{ cursor:pointer; width: 2.75rem;
+height: 2.75rem;
 border-radius: 50%;
 border: none;
-position: relative;
+position: relative; top:-0.55rem; left:0;
 background:transparent;
 }
-.input-section .search-group .searchreset .icon:before,
-.input-section .search-group .searchreset .icon:after{ background:#aaa; position:absolute;top: 0.75rem;left:.15rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
-.input-section .search-group .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
-.input-section .input-group .searchreset:hover .icon,
-.input-section .input-group .searchreset:active .icon{ border:1px solid #ddd;}
+.input-section .input-group-btn .searchreset .icon:before,
+.input-section .input-group-btn .searchreset .icon:after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.input-section .input-group-btn .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
+.input-section .input-group-btn .searchreset:hover .icon,
+.input-section .input-group-btn .searchreset:active .icon{ background:#eee;}
 
 .input-section .feature-group .feature-reset{
 	border:none;
