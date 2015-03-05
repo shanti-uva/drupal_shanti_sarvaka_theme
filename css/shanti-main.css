@@ -1486,7 +1486,7 @@ form table td.label{ padding-top:0.68em !important;}
 .av-main-transcript-section .dropdown-menu.open{ border-radius:0;min-width:18rem;}
 .av-main-transcript-section .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
 .av-main-transcript-section .selectpicker li a{ line-height:2.62em; height:2.62em;}
-.av-main-transcript-section .selectpicker .caret:before{ color: #5b68ce !important;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
+.main-content .av-main-transcript-section .selectpicker .caret:before{ color: #5b68ce !important;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
 .av-main-transcript-section .selectpicker .fa:before{ font-size:2.5em; color: #5b68ce !important;position: relative;left:0.5rem;}
 
 .av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark{ color:#ddd;margin-top: 0; top:0.5rem;}
