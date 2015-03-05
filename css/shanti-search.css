@@ -168,7 +168,7 @@ background:transparent;
 .input-section .input-group-btn .searchreset .icon:after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .input-section .input-group-btn .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .input-section .input-group-btn .searchreset:hover .icon,
-.input-section .input-group-btn .searchreset:active .icon{ background:#eee;}
+.input-section .input-group-btn .searchreset:active .icon{ background:#f5f5f5;}
 
 .input-section .feature-group .feature-reset{
 	border:none;
