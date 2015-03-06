@@ -186,7 +186,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .breadcrumb li:first-child a{ margin-right:0.3rem;font-weight:bold;line-height:1em;font-size:110%;}
 
 
-.breadcrumb .icon{color:#eee;background:#dc3c47;position:absolute;right:5px;top:-3px;z-index:10;font-family:'FontAwesome';font-size:1.68em;font-weight:normal;line-height:.88em;height:1em;width:.38em;overflow:visible;display:inline-block;}
+.breadcrumb .icon{color:#eee;background:transparent;position:absolute;right:5px;top:-3px;z-index:10;font-family:'FontAwesome';font-size:1.68em;font-weight:normal;line-height:.88em;height:1em;width:.38em;overflow:visible;display:inline-block;}
 .breadcrumb .icon:before{ content:'\f105';position:relative;top:0;left:0;opacity:0.4;}
 .breadcrumb li:last-child a{ color:#fff;font-size:.92em;cursor:default;font-weight:bold;font-family:arial,tahoma,helvetica,sans-serif;}
 .breadcrumb li:last-child .icon{background:transparent;}
@@ -311,10 +311,10 @@ header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);
 .menu-main-desk .drop-hdr:focus{ background:#fff; color:#555;}
 .menu-main-desk .drop-hdr:first-child{ -webkit-box-shadow:none;box-shadow:none; border-top:none;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass{ position:absolute; top:0; right:-10px; z-index:202;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass a{ color:#dc3c47; font-size:.83em; line-height:2.5em; height:4em; background:none;padding-right:18px; border:none; font-weight:bold; text-transform:uppercase;}
+.menu-main-desk .levelHolderClass.rtl .backItemClass a{ color:#444; font-size:.83em; line-height:2.5em; height:4em; background:none;padding-right:18px; border:none; font-weight:bold; text-transform:uppercase;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:hover,
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:focus{ color:#555;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass a:active{ color:#dc3c47;}
+.menu-main-desk .levelHolderClass.rtl .backItemClass a:active{ color:#444;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left{ position:relative;top:8px;left:-8px;}
 .menu-main-desk .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.4rem;right:1.3rem;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass .icon{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold;  margin-right:5px;}
@@ -896,7 +896,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content .selectpicker li a:hover{ border:none; outline:0;}
 .main-content .selectpicker li.selected a,
 .main-content .selectpicker li.selected a span.text{ font-weight:bold;}
-.main-content .selectpicker li.selected a .icon{ font-weight:bold;  color:#dc3c47;}
+.main-content .selectpicker li.selected a .icon{ font-weight:bold;  color:#444;}
 .main-content .selectpicker li:hover,
 .main-content .selectpicker li:active,
 .main-content .selectpicker li:hover span.text,
@@ -913,12 +913,12 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .main-content .selectpicker>li>a:focus .check-mark { color:#ccc;}
 .main-content .selectpicker>li.selected>a .check-mark,
 .main-content .selectpicker>li.selected>a:hover .check-mark,
-.main-content .selectpicker>li.selected>a:focus .check-mark{ color:#dc3c47;}
+.main-content .selectpicker>li.selected>a:focus .check-mark{ color:#444;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:#ddd;position:absolute; right:15px; top:0.5rem; margin-top:0 !important; display:inline-block;}
 .bootstrap-select.btn-group .btn .filter-option{ font-size:1em;}
 .bootstrap-select.btn-group .btn .filter-option .icon,
-.bootstrap-select.btn-group .btn .filter-option span{ font-weight:normal; font-size:1.18em; margin-right:0; color:#dc3c47; position:relative; top:2px;}
-.bootstrap-select.btn-group .btn .filter-option em{color:#dc3c47; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block;}
+.bootstrap-select.btn-group .btn .filter-option span{ font-weight:normal; font-size:1.18em; margin-right:0; color:#444; position:relative; top:2px;}
+.bootstrap-select.btn-group .btn .filter-option em{color:#444; font-weight:normal; font-style:normal; font-size:1.06em; display:inline-block;}
 .bootstrap-select.btn-group.show-tick .icon:first-child{ position:relative; top:2px;}
 .bootstrap-select.form-control:not([class*='span']){ max-width:25em;}
 
