@@ -58,7 +58,7 @@
             		print ($title == '')? $variables['default_title']:$title;
             	}
               ?></span></h1>
-              <nav class="breadwrap" role="navigation">
+              <nav class="breadwrap" role="navigation" style="display:none;">
                 <?php print theme('breadcrumb', array('breadcrumb' => $breadcrumb)); ?>
               </nav>
               <div class="banner-content">
@@ -87,7 +87,7 @@
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
+          <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
 	        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
             <span class="icon"></span>

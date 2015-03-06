@@ -520,6 +520,8 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
  * Called from shanti_sarvaka_preprocess_page
  */
 function shanti_sarvaka_create_user_menu($um) {
+	global $user;
+	
   // Filter out existing Account links
   $um = array_filter($um, function($item) use (&$um) {
     $k = array_search($item, $um);
@@ -547,13 +549,15 @@ function shanti_sarvaka_create_user_menu($um) {
   if(user_is_anonymous()) {
     // Determine whether login is via password or shibboleth and create login link accordingly
     $loginlink = 'user';
+		$lisuff = '';
     if(module_exists('shib_auth')) {
       $loginlink = shib_auth_generate_login_url();
+			$lisuff = t('via Netbadge');
     }
     // Add login link to bottom of links array
     $um[] = array(
       'link' => array(
-        'title' => t('Log in'),
+        'title' => t('Log in @suffix', array('@suffix' => $lisuff)),
         'href' => $loginlink,
       ),
       'below' => array(),
@@ -561,6 +565,9 @@ function shanti_sarvaka_create_user_menu($um) {
 
   // if logged in show account submenu at top of list
   } else {
+  	$uname = '';
+		$uname = (module_exists('realname')) ? realname_load($user) : $user->name;
+	
     // Add preferences menu
     if(module_exists('user_prefs')) {
       $pfarray = array(
@@ -585,7 +592,7 @@ function shanti_sarvaka_create_user_menu($um) {
           ),
           'logout' => array(
             'link' => array(
-              'title' => t('Log out'),
+              'title' => t('Log out @name', array('@name' => $uname)),
               'href' => 'user/logout',
             ),
             'below' => array(),
@@ -614,6 +621,17 @@ function shanti_sarvaka_create_user_menu($um) {
  * Function to create markup for responsive main menu from Drupal's user menu
  */
 function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
+	global $user;
+	$uname = '';
+	if(!user_is_anonymous()) {
+		$uname = (module_exists('realname')) ? realname_load($user) : $user->name;
+		foreach($links as $key => &$value) {
+			if(strpos($key, 'Log out') > -1 && isset($value['link']['title'])) {
+				$value['link']['title'] .= " $uname";
+			}
+		}
+	}
+	
   $html = '<ul>';
   if($toplevel) {
   $html .= '<li><h3><em>Main Menu</em></h3>
