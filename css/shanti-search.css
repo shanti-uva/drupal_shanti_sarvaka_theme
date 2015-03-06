@@ -546,7 +546,8 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .fancytree-node{ border:none; display:block;}
 
 .view-section .fancytree-expander:before{ }
-.view-section .fancytree-node.fancytree-active{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
+.view-section .fancytree-node.fancytree-active,
+.view-section .fancytree-node.fancytree-selected{ background:white !important; border:none; -webkit-box-shadow: 0 0 3px 0 #aaa; box-shadow: 0 0 3px 0 #aaa; border-collapse: separate; /* fix for ie9 shadow */}
 
 
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:1rem; background:#fff;padding-right:1rem;}
@@ -617,15 +618,18 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     box-shadow: 0 0 3px 0 #aaa;
     border-collapse: separate;
 }
-.view-section .fancytree-active .fancytree-title {
+.view-section .fancytree-active .fancytree-title,
+.view-section .fancytree-selected .fancytree-title {
     color: #000;
 }
-.view-section .fancytree-active.fancytree-has-children .fancytree-title:before {
+.view-section .fancytree-active.fancytree-has-children .fancytree-title:before,
+.view-section .fancytree-selected.fancytree-has-children .fancytree-title:before {
     content: none;
     text-shadow: none;
     display: none;
 }
-.view-section .fancytree-active .fancytree-title:before {
+.view-section .fancytree-active .fancytree-title:before,
+.view-section .fancytree-selected .fancytree-title:before {
     background: #f4222c;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -643,7 +647,9 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     color: #888;
 }
 .view-section ul.fancytree-container .fancytree-node.fancytree-active:focus > .glyphicon,
-.view-section ul.fancytree-container .fancytree-node.fancytree-active .glyphicon {
+.view-section ul.fancytree-container .fancytree-node.fancytree-active .glyphicon,
+.view-section ul.fancytree-container .fancytree-node.fancytree-selected:focus > .glyphicon,
+.view-section ul.fancytree-container .fancytree-node.fancytree-selected .glyphicon {
     color: #666;
     background: transparent;
 }
