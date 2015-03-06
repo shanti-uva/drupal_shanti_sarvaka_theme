@@ -22,7 +22,7 @@ h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif
 h1, h2{ font-size:1.5em; margin:0;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
 label{ color:#555;font-size:80%;font-family:'museo-sans-500',helvetica,arial,sans-serif;text-transform:uppercase;margin:0 0 0 1rem;}
-mark{ color:#222; background:transparent; font-weight:bold; border-bottom:1px solid #555; padding:0;}
+mark{ color:#333; background:transparent; font-weight:bold; padding:0;}
 input.form-text,input.form-control,textarea.form-textarea{color:#777;border:1px solid #ccc;border-radius:1.5em;background-clip:padding-box;font-size:.9em;font-family:'museo-sans-500',helvetica,arial,sans-serif;height:2em;line-height:1.5em;padding:.25em 1em 0;max-width:35em;overflow:auto;-webkit-box-shadow:0 2px 5px #eee inset;box-shadow:0 2px 5px #eee inset;border-collapse:separate;background:#fff;-webkit-transition-property:all;-webkit-transition-duration:400ms;transition-property:all;transition-duration:400ms;background-position:99% .62em !important;}
 textarea.form-textarea{max-width:100%;height:auto;padding:.6rem 1.2rem 1.2rem;border-radius:.5em;}
 input.form-control:hover,textarea.form-textarea:hover{ background:#f9f9f9; border:1px solid #c0c0c0;}
@@ -96,7 +96,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a .icon:before{ color:#fff;}
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.93em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
 .navbar-default .navbar-nav>li a:focus{ background:#f0f0f0;color:#444;}
