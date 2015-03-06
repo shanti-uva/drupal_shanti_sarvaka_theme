@@ -195,7 +195,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .breadcrumb > li + li:before{content:' ';padding:0 5px;color:#999;display:none;}
 .breadcrumb .ajax-progress-throbber{ display:none !important;}
 
-/* hide breadcrumbs */ 
+/* hide breadcrumbs for homepages */ 
 body.front ol.breadcrumb{ display:none !important;}
 
 /*-------------------------------------*/
@@ -465,7 +465,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail-image a:hover .overlay:before,
 .shanti-thumbnail-image a:focus .overlay:before{color:rgba(255,255,255,0.6000);font-size:4em !important;}
 .shanti-thumbnail-image a:active .overlay:before{color:rgba(255,255,255,0.7500);}
-.shanti-thumbnail-info{font-size:.75em;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
+.shanti-thumbnail-info{font-size:.75em;font-family:helvetica,arial,sans-serif;}
 .shanti-thumbnail .body-wrap{padding:.35rem .8rem .6rem 0.9rem;overflow:auto;}
 .shanti-thumbnail-link{/* video title */font-size:1em;line-height:1.38em;font-weight:bold;margin:0.2rem 0;}
 .shanti-thumbnail-link:hover,
@@ -1161,10 +1161,11 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 
-/*--- NOT WORKING YET ---------*/
-/*--- button on video window --*/
+/*--- NOT WORKING YET ---------
+button on video window
 .largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:'play';}
 .largePlayBtn:before{ font-family:'shanticon'; content: '\e647';}
+*/
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/
