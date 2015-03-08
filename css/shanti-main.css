@@ -1404,6 +1404,7 @@ form table td.label{ padding-top:0.68em !important;}
 	border-collapse:separate;
 	background:#333;
 	background-image:none;
+	z-index:30001;  /* Necessary because header-banner has z-index: 30000 */
 }
 #admin-menu > div > .dropdown > li > a{ padding: 2px 7px 3px;}
 
