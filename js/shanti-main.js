@@ -401,9 +401,13 @@
 	      Drupal.ShantiSarvaka.checkWidth();
 
 	      // Carousel Init and controls
-	      $('.carousel').carousel({
-	        interval: 6000,
-	      });
+	      $('.carousel').each(function() {
+	      	var speed = $(this).data('speed') * 1000;
+	      	$(this).carousel({
+		        interval: speed,
+		      });
+		    });
+		    
 	      $('.carousel .control-box-2 .carousel-pause').click(function () {
 	          var carousel = $(this).parents('.carousel');
 	          if($(this).hasClass('paused')) {

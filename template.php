@@ -664,6 +664,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
  * $variables['element'] = array(
  * 	'title' => 'title above carousel',
  * 	'link'  => 'link in upper right corner above carousel',
+ *  'speed' => 'speed in seconds for the delay between slides. This number is multiplied by 1000 to get milliseconds',
  * 	'slides' => array(
  * 		'0' => array (
  * 			nid: Node ID
@@ -689,7 +690,7 @@ function shanti_sarvaka_carousel($variables) {
 
           <div class="carousel-header show-more"><span>' . $el['title'] . '</span>' . $el['link'] . '</div>
 
-          <div class="carousel slide row" id="collection-carousel">
+          <div class="carousel slide row" id="collection-carousel" data-speed="' . $el['speed'] . '">
               <div class="carousel-inner">';
   foreach($el['slides'] as $n => $slide) {
     $active = ($n == 0) ? 'active' : '';
