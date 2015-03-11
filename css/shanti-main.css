@@ -434,8 +434,8 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button a{ color:#f0f0f0; font-weight:normal; font-family: "museo-sans-500",helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ color:#fff; background:#333;}
-.popover-footer-button .icon{ font-family:'shanticon'; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1.12em; line-height:2.12em; height: 2.75em;}
-.popover-footer-button .icon:before{ color:#fff; margin-right:8px;}
+.popover-footer-button .icon{ font-family: "museo-sans-500",helvetica,arial,sans-serif; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1.12em; line-height:2.12em; height: 2.75em;}
+.popover-footer-button .icon:before{ color:#fff; margin-right:8px; font-family:'shanticon';}
 .popover-footer-button:hover .icon,
 .popover-footer-button:focus .icon{ color:#fff;}
 .popover-footer-button:last-child{ border-radius: 0 0 0.5rem 0.5rem; border-bottom:none; }
