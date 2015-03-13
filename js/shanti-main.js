@@ -408,7 +408,10 @@
 		    //  });
 		    // });
 		    
-		    $('.carousel').carousel()
+		    $('.carousel').carousel({
+				  interval: 1000,
+				  pause: false
+				});
 		    
 	      $('.carousel .control-box-2 .carousel-pause').click(function () {
 	          var carousel = $(this).parents('.carousel');
