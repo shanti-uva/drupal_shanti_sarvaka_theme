@@ -5,13 +5,13 @@
 
 html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
 body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; overflow: hidden;}
-/* *:focus{ outline:0 !important;} */
+/* *:active{ outline:0 !important;} */
 a{text-decoration:none;color:#454fa4;}
-a:hover,a:focus{text-decoration:none;color: rgb(207, 47, 30);}
+a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a{ border-bottom:1px solid transparent;-webkit-transition: border 300ms ease 0s; transition: border 300ms ease 0s;}
-.content-section a:hover,
-.content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
-.content-section a:active{ border-bottom-color:transparent;}
+.content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
+/*.content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}*/
+.content-section a:active{ border-bottom-color:transparent !important;}
 /*.content-section .messages{ display:none;}*/
 
 ::selection,
