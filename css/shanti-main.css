@@ -70,6 +70,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .loader{ height: 80%; min-height: 31em; padding-top: 1em;}
 .custom-inline { display: inline;}
 .container-narrow > hr { margin: 3% 0;}
+.summary-overview{ max-width:800px;}
 
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
