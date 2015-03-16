@@ -401,17 +401,15 @@
 	      Drupal.ShantiSarvaka.checkWidth();
 
 	      // Carousel Init and controls
-	      // $('.carousel').each(function() {
-	      //	var speed = $(this).data('speed') * 1000;
-	      //	$(this).carousel({
-		    //    interval: speed,
-		    //  });
-		    // });
+	      // Gets speed from setting associated with block so that admins can customize speed.
+	      $('.carousel').each(function() {
+	      	var speed = $(this).data('speed') * 1000;
+	      	$(this).carousel({
+		        interval: speed,
+				  	pause: false
+		      });
+		    });
 		    
-		    $('.carousel').carousel({
-				  interval: 1000,
-				  pause: false
-				});
 		    
 	  //    $('.carousel .control-box-2 .carousel-pause').click(function () {
 	  //        var carousel = $(this).parents('.carousel');
