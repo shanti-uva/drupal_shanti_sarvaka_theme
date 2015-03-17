@@ -5,20 +5,20 @@
 
 html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
 body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; overflow: hidden;}
-/* *:focus{ outline:0 !important;} */
+/* *:active{ outline:0 !important;} */
 a{text-decoration:none;color:#454fa4;}
-a:hover,a:focus{text-decoration:none;color: rgb(207, 47, 30);}
+a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a{ border-bottom:1px solid transparent;-webkit-transition: border 300ms ease 0s; transition: border 300ms ease 0s;}
-.content-section a:hover,
-.content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
-.content-section a:active{ border-bottom-color:transparent;}
+.content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
+/*.content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}*/
+.content-section a:active{ border-bottom-color:transparent !important;}
 /*.content-section .messages{ display:none;}*/
 
 ::selection,
 ::moz-selection{background: rgba(71, 82, 153, 0.66) !important;text-shadow:none !important;color:white !important;}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
-h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;margin-bottom:5px;}
 h1, h2{ font-size:1.5em; margin:0;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
 label{ color:#555;font-size:80%;font-family:'museo-sans-500',helvetica,arial,sans-serif;text-transform:uppercase;margin:0 0 0 1rem;}
@@ -70,6 +70,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .loader{ height: 80%; min-height: 31em; padding-top: 1em;}
 .custom-inline { display: inline;}
 .container-narrow > hr { margin: 3% 0;}
+.summary-overview{ max-width:800px;}
 
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
@@ -434,8 +435,8 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button a{ color:#f0f0f0; font-weight:normal; font-family: "museo-sans-500",helvetica,arial,sans-serif;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ color:#fff; background:#333;}
-.popover-footer-button .icon{ font-family:'shanticon'; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1.12em; line-height:2.12em; height: 2.75em;}
-.popover-footer-button .icon:before{ color:#fff; margin-right:8px;}
+.popover-footer-button .icon{ font-family: "museo-sans-500",helvetica,arial,sans-serif; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1.12em; line-height:2.12em; height: 2.75em;}
+.popover-footer-button .icon:before{ color:#fff; margin-right:8px; font-family:'shanticon';}
 .popover-footer-button:hover .icon,
 .popover-footer-button:focus .icon{ color:#fff;}
 .popover-footer-button:last-child{ border-radius: 0 0 0.5rem 0.5rem; border-bottom:none; }
@@ -936,7 +937,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .shanti-filters td{ white-space: nowrap;}
 .shanti-filters table td:nth-child(2){ width:100%;}
 .shanti-filters td .label{ color:#555;font-size: 0.88em;text-transform:uppercase;letter-spacing: -0.1rem;}
-.shanti-filters td .count{ font-size: 0.88em; padding-right:1rem;text-transform:capitalize;}
+.shanti-filters td .count{ font-size: 0.88em; margin-right:2rem;text-transform:capitalize;}
 .shanti-filters .view-filters-mb .views-exposed-widget{ position:relative;padding-right:3rem;}
 .shanti-filters .ajax-progress{ /*display: inline;*/ position:absolute;top:1.35rem;right:0;}
 .form-item-sort-bef-combine .btn{ width: 15rem;}
@@ -970,6 +971,9 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager-last .icon{ font-size:1.25em;}
 .pager-next{ margin-left:.5rem;}
 .pager-previous{ margin-right:.5rem;}
+
+.pager li.pager-first >.icon{ position:relative; top:-0.2rem;}
+.pager li.pager-previous >.icon{ position:relative; top:-0.35rem;}
 /*--- END paging --*/
 
 
@@ -1433,9 +1437,6 @@ form table td.label{ padding-top:0.68em !important;}
 .views-ui-dialog *,
 #views-ajax-popup{ background-color: white;}
 .pagerer_admin_panes_config .form-type-select label{ display:none;}
-
-.view-my-workflow .views-exposed-form .views-exposed-widget{ float:none;}
-
 
 .admin-menu .content table td{ background:transparent;}
 

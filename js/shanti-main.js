@@ -401,24 +401,27 @@
 	      Drupal.ShantiSarvaka.checkWidth();
 
 	      // Carousel Init and controls
+	      // Gets speed from setting associated with block so that admins can customize speed.
 	      $('.carousel').each(function() {
 	      	var speed = $(this).data('speed') * 1000;
 	      	$(this).carousel({
 		        interval: speed,
+				  	pause: false
 		      });
 		    });
 		    
-	      $('.carousel .control-box-2 .carousel-pause').click(function () {
-	          var carousel = $(this).parents('.carousel');
-	          if($(this).hasClass('paused')) {
-	            carousel.carousel('next');
-	            carousel.carousel('cycle');
-	          } else {
-	            carousel.carousel('pause');
-	          }
-	          $(this).toggleClass('paused');
-	          $(this).find('span').toggleClass('glyphicon-pause glyphicon-play');
-	      });
+		    
+	  //    $('.carousel .control-box-2 .carousel-pause').click(function () {
+	  //        var carousel = $(this).parents('.carousel');
+	  //        if($(this).hasClass('paused')) {
+	  //          carousel.carousel('next');
+	  //          carousel.carousel('cycle');
+	  //        } else {
+	  //          carousel.carousel('pause');
+	  //        }
+	  //        $(this).toggleClass('paused');
+	  //        $(this).find('span').toggleClass('glyphicon-pause glyphicon-play');
+	  //    });
 
 	    }
     }
