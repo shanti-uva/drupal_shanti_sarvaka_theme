@@ -88,7 +88,7 @@
    */
   Drupal.behaviors.shantiSarvakaIcheck = {
     attach: function (context, settings) {
-      $("input[type='checkbox'], input[type='radio']", context).once('icheck').each(function () {
+      $("input[type='checkbox'], input[type='radio']", context).not($('.jstree input')).once('icheck').each(function () {
         var self = $(this),
         label = self.next('label');
         if(label.length == 1) {
