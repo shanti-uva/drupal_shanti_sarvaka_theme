@@ -1055,7 +1055,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-transcript-section { }
 .av-main-video-section { }
 
-
+.videoDisplay{ border-top:15px solid #000;}
 
 /*--- toggle button for resource column - tetsting dev ---*/
 .mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
