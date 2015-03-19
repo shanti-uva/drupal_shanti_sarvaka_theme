@@ -933,13 +933,13 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 
 /*--- BEGIN paging --*/
 .shanti-filters { height:1.75em; margin-bottom:2rem;position:relative;top:-1rem;}
-.logged-in .shanti-filters { position:relative; top:-1.5rem;}
+.logged-in .shanti-filters { position:relative; top:-2.5rem;}
 
 .shanti-filters table{ float:right;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .shanti-filters table tbody{ border-top: none;}
 .shanti-filters td{ white-space: nowrap;}
 .shanti-filters table td:nth-child(2){ width:100%;}
-.shanti-filters td .label{ color:#555;font-size: 0.88em;text-transform:uppercase;letter-spacing: -0.1rem;}
+.shanti-filters td .label{ color:#555;font-size: 0.88em;text-transform:uppercase;/*letter-spacing: -0.1rem;*/}
 .shanti-filters td .count{ font-size: 0.88em; margin-right:2rem;text-transform:capitalize;}
 .shanti-filters .view-filters-mb .views-exposed-widget{ position:relative;padding-right:3rem;}
 .shanti-filters .ajax-progress{ /*display: inline;*/ position:absolute;top:1.35rem;right:0;}
