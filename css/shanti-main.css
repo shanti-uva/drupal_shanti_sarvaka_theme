@@ -930,7 +930,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 
 /*--- BEGIN paging --*/
 .shanti-filters { height:1.75em; margin-bottom:2rem;position:relative;top:-1rem;}
-.logged-in .shanti-filters { top:-2.5rem;}
+.logged-in .shanti-filters { position:relative; top:-1.5rem;}
 
 .shanti-filters table{ float:right;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .shanti-filters table tbody{ border-top: none;}
@@ -1055,7 +1055,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-transcript-section { }
 .av-main-video-section { }
 
-.videoDisplay{ border-top:15px solid #000;}
+.videoDisplay{ border-top:15px solid #000 !important;}
 
 /*--- toggle button for resource column - tetsting dev ---*/
 .mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
