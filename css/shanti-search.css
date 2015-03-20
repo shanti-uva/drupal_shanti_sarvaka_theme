@@ -581,7 +581,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 	content: '\e625';
 	font-size: 1em;
 	float:left;
-	position:relative; top:7px; right:2px;
+	position:relative; top:0.6rem; right:0.2rem;
   border-radius: 50%;
   background-clip: padding-box;
   width: 9px;
