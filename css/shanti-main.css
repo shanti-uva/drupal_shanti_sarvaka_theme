@@ -1518,7 +1518,7 @@ form table td.label{ padding-top:0.68em !important;}
 .av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
 */
 
-.transcript-container { height:750px; overflow-x:auto;margin-top:0;-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;}
+.transcript-container { background:white; height:750px; overflow-x:auto;margin-top:0;-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;}
 .transcript-container.show-search { margin-top:7rem;}
 
 .transcript-container .list-group{ -webkit-margin-before:0;margin-bottom:420px;}
