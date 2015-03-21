@@ -1493,8 +1493,8 @@ form table td.label{ padding-top:0.68em !important;}
 .av-main-transcript-section .dropdown-menu.open{ border-radius:0;min-width:18rem;}
 .av-main-transcript-section .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
 .av-main-transcript-section .selectpicker li a{ line-height:2.62em; height:2.62em;}
-.main-content .av-main-transcript-section .selectpicker .caret:before{ color: #5b68ce !important;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
-.av-main-transcript-section .selectpicker .fa:before{ font-size:2.5em; color: #5b68ce !important;position: relative;left:0.5rem;}
+.main-content .av-main-transcript-section .selectpicker .caret:before{ color: #606060 !important;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
+.av-main-transcript-section .selectpicker .fa:before{ font-size:2.5em; color: #606060 !important;position: relative;left:0.5rem;}
 
 .av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark{ color:#ddd;margin-top: 0; top:0.5rem;}
 .av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ }
@@ -1539,7 +1539,7 @@ form table td.label{ padding-top:0.68em !important;}
 .btn-group-transcript .btn.btn-icon:active{ background:transparent;}
 /*.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}*/
 .btn-group-transcript .btn.btn-icon .fa,
-.btn-group-transcript .btn.btn-icon .icon{border-radius:0;margin:0 auto;font-size:2rem; color: #5b68ce;position:static;line-height:1;width:auto;background:transparent;}
+.btn-group-transcript .btn.btn-icon .icon{border-radius:0;margin:0 auto;font-size:2rem; color: #606060;position:static;line-height:1;width:auto;background:transparent;}
 .btn-group-transcript .btn.btn-icon .fa{ font-size:1em;line-height: 2.32em;}
 .btn-group-transcript .btn.btn-icon.playpause{ font-size:1em;}
 
