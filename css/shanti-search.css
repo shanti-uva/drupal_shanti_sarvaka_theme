@@ -435,7 +435,7 @@ background:transparent;
 
 /* .view-section .table>thead:first-child>tr:first-child>th{ float:left;} */
 
-.view-section table.table-results tr:nth-child(even) {background: #fcfcfc;}
+.view-section table.table-results tr:nth-of-type(even) {background: #fcfcfc;}
 .view-section table.table-results tbody>tr>td blockquote,
 .view-section table.table-results tbody>tr>td quote{ font-size: 0.5em !important;}
 

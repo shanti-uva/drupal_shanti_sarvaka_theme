@@ -540,7 +540,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .btn-group > .btn{border-radius:0;margin:0;}
 .btn-group > .btn-primary + .btn-primary{border-left:1px solid #4e5ab4;}
 .btn-group > .btn.btn-default{border:1px solid #ddd;border-left:none;}
-.btn-group:nth-child(1) > .btn.btn-default{border-left:1px solid #ddd;}
+.btn-group:nth-of-type(1) > .btn.btn-default{border-left:1px solid #ddd;}
 
 .btn.btn-sm{font-size:60%;line-height:130%;padding-top:.88em;font-weight:bold;}
 .btn.btn-lg{line-height:3em;padding:.82em 3em;}
@@ -582,7 +582,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .btn-anchor .btn{padding:0;}
 .btn-group.btn-anchor > .btn.btn-default{ border:1px solid #ddd !important;border-left:none !important;}
 .btn-group.btn-anchor > .btn.btn-default{ }
-.btn-group.btn-anchor:nth-child(1) > .btn.btn-default{border-left:1px solid #ddd !important;}
+.btn-group.btn-anchor:nth-of-type(1) > .btn.btn-default{border-left:1px solid #ddd !important;}
 /*-------------------------*/
 /*----- END Buttons -----*/
 /*-------------------------*/
@@ -938,7 +938,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .shanti-filters table{ float:right;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .shanti-filters table tbody{ border-top: none;}
 .shanti-filters td{ white-space: nowrap;}
-.shanti-filters table td:nth-child(2){ width:100%;}
+.shanti-filters table td:nth-of-type(2){ width:100%;}
 .shanti-filters td .label{ color:#555;font-size: 0.88em;text-transform:uppercase;/*letter-spacing: -0.1rem;*/}
 .shanti-filters td .count{ font-size: 0.88em; margin-right:2rem;text-transform:capitalize;}
 .shanti-filters .view-filters-mb .views-exposed-widget{ position:relative;padding-right:3rem;}
@@ -1472,7 +1472,7 @@ form table td.label{ padding-top:0.68em !important;}
 .transcript-controls table tbody,
 .transcript-player table tbody{ border-top:none;}
 .transcript-controls .btn-group.btn-group-lg{ width:100%; margin-top:0;}
-.transcript-controls .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
+.transcript-controls .btn-group:nth-of-type(1) .btn{ border-left:1px solid #ddd;}
  /*--- .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} set up for new video transcript controls --*/
 
 
@@ -1547,7 +1547,7 @@ form table td.label{ padding-top:0.68em !important;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:16.66%;}
 
 .btn-group-transcript.btn-group .btn+.btn{ border-left:none;}
-.btn-group-transcript.btn-group:nth-child(1) > .btn.btn-default{ border-left:none;margin-left:0;}
+.btn-group-transcript.btn-group:nth-of-type(1) > .btn.btn-default{ border-left:none;margin-left:0;}
 
 
 
@@ -1968,7 +1968,7 @@ html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of a
 @media screen and (max-width: 830px) {
 
 	 .navbar-header a span:last-child{ display:none;}
-	 /*-- .btn-group-lg.btn-group-transcript > .btn-group:nth-child(1){ width:2%;} ---*/
+	 /*-- .btn-group-lg.btn-group-transcript > .btn-group:nth-of-type(1){ width:2%;} ---*/
 
 
 }
