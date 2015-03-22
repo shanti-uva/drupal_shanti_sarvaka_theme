@@ -1,3 +1,4 @@
+@font-face{font-family:'museo-sans-300';src:url(../fonts/Museosans/museosans-300-webfont.eot);src:url(../fonts/Museosans/museosans-300-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/Museosans/museosans-300-webfont.woff) format("woff"),url(../fonts/Museosans/museosans-300-webfont.ttf) format("truetype"),url(../fonts/Museosans/museosans-300-webfont.woff#museosans_300) format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:'museo-sans-500';src:url(../fonts/Museosans/museosans-500-webfont.eot);src:url(../fonts/Museosans/museosans-500-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/Museosans/museosans-500-webfont.woff) format("woff"),url(../fonts/Museosans/museosans-500-webfont.ttf) format("truetype"),url(../fonts/Museosans/museosans-500-webfont.woff#museosans_500) format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:'museo-sans-700';src:url(../fonts/Museosans/museosans-700-webfont.eot);src:url(../fonts/Museosans/museosans-700-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/Museosans/museosans-700-webfont.woff) format("woff"),url(../fonts/Museosans/museosans-700-webfont.ttf) format("truetype"),url(../fonts/Museosans/museosans-700-webfont.woff#museosans_700) format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:'museo-sans-900';src:url(../fonts/Museosans/museosans-900-webfont.eot);src:url(../fonts/Museosans/museosans-900-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/Museosans/museosans-900-webfont.woff) format("woff"),url(../fonts/Museosans/museosans-900-webfont.ttf) format("truetype"),url(../fonts/Museosans/museosans-900-webfont.woff#museosans_900) format("svg");font-weight:normal;font-style:normal}
@@ -15,10 +16,10 @@ a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 /*.content-section .messages{ display:none;}*/
 
 ::selection,
-::moz-selection{background: rgba(71, 82, 153, 0.66) !important;text-shadow:none !important;color:white !important;}
+::-moz-selection{background: rgba(71, 82, 153, 0.66) !important;text-shadow:none !important;color:white !important;}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
-h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;margin-bottom:5px;}
+h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;margin-bottom:5px;}
 h1, h2{ font-size:1.5em; margin:0;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
 label{ color:#555;font-size:80%;font-family:'museo-sans-500',helvetica,arial,sans-serif;text-transform:uppercase;margin:0 0 0 1rem;}
@@ -100,7 +101,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .menu-icon.show-topmenu a .icon::before{ color:#fff;}
 .navbar-collapse{ padding:0;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
 .navbar-default .navbar-nav>li a:focus{ background:#f0f0f0;color:#444;}
@@ -147,7 +148,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .collections .row { margin:0;}
 .collections ul { margin: 0 auto;text-align:center;list-style-type: none;margin-bottom:10px !important;}
 .collections ul li { margin: 0;float:left;line-height:4.5em;width:20%;}
-.collections ul li a { color: #aaa;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.collections ul li a { color: #aaa;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:focus, 
 .collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
 .collections ul li a:hover,
@@ -220,7 +221,7 @@ header ul.tabs.secondary{ position: absolute; bottom: -2rem; right:2rem; z-index
 header ul.tabs.primary li,
 header ul.tabs.secondary li{ float:left; margin-right:0.2rem; border:none; padding:0;}
 header ul.tabs.primary li a,
-header ul.tabs.secondary li a{ color:#222; background:rgba(0,0,0, 0.1000); line-height:2.3rem; height:2rem; padding:0 1.5rem; border:none; font-size:0.9rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; /*border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;*/}
+header ul.tabs.secondary li a{ color:#222; background:rgba(0,0,0, 0.1000); line-height:2.3rem; height:2rem; padding:0 1.5rem; border:none; font-size:0.9rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:700;font-weight:bold;/*border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;*/}
 
 header ul.tabs.primary{ float:right; }
 header ul.tabs.primary li{ float:right;}
@@ -239,7 +240,7 @@ header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);
 /***** Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section mediabase */
 .vertical-tab-button a,
-.vertical-tab-button.selected a{ border-bottom:none;outline: 0 !important; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.vertical-tab-button.selected a{ border-bottom:none;outline: 0 !important; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .vertical-tab-button a:hover,
 .vertical-tab-button a:focus,
 .vertical-tab-button.selected a:hover,
@@ -267,7 +268,7 @@ header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);
 
 /**** Horizontal Tabs Bootstrap *****/
 .nav-justified{ margin: 1.12em 0 1.75rem;}
-.nav-justified>li{ background:#fff;border-right:1px solid #ddd;font-size:1em;font-family:'museo-sans-700',helvetica,arial,sans-serif;-webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s;}
+.nav-justified>li{ background:#fff;border-right:1px solid #ddd;font-size:1em;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold; -webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s;}
 .nav-justified>li>a{ border:none !important;border-radius:0;color:#999;}
 .nav-justified>li>a:hover,
 .nav-justified>li>a:active{ background:#fff;color:#777;}
@@ -434,7 +435,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .related-resources-popover .parents a:hover,
 .related-resources-popover .parents a:active{ color: rgb(207, 47, 30);}
 .popover-footer{ margin:10px -14px -9px;}
-.popover-footer-button{ background:#111; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 1.3rem; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.popover-footer-button{ background:#111; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 1.3rem; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .popover-footer-button a{ color:#f0f0f0; font-weight:normal; font-family: "museo-sans-500",helvetica,arial,sans-serif !important;}
 .popover-footer-button:hover,
 .popover-footer-button:focus{ color:#fff; background:#333;}
@@ -713,7 +714,7 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 /*--- top-tier horizontal tabs---*/
 .feature-detail-assets{ margin-top:0.5rem;}
 .feature-detail-assets div{ border-top:1px solid #ccc;padding-right:0;padding-left:0;position:relative;display:inline-block;vertical-align:middle;}
-.feature-detail-assets a{ color:#555;display:block;font-size:0.82em;text-align:center;white-space:nowrap;background:#f3f3f3 !important; line-height:3.75em; height:3.75em; font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:bold;}
+.feature-detail-assets a{ color:#555;display:block;font-size:0.82em;text-align:center;white-space:nowrap;background:#f3f3f3 !important; line-height:3.75em; height:3.75em; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .feature-detail-assets a:hover,
 .feature-detail-assets a:focus{ color:#444;border-bottom:0 !important;background:#e0e0e0 !important;text-decoration:none;-webkit-transition: background 500ms ease 0s; transition: background 500ms ease 0s;}
 .feature-detail-assets div:first-child{ border-top:none !important;}
@@ -950,7 +951,7 @@ table.pagerer { float:right;font-size:0.88em;text-transform:uppercase;position:r
 input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-top: 0.15rem;line-height:1.25em;color: #6d7afc; width:2.68em !important; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;color: rgba(32, 132, 131, 0.71);}
 .pager{ text-align:right;float:right;position:relative;top:-1rem;right:1rem;}
-.pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .pager li>a{ border:none;color:#aaa;padding:0.12em 0.5em;margin:0;background:transparent;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;}
 .pager li>a:hover,
 .pager li>a:focus{ color:#333;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;}
@@ -1124,7 +1125,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 ul.inline li a,
 .compact-link a,
 ul.links.inline li a,
-a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-family:'museo-sans-700',helvetica,arial,sans-serif;} /*--- targeting login link for now, see if this oerks ---*/
+a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bold;text-transform:capitalize; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;} /*--- targeting login link for now, see if this oerks ---*/
 
 
 .field-name-field-tags{ padding:10px 10px 0;}
@@ -1137,7 +1138,7 @@ a.tabledrag-toggle-weight{ color: #5a65d1; letter-spacing:-0.12em;font-weight:bo
 /* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;} */
 .video-overview .desc-readmore{ margin:-10px 0 20px;}
 
-.video-overview-title { margin-bottom:0.25em; text-transform:uppercase; font-size:0.88em; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.video-overview-title { margin-bottom:0.25em; text-transform:uppercase; font-size:0.88em; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 
 
 .avplace .field,
@@ -1164,7 +1165,7 @@ h4.node-desc-type{ text-transform: uppercase;font-size: 0.8em;}
 
 
 .avnode-details-buttons { float:right;position:relative;top:-1rem;right:2rem; /* hide buttons - temp */ display:none !important;}
-.avnode-details-buttons .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-family:'museo-sans-700',helvetica,arial,sans-serif;}
+.avnode-details-buttons .btn.btn-sm{ width:14em; text-align:center; font-size:0.62em; font-weight:bold; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 
 
 
