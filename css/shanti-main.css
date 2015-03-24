@@ -188,7 +188,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .breadcrumb li a:focus{text-decoration:underline;}
 .breadcrumb li:last-child a:hover,
 .breadcrumb li:last-child a:focus{text-decoration:none;}
-.breadcrumb li:first-child a{ margin-right:0.3rem;font-weight:bold;line-height:1em;font-size:110%;}
+.breadcrumb li:first-child a{ margin-right:0.3rem;font-weight:bold;line-height:1em;font-size:110%;text-transform:capitalize;}
 
 
 .breadcrumb .icon{color:#eee;background:transparent;position:absolute;right:5px;top:-3px;z-index:10;font-family:'FontAwesome';font-size:1.68em;font-weight:normal;line-height:.88em;height:1em;width:.38em;overflow:visible;display:inline-block;}
