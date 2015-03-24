@@ -103,12 +103,12 @@
             checkedClass: 'checked',
           });
           // In MB /my-content/collections/ Icheck is not show check when clicked fixing this here
-          /*$('div.icheck-item').once('icheckfix').on('mousedown', function() { 
+          /*$('div.icheck-item').once('icheckfix').on('mousedown', function() {
           	if($(this).hasClass('checked')) {
           		$(this).addClass('rm-icheck');
           		setTimeout(function() { $('.rm-icheck').removeClass('checked rm-icheck'); }, 500);
           	} else {
-          		$(this).addClass('checked'); 
+          		$(this).addClass('checked');
           	}
           });*/
         }
@@ -176,7 +176,7 @@
 	      });
 
 	      /* Initialize Language Buttons */
-	     
+
 				// Language menu drop down init
 				$('#block-locale-language .dropdown-toggle').dropdown();
 
@@ -333,7 +333,7 @@
   Drupal.behaviors.shantiSarvakaMiscinit = {
     attach: function (context, settings) {
     	if(context == document) {
-								
+
 	      // Shanti-filters title keyword search field: use description for placeholder text
     		$('.shanti-filters .views-exposed-form .form-item input.form-text').each(function() {
     			var desc = $(this).parent().parent().next('.description');
@@ -346,7 +346,7 @@
 	      // this could be improved with conditional for - lte IE7 - so it does not self-hide
 	      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
 	      $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
-	      
+
 	      /* Change collapsible div icon from +/- depending on state
 	      $('div.panel-collapse').on('hide.bs.collapse', function () {
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
@@ -357,7 +357,7 @@
 	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
 	      });
         */
-        
+
 	      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
 	      // Add class and event handler to bootstrap tabs for formatting
 	      // $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
@@ -409,8 +409,8 @@
 				  	pause: false
 		      });
 		    });
-		    
-		    
+
+
 	  //    $('.carousel .control-box-2 .carousel-pause').click(function () {
 	  //        var carousel = $(this).parents('.carousel');
 	  //        if($(this).hasClass('paused')) {
@@ -447,7 +447,7 @@
           };
           // Get a reference to your grid items.
           var handler = $('.shanti-gallery li');
-          
+
           var $window = $(window);
           $window.resize(function() {
             var windowWidth = $window.width(),
@@ -486,7 +486,7 @@
 				            var link = ev.target;
 				            var header = $(link).closest(".panel-heading");
 				            var chevState = $(".glyphicon", header).toggleClass('glyphicon-plus glyphicon-minus');
-				            
+
 				            $(".glyphicon", accordion)
 				                .not(chevState)
 				                .removeClass("glyphicon-minus")
@@ -494,14 +494,14 @@
 				        });
 				    });
 				};
-				
+
 				$('.field-accordion, #accordion').accordionFx();
 
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
 
 
-        /* - mark hide 12/24 - Select only accordions not in vertical tabs 
+        /* - mark hide 12/24 - Select only accordions not in vertical tabs
   			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
         var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
 
@@ -519,7 +519,7 @@
             $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
 				*/
-				
+
         /*-- toggle icon on accordions -- */
         $('.btn-toggle-accordion').click(function () {
 
@@ -653,11 +653,11 @@
 				hideControlOnEnd: true,
 			  breaks: [{screen:0, slides:1, pager:false},{screen:400, slides:2},{screen:550, slides:3},{screen:768, slides:4},{screen:1050, slides:5}]
       });
-      
+
       // --- hide breadcrumbs when carousel is present
-      if($('#carousel-feature-slides').length ) { 
-	      $('.breadcrumb').css('display','none');
-      }
+      //if($('#carousel-feature-slides').length ) {
+				//$('.breadcrumb').css('display','none');
+      //}
 
     }
   };
@@ -665,8 +665,8 @@
 
    Drupal.behaviors.shantiSarvakaKalturaLoading = {
     attach: function (context, settings) {
-    	if(context == document) {  
-    		// The player on the node edit form cannot be made responsive thru this script. 
+    	if(context == document) {
+    		// The player on the node edit form cannot be made responsive thru this script.
     		// Because it causes the player not to appear until resize happens (ndg, 2015-01-30)
 			  if (typeof kWidget != 'undefined' && !$('body').hasClass('page-node-edit')) {
 					kWidget.addReadyCallback(function(playerId) {
@@ -682,8 +682,8 @@
 	    }
     }
   };
-  
-  
+
+
 
   Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
     attach: function (context, settings) {
@@ -702,9 +702,9 @@
           $('.tier-selector .filter-option').replaceWith('<span class="fa fa-comments-o"></span>');
       }
     }
-  };  
-  
-  
+  };
+
+
 	Drupal.behaviors.shantiSarvakaMbTrimDesc = {
 	  attach: function (context, settings) {
 	  	// Pb core description trimming
@@ -728,11 +728,11 @@
 					});
 				}
 			}
-			
+
 			// Description Trimming
-			/* This makes there be multiple "Show More"s on Dreams page 
+			/* This makes there be multiple "Show More"s on Dreams page
 				Could perhaps use } else { if needed for other situations
-					
+
 			$('.description.trim').each(function() {
 			 	if($(this).text().length > 1000 && $(this).find('p').length > 1 && $(this).find('div.show-more').length == 0) {
 			 		var p1 = $(this).find('p').first();
@@ -766,10 +766,10 @@
 			}
 	  }
 	};
-  
-  
-  
-  
+
+
+
+
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
 			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
@@ -785,8 +785,8 @@
 			}
 	  }
 	};
-		
-		      
+
+
 	// --- unhiding breadcrumbs: inline styles keeps the breadcrumbs markup from flash on load when at homepages where we do not want them
 	Drupal.behaviors.breadcrumbsFlickrControl = {
 	  attach: function (context, settings) {
@@ -794,7 +794,7 @@
 	  }
 	};
 
-	
+
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
 //			if($(".openlayermap").length ) {
@@ -802,7 +802,7 @@
 //			}
 //	  }
 //	};
-	
+
 //	Drupal.behaviors.kmapsPageNotFound = {
 //	  attach: function (context, settings) {
 //			if($('.page-title-text:contains("Page not found")').length ) {
@@ -810,6 +810,6 @@
 //			}
 //	  }
 //	};
-	
-  		
+
+
 }(jQuery));
