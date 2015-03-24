@@ -201,7 +201,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .breadcrumb .ajax-progress-throbber{ display:none !important;}
 
 /* hide breadcrumbs for homepages */ 
-body.front ol.breadcrumb{ display:none !important;}
+body.front ol.breadcrumb{ display:none; }
 
 /*-------------------------------------*/
 /*----- END header -----*/
