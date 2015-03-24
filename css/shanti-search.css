@@ -421,7 +421,7 @@ background:transparent;
 
 .view-section table.table-results{ border:none; font-size:13px; line-height:20px; height:20px; margin-bottom:0; margin:0 2%; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .view-section table.table-results a{ font-style:italic;}
-.view-section table.table-results tbody>tr,
+.view-section table.table-results tbody>tr{ }
 .view-section table.table-results thead tr th,
 .view-section table.table-results tbody>tr>td{ line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
 .view-section table.table-results tbody tr:hover{ background: #fff;}
@@ -429,6 +429,18 @@ background:transparent;
 .view-section table.table-results thead tr th{ color:#333;}
 .view-section table.table-results thead tr th:hover,
 .view-section table.table-results thead tr th:hover::after{ color:#444; cursor:pointer;}
+
+.view-section table.table-results tbody>tr>td, 
+.view-section table.table-results tbody>tr>td>div, 
+.view-section table.table-results tbody>tr>td>span{ }
+
+.view-section tr.row_selected {
+    /*display: block;*/
+    background: #fff;
+    -webkit-box-shadow: 0 0 3px 0 #aaa;
+    box-shadow: 0 0 3px 0 #aaa;
+    border-collapse: separate;
+}
 
 .view-section .table>thead>tr{ border-bottom:2px solid #ddd;}
 .view-section .table>thead>tr>th{ border-bottom:none;}
@@ -458,6 +470,70 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 /* .listview td.sorting_1 { min-width: 12em;} */
 .view-section .title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
 .view-section .row {/*margin: 1em 1em 1em 1em;*/}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- START list table view ----*/
+.view-section table.table-responsive{ text-align:center; border:none;}
+.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+.view-section table.table-results a{ font-style:italic;}
+
+.view-section table.table-results tbody>tr>td,
+.view-section table.table-results tbody>tr>td>div,
+.view-section table.table-results tbody>tr>td>span{ display:table-cell; white-space:normal; position: static; line-height:20px; padding-bottom:2px; text-align:left; width: 50% !important; overflow: hidden; text-overflow: ellipsis;}
+
+.view-section table.table-results tbody > tr > td:nth-of-type() div { }
+
+.view-section table.table-results tbody tr{ }
+.view-section table.table-results tbody tr:hover{ background: #fff;}
+.view-section table.table-results thead tr th:after{ color:#555; font-family: 'shanticon'; content: "\e609"; font-size: 14px; margin-left:0; position:relative; top:2px;}
+.view-section table.table-results thead tr th{ border-bottom:2px solid #ddd; color:#333; padding-left:5px; line-height:20px;text-align:left; width: 50%;}
+.view-section table.table-results thead tr th:hover,
+.view-section table.table-results thead tr th:hover:after{ color:#dc3c47; cursor:pointer;}
+
+/* .view-section .table>thead:first-child>tr:first-child>th{ float:left;} */
+/* .view-section table.table-results tr:nth-child(even) {background: #fcfcfc;} */
+
+.view-section table.table-results tbody>tr>td blockquote,
+.view-section table.table-results tbody>tr>td quote{ font-size: 0.5em !important;}
+
+.view-section span.title-field {  /* position: static; float: none;  width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
+
+th.sorting_asc,
+table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-width:0; }
+
+
+
+/* trunk8 */
+.view-section .col-xs-6 { width: 100%; font-size: 0.63em; padding-right: 0; /*padding-left: 0em;*//*margin-left: -2em;*/}
+.view-section .pagination>li>a, 
+.pagination>li>span { padding:3px 6px; margin-left: -2px;  }
+.view-section .pagination { margin:4px 0 2px 15px; }
+.view-section .row { margin-right: 0;/*margin-left: 0em;*/}
+/* .listview td.sorting_1 { min-width: 12em;} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 .view-section .popover-content {font-family: sans-serif;font-size: smaller;}
 .view-section .popover-content > blockquote p {font-size: 13px;}
 .view-section .popover-content > blockquote {
@@ -614,13 +690,7 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     position: relative;
     top: 0;
 }
-.view-section tr.row_selected {
-    display: block;
-    background: #fff;
-    -webkit-box-shadow: 0 0 3px 0 #aaa;
-    box-shadow: 0 0 3px 0 #aaa;
-    border-collapse: separate;
-}
+
 .view-section .fancytree-container .fancytree-active .fancytree-title,
 .view-section .fancytree-container .fancytree-selected .fancytree-title {
     color: #000;
