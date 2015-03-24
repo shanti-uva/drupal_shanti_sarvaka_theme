@@ -421,7 +421,7 @@ background:transparent;
 
 .view-section table.table-results{ border:none; font-size:13px; line-height:20px; height:20px; margin-bottom:0; margin:0 2%; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .view-section table.table-results a{ font-style:italic;}
-.view-section table.table-results tbody>tr{ }
+.view-section table.table-results tbody>tr,
 .view-section table.table-results thead tr th,
 .view-section table.table-results tbody>tr>td{ line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
 .view-section table.table-results tbody tr:hover{ background: #fff;}
@@ -429,18 +429,6 @@ background:transparent;
 .view-section table.table-results thead tr th{ color:#333;}
 .view-section table.table-results thead tr th:hover,
 .view-section table.table-results thead tr th:hover::after{ color:#444; cursor:pointer;}
-
-.view-section table.table-results tbody>tr>td, 
-.view-section table.table-results tbody>tr>td>div, 
-.view-section table.table-results tbody>tr>td>span{ }
-
-.view-section tr.row_selected {
-    /*display: block;*/
-    background: #fff;
-    -webkit-box-shadow: 0 0 3px 0 #aaa;
-    box-shadow: 0 0 3px 0 #aaa;
-    border-collapse: separate;
-}
 
 .view-section .table>thead>tr{ border-bottom:2px solid #ddd;}
 .view-section .table>thead>tr>th{ border-bottom:none;}
@@ -467,9 +455,6 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .pagination>li>a, .pagination>li>span { padding: 0.5em 0.8em;}
 .view-section .pagination { margin-left: 1em;margin-top: 0.3em;margin-bottom: 0.1em;margin-right: -0.5em;}
 .view-section .row {margin-right: 0;/*margin-left: 0em;*/}
-/* .listview td.sorting_1 { min-width: 12em;} */
-.view-section .title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
-.view-section .row {/*margin: 1em 1em 1em 1em;*/}
 
 
 
@@ -482,6 +467,21 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 
 
 
+
+
+
+
+
+
+
+
+/*------------------------------------------------
+
+BEGIN - FROM AARDVARK - Temporary do not remove, 
+------- this fixes table row collapsing on click, 
+------- will review in detail and cleanup
+
+-------------------------------------------------------------*/
 
 /*---- START list table view ----*/
 .view-section table.table-responsive{ text-align:center; border:none;}
@@ -512,8 +512,6 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 th.sorting_asc,
 table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-width:0; }
 
-
-
 /* trunk8 */
 .view-section .col-xs-6 { width: 100%; font-size: 0.63em; padding-right: 0; /*padding-left: 0em;*//*margin-left: -2em;*/}
 .view-section .pagination>li>a, 
@@ -522,6 +520,11 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .row { margin-right: 0;/*margin-left: 0em;*/}
 /* .listview td.sorting_1 { min-width: 12em;} */
 
+/*---------------------------------
+
+END - FROM AARDVARK -
+
+---------------------------------*/
 
 
 
@@ -534,6 +537,15 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 
 
 
+
+
+
+
+
+
+/* .listview td.sorting_1 { min-width: 12em;} */
+.view-section .title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
+.view-section .row {/*margin: 1em 1em 1em 1em;*/}
 .view-section .popover-content {font-family: sans-serif;font-size: smaller;}
 .view-section .popover-content > blockquote p {font-size: 13px;}
 .view-section .popover-content > blockquote {
@@ -690,7 +702,13 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     position: relative;
     top: 0;
 }
-
+.view-section tr.row_selected {
+    display: block;
+    background: #fff;
+    -webkit-box-shadow: 0 0 3px 0 #aaa;
+    box-shadow: 0 0 3px 0 #aaa;
+    border-collapse: separate;
+}
 .view-section .fancytree-container .fancytree-active .fancytree-title,
 .view-section .fancytree-container .fancytree-selected .fancytree-title {
     color: #000;
