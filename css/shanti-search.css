@@ -456,7 +456,12 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
 .view-section .pagination { margin-left: 1em;margin-top: 0.3em;margin-bottom: 0.1em;margin-right: -0.5em;}
 .view-section .row {margin-right: 0;/*margin-left: 0em;*/}
 
-
+.view-section tr.row_selected {
+    background: #fff;
+    -webkit-box-shadow: 0 0 3px 0 #aaa;
+    box-shadow: 0 0 3px 0 #aaa;
+    border-collapse: separate;
+}
 
 
 
@@ -702,13 +707,7 @@ END - FROM AARDVARK -
     position: relative;
     top: 0;
 }
-.view-section tr.row_selected {
-    display: block;
-    background: #fff;
-    -webkit-box-shadow: 0 0 3px 0 #aaa;
-    box-shadow: 0 0 3px 0 #aaa;
-    border-collapse: separate;
-}
+
 .view-section .fancytree-container .fancytree-active .fancytree-title,
 .view-section .fancytree-container .fancytree-selected .fancytree-title {
     color: #000;
