@@ -1437,6 +1437,8 @@ form table td.label{ padding-top:0.68em !important;}
 #admin-footer .form-control,
 #admin-footer .form-textarea{ max-width: 95%;background-position:97% .56em !important;}
 
+div.region.region-admin-footer{ padding:1.5rem;}
+
 /*-- REVIEW THIS - Prevent views dialog transparency --*/
 .views-ui-dialog,
 .views-ui-dialog *,
