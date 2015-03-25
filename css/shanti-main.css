@@ -9,7 +9,7 @@ body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',p
 /* *:active{ outline:0 !important;} */
 a{text-decoration:none;color:#454fa4;}
 a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
-.content-section a{ border-bottom:1px solid transparent;-webkit-transition: border 300ms ease 0s; transition: border 300ms ease 0s;}
+.content-section a{ border-bottom:1px solid transparent;-webkit-transition: border 300ms ease 0s;-moz-transition:border 300ms ease 0s;-o-transition: border 300ms ease 0s;transition: border 300ms ease 0s;}
 .content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
 /*.content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}*/
 .content-section a:active{ border-bottom-color:transparent !important;}
@@ -79,7 +79,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-.header-banner{ position:relative; z-index:30000; overflow:visible; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); margin-top:0 !important; box-shadow: 0 3px 10px rgb(0, 0, 0); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
+.header-banner{ position:relative; z-index:30000; overflow:visible; margin-top:0 !important; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px #ddd; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
@@ -455,12 +455,12 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*--------------------------------*/
 .shanti-gallery{width:100%;margin:0;padding:0;position:relative;list-style-type:none;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0;}
 .shanti-gallery a{color:#222;border:none!important;display:block;font-family: helvetica, arial, sans-serif;}
-.shanti-thumbnail{color:#555;background:#fff;float:left;width:100%;max-width:170px;min-height:18em;padding:0;margin:0;border-radius:.4rem;background-clip:padding-box;list-style-type:none;position:relative;-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.2750);box-shadow:0 3px 3px rgba(50,50,50,0.2750);border-collapse:separate;-webkit-transition:box-shadow 200ms ease;-moz-transition:box-shadow 200ms ease;-ms-transition:box-shadow 200ms ease;-o-transition:box-shadow 200ms ease;transition:box-shadow 200ms ease;}
+.shanti-thumbnail{color:#555;background:#fff;float:left;width:100%;max-width:170px;height:17em;padding:0;margin:0;border-radius:.4rem;background-clip:padding-box;list-style-type:none;position:relative;-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.2750);box-shadow:0 3px 3px rgba(50,50,50,0.2750);border-collapse:separate;-webkit-transition:box-shadow 200ms ease;-moz-transition:box-shadow 200ms ease;-ms-transition:box-shadow 200ms ease;-o-transition:box-shadow 200ms ease;transition:box-shadow 200ms ease;}
 .shanti-thumbnail:hover,
 .shanti-thumbnail:focus{-webkit-box-shadow:0 4px 7px rgba(0,0,0,0.2250);box-shadow:0 4px 7px rgba(0,0,0,0.2250);}
 .shanti-thumbnail:active{-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.5);box-shadow:0 3px 3px rgba(50,50,50,0.5);}
 .shanti-thumbnail-image{width:100%;overflow:hidden;border-radius:.4rem .4rem 0 0;background-clip:padding-box;}
-.shanti-thumbnail-image img{max-width:100%;height:8em;margin:0 auto;border:none;overflow:hidden;border-radius:.4rem .4rem 0 0;background-clip:padding-box;}
+.shanti-thumbnail-image img{max-width:100%;height:7em;margin:0 auto;border:none;overflow:hidden;border-radius:.4rem .4rem 0 0;background-clip:padding-box;}
 .shanti-thumbnail-image a{position:relative;overflow:hidden;margin:0 auto;text-align:center;padding:0;border-radius:.4rem .4rem 0 0;background:#000;background-clip:padding-box;}
 .shanti-thumbnail-image .icon{position:absolute;top:0;right:0;z-index:100;background:rgba(50,204,202,0.8);width:2em;height:1.88em;border:none;border-radius:0 .25em;background-clip:padding-box;color:white;font-size:1.25em;line-height:1.83em;font-weight:normal;text-align:center;}
 .shanti-thumbnail.audio .shanti-thumbnail-image .icon{background:rgba(72,80,189,0.8)!important;}
