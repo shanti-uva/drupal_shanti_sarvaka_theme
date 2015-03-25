@@ -1768,7 +1768,7 @@ background:transparent;
 .transcript-search-result .shanti-thumbnail-image img{ height:10rem;}
 .transcript-search-result .shanti-thumbnail-image a{ position:relative;top:32px;border-radius:0.3rem;background:transparent;}
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;min-width:115px;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem;}
-.transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:2.25em;}
+.transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:1.82em;}
 .transcript-search-result .shanti-thumbnail-image a:hover .overlay::before,
 .transcript-search-result .shanti-thumbnail-image a:focus .overlay::before{ font-size:3.5em !important;}
 
