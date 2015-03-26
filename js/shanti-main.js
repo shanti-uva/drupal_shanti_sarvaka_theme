@@ -21,7 +21,7 @@
     var srchtab = (height) - 108;
     var viewheight = (height) - 256;
     // var advHeight = $(".advanced-view").show().height();
-    var comboHeight = (viewheight) - 142;
+    var comboHeight = (viewheight) - 270;
     
     $(".advanced-link").click( function () { // --- sets class for height change in flyout, see comboheight below
       $(".view-wrap").toggleClass('short-wrap');
