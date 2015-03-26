@@ -79,7 +79,7 @@ object.flip_label{ display:none;}
 
 /*--- START / Search Panel / Input & View ----*/
 /*----------------------------------------------*/
-.input-section{ padding:0;border: 1px solid #e0e0e0;display:block;width:100%;}
+.input-section{ padding:0;margin-bottom:5px;border: 1px solid #e0e0e0;display:block;width:100%;}
 .input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}
 .input-section .input-group{ padding: 0 12px 0 10px; display:block; width:100%; background:#f8f8f8;}
 .input-section .input-group input.form-control{
@@ -329,7 +329,7 @@ background:transparent;
 
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color:#444;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:focus .check-mark{ color:#444;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark{ color:#444;}
  /* search errors */
 .input-section .notification-wrapper{ padding: 0 15px;}
 .input-section .alert{ margin:0 10px 10px;padding: 10px 15px;text-shadow: 0 1px 0 rgba(255,255,255,.4);}
@@ -377,7 +377,7 @@ background:transparent;
 /*---- START View Section / Tabs - Table - Tree -----*/
 /*----------------------------------------------------*/
 .view-section{ display:none;background:#fff;} /*--- prevent flash on load */
-.isOpened .view-section{ border-top:5px solid #fff;}
+.isOpened .view-section{ /* border-top:5px solid #fff; */}
 .view-section .tab-content{ background:#f8f8f8; padding:1rem 0 0; border: 1px solid #ddd; border-width:0 1px 1px;}
 .view-section .tab-content .tab-pane{ padding:0;}
 .view-section .tab-content .tab-pane.treeview{ }
@@ -401,10 +401,10 @@ background:transparent;
 
 }
 .view-section .nav-tabs>li>a:hover,
-.view-section .nav-tabs>li>a:focus{  border-color:#ddd; border-top:2px solid #ccc; color:#333; background:white;}
+.view-section .nav-tabs>li>a:active{  border-color:#ddd; border-top:2px solid #ccc; color:#333; background:white;}
 .view-section .nav-tabs>li.active>a,
 .view-section .nav-tabs>li.active>a:hover,
-.view-section .nav-tabs>li.active>a:focus{ color:#444; font-size:15px; background:#f8f8f8; text-decoration:none; border-color:#ddd; border-top:2px solid #e36159; border-bottom-color:transparent;}
+.view-section .nav-tabs>li.active>a:active{ color:#444; font-size:15px; background:#f8f8f8; text-decoration:none; border-color:#ddd; border-top:2px solid #e36159; border-bottom-color:transparent;}
 .view-section .listview>div,
 .view-section .treeview>div{ padding:0; overflow:auto;}
 .view-section .listview>div{ padding-top:7px;}
@@ -736,9 +736,9 @@ END - FROM AARDVARK -
 .view-section .fancytree-container .fancytree-node:hover > .glyphicon {
     color: #888;
 }
-.view-section .fancytree-container .fancytree-node.fancytree-active:focus > .glyphicon,
+.view-section .fancytree-container .fancytree-node.fancytree-active:active > .glyphicon,
 .view-section .fancytree-container .fancytree-node.fancytree-active .glyphicon,
-.view-section .fancytree-container .fancytree-node.fancytree-selected:focus > .glyphicon,
+.view-section .fancytree-container .fancytree-node.fancytree-selected:active > .glyphicon,
 .view-section .fancytree-container .fancytree-node.fancytree-selected .glyphicon {
     color: #666;
     background: transparent;
