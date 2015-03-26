@@ -22,6 +22,10 @@
     var viewheight = (height) - 256;
     // var advHeight = $(".advanced-view").show().height();
     var comboHeight = (viewheight) - 142;
+    
+    $(".advanced-link").click(function () { // --- sets class for height change in flyout
+      $(".view-wrap").toggleClass("short-wrap");
+    });
 
     srchtab = parseInt(srchtab) + 'px';
     $("#search-flyout").find(".text").css('height',srchtab);
