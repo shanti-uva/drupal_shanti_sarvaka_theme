@@ -636,14 +636,14 @@ END - FROM AARDVARK -
 .view-section .fancytree-container li{ padding:0;line-height:1.68em;overflow:hidden;}
 
 .view-section .fancytree-icon{ margin:0; padding:0; width:0; height:0; line-height:0; display:none;} /*--- remove checkbox ---*/
-.view-section .fancytree-node{ border:1px solid transparent; display:block;}
+.view-section .fancytree-node{ border:1px solid transparent !important; display:block;}
 
 .view-section .fancytree-expander::before{ }
 .view-section .fancytree-node:hover,
 .view-section .fancytree-node:active,
 .view-section .fancytree-node.fancytree-active,
 .view-section .fancytree-node.fancytree-selected,
-.view-section .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active{ background:white !important; border-color:#eee;}
+.view-section .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active{ background:white !important; border-color:#eee !important;}
 
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
