@@ -185,7 +185,7 @@ z-index: 10;
 display: block;
 background: rgba(0,0,0,0.175);
 }
-.page-title .icon::before{background:transparent !important;position:relative; left:0.06em; z-index:15;}
+.page-title .icon::before{background:transparent !important;position:relative; left:0.02em; z-index:15;}
 
 
 
