@@ -227,7 +227,7 @@ body.front ol.breadcrumb{ display:none; }
 /*----- BEGIN navigation -----*/
 /*----------------------------*/
 
-.has-tabs div.banner-tabs{ border-bottom:1px solid #ccc; width:100%; background: #ddd !important; /* match banner color in app */ height:2rem;margin-top:0.7rem;opacity:0.6;}
+.has-tabs div.banner-tabs{ border-bottom:1px solid #ccc; width:100%; background: #ddd !important; /* match banner color in app */ height:2rem;margin-top:0.3rem;opacity:0.6;}
 
 /**** Titlebar Tabs ****/
 header ul.tabs.primary,
