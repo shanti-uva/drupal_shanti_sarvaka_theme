@@ -18,7 +18,7 @@
   // *** SEARCH *** adapt search panel height to viewport
   Drupal.ShantiSarvaka.searchTabHeight = function() {
     var height = $(window).height();
-    var srchtab = (height) - 90;
+    var srchtab = (height) - 108;
     var viewheight = (height) - 243;
     // var advHeight = $(".advanced-view").show().height();
     var comboHeight = (viewheight) - 142;

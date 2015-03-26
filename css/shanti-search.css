@@ -58,7 +58,7 @@ object.flip_label{ display:none;}
 #search-flyout.extruder.right .flap.on-hover>span,
 #search-flyout.extruder.right .flap.on-hover.on-flap>span{ color:#fff;background:#444;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
 
-#search-flyout.extruder.right .flap>span .icon{ font-size: 2.62rem;position: absolute;left: 15px:top: 16px;z-index: 10;}
+#search-flyout.extruder.right .flap>span .icon{ font-size: 2.5rem;position: absolute;left: 15px:top: 16px;z-index: 10;}
 
 #menu-main.extruder.right{ margin-top:39px; color:#888 !important;}
 #menu-main.extruder.right .extruder-content{ background:transparent !important; color:#888 !important; overflow:visible !important; box-shadow:none !important; }
