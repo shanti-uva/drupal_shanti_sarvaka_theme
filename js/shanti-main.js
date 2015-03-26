@@ -21,7 +21,7 @@
     var srchtab = (height) - 80;
     var viewheight = (height) - 243;
     // var advHeight = $(".advanced-view").show().height();
-    var comboHeight = (viewheight) - 126;
+    var comboHeight = (viewheight) - 110;
 
     srchtab = parseInt(srchtab) + 'px';
     $("#search-flyout").find(".text").css('height',srchtab);
