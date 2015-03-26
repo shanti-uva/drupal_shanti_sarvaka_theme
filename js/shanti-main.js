@@ -19,9 +19,9 @@
   Drupal.ShantiSarvaka.searchTabHeight = function() {
     var height = $(window).height();
     var srchtab = (height) - 80;
-    var viewheight = (height) - 235;
+    var viewheight = (height) - 243;
     // var advHeight = $(".advanced-view").show().height();
-    var comboHeight = (viewheight) - 136;
+    var comboHeight = (viewheight) - 126;
 
     srchtab = parseInt(srchtab) + 'px';
     $("#search-flyout").find(".text").css('height',srchtab);
