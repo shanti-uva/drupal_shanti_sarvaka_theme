@@ -153,7 +153,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
 .collections ul li a:hover,
 .collections ul li a:active { text-decoration: none;color: #fff;}
-.collections ul .icon { color: #d0d0d0;margin-right:8px;font-size:1.5em;position:relative;top:2px;}
+.collections ul .icon { color: #d0d0d0;margin-right:8px;font-size:1.5em;position:relative;top:3px;}
 .collections ul .icon.shanticon-logo-shanti{ color:#fff;}
 .collections ul li a:hover .icon,
 .collections ul li a:active .icon{ color:#fff;}
