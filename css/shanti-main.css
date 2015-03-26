@@ -169,10 +169,10 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 
 .page-title { font-weight: normal;font-size:1.56em;line-height:1.32em;text-shadow:0 0 3px rgba(50,50,50, 0.225);margin:0;padding:5px 0 0;color:#f9f9f9;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;padding-right:4rem;}
-.page-title .page-title-text { position:relative; top: 0.18em;}
+.page-title .page-title-text { position:relative; top: 0.6rem;}
 .page-title .icon { font-size: 125%;
 line-height: 1em;
-margin: 0 7px 0 0;
+margin: 0 9rem 0 0;
 min-width: 1em;
 min-height: 1em;
 text-align: center;
@@ -336,7 +336,7 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:active{ color:#555;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:active{ color:#444;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left{ position:relative;top:8px;left:-8px;}
-.menu-main-desk .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.4rem;right:1.3rem;}
+.menu-main-desk .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.6rem;right:1.3rem;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass .icon{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold;  margin-right:5px;}
 .menu-main-desk .backItemClass,
 .menu-main-desk .levelHolderClass.rtl{ font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:normal;background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
