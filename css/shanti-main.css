@@ -311,7 +311,7 @@ header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);
 .menu-main-desk li { border-top: none;background:#fff;display:block;font-size:1em;line-height:3em; height:4em;padding:0 !important;}
 .menu-main-desk li:hover,
 .menu-main-desk li:focus{ background:#f7f7f7;color:#555;}
-.menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.93em;line-height:2.44em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.5em;text-transform:uppercase;}
+.menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.88em;line-height:2.88em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.5em;text-transform:uppercase;}
 .menu-main-desk li a:hover,
 .menu-main-desk li a:focus{ color:#444;}
 .menu-main-desk li:first-child a,
@@ -338,7 +338,7 @@ header ul.tabs.secondary li.active a:focus{ background:rgba(255,255,255, 1.000);
 .menu-main-desk .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.4rem;right:1.3rem;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass .icon{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold;  margin-right:5px;}
 .menu-main-desk .backItemClass,
-.menu-main-desk .levelHolderClass.rtl{ font-family:'museo-sans-500',helvetica,arial,sans-serif; font-weight:normal;background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
+.menu-main-desk .levelHolderClass.rtl{ font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:normal;background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
 .menu-main-desk .levelHolderClass.rtl{ padding-left:4px;}
 /***** END main-menu *****/
 
