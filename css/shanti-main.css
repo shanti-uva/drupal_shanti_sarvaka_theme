@@ -204,7 +204,7 @@ background: rgba(0,0,0,0.175);
 .breadcrumb li a:active{text-decoration:underline;}
 .breadcrumb li:last-child a:hover,
 .breadcrumb li:last-child a:active{text-decoration:none;}
-.breadcrumb li:first-child a{ margin-right:0.5rem;font-weight:bold;line-height:1em;font-size:110%;text-transform:capitalize;}
+.breadcrumb li:first-child a{ margin-right:0.5rem;font-weight:bold;line-height:0.93em;font-size:115%;text-transform:capitalize;position:relative;top:-0.1rem;}
 
 
 .breadcrumb .icon{color:#eee;background:transparent;position:absolute;right:5px;top:-3px;z-index:10;font-family:'FontAwesome';font-size:1.68em;font-weight:normal;line-height:.88em;height:1em;width:.38em;overflow:visible;display:inline-block;}

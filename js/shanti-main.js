@@ -28,7 +28,7 @@
     $("#search-flyout").find(".text").css('height',srchtab);
 
     viewheight = parseInt(viewheight) + 'px';
-    comboHeight = parseInt(comboHeight) + 'px';
+    // comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
     // $(".view-wrap.short-wrap").css('height', comboHeight);
   };
@@ -794,6 +794,17 @@
 			$('.breadwrap').show( "fast" );
 	  }
 	};
+	
+	
+	Drupal.behaviors.advancedToggleClassHeightChange = {
+		attach: function (context, settings) {
+	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
+    $(".advanced-link").bind("click", function (e) { 
+      $(".view-wrap").toggleClass('short-wrap');
+    });
+	  }
+	};
+	
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
