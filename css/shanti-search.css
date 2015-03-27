@@ -73,7 +73,7 @@ object.flip_label{ display:none;}
 /*--- END / Sliding Panel ---------------------*/
 
 
-#search-flyout .overlay-mask{ position:absolute;z-index:20000;}
+
 
 
 
@@ -758,6 +758,7 @@ END - FROM AARDVARK -
 
 /* ----- overlay timer ------ */
 /* ----- search loading ----- */
+#search-flyout .overlay-mask{ position:absolute;z-index:20000;}
 
 @-moz-keyframes rotate-loading {
     0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
@@ -805,6 +806,7 @@ END - FROM AARDVARK -
     position: relative;
     width: 150px;
     border-radius: 100%;
+    z-index:21000;
 }
  
 .loading-container { margin: -180px auto 0;}
