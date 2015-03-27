@@ -28,7 +28,7 @@
     $("#search-flyout").find(".text").css('height',srchtab);
 
     viewheight = parseInt(viewheight) + 'px';
-    comboHeight = parseInt(comboHeight) + 'px';
+    // comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
     // $(".view-wrap.short-wrap").css('height', comboHeight);
   };
