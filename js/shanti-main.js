@@ -12,16 +12,18 @@
     if( panelWidth <= 275 ) {
         $(".extruder-content").css("width","100% !important");
       }
-      
-    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
-    $(".advanced-link").click( function () { 
-      $(".view-wrap").toggleClass('short-wrap');
-    });
   };
 
 
   // *** SEARCH *** adapt search panel height to viewport
   Drupal.ShantiSarvaka.searchTabHeight = function() {
+	        
+    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
+    $(".advanced-link").click( function () { 
+      $(".view-wrap").toggleClass('short-wrap');
+    });
+    
+    
     var height = $(window).height();
     var srchtab = (height) - 108;
     var viewheight = (height) - 256;
