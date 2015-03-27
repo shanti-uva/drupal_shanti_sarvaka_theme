@@ -16,14 +16,7 @@
 
 
   // *** SEARCH *** adapt search panel height to viewport
-  Drupal.ShantiSarvaka.searchTabHeight = function() {
-	        
-    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
-    $(".advanced-link").click( function () { 
-      $(".view-wrap").toggleClass('short-wrap');
-    });
-    
-    
+  Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
     var srchtab = (height) - 108;
     var viewheight = (height) - 256;
@@ -38,7 +31,7 @@
     comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
     $(".view-wrap.short-wrap").css('height', comboHeight);
-  } ;
+  };
 
   /**
    *  Settings for the theme
@@ -801,7 +794,17 @@
 			$('.breadwrap').show( "fast" );
 	  }
 	};
-
+	
+	
+	Drupal.behaviors.advancedToggleClassHeightChange = {
+		attach: function (context, settings) {
+	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
+    $(".advanced-link").click( function () { 
+      $(".view-wrap").toggleClass('short-wrap');
+    });
+	  }
+	};
+	
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
