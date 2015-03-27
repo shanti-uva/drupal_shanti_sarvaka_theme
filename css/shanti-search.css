@@ -435,7 +435,7 @@ background:transparent;
 
 /* .view-section .table>thead:first-child>tr:first-child>th{ float:left;} */
 
-.view-section table.table-results tr:nth-of-type(even) {background: #fcfcfc;}
+.view-section table.table-results tr:nth-of-type(even) {background: #fff;}
 .view-section table.table-results tbody>tr>td blockquote,
 .view-section table.table-results tbody>tr>td quote{ font-size: 0.5em !important;}
 
@@ -758,7 +758,7 @@ END - FROM AARDVARK -
 
 /* ----- overlay timer ------ */
 /* ----- search loading ----- */
-#search-flyout .overlay-mask{ position:absolute;z-index:20000;}
+#search-flyout .overlay-mask{ position:absolute;z-index:15000;}
 
 @-moz-keyframes rotate-loading {
     0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
@@ -806,7 +806,7 @@ END - FROM AARDVARK -
     position: relative;
     width: 150px;
     border-radius: 100%;
-    z-index:21000;
+    z-index:16000;
 }
  
 .loading-container { margin: -180px auto 0;}
