@@ -172,7 +172,7 @@ header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 .page-title .page-title-text { position:relative; top: 0.6rem;}
 .page-title .icon { font-size: 125%;
 line-height: 1em;
-margin: 0 .9rem 0 0;
+margin: 0 0.9rem 0 0;
 min-width: 1em;
 min-height: 1em;
 text-align: center;
@@ -185,7 +185,7 @@ z-index: 10;
 display: block;
 background: rgba(0,0,0,0.175);
 }
-.page-title .icon::before{background:transparent !important;position:relative; left:0.02em; z-index:15;}
+.page-title .icon::before{background:transparent !important;position:relative; left:0; z-index:15;}
 
 
 
@@ -356,7 +356,7 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
 }
 .menu-accordion.extruder.right{ margin-top:50px;}
 .menu-accordion.extruder.right,
-.menu-accordion.extruder.right.isOpened{ position:absolute;z-index:200 !important;}
+.menu-accordion.extruder.right.isOpened{ position:absolute;z-index:20000 !important;} /* mobile menu accordion temp */
 .menu-accordion.extruder.right .flap.on-flap{ display:none;}
 
 .menu-accordion ul {
