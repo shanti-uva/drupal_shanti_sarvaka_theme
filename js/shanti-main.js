@@ -12,6 +12,11 @@
     if( panelWidth <= 275 ) {
         $(".extruder-content").css("width","100% !important");
       }
+      
+    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
+    $(".advanced-link").click( function () { 
+      $(".view-wrap").toggleClass('short-wrap');
+    });
   };
 
 
@@ -22,10 +27,7 @@
     var viewheight = (height) - 256;
     // var advHeight = $(".advanced-view").show().height();
     var comboHeight = (viewheight) - 270;
-    
-    $(".advanced-link").click( function () { // --- sets class for height change in flyout, see comboheight below
-      $(".view-wrap").toggleClass('short-wrap');
-    });
+
 
     srchtab = parseInt(srchtab) + 'px';
     $("#search-flyout").find(".text").css('height',srchtab);
