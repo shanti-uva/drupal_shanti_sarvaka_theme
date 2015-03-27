@@ -334,7 +334,8 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
 .menu-main-desk .levelHolderClass.rtl .backItemClass a{ color:#222 !important; font-size:.83em; line-height:2.5em; height:4em; background:none;padding-right:18px; border:none; font-weight:bold; text-transform:uppercase;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:hover{ color:#555;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass a:active{ color:red !important;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left{ position:relative;top:8px;left:-8px;}
+.menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left{ position:relative;top:6px;left:-12px;}
+.menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left::before{ font-size:2.3rem;}
 .menu-main-desk .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.6rem;right:1.3rem;}
 .menu-main-desk .levelHolderClass.rtl .backItemClass .icon{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold;  margin-right:5px;}
 .menu-main-desk .backItemClass,
