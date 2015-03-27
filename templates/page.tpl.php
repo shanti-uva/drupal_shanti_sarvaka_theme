@@ -89,15 +89,17 @@
           <!-- Begin Page Content -->
           <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
-	        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
-            <span class="icon"></span>
-            <span class="header"><em>R</em>esources</span>
-            <span class="badge">13489</span>
-            <!-- <span class="icon"></span> -->
-          </button>
+		        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
+	            <span class="icon"></span>
+	            <span class="header"><em>R</em>esources</span>
+	            <span class="badge">13489</span>
+	            <!-- <span class="icon"></span> -->
+	          </button>
           
-          <!-- Message Area -->
-          <?php if (!empty($messages)) { print "<div class=\"messages\">$messages</div>"; } ?>
+          	<!-- Message Area -->
+          	<?php if (!empty($messages)) { print "<div class=\"messages\">$messages</div>"; } ?>
+          	
+          	<!-- Main Content -->
             <div class="tab-content">
               <article class="tab-pane main-col active" id="tab-overview">
               	 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
@@ -143,7 +145,7 @@
 <!-- Footer -->
 <footer class="footer">
   <div>
-    <p>&copy; Copyright 2014</p>
+    <p>&copy; Copyright 2015</p>
     <?php print render($page['footer']); ?>
   </div>
 </footer>
