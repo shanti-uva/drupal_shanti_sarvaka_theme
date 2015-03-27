@@ -73,7 +73,7 @@ object.flip_label{ display:none;}
 /*--- END / Sliding Panel ---------------------*/
 
 
-
+#search-flyout .overlay-mask{ position:absolute;z-index:20000;}
 
 
 
