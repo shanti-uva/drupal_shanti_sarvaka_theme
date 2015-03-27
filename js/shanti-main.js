@@ -19,9 +19,9 @@
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
     var srchtab = (height) - 108;
-    var viewheight = (height) - 256;
+    var viewheight = (height) - 226;
     // var advHeight = $(".advanced-view").show().height();
-    var comboHeight = (viewheight) - 370;
+    // var comboHeight = (viewheight) - 370;
 
 
     srchtab = parseInt(srchtab) + 'px';
@@ -30,7 +30,7 @@
     viewheight = parseInt(viewheight) + 'px';
     comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
-    $(".view-wrap.short-wrap").css('height', comboHeight);
+    // $(".view-wrap.short-wrap").css('height', comboHeight);
   };
 
   /**
@@ -799,7 +799,7 @@
 	Drupal.behaviors.advancedToggleClassHeightChange = {
 		attach: function (context, settings) {
 	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
-    $(".advanced-link").click( function () { 
+    $(".advanced-link").on('click', function () { 
       $(".view-wrap").toggleClass('short-wrap');
     });
 	  }
