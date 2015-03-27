@@ -378,7 +378,7 @@ background:transparent;
 /*----------------------------------------------------*/
 .view-section{ display:none;background:#fff;} /*--- prevent flash on load */
 .isOpened .view-section{ /* border-top:5px solid #fff; */}
-.view-section .tab-content{ background:#f8f8f8; padding:1rem 0 0; border: 1px solid #ddd; border-width:0 1px 1px;}
+.view-section .tab-content{ background:#f8f8f8; padding:1rem 0 0; /*border: 1px solid #ddd; border-width:0 1px 1px;*/}
 .view-section .tab-content .tab-pane{ padding:0;}
 .view-section .tab-content .tab-pane.treeview{ }
 .view-section .nav-tabs{ margin-top:0 !important;}
