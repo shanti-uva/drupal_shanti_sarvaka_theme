@@ -157,7 +157,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .collections ul .icon.shanticon-logo-shanti{ color:#fff;}
 .collections ul li a:hover .icon,
 .collections ul li a:active .icon{ color:#fff;}
-.collections h4 { color:#eee; text-align: center; margin: 10px 0 15px; letter-spacing: 0.4rem;}
+.collections h4 { color:#eee; text-align: center; margin: 10px 0 18px; letter-spacing: 0.4rem;}
 .collections .close { color: #ccc;background:transparent;background-image:none;width:2rem;height:2rem;filter:alpha(opacity=35);opacity:0.35;padding:0;margin:0;border:none;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;font-size: 1.44em;position: absolute;top: 1rem;right: 2rem;cursor:pointer;display:inline-block; -webkit-transition: color 200ms ease 0s;-moz-transition: color 200ms ease 0s;-o-transition: color 200ms ease 0s;transition: color 200ms ease 0s;}
 .collections .close:hover,
 .collections .close:active { filter:alpha(opacity=75);opacity:0.75;}
