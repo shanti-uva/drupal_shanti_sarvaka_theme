@@ -809,7 +809,7 @@ END - FROM AARDVARK -
     z-index:16000;
 }
  
-.loading-container { margin: -180px auto 0; top:15rem;}
+.loading-container { margin: 80px auto 0;}
  
 .loading {
     border: 2px solid transparent;
