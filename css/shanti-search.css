@@ -809,11 +809,11 @@ END - FROM AARDVARK -
     z-index:16000;
 }
  
-.loading-container { margin: 80px auto 0;}
+.loading-container { margin: 180px auto 0;}
  
 .loading {
     border: 2px solid transparent;
-    border-color: transparent #ccc transparent #ccc;
+    border-color: transparent #aaa transparent #aaa;
     -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
     -moz-transform-origin: 50% 50%;
     -o-animation: rotate-loading 1.5s linear 0s infinite normal;
@@ -842,7 +842,7 @@ END - FROM AARDVARK -
     -o-animation: loading-text-opacity 2s linear 0s infinite normal;
     -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
     animation: loading-text-opacity 2s linear 0s infinite normal;
-    color: #aaa;
+    color: #888;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 15px;
     text-transform:capitalize;
