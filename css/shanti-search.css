@@ -437,6 +437,7 @@ background:transparent;
 
 .view-section table.table-results tr:nth-of-type(even){ background: #fcfcfc;}
 .view-section table.table-results tr:nth-of-type(odd){ background: #eee;}
+.view-section table.table-results tr:last-child{ border-bottom:1px solid #ddd;}
 
 .view-section table.table-results tbody>tr>td blockquote,
 .view-section table.table-results tbody>tr>td quote{ font-size: 0.5em !important;}
