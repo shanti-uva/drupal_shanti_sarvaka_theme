@@ -79,7 +79,7 @@ object.flip_label{ display:none;}
 
 /*--- START / Search Panel / Input & View ----*/
 /*----------------------------------------------*/
-.input-section{ padding:0;margin-bottom:5px;border: 1px solid #e0e0e0;display:block;width:100%;}
+.input-section{ padding:0;border: 1px solid #e0e0e0;display:block;width:100%;}
 .input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}
 .input-section .input-group{ padding: 0 12px 0 10px; display:block; width:100%; background:#f8f8f8;}
 .input-section .input-group input.form-control{
@@ -377,7 +377,7 @@ background:transparent;
 /*---- START View Section / Tabs - Table - Tree -----*/
 /*----------------------------------------------------*/
 .view-section{ display:none;background:#fff;} /*--- prevent flash on load */
-.isOpened .view-section{ /* border-top:5px solid #fff; */}
+.isOpened .view-section{ border-top:5px solid #fff;}
 .view-section .tab-content{ background:#f8f8f8; padding:1rem 0 0; /*border: 1px solid #ddd; border-width:0 1px 1px;*/}
 .view-section .tab-content .tab-pane{ padding:0;}
 .view-section .tab-content .tab-pane.treeview{ }
