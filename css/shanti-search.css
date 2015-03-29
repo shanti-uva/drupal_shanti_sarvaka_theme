@@ -417,7 +417,7 @@ background:transparent;
 
 /*---- START list table view ----*/
 .view-section div.table-responsive{ text-align:center; border:none; overflow:hidden;}
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family:palatino,'Palatino Linotype',georgia,serif;}
+.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; width:96%; font-family:palatino,'Palatino Linotype',georgia,serif;}
 .view-section table.table-results a{ font-style:italic;}
 
 .view-section table.table-results tr{ margin-right: 0;}
@@ -430,7 +430,7 @@ background:transparent;
 .view-section table.table-results tbody>tr:hover{ background: #fff !important;}
 .view-section table.table-results tbody>tr:last-child{ border-bottom:1px solid #ddd;}
 
-.view-section table.table-results>thead>tr>th{ border-bottom:none;color:#333;padding-top:15px;}
+.view-section table.table-results>thead>tr>th{ border-bottom:none;color:#333;}
 .view-section table.table-results>thead>tr>th:hover,
 .view-section table.table-results>thead>tr>th:hover::after{ color:#444; cursor:pointer;}
 .view-section table.table-results>thead>tr>th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}
