@@ -420,10 +420,9 @@ background:transparent;
 .view-section table.table-results a{ font-style:italic;}
 
 .view-section table.table-results tr{ margin-right: 0;}
-.view-section table.table-results tr:nth-of-type(1){ background:#fff;}
 .view-section table.table-results tr.row_selected { background: #fff;-webkit-box-shadow: 0 0 3px 0 #aaa;box-shadow: 0 0 3px 0 #aaa;border-collapse: separate;}
 
-.view-section table.table-results>thead>tr{ border-bottom:2px solid #ddd; border-top:1px solid #ddd;line-height:20px;text-align:left; white-space:nowrap;}
+.view-section table.table-results>thead>tr{ background:#fcfcfc;border-bottom:2px solid #ddd; border-top:1px solid #ddd;line-height:20px;text-align:left; white-space:nowrap;}
 .view-section table.table-results tbody>tr:nth-of-type(even){ background: #eee;}
 .view-section table.table-results tbody>tr:nth-of-type(odd){ background: #f5f5f5;}
 .view-section table.table-results tbody>tr:hover{ background: #fff !important;}
