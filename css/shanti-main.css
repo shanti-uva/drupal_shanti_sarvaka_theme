@@ -1614,7 +1614,7 @@ div.region.region-admin-footer{ padding:1.5rem;}
 .transcript-container .list-group{ -webkit-margin-before:0;margin-bottom:420px;}
 .transcript-container .alert-info{ margin-bottom:0;}
 
-.transcript-content .list-group{ border-left:1px solid #ddd;}
+.transcript-content{ border:1px solid #ddd;border-width:0 1px 4px 1px}
 .transcript-content li{ border:3px double #fff; border-style:solid double;}
 .transcript-content li.playing .speaker-tiers{ border-color: #5b68ce;}
 .transcript-content li.playing { border-color: #5b68ce; background:#f5f5f5; border-width:2px 3px 3px 3px;}
@@ -1622,7 +1622,7 @@ div.region.region-admin-footer{ padding:1.5rem;}
 
 
 
-.btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
+.btn-group-transcript{ width:100%;padding:0;margin:0;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
 .btn-group-transcript .btn.btn-icon:hover,
