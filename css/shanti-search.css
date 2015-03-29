@@ -426,7 +426,7 @@ background:transparent;
 .view-section table.table-results tbody>tr>td{ cursor:pointer; line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
 .view-section table.table-results tbody tr:hover{ background: #fff;}
 .view-section table.table-results thead tr th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}
-.view-section table.table-results thead tr th{ color:#333;}
+.view-section table.table-results thead tr th{ color:#333; padding-top:15px; border-top:1px solid #ddd; border-bottom:2px solid #ddd;}
 .view-section table.table-results thead tr th:hover,
 .view-section table.table-results thead tr th:hover::after{ color:#444; cursor:pointer;}
 
@@ -466,7 +466,11 @@ table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-widt
     border-collapse: separate;
 }
 
-
+/* bottom text below table */
+div#pager-header{ 
+	font-size:0.88em;
+	padding:0.2rem 0 0 1rem;
+}
 
 
 
@@ -505,7 +509,7 @@ BEGIN - FROM AARDVARK - Temporary do not remove,
 .view-section table.table-results tbody tr{ }
 .view-section table.table-results tbody tr:hover{ background: #fff;}
 .view-section table.table-results thead tr th:after{ color:#555; font-family: 'shanticon'; content: "\e609"; font-size: 14px; margin-left:0; position:relative; top:2px;}
-.view-section table.table-results thead tr th{ border-bottom:2px solid #ddd; color:#333; padding-left:5px; line-height:20px;text-align:left; width: 50%;}
+.view-section table.table-results thead tr th{ border-bottom:2px solid #ddd; color:#333; padding-left:5px;line-height:20px;text-align:left; width: 50%;}
 .view-section table.table-results thead tr th:hover,
 .view-section table.table-results thead tr th:hover:after{ color:#dc3c47; cursor:pointer;}
 
