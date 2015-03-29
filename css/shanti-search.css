@@ -423,14 +423,15 @@ background:transparent;
 .view-section table.table-results a{ font-style:italic;}
 .view-section table.table-results tbody>tr,
 .view-section table.table-results thead tr th,
-.view-section table.table-results tbody>tr>td{ cursor:pointer; line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
+.view-section table.table-results tbody>tr>td{ line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
+.view-section table.table-results tbody>tr>td{ cursor:pointer;}
 .view-section table.table-results tbody tr:hover{ background: #fff;}
 .view-section table.table-results thead tr th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}
-.view-section table.table-results thead tr th{ color:#333; padding-top:15px; border-top:1px solid #ddd; border-bottom:2px solid #ddd;}
+.view-section table.table-results thead tr th{ color:#333; padding-top:15px;}
 .view-section table.table-results thead tr th:hover,
 .view-section table.table-results thead tr th:hover::after{ color:#444; cursor:pointer;}
 
-.view-section .table>thead>tr{ border-bottom:2px solid #ddd;}
+.view-section .table>thead>tr{ border-bottom:2px solid #ddd; border-top:1px solid #ddd;}
 .view-section .table>thead>tr>th{ border-bottom:none;}
 
 /* .view-section .table>thead:first-child>tr:first-child>th{ float:left;} */
@@ -811,7 +812,7 @@ END - FROM AARDVARK -
 .loading {
     height: 150px;
     position: relative;
-    left:40px;
+    left:0;
     width: 150px;
     border-radius: 100%;
     z-index:16000;
