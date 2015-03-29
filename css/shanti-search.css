@@ -749,8 +749,9 @@ background:transparent;
     font-weight: normal;
     opacity: 0;
     position: absolute;
-    top: 0;
-    width: 130px;
+    top: -10px;
+    left:0;
+    width: 100px;
 }/* ----- END search loading ----- */
 
 
