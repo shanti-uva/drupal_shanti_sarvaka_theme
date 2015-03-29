@@ -1598,10 +1598,9 @@ div.region.region-admin-footer{ padding:1.5rem;}
 .av-main-transcript-section .play-button{ margin:0; position:relative;top:3rem;}
 .av-main-transcript-section .play-button .btn{ margin:0;padding:0.1rem 2rem;font-size:1rem; border:1px solid transparent;-webkit-box-shadow: 0 0 3px 0 rgba(50,50,50,0.175); box-shadow: 0 0 3px 0 rgba(50,50,50,0.175);border-collapse: separate;}
 .av-main-transcript-section .play-button .btn:hover,
-.av-main-transcript-section .play-button .btn:focus{ box-shadow:none;border-color: #ccc;background:transparent;color:#333;}
-.av-main-transcript-section .play-button .btn:hover,
-.av-main-transcript-section .play-button .btn:active,
-.av-main-transcript-section .play-button .btn:focus .glyphicon{ background:transparent;}
+.av-main-transcript-section .play-button .btn:focus{ box-shadow:none;border-color: #ddd;background:transparent;color:#333;}
+.av-main-transcript-section .play-button .btn:active .glyphicon,
+.av-main-transcript-section .play-button .btn:focus .glyphicon{ box-shadow:none !important;background:transparent !important;}
 .av-main-transcript-section .play-button .btn .glyphicon{  color:#5b68ce; line-height:0.9rem;float:left; padding:0; position:relative; font-size:1.2rem;left: -1.2rem;top:0.5rem;}
 .av-main-transcript-section .play-button .btn.untimed{ display:none;}
 /*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
