@@ -657,7 +657,7 @@ background:transparent;
 
 /* ----- overlay timer ------ */
 /* ----- search loading ----- */
-#search-flyout .overlay-mask{ position:absolute;z-index:15000;}
+#search-flyout .overlay-mask{ position:absolute;z-index:25000;}
 
 @-moz-keyframes rotate-loading {
     0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
