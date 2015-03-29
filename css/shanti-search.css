@@ -216,7 +216,7 @@ background:transparent;
 /*---------------------------*/
 /*--- custom sizes & position ---*/
 .input-section .feature-group .toggle-link.feature-toggle{ float:right;padding:0 10px 0 0;margin:0;display:inline;position:relative;top:-1px;}
-.input-section .toggle-link.advanced-link{ margin:0;padding:0;position:relative;top:20px;left:-14px; float:right;}
+.input-section .toggle-link.advanced-link{ margin:0;padding:0;position:relative;top:23px;left:-8px; float:right;}
 .input-section .feature-group .toggle-link.show-features .icon::before, /*--- for feature types ---*/
 .input-section .toggle-link.show-advanced .icon::before{content:'\f068';} /*--- for advanced ---*/
 
