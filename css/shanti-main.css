@@ -1142,7 +1142,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-wrapper { padding-top:1rem;}
 .av-main-transcript-section { }
 .av-main-video-section { }
-.kaltura-embed{ padding-top:1.5rem; background:#000;}
+.kaltura-embed{ border-top:1.5rem solid #000;}
 
 /*--- toggle button for resource column - tetsting dev ---*/
 .mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
