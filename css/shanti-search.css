@@ -417,18 +417,14 @@ background:transparent;
 
 /*---- START list table view ----*/
 .view-section div.table-responsive{ text-align:center; border:none;}
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family:palatino,'Palatino Linotype',georgia,serif;}
 .view-section table.table-results a{ font-style:italic;}
 
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; height:20px; margin-bottom:0; margin:0 2%; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.view-section table.table-results a{ font-style:italic;}
-
-.view-section table.table-results tr.row { margin-right: 0;/*margin-left: 0em;*/}
+.view-section table.table-results tr.row { margin-right: 0;}
 .view-section table.table-results tr.row_selected { background: #fff;-webkit-box-shadow: 0 0 3px 0 #aaa;box-shadow: 0 0 3px 0 #aaa;border-collapse: separate;}
 
 .view-section table.table-results>thead>tr{ border-bottom:2px solid #ddd; border-top:1px solid #ddd;line-height:20px;text-align:left; white-space:nowrap;}
-.view-section table.table-results>thead>tr>th{ border-bottom:none;}
-.view-section table.table-results>thead>tr>th{ color:#333; padding-top:15px;}
+.view-section table.table-results>thead>tr>th{ border-bottom:none;color:#333;padding-top:15px;}
 .view-section table.table-results>thead>tr>th:hover,
 .view-section table.table-results>thead>tr>th:hover::after{ color:#444; cursor:pointer;}
 .view-section table.table-results>thead>tr>th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}
@@ -455,7 +451,7 @@ background:transparent;
 
 
 /* popovers */
-.view-section .title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
+.view-section .title-field { position: static;float: none;}
 .view-section .popover-content {font-family: sans-serif;font-size: smaller;}
 .view-section .popover-content > blockquote p {font-size: 13px;}
 .view-section .popover-content > blockquote {
@@ -553,13 +549,10 @@ background:transparent;
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
 
-
 .view-section .fancytree-title a{ color:#444;}
 .view-section .fancytree-title a:hover,
 .view-section .fancytree-title a:active{ color:#111;}
 	
-	
-
 .view-section .fancytree-title{
 	color:#444;
 	margin:0 0 0 -24px;
