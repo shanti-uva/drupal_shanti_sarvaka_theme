@@ -527,13 +527,8 @@ li.pager-current.widget > form input{ display: inline;}
 li.pager-current.widget > form input.form-control { width: 100px;}
 
 #photo-pagination{ float: left; margin-right: 10px; margin-top: 10px;}
-#photo-pagination li{ display: inline; padding: 0 5px;}
+#photo-pagination li{ display: inline; padding:0; font-size:85%;}
 #photo-pagination li input.page-input{ width: 45px;text-align: center;height: 22px;}
-#photo-pagination li.first-page,
-#photo-pagination li.last-page,
-#photo-pagination li.previous-page,
-#photo-pagination li.next-page { font-size: smaller;}
-#tab-main .paginated-spin{ float: left; display: inline-block; margin-top: 10px; display: none;}
 #photo-pagination>li>a{ color: #DC3C47;}
 #photo-pagination>.active>a,
 #photo-pagination>.active>span,
@@ -541,6 +536,8 @@ li.pager-current.widget > form input.form-control { width: 100px;}
 #photo-pagination>.active>span:hover,
 #photo-pagination>.active>a:active,
 #photo-pagination>.active>span:active{ background-color: #DC3C47;border-color: #DC3C47;color: white;}\
+
+#tab-main .paginated-spin{ float: left; display: inline-block; margin-top: 10px; display: none;}
 
 /* Photos subsection */
 #tab-main .related-photos {overflow: auto;}
