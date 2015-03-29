@@ -447,7 +447,7 @@ background:transparent;
 .view-section .pagination>li>a, 
 .view-section .pagination>li>span { padding: 0.5em 0.8em;}
 /* bottom text below table */
-.view-section div#pager-header{ font-size:0.88em;padding:0.2rem 0 0 1rem;text-align:left;color:#555;}
+.view-section div#pager-header{ font-size:0.88em;padding:0.2rem 0 0 2rem;text-align:left;color:#555;}
 
 
 
@@ -657,7 +657,7 @@ background:transparent;
 
 /* ----- overlay timer ------ */
 /* ----- search loading ----- */
-#search-flyout .overlay-mask{ position:absolute;z-index:25000;}
+#search-flyout .overlay-mask{ position:absolute;z-index:25000;background:#fff;opacity:0.3;}
 
 @-moz-keyframes rotate-loading {
     0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
@@ -742,7 +742,7 @@ background:transparent;
     -o-animation: loading-text-opacity 2s linear 0s infinite normal;
     -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
     animation: loading-text-opacity 2s linear 0s infinite normal;
-    color: #888;
+    color: #555;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 1.06em;
     text-transform:capitalize;
@@ -771,7 +771,7 @@ background:transparent;
 .search-popover > .popover-content{
 	font-family:'museo-sans-500',helvetica,arial,sans-serif;
 	font-size: 0.75em;
-	padding-top:4px 12px;
+	padding-top:5px 12px;
 }
 .search-popover > .popover-content > p {
 	padding:0 8px;
