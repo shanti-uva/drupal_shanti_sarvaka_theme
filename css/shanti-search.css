@@ -447,7 +447,7 @@ background:transparent;
 .view-section .pagination>li>a, 
 .view-section .pagination>li>span { padding: 0.5em 0.8em;}
 /* bottom text below table */
-.view-section div#pager-header{ font-size:0.88em;padding:0.2rem 0 0 1rem;}
+.view-section div#pager-header{ font-size:0.88em;padding:0.2rem 0 0 1rem;text-align:left;color:#555;}
 
 
 
@@ -747,11 +747,11 @@ background:transparent;
     font-size: 1.25em;
     text-transform:capitalize;
     font-weight: normal;
-    margin: -130px 0 0 50px;
+    margin: -150px 0 0 60px;
     opacity: 0;
     position: absolute;
     top: 0;
-    width: 130px;
+    width: 150px;
 }/* ----- END search loading ----- */
 
 
