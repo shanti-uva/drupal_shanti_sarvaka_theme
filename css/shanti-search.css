@@ -809,7 +809,7 @@ END - FROM AARDVARK -
     z-index:16000;
 }
  
-.loading-container { margin: 180px auto 0;}
+.loading-container { margin: 180px 0 0 40px;}
  
 .loading {
     border: 2px solid transparent;
@@ -844,10 +844,10 @@ END - FROM AARDVARK -
     animation: loading-text-opacity 2s linear 0s infinite normal;
     color: #888;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 15px;
+    font-size: 1.32em;
     text-transform:capitalize;
     font-weight: bold;
-    margin: -75px 0 0 10px;
+    margin: -95px 0 0 10px;
     opacity: 0;
     position: absolute;
     text-align: center;
