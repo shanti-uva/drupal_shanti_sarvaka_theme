@@ -744,13 +744,13 @@ background:transparent;
     animation: loading-text-opacity 2s linear 0s infinite normal;
     color: #888;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1em;
+    font-size: 1.06em;
     text-transform:capitalize;
     font-weight: normal;
     opacity: 0;
     position: absolute;
-    top: -15px;
-    left:25px;
+    top: -10px;
+    left:40px;
     width: 120px;
 }/* ----- END search loading ----- */
 
