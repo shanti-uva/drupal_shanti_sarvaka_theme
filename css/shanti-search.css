@@ -709,7 +709,7 @@ background:transparent;
     z-index:16000;
 }
  
-.loading-container { margin: 220px auto 0;}
+.loading-container { position: relative; top:220px; margin: 0 auto;}
  
 .loading {
     border: 2px solid transparent;
