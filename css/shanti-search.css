@@ -79,8 +79,7 @@ object.flip_label{ display:none;}
 
 /*--- START / Search Panel / Input & View ----*/
 /*----------------------------------------------*/
-.input-section{ padding:0;border: 1px solid #e0e0e0;display:block;width:100%;}
-.input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}
+.input-section{ padding:0 0 5px;background:#fff;display:block;width:100%;}
 .input-section .input-group{ padding: 0 12px 0 10px; display:block; width:100%; background:#f8f8f8;}
 .input-section .input-group input.form-control{
 	color:#777;
@@ -107,6 +106,7 @@ object.flip_label{ display:none;}
 }
 .input-section .input-group input.form-control:hover{ border: 1px solid #ccc; color:#777;}
 .input-section .input-group input.form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
+.input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}
 
 /*--- button group ---*/
 .input-section .input-group .input-group-btn{ width:45px !important; height:35px; position:absolute; top:15px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
@@ -194,15 +194,16 @@ background:transparent;
 /*-----------------------------------------------*/
 
 .input-section .form-group{ margin-bottom:7px;padding-left:0;}
-.input-section .search-group{ height:86px;}
+.input-section .search-group{ height:86px;border: 1px solid #e0e0e0;background: #f7f7f7;}
 .input-section .search-group .form-group{ padding-left:1.5em;}
 .input-section .search-group .checkbox-inline:first-child{ margin-right: 5px;}
 .input-section .search-group .checkbox-inline>div{ margin-right: 4px;}
 .input-section .search-group .radio-inline:first-child{ width: auto;  margin-right: 5px;}
 .input-section .search-group .radio-inline>div{ margin-right: 4px;}
 /*----- Advanced Options -----*/
-.advanced-view{ /*** height:275px;  height can help control cross-browser issues ***/ padding:0; background:#f8f8f8; width:100%; margin-right:0.25em;}
+.advanced-view{ /*** height:275px;  height can help control cross-browser issues ***/ border-top:1px solid #e0e0e0; border-top:none; padding:0; background:#f8f8f8; width:100%; margin-right:0.25em;}
 .advanced-view .form-group{ border-top:1px solid #e0e0e0; margin:0 8px;}
+.advanced-view .form-group:nth-of-type(1){ border-top:none;}
 .advanced-view .form-group.last{ padding-bottom:0;}
 
 .input-section label{ color:#444; font-size:12px; line-height:30px; height:28px; padding-right:0; margin-left:0px; margin-right:0; text-transform:capitalize;}
