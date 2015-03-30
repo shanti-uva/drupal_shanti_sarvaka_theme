@@ -429,9 +429,8 @@ background:transparent;
 .view-section table.table-results tbody>tr:last-child{ border-bottom:1px solid #ddd;}
 
 .view-section table.table-results>thead>tr>th{ border-bottom:none;color:#333;}
-.view-section table.table-results>thead>tr>th:hover,
-.view-section table.table-results>thead>tr>th:hover::after{ color:#444; cursor:pointer;}
-.view-section table.table-results>thead>tr>th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}
+.view-section table.table-results>thead>tr>th:hover{ color:#444; cursor:pointer;}
+/*.view-section table.table-results>thead>tr>th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}*/
 
 .view-section table.table-results tbody>tr>td{ cursor:pointer;}
 .view-section table.table-results tbody>tr>td,
