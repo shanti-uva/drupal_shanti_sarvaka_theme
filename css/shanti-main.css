@@ -125,6 +125,8 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .navbar-default .menu-explore a:hover,
 .navbar-default .menu-explore a:active{ color:#555; background:#f0f0f0; text-decoration:none;}
 .navbar-default .menu-explore .icon{ font-size:17px; position:relative;left:6px;top:2px;}
+
+.navbar-default .navbar-nav>.open>a{ -moz-box-shadow:none; box-shadow:none;} /*override bootstrap */
 /*--- END navbar tabs ---*/
 
 /*--- BEGIN dropdown menu ---*/
