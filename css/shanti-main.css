@@ -508,7 +508,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-gallery .ajax-progress{ display:none; position:absolute; top:5rem; left:50%;}
 
 .shanti-thumbnail.collection .body-wrap{overflow:hidden;height:14.25rem;}
-
+div.view.view-collections{ padding-bottom:6rem;}
 /*-------------------------*/
 /*--- END video gallery ---*/
 /*-------------------------*/
