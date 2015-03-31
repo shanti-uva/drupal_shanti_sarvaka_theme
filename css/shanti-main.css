@@ -507,10 +507,8 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail .footer-wrap .icon{font-size:1.32em;position:relative;top:2px;}
 .shanti-gallery .ajax-progress{ display:none; position:absolute; top:5rem; left:50%;}
 
-.shanti-thumbnail.collection{ height:18.5em;}
-.shanti-thumbnail.collection .body-wrap{ overflow-y:hidden; overflow-x:auto; height:14.25rem;}
-.shanti-thumbnail.collection .view.view-collections{ padding-bottom:6rem;}
-.shanti-thumbnail.collection .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; */}
+/* NOTE shanti-thumbails for collections pages in AV are in AV subtheme css */
+
 /*-------------------------*/
 /*--- END video gallery ---*/
 /*-------------------------*/
