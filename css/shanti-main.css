@@ -55,7 +55,7 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 .content-section.equal-height > .tab-content{ padding-top: 1.5rem;padding-bottom:5rem;}
 .max-col-widths .content-section.equal-height .tab-content{ padding-top:0;}
 
-.container{ width:auto;} /* correct for changes in BS */
+.content-section .container{ width:auto;} /* correct for changes in BS */
 
 
 .show-more a, 
