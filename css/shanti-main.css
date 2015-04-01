@@ -145,8 +145,8 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*--- END dropdown menu ---*/
 
 /*--- BEGIN collections panel ---*/
-.collections { background:#333;margin:0;overflow:hidden;display:none;}
-.collections .row { margin:0;position:relative;padding:0 0 1.5rem 0.8rem;}
+.collections { background:#333;margin:0;padding:0 0 1.5rem 0.8rem;overflow:hidden;width:100%;display:none;}
+.collections .row { margin:0;position:relative;}
 .collections ul { margin: 0 auto;text-align:center;list-style-type: none;margin-bottom:10px !important;}
 .collections ul li { margin: 0;float:left;line-height:4.5em;width:20%;}
 .collections ul li a { color: #d0d0d0;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-weight:500;font-weight:normal;white-space:nowrap;text-transform:uppercase;}
