@@ -79,7 +79,7 @@ object.flip_label{ display:none;}
 
 /*--- START / Search Panel / Input & View ----*/
 /*----------------------------------------------*/
-.input-section{ padding:0;margin-bottom:5px;border: 1px solid #e0e0e0;display:block;width:100%;}
+.input-section{ padding:0;border: 1px solid #e0e0e0;display:block;width:100%;}
 .input-section .input-group input.form-control:first-child{ border-bottom-right-radius: 25px;border-top-right-radius: 25px; background-clip: padding-box;}
 .input-section .input-group{ padding: 0 12px 0 10px; display:block; width:100%; background:#f8f8f8;}
 .input-section .input-group input.form-control{
@@ -216,7 +216,7 @@ background:transparent;
 /*---------------------------*/
 /*--- custom sizes & position ---*/
 .input-section .feature-group .toggle-link.feature-toggle{ float:right;padding:0 10px 0 0;margin:0;display:inline;position:relative;top:-1px;}
-.input-section .toggle-link.advanced-link{ margin:0;padding:0;position:relative;top:20px;left:-14px; float:right;}
+.input-section .toggle-link.advanced-link{ margin:0;padding:0;position:relative;top:23px;left:-8px; float:right;}
 .input-section .feature-group .toggle-link.show-features .icon::before, /*--- for feature types ---*/
 .input-section .toggle-link.show-advanced .icon::before{content:'\f068';} /*--- for advanced ---*/
 
@@ -376,8 +376,7 @@ background:transparent;
 
 /*---- START View Section / Tabs - Table - Tree -----*/
 /*----------------------------------------------------*/
-.view-section{ display:none;background:#fff;} /*--- prevent flash on load */
-.isOpened .view-section{ /* border-top:5px solid #fff; */}
+.view-section{ display:none;background:#fff;border-top:5px solid #fff;}
 .view-section .tab-content{ background:#f8f8f8; padding:1rem 0 0; /*border: 1px solid #ddd; border-width:0 1px 1px;*/}
 .view-section .tab-content .tab-pane{ padding:0;}
 .view-section .tab-content .tab-pane.treeview{ }
@@ -405,152 +404,52 @@ background:transparent;
 .view-section .nav-tabs>li.active>a,
 .view-section .nav-tabs>li.active>a:hover,
 .view-section .nav-tabs>li.active>a:active{ color:#444; font-size:15px; background:#f8f8f8; text-decoration:none; border-color:#ddd; border-top:2px solid #e36159; border-bottom-color:transparent;}
+.view-section .nav-tabs>li> .icon{ width:16px; height:16px;}
+.view-section .nav-tabs>li> a .icon::before{ font-size:13px; position:relative; top:0; right:5px;}
+.view-section .nav-tabs>li.active> a .icon::before{ font-size:15px; position:relative; top:1px; right:5px;}
+
 .view-section .listview>div,
 .view-section .treeview>div{ padding:0; overflow:auto;}
 .view-section .listview>div{ padding-top:7px;}
 .view-section .treeview .tab-content{ padding-top:10px; padding-bottom:0;}
-.view-section .nav-tabs>li> .icon{ width:16px; height:16px;}
-.view-section .nav-tabs>li> a .icon::before{ font-size:13px; position:relative; top:0; right:5px;}
-.view-section .nav-tabs>li.active> a .icon::before{ font-size:15px; position:relative; top:1px; right:5px;}
 /*---- END tabs -----*/
 
 /*---- START list table view ----*/
-.view-section table.table-responsive{ text-align:center; border:none;}
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.view-section div.table-responsive{ text-align:center; border:none; overflow:hidden;}
+.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; width:96%; font-family:palatino,'Palatino Linotype',georgia,serif;}
 .view-section table.table-results a{ font-style:italic;}
 
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; height:20px; margin-bottom:0; margin:0 2%; width:96%; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.view-section table.table-results a{ font-style:italic;}
-.view-section table.table-results tbody>tr,
-.view-section table.table-results thead tr th,
-.view-section table.table-results tbody>tr>td{ cursor:pointer; line-height:20px;text-align:left; white-space:nowrap; /*display:block;*/}
-.view-section table.table-results tbody tr:hover{ background: #fff;}
-.view-section table.table-results thead tr th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}
-.view-section table.table-results thead tr th{ color:#333;}
-.view-section table.table-results thead tr th:hover,
-.view-section table.table-results thead tr th:hover::after{ color:#444; cursor:pointer;}
+.view-section table.table-results tr{ margin-right: 0;}
+.view-section table.table-results tr.row_selected { background: #fff;-webkit-box-shadow: 0 0 3px 0 #aaa;box-shadow: 0 0 3px 0 #aaa;border-collapse: separate;}
 
-.view-section .table>thead>tr{ border-bottom:2px solid #ddd;}
-.view-section .table>thead>tr>th{ border-bottom:none;}
+.view-section table.table-results>thead>tr{ background:#fcfcfc;border-bottom:2px solid #ddd; border-top:1px solid #ddd;line-height:20px;text-align:left; white-space:nowrap;}
+.view-section table.table-results tbody>tr:nth-of-type(even){ background: #eee;}
+.view-section table.table-results tbody>tr:nth-of-type(odd){ background: #f5f5f5;}
+.view-section table.table-results tbody>tr:hover{ background: #fff !important;}
+.view-section table.table-results tbody>tr:last-child{ border-bottom:1px solid #ddd;}
 
-/* .view-section .table>thead:first-child>tr:first-child>th{ float:left;} */
+.view-section table.table-results>thead>tr>th{ border-bottom:none;color:#333;}
+.view-section table.table-results>thead>tr>th:hover{ color:#444; cursor:pointer;}
+/*.view-section table.table-results>thead>tr>th::after{ color:#555; font-family: 'shanticon'; content: '\e609'; font-size: 14px; margin-left:0; position:relative; top:2px;}*/
 
-.view-section table.table-results tr:nth-of-type(even) {background: #fff;}
-.view-section table.table-results tbody>tr>td blockquote,
-.view-section table.table-results tbody>tr>td quote{ font-size: 0.5em !important;}
-
-th.sorting_asc,
-table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-width:0; }
-
-
-.view-section .dataTables_length label{ margin-left:10px;}
-.view-section .dataTables_filter input{ position:relative; top:-2px;}
-.view-section .dataTables_filter label{ position:relative; top:0; margin-right:10px;}
-
-.view-section .dataTables_info {font-size: 0.82em; margin-left: 1em; margin-bottom:20px;}
-
-
-/* trunk8 */
-.view-section .col-xs-6 { width: 85%;font-size: 0.6em; padding-right: 0;/*padding-left: 0em;*//*margin-left: -2em;*/}
-.view-section .pagination>li>a, .pagination>li>span { padding: 0.5em 0.8em;}
-.view-section .pagination { margin-left: 1em;margin-top: 0.3em;margin-bottom: 0.1em;margin-right: -0.5em;}
-.view-section .row {margin-right: 0;/*margin-left: 0em;*/}
-
-.view-section tr.row_selected {
-    background: #fff;
-    -webkit-box-shadow: 0 0 3px 0 #aaa;
-    box-shadow: 0 0 3px 0 #aaa;
-    border-collapse: separate;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------------------
-
-BEGIN - FROM AARDVARK - Temporary do not remove, 
-------- this fixes table row collapsing on click, 
-------- will review in detail and cleanup
-
--------------------------------------------------------------*/
-
-/*---- START list table view ----*/
-.view-section table.table-responsive{ text-align:center; border:none;}
-.view-section table.table-results{ border:none; font-size:13px; line-height:20px; margin:0 2%; margin-top:-9px !important; width:96%; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
-.view-section table.table-results a{ font-style:italic;}
-
+.view-section table.table-results tbody>tr>td{ cursor:pointer;}
 .view-section table.table-results tbody>tr>td,
 .view-section table.table-results tbody>tr>td>div,
-.view-section table.table-results tbody>tr>td>span{ display:table-cell; white-space:normal; position: static; line-height:20px; padding-bottom:2px; text-align:left; width: 50% !important; overflow: hidden; text-overflow: ellipsis;}
-
-.view-section table.table-results tbody > tr > td:nth-of-type() div { }
-
-.view-section table.table-results tbody tr{ }
-.view-section table.table-results tbody tr:hover{ background: #fff;}
-.view-section table.table-results thead tr th:after{ color:#555; font-family: 'shanticon'; content: "\e609"; font-size: 14px; margin-left:0; position:relative; top:2px;}
-.view-section table.table-results thead tr th{ border-bottom:2px solid #ddd; color:#333; padding-left:5px; line-height:20px;text-align:left; width: 50%;}
-.view-section table.table-results thead tr th:hover,
-.view-section table.table-results thead tr th:hover:after{ color:#dc3c47; cursor:pointer;}
-
-/* .view-section .table>thead:first-child>tr:first-child>th{ float:left;} */
-/* .view-section table.table-results tr:nth-child(even) {background: #fcfcfc;} */
+.view-section table.table-results tbody>tr>td>span{ display:table-cell; white-space:nowrap; position: static; line-height:20px; padding-bottom:2px; text-align:left; width: 50% !important; overflow: hidden; text-overflow: ellipsis;}
 
 .view-section table.table-results tbody>tr>td blockquote,
 .view-section table.table-results tbody>tr>td quote{ font-size: 0.5em !important;}
 
-.view-section span.title-field {  /* position: static; float: none;  width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
-
-th.sorting_asc,
-table.dataTable thead .sorting_asc{ background:none;border:none;width:0;min-width:0; }
-
-/* trunk8 */
-.view-section .col-xs-6 { width: 100%; font-size: 0.63em; padding-right: 0; /*padding-left: 0em;*//*margin-left: -2em;*/}
+.view-section .pagination { margin-left: 1em;margin-top: 0.3em;margin-bottom: 0.1em;margin-right: -0.5em;}
 .view-section .pagination>li>a, 
-.pagination>li>span { padding:3px 6px; margin-left: -2px;  }
-.view-section .pagination { margin:4px 0 2px 15px; }
-.view-section .row { margin-right: 0;/*margin-left: 0em;*/}
-/* .listview td.sorting_1 { min-width: 12em;} */
-
-/*---------------------------------
-
-END - FROM AARDVARK -
-
----------------------------------*/
+.view-section .pagination>li>span { padding: 0.5em 0.8em;}
+/* bottom text below table */
+.view-section div#pager-header{ font-size:0.88em;padding:0.2rem 0 0 2rem;text-align:left;color:#555;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .listview td.sorting_1 { min-width: 12em;} */
-.view-section .title-field { position: static;float: none;/*width: 85%;*//*max-height: 1.3em;*//*white-space: nowrap;*//*overflow: hidden;*//*text-overflow: ellipsis;*/}
-.view-section .row {/*margin: 1em 1em 1em 1em;*/}
+/* popovers */
+.view-section .title-field { position: static;float: none;}
 .view-section .popover-content {font-family: sans-serif;font-size: smaller;}
 .view-section .popover-content > blockquote p {font-size: 13px;}
 .view-section .popover-content > blockquote {
@@ -648,13 +547,10 @@ END - FROM AARDVARK -
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
 
-
 .view-section .fancytree-title a{ color:#444;}
 .view-section .fancytree-title a:hover,
 .view-section .fancytree-title a:active{ color:#111;}
 	
-	
-
 .view-section .fancytree-title{
 	color:#444;
 	margin:0 0 0 -24px;
@@ -758,7 +654,7 @@ END - FROM AARDVARK -
 
 /* ----- overlay timer ------ */
 /* ----- search loading ----- */
-#search-flyout .overlay-mask{ position:absolute;z-index:15000;}
+#search-flyout .overlay-mask{ position:absolute;z-index:15000;background:#fff;opacity:0.3;}
 
 @-moz-keyframes rotate-loading {
     0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
@@ -804,16 +700,17 @@ END - FROM AARDVARK -
 .loading {
     height: 150px;
     position: relative;
+    left:20px;
     width: 150px;
     border-radius: 100%;
     z-index:16000;
 }
  
-.loading-container { margin: -180px auto 0; top:15rem;}
+.loading-container { position: relative; top:220px; margin: 0 auto;}
  
 .loading {
     border: 2px solid transparent;
-    border-color: transparent #ccc transparent #ccc;
+    border-color: transparent #aaa transparent #aaa;
     -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
     -moz-transform-origin: 50% 50%;
     -o-animation: rotate-loading 1.5s linear 0s infinite normal;
@@ -838,21 +735,20 @@ END - FROM AARDVARK -
 }
  
 #loading-text {
-    -moz-animation: loading-text-opacity 2s linear 0s infinite normal;
-    -o-animation: loading-text-opacity 2s linear 0s infinite normal;
-    -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
-    animation: loading-text-opacity 2s linear 0s infinite normal;
-    color: #aaa;
+    -moz-animation: loading-text-opacity 1s linear 0s infinite normal;
+    -o-animation: loading-text-opacity 1s linear 0s infinite normal;
+    -webkit-animation: loading-text-opacity 1s linear 0s infinite normal;
+    animation: loading-text-opacity 1s linear 0s infinite normal;
+    color: #333;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 15px;
+    font-size: 1.18em;
     text-transform:capitalize;
-    font-weight: bold;
-    margin: -75px 0 0 10px;
+    font-weight: normal;
     opacity: 0;
     position: absolute;
-    text-align: center;
-    top: 0;
-    width: 130px;
+    top: -10px;
+    left:30px;
+    width: 120px;
 }/* ----- END search loading ----- */
 
 
@@ -872,7 +768,7 @@ END - FROM AARDVARK -
 .search-popover > .popover-content{
 	font-family:'museo-sans-500',helvetica,arial,sans-serif;
 	font-size: 0.75em;
-	padding-top:4px 12px;
+	padding-top:5px 12px;
 }
 .search-popover > .popover-content > p {
 	padding:0 8px;
