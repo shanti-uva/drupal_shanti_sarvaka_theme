@@ -145,11 +145,11 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*--- END dropdown menu ---*/
 
 /*--- BEGIN collections panel ---*/
-.collections { background: #333;color: #fff;text-transform:uppercase;padding:0 0 1.5rem 0.8rem;font-weight:bold;border-bottom:1px solid #777;white-space:nowrap;border:8px solid #555;margin-left:0;margin-right:0;width:100%;overflow:auto;position:relative;display:none;}
-.collections .row { margin:0;}
+.collections { background:#333;margin:0;padding:0 0 1.5rem 0.8rem;border-bottom:1px solid #777;overflow:hidden;width:100%;display:none;}
+.collections .row { margin:0;border:8px solid #555;position:relative;}
 .collections ul { margin: 0 auto;text-align:center;list-style-type: none;margin-bottom:10px !important;}
 .collections ul li { margin: 0;float:left;line-height:4.5em;width:20%;}
-.collections ul li a { color: #d0d0d0;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-weight:500;font-weight:normal;}
+.collections ul li a { color: #d0d0d0;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-weight:500;font-weight:normal;white-space:nowrap;text-transform:uppercase;}
 .collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
 .collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
 .collections ul li a:hover,
