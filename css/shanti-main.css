@@ -1956,6 +1956,9 @@ html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of a
   #menu-collections .container,
   #menu-main .panel-group,
   #menu-collections .panel-group{ padding:0 !important;}
+  
+  .navbar-buttons,
+  .navbar-nav.navbar-right{ display:none;}
 
 }
 
