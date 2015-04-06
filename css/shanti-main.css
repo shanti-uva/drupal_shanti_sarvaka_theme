@@ -1084,8 +1084,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .av-main-video-section { }
 .kaltura-embed{ border-top:1.5rem solid #000;}
 
-/*--- toggle button for resource column - tetsting dev ---*/
-.mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
+
 
 .node-video .tab-content{ border-top:1px solid #ddd;}
 
@@ -1810,6 +1809,9 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 html body{ margin-top: 0 !important;}
 html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of admin bar */
 
+/*--- toggle button for resource column - tetsting dev 
+.mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
+---*/
 .view-resources.btn-default.noshow { display:none !important;}
 
 
@@ -1978,7 +1980,7 @@ html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of a
   .navbar-header a span{ font-size:0.75em; position:relative; top:-5px; }
 
 	.collections h4 {
-		font-size:1em;
+		font-size:1.06em;
 	  letter-spacing: 0.25em;
 	  margin-top:8px !important;
 	}
