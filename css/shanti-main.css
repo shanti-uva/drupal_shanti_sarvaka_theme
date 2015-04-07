@@ -2059,7 +2059,7 @@ body.front .breadcrumb{ display:none !important;}
 	.view-resources.btn-default:active { background: #000; color:#fff;}
 	/*.view-resources.btn-default em{ font-size:120%;font-style:normal;}*/
 	
-	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.5em; position:relative; width:2rem; left:-0.2rem; top:0;}
+	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.5em; position:relative; width:2rem; position: relative;top: 0rem;left:-0.1rem;}
 	.view-resources.btn-default .icon::before { font-family:'shanticon'; content: "\e63e";}
 	.view-resources.btn-default:hover .icon::before,
 	.view-resources.btn-default:active .icon::before { }
@@ -2068,7 +2068,7 @@ body.front .breadcrumb{ display:none !important;}
 	.row-offcanvas-left.active .view-resources.btn-default{ position:relative; left: -215px;}
 	.row-offcanvas-left.active .view-resources.btn-default .icon { color:#ccc; font-size: 0.88em; position:relative; top:0.4rem; left:0;}
 	.row-offcanvas-left.active .view-resources.btn-default .icon::before,
-	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ background:#e0e0e0; position:absolute;top: 0.5rem;left:.5rem; width:1.5rem;height:0.2rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ background:#e0e0e0; position:absolute;top: 0rem;left:.2rem; width:1.5rem;height:0.2rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 	.row-offcanvas-left.active .view-resources.btn-default:hover .icon::before,
 	.row-offcanvas-left.active .view-resources.btn-default:hover .icon::after{ background:#fff;}
