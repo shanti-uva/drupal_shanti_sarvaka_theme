@@ -57,7 +57,7 @@ ul ul,
 ul ul ul,
 ul ul ul ul { -webkit-margin-before: 0;}
 
-.content-section { padding-left:20px;padding-right:10px;}
+.content-section { padding-left:15px;padding-right:10px;}
 
 /* main layout for video page */
 .av-main-video-section,
@@ -2118,7 +2118,7 @@ body.front .breadcrumb{ display:none !important;}
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
   
   .collections ul:first-child{ margin-left:2%; }
-	.collections ul li { line-height:1.75em; width:30%;line-height: 4.5em; }
+	.collections ul li { line-height:1.75em; width:20%;line-height: 4.5em; }
   .collections ul li a { font-size: 0.75em; line-height:2.25em;}
 	.collections ul li a.disabled, .collections ul li a.disabled:hover, 
 	.collections ul li a.disabled:focus, 
@@ -2140,7 +2140,6 @@ body.front .breadcrumb{ display:none !important;}
 	.navbar-default h1 .icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   .navbar-header a span{ font-size:0.75em; position:relative; top:-5px; }
   
-  .collections ul:first-child{ margin-left:2%; }
   .collections ul li{ width:9%;margin-left:8%;}
 	.collections h4 {
 		font-size:1.06em;
