@@ -2066,8 +2066,9 @@ body.front .breadcrumb{ display:none !important;}
 	
 	.row-offcanvas-left.active .content-resources{ width: 18.5rem;}
 	.row-offcanvas-left.active .view-resources.btn-default{ 
-		position: relative;
-		left: -45px;
+		position: absolute;
+		left: -3.6rem;
+		top:-1rem;
 		color:#000;
 		opacity: 1;
 		background:transparent;
