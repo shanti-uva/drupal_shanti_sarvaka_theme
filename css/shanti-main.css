@@ -2096,7 +2096,7 @@ body.front .breadcrumb{ display:none !important;}
 }
 
 
-.collections ul li{ width:50%;}
+.collections ul li{ width:40%;line-height: 3.5em;}
 
 
 
@@ -2118,7 +2118,7 @@ body.front .breadcrumb{ display:none !important;}
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
   
-  .collections ul li{ width:30%;}
+  .collections ul li{ width:30%;line-height: 4.5em;}
 
   .collections ul:first-child{ margin-left:2%; }
 	.collections ul li { line-height:1.75em; width:20%; }
