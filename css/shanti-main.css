@@ -2096,7 +2096,7 @@ body.front .breadcrumb{ display:none !important;}
 }
 
 
-
+.collections ul li{ width:50%;}
 
 
 
@@ -2116,6 +2116,8 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 600px) {
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
+  
+  .collections ul li{ width:40%;margin-left:10%;}
 
   .collections ul:first-child{ margin-left:2%; }
 	.collections ul li { line-height:1.75em; width:20%; }
@@ -2146,6 +2148,11 @@ body.front .breadcrumb{ display:none !important;}
 	  margin-top:8px !important;
 	}
 
+}
+
+@media screen and (min-width: 850px) {
+
+		.collections ul li{ width:30%;}
 }
 
 
