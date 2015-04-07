@@ -206,8 +206,8 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 /*--- END collections panel ---*/
 
 /*--- BEGIN banner header ---*/
-.titlearea { color: #f9f9f9; height:6.7rem; position: relative;padding:0;margin:0; /* might need this -webkit-box-shadow: inset 0px 8px 12px -6px rgba(119,119,119,1); -moz-box-shadow: inset 0px 8px 12px -6px rgba(119,119,119,1); box-shadow: inset 0px 8px 12px -6px rgba(119,119,119,1);*/ }
-.titlearea > div{ height:6.7rem; /* bottom shadow here, top banner shadow is off header-banner */ -webkit-box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1110);border-collapse: separate; position:relative; z-index:1;}
+.titlearea { color: #f9f9f9; height:6.7rem; position: relative;padding:0;margin:0; box-shadow: inset 0 3px 7px 4px rgba(0, 0, 0, 0.1100); /* might need this -webkit-box-shadow: inset 0px 8px 12px -6px rgba(119,119,119,1); -moz-box-shadow: inset 0px 8px 12px -6px rgba(119,119,119,1); box-shadow: inset 0px 8px 12px -6px rgba(119,119,119,1);*/ }
+.titlearea > div{ height:6.7rem; /* bottom shadow here, top banner shadow is off header-banner */ -webkit-box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1400);box-shadow: inset 0 -6px 10px -4px rgba(0, 0, 0, 0.1400);border-collapse: separate; position:relative; z-index:1;}
 header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
 
 .page-title { font-weight: normal;font-size:1.56em;line-height:1.32em;text-shadow:0 0 3px rgba(50,50,50, 0.225);margin:0;padding:5px 0 0;color:#f9f9f9;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;padding-right:4rem;}
@@ -2049,9 +2049,8 @@ body.front .breadcrumb{ display:none !important;}
 	.row-offcanvas-left.active { left: 18.6rem; /* 6 columns */ }
 	.sidebar-offcanvas { position: absolute; top:0; width:18.6rem; /* 6 columns */}
 	
-	.content-section.equal-height > .tab-content{ padding-top:2.5rem;}		
-	.content-section.equal-height{ padding-left:10px;}
-	.content-section.equal-height > .tab-content{ padding-top: 0rem;padding-bottom: 5rem;}
+	.content-section.equal-height > .tab-content{ padding-top:2.5rem;padding-bottom: 5rem;}		
+	/*.content-section.equal-height{ padding-left:10px;} */
 	
 	.content-resources { width:18.5rem;}
 	.content-resources ul.nav-pills li{ font-size: 1em; line-height:1em; height: 2.75em;}
