@@ -1995,7 +1995,7 @@ body.front .breadcrumb{ display:none !important;}
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
   /*.breadcrumb li:first-child{ font-size:1em;}*/
 
-	.collections.container{ border:none; display:none; line-height:0 !important; height:0 !important;}
+	/* .collections.container{ border:none; display:none; line-height:0 !important; height:0 !important;} *?
 
 	#kmaps-search .table-responsive>.table{ background:transparent;}
 
