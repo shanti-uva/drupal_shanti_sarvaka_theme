@@ -2073,12 +2073,12 @@ body.front .breadcrumb{ display:none !important;}
 		opacity: 1;
 		background:transparent;
 	}
-	.row-offcanvas-left.active .view-resources.btn-default .icon { color:#ccc; font-size: 1.5rem; position:relative; top:0.4rem; left:0.1rem;}
+	.row-offcanvas-left.active .view-resources.btn-default .icon { color:#777; font-size: 1.5rem; position:relative; top:0.4rem; left:0.1rem;}
 	.row-offcanvas-left.active .view-resources.btn-default .icon::before,
-	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ background:#e0e0e0; position:absolute;top: 0rem;left:.2rem; width:1.5rem;height:0.2rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ background:#777; position:absolute;top: 0rem;left:.2rem; width:1.5rem;height:0.2rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 	.row-offcanvas-left.active .view-resources.btn-default:hover .icon::before,
-	.row-offcanvas-left.active .view-resources.btn-default:hover .icon::after{ background:#fff;}
+	.row-offcanvas-left.active .view-resources.btn-default:hover .icon::after{ background:#444;}
 	
 	.view-resources.btn-default > .header,
 	.view-resources.btn-default > .badge{ display:none;}
