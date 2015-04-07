@@ -2140,7 +2140,8 @@ body.front .breadcrumb{ display:none !important;}
 	.navbar-default h1 .icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   .navbar-header a span{ font-size:0.75em; position:relative; top:-5px; }
   
-  .collections ul li{ width:20%;}
+  .collections ul:first-child{ margin-left:2%; }
+  .collections ul li{ width:9%;}
 	.collections h4 {
 		font-size:1.06em;
 	  letter-spacing: 0.25em;
@@ -2174,7 +2175,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 1280px) {
 	
-	.collections ul:first-child{ margin-left:7%; }
+	}
 
 }
 
