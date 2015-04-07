@@ -423,7 +423,6 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 .menu-accordion ul a:hover,
-.menu-accordion ul a:focus,
 .menu-accordion ul a:active {
   color: #fff;
   text-decoration: none;
@@ -433,7 +432,6 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
   background: rgba(255, 255, 255, 0.1);
 }
 .menu-accordion ul ul a:hover,
-.menu-accordion ul ul a:focus,
 .menu-accordion ul ul a:active {
   background: rgba(255, 255, 255, 0.12);
 }
@@ -496,7 +494,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .popover-footer-button{ background:#111; border-bottom:1px solid #444; font-size:0.88em; height:2.5em; padding:0 0 0 1.3rem; margin:0; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .popover-footer-button a{ color:#f0f0f0; font-weight:normal; font-family: "museo-sans-500",helvetica,arial,sans-serif !important;}
 .popover-footer-button:hover,
-.popover-footer-button:focus{ color:#fff; background:#333;}
+.popover-footer-button:active{ color:#fff; background:#333;}
 .popover-footer-button .icon{ font-family: "museo-sans-500",helvetica,arial,sans-serif; color:#ddd; border-bottom:none; display:block; width:100%; font-size:1.06em; line-height:2.25em; height: 2.75em;}
 .popover-footer-button .icon::before{ color:#fff; margin-right:8px; font-family:'shanticon';}
 .popover-footer-button:hover .icon,
@@ -643,7 +641,7 @@ html input[type=file].form-file{margin-bottom:5px;}
 .btn-default.no-shadow,.btn-default.no-shadow:hover,.btn-default.no-shadow:focus,.btn-default.no-shadow:active{-webkit-box-shadow:none;box-shadow:none;}
 .btn-default:active,.btn-default.active{background:#d0d0d0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.1);box-shadow:inset 0 3px 5px rgba(0,0,0,.1);border-collapse:separate;}
 .btn{background-image:none;font-weight:normal;text-transform:uppercase;display:inline-block;white-space:nowrap;border-radius:.25em;background-clip:padding-box;color:#eee;padding:.75em 2em .62em;margin:.75em;line-height:2em;font-size:.68em;letter-spacing:.06em;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
-a.btn,a.btn:hover,a.btn:focus{border:none!important;}
+a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .btn-black,.btn-red,.btn-default,.btn-primary{border:none;background-image:none;background:transparent;}
 .btn-black:hover,.btn-black:focus,.btn-black.focus,.btn-red:hover,.btn-red:focus,.btn-red.focus,.btn-default:hover,.btn-default:focus,.btn-default.focus,.btn-primary:hover,.btn-primary:focus,.btn-primary.active{background-image:none;background:transparent;}
 .btn.btn-primary{background:#5b68ce;}
@@ -1244,7 +1242,6 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .fivestar-basic div.fivestar-widget .cancel,
 .fivestar-basic div.fivestar-widget .cancel a{ color:#777; font-size:0.88em; width:0.88em; height:1em; margin-right:0.5rem; letter-spacing:normal; font-family:'shanticon'; text-indent:0; background-image: none; border:none;}
 .fivestar-basic div.fivestar-widget .cancel a:hover,
-.fivestar-basic div.fivestar-widget .cancel a:focus,
 .fivestar-basic div.fivestar-widget .cancel a:active{ color:red;}
 .fivestar-basic div.fivestar-widget .cancel a::before{ content: '\e60f';}
 
@@ -1252,8 +1249,7 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .avshare ul{ list-style-type: none; padding-left:0; margin-top:5px;}
 .avshare ul li{}
 .avshare ul li a{ color:#555; font-weight:bold;border-bottom:none;}
-.avshare ul li a:hover,
-.avshare ul li a:focus{ border-bottom:none;}
+.avshare ul li a:hover{ border-bottom:none;}
 .avshare ul li a .icon{ color:#5a65d1; font-size: 1.5em; margin-right:3px; position:relative; top:3px;}
 
 ul.inline li a,
@@ -1352,7 +1348,7 @@ tr.region-title td{ color:#555; padding-top:0.5em; font-family:'museo-sans-500',
 table.tabledrag-processed{ width:100%; text-transform:capitalize;}
 table .draggable a.tabledrag-handle{ height: 1.5em;margin-top:.25em;}
 table .draggable a.tabledrag-handle:hover,
-table .draggable a.tabledrag-handle:focus{ border:none !important;}
+table .draggable a.tabledrag-handle:active{ border:none !important;}
 table .draggable a.tabledrag-handle .handle{
 	background:none;
 	height:1em;
@@ -1370,7 +1366,7 @@ table .draggable a.tabledrag-handle .handle{
 a.tabledrag-handle .handle::before{ content: '\e068';}
 a.tabledrag-handle,
 a.tabledrag-handle:hover,
-a.tabledrag-handle:focus{ border:none !important;}
+a.tabledrag-handle:active{ border:none !important;}
 
 a.admin-update,
 a.features-storage,
@@ -1395,7 +1391,7 @@ td.checkbox .form-type-checkbox > .icheckbox_minimal-red{ margin-top:5px;}
 
 /*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
 .contextual-links-wrapper{ position:absolute; top:-0.15rem !important;}
-.contextual-links-wrapper a:hover, .contextual-links-wrapper a:focus{ border-bottom:none !important;}
+.contextual-links-wrapper a:hover, .contextual-links-wrapper a:active{ border-bottom:none !important;}
 
 /* admin make checkboxes plain in features table */
 .admin-menu .content .features .status{ padding:0; background:transparent; border:none; box-shadow:none; -webkit-box-shadow:none;}
@@ -1423,7 +1419,7 @@ table.sticky-table td ul li{ line-height:1em;}
 
 #module-filter-tabs a,
 #module-filter-tabs a:hover,
-#module-filter-tabs a:focus{ border-bottom:none;}
+#module-filter-tabs a:active{ border-bottom:none;}
 
 .table-select-processed.tableheader-processed{ margin-top:1.5em;	}
 
@@ -1443,7 +1439,7 @@ textarea{ border: 1px solid #ccc;}
 
 .admin-menu .sticky-table a{ border-bottom-width:1px; white-space:nowrap; font-weight:bold;}
 .admin-menu .sticky-table a:hover,
-.admin-menu .sticky-table a:focus{ border-bottom-width:2px !important;}
+.admin-menu .sticky-table a:active{ border-bottom-width:2px !important;}
 
 form table td.label{ padding-top:0.68em !important;}
 
@@ -1500,7 +1496,7 @@ form table td.label{ padding-top:0.68em !important;}
 }
 #sidebar-second ul li a,
 #sidebar-second ul li a:hover,
-#sidebar-second ul li a:focus{ border-bottom-width:1px !important;}
+#sidebar-second ul li a:active{ border-bottom-width:1px !important;}
 #sidebar-second .block{ padding: 1rem 2rem .3rem 1rem;}
 
 #sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:1.1rem;}
@@ -2157,16 +2153,13 @@ body.front .breadcrumb{ display:none !important;}
 
 
 @media screen and (min-width: 992px) {
-
-  /* .navbar-header a span{ font-size:0.93em; position:relative; top:-5px; } */  
-  .main-content .content-section { /*max-width: 67em;*/ }
-
+  
+  .collections ul li{ width:15%;}
 	.collections ul li a { font-size: 0.75em; line-height:2.25em;}
-	.collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:focus, 
-	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
- 	.collections h4 {
-		font-size:1.12em;
-	}
+	.collections ul li a.disabled, 
+	.collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
+	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon, .collections ul li a.disabled:active .icon { color: #707070; cursor: default;}
+ 	.collections h4 { font-size:1.12em;}
 
 }
 
