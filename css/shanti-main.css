@@ -592,7 +592,7 @@ li.pager-current.widget > form input.form-control { width: 100px;}
 #tab-main .each-text a.thumbnail:hover { /* see custom theme colors */}
 
 /**** kmaps side-col ****/
-.content-resources{padding-left:0;padding-right:0;padding-top:0;margin-left:-2rem;max-width:16em;background:#fff;min-height:700px;height:100%;background-image:-webkit-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-moz-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-ms-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-o-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);}
+.content-resources{padding-left:0;padding-right:0;padding-top:0;margin-left:-2.1rem;max-width:16em;background:#fff;min-height:700px;height:100%;background-image:-webkit-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-moz-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-ms-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-o-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);}
 .content-resources .nav-pills{font-weight:bold;text-transform:uppercase;margin:0;}
 .content-resources .nav-pills li{ border-left:10px solid transparent; margin:0;padding:0;font-size:1em;line-height:3em;height:3em;position: relative;white-space:nowrap;}
 .content-resources .nav-pills li.active{ /* see custom theme colors */}
@@ -2109,6 +2109,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 500px) {
 
+	.collections ul li{ width:50%;margin-left:10%;}
    .navbar-header a span{ padding-left:12px;}
 
 }
@@ -2117,7 +2118,7 @@ body.front .breadcrumb{ display:none !important;}
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
   
-  .collections ul li{ width:40%;margin-left:10%;}
+  .collections ul li{ width:32%;}
 
   .collections ul:first-child{ margin-left:2%; }
 	.collections ul li { line-height:1.75em; width:20%; }
@@ -2152,7 +2153,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 850px) {
 
-		.collections ul li{ width:30%;}
+
 }
 
 
