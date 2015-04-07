@@ -118,6 +118,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
+.site-slogan{ display:none;}
 .header-banner{ position:relative; /*why? z-index:30000; makes admin difficult. If necessary can we find another workaround?*/ overflow:visible; margin-top:0 !important; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px #ddd; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
@@ -1932,9 +1933,26 @@ body.front .breadcrumb{ display:none !important;}
 .view-resources.btn-default.noshow { display:none !important;}
 
 
+
+
+
 /*------------------------------*/
 /*----- BEGIN RESPONSIVE -------*/
 /*------------------------------*/
+
+/* canrary testing outside responsive */
+.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box; position:relative; top:8px; background:#656565; padding:0; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
+.shanti-searchtoggle a:hover,
+.shanti-searchtoggle a:focus{ color:#222;background:#444;}
+.shanti-searchtoggle .shanticon{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:bold; padding:0;}
+.shanti-searchtoggle .shanticon::before{ color:#eee; content: '\e630';}
+.shanti-searchtoggle a:hover .shanticon::before,
+.shanti-searchtoggle a:focus .shanticon::before{ color:#fff;}
+.shanti-searchtoggle .menu-icon.show-topmenu a{ background:#000;}
+.shanti-searchtoggle .menu-icon.show-topmenu a .shanticon::before{ color:#fff;}
+	
+	
+	
 
 /* minimum width below & maximum width break points above */
 
@@ -1951,15 +1969,6 @@ body.front .breadcrumb{ display:none !important;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}
 	.menu-icon.show-topmenu a:hover .shanticon::before,
 	.menu-icon.show-topmenu a:focus .shanticon::before{ color:#fff;}
-	.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box; position:relative; top:8px; background:#656565; padding:0; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
-	.shanti-searchtoggle a:hover,
-	.shanti-searchtoggle a:focus{ color:#222;background:#444;}
-	.shanti-searchtoggle .shanticon{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:bold; padding:0;}
-	.shanti-searchtoggle .shanticon::before{ color:#eee; content: '\e630';}
-	.shanti-searchtoggle a:hover .shanticon::before,
-	.shanti-searchtoggle a:focus .shanticon::before{ color:#fff;}
-	.shanti-searchtoggle .menu-icon.show-topmenu a{ background:#000;}
-	.shanti-searchtoggle .menu-icon.show-topmenu a .shanticon::before{ color:#fff;}
 
 	.menu-explore a,
 	.menu-preferences .bottom-trim,
@@ -2040,10 +2049,7 @@ body.front .breadcrumb{ display:none !important;}
 	.row-offcanvas-left.active { left: 18.6rem; /* 6 columns */ }
 	.sidebar-offcanvas { position: absolute; top:0; width:18.6rem; /* 6 columns */}
 	
-	.content-section.equal-height > .tab-content{ padding-top:2.5rem;}	
-	.content-section.equal-height > .tab-content h4:first-child,
-	.content-section.equal-height > .tab-content h5:first-child,
-	.content-section.equal-height > .tab-content h6:first-child{ margin-top:0;}	
+	.content-section.equal-height > .tab-content{ padding-top:2.5rem;}		
 	.content-section.equal-height{ padding-left:10px;}
 	.content-section.equal-height > .tab-content{ padding-top: 0rem;padding-bottom: 5rem;}
 	
@@ -2055,7 +2061,7 @@ body.front .breadcrumb{ display:none !important;}
 	.content-resources .nav-pills li .ajax-progress { position: absolute;top:0.8rem;}	
 	
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-	.view-resources.btn-default { background:#444; font-size:1rem; width:2rem; line-height:3.5rem; height:3.5rem; display:inline-block !important; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background 100ms ease-out;-moz-transition: background 100ms ease-out;-o-transition: background 100ms ease-out;transition: background 100ms ease-out;}
+	.view-resources.btn-default { background:#444; font-size:1rem; width:2rem; line-height:3.5rem; height:3.5rem; display:inline-block !important; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background .100ms ease-out;-moz-transition: background .100ms ease-out;-o-transition: background .100ms ease-out;transition: background .100ms ease-out;}
 	.has-tabs .view-resources.btn-default { position:relative; top: -1.5rem; }		
 	.view-resources.btn-default:hover,
 	.view-resources.btn-default:active { background: #000; color:#fff;}
@@ -2124,7 +2130,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 768px) {
 
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
-  
+  .site-slogan{ display:block;} /* toggle on/off */
 	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	.navbar-default .menu-explore{ display:none !important; }
