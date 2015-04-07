@@ -2132,7 +2132,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 768px) {
 
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
-  .site-slogan{ display:block;} /* toggle on/off */
+  .site-slogan{ display:inline-block;}
 	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	.navbar-default .menu-explore{ display:none !important; }
