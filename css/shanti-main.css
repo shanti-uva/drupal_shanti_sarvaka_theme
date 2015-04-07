@@ -2138,7 +2138,6 @@ body.front .breadcrumb{ display:none !important;}
 
   /* .navbar-header a span{ font-size:0.93em; position:relative; top:-5px; } */  
   .main-content .content-section { /*max-width: 67em;*/ }
-  .content-section.equal-height > .tab-content{ padding-top:2.5rem;} /* from kmaps */
 
 	.collections ul li a { font-size: 0.75em; line-height:2.25em;}
 	.collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:focus, 
