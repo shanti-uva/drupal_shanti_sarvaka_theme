@@ -688,11 +688,11 @@ a.btn,a.btn:hover,a.btn:focus{border:none!important;}
 .btn-group-xlg .btn.btn-primary .icon{padding:0;font-size:1.68em;position:static;float:left;line-height:2.75em;background:transparent;}
 .btn-group-xlg > .btn.btn-primary{padding:.75em .5em .62em;border-radius:.25em;background-clip:padding-box;}
 .btn-group-lg .btn-primary.btn-icon{padding:0;width:100%;line-height:2em;text-transform:uppercase;color:#eee;font-size:.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:.06em;overflow:hidden;position:relative;}
-.btn-group-lg .btn-primary.btn-icon .shanticon{text-align:center;width:3.12em;font-size:130%;line-height:2.5em;display:inline-block;padding:.06em;background:#4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:.25em 0 0 .25em;background-clip:padding-box;}
+.btn-group-lg .btn-primary.btn-icon .icon{text-align:center;width:3.12em;font-size:130%;line-height:2.5em;display:inline-block;padding:.06em;background:#4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:.25em 0 0 .25em;background-clip:padding-box;}
 .btn-group-lg .btn-primary.btn-icon span:last-child{padding:1.25em 1.5em 1.25em 7em;margin:1px 0 0;line-height:1.62em;font-size:70%;background:transparent;display:block;letter-spacing:.12em;width:100%;}
 
 .btn-group-lg .btn-primary.btn-icon:hover,.btn-group-lg .btn-primary.btn-icon:focus{background:#4c54c7;}
-.btn-group-lg .btn-primary.btn-icon:hover .shanticon,.btn-group-lg .btn-primary.btn-icon:focus .shanticon{background:#373d91;}
+.btn-group-lg .btn-primary.btn-icon:hover .icon,.btn-group-lg .btn-primary.btn-icon:focus .icon{background:#373d91;}
 .btn-group-lg .btn-primary.btn-icon:active span,.btn-group-lg .btn-primary.btn-icon.active span{background:rgba(255,255,255,.07);}
 .btn.btn-default.btn-red{filter:alpha(opacity=80);opacity:.8;background:#dc3c47!important;color:#fff;-webkit-box-shadow:none;box-shadow:none;}
 .btn.btn-default.btn-red:hover,.btn.btn-default.btn-red:focus{filter:alpha(opacity=90);opacity:.9;}
@@ -1944,10 +1944,10 @@ body.front .breadcrumb{ display:none !important;}
 .shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box; position:relative; top:8px; background:#656565; padding:0; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
 .shanti-searchtoggle a:hover,
 .shanti-searchtoggle a:focus{ color:#222;background:#444;}
-.shanti-searchtoggle .shanticon{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:bold; padding:0;}
-.shanti-searchtoggle .shanticon::before{ color:#eee; content: '\e630';}
-.shanti-searchtoggle a:hover .shanticon::before,
-.shanti-searchtoggle a:focus .shanticon::before{ color:#fff;}
+.shanti-searchtoggle .icon{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:bold; padding:0;}
+.shanti-searchtoggle .icon::before{ color:#eee; content: '\e630';}
+.shanti-searchtoggle a:hover .icon::before,
+.shanti-searchtoggle a:focus .icon::before{ color:#fff;}
 .shanti-searchtoggle .menu-icon.show-topmenu a{ background:#000;}
 .shanti-searchtoggle .menu-icon.show-topmenu a .shanticon::before{ color:#fff;}
 	
@@ -1964,11 +1964,11 @@ body.front .breadcrumb{ display:none !important;}
 	.menu-icon a:focus{ color:#222; text-decoration:none;}
 	.menu-icon .shanticon{ font-size:1.32em !important; line-height:1.38em !important; width:1.75em !important; height:1.75em !important;min-height:1.75em !important;}
 	.menu-icon .shanticon::before{ content: '\e628';}
-	.menu-icon a:hover .shanticon::before,
-	.menu-icon a:focus .shanticon::before{ color:#808080;}
+	.menu-icon a:hover .icon::before,
+	.menu-icon a:focus .icon::before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}
-	.menu-icon.show-topmenu a:hover .shanticon::before,
-	.menu-icon.show-topmenu a:focus .shanticon::before{ color:#fff;}
+	.menu-icon.show-topmenu a:hover .icon::before,
+	.menu-icon.show-topmenu a:focus .icon::before{ color:#fff;}
 
 	.menu-explore a,
 	.menu-preferences .bottom-trim,
