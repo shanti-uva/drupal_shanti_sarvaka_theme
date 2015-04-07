@@ -2056,10 +2056,10 @@ body.front .breadcrumb{ display:none !important;}
 	.content-resources .nav-pills li .ajax-progress { position: absolute;top:0.8rem;}	
 	
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-	.view-resources.btn-default { background:#444; font-size:1rem; width:2rem; line-height:3.5rem; height:3.5rem; display:inline-block !important; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background .100ms ease-out;-moz-transition: background .100ms ease-out;-o-transition: background .100ms ease-out;transition: background .100ms ease-out;}
-	.has-tabs .view-resources.btn-default { position:relative; top: -1.5rem; }		
+	.view-resources.btn-default { background:#444; font-size:1rem; width:2.3rem; line-height:3.5rem; height:3.5rem; display:inline-block !important; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background .100ms ease-out;-moz-transition: background .100ms ease-out;-o-transition: background .100ms ease-out;transition: background .100ms ease-out;}
 	.view-resources.btn-default:hover,
 	.view-resources.btn-default:active { background: #000; color:#fff;}
+		.has-tabs .view-resources.btn-default { position:relative; top: -1.5rem;}		
 	/*.view-resources.btn-default em{ font-size:120%;font-style:normal;}*/
 	
 	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.5rem; position:relative; width:2rem; position: relative;top: 0rem;left:-0.1rem;}
@@ -2068,14 +2068,7 @@ body.front .breadcrumb{ display:none !important;}
 	.view-resources.btn-default:active .icon::before { }
 	
 	.row-offcanvas-left.active .content-resources{ width: 18.5rem;}
-	.row-offcanvas-left.active .view-resources.btn-default{ 
-		position: absolute;
-		left: -3.6rem;
-		top:-1rem;
-		color:#000;
-		opacity: 1;
-		background:transparent;
-	}
+	.row-offcanvas-left.active .view-resources.btn-default{ position: absolute;left: -3.6rem;top:-1rem;color:#000;opacity: 1;background:transparent;}
 	.row-offcanvas-left.active .view-resources.btn-default .icon { color:#777; font-size: 1.5rem; position:relative; top:0.4rem; left:0.1rem;}
 	.row-offcanvas-left.active .view-resources.btn-default .icon::before,
 	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ background:#777; position:absolute;top: 0rem;left:.2rem; width:1.5rem;height:0.2rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
@@ -2084,14 +2077,13 @@ body.front .breadcrumb{ display:none !important;}
 	.row-offcanvas-left.active .view-resources.btn-default:hover .icon::after{ background:#444;}
 	
 	.view-resources.btn-default > .header,
-	.view-resources.btn-default > .badge{ display:none;}
-	
+	.view-resources.btn-default > .badge{ display:none;}	
 	/* .view-resources.btn-default .badge { border:1px solid #ddd; font-size: .62em; padding:0.2rem 0.5rem 0; line-height:1; position:relative; top:-0.4rem; background:transparent; font-weight:normal; } */
 
 }
 
 
-.collections ul li{ width:40%;line-height: 3.5em;}
+/*.collections ul li{ width:40%;line-height: 3.5em;}*/
 
 
 
