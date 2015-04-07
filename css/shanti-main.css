@@ -2163,7 +2163,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 1280px) {
 	
-	}
+	.collections ul li{ width:12%;}
 
 }
 
