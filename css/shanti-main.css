@@ -2109,7 +2109,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 500px) {
 
-	.collections ul li{ width:50%;margin-left:10%;}
+	.collections ul li{ width:40%;margin-left:10%;}
    .navbar-header a span{ padding-left:12px;}
 
 }
@@ -2118,7 +2118,7 @@ body.front .breadcrumb{ display:none !important;}
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
   
-  .collections ul li{ width:32%;}
+  .collections ul li{ width:30%;}
 
   .collections ul:first-child{ margin-left:2%; }
 	.collections ul li { line-height:1.75em; width:20%; }
@@ -2142,7 +2142,8 @@ body.front .breadcrumb{ display:none !important;}
 	/*.navbar-default .navbar-nav>li>a{ background:transparent; }*/
 	.navbar-default h1 .icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   .navbar-header a span{ font-size:0.75em; position:relative; top:-5px; }
-
+  
+  .collections ul li{ width:20%;}
 	.collections h4 {
 		font-size:1.06em;
 	  letter-spacing: 0.25em;
