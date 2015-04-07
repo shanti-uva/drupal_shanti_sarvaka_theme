@@ -2137,7 +2137,7 @@ body.front .breadcrumb{ display:none !important;}
   .navbar-header a span{ font-size:0.75em; position:relative; top:-5px; }
  
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}  
-  .collections ul li{ width:9%;margin-left:8%;}
+  .collections ul li{ width:15%;margin-left:8%;}
 
 }
 
@@ -2151,7 +2151,6 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 992px) {
   
   .collections h4 { font-size:1.12em;}
-  .collections ul li{ width:15%;}
 	.collections ul li a { font-size: 0.75em; line-height:2.25em;}
 	.collections ul li a.disabled, 
 	.collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
@@ -2163,7 +2162,8 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 1280px) {
 	
-	.collections ul li{ width:12%;}
+	.collections ul:first-child{ margin-left:-5%;}
+	.collections ul li{ width:12%; margin-left: 8%;}
 
 }
 
