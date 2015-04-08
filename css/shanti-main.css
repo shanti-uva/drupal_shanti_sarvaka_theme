@@ -187,7 +187,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .collections .row { margin:0;}
 .collections ul { margin: 0 auto;text-align:center;list-style-type: none;margin-bottom:10px !important;}
 .collections ul li { margin: 0;float:left;line-height:4.5em;width:20%;}
-.collections ul li a { color: #d0d0d0;text-decoration: none;letter-spacing: 0.12em;margin-left:0;float:left;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-weight:500;font-weight:normal;white-space:nowrap;text-transform:uppercase;}
+.collections ul li a { color: #d0d0d0;text-decoration: none;letter-spacing: 0.06em;margin-left:0;float:left;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-weight:500;font-weight:normal;white-space:nowrap;text-transform:uppercase;}
 .collections ul li a.disabled, .collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
 .collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
 .collections ul li a:hover,
@@ -198,7 +198,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .collections ul li a:hover .icon,
 .collections ul li a:active .icon{ color:#fff;}
 .collections h4 { color:#eee; text-align: center; margin: 10px 0 18px; letter-spacing: 0.4rem;}
-.collections .close { color: #ccc;background:transparent;background-image:none;width:2.5rem;height:2.5rem;font-size: 1.75em;position: absolute;top:0.9rem;right:2rem;filter:alpha(opacity=35);opacity:0.35;padding:0;margin:0;border:none;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;cursor:pointer;display:inline-block; -webkit-transition: color 200ms ease 0s;-moz-transition: color 200ms ease 0s;-o-transition: color 200ms ease 0s;transition: color 200ms ease 0s;}
+.collections .close { color: #ccc;background:transparent;background-image:none;width:2rem;height:2rem;font-size: 1.25em;position: absolute;top:0.9rem;right:2rem;filter:alpha(opacity=35);opacity:0.35;padding:0;margin:0;border:none;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;cursor:pointer;display:inline-block; -webkit-transition: color 200ms ease 0s;-moz-transition: color 200ms ease 0s;-o-transition: color 200ms ease 0s;transition: color 200ms ease 0s;}
 .collections .close:hover,
 .collections .close:active { filter:alpha(opacity=75);opacity:0.75;}
 /*--- END collections panel ---*/
@@ -1980,7 +1980,8 @@ body.front .breadcrumb{ display:none !important;}
   .navbar-default h1 .icon{ font-size:1.5em;line-height:1.83em;}
 	.menu-explore a span{ display:none;}
 	.collections ul li{ line-height: 3em;}
-	
+	.collections > nav > div{ padding-right:0;padding-left:0;}
+	.collections .close { width:2.5rem;height:2.5rem;font-size:1.75em;}
 }
 
 
@@ -1989,7 +1990,6 @@ body.front .breadcrumb{ display:none !important;}
 	.collections ul:first-child{ margin-left:1.5rem;}
 	.collections ul li{ line-height: 3.62em; width:50%;}
 	.collections ul li a { font-size: 0.88em; }
-
 }
 
 
@@ -2101,8 +2101,9 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 500px) {
 
-	.collections ul li{ width:40%;margin-left:10%;}
+	 .collections ul li{ width:40%;margin-left:10%;}
    .navbar-header a span{ padding-left:12px;}
+   .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;}
 
 }
 
