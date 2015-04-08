@@ -116,7 +116,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-.site-slogan{ display:none;}
+span.site-slogan{ display:none;}
 .header-banner{ position:relative; /*why? z-index:30000; makes admin difficult. If necessary can we find another workaround?*/ overflow:visible; margin-top:0 !important; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px #ddd; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
@@ -126,7 +126,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header .site-slogan{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
+.navbar-header span.site-slogan{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left:1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
@@ -1941,7 +1941,7 @@ body.front .breadcrumb{ display:none !important;}
 .menu-collections,
 .shanti-searchtoggle{ display:none !important;}
 
-.navbar-header a .icon{ font-size:1.68em; position:relative; top:0.2rem;padding-left:5px;}
+.navbar-header a .icon{ font-size:1.63em; position:relative; top:0.2rem;padding-left:10px;}
 
 
 	
@@ -1993,7 +1993,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 830px) {
 
-	 .navbar-header .site-slogan{ display:none;} /* banner subtitle */
+	 .navbar-header span.site-slogan{ display:none;} /* banner subtitle */
 	 
 }
 
@@ -2058,7 +2058,7 @@ body.front .breadcrumb{ display:none !important;}
 
 	 .collections ul li{ width:40%;margin-left:10%;}
 	 .navbar-header a .icon{ padding-left:12px;}
-   .navbar-header a .site-slogan{ padding-left:12px;}
+   .navbar-header a span.site-slogan{ padding-left:12px;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
@@ -2081,7 +2081,7 @@ body.front .breadcrumb{ display:none !important;}
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	
-  .navbar-header a .site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
+  .navbar-header a span.site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
   
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
   .collections ul{ margin-left:0;}
