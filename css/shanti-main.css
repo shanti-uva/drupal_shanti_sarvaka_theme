@@ -2045,7 +2045,7 @@ body.front .breadcrumb{ display:none !important;}
 	.row-offcanvas-left.active { left: 18.6rem; /* 6 columns */ }
 	.sidebar-offcanvas { position: absolute; top:0; width:18.6rem; /* 6 columns */}
 	
-	.content-section.equal-height > .tab-content{ padding-top:2.5rem;padding-bottom: 5rem;}		
+	/* .content-section.equal-height > .tab-content{ padding-top:2.5rem;padding-bottom: 5rem;}	*/	
 	/*.content-section.equal-height{ padding-left:10px;} */
 	
 	.content-resources { width:18.5rem;}
