@@ -157,13 +157,12 @@
 	      $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
 
 	      // --- close the menu on outside click except button
-	      $('.menu-toggle').click( function(event){
-	          event.stopPropagation();
-	          $('#menu').toggle(50);
-	          $('.menu-toggle').toggleClass('show-topmenu');
-	          $('.collections').slideUp(200);
-	          $('.menu-exploretoggle').removeClass('show-topmenu');
-	       });
+			  $('.menu-toggle').click( function(event){
+			      event.stopPropagation();
+			      $('#menu').toggle(50);
+			      $('.menu-toggle').toggleClass('show-topmenu');
+			      $('.collections').slideToggle(200);
+			  });
 
 	      // --- close the menu on outside click except button
 	      $('.menu-exploretoggle').click( function(event){
