@@ -126,15 +126,15 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header a span{ font-size:0.75em;line-height:1em;height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
+.navbar-header a span{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:0.7rem;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
-.menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left:1px solid #d0d0d0;}
-.menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
+.menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left:1px solid #eee;}
+.menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:2.25em;height: 2.25em; min-height:2.25em; line-height:normal;  padding:3px 0 0 3px; margin:0; vertical-align:middle;margin:0 20px 0 0; border-radius:0.2rem; background-clip: padding-box;	position:relative; top:1rem; right:0;}
 .menu-icon a:hover,
 .menu-icon a:active{ background:#fff;}
 .menu-icon .icon{ padding:0; margin:0; color:#505050; font-size:2em; line-height:0.93em;}
 .menu-icon .icon::before{ content: '\e627';}
-.menu-icon .icon.shanticon-menu{ position:relative;top:0.7rem;}
+.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
 .menu-icon.show-topmenu a{ background:#39373f; color:#fff;}
 .menu-icon.show-topmenu a .icon::before{ color:#fff;}
 .navbar-collapse{ padding:0;}
@@ -1953,7 +1953,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 399px) {
 
 	.menu-icon{ border-left:none;}
-	.menu-icon a{ background:#fff;color:#777; width:1.88em !important; height:1.75em !important;min-height:1.75em !important; line-height:normal; padding:3px; margin:0 15px 0 0; -webkit-box-shadow: 0 0 4px 3px #d0d0d0; box-shadow: 0 0 4px 3px #d0d0d0; border-collapse:separate; border-radius:3px; background-clip: padding-box;	position:relative; top:9px; right:0;}
+	.menu-icon a{ }
 	.menu-icon a:hover,
 	.menu-icon a:focus{ color:#222; text-decoration:none;}
 	.menu-icon .shanticon{ font-size:1.32em !important; line-height:1.38em !important; width:1.75em !important; height:1.75em !important;min-height:1.75em !important;}
@@ -1998,7 +1998,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 767px) {
   
-	.navbar-header a span{ position:relative; top:0;}
+	.navbar-header a span{ font-size:2em; position:relative; top:7px;}
 	/* .menu-maintoggle{ display:inline;}
 	.menu-toggle{ display:none;} */
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
@@ -2124,19 +2124,17 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 768px) {
 
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
-  .site-slogan{ display:inline-block;}
-	.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
-	
 	
 	/*.navbar-default .navbar-nav>li>a{ background:transparent; }*/
 	.navbar-default h1 .icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
-  .navbar-header a span{ font-size:0.75em; position:relative; top:-5px; }
- 
+	.navbar-header a .icon{ }
+  .navbar-header a span:last-child{ font-size:0.75em; position:relative; top:-5px; }
+  .navbar-header a .site-slogan{ display:inline-block;}
+  
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
   .collections ul{ margin-left:0;}
   .collections ul li{ width:15%;margin-left:8%;}
-
 }
 
 @media screen and (min-width: 850px) {
