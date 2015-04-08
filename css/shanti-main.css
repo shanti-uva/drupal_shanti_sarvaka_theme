@@ -2071,7 +2071,7 @@ body.front .breadcrumb{ display:none !important;}
   
   .collections ul{ margin-left:2%; }
 	.collections ul li { width:20%;line-height: 4.5em; }
-  .collections ul li a { font-size: 0.75em; line-height:2.25em;}
+  .collections ul li a { font-size: 0.75em; line-height:2.5em;}
 	.collections ul li a.disabled, .collections ul li a.disabled:hover, 
 	.collections ul li a.disabled:focus, 
 	.collections ul li a.disabled .icon, 
