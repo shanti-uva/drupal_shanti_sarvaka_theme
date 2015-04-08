@@ -2105,15 +2105,18 @@ body.front .breadcrumb{ display:none !important;}
 	.collections ul li a.disabled, 
 	.collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
 	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon, .collections ul li a.disabled:active .icon { color: #707070; cursor: default;}
- 	
+
+
+	.collections ul{ margin-left:-5%;}
+	.collections ul li{ width:12%; margin-left: 7%;}
+	 	
 }
 
 
 
 @media screen and (min-width: 1280px) {
 	
-	.collections ul{ margin-left:-5%;}
-	.collections ul li{ width:12%; margin-left: 7%;}
+
 
 }
 
