@@ -1947,7 +1947,7 @@ body.front .breadcrumb{ display:none !important;}
 
 .navbar-default h1 .icon{ font-size:1.5em;line-height:1.83em;}
 	
-	
+.collections ul li a{ letter-spacing: 0.06em;font-size:0.88em;}
 	
 
 /* minimum width below & maximum width break points above */
@@ -1978,7 +1978,6 @@ body.front .breadcrumb{ display:none !important;}
 
 
 @media screen and (max-width: 499px) {
-
   
 	.menu-explore a span{ display:none;}
 	
@@ -1989,7 +1988,7 @@ body.front .breadcrumb{ display:none !important;}
 	
 	.collections ul:first-child{ margin-left:0;}
 	.collections ul li{ line-height: 3.62em;}
-  .collections ul li a{ letter-spacing: 0.06em;font-size:0.88em;}
+  
 }
 
 
@@ -2033,7 +2032,6 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 830px) {
 
 	 .navbar-header a span:last-child{ display:none;}
-	 /*-- .btn-group-lg.btn-group-transcript > .btn-group:nth-of-type(1){ width:2%;} ---*/
 
 }
 
@@ -2057,7 +2055,7 @@ body.front .breadcrumb{ display:none !important;}
 	.content-resources .nav-pills li .ajax-progress { position: absolute;top:0.8rem;}	
 	
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-	.view-resources.btn-default { background:#444; font-size:1rem; width:2.3rem; line-height:3.5rem; height:3.5rem; display:inline-block !important; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background .100ms ease-out;-moz-transition: background .100ms ease-out;-o-transition: background .100ms ease-out;transition: background .100ms ease-out;}
+	.view-resources.btn-default { background:#444; font-size:1rem; width:2.7rem; line-height:3.5rem; height:3.5rem; display:inline-block !important; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background .100ms ease-out;-moz-transition: background .100ms ease-out;-o-transition: background .100ms ease-out;transition: background .100ms ease-out;}
 	.view-resources.btn-default:hover,
 	.view-resources.btn-default:active { background: #000; color:#fff;}
 		.has-tabs .view-resources.btn-default { position:relative; top: -1.5rem;}		
@@ -2084,7 +2082,17 @@ body.front .breadcrumb{ display:none !important;}
 }
 
 
+
+
+
+
 .collections ul li{ width:40%;margin-left:10%;}
+
+
+
+
+
+
 
 
 /* MINIMUM WIDTH Begins */
@@ -2101,13 +2109,14 @@ body.front .breadcrumb{ display:none !important;}
 
 	
    .navbar-header a span{ padding-left:12px;}
+   .collections ul li a{ letter-spacing: 0.12em;font-size:1em;}
 
 }
 
 @media screen and (min-width: 600px) {
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
-  
+    
   .collections ul:first-child{ margin-left:2%; }
 	.collections ul li { line-height:1.75em; width:20%;line-height: 4.5em; }
   .collections ul li a { font-size: 0.75em; line-height:2.25em;}
