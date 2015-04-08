@@ -128,7 +128,7 @@ span.site-slogan{ display:none;}
 .navbar-header .shanti{ display:none;}
 .navbar-header span.site-slogan{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
-.menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0;}
+.menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
 .menu-icon a:hover,
 .menu-icon a:active{ background:#fff;}
