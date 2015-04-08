@@ -138,7 +138,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .menu-icon.show-topmenu a{ background:#39373f; color:#fff;}
 .menu-icon.show-topmenu a .icon::before{ color:#fff;}
 .navbar-collapse{ padding:0;}
-.navbar-default .navbar-nav>li{ border-left:1px solid #ddd; background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
+.navbar-default .navbar-nav>li{ background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
 .navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
