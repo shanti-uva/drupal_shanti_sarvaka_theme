@@ -170,7 +170,6 @@
 	          event.stopPropagation();
 	          $('.collections').slideToggle(200);
 	      });
-
 	      $(document).click( function(){
 	          $('.menu-toggle').removeClass('show-topmenu');
 	          $('#menu').hide(100);
