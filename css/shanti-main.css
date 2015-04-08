@@ -134,7 +134,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .menu-icon a:active{ background:#fff;}
 .menu-icon .icon{ padding:0; margin:0; color:#505050; font-size:2em; line-height:0.93em;}
 .menu-icon .icon::before{ content: '\e627';}
-.menu-icon .icon.shanticon-menu{ position:relative;top:0.7rem;}
+.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
 .menu-icon.show-topmenu a{ background:#39373f; color:#fff;}
 .menu-icon.show-topmenu a .icon::before{ color:#fff;}
 .navbar-collapse{ padding:0;}
