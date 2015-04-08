@@ -2026,7 +2026,7 @@ body.front .breadcrumb{ display:none !important;}
 	.page-places .view-resources.btn-default,
 	.page-subjects .view-resources.btn-default{ display:inline-block !important;}
 	
-	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.5rem; position:relative; width:2rem; position: relative;top: 0rem;left:-0.1rem;}
+	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.68rem; position:relative; width:2rem; position: relative;top: 0rem;left:-0.3rem;}
 	.view-resources.btn-default .icon::before { font-family:'shanticon'; content: "\e63e";}
 	.view-resources.btn-default:hover .icon::before,
 	.view-resources.btn-default:active .icon::before { }
