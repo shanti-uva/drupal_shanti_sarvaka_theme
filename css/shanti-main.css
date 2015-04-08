@@ -1979,16 +1979,16 @@ body.front .breadcrumb{ display:none !important;}
 
   .navbar-default h1 .icon{ font-size:1.5em;line-height:1.83em;}
 	.menu-explore a span{ display:none;}
-	.collections ul li{ line-height: 3em;font-size:0.88em;}
+	.collections ul li{ line-height: 3em;}
 	
 }
 
 
 @media screen and (max-width: 599px) {
 	
-	.collections ul:first-child{ margin-left:0;}
+	.collections ul:first-child{ margin-left:1.5rem;}
 	.collections ul li{ line-height: 3.62em; width:50%;}
-	.collections ul li a { font-size: 0.68em; }
+	.collections ul li a { font-size: 0.88em; }
 
 }
 
