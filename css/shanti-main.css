@@ -1952,7 +1952,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 399px) {
 
-	.menu-icon{ border-left:none;}
+	/* .menu-icon{ border-left:none;}
 	.menu-icon a{ width:2.25em;height: 2.25em; min-height:2.25em; line-height:normal;  padding:3px 0 0 3px; margin:0; vertical-align:middle;margin:0 20px 0 0; border-radius:0.2rem; background-clip: padding-box;position:relative; top:9px; right:0;}
 	.menu-icon a:hover,
 	.menu-icon a:focus{ color:#222; text-decoration:none;}
@@ -1962,7 +1962,7 @@ body.front .breadcrumb{ display:none !important;}
 	.menu-icon a:focus .icon::before{ color:#808080;}
 	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}
 	.menu-icon.show-topmenu a:hover .icon::before,
-	.menu-icon.show-topmenu a:focus .icon::before{ color:#fff;}
+	.menu-icon.show-topmenu a:focus .icon::before{ color:#fff;} */
 
 	.menu-explore a,
 	.menu-preferences .bottom-trim,
@@ -1977,7 +1977,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 499px) {
 
-  .navbar-default h1 .icon{ font-size:1.5em;line-height:1.83em;}
+  .navbar-default h1 .icon{ font-size:1.75em;line-height:1.83em;position:relative;top:1rem;}
 	.menu-explore a span:nth-of-type(1){ display:none;}
 	.collections h4{ font-size:1em;}
 	.collections ul li{ line-height: 3em;}
