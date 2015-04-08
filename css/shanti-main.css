@@ -158,7 +158,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .navbar-default .navbar-nav .explore .icon{ font-size:1.44em;position:relative;top:0.4rem;left:0.4rem}
 .navbar-default .navbar-nav li a .shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
 .navbar-default .menu-explore{ border-left:1px solid #ddd; position:absolute; right:50px;}
-.navbar-default .menu-explore a{ color:#505050; display:inline-block; font-size:0.88em; font-family:'museo-sans-700',helvetica,arial,sans-serif;line-height:1em; height:50px; margin:0;padding:14px 20px 0 16px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;}
+.navbar-default .menu-explore a{ color:#505050; display:inline-block; font-size:0.88em; font-family:'museo-sans-700',helvetica,arial,sans-serif;line-height:1em; height:50px; margin:0;padding:14px 30px 0 16px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;}
 .navbar-default .menu-explore .open a,
 .navbar-default .menu-explore a:hover,
 .navbar-default .menu-explore a:active{ color:#555; background:#f0f0f0; text-decoration:none;}
