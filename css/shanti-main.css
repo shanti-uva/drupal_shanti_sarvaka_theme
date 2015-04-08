@@ -2071,7 +2071,7 @@ body.front .breadcrumb{ display:none !important;}
 	
 	.row-offcanvas-left.active .content-resources{ width: 18.5rem;}
 	.row-offcanvas-left.active .view-resources.btn-default{ position: absolute;left: -3.6rem;top:-1rem;color:#000;opacity: 1;background:transparent;}
-	.row-offcanvas-left.active .view-resources.btn-default .icon { color:#777; font-size: 1.5rem; position:relative; top:0.4rem; left:0.1rem;}
+	.row-offcanvas-left.active .view-resources.btn-default .icon { color:#777; font-size: 1.5rem; position:relative; top:0.4rem; left: -0.8rem;}
 	.row-offcanvas-left.active .view-resources.btn-default .icon::before,
 	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ background:#777; position:absolute;top: 0rem;left:.2rem; width:1.5rem;height:0.2rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 	.row-offcanvas-left.active .view-resources.btn-default .icon::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
