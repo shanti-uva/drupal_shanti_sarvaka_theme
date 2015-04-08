@@ -169,7 +169,6 @@
 
 	      // --- close the menu on outside click except button
 	      $('.menu-exploretoggle').click( function(event){
-	          event.stopPropagation();
 	          $('.collections').slideToggle(200);
 	      });
 	      $('.collections .close').click( function(event){
