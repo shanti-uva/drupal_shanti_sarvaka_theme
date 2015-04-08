@@ -52,10 +52,10 @@ select:focus option:checked:hover { background: #008a96;color: #fff;}
 /*-------------------------*/
 /* ------ BEGIN from kmaps */
 
-ul,
+/* ul,
 ul ul,
 ul ul ul,
-ul ul ul ul { -webkit-margin-before: 0;}
+ul ul ul ul { -webkit-margin-before: 0;} */
 
 /* main layout for video page */
 .av-main-video-section,
@@ -116,7 +116,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-.site-slogan{ display:none;}
+span.site-slogan{ display:none;}
 .header-banner{ position:relative; /*why? z-index:30000; makes admin difficult. If necessary can we find another workaround?*/ overflow:visible; margin-top:0 !important; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px #ddd; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
@@ -126,9 +126,9 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header .site-slogan{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
+.navbar-header span.site-slogan{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
-.menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left:1px solid #d0d0d0;}
+.menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
 .menu-icon a:hover,
 .menu-icon a:active{ background:#fff;}
@@ -138,8 +138,8 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .menu-icon.show-topmenu a{ background:#39373f; color:#fff;}
 .menu-icon.show-topmenu a .icon::before{ color:#fff;}
 .navbar-collapse{ padding:0;}
-.navbar-default .navbar-nav>li{ background: #eee; /* line-height:1.25em; height:3.5em; height:50px; */}
-.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
+.navbar-default .navbar-nav>li{ background: #eee; border-left:1px solid #ddd;/* line-height:1.25em; height:3.5em; height:50px; */}
+.navbar-default .navbar-nav>li a{ color:#555; display:inline-block; font-size:0.88em; line-height:4.44em; height:50px;margin:0;padding:0 0 0 15px;background:#fff;font-weight:700;font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;}
 .navbar-default .navbar-nav>.open a,
 .navbar-default .navbar-nav>li a:hover,
 .navbar-default .navbar-nav>li a:active{ background:#f0f0f0;color:#444;}
@@ -157,7 +157,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .navbar-default .navbar-nav .explore a{ color:#555; padding-right:1.8rem;letter-spacing:0.01rem;}
 .navbar-default .navbar-nav .explore .icon{ font-size:1.44em;position:relative;top:0.4rem;left:0.4rem}
 .navbar-default .navbar-nav li a .shanticon-arrowselect{ font-size:17px; position:relative;left:2px;top:4px;}
-.navbar-default .menu-explore{ border-left:1px solid #ddd; position:absolute; right:50px;}
+.navbar-default .menu-explore{ position:absolute; right:50px; border-left: 1px solid #ddd;}
 .navbar-default .menu-explore a{ color:#505050; display:inline-block; font-size:0.88em;font-weight:bold;font-weight:700; font-family:'museo-sans-700',helvetica,arial,sans-serif;line-height:1em; height:50px; margin:0;padding:14px 30px 0 16px;background:#fff;text-transform:uppercase;-webkit-transition: background 200ms ease 0s;-moz-transition: background 200ms ease 0s;-o-transition: background 200ms ease 0s;transition: background 200ms ease 0s;}
 .navbar-default .menu-explore .open a,
 .navbar-default .menu-explore a:hover,
@@ -1941,9 +1941,9 @@ body.front .breadcrumb{ display:none !important;}
 .menu-collections,
 .shanti-searchtoggle{ display:none !important;}
 
-.navbar-header a .icon{ font-size:1.68em; position:relative; top:0.2rem;padding-left:5px;}
+.navbar-header a .icon{ font-size:1.63em; position:relative; top:0.2rem;padding-left:10px;}
 
-
+.view-resources.btn-default{ display:none;}
 	
 
 /* minimum width below & maximum width break points above */
@@ -1993,7 +1993,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 830px) {
 
-	 .navbar-header .site-slogan{ display:none;} /* banner subtitle */
+	 .navbar-header span.site-slogan{ display:none;} /* banner subtitle */
 	 
 }
 
@@ -2017,13 +2017,16 @@ body.front .breadcrumb{ display:none !important;}
 	.content-resources .nav-pills li .ajax-progress { position: absolute;top:0.8rem;}	
 	
 	/* toggle button for sidebar resources, xtra widths for overflow during animation */
-	.view-resources.btn-default { background:#444; font-size:1rem; width:2.6rem; line-height:3.5rem; height:3.5rem; border-radius: 0 0.4rem 0.4rem 0; display:inline-block !important; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background .100ms ease-out;-moz-transition: background .100ms ease-out;-o-transition: background .100ms ease-out;transition: background .100ms ease-out;}
+	.view-resources.btn-default { background:#444; font-size:1rem; width:2.6rem; line-height:3.5rem; height:3.5rem; border-radius: 0 0.4rem 0.4rem 0; display:none; padding:0; position:absolute; top:-0.7rem; left:-8px; z-index:10; background-image:none; border:none; border-radius:0; text-shadow:none; -webkit-box-shadow:none;box-shadow:none; font-weight:normal; color:#fff; font-family:'museo-sans-500',helvetica,arial,sans-serif; -webkit-transition: all 300ms ease-out;-moz-transition: all 300ms ease-out;-o-transition: all 300ms ease-out;transition: all 300ms ease-out; -webkit-transition: background .100ms ease-out;-moz-transition: background .100ms ease-out;-o-transition: background .100ms ease-out;transition: background .100ms ease-out;}
 	.view-resources.btn-default:hover,
 	.view-resources.btn-default:active { background: #000; color:#fff;}
 		.has-tabs .view-resources.btn-default { position:relative; top: -1.5rem;}		
 	/*.view-resources.btn-default em{ font-size:120%;font-style:normal;}*/
 	
-	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.5rem; position:relative; width:2rem; position: relative;top: 0rem;left:-0.1rem;}
+	.page-places .view-resources.btn-default,
+	.page-subjects .view-resources.btn-default{ display:inline-block !important;}
+	
+	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.68rem; position:relative; width:2rem; position: relative;top: 0rem;left:-0.3rem;}
 	.view-resources.btn-default .icon::before { font-family:'shanticon'; content: "\e63e";}
 	.view-resources.btn-default:hover .icon::before,
 	.view-resources.btn-default:active .icon::before { }
@@ -2058,7 +2061,7 @@ body.front .breadcrumb{ display:none !important;}
 
 	 .collections ul li{ width:40%;margin-left:10%;}
 	 .navbar-header a .icon{ padding-left:12px;}
-   .navbar-header a .site-slogan{ padding-left:12px;}
+   .navbar-header a span.site-slogan{ padding-left:12px;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
@@ -2068,7 +2071,7 @@ body.front .breadcrumb{ display:none !important;}
   
   .collections ul{ margin-left:2%; }
 	.collections ul li { width:20%;line-height: 4.5em; }
-  .collections ul li a { font-size: 0.75em; line-height:2.25em;}
+  .collections ul li a { font-size: 0.75em; line-height:2.5em;}
 	.collections ul li a.disabled, .collections ul li a.disabled:hover, 
 	.collections ul li a.disabled:focus, 
 	.collections ul li a.disabled .icon, 
@@ -2081,7 +2084,7 @@ body.front .breadcrumb{ display:none !important;}
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	
-  .navbar-header a .site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
+  .navbar-header a span.site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
   
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
   .collections ul{ margin-left:0;}
@@ -2102,15 +2105,18 @@ body.front .breadcrumb{ display:none !important;}
 	.collections ul li a.disabled, 
 	.collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
 	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon, .collections ul li a.disabled:active .icon { color: #707070; cursor: default;}
- 	
+
+
+	.collections ul{ margin-left:-5%;}
+	.collections ul li{ width:12%; margin-left: 7%;}
+	 	
 }
 
 
 
 @media screen and (min-width: 1280px) {
 	
-	.collections ul{ margin-left:-5%;}
-	.collections ul li{ width:12%; margin-left: 7%;}
+
 
 }
 
