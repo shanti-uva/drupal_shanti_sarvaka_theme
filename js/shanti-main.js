@@ -163,13 +163,9 @@
 	          $('.menu-toggle').toggleClass('show-topmenu');
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
-	       $('.menu-exploretoggle').click( function(event){
-	          event.stopPropagation();
-	          $('.collections').slideToggle(200);
-	       });
 
-	      // --- close the menu on outside click except button
 	      $('.menu-exploretoggle').click( function(event){
+		      event.stopPropagation();
 	          $('.collections').slideToggle(200);
 	      });
 	      $('.collections .close').click( function(event){
