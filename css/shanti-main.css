@@ -1974,7 +1974,7 @@ body.front .breadcrumb{ display:none !important;}
 
 
 @media screen and (max-width: 599px) {
-	
+	.navbar-header a .icon{ position:relative; top:1rem;}	
 	.collections ul{ margin-left:1.5rem;}
 	.collections ul li{ line-height: 3.62em; width:50%;}
 	.collections ul li a { font-size: 0.88em; }
