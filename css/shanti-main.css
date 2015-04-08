@@ -1941,7 +1941,7 @@ body.front .breadcrumb{ display:none !important;}
 .menu-collections,
 .shanti-searchtoggle{ display:none !important;}
 
-.navbar-header a .icon{ position:relative; top:1rem;}
+.navbar-header a .icon{ font-size:1.68em; position:relative; top:0.2rem;padding-left:5px;}
 
 
 	
@@ -1984,7 +1984,6 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 767px) {
   
-	.navbar-header a .icon{ font-size:1.75em;}	
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
   
 }
@@ -2080,8 +2079,6 @@ body.front .breadcrumb{ display:none !important;}
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	
-	/*.navbar-default .navbar-nav>li>a{ background:transparent; }*/
-	.navbar-header a .icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
   .navbar-header a .site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
   
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
