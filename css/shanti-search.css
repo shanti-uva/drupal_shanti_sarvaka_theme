@@ -697,7 +697,7 @@ background:transparent;
 .loading {
     height: 150px;
     position: relative;
-    left:35px;
+    left:37px;
     width: 150px;
     border-radius: 100%;
     z-index:16000;
