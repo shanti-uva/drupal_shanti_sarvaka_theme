@@ -126,7 +126,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header a span{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
+.navbar-header .site-slogan{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left:1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
@@ -1969,13 +1969,13 @@ body.front .breadcrumb{ display:none !important;}
 	.collections > nav > div{ padding-right:0;padding-left:0;}
 	.collections .close { width:2rem;height:2rem;font-size:1.25em;right:1rem;}	
 	
-	.collections ul:first-child{ margin-left:7%;}
+	.collections ul{ margin-left:7%;}
 }
 
 
 @media screen and (max-width: 599px) {
 	
-	.collections ul:first-child{ margin-left:1.5rem;}
+	.collections ul{ margin-left:1.5rem;}
 	.collections ul li{ line-height: 3.62em; width:50%;}
 	.collections ul li a { font-size: 0.88em; }
 }
@@ -1991,7 +1991,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 830px) {
 
-	 .navbar-header a span:last-child{ display:none;} /* banner subtitle */
+	 .navbar-header .site-slogan{ display:none;} /* banner subtitle */
 	 
 }
 
@@ -2055,7 +2055,8 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 500px) {
 
 	 .collections ul li{ width:40%;margin-left:10%;}
-   .navbar-header a span{ padding-left:12px;}
+	 .navbar-header a .icon{ padding-left:12px;}
+   .navbar-header a .site-slogan{ padding-left:12px;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
@@ -2063,7 +2064,7 @@ body.front .breadcrumb{ display:none !important;}
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
   
-  .collections ul:first-child{ margin-left:2%; }
+  .collections ul{ margin-left:2%; }
 	.collections ul li { width:20%;line-height: 4.5em; }
   .collections ul li a { font-size: 0.75em; line-height:2.25em;}
 	.collections ul li a.disabled, .collections ul li a.disabled:hover, 
@@ -2079,10 +2080,8 @@ body.front .breadcrumb{ display:none !important;}
   .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	
 	/*.navbar-default .navbar-nav>li>a{ background:transparent; }*/
-	.navbar-default h1 .icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
-	.navbar-header a .icon{ }
-  .navbar-header a span:last-child{ font-size:0.75em; position:relative; top:-5px; }
-  .navbar-header a .site-slogan{ display:inline-block;}
+	.navbar-header a .icon{ font-size:1.63em; line-height:1.68em; position:relative; top:1px; }
+  .navbar-header a .site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
   
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
   .collections ul{ margin-left:0;}
@@ -2110,7 +2109,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 1280px) {
 	
-	.collections ul:first-child{ margin-left:-5%;}
+	.collections ul{ margin-left:-5%;}
 	.collections ul li{ width:12%; margin-left: 7%;}
 
 }
