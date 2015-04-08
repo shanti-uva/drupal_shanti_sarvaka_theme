@@ -161,8 +161,10 @@
 	          event.stopPropagation();
 	          $('#menu').toggle(50);
 	          $('.menu-toggle').toggleClass('show-topmenu');
-	          $('.collections').slideToggle(200);
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
+	       });
+	       $('.menu-toggle').click( function(event){
+	          $('.collections').slideToggle(200);
 	       });
 
 	      // --- close the menu on outside click except button
