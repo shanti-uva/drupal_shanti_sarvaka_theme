@@ -208,11 +208,11 @@ background:transparent;
 .input-section label{ color:#444; font-size:12px; line-height:30px; height:28px; padding-right:0; margin-left:0px; margin-right:0; text-transform:capitalize;}
 
 /*--- toggle links for search panel ---*/
-.input-section .toggle-link{ background:#f8f8f8;color:#555 !important;font-size:0.88em;display:block;text-align:right;font-weight:bold; line-height:0.93em; /*height:1.12em;*/ margin:0;padding:0 25px 0 0;text-decoration:none;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.input-section .toggle-link{ background:#f8f8f8;color:#555 !important;font-size:0.88em;display:block;text-align:right;font-weight:bold; line-height:0.93em; margin:0;padding:0 25px 0 0;text-decoration:none;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .input-section .toggle-link:hover{ text-decoration:none !important;}
 .input-section .toggle-link .icon{ font-family:'FontAwesome';}
-.input-section .toggle-link .icon::before{ color:#555; font-family:'FontAwesome'; content:'\f067'; font-size:0.82em; margin-right:0.25em;}
-.input-section .toggle-link:hover .icon::before{ color:#555;}
+.input-section .toggle-link .icon::before{ color:#555 !important; font-family:'FontAwesome'; content:'\f067'; font-size:0.82em; margin-right:0.25em;}
+.input-section .toggle-link:hover .icon::before{ color:#555 !important;}
 /*---------------------------*/
 /*--- custom sizes & position ---*/
 .input-section .feature-group .toggle-link.feature-toggle{ float:right;padding:0 10px 0 0;margin:0;display:inline;position:relative;top:-1px;}
