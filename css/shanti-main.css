@@ -1944,8 +1944,6 @@ body.front .breadcrumb{ display:none !important;}
 .shanti-searchtoggle a:focus .icon::before{ color:#fff;}
 .shanti-searchtoggle .menu-icon.show-topmenu a{ background:#000;}
 .shanti-searchtoggle .menu-icon.show-topmenu a .shanticon::before{ color:#fff;}
-
-.navbar-default h1 .icon{ font-size:1.5em;line-height:1.83em;}
 	
 	
 	
@@ -1979,7 +1977,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 499px) {
 
-  
+  .navbar-default h1 .icon{ font-size:1.5em;line-height:1.83em;}
 	.menu-explore a span{ display:none;}
 	
 }
@@ -2101,7 +2099,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 500px) {
 
-	
+	.collections ul li{ width:40%;margin-left:10%;}
    .navbar-header a span{ padding-left:12px;}
 
 }
