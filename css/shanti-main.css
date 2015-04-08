@@ -126,15 +126,15 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header a span{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:0.7rem;white-space:nowrap;}
+.navbar-header a span{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left:1px solid #eee;}
-.menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:2.25em;height: 2.25em; min-height:2.25em; line-height:normal;  padding:3px 0 0 3px; margin:0; vertical-align:middle;margin:0 20px 0 0; border-radius:0.2rem; background-clip: padding-box;	position:relative; top:1rem; right:0;}
+.menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
 .menu-icon a:hover,
 .menu-icon a:active{ background:#fff;}
 .menu-icon .icon{ padding:0; margin:0; color:#505050; font-size:2em; line-height:0.93em;}
 .menu-icon .icon::before{ content: '\e627';}
-.menu-icon .icon.shanticon-menu{ position:relative;top:0;}
+.menu-icon .icon.shanticon-menu{ position:relative;top:0.7rem;}
 .menu-icon.show-topmenu a{ background:#39373f; color:#fff;}
 .menu-icon.show-topmenu a .icon::before{ color:#fff;}
 .navbar-collapse{ padding:0;}
@@ -1953,7 +1953,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 399px) {
 
 	.menu-icon{ border-left:none;}
-	.menu-icon a{ }
+	.menu-icon a{ width:2.25em;height: 2.25em; min-height:2.25em; line-height:normal;  padding:3px 0 0 3px; margin:0; vertical-align:middle;margin:0 20px 0 0; border-radius:0.2rem; background-clip: padding-box;position:relative; top:9px; right:0;}
 	.menu-icon a:hover,
 	.menu-icon a:focus{ color:#222; text-decoration:none;}
 	.menu-icon .shanticon{ font-size:1.32em !important; line-height:1.38em !important; width:1.75em !important; height:1.75em !important;min-height:1.75em !important;}
@@ -1999,6 +1999,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 767px) {
   
 	.navbar-header a span{ font-size:2em; position:relative; top:7px;}
+	.navbar-header a span{ position:relative; top:0;}
 	/* .menu-maintoggle{ display:inline;}
 	.menu-toggle{ display:none;} */
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
