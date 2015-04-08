@@ -161,16 +161,14 @@
 	          event.stopPropagation();
 	          $('#menu').toggle(50);
 	          $('.menu-toggle').toggleClass('show-topmenu');
-	          $('.collections').slideToggle(200);
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
 
-	      // --- close the menu on outside click except button
-	      $('.menu-exploretoggle').click( function(event){
-	          event.stopPropagation();
+	      $('.menu-exploretoggle').click( function(e){
+		      event.stopPropagation();
 	          $('.collections').slideToggle(200);
 	      });
-	      $('.collections .close').click( function(event){
+	      $('.collections .close').click( function(e){
 	          event.stopPropagation();
 	          $('.collections').slideUp(200);
 	      });
