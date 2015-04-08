@@ -2086,7 +2086,7 @@ body.front .breadcrumb{ display:none !important;}
 }
 
 
-
+.collections ul li{ width:40%;margin-left:10%;}
 
 
 /* MINIMUM WIDTH Begins */
@@ -2101,7 +2101,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 500px) {
 
-	.collections ul li{ width:40%;margin-left:10%;}
+	
    .navbar-header a span{ padding-left:12px;}
 
 }
