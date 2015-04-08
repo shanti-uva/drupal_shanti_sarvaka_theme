@@ -1979,9 +1979,10 @@ body.front .breadcrumb{ display:none !important;}
 
   .navbar-default h1 .icon{ font-size:1.5em;line-height:1.83em;}
 	.menu-explore a span{ display:none;}
+	.collections h4{ font-size:0.82em;}
 	.collections ul li{ line-height: 3em;}
 	.collections > nav > div{ padding-right:0;padding-left:0;}
-	.collections .close { width:2.5rem;height:2.5rem;font-size:1.75em;}
+	.collections .close { width:2rem;height:2rem;font-size:1.25em;right:1rem;}
 	
 	
 }
@@ -2105,8 +2106,7 @@ body.front .breadcrumb{ display:none !important;}
 
 	 .collections ul li{ width:40%;margin-left:10%;}
    .navbar-header a span{ padding-left:12px;}
-   .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;}
-
+   .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
 @media screen and (min-width: 600px) {
