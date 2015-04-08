@@ -1942,7 +1942,9 @@ body.front .breadcrumb{ display:none !important;}
 .menu-collections,
 .shanti-searchtoggle{ display:none !important;}
 
-	
+.navbar-header a .icon{ position:relative; top:1rem;}
+
+
 	
 
 /* minimum width below & maximum width break points above */
@@ -1974,7 +1976,7 @@ body.front .breadcrumb{ display:none !important;}
 
 
 @media screen and (max-width: 599px) {
-	.navbar-header a .icon{ position:relative; top:1rem;}	
+		
 	.collections ul{ margin-left:1.5rem;}
 	.collections ul li{ line-height: 3.62em; width:50%;}
 	.collections ul li a { font-size: 0.88em; }
@@ -1983,7 +1985,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 767px) {
   
-	.navbar-header a .icon{ font-size:1.75em;position:relative; top:0;}	
+	.navbar-header a .icon{ font-size:1.75em;}	
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
   
 }
