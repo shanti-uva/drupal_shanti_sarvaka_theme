@@ -1989,13 +1989,11 @@ body.front .breadcrumb{ display:none !important;}
 	
 	.collections ul:first-child{ margin-left:0;}
 	.collections ul li{ line-height: 3.62em;}
-
+  .collections ul li a{ letter-spacing: 0.06em;font-size:0.88em;}
 }
 
 
 @media screen and (max-width: 767px) {
-
-  /* .content-section { padding-left:10px;} */
   
 	.navbar-header a span{ position:relative; top:0;}
 	.menu-maintoggle{ display:inline;}
@@ -2030,7 +2028,7 @@ body.front .breadcrumb{ display:none !important;}
   .navbar-nav.navbar-right{ display:none;}
 
 }
-
+---*/
 
 @media screen and (max-width: 830px) {
 
