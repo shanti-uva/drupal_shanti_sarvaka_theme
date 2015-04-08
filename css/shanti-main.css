@@ -1962,7 +1962,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 499px) {
 
-  .navbar-default h1 .icon{ font-size:1.75em;line-height:1.83em;position:relative;top:1rem;}
+  .navbar-default h1 .icon{ font-size:1.75em;line-height:1.68;}
 	.menu-explore a span:nth-of-type(1){ display:none;}
 	.collections h4{ font-size:1em;}
 	.collections ul li{ line-height: 3em;}
