@@ -157,17 +157,22 @@
 	      $('#menu ul>li.levelHolderClass.rtl').css('text-align','right');
 
 	      // --- close the menu on outside click except button
-			  $('.menu-toggle').click( function(event){
-			      event.stopPropagation();
-			      $('#menu').toggle(50);
-			      $('.menu-toggle').toggleClass('show-topmenu');
-			      $('.collections').slideToggle(200);
-			  });
+	      $('.menu-toggle').click( function(event){
+	          event.stopPropagation();
+	          $('#menu').toggle(50);
+	          $('.menu-toggle').toggleClass('show-topmenu');
+	          $('.collections').slideToggle(200);
+	          $('.menu-exploretoggle').removeClass('show-topmenu');
+	       });
 
 	      // --- close the menu on outside click except button
 	      $('.menu-exploretoggle').click( function(event){
 	          event.stopPropagation();
 	          $('.collections').slideToggle(200);
+	      });
+	      $('.collections .close').click( function(event){
+	          event.stopPropagation();
+	          $('.collections').slideUp(200);
 	      });
 	      $(document).click( function(){
 	          $('.menu-toggle').removeClass('show-topmenu');
