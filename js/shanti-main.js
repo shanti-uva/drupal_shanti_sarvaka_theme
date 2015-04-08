@@ -163,7 +163,7 @@
 	          $('.menu-toggle').toggleClass('show-topmenu');
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
-	       $('.menu-toggle').click( function(event){
+	       $('.menu-exploretoggle').click( function(event){
 	          $('.collections').slideToggle(200);
 	       });
 
