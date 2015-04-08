@@ -164,6 +164,7 @@
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
 	       $('.menu-exploretoggle').click( function(event){
+	          event.stopPropagation();
 	          $('.collections').slideToggle(200);
 	       });
 
