@@ -170,7 +170,10 @@
 	          event.stopPropagation();
 	          $('.collections').slideToggle(200);
 	      });
-
+	      $('.collections .close').click( function(event){
+	          event.stopPropagation();
+	          $('.collections').slideUp(200);
+	      });
 	      $(document).click( function(){
 	          $('.menu-toggle').removeClass('show-topmenu');
 	          $('#menu').hide(100);
