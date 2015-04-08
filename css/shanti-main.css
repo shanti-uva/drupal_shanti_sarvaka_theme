@@ -1987,7 +1987,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 599px) {
 	
 	.collections ul:first-child{ margin-left:0;}
-	.collections ul li{ line-height: 3.62em;}
+	.collections ul li{ line-height: 3.62em; width:50%;}
 	.collections ul li a { font-size: 0.68em; }
 
 }
