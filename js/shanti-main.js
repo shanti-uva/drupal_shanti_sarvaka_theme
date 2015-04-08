@@ -164,11 +164,11 @@
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
 
-	      $('.menu-exploretoggle').click( function(event){
+	      $('.menu-exploretoggle').click( function(e){
 		      event.stopPropagation();
 	          $('.collections').slideToggle(200);
 	      });
-	      $('.collections .close').click( function(event){
+	      $('.collections .close').click( function(e){
 	          event.stopPropagation();
 	          $('.collections').slideUp(200);
 	      });
