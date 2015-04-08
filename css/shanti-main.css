@@ -1934,35 +1934,20 @@ body.front .breadcrumb{ display:none !important;}
 /*----- BEGIN RESPONSIVE -------*/
 /*------------------------------*/
 
-/* canrary testing outside responsive */
-.shanti-searchtoggle a{ border-radius:4px; background-clip: padding-box; position:relative; top:8px; background:#656565; padding:0; width:2em !important; height:1.88em !important;min-height:1.88em !important; -webkit-box-shadow: none;box-shadow: none;}
-.shanti-searchtoggle a:hover,
-.shanti-searchtoggle a:focus{ color:#222;background:#444;}
-.shanti-searchtoggle .icon{ font-size:1.12em !important; line-height:1.68em !important; width:2em !important; height:1.88em !important;min-height:1.88em !important; font-weight:bold; padding:0;}
-.shanti-searchtoggle .icon::before{ color:#eee; content: '\e630';}
-.shanti-searchtoggle a:hover .icon::before,
-.shanti-searchtoggle a:focus .icon::before{ color:#fff;}
-.shanti-searchtoggle .menu-icon.show-topmenu a{ background:#000;}
-.shanti-searchtoggle .menu-icon.show-topmenu a .shanticon::before{ color:#fff;}
-	
+.menu-toggle{ display:inline-block; border-collapse: separate;}
+
+.menu-maintoggle,
+.menu-explore,
+.shanti-searchtoggle,
+.menu-collections,
+.shanti-searchtoggle{ display:none !important;}
+
 	
 	
 
 /* minimum width below & maximum width break points above */
 
 @media screen and (max-width: 399px) {
-
-	/* .menu-icon{ border-left:none;}
-	.menu-icon a{ width:2.25em;height: 2.25em; min-height:2.25em; line-height:normal;  padding:3px 0 0 3px; margin:0; vertical-align:middle;margin:0 20px 0 0; border-radius:0.2rem; background-clip: padding-box;position:relative; top:9px; right:0;}
-	.menu-icon a:hover,
-	.menu-icon a:focus{ color:#222; text-decoration:none;}
-	.menu-icon .shanticon{ font-size:1.32em !important; line-height:1.38em !important; width:1.75em !important; height:1.75em !important;min-height:1.75em !important;}
-	.menu-icon .shanticon::before{ content: '\e628';}
-	.menu-icon a:hover .icon::before,
-	.menu-icon a:focus .icon::before{ color:#808080;}
-	.menu-icon.show-topmenu a{ background:#444; -webkit-box-shadow:none; box-shadow:none;}
-	.menu-icon.show-topmenu a:hover .icon::before,
-	.menu-icon.show-topmenu a:focus .icon::before{ color:#fff;} */
 
 	.menu-explore a,
 	.menu-preferences .bottom-trim,
@@ -2000,33 +1985,8 @@ body.front .breadcrumb{ display:none !important;}
   
 	.navbar-header a span{ font-size:2em; position:relative; top:7px;}
 	.navbar-header a span{ position:relative; top:0;}
-	/* .menu-maintoggle{ display:inline;}
-	.menu-toggle{ display:none;} */
+	
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
-
-	/* 
-	.menu-icon{ }
-	.menu-icon a,
-	.menu-icon .shanticon{ padding:0; height:40px; width:50px;}
-	.menu-icon .shanticon{ font-size:1.75em; line-height:1.75em;}
-	.menu-icon a,
-	.menu-icon .shanticon,
-	.menu-explore a,
-	.navbar.navbar-default,
-	.navbar-default .navbar-nav>li>a{ height:40px; min-height: 40px;}
-
-	.menu-accordion.extruder.right{ margin-top:40px; }
-	.navbar-default .menu-explore a{ font-size:0.88em; line-height:0.75em; height:40px; padding:10px 20px 0 16px; }
-  .navbar-default h1 .icon{ font-size:1.44em; line-height:1.63em; }
-
-  #menu-main .container,
-  #menu-collections .container,
-  #menu-main .panel-group,
-  #menu-collections .panel-group{ padding:0 !important;}
-  
-  .navbar-buttons,
-  .navbar-nav.navbar-right{ display:none;}
-  */
   
 }
 
@@ -2085,19 +2045,11 @@ body.front .breadcrumb{ display:none !important;}
 
 
 
-.menu-toggle{ display:inline-block; border-collapse: separate;}
-
-.menu-maintoggle,
-.menu-explore{ display:none !important; }
-
-
 /* MINIMUM WIDTH Begins */
 
 
 @media screen and (min-width: 400px) {
 
-	.shanti-searchtoggle,
-	#menu-main .menu-collections{ display:none !important;} /* hide collections menu */
 
 }
 
