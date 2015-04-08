@@ -1983,6 +1983,8 @@ body.front .breadcrumb{ display:none !important;}
 	.collections ul li{ line-height: 3em;}
 	.collections > nav > div{ padding-right:0;padding-left:0;}
 	.collections .close { width:2rem;height:2rem;font-size:1.25em;right:1rem;}	
+	
+	.collections ul:first-child{ margin-left:7%;}
 }
 
 
