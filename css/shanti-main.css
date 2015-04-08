@@ -1964,7 +1964,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 499px) {
 
   
-	.menu-explore a span:nth-of-type(1){ display:none;}
+	/* .menu-explore a span:nth-of-type(1){ display:none;} */
 	.collections h4{ font-size:1em;}
 	.collections ul li{ line-height: 3em;}
 	.collections > nav > div{ padding-right:0;padding-left:0;}
