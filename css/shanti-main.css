@@ -1936,7 +1936,7 @@ body.front .breadcrumb{ display:none !important;}
 /*------------------------------*/
 
 .menu-toggle{ display:inline-block; border-collapse: separate;}
-
+.navbar-default .navbar-nav>li{ border-left:1px solid #ddd;}
 .navbar-header a .icon{ font-size:1.63em; position:relative; top:0.2rem;padding-left:10px;}
 
 .view-resources.btn-default{ display:none;}
@@ -1981,7 +1981,6 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 767px) {
   
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
-  .navbar-default .navbar-nav>li{ border-left:1px solid #ddd;}
 }
 
 
