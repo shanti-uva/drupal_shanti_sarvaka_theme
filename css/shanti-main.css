@@ -1938,6 +1938,7 @@ body.front .breadcrumb{ display:none !important;}
 .menu-toggle{ display:inline-block; border-collapse: separate;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd;}
 .navbar-header a .icon{ font-size:1.63em; position:relative; top:0.2rem;padding-left:10px;}
+.navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 
 .view-resources.btn-default{ display:none;}
 	
@@ -1946,7 +1947,6 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 399px) {
 
-	.menu-explore a,
 	#kmaps-search.extruder.right .flap,
 	#kmaps-search.extruder.right .flap .flapLabel,
 	#kmaps-search.extruder.right .flap.on-flap .flapLabel{ display:none !important;}
@@ -1957,14 +1957,12 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 499px) {
 
-  .navbar-default .menu-explore a{ display:inline-block !important;}
-	/* .menu-explore a span:nth-of-type(1){ display:none;} */
 	.collections h4{ font-size:1em;}
+	.collections ul{ margin-left:7%;}
 	.collections ul li{ line-height: 3em;}
 	.collections > nav > div{ padding-right:0;padding-left:0;}
-	.collections .close { width:2rem;height:2rem;font-size:1.25em;right:1rem;}	
+	.collections .close{ width:2rem;height:2rem;font-size:1.25em;right:1rem;}	
 	
-	.collections ul{ margin-left:7%;}
 }
 
 
@@ -2075,7 +2073,6 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 768px) {
 
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
-  .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 	
   .navbar-header a span.site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
   
