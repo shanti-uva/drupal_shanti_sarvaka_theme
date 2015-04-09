@@ -200,98 +200,6 @@
     }
   };
 
-  /**
-   * Responsive Menus with MbExtruder
-   */
-  Drupal.behaviors.shantiSarvakaRespMenu = {
-    attach: function (context, settings) {
-      $("#menu-main", context).buildMbExtruder({
-        positionFixed: false,
-        position: "right",
-        width: 280,
-        hidePanelsOnClose:false,
-        accordionPanels:false,
-        onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false });  },
-        onExtClose:function(){},
-        top: 0
-      });
-      $("#menu-collections", context).buildMbExtruder({
-          positionFixed: false,
-          position: "right",
-          width:280, // width is set in two places, here and the css
-          hidePanelsOnClose:false,
-          accordionPanels:false,
-          onExtOpen:function(){ $(".menu-main").metisMenu({ toggle: false }); },
-          onExtContentLoad:function(){  },
-          onExtClose:function(){},
-          top: 0
-      });
-      // this is for the responsive button
-      $(".shanti-searchtoggle", context).click(function () {
-          if($("#search-flyout.extruder").hasClass("isOpened")){
-            $("#search-flyout").closeMbExtruder();
-            $(".shanti-searchtoggle").removeClass("show-topmenu");
-          } else {
-            $("#menu-main").closeMbExtruder();
-            $("#menu-collections").closeMbExtruder();
-            $("#search-flyout").openMbExtruder();
-            $(".shanti-searchtoggle").addClass("show-topmenu");
-            $(".menu-maintoggle,.menu-exploretoggle").removeClass("show-topmenu");
-            // $("#menu-main").load("./menus-ajax.html");
-            // $(".menu-collections-wrap .accordion-toggle").addClass("collapsed");
-            // $(".menu-collections-wrap .panel-collapse").removeClass("in").css('height','0');
-            return false;
-          }
-      });
-      if(context == document) {
-	      $('body').on('click','.menu-maintoggle',function(){
-	          if($("#menu-main.extruder").hasClass("isOpened")){
-	            $("#menu-main").closeMbExtruder();
-	            $(".menu-maintoggle").removeClass("show-topmenu");
-	          } else {
-	            $("#menu-main").openMbExtruder();
-	            $("#search-flyout").closeMbExtruder();
-	            $("#menu-collections").closeMbExtruder();
-	            $(".menu-commons, .menu-preferences, .menu-collections").css('display','block');
-
-	            $(".menu-commons").addClass("active");
-
-	            $(".menu-collections").removeClass("active");
-	            $(".menu-collections > ul").removeClass("in");
-
-	            // $("#menu-main").load("/menus-ajax.html #menu-accordion");
-	            $(".menu-maintoggle").addClass("show-topmenu");
-	            $(".menu-exploretoggle, .shanti-searchtoggle").removeClass("show-topmenu");
-	            return false;
-	          }
-	      });
-	    }
-      $(".menu-exploretoggle", context).click(function () {
-          if($("#menu-collections.extruder").hasClass("isOpened")){
-
-            $("#menu-collections").closeMbExtruder();
-            $(".menu-exploretoggle").removeClass("show-topmenu");
-            // $(".bottom-trim").remove();
-          } else {
-            $(".menu-commons, .menu-preferences").css('display','none');
-            $(".menu-collections").css('display','block');
-
-            $(".menu-collections").addClass("active");
-            $(".menu-collections > ul").addClass("in");
-
-            $("#menu-collections").openMbExtruder();
-            $("#menu-main").closeMbExtruder();
-            $("#search-flyout").closeMbExtruder();
-
-            $(".menu-exploretoggle").addClass("show-topmenu");
-            $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");
-
-            // $(".menu-collections").find("ul").append("<li class='bottom-trim'></li>");
-            return false;
-          }
-      });
-    }
-  };
 
   /**
    * Popovers Init
@@ -343,22 +251,11 @@
     			desc.remove();
     		});
 
-	      // *** GLOBAL ** conditional IE message
-	      // show-hide the IE message for older browsers
-	      // this could be improved with conditional for - lte IE7 - so it does not self-hide
+	      // conditional IE message
 	      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
-	      $('div#sidebar-second').height($('div#sidebar-second').parent().height()); // set the sidebar heigth
-
-	      /* Change collapsible div icon from +/- depending on state
-	      $('div.panel-collapse').on('hide.bs.collapse', function () {
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
-	      });
-	      $('div.panel-collapse').on('show.bs.collapse', function () {
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
-	      });
-        */
+	      
+	      // set the sidebar heigth
+	      // $('div#sidebar-second').height($('div#sidebar-second').parent().height()); 
 
 	      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
 	      // Add class and event handler to bootstrap tabs for formatting

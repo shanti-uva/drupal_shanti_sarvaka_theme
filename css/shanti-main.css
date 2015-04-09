@@ -1937,11 +1937,6 @@ body.front .breadcrumb{ display:none !important;}
 
 .menu-toggle{ display:inline-block; border-collapse: separate;}
 
-.menu-maintoggle,
-.shanti-searchtoggle,
-.menu-collections,
-.shanti-searchtoggle{ display:none !important;}
-
 .navbar-header a .icon{ font-size:1.63em; position:relative; top:0.2rem;padding-left:10px;}
 
 .view-resources.btn-default{ display:none;}
@@ -1952,8 +1947,6 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 399px) {
 
 	.menu-explore a,
-	.menu-preferences .bottom-trim,
-	.menu-collections .bottom-trim,
 	#kmaps-search.extruder.right .flap,
 	#kmaps-search.extruder.right .flap .flapLabel,
 	#kmaps-search.extruder.right .flap.on-flap .flapLabel{ display:none !important;}
