@@ -161,17 +161,8 @@
 	          event.stopPropagation();
 	          $('#menu').toggle(50);
 	          $('.menu-toggle').toggleClass('show-topmenu');
-	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
 
-	      $('.menu-exploretoggle').click( function(e){
-		      event.stopPropagation();
-	          $('.collections').slideToggle(200);
-	      });
-	      $('.collections .close').click( function(e){
-	          event.stopPropagation();
-	          $('.collections').slideUp(200);
-	      });
 	      $(document).click( function(){
 	          $('.menu-toggle').removeClass('show-topmenu');
 	          $('#menu').hide(100);
@@ -552,11 +543,6 @@
 				hideControlOnEnd: true,
 			  breaks: [{screen:0, slides:1, pager:false},{screen:400, slides:2},{screen:550, slides:3},{screen:768, slides:4},{screen:1050, slides:5}]
       });
-
-      // --- hide breadcrumbs when carousel is present
-      //if($('#carousel-feature-slides').length ) {
-				//$('.breadcrumb').css('display','none');
-      //}
 
     }
   };
