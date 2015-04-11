@@ -87,7 +87,7 @@
           <!-- Begin Page Content -->
           <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
-		        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
+		        <button type="button" class="btn btn-default view-resources" data-toggle="offcanvas">
 	            <span class="icon"></span>
 	            <span class="header"><em>R</em>esources</span>
 	            <span class="badge">13489</span>
