@@ -1929,8 +1929,6 @@ body.front .breadcrumb{ display:none !important;}
 
 
 
-
-
 /*------------------------------*/
 /*----- BEGIN RESPONSIVE -------*/
 /*------------------------------*/
@@ -1941,15 +1939,21 @@ body.front .breadcrumb{ display:none !important;}
 .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 
 .view-resources.btn-default{ display:none;}
-	
+
+.collections ul{ margin-left:2%; }
+.collections ul li { width:50%;line-height: 4.5em; }
+.collections ul li a { font-size: 0.75em; line-height:2.5em;}
+
+
+
 
 /* minimum width below & maximum width break points above */
 
 @media screen and (max-width: 399px) {
 
-	#kmaps-search.extruder.right .flap,
+	/*#kmaps-search.extruder.right .flap,
 	#kmaps-search.extruder.right .flap .flapLabel,
-	#kmaps-search.extruder.right .flap.on-flap .flapLabel{ display:none !important;}
+	#kmaps-search.extruder.right .flap.on-flap .flapLabel{ display:none !important;}*/
 
 }
 
@@ -1971,8 +1975,8 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (max-width: 599px) {
 		
 	.collections ul{ margin-left:1.5rem;}
-	.collections ul li{ line-height: 3.62em; width:50%;}
-	.collections ul li a { font-size: 0.88em; }
+	.collections ul li{ line-height: 3.62em;}
+	.collections ul li a { font-size: 0.88em;}
 	
 	.navbar-header a .icon{ position:relative; top:1rem;}
 }
@@ -2010,9 +2014,6 @@ body.front .breadcrumb{ display:none !important;}
 	.row-offcanvas-left .sidebar-offcanvas { left: -17.1rem; /* 6 columns */}
 	.row-offcanvas-left.active { left: 18.6rem; /* 6 columns */ }
 	.sidebar-offcanvas { position: absolute; top:0; width:18.6rem; /* 6 columns */}
-	
-	/* .content-section.equal-height > .tab-content{ padding-top:2.5rem;padding-bottom: 5rem;}	*/	
-	/*.content-section.equal-height{ padding-left:10px;} */
 	
 	.content-resources { width:18.5rem;}
 	.content-resources ul.nav-pills li{ font-size: 1em; line-height:1em; height: 2.75em;}
@@ -2065,9 +2066,9 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 500px) {
 
-	 .collections ul li{ width:40%;margin-left:10%;}
 	 .navbar-header a .icon,
    .navbar-header a span.site-slogan{ padding-left:12px;}
+	 .collections ul li{ width:40%;margin-left:10%;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
@@ -2075,49 +2076,41 @@ body.front .breadcrumb{ display:none !important;}
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
   
-  .collections ul{ margin-left:2%; }
-	.collections ul li { width:20%;line-height: 4.5em; }
-  .collections ul li a { font-size: 0.75em; line-height:2.5em;}
-	.collections ul li a.disabled, .collections ul li a.disabled:hover, 
-	.collections ul li a.disabled:focus, 
-	.collections ul li a.disabled .icon, 
+	.collections ul li { width:20%; }
+  .collections ul li a.disabled, 
+	.collections ul li a.disabled:hover,
+	.collections ul li a.disabled:active,
+	.collections ul li a.disabled .icon,  
 	.collections ul li a.disabled:hover .icon { color: #707070; cursor: default;}
 }
 
 
 @media screen and (min-width: 768px) {
+	 
+	html body.admin-menu{ margin-top:2.8rem !important;} /* adjust height of admin bar */
 
   .navbar-header a span.site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
-
 	.navbar-default .menu-explore{ display:none; }
 	.menu-toggle{ display:inline-block;}
-
-   html body.admin-menu{ margin-top:2.8rem !important;} /* adjust height of admin bar */
 	  
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
-  .collections ul{ margin-left:0;}
-  .collections ul li{ width:15%;margin-left:8%;}
+  .collections ul li{ width:15%; margin-left:8%;}
 }
 
 @media screen and (min-width: 850px) {
 	
-  .collections ul{ margin-left:2%;}
-
 }
 
 
 @media screen and (min-width: 992px) {
   
   .collections h4 { font-size:1.12em;}
+	.collections ul{ margin-left:-5%;}
+	.collections ul li{ width:12%; margin-left: 7%;}
 	.collections ul li a { font-size: 0.75em; line-height:2.25em;}
 	.collections ul li a.disabled, 
 	.collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
-	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon, .collections ul li a.disabled:active .icon { color: #707070; cursor: default;}
-
-
-	.collections ul{ margin-left:-5%;}
-	.collections ul li{ width:12%; margin-left: 7%;}
-	 	
+	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon, .collections ul li a.disabled:active .icon { color: #707070; cursor: default;}	 	
 }
 
 
