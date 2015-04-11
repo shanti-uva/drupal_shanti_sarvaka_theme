@@ -1957,6 +1957,8 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 499px) {
 
+        .menu-explore a span{ display:none;}
+
 	.collections h4{ font-size:1em;}
 	.collections ul{ margin-left:7%;}
 	.collections ul li{ line-height: 3em;}
@@ -1977,7 +1979,22 @@ body.front .breadcrumb{ display:none !important;}
 
 
 @media screen and (max-width: 767px) {
-  
+ 
+  .menu-icon{ }
+	.menu-icon a,
+	.menu-icon .shanticon{ padding:0; height:40px; width:50px;}
+	.menu-icon .shanticon{ font-size:1.75em; line-height:1.75em;}
+	.menu-icon a,
+	.menu-icon .shanticon,
+	.menu-explore a,
+	.navbar.navbar-default,
+	.navbar-default .navbar-nav>li>a{ height:40px; min-height: 40px;}
+
+	.navbar-default .menu-explore a{ font-size:0.88em; line-height:0.75em; height:40px; padding:10px 20px 0 16px; }
+   
+    
+     
+       
 	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
 }
 
@@ -2014,9 +2031,6 @@ body.front .breadcrumb{ display:none !important;}
 		.has-tabs .view-resources.btn-default { position:relative; top: -1.5rem;}		
 	/*.view-resources.btn-default em{ font-size:120%;font-style:normal;}*/
 	
-	.page-places .view-resources.btn-default,
-	.page-subjects .view-resources.btn-default{ display:inline-block !important;}
-	
 	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.68rem; position:relative; width:2rem; position: relative;top: 0rem;left:-0.3rem;}
 	.view-resources.btn-default .icon::before { font-family:'shanticon'; content: "\e63e";}
 	.view-resources.btn-default:hover .icon::before,
@@ -2035,6 +2049,10 @@ body.front .breadcrumb{ display:none !important;}
 	.view-resources.btn-default > .badge{ display:none;}	
 	/* .view-resources.btn-default .badge { border:1px solid #ddd; font-size: .62em; padding:0.2rem 0.5rem 0; line-height:1; position:relative; top:-0.4rem; background:transparent; font-weight:normal; } */
 
+  /* custom set for resource column */
+	.page-places .view-resources.btn-default,
+	.page-subjects .view-resources.btn-default{ display:inline-block !important;}
+
 }
 
 
@@ -2051,7 +2069,7 @@ body.front .breadcrumb{ display:none !important;}
 @media screen and (min-width: 500px) {
 
 	 .collections ul li{ width:40%;margin-left:10%;}
-	 .navbar-header a .icon{ padding-left:12px;}
+	 .navbar-header a .icon,
    .navbar-header a span.site-slogan{ padding-left:12px;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
@@ -2071,6 +2089,13 @@ body.front .breadcrumb{ display:none !important;}
 
 
 @media screen and (min-width: 768px) {
+
+
+
+	.navbar-default .menu-explore{ display:none !important; }
+	.menu-toggle{ display:inline-block; /* -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); */ border-collapse: separate;}
+
+
 
    html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
 	

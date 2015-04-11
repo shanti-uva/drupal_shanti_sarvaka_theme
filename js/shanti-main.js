@@ -161,7 +161,15 @@
 	          event.stopPropagation();
 	          $('#menu').toggle(50);
 	          $('.menu-toggle').toggleClass('show-topmenu');
+	          $('.collections').slideUp(200);
+	          $('.menu-exploretoggle').removeClass('show-topmenu');
 	       });
+
+	      // --- close the menu on outside click except button
+	      // $('.menu-exploretoggle').click( function(event){
+	      //     event.stopPropagation();
+	      //     $('.collections').slideUp(200);
+	      // });
 
 	      $(document).click( function(){
 	          $('.menu-toggle').removeClass('show-topmenu');
@@ -191,6 +199,36 @@
     }
   };
 
+  /**
+   * Responsive Menus with MbExtruder
+   */
+  Drupal.behaviors.shantiSarvakaRespMenu = {
+    attach: function (context, settings) {
+      $(".menu-exploretoggle", context).click(function () {
+          if($("#menu-collections.extruder").hasClass("isOpened")){
+
+            $("#menu-collections").closeMbExtruder();
+            $(".menu-exploretoggle").removeClass("show-topmenu");
+            // $(".bottom-trim").remove();
+          } else {
+            $(".menu-commons, .menu-preferences").css('display','none');
+            $(".menu-collections").css('display','block');
+
+            $(".menu-collections").addClass("active");
+            $(".menu-collections > ul").addClass("in");
+
+            $("#menu-collections").openMbExtruder();
+            $("#menu-main").closeMbExtruder();
+            $("#search-flyout").closeMbExtruder();
+
+            $(".menu-exploretoggle").addClass("show-topmenu");
+            $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");
+
+            return false;
+          }
+      });
+    }
+  };
 
   /**
    * Popovers Init
@@ -247,6 +285,25 @@
 	      
 	      // set the sidebar heigth
 	      // $('div#sidebar-second').height($('div#sidebar-second').parent().height()); 
+
+
+
+
+
+
+	      /* ACCORDION Change collapsible div icon from +/- depending on state
+	      $('div.panel-collapse').on('hide.bs.collapse', function () {
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
+	      });
+	      $('div.panel-collapse').on('show.bs.collapse', function () {
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
+	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
+	      });
+        */
+
+
+
 
 	      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
 	      // Add class and event handler to bootstrap tabs for formatting
