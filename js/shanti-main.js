@@ -159,7 +159,7 @@
 	      // --- close the menu on outside click except button
 	      $('.menu-toggle').click( function(event){
 	          event.stopPropagation();
-	          $('#menu').toggle(50);
+	          $('#menu').slideToggle(200);
 	          $('.menu-toggle').toggleClass('show-topmenu');
 	          $('.collections').slideUp(200);
 	          $('.menu-exploretoggle').removeClass('show-topmenu');
