@@ -1,5 +1,5 @@
 <div class="wrap-all">
-   <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#kmaps-search">Skip to search</a></span>
+   <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#search-flyout">Skip to search</a></span>
     <!-- Header Region -->
    <header class="header-banner">
     <div class="navbar navbar-default">
@@ -89,9 +89,6 @@
 	        
 		        <button type="button" class="btn btn-default view-resources" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>
-	            <span class="header"><em>R</em>esources</span>
-	            <span class="badge">13489</span>
-	            <!-- <span class="icon"></span> -->
 	          </button>
           
           	<!-- Message Area -->
