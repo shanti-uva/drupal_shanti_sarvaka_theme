@@ -1965,7 +1965,6 @@ body.front .breadcrumb{ display:none !important;}
 	        /*.menu-explore a span{ display:none;}*/
 
 	.collections h4{ font-size:1em;}
-	.collections ul{ margin-left:7%;}
 	.collections ul li{ line-height: 3em;}
 	.collections > nav > div{ padding-right:0;padding-left:0;}
 	.collections .close{ width:2rem;height:2rem;font-size:1.25em;right:1rem;}	
@@ -1975,9 +1974,8 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 599px) {
 		
-	.collections ul{ margin-left:1.5rem;}
-	.collections ul li{ line-height: 3.62em;}
-	.collections ul li a { font-size: 0.88em;}
+	.collections ul li{ line-height: 3em;}
+	.collections ul li a { font-size: 0.82em;}
 	
 	.navbar-header a .icon{ position:relative; top:1rem;}
 }
