@@ -206,24 +206,13 @@
     attach: function (context, settings) {
       $(".menu-exploretoggle", context).click(function () {
           if($("#menu-collections.extruder").hasClass("isOpened")){
-
-            $("#menu-collections").closeMbExtruder();
             $(".menu-exploretoggle").removeClass("show-topmenu");
-            // $(".bottom-trim").remove();
           } else {
-            $(".menu-commons, .menu-preferences").css('display','none');
             $(".menu-collections").css('display','block');
-
             $(".menu-collections").addClass("active");
             $(".menu-collections > ul").addClass("in");
-
-            $("#menu-collections").openMbExtruder();
-            $("#menu-main").closeMbExtruder();
             $("#search-flyout").closeMbExtruder();
-
             $(".menu-exploretoggle").addClass("show-topmenu");
-            $(".menu-maintoggle,.shanti-searchtoggle").removeClass("show-topmenu");
-
             return false;
           }
       });
