@@ -1957,7 +1957,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 499px) {
 
-        .menu-explore a span{ display:none;}
+	        /*.menu-explore a span{ display:none;}*/
 
 	.collections h4{ font-size:1em;}
 	.collections ul{ margin-left:7%;}
@@ -1980,15 +1980,15 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 767px) {
  
-  .menu-icon{ }
-	.menu-icon a,
-	.menu-icon .shanticon{ padding:0; height:40px; width:50px;}
-	.menu-icon .shanticon{ font-size:1.75em; line-height:1.75em;}
-	.menu-icon a,
-	.menu-icon .shanticon,
-	.menu-explore a,
-	.navbar.navbar-default,
-	.navbar-default .navbar-nav>li>a{ height:40px; min-height: 40px;}
+			  /*
+				.menu-icon a,
+				.menu-icon .shanticon{ padding:0; height:40px; width:50px;}
+				.menu-icon .shanticon{ font-size:1.75em; line-height:1.75em;}
+				.menu-icon a,
+				.menu-icon .shanticon,
+				.menu-explore a,
+				.navbar.navbar-default,
+				.navbar-default .navbar-nav>li>a{ height:40px; min-height: 40px;} */
 
 	.navbar-default .menu-explore a{ font-size:0.88em; line-height:0.75em; height:40px; padding:10px 20px 0 16px; }
    
@@ -2090,17 +2090,13 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (min-width: 768px) {
 
-
-
-	.navbar-default .menu-explore{ display:none !important; }
-	.menu-toggle{ display:inline-block; /* -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.1); */ border-collapse: separate;}
-
-
-
-   html body.admin-menu{ margin-top:2.8rem !important;} /* accounts for height of admin bar */
-	
   .navbar-header a span.site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
-  
+
+	.navbar-default .menu-explore{ display:none; }
+	.menu-toggle{ display:inline-block;}
+
+   html body.admin-menu{ margin-top:2.8rem !important;} /* adjust height of admin bar */
+	  
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
   .collections ul{ margin-left:0;}
   .collections ul li{ width:15%;margin-left:8%;}
