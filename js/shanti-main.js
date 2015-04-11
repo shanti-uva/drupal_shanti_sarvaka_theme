@@ -166,10 +166,10 @@
 	       });
 
 	      // --- close the menu on outside click except button
-	      // $('.menu-exploretoggle').click( function(event){
-	      //     event.stopPropagation();
-	      //     $('.collections').slideUp(200);
-	      // });
+	       $('.menu-exploretoggle').click( function(event){
+	           event.stopPropagation();
+	           $('.collections').slideToggle(200);
+	       });
 
 	      $(document).click( function(){
 	          $('.menu-toggle').removeClass('show-topmenu');
