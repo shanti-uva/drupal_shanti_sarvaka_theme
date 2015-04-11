@@ -2048,8 +2048,8 @@ body.front .breadcrumb{ display:none !important;}
 	/* .view-resources.btn-default .badge { border:1px solid #ddd; font-size: .62em; padding:0.2rem 0.5rem 0; line-height:1; position:relative; top:-0.4rem; background:transparent; font-weight:normal; } */
 
   /* custom set for resource column */
-	.page-places .view-resources.btn-default:nth-of-type(1),
-	.page-subjects .view-resources.btn-default:nth-of-type(1){ display:inline-block !important;}
+	.page-places .view-resources.btn-default:nth-child(1),
+	.page-subjects .view-resources.btn-default:nth-child(1){ display:inline-block !important;}
 
 }
 
