@@ -1913,19 +1913,19 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 
 
+
+
 html body{ margin-top: 0 !important;}
 html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of admin bar */
-
-				
-/* homepage hide the sidecolumn (resources) button */ 
-body.front .view-resources.btn-default{ display:none !important;}
-body.front .breadcrumb{ display:none !important;}	
-	
 
 /*--- toggle button for resource column - tetsting dev 
 .mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
 ---*/
 .view-resources.btn-default.noshow { display:none !important;}
+/* homepage hide the sidecolumn (resources) button */ 
+body.front .view-resources.btn-default{ display:none !important;}
+
+body.front .breadcrumb{ display:none !important;}				
 
 
 
@@ -1984,7 +1984,7 @@ body.front .breadcrumb{ display:none !important;}
 
 @media screen and (max-width: 767px) {
 
-	.titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; }
+				/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
  
 			  /*
 				.menu-icon a,
@@ -2027,7 +2027,7 @@ body.front .breadcrumb{ display:none !important;}
 	.view-resources.btn-default:hover,
 	.view-resources.btn-default:active { background: #000; color:#fff;}
 		.has-tabs .view-resources.btn-default { position:relative; top: -1.5rem;}		
-	/*.view-resources.btn-default em{ font-size:120%;font-style:normal;}*/
+				/*.view-resources.btn-default em{ font-size:120%;font-style:normal;}*/
 	
 	.view-resources.btn-default .icon { background:transparent; line-height:1; float:right; font-size:1.68rem; position:relative; width:2rem; position: relative;top: 0rem;left:-0.3rem;}
 	.view-resources.btn-default .icon::before { font-family:'shanticon'; content: "\e63e";}
