@@ -823,12 +823,22 @@ background:transparent;
 /*--- END Table ---*/
 
 
+
+/*---- temp overrides ----*/
+.input-section .search-group{ height:54px;}
+.advanced-view{ padding: 0 0 1rem 0.7rem;}
+.input-section .toggle-link.advanced-link{ display:none;}
+.advanced-view .form-group:nth-of-type(1){ border-top: none;}
+
+
+
+
 /*--------------------------------*/
 /*--- END SEARCH PANEL -----------*/
 /*--------------------------------*/
 
-/** Ajax Throbber 
 
+/*
 .ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
 	display: inline-block;
 	white-space: nowrap;
