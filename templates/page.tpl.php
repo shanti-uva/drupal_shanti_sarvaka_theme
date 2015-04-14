@@ -1,13 +1,11 @@
 <div class="wrap-all">
-   <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#kmaps-search">Skip to search</a></span>
+   <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#search-flyout">Skip to search</a></span>
     <!-- Header Region -->
    <header class="header-banner">
     <div class="navbar navbar-default">
 
 	      <nav class="navbar-buttons" role="navigation">
-	        <span class="menu-icon shanti-searchtoggle"><a href="#"><span class="sr-only">Search</span><span class='icon shanticon-search'></span></a></span><!-- mobile < 400 : search -->
 	        <span class="menu-icon menu-toggle"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
-	        <span class="menu-icon menu-maintoggle"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- mobile < 768 : main-menu -->
 	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
 	      </nav>
 
@@ -89,11 +87,8 @@
           <!-- Begin Page Content -->
           <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
-		        <button type="button" class="btn btn-default visible-sm view-resources" data-toggle="offcanvas">
+		        <button type="button" class="btn btn-default view-resources" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>
-	            <span class="header"><em>R</em>esources</span>
-	            <span class="badge">13489</span>
-	            <!-- <span class="icon"></span> -->
 	          </button>
           
           	<!-- Message Area -->
@@ -132,14 +127,12 @@
 
 
   <!-- LOAD menus -->
-  <section id="menu-main" class="menu-main-mobile { url:'<?php if(!empty($base_theme_path)) { print $base_theme_path; } else { print $theme_path; } ?>js/inc/menus/menu-ajax.php'} menu-accordion"> </section>
-  <section id="menu-collections" class="menu-collections-mobile { url:'<?php if(!empty($base_theme_path)) { print $base_theme_path; } else { print $theme_path; } ?>js/inc/menus/menu-ajax.php'} menu-accordion"> </section>
-
   <section id="menu" class="menu-main-desk" style="display:none;">
     <nav id="menu-drill" role="navigation">
      <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->
+  
 </div> <!-- End wrap-all -->
 
 <!-- Footer -->
