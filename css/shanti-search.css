@@ -824,12 +824,12 @@ background:transparent;
 
 
 
-/*---- temp overrides ----*/
+/*---- temp overrides 
 .input-section .search-group{ height:54px;}
 .advanced-view{ padding: 0 0 1rem 0.7rem;display:block;}
 .input-section .toggle-link.advanced-link{ display:none;}
 .advanced-view .form-group:nth-of-type(1){ border-top: none;}
-
+----*/
 
 
 
