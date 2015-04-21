@@ -1,7 +1,7 @@
 <?php
 /**
  * Implements HOOK_form_system_theme_settings_alter
- * Adds base color field to theme settings
+ * 		Default values in shanti_sarvaka.info > theme settings where applicable
  */
 function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
   global $base_path;
@@ -45,14 +45,6 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#default_value' => theme_get_setting('shanti_sarvaka_breadcrumb_intro'),
     '#description'   => t("The text to display in front of the breadcrumbs"),
   );
-	/** Set in SubTheme CSS
-  $form['shanti_sarvaka_base_color'] = array(
-    '#type'          => 'textfield',
-    '#title'         => t('Base Color'),
-    '#default_value' => theme_get_setting('shanti_sarvaka_base_color'),
-    '#description'   => t("The base color for the banner of this site"),
-  );
-	 **/
   $form['shanti_sarvaka_icon_class'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Icon Class Name for Banner'),
@@ -66,11 +58,10 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#default_value' => theme_get_setting('shanti_sarvaka_site_body_tag'),
     '#description'   => t("A unique class identifying the site to add to the body tag"),
   );
-  /** old method
-  $form['shanti_sarvaka_icon_code'] = array(
-    '#type'          => 'textfield',
-    '#title'         => t('Icon Code'),
-    '#default_value' => theme_get_setting('shanti_sarvaka_icon_code'),
-    '#description'   => t("Icon for this site"),
-  );*/
+  $form['shanti_sarvaka_show_login_link'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Show Login Link in Main Menu'),
+    '#default_value' => theme_get_setting('shanti_sarvaka_show_login_link'),
+    '#description'   => t('Uncheck this box to prevent the login link from appearing in the main menu'),
+  );
 } 
