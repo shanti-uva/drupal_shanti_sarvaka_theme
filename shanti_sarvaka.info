@@ -82,5 +82,5 @@ scripts[] = js/shanti-search.js
 ;; Theme Settings
 ;;;;;;;;;;;;;;;;;;;;;
 
-;settings[shanti_sarvaka_base_color] = '#dc3c47'
 settings[shanti_sarvaka_icon_class] = 'av'
+settings[shanti_sarvaka_show_login_link] = 1

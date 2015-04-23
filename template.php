@@ -547,22 +547,26 @@ function shanti_sarvaka_create_user_menu($um) {
 
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
-    // Determine whether login is via password or shibboleth and create login link accordingly
-    $loginlink = 'user';
-		$lisuff = '';
-    if(module_exists('shib_auth')) {
-      $loginlink = shib_auth_generate_login_url();
-			$lisuff = t('via Netbadge');
-    }
-    // Add login link to bottom of links array
-    $um[] = array(
-      'link' => array(
-        'title' => t('Log in @suffix', array('@suffix' => $lisuff)),
-        'href' => $loginlink,
-      ),
-      'below' => array(),
-    );
-
+		// If show login link theme setting is checked then...
+		if(theme_get_setting('shanti_sarvaka_show_login_link')) {
+	    // Determine whether login is via password or shibboleth and create login link accordingly
+	    $loginlink = 'user';
+			$lisuff = '';
+	    if(module_exists('shib_auth')) {
+	      $loginlink = shib_auth_generate_login_url();
+				$lisuff = t('via Netbadge');
+	    }
+			
+	    // Add login link to bottom of links array
+	    $um[] = array(
+	      'link' => array(
+	        'title' => t('Log in @suffix', array('@suffix' => $lisuff)),
+	        'href' => $loginlink,
+	      ),
+	      'below' => array(),
+	    );
+		}
+		
   // if logged in show account submenu at top of list
   } else {
   	$uname = '';
