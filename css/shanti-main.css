@@ -568,7 +568,7 @@ li.pager-current.widget > form div,
 li.pager-current.widget > form input{ display: inline;}
 li.pager-current.widget > form input.form-control { width: 100px;}
 
-#photo-pagination{ float: left; margin-right: 10px; margin-top: 10px;}
+#photo-pagination{ float: right; margin-right: 10px; margin-top: 10px;}
 #photo-pagination li{ display: inline; padding:0; font-size:85%;}
 #photo-pagination li input.page-input{ width: 45px;text-align: center;height: 22px;}
 #photo-pagination>li>a{ color: #DC3C47;}
