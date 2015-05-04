@@ -33,58 +33,10 @@ fieldset.form-wrapper{margin-bottom:1em;}
 fieldset.form-wrapper legend{border-bottom-width:2px;color:#444;margin-top:1.25em;margin-bottom:8px !important;}
 fieldset.form-wrapper legend .fieldset-legend{font-size:100%;margin-top:1em;}
 
-/* REVIEW THIS ---
-input[type='radio'] { filter:alpha(opacity=0); opacity:0;float: left;width: 18px;}
-input[type='radio'] + label,
-label.option div,
-label.option div.hover { margin-left: -15px;clear: none;padding: 5px 0 4px 15px;cursor: pointer;}
-input[type='radio']:checked + label,
-label.option div.checked { }
-input[type='text'] { -webkit-box-shadow: inset 0 2px 6px -4px rgba(0,0,0,1);box-shadow: inset 0 1px 7px -4px rgba(0,0,0,1);border-collapse:separate;font-family:'museo-sans-500',helvetica,arial,sans-serif; font-weight:normal;}
-label.option div div { background: none;}
-label { font-family:'museo-sans-500',helvetica,arial,sans-serif; font-weight:normal;}
-option:hover,
-option:checked,
-option:checked:hover,
-select:focus option:checked:hover { background: #008a96;color: #fff;}
------------------*/
-
-
-/*-------------------------*/
-/* ------ BEGIN from kmaps */
-
 article ul,
 article ul ul,
 article ul ul ul,
 article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
-
-/* main layout for video page */
-.av-main-video-section,
-.av-main-transcript-section{ padding-right:0;}
-
-/* Overview page styles in KMaps */
-.openlayermap{ margin-top:1rem !important; margin-bottom:1rem;}
-.openlayermap #sidebar_wrapper{ position:absolute;z-index:100;display:none;}
-#controlPanelWrapper{ float:left;width:100%;left:0;}
-div.main-overview-image{ margin-bottom:1.5rem;}
-
-div.olControlCustomToggle.olControlNoSelect{ width:160px !important;} /* openLayerMap text */
-div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !important;font-size:0.75em; white-space:nowrap;}
-
-.modal img{margin-bottom:1rem;}
-.modal-header{ min-height:4rem;}
-.modal-header button.close{ color:#777; font-size:3.5em !important; position:relative; top:-1rem;}
-
-/* --- gmaps-buttons is example of class set on div wrapper ---*/
-.btn-group-gmaps{ display:inline-block;	position:absolute;bottom:60px;left:80px;-moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);}
-.btn-group-gmaps.btn-group > .btn.btn-default{ border:none;font-size: 0.75em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.btn-group-gmaps .btn.btn-default.active{ color:#fff; background:#333; }
-
-.google-maps {position: relative;padding-bottom: 75%; margin-top:1.5rem; margin-bottom:1.5rem; /* aspect ratio fix - temp */ height: 0;overflow: hidden;}
-.google-maps iframe {position: absolute;top: 0;left: 0;width: 100% !important;height: 100% !important;}
-/*------ END from kmaps */
-/*----------------------*/
-
 
 .wrap-all{ position:relative;}
 .main-wrapper{ background:#eee; position:relative; min-height:60em;}
@@ -94,7 +46,6 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .max-col-widths .content-section.equal-height .tab-content{ padding-top:0;}
 
 .content-section .container{ width:auto;} /* correct for changes in BS */
-
 
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
@@ -1927,6 +1878,49 @@ html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of a
 body.front .view-resources.btn-default{ display:none !important;}
 
 body.front .breadcrumb{ display:none !important;}				
+
+
+
+
+
+
+
+/*-------------------------*/
+/* ------ BEGIN from kmaps */
+/* main layout for video page */
+.av-main-video-section,
+.av-main-transcript-section{ padding-right:0;}
+
+/* Overview page styles in KMaps */
+.openlayermap{ margin-top:1rem !important; margin-bottom:1rem;}
+.openlayermap #sidebar_wrapper{ position:absolute;z-index:100;display:none;}
+#controlPanelWrapper{ float:left;width:100%;left:0;}
+div.main-overview-image{ margin-bottom:1.5rem;}
+
+div.olControlCustomToggle.olControlNoSelect{ width:160px !important;} /* openLayerMap text */
+div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !important;font-size:0.75em; white-space:nowrap;}
+
+.modal img{margin-bottom:1rem;}
+.modal-header{ min-height:5.5rem;}
+.modal-header button.close{ color:#777; font-size:4em !important; position:relative; top:-1rem;}
+
+/* --- gmaps-buttons is example of class set on div wrapper ---*/
+.map-renditions { position: relative;}
+
+.btn-group-gmaps{ display:inline-block;	position:absolute;bottom:30px;left:80px;-moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);}
+.btn-group-gmaps.btn-group > .btn.btn-default{ color: #000; background:#fff; border:none; font-size: 0.75em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.btn-group-gmaps.btn-group > .btn.btn-default.active{ color:#fff; background:#333; }
+.btn-group-gmaps.btn-group > .btn.btn-default.active::before{ }
+
+.google-maps {position: relative;padding-bottom: 75%; margin-top:1.5rem; margin-bottom:1.5rem; /* aspect ratio fix - temp */ height: 0;overflow: hidden;}
+.google-maps iframe {position: absolute;top: 0;left: 0;width: 100% !important;height: 100% !important;}
+/*------ END from kmaps */
+/*----------------------*/
+
+
+
+
+
 
 
 
