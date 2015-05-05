@@ -541,12 +541,9 @@ background:transparent;
 .view-section .fancytree-node.fancytree-active,
 .view-section .fancytree-node.fancytree-selected,
 .view-section .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active{ background:white !important; border-color:#eee !important;}
-/*
+
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
-*/
-.view-section .ui-fancytree li .ajax-progress{ position:absolute; top:-0.5rem; right:0.1rem; z-index:9999999; background:#fff; padding-right:1rem;}
-
 
 .view-section .fancytree-title a{ color:#444;}
 .view-section .fancytree-title a:hover,
