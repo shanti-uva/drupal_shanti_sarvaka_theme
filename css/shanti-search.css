@@ -866,9 +866,10 @@ background:transparent;
 
 
 /*--- Temporary styles to hide advance search options ---*/
-.input-section .search-group{}
+.input-section .search-group{ }
 .input-section .input-group input.form-control{ margin-top:7px;}
 /* .input-section .toggle-link.advanced-link{ display:none !important;} */
 .advanced-view .form-group:first-child{ border-top:none;}
-
+.input-section .input-group .input-group-btn{ top:8px !important;}
+.advanced-view{ display:block !important;}
 
