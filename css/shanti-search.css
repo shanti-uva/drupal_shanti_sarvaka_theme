@@ -872,4 +872,4 @@ background:transparent;
 .advanced-view .form-group:first-child{ border-top:none;}
 .input-section .input-group .input-group-btn{ top:8px !important;}
 .advanced-view{ display:block !important;}
-
+.input-section .alert{ position:relative; top:7px;}
