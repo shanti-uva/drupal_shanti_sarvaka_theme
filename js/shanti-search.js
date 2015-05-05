@@ -94,7 +94,9 @@ Drupal.behaviors.sarvakaMbextruder = {
 /* open advanced search options by default */
 Drupal.behaviors.sarvakaOpenAdvancedViewDefault = {
   attach: function (context, settings) {
-     $(".advanced-view").addClass("show-options");  // set display:block; on search options	
+	  if(context == document) {
+       $(".advanced-view").addClass("show-options");  // set display:block; on search options	
+    }
   }	
 };
 
