@@ -1,14 +1,5 @@
 (function ($) {
-/*
- *  Functions for the Search Flyout
- */
 
-/* open advanced search options by default */
-Drupal.behaviors.sarvakaOpenAdvancedViewDefault = {
-  attach: function (context, settings) {
-    // $(".advanced-view").addClass("show-options");  // set display:block; on search options	
-  }	
-};
 
 /*
  * MbExtruder Init
@@ -95,6 +86,17 @@ Drupal.behaviors.sarvakaMbextruder = {
 	    }
     }
   };
+  
+/*
+ *  Functions for the Search Flyout
+ */
+
+/* open advanced search options by default */
+Drupal.behaviors.sarvakaOpenAdvancedViewDefault = {
+  attach: function (context, settings) {
+     $(".advanced-view").addClass("show-options");  // set display:block; on search options	
+  }	
+};
 
 
 })(jQuery);
