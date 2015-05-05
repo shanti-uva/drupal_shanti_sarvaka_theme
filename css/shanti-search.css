@@ -1,6 +1,13 @@
 /*----------------------------------------------*/
 /*--- START / Sliding Panel ---*/
 /*----------------------------------------------*/
+
+/*--- Temporary styles to hide advance search options ---*/
+.input-section .search-group{ height:44px;}
+.input-section .input-group input.form-control{ margin-top:7px;}
+.advanced-link{ display:none;}
+.advanced-view .form-group:first-child{ border-top:none;}
+
 /*--- clear default extruder styles -----*/
 .extruder, .extruder.right,.extruder .extruder-content, .extruder.right .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover{ overflow:visible; background-image:none; background:transparent;}
 .extruder.open .extruder-content, .extruder.right.open .extruder-content,.extruder.right .flap,.extruder .voice,.extruder.right .text,.optionsPanel .panelVoice a{ -webkit-box-shadow:none;box-shadow:none; text-transform:none;}
