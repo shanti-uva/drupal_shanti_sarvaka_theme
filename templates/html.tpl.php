@@ -52,8 +52,8 @@
 <head> <!-- head had attribute: profile="<?php print $grddl_profile; ?>" -->
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php print $modernizer; ?>
   <?php print $styles; ?>
+  <?php print $modernizer; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <!--[if lte IE 8]><p class="progressive">It appears you are using an older browser. Please consider a upgrading to a modern version of your browser to best appreciate this website. Thank you -</p><![endif]-->

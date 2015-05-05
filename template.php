@@ -78,9 +78,9 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 
 	//_shanti_sarvaka_add_metatags(); // Adds favicon meta tags NOT needed automatically picked up by device
 	// Adding Bootstrap CDN Resoures
-	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
-	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
-	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
+	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
+	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
 	//$path = drupal_get_path('theme','shanti_sarvaka') . '/js/inc/other/modernizr-2.6.2.min.js';
 	//drupal_add_js($path);
 	//drupal_add_js(drupal_get_path('theme','shanti_sarvaka') . '/js/inc/other/modernizr-2.6.2.min.js',  array('type' => 'file', 'scope' => 'header', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -99));
@@ -763,6 +763,7 @@ function shanti_sarvaka_info_popover($variables) {
  *     non-collapsible fieldsets get formatted per core
  **/
 function shanti_sarvaka_fieldset($variables) {
+	//dpm($variables, 'vars in fieldset');
   $element = $variables['element'];
 	//dpm($element, 'element in fieldset preprocess');
 
@@ -774,9 +775,9 @@ function shanti_sarvaka_fieldset($variables) {
   }
 
   // Set icon and status classes
-  $openclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " in";
-  $icon = (isset($element['#collapsed']) && $element['#collapsed']) ? "+" : "-";
-  $iconclass = (isset($element['#collapsed']) && $element['#collapsed']) ? "" : " open";
+  $openclass = (empty($element['#collapsed'])) ? "" : " in";
+  //$icon = (isset($element['#collapsed']) && $element['#collapsed']) ? "+" : "-";
+  $iconclass = (empty($element['#collapsed'])) ? "glyphicon-minus" : "glyphicon-plus";
 
   // Set attribute values
   $id = (isset($element['#id'])) ? $element['#id'] : uniqid('mb');
@@ -793,14 +794,14 @@ function shanti_sarvaka_fieldset($variables) {
   $element['#attributes']['class'] = array_merge($element['#attributes']['class'], array('field-accordion', 'panel', 'panel-default'));
   $element['#attributes']['id'] = 'accordion' . $id;
   $isin = '';
-	if($key = array_search("in", $element['#attributes']['class'])) {
+	if(!$element['#collapsed'] || $key = array_search("in", $element['#attributes']['class'])) {
 		$isin = ' in';
 	}
   // Create markup
   $output = '<div ' . drupal_attributes($element['#attributes']) . '>
     <div class="panel-heading">
       <h6>
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#av-details" href="#' . $id . '"><span class="glyphicon glyphicon-plus"></span>'
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#av-details" href="#' . $id . '"><span class="glyphicon ' . $iconclass . '"></span>'
             . $element['#title'] .
         '</a>
       </h6>
