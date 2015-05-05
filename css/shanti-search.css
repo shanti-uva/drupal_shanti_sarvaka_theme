@@ -545,7 +545,7 @@ background:transparent;
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
 */
-.view-section .ui-fancytree li .ajax-progress{ position:absolute; top:-1.8rem; right:0.1rem; background:#fff; padding-right:1rem;}
+.view-section .ui-fancytree li .ajax-progress{ position:absolute; top:-1.8rem; right:0.1rem; z-index:999999; background:#fff; padding-right:1rem;}
 
 
 .view-section .fancytree-title a{ color:#444;}
