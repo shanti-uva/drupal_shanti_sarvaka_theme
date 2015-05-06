@@ -1914,7 +1914,9 @@ p.modal-title{ font-size:110%;}
 .btn-group-gmaps{ display:inline-block;	position:absolute;bottom:30px;left:80px;-moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);}
 .btn-group-gmaps.btn-group > .btn.btn-default{ color: #000; background:#fff; border:none; font-size: 0.75em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .btn-group-gmaps.btn-group > .btn.btn-default.active{ color:#fff; background:#333; }
-.btn-group-gmaps.btn-group > .btn.btn-default.active::before{ }
+
+.btn-group-gmaps.btn-group > .btn.btn-default.active span{ border-radius:0;width:0;height: 0;line-height:1;padding: 0;}
+.btn-group-gmaps.btn-group > .btn.btn-default.active::before{ content:'\e642';position:relative;top:1.05rem;left:1.3rem;font-size:0.88em;}
 
 .google-maps {position: relative;padding-bottom: 75%; margin-top:1.5rem; margin-bottom:1.5rem; /* aspect ratio fix - temp */ height: 0;overflow: hidden;}
 .google-maps iframe {position: absolute;top: 0;left: 0;width: 100% !important;height: 100% !important;}

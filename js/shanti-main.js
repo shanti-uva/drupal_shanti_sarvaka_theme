@@ -736,6 +736,20 @@
 	};
 	
 
+
+  Drupal.behaviors.googleMapsButtonActiveArrow = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+	        $('.btn-group-gmaps.btn-group > .btn.btn-default').click( function(){
+	                $(this).prepend('<span class="icon shanticon-arrow-tri-right"></span>');
+	        });
+      }
+    }
+  };
+  
+
+
+
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
 //			if($(".openlayermap").length ) {
