@@ -740,7 +740,12 @@
   Drupal.behaviors.googleMapsButtonActiveArrow = {
     attach: function (context, settings) {
       if(context == window.document) {
-	        $('.btn-group-gmaps.btn-group > .btn.btn-default.active').prepend('<span class="icon"></span>');
+	        
+	        $('.btn-group-gmaps.btn-group > .btn.btn-default.active').prepend('<span class="icon"></span>').once();
+
+	        $('.btn-group-gmaps.btn-group > .btn.btn-default').click( function(){
+	                $(this).prepend('<span class="icon"></span>');
+	        });
       }
     }
   };
