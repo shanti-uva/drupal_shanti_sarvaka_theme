@@ -740,7 +740,7 @@
   Drupal.behaviors.googleMapsButtonActiveArrow = {
     attach: function (context, settings) {
       if(context == window.document) {
-	        $('.btn-group-gmaps.btn-group > .btn.btn-default.active').prepend('<span class="icon shanticon-arrow-tri-right"></span>');
+	        $('.btn-group-gmaps.btn-group > .btn.btn-default.active').prepend('<span class="icon"></span>');
       }
     }
   };
