@@ -430,6 +430,10 @@ background:transparent;
 .view-section table.table-results tbody>tr:nth-of-type(odd){ background: #f5f5f5;}
 .view-section table.table-results tbody>tr:hover{ background: #fff !important;}
 .view-section table.table-results tbody>tr:last-child{ border-bottom:1px solid #ddd;}
+
+.view-section table.table-results tr td{ position:relative;}
+.view-section table.table-results tr td > .ajax-progress{ position:absolute; top:0.15rem; right:0.3rem; background:#fff; padding-right:1rem;}
+
 .view-section table.table-results tbody>tr>td{ cursor:pointer;}
 .view-section table.table-results tbody>tr>td,
 .view-section table.table-results tbody>tr>td>div,
@@ -545,7 +549,7 @@ background:transparent;
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
 */
-.view-section .fancytree-container li > .ajax-progress{ font-size:3rem; color:#555; position:absolute; top:0.15rem; right:0.3rem; background:#fff;padding-right:1rem;}
+.view-section .fancytree-container li > .ajax-progress{ position:absolute; top:0.15rem; right:0.3rem; background:#fff;padding-right:1rem;}
 
 .view-section .fancytree-title a{ color:#444;}
 .view-section .fancytree-title a:hover,
