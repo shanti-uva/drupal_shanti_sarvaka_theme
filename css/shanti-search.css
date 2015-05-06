@@ -431,8 +431,7 @@ background:transparent;
 .view-section table.table-results tbody>tr:hover{ background: #fff !important;}
 .view-section table.table-results tbody>tr:last-child{ border-bottom:1px solid #ddd;}
 
-.view-section table.table-results tr{ position:relative;}
-.view-section table.table-results tr td > .ajax-progress{ position:absolute; top:0.15rem; right:0.3rem; background:#fff; padding-right:1rem;}
+.view-section table.table-results > .ajax-progress{ position:absolute; top:0.15rem; right:0.3rem; background-image:none;}
 
 .view-section table.table-results tbody>tr>td{ cursor:pointer;}
 .view-section table.table-results tbody>tr>td,
