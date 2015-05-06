@@ -1918,6 +1918,8 @@ p.modal-title{ font-size:110%;}
 .btn-group-gmaps.btn-group > .btn.btn-default.active span{ border-radius:0;width:0;height: 0;line-height:1;padding: 0;}
 .btn-group-gmaps.btn-group > .btn.btn-default.active span::before{ content:'\e642';position:relative;top:1.05rem;left:1.3rem;font-size:0.88em;}
 
+.btn-group-gmaps.btn-group .btn+.btn{ margin-left:0;}
+
 .google-maps {position: relative;padding-bottom: 75%; margin-top:1.5rem; margin-bottom:1.5rem; /* aspect ratio fix - temp */ height: 0;overflow: hidden;}
 .google-maps iframe {position: absolute;top: 0;left: 0;width: 100% !important;height: 100% !important;}
 /*------ END from kmaps */
