@@ -1908,7 +1908,7 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 p.modal-title{ font-size:110%;}
 
 /* --- gmaps-buttons is example of class set on div wrapper ---*/
-.map-renditions { position: relative; height:600px;overflow:hidden;margin-bottom:20px;}
+.map-renditions { position: relative; height:600px; margin-bottom:20px;}
 .map-renditions > div:nth-of-type(1){ -webkit-box-shadow: 0 0 5px rgba(0,0,0, 0.125); box-shadow: 0 0 5px rgba(0,0,0, 0.125);}
 
 .btn-group-gmaps{ display:inline-block;	position:absolute;bottom:35px;left:80px;-moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.6);}
