@@ -306,7 +306,7 @@ background:transparent;
 .input-section .bootstrap-select.btn-group .dropdown-menu{ height:265px;}
 .input-section .bootstrap-select.btn-group .dropdown-menu.open{  overflow:auto !important;}
 .input-section .selectpicker .caret{ border:none; }
-.input-section .selectpicker .caret::before{ color:#444; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon sorting arrows */ position:absolute; top:-11px; right:0px;}
+.input-section .selectpicker .caret::before{ color:#777; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon sorting arrows */ position:absolute; top:-11px; right:0px;}
 
 .input-section .selectpicker li{ padding:0; overflow:hidden;}
 .input-section .selectpicker li a{ color:#444; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
