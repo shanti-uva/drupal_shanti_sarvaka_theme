@@ -1923,7 +1923,7 @@ p.modal-title{ font-size:110%;}
 
 
 /* temp fix for icon change on banner */
-.page-places .shanticon-subjects{ content:'\e62c';}
+.page-places .shanticon-subjects::before{ content:'\e62c';}
 
 
 
