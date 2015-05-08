@@ -744,8 +744,8 @@
 	        $('.btn-group-gmaps.btn-group > .btn.btn-default.active').one().prepend('<span class="icon"></span>');
 
 	        $('.btn-group-gmaps.btn-group > .btn.btn-default').click( function(){
-	                $(this).prepend('<span class="icon"></span>');
 	                $('.btn-group-gmaps.btn-group > .btn.btn-default:not(".active")').remove('<span class="icon"></span>');
+	                $(this).prepend('<span class="icon"></span>');
 	        });
       }
     }
