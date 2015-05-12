@@ -736,6 +736,24 @@
 	};
 	
 
+
+  Drupal.behaviors.googleMapsButtonActiveArrow = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+	        
+	        $('.btn-group-gmaps.btn-group > .btn.btn-default.active').one().prepend('<span class="icon"></span>');
+
+	        $('.btn-group-gmaps.btn-group > .btn.btn-default').click( function(){
+		        		// $('.btn-group-gmaps.btn-group > .btn.btn-default.active').one().remove('<span class="icon"></span>');
+	              $(this).prepend('<span class="icon"></span>');
+	        });
+      }
+    }
+  };
+  
+
+
+
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
 //			if($(".openlayermap").length ) {

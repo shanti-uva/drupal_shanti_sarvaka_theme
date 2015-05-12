@@ -1,6 +1,7 @@
 /*----------------------------------------------*/
 /*--- START / Sliding Panel ---*/
 /*----------------------------------------------*/
+
 /*--- clear default extruder styles -----*/
 .extruder, .extruder.right,.extruder .extruder-content, .extruder.right .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover{ overflow:visible; background-image:none; background:transparent;}
 .extruder.open .extruder-content, .extruder.right.open .extruder-content,.extruder.right .flap,.extruder .voice,.extruder.right .text,.optionsPanel .panelVoice a{ -webkit-box-shadow:none;box-shadow:none; text-transform:none;}
@@ -305,7 +306,7 @@ background:transparent;
 .input-section .bootstrap-select.btn-group .dropdown-menu{ height:265px;}
 .input-section .bootstrap-select.btn-group .dropdown-menu.open{  overflow:auto !important;}
 .input-section .selectpicker .caret{ border:none; }
-.input-section .selectpicker .caret::before{ color:#444; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon sorting arrows */ position:absolute; top:-11px; right:0px;}
+.input-section .selectpicker .caret::before{ color:#777; font-size:17px; font-family: 'shanticon'; content: '\e609'; /* icon sorting arrows */ position:absolute; top:-11px; right:0px;}
 
 .input-section .selectpicker li{ padding:0; overflow:hidden;}
 .input-section .selectpicker li a{ color:#444; padding:0 15px; overflow:hidden; display:block; line-height:25px; height:25px;}
@@ -429,6 +430,9 @@ background:transparent;
 .view-section table.table-results tbody>tr:nth-of-type(odd){ background: #f5f5f5;}
 .view-section table.table-results tbody>tr:hover{ background: #fff !important;}
 .view-section table.table-results tbody>tr:last-child{ border-bottom:1px solid #ddd;}
+
+.view-section table.table-results > .ajax-progress{ position:absolute; background-image:none;}
+
 .view-section table.table-results tbody>tr>td{ cursor:pointer;}
 .view-section table.table-results tbody>tr>td,
 .view-section table.table-results tbody>tr>td>div,
@@ -529,7 +533,7 @@ background:transparent;
 /*------------------------------*/
 .view-section .fancytree-container{ margin:0; background:transparent; border:none; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; }
 .view-section .fancytree-container ul{ padding-top:0; margin-top:0;}
-.view-section .fancytree-container li{ padding:0;line-height:1.68em;overflow:hidden;}
+.view-section .fancytree-container li{ padding:0;line-height:1.68em;overflow:hidden;position:relative;}
 
 .view-section .fancytree-icon{ margin:0; padding:0; width:0; height:0; line-height:0; display:none;} /*--- remove checkbox ---*/
 .view-section .fancytree-node{ border:1px solid transparent !important; display:block;}
@@ -540,9 +544,11 @@ background:transparent;
 .view-section .fancytree-node.fancytree-active,
 .view-section .fancytree-node.fancytree-selected,
 .view-section .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active{ background:white !important; border-color:#eee !important;}
-
+/*
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
+*/
+.view-section .fancytree-container li > .ajax-progress{ position:absolute; top:0.15rem; right:0.1rem; background:#fff;padding:0.1rem 0.5rem;}
 
 .view-section .fancytree-title a{ color:#444;}
 .view-section .fancytree-title a:hover,
@@ -651,7 +657,7 @@ background:transparent;
 
 /* ----- overlay timer ------ */
 /* ----- search loading ----- */
-#search-flyout .overlay-mask{ position:absolute;z-index:15000;background:#fff;opacity:0.3;}
+#search-flyout .overlay-mask{ position:absolute;z-index:15000;background:#fff;filter:alpha(opacity=30);opacity:0.3;}
 
 @-moz-keyframes rotate-loading {
     0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
@@ -670,28 +676,28 @@ background:transparent;
     100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
 }
 @-moz-keyframes loading-text-opacity {
-    0%  {opacity: 0}
-    20% {opacity: 0}
-    50% {opacity: 1}
-    100%{opacity: 0}
+    0%  {filter:alpha(opacity=0);opacity:0}
+    20% {filter:alpha(opacity=0);opacity:0}
+    50% {filter:alpha(opacity=100);opacity:1}
+    100%{filter:alpha(opacity=0);opacity:0}
 }
 @-o-keyframes loading-text-opacity {
-    0%  {opacity: 0}
-    20% {opacity: 0}
-    50% {opacity: 1}
-    100%{opacity: 0}
+    0%  {filter:alpha(opacity=0);opacity:0}
+    20% {filter:alpha(opacity=0);opacity:0}
+    50% {filter:alpha(opacity=100);opacity:1}
+    100%{filter:alpha(opacity=0);opacity:0}
 }
 @-webkit-keyframes loading-text-opacity {
-    0%  {opacity: 0}
-    20% {opacity: 0}
-    50% {opacity: 1}
-    100%{opacity: 0}
+    0%  {filter:alpha(opacity=0);opacity:0}
+    20% {filter:alpha(opacity=0);opacity:0}
+    50% {filter:alpha(opacity=100);opacity:1}
+    100%{filter:alpha(opacity=0);opacity:0}
 }
 @keyframes loading-text-opacity {
-    0%  {opacity: 0}
-    20% {opacity: 0}
-    50% {opacity: 1}
-    100%{opacity: 0}
+    0%  {filter:alpha(opacity=0);opacity:0}
+    20% {filter:alpha(opacity=0);opacity:0}
+    50% {filter:alpha(opacity=100);opacity:1}
+    100%{filter:alpha(opacity=0);opacity:0}
 }
 .loading-container,
 .loading {
@@ -741,10 +747,11 @@ background:transparent;
     font-size: 1.18em;
     text-transform:capitalize;
     font-weight: normal;
-    opacity: 0;
+    filter:alpha(opacity=0);
+    opacity:0;
     position: absolute;
     top: -10px;
-    left:37px;
+    left:42px;
     width: 120px;
 }/* ----- END search loading ----- */
 
@@ -858,3 +865,17 @@ background:transparent;
 	z-index: 501;
 }
 **/
+
+
+
+
+
+
+/*--- Temporary styles to hide advance search options ---*/
+.input-section .search-group{ height:44px;}
+.input-section .input-group input.form-control{ margin-top:7px;}
+.input-section .toggle-link.advanced-link{ display:none !important;}
+.advanced-view .form-group:first-child{ border-top:none;}
+.input-section .input-group .input-group-btn{ top:8px !important;}
+.advanced-view{ display:block !important;}
+.input-section .alert{ position:relative; top:7px;}
