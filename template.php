@@ -544,7 +544,6 @@ function shanti_sarvaka_create_user_menu($um) {
   foreach($mylinks as $k => $item) {
 		unset($um[$k]);
   }*/
-
   // If not logged in, do login link (logout link can be added to user menu at bottom and will show only when logged in)
   if(user_is_anonymous()) {
 		// If show login link theme setting is checked then...
