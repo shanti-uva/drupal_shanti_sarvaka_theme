@@ -712,7 +712,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .logged-in .carousel-main-image img{ margin-left:0; max-width:100%;margin:0;}
 
 @media (min-width:480px) {
-  /* .carousel-header span{ margin-left:2rem;} */
+ 
 }
 
 @media (min-width:700px) {
@@ -824,7 +824,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 /*--- BEGIN: top-tier of 2-tier carousel ---*/
 .feature-carousel-tabpanel{ margin-bottom:1.5rem;margin-top:0.8rem;}
 .feature-slide .carousel-header{ margin-top:0;}
-.feature-slide .carousel-header span{ font-size:0.93em;}
+.feature-slide .carousel-header span{ font-size:0.93em;margin-left:0.5rem;}
 
 .feature-slide-detail{ padding: 1.56em 2em; margin-bottom:0.25em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
 .feature-slide-detail-content{ padding-left:0.25rem !important;}
@@ -905,6 +905,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 @media (max-width:479px) {
+	.feature-slide .carousel-header span{ margin-left:2rem;}
 	.carousel-related-resource-group .col-xs-6{ width:100%;}
 	.carousel-resource-item p{ border-bottom:2px solid #ddd; padding:0 0 0.75rem;}
   .carousel-resource-item p, .carousel-resource-item h6, .carousel-resource-item h5{ padding-left:0.5rem;}
