@@ -679,7 +679,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /*----- BEGIN Carousel ---*/
 /*------------------------*/
 .carousel{ margin-bottom:0.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
-.carousel-header{ margin: 0;}
+.carousel-header{ margin: 0 0 0.2rem;}
 .carousel-header span{ font-style:italic;font-weight:bold;font-size:1.12em;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
 .carousel-inner{ height:230px; overflow:visible;}
@@ -702,8 +702,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
 .carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
 .carousel-control:hover .icon{ color:#fff;}
-.carousel-pause { color:#777 !important; font-size:0.75em !important; text-align:center; margin: 0 50% -2rem; border-radius:50% !important; padding: 0.4rem 0.5rem !important;}
-.carousel-pause .glyphicon{ padding-left:0.1rem;}
+.carousel-pause.btn.btn-sm { color:#777 !important; font-size:0.75em !important; text-align:center; margin: 0 50% -2rem; border-radius:50% !important; padding: 0.4rem 0.5rem !important;}
 .carousel .col-xs-12{ padding-left:5px;padding-right:5px;}
 
 .logged-in .carousel-description p{height:11.25em;overflow:hidden;}
