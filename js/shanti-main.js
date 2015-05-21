@@ -347,17 +347,17 @@
 		    });
 
 
-	  //    $('.carousel .control-box-2 .carousel-pause').click(function () {
-	  //        var carousel = $(this).parents('.carousel');
-	  //        if($(this).hasClass('paused')) {
-	  //          carousel.carousel('next');
-	  //          carousel.carousel('cycle');
-	  //        } else {
-	  //          carousel.carousel('pause');
-	  //        }
-	  //        $(this).toggleClass('paused');
-	  //        $(this).find('span').toggleClass('glyphicon-pause glyphicon-play');
-	  //    });
+	      $('.carousel .control-box-2 .carousel-pause').click(function () {
+	          var carousel = $(this).parents('.carousel');
+	          if($(this).hasClass('paused')) {
+	            carousel.carousel('next');
+	            carousel.carousel('cycle');
+	          } else {
+	            carousel.carousel('pause');
+	          }
+	          $(this).toggleClass('paused');
+	          $(this).find('span').toggleClass('glyphicon-pause glyphicon-play');
+	      });
 
 	    }
     }

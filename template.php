@@ -699,7 +699,7 @@ function shanti_sarvaka_carousel($variables) {
     $active = ($n == 0) ? 'active' : '';
 		$itemcount = (!empty($slide['itemcount'])) ? ', ' . $slide['itemcount'] : '';
     $html .= '<!-- Slide' . $n . ' -->
-      <div class="item ' . $active . '" style="max-width:1050px; margin:0 auto;">
+      <div class="item ' . $active . '">
         <div class="carousel-main-content col-xs-12 col-sm-7 col-md-8">
           <div><h3 class="carousel-title"><a href="' . $slide['path'] . '"><span class="icon shanticon-stack"></span> ' . $slide['title'] . '</a></h3></div>
           <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . $itemcount . '</div>
