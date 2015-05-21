@@ -680,7 +680,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /*------------------------*/
 .carousel{ margin-bottom:0.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
 .carousel-header{ margin: 0;}
-.carousel-header span{ font-style:italic;font-weight:bold;font-size:1em;}
+.carousel-header span{ font-style:italic;font-weight:bold;font-size:1.12em;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
 .carousel-inner{ height:230px; overflow:visible;}
 
@@ -843,9 +843,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .carousel-resource-item span{ display:block;width:100%;height:25rem;overflow:hidden;}
 .carousel-resource-item img{ background:#eee;max-width:auto;height:100%; /*border:3px solid #fff;*/}
 .carousel-resource-item a:hover img{ /*border:3px solid #32ccca;*/}
-.carousel-resource-item h6{ color:#888;font-size:0.68em;margin:0.4rem 0;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.carousel-resource-item h6{ color:#888;font-size:0.68em;margin:0.4rem 0 0.4rem 0.25rem;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .carousel-resource-item h5{ color:#606060;font-size:0.88em;margin:0.3rem 0;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
-.carousel-resource-item p{ color:#555; font-size:0.88em;}
+.carousel-resource-item p{ color:#555; font-size:0.88em; margin-top:0.5rem}
 /* .carousel-resource-item p, .carousel-resource-item h6, .carousel-resource-item h5{ padding-left:0.3rem;} */
 .carousel-resource-item a:hover h6,.carousel-resource-item a:active h6,
 .carousel-resource-item a:hover p,.carousel-resource-item a:active p{ color:#000;}
