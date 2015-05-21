@@ -50,7 +50,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .show-more a{ font-size:.83em; display:inline; }
-.show-more a::after{ color: #5a65d1; font-size: 0.75em;margin-left:0.32em;font-family:'Glyphicons Halflings';content: '\002b'; /*-- plus icon */}
+.show-more a::after{ color: #5a65d1; font-size: 0.82em;margin-left:0.7rem;font-family:'Glyphicons Halflings';content: '\002b'; /*-- plus icon */}
 .show-more.less a::after { content: '\2212';}
 .go-to-link a{ text-transform:uppercase; border:none;font-size:.83em; display:inline;}
 .go-to-link a::after{ color: #5a65d1; font-size: 1.25em;margin-left:0.32em;font-family:'FontAwesome';content: '\f18e'; /*-- arrow icon */}
@@ -680,7 +680,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /*------------------------*/
 .carousel{ margin-bottom:0.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
 .carousel-header{ margin: 0 0 0.2rem;}
-.carousel-header span{ font-style:italic;font-weight:bold;font-size:1.12em;}
+.carousel-header span{ font-style:italic;font-weight:bold;font-size:1.12em;position:relative;top:-0.15rem;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
 .carousel-inner{ height:230px; overflow:visible;}
 
@@ -702,7 +702,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
 .carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
 .carousel-control:hover .icon{ color:#fff;}
-.carousel-pause.btn.btn-sm { color:#777 !important; font-size:0.75em !important; text-align:center; margin: 0 50% -2rem; border-radius:50% !important; padding: 0.4rem 0.5rem !important;}
+.carousel-pause.btn.btn-sm { color: #888 !important; font-size: 1em !important; text-align: center; margin: 0 50%; border-radius: 50% !important; padding: 0.55rem 0.9rem !important; width:3.2rem; height:3rem;}
 .carousel .col-xs-12{ padding-left:5px;padding-right:5px;}
 
 .logged-in .carousel-description p{height:11.25em;overflow:hidden;}
@@ -790,10 +790,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /* hide pause button */
 .carousel.carousel-fade .control-box-2{ display:none;}
 
-/*
-WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
-now override the 3.3 new styles for modern browsers & apply opacity
-*/
+
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel.carousel-fade .carousel-inner > .item.next,
     .carousel.carousel-fade .carousel-inner > .item.active.right {
