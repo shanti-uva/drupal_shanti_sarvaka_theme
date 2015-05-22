@@ -2156,6 +2156,8 @@ p.modal-title{ font-size:110%;}
 		font-family:'museo-sans-300';
 		display:inline-block;
 	}
+	.navbar-header a span.site-slogan::before{ content:'/ ';}
+	
 	.navbar-default .menu-explore{ display:none; }
 	.menu-toggle{ display:inline-block;}
 	  
