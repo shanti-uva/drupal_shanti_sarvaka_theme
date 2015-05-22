@@ -705,7 +705,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-pause.btn.btn-sm { color: #888 !important; -webkit-box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); font-size: 1em !important; text-align: center; margin: 0 50%; border-radius: 50% !important; padding: 0.55rem 0.9rem !important; width:3.2rem; height:3rem;}
 .carousel .col-xs-12{ padding-left:5px;padding-right:5px;}
 
-.carousel-pause.btn.btn-sm:hover{ color: rgb(207, 47, 30) !important;background:#fff !important;}
+/*.carousel-pause.btn.btn-sm:hover{ color: rgb(207, 47, 30) !important;background:#fff !important;}*/
 .carousel-pause.btn.btn-sm:active{ color: #fff !important;}
 
 .logged-in .carousel-description p{height:11.25em;overflow:hidden;}
