@@ -705,6 +705,9 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-pause.btn.btn-sm { color: #888 !important; -webkit-box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); font-size: 1em !important; text-align: center; margin: 0 50%; border-radius: 50% !important; padding: 0.55rem 0.9rem !important; width:3.2rem; height:3rem;}
 .carousel .col-xs-12{ padding-left:5px;padding-right:5px;}
 
+.carousel-pause.btn.btn-sm:hover{ color: rgb(207, 47, 30) !important;background:#fff !important;}
+.carousel-pause.btn.btn-sm:active{ color: #fff !important;}
+
 .logged-in .carousel-description p{height:11.25em;overflow:hidden;}
 .logged-in .carousel-title{ font-size:1em;}
 .logged-in .carousel .byline{ font-size:70%;}
@@ -1989,6 +1992,8 @@ p.modal-title{ font-size:110%;}
 /*----- BEGIN RESPONSIVE -------*/
 /*------------------------------*/
 
+
+/* merge w/main above */
 .menu-toggle{ display:inline-block; border-collapse: separate;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd;}
 .navbar-header a .icon{ font-size:1.63em; position:relative; top:0.2rem;padding-left:10px;}
@@ -1999,7 +2004,7 @@ p.modal-title{ font-size:110%;}
 .collections ul{ margin-left:2%; }
 .collections ul li { width:50%;line-height: 4.5em; }
 .collections ul li a { font-size: 0.75em; line-height:2.5em;}
-
+/* end merge */
 
 
 
@@ -2152,7 +2157,7 @@ p.modal-title{ font-size:110%;}
 		display: inline-block;
 		text-transform:uppercase;
 		font-style:normal;
-		letter-spacing:0.275rem;
+		letter-spacing:0.2rem;
 		font-family:'museo-sans-300';
 		display:inline-block;
 	}
@@ -2201,13 +2206,6 @@ p.modal-title{ font-size:110%;}
 @media all and (orientation:landscape) {
 
 }
-
-
-
-
-
-
-
 
 
 
