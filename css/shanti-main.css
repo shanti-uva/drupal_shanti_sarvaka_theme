@@ -78,7 +78,7 @@ span.site-slogan{ display:none;}
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header span.site-slogan{ font-size:0.75em;line-height:1em;padding: 0;position:relative; top:-7px;white-space:nowrap;}
+.navbar-header span.site-slogan{ padding: 0;white-space:nowrap;}
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
@@ -120,7 +120,7 @@ span.site-slogan{ display:none;}
 /*--- END navbar tabs ---*/
 
 /*--- BEGIN dropdown menu ---*/
-.navbar.navbar-default .dropdown-menu { background:#fff;position:absolute;top:50px;left:0;z-index:2000;margin:0;padding:10px 0;border:1px solid #fff;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background-clip: padding-box;border-top:1px solid #ddd;background-image: -webkit-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: -moz-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: -ms-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: -o-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);}
+.navbar.navbar-default .dropdown-menu { background:#fff;background-image:none;position:absolute;top:50px;left:0;z-index:2000;margin:0;padding:10px 0;border:1px solid #fff;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background-clip: padding-box;border-top:1px solid #ddd;background-image: -webkit-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: -moz-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: -ms-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: -o-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);background-image: linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);}
 .navbar .lang .dropdown-menu{ /* language dropdown */ left:-32px; width:130px; min-width:130px;}
 .navtop .dropdown-menu li{ font-size:1em; line-height:2.5em; height:2.25em; margin:0; padding:0; border-left:none; border-top:1px solid #ddd;border-bottom:1px solid #ddd;border-color:transparent;}
 .navtop .dropdown-menu li:hover,
@@ -2032,7 +2032,7 @@ p.modal-title{ font-size:110%;}
 	.collections ul li{ line-height: 3em;}
 	.collections ul li a { font-size: 0.82em;}
 	
-	.navbar-header a .icon{ position:relative; top:1rem;}
+	.navbar-header a .icon{ position:relative; top:1.12rem;}
 }
 
 
@@ -2144,7 +2144,17 @@ p.modal-title{ font-size:110%;}
 	 
 	html body.admin-menu{ margin-top:2.8rem !important;} /* adjust height of admin bar */
 
-  .navbar-header a span.site-slogan{ font-size:0.75em; position:relative; top:-5px; display:inline-block;}
+  .navbar-header a span.site-slogan{ 
+	  font-size: 2.25rem;
+		color:#333;
+		position: relative;
+		top: -0.29rem;
+		display: inline-block;
+		text-transform:uppercase;
+		font-style:normal;
+		letter-spacing:0.4rem;
+		font-family:'museo-sans-300';
+		display:inline-block;}
 	.navbar-default .menu-explore{ display:none; }
 	.menu-toggle{ display:inline-block;}
 	  
