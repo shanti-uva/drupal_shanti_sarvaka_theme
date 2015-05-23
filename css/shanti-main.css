@@ -1961,8 +1961,8 @@ div.olControlCustomToggle.olControlNoSelect .custom_toggle_text{ width:160px !im
 .modal img{margin-bottom:1rem;}
 .modal-header{ min-height:5.5rem;}
 .modal-header button.close{ color:#777; font-size:4em !important; position:relative; top:-1rem;}
-.modal-body p:nth-of-type(2),
-.modal-body p:nth-of-type(3){ display:none;}
+/*.modal-body p:nth-of-type(2),*/
+/*.modal-body p:nth-of-type(3){ display:none;}*/
 p.modal-title{ font-size:110%;}
 
 /* --- gmaps-buttons is example of class set on div wrapper ---*/
