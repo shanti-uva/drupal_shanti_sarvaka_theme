@@ -82,13 +82,14 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 	white-space:nowrap;
 	color:#444;
 	position: relative;
-	top: -0.24rem;
+	top: 0.6rem;
 	display: inline-block;
 	text-transform:uppercase;
 	font-style:normal;
 	letter-spacing:0.2rem;
 	font-family: 'museo-sans-300';
 }
+.navbar-header a span.site-slogan::before{ content:'/ ';}
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
@@ -2158,11 +2159,9 @@ p.modal-title{ font-size:110%;}
 	html body.admin-menu{ margin-top:2.8rem !important;} /* adjust height of admin bar */
 
   .navbar-header a span.site-slogan{ 
-    font-size: 2.38rem;
     position: relative;
 	  top: -0.24rem;
 	}
-	.navbar-header a span.site-slogan::before{ content:'/ ';}
 	
 	.navbar-default .menu-explore{ display:none; }
 	.menu-toggle{ display:inline-block;}
