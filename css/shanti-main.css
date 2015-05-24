@@ -78,7 +78,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .navbar-header .navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
 .navbar-header .site-slogan{ 
-	padding: 0;
+	padding: 0 0 0 12px;
 	white-space:nowrap;
 	color:#444;
 	position: relative;
@@ -88,6 +88,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 	font-style:normal;
 	letter-spacing:0.2rem;
 	font-family: 'museo-sans-300';
+	font-size:85%;
 }
 .navbar-header .site-slogan::before{ content:'/ ';}
 /*--- menu toggle buttons ---*/
@@ -2141,7 +2142,7 @@ p.modal-title{ font-size:110%;}
 @media screen and (min-width: 600px) {
 
   .navbar-default a .icon{ font-size:1.63em;line-height:1.68em;padding-left:12px; position:relative; top:0.2rem;}
-  .navbar-header .site-slogan{ position: relative; top: -0.27rem;} 
+  .navbar-header .site-slogan{ position: relative; top: -0.4rem; font-size:100%;} 
   /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
 	.collections ul li { width:20%; }
   .collections ul li a.disabled, 
