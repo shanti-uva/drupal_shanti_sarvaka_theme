@@ -2145,7 +2145,7 @@ p.modal-title{ font-size:110%;}
 
   .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
   .navbar-header .site-slogan{ position: relative; top: -0.27rem;} 
-  .navbar-header .navbar-brand{ line-height: 3.75em;} 
+  /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
 	.collections ul li { width:20%; }
   .collections ul li a.disabled, 
 	.collections ul li a.disabled:hover,
