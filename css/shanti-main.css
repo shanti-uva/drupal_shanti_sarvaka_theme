@@ -68,7 +68,6 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-span.site-slogan{ display:none;}
 .header-banner{ position:relative; /*why? z-index:30000; makes admin difficult. If necessary can we find another workaround?*/ overflow:visible; margin-top:0 !important; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); box-shadow: 0 3px 10px #ddd; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110); border-collapse:separate;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
@@ -78,7 +77,18 @@ span.site-slogan{ display:none;}
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header span.site-slogan{ padding: 0;white-space:nowrap;}
+.navbar-header span.site-slogan{ 
+	padding: 0;
+	white-space:nowrap;
+	color:#444;
+	position: relative;
+	top: -0.24rem;
+	display: inline-block;
+	text-transform:uppercase;
+	font-style:normal;
+	letter-spacing:0.2rem;
+	font-family: 'museo-sans-300';
+}
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
@@ -2003,7 +2013,7 @@ p.modal-title{ font-size:110%;}
 
 .collections ul{ margin-left:2%; }
 .collections ul li { width:50%;line-height: 4.5em; }
-.collections ul li a { font-size: 0.75em; line-height:2.5em;}
+.collections ul li a { font-size: 0.75em; line-height:2.75em;}
 /* end merge */
 
 
@@ -2128,8 +2138,6 @@ p.modal-title{ font-size:110%;}
    .navbar-header a span.site-slogan{ padding-left:12px;}
 	 .collections ul li{ width:40%;margin-left:10%;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
-   /* exception for custom subtitle, a shorter subtitle */
-   .mediabase .navbar-header span.site-slogan{ display:inline-block;}
 }
 
 @media screen and (min-width: 600px) {
@@ -2151,14 +2159,8 @@ p.modal-title{ font-size:110%;}
 
   .navbar-header a span.site-slogan{ 
     font-size: 2.38rem;
-		color:#444;
-		position: relative;
-		top: -0.24rem;
-		display: inline-block;
-		text-transform:uppercase;
-		font-style:normal;
-		letter-spacing:0.2rem;
-		font-family: 'museo-sans-300';
+    position: relative;
+	  top: -0.24rem;
 	}
 	.navbar-header a span.site-slogan::before{ content:'/ ';}
 	
@@ -2179,7 +2181,7 @@ p.modal-title{ font-size:110%;}
   .collections h4 { font-size:1.12em;}
 	.collections ul{ margin-left:-5%;}
 	.collections ul li{ width:12%; margin-left: 7%;}
-	.collections ul li a { font-size: 0.75em; line-height:2.25em;}
+	.collections ul li a { font-size: 0.75em;}
 	.collections ul li a.disabled, 
 	.collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
 	.collections ul li a.disabled .icon, .collections ul li a.disabled:hover .icon, .collections ul li a.disabled:active .icon { color: #707070; cursor: default;}	 	
