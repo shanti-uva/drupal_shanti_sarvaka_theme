@@ -2007,7 +2007,7 @@ p.modal-title{ font-size:110%;}
 /* merge w/main above */
 .menu-toggle{ display:inline-block; border-collapse: separate;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd;}
-.navbar-header a .icon{ font-size:1.63em; position:relative; top:0.2rem;padding-left:10px;}
+.navbar-header a .icon{ font-size:1.63em; position:relative; top:1rem;padding-left:5px;}
 .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 
 .view-resources.btn-default{ display:none;}
@@ -2048,7 +2048,7 @@ p.modal-title{ font-size:110%;}
 	.collections ul li{ line-height: 3em;}
 	.collections ul li a { font-size: 0.82em;}
 	
-	.navbar-header a .icon{ position:relative; top:1.12rem;}
+	.navbar-header a .icon{ position:relative; top:1rem;}
 }
 
 
@@ -2134,16 +2134,13 @@ p.modal-title{ font-size:110%;}
 }
 
 @media screen and (min-width: 500px) {
-
-	 .navbar-header a .icon,
-   .navbar-header .site-slogan{ padding-left:12px;}
 	 .collections ul li{ width:40%;margin-left:10%;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
 @media screen and (min-width: 600px) {
 
-  .navbar-default h1 .icon{ font-size:1.63em;line-height:1.68em;}
+  .navbar-default a .icon{ font-size:1.63em;line-height:1.68em;padding-left:12px; position:relative; top:0.2rem;}
   .navbar-header .site-slogan{ position: relative; top: -0.27rem;} 
   /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
 	.collections ul li { width:20%; }
