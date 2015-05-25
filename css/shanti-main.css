@@ -2009,7 +2009,7 @@ p.modal-title{ font-size:110%;}
 /* merge w/main above */
 .menu-toggle{ display:inline-block; border-collapse: separate;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd;}
-.navbar-header a .icon{ font-size:1.25em; position:relative; top:0.6srem;padding-left:5px;}
+.navbar-header a .icon{ font-size:1.5em; position:relative; top:0.9rem;padding-left:5px;}
 .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 
 .view-resources.btn-default{ display:none;}
