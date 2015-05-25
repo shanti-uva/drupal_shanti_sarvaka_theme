@@ -2136,6 +2136,8 @@ p.modal-title{ font-size:110%;}
 }
 
 @media screen and (min-width: 500px) {
+	.navbar-default h1 .icon{ font-size:1.25em;}
+	
 	 .collections ul li{ width:40%;margin-left:10%;}
    .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
