@@ -96,7 +96,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
 .menu-icon a:hover,
 .menu-icon a:active{ background:#fff;}
-.navbar-default h1 .icon{ font-size:1.5em;position:relative;top:0.9rem;}
+.navbar-default h1 .icon{ font-size:1.5em;position:relative;top:0.8rem;}
 .menu-icon .icon{ padding:0; margin:0; color:#505050; font-size:2em; line-height:0.93em;}
 .menu-icon .icon::before{ content: '\e627';}
 .menu-icon .icon.shanticon-menu{ position:relative;top:0;}
@@ -2050,7 +2050,6 @@ p.modal-title{ font-size:110%;}
 	.collections ul li{ line-height: 3em;}
 	.collections ul li a { font-size: 0.82em;}
 	
-	.navbar-header a .icon{ position:relative; top:1rem; font-size:1.63em;}
 }
 
 
