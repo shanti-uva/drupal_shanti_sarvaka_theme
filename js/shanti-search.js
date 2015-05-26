@@ -88,10 +88,10 @@ Drupal.behaviors.sarvakaMbextruder = {
   };
   
 /*
- *  Functions for the Search Flyout
+ *  TEMP - Functions for the Search Flyout
  */
 
-/* open advanced search options by default */
+/* Temporarily open advanced search options by default until Yuji completes new advanced search */
 Drupal.behaviors.sarvakaOpenAdvancedViewDefault = {
   attach: function (context, settings) {
 	  if(context == document) {
