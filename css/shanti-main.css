@@ -2142,7 +2142,7 @@ p.modal-title{ font-size:110%;}
 @media screen and (min-width: 600px) {
 
   .navbar-default h1 .icon{ line-height:1.68em;padding-left:12px; position:relative; top:0.5rem;}
-  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0rem;} 
+  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0.1rem;} 
   /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
 	.collections ul li { width:20%; }
   .collections ul li a.disabled, 
