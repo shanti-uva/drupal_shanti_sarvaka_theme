@@ -698,7 +698,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-inner{ height:230px; overflow:visible;}
 
 .carousel-main-content{  float:left; padding-left:0 !important;}
-.carousel-title{ font-size:1em;font-weight:normal;margin: 0 0 0.8rem;}
+.carousel-title{ font-size:1.38em;font-weight:normal;margin: 0 0 0.8rem;}
 .carousel-title a{ color: #404040;}
 .carousel .byline{ font-size:0.93em;margin: -0.1em 0 .38em;display:block;color: #777;font-style: italic;}
 .carousel-description p{ font-size:1em;height:11.25em;overflow:hidden;}
@@ -2009,7 +2009,7 @@ p.modal-title{ font-size:110%;}
 /* merge w/main above */
 .menu-toggle{ display:inline-block; border-collapse: separate;}
 .navbar-default .navbar-nav>li{ border-left:1px solid #ddd;}
-.navbar-header a .icon{ font-size:1.5em; position:relative; top:0.9rem;padding-left:5px;}
+.navbar-header a .icon{ font-size:1.38em; position:relative; top:0.75rem;padding-left:5px;}
 .navbar-collapse .navbar-nav.navbar-right:last-child{ margin-right:60px;}
 
 .view-resources.btn-default{ display:none;}
