@@ -316,9 +316,9 @@ function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
 function shanti_sarvaka_preprocess_search_result(&$variables) {
   global $base_path;
   $nid = '';
-  if(isset($variables['result']['node'])) {
+  if(isset($variables['result']['node']->entity_id)) {
     $nid = $variables['result']['node']->entity_id;
-    $coll = get_collection_ancestor_node($nid);
+    $coll = (function_exists('get_collection_ancestor_node')) ? get_collection_ancestor_node($nid) : FALSE;
     if($coll) {
         $coll->url = $base_path . drupal_get_path_alias('node/' . $coll->nid);
     }
