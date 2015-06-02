@@ -804,7 +804,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
   z-index: 1;
 }
 /* play- pause button */
-.carousel.carousel-fade .control-box-2{ text-align:center; position:relative; top:-.2rem;}
+.carousel.carousel-fade .control-box-2{ text-align:center; position:relative; top:-.2rem; left:0;}
 
 
 @media all and (transform-3d), (-webkit-transform-3d) {
@@ -2166,8 +2166,8 @@ p.modal-title{ font-size:110%;}
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
   .collections ul li{ width:15%; margin-left:8%;}
   
-  .carousel-pause.btn.btn-sm{  padding: 0.55rem 0.9rem !important; width:3.2rem; height:3rem;font-size: 1em !important;}
-  .carousel.carousel-fade .control-box-2{ text-align:center; position:relative; top:-2rem;}
+  .carousel-pause.btn.btn-sm{  padding: 0.55rem 0.9rem !important; width:3.2rem; height:3rem;font-size: 1em !important;margin:0 50%;}
+  .carousel.carousel-fade .control-box-2{ text-align:center; position:relative; top:-2rem;left:-17rem;}
 }
 
 @media screen and (min-width: 850px) {
