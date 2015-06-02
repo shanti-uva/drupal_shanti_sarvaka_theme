@@ -716,6 +716,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-control:hover .icon{ color:#fff;}
 .carousel-pause.btn.btn-sm { color: #888 !important; -webkit-box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); font-size: 0.88em !important; text-align: center; margin: 0 auto; border-radius: 50% !important;padding:0 !important; width:2.5rem; height:2.3rem; margin:.5rem;}
 .carousel .col-xs-12{ padding-left:5px;padding-right:5px;}
+.carousel-pause .glyphicon-pause::before{ position:relative;left:0.1rem;}
 
 /*.carousel-pause.btn.btn-sm:hover{ color: rgb(207, 47, 30) !important;background:#fff !important;}*/
 .carousel-pause.btn.btn-sm:active{ color: #fff !important;}
@@ -739,12 +740,13 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
   .carousel-description p{ font-size:1.06em;height:11.25em;}
   /* .carousel-main-image{ min-width:270px;} */
   .carousel-main-image img{ margin-left:1rem;}
-  
+  .carousel-pause .glyphicon-pause::before{ position:relative;left:0rem;}
 
 	.logged-in .carousel .col-sm-7{ width:50%;}
   .logged-in .carousel .col-sm-5{ width:50%;}
   .logged-in .carousel-main-image{max-width:100%;}
 	.logged-in .carousel-description p{font-size:0.93em;}
+	
 }
 
 @media (min-width:850px) {
