@@ -87,10 +87,17 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 	text-transform:uppercase;
 	font-style:normal;
 	letter-spacing:0.2rem;
-	font-family: 'museo-sans-300';
+	font-family: 'museo-sans-500', arial,sans-serif;;
 	font-size:85%;
 }
 .navbar-header .site-slogan::before{ content:'/ ';}
+.navbar-brand .shanticon-logo,
+.navbar-brand .site-slogan{ opacity:0.80;}
+.navbar-brand:hover .shanticon-logo,
+.navbar-brand:hover .site-slogan{ opacity:1.00}
+.navbar-brand:active .shanticon-logo,
+.navbar-brand:active .site-slogan{ opacity:0.70;}
+
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
 .menu-icon a{ text-align:center; background:#eee; color:#444; display:inline-block; width:60px;height:50px; vertical-align:middle; padding:12px 0 0 0; margin:0;}
@@ -2147,7 +2154,7 @@ p.modal-title{ font-size:110%;}
 @media screen and (min-width: 600px) {
 
   .navbar-default h1 .icon{ line-height:1.68em;padding-left:12px; position:relative; top:0.5rem;}
-  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0.1rem; padding-left:0.7rem;} 
+  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0.025rem; padding-left:0.7rem;} 
   /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
 	.collections ul li { width:20%; }
   .collections ul li a.disabled, 
