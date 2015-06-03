@@ -258,7 +258,7 @@ header ul.tabs.secondary li.active a:hover,
 header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000);}
 
 /***** Vertical Tabs *****/
-/* the main instance so far - of these vertical tabs is in video edit section mediabase */
+/* the main instance so far - of these vertical tabs is in video edit section audio-video */
 .vertical-tab-button a,
 .vertical-tab-button.selected a{ border-bottom:none;outline: 0 !important; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .vertical-tab-button a:hover,
@@ -1474,7 +1474,7 @@ form table td.label{ padding-top:0.68em !important;}
 .form-type-checkbox .description{ margin-top:0; margin-left:0;}
 
 
-/* overwrite mb_location-selector module in mediabase */
+/* overwrite mb_location-selector module in audio-video */
 .location-selector-item{ padding: 0.2em 0.6em 0.1em 0.4em; border:1px solid #ddd; margin-right:0.3em; line-height:normal;}
 
 /* view My Content in My Workflow etc */
@@ -1944,7 +1944,7 @@ html body{ margin-top: 0 !important;}
 html body.admin-menu{ margin-top:5.2rem !important;} /* accounts for height of admin bar */
 
 /*--- toggle button for resource column - tetsting dev 
-.mediabase button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
+.audio-video button.btn.btn-default.visible-sm.view-resources{ display:none !important;}
 ---*/
 .view-resources.btn-default.noshow { display:none !important;}
 /* homepage hide the sidecolumn (resources) button */ 
