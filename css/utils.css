@@ -393,6 +393,67 @@
 
 
 
+.mediabase .icheckbox_minimal-red,
+.mediabase .iradio_minimal-red {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url("../js/inc/check/skins/minimal/mediabase.png") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.mediabase .icheckbox_minimal-red {
+    background-position: 0 0;
+}
+    .mediabase .icheckbox_minimal-red.hover {
+        background-position: -20px 0;
+    }
+    .mediabase .icheckbox_minimal-red.checked {
+        background-position: -40px 0;
+    }
+    .mediabase .icheckbox_minimal-red.disabled {
+        background-position: -60px 0;
+        cursor: default;
+    }
+    .mediabase .icheckbox_minimal-red.checked.disabled {
+        background-position: -80px 0;
+    }
+
+.mediabase .iradio_minimal-red {
+    background-position: -100px 0;
+}
+    .mediabase .iradio_minimal-red.hover {
+        background-position: -120px 0;
+    }
+    .mediabase .iradio_minimal-red.checked {
+        background-position: -140px 0;
+    }
+    .mediabase .iradio_minimal-red.disabled {
+        background-position: -160px 0;
+        cursor: default;
+    }
+    .mediabase .iradio_minimal-red.checked.disabled {
+        background-position: -180px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .mediabase .icheckbox_minimal-red,
+    .mediabase .iradio_minimal-red {
+        background-image: url("../js/inc/check/skins/minimal/mediabase@2x.png");
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}
+
+
+
+
 .texts .icheckbox_minimal-red,
 .texts .iradio_minimal-red {
     display: inline-block;
