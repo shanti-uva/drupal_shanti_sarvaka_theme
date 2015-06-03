@@ -570,7 +570,7 @@ li.pager-current.widget > form input.form-control { width: 100px;}
 .content-resources .nav-pills li.active > a > .badge{background:#505050;}
 .content-resources .nav-pills li > a > .badge:empty{display:none;}
 .content-resources .nav-pills li > a:hover .badge{background:#505050;}
-.content-resources .nav-pills li .ajax-progress { position: absolute;right:0.2rem;top:1rem;}
+.content-resources .nav-pills li .ajax-progress { position: absolute;right:0.2rem;top:1.4rem;}
 
 /* content resources column ---
 .row-offcanvas { position: relative;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
