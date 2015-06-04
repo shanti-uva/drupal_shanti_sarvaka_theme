@@ -97,7 +97,6 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .navbar-brand:hover .site-slogan{ opacity:1.00}
 .navbar-brand:active .shanticon-logo,
 .navbar-brand:active .site-slogan{ opacity:0.70;}
-.navbar-brand:hover .shanticon-logo{ color:#5f3c71;}
 
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
