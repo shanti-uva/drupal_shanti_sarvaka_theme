@@ -56,7 +56,7 @@
   <?php print $modernizer; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  <p class="progressive">It appears you are using an older browser. Please consider a upgrading to a modern version of your browser to best enjoy this website.</p>
+  <!--[if lte IE 8]><p class="progressive">It appears you are using an older browser. Please consider a upgrading to a modern version of your browser to best enjoy this website.</p><![endif]-->
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
