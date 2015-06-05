@@ -703,7 +703,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-header{ margin: 0 0 0.2rem;}
 .carousel-header span{ font-style:italic;font-weight:bold;font-size:1.12em;position:relative;top:-0.15rem;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
-.carousel-inner{ height:230px; overflow:visible;}
+.carousel-inner{ height:230px; overflow:visible; margin:0 auto;}
 
 .carousel-main-content{  float:left; padding-left:0 !important;}
 .carousel-title{ font-size:1.38em;font-weight:normal;margin: 0 0 0.8rem;}
