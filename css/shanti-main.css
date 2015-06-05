@@ -700,7 +700,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /*----- BEGIN Carousel ---*/
 /*------------------------*/
 .carousel{ margin-bottom:0.25em; padding: 1.56em 2.5em 0; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
-.carousel-header{ margin: 0 0 0.2rem;}
+.carousel-header{ margin: 1rem 0 0;}
 .carousel-header span{ font-style:italic;font-weight:bold;font-size:1.12em;position:relative;top:-0.15rem;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
 .carousel-inner{ height:230px; overflow:visible; margin:0 auto;}
