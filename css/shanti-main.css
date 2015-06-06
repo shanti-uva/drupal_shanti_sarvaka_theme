@@ -78,7 +78,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .navbar-header .navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
 .navbar-header .site-slogan{ 
-	padding: 0 0 0 12px;
+	padding: 0 0 0 5px;
 	white-space:nowrap;
 	color:#444;
 	position: relative;
@@ -89,6 +89,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 	letter-spacing:0.2rem;
 	font-family: 'museo-sans-500', arial,sans-serif;;
 	font-size:85%;
+	display:none;
 }
 
 .navbar-header .site-slogan::before{ content:'/ ';}
@@ -2149,14 +2150,15 @@ p.modal-title{ font-size:110%;}
 
 @media screen and (min-width: 500px) {
 		
-	 .collections ul li{ width:40%;margin-left:10%;}
-   .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
+	.navbar-header .site-slogan	{ display:inline-block;}
+	.collections ul li{ width:40%;margin-left:10%;}
+  .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
 @media screen and (min-width: 600px) {
 
   .navbar-default h1 .icon{ line-height:1.68em;padding-left:12px; position:relative; top:0.5rem;}
-  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0.025rem; padding-left:0.7rem;} 
+  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0.025rem; } 
   /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
 	.collections ul li { width:20%; }
   .collections ul li a.disabled, 
