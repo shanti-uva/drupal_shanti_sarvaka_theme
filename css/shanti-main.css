@@ -173,7 +173,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .collections ul li a:hover .icon,
 .collections ul li a:active .icon{ color:#fff;}
 .collections h4 { color:#eee; text-align: center; margin: 10px 0 18px; letter-spacing: 0.4rem; display:none;}
-.collections .close { color: #ccc;background:transparent;background-image:none;width:2rem;height:2rem;font-size: 1.25em;position: absolute;top:0.9rem;right:2rem;z-index:10 !important;filter:alpha(opacity=35);opacity:0.35;padding:0;margin:0;border:none;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;cursor:pointer;display:inline-block; -webkit-transition: color 200ms ease 0s;-moz-transition: color 200ms ease 0s;-o-transition: color 200ms ease 0s;transition: color 200ms ease 0s;}
+.collections .close { color: #ccc;background:transparent;background-image:none;font-size:1.75em;width:2.5rem;height:2.5rem;position:absolute;top:1rem;right:2rem;z-index:10 !important;filter:alpha(opacity=35);opacity:0.35;padding:0;margin:0;border:none;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;cursor:pointer;display:inline-block; -webkit-transition: color 200ms ease 0s;-moz-transition: color 200ms ease 0s;-o-transition: color 200ms ease 0s;transition: color 200ms ease 0s;}
 .collections .close:hover,
 .collections .close:active { filter:alpha(opacity=75);opacity:0.75;}
 /*--- END collections panel ---*/
@@ -2052,7 +2052,6 @@ p.modal-title{ font-size:110%;}
 	.collections h4{ font-size:1em;}
 	.collections ul li{ line-height: 3em;}
 	.collections > nav > div{ padding-right:0;padding-left:0;}
-	.collections .close{ width:2rem;height:2rem;font-size:1.25em;right:1rem;}	
 	
 }
 
@@ -2152,7 +2151,6 @@ p.modal-title{ font-size:110%;}
 		
 	.navbar-header .site-slogan	{ display:inline-block;}
 	.collections ul li{ width:40%;margin-left:10%;}
-  .collections .close { width:2.5rem;height:2.5rem;font-size: 1.75em;right:2rem;}
 }
 
 @media screen and (min-width: 600px) {
