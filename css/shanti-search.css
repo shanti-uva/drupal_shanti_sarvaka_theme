@@ -334,7 +334,7 @@ background:transparent;
  /* search errors */
 .input-section .notification-wrapper{ padding: 0 15px;}
 .input-section .alert{ margin:0 10px 10px;padding: 10px 15px;text-shadow: 0 1px 0 rgba(255,255,255,.4);}
-.input-section .alert-danger{  color:#996454; background-image:none; border-radius:0 9px; border:1px solid #ddd; background-color:rgba(255,255,252, 1.0);}
+.input-section .alert-danger{  color:#dc3c47; background-image:none; border-radius:0 9px; border:1px solid #ddd; background-color:rgba(255,255,252, 1.0);}
 .input-section .alert-danger .close{ position:relative;top:-0.5rem;right:-.5rem;}
 
 .input-section .selectpicker li a span{ background:transparent !important; color:#444;}
