@@ -308,8 +308,8 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
 .nav-justified>li.active>a:hover,
 .nav-justified>li.active>a:active{ border-radius:0; color:#fff !important;}
 /*--- Example: subtheme color ---*/
-.nav-justified>li.active>a{ /*background:#32ccca;*/}
-.nav-justified>li.active::before{ /*color:#32ccca;*/}
+.nav-justified>li.active>a{ /*background:#32ccca !important;*/}
+.nav-justified>li.active::before{ /*color:#32ccca !important;*/}
 
 
 /*----- BEGIN responsive navigations ----*/
@@ -2060,13 +2060,12 @@ p.modal-title{ font-size:110%;}
 		
 	.collections ul li{ line-height: 3em;}
 	.collections ul li a { font-size: 0.82em;}
-	
 }
 
 
 @media screen and (max-width: 767px) {
 	
-	.nav-justified > li.active::before{ border-color:transparent;}
+	.nav-justified>li.active::before{ border-color:transparent !important;color:transparent !important;}
 
 				/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
  
