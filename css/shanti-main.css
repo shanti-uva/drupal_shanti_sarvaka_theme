@@ -80,7 +80,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .navbar-header .site-slogan{ 
 	padding: 0 0 0 5px;
 	white-space:nowrap;
-	color:#444;
+	color:#444 !important;
 	position: relative;
 	top: 0.25rem;
 	display: inline-block;
@@ -93,13 +93,11 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 }
 
 .navbar-header .site-slogan::before{ content:'/ ';}
-.navbar-brand .shanticon-logo,
+.navbar-brand .shanticon-logo{ opacity:1.0;}
 .navbar-brand .site-slogan{ opacity:0.80;}
 .navbar-brand:hover .shanticon-logo,
-.navbar-brand:hover .site-slogan{ opacity:1.00}
-.navbar-brand:active .shanticon-logo,
-.navbar-brand:active .site-slogan{ color:#444;}
-.navbar-brand:hover .shanticon-slogan{ /* see theme color */}
+.navbar-brand:hover .site-slogan{ opacity:1.0;}
+.navbar-brand:active .site-slogan{ color:#444 !important;}
 
 /*--- menu toggle buttons ---*/
 .menu-icon{ display:inline-block; position:absolute; top:0; right:0; z-index:300; padding:0; border-left: 1px solid #d0d0d0;}
