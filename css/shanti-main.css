@@ -1550,6 +1550,8 @@ form table td.label{ padding-top:0.68em !important;}
 /*---- footer ----*/
 .footer{ color: #999;width: 100%;font-size: small;padding-left: 15px;padding: 40px 0 20px 15px;background:#444;bottom: 0;/* position:relative; */}
 .footer a{ color:#ccc;}
+.admin-menu .footer h1,
+.admin-menu .footer h2{ color:#fff;font-size:1.25em;}
 
 
 
