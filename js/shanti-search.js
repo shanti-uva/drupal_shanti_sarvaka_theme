@@ -36,7 +36,10 @@ Drupal.behaviors.sarvakaMbextruder = {
 				}
 		    // Bind event listener
 		    $(".extruder-content").resize(Drupal.ShantiSarvaka.checkWidth);
-		   } catch (e) { console.error('Resizeable not a function error caught! shanti-search.js line 31');}
+		   } catch (e) { 
+		   	console.trace();
+		   	console.warn('Resizeable not a function error caught! shanti-search.js line 31');
+		   }
 
 	    if (!$(".extruder.right").hasClass("isOpened")) {
 	      $(".flap").click( function() {

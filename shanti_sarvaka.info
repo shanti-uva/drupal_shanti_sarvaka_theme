@@ -50,28 +50,28 @@ stylesheets[all][] =  css/shanti-main.css
 ; scripts[] = js/inc/jquery/jquery.ba-hashchange.min.js
 ; scripts[] = js/inc/bootstrap/bootstrap-paginator.min.js
 
-;scripts[] = js/inc/jquery/jquery-ui.min.js  ; Removed by ndg8f on Feb. 18, 2015 because supplied by jquery update
+; scripts[] = js/inc/jquery/jquery-ui.min.js  - removed by ndg8f on Feb. 18, 2015 because supplied by jquery update
 scripts[] = js/inc/jquery/jquery-migrate-1.2.1.js
 scripts[] = js/inc/menus/jquery.multilevelpushmenu.min.js
 scripts[] = js/inc/extruder/jquery.hoverIntent.min.js
-scripts[] = js/inc/extruder/jquery.mb.flipText.js
+; scripts[] = js/inc/extruder/jquery.mb.flipText.js - removed by mf8yk on June 9, 2015 because this feature in extruder script is not needed, testing removal
 scripts[] = js/inc/extruder/mbExtruder.js
-;scripts[] = js/inc/fancytree/jquery.fancytree.js
-;scripts[] = js/inc/fancytree/jquery.fancytree.glyph.js
-;scripts[] = js/inc/fancytree/jquery.fancytree.filter.js
-;scripts[] = js/inc/fancytree/jquery.fancytree.edit.js
-;scripts[] = js/inc/fancytree/jquery.fancytree.clearfacetfilter.js
+; scripts[] = js/inc/fancytree/jquery.fancytree.js
+; scripts[] = js/inc/fancytree/jquery.fancytree.glyph.js
+; scripts[] = js/inc/fancytree/jquery.fancytree.filter.js
+; scripts[] = js/inc/fancytree/jquery.fancytree.edit.js
+; scripts[] = js/inc/fancytree/jquery.fancytree.clearfacetfilter.js
 scripts[] = js/inc/menus/metisMenu.js
 scripts[] = js/inc/check/icheck.min.js
 scripts[] = js/inc/select/bootstrap-select.min.js
 scripts[] = js/inc/jquery/jquery.highlight.js
-scripts[] = js/inc/jquery/jquery.tablesorter.min.js
+; scripts[] = js/inc/jquery/jquery.tablesorter.min.js - removed by mf8yk on June 9, 2015 because Yuji posted confirmation in Slack that the script is no longer used
 scripts[] = js/inc/other/trunk8.min.js
 scripts[] = js/inc/other/vjs.zencdn.net-4.5-video.js
-scripts[] = js/inc/other/equalHeights.js
+; scripts[] = js/inc/other/equalHeights.js - removed by mf8yk on June 9, 2015 not using right now but may soon restore for columns
 scripts[] = js/inc/jquery/jquery.imagesloaded.js
 scripts[] = js/inc/jquery/jquery.wookmark.min.js
-;scripts[] = js/inc/other/modernizr-2.6.2.min.js  ; added in html.tpl.php so other scripts can be put in bottom of page (ndg8f, Feb. 18, 2015)
+; scripts[] = js/inc/other/modernizr-2.6.2.min.js - added in html.tpl.php so other scripts can be put in bottom of page (ndg8f, Feb. 18, 2015)
 scripts[] = js/inc/other/jssor.slider.mini.js
 scripts[] = js/inc/other/hammer.min.js
 scripts[] = js/inc/other/jquery.bxslider-rahisified.js
@@ -82,5 +82,6 @@ scripts[] = js/shanti-search.js
 ;; Theme Settings
 ;;;;;;;;;;;;;;;;;;;;;
 
-settings[shanti_sarvaka_icon_class] = 'av'
+settings[shanti_sarvaka_icon_class] = 'logo-shanti'
 settings[shanti_sarvaka_show_login_link] = 1
+settings[shanti_sarvaka_breadcrumb_nohome] = 1

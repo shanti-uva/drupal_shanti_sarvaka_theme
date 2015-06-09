@@ -1012,7 +1012,12 @@ function shanti_sarvaka_textfield($variables) {
  */
 function shanti_sarvaka_breadcrumb($variables) {
   global $base_url;
+	//dpm($variables);
+	
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
+	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') < 3 && strpos($breadcrumbs[0], t('Home')) > -1)  {
+		array_shift($breadcrumbs);
+	}
   $output = '<ol class="breadcrumb">';
   if(empty($variables['is_front'])) {
     array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
@@ -1028,6 +1033,44 @@ function shanti_sarvaka_breadcrumb($variables) {
   }
   $output .= '</ol>';
   return $output;
+}
+
+/**
+ * Alter Breadcrumbs to add Collection before item or if not part of collection, then creators name.
+ */
+function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
+	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') != 2) {return;}
+	$group_exists = TRUE;
+	// Adjust breadcrumbs only for nodes
+	if ($item['map'][0] == 'node') {
+		// If Group module exists check if it has a group
+		if (module_exists('og')) {
+			$gps = og_get_entity_groups($item['map'][0], $item['map'][1]);
+			if (empty($gps)) {
+				$group_exists = FALSE;
+			} else {
+				if (!empty($gps['node']) && is_numeric(key($gps['node']))) {
+					$gid = $gps['node'][key($gps['node'])];
+					$gnode = node_load($gid);
+					$bc = array( array(
+						'title' => $gnode->title,
+						'href' => "node/$gid",
+						'localized_options' => array(),
+					));
+					array_splice($active_trail, 1, 0, $bc);
+				}
+			}
+		}
+		$uid = $item['map'][1]->uid;
+		$user = user_load($uid);
+		$uname = (!empty($user->realname)) ? $user->realname : $user->name;
+		$bc = array( array(
+			'title' => $uname,
+			'href' => "user/{$uid}",
+			'localized_options' => array(),
+		));
+		array_splice($active_trail, 1, 0, $bc);
+	}
 }
 
 /** Theme Facet Counts for JS **/
