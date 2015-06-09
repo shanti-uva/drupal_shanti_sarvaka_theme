@@ -1048,14 +1048,16 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 			if (empty($gps)) {
 				$group_exists = FALSE;
 			} else {
-				$gid = $gps['node'][key($gps['node'])];
-				$gnode = node_load($gid);
-				$bc = array( array(
-					'title' => $gnode->title,
-					'href' => "node/$gid",
-					'localized_options' => array(),
-				));
-				array_splice($active_trail, 1, 0, $bc);
+				if (!empty($gps['node']) && is_numeric(key($gps['node']))) {
+					$gid = $gps['node'][key($gps['node'])];
+					$gnode = node_load($gid);
+					$bc = array( array(
+						'title' => $gnode->title,
+						'href' => "node/$gid",
+						'localized_options' => array(),
+					));
+					array_splice($active_trail, 1, 0, $bc);
+				}
 			}
 		}
 		// If group module does not exist or node does not have a group, use creators name in breadcrumbs
