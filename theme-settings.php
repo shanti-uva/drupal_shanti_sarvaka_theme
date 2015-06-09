@@ -46,13 +46,24 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#description'   => t("The text to display in front of the breadcrumbs"),
   );
 	
+  $form['shanti_sarvaka_breadcrumb_prefix'] = array(
+    '#type'          => 'select',
+    '#title'         => t('Choose the prefix you want for your breadcrumbs'),
+    '#options' 			 => array(
+    	1 => t('None'),
+    	2 => t('Collection or Username'),
+    	3 => t('Home'),
+    ),
+    '#default_value' => theme_get_setting('shanti_sarvaka_breadcrumb_prefix'),
+    '#description'   => t("Select the option for your breadcrumb prefix"),
+  );
+	
   $form['shanti_sarvaka_breadcrumb_nohome'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Remove "Home" as first item in breadcrumbs'),
     '#default_value' => theme_get_setting('shanti_sarvaka_breadcrumb_nohome'),
     '#description'   => t("Check this box to remove the first breadcrumb, \"Home\""),
   );
-	
   $form['shanti_sarvaka_icon_class'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Icon Class Name for Banner'),

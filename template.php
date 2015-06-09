@@ -1015,7 +1015,7 @@ function shanti_sarvaka_breadcrumb($variables) {
 	//dpm($variables);
 	
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
-	if (theme_get_setting('shanti_sarvaka_breadcrumb_nohome') && strpos($breadcrumbs[0], t('Home')) > -1)  {
+	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') < 3 && strpos($breadcrumbs[0], t('Home')) > -1)  {
 		array_shift($breadcrumbs);
 	}
   $output = '<ol class="breadcrumb">';
@@ -1039,6 +1039,7 @@ function shanti_sarvaka_breadcrumb($variables) {
  * Alter Breadcrumbs to add Collection before item or if not part of collection, then creators name.
  */
 function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
+	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') != 2) {return;}
 	$group_exists = TRUE;
 	// Adjust breadcrumbs only for nodes
 	if ($item['map'][0] == 'node') {
