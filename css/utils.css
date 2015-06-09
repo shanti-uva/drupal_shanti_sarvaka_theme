@@ -211,6 +211,34 @@
 
 /* iCheck plugin Minimal skin
 ----------------------------------- */
+
+/* DEFAULT */
+.icheckbox_minimal-red,
+.iradio_minimal-red {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url("../js/inc/check/skins/minimal/grey.png") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox_minimal-red,
+    .iradio_minimal-red {
+        background-image: url("../js/inc/check/skins/minimal/grey@2x.png");
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}
+
+
+
 /* SUBJECTS */
 
 .page-subjects .icheckbox_minimal-red,
