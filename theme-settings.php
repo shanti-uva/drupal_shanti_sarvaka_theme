@@ -45,6 +45,14 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#default_value' => theme_get_setting('shanti_sarvaka_breadcrumb_intro'),
     '#description'   => t("The text to display in front of the breadcrumbs"),
   );
+	
+  $form['shanti_sarvaka_breadcrumb_nohome'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Remove "Home" as first item in breadcrumbs'),
+    '#default_value' => theme_get_setting('shanti_sarvaka_breadcrumb_nohome'),
+    '#description'   => t("Check this box to remove the first breadcrumb, \"Home\""),
+  );
+	
   $form['shanti_sarvaka_icon_class'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Icon Class Name for Banner'),

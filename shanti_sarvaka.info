@@ -82,5 +82,6 @@ scripts[] = js/shanti-search.js
 ;; Theme Settings
 ;;;;;;;;;;;;;;;;;;;;;
 
-settings[shanti_sarvaka_icon_class] = 'av'
+settings[shanti_sarvaka_icon_class] = 'logo-shanti'
 settings[shanti_sarvaka_show_login_link] = 1
+settings[shanti_sarvaka_breadcrumb_nohome] = 1
