@@ -309,7 +309,7 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
 .nav-justified>li.active>a:active{ border-radius:0; color:#fff !important;}
 /*--- Example: subtheme color ---*/
 .nav-justified>li.active>a{ /*background:#32ccca !important;*/}
-.nav-justified>li.active::before{ /*color:#32ccca !important;*/}
+.nav-justified>li.active::before{ /*color:#32ccca !important;*/border-color: transparent !important;}
 
 
 /*----- BEGIN responsive navigations ----*/
