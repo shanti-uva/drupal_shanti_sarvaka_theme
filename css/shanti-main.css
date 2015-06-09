@@ -9,11 +9,9 @@ body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',p
 /* *:active{ outline:0 !important;} */
 a{text-decoration:none;color:#454fa4;}
 a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
-.content-section a{ border-bottom:1px solid transparent;/*-webkit-transition: border 300ms ease 0s;-moz-transition:border 300ms ease 0s;-o-transition: border 300ms ease 0s;transition: border 300ms ease 0s;*/}
+.content-section a{ border-bottom:1px solid transparent;}
 .content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
-/*.content-section a:focus{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}*/
 .content-section a:active{ border-bottom-color:transparent !important;}
-/*.content-section .messages{ display:none;}*/
 .content-section p{ margin:1rem 0 0;}
 
 ::selection,
@@ -21,7 +19,7 @@ a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;margin-bottom:5px;}
-h1, h2{  color:#555; font-size:1.62em; margin:1rem 0 0;}
+h1, h2{  color:#555; font-size:1.5em; margin:1rem 0 0;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
 label{ color:#555;font-size:80%;font-family:'museo-sans-500',helvetica,arial,sans-serif;text-transform:uppercase;margin:0 0 0 1rem;}
 mark{ color:#333; background:transparent; font-weight:bold; padding:0;}
@@ -45,7 +43,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .content-section.equal-height > .tab-content{ padding-top: 1.5rem;padding-bottom:5rem;}
 .max-col-widths .content-section.equal-height .tab-content{ padding-top:0;}
 
-.content-section .container{ width:auto;} /* correct for changes in BS */
+.content-section .container{ width:auto;} /* matching container-fluid for now, correct for changes in BStrap */
 
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
@@ -72,8 +70,8 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .navbar.navbar-default{ padding:0; margin:0; background:#fff;border:none; overflow:visible;}
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default.navbar-static-top{ border-bottom: none;}
-.navbar-header {color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 10px; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.navbar-header .navbar-brand{float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-size:0.88em;line-height: 2.62em;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
+.navbar-header { color:#555;font-style:italic; font-size:1.5em; line-height:normal; margin:0; padding:0 0 0 10px; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.navbar-header .navbar-brand{ float:none;border:0;display:inline-block;padding:0;margin:0;color:#333;font-size:0.88em;line-height: 2.62em;font-weight:normal;text-shadow:0 1px 1px #f0f0f0;}
 .navbar-header .navbar-brand:hover,
 .navbar-header .navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
