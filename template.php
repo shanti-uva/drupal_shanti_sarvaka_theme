@@ -1061,17 +1061,14 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 				}
 			}
 		}
-		// If group module does not exist or node does not have a group, use creators name in breadcrumbs
-		if (!module_exists('og') || !$group_exists) {
-			$uid = $item['map'][1]->uid;
-			$user = user_load($uid);
-			$bc = array( array(
-				'title' => $user->name,
-				'href' => "user/{$uid}",
-				'localized_options' => array(),
-			));
-			array_splice($active_trail, 1, 0, $bc);
-		}
+		$uid = $item['map'][1]->uid;
+		$user = user_load($uid);
+		$bc = array( array(
+			'title' => $user->name,
+			'href' => "user/{$uid}",
+			'localized_options' => array(),
+		));
+		array_splice($active_trail, 1, 0, $bc);
 	}
 }
 
