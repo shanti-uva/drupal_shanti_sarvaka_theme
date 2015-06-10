@@ -76,7 +76,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .navbar-header .navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
 .navbar-header .site-slogan{ 
-	padding: 0 0 0 5px;
+	padding: 0 0 0 1rem;
 	white-space:nowrap;
 	color:#444 !important;
 	position: relative;
@@ -90,7 +90,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 	display:none;
 }
 
-.navbar-header .site-slogan::before{ content:'/ ';}
+.navbar-header .site-slogan::before{ content:'/ '; margin-right:0.5rem;}
 .navbar-brand .shanticon-logo{ opacity:1.0;}
 .navbar-brand .site-slogan{ opacity:0.80;}
 .navbar-brand:hover .shanticon-logo,
