@@ -42,8 +42,6 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .main-content{ position:relative;margin:0 auto;}
 .row-offcanvas > .content-section > .tab-content{ padding-top: 1.5rem;padding-bottom:5rem;}
 .max-col-widths .row-offcanvas > .content-section > .tab-content{ padding-top:0;}
-.has-tabs .row-offcanvas > .content-section .tab-content:nth-of-type(1){ margin-top:2rem;} /* this allows for two rows of tabs on tablets. */
-
 .content-section .container{ width:auto;} /* matching container-fluid for now, correct for changes in BStrap */
 
 .show-more a, 
@@ -178,7 +176,10 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 /*--- BEGIN banner header ---*/
 .titlearea { color: #f9f9f9; background:#888 !important; height:6.7rem; position: relative;padding:0;margin:0; -moz-box-shadow: inset 0 2px 5px 3px rgba(50, 50, 50, 0.1000);box-shadow: inset 0 2px 5px 3px rgba(50, 50, 50, 0.1000); border-collapse: separate;}
 .titlearea > div{ height:6.7rem; /* bottom shadow here, top banner shadow is off header-banner */ -webkit-box-shadow: inset 0 -2px 10px -4px rgba(0, 0, 0, 0.1400);box-shadow: inset 0 -2px 10px -4px rgba(0, 0, 0, 0.1400);border-collapse: separate; position:relative; z-index:1;}
-header.col-xs-12.titlearea.banner.has-tabs{ margin-bottom:2.5rem;}
+.titlearea.has-tabs{ margin-bottom:2.5rem;}
+.titlearea.has-tabs-secondary ul.tabs.secondary{ margin-top:0.2rem;}
+.titlearea.has-tabs-secondary .row-offcanvas > .content-section .tab-content:nth-of-type(1){ margin-top:2rem;} /* this allows for two rows of tabs on tablets. */
+
 
 .page-title { font-weight: normal;font-size:1.56em;line-height:1.32em;text-shadow:0 0 3px rgba(50,50,50, 0.225);margin:0;padding:5px 0 0;color:#f9f9f9;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;padding-right:4rem;}
 .page-title .page-title-text { position:relative; top: 0.6rem;}
@@ -240,7 +241,7 @@ body.front ol.breadcrumb{ display:none; }
 /*----- BEGIN navigation -----*/
 /*----------------------------*/
 
-.has-tabs div.banner-tabs{ border-bottom:1px solid #ccc; width:100%; background: #ddd !important; /* match banner color in app */ height:2rem;margin-top:0.3rem;filter:alpha(opacity=60);opacity:0.6;}
+.has-tabs .banner-tabs{ border-bottom:1px solid #ccc; width:100%; background: #ddd !important; /* match banner color in app */ height:2rem;margin-top:0.3rem;filter:alpha(opacity=60);opacity:0.6;}
 
 /**** Titlebar Tabs ****/
 header ul.tabs.primary,
@@ -2191,9 +2192,8 @@ p.modal-title{ font-size:110%;}
 
 @media screen and (min-width: 992px) {
 	
-	.has-tabs .row-offcanvas > .content-section .tab-content:nth-of-type(1){ margin-top:0;}
-	.has-tabs ul.tabs.secondary{ margin-top:0;}
-
+	.titlearea.has-tabs-secondary ul.tabs.secondary,
+	.titlearea.has-tabs-secondary .row-offcanvas > .content-section .tab-content:nth-of-type(1){ margin-top:0;}
   
   .collections h4 { font-size:1.12em;}
 	.collections ul{ margin-left:-5%;}
