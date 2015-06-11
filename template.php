@@ -1061,15 +1061,17 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 				}
 			}
 		}
-		$uid = $item['map'][1]->uid;
-		$user = user_load($uid);
-		$uname = (!empty($user->realname)) ? $user->realname : $user->name;
-		$bc = array( array(
-			'title' => $uname,
-			'href' => "user/{$uid}",
-			'localized_options' => array(),
-		));
-		array_splice($active_trail, 1, 0, $bc);
+		if (isset($item['map'][1]->uid)) { 
+			$uid = $item['map'][1]->uid;
+			$user = user_load($uid);
+			$uname = (!empty($user->realname)) ? $user->realname : $user->name;
+			$bc = array( array(
+				'title' => $uname,
+				'href' => "user/{$uid}",
+				'localized_options' => array(),
+			));
+			array_splice($active_trail, 1, 0, $bc);
+		}
 	}
 }
 
