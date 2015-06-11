@@ -729,9 +729,9 @@
 	Drupal.behaviors.advancedToggleClassHeightChange = {
 		attach: function (context, settings) {
 	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
-    $(".advanced-link").bind("click", function (e) { 
-      $(".view-wrap").toggleClass('short-wrap');
-    });
+	    $(".advanced-link").bind("click", function (e) { 
+	      $(".view-wrap").toggleClass('short-wrap');
+	    });
 	  }
 	};
 	
@@ -752,7 +752,16 @@
   };
   
 
-
+	Drupal.behaviors.hasTabsSecondary = {
+		attach: function (context, settings) {
+	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
+	    if($(".tabs.secondary").length ) { 
+	      $("header.titlearea").addClass('has-tabs-secondary');
+	    }
+	  }
+	};
+	
+	
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
