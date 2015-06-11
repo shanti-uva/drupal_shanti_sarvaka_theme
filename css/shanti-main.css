@@ -242,11 +242,11 @@ header ul.tabs.secondary{ float:left;margin-left:2rem;}
 header ul.tabs.primary{ float:right;margin-right:2rem;}
 
 header ul.tabs.primary,
-header ul.tabs.secondary{ border:none; display:inline; margin:0; padding:0; }
+header ul.tabs.secondary{ border:none; display:inline; margin:0;padding:0; }
 header ul.tabs.primary li,
-header ul.tabs.secondary li{ float:left; margin-right:0.2rem; border:none; padding:0;}
+header ul.tabs.secondary li{ float:left; margin-right:0.2rem;border:none;padding:0;}
 header ul.tabs.primary li a,
-header ul.tabs.secondary li a{ color:#222; background:rgba(0,0,0, 0.1000); line-height:2.3rem; height:2rem; padding:0 1.5rem; border:none; font-size:0.9rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:700;font-weight:bold;/*border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;*/}
+header ul.tabs.secondary li a{ color:#111;background:rgba(50,50,50, 0.2000);font-size:0.9rem;line-height:2.3rem;height:2rem;padding:0 1.5rem;border:none;font-weight:bold;margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:700;font-weight:bold;}
 
 header ul.tabs.primary li a:hover,
 header ul.tabs.primary li a:active,
