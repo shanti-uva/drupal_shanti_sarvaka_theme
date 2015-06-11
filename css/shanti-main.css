@@ -323,7 +323,7 @@ header ul.tabs.secondary li.active a:active{ background:rgba(255,255,255, 1.000)
 .menu-main-desk li { border-top: none;background:#fff;display:block;font-size:1em;line-height:3em; height:4em;padding:0 !important;}
 .menu-main-desk li:hover,
 .menu-main-desk li:active{ background:#f7f7f7;color:#555;}
-.menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.88em;line-height:2.88em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.5em;text-transform:uppercase;}
+.menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.88em;line-height:2.88em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.75em;text-transform:uppercase;}
 .menu-main-desk li a:hover,
 .menu-main-desk li a:active{ color:#444;}
 .menu-main-desk li:first-child a,
@@ -1115,14 +1115,14 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .form-item-sort-bef-combine label{ display: none;}
 .form-item-sort-bef-combine .dropdown-menu.open .disabled{ background-color: #d0d0d0;}
 table.pagerer { float:right;font-size:0.88em;text-transform:uppercase;position:relative;top:0.9rem;}
-input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-top: 0.15rem;line-height:1.25em;color: #6d7afc; width:2.68em !important; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
+input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-top: 0.15rem;line-height:1.5em;color: #6d7afc; width:2.68em !important; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;color: rgba(32, 132, 131, 0.71);}
 .pager{ text-align:right;float:right;position:relative;top:-1rem;right:1rem;}
 .pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .pager li>a{ border:none;color:#aaa;padding:0.12em 0.5em;margin:0;background:transparent;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;}
 .pager li>a:hover,
-.pager li>a:focus{ color:#333;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;}
-.pager li>a:active{ -webkit-box-shadow:none;box-shadow:none;}
+.pager li>a:active{ color:#333;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;}
+.pager li>a:active{ color:#000; -webkit-box-shadow:none;box-shadow:none;}
 .pager li>a .icon{ color:#999; position:relative; top: 0;}
 .pager li>a:hover .icon,
 .pager li>a:focus .icon{ color:#444;}
