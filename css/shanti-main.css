@@ -40,8 +40,9 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .main-wrapper{ background:#eee; position:relative; min-height:60em;}
 .main-wrapper::after{ clear:both;}
 .main-content{ position:relative;margin:0 auto;}
-.content-section.equal-height > .tab-content{ padding-top: 1.5rem;padding-bottom:5rem;}
-.max-col-widths .content-section.equal-height .tab-content{ padding-top:0;}
+.row-offcanvas > .content-section > .tab-content{ padding-top: 1.5rem;padding-bottom:5rem;}
+.max-col-widths .row-offcanvas > .content-section > .tab-content{ padding-top:0;}
+.has-tabs .row-offcanvas > .content-section > .tab-content{ margin-top:2rem;} /* this allows for two rows of tabs on tablets. */
 
 .content-section .container{ width:auto;} /* matching container-fluid for now, correct for changes in BStrap */
 
@@ -249,7 +250,7 @@ header ul.tabs.secondary li{ float:left; margin-right:0.2rem; border:none; paddi
 header ul.tabs.primary li a,
 header ul.tabs.secondary li a{ color:#222; background:rgba(0,0,0, 0.1000); line-height:2.3rem; height:2rem; padding:0 1.5rem; border:none; font-size:0.9rem; font-weight:bold; margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:700;font-weight:bold;/*border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;*/}
 
-header ul.tabs.secondary{ float:left;margin-left:2rem;}
+header ul.tabs.secondary{ float:left;margin-left:2rem;margin-top:0.2rem;}
 header ul.tabs.primary{ float:right;margin-right:2rem;}
 
 header ul.tabs.primary li a:hover,
@@ -2189,6 +2190,10 @@ p.modal-title{ font-size:110%;}
 
 
 @media screen and (min-width: 992px) {
+	
+	.has-tabs .row-offcanvas > .content-section > .tab-content{ margin-top:0;}
+	.has-tabs ul.tabs.secondary{ margin-top:0;}
+
   
   .collections h4 { font-size:1.12em;}
 	.collections ul{ margin-left:-5%;}
