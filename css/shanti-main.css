@@ -240,7 +240,7 @@ body.front ol.breadcrumb{ display:none; }
 .has-tabs .banner-tabs{ border-bottom:1px solid #ccc;width:100%;background:#ddd !important;height:2rem;margin-top:0.3rem;filter:alpha(opacity=60);opacity:0.6;}
 
 .has-tabs-secondary ul.tabs.secondary{ margin-top:0.2rem;}
-.has-tabs-secondary .row-offcanvas > .content-section .tab-content:nth-of-type(1){ margin-top:2rem;} /* see breakpoints - this allows for two rows of tabs on tablets. */
+.has-tabs-secondary .row-offcanvas > section.content-section .tab-content:nth-of-type(1){ margin-top:2rem;} /* see breakpoints - this allows for two rows of tabs on tablets. */
 
 /**** Titlebar Tabs ****/
 header ul.tabs.primary,
@@ -2192,7 +2192,7 @@ p.modal-title{ font-size:110%;}
 @media screen and (min-width: 992px) {
 	
 	.titlearea.has-tabs-secondary ul.tabs.secondary,
-	.titlearea.has-tabs-secondary .row-offcanvas > .content-section .tab-content:nth-of-type(1){ margin-top:0;}
+	.titlearea.has-tabs-secondary .row-offcanvas > section.content-section .tab-content:nth-of-type(1){ margin-top:0;}
   
   .collections h4 { font-size:1.12em;}
 	.collections ul{ margin-left:-5%;}
