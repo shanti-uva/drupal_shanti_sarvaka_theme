@@ -1574,7 +1574,7 @@ form table td.label{ padding-top:0.68em !important;}
 /*-------------------------------*/
 
 .no-sidebars .tab-pane.main-col > .region-content, /* broad range need to watch */
-.page-node-devel .tab-pane.main-col > .region-content{ max-width:1050px !important; margin: 1rem auto 5rem !important;}
+.page-node-devel .tab-pane.main-col > .region-content{ max-width:1050px !important; margin: 1.5rem auto 5rem !important;}
 
 .page-mydata .tab-pane.main-col > .region-content,
 .page-mygallery .tab-pane.main-col > .region-content,
