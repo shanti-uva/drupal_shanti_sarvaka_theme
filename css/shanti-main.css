@@ -265,7 +265,7 @@ header ul.tabs.secondary li.active a:hover{ background:#eee;color:#111;cursor:po
 header ul.tabs.primary li a:active,
 header ul.tabs.secondary li a:active,
 header ul.tabs.primary li a.active:active,
-header ul.tabs.secondary li a.active:active{ background:#fff;color:#444;border-bottom:2px solid #ddd;}
+header ul.tabs.secondary li a.active:active{ background:#fff;color:#444;border-bottom:1px solid #ddd;}
 
 .has-tabs-secondary ul.tabs.secondary{ margin-top:0.2rem;}
 
