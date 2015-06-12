@@ -259,7 +259,7 @@ header ul.tabs.primary li a:active,
 header ul.tabs.secondary li a:active{ background:#444;color:#fff;}
 
 header ul.tabs.primary li.active a,
-header ul.tabs.secondary li.active a{ background:#eee;color:#111;cursor:pointer;border:1px solid #ccc;border-width:0 1px;}
+header ul.tabs.secondary li.active a{ background:#eee;color:#111;cursor:pointer;border:1px solid #ccc;border-width:1px 1px 0;}
 header ul.tabs.primary li.active a:hover,
 header ul.tabs.secondary li.active a:hover{ background:#eee;color:#111;cursor:pointer;}
 header ul.tabs.primary li a:active,
