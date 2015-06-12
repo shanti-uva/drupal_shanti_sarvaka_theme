@@ -1525,6 +1525,7 @@ form table td.label{ padding-top:0.68em !important;}
 	background: #fff;
 	/*max-width:29rem;*/
 	padding:0 0 0 0.6rem;
+	margin-top:1.5rem;
 }
 .front #sidebar-second{ z-index:1;} /* hide carousel nav arrows */
 #sidebar-second ul{
