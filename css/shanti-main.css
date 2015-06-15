@@ -981,7 +981,6 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 }
 
 @media (min-width:1200px) {
-	.feature-slide-detail{ max-height:25rem; /* max-height:30rem; - add/change height for including assets tabs */}
 	.feature-slide-description{ font-size:1.06em;}
 	.carousel-resource-item span{ height:10rem;}
 	.carousel-resource-item p{ max-height:7rem;}
