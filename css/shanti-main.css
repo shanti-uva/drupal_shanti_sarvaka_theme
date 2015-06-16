@@ -12,7 +12,7 @@ a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a{ border-bottom:1px solid transparent;}
 .content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
 .content-section a:active{ border-bottom-color:transparent !important;}
-/* .content-section p{ margin:1rem 0 0;} */
+.content-section p{ margin:1rem 0 0;}
 
 ::selection,
 ::-moz-selection{background: rgba(71, 82, 153, 0.66) !important;text-shadow:none !important;color:white !important;}
