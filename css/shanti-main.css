@@ -83,7 +83,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 	display: inline-block;
 	text-transform:uppercase;
 	font-style:normal;
-	letter-spacing:0.2rem;
+	letter-spacing:0.25rem;
 	font-family: 'museo-sans-500', arial,sans-serif;;
 	font-size:85%;
 	display:none;
@@ -721,18 +721,20 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel .byline{ font-size:0.93em;margin: -0.1em 0 .38em;display:block;color: #777;font-style: italic;}
 .carousel-description p{ font-size:1em;height:11.25em;overflow:hidden;}
 .carousel-main-content .go-to-link a{ font-size:1em;}
-.carousel-main-content .go-to-link a:hover,.carousel-main-content .go-to-link a:active{ color: rgb(207, 47, 30);}
+.carousel-main-content .go-to-link a:hover,
+.carousel-main-content .go-to-link a:active{ color: rgb(207, 47, 30);}
 .carousel-main-image{ float:right;}
 .carousel-main-image img{ max-width:100%; margin:1.5rem 0 0.5rem 0;}
 .carousel-control{top:50%;margin-top:-0.68em;width:1.75em;font-size: 2.63em;height:1.44em;line-height:1.75em;color: #fff;background-image: none;text-shadow:none;text-align:center;border-radius:0;border:none;}
 .carousel-control:hover,
 .carousel-control:active{ filter: alpha(opacity=60);opacity:0.6;}
-.carousel-control.left{ margin-left: -1.18em;}
-.carousel-control.right{ margin-right: -1.18em;}
+.carousel-control.left{ margin-left: -1em;}
+.carousel-control.right{ margin-right: -1em;}
 .carousel-control .icon{ font-family:'shanticon'; font-style:normal;}
-.carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
-.carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
-.carousel-control:hover .icon{ color:#fff;}
+.carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.5rem; text-shadow: -3px 0 7px rgba(0,0,0, 0.0);text-shadow-color:transparent;}
+.carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.5rem; text-shadow: 3px 0 7px rgba(0,0,0, 0.0);}
+.carousel-control:hover .icon{ color:#fff;opacity:1;} 
+.carousel-control:active .icon{ color:#fff;opacity:0.4;}
 .carousel-pause.btn.btn-sm { color: #888 !important; -webkit-box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); font-size: 0.88em !important; text-align: center; margin: 0 auto; border-radius: 50% !important;padding:0 !important; width:2.5rem; height:2.3rem; margin:.5rem;}
 .carousel .col-xs-12{ padding-left:5px;padding-right:5px;}
 .carousel-pause .glyphicon-pause::before{ position:relative;left:0.1rem;}
@@ -823,6 +825,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /* keep the next-prev button under the right white column for logged in */
 .carousel.carousel-fade .carousel-control {
   z-index: 1;
+  width:5rem;
 }
 /* play- pause button */
 .carousel.carousel-fade .control-box-2{ position:relative; top:-.2rem; left:0; width:4rem; margin:0 auto;}
