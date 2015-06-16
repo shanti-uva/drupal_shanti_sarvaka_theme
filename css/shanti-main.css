@@ -626,7 +626,8 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .btn-black:hover,.btn-black:focus,.btn-black.focus,.btn-red:hover,.btn-red:focus,.btn-red.focus,.btn-default:hover,.btn-default:focus,.btn-default.focus,.btn-primary:hover,.btn-primary:focus,.btn-primary.active{background-image:none;background:transparent;}
 .btn.btn-primary{background:#5b68ce;}
 .btn.btn-primary:hover{ color:#fff;background:#4850bd;}
-.btn.btn-primary:focus{ background:#5b68ce;}
+.btn.btn-primary:active,
+.btn.btn-primary:focus{ background: #3c47b7;}
 .btn.btn-primary.active{background:#434bb1;}
 .btn.btn-icon{padding:0;margin:.75em 0;width:auto;line-height:2em;text-transform:uppercase;color:#eee;font-size:.88em;display:inline-block;white-space:nowrap;text-align:center;letter-spacing:.06em;overflow:hidden;position:relative;}
 .btn .icon{text-align:center;width:3.12em;font-size:130%;line-height:2.75em;display:inline-block;padding:.12em;background:#4954bb;position:absolute;left:0;top:0;z-index:1;border-radius:.25em 0 0 .25em;background-clip:padding-box;}
