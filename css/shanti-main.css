@@ -328,8 +328,8 @@ header ul.tabs.secondary li a.active:active{ background:#fff;color:#111;border-b
 .menu-main-desk ul{ background:#fff; -webkit-box-shadow:0 1px 4px hsla(0, 0.0000%, 60.0000%, 0.4);box-shadow:0 1px 4px hsla(0, 0.0000%, 60.0000%, 0.4); border-collapse:separate;}
 .menu-main-desk ul.hideshadow{ -webkit-box-shadow:none;box-shadow:none;}
 .menu-main-desk li { border-top: none;background:#fff;display:block;font-size:1em;line-height:3em; height:4em;padding:0 !important;}
-.menu-main-desk li:hover,
-.menu-main-desk li:active{ background:#f7f7f7;color:#555;}
+.menu-main-desk li:hover{ background:#f7f7f7;color:#555;}
+.menu-main-desk li:active{ background:#eee;color:#222;}
 .menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.88em;line-height:2.88em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.75em;text-transform:uppercase;}
 .menu-main-desk li a:hover,
 .menu-main-desk li a:active{ color:#444;}
