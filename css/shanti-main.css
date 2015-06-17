@@ -253,7 +253,7 @@ header ul.tabs.secondary li{ float:left; margin-right:0.2rem;border:none;padding
 
 header ul.tabs.primary li a,
 header ul.tabs.secondary li a{ background:rgba(0,0,0, .2000);color:#111;font-size:0.9rem;line-height:2.3rem;height:2rem;padding:0 1.5rem;border:none;margin-right:0; display:inline-block; box-shadow: none; text-transform:uppercase; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:bold; font-weight:700;}
-header ul.tabs.primary li a{ font-size:1.1rem;line-height:2.2rem;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-wight:normal;font-weight:500;}
+header ul.tabs.primary li a{ font-size:1.1rem;line-height:2.2rem;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-wight:bold;}
 header ul.tabs.primary li a:hover,
 header ul.tabs.secondary li a:hover,
 header ul.tabs.primary li a:active,
