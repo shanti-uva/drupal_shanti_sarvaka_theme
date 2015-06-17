@@ -302,7 +302,7 @@ header ul.tabs.secondary li a.active:active{ background:#fff;color:#111;border-b
 
 /**** Horizontal Tabs Bootstrap *****/
 .nav-justified{ margin: 1.12em 0 1.75rem;}
-.nav-justified>li{ background:#fff;border-right:1px solid #ddd;font-size:1em;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold; -webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s;}
+.nav-justified>li{ background:#fff;border-right:1px solid #ddd;font-size:1em;font-family:'museo-sans-500',helvetica,arial,sans-serif;font-weight:bold; -webkit-transition:background 0.25s ease 0s;-moz-transition:background 0.25s ease 0s;transition:background 0.25s ease 0s;}
 .nav-justified>li>a{ border:none !important;border-radius:0;color:#999;}
 .nav-justified>li>a:hover{ background:#fff;color:#777;}
 .nav-justified>li:last-child,
