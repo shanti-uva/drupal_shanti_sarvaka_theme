@@ -732,8 +732,8 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-control.left{ margin-left: -1em;}
 .carousel-control.right{ margin-right: -1em;}
 .carousel-control .icon{ font-family:'shanticon'; font-style:normal;}
-.carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.5rem; text-shadow: -3px 0 7px rgba(0,0,0, 0.40);}
-.carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.5rem; text-shadow: 3px 0 7px rgba(0,0,0, 0.40);}
+.carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.5rem; text-shadow: -3px 0 7px rgba(0,0,0, 0.20);}
+.carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.5rem; text-shadow: 3px 0 7px rgba(0,0,0, 0.20);}
 .carousel-control:hover .icon{ color:#fff;opacity:1;} 
 .carousel-control:active .icon{ color:#fff;opacity:0.4;}
 .carousel-pause.btn.btn-sm { color: #888 !important; -webkit-box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); box-shadow: 0 0 10px 0 rgba(50,50,50,0.125); font-size: 0.88em !important; text-align: center; margin: 0 auto; border-radius: 50% !important;padding:0 !important; width:2.5rem; height:2.3rem; margin:.5rem;}
