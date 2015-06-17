@@ -19,7 +19,7 @@ a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;margin-bottom:5px;}
-h1, h2, h3{ color:#555; font-size:1.5em; margin:1rem 0 0;}
+h1, h2, h3{ color:#555; font-size:1.5em; margin:1rem 0 0.5rem;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
 label{ color:#555;font-size:80%;font-family:'museo-sans-500',helvetica,arial,sans-serif;text-transform:uppercase;margin:0 0 0 1rem;}
 mark{ color:#333; background:transparent; font-weight:bold; padding:0;}
