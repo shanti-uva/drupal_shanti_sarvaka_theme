@@ -257,7 +257,7 @@ header ul.tabs.primary li a{ font-size:1.1rem;line-height:2.2rem;font-family:'mu
 header ul.tabs.primary li a:hover,
 header ul.tabs.secondary li a:hover,
 header ul.tabs.primary li a:active,
-header ul.tabs.secondary li a:active{ background:#444;color:#fff;}
+header ul.tabs.secondary li a:active{ background:#444;color:#f0f0f0;}
 
 header ul.tabs.primary li.active a,
 header ul.tabs.secondary li.active a{ background:#eee;color:#111;cursor:pointer;border:1px solid #ccc;border-width:1px 1px 0;}
@@ -266,7 +266,7 @@ header ul.tabs.secondary li.active a:hover{ background:#eee;color:#111;cursor:po
 header ul.tabs.primary li a:active,
 header ul.tabs.secondary li a:active,
 header ul.tabs.primary li a.active:active,
-header ul.tabs.secondary li a.active:active{ background:#fff;color:#111;border-bottom:1px solid #ddd;}
+header ul.tabs.secondary li a.active:active{ background:#222;color:#fff;}
 
 .has-tabs-secondary ul.tabs.secondary{ margin-top:0.2rem;}
 
