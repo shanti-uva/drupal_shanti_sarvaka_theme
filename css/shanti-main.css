@@ -729,8 +729,8 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-control{top:50%;margin-top:-0.68em;width:1.75em;font-size: 2.63em;height:1.44em;line-height:1.75em;color: #fff;background-image: none !important;text-shadow:none;text-align:center;border-radius:0;border:none;}
 .carousel-control:hover,
 .carousel-control:active{ filter: alpha(opacity=60);opacity:0.6;}
-.carousel-control.left{ margin-left: -0.6rem;}
-.carousel-control.right{ margin-right: -0.6rem;}
+.carousel-control.left{ margin-left: -1.6rem;}
+.carousel-control.right{ margin-right: -1.6rem;}
 .carousel-control .icon{ font-family:'shanticon'; font-style:normal;}
 .carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.5rem; text-shadow: -3px 0 7px rgba(0,0,0, 0.20);}
 .carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.5rem; text-shadow: 3px 0 7px rgba(0,0,0, 0.20);}
