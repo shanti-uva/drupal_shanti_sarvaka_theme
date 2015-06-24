@@ -278,33 +278,6 @@
 
 
 
-
-
-	      /* ACCORDION Change collapsible div icon from +/- depending on state
-	      $('div.panel-collapse').on('hide.bs.collapse', function () {
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('+');
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').removeClass('open');
-	      });
-	      $('div.panel-collapse').on('show.bs.collapse', function () {
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').text('-');
-	        $(this).prev('div.panel-heading').find('.ss-fieldset-toggle').addClass('open');
-	      });
-        */
-
-
-
-
-	      // NOTE: mark commented this out since other css is need to set custom color on these tabs, like the pointer arrow - 11/5/2014
-	      // Add class and event handler to bootstrap tabs for formatting
-	      // $('ul.ss-full-tabs li.active a[data-toggle="tab"]').addClass('basebg');
-	      // $('ul.ss-full-tabs a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-	      //   var el = e.target;
-	      //   $(el).parents('ul.ss-full-tabs').find('.basebg').each(function() {
-	      //     $(this).removeClass('basebg');
-	      //   });
-	      //   $(el).addClass('basebg');
-	      // });
-
 	      // Turn dev menu in admin footer into select
 	      if($('#admin-footer #block-menu-devel ul.menu').length > 0) {
 	        var devmenu = $('#admin-footer #block-menu-devel ul.menu').clone();
@@ -477,7 +450,7 @@
   };
 
   /**
-   * Other: All of below if from Mark's separate Jquery() functions
+   * Other: 
    */
   Drupal.behaviors.shantiSarvakaOtherInit = {
     attach: function (context, settings) {
@@ -736,15 +709,11 @@
 	};
 	
 
-
   Drupal.behaviors.googleMapsButtonActiveArrow = {
     attach: function (context, settings) {
       if(context == window.document) {
-	        
 	        $('.btn-group-gmaps.btn-group > .btn.btn-default.active').one().prepend('<span class="icon"></span>');
-
 	        $('.btn-group-gmaps.btn-group > .btn.btn-default').click( function(){
-		        		// $('.btn-group-gmaps.btn-group > .btn.btn-default.active').one().remove('<span class="icon"></span>');
 	              $(this).prepend('<span class="icon"></span>');
 	        });
       }
