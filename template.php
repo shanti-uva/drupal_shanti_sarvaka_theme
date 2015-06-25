@@ -1336,8 +1336,6 @@ function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
         return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
-        //speaker name selector
-        //transcript tier selector
         //$out = "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	$out  = "<select multiple class='selectpicker tier-selector'>";
 
@@ -1349,7 +1347,7 @@ function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
 	$out .= "</optgroup>";
 
 	//speaker name selector
-        $out .= "<optgroup label='Speaker names' data-type='speakers' data-max-options='1'>";
+        $out .= "<optgroup label='Speaker names' data-type='speaker-names' data-max-options='1'>";
         foreach ($vars['element']['speaker_names'] as $key => $val) {
                 $out .= "<option value='{$key}'>{$val}</option>";
         }
@@ -1357,6 +1355,20 @@ function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
 
         $out .= "</select>";
         return $out;
+}
+function shanti_sarvaka_transcripts_ui_speaker_name($vars)
+{
+    $out  = "<div class='speaker-name {$vars['speaker_turn']}'>";
+    $pos = strpos($vars['speaker_name'], '|');
+    if ($pos === FALSE) {
+        $out .= "<span data-speaker-name='script'>{$vars['speaker_name']}</span>";
+    }
+    else {
+        $out .= "<span data-speaker-name='script'>" .substr($vars['speaker_name'], 0, $pos). "</span> ";
+        $out .= "<span data-speaker-name='phonetic'>" .substr($vars['speaker_name'], $pos+1). "</span>";
+    }
+    $out .= "</div>";
+    return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
         $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
