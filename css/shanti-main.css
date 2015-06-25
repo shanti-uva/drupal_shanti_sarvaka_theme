@@ -323,47 +323,47 @@ header ul.tabs.secondary li a.active:active{ background:#222;color:#fff;}
 
 /*----- BEGIN responsive navigations ----*/
 /*---- top-menu wrapper ----*/
-.menu-main-desk{ border-top: 1px solid #ddd;width:250px;position:absolute;z-index:10200;right:0;top:50px;padding:0;overflow:visible;}
-.menu-main-desk h3,
-.menu-main-desk h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-size:1.32em;line-height:3.32em; height:3.12em; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; font-style:italic;text-indent:1.4rem;position:relative; z-index:200;padding:0; margin:0;/* -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; */ overflow:visible;}
-.menu-main-desk h2 a{ cursor:default; background:#fff; color:#444;display:block;font-size:1.56em;font-weight:normal;font-style:italic;line-height:2.75em; height:2.63em; padding:0; margin:0; /*vertical-align:middle;*/}
-.menu-main-desk .link-blocker{ cursor:default; position:absolute; top:0; right:0; z-index:99999; width:100%;height:54px; background:transparent;} /* prevent clicking the search button through the h3 */
+.menu-main{ border-top: 1px solid #ddd;width:250px;position:absolute;z-index:10200;right:0;top:50px;padding:0;overflow:visible;}
+.menu-main h3,
+.menu-main h2{ color:#222; background:#fff;border-top:1px solid #fff;border-bottom:1px solid #c0c0c0;font-size:1.32em;line-height:3.32em; height:3.12em; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; font-style:italic;text-indent:1.4rem;position:relative; z-index:200;padding:0; margin:0;/* -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; */ overflow:visible;}
+.menu-main h2 a{ cursor:default; background:#fff; color:#444;display:block;font-size:1.56em;font-weight:normal;font-style:italic;line-height:2.75em; height:2.63em; padding:0; margin:0; /*vertical-align:middle;*/}
+.menu-main .link-blocker{ cursor:default; position:absolute; top:0; right:0; z-index:99999; width:100%;height:54px; background:transparent;} /* prevent clicking the search button through the h3 */
 .multilevelpushmenu_wrapper,
-.menu-main-desk div{ overflow:visible;}
-.menu-main-desk ul{ background:#fff; -webkit-box-shadow:0 1px 4px hsla(0, 0.0000%, 60.0000%, 0.4);box-shadow:0 1px 4px hsla(0, 0.0000%, 60.0000%, 0.4); border-collapse:separate;}
-.menu-main-desk ul.hideshadow{ -webkit-box-shadow:none;box-shadow:none;}
-.menu-main-desk li { border-top: none;background:#fff;display:block;font-size:1em;line-height:3em; height:4em;padding:0 !important;}
-.menu-main-desk li:hover{ background:#f7f7f7;color:#555;}
-.menu-main-desk li:active{ background:#eee;color:#222;}
-.menu-main-desk li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.88em;line-height:2.88em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.75em;text-transform:uppercase;}
-.menu-main-desk li a:hover,
-.menu-main-desk li a:active{ color:#444;}
-.menu-main-desk li:first-child a,
-.menu-main-desk .myaccount>a{ border-top:none;}
-.menu-main-desk li .icon { font-size:2em;line-height:1.18em; height:4em;margin-right:7px;}
-.menu-main-desk .form-group { font-size:0.88em;line-height:2em; height:2em;padding: 1px 5px 1px 25px;margin:0;display:block;}
-.menu-main-desk li:last-child{ border-bottom:none;}
-.menu-main-desk .form-group.last{ line-height:0.5em; height:0.5em;}
-.menu-main-desk .form-group.last:hover,
-.menu-main-desk .form-group.last:active{ background:#fafafa;}
-.menu-main-desk .form-group .radio-inline{ padding:0 0 0 20px; display:block;}
-.menu-main-desk .form-group .radio-inline>div{ position:relative; top:-2px; right:5px;} /* graphic replacement */
-.menu-main-desk .drop-hdr{ border-top: 1px solid #ddd;cursor:default; color:#707070;	font-size:0.88em;font-weight:bold;line-height:1em; height:1.88em;}
-.menu-main-desk .drop-hdr em{ display:block; font-style:normal; padding:7px 0 2px 12px;}
-.menu-main-desk .drop-hdr:hover,
-.menu-main-desk .drop-hdr:active{ background:#fff; color:#555;}
-.menu-main-desk .drop-hdr:first-child{ -webkit-box-shadow:none;box-shadow:none; border-top:none;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass{ position:absolute; top:0; right:-10px; z-index:202;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass a{ color:#5360c6 !important; font-size:.83em; line-height:2.5em; height:4em; background:none;padding-right:18px; border:none; font-weight:bold; text-transform:uppercase;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass a:hover{ color:red !important;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass a:active{ color:#5360c6 !important;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left{ position:relative;top:3px;left:-10px;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left::before{ font-size:2.1rem;}
-.menu-main-desk .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.6rem;right:1.3rem;}
-.menu-main-desk .levelHolderClass.rtl .backItemClass .icon{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold;  margin-right:5px;}
-.menu-main-desk .backItemClass,
-.menu-main-desk .levelHolderClass.rtl{ font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:normal;background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
-.menu-main-desk .levelHolderClass.rtl{ padding-left:4px;}
+.menu-main div{ overflow:visible;}
+.menu-main ul{ background:#fff; -webkit-box-shadow:0 1px 4px hsla(0, 0.0000%, 60.0000%, 0.4);box-shadow:0 1px 4px hsla(0, 0.0000%, 60.0000%, 0.4); border-collapse:separate;}
+.menu-main ul.hideshadow{ -webkit-box-shadow:none;box-shadow:none;}
+.menu-main li { border-top: none;background:#fff;display:block;font-size:1em;line-height:3em; height:4em;padding:0 !important;}
+.menu-main li:hover{ background:#f7f7f7;color:#555;}
+.menu-main li:active{ background:#eee;color:#222;}
+.menu-main li a{ color:#606060;border-top: 1px solid #ddd;display:block;font-size:.88em;line-height:2.88em;height:4em;font-weight:bold;padding: 1em .25em .1em 1.75em;text-transform:uppercase;}
+.menu-main li a:hover,
+.menu-main li a:active{ color:#444;}
+.menu-main li:first-child a,
+.menu-main .myaccount>a{ border-top:none;}
+.menu-main li .icon { font-size:2em;line-height:1.18em; height:4em;margin-right:7px;}
+.menu-main .form-group { font-size:0.88em;line-height:2em; height:2em;padding: 1px 5px 1px 25px;margin:0;display:block;}
+.menu-main li:last-child{ border-bottom:none;}
+.menu-main .form-group.last{ line-height:0.5em; height:0.5em;}
+.menu-main .form-group.last:hover,
+.menu-main .form-group.last:active{ background:#fafafa;}
+.menu-main .form-group .radio-inline{ padding:0 0 0 20px; display:block;}
+.menu-main .form-group .radio-inline>div{ position:relative; top:-2px; right:5px;} /* graphic replacement */
+.menu-main .drop-hdr{ border-top: 1px solid #ddd;cursor:default; color:#707070;	font-size:0.88em;font-weight:bold;line-height:1em; height:1.88em;}
+.menu-main .drop-hdr em{ display:block; font-style:normal; padding:7px 0 2px 12px;}
+.menu-main .drop-hdr:hover,
+.menu-main .drop-hdr:active{ background:#fff; color:#555;}
+.menu-main .drop-hdr:first-child{ -webkit-box-shadow:none;box-shadow:none; border-top:none;}
+.menu-main .levelHolderClass.rtl .backItemClass{ position:absolute; top:0; right:-10px; z-index:202;}
+.menu-main .levelHolderClass.rtl .backItemClass a{ color:#5360c6 !important; font-size:.83em; line-height:2.5em; height:4em; background:none;padding-right:18px; border:none; font-weight:bold; text-transform:uppercase;}
+.menu-main .levelHolderClass.rtl .backItemClass a:hover{ color:red !important;}
+.menu-main .levelHolderClass.rtl .backItemClass a:active{ color:#5360c6 !important;}
+.menu-main .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left{ position:relative;top:3px;left:-10px;}
+.menu-main .levelHolderClass.rtl .backItemClass .floatLeft.fa.fa-angle-left::before{ font-size:2.1rem;}
+.menu-main .levelHolderClass.rtl .floatRight.iconSpacing_rtl.fa.fa-angle-right{ font-size:1.75em;position:relative;top:0.6rem;right:1.3rem;}
+.menu-main .levelHolderClass.rtl .backItemClass .icon{ font-size:1.38em; line-height:1.75em; height:3em; font-weight:bold;  margin-right:5px;}
+.menu-main .backItemClass,
+.menu-main .levelHolderClass.rtl{ font-family:'museo-sans-700',helvetica,arial,sans-serif; font-weight:normal;background:transparent; border:none; -webkit-box-shadow:none; box-shadow:none;}
+.menu-main .levelHolderClass.rtl{ padding-left:4px;}
 /***** END main-menu *****/
 
 
