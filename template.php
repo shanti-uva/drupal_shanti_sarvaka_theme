@@ -1347,7 +1347,7 @@ function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
 	$out .= "</optgroup>";
 
 	//speaker name selector
-        $out .= "<optgroup label='Speaker names' data-type='speakers' data-max-options='1'>";
+        $out .= "<optgroup label='Speaker names' data-type='speakers'>";
         foreach ($vars['element']['speaker_names'] as $key => $val) {
                 $out .= "<option value='{$key}'>{$val}</option>";
         }
