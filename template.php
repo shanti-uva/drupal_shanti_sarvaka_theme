@@ -1338,10 +1338,23 @@ function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
 function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
         //speaker name selector
         //transcript tier selector
-        $out = "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
+        //$out = "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
+	$out  = "<select multiple class='selectpicker tier-selector'>";
+
+	//language selector
+	$out .= "<optgroup label='Languages'>";
         foreach ($vars['element']['data_tiers'] as $key => $val) {
                 $out .= "<option value='{$key}'>{$val}</option>";
         }
+	$out .= "</optgroup>";
+
+	//speaker name selector
+        $out .= "<optgroup label='Speaker names' data-max-options='1'>";
+        foreach ($vars['element']['speaker_modes'] as $key => $val) {
+                $out .= "<option value='{$key}'>{$val}</option>";
+        }
+        $out .= "</optgroup>";
+
         $out .= "</select>";
         return $out;
 }
