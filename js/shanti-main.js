@@ -731,15 +731,15 @@
 	};
 	
 	
-Drupal.behaviors.kmapsSubjectsHomepageBreadcrumbHiding = {
-  attach: function (context, settings) {
-    if(context == window.document) {
-        if($(".feature-slide-detail").length ) {
-          $(".breadcrumb").css('display','none !important');
-        }
+  Drupal.behaviors.kmapsSubjectsHomepageBreadcrumbHiding = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+          if($(".feature-slide-detail").length ) {
+            $(".breadcrumb").remove();
+          }
+      }
     }
-  }
-};
+  };
 
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
