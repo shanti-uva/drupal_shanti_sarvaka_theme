@@ -733,8 +733,10 @@
 	
 Drupal.behaviors.kmapsSubjectsHomepageBreadcrumbHiding = {
   attach: function (context, settings) {
-    if($(".feature-slide-detail").length ) {
-      $(".breadcrumb").css('display','none');
+    if(context == window.document) {
+        if($(".feature-slide-detail").length ) {
+          $(".breadcrumb").css('display','none !important');
+        }
     }
   }
 };
