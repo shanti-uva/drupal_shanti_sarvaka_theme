@@ -12,11 +12,7 @@ a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a{ border-bottom:1px solid transparent;}
 .content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
 .content-section a:active{ border-bottom-color:transparent !important;}
-/* .content-section p{ margin:1rem 0 0;} */
-
-::selection,
-::-moz-selection{background: rgba(71, 82, 153, 0.66) !important;text-shadow:none !important;color:white !important;}
-h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizelegibility;}
+h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizeLegibility;}
 h1, h2, h3, h4{font-weight:normal;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;margin-bottom:5px;}
 h1, h2, h3{ color:#555; font-size:1.5em; margin:1rem 0 0.5rem;}
@@ -52,7 +48,6 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .go-to-link a{ text-transform:uppercase; border:none;font-size:.83em; display:inline;}
 .go-to-link a::after{ color: #5a65d1; font-size: 1.25em;margin-left:0.32em;font-family:'FontAwesome';content: '\f18e'; /*-- arrow icon */}
 
-
 .dfn, .italic{ font-style:italic !important; }
 .sans-serif{ font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .serif{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; }
@@ -61,7 +56,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .custom-inline { display: inline;}
 .container-narrow > hr { margin: 3% 0;}
 .summary-overview{ max-width:800px;}
-
+::selection,::-moz-selection{background: rgba(71, 82, 153, 0.66) !important;text-shadow:none !important;color:white !important;}
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
@@ -74,21 +69,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .navbar-header .navbar-brand:hover,
 .navbar-header .navbar-brand:active{ color:#222;}
 .navbar-header .shanti{ display:none;}
-.navbar-header .site-slogan{ 
-	padding: 0 0 0 1rem;
-	white-space:nowrap;
-	color:#444 !important;
-	position: relative;
-	top: 0.25rem;
-	display: inline-block;
-	text-transform:uppercase;
-	font-style:normal;
-	letter-spacing:0.25rem;
-	font-family: 'museo-sans-500', arial,sans-serif;;
-	font-size:85%;
-	display:none;
-}
-
+.navbar-header .site-slogan{ padding: 0 0 0 1rem;white-space:nowrap;color:#444 !important;position: relative;top: 0.25rem;display: inline-block;text-transform:uppercase;font-style:normal;letter-spacing:0.25rem;font-family: 'museo-sans-500', arial,sans-serif;font-size:85%;display:none;}
 .navbar-header .site-slogan::before{ content:'/ '; margin-right:0.5rem;}
 .navbar-brand .shanticon-logo{ opacity:1.0;}
 .navbar-brand .site-slogan{ opacity:0.80;}
@@ -182,24 +163,8 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 
 .page-title { font-weight: normal;font-size:1.56em;line-height:1.32em;text-shadow:0 0 3px rgba(50,50,50, 0.225);margin:0;padding:5px 0 0;color:#f9f9f9;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;padding-right:4rem;}
 .page-title .page-title-text { position:relative; top: 0.6rem;}
-.page-title .icon { font-size: 125%;
-line-height: 1em;
-margin: 0 0.9rem 0 0;
-min-width: 1em;
-min-height: 1em;
-text-align: center;
-padding:0.62rem 0.82rem;
-color: #f5f5f5;
-float: left;
-position: relative;
-top: 0;
-z-index: 10;
-display: block;
-background: rgba(0,0,0,0.175);
-}
+.page-title .icon { font-size: 125%;line-height: 1em;margin: 0 0.9rem 0 0;min-width: 1em;min-height: 1em;text-align: center;padding:0.62rem 0.82rem;color: #f5f5f5;float: left;position: relative;top: 0;z-index: 10;display: block;background: rgba(0,0,0,0.175);}
 .page-title .icon::before{background:transparent !important;position:relative; left:0; z-index:15;}
-
-
 
 .breadwrap{margin:0.4rem 0 0 3rem;padding:0;display:block;height:1.18em;overflow:hidden;width:96%;background:transparent;}
 .breadcrumb{margin:0;padding:0;white-space:nowrap;width:100%;overflow:hidden;background:transparent;font-size:.75em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;font-weight:normal;/**zoom:1;*/border:none;}
@@ -208,16 +173,12 @@ background: rgba(0,0,0,0.175);
 .breadcrumb::after{clear:both;}
 .breadcrumb li{display:inline-block;float:none;position:relative;font-size:1.25em;height:1.75em;line-height:1.06em;overflow:hidden;margin:0;padding:0 18px 0 0;text-shadow:0 0 1px rgba(50,50,50,0.225);}
 .breadcrumb li:first-child{color:#f5f5f5;font-family:arial,tahoma,helvetica,sans-serif;font-weight:bold;font-size:120%;line-height:1em;padding:0;margin:0;position:relative;top:0;}
-
-
 .breadcrumb li a{display:block;float:left;font-size:.92em;color:#fff;text-decoration:none;height:1.18em;line-height:1.18em;overflow:hidden;font-weight:normal;}
 .breadcrumb li a:hover,
 .breadcrumb li a:active{text-decoration:underline;}
 .breadcrumb li:last-child a:hover,
 .breadcrumb li:last-child a:active{text-decoration:none;}
 .breadcrumb li:first-child a{ margin-right:0.5rem;font-weight:bold;line-height:0.93em;font-size:115%;text-transform:capitalize;position:relative;top:0;}
-
-
 .breadcrumb .icon{color:#eee;background:transparent;position:absolute;right:5px;top:-3px;z-index:10;font-family:'FontAwesome';font-size:1.68em;font-weight:normal;line-height:.88em;height:1em;width:.38em;overflow:visible;display:inline-block;}
 .breadcrumb .icon::before{ content:'\f105';position:relative;top:0;left:0;filter:alpha(opacity=40);opacity:0.4;}
 .breadcrumb li:last-child a{ color:#fff;font-size:.92em;cursor:default;font-weight:bold;font-family:arial,tahoma,helvetica,sans-serif;}
@@ -490,7 +451,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*----- BEGIN Video Thumbnails ---*/
 /*--------------------------------*/
 .shanti-gallery{width:100%;margin:0;padding:0;position:relative;list-style-type:none;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0;}
-.shanti-gallery a{color:#222;border:none!important;display:block;font-family: helvetica, arial, sans-serif;}
+.shanti-gallery a{color:#222;border:none!important;display:block;font-family: 'helvetica neue', helvetica, arial, sans-serif;}
 .shanti-thumbnail{color:#555;background:#fff;float:left;width:100%;max-width:170px;height:17em;padding:0;margin:0;border-radius:.4rem;background-clip:padding-box;list-style-type:none;position:relative;-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.2750);box-shadow:0 3px 3px rgba(50,50,50,0.2750);border-collapse:separate;-webkit-transition:box-shadow 200ms ease;-moz-transition:box-shadow 200ms ease;-ms-transition:box-shadow 200ms ease;-o-transition:box-shadow 200ms ease;transition:box-shadow 200ms ease;}
 .shanti-thumbnail:hover{-webkit-box-shadow:0 4px 7px rgba(0,0,0,0.2250);box-shadow:0 4px 7px rgba(0,0,0,0.2250);}
 .shanti-thumbnail:active{-webkit-box-shadow:0 3px 3px rgba(50,50,50,0.5);box-shadow:0 3px 3px rgba(50,50,50,0.5);}
