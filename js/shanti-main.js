@@ -729,17 +729,6 @@
 	    }
 	  }
 	};
-	
-	
-  Drupal.behaviors.kmapsSubjectsHomepageBreadcrumbHiding = {
-    attach: function (context, settings) {
-      if(context == window.document) {
-          if($(".feature-slide-detail").length ) {
-            $("ol.breadcrumb").css('display','none');
-          }
-      }
-    }
-  };
 
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
