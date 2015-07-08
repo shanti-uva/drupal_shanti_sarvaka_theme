@@ -735,7 +735,7 @@
     attach: function (context, settings) {
       if(context == window.document) {
           if($(".feature-slide-detail").length ) {
-            $(".breadcrumb").remove();
+            $("ol.breadcrumb").css('display','none');
           }
       }
     }
