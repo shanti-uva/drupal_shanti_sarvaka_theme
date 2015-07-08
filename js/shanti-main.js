@@ -671,9 +671,6 @@
 	  }
 	};
 
-
-
-
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
 			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
@@ -694,7 +691,9 @@
 	// --- unhiding breadcrumbs: inline styles keeps the breadcrumbs markup from flash on load when at homepages where we do not want them
 	Drupal.behaviors.breadcrumbsFlickrControl = {
 	  attach: function (context, settings) {
-			$('.breadwrap').show( "fast" );
+			if($(".feature-slide-detail").length = 0 ) {
+           $('.breadwrap').show( "fast" );
+      }
 	  }
 	};
 	
