@@ -693,6 +693,8 @@
 	  attach: function (context, settings) {
 			if($(".feature-slide-detail").length = 0 ) {
            $('.breadwrap').show( "fast" );
+      } else {
+           $('.breadwrap').hide();
       }
 	  }
 	};
