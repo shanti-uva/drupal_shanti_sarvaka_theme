@@ -1336,11 +1336,10 @@ function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
         return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
-        //$out = "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
-	$out  = "<select multiple class='selectpicker tier-selector'>";
+	$out  = "<select multiple class='selectpicker tier-selector' data-header='Select languages to display'>";
 
 	//language selector
-	$out .= "<optgroup label='Languages' data-type='languages'>";
+	$out .= "<optgroup label='Transcript' data-type='languages'>";
         foreach ($vars['element']['data_tiers'] as $key => $val) {
                 $out .= "<option value='{$key}'>{$val}</option>";
         }
