@@ -1361,13 +1361,10 @@ function shanti_sarvaka_transcripts_ui_speaker_name($vars)
     $vars['classes'][] = 'active';
     $classes = implode(' ', $vars['classes']);
     $out  = "<div class='speaker-name {$vars['speaker_turn']}'>";
-    $pos = strpos($vars['speaker_name'], '|');
-    if ($pos === FALSE) {
-        $out .= "<span data-speaker-display='script' class='$classes'>{$vars['speaker_name']}</span>";
-    }
-    else {
-        $out .= "<span data-speaker-display='script' class='$classes'>" .substr($vars['speaker_name'], 0, $pos). "</span> ";
-        $out .= "<span data-speaker-display='phonetic' class='$classes'>" .substr($vars['speaker_name'], $pos+1). "</span>";
+    $i = 0;
+    $speakernames = explode('|', $vars['speaker_name']);
+    foreach ($vars['speaker_name_displays'] as $key => $val) {
+        $out .= "<span data-speaker-display='$key' class='$classes'>" . ($i++ < count($speakernames) ? $speakernames[$i] : "NULL") . "</span>";
     }
     $out .= "</div>";
     return $out;
