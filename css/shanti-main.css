@@ -1564,6 +1564,7 @@ form table td.label{ padding-top:0.68em !important;}
 .page-user-contact .tab-pane.main-col > .region-content{ max-width:940px !important;}
 .page-user-contact .tab-pane.main-col > .region-content{ max-width:850px !important;}
 
+.front.page-places .tab-pane.main-col > .region-content,
 .no-sidebars.page-places- .tab-pane.main-col > .region-content,
 .no-sidebars.page-subjects .tab-pane.main-col > .region-content{ max-width:100% !important;}
 
@@ -2162,9 +2163,10 @@ p.modal-title{ font-size:110%;}
 @media screen and (min-width: 600px) {
 
   .navbar-default h1 .icon{ line-height:1.68em;padding-left:12px; position:relative; top:0.5rem;}
-  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0.025rem; } 
+  .navbar-header .site-slogan{ font-size:100%;position: relative; top:0.025rem; text-shadow:0.05rem 0.05rem #111;} 
+  .navbar-header .site-slogan:hover{ text-shadow:0.05rem 0.05rem #777;}
   /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
-	.collections ul li { width:20%; }
+  .collections ul li { width:20%; }
   .collections ul li a.disabled, 
 	.collections ul li a.disabled:hover,
 	.collections ul li a.disabled:active,
