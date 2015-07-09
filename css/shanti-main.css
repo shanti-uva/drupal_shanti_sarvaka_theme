@@ -144,6 +144,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .collections ul li a:hover,
 .collections ul li a:active { text-decoration: none;color: #fff;}
 .collections ul .icon { color: #d0d0d0;margin-right:8px;font-size:1.5em;position:relative;top:3px;}
+.collections ul .icon.shanticon-visuals::before{ font-size:120%;position:relative;left:-0.15rem;margin-right:-0.25rem;}
 .collections ul .icon.shanticon-logo-shanti{ color:#f0f0f0;}
 .collections ul .icon.shanticon-logo-shanti::before{ font-size:110%;}
 .collections ul li a:hover .icon,
@@ -470,7 +471,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail-image a:hover .overlay::before{color:rgba(255,255,255,0.6000);font-size:4em !important;}
 .shanti-thumbnail-image a:active .overlay::before{color:rgba(255,255,255,0.7500);}
 
-.shanti-thumbnail-info{font-size:.75em;font-family:helvetica,arial,sans-serif;}
+.shanti-thumbnail-info{font-size:.75em;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
 .shanti-thumbnail .body-wrap{padding:.35rem .8rem .6rem 0.9rem;overflow-x:auto;height:12.5rem;}
 .shanti-thumbnail-link{/* video title */font-size:1em;line-height:1.38em;font-weight:bold;margin:0.2rem 0;}
 .shanti-thumbnail-link:hover,
