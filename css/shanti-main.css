@@ -1041,7 +1041,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li a,
 .main-content .selectpicker li a:hover{ border:none; outline:0;}
 .main-content .selectpicker li.selected a,
-.main-content .selectpicker li.selected a span.text{ font-weight:bold; background: #fff !important;}
+.main-content .selectpicker li.selected a span.text{ font-weight:bold; background: #fff;}
 .main-content .selectpicker li.selected a .icon{ font-weight:bold; color:#444;}
 
 .main-content .selectpicker li:hover a,
@@ -1065,7 +1065,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li.selected a:hover,
 .main-content .selectpicker li.selected a:active,
 .main-content .selectpicker li.selected a:hover span.text,
-.main-content .selectpicker li.selected a:active span.text{ background: #eee !important;}
+.main-content .selectpicker li.selected a:active span.text{ background: #eee;}
 
 
 .btn-group-transcript .main-content .selectpicker li,
@@ -1083,7 +1083,9 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 2px;background:#555;color:#fff;}
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 2px;background:#555;color:#fff;text-transform:uppercase;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:25px;}
 
 /*----- checkmark styles -----*/
 .main-content .selectpicker>li>a .check-mark,
