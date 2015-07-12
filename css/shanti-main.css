@@ -1068,25 +1068,6 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li.selected a:active span.text{ background: #eee;}
 
 
-.btn-group-transcript .main-content .selectpicker li,
-.btn-group-transcript .main-content .selectpicker li:hover,
-.btn-group-transcript .main-content .selectpicker li span.text,
-.btn-group-transcript .main-content .selectpicker li:hover span.text{ color:#fff;}
-
-.btn-group-transcript .main-content .selectpicker li.selected a,
-.btn-group-transcript .main-content .selectpicker li.selected:hover a,
-.btn-group-transcript .main-content .selectpicker li.selected:hover a span.text,
-.btn-group-transcript .main-content .selectpicker li.selected a span.text,
-.btn-group-transcript .main-content .selectpicker li.selected a:hover span.text,
-.btn-group-transcript .main-content .selectpicker li.selected a:active span.text{ color:#444;}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 2px;background:#555;color:#fff;text-transform:uppercase;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:25px;}
-
 /*----- checkmark styles -----*/
 .main-content .selectpicker>li>a .check-mark,
 .main-content .selectpicker>li>a:hover .check-mark,
@@ -1985,6 +1966,28 @@ background:transparent;
 
 
 object.KalturaDynamicPlayer{ width:100% !important;}
+
+
+.btn-group-transcript .main-content .selectpicker li,
+.btn-group-transcript .main-content .selectpicker li:hover,
+.btn-group-transcript .main-content .selectpicker li span.text,
+.btn-group-transcript .main-content .selectpicker li:hover span.text{ color:#fff;}
+
+.btn-group-transcript .main-content .selectpicker li.selected a,
+.btn-group-transcript .main-content .selectpicker li.selected:hover a,
+.btn-group-transcript .main-content .selectpicker li.selected:hover a span.text,
+.btn-group-transcript .main-content .selectpicker li.selected a span.text,
+.btn-group-transcript .main-content .selectpicker li.selected a:hover span.text,
+.btn-group-transcript .main-content .selectpicker li.selected a:active span.text{ color:#444;}
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 2px;background:#555;color:#fff;text-transform:uppercase;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:25px;}
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu div.div-contain{ display:none;}
+
 
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
