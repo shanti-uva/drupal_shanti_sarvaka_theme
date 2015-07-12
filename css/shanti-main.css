@@ -1067,8 +1067,8 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li.selected a:hover span.text,
 .main-content .selectpicker li.selected a:active span.text{ background: #eee;}
 
-.main-content .selectpicker li:active a,
-.main-content .selectpicker li:active a span.text{ background: #fff;}
+.main-content .selectpicker>li:active>a,
+.main-content .selectpicker>li:active>a>span.text{ background: #fff;}
 
 
 /*----- checkmark styles -----*/
