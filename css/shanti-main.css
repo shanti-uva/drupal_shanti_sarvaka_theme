@@ -1065,7 +1065,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li.selected a:hover,
 .main-content .selectpicker li.selected a:active,
 .main-content .selectpicker li.selected a:hover span.text,
-.main-content .selectpicker li.selected a:active span.text,{ background: #eee !important;}
+.main-content .selectpicker li.selected a:active span.text{ background: #eee !important;}
 
 
 .btn-group-transcript .main-content .selectpicker li,
