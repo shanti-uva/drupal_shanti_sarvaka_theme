@@ -1119,7 +1119,7 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager li>a:active{ color:#000; -webkit-box-shadow:none;box-shadow:none;}
 .pager li>a .icon{ color:#999; position:relative; top: 0;}
 .pager li>a:hover .icon,
-.pager li>a:focus .icon{ color:#444;}
+.pager li>a:active .icon{ color:#444;}
 .pager .pager-first>a,
 .pager .pager-last>a{ position:relative; top: 0.1rem;}
 .pager .pager-last>a{ margin-right:1rem;}
@@ -1949,7 +1949,7 @@ background:transparent;
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;min-width:115px;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem;}
 .transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:1.82em;}
 .transcript-search-result .shanti-thumbnail-image a:hover .overlay::before,
-.transcript-search-result .shanti-thumbnail-image a:focus .overlay::before{ font-size:3.5em !important;}
+.transcript-search-result .shanti-thumbnail-image a:active .overlay::before{ font-size:3.5em !important;}
 
 
 object.KalturaDynamicPlayer{ width:100% !important;}
