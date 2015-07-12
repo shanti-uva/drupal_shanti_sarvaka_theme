@@ -1041,12 +1041,11 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li a,
 .main-content .selectpicker li a:hover{ border:none; outline:0;}
 .main-content .selectpicker li.selected a,
-.main-content .selectpicker li.selected a span.text{ font-weight:bold;}
-.main-content .selectpicker li.selected a .icon{ font-weight:bold;  color:#444;}
-.main-content .selectpicker li:hover,
-.main-content .selectpicker li:active,
-.main-content .selectpicker li:hover span.text,
-.main-content .selectpicker li:active span.text,
+.main-content .selectpicker li.selected a span.text{ font-weight:bold; background: #fff !important;}
+.main-content .selectpicker li.selected a .icon{ font-weight:bold; color:#444;}
+
+.main-content .selectpicker li:hover a,
+.main-content .selectpicker li:hover a span.text,
 .main-content .selectpicker li a,
 .main-content .selectpicker li a:hover,
 .main-content .selectpicker li a:active,
@@ -1058,28 +1057,33 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li.selected a:active,
 .main-content .selectpicker li.selected a:hover span.text,
 .main-content .selectpicker li.selected a:active span.text{ color:#444; /*background: #eee !important;*/}
+.main-content .selectpicker li:hover a,
+.main-content .selectpicker li:hover a span.text,
 .main-content .selectpicker li a:hover span.text,
 .main-content .selectpicker li a:active span.text,
+.main-content .selectpicker li.selected:hover,
 .main-content .selectpicker li.selected a:hover,
-.main-content .selectpicker li.selected a:active{ background: #eee !important;}
+.main-content .selectpicker li.selected a:active,
+.main-content .selectpicker li.selected a:hover span.text,
+.main-content .selectpicker li.selected a:active span.text,{ background: #eee !important;}
+
 
 .btn-group-transcript .main-content .selectpicker li,
 .btn-group-transcript .main-content .selectpicker li:hover,
-.btn-group-transcript .main-content .selectpicker li:active,
 .btn-group-transcript .main-content .selectpicker li span.text,
-.btn-group-transcript .main-content .selectpicker li:hover span.text,
-.btn-group-transcript .main-content .selectpicker li:active span.text{ color:#fff;}
+.btn-group-transcript .main-content .selectpicker li:hover span.text{ color:#fff;}
 
 .btn-group-transcript .main-content .selectpicker li.selected a,
 .btn-group-transcript .main-content .selectpicker li.selected:hover a,
-.btn-group-transcript .main-content .selectpicker li.selected:active a,
 .btn-group-transcript .main-content .selectpicker li.selected:hover a span.text,
-.btn-group-transcript .main-content .selectpicker li.selected:active a span.text,
 .btn-group-transcript .main-content .selectpicker li.selected a span.text,
 .btn-group-transcript .main-content .selectpicker li.selected a:hover span.text,
 .btn-group-transcript .main-content .selectpicker li.selected a:active span.text{ color:#444;}
 
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu dt{ padding: 5px 20px 2px;background:#555;color:#fff;}
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 2px;background:#555;color:#fff;}
 
 /*----- checkmark styles -----*/
 .main-content .selectpicker>li>a .check-mark,
