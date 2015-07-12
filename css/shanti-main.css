@@ -13,7 +13,7 @@ a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
 .content-section a:active{ border-bottom-color:transparent !important;}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizeLegibility;}
-h1, h2, h3, h4{ letter-spacing:0.15rem !important;font-weight:normal !important;font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;} 
+h1, h2, h3, h4{ letter-spacing:0.015rem !important;font-weight:normal !important;font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;} 
 h4{ font-family:'museo-sans-500',helvetica,arial,sans-serif !important;}
 h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;margin-bottom:5px;}
 h1, h2, h3{ color:#555; font-size:1.5em; margin:1rem 0 0.5rem;}
