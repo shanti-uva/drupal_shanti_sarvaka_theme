@@ -1582,7 +1582,8 @@ form table td.label{ padding-top:0.68em !important;}
 .page-user-contact .tab-pane.main-col > .region-content{ max-width:850px !important;}
 
 .no-sidebars.node-type-video .tab-pane.main-col > .region-content,
-.front.page-places .tab-pane.main-col > .region-content,
+.no-sidebars.page-places .tab-pane.main-col > .region-content,
+.no-sidebars.page-subjects .tab-pane.main-col > .region-content,
 .no-sidebars.page-places- .tab-pane.main-col > .region-content,
 .no-sidebars.page-subjects .tab-pane.main-col > .region-content{ max-width:100% !important;}
 
