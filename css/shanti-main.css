@@ -1570,27 +1570,6 @@ form table td.label{ padding-top:0.68em !important;}
 /*--- ADMIN topbar and footer ---*/
 /*-------------------------------*/
 
-.no-sidebars .tab-pane.main-col > .region-content, /* broad range need to watch */
-.page-node-devel .tab-pane.main-col > .region-content{ max-width:1050px !important; padding:1.7rem 0 4rem; margin:0 auto !important;}
-
-/* Fix for kmaps side-col */
-.no-sidebars.page-places .tab-pane.main-col > .region-content,
-.no-sidebars.page-subjects .tab-pane.main-col > .region-content,
-.page-node-devel.page-places .tab-pane.main-col > .region-content,
-.page-node-devel.page-subjects .tab-pane.main-col > .region-content{ padding-top:0;}
-
-.page-mydata .tab-pane.main-col > .region-content,
-.page-mygallery .tab-pane.main-col > .region-content,
-.page-user-contact .tab-pane.main-col > .region-content{ max-width:940px !important;}
-.page-user-contact .tab-pane.main-col > .region-content{ max-width:850px !important;}
-
-.no-sidebars.node-type-video .tab-pane.main-col > .region-content,
-.no-sidebars.page-places .tab-pane.main-col > .region-content,
-.no-sidebars.page-subjects .tab-pane.main-col > .region-content,
-.no-sidebars.page-places- .tab-pane.main-col > .region-content,
-.no-sidebars.page-subjects .tab-pane.main-col > .region-content{ max-width:100% !important;}
-
-
 #admin-menu input.admin-menu-search.form-text{ background:#eee; font-size:1em; line-height:1.56em; height:1.5em; padding: 0.82em 1em 0.62em;}
 
 #admin-menu .admin-menu-search input{ width:108px; border-radius:1em;background-clip:padding-box;}
@@ -1659,6 +1638,9 @@ div.region.region-admin-footer{ padding:1.5rem;}
 /*---------------------------------------------------*/
 /*--- END Default Font Styles ----*/
 /*---------------------------------------------------*/
+
+
+
 
 
 
@@ -1972,7 +1954,6 @@ background:transparent;
 
 object.KalturaDynamicPlayer{ width:100% !important;}
 
-
 .btn-group-transcript .main-content .selectpicker li,
 .btn-group-transcript .main-content .selectpicker li:hover,
 .btn-group-transcript .main-content .selectpicker li span.text,
@@ -1988,12 +1969,13 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 2px;background:#555;color:#fff;text-transform:uppercase;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 4px;background:#555;color:#fff;text-transform:uppercase;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:20px;}
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt span.text::before{ content:'- ';}
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu div.div-contain{ display:none;}
 
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu{ padding-bottom:0;}
 
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
@@ -2001,6 +1983,33 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 
 
 
+
+
+
+
+
+/********************************/
+/*----- BEGIN Layout Corrections -----*/
+/********************************/
+.no-sidebars .tab-pane.main-col > .region-content, /* broad range need to watch */
+.page-node-devel .tab-pane.main-col > .region-content{ max-width:1050px !important; padding:1.7rem 0 4rem; margin:0 auto !important;}
+
+/* Fix for kmaps side-col */
+.no-sidebars.page-places .tab-pane.main-col > .region-content,
+.no-sidebars.page-subjects .tab-pane.main-col > .region-content,
+.page-node-devel.page-places .tab-pane.main-col > .region-content,
+.page-node-devel.page-subjects .tab-pane.main-col > .region-content{ padding-top:0;}
+
+.page-mydata .tab-pane.main-col > .region-content,
+.page-mygallery .tab-pane.main-col > .region-content,
+.page-user-contact .tab-pane.main-col > .region-content{ max-width:940px !important;}
+.page-user-contact .tab-pane.main-col > .region-content{ max-width:850px !important;}
+
+.no-sidebars.node-type-video .tab-pane.main-col > .region-content,
+.no-sidebars.page-places .tab-pane.main-col > .region-content,
+.no-sidebars.page-subjects .tab-pane.main-col > .region-content,
+.no-sidebars.page-places- .tab-pane.main-col > .region-content,
+.no-sidebars.page-subjects .tab-pane.main-col > .region-content{ max-width:100% !important;}
 
 
 html body{ margin-top: 0 !important;}
@@ -2015,6 +2024,9 @@ body.front .view-resources.btn-default{ display:none !important;}
 
 body.front .breadcrumb{ display:none !important;}				
 
+/********************************/
+/*----- END Layout Corrections -----*/
+/********************************/
 
 
 
