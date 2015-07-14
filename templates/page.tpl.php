@@ -127,7 +127,7 @@
 
 
   <!-- LOAD menus -->
-  <section id="menu" class="menu-main-desk" style="display:none;">
+  <section id="menu" class="menu-main" style="display:none;">
     <nav id="menu-drill" role="navigation">
      <?php print $variables['user_menu_links']; ?>
     </nav>

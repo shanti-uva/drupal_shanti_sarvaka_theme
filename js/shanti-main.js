@@ -671,9 +671,6 @@
 	  }
 	};
 
-
-
-
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
 			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
@@ -729,8 +726,7 @@
 	    }
 	  }
 	};
-	
-	
+
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {

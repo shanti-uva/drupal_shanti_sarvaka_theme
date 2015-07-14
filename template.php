@@ -1336,14 +1336,42 @@ function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
         return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
-        //speaker name selector
-        //transcript tier selector
-        $out = "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
+	$out  = "<select multiple class='selectpicker tier-selector' data-header='Select languages'>";
+
+	//language selector
+	$out .= "<optgroup label='Transcript' data-type='languages'>";
         foreach ($vars['element']['data_tiers'] as $key => $val) {
                 $out .= "<option value='{$key}'>{$val}</option>";
         }
+	$out .= "</optgroup>";
+
+	//speaker name selector
+        $out .= "<optgroup label='Speaker names' data-type='speakers'>";
+        foreach ($vars['element']['speaker_names'] as $key => $val) {
+                $out .= "<option value='{$key}'>{$val}</option>";
+        }
+        $out .= "</optgroup>";
+
         $out .= "</select>";
         return $out;
+}
+function shanti_sarvaka_transcripts_ui_speaker_name($vars)
+{
+    $vars['classes'][] = 'speaker-display';
+    $vars['classes'][] = 'active';
+    $classes = implode(' ', $vars['classes']);
+    $out  = "<div class='speaker-name {$vars['speaker_turn']}'>";
+    $i = 0;
+    $speakernames = explode('|', $vars['speaker_name']);
+    foreach ($vars['speaker_displays'] as $key => $val) {
+        if ($i < count($speakernames)) {
+            $out .= "<span data-speaker-display='$key' class='$classes'>" . $speakernames[$i] . "</span> ";
+            $i++;
+        }
+        else break;
+    }
+    $out .= "</div>";
+    return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
         $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
