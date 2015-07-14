@@ -2,15 +2,8 @@
 @font-face{font-family:'museo-sans-700';src:url(../fonts/Museosans/museosans-700-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/Museosans/museosans-700-webfont.woff) format("woff"),url(../fonts/Museosans/museosans-700-webfont.ttf) format("truetype"),url(../fonts/Museosans/museosans-700-webfont.woff#museosans_700) format("svg");}
 @font-face{font-family:'museo-sans-900';src:url(../fonts/Museosans/museosans-900-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/Museosans/museosans-900-webfont.woff) format("woff"),url(../fonts/Museosans/museosans-900-webfont.ttf) format("truetype"),url(../fonts/Museosans/museosans-900-webfont.woff#museosans_900) format("svg");}
 @font-face{font-family:'droidserif';src:url(../fonts/Droidserif/droidserif-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/Droidserif/droidserif-webfont.woff) format("woff"),url(../fonts/Droidserif/droidserif-webfont.ttf) format("truetype"),url(../fonts/Droidserif/droidserif-webfont.woff#droidserif) format("svg");}
-
 html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
 body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; overflow: hidden;}
-/* *:active{ outline:0 !important;} */
-a{text-decoration:none;color:#454fa4;}
-a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
-.content-section a{ border-bottom:1px solid transparent;}
-.content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
-.content-section a:active{ border-bottom-color:transparent !important;}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizeLegibility;}
 h1, h2, h3, h4{ letter-spacing:0.015rem !important;font-weight:normal !important;font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;} 
 h4{ font-family:'museo-sans-500',helvetica,arial,sans-serif !important;}
@@ -26,20 +19,16 @@ input.form-control:focus,textarea.form-textarea:focus{ background:#fff; border:1
 fieldset.form-wrapper{margin-bottom:1em;}
 fieldset.form-wrapper legend{border-bottom-width:2px;color:#444;margin-top:1.25em;margin-bottom:8px !important;}
 fieldset.form-wrapper legend .fieldset-legend{font-size:100%;margin-top:1em;}
-
 article ul,
 article ul ul,
 article ul ul ul,
 article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
-
-.wrap-all{ position:relative;}
-.main-wrapper{ background:#eee; position:relative; min-height:60em;}
-.main-wrapper::after{ clear:both;}
-.main-content{ position:relative;margin:0 auto;}
-.row-offcanvas > section.content-section .tab-content:nth-of-type(1){ /* padding-top: 1.5rem; */ padding-bottom:5rem;}
-.max-col-widths .row-offcanvas > section.content-section .tab-content:nth-of-type(1){ padding-top:0;}
-.content-section .container{ width:auto;} /* matching container-fluid for now, correct for changes in BStrap */
-
+/* anchors */
+a{text-decoration:none;color:#454fa4;} /* *:active{ outline:0 !important;} */
+a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
+.content-section a{ border-bottom:1px solid transparent;}
+.content-section a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
+.content-section a:active{ border-bottom-color:transparent !important;}
 .show-more a, 
 .go-to-link a{ border:none;text-transform:uppercase;font-family:'museo-sans-700',helvetica,arial,sans-serif;}
 .show-more a{ font-size:.83em; display:inline; }
@@ -47,7 +36,7 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .show-more.less a::after { content: '\2212';}
 .go-to-link a{ text-transform:uppercase; border:none;font-size:.83em; display:inline;}
 .go-to-link a::after{ color: #5a65d1; font-size: 1.25em;margin-left:0.32em;font-family:'FontAwesome';content: '\f18e'; /*-- arrow icon */}
-
+/* tools */
 .dfn, .italic{ font-style:italic !important; }
 .sans-serif{ font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .serif{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; }
@@ -57,6 +46,15 @@ article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
 .container-narrow > hr { margin: 3% 0;}
 .summary-overview{ max-width:800px;}
 ::selection,::-moz-selection{background: rgba(71, 82, 153, 0.66) !important;text-shadow:none !important;color:white !important;}
+/* layout containers */
+.wrap-all{ position:relative;}
+.main-wrapper{ background:#eee; position:relative; min-height:60em;}
+.main-wrapper::after{ clear:both;}
+.main-content{ position:relative;margin:0 auto;}
+.row-offcanvas > section.content-section .tab-content:nth-of-type(1){ /* padding-top: 1.5rem; */ padding-bottom:5rem;}
+.max-col-widths .row-offcanvas > section.content-section .tab-content:nth-of-type(1){ padding-top:0;}
+.content-section .container{ width:auto;} /* matching container-fluid for now, correct for changes in BStrap */
+
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
