@@ -1966,7 +1966,7 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 5px 20px 4px;background:#555;color:#fff;text-transform:uppercase;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt{ padding: 7px 20px;background:#e0e0e0;color:#555;text-transform:uppercase;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt{ padding-left:20px;}
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt span.text::before{ content:'- ';}
