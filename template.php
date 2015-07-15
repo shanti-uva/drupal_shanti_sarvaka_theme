@@ -1295,7 +1295,6 @@ function _shanti_sarvaka_add_metatags() {
     drupal_add_html_head($elinfo, $nm);
 		$ct++;
   }
-	dpm("HERE");
 }
 
 function shanti_sarvaka_preprocess_apachesolr_search_snippets(&$vars) {
