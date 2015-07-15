@@ -608,7 +608,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .btn.btn-default.btn-icon{color:#777;}
 .btn.btn-default .icon{background:#fff;}
 .btn.btn-default.btn-icon:hover,.btn.btn-default.btn-icon:focus{background:#ddd;}
-.btn.btn-default.btn-icon:hover .icon,.btn.btn-default.btn-icon:focus .icon{background:#ddd;}
+.btn.btn-default.btn-icon:hover .icon,.btn.btn-default.btn-icon:focus .icon{background:#e0e0e0;}
 .btn.btn-default.btn-icon:active span:last-child,.btn.btn-default.btn-icon.active span:last-child{background:#ccc;}
 .btn.btn-primary.btn-icon.btn-wrap span:last-child{padding:1.32em 3em 1.12em 8em;margin:0;line-height:1.5em;font-size:70%;background:transparent;display:block;}
 .btn.btn-default{background:#fff;color:#555;border-radius:.25em;background-clip:padding-box;border:1px solid transparent;}
@@ -1665,7 +1665,7 @@ div.region.region-admin-footer{ padding:1.5rem;}
 .bootstrap-select.btn-group.tier-selector .btn:focus .icon::before{ background:#ddd;}
 
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
-.av-main-transcript-section .bootstrap-select.btn-group .btn:focus { border: 1px solid #ccc;background: #ddd;}
+.av-main-transcript-section .bootstrap-select.btn-group .btn:focus { border: 1px solid #ccc;background: #e0e0e0;}
 .av-main-transcript-section .dropdown-menu.open{ border-radius:0;min-width:18rem;}
 .av-main-transcript-section .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
 .av-main-transcript-section .selectpicker li a{ line-height:2.62em; height:2.62em;}
