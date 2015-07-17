@@ -962,7 +962,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /*---scroll to top ---*/
 .back-to-top { position: fixed;bottom: 3em;right: 1em;z-index:1000;height:3.25em;width:3.25em;color: #aaa;background: #ccc;filter:alpha(opacity=30);opacity: 0.3;font-size: 1em;border-radius:50%;background-clip: padding-box;display: none;	text-align:center;}
 .back-to-top:hover,
-.back-to-top:active { color:#fff; background: #ccc; filter:alpha(opacity=30); opacity: 0.3; text-decoration:none;}
+.back-to-top:active { color:#fff; background: #ccc; filter:alpha(opacity=70); opacity: 0.7; text-decoration:none;}
 .back-to-top .fa{ color:#fff;font-size:2em;line-height:1.5em;font-family:'FontAwesome';font-weight:normal;margin:0 auto;text-align:center;}
 .back-to-top:hover .fa,
 .back-to-top:active .fa{ color:#fff;}
@@ -2056,7 +2056,7 @@ p.modal-title{ font-size:110%;}
 .map-renditions { position: relative; height:600px; margin-bottom:20px;}
 .map-renditions > div:nth-of-type(1){ -webkit-box-shadow: 0 0 5px rgba(0,0,0, 0.125); box-shadow: 0 0 5px rgba(0,0,0, 0.125);}
 
-.btn-group-gmaps{ display:inline-block;	position:absolute;bottom:35px;left:30px;-moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);}
+.btn-group-gmaps{ display:inline-block;	position:absolute;bottom:35px;left:30px;-moz-box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);}
 .btn-group-gmaps.btn-group > .btn.btn-default{ color: #000; background:#fff; border:none; font-size:0.62em;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;font-weight: bold;}
 .btn-group-gmaps.btn-group > .btn.btn-default.active{ color:#fff; background:#333; padding-left: 2.5rem;}
 .btn-group-gmaps.btn-group > .btn.btn-default.active span{ border-radius:0;width:0;height: 0;line-height:1;padding: 0;}
