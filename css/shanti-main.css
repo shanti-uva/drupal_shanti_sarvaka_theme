@@ -2128,19 +2128,22 @@ p.modal-title{ font-size:110%;}
 @media screen and (max-width: 767px) {
 	
 	.nav-justified>li.active::before{ border-color:transparent !important;color:transparent !important;}
-
-				/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
+    
+    .shanti-filters table.pagerer{ font-size:75%;}
+    .shanti-filters .label{ display:none;}
+				
+		/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
  
-			  /*
-				.menu-icon a,
-				.menu-icon .shanticon{ padding:0; height:40px; width:50px;}
-				.menu-icon .shanticon{ font-size:1.75em; line-height:1.75em;}
-				.menu-icon a,
-				.menu-icon .shanticon,
-				.menu-explore a,
-				.navbar.navbar-default,
-				.navbar-default .navbar-nav>li>a{ height:40px; min-height: 40px;}
-	      .navbar-default .menu-explore a{ font-size:0.88em; line-height:0.75em; height:40px; padding:10px 20px 0 16px; }
+		/*
+		.menu-icon a,
+		.menu-icon .shanticon{ padding:0; height:40px; width:50px;}
+		.menu-icon .shanticon{ font-size:1.75em; line-height:1.75em;}
+		.menu-icon a,
+		.menu-icon .shanticon,
+		.menu-explore a,
+		.navbar.navbar-default,
+		.navbar-default .navbar-nav>li>a{ height:40px; min-height: 40px;}
+	    .navbar-default .menu-explore a{ font-size:0.88em; line-height:0.75em; height:40px; padding:10px 20px 0 16px; }
         */      
 }
 
