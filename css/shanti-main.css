@@ -1143,7 +1143,7 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager-first .icon, 
 .pager-previous .icon, 
 .pager-next .icon, 
-.pager-last .icon { color: #999;}
+.pager-last .icon { color: #c0c0c0;}
 .pager-first.active .icon, 
 .pager-previous.active .icon, 
 .pager-next.active .icon, 
