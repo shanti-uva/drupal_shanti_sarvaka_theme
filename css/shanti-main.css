@@ -1105,10 +1105,10 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .form-item-sort-bef-combine .dropdown-menu.open .disabled{ background-color: #d0d0d0;}
 
 
-table.pagerer { float:right;font-size:0.88em;text-transform:uppercase;position:relative;top:0.9rem;}
+table.pagerer { float:right;font-size:0.88em;text-transform:uppercase;position:relative;top:0.2rem;right:2rem;}
 input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-top: 0.15rem;line-height:1.5em;color: #6d7afc; width:2.68em !important; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;color: rgba(32, 132, 131, 0.71);}
-.pager{ text-align:right;float:right;position:relative;top:-1rem;right:1rem;}
+.pager{ text-align:right;float:right;position:relative;top:-1rem;right:0;}
 .pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .pager li>a{ border:none;color:#aaa;padding:0.12em 0.5em;margin:0;background:transparent;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;}
 .pager li>a:hover,
@@ -1143,11 +1143,13 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager-first .icon, 
 .pager-previous .icon, 
 .pager-next .icon, 
-.pager-last .icon { color: #999;}
+.pager-last .icon { color: #c0c0c0;}
 .pager-first.active .icon, 
 .pager-previous.active .icon, 
 .pager-next.active .icon, 
 .pager-last.active .icon {color: #222;}
+
+.pager li>span{ border:none;border-radius:0;}
 /*--- END paging --*/
 
 
@@ -2129,7 +2131,7 @@ p.modal-title{ font-size:110%;}
 	
 	.nav-justified>li.active::before{ border-color:transparent !important;color:transparent !important;}
     
-    .shanti-filters table.pagerer{ font-size:75%;}
+    .shanti-filters table.pagerer{ font-size:75%;right:0;}
     .shanti-filters .label{ display:none;}
 				
 		/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
