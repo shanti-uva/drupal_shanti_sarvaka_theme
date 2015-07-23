@@ -685,7 +685,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-title{ font-size:1.38em;font-weight:normal;margin: 0 0 0.8rem;}
 .carousel-title a{ color: #404040;}
 .carousel .byline{ font-size:0.93em;margin: -0.1em 0 .38em;display:block;color: #777;font-style: italic;}
-.carousel-description p{ font-size:1em;overflow:hidden;height:19em;}
+.carousel-description p{ font-size:1em;overflow:hidden;height:14em;}
 .carousel-main-content .go-to-link a{ font-size:1em;}
 .carousel-main-content .go-to-link a:hover,
 .carousel-main-content .go-to-link a:active{ color: rgb(207, 47, 30);}
@@ -721,7 +721,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 
 @media (min-width:600px) {
  
-    .carousel-description p{ height:12em;}
+    .carousel-description p{ height:11em;}
 }
 
 @media (min-width:700px) {
@@ -749,7 +749,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 
 @media (min-width:992px) {
 	.carousel-main-image{min-width:290px; max-width:310px;}
-
+    .carousel-description p{ height:11em;}
     .logged-in .carousel .col-md-8{ width:50%;}
     .logged-in .carousel .col-md-4{ width:50%;}
     .logged-in .carousel-description p{font-size:1em;height:10em;}
