@@ -679,13 +679,13 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-header{ margin: 1rem 0 0;}
 .carousel-header span{ font-style:italic;font-weight:bold;font-size:1.12em;position:relative;top:-0.15rem;}
 .carousel-header a{ font-size:0.88em;float:right;margin-right:2rem;}
-.carousel-inner{ height:230px; overflow:visible; margin:0 auto;}
+.carousel-inner{ overflow:visible; margin:0 auto;}
 
 .carousel-main-content{  float:left; padding-left:0 !important;}
 .carousel-title{ font-size:1.38em;font-weight:normal;margin: 0 0 0.8rem;}
 .carousel-title a{ color: #404040;}
 .carousel .byline{ font-size:0.93em;margin: -0.1em 0 .38em;display:block;color: #777;font-style: italic;}
-.carousel-description p{ font-size:1em;max-height:19rem;overflow:hidden;}
+.carousel-description p{ font-size:1em;overflow:hidden;height:19em;}
 .carousel-main-content .go-to-link a{ font-size:1em;}
 .carousel-main-content .go-to-link a:hover,
 .carousel-main-content .go-to-link a:active{ color: rgb(207, 47, 30);}
@@ -713,49 +713,52 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .logged-in .carousel .byline{ font-size:70%;}
 .logged-in .carousel-main-image img{ margin-left:0; max-width:100%;margin:0;}
 
+
+
 @media (min-width:480px) {
  
 }
 
 @media (min-width:600px) {
  
-  .carousel-description p{ height:15em;}
+    .carousel-description p{ height:12em;}
 }
 
 @media (min-width:700px) {
-  .carousel .col-xs-12{padding-left:15px;padding-right:15px;}
-  .carousel-main-image{ min-width:270px;}
+    .carousel .col-xs-12{padding-left:15px;padding-right:15px;}
+    .carousel-main-image{ min-width:270px;}
 }
 
 @media (min-width:768px) {
-  .carousel-title{ font-size:1.63em;}
-  .carousel-description p{ font-size:1.06em;height:17em;}
-  /* .carousel-main-image{ min-width:270px;} */
-  .carousel-main-image img{ margin-left:1rem;}
-  .carousel-pause .glyphicon-pause::before{ position:relative;left:0rem;}
+    .carousel-title{ font-size:1.63em;}
+    .carousel-description p{ font-size:1.06em;height:15em;}
+    /* .carousel-main-image{ min-width:270px;} */
+    .carousel-main-image img{ margin-left:1rem;}
+    .carousel-pause .glyphicon-pause::before{ position:relative;left:0rem;}
 
 	.logged-in .carousel .col-sm-7{ width:50%;}
-  .logged-in .carousel .col-sm-5{ width:50%;}
-  .logged-in .carousel-main-image{max-width:100%;}
+    .logged-in .carousel .col-sm-5{ width:50%;}
+    .logged-in .carousel-main-image{max-width:100%;}
 	.logged-in .carousel-description p{font-size:0.93em;}
 	
 }
 
 @media (min-width:850px) {
-	.carousel-description p{ }
+	.carousel-description p{ height:14em;}
 }
 
 @media (min-width:992px) {
 	.carousel-main-image{min-width:290px; max-width:310px;}
 
-  .logged-in .carousel .col-md-8{ width:50%;}
-  .logged-in .carousel .col-md-4{ width:50%;}
-  .logged-in .carousel-description p{font-size:1em;height:19em;}
+    .logged-in .carousel .col-md-8{ width:50%;}
+    .logged-in .carousel .col-md-4{ width:50%;}
+    .logged-in .carousel-description p{font-size:1em;height:10em;}
 	.logged-in .carousel-title{ font-size:1.12em;}
 	.logged-in .carousel .byline{ font-size:70%;margin: -0.1em 0 .44em;}
 }
 
 @media (min-width:1100px) {
+
 	.logged-in .carousel-title{font-size:1.5em;}
 	.logged-in .carousel .byline{ font-size:80%;margin: -0.2em 0 .63em;}
 	.logged-in .carousel-description p{height:10em;}
@@ -765,7 +768,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 	.carousel-main-image{ min-width:270px;}
 
 	.logged-in .carousel .col-lg-9{ width:60%;}
-  .logged-in .carousel .col-lg-3{ width:40%;}
+    .logged-in .carousel .col-lg-3{ width:40%;}
 }
 
 
@@ -2250,7 +2253,6 @@ p.modal-title{ font-size:110%;}
 	.collections h4 { font-size:1.06em;letter-spacing: 0.25em;margin-top:8px !important;}   
     .collections ul li{ width:15%; margin-left:8%;}
   
-    .carousel-inner{ height: 240px;}
     .carousel-pause.btn.btn-sm{  padding: 0.55rem 0.9rem !important; width:3.2rem; height:3rem;font-size: 1em !important;margin:0 50%;}
     .carousel.carousel-fade .control-box-2{ left:-1.7rem; top:-1rem;}
 }
