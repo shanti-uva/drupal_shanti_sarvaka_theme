@@ -467,7 +467,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 .shanti-thumbnail-image a .overlay::before{font-family:'shanticon';content:'\e60a';color:rgba(255,255,255,0.0001);font-size: 2.5em;line-height: 1.88em;text-align:center;height:5em;-webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;-ms-transition:all 300ms ease;-o-transition:all 300ms ease;transition:all 300ms ease;}
 .shanti-thumbnail-image.shanti-field-video a .overlay::before{content:'\e63b';}
 .shanti-thumbnail-image a:hover .overlay::before{color:rgba(255,255,255,0.6000);font-size:4em !important;}
-.shanti-thumbnail-image a:active .overlay::before{color:rgba(255,255,255,0.7500);}
+.shanti-thumbnail-image a:active .overlay::before{color:rgba(255,255,255,0.7500);font-size:3.75em !important;}
 
 .shanti-thumbnail-info{font-size:.75em;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
 .shanti-thumbnail .body-wrap{padding:.35rem .8rem .6rem 0.9rem;overflow-x:auto;height:12.5rem;}
