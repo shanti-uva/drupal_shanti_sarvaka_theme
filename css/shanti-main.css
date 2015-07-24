@@ -1114,7 +1114,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .form-item-sort-bef-combine .dropdown-menu.open .disabled{ background-color: #d0d0d0;}
 
 
-table.pagerer { float:right;font-size:0.88em;text-transform:uppercase;position:relative;top:0.2rem;right:2rem;}
+table.pagerer { float:right;font-size:0.88em;text-transform:uppercase;position:relative;top:1rem;right:0rem;}
 input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-top: 0.15rem;line-height:1.5em;color: #6d7afc; width:2.68em !important; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;color: rgba(32, 132, 131, 0.71);}
 .pager{ text-align:right;float:right;position:relative;top:-1rem;right:0;}
