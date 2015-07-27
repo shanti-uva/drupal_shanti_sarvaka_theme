@@ -1945,7 +1945,7 @@ background:transparent;
 
 
 
-.transcript-container .scroller .tier.active{ margin-top:1rem;border-bottom:1px dashed #aaa; padding-bottom:1rem;}
+.transcript-container .scroller .tier.active{ margin-top:1rem;border-bottom:1px dashed #ddd; padding-bottom:1rem;}
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:4%; border-left:3px solid #eee;}
 .transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
