@@ -1688,6 +1688,8 @@ div.region.region-admin-footer{ padding:1.5rem;}
 .av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark::before,
 .av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark::before{ color:#aaa;}
 
+.av-main-transcript-section .dropdown-menu button.close{ font-size: 3rem; line-height: .6;}
+
 .av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ top:0.7rem;}
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
@@ -1701,7 +1703,7 @@ div.region.region-admin-footer{ padding:1.5rem;}
 .av-main-transcript-section .play-button .btn:hover{ box-shadow:none;border-color:#ddd;background:#f5f5f5;color:#333;}
 .av-main-transcript-section .play-button .btn:focus{ border-color: #ddd;background:#555;color:#fff;-webkit-box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); box-shadow: 0 0 4px 0 rgba(50,50,50,0.175);}
 .av-main-transcript-section .play-button .btn:active .glyphicon,
-.av-main-transcript-section .play-button .btn:focus .glyphicon{ box-shadow:none !important;background:transparent !important;}
+.av-main-transcript-section .play-button .btn:focus .glyphicon{ color:#fff; box-shadow:none !important;background:transparent !important;}
 .av-main-transcript-section .play-button .btn .glyphicon{  color:#5b68ce; line-height:0.9rem;float:left; padding:0; position:relative; font-size:1.2rem;left: -1.2rem;top:0.5rem;}
 .av-main-transcript-section .play-button .btn.untimed{ display:none;}
 /*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
