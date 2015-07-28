@@ -1943,8 +1943,8 @@ background:transparent;
 .transcript-search-result .btn{ width:100%;padding: 0.3rem 1rem 0.1rem;}
 .transcript-search-result .btn .glyphicon{ position:relative;left:-0.5rem;}
 
-
-
+/* Tiers occurs in the search results for transcripts and the transcript container itself, dashed lines seperates the languages */
+.transcript-search-result .tier.active{ margin-top:1rem;border-bottom:1px dashed #ddd; padding-bottom:1rem;}
 .transcript-container .scroller .tier.active{ margin-top:1rem;border-bottom:1px dashed #ddd; padding-bottom:1rem;}
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:4%; border-left:3px solid #eee;}
