@@ -1966,6 +1966,8 @@ background:transparent;
 .transcript-search-result .shanti-thumbnail-image a:hover .overlay::before,
 .transcript-search-result .shanti-thumbnail-image a:active .overlay::before{ font-size:3.5em !important;}
 
+/* Fix black margins around thumbs (MANU-1817) */
+.search-results .shanti-thumbnail-image img { min-height: 11rem;height: auto;min-width:140px;}
 
 object.KalturaDynamicPlayer{ width:100% !important;}
 
