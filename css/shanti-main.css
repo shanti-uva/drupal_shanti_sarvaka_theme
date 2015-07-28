@@ -1968,8 +1968,9 @@ background:transparent;
 .transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:2.06em;}
 .transcript-search-result .shanti-thumbnail-image a:hover .overlay::before{ font-size:3.5em !important;}
 .transcript-search-result .shanti-thumbnail-image a:active .overlay::before{ font-size:3em !important;}
+
 /* Fix black margins around thumbs (MANU-1817) */
-.search-results .shanti-thumbnail-image img { min-height: 11rem;height: auto;min-width:140px;}
+.transcript-search-result .shanti-thumbnail-image img {  border-radius:0.4rem; min-height: 11rem;height: auto;min-width:140px;}
 
 object.KalturaDynamicPlayer{ width:100% !important;}
 
