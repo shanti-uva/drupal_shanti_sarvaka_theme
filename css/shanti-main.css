@@ -1947,7 +1947,11 @@ background:transparent;
 .transcript-container .scroller .tier.active{ margin-top:1rem;border-bottom:1px dashed #ddd; padding-bottom:1rem;}
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:4%; border-left:3px solid #eee;}
-.transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
+.transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1rem;margin-bottom:1rem;margin-left:1.2rem;padding-top:0.7rem;border-top:1px dashed #ddd;}
+
+
+
+
 /*
 .transcripts-apachesolr-search-snippet .tiers strong,
 .transcripts-apachesolr-search-snippet .tiers mark{ color:#222; background:transparent; font-weight:bold; border-bottom:2px solid #000; padding:0;}
