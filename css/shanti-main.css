@@ -1938,7 +1938,6 @@ background:transparent;
 
 /*--- search results window ---*/
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
-.transcript-search-result .btn.btn-primary.untimed{ background:#ddd;color:#777;}
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
 .transcript-search-result .btn{ width:100%;padding: 0.3rem 1rem 0.1rem;}
 .transcript-search-result .btn .glyphicon{ position:relative;left:-0.5rem;}
@@ -1961,10 +1960,15 @@ background:transparent;
 .transcript-search-result .shanti-thumbnail-image{ width:13.5rem;}
 .transcript-search-result .shanti-thumbnail-image img{ min-width:auto; /* height:10rem; */}
 .transcript-search-result .shanti-thumbnail-image a{ position:relative;top:32px;border-radius:0.3rem;background:transparent;}
+
+.transcript-search-result .btn.btn-primary.untimed{ background:#ddd;color:#777;}
+.transcript-search-result .btn.btn-primary.untimed:hover{ box-shadow:none;border-color:#ddd;background:#f5f5f5;color:#333;}
+.transcript-search-result .btn.btn-primary.untimed:active{ border-color: #ddd;background-color:#555;color:#fff;-webkit-box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); box-shadow: 0 0 4px 0 rgba(50,50,50,0.175);}
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;min-width:115px;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem; /**/ border:1px solid transparent;-webkit-box-shadow: 0 0 3px 0 rgba(50,50,50,0.175); box-shadow: 0 0 3px 0 rgba(50,50,50,0.175);border-collapse: separate;}
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:hover{ box-shadow:none;border-color:#ddd;background:#f5f5f5;color:#333;}
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:active,
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:focus{ border-color: #ddd;background-color:#555;color:#fff;-webkit-box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); box-shadow: 0 0 4px 0 rgba(50,50,50,0.175);}
+
 .transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:2.06em;}
 .transcript-search-result .shanti-thumbnail-image a:hover .overlay::before{ font-size:3.5em !important;}
 .transcript-search-result .shanti-thumbnail-image a:active .overlay::before{ font-size:3em !important;}
