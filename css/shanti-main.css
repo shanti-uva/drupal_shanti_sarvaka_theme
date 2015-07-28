@@ -1965,10 +1965,9 @@ background:transparent;
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:hover{ box-shadow:none;border-color:#ddd;background:#f5f5f5;color:#333;}
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:active,
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:focus{ border-color: #ddd;background-color:#555;color:#fff;-webkit-box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); box-shadow: 0 0 4px 0 rgba(50,50,50,0.175);}
-.transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:1.82em;}
-.transcript-search-result .shanti-thumbnail-image a:hover .overlay::before,
-.transcript-search-result .shanti-thumbnail-image a:active .overlay::before{ font-size:3.5em !important;}
-
+.transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:2.06em;}
+.transcript-search-result .shanti-thumbnail-image a:hover .overlay::before{ font-size:3.5em !important;}
+.transcript-search-result .shanti-thumbnail-image a:active .overlay::before{ font-size:3em !important;}
 /* Fix black margins around thumbs (MANU-1817) */
 .search-results .shanti-thumbnail-image img { min-height: 11rem;height: auto;min-width:140px;}
 
