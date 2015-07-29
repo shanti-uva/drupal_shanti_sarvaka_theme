@@ -1147,7 +1147,7 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager li.pager-previous >.icon{ position:relative; top:-0.05rem;}
 */
 
-.pager li.pager-first >.icon{ position:relative; top:-0.4rem;}
+.pager li.pager-first >.icon{ position:relative; top:-0.2rem;}
 .pager li.pager-previous >.icon{ position:relative; top:-0.3rem;}
 
 
