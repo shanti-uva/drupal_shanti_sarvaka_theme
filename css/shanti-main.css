@@ -471,7 +471,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 
 .shanti-thumbnail-info{font-size:.75em;font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
 .shanti-thumbnail .body-wrap{padding:.35rem .8rem .6rem 0.9rem;overflow-x:auto;height:12.5rem;}
-.shanti-thumbnail-link{/* video title */font-size:1em;line-height:1.38em;font-weight:bold;margin:0.2rem 0;}
+.shanti-thumbnail-link{/* video title */font-size:1em;line-height:1.38em;font-weight:normal;margin:0.2rem 0;}
 .shanti-thumbnail-link:hover,
 .shanti-thumbnail-link:active{color:rgba(90,101,209,.9000);-webkit-box-shadow:none;box-shadow:none;}
 .shanti-field-group-audience a{font-size:0.93em;line-height:1.38em;}
