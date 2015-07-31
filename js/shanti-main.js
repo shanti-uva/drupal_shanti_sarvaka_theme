@@ -653,6 +653,7 @@
 	    $(".advanced-link").bind("click", function (e) { 
 	      $(".view-wrap").toggleClass('short-wrap');
         $(".advanced-view").toggleClass("show-options");
+        $(".advanced-view").slideToggle('fast');
 	    });
 	  }
 	};
