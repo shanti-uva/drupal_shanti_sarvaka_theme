@@ -875,7 +875,7 @@ background:transparent;
 
 
 
-/*--- Temporary styles to hide advance search options ---*/
+/*--- Temporary styles to hide advance search options 
 .input-section .search-group{ height:44px;}
 .input-section .input-group input.form-control{ margin-top:7px;}
 .input-section .toggle-link.advanced-link{ display:none !important;}
@@ -883,3 +883,4 @@ background:transparent;
 .input-section .input-group .input-group-btn{ top:8px !important;}
 .advanced-view{ display:block !important;}
 .input-section .alert{ position:relative; top:7px;}
+---*/
