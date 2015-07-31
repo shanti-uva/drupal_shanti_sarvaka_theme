@@ -652,6 +652,7 @@
 	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
 	    $(".advanced-link").bind("click", function (e) { 
 	      $(".view-wrap").toggleClass('short-wrap');
+        $(".advanced-view").toggleClass("show-options");
 	    });
 	  }
 	};
@@ -710,7 +711,7 @@
         }
       }
     };
-    
+
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
 //			if($(".openlayermap").length ) {
