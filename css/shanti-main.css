@@ -2071,8 +2071,7 @@ body.front .breadcrumb{ display:none !important;}
 /*-------------------------*/
 /* ------ BEGIN from kmaps */
 /* main layout for video page */
-.av-main-video-section,
-.av-main-transcript-section{ padding-right:0;}
+.av-main-video-section{ padding-right:0;}
 
 /* Overview page styles in KMaps */
 .openlayermap{ margin-bottom:1rem;}
