@@ -382,6 +382,11 @@
   Drupal.behaviors.shantiSarvakaAccordion = {
     attach: function (context, settings) {
 
+        // Open first accordion if none opened
+        $("#av-details .field-accordion").each(function(index, element){
+				  $(element).addClass(index == 0 ? "in" : "").once();
+				  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
+				});
 
         // Icon toggling with accordions
 				$.fn.accordionFx = function() {
@@ -401,21 +406,29 @@
 
 				$('.field-accordion, #accordion').accordionFx();
 
+        // Shiva site gets doubly glypicons. So need to be removed
+        // $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove(); // - removed, Aug.1/2015, mark
 
 
-        // Open first accordion if none opened
-        $("#av-details .field-accordion").each(function(index, element){
-          $(element).addClass(index == 0 ? "in" : "").once();
-          $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
+        /* - mark hide 12/24 - Select only accordions not in vertical tabs
+  			var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
+        var $active = accorddivs.find('.panel-collapse.in').prev().addClass('active');
+
+        $active.find('a').prepend('<span class="glyphicon glyphicon-minus"></span>');
+
+        accorddivs.find('.panel-heading').once('expgylph').not($active).find('a').prepend('<span class="glyphicon glyphicon-plus"></span>');
+
+        accorddivs.on('show.bs.collapse', function (e) {
+  					var accorddivs = $('.panel-group').not($('.vertical-tabs-panes .panel-group'));
+            accorddivs.find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+            $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
         });
 
-    }
-  }; 
+        accorddivs.on('hide.bs.collapse', function (e) {
+            $(this).find('.panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+        });
+				*/
 
-
-
-  Drupal.behaviors.shantiSarvakaAccordion = {
-    attach: function (context, settings) {
         /*-- toggle icon on accordions -- */
         $('.btn-toggle-accordion').click(function () {
 
