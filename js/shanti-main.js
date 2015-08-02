@@ -407,7 +407,7 @@
 
   Drupal.behaviors.shantiSarvakaAccordionTwo = {
     attach: function (context, settings) {
-        /*-- toggle icon on accordions -- 
+        /*-- toggle icon on accordions -- */
         $('.btn-toggle-accordion').click(function () {
 
           $(this).toggleClass('expand');
@@ -423,7 +423,7 @@
               $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
           }
         });
-    */
+
 
         // Open first accordion if none opened
     //    $("#av-details .field-accordion").each(function(index, element){
