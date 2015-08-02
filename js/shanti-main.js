@@ -400,12 +400,21 @@
 				};
 
 				$('.field-accordion, #accordion').accordionFx();
+
+
+
+        // Open first accordion if none opened
+        $("#av-details .field-accordion").each(function(index, element){
+          $(element).addClass(index == 0 ? "in" : "").once();
+          $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
+        });
+
     }
   }; 
 
 
 
-  Drupal.behaviors.shantiSarvakaAccordionTwo = {
+  Drupal.behaviors.shantiSarvakaAccordion = {
     attach: function (context, settings) {
         /*-- toggle icon on accordions -- */
         $('.btn-toggle-accordion').click(function () {
@@ -423,13 +432,6 @@
               $('.panel-heading').addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
           }
         });
-
-
-        // Open first accordion if none opened
-    //    $("#av-details .field-accordion").each(function(index, element){
-    //      $(element).addClass(index == 0 ? "in" : "").once();
-    //      $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
-    //    });
 
     }
   };
