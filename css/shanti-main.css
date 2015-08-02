@@ -1355,6 +1355,9 @@ button on video window
 .largePlayBtn{ font-family:'shanticon'; background:#32ccca !important; content:'play';}
 .largePlayBtn::before{ font-family:'shanticon'; content: '\e647';}
 */
+
+.largePlayBtn{ margin: -2.5rem 0 0 -3rem; padding: 1rem 2rem;border:1px solid #fff;background-color: #222222;background: rgba(0,0,0, 1);}
+
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/
