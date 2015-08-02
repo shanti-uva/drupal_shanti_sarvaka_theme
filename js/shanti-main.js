@@ -382,6 +382,11 @@
   Drupal.behaviors.shantiSarvakaAccordion = {
     attach: function (context, settings) {
 
+        // Open first accordion if none opened
+        $("#av-details .field-accordion").each(function(index, element){
+          $(element).addClass(index == 0 ? "in" : "").once();
+          $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
+        });
 
         // Icon toggling with accordions
 				$.fn.accordionFx = function() {
@@ -400,14 +405,6 @@
 				};
 
 				$('.field-accordion, #accordion').accordionFx();
-
-
-
-        // Open first accordion if none opened
-        $("#av-details .field-accordion").each(function(index, element){
-          $(element).addClass(index == 0 ? "in" : "").once();
-          $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
-        });
 
     }
   }; 
