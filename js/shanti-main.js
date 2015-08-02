@@ -379,7 +379,6 @@
   /**
    * Accordion Init: only called on document load
    */
-   /**
   Drupal.behaviors.shantiSarvakaAccordion = {
     attach: function (context, settings) {
 
@@ -403,7 +402,7 @@
 				$('.field-accordion, #accordion').accordionFx();
     }
   }; 
-**/
+
 
 
   Drupal.behaviors.shantiSarvakaAccordionTwo = {
