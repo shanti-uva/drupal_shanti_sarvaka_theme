@@ -1356,8 +1356,9 @@ button on video window
 .largePlayBtn::before{ font-family:'shanticon'; content: '\e647';}
 */
 
-.largePlayBtn{ margin: -2.5rem 0 0 -3rem; padding: 1rem 2rem;border:1px solid #fff;background-color: #222222;background: rgba(0,0,0, 1);}
-
+.largePlayBtn{ font-family:'shanticon'; margin: -2.5rem 0 0 -3rem; padding: 1rem 2rem;border:1px solid #555;background-color:#000;}
+.largePlayBtn::before{ content: "\e647"; font-size:1rem;}
+.largePlayBtn::after{ content:'PLAY'; font-family:'museo-sans-500', helvetica,arial,sans-serif;}
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/
