@@ -1696,7 +1696,7 @@ div.region.region-admin-footer{ padding:1.5rem;}
 .av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark::before,
 .av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark::before{ color:#aaa;}
 
-.av-main-transcript-section .dropdown-menu button.close{ font-size: 3rem; line-height: .6;}
+.av-main-transcript-section .dropdown-menu button.close{ font-size: 2rem; line-height: 0.93em;}
 
 .av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ top:0.7rem;}
 
