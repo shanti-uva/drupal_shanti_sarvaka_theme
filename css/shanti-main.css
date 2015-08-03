@@ -1356,9 +1356,9 @@ button on video window
 .largePlayBtn::before{ font-family:'shanticon'; content: '\e647';}
 */
 
-.largePlayBtn{ font-family:'shanticon'; margin: -2.5rem 0 0 -3rem; padding: 1rem 2rem;border:1px solid #555;background-color:#000;}
-.largePlayBtn::before{ content: "\e647"; font-size:1rem;}
-.largePlayBtn::after{ content:'PLAY'; font-family:'museo-sans-500', helvetica,arial,sans-serif;}
+.largePlayBtn{  margin: -2.5rem 0 0 -3rem; padding: 1rem 2rem;border:1px solid #555;background-color:#000;content:'PLAY'; font-family:'museo-sans-500', helvetica,arial,sans-serif;}
+.largePlayBtn::before{ content: '\e647'; font-size:1rem;font-family:'shanticon';}
+.largePlayBtn::after{ }
 /*----------------------------*/
 /*--- END video view page --*/
 /*----------------------------*/
@@ -1696,9 +1696,10 @@ div.region.region-admin-footer{ padding:1.5rem;}
 .av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark::before,
 .av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark::before{ color:#aaa;}
 
-.av-main-transcript-section .dropdown-menu button.close{ font-size: 2rem; line-height: 0.93em;}
+.av-main-transcript-section .dropdown-menu button.close{ font-size:2rem; line-height:0.93em;}
 
-.av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ top:0.7rem;}
+.av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ top:0.9rem;}
+
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
