@@ -1736,7 +1736,7 @@ div.region.region-admin-footer{ padding:1.5rem;}
 
 
 
-.btn-group-transcript{ width:100%;padding:0;margin:0;}
+.btn-group-transcript{ width:100%;padding:0;margin:0;background:#fff;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
 .btn-group-transcript .btn.btn-icon:hover,
