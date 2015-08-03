@@ -2043,6 +2043,7 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 .page-user-contact .tab-pane.main-col > .region-content{ max-width:940px !important;}
 .page-user-contact .tab-pane.main-col > .region-content{ max-width:850px !important;}
 
+.no-sidebars.node-type-audio .tab-pane.main-col > .region-content,
 .no-sidebars.node-type-video .tab-pane.main-col > .region-content,
 .no-sidebars.page-places .tab-pane.main-col > .region-content,
 .no-sidebars.page-subjects .tab-pane.main-col > .region-content,
