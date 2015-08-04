@@ -1047,7 +1047,9 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker>li>a>span.text{ padding-left:4px !important;}
 .main-content .selectpicker li a{ padding:0 1.25rem; overflow:hidden; display:block; line-height:1.75em; height:1.75em;}
 .main-content .selectpicker li a,
-.main-content .selectpicker li a:hover{ border:none; outline:0;}
+.main-content .selectpicker li a:hover,
+.main-content .selectpicker li a:active,
+.main-content .selectpicker li a:focus{ border:none; outline:0; background-image:none;}
 .main-content .selectpicker li.selected a,
 .main-content .selectpicker li.selected a span.text{ font-weight:bold; background: #fff;}
 .main-content .selectpicker li.selected a .icon{ font-weight:bold; color:#444;}
