@@ -652,6 +652,8 @@
 	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
 	    $(".advanced-link").bind("click", function (e) { 
 	      $(".view-wrap").toggleClass('short-wrap');
+        $(".advanced-view").toggleClass("show-options");
+        $(".advanced-view").slideToggle('fast');
 	    });
 	  }
 	};
@@ -678,6 +680,38 @@
 	  }
 	};
 
+
+  Drupal.behaviors.shantiSarvakaSearchFlyoutCancel = {
+      attach: function (context, settings) {
+        if(context == window.document) {
+                          
+          var mbsrch = $(".search-group .form-control");  // the main search input
+          $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
+      
+          // --- focusin - focusout
+          $(mbsrch).focusin(function () {
+              $(mbsrch).attr("placeholder", "");
+              $("button.searchreset").show("fast");
+          });
+          $(mbsrch).focusout(function () {
+              $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
+              $("button.searchreset").hide();
+      
+              var str = "Enter Search...";
+              var txt = $(mbsrch).val();
+      
+              if (str.indexOf(txt) > -1) {
+                  $("button.searchreset").hide();
+                  return true;
+              } else {
+                  $("button.searchreset").show(100);
+                  return false;
+              }
+          });
+        
+        }
+      }
+  };
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
