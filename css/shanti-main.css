@@ -1141,7 +1141,7 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager li>a:active .icon{ color:#444;}
 
 .pager .pager-first>a, 
-.pager .pager-last>a{ padding:2px 0 4px;}
+.pager .pager-last>a{ padding:0 0 4px;}
 .pager .pager-first span,
 .pager .pager-last span{ position:relative; top: 0.15rem !important;}
 /* .pager .pager-last>a{ margin-right:1rem;} */
