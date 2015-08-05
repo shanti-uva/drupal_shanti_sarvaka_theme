@@ -1132,20 +1132,24 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pagerer-page:focus{background:#fff;color: rgba(32, 132, 131, 0.71);}
 .pager{ text-align:right;float:right;position:relative;top:0;right:1rem;}
 .pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
-.pager li>a{ border:none;color:#aaa;padding:0.2rem 0;margin:0;background:transparent;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;}
+.pager li>a{ border:none;color:#aaa;padding:0 0 4px;margin:0;background:transparent;border-radius:0.18em;background-clip: padding-box;	display:inline-block;position:relative;top:0;}
 .pager li>a:hover,
 .pager li>a:active{ color:#333;-webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;}
 .pager li>a:active{ color:#000; -webkit-box-shadow:none;box-shadow:none;}
-.pager li>a .icon{ color:#999; position:relative; top: 0;}
+/* .pager li>a .icon{ color:#999; position:relative; top: 0;} */
 .pager li>a:hover .icon,
 .pager li>a:active .icon{ color:#444;}
+
+.pager .pager-last>a, .pager .pager-next>a{ padding:2px 0;}
+
+
 .pager .pager-first span,
 .pager .pager-last span{ position:relative; top: 0.15rem !important;}
 /* .pager .pager-last>a{ margin-right:1rem;} */
 .pager-first .icon,
 .pager-previous .icon,
 .pager-next .icon,
-.pager-last .icon{ font-family:'shanticon';height:1em;width:1em;font-size:1em;color:#222;display:inline-block;background:transparent;}
+.pager-last .icon{ font-family:'shanticon';font-size:1em;color:#222;display:inline-block;background:transparent;}
 .pager-first .icon::before{ content:'\e63d';}
 .pager-previous .icon::before { content:'\e640';}
 .pager-next .icon::before { content:'\e63f';}
@@ -1174,7 +1178,7 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager-next.active .icon, 
 .pager-last.active .icon {color: #222;}
 
-.pager li span{ padding:0 14px;}
+.pager li span{ padding:0 10px;}
 .pager li>span{ border:none;border-radius:0;}
 /*--- END paging --*/
 
