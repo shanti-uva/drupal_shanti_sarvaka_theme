@@ -509,11 +509,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*--------------------------------*/
 /*----- BEGIN new from kmaps -----*/
 /*--------------------------------*/
-.pager { float: inherit; text-align: center;}
-li.pager-current.widget > form,
-li.pager-current.widget > form div,
-li.pager-current.widget > form input{ display: inline;}
-li.pager-current.widget > form input.form-control { width: 100px;}
+
 
 #photo-pagination{ float: right; margin-right: 10px; margin-top: 10px;}
 #photo-pagination li{ display: inline; padding:0; font-size:85%;}
@@ -1118,6 +1114,13 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .form-item-sort-bef-combine .dropdown-menu.open .disabled{ background-color: #d0d0d0;}
 
 
+/* from kmaps */
+li.pager-current.widget > form,
+li.pager-current.widget > form div,
+li.pager-current.widget > form input{ display: inline;}
+li.pager-current.widget > form input.form-control { width: 100px;}
+/* END from kmaps */
+
 table.pagerer { float:right;font-size:0.82em;text-transform:uppercase;position:relative;top:1rem;right:0rem;}
 input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-top: 0.15rem;line-height:1.5em;color: #6d7afc; width:2.68em !important; -webkit-box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;color: rgba(32, 132, 131, 0.71);}
@@ -1130,8 +1133,8 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager li>a .icon{ color:#999; position:relative; top: 0;}
 .pager li>a:hover .icon,
 .pager li>a:active .icon{ color:#444;}
-.pager .pager-first>a,
-.pager .pager-last>a{ position:relative; top: 0.1rem;}
+.pager .pager-first span,
+.pager .pager-last span{ position:relative; top: 0.1rem;}
 .pager .pager-last>a{ margin-right:1rem;}
 .pager-first .icon,
 .pager-previous .icon,
@@ -1165,6 +1168,7 @@ input.pagerer-page{ border-radius:2px; border:none;	font-size:0.88em; padding-to
 .pager-next.active .icon, 
 .pager-last.active .icon {color: #222;}
 
+.pager li span{ padding:0 14px;}
 .pager li>span{ border:none;border-radius:0;}
 /*--- END paging --*/
 
