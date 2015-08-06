@@ -89,15 +89,13 @@ object.flip_label{ display:none;}
 	line-height:1.44em;
 	margin: 14px 0 0;
 	padding:2px 60px 0 15px;
-  width:100%;
-  max-width:100%;
+    width:100%;
+    max-width:100%;
 	overflow: auto;
 	vertical-align:middle;
 	box-shadow:0 2px 5px #eee inset;
 	border-collapse: separate; /* fix for ie9 shadow */
 	background: #fff;
-	-webkit-transition-property: all;
-	-webkit-transition-duration: 400ms;
 	-webkit-transition-property: all;
 	        transition-property: all;
 	-webkit-transition-duration: 400ms;
@@ -118,8 +116,8 @@ object.flip_label{ display:none;}
 	border: 1px solid #e5e5e5;
 	border-width:0 0 0 1px;
 	border-radius:0;
-  border-top-right-radius: 25px !important;
-  border-bottom-right-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
 	background-clip: padding-box;
 	box-shadow:none;
 	padding:0;
@@ -138,17 +136,18 @@ object.flip_label{ display:none;}
 
 /*--- reset search button ---*/
 .input-section .input-group-btn .searchreset {
-        border:none;
-        background:transparent;
-        background-image:none;
-        position:absolute;
-        right:5rem;
-        top:0.9rem;
-        z-index:10;
-        padding:0;
-        margin:0;
-        display:none;
-        border-radius:50%;
+    border:none;
+    background:transparent;
+    background-image:none;
+    position:absolute;
+    right:5rem;
+    top:0.9rem;
+    z-index:10;
+    padding:0;
+    margin:0;
+    display:none;
+    border-radius:50%;
+    background-clip: padding-box;
 }
 .input-section .input-group-btn .searchreset:hover,
 .input-section .input-group-btn .searchreset:active{ color:#777;}
@@ -156,11 +155,12 @@ object.flip_label{ display:none;}
 .input-section .input-group-btn .searchreset.active{ background:transparent;border:none;background-image:none;box-shadow:none;}
 
 .input-section .input-group-btn .searchreset .icon{ cursor:pointer; width: 2.75rem;
-height: 2.75rem;
-border-radius: 50%;
-border: none;
-position: relative; top:-0.55rem; left:0;
-background:transparent;
+	height: 2.75rem;
+	border-radius: 50%;
+	background-clip: padding-box;
+	border: none;
+	position: relative; top:-0.55rem; left:0;
+	background:transparent;
 }
 .input-section .input-group-btn .searchreset .icon::before,
 .input-section .input-group-btn .searchreset .icon::after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}
@@ -271,8 +271,8 @@ background:transparent;
 	background-repeat: repeat-x;
 	border: 1px solid #ddd;
 	border-radius:25px;
+	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	border-color: #eeee #eee #ddd;
-  background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
 	overflow:hidden;
 	box-shadow:none;
 }
@@ -326,7 +326,7 @@ background:transparent;
  /* search errors */
 .input-section .notification-wrapper{ padding: 0 15px;}
 .input-section .alert{ margin:0 10px 10px;padding: 10px 15px;text-shadow: 0 1px 0 rgba(255,255,255,.4);}
-.input-section .alert-danger{  color:#dc3c47; background-image:none; border-radius:0 9px; border:1px solid #ddd; background-color:rgba(255,255,252, 1.0);}
+.input-section .alert-danger{  color:#dc3c47; background-image:none; border-radius:0 9px; background-clip: padding-box; border:1px solid #ddd; background-color:rgba(255,255,252, 1.0);}
 .input-section .alert-danger .close{ position:relative;top:-0.5rem;right:-.5rem;}
 
 .input-section .selectpicker li a span{ background:transparent !important; color:#444;}
@@ -655,6 +655,7 @@ background:transparent;
     left:27px;
     width: 150px;
     border-radius: 100%;
+    background-clip: padding-box;	
     z-index:16000;
 }
  
