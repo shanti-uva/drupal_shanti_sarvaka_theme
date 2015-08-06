@@ -2041,26 +2041,26 @@ object.KalturaDynamicPlayer{ width:100% !important;}
 /********************************/
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
-.no-sidebars .tab-pane.main-col > .region-content, /* broad range need to watch */
-.page-node-devel .tab-pane.main-col > .region-content{ max-width:1050px !important; padding:1.7rem 0 4rem; margin:0 auto !important;}
+.no-sidebars .tab-pane.main-col > div, /* broad range need to watch */
+.page-node-devel .tab-pane.main-col > div{ max-width:1050px !important; padding:1.7rem 0 4rem; margin:0 auto !important;}
 
 /* Fix for kmaps side-col */
-.no-sidebars.page-places .tab-pane.main-col > .region-content,
-.no-sidebars.page-subjects .tab-pane.main-col > .region-content,
-.page-node-devel.page-places .tab-pane.main-col > .region-content,
-.page-node-devel.page-subjects .tab-pane.main-col > .region-content{ padding-top:0;}
+.no-sidebars.page-places .tab-pane.main-col > div,
+.no-sidebars.page-subjects .tab-pane.main-col > div,
+.page-node-devel.page-places .tab-pane.main-col > div,
+.page-node-devel.page-subjects .tab-pane.main-col > div{ padding-top:0;}
 
-.page-mydata .tab-pane.main-col > .region-content,
-.page-mygallery .tab-pane.main-col > .region-content,
-.page-user-contact .tab-pane.main-col > .region-content{ max-width:940px !important;}
-.page-user-contact .tab-pane.main-col > .region-content{ max-width:850px !important;}
+.page-mydata .tab-pane.main-col > div,
+.page-mygallery .tab-pane.main-col > div,
+.page-user-contact .tab-pane.main-col > div{ max-width:940px !important;}
+.page-user-contact .tab-pane.main-col > div{ max-width:850px !important;}
 
-.no-sidebars.node-type-audio .tab-pane.main-col > .region-content,
-.no-sidebars.node-type-video .tab-pane.main-col > .region-content,
-.no-sidebars.page-places .tab-pane.main-col > .region-content,
-.no-sidebars.page-subjects .tab-pane.main-col > .region-content,
-.no-sidebars.page-places- .tab-pane.main-col > .region-content,
-.no-sidebars.page-subjects .tab-pane.main-col > .region-content{ max-width:100% !important;}
+.no-sidebars.node-type-audio .tab-pane.main-col > div,
+.no-sidebars.node-type-video .tab-pane.main-col > div,
+.no-sidebars.page-places .tab-pane.main-col > div,
+.no-sidebars.page-subjects .tab-pane.main-col > div,
+.no-sidebars.page-places- .tab-pane.main-col > div,
+.no-sidebars.page-subjects .tab-pane.main-col > div{ max-width:100% !important;}
 
 
 html body{ margin-top: 0 !important;}
