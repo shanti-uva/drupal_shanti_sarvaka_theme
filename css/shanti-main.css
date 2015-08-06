@@ -1,7 +1,7 @@
-@font-face{font-family:'museo-sans-300';src: url('../fonts/Museosans/museosans-300-webfont.eot'); /* IE9 Compat Modes */src: url('../fonts/Museosans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */url('../fonts/Museosans/museosans-300-webfont.woff2') format('woff2'), /* Super Modern Browsers */url('../fonts/Museosans/museosans-300-webfont.woff') format('woff'), /* Pretty Modern Browsers */url('../fonts/Museosans/museosans-300-webfont.ttf') format('truetype'), /* Safari, Android, iOS */url('../fonts/Museosans/museosans-300-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
+@font-face{font-family:'museo-sans-300';src: url('../fonts/Museosans/museosans-300-webfont.eot'); src: url('../fonts/Museosans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Museosans/museosans-300-webfont.woff2') format('woff2'), url('../fonts/Museosans/museosans-300-webfont.woff') format('woff'), url('../fonts/Museosans/museosans-300-webfont.ttf') format('truetype'), url('../fonts/Museosans/museosans-300-webfont.svg#svgFontName') format('svg'); }
 @font-face{font-family:'museo-sans-500';src: url('../fonts/Museosans/museosans-500-webfont.eot'); src: url('../fonts/Museosans/museosans-500-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Museosans/museosans-500-webfont.woff2') format('woff2'), url('../fonts/Museosans/museosans-500-webfont.woff') format('woff'), url('../fonts/Museosans/museosans-500-webfont.ttf') format('truetype'), url('../fonts/Museosans/museosans-500-webfont.svg#svgFontName') format('svg'); }
-@font-face{font-family:'museo-sans-700';src: url('../fonts/Museosans/museosans-700-webfont.eot'); src: url('../fonts/Museosans/museosans-700-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Museosans/museosans-700-webfont.woff2')format('woff2'), url('../fonts/Museosans/museosans-700-webfont.woff') format('woff'), url('../fonts/Museosans/museosans-700-webfont.ttf') format('truetype'), url('../fonts/Museosans/museosans-700-webfont.svg#svgFontName') format('svg'); }
-@font-face{font-family:'droidserif';src: url('../fonts/Droidserif/droidserif-webfont.eot'); src: url('../fonts/Droidserif/droidserif-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Droidserif/droidserif-webfont.woff2') format('woff2'), url('../fonts/Droidserif/droidserif-webfont.woff')  format('woff'), url('../fonts/Droidserif/droidserif-webfont.ttf') format('truetype'), url('../fonts/Droidserif/droidserif-webfont.svg#svgFontName') format('svg'); }
+@font-face{font-family:'museo-sans-700';src: url('../fonts/Museosans/museosans-700-webfont.eot'); src: url('../fonts/Museosans/museosans-700-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Museosans/museosans-700-webfont.woff2') format('woff2'), url('../fonts/Museosans/museosans-700-webfont.woff') format('woff'), url('../fonts/Museosans/museosans-700-webfont.ttf') format('truetype'), url('../fonts/Museosans/museosans-700-webfont.svg#svgFontName') format('svg'); }
+@font-face{font-family:'droidserif';    src: url('../fonts/Droidserif/droidserif-webfont.eot');   src: url('../fonts/Droidserif/droidserif-webfont.eot?#iefix')   format('embedded-opentype'), url('../fonts/Droidserif/droidserif-webfont.woff2')   format('woff2'), url('../fonts/Droidserif/droidserif-webfont.woff')   format('woff'), url('../fonts/Droidserif/droidserif-webfont.ttf')   format('truetype'), url('../fonts/Droidserif/droidserif-webfont.svg#svgFontName')   format('svg'); }
 html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
 body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; overflow: hidden;}
 h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizeLegibility;}
@@ -1925,7 +1925,9 @@ div.region.region-admin-footer{ padding:1.5rem;}
         margin:0 4% 0 0;
         box-shadow:none;
         position:relative;
-        top:1rem;-webkit-transition:  all 500ms ease 0s;transition:  all 500ms ease 0s;
+        top:1rem;
+        -webkit-transition: all 500ms ease 0s;
+                transition: all 500ms ease 0s;
         display:none;
 }
 .transcript-navigate-results .btn .icon{
@@ -1947,7 +1949,9 @@ div.region.region-admin-footer{ padding:1.5rem;}
         width:100%;
         text-align:center;
         padding-right:0.3rem;
-        display:none;-webkit-transition:  all 500ms ease 0s;transition:  all 500ms ease 0s;
+        display:none;
+        -webkit-transition: all 500ms ease 0s;
+                transition: all 500ms ease 0s;
 }
 .transcript-navigate-results .btn.btn-default:hover,
 .transcript-navigate-results .btn.btn-default:active{ background:#eee;}
