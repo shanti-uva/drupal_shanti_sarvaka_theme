@@ -1096,7 +1096,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 
 
 /*--- BEGIN paging --*/
-.shanti-filters { height:1.75em; margin-bottom:2.5rem;position:relative;top:-1rem;}
+.shanti-filters { height:2.5rem; margin-bottom:2.5rem;position:relative;top:-1rem;}
 .logged-in .shanti-filters { position:relative; top:-2.5rem;}
 
 .shanti-filters table{ float:right;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
@@ -1128,7 +1128,7 @@ li.pager-current.widget > form input.form-control { width: 100px;}
 table.pagerer { float:right;font-size:0.82em;text-transform:uppercase;}
 input.pagerer-page{ border-radius:2px; background-clip:padding-box;border:none;	font-size:0.88em; padding-top: 0.15rem;line-height:1.5em;color: #6d7afc; width:2.68em !important;box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);border-collapse: separate;background-clip: padding-box;}
 .pagerer-page:focus{background:#fff;color: rgba(32, 132, 131, 0.71);}
-/* .pager{ text-align:right;float:right;position:relative;top:0;right:0;} */
+.pager{ text-align:right; /*float:right;position:relative;top:0;right:0;*/}
 .pager li{ color:#555; padding:0 1px; line-height:1em; font-family:'museo-sans-700',helvetica,arial,sans-serif;font-weight:700;font-weight:bold;}
 .pager li>a{ border:none;color:#aaa;padding:2px 0;margin:0;background:transparent;border-radius:0.3rem; background-clip: padding-box; display:inline-block;position:relative;top:0;}
 .pager li>a:hover,
