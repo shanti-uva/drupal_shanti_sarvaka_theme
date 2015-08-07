@@ -698,7 +698,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .carousel-control.left .icon::before{ content:'\e641'; position:relative; right:-0.5rem; text-shadow: -3px 0 7px rgba(0,0,0, 0.20);}
 .carousel-control.right .icon::before{ content:'\e642'; position:relative; left:-0.5rem; text-shadow: 3px 0 7px rgba(0,0,0, 0.20);}
 .carousel-control:hover .icon{ color:#fff;opacity:1;} 
-.carousel-control:active .icon{ color:#fff;opacity:0.4;}
+.carousel-control:active .icon{ color:#fff;opacity:0.9;}
 .carousel-pause.btn.btn-sm { color: #888 !important; box-shadow: 0 0 10px 0 rgba(50,50,50,0.125);border-collapse:separate; font-size: 0.88em !important; text-align: center;border-radius: 50% !important;background-clip:padding-box;margin:0.5rem;padding:0 !important; width:2.5rem; height:2.3rem;}
 .carousel .col-xs-12{ padding-left:5px;padding-right:5px;}
 .carousel-pause .glyphicon-pause::before{ position:relative;left:0.1rem;}
