@@ -225,32 +225,19 @@ object.flip_label{ display:none;}
 /*--- iCheck / radio and checkbox style overrides ---*/
 /*--- reset default size ---*/
 .icheckbox_minimal-red,
-.iradio_minimal-red{
-	height:20px;
-	width:20px;
-	margin-right: 4px;
-}
-
+.iradio_minimal-red{height:20px;width:20px;margin-right: 4px;}
 .input-section .icheckbox_minimal-red,
-.input-section .iradio_minimal-red{
-	height:1.5em;
-	margin-right: 4px;
-}
-
+.input-section .iradio_minimal-red{height:1.5em;margin-right: 4px;}
 .input-section .radio-inline input,
 .input-section .radio input[type='radio'],
 .input-section .radio-inline input[type='radio']{ margin-left:5px;}
-
 .input-section .checkbox-inline,
 .input-section .radio-inline{ padding:0 0 0 3px;}
 /* .input-section .checkbox-inline{ margin-left:1px;} */
-
 .input-section .radio-inline+.radio-inline,
 .input-section .checkbox-inline+.checkbox-inline{ margin-left:0.06em;}
-
 .input-section .radio-inline>div,
 .input-section .checkbox-inline>div{ position:relative; top:-2px; margin:0;padding:0;} /* graphic icon */
-
 .input-section label.radio-inline:first-child{ width:6.62em; min-width:6.62em; max-width:15em; padding-left:3px;}
 
 /*-----------------------------------------------*/
@@ -263,8 +250,8 @@ object.flip_label{ display:none;}
 	background: transparent;
 	background-image:none;
 	background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
-  background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%, #f0f0f0 55%, #e0e0e0 100%);
-  background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+    background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%, #f0f0f0 55%, #e0e0e0 100%);
+    background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
 	/*
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
 	*/
@@ -272,7 +259,7 @@ object.flip_label{ display:none;}
 	border: 1px solid #ddd;
 	border-radius:25px;
 	background-clip: padding-box;	 /* fix for radius-corner color bleedthrough */
-	border-color: #eeee #eee #ddd;
+	border-color: #eee #eee #ddd;
 	overflow:hidden;
 	box-shadow:none;
 }
