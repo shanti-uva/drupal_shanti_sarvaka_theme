@@ -805,7 +805,7 @@ function shanti_sarvaka_fieldset($variables) {
         '</a>
       </h6>
     </div>
-    <div id="' . $id . '" class="panel-collapse collapse' . $isin . '">
+    <div id="' . $id . '" class="panel-collapse collapse">
       <div class="panel-body">';
    $output .= $element['#children'];
     if (isset($element['#value'])) {
