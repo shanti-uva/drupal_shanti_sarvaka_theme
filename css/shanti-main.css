@@ -1234,15 +1234,15 @@ table tr.ok { color: #234600; background: #f8fff0;}
     float: left;                          /* adjust as needed */
     color: #444;                          /* adjust as needed */
     position: relative;
-    top:0.01rem;
+    top:-0.01rem;
     left:-2.4rem;
-    font-size: 0.75em;
+    font-size: 0.68em;
 }
 .panel-heading .accordion-toggle.collapsed::after {
     /* symbol for "collapsed" panels */
     content:'\2b';                      /* adjust as needed, taken from bootstrap.css */
     position:relative;
-    left:0.4rem;
+    left:-2.3rem;
 }
 
 /* END accordion */
