@@ -387,8 +387,10 @@
 			//	  $(element).addClass(index == 0 ? "in" : "").once();
 			//	  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
 			//	});
-
-        $('.node-type-video .panel-group .collapsible:eq(1)').find('.panel-collapse').once().addClass('in');
+        $('.node-type-video .panel-group .collapsible:eq(0)').each(function(index, element){
+              $(element).find('.panel-collapse').once().addClass('in');
+              $(element).has(".in").find('.accordion-toggle').once().removeClass('collapsed');
+        });
 
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
