@@ -1219,7 +1219,7 @@ table tr.ok { color: #234600; background: #f8fff0;}
 /*--- for larger toggle panels ---*/
 .panel.panel-default h6{ text-transform:uppercase;font-size:1em; line-height:4em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;height:60px;}
 .panel.panel-default h6 a { color:#444;border:none;display:block;padding-left:2rem;}
-.panel.panel-default h6 .glyphicon {  }
+.panel.panel-default h6 .glyphicon { margin-right:9px;background:#fff;color:#444; width:18px;height:18px;float:left;position:relative;top:19px;left:0;display: block;border-radius:50%;background-clip:padding-box;box-shadow:0 0 4px 3px #ddd;border-collapse:separate;}
 /*.panel.panel-default .accordion-toggle .glyphicon::before { position: relative;top: 4px;left: 5px;}
 .panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus::before { position: relative;left: 4px;}
 */
@@ -1227,7 +1227,7 @@ table tr.ok { color: #234600; background: #f8fff0;}
 
 .panel.panel-default .accordion-toggle .glyphicon.glyphicon-plus::before,
 .panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus::before{ content:'';}
-.panel.panel-default .accordion-toggle::before{ margin-right:9px; background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;float:left;position:relative;top: 19px;left: 0;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
+.panel.panel-default .accordion-toggle::before{ }
 .panel-heading .accordion-toggle::after {
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
@@ -1235,7 +1235,7 @@ table tr.ok { color: #234600; background: #f8fff0;}
     float: left;                          /* adjust as needed */
     color: #444;                          /* adjust as needed */
     position: relative;top: 4px;left: 5px;
-    font-size: 0.63em;
+    font-size: 0.88em;
 }
 .panel-heading .accordion-toggle.collapsed::after {
     /* symbol for "collapsed" panels */
