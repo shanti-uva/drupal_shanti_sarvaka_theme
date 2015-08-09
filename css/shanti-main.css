@@ -1225,19 +1225,19 @@ table tr.ok { color: #234600; background: #f8fff0;}
 */
 .panel.field-group-fieldset{ margin-bottom:0;}
 
-.panel.panel-default .accordion-toggle .glyphicon::before,
+.panel.panel-default .accordion-toggle .glyphicon.glyphicon-plus::before,
 .panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus::before{ content:'';}
-.panel-heading .accordion-toggle:after {
+.panel-heading .accordion-toggle::after {
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content:"\2212";    /* adjust as needed, taken from bootstrap.css */
-    float: left;        /* adjust as needed */
-    color: grey;         /* adjust as needed */
+    content:'\2212';    				  /* adjust as needed, taken from bootstrap.css */
+    float: left;                          /* adjust as needed */
+    color: #444;                          /* adjust as needed */
     position: relative;top: 4px;left: 5px;
 }
-.panel-heading .accordion-toggle.collapsed:after {
+.panel-heading .accordion-toggle.collapsed::after {
     /* symbol for "collapsed" panels */
-    content: "\2b";    /* adjust as needed, taken from bootstrap.css */
+    content: '\2b';                      /* adjust as needed, taken from bootstrap.css */
     position: relative;left: 4px;
 }
 
