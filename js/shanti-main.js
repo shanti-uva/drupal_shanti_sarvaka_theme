@@ -388,6 +388,8 @@
 			//	  $(element).has(".in").find(".glyphicon").toggleClass('glyphicon-plus glyphicon-minus');
 			//	});
 
+        $('.node-type-video .panel-group .collapsible:eq(1)').find('.panel-collapse').once().addClass('in');
+
         // Shiva site gets doubly glypicons. So need to be removed
         $(".glyphicon-plus + .glyphicon-plus, .glyphicon-minus + .glyphicon-minus").remove();
     }
