@@ -1219,8 +1219,8 @@ table tr.ok { color: #234600; background: #f8fff0;}
 /*--- for larger toggle panels ---*/
 .panel.panel-default h6{ text-transform:uppercase;font-size:1em; line-height:4em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;height:60px;}
 .panel.panel-default h6 a { color:#444;border:none;display:block;padding-left:2rem;}
-/*.panel.panel-default h6 .glyphicon { font-size: 0.63em; margin-right:9px;background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;float:left;position:relative;top: 19px;left: 0;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
-.panel.panel-default .accordion-toggle .glyphicon::before { position: relative;top: 4px;left: 5px;}
+.panel.panel-default h6 .glyphicon { font-size: 0.63em; margin-right:9px;background: #fff;color: #444; width:18px;height:18px;display: block;border-radius: 50%;background-clip: padding-box;float:left;position:relative;top: 19px;left: 0;box-shadow: 0 0 4px 3px #ddd;border-collapse:separate;}
+/*.panel.panel-default .accordion-toggle .glyphicon::before { position: relative;top: 4px;left: 5px;}
 .panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus::before { position: relative;left: 4px;}
 */
 
@@ -1230,13 +1230,13 @@ table tr.ok { color: #234600; background: #f8fff0;}
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    content:"\2212";    /* adjust as needed, taken from bootstrap.css */
     float: left;        /* adjust as needed */
     color: grey;         /* adjust as needed */
 }
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\2b";    /* adjust as needed, taken from bootstrap.css */
 }
 
 /* END accordion */
