@@ -22,7 +22,6 @@ article ul,
 article ul ul,
 article ul ul ul,
 article ul ul ul ul { -webkit-margin-before: 0; margin-top:0;}
-/* anchors */
 a{text-decoration:none;color:#454fa4;} /* *:active{ outline:0 !important;} */
 a:hover,a:active{text-decoration:none;color: rgb(207, 47, 30);}
 .content-section a{ border-bottom:1px solid transparent;}
@@ -257,6 +256,8 @@ header ul.tabs.secondary li a.active:active{ background:#222;color:#fff;}
 
 .vertical-tabs ul.vertical-tabs-list .selected strong{ color:inherit;}
 .vertical-tabs ul.vertical-tabs-list li a:hover strong{ text-decoration:none;}
+
+.vertical-tabs ul.vertical-tabs-list li.selected{ border-right-width:1px;}
 
 .vertical-tab-container .nav-tabs>li{ border-right:1px solid  #ddd;}
 .vertical-tab-container .nav-tabs>li>a{ border:none !important;}
