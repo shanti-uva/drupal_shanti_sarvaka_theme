@@ -4,11 +4,10 @@
 @font-face{font-family:'droidserif';    src: url('../fonts/Droidserif/droidserif-webfont.eot');   src: url('../fonts/Droidserif/droidserif-webfont.eot?#iefix')   format('embedded-opentype'), url('../fonts/Droidserif/droidserif-webfont.woff2')   format('woff2'), url('../fonts/Droidserif/droidserif-webfont.woff')   format('woff'), url('../fonts/Droidserif/droidserif-webfont.ttf')   format('truetype'), url('../fonts/Droidserif/droidserif-webfont.svg#svgFontName')   format('svg'); }
 html{ -webkit-font-smoothing: antialiased;-webkit-tap-highlight-color:transparent;overflow-y:scroll;font-family:serif;}
 body{ color:#333; text-rendering: optimizeLegibility; font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif; font-weight:normal; overflow: hidden;}
-h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizeLegibility;}
-h1, h2, h3, h4{ letter-spacing:0.015rem !important;font-weight:normal !important;font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;} 
-h4{ font-family:'museo-sans-500',helvetica,arial,sans-serif !important;}
-h5, h6{ font-weight:bold;font-family:'museo-sans-700',helvetica,arial,sans-serif;margin-bottom:5px;}
+h1, h2, h3, h4, h5, h6{ color:#444;text-rendering:optimizeLegibility;letter-spacing:0.015rem !important;font-weight:normal !important;font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;} 
 h1, h2, h3{ color:#555; font-size:1.5em; margin:1rem 0 0.5rem;}
+h4{ font-family:'museo-sans-500',helvetica,arial,sans-serif !important;}
+h5, h6{ font-weight:bold !important;letter-spacing:0 !important;margin-bottom:5px;}
 ul { list-style: square inside none;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 20px;padding-left:20px;}
 label{ color:#555;font-size:80%;font-family:'museo-sans-500',helvetica,arial,sans-serif;text-transform:uppercase;margin:0 0 0 1rem;}
 mark{ color:#333; background:transparent; font-weight:bold; padding:0;}
@@ -1217,9 +1216,9 @@ table tr.ok { color: #234600; background: #f8fff0;}
 .panel-group .panel-heading+.panel-collapse .panel-body{ margin:0;border:none;}
 .panel-group .panel+.panel{ margin-top:0;}
 /*--- for larger toggle panels ---*/
-.panel.panel-default h6{ text-transform:uppercase;font-size:1em; line-height:4em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;height:60px;}
-.panel.panel-default h6 a { color:#444;border:none;display:block;padding-left:2rem;}
-.panel.panel-default h6 .glyphicon { margin-right:9px;background:#fff;color:#444; width:18px;height:18px;float:left;position:relative;top:19px;left:0;display: block;border-radius:50%;background-clip:padding-box;box-shadow:0 0 4px 3px #ddd;border-collapse:separate;}
+.panel.panel-default .panel-heading h6{ text-transform:uppercase;font-size:1em; line-height:4em;border-top:1px solid #fff;border-bottom:1px solid #ccc;margin:0;height:60px;}
+.panel.panel-default .panel-heading h6 a { color:#444;border:none;display:block;padding-left:2rem;}
+.panel.panel-default .panel-heading h6 .glyphicon { margin-right:9px;background:#fff;color:#444; width:18px;height:18px;float:left;position:relative;top:19px;left:0;display: block;border-radius:50%;background-clip:padding-box;box-shadow:0 0 4px 3px #ddd;border-collapse:separate;}
 /*.panel.panel-default .accordion-toggle .glyphicon::before { position: relative;top: 4px;left: 5px;}
 .panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus::before { position: relative;left: 4px;}
 */
