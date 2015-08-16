@@ -56,6 +56,8 @@ object.flip_label{ display:none;}
 #search-flyout.extruder.right .flap.on-hover.on-flap>span{ color:#fff;background:#444;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
 
 #search-flyout.extruder.right .flap>span .icon{ font-size: 2.38rem;position: absolute;left:16px;top:16px;z-index: 10;}
+#search-flyout.extruder.right.isOpened .flap.on-flap>span .icon{ font-size: 3.12rem;left:13px;top:11px;}
+#search-flyout.extruder.right.isOpened .flap.on-flap>span .icon.shanticon-search::before{ content:'\e610';}
 
 #menu-main.extruder.right{ margin-top:39px; color:#888 !important;}
 #menu-main.extruder.right .extruder-content{ background:transparent !important; color:#888 !important; overflow:visible !important; box-shadow:none !important; }

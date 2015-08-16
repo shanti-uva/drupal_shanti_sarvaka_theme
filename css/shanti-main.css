@@ -1244,7 +1244,7 @@ table tr.ok { color: #234600; background: #f8fff0;}
     /* symbol for "collapsed" panels */
     content:'\2b';                      /* adjust as needed, taken from bootstrap.css */
     position:relative;
-    left:-2.3rem;
+    left:-2.25rem;
 }
 
 /* END accordion */
