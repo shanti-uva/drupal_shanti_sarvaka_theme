@@ -1237,7 +1237,7 @@ table tr.ok { color: #234600; background: #f8fff0;}
     color: #555;                          /* adjust as needed */
     position: relative;
     top:-0.01rem;
-    left:-2.3rem;
+    left:-2.35rem;
     font-size: 0.68em;
 }
 .panel-heading .accordion-toggle.collapsed::after {
