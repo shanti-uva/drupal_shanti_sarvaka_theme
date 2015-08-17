@@ -11,7 +11,7 @@
 /*--- panel ---*/
 .extruder.right{ padding:0; border:none; background:transparent !important;box-shadow:none;}
 .ext_wrapper{ height:auto; padding:0; }
-.extruder.right .extruder-content{ overflow:visible !important; background:transparent !important; border:none; padding:0;width:100%;box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate; /* fix for ie9 shadow */}
+.extruder.right .extruder-content{ /*overflow:visible !important;*/ background:transparent !important; border:none; padding:0;width:100%;box-shadow:0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500); border-collapse: separate; /* fix for ie9 shadow */}
 .extruder.right.isOpened .extruder-content{ border-right-width:12px; background:transparent !important;}
 .extruder .text{ border:none; padding:0; text-shadow:none; width:277px; min-width:277px !important; /*---- default panel container width is set ----*/}
 
