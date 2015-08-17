@@ -61,7 +61,7 @@ scripts[] = js/inc/extruder/mbExtruder.js
 ; scripts[] = js/inc/fancytree/jquery.fancytree.filter.js
 ; scripts[] = js/inc/fancytree/jquery.fancytree.edit.js
 ; scripts[] = js/inc/fancytree/jquery.fancytree.clearfacetfilter.js
-scripts[] = js/inc/menus/metisMenu.js
+; scripts[] = js/inc/menus/metisMenu.js - removed by mf8yk on Aug 10, 2015 because it is no longer used
 scripts[] = js/inc/check/icheck.min.js
 scripts[] = js/inc/select/bootstrap-select.min.js
 scripts[] = js/inc/jquery/jquery.highlight.js
@@ -74,7 +74,7 @@ scripts[] = js/inc/jquery/jquery.wookmark.min.js
 ; scripts[] = js/inc/other/modernizr-2.6.2.min.js - mf8yk edit june 9th,2015: moved to end of head section html.tpl.php so it loads with css, before content loads (ndg8f, Feb. 18, 2015
 scripts[] = js/inc/other/jssor.slider.mini.js
 scripts[] = js/inc/other/hammer.min.js
-scripts[] = js/inc/other/jquery.bxslider-rahisified.js
+; scripts[] = js/inc/other/jquery.bxslider-rahisified.js
 scripts[] = js/shanti-main.js
 scripts[] = js/shanti-search.js
 
