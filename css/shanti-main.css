@@ -500,17 +500,9 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 
 
 
-
-
-
-
-
-
 /*--------------------------------*/
 /*----- BEGIN new from kmaps -----*/
 /*--------------------------------*/
-
-
 #photo-pagination{ float: right; margin-right: 10px; margin-top: 10px;}
 #photo-pagination li{ display: inline; padding:0; font-size:85%;}
 #photo-pagination li input.page-input{ width: 45px;text-align: center;height: 22px;}
@@ -520,7 +512,7 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 #photo-pagination>.active>a:hover,
 #photo-pagination>.active>span:hover,
 #photo-pagination>.active>a:active,
-#photo-pagination>.active>span:active{ background-color: #DC3C47;border-color: #DC3C47;color: white;}\
+#photo-pagination>.active>span:active{ background-color: #DC3C47;border-color: #DC3C47;color: white;}
 
 #tab-main .paginated-spin{ float:left; margin-top: 10px; display: none;}
 
@@ -562,10 +554,6 @@ ul.menu-main>li>a:first-child { font-family:'droidserif',palatino,'Palatino Lino
 /*------------------------------*/
 /*----- END new kmaps -----*/
 /*------------------------------*/
-
-
-
-
 
 
 
@@ -664,9 +652,6 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /*-------------------------*/
 
 .btn.field-add-more-submit{margin-left:1em;}
-
-
-
 
 
 
@@ -830,7 +815,6 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
     }
 }
 
-
 /*------------------------*/
 /*----- END carousel ---*/
 /*------------------------*/
@@ -845,11 +829,15 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .back-to-top:active .fa{ color:#fff;}
 .back-to-top .fa::before{ content: '\f077';}
 
+
 /*-- filtered message to upgrade older browsers --*/
 .progressive { color:#fff;background: #5a65d1;padding: 0.2em 0;text-align:center;width:100%;font-weight:normal;margin:0 auto;display:none;}
 .progressive a{ color:#fff;font-weight:normal;text-decoration:underline;}
 .progressive a:hover,
 .progressive a:active{ text-decoration:none;}
+
+
+
 
 /***** REVIEW ***/
 /**********************/
@@ -889,7 +877,6 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .bootstrap-select > .btn{ line-height:2.5em; height:2.5em; padding:0 2.38em 0 0; /*  width:100%; padding:0; commented out for Video Edit page edits */}
 .main-content table.field-multiple-table .bootstrap-select > .btn{ /* width:50%; */}
 .main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu{ font-size:0.88em; max-width:25rem !important; /* width:45% !important; commented out for Video Edit page edits */}
-
 .main-content .bootstrap-select .popover-title{ font-size:0.93em; padding: 0.5rem 1.2rem 0.2rem; margin-bottom:0.2rem;}
 .main-content .bootstrap-select .btn{margin:0;padding-left:1.5rem;color:#606060;background:transparent;background-image:none;background-image:-webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%, #f0f0f0 55%, #e0e0e0 100%);background-image:linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);background-repeat:repeat-x;border:1px solid #ddd;border-color:#fff #eee #ddd;border-radius:25px;background-clip:padding-box;overflow:hidden;box-shadow:none}
 .main-content .bootstrap-select .btn:hover,
@@ -916,7 +903,6 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li.selected a,
 .main-content .selectpicker li.selected a span.text{ font-weight:bold; background: #fff;}
 .main-content .selectpicker li.selected a .icon{ font-weight:bold; color:#444;}
-
 .main-content .selectpicker li:hover a,
 .main-content .selectpicker li:hover a span.text,
 .main-content .selectpicker li a,
@@ -939,11 +925,8 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .main-content .selectpicker li.selected a:active,
 .main-content .selectpicker li.selected a:hover span.text,
 .main-content .selectpicker li.selected a:active span.text{ background: #f9f9f9;}
-
 .main-content .selectpicker>li:active>a,
 .main-content .selectpicker>li:active>a>span.text{ background: #fff;}
-
-
 /*----- checkmark styles -----*/
 .main-content .selectpicker>li>a .check-mark,
 .main-content .selectpicker>li>a:hover .check-mark,
@@ -963,8 +946,9 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 /*--- END selectpicker ---*/
 
 
-
-/*--- BEGIN paging --*/
+/*-------------------------------*/
+/*---- BEGIN filter & paging ----*/
+/*-------------------------------*/
 .shanti-filters { height:2.5rem; margin-bottom:2.5rem;position:relative;top:-1rem;}
 .logged-in .shanti-filters { position:relative; top:-2.5rem;}
 
@@ -979,12 +963,6 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 .form-item-sort-bef-combine .btn{ width: 15rem;}
 .form-item-sort-bef-combine label{ display: none;}
 .form-item-sort-bef-combine .dropdown-menu.open .disabled{ background-color: #d0d0d0;}
-
-
-
-
-
-
 
 
 /* from kmaps */
@@ -1048,8 +1026,9 @@ input.pagerer-page{ border-radius:2px; background-clip:padding-box;border:none;	
 
 .pager li span{ padding:0 10px;}
 .pager li>span{ border:none;border-radius:0;}
-/*--- END paging --*/
-
+/*----------------------*/
+/*----- END paging -----*/
+/*----------------------*/
 
 
 
@@ -1069,12 +1048,13 @@ input.pagerer-page{ border-radius:2px; background-clip:padding-box;border:none;	
 .error { color: #8c2e0b; background:#fef5f1;border:3px solid #fff;}
 .error p.error { color: #333;}
 table tr.ok { color: #234600; background: #f8fff0;}
+/*---------------------------*/
 /*--- END System Messages ---*/
+/*---------------------------*/
 
 
-
-
-/*----- BEGIN accordion -----*/
+/*-------------------------*/
+/*----- BEGIN accordion ---*/
 /*-------------------------*/
 .panel-group{ border:none;width:100%;margin-top:0;/*margin:-10px -20px 0 -2px;*/}
 .panel-body{ background:#f9f9f9;border:none; border-radius:0; width:100%;}
@@ -1115,17 +1095,10 @@ table tr.ok { color: #234600; background: #f8fff0;}
     position:relative;
     left:-2.25rem;
 }
-
+/*---------------*/
 /* END accordion */
+/*---------------*/
 
-
-/*
-ul.search-results > div,
-ul.shanti-gallery > div{.shanti-thumbnail-image a .overlay::before{ font-size: 2.5em;line-height: 1.75em;}
-	display:inline;
-	float:left;
-}
-*/
 
 .search-results a,
 .search-results a:hover{ color:#555; border:none !important; 	display:block;}
@@ -1140,6 +1113,8 @@ body.page-admin-modules #block-system-main.block.block-system{ float:none;}
 .page-search .form-control.form-text{ height:2.2em;}
 .page-search .form-item.form-type-checkbox label{ text-transform:capitalize;}
 .page-search .form-item.form-type-textfield.form-item-keys{ margin-top:-0.5rem;}
+
+
 
 /**********************************************/
 /**** REVIEW - mix including MB migration *****/
