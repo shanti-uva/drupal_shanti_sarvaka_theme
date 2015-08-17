@@ -734,10 +734,10 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
     .carousel-main-image img{ margin-left:1rem;}
     .carousel-pause .glyphicon-pause::before{ position:relative;left:0rem;}
 
-	.logged-in .carousel .col-sm-7{ width:50%;}
-    .logged-in .carousel .col-sm-5{ width:50%;}
+	.carousel .col-sm-7{ width:60%;}
+    .carousel .col-sm-5{ width:40%;}
     .logged-in .carousel-main-image{max-width:100%;}
-	.logged-in .carousel-description p{font-size:0.93em;}
+	.logged-in .carousel-description p{font-size:1em;}
 	
 }
 
@@ -748,11 +748,12 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 @media (min-width:992px) {
 	.carousel-main-image{min-width:290px; max-width:310px;}
     .carousel-description p{ min-height:11em;}
-    .logged-in .carousel .col-md-8{ width:50%;}
-    .logged-in .carousel .col-md-4{ width:50%;}
-    .logged-in .carousel-description p{font-size:1em; min-height:10em;}
+    /*.logged-in .carousel .col-md-8{ width:50%;}
+    .logged-in .carousel .col-md-4{ width:50%;}*/
+    .logged-in .carousel-description p{min-height:10em;}
 	.logged-in .carousel-title{ font-size:1.12em;}
 	.logged-in .carousel .byline{ font-size:70%;margin: -0.1em 0 .44em;}
+	.loggen-in .carousel-main-image img{ max-height: 225px;}
 }
 
 @media (min-width:1100px) {
