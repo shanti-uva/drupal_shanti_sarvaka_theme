@@ -38,7 +38,7 @@ object.flip_label{ display:none;}
 #search-flyout { top:0;}
 #search-flyout.extruder.right{ margin-top:7px; position:absolute; z-index:10100;}
 #search-flyout .ext_wrapper{ height:auto; padding:0; }
-#search-flyout.extruder.right .extruder-content{ background:transparent !important; overflow:visible !important; border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%;box-shadow:-4px 4px 5px hsla(0, 0.0000%, 60.0000%, 0.2000); border-collapse: separate;}
+#search-flyout.extruder.right .extruder-content{ background:transparent !important; /*overflow:visible !important;*/ border:7px solid #fff; border-right-width:0px;  padding:0;	width:100%;box-shadow:-4px 4px 5px hsla(0, 0.0000%, 60.0000%, 0.2000); border-collapse: separate;}
 #search-flyout.extruder.right.isOpened .extruder-content{ border-right-width:12px;}
 #search-flyout.extruder .text{ border:none; padding:0; text-shadow:none; background:#f8f8f8; color:#333;}
 
