@@ -512,7 +512,8 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
 	if(!empty($variables['element']['#attributes']['disabled'])) {
 		return '<li><a href="#" class="disabled"><span class="icon shanticon-' . $class . '"></span>' . $title . '</a></li>';
 	}
-  return '<li><a href="' . $href . '"><span class="icon shanticon-' . $class . '"></span>' . $title . '</a></li>';
+  $target = (strpos($href, 'wiki.shanti.virginia.edu') > -1) ? ' target="_blank"' : '';
+	return '<li><a href="' . $href . '"' . $target . '><span class="icon shanticon-' . $class . '"></span>' . $title . '</a></li>';
 }
 
 /**
