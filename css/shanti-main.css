@@ -719,7 +719,7 @@ a.btn,a.btn:hover,a.btn:active{border:none!important;}
 
 @media (min-width:600px) {
  
-    .carousel-description p{ min-height:11em;}
+    .carousel-description p{ min-height:9em;}
 }
 
 @media (min-width:700px) {
