@@ -74,7 +74,7 @@ scripts[] = js/inc/jquery/jquery.wookmark.min.js
 ; scripts[] = js/inc/other/modernizr-2.6.2.min.js - mf8yk edit june 9th,2015: moved to end of head section html.tpl.php so it loads with css, before content loads (ndg8f, Feb. 18, 2015
 scripts[] = js/inc/other/jssor.slider.mini.js
 scripts[] = js/inc/other/hammer.min.js
-; scripts[] = js/inc/other/jquery.bxslider-rahisified.js
+scripts[] = js/inc/other/jquery.bxslider-rahisified.js
 scripts[] = js/shanti-main.js
 scripts[] = js/shanti-search.js
 
