@@ -51,7 +51,7 @@ object.flip_label{ display:none;}
 #search-flyout.extruder.right.isOpened .flap.on-flap .flapLabel{ width:30px !important;}
 /*----- css for the flap is inserted inline, see js/main ---*/
 #search-flyout.extruder.right .flap>span,
-#search-flyout.extruder.right .flap.on-flap>span{ color:#ddd;-webkit-transition: all .3s ease-out; transition: all .3s ease-out;}
+#search-flyout.extruder.right .flap.on-flap>span{ color:#888;-webkit-transition: all .3s ease-out; transition: all .3s ease-out;}
 #search-flyout.extruder.right .flap.on-hover>span,
 #search-flyout.extruder.right .flap.on-hover.on-flap>span{ color:#fff;background:#444;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
 
