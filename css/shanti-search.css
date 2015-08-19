@@ -1629,8 +1629,10 @@ object.flip_label {
 .advanced-view{ display:block !important;}
 .input-section .alert{ position:relative; top:7px;}
 
-
-
+.form-group.advanced-input.feature-group.dropdown{ 
+  border-top: none !important;
+  display: none !important;
+}
 
 
 /*--------------------------------*/
