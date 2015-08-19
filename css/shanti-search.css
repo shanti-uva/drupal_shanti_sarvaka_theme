@@ -1633,6 +1633,9 @@ object.flip_label {
   border-top: none !important;
   display: none !important;
 }
+.search-group > .form-group label:nth-of-type(-n+2){ 
+  display: none !important;
+}
 
 
 /*--------------------------------*/
