@@ -1629,12 +1629,12 @@ object.flip_label {
 .advanced-view{ display:block !important;}
 .input-section .alert{ position:relative; top:7px;}
 
-.form-group.advanced-input.feature-group.dropdown{ 
+/* hiding inner workings here Yuji */
+.search-group > .form-group label:nth-of-type(-n+2),
+.form-group.advanced-input.feature-group.dropdown,
+.form-group.advanced-input.select-type{ 
+  display: none !important;
   border-top: none !important;
-  display: none !important;
-}
-.search-group > .form-group label:nth-of-type(-n+2){ 
-  display: none !important;
 }
 
 
