@@ -346,7 +346,7 @@
           // Prepare layout options.
           var options = {
           	align: 'left',
-            itemWidth: 170, // Optional min width of a grid item
+            itemWidth: 190, // Optional min width of a grid item
             autoResize: true, // This will auto-update the layout when the browser window is resized.
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
             offset: 15, // Optional, the distance between grid items
