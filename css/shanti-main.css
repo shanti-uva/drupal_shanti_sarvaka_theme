@@ -6218,8 +6218,13 @@ p.modal-title {
 
   .shanti-filters .label {
     display: none;
+  }		
+
+  .carousel-pause.btn.btn-sm span::before{ 
+	position:relative;
+	left:0.2rem;
   }
-				
+
 		/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
  
 		/*
