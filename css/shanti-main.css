@@ -6060,7 +6060,9 @@ p.modal-title {
 	background:transparent;
 }	
 
-.btn-group-gmaps.btn-group > .btn.btn-default:not(.active):hover{ background: #fff;}
+.btn-group-gmaps.btn-group > .btn.btn-default:not(.active):hover{ 
+	background: #fff;
+}
 
 .btn-group-gmaps.btn-group > .btn.btn-default.active {
   color: #fff;
