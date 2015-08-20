@@ -596,8 +596,8 @@ a:hover,a:active {
   margin: 0;
   padding: 10px 0;
   border: 1px solid #fff;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   background-clip: padding-box;
   border-top: 1px solid #ddd;
   background-image: -webkit-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
