@@ -2916,7 +2916,7 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-description p {
   font-size: 1em;
   overflow: hidden;
-  min-height: 14em;
+  height: 14em;
 }
 
 .carousel-main-content .go-to-link a {
@@ -3058,7 +3058,7 @@ a.btn,a.btn:hover,a.btn:active {
 @media (min-width:600px) {
  
   .carousel-description p {
-    min-height: 9em;
+    height: 9em;
   }
 }
 
@@ -3075,12 +3075,12 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (min-width:768px) {
   .carousel-title {
-    font-size: 1.63em;
+    font-size: 1.44em;
   }
 
   .carousel-description p {
     font-size: 1.06em;
-    min-height: 15em;
+    height: 15em;
   }
     /* .carousel-main-image{ min-width:270px;} */
   .carousel-main-image img {
@@ -3111,7 +3111,10 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (min-width:850px) {
   .carousel-description p {
-    min-height: 13em;
+    height: 13em;
+  }
+   .carousel-title {
+    font-size: 1.56em;
   }
 }
 
@@ -3120,14 +3123,16 @@ a.btn,a.btn:hover,a.btn:active {
     min-width: 290px;
     max-width: 310px;
   }
-
+  .carousel-title {
+    font-size: 1.63em;
+  }
   .carousel-description p {
-    min-height: 11.5em;
+    height: 11.5em;
   }
     /*.logged-in .carousel .col-md-8{ width:50%;}
     .logged-in .carousel .col-md-4{ width:50%;}*/
   .logged-in .carousel-description p {
-    min-height: 10em;
+    height: 10em;
   }
 
   .logged-in .carousel-title {
@@ -3156,7 +3161,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .logged-in .carousel-description p {
-    min-height: 10em;
+    height: 10em;
   }
 
   .audio-video .logged-in .carousel .col-sm-7 {
