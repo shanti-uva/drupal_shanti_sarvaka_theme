@@ -4020,21 +4020,19 @@ table tr.ok {
   margin-right: 9px;
   background: #fff;
   color: #444;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   float: left;
   position: relative;
-  top: 19px;
+  top: 16px;
   left: 0;
   display: block;
   border-radius: 50%;
   background-clip: padding-box;
-  box-shadow: 0 0 4px 3px #ddd;
+  box-shadow: 0 0 3px 1px #ccc;
   border-collapse: separate;
 }
-/*.panel.panel-default .accordion-toggle .glyphicon::before { position: relative;top: 4px;left: 5px;}
-.panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus::before { position: relative;left: 4px;}
-*/
+
 .panel.field-group-fieldset {
   margin-bottom: 0;
 }
@@ -4045,27 +4043,20 @@ table tr.ok {
 }
 
 .panel-heading .accordion-toggle::after {
-    /* symbol for "opening" panels */
   font-family: 'Glyphicons Halflings';
-  /* essential for enabling glyphicon */
   content: '\2212';
-    				  /* adjust as needed, taken from bootstrap.css */
   float: left;
-                          /* adjust as needed */
-  color: #555;
-                          /* adjust as needed */
+  color: #777;
   position: relative;
-  top: -0.01rem;
-  left: -2.35rem;
-  font-size: 0.68em;
+  top: 0.04rem;
+  left: -2.8rem;
+  font-size: 0.88em;
 }
 
 .panel-heading .accordion-toggle.collapsed::after {
-    /* symbol for "collapsed" panels */
   content: '\2b';
-                      /* adjust as needed, taken from bootstrap.css */
   position: relative;
-  left: -2.25rem;
+  left: -2.7rem;
 }
 /*---------------*/
 /* END accordion */
