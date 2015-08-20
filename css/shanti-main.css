@@ -1957,9 +1957,6 @@ ul.menu-main>li>a:first-child {
   max-width: 100%;
   margin: 0 auto;
   border: none;
-  overflow: hidden;
-  border-radius: .4rem .4rem 0 0;
-  background-clip: padding-box;
 }
 
 .shanti-thumbnail-image a {
@@ -5977,7 +5974,7 @@ body.front .breadcrumb {
 /*-------------------------*/
 /* ------ BEGIN from kmaps */
 /* main layout for video page */
-.av-main-video-section {
+.has-transcript .av-main-video-section {
   padding-right: 0;
 }
 
@@ -6052,12 +6049,14 @@ p.modal-title {
 
 .btn-group-gmaps.btn-group > .btn.btn-default {
   color: #000;
-  background: #fff;
+  background: #eee;
   border: none;
   font-size: 0.62em;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
   font-weight: bold;
 }
+
+.btn-group-gmaps.btn-group > .btn.btn-default:not(.active):hover{ background: #fff;}
 
 .btn-group-gmaps.btn-group > .btn.btn-default.active {
   color: #fff;
