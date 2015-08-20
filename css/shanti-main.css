@@ -2928,13 +2928,19 @@ a.btn,a.btn:hover,a.btn:active {
   color: rgb(207, 47, 30);
 }
 
-.carousel-main-image {
+.carousel-main-image,
+.carousel-main-image a,
+.carousel-main-image img {
   float: right;
 }
 
 .carousel-main-image img {
   max-width: 100%;
   margin: 1.5rem 0 0.5rem 0;
+}
+
+.carousel-main-image a { 
+  border:none !important;
 }
 
 .carousel-control {
