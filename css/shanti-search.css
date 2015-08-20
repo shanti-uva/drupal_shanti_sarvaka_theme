@@ -895,7 +895,7 @@ object.flip_label {
   background: #fcfcfc;
   border: 1px solid #eee;
   border-bottom-color: #ddd;
-  border-top: 2px solid #f0f0f0;
+  border-top: 2px solid #ddd;
   -webkit-transition: all 100ms;
   transition: all 100ms;
 }
