@@ -4411,11 +4411,7 @@ h4.node-desc-type {
   font-weight: 700;
 }
 
-.audio-video .iradio_minimal-red{
-  margin-right:0.4rem;
-  position:relative;
-  top:-0.2rem;
-}
+
 
 /*--- NOT WORKING YET ---------
 button on video window
@@ -5978,8 +5974,8 @@ body.front .breadcrumb {
 /*-------------------------*/
 /* ------ BEGIN from kmaps */
 /* main layout for video page */
-.has-transcript .av-main-video-section {
-  padding-right: 0;
+.av-main-video-section {
+  padding-right: 1.5rem;
 }
 
 /* Overview page styles in KMaps */
@@ -6517,6 +6513,10 @@ p.modal-title {
   .carousel.carousel-fade .control-box-2 {
     left: -1.7rem;
     top: -1rem;
+  }
+
+  .av-main-video-section {
+    padding-right: 0;
   }
 }
 
