@@ -1475,7 +1475,7 @@ object.flip_label {
 }
 
 .loading-container:hover .loading {
-  border-color: transparent #E45635 transparent #E45635;
+  border-color: transparent #999 transparent #999;
 }
 
 .loading-container:hover .loading,
