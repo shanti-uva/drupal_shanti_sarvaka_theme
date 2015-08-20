@@ -661,6 +661,22 @@
       }
   };
 
+  // Trim Description text for projects in carousel and add ellipsis
+  Drupal.behaviors.shantiSarvakaCarouselTextTrim = {
+    attach: function (context, settings) {
+      if(context == window.document) {                
+        $('.carousel-description p').each(function() { 
+          var txt = $(this).text();
+          if ($(this).text().length > 500) { 
+            txt = txt.substr(0, 500);
+            txt = txt.substr(0, txt.lastIndexOf(' ')) + "..."; 
+            $(this).text(txt);
+          } 
+        });
+      }
+    }
+  };
+
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
 //			if($(".openlayermap").length ) {
