@@ -6056,6 +6056,10 @@ p.modal-title {
   font-weight: bold;
 }
 
+.btn-group-gmaps.btn-group > .btn.btn-default span {
+	background:transparent;
+}	
+
 .btn-group-gmaps.btn-group > .btn.btn-default:not(.active):hover{ background: #fff;}
 
 .btn-group-gmaps.btn-group > .btn.btn-default.active {
