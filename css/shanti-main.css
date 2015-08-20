@@ -4001,7 +4001,7 @@ table tr.ok {
 /*--- for larger toggle panels ---*/
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.06em;
   line-height: 4em;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
@@ -4048,7 +4048,7 @@ table tr.ok {
   float: left;
   color: #777;
   position: relative;
-  top: 0.04rem;
+  top: -0.01rem;
   left: -2.8rem;
   font-size: 0.88em;
 }
