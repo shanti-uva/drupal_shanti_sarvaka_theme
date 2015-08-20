@@ -4411,7 +4411,11 @@ h4.node-desc-type {
   font-weight: 700;
 }
 
-
+.audio-video .iradio_minimal-red{
+  margin-right:0.4rem;
+  position:relative;
+  top:-0.2rem;
+}
 
 /*--- NOT WORKING YET ---------
 button on video window
