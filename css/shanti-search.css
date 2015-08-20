@@ -40,7 +40,7 @@
   width: 100%;
   box-shadow: 0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);
   border-collapse: separate;
- /* fix for ie9 shadow */;
+ /* fix for ie9 shadow */
 }
 
 .extruder.right.isOpened .extruder-content {
@@ -54,7 +54,7 @@
   text-shadow: none;
   width: 277px;
   min-width: 277px !important;
- /*---- default panel container width is set ----*/;
+ /*---- default panel container width is set ----*/
 }
 
 .extruder.right .flap,
@@ -297,7 +297,7 @@ object.flip_label {
   border: 1px solid #9097d3;
   box-shadow: 0 0 4px #949bd8;
   border-collapse: separate;
- /* fix for ie9 shadow */;
+ /* fix for ie9 shadow */
 }
 
 /*--- button group ---*/
@@ -825,7 +825,7 @@ object.flip_label {
   vertical-align: middle;
   box-shadow: 0px 2px 5px #eee inset;
   border-collapse: separate;
- /* fix for ie9 shadow */;
+ /* fix for ie9 shadow */
 }
 
 .advanced-view .form-group.advanced-input .form-control:hover {
@@ -863,7 +863,7 @@ object.flip_label {
 .view-section .tab-content {
   background: #f8f8f8;
   padding: 1rem 0 0;
- /*border: 1px solid #ddd; border-width:0 1px 1px;*/;
+ /*border: 1px solid #ddd; border-width:0 1px 1px;*/
 }
 
 .view-section .tab-content .tab-pane {
@@ -1122,7 +1122,7 @@ object.flip_label {
 
 .view-section .popover-title .kmapid-display::before {
   color: #888;
-/*content: 'kmapid: '*/;
+/*content: 'kmapid: '*/
 }
 
 .view-section .popover-content .badge {
@@ -1251,7 +1251,7 @@ object.flip_label {
 .view-section .fancytree-title:hover,
 .view-section .fancytree-title:active {
   color: #111;
-/*background:#fff;*/;
+/*background:#fff;*/
 }
 
 .view-section .fancytree-title::before {
@@ -1530,7 +1530,7 @@ object.flip_label {
 }
 
 .search-popover > .popover-title .kmapid-display::before {
- /* content: "" */;
+ /* content: "" */
 }
 
 .search-popover > .popover-content {
