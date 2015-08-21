@@ -1020,11 +1020,11 @@ object.flip_label {
   background-image: none;
 }
 */
-.view-section .table-results .ajax-progress{
+.view-section .table-results .row_selected ~ .ajax-progress:nth-of-type(1){
 	height: 20px;
 	width: 20px;
 	/*background:transparent url('../images/ajax-loader.gif') no-repeat center center;*/
-	float:left;
+	position:absolute;
 	display:inline-block;
 	background:transparent;
 	margin-top:-2.5rem;
