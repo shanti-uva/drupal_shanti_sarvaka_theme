@@ -1930,7 +1930,7 @@ ul.menu-main>li>a:first-child {
   border-radius: .4rem;
   background-clip: padding-box;
   list-style-type: none;
-  position: relative;
+  z-index:1;
   box-shadow: 0 3px 3px rgba(50,50,50,0.2750);
   border-collapse: separate;
   -webkit-transition: box-shadow 200ms ease;
