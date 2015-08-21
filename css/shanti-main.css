@@ -4057,7 +4057,7 @@ table tr.ok {
   float: left;
   color: #777;
   position: relative;
-  top: -0.1rem;
+  top: -0.13rem;
   left: -2.15rem;
   font-size: 0.75em;
 }
@@ -4065,7 +4065,8 @@ table tr.ok {
 .panel-heading .accordion-toggle.collapsed::after {
   content: '\2b';
   position: relative;
-  left: -2.05rem;
+  left: -2.075rem;
+  top: -0.13rem;
 }
 /*---------------*/
 /* END accordion */
