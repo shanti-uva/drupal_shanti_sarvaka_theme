@@ -1014,10 +1014,14 @@ object.flip_label {
 .view-section table.table-results tbody>tr:last-child {
   border-bottom: 1px solid #ddd;
 }
-
+/*
 .view-section table.table-results > .ajax-progress {
   position: absolute;
   background-image: none;
+}
+*/
+.view-section table.table-results tbody>tr.progress-disabled ~ div.ajax-progress{
+	display:none;
 }
 
 .view-section table.table-results tbody>tr>td {
@@ -1222,8 +1226,7 @@ object.flip_label {
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
 */
-.view-section .fancytree-container li .throbber,
-.view-section .fancytree-container li .ajax-progress {
+.view-section .fancytree-container li > .ajax-progress {
   position: absolute;
   top: 0.15rem;
   right: 0.1rem;
