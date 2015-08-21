@@ -1020,7 +1020,7 @@ object.flip_label {
   background-image: none;
 }
 */
-.view-section table.table-results tbody div.ajax-progress{
+.view-section .table-results .ajax-progress{
 	height: 20px;
 	width: 20px;
 	/*background:transparent url('../images/ajax-loader.gif') no-repeat center center;*/
@@ -1028,16 +1028,16 @@ object.flip_label {
 	display:inline-block;
 	background:transparent;
 	margin-top:-2.7rem;
-	margin-left:15rem;
+	margin-left:9rem;
 }
-
+/*
 .view-section table.table-results tbody>tr.progress-disabled.row_selected {
 	height: 20px;
 	width: 20px;
 	background:transparent url('../images/ajax-loader.gif') no-repeat center center;
 	z-index: 501;
 }
-
+*/
 
 .view-section table.table-results tbody>tr>td {
   cursor: pointer;
