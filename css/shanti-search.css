@@ -1021,8 +1021,22 @@ object.flip_label {
 }
 */
 .view-section table.table-results tbody>tr.progress-disabled ~ div.ajax-progress{
-	display:none;
+	height: 20px;
+	width: 20px;
+	background:transparent url('../images/ajax-loader.gif') no-repeat center center;
+	z-index: 1099501;
+	position:relative;
+	top:-2rem;
+	left:0;
 }
+
+.view-section table.table-results tbody>tr.progress-disabled.row_selected {
+	height: 20px;
+	width: 20px;
+	background:transparent url('../images/ajax-loader.gif') no-repeat center center;
+	z-index: 501;
+}
+
 
 .view-section table.table-results tbody>tr>td {
   cursor: pointer;
