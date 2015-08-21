@@ -346,7 +346,7 @@
           // Prepare layout options.
           var options = {
           	align: 'left',
-            itemWidth: 170, // Optional min width of a grid item
+            itemWidth: 190, // Optional min width of a grid item
             autoResize: true, // This will auto-update the layout when the browser window is resized.
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
             offset: 15, // Optional, the distance between grid items
@@ -598,10 +598,10 @@
 	Drupal.behaviors.advancedToggleClassHeightChange = {
 		attach: function (context, settings) {
 	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
-	    $(".advanced-link").bind("click", function (e) { 
-	      $(".view-wrap").toggleClass('short-wrap');
-        $(".advanced-view").toggleClass("show-options");
-        $(".advanced-view").slideToggle('fast');
+	    $('.advanced-link').bind('click', function () { 
+	      $('.view-wrap').toggleClass('short-wrap');
+        $('.advanced-view').toggleClass('show-options');
+        $('.advanced-view').slideToggle('fast');
 	    });
 	  }
 	};
@@ -659,6 +659,22 @@
         
         }
       }
+  };
+
+  // Trim Description text for projects in carousel and add ellipsis
+  Drupal.behaviors.shantiSarvakaCarouselTextTrim = {
+    attach: function (context, settings) {
+      if(context == window.document) {                
+        $('.carousel-description p').each(function() { 
+          var txt = $(this).text();
+          if ($(this).text().length > 500) { 
+            txt = txt.substr(0, 500);
+            txt = txt.substr(0, txt.lastIndexOf(' ')) + "..."; 
+            $(this).text(txt);
+          } 
+        });
+      }
+    }
   };
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
