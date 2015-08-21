@@ -1024,7 +1024,7 @@ object.flip_label {
 	height: 20px;
 	width: 20px;
 	/*background:transparent url('../images/ajax-loader.gif') no-repeat center center;*/
-	position:absolute;
+	float:left;
 	display:inline-block;
 	background:transparent;
 	margin-top:-2.5rem;
