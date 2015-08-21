@@ -1222,7 +1222,8 @@ object.flip_label {
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
 */
-.view-section .fancytree-container li > .ajax-progress {
+.view-section .fancytree-container li .throbber,
+.view-section .fancytree-container li .ajax-progress {
   position: absolute;
   top: 0.15rem;
   right: 0.1rem;
