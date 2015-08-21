@@ -1020,13 +1020,11 @@ object.flip_label {
   background-image: none;
 }
 */
-.view-section table.table-results tbody>tr.progress-disabled ~ div.ajax-progress{
+.view-section table.table-results tbody div.ajax-progress{
 	height: 20px;
 	width: 20px;
 	/*background:transparent url('../images/ajax-loader.gif') no-repeat center center;*/
-	position:relative;
-	top:-2.5rem;
-	float:right;
+	position:absolute;
 	display:inline-block;
 	background:transparent;
 }
