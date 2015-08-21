@@ -1958,6 +1958,11 @@ ul.menu-main>li>a:first-child {
   margin: 0 auto;
   border: none;
 }
+/* temp fix for audio image */
+.shanti-thumbnail-image.shanti-field-audio img { 
+  position:relative;
+  top:-2.2rem
+}
 
 .shanti-thumbnail-image a {
   height: 9rem;
