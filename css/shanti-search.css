@@ -1020,7 +1020,7 @@ object.flip_label {
   background-image: none;
 }
 */
-.view-section .table-results .row_selected ~ .ajax-progress:nth-of-type(1){
+.view-section .table-results .progress-disabled ~ .ajax-progress:nth-of-type(1){
 	height: 20px;
 	width: 20px;
 	/*background:transparent url('../images/ajax-loader.gif') no-repeat center center;*/
