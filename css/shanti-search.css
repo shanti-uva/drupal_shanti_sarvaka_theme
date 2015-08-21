@@ -1024,10 +1024,9 @@ object.flip_label {
 	height: 20px;
 	width: 20px;
 	/*background:transparent url('../images/ajax-loader.gif') no-repeat center center;*/
-	z-index: 1099501;
-	position:absolute;
+	position:relative;
 	top:-2.5rem;
-	left:1rem;
+	float:right;
 	display:inline-block;
 	background:transparent;
 }
