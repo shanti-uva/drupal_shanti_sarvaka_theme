@@ -1,4 +1,36 @@
 (function ($) {
+	/** Overlay Mask extension: adds ability to call .overlayMask("show"|"hide") on any jQuery element **/
+  $.fn.overlayMask = function (action) {
+      var mask = this.find('.overlay-mask');
+
+      // Create the required mask
+      if (!mask.length) {
+          mask = $('<div class="overlay-mask"><div class="loading-container"><div class="loading"></div><div id="loading-text">Searching&#133;</div></div></div>');
+          mask.css({
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+              top: '0px',
+              left: '0px',
+              zIndex: 100,
+              opacity: 9,
+              backgrogroundColor: 'white'
+          }).appendTo(this).fadeTo(0, 0.5).find('div').position({
+              my: 'center center',
+              at: 'center center',
+              of: mask, //'.overlay-mask'
+          });
+      }
+
+      // Act based on params
+
+      if (!action || action === 'show') {
+          mask.show();
+      } else if (action === 'hide') {
+          mask.hide();
+      }
+      return this;
+  };
 
   // *** Common Functions for Shanti Sarvaka ***
   Drupal.ShantiSarvaka = {};
