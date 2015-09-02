@@ -556,8 +556,11 @@
 					kWidget.addReadyCallback(function(playerId) {
 						function calcPlayerSize() {
 					    var elm = document.getElementById(playerId);
-							elm.style.width = "auto";
-							elm.style.height = (elm.clientWidth/16.0)*9+"px";
+					    $(elm).css({width: "auto", height: (elm.clientWidth/16.0)*9+"px"});
+					    /* Doesn't work (replaced wth above 2015-09-02 ndg)
+								elm.style.width = "auto";
+								elm.style.height = (elm.clientWidth/16.0)*9+"px";
+							*/
 						}
 						window.addEventListener("resize", calcPlayerSize, false);
 						calcPlayerSize();
