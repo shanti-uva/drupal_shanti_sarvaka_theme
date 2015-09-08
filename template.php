@@ -69,11 +69,11 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 			'#weight' => -998,
 		),
 	);
-	
+
 	foreach($metas as $key => $details) {
 		drupal_add_html_head($details, $key);
 	}
-	
+
   drupal_add_library('system', 'ui');
 
 	_shanti_sarvaka_add_metatags(); // Adds favicon meta tags (Did say: NOT needed automatically picked up by device, but was this me? ndg, 2015-07-15)
@@ -93,7 +93,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   $variables['breadcrumb'] = menu_get_active_breadcrumb();
   $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
   $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
-  $variables['home_url'] = url(variable_get('site_frontpage', 'node'));
+  $variables['home_url'] = url(variable_get('site_frontpage', ''));
   $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
   $variables['theme_path'] = $base;
 	$variables['base_theme'] = (empty($base_theme_info)) ? FALSE : $base_theme_info[0]->name;
@@ -117,9 +117,9 @@ function shanti_sarvaka_preprocess_page(&$variables) {
   	$variables['bsclass_main'] = 'col-xs-12 col-md-9';
   	$variables['bsclass_sb1'] = '';
 		$variables['bsclass_sb2'] = 'col-xs-12 col-md-3';
-	} 
+	}
 	// If no side columns keep default all classes blank
-	
+
 	// Add has_tabs var
 	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
 
@@ -130,7 +130,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
 	// Set banner_class variable depending on whether there are tabs or not
 	$variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
 	//$variables['banner_class'] = ''; // uncomment this line to disable the has-tabs class on the banner
-	
+
   //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
 
   // Add usermenu to main menu
@@ -227,7 +227,7 @@ function shanti_sarvaka_preprocess_block(&$variables) {
 			if($lang->enabled == 1) {
 				$variables['languages'][] = $lang;
 			}
-		}	
+		}
 	}
 }
 
@@ -522,7 +522,7 @@ function shanti_sarvaka_menu_link__shanti_explore_menu($variables) {
  */
 function shanti_sarvaka_create_user_menu($um) {
 	global $user;
-	
+
   // Filter out existing Account links
   $um = array_filter($um, function($item) use (&$um) {
     $k = array_search($item, $um);
@@ -556,7 +556,7 @@ function shanti_sarvaka_create_user_menu($um) {
 	      $loginlink = shib_auth_generate_login_url();
 				$lisuff = t('via Netbadge');
 	    }
-			
+
 	    // Add login link to bottom of links array
 	    $um[] = array(
 	      'link' => array(
@@ -566,12 +566,12 @@ function shanti_sarvaka_create_user_menu($um) {
 	      'below' => array(),
 	    );
 		}
-		
+
   // if logged in show account submenu at top of list
   } else {
   	$uname = '';
 		$uname = (module_exists('realname')) ? realname_load($user) : $user->name;
-	
+
     // Add preferences menu
     if(module_exists('user_prefs')) {
       $pfarray = array(
@@ -635,7 +635,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
 			}
 		}
 	}
-	
+
   $html = '<ul>';
   if($toplevel) {
   $html .= '<li><h3><em>Main Menu</em></h3>
@@ -676,14 +676,14 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
  *      author: author of node
  *      date: date node created
  *      path: path linking to node
- *      summary: description 
+ *      summary: description
  *      img: url to a 400 x 300 resized/cropped image for src attribute
  *      itemcount: number of items contained, if a group (opt.)
  * 		),
  * 		etc...
  * 	)
  * );
- *    
+ *
  *
  */
 function shanti_sarvaka_carousel($variables) {
@@ -882,7 +882,7 @@ function shanti_sarvaka_form($variables) {
 }
 */
 /*function shanti_sarvaka_field__image($variables) {
-	
+
 }*/
 
 /**
@@ -1014,7 +1014,7 @@ function shanti_sarvaka_textfield($variables) {
 function shanti_sarvaka_breadcrumb($variables) {
   global $base_url;
 	//dpm($variables);
-	
+
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
 	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') < 3 && strpos($breadcrumbs[0], t('Home')) > -1)  {
 		array_shift($breadcrumbs);
@@ -1062,7 +1062,7 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 				}
 			}
 		}
-		if (isset($item['map'][1]->uid)) { 
+		if (isset($item['map'][1]->uid)) {
 			$uid = $item['map'][1]->uid;
 			$user = user_load($uid);
 			$uname = (!empty($user->realname)) ? $user->realname : $user->name;
@@ -1287,7 +1287,7 @@ function _shanti_sarvaka_add_metatags() {
 			'#weight' => $ct,
 			'#attributes' => array(),
 		);
-		
+
 		foreach ($el as $anm => $aval) {
 			if ($anm == 'tag') { continue; }
 			$elinfo['#attributes'][$anm] = $aval;
