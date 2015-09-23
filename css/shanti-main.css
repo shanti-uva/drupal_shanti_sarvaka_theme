@@ -1961,7 +1961,6 @@ ul.menu-main>li>a:first-child {
 /* temp fix for audio image */
 .shanti-thumbnail-image.shanti-field-audio img { 
   position:relative;
-  top:-2.2rem
 }
 
 .shanti-thumbnail-image a {
