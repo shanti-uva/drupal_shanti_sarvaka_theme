@@ -2133,8 +2133,8 @@ ul.menu-main>li>a:first-child {
 }
 
 .shanti-thumbnail .footer-wrap {
-  position: absolute;
-  bottom: 0;
+  /*position: absolute;
+  bottom: 0; - mf8yk 9-23-15 correcting for floating */
   background: #f6f6f6;
   border-top: 1px solid #e6e6e6;
   border-radius: 0 0 .32em .32em;
