@@ -44,6 +44,7 @@
  * @ingroup themeable
  * 
  *  Modified to use H4 headers in sidebars
+ *    (test string/change for sources)
  */
 ?>
 	
