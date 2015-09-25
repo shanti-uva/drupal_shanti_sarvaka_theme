@@ -450,7 +450,7 @@ object.flip_label {
 
 .input-section .feature-group .feature-reset .icon::before {
   font-family: 'shanticon';
-  content: "\e610";
+  content: '\e610';
 }
 
 
@@ -1128,6 +1128,10 @@ object.flip_label {
   padding: 5px;
 }
 
+.view-section .popover-content .kmap-caption p{
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
 .view-section .popover-title .kmapid-display {
   display: block;
   float: right;
@@ -1149,7 +1153,7 @@ object.flip_label {
   position: relative;
   top: 19px;
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   letter-spacing: 0.06em;
   border: 1px solid #c0c0c0;
   background: #f9f9f9;
@@ -1507,7 +1511,7 @@ object.flip_label {
   -webkit-animation: loading-text-opacity 1s linear 0s infinite normal;
   animation: loading-text-opacity 1s linear 0s infinite normal;
   color: #333;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1.18em;
   text-transform: capitalize;
   font-weight: normal;
@@ -1549,7 +1553,7 @@ object.flip_label {
 }
 
 .search-popover > .popover-title .kmapid-display::before {
- /* content: "" */
+ /* content: '' */
 }
 
 .search-popover > .popover-content {
@@ -1563,7 +1567,7 @@ object.flip_label {
   margin: 5px 0 0;
   font-size: 1.18em;
   border-left: 4px solid #f0f0f0;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 }
 
 .search-popover > .popover-content > .kmap-path {
@@ -1600,7 +1604,7 @@ object.flip_label {
   position: relative;
   top: 22px;
   font-size: 0.88em;
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   line-height: 1.18em;
   height: 1.56em;
   letter-spacing: 0.06em;

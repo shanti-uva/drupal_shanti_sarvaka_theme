@@ -1857,7 +1857,7 @@ ul.menu-main>li>a:first-child {
 .popover-footer-button a {
   color: #f0f0f0;
   font-weight: normal;
-  font-family: "museo-sans-500",helvetica,arial,sans-serif !important;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif !important;
 }
 
 .popover-footer-button:hover {
@@ -1870,7 +1870,7 @@ ul.menu-main>li>a:first-child {
 }
 
 .popover-footer-button .icon {
-  font-family: "museo-sans-500",helvetica,arial,sans-serif;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   color: #ddd;
   border-bottom: none;
   display: block;
@@ -5488,7 +5488,7 @@ div.region.region-admin-footer {
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon::before {
-  content: "\e031";
+  content: '\e031';
   position: relative;
   right: 0;
   top: 0;
@@ -6370,7 +6370,7 @@ p.modal-title {
 
   .view-resources.btn-default .icon::before {
     font-family: 'shanticon';
-    content: "\e63e";
+    content: '\e63e';
   }
 
   .view-resources.btn-default:hover .icon::before,
