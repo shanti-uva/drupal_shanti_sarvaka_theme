@@ -391,6 +391,12 @@ a:hover,a:active {
   opacity: 1;
 }
 
+.navbar-brand:hover .site-slogan::before{
+  filter: alpha(opacity=80);
+  opacity: 0.80;
+  color: #444 !important;
+}
+
 .navbar-brand:active .site-slogan {
   color: #444 !important;
 }
