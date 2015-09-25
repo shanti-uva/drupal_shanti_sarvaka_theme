@@ -1562,7 +1562,7 @@ object.flip_label {
   padding-top: 5px 12px;
 }
 
-.search-popover > .popover-content > p {
+.search-popover > .popover-content .kmap-caption p {
   padding: 0 8px;
   margin: 5px 0 0;
   font-size: 1.18em;
