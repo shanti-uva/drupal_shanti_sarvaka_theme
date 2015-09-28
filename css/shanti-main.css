@@ -2934,16 +2934,16 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-main-content .go-to-link a:active {
   color: rgb(207, 47, 30);
 }
-
+/*
 .carousel-main-image,
 .carousel-main-image a,
 .carousel-main-image img {
   float: right;
 }
-
+*/
 .carousel-main-image img {
   max-width: 100%;
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem auto 0.5rem 0;
 }
 
 .carousel-main-image a { 
@@ -3153,6 +3153,14 @@ a.btn,a.btn:hover,a.btn:active {
 
   .loggen-in .carousel-main-image img {
     max-height: 225px;
+  }
+  
+  .carousel .col-sm-7 {
+    width: 65%;
+  }
+
+  .carousel .col-sm-5 {
+    width: 35%;
   }
 }
 
