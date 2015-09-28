@@ -3289,9 +3289,9 @@ a.btn,a.btn:hover,a.btn:active {
   height: 3.25em;
   width: 3.25em;
   color: #aaa;
-  background: #ccc;
-  filter: alpha(opacity=40);
-  opacity: 0.4;
+  background: #f0f0f0;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
   font-size: 1em;
   border-radius: 50%;
   border:1px solid #ccc;
