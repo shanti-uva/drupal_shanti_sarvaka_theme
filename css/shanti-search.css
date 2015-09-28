@@ -1574,7 +1574,6 @@ object.flip_label {
   display: inline;
   font-size: 0.93em;
   line-height: 1em;
-  -ms-word-break: break-all;
   word-break: break-all;
 }
 
