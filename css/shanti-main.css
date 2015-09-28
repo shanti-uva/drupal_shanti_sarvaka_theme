@@ -3155,11 +3155,11 @@ a.btn,a.btn:hover,a.btn:active {
     max-height: 225px;
   }
   
-  .carousel .col-sm-7 {
+  .carousel .col-md-8 {
     width: 65%;
   }
 
-  .carousel .col-sm-5 {
+  .carousel .col-sm-4 {
     width: 35%;
   }
 }
