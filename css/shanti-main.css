@@ -6482,7 +6482,7 @@ p.modal-title {
     font-size: 100%;
     position: relative;
     top: 0.025rem;
-    text-shadow: 0.05rem 0.05rem #fff;
+    /* text-shadow: 0.05rem 0.05rem #fff; */
   }
 
   .navbar-header .site-slogan:hover {
