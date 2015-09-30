@@ -3283,7 +3283,7 @@ a.btn,a.btn:hover,a.btn:active {
 /*---scroll to top ---*/
 .back-to-top {
   position: fixed;
-  bottom: 3em;
+  bottom: 5em;
   right: 1.5rem;
   z-index: 1000;
   height: 3.25em;
