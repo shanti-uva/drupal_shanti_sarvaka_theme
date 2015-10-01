@@ -3667,12 +3667,12 @@ a.btn,a.btn:hover,a.btn:active {
   position: relative;
   top: -1rem;
 }
-
+/*
 .logged-in .shanti-filters {
   position: relative;
   top: -2.5rem;
 }
-
+*/
 .shanti-filters table {
   float: right;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
