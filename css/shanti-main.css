@@ -6233,6 +6233,9 @@ p.modal-title {
   .shanti-thumbnail {
     max-width: 220px;
   }
+  /* .shanti-filters table.pagerer {
+    margin-left:2rem;
+  } */
 }
 
 @media screen and (max-width: 767px) {
