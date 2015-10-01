@@ -1967,6 +1967,7 @@ ul.menu-main>li>a:first-child {
 /* temp fix for audio image */
 .shanti-thumbnail-image.shanti-field-audio img { 
   position:relative;
+  height: 9rem;
 }
 
 .shanti-thumbnail-image a {
@@ -2984,16 +2985,19 @@ a.btn,a.btn:hover,a.btn:active {
   font-style: normal;
 }
 
+.carousel-control.left .icon::before{
+  position: relative;
+  top: -0.1rem;
+}
+
 .carousel-control.left .icon::before {
   content: '\e641';
-  position: relative;
   right: -0.5rem;
   text-shadow: -3px 0 7px rgba(0,0,0, 0.20);
 }
 
 .carousel-control.right .icon::before {
   content: '\e642';
-  position: relative;
   left: -0.5rem;
   text-shadow: 3px 0 7px rgba(0,0,0, 0.20);
 }
@@ -3155,13 +3159,6 @@ a.btn,a.btn:hover,a.btn:active {
     max-height: 225px;
   }
   
-  .carousel .col-md-8 {
-    width: 65%;
-  }
-
-  .carousel .col-sm-4 {
-    width: 35%;
-  }
 }
 
 @media (min-width:1100px) {
@@ -3238,6 +3235,14 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel.carousel-fade .carousel-control {
   z-index: 1;
   width: 5rem;
+}
+.carousel.carousel-fade .carousel-control.left{
+  border-top-left-radius:.5rem;
+  border-bottom-left-radius:0.5rem;
+}
+.carousel.carousel-fade .carousel-control.right{
+  border-top-right-radius:.5rem;
+  border-bottom-right-radius:0.5rem;
 }
 /* play- pause button */
 .carousel.carousel-fade .control-box-2 {
