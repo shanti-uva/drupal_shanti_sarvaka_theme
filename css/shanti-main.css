@@ -2985,7 +2985,7 @@ a.btn,a.btn:hover,a.btn:active {
   font-style: normal;
 }
 
-.carousel-control.left .icon::before{
+.carousel-control .icon::before{
   position: relative;
   top: -0.1rem;
 }
