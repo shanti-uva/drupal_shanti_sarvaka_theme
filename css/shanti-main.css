@@ -3237,12 +3237,12 @@ a.btn,a.btn:hover,a.btn:active {
   width: 5rem;
 }
 .carousel.carousel-fade .carousel-control.left{
-  border-top-left-radius:.5rem;
-  border-bottom-left-radius:0.5rem;
+  border-top-left-radius:.3rem;
+  border-bottom-left-radius:0.3rem;
 }
 .carousel.carousel-fade .carousel-control.right{
-  border-top-right-radius:.5rem;
-  border-bottom-right-radius:0.5rem;
+  border-top-right-radius:.3rem;
+  border-bottom-right-radius:0.3rem;
 }
 /* play- pause button */
 .carousel.carousel-fade .control-box-2 {
