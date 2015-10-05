@@ -155,7 +155,7 @@ article ul ul ul ul {
 a {
   text-decoration: none;
   color: #454fa4;
-} /* *:active{ outline:0 !important;} */
+} /* *:active{ outline:none !important;} */
 a:hover,a:active {
   text-decoration: none;
   color: rgb(207, 47, 30);
@@ -1149,7 +1149,7 @@ header ul.tabs.secondary li a.active:active {
 .vertical-tab-button a,
 .vertical-tab-button.selected a {
   border-bottom: none;
-  outline: 0 !important;
+  outline: none !important;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
   font-weight: bold;
   font-weight: 700;
@@ -3546,7 +3546,7 @@ a.btn,a.btn:hover,a.btn:active {
 .main-content .selectpicker li a:hover,
 .main-content .selectpicker li a:active {
   border: none;
-  outline: 0;
+  outline: none;
 }
 
 .main-content .selectpicker li a:focus {
