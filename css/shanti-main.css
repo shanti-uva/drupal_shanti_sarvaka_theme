@@ -5200,7 +5200,8 @@ div.region.region-admin-footer {
 }
 
 .av-main-transcript-section .edit-times{
-  
+  display: inline-block;
+  cursor: pointer;
 }
 
 .av-main-transcript-section .speaker-tiers {
@@ -5212,14 +5213,13 @@ div.region.region-admin-footer {
 .av-main-transcript-section .speaker-name {
   /* position: absolute;
   top: 1rem;
-  left: 2%;
+  left: 2%; */
   width: 23%;
-  */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
   float:none;
+  margin: 1.5rem .5rem;
 }
 
 .av-main-transcript-section .play-button {
@@ -5230,8 +5230,8 @@ div.region.region-admin-footer {
 
 .av-main-transcript-section .play-button .btn {
   margin: 0;
-  padding: 0.1rem 4rem 0.1rem 2rem;
-  font-size: 1rem;
+  padding: 0.4rem 3rem 0.4rem 2.5rem;
+  font-size: 1.1rem;
   border: 1px solid transparent;
   box-shadow: 0 0 3px 0 rgba(50,50,50,0.175);
   border-collapse: separate;
@@ -5265,9 +5265,9 @@ div.region.region-admin-footer {
   float: left;
   padding: 0;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   left: -1.2rem;
-  top: 0.5rem;
+  top: 0.6rem;
 }
 
 .av-main-transcript-section .play-button .btn.untimed {
@@ -5753,8 +5753,11 @@ div.region.region-admin-footer {
 .transcript-container .scroller .tier.active {
   margin-top: 1rem;
   border-bottom: 1px dashed #ddd;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
+  padding: 5px 12px 3px;
 }
+
+.transcript-container .scroller .tier.active:hover{ background:#fcfcfc;}
 
 .transcript-container .scroller .tier.active:last-child{
   border-bottom:none;
