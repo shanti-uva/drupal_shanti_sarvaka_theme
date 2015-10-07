@@ -5238,7 +5238,7 @@ div.region.region-admin-footer {
 
 .av-main-transcript-section .play-button .btn {
   margin: 0;
-  padding: 0.4rem 3rem 0.4rem 2.5rem;
+  padding: 0.4rem 2rem 0.4rem 2.5rem;
   font-size: 1.1rem;
   border: 1px solid transparent;
   box-shadow: 0 0 3px 0 rgba(50,50,50,0.175);
@@ -5323,7 +5323,7 @@ div.region.region-admin-footer {
 .av-main-transcript-section .speaker-tiers .editableform .form-control{ width: 100%;margin: 0.5rem 1rem 0.5rem 0;}
 
 .av-main-transcript-section .speaker-tiers {
-  margin-left: 25%;
+  margin-left: 35%;
   padding-left: 1rem;
   border-left: 2px solid #eee;
 }
@@ -6591,6 +6591,7 @@ p.modal-title {
 }
 
 @media screen and (min-width: 850px) {
+
 }
 
 @media screen and (min-width: 992px) {
@@ -6626,6 +6627,9 @@ p.modal-title {
 }
 
 @media screen and (min-width: 1280px) {
+  .av-main-transcript-section .speaker-tiers {
+    margin-left: 25%;
+  }
 }
 
 @media all and (orientation:portrait) {
