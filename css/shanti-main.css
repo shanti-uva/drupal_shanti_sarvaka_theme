@@ -5272,7 +5272,7 @@ div.region.region-admin-footer {
 
 
 .transcript-container {
-  background: white;
+  /*background: white;*/
   height: 750px;
   overflow-x: auto;
   margin-top: 0;
@@ -5294,13 +5294,15 @@ div.region.region-admin-footer {
 }
 
 .transcript-content {
-  border: 1px solid #ddd;
-  border-width: 0 1px 4px 1px;
+  /* border: 1px solid #ddd;
+  border-width: 0 1px 4px 1px; */
 }
 
 .transcript-content li {
-  border: 3px double #fff;
-  border-style: solid double;
+  /* border: 3px double #fff;
+  border-style: solid double; */
+  border-radius: 20px;
+  border: 1px solid #ddd;
 }
 
 .transcript-content li.playing .speaker-tiers {
@@ -5745,6 +5747,10 @@ div.region.region-admin-footer {
   margin-top: 1rem;
   border-bottom: 1px dashed #ddd;
   padding-bottom: 1rem;
+}
+
+.transcript-container .scroller .tier.active:last-child{
+  border-bottom:none;
 }
 
 .transcripts-apachesolr-search-snippet .tiers {
