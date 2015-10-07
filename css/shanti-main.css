@@ -5204,6 +5204,8 @@ div.region.region-admin-footer {
   cursor: pointer;
 }
 
+.av-main-transcript-section .speaker-tiers .editableform .form-control{ width: 100%;margin: 0.5rem 1rem 0.5rem 0;}
+
 .av-main-transcript-section .speaker-tiers {
   margin-left: 25%;
   padding-left: 1rem;
