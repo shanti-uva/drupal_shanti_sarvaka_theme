@@ -5197,11 +5197,19 @@ div.region.region-admin-footer {
 .av-main-transcript-section .tcu-info {
   width: auto;
   min-height: 5.5rem;
+  padding-bottom:1rem;
 }
 
 .av-main-transcript-section .edit-times{
   display: inline-block;
+  color:#777;
   cursor: pointer;
+  position:static !important;
+  left:0;
+  top:0;
+  float: right;
+  height: 17px;
+  width: 17px;
 }
 
 /*.av-main-transcript-section .speaker-tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51); padding:0;}*/
@@ -5762,10 +5770,10 @@ div.region.region-admin-footer {
   margin-top: 1rem;
   border-bottom: 1px dashed #ddd;
   /*padding-bottom: 1rem;*/
-  padding: 5px 12px 3px;
+  padding: 7px 12px;
 }
 
-.transcript-container .scroller .tier.active:hover{ background:#fcfcfc;}
+.transcript-container .scroller .tier.active:hover{ background:#f9f9f9;}
 
 .transcript-container .scroller .tier.active:last-child{
   border-bottom:none;
