@@ -5222,11 +5222,12 @@ div.region.region-admin-footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   float:none;
-  margin: 1.5rem .5rem;
+  margin: 1.25rem 0;
 }
 
 .av-main-transcript-section .speaker-name span{
   display:block;
+  font-size:90%;
 }
 
 .av-main-transcript-section .speaker-name span:hover{
