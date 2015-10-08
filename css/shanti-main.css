@@ -5221,7 +5221,7 @@ div.region.region-admin-footer {
   float:none;
   margin: 1rem 0;
 }
-.av-main-transcript-section .speaker-name::after{
+.av-main-transcript-section .speaker-name span::after{
   content: "\270f";
   position:relative;
   top:0;
@@ -5230,7 +5230,7 @@ div.region.region-admin-footer {
   color:#999;
   opacity:0;
 }
-.av-main-transcript-section .speaker-name:hover::after{
+.av-main-transcript-section .speaker-name span:hover::after{
   content: "\270f";
   opacity:1;
 }
