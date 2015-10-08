@@ -5259,25 +5259,24 @@ div.region.region-admin-footer {
 }
 
 .av-main-transcript-section .play-button .btn:hover {
-  box-shadow: none;
-  border-color: #ddd;
-  background: #f5f5f5;
-  color: #333;
+   border-color: #ddd;
+  background-color: #555;
+  color: #fff;
+  box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); 
+}
+
+.av-main-transcript-section .play-button .btn:hover .glyphicon {
+  color: #fff;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 .av-main-transcript-section .play-button .btn:active,
 .av-main-transcript-section .play-button .btn:focus {
+  box-shadow: none;
   border-color: #ddd;
-  background-color: #555;
-  color: #fff;
-  box-shadow: 0 0 4px 0 rgba(50,50,50,0.175);
-}
-
-.av-main-transcript-section .play-button .btn:active .glyphicon,
-.av-main-transcript-section .play-button .btn:focus .glyphicon {
-  color: #fff;
-  box-shadow: none !important;
-  background: transparent !important;
+  background: #f5f5f5;
+  color: #333;
 }
 
 .av-main-transcript-section .play-button .btn .glyphicon {
