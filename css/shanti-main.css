@@ -5217,7 +5217,7 @@ div.region.region-admin-footer {
   /* position: absolute;
   top: 1rem;
   left: 2%; */
-  width: 23%;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -5229,11 +5229,19 @@ div.region.region-admin-footer {
   display:block;
 }
 
+.av-main-transcript-section .speaker-name span:hover{
+  background: #f5f5f5;
+}
+
 
 .av-main-transcript-section .play-button {
   margin: 0;
   /* position: relative;
   top: 3rem; */
+}
+
+.av-main-transcript-section .play-button:hover{
+  background: #f5f5f5;
 }
 
 .av-main-transcript-section .play-button .btn {
