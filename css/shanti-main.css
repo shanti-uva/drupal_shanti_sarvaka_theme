@@ -5228,6 +5228,9 @@ div.region.region-admin-footer {
 .av-main-transcript-section .speaker-name span{
   display:block;
   font-size:90%;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
 }
 
 .av-main-transcript-section .speaker-name span:hover{
