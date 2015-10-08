@@ -5231,6 +5231,7 @@ div.region.region-admin-footer {
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
+  padding: .4rem;
 }
 
 .av-main-transcript-section .speaker-name span:hover{
@@ -5239,7 +5240,7 @@ div.region.region-admin-footer {
 
 
 .av-main-transcript-section .play-button {
-  margin: 0;
+  margin: 0 0 0 0.8rem;
   /* position: relative;
   top: 3rem; */
 }
@@ -5330,6 +5331,7 @@ div.region.region-admin-footer {
   border-style: solid double; */
   border-radius: 10px;
   border: 1px solid #ddd;
+  padding:1rem;
 }
 
 .av-main-transcript-section .speaker-tiers .editableform .form-control{ width: 100%;margin: 0.5rem 1rem 0.5rem 0;}
