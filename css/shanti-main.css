@@ -5231,7 +5231,7 @@ div.region.region-admin-footer {
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
-  padding: .4rem;
+  padding: .5rem 0 .3rem .4rem;
 }
 
 .av-main-transcript-section .speaker-name span:hover{
