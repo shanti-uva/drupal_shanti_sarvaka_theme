@@ -5331,6 +5331,7 @@ div.region.region-admin-footer {
   border-radius: 10px;
   border: 1px solid #ddd;
   padding:1rem;
+  margin-bottom: 0;
 }
 
 .av-main-transcript-section .speaker-tiers .editableform .form-control{ width: 100%;margin: 0.5rem 1rem 0.5rem 0;}
@@ -5783,7 +5784,7 @@ div.region.region-admin-footer {
   /* margin-top: 1rem; */
   border-bottom: 1px dashed #ddd;
   /*padding-bottom: 1rem;*/
-  padding: 8px 12px;
+  padding: 8px;
 }
 
 .transcript-container .scroller .tier.active:hover{ background:#f9f9f9;}
