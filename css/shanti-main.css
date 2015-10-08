@@ -5195,7 +5195,7 @@ div.region.region-admin-footer {
 }
 
 .av-main-transcript-section .tcu-info {
-  width: auto;
+  width: 33%;
   min-height: 5.5rem;
   padding-bottom:1rem;
 }
@@ -5767,10 +5767,10 @@ div.region.region-admin-footer {
 }
 
 .transcript-container .scroller .tier.active {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   border-bottom: 1px dashed #ddd;
   /*padding-bottom: 1rem;*/
-  padding: 7px 12px;
+  padding: 8px 12px;
 }
 
 .transcript-container .scroller .tier.active:hover{ background:#f9f9f9;}
@@ -6629,6 +6629,9 @@ p.modal-title {
 @media screen and (min-width: 1280px) {
   .av-main-transcript-section .speaker-tiers {
     margin-left: 25%;
+  }
+  .av-main-transcript-section .tcu-info {
+    width: 23%;
   }
 }
 
