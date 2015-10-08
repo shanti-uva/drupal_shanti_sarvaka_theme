@@ -5218,11 +5218,21 @@ div.region.region-admin-footer {
   top: 1rem;
   left: 2%; */
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   float:none;
   margin: 1rem 0;
+}
+.av-main-transcript-section .speaker-name::after{
+  content: "\270f";
+  position:relative;
+  top:0;
+  right:0;
+  font-size:1rem;
+  color:#999;
+  opacity:0;
+}
+.av-main-transcript-section .speaker-name:hover::after{
+  content: "\270f";
+  opacity:1;
 }
 
 .av-main-transcript-section .speaker-name span{
@@ -5339,7 +5349,7 @@ div.region.region-admin-footer {
 .av-main-transcript-section .speaker-tiers {
   margin-left: 35%;
   padding-left: 1rem;
-  border-left: 2px solid #eee;
+  border-left: 1px solid #eee;
 }
 
 .transcript-content li.playing .speaker-tiers {
