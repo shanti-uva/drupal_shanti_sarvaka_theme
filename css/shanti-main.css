@@ -5236,12 +5236,15 @@ div.region.region-admin-footer {
   box-shadow:none;
   padding: .75em 1em .62em;
   text-transform:capitalize;
+  text-decoration:none;
 }
 
 .speaker-tiers button.btn.btn-default.btn-sm.editable-cancel:hover{
   border:none;
   box-shadow:none;
   background:transparent;
+  color:red;
+  text-decoration:underline;
 }
 
 .speaker-tiers .editable-buttons.editable-buttons-bottom{
