@@ -5234,6 +5234,19 @@ div.region.region-admin-footer {
 .speaker-tiers button.btn.btn-default.btn-sm.editable-cancel{
   border:none;
   box-shadow:none;
+  padding: .75em 1em .62em;
+  text-transform:capitalize;
+}
+
+.speaker-tiers button.btn.btn-default.btn-sm.editable-cancel:hover{
+  border:none;
+  box-shadow:none;
+  background:transparent;
+}
+
+.speaker-tiers .editable-buttons.editable-buttons-bottom{
+  display:inline-block;
+  float:right;
 }
 
 .speaker-tiers button.btn.btn-default.btn-sm.editable-cancel .glyphicon-remove::before{
@@ -5241,7 +5254,7 @@ div.region.region-admin-footer {
 }
 
 .av-main-transcript-section .speaker-name span::after{
-  content: "\270f";
+  content: '\270f';
   position:relative;
   top:0;
   right:0;
