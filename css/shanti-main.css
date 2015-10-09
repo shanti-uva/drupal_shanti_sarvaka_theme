@@ -5432,7 +5432,7 @@ div.region.region-admin-footer {
   font-family: 'Glyphicons Halflings';
 }
 
-.speaker-tiers .tier.active::after:hover{ 
+.speaker-tiers .tier.active:hover::after{ 
   color:#aaa;
 }
 
