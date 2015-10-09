@@ -5205,10 +5205,10 @@ div.region.region-admin-footer {
   display: inline-block;
   color:transparent;
   cursor: pointer;
-  position:static !important;
+  position:static;
   right:0;
   top:0;
-  float: right!important;
+  float: right;
   height: 17px;
   width: 17px;
 }
@@ -5293,6 +5293,8 @@ div.region.region-admin-footer {
   font-size: 1.2rem;
   color:white;
   display:inline-block;
+  height:17px;
+  width:17px;
   font-family: 'Glyphicons Halflings';
 }
 .av-main-transcript-section .speaker-name:hover span::after{
