@@ -5219,7 +5219,7 @@ div.region.region-admin-footer {
   left: 2%; */
   width: 100%;
   float:none;
-  margin: 1rem 0;
+  margin: 0.3rem 0 2rem;
 }
 
 .speaker-tiers .editable-input{
@@ -5261,7 +5261,7 @@ div.region.region-admin-footer {
   float:right;
 }
 
-.speaker-tiers .editable-container.editable-inline .glyphicon-ok{
+.speaker-tiers .editable-container.editable-inline .glyphicon-ok::before{
   content:'Update';
 }
 
