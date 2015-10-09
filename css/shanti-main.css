@@ -5270,6 +5270,20 @@ div.region.region-admin-footer {
   content:'Cancel';
 }
 
+.av-main-transcript-section .speaker-name span{
+  display:block;
+  font-size:90%;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  padding: .5rem 0 .3rem .4rem;
+}
+
+.logged-in .av-main-transcript-section .speaker-name span:hover{
+  background:#fcffc6;
+  background: rgba(252, 255, 198, 0.5);
+}
+
 .av-main-transcript-section .speaker-name span::after{
   content: '\270f';
   position:relative;
@@ -5281,20 +5295,6 @@ div.region.region-admin-footer {
 .av-main-transcript-section .speaker-name:hover span::after{
   color:#777;
 }
-
-.av-main-transcript-section .speaker-name span{
-  display:block;
-  font-size:90%;
-  overflow:hidden;
-  white-space: nowrap;
-  text-overflow:ellipsis;
-  padding: .5rem 0 .3rem .4rem;
-}
-
-.logged-in .av-main-transcript-section .speaker-name span:hover{
-  background: #f5f5f5;
-}
-
 
 .av-main-transcript-section .play-button {
   margin: 0 0 0 0.8rem;
@@ -5415,7 +5415,8 @@ div.region.region-admin-footer {
 }
 
 .logged-in .speaker-tiers .tier.active.editable:hover{ 
-  background:#f9f9f9;
+  background:#fcffc6;
+  background: rgba(252, 255, 198, 0.5);
 }
 
 .transcript-content li.playing {
@@ -5988,7 +5989,7 @@ object.KalturaDynamicPlayer {
 .btn-group-transcript .selectpicker li:hover,
 .btn-group-transcript .selectpicker li span.text,
 .btn-group-transcript .selectpicker li:hover span.text {
-  color: #fff;
+  color: #555;
 }
 
 .btn-group-transcript .selectpicker li.selected a,
