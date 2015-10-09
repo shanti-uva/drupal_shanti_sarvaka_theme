@@ -5389,9 +5389,9 @@ div.region.region-admin-footer {
 }
 
 .transcript-content li.playing {
-  border-color: #5b68ce;
+  border-color: #7181ff;
   background: #fafafa;
-  border-width: 2px 3px 3px 3px;
+  border-width: 1px;
 }
 
 .btn-group-transcript {
