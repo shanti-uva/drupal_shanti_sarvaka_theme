@@ -5237,6 +5237,7 @@ div.region.region-admin-footer {
   padding: .75em 1em .62em;
   text-transform:capitalize;
   text-decoration:none;
+  font-size:1rem;
 }
 
 .speaker-tiers button.btn.btn-default.btn-sm.editable-cancel:hover{
@@ -5244,12 +5245,16 @@ div.region.region-admin-footer {
   box-shadow:none;
   background:transparent;
   color:red;
-  text-decoration:underline;
+  text-decoration:underline !important;
 }
 
 .speaker-tiers .editable-buttons.editable-buttons-bottom{
   display:inline-block;
   float:right;
+}
+
+.speaker-tiers .editable-container.editable-inline{
+  display:block;
 }
 
 .speaker-tiers button.btn.btn-primary.btn-sm.editable-submit{
