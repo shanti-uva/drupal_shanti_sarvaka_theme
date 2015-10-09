@@ -5285,18 +5285,19 @@ div.region.region-admin-footer {
 }
 
 .av-main-transcript-section .speaker-name span::after{
-  content: '\270f';
-  position:relative;
-  top:1rem;
-  left:-1rem;
-  font-size:1rem;
-  color:red;
+  content: '\e065';
+  position: relative;
+  top: -0.5rem;
+  right: -70%;
+  font-size: 1.2rem;
+  color:white;
   display:inline-block;
   height:17px;
   width:17px;
+  font-family: 'Glyphicons Halflings';
 }
 .av-main-transcript-section .speaker-name:hover span::after{
-  color:#777;
+  color:#aaa;
 }
 
 .av-main-transcript-section .play-button {
@@ -5416,6 +5417,23 @@ div.region.region-admin-footer {
   border-bottom: 1px dashed #ddd;
   /*padding-bottom: 1rem;*/
   padding: 8px;
+}
+
+.speaker-tiers .tier.active::after{ 
+  content: '\e065';
+  position: relative;
+  top: -0.5rem;
+  right: -70%;
+  font-size: 1.2rem;
+  color:white;
+  display:inline-block;
+  height:17px;
+  width:17px;
+  font-family: 'Glyphicons Halflings';
+}
+
+.speaker-tiers .tier.active::after:hover{ 
+  color:#aaa;
 }
 
 .speaker-tiers .tier.active:last-child{
