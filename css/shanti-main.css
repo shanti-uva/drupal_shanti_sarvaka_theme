@@ -3987,6 +3987,7 @@ table tr.ok {
   border: none;
   border-radius: 0;
   width: 100%;
+  padding-bottom: 2.5rem;
 }
 
 .panel.panel-default {
@@ -5157,8 +5158,8 @@ div.region.region-admin-footer {
 
 .main-content .av-main-transcript-section .selectpicker .caret::before {
   color: #606060 !important;
-  font-size: 1.62em;
-  left: -1rem;
+  font-size: 1.88em;
+  left: -1.3rem;
   right: 0;
   top: -1rem;
   z-index: 10;
@@ -5234,7 +5235,7 @@ div.region.region-admin-footer {
 .speaker-tiers button.btn.btn-default.btn-sm.editable-cancel{
   border:none;
   box-shadow:none;
-  padding: .75em 1em .62em;
+  padding: .5em 1em .62em;
   text-transform:capitalize;
   text-decoration:none;
   font-size:1rem;
@@ -5290,7 +5291,7 @@ div.region.region-admin-footer {
   padding: .5rem 0 .3rem .4rem;
 }
 
-.av-main-transcript-section .speaker-name span:hover{
+.logged-in .av-main-transcript-section .speaker-name span:hover{
   background: #f5f5f5;
 }
 
@@ -5390,7 +5391,7 @@ div.region.region-admin-footer {
   margin-bottom: 0;
 }
 
-.av-main-transcript-section .speaker-tiers .editableform .form-control{ width: 100%;margin: 0.5rem 1rem 0.5rem 0;}
+.av-main-transcript-section .speaker-tiers .editableform .form-control{ width: 100%; margin: 0.5rem 1rem 0.5rem 0;}
 
 .av-main-transcript-section .speaker-tiers {
   margin-left: 35%;
@@ -5843,7 +5844,9 @@ div.region.region-admin-footer {
   padding: 8px;
 }
 
-.transcript-container .scroller .tier.active:hover{ background:#f9f9f9;}
+.logged-in .transcript-container .scroller .tier.active:hover{ 
+  background:#f9f9f9;
+}
 
 .transcript-container .scroller .tier.active:last-child{
   border-bottom:none;
