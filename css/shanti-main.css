@@ -5290,7 +5290,10 @@ div.region.region-admin-footer {
   top:1rem;
   left:-1rem;
   font-size:1rem;
-  color:#aaa;
+  color:red;
+  display:inline-block;
+  height:17px;
+  width:17px;
 }
 .av-main-transcript-section .speaker-name:hover span::after{
   color:#777;
@@ -5392,6 +5395,11 @@ div.region.region-admin-footer {
 }
 
 .transcript-content .speaker-tiers .editableform .form-control{ width: 100%; margin: 0.5rem 1rem 0.5rem 0;}
+
+.twitter-typeahead .tt-query, 
+.twitter-typeahead .tt-hint{
+  margin-bottom:0.5rem;
+}
 
 .transcript-content .speaker-tiers {
   margin-left: 35%;
