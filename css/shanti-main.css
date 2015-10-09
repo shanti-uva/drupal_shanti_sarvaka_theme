@@ -5252,6 +5252,10 @@ div.region.region-admin-footer {
   float:right;
 }
 
+.speaker-tiers button.btn.btn-primary.btn-sm.editable-submit{
+  float:right;
+}
+
 .speaker-tiers button.btn.btn-default.btn-sm.editable-cancel .glyphicon-remove::before{
   content:'Cancel';
 }
@@ -5259,15 +5263,13 @@ div.region.region-admin-footer {
 .av-main-transcript-section .speaker-name span::after{
   content: '\270f';
   position:relative;
-  top:0;
-  right:0;
+  top:1rem;
+  left:-1rem;
   font-size:1rem;
-  color:#999;
-  opacity:0;
+  color:#aaa;
 }
-.av-main-transcript-section .speaker-name span:hover::after{
-  content: "\270f";
-  opacity:1;
+.av-main-transcript-section .speaker-name:hover span::after{
+  color:#777;
 }
 
 .av-main-transcript-section .speaker-name span{
