@@ -5419,23 +5419,6 @@ div.region.region-admin-footer {
   padding: 8px;
 }
 
-.speaker-tiers .tier.active::after{ 
-  content: '\e065';
-  position: relative;
-  top: -0.5rem;
-  right: -70%;
-  font-size: 1.2rem;
-  color:white;
-  display:inline-block;
-  height:17px;
-  width:17px;
-  font-family: 'Glyphicons Halflings';
-}
-
-.speaker-tiers .tier.active:hover::after{ 
-  color:#aaa;
-}
-
 .speaker-tiers .tier.active:last-child{
   border-bottom:none;
 }
@@ -5451,6 +5434,22 @@ div.region.region-admin-footer {
   border-width: 1px;
 }
 
+.speaker-tiers .tier.active.editable::after{ 
+  content: '\e065';
+  position: relative;
+  top: -0.5rem;
+  right: -70%;
+  font-size: 1.2rem;
+  color:white;
+  display:inline-block;
+  height:17px;
+  width:17px;
+  font-family: 'Glyphicons Halflings';
+}
+
+.speaker-tiers .tier.active.editable:hover::after{ 
+  color:#aaa;
+}
 
 
 .btn-group-transcript {
@@ -6735,7 +6734,7 @@ p.modal-title {
     margin-left: 25%;
   }
   .av-main-transcript-section .tcu-info {
-    width: 23%;
+    width: 24%;
   }
 }
 
