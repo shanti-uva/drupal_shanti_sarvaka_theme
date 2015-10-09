@@ -5261,6 +5261,10 @@ div.region.region-admin-footer {
   float:right;
 }
 
+.speaker-tiers .editable-container.editable-inline .glyphicon-ok{
+  content:'Update';
+}
+
 .speaker-tiers button.btn.btn-default.btn-sm.editable-cancel .glyphicon-remove::before{
   content:'Cancel';
 }
