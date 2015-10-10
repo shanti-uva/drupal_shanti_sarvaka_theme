@@ -5289,7 +5289,7 @@ div.region.region-admin-footer {
   background: rgba(252, 255, 198, 0.5);
 }
 
-.av-main-transcript-section .speaker-name span::after{
+.logged-in .av-main-transcript-section .speaker-name span::after{
   content: '\e065';
   float:right;
   position: relative;
@@ -5302,7 +5302,7 @@ div.region.region-admin-footer {
   width:17px;
   font-family: 'Glyphicons Halflings';
 }
-.av-main-transcript-section .speaker-name span:hover::after{
+.logged-in .av-main-transcript-section .speaker-name span:hover::after{
   color:#aaa;
 }
 
