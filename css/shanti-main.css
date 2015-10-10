@@ -4751,6 +4751,10 @@ textarea {
   margin-top:-1rem;
 }
 
+.front .admin-menu #block-system-main.block.block-system{
+  margin-top:0;
+}
+
 .admin-menu .icheckbox_minimal-red,
 .admin-menu .iradio_minimal-red {
   margin-right: 5px;
