@@ -5288,7 +5288,7 @@ div.region.region-admin-footer {
   content: '\e065';
   float:right;
   position: relative;
-  top: -0.5rem;
+  top: 0.5rem;
   right: .1rem;
   font-size: 1.2rem;
   color:white;
@@ -5297,7 +5297,7 @@ div.region.region-admin-footer {
   width:17px;
   font-family: 'Glyphicons Halflings';
 }
-.av-main-transcript-section .speaker-name:hover span::after{
+.av-main-transcript-section .speaker-name span:hover::after{
   color:#aaa;
 }
 
@@ -5439,7 +5439,7 @@ div.region.region-admin-footer {
   content: '\e065';
   float: right;
   position: relative;
-  top: -0.5rem;
+  top: 0.5rem;
   right: .1rem;
   font-size: 1.2rem;
   color:white;
