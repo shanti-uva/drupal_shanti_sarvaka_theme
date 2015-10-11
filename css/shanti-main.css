@@ -5403,6 +5403,12 @@ div.region.region-admin-footer {
   margin-bottom:0.5rem;
 }
 
+.twitter-typeahead .tt-query > div{
+  position:relative;
+  top:0.7rem;
+}
+
+
 .transcript-content .speaker-tiers {
   margin-left: 35%;
   padding-left: 1rem;
