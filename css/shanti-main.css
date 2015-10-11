@@ -4748,11 +4748,6 @@ textarea {
 .admin-menu #block-system-main.block.block-system {
  /*margin-top:1.75em;*/
   width: 100%;
-  margin-top:-1rem;
-}
-
-.front .admin-menu #block-system-main.block.block-system{
-  margin-top:0;
 }
 
 .admin-menu .icheckbox_minimal-red,
