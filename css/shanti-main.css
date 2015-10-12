@@ -5401,8 +5401,11 @@ div.region.region-admin-footer {
 .twitter-typeahead .tt-query, 
 .twitter-typeahead .tt-hint{
   margin-bottom:0.5rem;
-  height: 20px;
-  left: -0.35rem;
+}
+
+.twitter-typeahead .tt-hint{
+  position:absolute;
+  top:0.5rem !important;
 }
 
 .transcript-content .speaker-tiers {
