@@ -6739,10 +6739,10 @@ p.modal-title {
 
 @media screen and (min-width: 1280px) {
   .av-main-transcript-section .speaker-tiers {
-    margin-left: 25%;
+    margin-left: 30%;
   }
   .av-main-transcript-section .tcu-info {
-    width: 24%;
+    width: 29%;
   }
 }
 
