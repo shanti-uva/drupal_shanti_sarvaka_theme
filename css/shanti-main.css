@@ -3291,8 +3291,8 @@ a.btn,a.btn:hover,a.btn:active {
   bottom: 5em;
   right: 1.5rem;
   z-index: 1000;
-  height: 3.25em;
-  width: 3.25em;
+  height: 3.12em;
+  width: 3.12em;
   color: #aaa;
   background: #f0f0f0;
   filter: alpha(opacity=20);
@@ -3318,7 +3318,7 @@ a.btn,a.btn:hover,a.btn:active {
 .back-to-top .fa {
   color: #444;
   font-size: 2em;
-  line-height: 1.5em;
+  line-height: 1.38em;
   font-family: 'FontAwesome';
   font-weight: normal;
   margin: 0 auto;
