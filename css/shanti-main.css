@@ -4188,6 +4188,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 .video-row {
   margin-bottom: 12px;
+  margin-top: 0.1rem; /* improves alignemnt with transcript top */
 }
 
 .avinfo {
