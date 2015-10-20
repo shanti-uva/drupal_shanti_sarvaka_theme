@@ -3289,7 +3289,7 @@ a.btn,a.btn:hover,a.btn:active {
 .back-to-top {
   position: fixed;
   bottom: 5em;
-  right: 1.5rem;
+  right: 0.75rem;
   z-index: 1000;
   height: 3.12em;
   width: 3.12em;
