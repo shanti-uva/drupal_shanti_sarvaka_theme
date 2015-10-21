@@ -5010,17 +5010,24 @@ form table td.label {
 
 #admin-footer {
   padding: 0;
-  background: #fff;
+  background: #000;
+  color:#fff;
 }
 
-#admin-footer .block h2, #admin-footer .block p, #admin-footer .block li {
+#admin-footer .block h2{
+  font-size: 110%;
+  color:#fff;
+} 
+#admin-footer .block p, 
+#admin-footer .block li {
   font-size: 90%;
+  color:#fff;
 }
 
 #admin-footer .block {
   display: inline-block;
-  padding: 0 0.5em;
-  border-right: thin solid #777;
+  padding: 0 2.5em 0 0;
+  border-right: thin solid #555;
   vertical-align: top;
 }
 
