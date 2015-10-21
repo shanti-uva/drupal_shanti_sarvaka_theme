@@ -334,6 +334,10 @@ a:hover,a:active {
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
 }
 
+.navbar-nav>li>a{
+  text-shadow:none; /* override bootstrap style */
+}
+
 .navbar-header .navbar-brand {
   float: none;
   border: 0;
@@ -350,6 +354,7 @@ a:hover,a:active {
 .navbar-header .navbar-brand:hover,
 .navbar-header .navbar-brand:active {
   color: #222;
+  text-shadow: 0 1px 1px #f0f0f0;
 }
 
 .navbar-header .shanti {
@@ -6070,6 +6075,17 @@ object.KalturaDynamicPlayer {
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu {
   padding-bottom: 0;
+}
+/* this shows for editing mode notice */
+.editing-message{
+  position: relative;
+  top: 0;
+  text-align: center;
+  background: LightYellow;
+  height: 2rem;
+  margin: 0 .1rem;
+  border: 1px solid #ddd;
+  border-width: 0 1px 0 1px;
 }
 
 /*------------------------------*/
