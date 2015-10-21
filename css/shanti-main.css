@@ -4929,7 +4929,7 @@ form table td.label {
   padding: 40px 0 20px 15px;
   background: #222;
   bottom: 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #fff;
 }
 
 .footer a {
@@ -5015,9 +5015,19 @@ form table td.label {
 
 #admin-footer {
   padding: 0;
-  background: #000;
+  background: #888;
   color:#fff;
   border-bottom: 5px solid #fff;
+}
+
+#admin-footer a,
+#admin-footer a:hover,
+#admin-footer a:active{
+  color:#343b7b;
+}
+
+#admin-footer a:hover{
+  text-decoration:underline;
 }
 
 #admin-footer .block h2{
