@@ -1074,7 +1074,7 @@ body.front ol.breadcrumb {
   border-bottom: 1px solid #ccc;
   width: 100%;
   background: #ddd !important;
-  height: 2rem;
+  height: 2.2rem;
   margin-top: 0.3rem;
   filter: alpha(opacity=60);
   opacity: 0.6;
@@ -1117,8 +1117,8 @@ body.front ol.breadcrumb {
   background: rgba(0,0,0,.2000);
   color: #111;
   font-size: 0.75em;
-  height: 1.93rem;
-  padding: 0.44rem 1.5rem 0;
+  height: 2.2rem;
+  padding: 0.55rem 1.5rem 0;
   border: none;
   margin-right: 0;
   display: inline-block;
