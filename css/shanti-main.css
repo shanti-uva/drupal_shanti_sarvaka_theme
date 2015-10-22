@@ -1084,41 +1084,41 @@ body.front ol.breadcrumb {
   margin-top: 2rem;
 } /* see breakpoints - this allows for two rows of tabs on tablets. */
 
-header ul.tabs.primary,
-header ul.tabs.secondary {
+.tabs.primary,
+.tabs.secondary {
   border: none;
   display: inline;
   margin: 0;
   padding: 0;
 }
 
-header ul.tabs.primary {
+.tabs.primary {
   float: right;
   margin-right: 2rem;
   color: #000;
 }
 
-header ul.tabs.secondary {
+.tabs.secondary {
   float: left;
   margin-left: 2rem;
   text-transform: lowercase;
 }
 
-header ul.tabs.primary li,
-header ul.tabs.secondary li {
+.tabs.primary li,
+.tabs.secondary li {
   float: left;
   margin-right: 0.2rem;
   border: none;
   padding: 0;
 }
 
-header ul.tabs.primary li a,
-header ul.tabs.secondary li a {
+.tabs.primary li a,
+.tabs.secondary li a {
   background: rgba(0,0,0,.2000);
   color: #111;
   font-size: 0.75em;
-  height: 1.82rem;
-  padding: 0.3rem 1.5rem 0;
+  height: 1.93rem;
+  padding: 0.4rem 1.5rem 0;
   border: none;
   margin-right: 0;
   display: inline-block;
@@ -1129,50 +1129,50 @@ header ul.tabs.secondary li a {
   font-weight: 700;
 }
 
-header ul.tabs.primary li a {
+.tabs.primary li a {
   font-size: 0.68em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   font-wight: bold;
 }
 
-header ul.tabs.secondary li a {
+.tabs.secondary li a {
   line-height: 2em;
   font-size: 0.56em;
 }
 
-header ul.tabs.primary li a:hover,
-header ul.tabs.secondary li a:hover,
-header ul.tabs.primary li a:active,
-header ul.tabs.secondary li a:active {
+.tabs.primary li a:hover,
+.tabs.secondary li a:hover,
+.tabs.primary li a:active,
+.tabs.secondary li a:active {
   background: #444;
   color: #f0f0f0;
 }
 
-header ul.tabs.primary li.active a,
-header ul.tabs.secondary li.active a {
+.tabs.primary li.active a,
+.tabs.secondary li.active a {
   background: #eee;
   color: #111;
   cursor: pointer;
   border: 1px solid #ccc;
-  border-width: 1px 1px 0;
+  border-width: 0 1px;
 }
 
-header ul.tabs.primary li.active a:hover,
-header ul.tabs.secondary li.active a:hover {
+.tabs.primary li.active a:hover,
+.tabs.secondary li.active a:hover {
   background: #eee;
   color: #111;
   cursor: pointer;
 }
 
-header ul.tabs.primary li a:active,
-header ul.tabs.secondary li a:active,
-header ul.tabs.primary li a.active:active,
-header ul.tabs.secondary li a.active:active {
+.tabs.primary li a:active,
+.tabs.secondary li a:active,
+.tabs.primary li a.active:active,
+.tabs.secondary li a.active:active {
   background: #222;
   color: #fff;
 }
 
-.has-tabs-secondary ul.tabs.secondary {
+.has-tabs-secondary .tabs.secondary {
   margin-top: 0.2rem;
 }
 
@@ -4738,6 +4738,17 @@ form table td.label {
   text-decoration:underline;
 }
 
+#admin-footer .block {
+  display: inline-block;
+  padding: 0 1rem;
+  border-right: thin solid #555;
+  vertical-align: top;
+}
+
+#admin-footer .block.block-user {
+  padding-right: 3rem;
+}
+
 #admin-footer .block h2{
   font-size: 110%;
   color:#fff;
@@ -4746,13 +4757,6 @@ form table td.label {
 #admin-footer .block li {
   font-size: 90%;
   color:#fff;
-}
-
-#admin-footer .block {
-  display: inline-block;
-  padding: 0 1rem;
-  border-right: thin solid #555;
-  vertical-align: top;
 }
 
 #admin-footer .form-control,
