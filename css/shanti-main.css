@@ -1117,6 +1117,7 @@ body.front ol.breadcrumb {
   background: rgba(0,0,0,.2000);
   color: #111;
   font-size: 0.75em;
+  line-height: 1.32em;
   height: 2.2rem;
   padding: 0.55rem 1.5rem 0;
   border: none;
