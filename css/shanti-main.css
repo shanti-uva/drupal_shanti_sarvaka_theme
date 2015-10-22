@@ -3326,6 +3326,11 @@ a.btn,a.btn:hover,a.btn:active {
 /*------------------------*/
 
 
+/* JIRA feedback button bottom-right */
+.atlwdg-trigger{
+  z-index:1; /* firefox needs this */
+}
+
 /*---scroll to top ---*/
 .back-to-top {
   position: fixed;
