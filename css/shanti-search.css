@@ -1028,7 +1028,7 @@ object.flip_label {
 	display:inline-block;
 	background:transparent;
 	margin-top:-2.5rem;
-	margin-left:0;
+	margin-left:3rem;
 }
 /*
 .view-section table.table-results tbody>tr.progress-disabled.row_selected {
