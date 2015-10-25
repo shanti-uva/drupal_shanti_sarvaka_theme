@@ -4673,46 +4673,46 @@ form table td.label {
   }
 }
 
-#admin-footer {
+.region-admin-footer {
   padding: 0;
   background: #888;
   color:#fff;
   border-bottom: 5px solid #fff;
 }
 
-#admin-footer a,
-#admin-footer a:hover,
-#admin-footer a:active{
+.region-admin-footer a,
+.region-admin-footer a:hover,
+.region-admin-footer a:active{
   color:#343b7b;
 }
 
-#admin-footer a:hover{
+.region-admin-footer a:hover{
   text-decoration:underline;
 }
 
-#admin-footer .block {
+.region-admin-footer .block {
   display: inline-block;
   padding: 0 1rem;
   border-right: thin solid #555;
   vertical-align: top;
 }
 
-#admin-footer .block.block-user {
+.region-admin-footer .block.block-user {
   padding-right: 3rem;
 }
 
-#admin-footer .block h2{
+.region-admin-footer .block h2{
   font-size: 110%;
   color:#fff;
 } 
-#admin-footer .block p, 
-#admin-footer .block li {
+.region-admin-footer .block p, 
+.region-admin-footer .block li {
   font-size: 90%;
   color:#fff;
 }
 
-#admin-footer .form-control,
-#admin-footer .form-textarea {
+.region-admin-footer .form-control,
+.region-admin-footer .form-textarea {
   max-width: 95%;
   background-position: 97% .56em !important;
 }
@@ -4720,6 +4720,12 @@ form table td.label {
 div.region.region-admin-footer {
   padding: 1.5rem;
 }
+
+.region-admin-footer .form-item-masquerade-user-field{
+
+}
+
+
 
 /*-- REVIEW THIS - Prevent views dialog transparency --*/
 .views-ui-dialog,
