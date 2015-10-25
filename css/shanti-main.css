@@ -4674,7 +4674,7 @@ form table td.label {
 }
 
 .region-admin-footer {
-  padding: 0;
+  padding: 1.5rem;
   background: #888;
   color:#fff;
   border-bottom: 5px solid #fff;
@@ -4715,10 +4715,6 @@ form table td.label {
 .region-admin-footer .form-textarea {
   max-width: 95%;
   background-position: 97% .56em !important;
-}
-
-div.region.region-admin-footer {
-  padding: 1.5rem;
 }
 
 .region-admin-footer .form-item-masquerade-user-field{
