@@ -3707,60 +3707,6 @@ a.btn,a.btn:hover,a.btn:active {
 /*-------------------------------*/
 /*---- BEGIN filter & paging ----*/
 /*-------------------------------*/
-.shanti-filters {
-  height: 2.5rem;
-  margin-bottom: 2.5rem;
-  position: relative;
-  top: -1rem;
-}
-/*
-.logged-in .shanti-filters {
-  position: relative;
-  top: -2.5rem;
-}
-*/
-.shanti-filters table {
-  float: right;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-}
-
-.shanti-filters table tbody {
-  border-top: none;
-}
-
-.shanti-filters td {
-  white-space: nowrap;
-}
-
-.shanti-filters table td:nth-of-type(2) {
-  width: 100%;
-}
-
-.shanti-filters td .label {
-  color: #555;
-  font-size: 0.88em;
-  text-transform: uppercase;
-/*letter-spacing: -0.1rem;*/
-}
-
-.shanti-filters td .count {
-  font-size: 0.88em;
-  margin-right: 2rem;
-  text-transform: capitalize;
-}
-
-.shanti-filters .view-filters-mb .views-exposed-widget {
-  position: relative;
-  padding-right: 3rem;
-}
-
-.shanti-filters .ajax-progress {
- /*display: inline;*/
-  position: absolute;
-  top: 1.35rem;
-  right: 0;
-}
-
 .form-item-sort-bef-combine .btn {
   width: 15rem;
 }
@@ -5375,8 +5321,10 @@ body.front .breadcrumb {
     /* text-shadow: 0.05rem 0.05rem #fff; */
   }
 
-  .navbar-header .site-slogan:hover {
-    text-shadow: 0.05rem 0.05rem #555;
+  .navbar-header .site-slogan:hover,
+  .navbar-header .site-slogan:active {
+    /*text-shadow: 0.05rem 0.05rem #555;*/
+    text-shadow:none;
   }
     /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
   .collections ul li {
