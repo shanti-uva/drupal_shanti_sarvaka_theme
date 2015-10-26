@@ -4714,8 +4714,8 @@ form table td.label {
   background-position: 97% .56em !important;
 }
 
-.region-admin-footer .form-item-masquerade-user-field{
-
+.region-admin-footer .block-masquerade-masquerade .btn{
+  float:right;
 }
 
 
