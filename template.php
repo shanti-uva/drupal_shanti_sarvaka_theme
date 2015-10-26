@@ -1333,20 +1333,6 @@ function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
         $out .= "</select>";
         return $out;
 }
-function shanti_sarvaka_transcripts_ui_speaker_name($vars)
-{
-    $vars['classes'][] = 'speaker-display';
-    $vars['classes'][] = 'active';
-    $classes = implode(' ', $vars['classes']);
-    $out  = "<div class='speaker-name {$vars['speaker_turn']}'>";
-		if (is_array($vars['speaker_name'])) {
-	    foreach ($vars['speaker_name'] as $key => $val) {
-	       $out .= "<span data-speaker-display='$key' class='$classes'>$val</span> ";
-	    }
-	  }
-    $out .= "</div>";
-    return $out;
-}
 function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
         $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
