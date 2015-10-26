@@ -1643,7 +1643,7 @@ object.flip_label {
 
 
 
-/*--- Temporary styles to hide advance search options ---*/
+/*--- Temporary styles to hide advance search options 
 .input-section .search-group{ height:44px;}
 .input-section .input-group input.form-control{ margin-top:7px;}
 .input-section .toggle-link.advanced-link{ display:none !important;}
@@ -1651,15 +1651,15 @@ object.flip_label {
 .input-section .input-group .input-group-btn{ top:8px !important;}
 .advanced-view{ display:block !important;}
 .input-section .alert{ position:relative; top:7px;}
-
-/* hiding inner workings here Yuji */
+---*/
+/* hiding inner workings here Yuji
 .search-group > .form-group label:nth-of-type(-n+2),
 .form-group.advanced-input.feature-group.dropdown,
 .form-group.advanced-input.select-type{ 
   display: none !important;
   border-top: none !important;
 }
-
+ */
 
 /*--------------------------------*/
 /*--- END SEARCH PANEL -----------*/
