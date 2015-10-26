@@ -55,7 +55,7 @@
 
          <div id="notification-wrapper"></div>
 
-         <section class="advanced-view" style="display:none;">
+         <section class="advanced-view">
             <div class="form-group">
               <label class="radio-inline" for="radios-0">
                 <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
