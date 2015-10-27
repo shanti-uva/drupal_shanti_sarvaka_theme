@@ -3085,33 +3085,6 @@ a.btn,a.btn:hover,a.btn:active {
   color: #fff !important;
 }
 
-
-
-
-.logged-in .carousel-description p {
-  height: 11.5em;
-  overflow: hidden;
-}
-
-.logged-in .carousel-title {
-  font-size: 1em;
-}
-
-.logged-in .carousel .byline {
-  font-size: 70%;
-}
-
-.logged-in .carousel-main-image img {
-  margin-left: 0;
-  max-width: 100%;
-  margin: 0;
-  max-height: 225px;
-}
-
-
-
-
-
 .carousel .carousel-main-image{
   width:100%;
   padding-left: 5px;
