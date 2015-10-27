@@ -3193,7 +3193,7 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-description p {
     font-size: 1.06em;
-    height: 15em;
+    height: 10em;
   }
     /* .carousel-main-image{ min-width:270px;} */
   .carousel-main-image img {
@@ -3242,11 +3242,11 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel .carousel-main-image{
-    width: 39%;
+    width: 35%;
   }
 
   .carousel .carousel-main-content{
-    width: 60%;
+    width: 64%;
   }
 
 }
