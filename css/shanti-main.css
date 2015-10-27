@@ -3230,18 +3230,23 @@ a.btn,a.btn:hover,a.btn:active {
 @media (min-width:850px) {
   
   .carousel-description p {
-    height: 13em;
+    height: 10em;
   }
+
+  .carousel-main-image img {
+    max-height: 200px;
+  }
+
    .carousel-title {
     font-size: 1.56em;
   }
 
   .carousel .carousel-main-image{
-    width:41.66666666666667%;
+    width: 39%;
   }
 
   .carousel .carousel-main-content{
-    width:58.333333333333336%;
+    width: 60%;
   }
 
 }
@@ -3251,16 +3256,21 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-title {
     font-size: 1.63em;
   }
+
   .carousel-description p {
-    height: 11.5em;
+    height: 9em;
+  }
+
+  .carousel-main-image img {
+    max-height: 210px;
   }
 
   .carousel .carousel-main-image{
-    width:41.66666666666667%;
+    width: 30%;
   }
 
   .carousel .carousel-main-content{
-    width:58.333333333333336%;
+    width: 69%;
   }
 
   .logged-in .carousel-title {
@@ -3300,6 +3310,14 @@ a.btn,a.btn:hover,a.btn:active {
     font-size: 80%;
     margin: -0.2em 0 .63em;
   }
+
+  .carousel .carousel-main-image{
+    width: 34%;
+  }
+
+  .carousel .carousel-main-content{
+    width: 65%;
+  }
 }
 
 @media (min-width:1200px) {
@@ -3310,14 +3328,6 @@ a.btn,a.btn:hover,a.btn:active {
 
   .logged-in .carousel .carousel-main-content {
     width: 60%;
-  }
-
-  .carousel .carousel-main-image{
-    width:34%;
-  }
-
-  .carousel .carousel-main-content{
-    width:65%;
   }
 }
 
