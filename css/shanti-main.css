@@ -3179,7 +3179,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image img {
-    max-height: 180px;
+    max-height: 200px;
   }
 }
 
@@ -3195,6 +3195,7 @@ a.btn,a.btn:hover,a.btn:active {
     /* .carousel-main-image{ min-width:270px;} */
   .carousel-main-image img {
     margin-left: 0;
+    max-height: 220px;
   }
 
   .carousel-pause .glyphicon-pause::before {
@@ -3223,7 +3224,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image img {
-    max-height: 210px;
+    max-height: 220px;
   }
 
    .carousel-title {
@@ -3279,18 +3280,6 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-description p {
     height: 9em;
   }
-
-  .carousel-main-image img {
-    max-height: 210px;
-  }
-/*
-  .carousel .carousel-main-image{
-    width: 34%;
-  }
-
-  .carousel .carousel-main-content{
-    width: 65%;
-  } */
 }
 
 @media (min-width:1200px) {
