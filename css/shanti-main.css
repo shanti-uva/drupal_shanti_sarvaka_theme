@@ -3310,14 +3310,14 @@ a.btn,a.btn:hover,a.btn:active {
     font-size: 80%;
     margin: -0.2em 0 .63em;
   }
-
+/*
   .carousel .carousel-main-image{
     width: 34%;
   }
 
   .carousel .carousel-main-content{
     width: 65%;
-  }
+  } */
 }
 
 @media (min-width:1200px) {
