@@ -3165,17 +3165,21 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (min-width:750px) {
 
-  .carousel .col-xs-12{
-    width:45%;
+  .carousel .carousel-main-image{
+    width:40%;
   }
 
-  .carousel .col-xs-12{
-    width:54%;
+  .carousel .carousel-main-image{
+    width:59%;
   }
 
   .carousel-pause{
     position: relative;
     top: -1rem;
+  }
+
+  .carousel-main-image img {
+    max-height: 180px;
   }
 }
 
@@ -3307,6 +3311,14 @@ a.btn,a.btn:hover,a.btn:active {
 
   .logged-in .carousel .col-lg-3 {
     width: 40%;
+  }
+
+  .carousel .col-md-5{
+    width:34%;
+  }
+
+  .carousel .col-md-7{
+    width:65%;
   }
 }
 
