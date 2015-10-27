@@ -3125,7 +3125,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 }
 
-@media (max-width:767px) {
+@media (max-width:750px) {
 
   .carousel .carousel-main-image{
     width:50%;
@@ -3134,6 +3134,9 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel .carousel-main-content{
     width:50%;
   }
+}
+
+@media (max-width:767px) {
 
   .carousel-pause.btn.btn-sm span::before{ 
     position:relative;
@@ -3141,7 +3144,16 @@ a.btn,a.btn:hover,a.btn:active {
   }
 }
 
+@media (min-width:850px) {
 
+  .carousel .carousel-main-image{
+    width:45%;
+  }
+
+  .carousel .carousel-main-content{
+    width:54%;
+  }
+} 
 
 /*-------------------------*/
 /***** BEGIN min-width *****/
@@ -3157,6 +3169,7 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 @media (min-width:700px) {
+  
   .carousel .col-xs-12 {
     padding-left: 15px;
     padding-right: 15px;
@@ -3185,15 +3198,15 @@ a.btn,a.btn:hover,a.btn:active {
     position: relative;
     left: 0rem;
   }
-
+/*
   .carousel .col-sm-7 {
-    width: 65%;
+    width: 54%;
   }
 
   .carousel .col-sm-5 {
-    width: 34%;
+    width: 45%;
   }
-
+*/
   .logged-in .carousel-main-image {
     max-width: 100%;
   }
@@ -3217,6 +3230,7 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 @media (min-width:850px) {
+  
   .carousel-description p {
     height: 13em;
   }
