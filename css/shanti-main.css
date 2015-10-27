@@ -3268,6 +3268,14 @@ a.btn,a.btn:hover,a.btn:active {
   .logged-in .carousel-main-image img {
     max-height: 225px;
   }
+
+  .carousel .col-md-5{
+    width:41.66666666666667%;
+  }
+
+  .carousel .col-md-7{
+    width:58.333333333333336%;
+  }
   
 }
 
