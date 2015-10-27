@@ -3110,6 +3110,42 @@ a.btn,a.btn:hover,a.btn:active {
   max-height: 225px;
 }
 
+
+/*-------------------------*/
+/***** BEGIN max-width *****/
+/*-------------------------*/
+@media (max-width:650px) {
+
+  .carousel .carousel-main-image{
+    width:100%;
+  }
+
+  .carousel .carousel-main-content{
+    width:100%;
+  }
+}
+
+@media (max-width:767px) {
+
+  .carousel .carousel-main-image{
+    width:50%;
+  }
+
+  .carousel .carousel-main-content{
+    width:50%;
+  }
+
+  .carousel-pause.btn.btn-sm span::before{ 
+    position:relative;
+    left:0.2rem;
+  }
+}
+
+
+
+/*-------------------------*/
+/***** BEGIN min-width *****/
+/*-------------------------*/
 @media (min-width:480px) {
 }
 
@@ -3164,6 +3200,19 @@ a.btn,a.btn:hover,a.btn:active {
 
   .logged-in .carousel-description p {
     font-size: 1em;
+  }
+
+  .carousel-pause.btn.btn-sm {
+    padding: 0.55rem 0.9rem !important;
+    width: 3.2rem;
+    height: 3rem;
+    font-size: 1em !important;
+    margin: 0 50%;
+  }
+
+  .carousel.carousel-fade .control-box-2 {
+    left: -1.7rem;
+    top: -1rem;
   }
 }
 
@@ -4524,10 +4573,10 @@ form table td.label {
   padding: 0 0 0 0.6rem;
   margin-top: 1.5rem;
 }
-
+/* hide carousel nav arrows */
 .front #sidebar-second {
   z-index: 1;
-} /* hide carousel nav arrows */
+} 
 #sidebar-second ul {
   list-style: square inside none;
   -webkit-margin-before: 1rem;
@@ -5066,18 +5115,6 @@ body.front .breadcrumb {
   } */
 }
 
-@media screen and (max-width: 650px) {
-  
-  .carousel .carousel-main-image.col-xs{
-    width:100%;
-  }
-
-  .carousel .carousel-main-content.col-xs{
-    width:100%;
-  }
-
-}
-
 @media screen and (max-width: 767px) {
 	
   .nav-justified>li.active::before {
@@ -5093,19 +5130,6 @@ body.front .breadcrumb {
   .shanti-filters .label {
     display: none;
   }		
-
-  .carousel-pause.btn.btn-sm span::before{ 
-	position:relative;
-	left:0.2rem;
-  }
-
-  .carousel .carousel-main-image{
-    width:100%;
-  }
-
-  .carousel .carousel-main-content{
-    width:100%;
-  }
 
 		/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
  
@@ -5386,19 +5410,6 @@ body.front .breadcrumb {
   .collections ul li {
     width: 15%;
     margin-left: 8%;
-  }
-
-  .carousel-pause.btn.btn-sm {
-    padding: 0.55rem 0.9rem !important;
-    width: 3.2rem;
-    height: 3rem;
-    font-size: 1em !important;
-    margin: 0 50%;
-  }
-
-  .carousel.carousel-fade .control-box-2 {
-    left: -1.7rem;
-    top: -1rem;
   }
 
 }
