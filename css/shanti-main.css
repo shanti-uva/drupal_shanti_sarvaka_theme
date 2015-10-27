@@ -5342,6 +5342,18 @@ body.front .breadcrumb {
   }
 }
 
+@media screen and (min-width: 650px) {
+  
+  .carousel .carousel-main-image{
+    width:50%;
+  }
+
+  .carousel .carousel-main-content{
+    width:50%;
+  }
+
+}
+
 @media screen and (min-width: 768px) {
 	 
   html body.admin-menu {
