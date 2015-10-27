@@ -3258,19 +3258,15 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel .carousel-main-image{
-    width: 30%;
+    width: 33%;
   }
 
   .carousel .carousel-main-content{
-    width: 69%;
+    width: 66%;
   }
 }
 
 @media (min-width:1100px) {
-
-  .carousel-description p {
-    height: 10em;
-  }
 
   .carousel-main-image img {
     max-height: 210px;
