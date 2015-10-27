@@ -3142,11 +3142,11 @@ a.btn,a.btn:hover,a.btn:active {
     height: 10em;
   }
 
-  .carousel .col-xs-5{
+  .carousel .col-xs-12{
     width:50%;
   }
 
-  .carousel .col-xs-5{
+  .carousel .col-xs-12{
     width:50%;
   }
 }
@@ -3165,11 +3165,11 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (min-width:750px) {
 
-  .carousel .col-xs-5{
+  .carousel .col-xs-12{
     width:45%;
   }
 
-  .carousel .ccol-xs-5{
+  .carousel .col-xs-12{
     width:54%;
   }
 
