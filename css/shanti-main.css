@@ -5344,11 +5344,11 @@ body.front .breadcrumb {
 
 @media screen and (min-width: 650px) {
   
-  .carousel .carousel-main-image{
+  .carousel .carousel-main-image.col-xs-12{
     width:50%;
   }
 
-  .carousel .carousel-main-content{
+  .carousel .carousel-main-content.col-xs-12{
     width:50%;
   }
 
