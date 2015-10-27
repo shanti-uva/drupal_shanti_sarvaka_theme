@@ -3075,11 +3075,6 @@ a.btn,a.btn:hover,a.btn:active {
   height: 2.3rem;
 }
 
-.carousel .col-xs-12 {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 .carousel-pause .glyphicon-pause::before {
   position: relative;
   left: 0.1rem;
@@ -3089,6 +3084,9 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-pause.btn.btn-sm:active {
   color: #fff !important;
 }
+
+
+
 
 .logged-in .carousel-description p {
   height: 11.5em;
@@ -3110,13 +3108,21 @@ a.btn,a.btn:hover,a.btn:active {
   max-height: 225px;
 }
 
-  .carousel .carousel-main-image{
-    width:100%;
-  }
 
-  .carousel .carousel-main-content{
-    width:100%;
-  }
+
+
+
+.carousel .carousel-main-image{
+  width:100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.carousel .carousel-main-content{
+  width:100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 /*-------------------------*/
 /***** BEGIN max-width *****/
@@ -3142,24 +3148,21 @@ a.btn,a.btn:hover,a.btn:active {
     height: 10em;
   }
 
-  .carousel .col-xs-12{
+  .carousel .carousel-main-image{
     width:50%;
   }
 
-  .carousel .col-xs-12{
+  .carousel .carousel-main-content{
     width:50%;
   }
 }
 
 @media (min-width:700px) {
   
-  .carousel .col-xs-12 {
+  .carousel .carousel-main-image,
+  .carousel .carousel-main-content {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .carousel-main-image {
-    min-width: 270px;
   }
 }
 
@@ -3169,7 +3172,7 @@ a.btn,a.btn:hover,a.btn:active {
     width:40%;
   }
 
-  .carousel .carousel-main-image{
+  .carousel .carousel-main-content{
     width:59%;
   }
 
@@ -3202,14 +3205,6 @@ a.btn,a.btn:hover,a.btn:active {
     left: 0rem;
   }
 
-  .logged-in .carousel-main-image {
-    max-width: 100%;
-  }
-
-  .logged-in .carousel-description p {
-    font-size: 1em;
-  }
-
   .carousel-pause.btn.btn-sm {
     padding: 0.55rem 0.9rem !important;
     width: 3.2rem;
@@ -3222,6 +3217,14 @@ a.btn,a.btn:hover,a.btn:active {
     left: -1.7rem;
     top: -1rem;
   }
+
+  .logged-in .carousel-main-image img {
+    max-width: 100%;
+  }
+
+  .logged-in .carousel-description p {
+    font-size: 1em;
+  } 
 }
 
 @media (min-width:850px) {
@@ -3233,31 +3236,31 @@ a.btn,a.btn:hover,a.btn:active {
     font-size: 1.56em;
   }
 
-  .carousel .col-sm-5{
+  .carousel .carousel-main-image{
     width:41.66666666666667%;
   }
 
-  .carousel .col-sm-7{
+  .carousel .carousel-main-content{
     width:58.333333333333336%;
   }
 
 }
 
 @media (min-width:992px) {
-  .carousel-main-image {
-    min-width: 290px;
-    max-width: 310px;
-  }
+
   .carousel-title {
     font-size: 1.63em;
   }
   .carousel-description p {
     height: 11.5em;
   }
-    /*.logged-in .carousel .col-md-8{ width:50%;}
-    .logged-in .carousel .col-md-4{ width:50%;}*/
-  .logged-in .carousel-description p {
-    height: 10em;
+
+  .carousel .carousel-main-image{
+    width:41.66666666666667%;
+  }
+
+  .carousel .carousel-main-content{
+    width:58.333333333333336%;
   }
 
   .logged-in .carousel-title {
@@ -3273,17 +3276,21 @@ a.btn,a.btn:hover,a.btn:active {
     max-height: 225px;
   }
 
-  .carousel .col-md-5{
-    width:41.66666666666667%;
-  }
-
-  .carousel .col-md-7{
-    width:58.333333333333336%;
+  .logged-in .carousel-description p {
+    height: 10em;
   }
   
 }
 
 @media (min-width:1100px) {
+
+  .carousel-description p {
+    height: 10em;
+  }
+
+  .carousel-main-image img {
+    max-height: 210px;
+  }
 
   .logged-in .carousel-title {
     font-size: 1.5em;
@@ -3293,31 +3300,23 @@ a.btn,a.btn:hover,a.btn:active {
     font-size: 80%;
     margin: -0.2em 0 .63em;
   }
-
-  .logged-in .carousel-description p {
-    height: 10em;
-  }
-
 }
 
 @media (min-width:1200px) {
-  .carousel-main-image {
-    min-width: 270px;
-  }
 
-  .logged-in .carousel .col-lg-9 {
-    width: 60%;
-  }
-
-  .logged-in .carousel .col-lg-3 {
+  .logged-in .carousel .carousel-main-image {
     width: 40%;
   }
 
-  .carousel .col-md-5{
+  .logged-in .carousel .carousel-main-content {
+    width: 60%;
+  }
+
+  .carousel .carousel-main-image{
     width:34%;
   }
 
-  .carousel .col-md-7{
+  .carousel .carousel-main-content{
     width:65%;
   }
 }
