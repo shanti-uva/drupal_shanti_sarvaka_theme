@@ -3114,6 +3114,16 @@ a.btn,a.btn:hover,a.btn:active {
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
+@media (max-width:599px) {
+  
+  .carousel-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 4rem;
+  }
+} 
+
 @media (max-width:767px) {
 
   .carousel-pause.btn.btn-sm span::before{ 
