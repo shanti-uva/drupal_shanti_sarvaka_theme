@@ -3169,6 +3169,17 @@ a.btn,a.btn:hover,a.btn:active {
   }
 }  
 
+@media (min-width: 675px) {
+
+  .carousel .carousel-main-image{
+    width:43%;
+  }
+
+  .carousel .carousel-main-content{
+    width:57%;
+  }
+}
+
 @media (min-width:700px) {
 
   .carousel .carousel-main-image,
