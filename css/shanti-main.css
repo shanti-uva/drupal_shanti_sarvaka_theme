@@ -3120,15 +3120,10 @@ a.btn,a.btn:hover,a.btn:active {
     height:9.5em;
   }
 
-  .carousel-pause .glyphicon-pause::before {
+  .carousel-pause .glyphicon::before {
     position: relative;
     left: 0.1rem;
   }
-
-   .carousel-pause .glyphicon-play::before {
-    position: relative;
-    left: 0rem;
-  } 
 } 
 
 
