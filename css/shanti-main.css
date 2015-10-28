@@ -3121,17 +3121,17 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (min-width:600px) {
 
+  .carousel-description p {
+    height: 11em;
+    font-size: 0.93em;
+  }
+
   .carousel .carousel-main-image,
   .carousel .carousel-main-content{
     width:50%;
   }
 
 @media (min-width:650px) {
- 
-  .carousel-description p {
-    height: 10em;
-    font-size: 0.93em;
-  }
 
   .carousel-description img {
     max-height: 210px;
@@ -3139,15 +3139,19 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 @media (min-width:700px) {
-  
-  .carousel-description p {
-    font-size: 1em;
-  }
 
   .carousel .carousel-main-image,
   .carousel .carousel-main-content {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .carousel .carousel-main-image{
+    width:43%;
+  }
+
+  .carousel .carousel-main-content{
+    width:57%;
   }
 }
 
@@ -3164,6 +3168,10 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-pause{
     position: relative;
     top: -1rem;
+  }
+
+  .carousel-description p {
+    font-size: 1em;
   }
 
   .carousel-main-image img {
