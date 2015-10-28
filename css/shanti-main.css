@@ -2926,7 +2926,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .carousel {
   margin-bottom: 0.25em;
-  padding: 1.56em 2.5em 0;
+  padding: 1.56em 2.5em 0 4.5rem;
   background: #fff;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175);
   border-collapse: separate;
@@ -3115,6 +3115,10 @@ a.btn,a.btn:hover,a.btn:active {
 /***** BEGIN max-width *****/
 /*-------------------------*/
 @media (max-width:599px) {
+
+  .carousel .carousel-main-image{
+    padding:0;
+  }
   
   .carousel-title,
   .carousel .byline{
@@ -3122,6 +3126,13 @@ a.btn,a.btn:hover,a.btn:active {
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 4rem;
+  }
+} 
+
+@media (max-width:699px) {
+
+  .carousel .carousel-main-image{
+    padding-left:1rem;
   }
 } 
 
@@ -3292,11 +3303,6 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-description p {
     height: 9em;
   }
-}
-
-@media (min-width:1200px) {
-
-
 }
 
 
