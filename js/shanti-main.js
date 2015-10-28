@@ -629,18 +629,18 @@
 	  }
 	};
 	
-	
+	/*
 	Drupal.behaviors.advancedToggleClassHeightChange = {
 		attach: function (context, settings) {
-	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
-	    $('.advanced-link').bind('click', function () { 
+	     --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
+	    $('.advanced-link').on('click', function () { 
 	      $('.view-wrap').toggleClass('short-wrap');
         $('.advanced-view').toggleClass('show-options');
         $('.advanced-view').slideToggle('fast');
 	    });
 	  }
 	};
-	
+	*/
 
   Drupal.behaviors.googleMapsButtonActiveArrow = {
     attach: function (context, settings) {
