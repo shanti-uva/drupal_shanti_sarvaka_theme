@@ -3136,7 +3136,6 @@ a.btn,a.btn:hover,a.btn:active {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-right: 4rem;
   }
 }
 
