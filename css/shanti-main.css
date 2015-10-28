@@ -2978,6 +2978,14 @@ a.btn,a.btn:hover,a.btn:active {
   font-style: italic;
 }
 
+.carousel-title,
+.carousel .byline{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 .carousel-description p {
   font-size: 0.93em;
   overflow: hidden;
@@ -3129,13 +3137,6 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-pause.btn.btn-sm span::before{ 
     position:relative;
     left:0.2rem;
-  }
-
-  .carousel-title,
-  .carousel .byline{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
 
