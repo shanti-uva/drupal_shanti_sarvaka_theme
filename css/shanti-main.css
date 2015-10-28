@@ -3119,34 +3119,6 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-description p{
     height:9.5em;
   }
-
-  .carousel-pause{
-    position: relative;
-    top: -1rem;
-  }
-
-  .carousel-pause .glyphicon-pause::before {
-    position: relative;
-    left: 0rem;
-  }
-
-  .carousel-pause.btn.btn-sm {
-    padding: 0.55rem 0.9rem !important;
-    width: 3.2rem;
-    height: 3rem;
-    font-size: 1em !important;
-    margin: 0 50%;
-  }
-
-  .carousel.carousel-fade .control-box-2 {
-    left: -1.7rem;
-    top: -1rem;
-  }
-
-  .carousel-pause.btn.btn-sm span::before{ 
-    position:relative;
-    left:0.2rem;
-  }
 } 
 
 @media (max-width:699px) {
@@ -3178,6 +3150,34 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-description p{
     font-size:0.93em;
   } 
+
+  .carousel-pause{
+    position: relative;
+    top: -1rem;
+  }
+
+  .carousel-pause .glyphicon-pause::before {
+    position: relative;
+    left: 0rem;
+  }
+
+  .carousel-pause.btn.btn-sm {
+    padding: 0.55rem 0.9rem !important;
+    width: 3.2rem;
+    height: 3rem;
+    font-size: 1em !important;
+    margin: 0 50%;
+  }
+
+  .carousel.carousel-fade .control-box-2 {
+    left: -1.7rem;
+    top: -1rem;
+  }
+
+  .carousel-pause.btn.btn-sm span::before{ 
+    position:relative;
+    left:0.2rem;
+  }
 }  
 
 @media (min-width:700px) {
