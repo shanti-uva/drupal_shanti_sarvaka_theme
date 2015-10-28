@@ -2969,9 +2969,9 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel-description p {
-  font-size: 1em;
+  font-size: 0.93em;
   overflow: hidden;
-  height: 14em;
+  height: 11em;
 }
 
 .carousel-main-content .go-to-link a {
@@ -3122,8 +3122,8 @@ a.btn,a.btn:hover,a.btn:active {
 @media (min-width:600px) {
 
   .carousel-description p {
-    height: 11em;
-    font-size: 0.93em;
+    /*height: 11em;
+    font-size: 0.93em;*/
   }
 
   .carousel .carousel-main-image,
@@ -3131,11 +3131,14 @@ a.btn,a.btn:hover,a.btn:active {
     width:50%;
   }
 
-@media (min-width:650px) {
-
   .carousel-description img {
     max-height: 210px;
-  }
+  }  
+}  
+
+@media (min-width:650px) {
+
+
 }
 
 @media (min-width:700px) {
