@@ -3282,7 +3282,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-description p {
-    height: 8.5em;
+    height: 9.5em;
   }
 
   .carousel-main-image img {
@@ -3300,9 +3300,6 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (min-width:1100px) {
 
-  .carousel-description p {
-    height: 9em;
-  }
 }
 
 
