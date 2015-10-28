@@ -2914,6 +2914,11 @@ a.btn,a.btn:hover,a.btn:active {
 /*------------------------*/
 /*----- BEGIN Carousel ---*/
 /*------------------------*/
+/* homepage intro summary above carousel */
+.front #block-system-main p { 
+  padding:0 2rem;
+}
+
 .carousel {
   margin-bottom: 0.25em;
   padding: 1.56em 2.5em 0;
@@ -4803,9 +4808,6 @@ form table td.label {
 
 /*-------------------------*/
 /* ------ BEGIN from kmaps */
-/* main layout for video page */
-
-
 /* Overview page styles in KMaps */
 .openlayermap {
   margin-bottom: 1rem;
