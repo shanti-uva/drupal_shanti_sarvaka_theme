@@ -5107,16 +5107,7 @@ body.front .breadcrumb {
   .nav-justified>li.active::before {
     border-color: transparent !important;
     color: transparent !important;
-  }
-
-  .shanti-filters table.pagerer {
-    font-size: 75%;
-    right: 0;
-  }
-
-  .shanti-filters .label {
-    display: none;
-  }		
+  }	
 
 		/* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
  
@@ -5134,6 +5125,7 @@ body.front .breadcrumb {
 }
 
 @media screen and (max-width: 830px) {
+  
 }
 
 @media screen and (max-width: 993px) {
