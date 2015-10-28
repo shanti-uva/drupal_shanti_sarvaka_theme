@@ -3124,6 +3124,11 @@ a.btn,a.btn:hover,a.btn:active {
     position: relative;
     left: 0.1rem;
   }
+
+   .carousel-pause .glyphicon-play::before {
+    position: relative;
+    left: 0rem;
+  } 
 } 
 
 
@@ -3148,6 +3153,11 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-pause{
     position: relative;
     top: -1rem;
+  }
+
+  .carousel-pause .glyphicon-pause::before {
+    position: relative;
+    left: 0rem;
   }
 
   .carousel-pause.btn.btn-sm {
