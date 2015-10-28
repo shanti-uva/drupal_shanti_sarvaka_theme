@@ -3157,14 +3157,6 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (min-width: 750px) {
 
-  .carousel .carousel-main-image{
-    width:41%;
-  }
-
-  .carousel .carousel-main-content{
-    width:59%;
-  }
-
   .carousel-pause{
     position: relative;
     top: -1rem;
