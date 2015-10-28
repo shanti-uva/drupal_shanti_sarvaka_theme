@@ -3123,6 +3123,9 @@ a.btn,a.btn:hover,a.btn:active {
 /*-------------------------*/
 @media (max-width:599px) {
 
+  .carousel-description p{
+    height:9.5em;
+  }
 } 
 
 @media (max-width:699px) {
