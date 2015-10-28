@@ -4986,7 +4986,7 @@ p.modal-title {
 /********************************/
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
-.no-sidebars .tab-pane.main-col > div, /* broad range need to watch */
+.tab-pane.main-col > div, /* broad range need to watch */
 .page-node-devel .tab-pane.main-col > div {
   max-width: 1050px !important;
   padding: 1.7rem 0 4rem;
