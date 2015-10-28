@@ -3097,6 +3097,10 @@ a.btn,a.btn:hover,a.btn:active {
   padding-right: 5px;
 }
 
+
+
+
+
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
@@ -3116,19 +3120,30 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 @media (min-width:600px) {
- 
-  .carousel-description p {
-    height: 10em;
-  }
 
   .carousel .carousel-main-image,
   .carousel .carousel-main-content{
     width:50%;
   }
+
+@media (min-width:650px) {
+ 
+  .carousel-description p {
+    height: 10em;
+    font-size:90%;
+  }
+
+  .carousel-description img {
+    max-height:210px;
+  }
 }
 
 @media (min-width:700px) {
   
+  .carousel-description p {
+    font-size:100%;
+  }
+
   .carousel .carousel-main-image,
   .carousel .carousel-main-content {
     padding-left: 15px;
