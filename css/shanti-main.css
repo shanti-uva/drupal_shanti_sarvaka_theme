@@ -2915,6 +2915,15 @@ a.btn,a.btn:hover,a.btn:active {
 /*----- BEGIN Carousel ---*/
 /*------------------------*/
 /* homepage intro summary above carousel */
+.carousel-header,
+.carousel-inner,
+.carousel-inner > .item,
+.front .block-system-main p, /* intro text above carousel */
+.front .main-col .block-views {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
 .front #block-system-main p { 
   padding:0 2rem;
 }
