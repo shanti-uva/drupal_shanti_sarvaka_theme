@@ -702,8 +702,8 @@
       if(context == window.document) {                
         $('.carousel-description p').each(function() { 
           var txt = $(this).text();
-          if ($(this).text().length > 500) { 
-            txt = txt.substr(0, 500);
+          if ($(this).text().length > 460) { 
+            txt = txt.substr(0, 460);
             txt = txt.substr(0, txt.lastIndexOf(' ')) + "..."; 
             $(this).text(txt);
           } 

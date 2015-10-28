@@ -1013,7 +1013,7 @@ function shanti_sarvaka_textfield($variables) {
  */
 function shanti_sarvaka_breadcrumb($variables) {
   global $base_url;
-	//dpm($variables);
+  //dpm($variables, 'in shanti sarvaka breadcrumb');
 
   $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
 	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') < 3 && strpos($breadcrumbs[0], t('Home')) > -1)  {
