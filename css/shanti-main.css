@@ -3173,6 +3173,7 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel .carousel-main-image{
     width:43%;
+    padding-left: 0.5rem;
   }
 
   .carousel .carousel-main-content{
