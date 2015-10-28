@@ -2985,7 +2985,6 @@ a.btn,a.btn:hover,a.btn:active {
   text-overflow: ellipsis;
 }
 
-
 .carousel-description p {
   font-size: 0.93em;
   overflow: hidden;
@@ -3000,13 +2999,7 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-main-content .go-to-link a:active {
   color: rgb(207, 47, 30);
 }
-/*
-.carousel-main-image,
-.carousel-main-image a,
-.carousel-main-image img {
-  float: right;
-}
-*/
+
 .carousel-main-image img {
   max-width: 100%;
   margin: 0.5rem auto;
@@ -3126,6 +3119,34 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-description p{
     height:9.5em;
   }
+
+  .carousel-pause{
+    position: relative;
+    top: -1rem;
+  }
+
+  .carousel-pause .glyphicon-pause::before {
+    position: relative;
+    left: 0rem;
+  }
+
+  .carousel-pause.btn.btn-sm {
+    padding: 0.55rem 0.9rem !important;
+    width: 3.2rem;
+    height: 3rem;
+    font-size: 1em !important;
+    margin: 0 50%;
+  }
+
+  .carousel.carousel-fade .control-box-2 {
+    left: -1.7rem;
+    top: -1rem;
+  }
+
+  .carousel-pause.btn.btn-sm span::before{ 
+    position:relative;
+    left:0.2rem;
+  }
 } 
 
 @media (max-width:699px) {
@@ -3137,25 +3158,13 @@ a.btn,a.btn:hover,a.btn:active {
 
 @media (max-width:767px) {
 
-  .carousel-pause.btn.btn-sm span::before{ 
-    position:relative;
-    left:0.2rem;
-  }
 }
 
 
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
-@media (min-width:480px) {
-}
-
 @media (min-width:600px) {
-
-  .carousel-description p {
-    /*height: 11em;
-    font-size: 0.93em;*/
-  }
 
   .carousel .carousel-main-image,
   .carousel .carousel-main-content{
@@ -3165,12 +3174,11 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-description img {
     max-height: 210px;
   }  
+
+  .carousel-description p{
+    font-size:0.93em;
+  } 
 }  
-
-@media (min-width:650px) {
-
-
-}
 
 @media (min-width:700px) {
 
@@ -3190,11 +3198,6 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 @media (min-width: 750px) {
-
-  .carousel-pause{
-    position: relative;
-    top: -1rem;
-  }
 
   .carousel-description p {
     font-size: 1em;
@@ -3217,24 +3220,6 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel-main-image img {
     margin-left: 0;
     max-height: 220px;
-  }
-
-  .carousel-pause .glyphicon-pause::before {
-    position: relative;
-    left: 0rem;
-  }
-
-  .carousel-pause.btn.btn-sm {
-    padding: 0.55rem 0.9rem !important;
-    width: 3.2rem;
-    height: 3rem;
-    font-size: 1em !important;
-    margin: 0 50%;
-  }
-
-  .carousel.carousel-fade .control-box-2 {
-    left: -1.7rem;
-    top: -1rem;
   } 
 }
 
