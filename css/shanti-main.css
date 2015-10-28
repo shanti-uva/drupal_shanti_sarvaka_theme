@@ -3132,7 +3132,10 @@ a.btn,a.btn:hover,a.btn:active {
 /*-------------------------*/
 @media (min-width:600px) {
 
-  .carousel .carousel-main-image,
+  .carousel .carousel-main-image{
+    width:50%;
+    padding-left:1rem;
+  }
   .carousel .carousel-main-content{
     width:50%;
   }
@@ -3173,7 +3176,6 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel .carousel-main-image{
     width:43%;
-    padding-left: 0.5rem;
   }
 
   .carousel .carousel-main-content{
