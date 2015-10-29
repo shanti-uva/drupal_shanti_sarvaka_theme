@@ -4147,7 +4147,7 @@ table tr.ok {
 }
 
 #block-system-main.block.block-system {
-  float: left;
+  /* float: left; removed mf8yk oct 29, 2015 */
   width: 100%;
 }
 
