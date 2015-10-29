@@ -261,6 +261,7 @@ object.flip_label {
   display: block;
   width: 100%;
   background: #f8f8f8;
+  float:left;
 }
 
 .input-section .input-group input.form-control {
