@@ -3383,16 +3383,15 @@ a.btn,a.btn:hover,a.btn:active {
 /*---scroll to top ---*/
 .back-to-top {
   position: fixed;
-  bottom: 5em;
-  right: 0.75rem;
+  bottom: 6rem;
+  right: 1rem;
   z-index: 1000;
-  height: 3.12em;
-  width: 3.12em;
+  height: 4rem;
+  width: 4rem;
   color: #aaa;
   background: #f0f0f0;
   filter: alpha(opacity=20);
   opacity: 0.2;
-  font-size: 1em;
   border-radius: 50%;
   border:1px solid #888;
   background-clip: padding-box;
@@ -3402,18 +3401,15 @@ a.btn,a.btn:hover,a.btn:active {
 
 .back-to-top:hover,
 .back-to-top:active {
-  /*color: #fff;*/
   background: #fff;
   filter: alpha(opacity=60);
   opacity: 0.6;
-  text-decoration: none;
   border-color:#aaa;
 }
 
 .back-to-top .fa {
   color: #444;
   font-size: 2em;
-  line-height: 1.38em;
   font-family: 'FontAwesome';
   font-weight: normal;
   margin: 0 auto;
@@ -3427,6 +3423,8 @@ a.btn,a.btn:hover,a.btn:active {
 
 .back-to-top .fa::before {
   content: '\f077';
+  position: relative;
+  top: .4rem;
 }
 
 
