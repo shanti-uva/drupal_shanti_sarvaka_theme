@@ -3787,6 +3787,10 @@ table.pagerer {
   text-transform: uppercase;
 }
 
+table.pagerer tbody{
+  border-top:none !important;
+}
+
 input.pagerer-page {
   border-radius: 2px;
   background-clip: padding-box;
@@ -3795,7 +3799,7 @@ input.pagerer-page {
   padding-top: 0.15rem !important;
   line-height: 1.5em !important;
   color: #6d7afc;
-  height: 1.25rem !important;
+  height: 1.75rem !important;
   width: 3rem !important;
   max-width: 3rem !important;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
