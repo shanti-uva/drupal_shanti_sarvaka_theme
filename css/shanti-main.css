@@ -3773,7 +3773,7 @@ a.btn,a.btn:hover,a.btn:active {
 li.pager-current.widget > form,
 li.pager-current.widget > form div,
 li.pager-current.widget > form input {
-  display: inline;
+  display: inline !important;
 }
 
 li.pager-current.widget > form input.form-control {
@@ -3792,17 +3792,21 @@ input.pagerer-page {
   background-clip: padding-box;
   border: none;
   font-size: 0.88em;
-  padding-top: 0.15rem;
-  line-height: 1.5em;
+  padding-top: 0.15rem !important;
+  line-height: 1.5em !important;
   color: #6d7afc;
+  height: 1.25rem !important;
   width: 3rem !important;
+  max-width: 3rem !important;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
   border-collapse: separate;
 }
 
-.pagerer-page:focus {
+input.pagerer-page:hover,
+input.pagerer-page:focus{ 
   background: #fff;
-  color: rgba(32, 132, 131, 0.71);
+  border: 1px solid #ccc;
+  color: #6d7afc;
 }
 
 .pager {
