@@ -2233,6 +2233,7 @@ ul.menu-main>li>a:first-child {
 /*--------------------------------*/
 /*----- BEGIN new from kmaps -----*/
 /*--------------------------------*/
+/*
 #photo-pagination {
   float: right;
   margin-right: 10px;
@@ -2265,6 +2266,7 @@ ul.menu-main>li>a:first-child {
   border-color: #DC3C47;
   color: white;
 }
+*/
 
 #tab-main .paginated-spin {
   float: left;
