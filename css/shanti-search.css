@@ -810,6 +810,11 @@ object.flip_label {
 .advanced-view .form-group.advanced-input {
   padding: 2px 5px 2px;
 } /*--- common input ---*/
+
+.advanced-view .form-group.advanced-input:last-of-type{
+  border-top:none;
+}
+
 .advanced-view .form-group.advanced-input .form-control {
   line-height: 27px;
   height: 27px;
