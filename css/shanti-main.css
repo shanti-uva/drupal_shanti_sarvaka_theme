@@ -3826,7 +3826,11 @@ input.pagerer-page:focus{
   font-weight: bold;
 }
 
-.pager li>a {
+.pager li .ajax-loading{
+  display: none !important;
+}
+
+.pager li > a {
   border: none;
   color: #aaa;
   padding: 2px 0;
