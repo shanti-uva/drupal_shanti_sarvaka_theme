@@ -3770,13 +3770,13 @@ a.btn,a.btn:hover,a.btn:active {
 
 
 /* from kmaps */
-li.pager-current.widget > form,
-li.pager-current.widget > form div,
-li.pager-current.widget > form input {
+li.pager-item.widget > form,
+li.pager-item.widget > form div,
+li.pager-item.widget > form input {
   display: inline !important;
 }
 
-li.pager-current.widget > form input.form-control {
+li.pager-item.widget > form input.form-control {
   width: 100px;
 }
 /* END from kmaps */
