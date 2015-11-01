@@ -712,6 +712,33 @@
     }
   };
 
+  Drupal.behaviors.shantiKmapsHideBreadcrumbsSubjects = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+
+        $(window).load(function() {
+          $(".front.page-subjects .page-title-text:contains('Subjects')").remove(".breadwrap");
+        }); 
+
+      }
+    } 
+  };
+
+
+  Drupal.behaviors.shantiKmapsHideBreadcrumbsEarth = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+
+        $(window).load(function() {
+          $(".page-places .breadcrumb a:contains('Earth')").parents("li").remove();
+        });
+
+      }
+    } 
+  };
+
+
+
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {
 //			if($(".openlayermap").length ) {
