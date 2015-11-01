@@ -1978,14 +1978,14 @@ ul.menu-main>li>a:first-child {
   background-clip: padding-box;
   list-style-type: none;
   z-index:1;
-  box-shadow: 0 3px 3px rgba(50,50,50,0.2750);
+  box-shadow: 0 5px 5px rgba(50,50,50,0.2750);
   border-collapse: separate;
   -webkit-transition: box-shadow 200ms ease;
   transition: box-shadow 200ms ease;
 }
 
 .shanti-thumbnail:hover {
-  box-shadow: 0 4px 7px rgba(0,0,0,0.2250);
+  box-shadow: 0 4px 7px rgba(0,0,0,0.3250);
 }
 
 .shanti-thumbnail:active {
@@ -3337,7 +3337,7 @@ a.btn,a.btn:hover,a.btn:active {
 /* play- pause button */
 .carousel.carousel-fade .control-box-2 {
   position: relative;
-  top: -.2rem;
+  top: 0.4rem;
   left: 0;
   width: 4rem;
   margin: 0 auto;
@@ -3923,7 +3923,7 @@ input.pagerer-page {
 }
 
 .pager li span {
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 .pager li>span {
