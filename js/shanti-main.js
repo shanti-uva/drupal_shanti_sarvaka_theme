@@ -718,9 +718,9 @@
       if(context == window.document) {
 
         $( window ).load(function() {
-          $(".front.page-subjects").find(".breadwrap").remove();
+          $(".front.page-subjects ol.breadcrumb").hide();
         });
-        
+
       }
     } 
   };
