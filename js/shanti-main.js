@@ -712,13 +712,12 @@
     }
   };
 
+/* 
   Drupal.behaviors.shantiKmapsHideBreadcrumbsSubjects = {
     attach: function (context, settings) {
       if(context == window.document) {
 
-        $(window).load(function() {
-          $(".front.page-subjects .page-title-text:contains('Subjects')").remove(".breadwrap");
-        }); 
+          $(".front.page-subjects").find(".breadwrap").remove();
 
       }
     } 
@@ -729,14 +728,14 @@
     attach: function (context, settings) {
       if(context == window.document) {
 
-        $(window).load(function() {
+        $(document).ready(function() {
           $(".page-places .breadcrumb a:contains('Earth')").parents("li").remove();
         });
 
       }
     } 
   };
-
+*/
 
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
