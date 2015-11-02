@@ -3339,7 +3339,7 @@ a.btn,a.btn:hover,a.btn:active {
 /* play- pause button */
 .carousel.carousel-fade .control-box-2 {
   position: relative;
-  top: 0.4rem;
+  top: 0;
   left: 0;
   width: 4rem;
   margin: 0 auto;
