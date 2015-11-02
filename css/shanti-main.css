@@ -1302,6 +1302,7 @@ body.front ol.breadcrumb {
   left: 50%;
   top: 100%;
   margin: -0.56em 0 0 -0.5em;
+  /* see subtheme for color */
 }
 
 .nav-justified>li.active>a,
@@ -1312,12 +1313,12 @@ body.front ol.breadcrumb {
 }
 /*--- Example: subtheme color ---*/
 .nav-justified>li.active>a {
- /*background:#32ccca !important;*/
+ /* background:#32ccca !important; see subtheme color */
 }
 
 .nav-justified>li.active::before {
- /*color:#32ccca !important;*/
-  border-color: transparent !important;
+ /* color:#32ccca !important; see subtheme color */
+  border-color: transparent !important; /* see subtheme color */
 }
 
 
