@@ -3818,7 +3818,7 @@ ul.pager {
  /*float:right;position:relative;top:0;right:0;*/
 }
 
-.pager li {
+ul.pager li {
   color: #555;
   padding: 0 1px;
   line-height: 1em;
@@ -3827,11 +3827,11 @@ ul.pager {
   font-weight: bold;
 }
 
-.pager li .ajax-loading{
+ul.pager li .ajax-loading{
   display: none !important;
 }
 
-.pager li > a {
+ul.pager li > a {
   border: none;
   color: #aaa;
   padding: 2px 0;
@@ -3844,30 +3844,30 @@ ul.pager {
   top: 0;
 }
 
-.pager li>a:hover,
-.pager li>a:active {
+ul.pager li>a:hover,
+ul.pager li>a:active {
   color: #333;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
   border-collapse: separate;
 }
 
-.pager li>a:active {
+ul.pager li>a:active {
   color: #000;
   box-shadow: none;
 }
 /* .pager li>a .icon{ color:#999; position:relative; top: 0;} */
-.pager li>a:hover .icon,
-.pager li>a:active .icon {
+ul.pager li>a:hover .icon,
+ul.pager li>a:active .icon {
   color: #444;
 }
 
-.pager .pager-first>a, 
-.pager .pager-last>a {
+ul.pager .pager-first>a, 
+ul.pager .pager-last>a {
   padding: 1px 0 4px;
 }
 
-.pager .pager-first span,
-.pager .pager-last span {
+ul.pager .pager-first span,
+ul.pager .pager-last span {
   position: relative;
   top: 0.15rem !important;
 }
@@ -3899,7 +3899,7 @@ ul.pager {
   content: '\e63e';
 }
 
-.pager .icon::before {
+ul.pager .icon::before {
   position: relative;
   top: 0.1rem;
 }
@@ -3936,13 +3936,17 @@ ul.pager {
   color: #222;
 }
 
-.pager li span {
+ul.pager li span {
   padding: 0 8px;
 }
 
-.pager li>span {
+ul.pager li>span {
   border: none;
   border-radius: 0;
+}
+
+ul.pager li .ajax-throbber{
+  display: none !important;
 }
 /*----------------------*/
 /*----- END paging -----*/
