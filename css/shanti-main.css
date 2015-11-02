@@ -2928,8 +2928,8 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel {
-  margin-bottom: 0.25em;
-  padding: 1.56em 2.5em 0 4.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1.8rem 2.5em .2rem;
   background: #fff;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175);
   border-collapse: separate;
