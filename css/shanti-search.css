@@ -811,7 +811,7 @@ object.flip_label {
   padding: 2px 5px 2px;
 } /*--- common input ---*/
 
-.advanced-view .form-group.advanced-input:last-of-type{
+.advanced-view > .form-group:last-of-type .form-group{
   border-top:none;
 }
 
