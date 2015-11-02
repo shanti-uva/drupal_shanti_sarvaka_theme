@@ -3,24 +3,24 @@
 /*----------------------------------------------*/
 
 /*--- clear default extruder styles -----*/
-.extruder, .extruder.right,.extruder .extruder-content, .extruder.right .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover {
+.extruder, .extruder,.extruder .extruder-content, .extruder .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover {
   overflow: visible;
   background-image: none;
   background: transparent;
 }
 
-.extruder.open .extruder-content, .extruder.right.open .extruder-content,.extruder.right .flap,.extruder .voice,.extruder.right .text,.optionsPanel .panelVoice a {
+.extruder.open .extruder-content, .extruder.open .extruder-content,.extruder .flap,.extruder .voice,.extruder .text,.optionsPanel .panelVoice a {
   box-shadow: none;
   text-transform: none;
 }
 
-.extruder.right .extruder-content,.panel-default .panel-heading,.extruder.right .panel-heading,.extruder.right .panel-group,.extruder.right .panel-group .panel,.extruder.right .panel-default>.panel-heading {
+.extruder .extruder-content,.panel-default .panel-heading,.extruder .panel-heading,.extruder .panel-group,.extruder .panel-group .panel,.extruder .panel-default>.panel-heading {
   border: none;
 }
 
 /*--------------------------*/
 /*--- panel ---*/
-.extruder.right {
+.extruder {
   padding: 0;
   border: none;
   background: transparent !important;
@@ -32,7 +32,7 @@
   padding: 0;
 }
 
-.extruder.right .extruder-content {
+.extruder .extruder-content {
  /*overflow:visible !important;*/
   background: transparent !important;
   border: none;
@@ -43,7 +43,7 @@
  /* fix for ie9 shadow */
 }
 
-.extruder.right.isOpened .extruder-content {
+.extruder.isOpened .extruder-content {
   border-right-width: 12px;
   background: transparent !important;
 }
@@ -57,15 +57,15 @@
  /*---- default panel container width is set ----*/
 }
 
-.extruder.right .flap,
-.extruder.right.isOpened .flap,
-.extruder.right .flap .flapLabel,
-.extruder.right .flap.on-flap .flapLabel,
-.extruder.right.isOpened .flap.on-flap .flapLabel,
-.extruder.right .flap>span,
-.extruder.right .flap.on-flap>span,
-.extruder.right .flap.on-hover>span,
-.extruder.right .flap.on-hover.on-flap>span {
+.extruder .flap,
+.extruder.isOpened .flap,
+.extruder .flap .flapLabel,
+.extruder .flap.on-flap .flapLabel,
+.extruder.isOpened .flap.on-flap .flapLabel,
+.extruder .flap>span,
+.extruder .flap.on-flap>span,
+.extruder .flap.on-hover>span,
+.extruder .flap.on-hover.on-flap>span {
   width: 0;
   padding: 0;
   border: none;
@@ -76,7 +76,7 @@ object.flip_label {
   display: none;
 }
 
-.extruder.right.open-collections {
+.extruder.open-collections {
   margin-top: 280px;
 }
 
@@ -105,7 +105,7 @@ object.flip_label {
   top: 0;
 }
 
-#search-flyout.extruder.right {
+#search-flyout.extruder {
   margin-top: 7px;
   position: absolute;
   z-index: 10100;
@@ -116,7 +116,7 @@ object.flip_label {
   padding: 0;
 }
 
-#search-flyout.extruder.right .extruder-content {
+#search-flyout.extruder .extruder-content {
   background: transparent !important;
  /*overflow:visible !important;*/
   border: 7px solid #fff;
@@ -127,7 +127,7 @@ object.flip_label {
   border-collapse: separate;
 }
 
-#search-flyout.extruder.right.isOpened .extruder-content {
+#search-flyout.extruder.isOpened .extruder-content {
   border-right-width: 12px;
 }
 
@@ -140,7 +140,7 @@ object.flip_label {
 }
 
 /*--- big search button inline styles are loaded via main.js with icon markup  */
-#search-flyout.extruder.right .flap {
+#search-flyout.extruder .flap {
   background: #fff;
   height: 53px;
   width: 45px;
@@ -154,12 +154,12 @@ object.flip_label {
   border-collapse: separate;
 }
 
-#search-flyout.extruder.right .flap.on-flap {
+#search-flyout.extruder .flap.on-flap {
   border-collapse: separate;
 }
 
-#search-flyout.extruder.right .flap .flapLabel,
-#search-flyout.extruder.right .flap.on-flap .flapLabel {
+#search-flyout.extruder .flap .flapLabel,
+#search-flyout.extruder .flap.on-flap .flapLabel {
   background: #505050;
   height: 39px;
   width: 37px !important;
@@ -171,31 +171,31 @@ object.flip_label {
   border-collapse: separate;
 }
 
-#search-flyout.extruder.right.isOpened .flap {
+#search-flyout.extruder.isOpened .flap {
   width: 48px;
   margin: 0 0 0 -8px;
 }
 
-#search-flyout.extruder.right.isOpened .flap.on-flap .flapLabel {
+#search-flyout.extruder.isOpened .flap.on-flap .flapLabel {
   width: 30px !important;
 }/* on-flap is opened state */
 /*----- css for the flap is inserted inline, see js/main ---*/
-#search-flyout.extruder.right .flap>span,
-#search-flyout.extruder.right .flap.on-flap>span {
+#search-flyout.extruder .flap>span,
+#search-flyout.extruder .flap.on-flap>span {
   color: #ccc;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
-#search-flyout.extruder.right .flap.on-hover>span,
-#search-flyout.extruder.right .flap.on-hover.on-flap>span {
+#search-flyout.extruder .flap.on-hover>span,
+#search-flyout.extruder .flap.on-hover.on-flap>span {
   color: #fff;
   background: #444;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
-#search-flyout.extruder.right .flap>span .icon {
+#search-flyout.extruder .flap>span .icon {
   font-size: 2.38rem;
   position: absolute;
   left: 16px;
@@ -203,34 +203,34 @@ object.flip_label {
   z-index: 10;
 }
 
-#search-flyout.extruder.right.isOpened .flap.on-flap>span .icon {
+#search-flyout.extruder.isOpened .flap.on-flap>span .icon {
   color: #888;
   font-size: 3.12rem;
   left: 13px;
   top: 11px;
 }
 
-#search-flyout.extruder.right.isOpened .flap.on-hover>span .icon,
-#search-flyout.extruder.right.isOpened .flap.on-hover.on-flap>span .icon {
+#search-flyout.extruder.isOpened .flap.on-hover>span .icon,
+#search-flyout.extruder.isOpened .flap.on-hover.on-flap>span .icon {
   color: #fff;
   background: #444;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
-#search-flyout.extruder.right.isOpened .flap.on-flap>span .icon.shanticon-search::before {
+#search-flyout.extruder.isOpened .flap.on-flap>span .icon.shanticon-search::before {
   content: '\e610';
 }
 
 /* -- main menu no longer used 
-#menu-main.extruder.right{ margin-top:39px; color:#888 !important;}
-#menu-main.extruder.right .extruder-content{ background:transparent !important; color:#888 !important; overflow:visible !important; box-shadow:none !important; }
-#menu-main.extruder.right.isOpened .extruder-content{ color:#888 !important;}
+#menu-main.extruder{ margin-top:39px; color:#888 !important;}
+#menu-main.extruder .extruder-content{ background:transparent !important; color:#888 !important; overflow:visible !important; box-shadow:none !important; }
+#menu-main.extruder.isOpened .extruder-content{ color:#888 !important;}
 #menu-main.extruder .text{ color:#888 !important;}
 
-#menu-collections.extruder.right{ margin-top:39px; color:#888 !important;}
-#menu-collections.extruder.right .extruder-content{ color:#888 !important; background:transparent !important; overflow:visible !important; box-shadow:none !important; }
-#menu-collections.extruder.right.isOpened .extruder-content{ color:#fff !important;}
+#menu-collections.extruder{ margin-top:39px; color:#888 !important;}
+#menu-collections.extruder .extruder-content{ color:#888 !important; background:transparent !important; overflow:visible !important; box-shadow:none !important; }
+#menu-collections.extruder.isOpened .extruder-content{ color:#fff !important;}
 #menu-collections.extruder .text{ color:#888 !important;}
 */
 /*----------------------------------------------*/

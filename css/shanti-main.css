@@ -3798,7 +3798,7 @@ input.pagerer-page {
   font-size: 0.88em;
   line-height: 1em !important;
   color: #6d7afc;
-  height: 20px !important;
+  height: 18px !important;
   width: 3rem !important;
   max-width: 3rem !important;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
@@ -5141,9 +5141,6 @@ body.front .breadcrumb {
   .shanti-thumbnail {
     max-width: 220px;
   }
-  /* .shanti-filters table.pagerer {
-    margin-left:2rem;
-  } */
 }
 
 @media screen and (max-width: 767px) {
