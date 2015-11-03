@@ -511,7 +511,7 @@
     }
   };
 
-
+/*
   Drupal.behaviors.kmapsExplorer = {
     attach: function (context, settings) {
       var $selected_li = $('#carousel-feature-slides > li');
@@ -545,7 +545,7 @@
 
     }
   };
-
+*/
 
    Drupal.behaviors.shantiSarvakaKalturaLoading = {
     attach: function (context, settings) {
