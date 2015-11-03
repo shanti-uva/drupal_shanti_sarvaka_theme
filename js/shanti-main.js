@@ -718,7 +718,7 @@
       if(context == window.document) {
 
         $( window ).load(function() {
-          $(".front.page-subjects ol.breadcrumb").hide();
+          $(".front.page-subjects .breadwrap").remove();
         });
 
       }
