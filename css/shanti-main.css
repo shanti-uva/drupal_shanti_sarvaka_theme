@@ -1322,8 +1322,9 @@ body.front ol.breadcrumb {
 }
 
 
-/*----- BEGIN responsive navigations ----*/
-/*---- top-menu wrapper ----*/
+/*---------------------------------*/
+/* BEGIN top-right menu navigation */
+/*---------------------------------*/
 .menu-main {
   border-top: 1px solid #ddd;
   width: 250px;
@@ -1571,201 +1572,12 @@ body.front ol.breadcrumb {
 }
 /***** END main-menu *****/
 
-
-/***** BEGIN Menu Accordion for small mobile *****/
-.menu-accordion.extruder .text {
-  background: transparent;
-  color: #aaa;
-  width: 280px !important;
- /*--- width setting here and in js ---*/
-  text-shadow: none;
-  padding: 0;
-  border: none;
-  overflow: visible !important;
-}
-
-.menu-accordion.extruder.right {
-  margin-top: 50px;
-}
-
-.menu-accordion.extruder.right,
-.menu-accordion.extruder.right.isOpened {
-  position: absolute;
-  z-index: 20000 !important;
-} /* mobile menu accordion temp */
-.menu-accordion.extruder.right .flap.on-flap {
-  display: none;
-}
-
-.menu-accordion ul {
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
-  background-image: none;
-  background: #333;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.menu-accordion ul li,
-.menu-accordion ul a {
-  display: block;
-}
-
-.menu-accordion ul a {
-  padding: 10px 30px 10px 20px;
-  color: #aaa;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
-  border-collapse: separate;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-}
-
-.menu-accordion ul a:hover,
-.menu-accordion ul a:active {
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu-accordion ul ul a {
-  padding: 10px 15px 10px 25px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.menu-accordion ul ul a:hover,
-.menu-accordion ul ul a:active {
-  background: rgba(255, 255, 255, 0.12);
-}
-
-.menu-preferences ul li ul {
-  border: 8px solid #555;
-  border-width: 12px 0 5px 0;
-}
-
-.menu-preferences ul li:last-child ul {
-  border: 8px solid #555;
-  border-width: 8px 0 0 0;
-}
-
-ul.menu-main {
-  box-shadow: -2px 3px 4px rgba(0,0,0,0.175);
-  border-collapse: separate;
-  overflow: visible !important;
-}
-
-ul.menu-main ul li ul li a {
-  padding-left: 45px;
-  background: #525252;
-}
-
-ul.menu-main li.form-group {
-  font-size: 0.88em;
-  line-height: 1.44em;
-  height: 2.12em;
-  padding: 0 0 0 30px;
-  margin: 0;
-  display: block;
-  background: #555;
-}
-
-ul.menu-main li.bottom-trim {
-  height: 12px;
-  line-height: 12px;
-  background: #333;
-  border-top: 1px solid #505050;
-}
-
-ul.menu-main li.form-group label {
-  font-size: 1.06em;
-  color: #aaa;
-  margin-left: 20px;
-}
-
-ul.menu-main li.form-group label:hover {
-  color: #eee;
-}
-
-ul.menu-main li.form-group .radio-inline {
-  padding: 0;
-  display: block;
-  line-height: 1.63em;
-  height: 2em;
-}
-
-ul.menu-main li.form-group .radio-inline>div {
-  position: relative;
-  top: -2px;
-  right: 7px;
-  font-size: .88em;
-} /* graphic replacement */
-ul.menu-main .arrow {
-  float: right;
-}
-
-ul.menu-main > li a .fa.arrow {
-  font-size: 1.5em;
-  position: relative;
-  right: -15px;
-  top: 0;
-}
-
-ul.menu-main .fa.arrow::before {
-  content: '\f104';
-}
-
-ul.menu-main .active > a > .fa.arrow::before {
-  content: '\f107';
-}
-
-ul.menu-main .plus-times {
-  float: right;
-  position: relative;
-  top: 3px;
-  right: 15px;
-}
-
-ul.menu-main .fa.plus-times::before {
-  content: '\f067';
-}
-
-ul.menu-main .active > a > .fa.plus-times {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-}
-
-ul.menu-main .plus-minus {
-  float: right;
-}
-
-ul.menu-main .fa.plus-minus::before {
-  content: '\f067';
-}
-
-ul.menu-main .active > a > .fa.plus-minus::before {
-  content: '\f068';
-}
-
-ul.menu-main li a .icon {
-  margin-right: 12px;
-  font-size: 1.25em;
-  position: relative;
-  top: 2px;
-}
-
-ul.menu-main>li>a:first-child {
-  font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
-  font-weight: normal;
-  font-style: italic;
-  font-size: 1.38em;
-  line-height: 1.5em;
-  height: 2.44em;
-}
-/***** END Menu Accordion for small mobile *****/
-
 /*----------------------------*/
 /*----- END NAVIGATION -------*/
 /*----------------------------*/
+
+
+
 
 
 /*----------------------------*/
