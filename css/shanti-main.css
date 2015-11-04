@@ -86,7 +86,9 @@ mark {
   padding: 0;
 }
 
-input.form-text,input.form-control,textarea.form-textarea {
+input.form-text,
+input.form-control,
+textarea.form-textarea {
   color: #777;
   border: 1px solid #ccc;
   border-radius: 1.5em;
@@ -94,8 +96,8 @@ input.form-text,input.form-control,textarea.form-textarea {
   font-size: .9em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   height: 2em;
-  line-height: 1.5em;
-  padding: .25em 1em 0;
+  line-height: 1.32em;
+  padding: 0 1em;
   max-width: 35em;
   overflow: auto;
   box-shadow: 0 2px 5px #eee inset;
@@ -116,12 +118,14 @@ textarea.form-textarea {
   background-clip: padding-box;
 }
 
-input.form-control:hover,textarea.form-textarea:hover {
+input.form-control:hover,
+textarea.form-textarea:hover {
   background: #f9f9f9;
   border: 1px solid #c0c0c0;
 }
 
-input.form-control:focus,textarea.form-textarea:focus {
+input.form-control:focus,
+textarea.form-textarea:focus {
   background: #fff;
   border: 1px solid #9097d3;
   box-shadow: 0 0 4px #949bd8;
@@ -3608,7 +3612,7 @@ input.pagerer-page {
   border-radius: 2px;
   background-clip: padding-box;
   border: none;
-  font-size: 0.88em;
+  font-size: 0.93em;
   line-height: 1em !important;
   color: #6d7afc;
   height: 18px !important;
