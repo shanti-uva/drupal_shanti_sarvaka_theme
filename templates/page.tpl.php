@@ -117,7 +117,6 @@
 
 		  <!-- Search Flyout -->
 		  <?php if(!empty($page['search_flyout'])): ?>
-		      <!--print render($page['search_flyout']); -->
 				<div id="search-flyout" class="region extruder right" role="search" style="display: none;">
 				   <?php print render($page['search_flyout']); ?>
 				</div>
