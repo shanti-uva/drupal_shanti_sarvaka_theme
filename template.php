@@ -1234,7 +1234,7 @@ function _shanti_sarvaka_add_metatags() {
 			'tag' => 'link',
 			'rel' => 'icon',
 			'type' => 'image/png',
-			'href' => '/favicon-194x194.png"',
+			'href' => '/favicon-194x194.png',
 	    'sizes' => '194x194',
 		),
 		array(
