@@ -4,7 +4,7 @@
    <header class="header-banner">
     <div class="navbar navbar-default">
 
-	      <nav class="navbar-buttons" role="navigation">
+	      <nav class="navbar-buttons">
 	        <span class="menu-icon menu-toggle"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
 	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
 	      </nav>
@@ -23,7 +23,7 @@
 	      </h1>
 
 	      <!-- HEADER REGION -->
-	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop" role="navigation"> <!-- desktop display > 768 -->
+	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
 	         <form class="form">
 	         <fieldset>
 	          <ul class="nav navbar-nav navbar-right">
@@ -56,7 +56,7 @@
             		print ($title == '')? $variables['default_title']:$title;
             	}
               ?></span></h1>
-              <nav class="breadwrap" role="navigation" style="display:none;">
+              <nav class="breadwrap" style="display:none;">
                 <?php print theme('breadcrumb', array('breadcrumb' => $breadcrumb)); ?>
               </nav>
               <div class="banner-content">
@@ -127,7 +127,7 @@
 
   <!-- LOAD menus -->
   <section id="menu" class="menu-main" style="display:none;">
-    <nav id="menu-drill" role="navigation">
+    <nav id="menu-drill">
      <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->
