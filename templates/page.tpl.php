@@ -85,7 +85,7 @@
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="content-section col-xs-12<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
+          <section class="content-section<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
 		        <button type="button" class="btn btn-default view-resources" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>

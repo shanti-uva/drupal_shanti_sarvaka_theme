@@ -453,6 +453,7 @@ a:hover,a:active {
 .menu-icon a:hover,
 .menu-icon a:active {
   background: #fff;
+  border:none;
 }
 
 .navbar-default h1 .icon {
