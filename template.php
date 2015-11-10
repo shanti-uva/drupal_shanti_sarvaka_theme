@@ -1376,7 +1376,7 @@ function shanti_sarvaka_transcripts_ui_play_tcu($vars) {
 }
 function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
         $form['search']['input']['buttons']['go']['#attributes']['class'][] = 'searchbutton';
-        $form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'> </span><span class="icon fa-spinner"> </span>";
+        $form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'> </span><span class='icon fa-spinner'> </span>";
         $form['search']['input']['buttons']['go']['#find'] = 'btn-primary';
         $form['search']['input']['buttons']['go']['#replace'] = 'btn-default';
         $form['search']['input']['buttons']['go']['#post_render'][] = 'shanti_sarvaka_find_replace';
