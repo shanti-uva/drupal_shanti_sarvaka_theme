@@ -95,7 +95,7 @@ textarea.form-textarea {
   background-clip: padding-box;
   font-size: .9em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  height: 2em;
+  height: 2.2em;
   line-height: 1.32em;
   padding: 0 1em;
   max-width: 35em;
@@ -1185,6 +1185,11 @@ body.front ol.breadcrumb {
 
 /***** Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section audio-video */
+
+.vertical-tabs fieldset.vertical-tabs-pane{
+  padding:1rem;
+}
+
 .vertical-tab-button a,
 .vertical-tab-button.selected a {
   border-bottom: none;
@@ -1696,7 +1701,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button {
   background: #111;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #333;
   font-size: 0.88em;
   height: 2.5em;
   padding: 0 0 0 1.3rem;
