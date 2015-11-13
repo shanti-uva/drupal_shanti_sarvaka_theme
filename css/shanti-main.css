@@ -2732,6 +2732,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .btn.field-add-more-submit {
   margin-left: 1em;
+  font-size: 0.88em;
 }
 
 
@@ -3543,7 +3544,7 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .bootstrap-select.btn-group .btn .filter-option {
-  font-size: 1em;
+  font-size: 1.12em;
 }
 
 .bootstrap-select.btn-group .btn .filter-option .icon,
