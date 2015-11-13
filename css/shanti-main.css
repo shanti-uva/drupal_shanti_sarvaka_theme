@@ -2329,10 +2329,10 @@ html input[type=file].form-file {
   border-radius: .25em;
   background-clip: padding-box;
   color: #eee;
-  padding: .75em 2em .62em;
+  padding: .65em 2em .52em;
   margin: .75em;
   line-height: 2em;
-  font-size: .68em;
+  font-size: .83em;
   letter-spacing: .06em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
