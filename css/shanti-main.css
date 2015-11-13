@@ -4573,11 +4573,12 @@ form table td.label {
   text-decoration:underline;
 }
 
-.region-admin-footer .block {
+.region-admin-footer > .block {
   display: inline-block;
   padding: 0 1rem;
   border-right: thin solid #555;
   vertical-align: top;
+  min-height: 120px;
 }
 
 .region-admin-footer .block.block-user {
