@@ -3412,6 +3412,10 @@ a.btn,a.btn:hover,a.btn:active {
   overflow: hidden;
 }
 
+.bootstrap-select.btn-group .dropdown-menu li>a.opt{
+  padding-left: 2rem;
+}
+
 .main-content .bootstrap-select.btn-group {
   margin-top: 0.25rem;
   margin-bottom: 0;
@@ -4437,19 +4441,11 @@ form table td.label {
   padding: 1rem 2rem .3rem 1rem;
 }
 
-#sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt {
-  padding-left: 1.1rem;
-}
-
 #sidebar-second .bootstrap-select.form-control .selectpicker {
   width: 100% !important;
 }
 
 /**** END Sidebars ****/
-
-
-
-
 
 
 
