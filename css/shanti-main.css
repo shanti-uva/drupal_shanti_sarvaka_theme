@@ -3434,12 +3434,12 @@ a.btn,a.btn:hover,a.btn:active {
 
 .main-content .selectpicker .caret::before {
   color: #5b68ce;
-  font-size: 1.62em;
+  font-size: 1.88em;
   font-family: 'shanticon';
   content: '\e609';
   position: absolute;
-  top: -0.62em;
-  right: -0.3rem;
+  top: -0.56em;
+  right: -0.5rem;
  /* adjusted position for Video Edit page edits */
 }
 
@@ -4622,6 +4622,8 @@ form table td.label {
 
 .admin-menu .content table td {
   background: transparent;
+  padding-bottom:1.5rem;
+  padding-top: 1rem;
 }
 
 

@@ -718,7 +718,9 @@
       if(context == window.document) {
 
         $( window ).load(function() {
-          $(".front.page-subjects .breadwrap").remove();
+          if($(".front.page-subjects").length ) { 
+               $(this).find(".breadwrap").remove();
+          }
         });
 
       }
