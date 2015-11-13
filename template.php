@@ -1382,7 +1382,7 @@ function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_sta
         $form['search']['input']['buttons']['go']['#replace'] = 'btn-default';
         $form['search']['input']['buttons']['go']['#post_render'][] = 'shanti_sarvaka_find_replace';
 
-        $form['search']['input']['buttons']['reset']['#inner'] = "<span class='icon spinner'><span class='icon-spin icon-refresh'></span></span>";
+        $form['search']['input']['buttons']['reset']['#inner'] = "<span class='icon'></span>";
         $form['search']['input']['buttons']['reset']['#find'] = 'btn-primary';
         $form['search']['input']['buttons']['reset']['#replace'] = 'searchreset';
         $form['search']['input']['buttons']['reset']['#post_render'][] = 'shanti_sarvaka_find_replace';
