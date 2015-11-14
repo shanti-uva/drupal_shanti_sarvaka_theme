@@ -139,14 +139,11 @@ fieldset.form-wrapper {
 fieldset.form-wrapper legend {
   border-bottom-width: 0.2rem;
   color: #444;
-  margin-top: 1.25em;
   margin-bottom: 0.8rem !important;
-  font-size:1.32em;
-}
-
-fieldset.form-wrapper legend .fieldset-legend {
-  font-size: 0.88em;
+  font-size: 1.18em;
   margin-top: 1em;
+  font-weight: bold;
+  line-height: 3.5rem;
 }
 
 article ul,
