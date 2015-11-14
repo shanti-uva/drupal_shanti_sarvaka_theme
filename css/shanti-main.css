@@ -3439,7 +3439,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .main-content .selectpicker .caret::before {
   color: #5b68ce;
-  font-size: 1.88em;
+  font-size: 1.75em;
   font-family: 'shanticon';
   content: '\e609';
   position: absolute;
@@ -3544,7 +3544,7 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .bootstrap-select.btn-group .btn .filter-option {
-  font-size: 1em;
+  font-size: 0.93em;
 }
 
 .bootstrap-select.btn-group .btn .filter-option .icon,
