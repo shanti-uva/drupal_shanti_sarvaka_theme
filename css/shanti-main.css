@@ -134,6 +134,11 @@ textarea.form-textarea:focus {
 
 fieldset.form-wrapper {
   margin-bottom: 1em;
+  border:none;
+}
+
+fieldset.form-wrapper .f-set{
+  /*border:none; - this is used in audio-video for node-video admin edit page */
 }
 
 fieldset.form-wrapper legend {
