@@ -142,6 +142,7 @@ fieldset.form-wrapper legend {
   margin-bottom: 0.8rem !important;
   font-size: 1.18em;
   margin-top: 1em;
+  margin-left: 2rem;
   font-weight: bold;
   line-height: 3.5rem;
 }
