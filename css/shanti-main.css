@@ -4922,12 +4922,12 @@ body.front .breadcrumb {
   color: #555;
   background-color: transparent;
 }
-
+/*
 .selected-kmap::after{
   content: ',';
   font-size:1.5em;
 }
-
+*/
 .selected-kmap .shanticon-close2:before{
   color: #888;
   position: relative;
