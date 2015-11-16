@@ -4942,9 +4942,8 @@ body.front .breadcrumb {
 
 .selected-kmap .shanticon-close2:before{
   color: #888;
-  top: 0.15rem;
   position: relative;
-  margin-right: 0.5rem;
+  top: 0.15rem;
   font-size: 1.12em;
   cursor:pointer;
 }
