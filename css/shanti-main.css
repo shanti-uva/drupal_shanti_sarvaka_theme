@@ -77,6 +77,7 @@ label {
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   text-transform: uppercase;
   margin: 0 0 0 1rem;
+  display:block;
 }
 
 mark {
