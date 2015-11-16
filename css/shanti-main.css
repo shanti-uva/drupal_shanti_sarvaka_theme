@@ -2731,11 +2731,7 @@ a.btn,a.btn:hover,a.btn:active {
 /*----- END Buttons -----*/
 /*-------------------------*/
 
-.btn.field-add-more-submit {
-  margin-left: 1em;
-  font-size: 0.75em;
-  padding: .4em 1.5em .3em;
-}
+
 
 
 
@@ -4912,14 +4908,6 @@ body.front .breadcrumb {
 
 
 
-
-
-
-
-
-
-
-
 /* search-labels used for transcript edit admin */
 .selected-kmap{
   color: #555;
@@ -4934,12 +4922,12 @@ body.front .breadcrumb {
   color: #555;
   background-color: transparent;
 }
-
+/*
 .selected-kmap::after{
   content: ',';
   font-size:1.5em;
 }
-
+*/
 .selected-kmap .shanticon-close2:before{
   color: #888;
   position: relative;
@@ -4953,15 +4941,21 @@ body.front .breadcrumb {
 }
 
 
-fieldset.form-wrapper .f-set{
-  /*border:none; - this is used in audio-video for node-video admin edit page */
+
+/* add more row fields */
+.btn.field-add-more-submit {
+  margin-left: 1em;
+  font-size: 0.82em;
+  padding: .1em 1.5em .3em;
 }
 
-
-
-
-
-
+.btn.field-add-more-submit > span::before{
+  content: '+';
+  font-size: 2em;
+  position: relative;
+  top: 0.2rem;
+  left: -0.6rem;
+}
 
 
 /*------------------------------*/
