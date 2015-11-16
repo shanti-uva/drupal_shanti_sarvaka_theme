@@ -1413,3 +1413,16 @@ function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_sta
 function shanti_sarvaka_find_replace($markup, $element) {
         return str_replace($element['#find'], $element['#replace'], $markup);
 }
+function shanti_sarvaka_transcripts_editor_tcu_gear($vars)
+{
+    $sid = $vars['element']['#sid'];
+    $out  = "<button class='btn btn-default dropdown-toggle dropdown-menu-right' data-toggle='dropdown' type='button' id='transcript-segop-$sid'>";
+    $out .= "<span class='icon shanticon-gear'></span>";
+    $out .= "</button>";
+    $out .= "<ul class='dropdown-menu'>";
+    foreach ($vars['element']['#ops'] as $op) {
+        $out .= "<li><a href='#'>$op</a></li>";
+    }
+    $out .= "</ul>";
+    return $out;
+}
