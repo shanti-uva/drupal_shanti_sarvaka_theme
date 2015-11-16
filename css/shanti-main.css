@@ -73,10 +73,11 @@ ul {
 
 label {
   color: #555;
-  font-size: 80%;
+  font-size: 1em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   text-transform: uppercase;
   margin: 0 0 0 1rem;
+  display:block;
 }
 
 mark {
@@ -95,7 +96,7 @@ textarea.form-textarea {
   background-clip: padding-box;
   font-size: .9em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  height: 2em;
+  height: 2.2em;
   line-height: 1.32em;
   padding: 0 1em;
   max-width: 35em;
@@ -134,18 +135,18 @@ textarea.form-textarea:focus {
 
 fieldset.form-wrapper {
   margin-bottom: 1em;
+  border:none;
 }
 
 fieldset.form-wrapper legend {
-  border-bottom-width: 2px;
+  border-bottom-width: 0.2rem;
   color: #444;
-  margin-top: 1.25em;
-  margin-bottom: 8px !important;
-}
-
-fieldset.form-wrapper legend .fieldset-legend {
-  font-size: 100%;
+  margin-bottom: 0.8rem !important;
+  font-size: 1.18em;
   margin-top: 1em;
+  margin-left: 2rem;
+  font-weight: bold;
+  line-height: 3.5rem;
 }
 
 article ul,
@@ -1185,6 +1186,11 @@ body.front ol.breadcrumb {
 
 /***** Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section audio-video */
+
+.vertical-tabs fieldset.vertical-tabs-pane{
+  padding:1rem;
+}
+
 .vertical-tab-button a,
 .vertical-tab-button.selected a {
   border-bottom: none;
@@ -1696,7 +1702,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button {
   background: #111;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #333;
   font-size: 0.88em;
   height: 2.5em;
   padding: 0 0 0 1.3rem;
@@ -2324,11 +2330,11 @@ html input[type=file].form-file {
   border-radius: .25em;
   background-clip: padding-box;
   color: #eee;
-  padding: .75em 2em .62em;
+  padding: .65em 2em .52em;
   margin: .75em;
   line-height: 2em;
-  font-size: .68em;
-  letter-spacing: .06em;
+  font-size: .83em;
+  letter-spacing: .05em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
 
@@ -2727,6 +2733,8 @@ a.btn,a.btn:hover,a.btn:active {
 
 .btn.field-add-more-submit {
   margin-left: 1em;
+  font-size: 0.75em;
+  padding: .4em 1.5em .3em;
 }
 
 
@@ -3407,6 +3415,10 @@ a.btn,a.btn:hover,a.btn:active {
   overflow: hidden;
 }
 
+.bootstrap-select.btn-group .dropdown-menu li>a.opt{
+  padding-left: 2rem;
+}
+
 .main-content .bootstrap-select.btn-group {
   margin-top: 0.25rem;
   margin-bottom: 0;
@@ -3429,12 +3441,12 @@ a.btn,a.btn:hover,a.btn:active {
 
 .main-content .selectpicker .caret::before {
   color: #5b68ce;
-  font-size: 1.62em;
+  font-size: 1.75em;
   font-family: 'shanticon';
   content: '\e609';
   position: absolute;
-  top: -0.62em;
-  right: -0.3rem;
+  top: -0.56em;
+  right: -0.5rem;
  /* adjusted position for Video Edit page edits */
 }
 
@@ -3534,7 +3546,7 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .bootstrap-select.btn-group .btn .filter-option {
-  font-size: 1em;
+  font-size: 0.88em;
 }
 
 .bootstrap-select.btn-group .btn .filter-option .icon,
@@ -3861,7 +3873,7 @@ table tr.ok {
   border: none;
   border-radius: 0;
   width: 100%;
-  padding-bottom: 2.5rem;
+  padding:2rem 2rem 2rem 2.5rem;
 }
 
 .panel.panel-default {
@@ -4432,19 +4444,11 @@ form table td.label {
   padding: 1rem 2rem .3rem 1rem;
 }
 
-#sidebar-second .bootstrap-select.btn-group .dropdown-menu li>a.opt {
-  padding-left: 1.1rem;
-}
-
 #sidebar-second .bootstrap-select.form-control .selectpicker {
   width: 100% !important;
 }
 
 /**** END Sidebars ****/
-
-
-
-
 
 
 
@@ -4571,11 +4575,12 @@ form table td.label {
   text-decoration:underline;
 }
 
-.region-admin-footer .block {
+.region-admin-footer > .block {
   display: inline-block;
   padding: 0 1rem;
   border-right: thin solid #555;
   vertical-align: top;
+  min-height: 120px;
 }
 
 .region-admin-footer .block.block-user {
@@ -4617,6 +4622,8 @@ form table td.label {
 
 .admin-menu .content table td {
   background: transparent;
+  padding-bottom:1.5rem;
+  padding-top: 1rem;
 }
 
 
@@ -4906,6 +4913,49 @@ body.front .breadcrumb {
 
 
 
+
+
+
+
+
+
+
+/* search-labels used for transcript edit admin */
+.selected-kmap{
+  color: #555;
+  font-size: 0.93em;
+  font-family: 'museo-sans-500', helvetica, arial, sans-serif;
+  border: none;
+  padding: 0.3rem 0 0.3rem 0.8rem;
+  background-color: transparent;
+}
+
+.selected-kmap:hover{
+  color: #555;
+  background-color: transparent;
+}
+
+.selected-kmap::after{
+  content: ',';
+  font-size:1.5em;
+}
+
+.selected-kmap .shanticon-close2:before{
+  color: #888;
+  position: relative;
+  top: 0.15rem;
+  font-size: 1.12em;
+  cursor:pointer;
+}
+
+.selected-kmap:hover .shanticon-close2:before{
+  color: red;
+}
+
+
+fieldset.form-wrapper .f-set{
+  /*border:none; - this is used in audio-video for node-video admin edit page */
+}
 
 
 

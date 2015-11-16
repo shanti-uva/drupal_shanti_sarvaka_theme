@@ -1308,7 +1308,7 @@ function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
         $out .= drupal_render($vars['element']['content']['transcript_options']);
         $out .= drupal_render($vars['element']['content']['transcript_navigation']);
         $out .= "</div>";
-        $out .= "<div class='transcript-search-wrapper'>" .drupal_render($vars['element']['content']['transcript_search']). "</div>";
+        $out .= drupal_render($vars['element']['content']['transcript_search_wrapper']);
         return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
@@ -1341,9 +1341,10 @@ function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
         $out .= "<button type='button' class='btn btn-default btn-icon searchtrans' title='Search Transcript'><span class='icon shanticon-magnify'></span></button>";
         return $out;
 }
-function shanti_sarvaka_transcripts_ui_transcript_search($vars) {
-        $out = drupal_render($vars['element']['search_form']);
-        return $out;
+function shanti_sarvaka_transcripts_ui_transcript_search_wrapper($vars) {
+    $out = "<span class='icon shanticon-close2'></span>";
+    $out .= drupal_render($vars['element']['content']);
+    return $out;
 }
 function shanti_sarvaka_transcripts_apachesolr_link_tcu($vars) {
     $mins = floor ($vars['element']['#time'] / 60);
@@ -1376,7 +1377,7 @@ function shanti_sarvaka_transcripts_ui_play_tcu($vars) {
 }
 function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
         $form['search']['input']['buttons']['go']['#attributes']['class'][] = 'searchbutton';
-        $form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'></span><span class='icon fa-spinner'></span>";
+        $form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'></span>";
         $form['search']['input']['buttons']['go']['#find'] = 'btn-primary';
         $form['search']['input']['buttons']['go']['#replace'] = 'btn-default';
         $form['search']['input']['buttons']['go']['#post_render'][] = 'shanti_sarvaka_find_replace';
