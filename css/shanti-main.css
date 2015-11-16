@@ -4949,7 +4949,7 @@ body.front .breadcrumb {
   padding: .1em 1.5em .3em;
 }
 
-.btn.field-add-more-submit > span{
+.btn.field-add-more-submit > span::before{
   content: '+';
   font-size: 2em;
   position: relative;
