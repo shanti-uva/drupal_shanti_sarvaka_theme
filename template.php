@@ -45,8 +45,8 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
-	$base = $base_url . $base_path;
-	$variables['modernizer'] = '<script type="text/javascript" src="' . $base . 'sites/all/themes/shanti_sarvaka/js/inc/other/modernizr-2.6.2.min.js?njzbwq"></script>';
+	$base = $base_url;
+	$variables['modernizer'] = '<script type="text/javascript" src="' . $base . '/sites/all/themes/drupal_shanti_sarvaka_theme/js/inc/other/modernizr-2.6.2.min.js?njzbwq"></script>';
 	// Add Meta Tags
 	$metas = array(
 		'ie_edge' => array(
