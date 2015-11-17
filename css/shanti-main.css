@@ -1934,8 +1934,8 @@ body.front ol.breadcrumb {
   height: 12.5rem;
 }
 
-.shanti-thumbnail .body-wrap .shanti-field-creator a{
-
+.node-type-collection.logged-in.sidebar-second .tab-pane.main-col > div{
+  padding-top:0;
 }
 
 .shanti-thumbnail .body-wrap .shanti-field-creator a::before{
