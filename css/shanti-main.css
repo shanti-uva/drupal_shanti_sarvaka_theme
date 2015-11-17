@@ -1934,6 +1934,18 @@ body.front ol.breadcrumb {
   height: 12.5rem;
 }
 
+.shanti-thumbnail .body-wrap .shanti-field-creator a{
+
+}
+
+.shanti-thumbnail .body-wrap .shanti-field-creator a::before{
+  content: '\e600'; /* icon of agent person */
+  font-family: 'shanticon';
+  margin-right:.4rem;
+  margin-left:.5rem;
+  position:relative;
+}
+
 .shanti-thumbnail-link {
 /* video title */
   font-size: 1em;
@@ -4934,6 +4946,8 @@ body.front .breadcrumb {
   top: 0.15rem;
   font-size: 1.12em;
   cursor:pointer;
+  content: '\e60f';
+  font-family:'shanticon';
 }
 
 .selected-kmap:hover .shanticon-close2:before{
