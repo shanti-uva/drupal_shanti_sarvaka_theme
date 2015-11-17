@@ -1,4 +1,4 @@
-n@font-face {
+@font-face {
   font-family: 'museo-sans-300';
   src: url('../fonts/Museosans/museosans-300-webfont.eot');
   src: url('../fonts/Museosans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Museosans/museosans-300-webfont.woff2') format('woff2'), url('../fonts/Museosans/museosans-300-webfont.woff') format('woff'), url('../fonts/Museosans/museosans-300-webfont.ttf') format('truetype'), url('../fonts/Museosans/museosans-300-webfont.svg#svgFontName') format('svg');
@@ -94,9 +94,9 @@ textarea.form-textarea {
   border: 1px solid #ccc;
   border-radius: 1.5em;
   background-clip: padding-box;
-  font-size: .9em;
+  font-size: 1em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  height: 2.2em;
+  height: 2.75em;
   line-height: 1.32em;
   padding: 0 1em;
   max-width: 35em;
@@ -3353,8 +3353,8 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .main-content .bootstrap-select > .btn {
-  line-height: 2.5em;
-  height: 2.5em;
+  line-height: 2.2em;
+  height: 2.2em;
   padding: 0 2.38em 0 0;
  /*  width:100%; padding:0; commented out for Video Edit page edits */
 }
