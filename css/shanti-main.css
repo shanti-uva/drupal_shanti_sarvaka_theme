@@ -1941,9 +1941,10 @@ body.front ol.breadcrumb {
 .shanti-thumbnail .body-wrap .shanti-field-creator a::before{
   content: '\e600'; /* icon of agent person */
   font-family: 'shanticon';
-  margin-right:.4rem;
-  margin-left:.5rem;
-  position:relative;
+  margin-right: .4rem;
+  margin-left: 0.09rem;
+  font-size:1.3rem;
+  position: relative;
 }
 
 .shanti-thumbnail-link {
