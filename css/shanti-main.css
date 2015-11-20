@@ -4959,9 +4959,12 @@ body.front .breadcrumb {
 
 /* add more row fields */
 .btn.field-add-more-submit {
-  margin-left: 1em;
   font-size: 0.82em;
   padding: .1em 1.5em .3em;
+
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1rem;
 }
 
 .btn.field-add-more-submit > span::before{
