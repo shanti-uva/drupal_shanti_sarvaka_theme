@@ -51,7 +51,7 @@
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
     var srchtab = (height) - 88;
-    var viewheight = (height) - 216;
+    var viewheight = (height) - 235;
     // var advHeight = $(".advanced-view").show().height();
     // var comboHeight = (viewheight) - 370;
 
@@ -511,7 +511,7 @@
     }
   };
 
-
+/*
   Drupal.behaviors.kmapsExplorer = {
     attach: function (context, settings) {
       var $selected_li = $('#carousel-feature-slides > li');
@@ -545,29 +545,26 @@
 
     }
   };
-
+*/
 
    Drupal.behaviors.shantiSarvakaKalturaLoading = {
     attach: function (context, settings) {
-    	if(context == document) {
-    		// The player on the node edit form cannot be made responsive thru this script.
-    		// Because it causes the player not to appear until resize happens (ndg, 2015-01-30)
+	    	if(context == document) {
+	    		// The player on the node edit form cannot be made responsive thru this script.
+	    		// Because it causes the player not to appear until resize happens (ndg, 2015-01-30)
+	    		/* No longer necessary see shanti-main-mediabase.js Drupal.behaviors.shantiAVVideoFix ()
 			  if (typeof kWidget != 'undefined' && !$('body').hasClass('page-node-edit')) {
 					kWidget.addReadyCallback(function(playerId) {
 						function calcPlayerSize() {
-					    var elm = document.getElementById(playerId);
-					    $(elm).css({width: "auto", height: (elm.clientWidth/16.0)*9+"px"});
-					    /* Doesn't work (replaced wth above 2015-09-02 ndg)
-								elm.style.width = "auto";
-								elm.style.height = (elm.clientWidth/16.0)*9+"px";
-							*/
+						    var elm = document.getElementById(playerId);
+						    $(elm).css({width: "auto", height: (elm.clientWidth/16.0)*9+"px"});
 						}
 						window.addEventListener("resize", calcPlayerSize, false);
 						calcPlayerSize();
 					});
-				}
+				}*/
 	    }
-    }
+     }
   };
 
 
@@ -625,22 +622,22 @@
 	// --- unhiding breadcrumbs: inline styles keeps the breadcrumbs markup from flash on load when at homepages where we do not want them
 	Drupal.behaviors.breadcrumbsFlickrControl = {
 	  attach: function (context, settings) {
-			$('.breadwrap').show( "fast" );
+			$('.breadwrap:not(".front.page-subjects .breadwrap")').show( "fast" );
 	  }
 	};
 	
-	
+	/*
 	Drupal.behaviors.advancedToggleClassHeightChange = {
 		attach: function (context, settings) {
-	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
-	    $('.advanced-link').bind('click', function () { 
+	     --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
+	    $('.advanced-link').on('click', function () { 
 	      $('.view-wrap').toggleClass('short-wrap');
         $('.advanced-view').toggleClass('show-options');
         $('.advanced-view').slideToggle('fast');
 	    });
 	  }
 	};
-	
+	*/
 
   Drupal.behaviors.googleMapsButtonActiveArrow = {
     attach: function (context, settings) {
@@ -711,6 +708,22 @@
       }
     }
   };
+
+ 
+  Drupal.behaviors.shantiKmapsHideBreadcrumbsSubjects = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+
+        $( window ).load(function() {
+          if($(".front.page-subjects").length ) { 
+               $(this).find(".breadwrap").remove();
+          }
+        });
+
+      }
+    } 
+  };
+
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {

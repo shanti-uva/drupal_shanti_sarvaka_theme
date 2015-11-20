@@ -45,8 +45,8 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
-	$base = $base_url . $base_path;
-	$variables['modernizer'] = '<script type="text/javascript" src="' . $base . 'sites/all/themes/shanti_sarvaka/js/inc/other/modernizr-2.6.2.min.js?njzbwq"></script>';
+	$base = $base_url;
+    $variables['modernizer'] = '<script type="text/javascript" src="' . $base . '/sites/all/themes/shanti_sarvaka/js/inc/other/modernizr-2.6.2.min.js?njzbwq"></script>';
 	// Add Meta Tags
 	$metas = array(
 		'ie_edge' => array(
@@ -1234,7 +1234,7 @@ function _shanti_sarvaka_add_metatags() {
 			'tag' => 'link',
 			'rel' => 'icon',
 			'type' => 'image/png',
-			'href' => '/favicon-194x194.png"',
+			'href' => '/favicon-194x194.png',
 	    'sizes' => '194x194',
 		),
 		array(
@@ -1308,7 +1308,7 @@ function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
         $out .= drupal_render($vars['element']['content']['transcript_options']);
         $out .= drupal_render($vars['element']['content']['transcript_navigation']);
         $out .= "</div>";
-        $out .= "<div class='transcript-search-wrapper'>" .drupal_render($vars['element']['content']['transcript_search']). "</div>";
+        $out .= drupal_render($vars['element']['content']['transcript_search_wrapper']);
         return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
@@ -1341,9 +1341,10 @@ function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
         $out .= "<button type='button' class='btn btn-default btn-icon searchtrans' title='Search Transcript'><span class='icon shanticon-magnify'></span></button>";
         return $out;
 }
-function shanti_sarvaka_transcripts_ui_transcript_search($vars) {
-        $out = drupal_render($vars['element']['search_form']);
-        return $out;
+function shanti_sarvaka_transcripts_ui_transcript_search_wrapper($vars) {
+    $out = "<span class='icon shanticon-close2'></span>";
+    $out .= drupal_render($vars['element']['content']);
+    return $out;
 }
 function shanti_sarvaka_transcripts_apachesolr_link_tcu($vars) {
     $mins = floor ($vars['element']['#time'] / 60);
