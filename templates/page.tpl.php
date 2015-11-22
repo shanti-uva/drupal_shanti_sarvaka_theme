@@ -95,7 +95,7 @@
           	<?php if (!empty($messages)) { print "<div class=\"messages\">$messages</div>"; } ?>
           	
           	<!-- Main Content -->
-            <div class="tab-content">
+            <div class="tab-content container-fluid">
               <article class="tab-pane main-col active" id="tab-overview">
               	 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                  <?php print render($page['content']); ?>
