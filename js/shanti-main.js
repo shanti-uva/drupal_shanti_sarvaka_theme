@@ -568,18 +568,6 @@
   };
 
 
-
-  Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
-    attach: function (context, settings) {
-      if(context == window.document) {
-	        $('.searchtrans').click( function(){
-	                $('.transcript-search-wrapper').slideToggle();
-	        });
-      }
-    }
-  };
-
-
   Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
     attach: function (context, settings) {
       if(context == window.document) {
