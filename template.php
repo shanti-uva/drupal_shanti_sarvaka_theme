@@ -1297,41 +1297,10 @@ function _shanti_sarvaka_add_metatags() {
 		$ct++;
   }
 }
-
 function shanti_sarvaka_preprocess_apachesolr_search_snippets(&$vars) {
         if ($vars['doc']->entity_type == 'tcu') {
                 $vars['transcripts_apachesolr_search_snippet']['link']['#text'] = t('Transcript');
         }
-}
-function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
-        $out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
-        $out .= drupal_render($vars['element']['content']['transcript_options']);
-        $out .= drupal_render($vars['element']['content']['transcript_navigation']);
-        $out .= "</div>";
-        $out .= drupal_render($vars['element']['content']['transcript_search_wrapper']);
-        return $out;
-}
-function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
-	$out  = "<select style='display:none;' multiple class='selectpicker tier-selector' data-header='Select languages'>";
-
-	//language selector
-	$out .= "<optgroup label='Transcript' data-type='languages'>";
-        foreach ($vars['element']['data_tiers'] as $key => $val) {
-                $out .= "<option value='{$key}'>{$val}</option>";
-        }
-	$out .= "</optgroup>";
-
-	//speaker name selector
-        $out .= "<optgroup label='Speaker names' data-type='speakers'>";
-				if (is_array($vars['element']['speaker_names'])) {
-        	foreach ($vars['element']['speaker_names'] as $key => $val) {
-                $out .= "<option value='{$key}'>{$val}</option>";
-        	}
-				}
-        $out .= "</optgroup>";
-
-        $out .= "</select>";
-        return $out;
 }
 function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
         $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
