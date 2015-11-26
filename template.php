@@ -1303,7 +1303,7 @@ function shanti_sarvaka_preprocess_apachesolr_search_snippets(&$vars) {
         }
 }
 function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
-        $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
+        $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play/Pause' data-play-icon='fa-play' data-pause-icon='fa-pause'><span class='fa fa-play'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
