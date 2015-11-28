@@ -14,7 +14,7 @@
   text-transform: none;
 }
 
-.extruder .extruder-content,.panel-default .panel-heading,.extruder .panel-heading,.extruder .panel-group,.extruder .panel-group .panel,.extruder .panel-default>.panel-heading {
+.extruder .extruder-content,.extruder .panel-default .panel-heading,.extruder .panel-heading,.extruder .panel-group,.extruder .panel-group .panel,.extruder .panel-default>.panel-heading {
   border: none;
 }
 
