@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  color: #333;
+  color: #404040;
   text-rendering: optimizeLegibility;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
@@ -38,7 +38,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444;
+  color: #505050;
   text-rendering: optimizeLegibility;
   letter-spacing: 0.015rem !important;
   font-weight: normal !important;
@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-  color: #555;
   font-size: 1.5em;
   margin: 1rem 0 0.5rem;
 }
