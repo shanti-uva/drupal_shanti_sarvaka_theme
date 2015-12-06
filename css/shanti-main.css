@@ -1966,7 +1966,7 @@ body.front ol.breadcrumb {
 
 .shanti-field-group-audience a {
   font-size: 1em;
-  line-height: 1.38em;
+  line-height: 1.68em;
 }
 
 .shanti-field-group-audience a:hover,
@@ -4573,10 +4573,15 @@ form table td.label {
   border-bottom: 5px solid #fff;
 }
 
-.region-admin-footer a,
+.region-admin-footer a{
+  color:#fff;
+  text-decoration: underline;
+}
+
 .region-admin-footer a:hover,
 .region-admin-footer a:active{
   color:#343b7b;
+  text-decoration: none;
 }
 
 .region-admin-footer a:hover{
@@ -5235,6 +5240,7 @@ body.front .breadcrumb {
 
 
 @media screen and (min-width: 400px) {
+
 }
 
 @media screen and (min-width: 500px) {
