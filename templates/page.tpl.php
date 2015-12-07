@@ -137,7 +137,7 @@
 <!-- Footer -->
 <footer class="footer">
   <div>
-    <p>&copy; Copyright 2015</p>
+    <p>&copy; Copyright <?php print date("Y"); ?></p>
     <?php print render($page['footer']); ?>
   </div>
 </footer>
