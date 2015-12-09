@@ -1027,9 +1027,8 @@ a:hover,a:active {
   color: #fff;
   position:relative;
   top:-1.1rem;
-  font-size: .92em;
+  font-size: 1.12em;
   cursor: default;
-  font-weight: bold;
   font-family: arial,tahoma,helvetica,sans-serif;
 }
 
