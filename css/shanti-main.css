@@ -986,6 +986,7 @@ a:hover,a:active {
 .breadcrumb li:first-child a {
   margin-right: 0.5rem;
   font-size: 1em;
+  line-height:1em;
 }
 
 .breadcrumb .icon {
