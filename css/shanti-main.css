@@ -3945,6 +3945,10 @@ table tr.ok {
   padding-left: 2rem;
 }
 
+.panel.panel-default .panel-heading h6 a:hover{
+  background: #e0e0e0;
+}
+
 .panel.panel-default .panel-heading h6 .glyphicon {
   margin-right: 0.3rem;
   background: #fff;
