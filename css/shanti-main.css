@@ -942,7 +942,7 @@ a:hover,a:active {
 
 .breadcrumb li {
   display: inline-block;
-  float: none;
+  float: left;
   position: relative;
   font-size: 1.25em;
   height: 1.75em;
@@ -1026,7 +1026,7 @@ a:hover,a:active {
 .breadcrumb li:last-child {
   color: #fff;
   position:relative;
-  top:-0.1rem;
+  top: 0.1rem;
   font-size: 1.12em;
   cursor: default;
   font-family: arial,tahoma,helvetica,sans-serif;
