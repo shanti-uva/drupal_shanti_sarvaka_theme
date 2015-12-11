@@ -571,8 +571,8 @@
   Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
     attach: function (context, settings) {
       if(context == window.document) {
-          $('.tier-selector button.selectpicker span:first-child').replaceWith('<span class="fa fa-comments-o"></span>');
-          //$('.tier-selector .filter-option').replaceWith('<span class="fa fa-comments-o"></span>');
+          $('.transcript-options button.selectpicker span:first-child').replaceWith('<span class="fa fa-comments-o"></span>');
+          //$('.transcript-options .filter-option').replaceWith('<span class="fa fa-comments-o"></span>');
       }
     }
   };

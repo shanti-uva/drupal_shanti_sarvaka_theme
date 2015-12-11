@@ -1023,11 +1023,12 @@ a:hover,a:active {
   opacity: 0.4;
 }
 
-.breadcrumb li:last-child a {
+.breadcrumb li:last-child {
   color: #fff;
-  font-size: .92em;
+  position:relative;
+  top:-1.1rem;
+  font-size: 1.12em;
   cursor: default;
-  font-weight: bold;
   font-family: arial,tahoma,helvetica,sans-serif;
 }
 
