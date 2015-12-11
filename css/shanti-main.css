@@ -1026,7 +1026,7 @@ a:hover,a:active {
 .breadcrumb li:last-child {
   color: #fff;
   position:relative;
-  top:-1.1rem;
+  top:-0.2rem;
   font-size: 1.12em;
   cursor: default;
   font-family: arial,tahoma,helvetica,sans-serif;
