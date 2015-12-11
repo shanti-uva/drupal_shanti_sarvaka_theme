@@ -924,7 +924,7 @@ a:hover,a:active {
   overflow: hidden;
   background: transparent;
   font-size: .75em;
-  font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
+  font-family: palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
 /**zoom:1;*/
   border: none;
