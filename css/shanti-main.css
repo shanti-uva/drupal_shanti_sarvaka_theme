@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  color: #333;
+  color: #404040;
   text-rendering: optimizeLegibility;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
@@ -38,7 +38,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444;
+  color: #505050;
   text-rendering: optimizeLegibility;
   letter-spacing: 0.015rem !important;
   font-weight: normal !important;
@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-  color: #555;
   font-size: 1.5em;
   margin: 1rem 0 0.5rem;
 }
@@ -992,7 +991,7 @@ a:hover,a:active {
   margin-right: 0.5rem;
   font-weight: bold;
   line-height: 0.93em;
-  font-size: 115%;
+  font-size: 1em;
   text-transform: capitalize;
   position: relative;
   top: 0;
@@ -1024,11 +1023,12 @@ a:hover,a:active {
   opacity: 0.4;
 }
 
-.breadcrumb li:last-child a {
+.breadcrumb li:last-child {
   color: #fff;
-  font-size: .92em;
+  position:relative;
+  top:-0.2rem;
+  font-size: 1.12em;
   cursor: default;
-  font-weight: bold;
   font-family: arial,tahoma,helvetica,sans-serif;
 }
 
@@ -1967,7 +1967,7 @@ body.front ol.breadcrumb {
 
 .shanti-field-group-audience a {
   font-size: 1em;
-  line-height: 1.38em;
+  line-height: 1.68em;
 }
 
 .shanti-field-group-audience a:hover,
@@ -3945,6 +3945,10 @@ table tr.ok {
   padding-left: 2rem;
 }
 
+.panel.panel-default .panel-heading h6 a:hover{
+  background: #e0e0e0;
+}
+
 .panel.panel-default .panel-heading h6 .glyphicon {
   margin-right: 0.3rem;
   background: #fff;
@@ -4574,10 +4578,15 @@ form table td.label {
   border-bottom: 5px solid #fff;
 }
 
-.region-admin-footer a,
+.region-admin-footer a{
+  color:#fff;
+  text-decoration: underline;
+}
+
 .region-admin-footer a:hover,
 .region-admin-footer a:active{
   color:#343b7b;
+  text-decoration: none;
 }
 
 .region-admin-footer a:hover{
@@ -4756,7 +4765,7 @@ p.modal-title {
   color: #000;
   background: #eee;
   border: none;
-  font-size: 0.62em;
+  font-size: 0.68em;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
   font-weight: bold;
 }
@@ -5236,6 +5245,7 @@ body.front .breadcrumb {
 
 
 @media screen and (min-width: 400px) {
+
 }
 
 @media screen and (min-width: 500px) {

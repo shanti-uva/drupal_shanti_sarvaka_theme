@@ -568,22 +568,11 @@
   };
 
 
-
-  Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
-    attach: function (context, settings) {
-      if(context == window.document) {
-	        $('.searchtrans').click( function(){
-	                $('.transcript-search-wrapper').slideToggle();
-	        });
-      }
-    }
-  };
-
-
   Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
     attach: function (context, settings) {
       if(context == window.document) {
-          $('.tier-selector .filter-option').replaceWith('<span class="fa fa-comments-o"></span>');
+          $('.transcript-options button.selectpicker span:first-child').replaceWith('<span class="fa fa-comments-o"></span>');
+          //$('.transcript-options .filter-option').replaceWith('<span class="fa fa-comments-o"></span>');
       }
     }
   };
@@ -723,7 +712,41 @@
       }
     } 
   };
-
+  
+Drupal.behaviors.shantiDeleteButtonDisable = {
+	 attach: function (context, settings) {
+			if (context == document) {
+				// Prevent the backspace key from navigating back.
+				$(document).unbind('keydown').bind('keydown', function (event) {
+				    var doPrevent = false;
+				    if (event.keyCode === 8) {
+				        var d = event.srcElement || event.target;
+				        if ((d.tagName.toUpperCase() === 'INPUT' && 
+				             (
+				                 d.type.toUpperCase() === 'TEXT' ||
+				                 d.type.toUpperCase() === 'PASSWORD' || 
+				                 d.type.toUpperCase() === 'FILE' || 
+				                 d.type.toUpperCase() === 'SEARCH' || 
+				                 d.type.toUpperCase() === 'EMAIL' || 
+				                 d.type.toUpperCase() === 'NUMBER' || 
+				                 d.type.toUpperCase() === 'DATE' )
+				             ) || 
+				             d.tagName.toUpperCase() === 'TEXTAREA') {
+				            doPrevent = d.readOnly || d.disabled;
+				        }
+				        else {
+				            doPrevent = true;
+				        }
+				    }
+				
+				    if (doPrevent) {
+				        event.preventDefault();
+				        console.log("Delete Button Navigation has been disabled.");
+				    }
+				});
+			}
+	  }
+ };
 
 //	Drupal.behaviors.kmapsOpenlayersMenuFlickrControl = {
 //	  attach: function (context, settings) {

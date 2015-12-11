@@ -14,7 +14,7 @@
   text-transform: none;
 }
 
-.extruder .extruder-content,.panel-default .panel-heading,.extruder .panel-heading,.extruder .panel-group,.extruder .panel-group .panel,.extruder .panel-default>.panel-heading {
+.extruder .extruder-content,.extruder .panel-default .panel-heading,.extruder .panel-heading,.extruder .panel-group,.extruder .panel-group .panel,.extruder .panel-default>.panel-heading {
   border: none;
 }
 
@@ -1526,7 +1526,7 @@ object.flip_label {
   opacity: 0;
   position: absolute;
   top: -10px;
-  left: 42px;
+  left: 35px;
   width: 120px;
 }/* ----- END search loading ----- */
 

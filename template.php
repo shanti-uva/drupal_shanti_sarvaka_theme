@@ -1027,7 +1027,9 @@ function shanti_sarvaka_breadcrumb($variables) {
 		$breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
 	}
 	$lidx = count($breadcrumbs) - 1;
-	$breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
+    if (strpos($breadcrumbs[$lidx], '<a') == -1) {
+        	$breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
+    }
   foreach($breadcrumbs as $crumb) {
   	$icon = ($breadcrumbs[0] == $crumb) ? '' : ' <span class="icon shanticon-arrow3-right"></span>';
     $output .= "<li>$crumb$icon</li>";
@@ -1297,44 +1299,13 @@ function _shanti_sarvaka_add_metatags() {
 		$ct++;
   }
 }
-
 function shanti_sarvaka_preprocess_apachesolr_search_snippets(&$vars) {
         if ($vars['doc']->entity_type == 'tcu') {
                 $vars['transcripts_apachesolr_search_snippet']['link']['#text'] = t('Transcript');
         }
 }
-function shanti_sarvaka_transcripts_ui_transcript_controls($vars) {
-        $out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
-        $out .= drupal_render($vars['element']['content']['transcript_options']);
-        $out .= drupal_render($vars['element']['content']['transcript_navigation']);
-        $out .= "</div>";
-        $out .= drupal_render($vars['element']['content']['transcript_search_wrapper']);
-        return $out;
-}
-function shanti_sarvaka_transcripts_ui_transcript_options($vars) {
-	$out  = "<select style='display:none;' multiple class='selectpicker tier-selector' data-header='Select languages'>";
-
-	//language selector
-	$out .= "<optgroup label='Transcript' data-type='languages'>";
-        foreach ($vars['element']['data_tiers'] as $key => $val) {
-                $out .= "<option value='{$key}'>{$val}</option>";
-        }
-	$out .= "</optgroup>";
-
-	//speaker name selector
-        $out .= "<optgroup label='Speaker names' data-type='speakers'>";
-				if (is_array($vars['element']['speaker_names'])) {
-        	foreach ($vars['element']['speaker_names'] as $key => $val) {
-                $out .= "<option value='{$key}'>{$val}</option>";
-        	}
-				}
-        $out .= "</optgroup>";
-
-        $out .= "</select>";
-        return $out;
-}
 function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
-        $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
+        $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play/Pause' data-play-icon='fa-play' data-pause-icon='fa-pause'><span class='fa fa-play'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
@@ -1376,24 +1347,13 @@ function shanti_sarvaka_transcripts_ui_play_tcu($vars) {
         return $out;
 }
 function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
-        $form['search']['input']['buttons']['go']['#attributes']['class'][] = 'searchbutton';
         $form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'></span>";
-        $form['search']['input']['buttons']['go']['#find'] = 'btn-primary';
-        $form['search']['input']['buttons']['go']['#replace'] = 'btn-default';
-        $form['search']['input']['buttons']['go']['#post_render'][] = 'shanti_sarvaka_find_replace';
 
-        $form['search']['input']['buttons']['reset']['#inner'] = "<span class='icon'></span>";
-        $form['search']['input']['buttons']['reset']['#find'] = 'btn-primary';
-        $form['search']['input']['buttons']['reset']['#replace'] = 'searchreset';
-        $form['search']['input']['buttons']['reset']['#post_render'][] = 'shanti_sarvaka_find_replace';
-
-        $form['search']['navigate']['buttons']['next']['#attributes']['class'][] = 'nextresult';
         $form['search']['navigate']['buttons']['next']['#inner'] = "<span class='icon'></span>";
         $form['search']['navigate']['buttons']['next']['#find'] = 'btn-primary';
         $form['search']['navigate']['buttons']['next']['#replace'] = 'btn-default';
         $form['search']['navigate']['buttons']['next']['#post_render'][] = 'shanti_sarvaka_find_replace';
 
-        $form['search']['navigate']['buttons']['previous']['#attributes']['class'][] = 'previousresult';
         $form['search']['navigate']['buttons']['previous']['#inner'] = "<span class='icon'></span>";
         $form['search']['navigate']['buttons']['previous']['#find'] = 'btn-primary';
         $form['search']['navigate']['buttons']['previous']['#replace'] = 'btn-default';
