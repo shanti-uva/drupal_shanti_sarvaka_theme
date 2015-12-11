@@ -924,7 +924,7 @@ a:hover,a:active {
   overflow: hidden;
   background: transparent;
   font-size: .75em;
-  font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
+  font-family: palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
 /**zoom:1;*/
   border: none;
@@ -942,7 +942,7 @@ a:hover,a:active {
 
 .breadcrumb li {
   display: inline-block;
-  float: none;
+  float: left;
   position: relative;
   font-size: 1.25em;
   height: 1.75em;
@@ -951,18 +951,11 @@ a:hover,a:active {
   margin: 0;
   padding: 0 18px 0 0;
   text-shadow: 0 0 1px rgba(50,50,50,0.225);
+  text-transform: capitalize;
 }
 
 .breadcrumb li:first-child {
-  color: #f5f5f5;
-  font-family: arial,tahoma,helvetica,sans-serif;
-  font-weight: bold;
-  font-size: 120%;
-  line-height: 1em;
   padding: 0;
-  margin: 0;
-  position: relative;
-  top: 0;
 }
 
 .breadcrumb li a {
@@ -989,12 +982,11 @@ a:hover,a:active {
 
 .breadcrumb li:first-child a {
   margin-right: 0.5rem;
+  font-size: 0.93em;
+  line-height: 0.88em;
+  color: #f5f5f5;
+  font-family: arial,tahoma,helvetica,sans-serif;
   font-weight: bold;
-  line-height: 0.93em;
-  font-size: 1em;
-  text-transform: capitalize;
-  position: relative;
-  top: 0;
 }
 
 .breadcrumb .icon {
@@ -1026,7 +1018,7 @@ a:hover,a:active {
 .breadcrumb li:last-child {
   color: #fff;
   position:relative;
-  top:-0.2rem;
+  top: 0.1rem;
   font-size: 1.12em;
   cursor: default;
   font-family: arial,tahoma,helvetica,sans-serif;
