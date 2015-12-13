@@ -3938,12 +3938,13 @@ table tr.ok {
   background: #e0e0e0;
 }
 
-.panel.panel-default .panel-heading h6 a:hover{
-  background: #ddd;
-}
-
 .panel.panel-default .panel-heading h6 a.collapsed{
   background: transparent;
+}
+
+.panel.panel-default .panel-heading h6 a:hover,
+.panel.panel-default .panel-heading h6 a.collapsed:hover{
+  background: #e0e0e0;
 }
 
 .panel.panel-default .panel-heading h6 .glyphicon {
