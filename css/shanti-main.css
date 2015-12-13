@@ -3939,7 +3939,7 @@ table tr.ok {
 }
 
 .panel.panel-default .panel-heading h6 a:hover{
-  background: #e0e0e0;
+  background: #ddd;
 }
 
 .panel.panel-default .panel-heading h6 a.collapsed{
