@@ -190,7 +190,7 @@ object.flip_label {
 #search-flyout.extruder .flap.on-hover>span,
 #search-flyout.extruder .flap.on-hover.on-flap>span {
   color: #fff;
-  background: #444;
+  background: #555;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -213,7 +213,7 @@ object.flip_label {
 #search-flyout.extruder.isOpened .flap.on-hover>span .icon,
 #search-flyout.extruder.isOpened .flap.on-hover.on-flap>span .icon {
   color: #fff;
-  background: #444;
+  background: #555;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
