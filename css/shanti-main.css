@@ -1589,6 +1589,8 @@ body.front ol.breadcrumb {
 .popover {
   position: absolute;
   z-index: 10200;
+  font-size:0.93em;
+  line-height:1.18em;
 }
 
 .popover-link {
@@ -1652,6 +1654,7 @@ body.front ol.breadcrumb {
 
 .related-resources-popover .parents {
   line-height: 1em;
+  margin-top:0.5rem;
 }
 
 .related-resources-popover .parents p {
