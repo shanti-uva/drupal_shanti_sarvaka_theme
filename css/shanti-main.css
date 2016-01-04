@@ -926,8 +926,9 @@ a:hover,a:active {
   font-size: .75em;
   font-family: palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
-/**zoom:1;*/
+  /**zoom:1;*/
   border: none;
+  height: 1.5rem;
 }
 
 .breadcrumb::before,
@@ -1575,9 +1576,9 @@ body.front ol.breadcrumb {
 }
 /***** END main-menu *****/
 
-/*----------------------------*/
-/*----- END NAVIGATION -------*/
-/*----------------------------*/
+/*--------------------*/
+/*-- END NAVIGATION --*/
+/*--------------------*/
 
 
 
@@ -1748,10 +1749,12 @@ body.front ol.breadcrumb {
   border-radius: 0 0 0.5rem 0.5rem;
   background-clip: padding-box;
   border-bottom: none;
+  height:110%;
 }
-/*----------------------------*/
-/*----- END Popovers -------*/
-/*----------------------------*/
+
+/*------------------*/
+/*-- END Popovers --*/
+/*------------------*/
 
 
 
