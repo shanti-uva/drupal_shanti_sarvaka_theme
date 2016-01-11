@@ -97,7 +97,7 @@ textarea.form-textarea {
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   height: 30px;
   line-height: 1.44em;
-  padding: 0 1em;
+  padding: 0.1rem 1.5rem;
   max-width: 35em;
   overflow: auto;
   box-shadow: 0 2px 5px #eee inset;
