@@ -355,13 +355,13 @@ a:hover,a:active {
   font-size: 0.88em;
   line-height: 2.62em;
   font-weight: normal;
-  text-shadow: 0 1px 1px #f0f0f0;
+  /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
 
 .navbar-header .navbar-brand:hover,
 .navbar-header .navbar-brand:active {
   color: #222;
-  text-shadow: 0 1px 1px #f0f0f0;
+  /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
 
 .navbar-header .shanti {
@@ -1019,8 +1019,8 @@ a:hover,a:active {
 .breadcrumb li:last-child {
   color: #fff;
   position:relative;
-  top: 0.1rem;
-  font-size: 1.12em;
+  top: 0.035rem;
+  font-size: 1.18em;
   cursor: default;
   font-family: arial,tahoma,helvetica,sans-serif;
 }
