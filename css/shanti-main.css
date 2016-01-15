@@ -1177,7 +1177,7 @@ body.front ol.breadcrumb {
 }
 
 
-/***** Vertical Tabs *****/
+/***** BEGIN Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section audio-video */
 
 .vertical-tabs fieldset.vertical-tabs-pane{
@@ -1203,6 +1203,7 @@ body.front ol.breadcrumb {
 
 .vertical-tabs {
   margin-top: 0;
+  background: #f9f9f9;
 }
 
 .vertical-tabs-panes.vertical-tabs-processed {
@@ -1259,7 +1260,16 @@ body.front ol.breadcrumb {
 .vertical-tab-container .nav-tabs>li>a:hover {
   border: none !important;
 }
+
+.vertical-tabs ul.vertical-tabs-list .summary{
+  font-weight: normal;
+  font-size: 90%;
+  color: #707070;
+}
+ 
 /**** ENd vertical tabs ****/
+
+
 
 
 /**** Horizontal Tabs Bootstrap *****/
