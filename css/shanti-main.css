@@ -1245,12 +1245,12 @@ body.front ol.breadcrumb {
   text-decoration: none;
 }
 
-.vertical-tabs ul.vertical-tabs-list li.selected {
-  border-right-width: 1px;
-}
-
 .vertical-tab-container .nav-tabs>li {
   border-right: 1px solid  #ddd;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected {
+  border-right: 1px solid  transparent;
 }
 
 .vertical-tab-container .nav-tabs>li>a {
