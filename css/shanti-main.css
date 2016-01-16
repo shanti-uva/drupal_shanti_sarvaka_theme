@@ -3501,7 +3501,7 @@ a.btn,a.btn:hover,a.btn:active {
 .main-content .selectpicker li.selected a:active,
 .main-content .selectpicker li.selected a:hover span.text,
 .main-content .selectpicker li.selected a:active span.text {
-  background: #f9f9f9;
+  background: #eee;
 }
 
 .main-content .selectpicker>li:active>a,
