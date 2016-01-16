@@ -2025,8 +2025,6 @@ body.front ol.breadcrumb {
 }
 
 .shanti-thumbnail .footer-wrap {
-  /*position: absolute;
-  bottom: 0; - mf8yk 9-23-15 correcting for floating */
   background: #f6f6f6;
   border-top: 1px solid #e6e6e6;
   border-radius: 0 0 .32em .32em;
@@ -2078,41 +2076,6 @@ body.front ol.breadcrumb {
 /*--------------------------------*/
 /*----- BEGIN new from kmaps -----*/
 /*--------------------------------*/
-/*
-#photo-pagination {
-  float: right;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-#photo-pagination li {
-  display: inline;
-  padding: 0;
-  font-size: 85%;
-}
-
-#photo-pagination li input.page-input {
-  width: 45px;
-  text-align: center;
-  height: 22px;
-}
-
-#photo-pagination>li>a {
-  color: #DC3C47;
-}
-
-#photo-pagination>.active>a,
-#photo-pagination>.active>span,
-#photo-pagination>.active>a:hover,
-#photo-pagination>.active>span:hover,
-#photo-pagination>.active>a:active,
-#photo-pagination>.active>span:active {
-  background-color: #DC3C47;
-  border-color: #DC3C47;
-  color: white;
-}
-*/
-
 #tab-main .paginated-spin {
   float: left;
   margin-top: 10px;
@@ -2262,6 +2225,10 @@ body.front ol.breadcrumb {
   top: 1.5rem;
 }
 
+.content-resources .nav-pills li a .icon.shanticon-overview{
+  margin-right: .5em;
+}
+
 /* content resources column ---
 .row-offcanvas { position: relative;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
 .row-offcanvas-left { left: 0;}
@@ -2269,6 +2236,7 @@ body.front ol.breadcrumb {
 .row-offcanvas-left.active { left: 14em; }
 .sidebar-offcanvas { position: absolute; top: 0; width: 14em; }
 */
+
 /*------------------------------*/
 /*----- END new kmaps -----*/
 /*------------------------------*/
