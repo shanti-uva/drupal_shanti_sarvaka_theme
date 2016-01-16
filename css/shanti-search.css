@@ -1254,6 +1254,7 @@ object.flip_label {
 */
 .view-section .fancytree-container li > .ajax-progress {
   position: absolute;
+  left: 0;
   /* top: 0.15rem;
   right: 0.1rem; */
   background: #fff;
