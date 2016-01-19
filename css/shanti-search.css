@@ -1093,7 +1093,7 @@ object.flip_label {
 
 /***** scrollbars *****/
 .text.ui-resizable::-webkit-scrollbar{
-  width: 0.3rem;
+  width: 0.1rem;
 }
  
 .text.ui-resizable::-webkit-scrollbar-track{
@@ -1105,6 +1105,30 @@ object.flip_label {
   cursor: pointer;
   width: 0.3rem;
 }
+
+
+
+
+.bootstrap-select .dropdown-menu.open::-webkit-scrollbar{
+  width: 0.5rem;
+}
+ 
+.bootstrap-select .dropdown-menu.open::-webkit-scrollbar-track{
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);*/
+}
+ 
+.bootstrap-select .dropdown-menu.open::-webkit-scrollbar-thumb{
+  background-color: #aaa;
+  cursor: pointer;
+  width: 0.5rem;
+}
+
+
+
+
+
+
+
 
 
 .view-section .listview>div::-webkit-scrollbar, 
