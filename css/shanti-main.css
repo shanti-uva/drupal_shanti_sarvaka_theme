@@ -4764,6 +4764,7 @@ p.modal-title {
   color: #fff;
   background: #333;
   padding-left: 2.5rem;
+  cursor:default;
 }
 
 .btn-group-gmaps.btn-group > .btn.btn-default.active span {
