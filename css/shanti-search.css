@@ -1093,19 +1093,17 @@ object.flip_label {
 
 /***** scrollbars *****/
 .text.ui-resizable::-webkit-scrollbar{
-  width: 0.1rem;
-  border-radius: 1rem;
+  width: 0.3rem;
 }
  
 .text.ui-resizable::-webkit-scrollbar-track{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);*/
 }
  
 .text.ui-resizable::-webkit-scrollbar-thumb{
   background-color: #aaa;
   cursor: pointer;
-  border-radius: 1rem;
-  width: 0.4rem;
+  width: 0.3rem;
 }
 
 
@@ -1117,18 +1115,20 @@ object.flip_label {
  
 .view-section .listview>div::-webkit-scrollbar-track,
 .view-section .treeview>div::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 }
  
 .view-section .listview>div::-webkit-scrollbar-thumb,
 .view-section .treeview>div::-webkit-scrollbar-thumb {
   background-color: #aaa;
-  cursor: pointer;
   border-radius: 1rem;
   width: 0.6rem;
 }
 
-
+.view-section .listview>div::-webkit-scrollbar-thumb:hover,
+.view-section .treeview>div::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
 
 
