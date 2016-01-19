@@ -705,8 +705,7 @@ object.flip_label {
 }
 
 .input-section .bootstrap-select.btn-group .dropdown-menu.open {
-  height: 225px;
-  min-height: 120px !important;
+  height: 125px;
 }
 
 .input-section .bootstrap-select.btn-group .dropdown-menu.selectpicker {
