@@ -691,6 +691,10 @@ object.flip_label {
 .input-section .dropdown-menu.open {
   border-radius: 10px;
   background-clip: padding-box;
+}
+
+.input-section .dropdown-menu.selectpicker {
+  background-clip: padding-box;
   overflow: auto;
 }
 
@@ -702,9 +706,10 @@ object.flip_label {
 
 .input-section .bootstrap-select.btn-group .dropdown-menu {
   height: 265px;
+  min-height: 120px !important;
 }
 
-.input-section .bootstrap-select.btn-group .dropdown-menu.open {
+.input-section .bootstrap-select.btn-group .dropdown-menu.selectpicker {
   overflow: auto !important;
 }
 
@@ -1109,16 +1114,16 @@ object.flip_label {
 
 
 
-.bootstrap-select .dropdown-menu.open::-webkit-scrollbar{
+.bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar{
   width: 0.5rem;
   border-radius: 0.8rem;
 }
  
-.bootstrap-select .dropdown-menu.open::-webkit-scrollbar-track{
+.bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar-track{
   /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);*/
 }
  
-.bootstrap-select .dropdown-menu.open::-webkit-scrollbar-thumb{
+.bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar-thumb{
   background-color: #aaa;
   cursor: pointer;
   width: 0.5rem;
