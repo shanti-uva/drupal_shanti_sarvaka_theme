@@ -704,8 +704,8 @@ object.flip_label {
   overflow: hidden;
 }
 
-.input-section .bootstrap-select.btn-group .dropdown-menu {
-  height: 265px;
+.input-section .bootstrap-select.btn-group .dropdown-menu.open {
+  height: 225px;
   min-height: 120px !important;
 }
 
