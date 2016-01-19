@@ -1090,6 +1090,34 @@ object.flip_label {
 
 
 
+
+
+
+
+
+
+.view-section .tab-content::-webkit-scrollbar {
+  width: 0.8rem;
+}
+ 
+.view-section .tab-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.view-section .tab-content::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  /*margin-left: -0.1rem;*/
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 0.8rem;
+}
+
+
+
+
+
+
+
 /* popovers */
 .view-section .title-field {
   position: static;
@@ -1248,6 +1276,12 @@ object.flip_label {
   background: white !important;
   border-color: #eee !important;
 }
+
+.view-section .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active,
+.view-section .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active{
+  border-color: #ccc !important;
+}
+
 /*
 .view-section .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .view-section .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
