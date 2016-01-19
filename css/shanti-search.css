@@ -1098,7 +1098,7 @@ object.flip_label {
 
 /***** scrollbars *****/
 .text.ui-resizable::-webkit-scrollbar{
-  width: 0.1rem;
+  width: 0;
 }
  
 .text.ui-resizable::-webkit-scrollbar-track{
@@ -1108,7 +1108,7 @@ object.flip_label {
 .text.ui-resizable::-webkit-scrollbar-thumb{
   background-color: #aaa;
   cursor: pointer;
-  width: 0.3rem;
+  width: 0.5rem;
 }
 
 
