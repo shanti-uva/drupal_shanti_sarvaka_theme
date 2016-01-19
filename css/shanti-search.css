@@ -1111,6 +1111,7 @@ object.flip_label {
 
 .bootstrap-select .dropdown-menu.open::-webkit-scrollbar{
   width: 0.5rem;
+  border-radius: 0.8rem;
 }
  
 .bootstrap-select .dropdown-menu.open::-webkit-scrollbar-track{
@@ -1121,6 +1122,7 @@ object.flip_label {
   background-color: #aaa;
   cursor: pointer;
   width: 0.5rem;
+  border-radius: 0.8rem;
 }
 
 
