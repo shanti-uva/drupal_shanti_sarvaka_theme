@@ -1094,17 +1094,18 @@ object.flip_label {
 
 
 
-
-
-.view-section .tab-content::-webkit-scrollbar {
+.view-section .listview>div::-webkit-scrollbar, 
+.view-section .treeview>div::-webkit-scrollbar{
   width: 0.8rem;
 }
  
-.view-section .tab-content::-webkit-scrollbar-track {
+.view-section .listview>div::-webkit-scrollbar-track,
+.view-section .treeview>div::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
  
-.view-section .tab-content::-webkit-scrollbar-thumb {
+.view-section .listview>div::-webkit-scrollbar-thumb,
+.view-section .treeview>div::-webkit-scrollbar-thumb {
   background-color: #aaa;
   /*margin-left: -0.1rem;*/
   cursor: pointer;
