@@ -1091,7 +1091,22 @@ object.flip_label {
 
 
 
-
+/***** scrollbars *****/
+.extruder-content::-webkit-scrollbar{
+  width: 0.6rem;
+  border-radius: 1rem;
+}
+ 
+.extruder-content::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.extruder-content::-webkit-scrollbar-thumb{
+  background-color: #aaa;
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 0.6rem;
+}
 
 
 .view-section .listview>div::-webkit-scrollbar, 
@@ -1103,13 +1118,11 @@ object.flip_label {
 .view-section .listview>div::-webkit-scrollbar-track,
 .view-section .treeview>div::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  border-radius: 1rem;
 }
  
 .view-section .listview>div::-webkit-scrollbar-thumb,
 .view-section .treeview>div::-webkit-scrollbar-thumb {
   background-color: #aaa;
-  /*margin-left: -0.1rem;*/
   cursor: pointer;
   border-radius: 1rem;
   width: 0.6rem;
