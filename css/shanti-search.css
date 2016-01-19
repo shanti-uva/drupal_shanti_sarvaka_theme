@@ -689,7 +689,7 @@ object.flip_label {
 
 /*--- dropdown ---*/
 .input-section .dropdown-menu.open {
-  border-radius: 10px;
+  border-radius: 1rem;
   background-clip: padding-box;
 }
 
@@ -1132,32 +1132,23 @@ object.flip_label {
 
 
 
-
-
-
-
-
-
-.view-section .listview>div::-webkit-scrollbar, 
-.view-section .treeview>div::-webkit-scrollbar{
+/*----- search bottom half -----*/
+.view-section .view-wrap::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: 1rem;
 }
  
-.view-section .listview>div::-webkit-scrollbar-track,
-.view-section .treeview>div::-webkit-scrollbar-track {
+.view-section .view-wrap::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 }
  
-.view-section .listview>div::-webkit-scrollbar-thumb,
-.view-section .treeview>div::-webkit-scrollbar-thumb {
+.view-section .view-wrap::-webkit-scrollbar-thumb {
   background-color: #aaa;
   border-radius: 1rem;
   width: 0.6rem;
 }
 
-.view-section .listview>div::-webkit-scrollbar-thumb:hover,
-.view-section .treeview>div::-webkit-scrollbar-thumb:hover {
+.view-section .view-wrap::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
 
