@@ -708,8 +708,9 @@ object.flip_label {
   /*height: 220px;*/
 }
 
-.input-section .bootstrap-select.btn-group .dropdown-menu.selectpicker {
+.input-section .bootstrap-select.btn-group .dropdown-menu.selectpicker:first-of-type {
   /*overflow: auto !important;*/
+  height:180px !important;
 }
 
 .input-section .selectpicker .caret {
