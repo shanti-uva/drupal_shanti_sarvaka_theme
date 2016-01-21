@@ -261,13 +261,13 @@ a:hover,a:active {
 }
 
 ::-moz-selection {
-  background: rgba(71, 82, 153, 0.66) !important;
+  background: #219BD6 !important;
   text-shadow: none !important;
   color: white !important;
 }
 
 ::selection {
-  background: rgba(71, 82, 153, 0.66) !important;
+  background: #219BD6 !important;
   text-shadow: none !important;
   color: white !important;
 }
