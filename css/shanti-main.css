@@ -4879,13 +4879,13 @@ html body.admin-menu {
   display: none !important;
 }
 /* homepage hide the sidecolumn (resources) button */ 
-body.front .view-resources.btn-default {
-  display: none !important;
-}
+/*body.front .view-resources.btn-default {*/
+  /*display: none !important;*/
+/*}*/
 
-body.front .breadcrumb {
-  display: none !important;
-}       
+/*body.front .breadcrumb {*/
+  /*display: none !important;*/
+/*}*/
 
 /********************************/
 /*----- END Layout Corrections -----*/
