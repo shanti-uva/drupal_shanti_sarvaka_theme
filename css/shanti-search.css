@@ -1111,6 +1111,9 @@ object.flip_label {
   width: 0.5rem;
 }
 
+.text.ui-resizable::-webkit-scrollbar-thumb:hover{
+  background-color: #888;
+}
 
 
 
@@ -1128,6 +1131,10 @@ object.flip_label {
   cursor: pointer;
   width: 0.5rem;
   border-radius: 0.8rem;
+}
+
+.bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar-thumb:hover{
+  background-color: #888;
 }
 
 
@@ -1149,7 +1156,7 @@ object.flip_label {
 }
 
 .view-section .view-wrap::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+  background-color: #888;
 }
 
 
