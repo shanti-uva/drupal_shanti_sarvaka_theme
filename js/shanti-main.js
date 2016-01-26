@@ -741,7 +741,7 @@ Drupal.behaviors.shantiDeleteButtonDisable = {
 				
 				    if (doPrevent) {
 				        event.preventDefault();
-				        console.log("Delete Button Navigation has been disabled.");
+				        //console.log("Delete Button Navigation has been disabled.");
 				    }
 				});
 			}

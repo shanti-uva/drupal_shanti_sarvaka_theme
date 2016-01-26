@@ -1352,12 +1352,12 @@ function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_sta
         $form['search']['navigate']['buttons']['next']['#inner'] = "<span class='icon'></span>";
         $form['search']['navigate']['buttons']['next']['#find'] = 'btn-primary';
         $form['search']['navigate']['buttons']['next']['#replace'] = 'btn-default';
-        $form['search']['navigate']['buttons']['next']['#post_render'][] = 'shanti_sarvaka_find_replace';
+        $form['search']['navigate']['buttons']['next']['#post_render'][] = 'transcripts_ui_find_replace';
 
         $form['search']['navigate']['buttons']['previous']['#inner'] = "<span class='icon'></span>";
         $form['search']['navigate']['buttons']['previous']['#find'] = 'btn-primary';
         $form['search']['navigate']['buttons']['previous']['#replace'] = 'btn-default';
-        $form['search']['navigate']['buttons']['previous']['#post_render'][] = 'shanti_sarvaka_find_replace';
+        $form['search']['navigate']['buttons']['previous']['#post_render'][] = 'transcripts_ui_find_replace';
 
         $form['search']['form_id'] = $form['form_id'];
         unset($form['form_id']);
@@ -1369,7 +1369,4 @@ function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_sta
                 $form['search']['form_token'] = $form['form_token'];
                 unset($form['form_token']);
         }
-}
-function shanti_sarvaka_find_replace($markup, $element) {
-        return str_replace($element['#find'], $element['#replace'], $markup);
 }

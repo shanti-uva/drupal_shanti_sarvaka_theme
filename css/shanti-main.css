@@ -94,10 +94,10 @@ textarea.form-textarea {
   border-radius: 1.5em;
   background-clip: padding-box;
   font-size: 1em;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  height: 2.75rem;
-  line-height: 1.32em;
-  padding: 0 1em;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+  height: 30px;
+  line-height: 1.68em;
+  padding: 0.1rem 1.5rem;
   max-width: 35em;
   overflow: auto;
   box-shadow: 0 2px 5px #eee inset;
@@ -117,6 +117,29 @@ textarea.form-textarea {
   border-radius: 0.5em;
   background-clip: padding-box;
 }
+
+
+textarea.form-textarea::-webkit-scrollbar {
+  width: 0.8rem;
+}
+ 
+textarea.form-textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  border-radius: 1rem; 
+  width: 0.8rem;
+}
+
+textarea.form-textarea::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  cursor: pointer;
+  width: 0.8rem;
+}
+
+textarea.form-textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+  cursor: pointer;
+}
+
 
 input.form-control:hover,
 textarea.form-textarea:hover {
@@ -261,13 +284,13 @@ a:hover,a:active {
 }
 
 ::-moz-selection {
-  background: rgba(71, 82, 153, 0.66) !important;
+  background: #fb8c4c !important;
   text-shadow: none !important;
   color: white !important;
 }
 
 ::selection {
-  background: rgba(71, 82, 153, 0.66) !important;
+  background: #fb8c4c !important;
   text-shadow: none !important;
   color: white !important;
 }
@@ -355,13 +378,13 @@ a:hover,a:active {
   font-size: 0.88em;
   line-height: 2.62em;
   font-weight: normal;
-  text-shadow: 0 1px 1px #f0f0f0;
+  /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
 
 .navbar-header .navbar-brand:hover,
 .navbar-header .navbar-brand:active {
   color: #222;
-  text-shadow: 0 1px 1px #f0f0f0;
+  /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
 
 .navbar-header .shanti {
@@ -926,8 +949,9 @@ a:hover,a:active {
   font-size: .75em;
   font-family: palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
-/**zoom:1;*/
+  /**zoom:1;*/
   border: none;
+  height: 1.5rem;
 }
 
 .breadcrumb::before,
@@ -1018,8 +1042,8 @@ a:hover,a:active {
 .breadcrumb li:last-child {
   color: #fff;
   position:relative;
-  top: 0.1rem;
-  font-size: 1.12em;
+  top: 0.035rem;
+  font-size: 1.18em;
   cursor: default;
   font-family: arial,tahoma,helvetica,sans-serif;
 }
@@ -1176,7 +1200,7 @@ body.front ol.breadcrumb {
 }
 
 
-/***** Vertical Tabs *****/
+/***** BEGIN Vertical Tabs *****/
 /* the main instance so far - of these vertical tabs is in video edit section audio-video */
 
 .vertical-tabs fieldset.vertical-tabs-pane{
@@ -1202,10 +1226,12 @@ body.front ol.breadcrumb {
 
 .vertical-tabs {
   margin-top: 0;
+  background: #fdfdfd;
 }
 
 .vertical-tabs-panes.vertical-tabs-processed {
-  border-top: 1px solid #ddd;
+  padding:1rem 1.5rem;
+  /* border-top: 1px solid #ddd; */
  /* border-bottom:1px solid #fff; */
 }
 
@@ -1243,12 +1269,17 @@ body.front ol.breadcrumb {
   text-decoration: none;
 }
 
-.vertical-tabs ul.vertical-tabs-list li.selected {
-  border-right-width: 1px;
-}
-
 .vertical-tab-container .nav-tabs>li {
   border-right: 1px solid  #ddd;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected {
+  border-right: 1px solid  transparent;
+  background: #fdfdfd;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected:hover{
+  background: #fff;
 }
 
 .vertical-tab-container .nav-tabs>li>a {
@@ -1258,7 +1289,16 @@ body.front ol.breadcrumb {
 .vertical-tab-container .nav-tabs>li>a:hover {
   border: none !important;
 }
+
+.vertical-tabs ul.vertical-tabs-list .summary{
+  font-weight: normal;
+  font-size: 90%;
+  color: #707070;
+}
+ 
 /**** ENd vertical tabs ****/
+
+
 
 
 /**** Horizontal Tabs Bootstrap *****/
@@ -1575,9 +1615,9 @@ body.front ol.breadcrumb {
 }
 /***** END main-menu *****/
 
-/*----------------------------*/
-/*----- END NAVIGATION -------*/
-/*----------------------------*/
+/*--------------------*/
+/*-- END NAVIGATION --*/
+/*--------------------*/
 
 
 
@@ -1589,6 +1629,8 @@ body.front ol.breadcrumb {
 .popover {
   position: absolute;
   z-index: 10200;
+  font-size:0.93em;
+  line-height:1.18em;
 }
 
 .popover-link {
@@ -1652,6 +1694,7 @@ body.front ol.breadcrumb {
 
 .related-resources-popover .parents {
   line-height: 1em;
+  margin-top:0.5rem;
 }
 
 .related-resources-popover .parents p {
@@ -1695,7 +1738,7 @@ body.front ol.breadcrumb {
 .popover-footer-button {
   background: #111;
   border-bottom: 1px solid #333;
-  font-size: 0.88em;
+  font-size: 0.93em;
   height: 2.5em;
   padding: 0 0 0 1.3rem;
   margin: 0;
@@ -1745,10 +1788,12 @@ body.front ol.breadcrumb {
   border-radius: 0 0 0.5rem 0.5rem;
   background-clip: padding-box;
   border-bottom: none;
+  height:110%;
 }
-/*----------------------------*/
-/*----- END Popovers -------*/
-/*----------------------------*/
+
+/*------------------*/
+/*-- END Popovers --*/
+/*------------------*/
 
 
 
@@ -2009,8 +2054,6 @@ body.front ol.breadcrumb {
 }
 
 .shanti-thumbnail .footer-wrap {
-  /*position: absolute;
-  bottom: 0; - mf8yk 9-23-15 correcting for floating */
   background: #f6f6f6;
   border-top: 1px solid #e6e6e6;
   border-radius: 0 0 .32em .32em;
@@ -2046,6 +2089,25 @@ body.front ol.breadcrumb {
 
 /* NOTE shanti-thumbails for collections pages in AV are in AV subtheme css */
 
+.shanti-thumbnail .body-wrap::-webkit-scrollbar {
+  width: 0.5rem;
+}
+ 
+.shanti-thumbnail .body-wrap::-webkit-scrollbar-track {
+  width: 0.5rem;
+  background-color: #ddd;
+}
+
+.shanti-thumbnail .body-wrap::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  width: 0.5rem;
+}
+
+.shanti-thumbnail .body-wrap::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+  cursor: pointer;
+}
+
 /*-------------------------*/
 /*--- END video gallery ---*/
 /*-------------------------*/
@@ -2062,41 +2124,6 @@ body.front ol.breadcrumb {
 /*--------------------------------*/
 /*----- BEGIN new from kmaps -----*/
 /*--------------------------------*/
-/*
-#photo-pagination {
-  float: right;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-#photo-pagination li {
-  display: inline;
-  padding: 0;
-  font-size: 85%;
-}
-
-#photo-pagination li input.page-input {
-  width: 45px;
-  text-align: center;
-  height: 22px;
-}
-
-#photo-pagination>li>a {
-  color: #DC3C47;
-}
-
-#photo-pagination>.active>a,
-#photo-pagination>.active>span,
-#photo-pagination>.active>a:hover,
-#photo-pagination>.active>span:hover,
-#photo-pagination>.active>a:active,
-#photo-pagination>.active>span:active {
-  background-color: #DC3C47;
-  border-color: #DC3C47;
-  color: white;
-}
-*/
-
 #tab-main .paginated-spin {
   float: left;
   margin-top: 10px;
@@ -2246,6 +2273,10 @@ body.front ol.breadcrumb {
   top: 1.5rem;
 }
 
+.content-resources .nav-pills li a .icon.shanticon-overview{
+  margin-right: .5em;
+}
+
 /* content resources column ---
 .row-offcanvas { position: relative;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
 .row-offcanvas-left { left: 0;}
@@ -2253,6 +2284,7 @@ body.front ol.breadcrumb {
 .row-offcanvas-left.active { left: 14em; }
 .sidebar-offcanvas { position: absolute; top: 0; width: 14em; }
 */
+
 /*------------------------------*/
 /*----- END new kmaps -----*/
 /*------------------------------*/
@@ -3517,7 +3549,7 @@ a.btn,a.btn:hover,a.btn:active {
 .main-content .selectpicker li.selected a:active,
 .main-content .selectpicker li.selected a:hover span.text,
 .main-content .selectpicker li.selected a:active span.text {
-  background: #f9f9f9;
+  background: #eee;
 }
 
 .main-content .selectpicker>li:active>a,
@@ -4106,7 +4138,7 @@ form table td.label .description {
 }
 
 html.js .form-autocomplete {
-  background-position: 99% 0.56em !important;
+  background-position: 97% 0.56em !important;
 }
 
 .field-widget-text-textfield.form-wrapper input.form-control {
@@ -4780,6 +4812,7 @@ p.modal-title {
   color: #fff;
   background: #333;
   padding-left: 2.5rem;
+  cursor:default;
 }
 
 .btn-group-gmaps.btn-group > .btn.btn-default.active span {
@@ -4894,13 +4927,13 @@ html body.admin-menu {
   display: none !important;
 }
 /* homepage hide the sidecolumn (resources) button */ 
-body.front .view-resources.btn-default {
-  display: none !important;
-}
+/*body.front .view-resources.btn-default {*/
+  /*display: none !important;*/
+/*}*/
 
-body.front .breadcrumb {
-  display: none !important;
-}       
+/*body.front .breadcrumb {*/
+  /*display: none !important;*/
+/*}*/
 
 /********************************/
 /*----- END Layout Corrections -----*/
