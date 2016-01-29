@@ -1358,6 +1358,8 @@ object.flip_label {
   /*box-sizing: content-box;*/
 }
 
+.fancytree-exp-nl .fancytree-icon,
+.fancytree-exp-nl .fancytree-expander,
 .fancytree-exp-n .fancytree-icon,
 .fancytree-exp-n .fancytree-expander{
   display:none;
@@ -1414,20 +1416,20 @@ object.flip_label {
   top: 0;
 }
 
-.fancytree-container .fancytree-active .fancytree-title,
-.fancytree-container .fancytree-selected .fancytree-title {
+.fancytree-active .fancytree-title,
+.fancytree-selected .fancytree-title {
   color: #000;
 }
 
-.fancytree-container .fancytree-active.fancytree-has-children .fancytree-title::before,
-.fancytree-container .fancytree-selected.fancytree-has-children .fancytree-title::before {
+.fancytree-active.fancytree-has-children .fancytree-title::before,
+.fancytree-selected.fancytree-has-children .fancytree-title::before {
   content: none;
   text-shadow: none;
   display: none;
 }
 
-.fancytree-container .fancytree-active .fancytree-title::before,
-.fancytree-container .fancytree-selected .fancytree-title::before {
+.fancytree-active .fancytree-title::before,
+.fancytree-selected .fancytree-title::before {
   background: #888;
   box-shadow: none;
 }
@@ -1441,14 +1443,14 @@ object.flip_label {
   top: 4px;
 }
 
-.fancytree-container .fancytree-node:hover > .glyphicon {
+.fancytree-node:hover > .glyphicon {
   color: #888;
 }
 
-.fancytree-container .fancytree-node.fancytree-active:active > .glyphicon,
-.fancytree-container .fancytree-node.fancytree-active .glyphicon,
-.fancytree-container .fancytree-node.fancytree-selected:active > .glyphicon,
-.fancytree-container .fancytree-node.fancytree-selected .glyphicon {
+.fancytree-node.fancytree-active:active > .glyphicon,
+.fancytree-node.fancytree-active .glyphicon,
+.fancytree-node.fancytree-selected:active > .glyphicon,
+.fancytree-node.fancytree-selected .glyphicon {
   color: #666;
   background: transparent;
 }
