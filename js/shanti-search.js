@@ -90,6 +90,24 @@ Drupal.behaviors.sarvakaMbextruder = {
     }
   };
   
+
+/* Testing for improved positioning of popover son search tree ----------------
+  Drupal.behaviors.sarvakaSearchPopoverPosition = {
+    attach: function (context, settings) {
+    	if(context == document) {
+			$('[data-toggle=popover]').on('shown.bs.popover', function () {
+			  $('.search-popover.left').css('left',parseInt($('.popover').css('left')) - 15 + 'px')
+			})
+	    }
+    }
+  };
+*/
+
+
+
+
+
+
 /*
  *  TEMP - Functions for the Search Flyout
  */

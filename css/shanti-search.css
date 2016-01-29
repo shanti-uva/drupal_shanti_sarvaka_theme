@@ -1394,8 +1394,7 @@ object.flip_label {
   border-collapse: separate;
 }
 
-.fancytree-title:hover::before,
-.fancytree-container li:hover .fancytree-title::before {
+.fancytree-title:hover::before {
   background: #777;
   box-shadow: none;
 }
