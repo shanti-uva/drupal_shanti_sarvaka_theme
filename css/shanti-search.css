@@ -1400,8 +1400,8 @@ object.flip_label {
 }
 
 .fancytree-has-children>span.fancytree-title {
-  padding-left: 10px;
-  margin-left: -15px;
+  padding-left: 0px;
+  margin-left: -25px;
 }
 
 .fancytree-has-children span.fancytree-title::before {
