@@ -1379,7 +1379,7 @@ object.flip_label {
   float: left;
   position: relative;
   top: 0.6rem;
-  right: 0.2rem;
+  right: 0.25rem;
   border-radius: 50%;
   background-clip: padding-box;
   width: 9px;
