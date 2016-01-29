@@ -1287,7 +1287,7 @@ object.flip_label {
   border: none;
   background-color: transparent !important;
   border: none !important;
-  font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;
 }
 
 .fancytree-container ul {
