@@ -1285,6 +1285,8 @@ object.flip_label {
   margin: 0;
   background: transparent;
   border: none;
+  background-color: transparent !important;
+  border: none !important;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
 }
 
