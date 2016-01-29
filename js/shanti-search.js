@@ -91,7 +91,7 @@ Drupal.behaviors.sarvakaMbextruder = {
   };
   
 
-
+/* Testing for improved positioning of popover son search tree ----------------
   Drupal.behaviors.sarvakaSearchPopoverPosition = {
     attach: function (context, settings) {
     	if(context == document) {
@@ -101,7 +101,7 @@ Drupal.behaviors.sarvakaMbextruder = {
 	    }
     }
   };
-
+*/
 
 
 
