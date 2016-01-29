@@ -1358,6 +1358,10 @@ object.flip_label {
   /*box-sizing: content-box;*/
 }
 
+.fancytree-node .fancytree-expander{
+  background-image: none !important;
+}
+
 .fancytree-exp-nl .fancytree-icon,
 .fancytree-exp-nl .fancytree-expander,
 .fancytree-exp-n .fancytree-icon,
