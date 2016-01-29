@@ -96,7 +96,7 @@ Drupal.behaviors.sarvakaMbextruder = {
     attach: function (context, settings) {
     	if(context == document) {
 			$('[data-toggle=popover]').on('shown.bs.popover', function () {
-			  $('.search-popover.left').css('left',parseInt($('.popover').css('left')) + 15 + 'px')
+			  $('.search-popover.left').css('left',parseInt($('.popover').css('right')) + 15 + 'px')
 			})
 	    }
     }
