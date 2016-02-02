@@ -1989,7 +1989,7 @@ body.front ol.breadcrumb {
   font-size: 1em;
   line-height: 1.38em;
   font-weight: normal;
-  margin: 0.2rem 0;
+  margin: 0.2rem 0 0.5rem;
 }
 
 .shanti-field-title .shanti-thumbnail-link {
@@ -2044,13 +2044,14 @@ body.front ol.breadcrumb {
   font-family: 'FontAwesome';
   font-size: 150%;
   position: relative;
-  left: -0.04rem;
-  top: 0.1rem;
+  left: -0.05rem;
+  top: 0.3rem;
   margin-right: 0.4rem;
 }
 
 .shanti-field-duration span::before {
   content: '\e61c';
+  top: 0.2rem;
 }
 
 .shanti-field-created span::before {
@@ -2060,12 +2061,13 @@ body.front ol.breadcrumb {
 .shanti-field-languages,
 .shanti-field-duration,
 .shanti-field-created {
-  color: #222;
+  color: #000;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
+  font-size:1.06em;
 }
 
 .shanti-field-languages{
-  margin-top: -0.2rem;
+  margin-top: -0.3rem;
 }
 
 .shanti-thumbnail .footer-wrap {
