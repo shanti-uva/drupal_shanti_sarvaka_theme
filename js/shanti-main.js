@@ -155,7 +155,8 @@
   Drupal.behaviors.shantiSarvakaSelect = {
     attach: function (context, settings) {
       $(".selectpicker:not(#search-flyout .selectpicker)", context).selectpicker({
-        dropupAuto: false
+        dropupAuto: false,
+        //liveSearch: true
       }); // initiates jq-bootstrap-select
 
     }
@@ -716,8 +717,8 @@
 Drupal.behaviors.shantiDeleteButtonDisable = {
 	 attach: function (context, settings) {
 			if (context == document) {
-				// Prevent the backspace key from navigating back.
-				$(document).unbind('keydown').bind('keydown', function (event) {
+				// Prevent the backspace key from navigating back.			
+				$(document).bind('keydown', function (event) {
 				    var doPrevent = false;
 				    if (event.keyCode === 8) {
 				        var d = event.srcElement || event.target;
