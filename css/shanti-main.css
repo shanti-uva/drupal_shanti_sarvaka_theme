@@ -2036,7 +2036,7 @@ body.front ol.breadcrumb {
   position: relative;
   left: 0.1rem;
   top: 0.1rem;
-  margin-right: 0.7rem;
+  margin-right: 0.8rem;
 }
 
 .shanti-field-languages span::before {
@@ -2045,7 +2045,7 @@ body.front ol.breadcrumb {
   font-size: 150%;
   position: relative;
   left: -0.05rem;
-  top: 0.3rem;
+  top: 0.2rem;
   margin-right: 0.4rem;
 }
 
