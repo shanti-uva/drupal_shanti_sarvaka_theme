@@ -1989,7 +1989,7 @@ body.front ol.breadcrumb {
   font-size: 1em;
   line-height: 1.38em;
   font-weight: normal;
-  margin: 0.2rem 0;
+  margin: 0.2rem 0 0.5rem;
 }
 
 .shanti-field-title .shanti-thumbnail-link {
@@ -2026,6 +2026,7 @@ body.front ol.breadcrumb {
   top: 0.05rem;
 }
 
+.shanti-field-languages span::before,
 .shanti-field-duration span::before,
 .shanti-field-created span::before {
   font-family: 'shanticon';
@@ -2035,22 +2036,42 @@ body.front ol.breadcrumb {
   position: relative;
   left: 0.1rem;
   top: 0.1rem;
-  margin-right: 0.3rem;
+  margin-right: 0.8rem;
+}
+
+.shanti-field-languages span::before {
+  content: '\f0e6';
+  font-family: 'FontAwesome';
+  font-size: 150%;
+  position: relative;
+  left: -0.05rem;
+  top: 0.2rem;
+  margin-right: 0.4rem;
 }
 
 .shanti-field-duration span::before {
   content: '\e61c';
+  top: 0.1rem;
 }
 
 .shanti-field-created span::before {
   content: '\e60c';
-  margin-right: 0.6rem;
 }
 
+.shanti-field-languages,
 .shanti-field-duration,
 .shanti-field-created {
-  color: #222;
+  color: #000;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
+  font-size:1.06em;
+}
+
+.shanti-field-languages{
+  margin-top: -0.4rem;
+}
+
+.shanti-field-languages span:empty{
+  display:none;
 }
 
 .shanti-thumbnail .footer-wrap {
