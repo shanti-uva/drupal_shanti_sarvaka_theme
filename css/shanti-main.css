@@ -2051,7 +2051,7 @@ body.front ol.breadcrumb {
 
 .shanti-field-duration span::before {
   content: '\e61c';
-  top: 0.2rem;
+  top: 0.1rem;
 }
 
 .shanti-field-created span::before {
@@ -2069,6 +2069,10 @@ body.front ol.breadcrumb {
 .shanti-field-languages{
   margin-top: -0.4rem;
   text-transform: capitalize;
+}
+
+.shanti-field-languages span:empty{
+  display:none;
 }
 
 .shanti-thumbnail .footer-wrap {
