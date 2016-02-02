@@ -2087,7 +2087,10 @@ body.front ol.breadcrumb {
 }
 
 .shanti-thumbnail .footer-wrap a {
-  display: inline;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .shanti-thumbnail .footer-wrap a:hover,
