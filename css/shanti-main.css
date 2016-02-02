@@ -2026,7 +2026,7 @@ body.front ol.breadcrumb {
   top: 0.05rem;
 }
 
-.shanti-field-language span::before,
+.shanti-field-languages span::before,
 .shanti-field-duration span::before,
 .shanti-field-created span::before {
   font-family: 'shanticon';
@@ -2039,7 +2039,7 @@ body.front ol.breadcrumb {
   margin-right: 0.3rem;
 }
 
-.shanti-field-language span::before {
+.shanti-field-languages span::before {
   content: '\f0e6';
   font-family: 'FontAwesome';
 }
@@ -2053,7 +2053,7 @@ body.front ol.breadcrumb {
   margin-right: 0.6rem;
 }
 
-.shanti-field-language,
+.shanti-field-languages,
 .shanti-field-duration,
 .shanti-field-created {
   color: #222;
