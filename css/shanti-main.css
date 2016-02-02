@@ -3532,8 +3532,11 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .main-content .selectpicker li a:focus {
-  background-color: #fff;
-  background-image: none !important;
+    background-color: #fff;
+    background-image: none !important;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }
 
 .main-content .selectpicker li.selected a,
