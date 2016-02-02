@@ -1913,7 +1913,7 @@ body.front ol.breadcrumb {
   background: rgb(72,80,189) !important;
 }
 
-.shanti-thumbnail .overlay {
+.shanti-thumbnail-image a .overlay {
   position: absolute;
   top: 0;
   z-index: 99;
@@ -1930,11 +1930,11 @@ body.front ol.breadcrumb {
   transition: all 200ms ease;
 }
 
-.shanti-thumbnail:hover .overlay {
+.shanti-thumbnail-image a:hover .overlay {
   background: rgba(0,0,0,0.7000);
 }
 
-.shanti-thumbnail .overlay::before {
+.shanti-thumbnail-image a .overlay::before {
   font-family: 'shanticon';
   content: '\e60a';
   color: rgba(255,255,255,0.0001);
