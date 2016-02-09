@@ -1971,7 +1971,7 @@ body.front ol.breadcrumb {
   height: 12.5rem;
 }
 
-.node-type-collection.logged-in.sidebar-second .tab-pane.main-col > div:first-of-type{
+.node-type-collection.logged-in.sidebar-second .tab-pane.main-col > div{
   padding-top:0;
 }
 
@@ -4907,35 +4907,35 @@ p.modal-title {
 /********************************/
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
-.tab-pane.main-col > div:first-of-type, /* broad range need to watch */
-.page-node-devel .tab-pane.main-col > div:first-of-type {
+.tab-pane.main-col > div, /* broad range need to watch */
+.page-node-devel .tab-pane.main-col > div {
   max-width: 1050px !important;
   padding: 1.7rem 0 4rem;
   margin: 0 auto !important;
 }
 
 /* Fix for kmaps side-col */
-.no-sidebars.page-places .tab-pane.main-col > div:first-of-type,
-.no-sidebars.page-subjects .tab-pane.main-col > div:first-of-type,
-.page-node-devel.page-places .tab-pane.main-col > div:first-of-type,
-.page-node-devel.page-subjects .tab-pane.main-col > div:first-of-type {
+.no-sidebars.page-places .tab-pane.main-col > div,
+.no-sidebars.page-subjects .tab-pane.main-col > div,
+.page-node-devel.page-places .tab-pane.main-col > div,
+.page-node-devel.page-subjects .tab-pane.main-col > div {
   padding-top: 0;
 }
 
-.page-mydata .tab-pane.main-col > div:first-of-type,
-.page-mygallery .tab-pane.main-col > div:first-of-type,
-.page-user-contact .tab-pane.main-col > div:first-of-type {
+.page-mydata .tab-pane.main-col > div,
+.page-mygallery .tab-pane.main-col > div,
+.page-user-contact .tab-pane.main-col > div {
   max-width: 940px !important;
 }
 
-.page-user-contact .tab-pane.main-col > div:first-of-type {
+.page-user-contact .tab-pane.main-col > div {
   max-width: 850px !important;
 }
 
-.no-sidebars.page-places .tab-pane.main-col > div:first-of-type,
-.no-sidebars.page-subjects .tab-pane.main-col > div:first-of-type,
-.no-sidebars.page-places- .tab-pane.main-col > div:first-of-type,
-.no-sidebars.page-subjects .tab-pane.main-col > div:first-of-type {
+.no-sidebars.page-places .tab-pane.main-col > div,
+.no-sidebars.page-subjects .tab-pane.main-col > div,
+.no-sidebars.page-places- .tab-pane.main-col > div,
+.no-sidebars.page-subjects .tab-pane.main-col > div {
   max-width: 100% !important;
 }
 
