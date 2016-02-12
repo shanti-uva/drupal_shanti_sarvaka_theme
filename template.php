@@ -42,7 +42,6 @@ function shanti_sarvaka_preprocess(&$variables) {
 
 function shanti_sarvaka_preprocess_html(&$variables) {
 	global $base_url, $base_path;
-	//dpm($variables, 'vars in html');
 	$site_class = theme_get_setting('shanti_sarvaka_site_body_tag');
 	$variables['classes_array'][] =  $site_class;
 	$base = $base_url;
@@ -74,16 +73,15 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 		drupal_add_html_head($details, $key);
 	}
 
-  drupal_add_library('system', 'ui');
-
-	_shanti_sarvaka_add_metatags(); // Adds favicon meta tags (Did say: NOT needed automatically picked up by device, but was this me? ndg, 2015-07-15)
+    drupal_add_library('system', 'ui');
+    
+    // Adds favicon meta tags (Did say: NOT needed automatically picked up by device, but was this me? ndg, 2015-07-15)
+	_shanti_sarvaka_add_metatags(); 
+    
 	// Adding Bootstrap CDN Resoures
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
 	drupal_add_js('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js', array('type' => 'external', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -100));
-	//$path = drupal_get_path('theme','shanti_sarvaka') . '/js/inc/other/modernizr-2.6.2.min.js';
-	//drupal_add_js($path);
-	//drupal_add_js(drupal_get_path('theme','shanti_sarvaka') . '/js/inc/other/modernizr-2.6.2.min.js',  array('type' => 'file', 'scope' => 'header', 'group' => JS_THEME, 'every_page' => TRUE, 'weight' => -99));
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
