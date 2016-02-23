@@ -84,7 +84,7 @@ object.flip_label {
 .text.ui-resizable,
 .isOpened .text.ui-resizable {
   position: static;
-} /*--- NOTE this is super important to keep the right edge pinned while expanding width */
+} /*--- NOTE important to keep the right edge pinned while expanding width */
 .ui-resizable-handle.ui-resizable-w {
   cursor: col-resize;
   position: absolute;
@@ -1329,10 +1329,10 @@ object.flip_label {
   border-color: #ccc !important;
 }
 
-/*
+
 .fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
 .fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
-*/
+
 .fancytree-container li > .ajax-progress {
   position: absolute;
   left: 0;
