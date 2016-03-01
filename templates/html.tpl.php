@@ -59,7 +59,7 @@
   <!--[if lte IE 8]><p class="progressive">It appears you are using an older browser. Please consider a upgrading to a modern version of your browser to best enjoy this website.</p><![endif]-->
   <?php print $page_top; ?>
   <?php print $page; ?>
-  <?php print $page_bottom; ?>
   <?php print $scripts; ?>
+  <?php print $page_bottom; ?>
 </body>
 </html>

@@ -766,7 +766,7 @@ a:hover,a:active {
 .collections ul li a {
   color: #d0d0d0;
   text-decoration: none;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   margin-left: 0;
   float: left;
   font-size: 0.75em;
@@ -791,11 +791,11 @@ a:hover,a:active {
 }
 
 .collections ul .icon {
-  color: #d0d0d0;
+  color: #c0c0c0 !important;
   margin-right: 8px;
-  font-size: 1.5em;
+  font-size: 1.75em;
   position: relative;
-  top: 3px;
+  top: 0.4rem;
 }
 
 .collections ul .icon.shanticon-visuals::before {
@@ -2044,7 +2044,7 @@ body.front ol.breadcrumb {
   font-family: 'FontAwesome';
   font-size: 150%;
   position: relative;
-  left: -0.05rem;
+  left: -1rem;
   top: 0.2rem;
   margin-right: 0.4rem;
 }
