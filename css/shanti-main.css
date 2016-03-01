@@ -798,6 +798,13 @@ a:hover,a:active {
   top: 0.4rem;
 }
 
+.collections ul li a:hover .icon{
+  color: #f5f5f5;
+}
+.collections ul li a:active .icon{
+  color: #fff;
+}
+
 .collections ul .icon.shanticon-visuals::before {
   font-size: 120%;
   position: relative;
