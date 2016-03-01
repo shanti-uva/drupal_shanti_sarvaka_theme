@@ -791,7 +791,7 @@ a:hover,a:active {
 }
 
 .collections ul .icon {
-  color: #c0c0c0 !important;
+  color: #aaa !important;
   margin-right: 8px;
   font-size: 1.75em;
   position: relative;
