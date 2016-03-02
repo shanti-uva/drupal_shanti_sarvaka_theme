@@ -91,12 +91,12 @@ input.form-control,
 textarea.form-textarea {
   color: #777;
   border: 1px solid #ccc;
-  border-radius: 1.5em;
+  border-radius: 1em;
   background-clip: padding-box;
   font-size: 1em;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-  height: 30px;
-  line-height: 1.68em;
+  height: 26px;
+  line-height: 1.88em;
   padding: 0.1rem 1.5rem;
   max-width: 35em;
   overflow: auto;
@@ -3436,7 +3436,7 @@ a.btn,a.btn:hover,a.btn:active {
   background-image: linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);
   background-repeat: repeat-x;
   border: 1px solid #ddd;
-  border-color: #fff #eee #ddd;
+  /*border-color: #fff #eee #ddd;*/
   border-radius: 25px;
   background-clip: padding-box;
   overflow: hidden;
