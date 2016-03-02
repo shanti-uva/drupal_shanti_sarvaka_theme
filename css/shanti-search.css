@@ -1732,6 +1732,10 @@ object.flip_label {
   color: #808080;
   margin: 0 0 0 7px;
 }
+
+.popover.left{
+  margin-left: -3rem;
+}
 /*--- END trunk8 */
 /*-----------------*/
 /*--- END Table ---*/
