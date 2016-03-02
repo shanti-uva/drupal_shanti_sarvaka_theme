@@ -798,6 +798,10 @@ a:hover,a:active {
   top: 0.4rem;
 }
 
+.collections ul .icon.shanticon-logo-shanti {
+  color: #f0f0f0;
+}
+
 .collections ul li a:hover .icon{
   color: #f5f5f5;
 }
@@ -811,19 +815,11 @@ a:hover,a:active {
   left: -0.15rem;
   margin-right: -0.25rem;
 }
-
-.collections ul .icon.shanticon-logo-shanti {
-  color: #f0f0f0;
-}
-
 .collections ul .icon.shanticon-logo-shanti::before {
   font-size: 110%;
 }
 
-.collections ul li a:hover .icon,
-.collections ul li a:active .icon {
-  color: #fff;
-}
+
 
 .collections h4 {
   color: #eee;
