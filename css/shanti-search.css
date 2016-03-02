@@ -1329,19 +1329,18 @@ object.flip_label {
   border-color: #ccc !important;
 }
 
-
-.fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
-.fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
-
+.fancytree-node .ajax-progress{ position:absolute; right:0.6rem; background:transparent; /*padding-right:1rem;*/}
+.fancytree-node.fancytree-has-children .ajax-progress{ right:0.1rem;}
+/*
 .fancytree-container li > .ajax-progress {
   position: absolute;
   left: 0;
-  /* top: 0.15rem;
-  right: 0.1rem; */
+  /----- top: 0.15rem;
+  right: 0.1rem; ---------/
   background: transparent;
   padding: 0.1rem 0.5rem;
 }
-
+*/
 .fancytree-title a {
   color: #444;
 }
