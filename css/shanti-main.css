@@ -2068,7 +2068,7 @@ body.front ol.breadcrumb {
   font-family: 'FontAwesome';
   font-size: 150%;
   position: relative;
-  left: -1rem;
+  left: -0.1rem;
   top: 0.2rem;
   margin-right: 0.4rem;
 }
