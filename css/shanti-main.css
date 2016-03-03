@@ -1976,6 +1976,7 @@ body.front ol.breadcrumb {
 
 .shanti-thumbnail .body-wrap::-webkit-scrollbar {
   width: 0.5rem;
+  height: 0.5rem;
 }
  
 .shanti-thumbnail .body-wrap::-webkit-scrollbar-track {
