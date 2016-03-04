@@ -4947,7 +4947,7 @@ html body {
 }
 
 html body.admin-menu {
-  margin-top: 5.2rem !important;
+  margin-top: 5.4rem !important;
 } /* accounts for height of admin bar */
 
 /*--- toggle button for resource column - tetsting dev 
@@ -5361,7 +5361,7 @@ html body.admin-menu {
 @media screen and (min-width: 768px) {
    
   html body.admin-menu {
-    margin-top: 2.8rem !important;
+    margin-top: 3rem !important;
   } /* adjust height of admin bar */
   
   .navbar-default .menu-explore {
