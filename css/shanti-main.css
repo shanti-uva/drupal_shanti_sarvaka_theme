@@ -302,7 +302,7 @@ a:hover,a:active {
 .main-wrapper {
   background: #eee;
   position: relative;
-  min-height: 60em;
+  /* min-height: 60em; */
 }
 
 .main-wrapper::after {
@@ -315,7 +315,7 @@ a:hover,a:active {
 }
 
 .row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
-  padding-bottom: 5rem;
+  /*padding-bottom: 5rem;*/
 }
 
 .max-col-widths .row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
@@ -1338,6 +1338,10 @@ body.front ol.breadcrumb {
 .nav-justified>li:last-child,
 .nav-justified>li.active {
   border-right: none;
+}
+
+.nav-justified>li.active{
+  border-top: 5px double #764B8D;
 }
 
 .nav-justified>li.active::before {
