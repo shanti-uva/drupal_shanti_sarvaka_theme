@@ -802,10 +802,10 @@ a:hover,a:active {
   color: #f0f0f0;
 }
 
-.collections ul li a:hover .icon{
-  color: #f5f5f5;
+.collections ul li a:hover .icon::before{
+  color: #fafafa;
 }
-.collections ul li a:active .icon{
+.collections ul li a:active .icon::before{
   color: #fff;
 }
 
