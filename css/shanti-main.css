@@ -1337,7 +1337,7 @@ body.front ol.breadcrumb {
 }
 
 .nav-justified>li>a:active {
-  background: #e0e0e0;
+  background: transparent;
   color: #555;
 }
 
