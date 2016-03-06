@@ -3992,8 +3992,12 @@ table tr.ok {
   margin-top: 0;
 }
 
+.panel-collapse.collapse{
+  border-top:1px solid transparent;
+}
+
 .panel-collapse.collapse.in{
-  border-top: 1px solid #d0d0d0;
+  border-top-color: #d0d0d0;
 }
 
 /*--- for larger toggle panels ---*/
