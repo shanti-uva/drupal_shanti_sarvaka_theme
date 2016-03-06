@@ -1319,15 +1319,19 @@ body.front ol.breadcrumb {
   transition: background 0.25s ease 0s;
 }
 
+.nav-justified>li:hover{
+  background: #d0d0d0;
+}
+
 .nav-justified>li>a {
   border: none !important;
   border-radius: 0;
-  color: #999;
+  color: #777;
 }
 
 .nav-justified>li>a:hover {
-  background: #fff;
-  color: #777;
+  background: transparent;
+  color: #555;
 }
 
 .nav-justified>li>a:active {
