@@ -302,7 +302,7 @@ a:hover,a:active {
 .main-wrapper {
   background: #eee;
   position: relative;
-  /* min-height: 60em; */
+  min-height: 60em;
 }
 
 .main-wrapper::after {
@@ -378,7 +378,7 @@ section.content-section.equal-height{
   margin: 0;
   color: #333;
   font-size: 0.88em;
-  line-height: 2.62em;
+  /*line-height: 2.62em;*/
   font-weight: normal;
   /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
@@ -3991,6 +3991,7 @@ table tr.ok {
 .panel-group .panel+.panel {
   margin-top: 0;
 }
+
 /*--- for larger toggle panels ---*/
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
@@ -4005,6 +4006,7 @@ table tr.ok {
 .panel.panel-default .panel-heading h6 a {
   color: #555;
   border: none;
+  border-bottom: 1px solid #ddd;
   display: block;
   padding-left: 2rem;
   background: #e0e0e0;
@@ -4012,11 +4014,13 @@ table tr.ok {
 
 .panel.panel-default .panel-heading h6 a.collapsed{
   background: transparent;
+  border-bottom-color: transparent;
 }
 
 .panel.panel-default .panel-heading h6 a:hover,
 .panel.panel-default .panel-heading h6 a.collapsed:hover{
   background: #e0e0e0;
+  border-bottom-color: transparent;
 }
 
 .panel.panel-default .panel-heading h6 .glyphicon {
