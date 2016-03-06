@@ -3992,6 +3992,10 @@ table tr.ok {
   margin-top: 0;
 }
 
+.panel-collapse.collapse.in{
+  border-top: 1px solid #d0d0d0;
+}
+
 /*--- for larger toggle panels ---*/
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
@@ -4006,7 +4010,6 @@ table tr.ok {
 .panel.panel-default .panel-heading h6 a {
   color: #555;
   border: none;
-  border-bottom: 1px solid #ddd;
   display: block;
   padding-left: 2rem;
   background: #e0e0e0;
@@ -4014,13 +4017,11 @@ table tr.ok {
 
 .panel.panel-default .panel-heading h6 a.collapsed{
   background: transparent;
-  border-bottom-color: transparent;
 }
 
 .panel.panel-default .panel-heading h6 a:hover,
 .panel.panel-default .panel-heading h6 a.collapsed:hover{
   background: #e0e0e0;
-  border-bottom-color: transparent;
 }
 
 .panel.panel-default .panel-heading h6 .glyphicon {
