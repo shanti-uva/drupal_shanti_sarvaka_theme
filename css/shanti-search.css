@@ -640,7 +640,7 @@ object.flip_label {
 
 .input-section .bootstrap-select .selectpicker {
   line-height: 27px;
-  height: 27px;
+  /* height: 27px; */
   padding: 0;
   border: 1px solid #ddd;
   width: 100% !important;
@@ -1329,19 +1329,18 @@ object.flip_label {
   border-color: #ccc !important;
 }
 
-
-.fancytree-node .ajax-progress{ position:absolute; right:0.1rem; background:transparent;padding-right:1rem;}
-.fancytree-node.fancytree-has-children .ajax-progress{ position:absolute; right:0.1rem;}
-
+.fancytree-node .ajax-progress{ position:absolute; right:0.6rem; background:transparent; /*padding-right:1rem;*/}
+.fancytree-node.fancytree-has-children .ajax-progress{ right:0.1rem;}
+/*
 .fancytree-container li > .ajax-progress {
   position: absolute;
   left: 0;
-  /* top: 0.15rem;
-  right: 0.1rem; */
+  /----- top: 0.15rem;
+  right: 0.1rem; ---------/
   background: transparent;
   padding: 0.1rem 0.5rem;
 }
-
+*/
 .fancytree-title a {
   color: #444;
 }
@@ -1616,7 +1615,7 @@ object.flip_label {
   opacity: 0;
   position: absolute;
   top: -10px;
-  left: 35px;
+  left: 40px;
   width: 120px;
 }/* ----- END search loading ----- */
 
@@ -1732,6 +1731,10 @@ object.flip_label {
   bottom: 17px;
   color: #808080;
   margin: 0 0 0 7px;
+}
+
+.popover.left{
+  margin-left: -2.3rem;
 }
 /*--- END trunk8 */
 /*-----------------*/

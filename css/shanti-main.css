@@ -91,12 +91,12 @@ input.form-control,
 textarea.form-textarea {
   color: #777;
   border: 1px solid #ccc;
-  border-radius: 1.5em;
+  border-radius: 1em;
   background-clip: padding-box;
   font-size: 1em;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-  height: 30px;
-  line-height: 1.68em;
+  height: 26px;
+  line-height: 1.88em;
   padding: 0.1rem 1.5rem;
   max-width: 35em;
   overflow: auto;
@@ -315,18 +315,20 @@ a:hover,a:active {
 }
 
 .row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
-  padding-bottom: 5rem;
+  /*padding-bottom: 5rem;*/
 }
 
 .max-col-widths .row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
-  padding-top: 0;
+  /*padding-top: 0;*/
 }
 
 .content-section .container {
   width: auto;
 } /* matching container-fluid for now, correct for changes in BStrap */
 
-
+section.content-section.equal-height{
+  padding-bottom: 7rem;
+}
 
 
 /*----------------------------------*/
@@ -376,7 +378,7 @@ a:hover,a:active {
   margin: 0;
   color: #333;
   font-size: 0.88em;
-  line-height: 2.62em;
+  /*line-height: 2.62em;*/
   font-weight: normal;
   /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
@@ -791,11 +793,22 @@ a:hover,a:active {
 }
 
 .collections ul .icon {
-  color: #c0c0c0 !important;
+  color: #aaa !important;
   margin-right: 8px;
   font-size: 1.75em;
   position: relative;
   top: 0.4rem;
+}
+
+.collections ul .icon.shanticon-logo-shanti {
+  color: #f0f0f0;
+}
+
+.collections ul li a:hover .icon::before{
+  color: #fafafa;
+}
+.collections ul li a:active .icon::before{
+  color: #fff;
 }
 
 .collections ul .icon.shanticon-visuals::before {
@@ -804,19 +817,11 @@ a:hover,a:active {
   left: -0.15rem;
   margin-right: -0.25rem;
 }
-
-.collections ul .icon.shanticon-logo-shanti {
-  color: #f0f0f0;
-}
-
 .collections ul .icon.shanticon-logo-shanti::before {
   font-size: 110%;
 }
 
-.collections ul li a:hover .icon,
-.collections ul li a:active .icon {
-  color: #fff;
-}
+
 
 .collections h4 {
   color: #eee;
@@ -1316,25 +1321,33 @@ body.front ol.breadcrumb {
   transition: background 0.25s ease 0s;
 }
 
+.nav-justified>li:hover{
+  background: #f9f9f9;;
+}
+
 .nav-justified>li>a {
   border: none !important;
   border-radius: 0;
-  color: #999;
-}
-
-.nav-justified>li>a:hover {
-  background: #fff;
   color: #777;
 }
 
+.nav-justified>li>a:hover {
+  background: transparent;
+  color: #555;
+}
+
 .nav-justified>li>a:active {
-  background: #e0e0e0;
+  background: transparent;
   color: #555;
 }
 
 .nav-justified>li:last-child,
 .nav-justified>li.active {
   border-right: none;
+}
+
+.nav-justified>li.active{
+  border-top: 5px double #764B8D;
 }
 
 .nav-justified>li.active::before {
@@ -1835,11 +1848,11 @@ body.front ol.breadcrumb {
   height: 17em;
   padding: 0;
   margin: 0;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   background-clip: padding-box;
   list-style-type: none;
   z-index:1;
-  box-shadow: 0 5px 5px rgba(50,50,50,0.2750);
+  box-shadow: 0 4px 5px rgba(50,50,50,0.2750);
   border-collapse: separate;
   -webkit-transition: box-shadow 200ms ease;
   transition: box-shadow 200ms ease;
@@ -1967,9 +1980,30 @@ body.front ol.breadcrumb {
 
 .shanti-thumbnail .body-wrap {
   padding: .35rem .8rem .6rem 0.9rem;
-  overflow-x: auto;
+  overflow: auto;
   height: 12.5rem;
 }
+
+.shanti-thumbnail .body-wrap::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+ 
+.shanti-thumbnail .body-wrap::-webkit-scrollbar-track {
+  width: 0.5rem;
+  background-color: #ddd;
+}
+
+.shanti-thumbnail .body-wrap::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  width: 0.5rem;
+}
+
+.shanti-thumbnail .body-wrap::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+  cursor: pointer;
+}
+
 
 .node-type-collection.logged-in.sidebar-second .tab-pane.main-col > div{
   padding-top:0;
@@ -2044,7 +2078,7 @@ body.front ol.breadcrumb {
   font-family: 'FontAwesome';
   font-size: 150%;
   position: relative;
-  left: -1rem;
+  left: -0.1rem;
   top: 0.2rem;
   margin-right: 0.4rem;
 }
@@ -2109,27 +2143,6 @@ body.front ol.breadcrumb {
   position: absolute;
   top: 5rem;
   left: 50%;
-}
-
-/* NOTE shanti-thumbails for collections pages in AV are in AV subtheme css */
-
-.shanti-thumbnail .body-wrap::-webkit-scrollbar {
-  width: 0.5rem;
-}
- 
-.shanti-thumbnail .body-wrap::-webkit-scrollbar-track {
-  width: 0.5rem;
-  background-color: #ddd;
-}
-
-.shanti-thumbnail .body-wrap::-webkit-scrollbar-thumb {
-  background-color: #aaa;
-  width: 0.5rem;
-}
-
-.shanti-thumbnail .body-wrap::-webkit-scrollbar-thumb:hover {
-  background-color: #888;
-  cursor: pointer;
 }
 
 /*-------------------------*/
@@ -3433,7 +3446,7 @@ a.btn,a.btn:hover,a.btn:active {
   background-image: linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);
   background-repeat: repeat-x;
   border: 1px solid #ddd;
-  border-color: #fff #eee #ddd;
+  /*border-color: #fff #eee #ddd;*/
   border-radius: 25px;
   background-clip: padding-box;
   overflow: hidden;
@@ -3685,12 +3698,12 @@ input.pagerer-page {
   border-radius: 2px;
   background-clip: padding-box;
   border: none;
-  font-size: 0.93em;
+  font-size: 0.88em;
   line-height: 1em !important;
   color: #6d7afc;
   height: 18px !important;
   width: 3rem !important;
-  max-width: 3rem !important;
+  max-width: 4rem !important;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
   border-collapse: separate;
 }
@@ -3978,6 +3991,15 @@ table tr.ok {
 .panel-group .panel+.panel {
   margin-top: 0;
 }
+
+.panel-collapse.collapse{
+  border-top:1px solid transparent;
+}
+
+.panel-collapse.collapse.in{
+  border-top-color: #d0d0d0;
+}
+
 /*--- for larger toggle panels ---*/
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
@@ -4944,7 +4966,7 @@ html body {
 }
 
 html body.admin-menu {
-  margin-top: 5.2rem !important;
+  margin-top: 5.4rem !important;
 } /* accounts for height of admin bar */
 
 /*--- toggle button for resource column - tetsting dev 
@@ -5358,7 +5380,7 @@ html body.admin-menu {
 @media screen and (min-width: 768px) {
    
   html body.admin-menu {
-    margin-top: 2.8rem !important;
+    margin-top: 3rem !important;
   } /* adjust height of admin bar */
   
   .navbar-default .menu-explore {
