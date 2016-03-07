@@ -1848,11 +1848,11 @@ body.front ol.breadcrumb {
   height: 17em;
   padding: 0;
   margin: 0;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   background-clip: padding-box;
   list-style-type: none;
   z-index:1;
-  box-shadow: 0 5px 5px rgba(50,50,50,0.2750);
+  box-shadow: 0 4px 5px rgba(50,50,50,0.2750);
   border-collapse: separate;
   -webkit-transition: box-shadow 200ms ease;
   transition: box-shadow 200ms ease;
