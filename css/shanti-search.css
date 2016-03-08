@@ -91,7 +91,7 @@ object.flip_label {
   left: 1px;
   top: 10px;
  /* top:85%; */
-  z-index: 900;
+  z-index: 290;
   width: 6px;
   height: 97%;
 }
@@ -108,7 +108,7 @@ object.flip_label {
 #search-flyout.extruder {
   margin-top: 7px;
   position: absolute;
-  z-index: 10100;
+  z-index: 300;
 }
 
 #search-flyout .ext_wrapper {
@@ -1474,7 +1474,7 @@ object.flip_label {
 /* ----- search loading ----- */
 #search-flyout .overlay-mask {
   position: absolute;
-  z-index: 15000;
+  z-index: 310;
   background: #fff;
   filter: alpha(opacity=30);
   opacity: 0.3;
@@ -1564,16 +1564,16 @@ object.flip_label {
 .loading {
   height: 150px;
   position: relative;
-  left: 27px;
-  width: 150px;
+  left: 2.7rem;
+  width: 15rem;
   border-radius: 100%;
   background-clip: padding-box;
-  z-index: 16000;
+  z-index: 320;
 }
 
 .loading-container {
   position: relative;
-  top: 220px;
+  top: 22rem;
   margin: 0 auto;
 }
 
