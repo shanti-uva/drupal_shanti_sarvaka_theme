@@ -704,10 +704,6 @@ object.flip_label {
   overflow: hidden;
 }
 
-.input-section .bootstrap-select.btn-group .dropdown-menu.open {
-  /* height: 180px; */
-}
-
 .input-section .bootstrap-select.btn-group .dropdown-menu.selectpicker:first-of-type {
   /*overflow: auto !important;*/
   /*height:180px !important;*/
