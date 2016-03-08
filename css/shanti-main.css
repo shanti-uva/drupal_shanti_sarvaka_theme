@@ -754,7 +754,8 @@ section.content-section.equal-height{
 .collections ul {
   text-align: center;
   list-style-type: none;
-  margin: 0 auto 0 2%;
+  /*margin: 0 auto 0 2%;*/
+  margin:0 auto;
   margin-bottom: 10px !important;
 }
 
