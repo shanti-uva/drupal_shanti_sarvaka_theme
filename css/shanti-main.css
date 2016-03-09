@@ -263,11 +263,19 @@ a:hover,a:active {
   line-height: 0;
   border: none;
 }
-
+/* - testing removal
 .loader {
   height: 80%;
   min-height: 31em;
   padding-top: 1em;
+}
+*/
+.ajax-progress, .ajax-progress *, 
+.ajax-progress-throbber, 
+.ajax-progress-throbber * {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .custom-inline {
