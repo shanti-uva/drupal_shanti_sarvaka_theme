@@ -762,7 +762,7 @@ section.content-section.equal-height{
 .collections ul li {
   margin: 0;
   float: left;
-  line-height: 4.5em;
+  line-height: 3em;
   width: 50%;
 }
 
@@ -773,7 +773,7 @@ section.content-section.equal-height{
   margin-left: 0;
   float: left;
   font-size: 0.75em;
-  line-height: 2.75em;
+  line-height: 3em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   font-weight: 500;
   font-weight: normal;
@@ -5088,9 +5088,9 @@ html body.admin-menu {
     font-size: 1em;
   }
 
-  .collections ul li {
+  /*.collections ul li {
     line-height: 3em;
-  }
+  }*/
 
   .collections > nav > div {
     padding-right: 0;
@@ -5104,9 +5104,9 @@ html body.admin-menu {
     line-height: 3em;
   }
 
-  .collections ul li a {
+  /*.collections ul li a {
     font-size: 0.82em;
-  }
+  }*/
 
   .shanti-thumbnail {
     max-width: 220px;
@@ -5429,9 +5429,9 @@ html body.admin-menu {
     margin-left: 7%;
   }
 
-  .collections ul li a {
+  /*.collections ul li a {
     font-size: 0.75em;
-  }
+  }*/
 
   .collections ul li a.disabled, 
   .collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
