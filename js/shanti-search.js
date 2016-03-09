@@ -19,7 +19,6 @@ Drupal.behaviors.sarvakaMbextruder = {
 	      closeOnExternalClick:false,
 	      closeOnClick:false,
 	      width: mywidth, // width is set in two places, here and the css
-	      zIndex: 290,
 	      top: 0
 	    });
 	    // Add back in extruder content
