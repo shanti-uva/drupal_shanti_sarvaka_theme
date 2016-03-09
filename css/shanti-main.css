@@ -1721,6 +1721,7 @@ body.front ol.breadcrumb {
 
 .related-resources-popover .parents p {
   margin-bottom: 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
 }
 
 .related-resources-popover .parents strong {
@@ -1728,7 +1729,7 @@ body.front ol.breadcrumb {
   font-size: 0.88em;
   margin-top: -0.12em;
  /*display:inline;*/
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+  /*font-family: 'museo-sans-500',helvetica,arial,sans-serif;*/
 }
 
 .related-resources-popover .parents strong::after {
