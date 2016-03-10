@@ -1962,9 +1962,11 @@ body.front ol.breadcrumb {
   content: '\e60a';
   color: rgba(255,255,255,0.0001);
   font-size: 2.5em;
-  line-height: 1.68em;
+  /*line-height: 1.68em;*/
   text-align: center;
-  height: 5em;
+  /*height: 5em;*/
+  position: relative;
+  top: 3.5rem;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
