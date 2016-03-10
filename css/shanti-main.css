@@ -1721,7 +1721,7 @@ body.front ol.breadcrumb {
 
 .related-resources-popover .parents p {
   margin-bottom: 0;
-  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  font-family: Arial,'Helvetica Neue',Helvetica, sans-serif;
 }
 
 .related-resources-popover .parents strong {
@@ -1962,13 +1962,11 @@ body.front ol.breadcrumb {
   content: '\e60a';
   color: rgba(255,255,255,0.0001);
   font-size: 2.5em;
-  /*line-height: 1.68em;*/
+  line-height: 1.68em;
   text-align: center;
-  height: 6em;
+  height: 5em;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  position: relative;
-  top: 3.5rem;
 }
 
 .shanti-thumbnail-image.shanti-field-video a .overlay::before {
@@ -2049,8 +2047,9 @@ body.front ol.breadcrumb {
 }
 
 .shanti-field-group-audience a {
-  font-size: 1em;
-  line-height: 1.68em;
+  font-size: 1.06em;
+  line-height: 1.32em;
+  text-indent:.25rem;
 }
 
 .shanti-field-group-audience a:hover,
