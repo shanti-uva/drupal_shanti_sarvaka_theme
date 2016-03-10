@@ -302,7 +302,7 @@
     			desc.remove();
     		});
 
-	      // conditional IE message
+	      // conditional IE message, see markup immediately after the body tag
 	      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
 	      
 	      // set the sidebar heigth

@@ -3977,6 +3977,7 @@ table tr.ok {
 
 .panel-default>.panel-heading {
   background: transparent !important;
+  border-bottom: none;
 }
 
 .panel-group .panel+.panel {
