@@ -4011,7 +4011,7 @@ table tr.ok {
 }
 
 .panel-collapse.collapse.in{
-  border-top-color: #d0d0d0;
+ /* border-top-color: #d0d0d0;*/
 }
 
 /*--- for larger toggle panels ---*/
