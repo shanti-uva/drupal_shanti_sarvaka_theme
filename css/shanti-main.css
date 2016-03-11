@@ -1650,7 +1650,7 @@ body.front ol.breadcrumb {
 /*----------------------------*/
 .popover {
   position: absolute;
-  z-index: 200;
+  z-index: 400;
   font-size:0.93em;
   line-height:1.18em;
 }
