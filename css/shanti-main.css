@@ -3636,7 +3636,8 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .bootstrap-select.btn-group .btn .filter-option {
-  font-size: 0.88em;
+  font-size: 0.93em;
+  padding-top: 0.1rem;
 }
 
 .bootstrap-select.btn-group .btn .filter-option .icon,

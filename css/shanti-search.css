@@ -648,20 +648,14 @@ object.flip_label {
 
 .input-section .bootstrap-select .btn {
   padding-left: 15px;
-  color: #666;
   background: transparent;
   background-image: none;
-  background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
   background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%, #f0f0f0 55%, #e0e0e0 100%);
   background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
-	/*
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-	*/
   background-repeat: repeat-x;
   border: 1px solid #ddd;
   border-radius: 25px;
-  background-clip: padding-box;
-	 /* fix for radius-corner color bleedthrough */
+  background-clip: padding-box; /* pair with radius-corner o fix color bleedthrough on some browsers */
   border-color: #eee #eee #ddd;
   overflow: hidden;
   box-shadow: none;
