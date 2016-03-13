@@ -814,7 +814,7 @@ section.content-section.equal-height{
 }
 
 .collections ul li a:hover .icon::before{
-  color: #fafafa;
+  color: #e0e0e0;
 }
 .collections ul li a:active .icon::before{
   color: #fff;
