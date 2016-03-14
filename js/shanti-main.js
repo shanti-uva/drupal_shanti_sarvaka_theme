@@ -209,6 +209,9 @@
 	          $('#menu').hide(100);
 	      });
 
+
+
+
 	      /* Initialize Language Buttons */
 
 				// Language menu drop down init
