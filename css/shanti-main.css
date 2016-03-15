@@ -86,6 +86,14 @@ mark {
   padding: 0;
 }
 
+blockquote{
+  padding: 5px 25px;
+  margin: 0 0 10px 20px;
+  font-size: 1.06em;
+  border-left: 5px solid #ddd;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
 input.form-text,
 input.form-control,
 textarea.form-textarea {
@@ -1150,7 +1158,8 @@ body.front ol.breadcrumb {
 
 .tabs.primary li a,
 .tabs.secondary li a {
-  background: rgba(0,0,0,.2000);
+  background-color: #c0c0c0;
+  background-color: rgba(0,0,0,.2000);
   color: #111;
   font-size: 0.75em;
   line-height: 1.32em;
@@ -1478,7 +1487,7 @@ body.front ol.breadcrumb {
 }
 
 .menu-main li:active {
-  background: #555;
+  background: #444;
   color: #fff;
 }
 
