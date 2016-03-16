@@ -1478,11 +1478,12 @@ body.front ol.breadcrumb {
   line-height: 3em;
   height: 4em;
   padding: 0 !important;
+  color:#606060;
 }
 
 .menu-main li:hover {
   background: #444;
-  /*color: #f0f0f0;*/
+  color: #f0f0f0;
 }
 
 .menu-main li:active {
@@ -1491,7 +1492,7 @@ body.front ol.breadcrumb {
 }
 
 .menu-main li a {
-  color: #606060;
+  color: #fff;
   border-top: 1px solid #ddd;
   display: block;
   font-size: .88em;
@@ -1504,12 +1505,12 @@ body.front ol.breadcrumb {
 
 .menu-main li a:hover {
   color: #f0f0f0;
-  background-color: #444;
+  /*background-color: #444;*/
 }
 
 .menu-main li a:active{
   color:#fff;
-  background-color: #404040;
+  /*background-color: #333;*/
 }
 
 .menu-main li:first-of-type a,
