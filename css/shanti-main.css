@@ -2937,7 +2937,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .carousel-main-image img {
   max-width: 100%;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
 }
 
 .carousel-main-image a { 
@@ -3157,7 +3157,6 @@ a.btn,a.btn:hover,a.btn:active {
   }
     /* .carousel-main-image{ min-width:270px;} */
   .carousel-main-image img {
-    margin-left: 0;
     max-height: 220px;
   } 
 }
