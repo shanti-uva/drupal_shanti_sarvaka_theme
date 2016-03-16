@@ -1481,12 +1481,12 @@ body.front ol.breadcrumb {
 }
 
 .menu-main li:hover {
-  /*background: #333;*/
+  background: #444;
   /*color: #f0f0f0;*/
 }
 
 .menu-main li:active {
-  /*background: #444;*/
+  background: #333;
   /*color: #fff;*/
 }
 
@@ -1520,7 +1520,7 @@ body.front ol.breadcrumb {
 .menu-main li:first-of-type a:hover,
 .menu-main li:first-of-type a:active{
   background-color: transparent;
-  color:#606060;
+  color:#fff;
 }
 
 .menu-main li .icon {
