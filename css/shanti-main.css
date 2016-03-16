@@ -3142,6 +3142,7 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-main-image img {
     max-height: 200px;
+    margin-top:1rem;
   }
 }
 
