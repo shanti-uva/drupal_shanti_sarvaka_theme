@@ -1482,13 +1482,11 @@ body.front ol.breadcrumb {
 
 .menu-main li:hover {
   /*background: #333;*/
-  background-color: transparent;
   /*color: #f0f0f0;*/
 }
 
 .menu-main li:active {
   /*background: #444;*/
-  background-color: transparent;
   /*color: #fff;*/
 }
 
@@ -1514,15 +1512,15 @@ body.front ol.breadcrumb {
   background-color: #404040;
 }
 
-.menu-main li a:hover,
-.menu-main li a:active{
-  background-color: transparent;
-  color:#606060;
-}
-
-.menu-main li:first-child a,
+.menu-main li:first-of-type a,
 .menu-main .myaccount>a {
   border-top: none;
+}
+
+.menu-main li:first-of-type a:hover,
+.menu-main li:first-of-type a:active{
+  background-color: transparent;
+  color:#606060;
 }
 
 .menu-main li .icon {
