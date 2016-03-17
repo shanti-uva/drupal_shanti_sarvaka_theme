@@ -716,6 +716,20 @@
       }
     } 
   };
+
+  Drupal.behaviors.shantiEqualHeights = {
+    attach: function (context, settings) {
+      if(context == window.document) {
+
+        $( window ).load(function() {
+          $('.equal-height').matchHeight({
+              property: 'min-height'
+          });
+        });
+
+      }
+    } 
+  };
   
 Drupal.behaviors.shantiDeleteButtonDisable = {
 	 attach: function (context, settings) {
