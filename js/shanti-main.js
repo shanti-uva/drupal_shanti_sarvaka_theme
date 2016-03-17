@@ -723,7 +723,7 @@
         
         $( window ).load(function() {
           $('.equal-height').matchHeight({
-              target: $('.content-section.equal-height')
+              target: $('.main-wrapper')
           });
         });
 
@@ -732,7 +732,9 @@
  //       });
         
         $('.resource-column a').bind('click', function () { // .panel-heading a
-          $('.equal-height').matchHeight();
+          $('.equal-height').matchHeight({
+              target: $('.main-wrapper')
+          });
         });
 
       }
