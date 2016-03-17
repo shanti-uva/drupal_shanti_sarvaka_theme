@@ -382,12 +382,12 @@
           // Prepare layout options.
           var options = {
           	align: 'left',
-            itemWidth: 190, // Optional min width of a grid item
+            itemWidth: 185, // Optional min width of a grid item
             autoResize: true, // This will auto-update the layout when the browser window is resized.
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
-            offset: 15, // Optional, the distance between grid items
+            offset: 12, // Optional, the distance between grid items
             outerOffset: 0, // Optional the distance from grid to parent
-            flexibleWidth: '30%', // Optional, the maximum width of a grid item
+            flexibleWidth: '35%', // Optional, the maximum width of a grid item
             ignoreInactiveItems: false,
           };
           // Get a reference to your grid items.
@@ -720,12 +720,21 @@
   Drupal.behaviors.shantiEqualHeights = {
     attach: function (context, settings) {
       if(context == window.document) {
+        
         $( window ).load(function() {
-          $('.equal-height').matchHeight({
+          $('.equal-height').matchHeight();
+
               // property: 'min-height',
-              target: $('.content-section.equal-height')
-          });
-        });  
+              // target: $('.content-section.equal-height')
+          //});
+        });
+
+        $('.resource-column a').click(function () { // .panel-heading a
+          $('.equal-height').matchHeight();
+        });
+
+
+
       }
     } 
   };
