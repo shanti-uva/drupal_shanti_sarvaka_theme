@@ -1478,16 +1478,17 @@ body.front ol.breadcrumb {
   line-height: 3em;
   height: 4em;
   padding: 0 !important;
+  color:#606060;
 }
 
 .menu-main li:hover {
-  background: #333;
+  background: #444;
   color: #f0f0f0;
 }
 
 .menu-main li:active {
-  background: #444;
-  color: #fff;
+  background: #333;
+  /*color: #fff;*/
 }
 
 .menu-main li a {
@@ -1496,20 +1497,31 @@ body.front ol.breadcrumb {
   display: block;
   font-size: .88em;
   line-height: 2.88em;
-  height: 4em;
+  height: 4.5em;
   font-weight: bold;
   padding: 1em .25em .1em 1.75em;
   text-transform: uppercase;
 }
 
-.menu-main li a:hover,
-.menu-main li a:active {
+.menu-main li a:hover {
   color: #f0f0f0;
+  background-color: #444;
 }
 
-.menu-main li:first-child a,
+.menu-main li a:active{
+  color:#fff;
+  background-color: #333;
+}
+
+.menu-main li:first-of-type a,
 .menu-main .myaccount>a {
   border-top: none;
+}
+
+.menu-main li:first-of-type a:hover,
+.menu-main li:first-of-type a:active{
+  background-color: transparent;
+  color:#fff;
 }
 
 .menu-main li .icon {
@@ -2925,7 +2937,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .carousel-main-image img {
   max-width: 100%;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
 }
 
 .carousel-main-image a { 
@@ -3058,6 +3070,7 @@ a.btn,a.btn:hover,a.btn:active {
   .carousel .carousel-main-image{
     width:50%;
     padding-left:1rem;
+    margin-top:1rem;
   }
   .carousel .carousel-main-content{
     width:50%;
@@ -3131,6 +3144,7 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-main-image img {
     max-height: 200px;
+    margin-top:1rem;
   }
 }
 
@@ -3144,7 +3158,6 @@ a.btn,a.btn:hover,a.btn:active {
   }
     /* .carousel-main-image{ min-width:270px;} */
   .carousel-main-image img {
-    margin-left: 0;
     max-height: 220px;
   } 
 }
@@ -3763,7 +3776,7 @@ ul.pager li .ajax-loading{
 ul.pager li > a {
   border: none;
   color: #aaa;
-  padding: 2px 0;
+  padding: 5px 0;
   margin: 0;
   background: transparent;
   border-radius: 0.3rem;
