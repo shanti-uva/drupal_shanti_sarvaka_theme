@@ -79,13 +79,13 @@
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar<?php print " $bsclass_sb1"; ?>">
+            <div id="sidebar-first" class="region sidebar equal-height<?php print " $bsclass_sb1"; ?>">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="content-section<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
+          <section class="content-section equal-height<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
 	        
 		        <button type="button" class="btn btn-default view-resources" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>
@@ -106,7 +106,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?>">
+            <div id="sidebar-second" class="region sidebar equal-height pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?>">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
