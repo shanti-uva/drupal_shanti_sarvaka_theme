@@ -731,8 +731,6 @@
  //         $('.equal-height').matchHeight();
  //       });
         
-        $('.content-resources a').bind('click', matchHeight() ); 
-
       }
     } 
   };
