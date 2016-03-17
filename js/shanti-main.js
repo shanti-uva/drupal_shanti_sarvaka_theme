@@ -723,14 +723,14 @@
         
         $( window ).load(function() {
           $('.equal-height').matchHeight({
-              target: $('.content-section article.active:first')
+              target: $('.content-section.equal-height')
           });
         });
 
  //       $( '.article.active' ).bind('load orientationchange resize',(function() {
  //         $('.equal-height').matchHeight();
  //       });
-        
+         
       }
     } 
   };
