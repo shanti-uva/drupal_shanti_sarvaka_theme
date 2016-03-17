@@ -727,7 +727,7 @@
           });
         });
 
-        $('.article.active').bind('load orientationchange resize', matchHeight );
+        // $('.article.active').bind('load orientationchange resize', matchHeight );
 
         //$('.resource-column a').click(function () { // .panel-heading a
         //  $('.equal-height').matchHeight();
