@@ -4437,7 +4437,7 @@ textarea {
 }
 
 .admin-menu .block.block-system {
-  float: left;
+  /*float: left;*/
 }
 
 .admin-menu #block-system-main.block.block-system {
