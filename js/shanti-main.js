@@ -723,15 +723,15 @@
         
         $( window ).load(function() {
           $('.equal-height').matchHeight({
-              target: $('.equal-height article.active')
+              // target: $('.content-section.equal-height')
           });
         });
 
-        $('.resource-column a').click(function () { // .panel-heading a
-          $('.equal-height').matchHeight({
-              target: $('.equal-height article.active')
-          });
-        });
+        $('.article.active').bind('load orientationchange resize', matchHeight() );
+
+        //$('.resource-column a').click(function () { // .panel-heading a
+        //  $('.equal-height').matchHeight();
+        //});
 
       }
     } 
