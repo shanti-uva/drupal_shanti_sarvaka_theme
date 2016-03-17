@@ -720,14 +720,7 @@
   Drupal.behaviors.shantiEqualHeights = {
     attach: function (context, settings) {
       if(context == window.document) {
-        
-        $( window ).load(function() {
-          $('.equal-height').matchHeight({
-              // target: $('.content-section.equal-height')
-          });
-        });
 
-        $('.article.active').bind('load orientationchange resize', matchHeight() );
 
         //$('.resource-column a').click(function () { // .panel-heading a
         //  $('.equal-height').matchHeight();
