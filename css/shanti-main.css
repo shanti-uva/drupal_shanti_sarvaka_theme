@@ -968,7 +968,7 @@ section.content-section.equal-height{
   overflow: hidden;
   background: transparent;
   font-size: .75em;
-  font-family: palatino,'Palatino Linotype',georgia,serif;
+  font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
   /**zoom:1;*/
   border: none;
@@ -1006,11 +1006,11 @@ section.content-section.equal-height{
 .breadcrumb li a {
   display: block;
   float: left;
-  font-size: .92em;
+  font-size: .82em;
   color: #fff;
   text-decoration: none;
   height: 1.18em;
-  line-height: 1.18em;
+  line-height: 1.32em;
   overflow: hidden;
   font-weight: normal;
 }
