@@ -723,12 +723,14 @@
         
         $( window ).load(function() {
           $('.equal-height').matchHeight({
-              target: $('.content-section.equal-height')
+              target: $('.equal-height article.active')
           });
         });
 
         $('.resource-column a').click(function () { // .panel-heading a
-          $('.equal-height').matchHeight();
+          $('.equal-height').matchHeight({
+              target: $('.equal-height article.active')
+          });
         });
 
       }
