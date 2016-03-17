@@ -4549,6 +4549,7 @@ form table td.label {
 #sidebar-second {
   background: #fff;
   /*max-width:29rem;*/
+  min-height:60em;
   padding: 0 0 0 0.6rem;
   margin-top: 1.5rem;
 }
