@@ -722,7 +722,7 @@
       if(context == window.document) {
         $( window ).load(function() {
           $('.equal-height').matchHeight({
-              property: 'min-height'
+              target: $('.content-section.equal-height')
           });
         });  
       }
