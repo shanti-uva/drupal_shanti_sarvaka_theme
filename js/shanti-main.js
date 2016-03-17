@@ -727,6 +727,9 @@
           });
         });
 
+                $('.content-resources li a').click( matchHeight );
+
+
  //       $( '.article.active' ).bind('load orientationchange resize',(function() {
  //         $('.equal-height').matchHeight();
  //       });
