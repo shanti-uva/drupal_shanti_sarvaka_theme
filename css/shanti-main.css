@@ -345,11 +345,6 @@ section.content-section.equal-height{
   /*padding-bottom: 7rem;*/
 }
 
-#sidebar-first,
-#sidebar-second{
-  background-color: transparent;
-}
-
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
@@ -4542,18 +4537,12 @@ form table td.label {
 /*----------------------------*/
 /*----- BEGIN sideabars -----*/
 /*----------------------------*/
-.sidebar {
- /*z-index:1;*/
-}
-
-.region-sidebar-second {
-  background: #fff;
+#sidebar-first,
+#sidebar-second{
+  background-color: transparent;
 }
 
 #sidebar-second {
-  background: #fff;
-  /*max-width:29rem;*/
-  min-height:60em;
   padding: 0 0 0 0.6rem;
   margin-top: 1.5rem;
 }
