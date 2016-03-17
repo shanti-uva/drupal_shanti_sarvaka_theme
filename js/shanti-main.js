@@ -723,7 +723,7 @@
         
         $( window ).load(function() {
           $('.equal-height').matchHeight({
-              target: $('.main-wrapper')
+              target: $('.content-section article.active:first')
           });
         });
 
@@ -731,11 +731,7 @@
  //         $('.equal-height').matchHeight();
  //       });
         
-        $('.resource-column a').bind('click', function () { // .panel-heading a
-          $('.equal-height').matchHeight({
-              target: $('.main-wrapper')
-          });
-        });
+        $('.content-resources a').bind('click', matchHeight() ); 
 
       }
     } 
