@@ -1505,12 +1505,12 @@ body.front ol.breadcrumb {
 
 .menu-main li a:hover {
   color: #f0f0f0;
-  /*background-color: #444;*/
+  background-color: #444;
 }
 
 .menu-main li a:active{
   color:#fff;
-  /*background-color: #333;*/
+  background-color: #333;
 }
 
 .menu-main li:first-of-type a,
