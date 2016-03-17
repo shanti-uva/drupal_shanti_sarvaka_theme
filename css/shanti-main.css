@@ -345,6 +345,10 @@ section.content-section.equal-height{
   /*padding-bottom: 7rem;*/
 }
 
+#sidebar-first,
+#sidebar-second{
+  background-color: transparent;
+}
 
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
@@ -5479,6 +5483,7 @@ html body.admin-menu {
     color: #707070;
     cursor: default;
   }
+
 }
 
 @media screen and (min-width: 1280px) {
