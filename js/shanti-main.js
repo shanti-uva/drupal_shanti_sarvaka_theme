@@ -723,15 +723,17 @@
         
         $( window ).load(function() {
           $('.equal-height').matchHeight({
-              // target: $('.content-section.equal-height')
+              target: $('.content-section.equal-height')
           });
         });
 
-        // $('.article.active').bind('load orientationchange resize', matchHeight );
-
-        //$('.resource-column a').click(function () { // .panel-heading a
-        //  $('.equal-height').matchHeight();
-        //});
+ //       $( '.article.active' ).bind('load orientationchange resize',(function() {
+ //         $('.equal-height').matchHeight();
+ //       });
+        
+        $('.resource-column a').bind('click', function () { // .panel-heading a
+          $('.equal-height').matchHeight();
+        });
 
       }
     } 
