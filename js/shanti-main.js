@@ -720,28 +720,26 @@
   Drupal.behaviors.shantiEqualHeights = {
     attach: function (context, settings) {
       
-      if(context == window.document) {
-        
-        $( window ).load(function() {
-          $('.equal-height').matchHeight({
-              target: $('.content-section.equal-height')
-          });
-        });
-         
+      if(context == window.document) {        
+          $( window ).load(function() {
+            $('.equal-height').matchHeight({
+                target: $('.content-section.equal-height')
+            });
+          });        
       }
 
-          $('.equal-height').matchHeight({
-              target: $('.content-section.equal-height')
-          });
+      $('.equal-height').matchHeight({
+          target: $('.content-section.equal-height')
+      });
 
 
-          $('.content-resources a').click( function() {
-
+      $('.content-resources a').click( function() {
+        $( window ).load(function() {
             $('.equal-height').matchHeight({
                 target: $('.content-section article.active')
             });
-
-          });
+        });   
+      });
 
     } 
   };
