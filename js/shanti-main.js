@@ -734,11 +734,9 @@
 
 
       $('.content-resources a').click( function() {
-        $( window ).load(function() {
-            $('.equal-height').matchHeight({
-                target: $('.content-section article.active')
-            });
-        });   
+          $('.equal-height').matchHeight({
+              target: $('.content-section article.active')
+          });   
       });
 
     } 
