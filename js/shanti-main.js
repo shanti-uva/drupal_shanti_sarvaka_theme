@@ -738,9 +738,9 @@
           $('.content-resources a').click( function() {
 
             $('.equal-height').matchHeight({
-                target: $('.content-section.equal-height')
+                target: $('.content-section article.active')
             });
-            
+
           });
 
     } 
