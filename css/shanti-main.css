@@ -342,7 +342,7 @@ a:hover,a:active {
 } /* matching container-fluid for now, correct for changes in BStrap */
 
 section.content-section.equal-height{
-  /*padding-bottom: 7rem;*/
+  min-height: 60em;
 }
 
 /*----------------------------------*/
@@ -2233,7 +2233,7 @@ body.front ol.breadcrumb {
   margin-left: -1.5rem;
   max-width: 16em;
   background: #fff;
-  /*min-height: 700px;*/
+  min-height: 60em;
   height: 100%;
   background-image: -webkit-linear-gradient(left, #ccc 0, #ccc 9px, #fff 10px);
   background-image: linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);
@@ -4544,6 +4544,7 @@ form table td.label {
 #sidebar-first,
 #sidebar-second{
   background-color: transparent;
+  min-height: 60em;
 }
 
 #sidebar-second {
