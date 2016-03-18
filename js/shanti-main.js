@@ -727,6 +727,8 @@
               target: $('.content-section.equal-height')
           });
         });
+
+         $('.content-resources a').click( matchHeight );
          
       }
 
