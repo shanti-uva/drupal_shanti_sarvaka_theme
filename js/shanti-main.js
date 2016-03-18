@@ -727,14 +727,15 @@
               target: $('.content-section.equal-height')
           });
         });
-
-         $('.content-resources a').click( matchHeight );
          
       }
 
           $('.equal-height').matchHeight({
               target: $('.content-section.equal-height')
           });
+
+
+          $('.content-resources a').click( matchHeight );
 
     } 
   };
