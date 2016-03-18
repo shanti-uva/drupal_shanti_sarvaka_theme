@@ -733,7 +733,7 @@
       });
 
 
-      $('.content-resources a').click( function() {
+      $('.content-resources a').bind( 'click', function() {
           $('.equal-height').matchHeight({
               target: $('.content-section article.active')
           });   
