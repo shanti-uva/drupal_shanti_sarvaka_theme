@@ -448,6 +448,10 @@ section.content-section.equal-height{
   color: #444 !important;
 }
 
+.navbar-brand:hover .site-slogan {
+  color: #5b68ce !important;
+}
+
 .navbar-brand:active .site-slogan {
   color: #444 !important;
 }
@@ -888,7 +892,7 @@ section.content-section.equal-height{
 /*--- BEGIN banner header ---*/
 .titlearea {
   color: #f9f9f9;
-  background: #5b68ce !important;
+  background: #5b68ce !important; /* default login/account color violet */
   height: 6.7rem;
   position: relative;
   padding: 0;
