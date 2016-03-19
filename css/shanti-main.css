@@ -3983,6 +3983,10 @@ table tr.ok {
 /*margin:-10px -20px 0 -2px;*/
 }
 
+.content-section.equal-height .panel-group:last-of-type{
+  margin-bottom:30rem;
+}
+
 .panel-body {
   background: #f9f9f9;
   border: none;
