@@ -2201,14 +2201,14 @@ body.front ol.breadcrumb {
 /*--------------------------------*/
 /*----- BEGIN new from kmaps -----*/
 /*--------------------------------*/
-#tab-main .paginated-spin {
+/*#tab-main .paginated-spin {
   float: left;
   margin-top: 10px;
   display: none;
 }
-
+*/
 /* Photos subsection */
-#tab-main .related-photos {
+/*#tab-main .related-photos {
   overflow: auto;
 }
 
@@ -2222,9 +2222,9 @@ body.front ol.breadcrumb {
 
 #tab-main .each-photo a.thumbnail:hover,
 #tab-main .each-text a.thumbnail:hover {
- /* see custom theme colors */
+ --------------------------------- see custom theme colors 
 }
-
+*/
 /**** kmaps side-col ****/
 .content-resources {
   padding-left: 0;
