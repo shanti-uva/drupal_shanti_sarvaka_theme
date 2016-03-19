@@ -733,11 +733,11 @@
       });
 
 
- //     $('.content-resources a').bind( 'click', function() {
- //         $('.equal-height').matchHeight({
- //             target: $('.content-section article.active')
- //         });   
- //     });
+      $('.panel-heading a').bind( 'click', function() {
+          $('.equal-height').matchHeight({
+              target: $('.content-section article.active')
+          });   
+      });
 
     } 
   };
