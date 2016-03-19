@@ -735,7 +735,7 @@
 
       $('.panel-heading a').bind( 'click', function() {
           $('.equal-height').matchHeight({
-              target: $('.content-section article.active')
+              target: $('.content-section.equal-height')
           });   
       });
 
