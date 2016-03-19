@@ -342,7 +342,7 @@ a:hover,a:active {
 } /* matching container-fluid for now, correct for changes in BStrap */
 
 section.content-section.equal-height{
-  min-height: 60em;
+  /*padding-bottom: 7rem;*/
 }
 
 /*----------------------------------*/
@@ -4544,7 +4544,6 @@ form table td.label {
 #sidebar-first,
 #sidebar-second{
   background-color: transparent;
-  min-height: 60em;
 }
 
 #sidebar-second {
