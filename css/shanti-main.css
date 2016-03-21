@@ -131,7 +131,7 @@ textarea.form-textarea::-webkit-scrollbar {
 }
  
 textarea.form-textarea::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  box-shadow: inset 0 0 6px #ccc;
   border-radius: 1rem; 
   width: 0.8rem;
 }
@@ -210,7 +210,6 @@ a:hover,a:active {
 
 .img-thumbnail{
   border-radius: 0.2rem;
-  -webkit-box-shadow: 0 0 4px #ccc;
   box-shadow: 0 0 4px #ccc;
 }
 
@@ -1895,18 +1894,16 @@ body.front ol.breadcrumb {
   background-clip: padding-box;
   list-style-type: none;
   z-index:1;
-  box-shadow: 0 4px 5px rgba(50,50,50,0.2750);
+  box-shadow: 0 4px 5px #c0c0c0;
   border-collapse: separate;
-  -webkit-transition: box-shadow 200ms ease;
-  transition: box-shadow 200ms ease;
 }
 
 .shanti-thumbnail:hover {
-  box-shadow: 0 4px 7px rgba(0,0,0,0.3250);
+  box-shadow: 0 4px 7px #aaa;
 }
 
 .shanti-thumbnail:active {
-  box-shadow: 0 3px 3px rgba(50,50,50,0.5);
+  box-shadow: 0 3px 3px #c0c0c0;
 }
 
 .shanti-thumbnail-image {
@@ -2428,7 +2425,7 @@ html input[type=file].form-file {
 
 .btn-default {
   border: 1px solid #ddd;
-  box-shadow: 0 0 10px 0 rgba(50,50,50,0.175);
+  box-shadow: 0 0 10px 0 #ccc;
   border-collapse: separate;
 }
 
