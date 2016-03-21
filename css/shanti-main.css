@@ -209,8 +209,14 @@ a:hover,a:active {
 }
 
 .img-thumbnail{
-  border-radius: 0.2rem;
+  border-radius: 0.25rem;
   box-shadow: 0 0 4px #ccc;
+  margin: 0.3rem 1rem .5rem 0.7rem;
+  padding: 0.25rem !important;
+}
+
+.img-thumbnail.pull-left{
+
 }
 
 .show-more a, 
