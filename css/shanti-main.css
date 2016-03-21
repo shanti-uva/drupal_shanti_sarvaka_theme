@@ -5061,7 +5061,7 @@ html body.admin-menu {
 
 /* search-labels used for transcript edit admin */
 .selected-kmap{
-  color: #555;
+  color: #333;
   font-size: 0.93em;
   font-family: 'museo-sans-500', helvetica, arial, sans-serif;
   border: none;
