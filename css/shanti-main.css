@@ -4549,6 +4549,7 @@ form table td.label {
 #sidebar-second{
   background-color: transparent;
   min-height: 60em;
+  border: 1px solid #e5e5e5;
 }
 
 #sidebar-second {
