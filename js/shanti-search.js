@@ -83,7 +83,7 @@ Drupal.behaviors.sarvakaMbextruder = {
   Drupal.behaviors.sarvakaSearchInit = {
     attach: function (context, settings) {
     	if(context == document) {
-	       // --- autoadjust the height of search panel, call function TEMP placed in bottom of equalheights js
+
 	      Drupal.ShantiSarvaka.searchTabHeight();
 	      $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.searchTabHeight );
 	    }
