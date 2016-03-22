@@ -40,7 +40,7 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.1;
-    color: #505050;
+    color: #606060;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.015rem;
     font-weight: normal;
@@ -968,7 +968,7 @@ section.content-section.equal-height{
 }
 
 .page-title {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.5em;
   line-height: 1.32em;
   text-shadow: 0 0 3px rgba(50,50,50, 0.225);
