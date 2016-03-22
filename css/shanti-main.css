@@ -265,6 +265,14 @@ a:hover,a:active {
   padding: 0.25rem !important;
 }
 
+.img-thumbnail.pull-left{
+  margin-left:0;
+}
+
+.img-thumbnail.pull-right {
+  margin-right: 0;
+}
+
 .show-more a, 
 .go-to-link a {
   border: none;
