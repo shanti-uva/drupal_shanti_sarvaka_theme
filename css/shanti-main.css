@@ -261,8 +261,8 @@ a:hover,a:active {
 .img-thumbnail{
   border-radius: 0.25rem;
   box-shadow: 0 0 7px #ccc;
-  margin: 0.3rem 1rem .5rem 0.7rem;
-  padding: 0.25rem !important;
+  margin: 0 1.5rem .5rem;
+  padding: 0.4rem;
 }
 
 .img-thumbnail.pull-left{
