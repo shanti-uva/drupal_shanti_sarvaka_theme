@@ -4640,7 +4640,7 @@ form table td.label {
 }
 
 #sidebar-second .block {
-  padding: 1rem 2rem .3rem 1rem;
+  padding: 1rem 2rem .3rem 1.5rem;
 }
 
 #sidebar-second .bootstrap-select.form-control .selectpicker {
@@ -4878,7 +4878,7 @@ form table td.label {
 
 
 .feature-type-wrapper{
-  padding: 0.5rem 0;
+  padding: 1.5rem 0 0.75rem;
 }
 
 .main-overview-image {
