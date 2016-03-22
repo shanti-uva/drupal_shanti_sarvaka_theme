@@ -721,7 +721,7 @@
     attach: function (context, settings) {
       
       if(context == window.document) {        
-          $( window ).load(function() {
+          $(document).ajaxSuccess(function() {
             $('.equal-height').matchHeight({
                 target: $('.content-section.equal-height')
             });
@@ -733,7 +733,7 @@
       });
 
 
-      $('.panel-heading a').bind( 'click', function() {
+      $('.panel-heading a').on( 'click', function() {
           $('.equal-height').matchHeight({
               target: $('.content-section.equal-height')
           });   
