@@ -37,26 +37,76 @@ body {
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #505050;
-  text-rendering: optimizeLegibility;
-  letter-spacing: 0.015rem !important;
-  font-weight: normal !important;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    color: #505050;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.015rem !important;
+    font-weight: normal !important;
+    font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;
 }
 
-h1, h2, h3 {
-  font-size: 1.5em;
-  margin: 1rem 0 0.5rem;
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small,
+.h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small,
+h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small,
+h6 .small, h6 small {
+    font-weight: 500;
+    line-height: 1;
+    color: #555;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, h1 .small,
+h1 small, h2 .small, h2 small, h3 .small, h3 small {
+    font-size: 75%;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h4 .small,
+h4 small, h5 .small, h5 small, h6 .small, h6 small {
+    font-size: 85%;
+}
+
+.h1, h1 {
+    font-size: 1.56em;
+}
+
+.h2, h2 {
+    font-size: 1.44em;
+}
+
+.h3, h3 {
+    font-size: 1.38em;
+}
+
+.h4, h4 {
+    font-size: 1.32em;
+}
+
+.h5, h5 {
+    font-size: 1.25em;
+}
+
+.h6, h6 {
+    font-size: 1.18em;
 }
 
 h4 {
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif !important;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
 
 h5, h6 {
-  font-weight: bold !important;
-  letter-spacing: 0 !important;
+  font-weight: bold;
+  letter-spacing: 0;
   margin-bottom: 5px;
 }
 
