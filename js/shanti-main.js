@@ -734,7 +734,7 @@ Drupal.behaviors.shantiEqualHeights = {
 
 
 
-Drupal.behaviors.shantiEqualHeights = {
+Drupal.behaviors.shantiEqualHeightsTarget = {
   attach: function (context, settings) {
 
     $('.equal-height').matchHeight({
