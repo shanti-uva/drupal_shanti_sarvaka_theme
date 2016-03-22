@@ -270,18 +270,16 @@ object.flip_label {
   border-radius: 25px;
   background-clip: padding-box;
   font-size: 1.06em;
-  height: 35px;
- /* coordinate with button height below */
+  height: 35px; /* coordinate with button height below */
   line-height: 1.44em;
   margin: 14px 0 0;
-  padding: 2px 60px 0 15px;
+  padding: 2px 80px 0 15px;
   width: 100%;
   max-width: 100%;
   overflow: auto;
   vertical-align: middle;
   box-shadow: 0 2px 5px #eee inset;
-  border-collapse: separate;
- /* fix for ie9 shadow */
+  border-collapse: separate; /* fix for ie9 shadow */
   background: #fff;
   -webkit-transition-property: all;
   transition-property: all;
