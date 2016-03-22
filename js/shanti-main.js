@@ -733,7 +733,7 @@ Drupal.behaviors.shantiEqualHeights = {
 };
 
 
-
+/*
 Drupal.behaviors.shantiEqualHeightsTarget = {
   attach: function (context, settings) {
 
@@ -750,7 +750,7 @@ Drupal.behaviors.shantiEqualHeightsTarget = {
 
   } 
 };
-
+*/
 
   
 Drupal.behaviors.shantiDeleteButtonDisable = {
