@@ -42,9 +42,9 @@ body {
     line-height: 1.1;
     color: #505050;
     text-rendering: optimizeLegibility;
-    letter-spacing: 0.015rem !important;
-    font-weight: normal !important;
-    font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;
+    letter-spacing: 0.015rem;
+    font-weight: normal;
+    font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small,
