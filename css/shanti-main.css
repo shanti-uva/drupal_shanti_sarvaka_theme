@@ -5219,6 +5219,7 @@ html body.admin-menu {
 
   .content-resources {
     width: 18.5rem;
+    min-height:700px;
   }
 
   .content-resources ul.nav-pills li {
