@@ -65,6 +65,17 @@
     // $(".view-wrap.short-wrap").css('height', comboHeight);
   };
 
+
+  Drupal.ShantiSarvaka.shantiEqualHeights = function() {       
+
+        $(window).on('ajaxSuccess', function(){
+          $('.equal-height').matchHeight({
+              target: $('.content-section.equal-height')
+          });
+        });
+  };
+
+
   /**
    *  Settings for the theme
    */
@@ -717,32 +728,16 @@
     } 
   };
 
-Drupal.behaviors.shantiEqualHeights = {
-  attach: function (context, settings) {
-      
-    if(context == window.document) {        
-        // $(document).ajaxSuccess(function() {
-        $(window).on("load", function() {
-          $('.equal-height').matchHeight({
-              target: $('.content-section.equal-height')
-          });
-        });        
-    }
-  } 
-};
-
-
 
 Drupal.behaviors.shantiEqualHeightsTarget = {
   attach: function (context, settings) {
     if(context == window.document) {
 
-      $('.panel-heading a').bind( 'click', function() {
+      $('.content-resources a').bind( 'click', function() {
           Drupal.ShantiSarvaka.shantiEqualHeights();   
       });
 
       // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );
-
     }
   } 
 };
