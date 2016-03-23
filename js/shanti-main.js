@@ -722,7 +722,7 @@ Drupal.behaviors.shantiEqualHeights = {
       
     if(context == window.document) {        
         // $(document).ajaxSuccess(function() {
-        $(document).on('ajaxSuccess', function(){
+        $(window).on("load", function() {
           $('.equal-height').matchHeight({
               target: $('.content-section.equal-height')
           });
