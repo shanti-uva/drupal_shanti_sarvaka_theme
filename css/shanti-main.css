@@ -4883,6 +4883,12 @@ form table td.label {
   padding: 1.5rem 0 0.75rem;
 }
 
+.feature-type-wrapper h6{
+  text-transform:uppercase;
+  font-size:90%;
+}
+
+
 .main-overview-image {
   margin: 0 0 1.5rem;
 }
