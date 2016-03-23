@@ -728,7 +728,6 @@ Drupal.behaviors.shantiEqualHeights = {
           });
         });        
     }
-
   } 
 };
 
@@ -736,18 +735,15 @@ Drupal.behaviors.shantiEqualHeights = {
 
 Drupal.behaviors.shantiEqualHeightsTarget = {
   attach: function (context, settings) {
+    if(context == window.document) {
 
-    $('.equal-height').matchHeight({
-        target: $('.content-section.equal-height')
-    });
+      $('.panel-heading a').on( 'click', function() {
+          Drupal.ShantiSarvaka.shantiEqualHeights();   
+      });
 
-/*
-    $('.panel-heading a').on( 'click', function() {
-        Drupal.ShantiSarvaka.shantiEqualHeights();   
-    });
+      // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );
 
-    $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );
-*/
+    }
   } 
 };
 
