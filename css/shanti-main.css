@@ -3118,17 +3118,21 @@ a.btn,a.btn:hover,a.btn:active {
     height:9.5em;
   }
 
+  .carousel-main-image img{ 
+    margin-bottom:1rem;
+  }
+
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
-@media (max-width:599px) {
+/*@media (max-width:599px) {
 
   .carousel-pause .glyphicon::before {
     position: relative;
     left: 0.1rem;
   }
 } 
-
+*/
 
 /*-------------------------*/
 /***** BEGIN min-width *****/
@@ -3140,12 +3144,18 @@ a.btn,a.btn:hover,a.btn:active {
     padding-left:1rem;
     margin-top:1rem;
   }
+
+  .carousel-main-image img{
+    margin-bottom:0;
+  }
+
+  .carousel .carousel-main-image,
   .carousel .carousel-main-content{
     width:50%;
   }
 
   .carousel-description img {
-    max-height: 210px;
+    /*max-height: 210px;*/
   }  
 
   .carousel-description p{
