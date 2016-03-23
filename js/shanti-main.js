@@ -407,7 +407,7 @@
           var $window = $(window);
           $window.resize(function() {
             var windowWidth = $window.width(),
-                newOptions = { flexibleWidth: '30%' };
+                newOptions = { flexibleWidth: '35%' };
 
             // Breakpoint
             if (windowWidth < 1024) {
