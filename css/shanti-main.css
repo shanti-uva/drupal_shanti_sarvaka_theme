@@ -3211,7 +3211,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image img {
-    max-height: 200px;
+    /*max-height: 200px;*/
     margin-top:1rem;
   }
 }
@@ -3226,7 +3226,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
     /* .carousel-main-image{ min-width:270px;} */
   .carousel-main-image img {
-    max-height: 220px;
+    /*max-height: 220px;*/
   } 
 }
 
@@ -3238,7 +3238,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image img {
-    max-height: 220px;
+    /*max-height: 220px;*/
   }
 
    .carousel-title {
@@ -3277,7 +3277,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image img {
-    max-height: 210px;
+    /*max-height: 210px;*/
   }
 
   .carousel .carousel-main-image{
