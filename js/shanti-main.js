@@ -722,7 +722,7 @@ Drupal.behaviors.shantiEqualHeights = {
       
     if(context == window.document) {        
         // $(document).ajaxSuccess(function() {
-        $(document).on('ajaxSuccess','article.active',function(){
+        $(document).on('ajaxSuccess', function(){
           $('.equal-height').matchHeight({
               target: $('.content-section.equal-height')
           });
@@ -733,7 +733,7 @@ Drupal.behaviors.shantiEqualHeights = {
 };
 
 
-/*
+
 Drupal.behaviors.shantiEqualHeightsTarget = {
   attach: function (context, settings) {
 
@@ -741,16 +741,16 @@ Drupal.behaviors.shantiEqualHeightsTarget = {
         target: $('.content-section.equal-height')
     });
 
-
+/*
     $('.panel-heading a').on( 'click', function() {
         Drupal.ShantiSarvaka.shantiEqualHeights();   
     });
 
     $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );
-
+*/
   } 
 };
-*/
+
 
   
 Drupal.behaviors.shantiDeleteButtonDisable = {
