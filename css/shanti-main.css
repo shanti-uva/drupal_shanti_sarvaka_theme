@@ -3114,16 +3114,14 @@ a.btn,a.btn:hover,a.btn:active {
 
 
 
-
+  .carousel-description p{
+    height:9.5em;
+  }
 
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
 @media (max-width:599px) {
-
-  .carousel-description p{
-    height:9.5em;
-  }
 
   .carousel-pause .glyphicon::before {
     position: relative;
@@ -3152,6 +3150,7 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-description p{
     font-size:0.93em;
+    height:11em;
   } 
 
   .carousel-pause{
@@ -3275,7 +3274,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-description p {
-    height: 9.5em;
+    /*height: 9.5em;*/
   }
 
   .carousel-main-image img {
