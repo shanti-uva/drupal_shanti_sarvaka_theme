@@ -65,17 +65,6 @@
     // $(".view-wrap.short-wrap").css('height', comboHeight);
   };
 
-
-  Drupal.ShantiSarvaka.shantiEqualHeights = function() {       
-
-        $(document).ajaxComplete( function() {
-          $('.equal-height').matchHeight({
-              target: $('.content-section.equal-height')
-          });
-        });
-  };
-
-
   /**
    *  Settings for the theme
    */
@@ -407,7 +396,7 @@
           var $window = $(window);
           $window.resize(function() {
             var windowWidth = $window.width(),
-                newOptions = { flexibleWidth: '35%' };
+                newOptions = { flexibleWidth: '30%' };
 
             // Breakpoint
             if (windowWidth < 1024) {
@@ -728,22 +717,29 @@
     } 
   };
 
+Drupal.behaviors.shantiEqualHeights = {
+  attach: function (context, settings) { 
+    if(context == window.document) {        
+        // $(document).ajaxSuccess(function() {
+        $(window).on('load', function(){
+          $('.equal-height').matchHeight({
+              target: $('.content-section.equal-height')
+          });
+        });    
 
-Drupal.behaviors.shantiEqualHeightsTarget = {
-  attach: function (context, settings) {
-    if(context == window.document) {
+        $('.panel-heading a').bind( 'click', function() {
+            $(window).on('load', function(){
+              $('.equal-height').matchHeight({
+                  target: $('.content-section.equal-height')
+              });
+            });   
+        });
 
-      Drupal.ShantiSarvaka.shantiEqualHeights();
+        // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );
 
-      $('.content-resources a').bind( 'click', function() {
-          Drupal.ShantiSarvaka.shantiEqualHeights();   
-      });
-
-      // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );
     }
   } 
 };
-
 
   
 Drupal.behaviors.shantiDeleteButtonDisable = {
