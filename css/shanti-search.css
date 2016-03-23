@@ -637,7 +637,7 @@ object.flip_label {
 }
 
 .input-section .bootstrap-select .selectpicker {
-  line-height: 27px;
+  line-height: 25px;
   /* height: 27px; */
   padding: 0;
   border: 1px solid #ddd;

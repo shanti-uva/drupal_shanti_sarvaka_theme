@@ -706,7 +706,7 @@ function shanti_sarvaka_carousel($variables) {
           <p class="show-more h5"><a href="' . $slide['path'] . '">' . t('View Collection') . ' </a></p>
         </div>
         <div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
-            <a href="' . $slide['path'] . '"><img class="img-responsive" src="' . $slide['img'] . '" alt=""></a>
+            <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>
         </div>
      </div><!-- /Slide' . $n . ' --> ';
   }
