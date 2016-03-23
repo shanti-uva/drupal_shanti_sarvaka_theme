@@ -40,7 +40,7 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.1;
-    color: #707070;
+    color: #626262;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.015rem;
     font-weight: normal;
