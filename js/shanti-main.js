@@ -733,6 +733,8 @@ Drupal.behaviors.shantiEqualHeightsTarget = {
   attach: function (context, settings) {
     if(context == window.document) {
 
+      Drupal.ShantiSarvaka.shantiEqualHeights();
+
       $('.content-resources a').bind( 'click', function() {
           Drupal.ShantiSarvaka.shantiEqualHeights();   
       });
