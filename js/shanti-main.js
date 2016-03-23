@@ -737,7 +737,7 @@ Drupal.behaviors.shantiEqualHeightsTarget = {
   attach: function (context, settings) {
     if(context == window.document) {
 
-      $('.panel-heading a').on( 'click', function() {
+      $('.panel-heading a').bind( 'click', function() {
           Drupal.ShantiSarvaka.shantiEqualHeights();   
       });
 
