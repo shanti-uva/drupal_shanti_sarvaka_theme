@@ -68,7 +68,7 @@
 
   Drupal.ShantiSarvaka.shantiEqualHeights = function() {       
 
-        $(window).on('ajaxSuccess', function(){
+        $(document).ajaxComplete( function() {
           $('.equal-height').matchHeight({
               target: $('.content-section.equal-height')
           });
