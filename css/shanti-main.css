@@ -3588,12 +3588,12 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text {
-  font-weight: bold;
+    /*font-weight: bold;*/
   background: #fff;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a .icon {
-  font-weight: bold;
+    /*font-weight: bold;*/
   color: #444;
 }
 
@@ -3623,7 +3623,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
-  background: #eee;
+  background: #fafafa;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:active>a,
