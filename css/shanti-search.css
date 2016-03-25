@@ -2,7 +2,7 @@
 /*--- START / Sliding Panel ---*/
 /*----------------------------------------------*/
 
-/*--- clear default extruder styles -----*/
+/*--- clearing the default extruder styles (in utils.css) -----*/
 .extruder, .extruder,.extruder .extruder-content, .extruder .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover {
   overflow: visible;
   background-image: none;
@@ -634,6 +634,11 @@ object.flip_label {
 
 .input-section .selectpicker li a span:hover {
   color: #fff;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
+  font-size: 1.18em;
+  margin-right: 0.4rem;
 }
 
 /*---- select dropdown -----
