@@ -3569,9 +3569,8 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .bootstrap-select.btn-group .btn .caret{
-  /*position: absolute;
-  top: 3px;
-  right: 27px;*/
+  position: absolute;
+  right: 8px;
 }
 
 .main-content .selectpicker .caret {
