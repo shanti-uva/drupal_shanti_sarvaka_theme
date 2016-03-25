@@ -628,6 +628,16 @@ object.flip_label {
 }
 
 /*-----------------------------------------------*/
+
+.input-section .bootstrap-select.btn-group:not(.input-group-btn), 
+.input-section .bootstrap-select.btn-group[class*="span"]{
+  margin-top: 1rem;
+}
+.input-section .bootstrap-select.btn-group .btn .caret{
+  position: absolute;
+  top: 3px;
+  right: 2.5rem;
+}
 /*---- select dropdown -----
 .input-section .bootstrap-select {
   width: 100%;
