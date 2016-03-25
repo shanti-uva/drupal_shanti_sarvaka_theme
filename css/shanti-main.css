@@ -3451,16 +3451,19 @@ a.btn,a.btn:hover,a.btn:active {
 /*------------------------------------*/
 /*---- Bootstrap Select dropdown -----*/
 /*------------------------------------*/
-.bootstrap-select.btn-group.form-control {
-  height: 27px;
-  background: transparent;
-}
-
 .bootstrap-select.btn-group {
   width: 100%;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+  height: 27px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.bootstrap-select.btn-group:not(.input-group-btn), 
+.bootstrap-select.btn-group[class*="span"]{
+  margin-top:0;
 }
 
 .bootstrap-select.btn-group > .btn {
@@ -3485,7 +3488,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .btn {
   margin: 0;
-  padding-left: 1.5rem;
+  padding: 0 2.38em 0 1.5rem;
   color: #606060;
   background: transparent;
   background-image: none;
@@ -3493,7 +3496,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   background-image: linear-gradient(top,#fff 0%,#f7f7f7 45%,#f0f0f0 55%,#e0e0e0 100%);
   background-repeat: repeat-x;
   border: 1px solid #ddd;
-  /*border-color: #fff #eee #ddd;*/
   border-radius: 25px;
   background-clip: padding-box;
   overflow: hidden;
@@ -3534,12 +3536,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .dropdown-menu li>a.opt{
   padding-left: 2rem;
-}
-
-.bootstrap-select.btn-group {
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-  box-shadow: none;
 }
 
 .bootstrap-select.btn-group .btn .caret {
