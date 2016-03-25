@@ -3548,21 +3548,21 @@ a.btn,a.btn:hover,a.btn:active {
 .main-content .bootstrap-select.btn-group .dropdown-menu.open {
  /* height:auto; */
 }
-
+/*
 .bootstrap-select.btn-group .btn .caret{
   position: absolute;
   right: 8px;
 }
-
-.main-content .selectpicker .caret {
+*/
+.bootstrap-select.btn-group .btn .caret {
   border: none;
   font-family: 'shanticon';
   content: '\e609';
 }
 
-.main-content .selectpicker .caret::before {
+.bootstrap-select.btn-group .btn .caret::before {
   color: #5b68ce;
-  font-size: 1.75em;
+  font-size: 1.7rem;
   font-family: 'shanticon';
   content: '\e609';
   /*position: absolute;
@@ -3571,16 +3571,16 @@ a.btn,a.btn:hover,a.btn:active {
  /* adjusted position for Video Edit page edits */
 }
 
-.main-content .selectpicker li {
+.bootstrap-select.btn-group .dropdown-menu li {
   padding: 0;
   overflow: hidden;
 }
 
-.main-content .selectpicker>li>a>span.text {
+.bootstrap-select.btn-group .dropdown-menu li>a>span.text {
   padding-left: 4px !important;
 }
 
-.main-content .selectpicker li a {
+.bootstrap-select.btn-group .dropdown-menu li>a {
   padding: 0 1.25rem;
   overflow: hidden;
   display: block;
@@ -3588,14 +3588,14 @@ a.btn,a.btn:hover,a.btn:active {
   height: 1.75em;
 }
 
-.main-content .selectpicker li a,
-.main-content .selectpicker li a:hover,
-.main-content .selectpicker li a:active {
+.bootstrap-select.btn-group .dropdown-menu li>a,
+.bootstrap-select.btn-group .dropdown-menu li>a:hover,
+.bootstrap-select.btn-group .dropdown-menu li>a:active {
   border: none;
   outline: none;
 }
 
-.main-content .selectpicker li a:focus {
+.bootstrap-select.btn-group .dropdown-menu li>a:focus {
     background-color: #fff;
     background-image: none !important;
     outline: thin dotted;
@@ -3603,60 +3603,60 @@ a.btn,a.btn:hover,a.btn:active {
     outline-offset: -2px;
 }
 
-.main-content .selectpicker li.selected a,
-.main-content .selectpicker li.selected a span.text {
+.bootstrap-select.btn-group .dropdown-menu li.selected>a,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text {
   font-weight: bold;
   background: #fff;
 }
 
-.main-content .selectpicker li.selected a .icon {
+.bootstrap-select.btn-group .dropdown-menu li.selected>a .icon {
   font-weight: bold;
   color: #444;
 }
 
-.main-content .selectpicker li:hover a,
-.main-content .selectpicker li:hover a span.text,
-.main-content .selectpicker li a,
-.main-content .selectpicker li a:hover,
-.main-content .selectpicker li a:active,
-.main-content .selectpicker li a span.text,
-.main-content .selectpicker li a:hover span.text,
-.main-content .selectpicker li a:active span.text,
-.main-content .selectpicker li.selected a,
-.main-content .selectpicker li.selected a:hover,
-.main-content .selectpicker li.selected a:active,
-.main-content .selectpicker li.selected a:hover span.text,
-.main-content .selectpicker li.selected a:active span.text {
+.bootstrap-select.btn-group .dropdown-menu li:hover>a,
+.bootstrap-select.btn-group .dropdown-menu li:hover>a span.text,
+.bootstrap-select.btn-group .dropdown-menu li>a,
+.bootstrap-select.btn-group .dropdown-menu li>a:hover,
+.bootstrap-select.btn-group .dropdown-menu li>a:active,
+.bootstrap-select.btn-group .dropdown-menu li>a>span.text,
+.bootstrap-select.btn-group .dropdown-menu li>a:hover>span.text,
+.bootstrap-select.btn-group .dropdown-menu li>a:active>span,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
   color: #444;
  /*background: #eee !important;*/
 }
 
-.main-content .selectpicker li:hover a,
-.main-content .selectpicker li:hover a span.text,
-.main-content .selectpicker li a:hover span.text,
-.main-content .selectpicker li a:active span.text,
-.main-content .selectpicker li.selected:hover,
-.main-content .selectpicker li.selected a:hover,
-.main-content .selectpicker li.selected a:active,
-.main-content .selectpicker li.selected a:hover span.text,
-.main-content .selectpicker li.selected a:active span.text {
+.bootstrap-select.btn-group .dropdown-menu li:hover>a,
+.bootstrap-select.btn-group .dropdown-menu li:hover>a span.text,
+.bootstrap-select.btn-group .dropdown-menu li>a:hover span.text,
+.bootstrap-select.btn-group .dropdown-menu li>a:active span.text,
+.bootstrap-select.btn-group .dropdown-menu li.selected:hover,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
   background: #eee;
 }
 
-.main-content .selectpicker>li:active>a,
-.main-content .selectpicker>li:active>a>span.text {
+.bootstrap-select.btn-group .dropdown-menu li:active>a,
+.bootstrap-select.btn-group .dropdown-menu li:active>a>span.text {
   background: #fff;
 }
 /*----- checkmark styles -----*/
-.main-content .selectpicker>li>a .check-mark,
-.main-content .selectpicker>li>a:hover .check-mark,
-.main-content .selectpicker>li>a:active .check-mark {
+.bootstrap-select.btn-group .dropdown-menu li>a .check-mark,
+.bootstrap-select.btn-group .dropdown-menu li>a:hover .check-mark,
+.bootstrap-select.btn-group .dropdown-menu li>a:active .check-mark {
   color: #ccc;
 }
 
-.main-content .selectpicker>li.selected>a .check-mark,
-.main-content .selectpicker>li.selected>a:hover .check-mark,
-.main-content .selectpicker>li.selected>a:active .check-mark {
+.bootstrap-select.btn-group .dropdown-menu li.selected>a .check-mark,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover .check-mark,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:active .check-mark {
   color: #444;
 }
 
