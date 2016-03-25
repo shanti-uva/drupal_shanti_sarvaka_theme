@@ -421,8 +421,7 @@ section.content-section.equal-height{
 .navbar-header {
   color: #555;
   font-style: italic;
-  font-size: 1.5em;
-  line-height: normal;
+  font-size: 1.62em;
   margin: 0;
   padding: 0 0 0 10px;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
@@ -5392,13 +5391,13 @@ html body.admin-menu {
     line-height: 1.68em;
     padding-left: 12px;
     position: relative;
-    top: 0.5rem;
+    top: 0.3rem;
   }
 
   .navbar-header .site-slogan {
     font-size: 100%;
     position: relative;
-    top: 0.025rem;
+    top: -0.15rem;
     /* text-shadow: 0.05rem 0.05rem #fff; */
   }
 
