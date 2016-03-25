@@ -3402,7 +3402,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 
 /***** REVIEW ***/
-/**********************/
+/****************** mark pulled these on March 25, 2016 testing
 .select-wrapper {
   position: relative;
   float: left;
@@ -3446,43 +3446,44 @@ a.btn,a.btn:hover,a.btn:active {
   left: 0;
   width: 100%;
 }
+****/
 
 /*------------------------------------*/
 /*---- Bootstrap Select dropdown -----*/
 /*------------------------------------*/
-.main-content .bootstrap-select.form-control {
+.bootstrap-select.btn-group.form-control {
   height: 27px;
   background: transparent;
 }
 
-.main-content .bootstrap-select {
+.bootstrap-select.btn-group {
   width: 100%;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.main-content .bootstrap-select > .btn {
+.bootstrap-select.btn-group > .btn {
   padding: 0 2.38em 0 0;
 }
 
-.main-content table.field-multiple-table .bootstrap-select > .btn {
+table.field-multiple-table .bootstrap-select.btn-group > .btn {
  /* width:50%; */
 }
 
-.main-content table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
+table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   font-size: 0.88em;
   max-width: 25rem !important;
  /* width:45% !important; commented out for Video Edit page edits */
 }
 
-.main-content .bootstrap-select .popover-title {
+.bootstrap-select.btn-group .popover-title {
   font-size: 0.93em;
   padding: 0.5rem 1.2rem 0.2rem;
   margin-bottom: 0.2rem;
 }
 
-.main-content .bootstrap-select .btn {
+.bootstrap-select.btn-group .btn {
   margin: 0;
   padding-left: 1.5rem;
   color: #606060;
@@ -3499,14 +3500,14 @@ a.btn,a.btn:hover,a.btn:active {
   box-shadow: none;
 }
 
-.main-content .bootstrap-select .btn:hover,
-.main-content .bootstrap-select .btn:focus {
+.bootstrap-select.btn-group .btn:hover,
+.bootstrap-select.btn-group .btn:focus {
   border: 1px solid #ccc;
   background: #eee;
 }
 
-.main-content .bootstrap-select .btn:focus,
-.main-content .bootstrap-select .btn.active {
+.bootstrap-select.btn-group .btn:focus,
+.bootstrap-select.btn-group .btn.active {
   outline: none !important;
   border: 1px solid #9097d3;
   box-shadow: 0 0 4px 0 #5764de;
@@ -3516,16 +3517,16 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 /*--- dropdown ---*/
-.main-content .dropdown-menu {
+.bootstrap-select.btn-group .dropdown-menu {
   font-size: 0.92em;
 }
 
-.main-content .dropdown-menu.open {
+.bootstrap-select.btn-group .dropdown-menu.open {
   border-radius: 0.8rem;
   background-clip: padding-box;
 }
 
-.main-content .selectpicker .dropdown-menu>li>a span.text {
+.bootstrap-select.btn-group .dropdown-menu>li>a span.text {
   margin-right: 0;
   padding-left: 1.3rem;
   overflow: hidden;
@@ -3535,25 +3536,12 @@ a.btn,a.btn:hover,a.btn:active {
   padding-left: 2rem;
 }
 
-.main-content .bootstrap-select.btn-group {
+.bootstrap-select.btn-group {
   margin-top: 0.25rem;
   margin-bottom: 0;
   box-shadow: none;
 }
 
-.main-content .bootstrap-select.btn-group .dropdown-menu {
- /* height:auto; removed to fix Edit Video - width:95%; overflow:auto; */
-}
-
-.main-content .bootstrap-select.btn-group .dropdown-menu.open {
- /* height:auto; */
-}
-/*
-.bootstrap-select.btn-group .btn .caret{
-  position: absolute;
-  right: 8px;
-}
-*/
 .bootstrap-select.btn-group .btn .caret {
   border: none;
   font-family: 'shanticon';
@@ -4535,10 +4523,6 @@ form table td.label {
   width: 40%;
 }
 
-.admin-menu .views-field-title .bootstrap-select > .btn {
- /* width:100% !important; ----- commented out for Video Edit page edits --*/
-}
-
 .field-multiple-table tr.odd,
 .field-multiple-table tr.even {
   background: #f7f7f7;
@@ -4592,6 +4576,12 @@ form table td.label {
 
 #sidebar-second .bootstrap-select.form-control .selectpicker {
   width: 100% !important;
+}
+
+#sidebar-second .bootstrap-select.btn-group .btn .caret{
+  position: absolute;
+  top: 3px;
+  right: 2.5rem;
 }
 
 /**** END Sidebars ****/
