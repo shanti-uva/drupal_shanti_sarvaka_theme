@@ -627,6 +627,145 @@ object.flip_label {
   right: 2.5rem;
 }
 
+.input-section .selectpicker li a span {
+  background: transparent !important;
+  color: #444;
+}
+
+.input-section .selectpicker li a span:hover {
+  color: #fff;
+}
+
+/*---- select dropdown -----
+.input-section .bootstrap-select {
+  width: 100%;
+  padding: 0 5px 0 5px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.input-section .bootstrap-select .selectpicker {
+  line-height: 25px;
+  padding: 0;
+  border: 1px solid #ddd;
+  width: 100% !important;
+}
+
+.input-section .bootstrap-select .btn {
+  padding-left: 15px;
+  background: transparent;
+  background-image: none;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 45%, #f0f0f0 55%, #e0e0e0 100%);
+  background-image: linear-gradient(top, #fff 0%, #f7f7f7 45%,  #f0f0f0 55%,  #e0e0e0 100%);
+  background-repeat: repeat-x;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background-clip: padding-box; 
+  border-color: #eee #eee #ddd;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.input-section .bootstrap-select .btn:hover {
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+.input-section .bootstrap-select .btn:focus,
+.input-section .bootstrap-select .btn.active {
+  outline: none !important;
+  border: 1px solid #9097d3 !important;
+  box-shadow: 0 0 4px 0 #5764de;
+  border-collapse: separate;
+  background: #f5f5f5;
+  background-image: none;
+}
+
+.input-section .bootstrap-select.btn-group:not(.input-group-btn) {
+  margin-top: 0.82rem;
+}
+
+.input-section .dropdown-menu.open {
+  border-radius: 1rem;
+  background-clip: padding-box;
+}
+
+.input-section .dropdown-menu.selectpicker {
+  background-clip: padding-box;
+  overflow: auto;
+}
+
+.input-section .selectpicker .dropdown-menu>li>a span.text {
+  margin-right: 0;
+  padding-left: 18px;
+  overflow: hidden;
+}
+
+.input-section .bootstrap-select.btn-group .btn .caret {
+  border: none;
+}
+
+.input-section .bootstrap-select.btn-group .btn .caret::before {
+  position: absolute;
+  top: -11px;
+  right: 0px;
+}
+
+.input-section .selectpicker li {
+  padding: 0;
+  overflow: hidden;
+}
+
+.input-section .selectpicker li a {
+  color: #444;
+  padding: 0 15px;
+  overflow: hidden;
+  display: block;
+  line-height: 25px;
+  height: 25px;
+}
+
+.input-section .selectpicker li a,
+.input-section .selectpicker li a span,
+.input-section .selectpicker li.selected a {
+  color: #555;
+}
+
+.input-section .selectpicker li.selected a span.text {
+  color: #000;
+}
+
+.input-section .selectpicker li,
+.input-section .selectpicker li a:active,
+.input-section .selectpicker li.selected a:hover,
+.input-section .selectpicker li.selected a:active {
+  color: #444;
+}
+
+.input-section .selectpicker li a span.text:hover,
+.input-section .selectpicker li.selected a span.text:hover {
+  color: #fff;
+}
+
+.input-section .selectpicker li:hover span.text,
+.input-section .selectpicker li:active span.text {
+  background: transparent !important;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark {
+  color: #444;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark {
+  color: #444;
+}
+
+*/
+
+
+
+
  /* search errors */
 .input-section .notification-wrapper {
   padding: 0 15px;
@@ -652,16 +791,7 @@ object.flip_label {
   top: -0.5rem;
   right: -.5rem;
 }
-/*
-.input-section .selectpicker li a span {
-  background: transparent !important;
-  color: #444;
-}
 
-.input-section .selectpicker li a span:hover {
-  color: #fff;
-}
-*/
 .advanced-view .form-group.advanced-input {
   padding: 2px 5px 2px;
 } /*--- common input ---*/
