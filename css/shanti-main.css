@@ -3374,7 +3374,7 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 
-/*-- filtered message to upgrade older browsers --*/
+/*-- filtered message after body tag to upgrade older browsers --*/
 .progressive {
   color: #fff;
   background: #5a65d1;
@@ -3593,7 +3593,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 }
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a .icon {
-    /*font-weight: bold;*/
+  font-weight: bold;
   color: #444;
 }
 
