@@ -18,16 +18,15 @@
   border: none;
 }
 
+/*--------------------------*/
+/*--- panel ---*/
 .extruder {
   padding: 0;
   border: none;
   background: transparent !important;
   box-shadow: none;
-  top: 0;
-  margin-top: 7px;
-  position: absolute;
-  z-index: 300;
 }
+
 .ext_wrapper {
   height: auto;
   padding: 0;
@@ -36,11 +35,10 @@
 .extruder .extruder-content {
  /*overflow:visible !important;*/
   background: transparent !important;
-    border: 7px solid #fff;
-  border-right-width: 0px;
+  border: none;
   padding: 0;
   width: 100%;
-  box-shadow: -4px 4px 5px hsla(0, 0.0000%, 60.0000%, 0.2000);
+  box-shadow: 0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);
   border-collapse: separate;
  /* fix for ie9 shadow */
 }
@@ -50,15 +48,13 @@
   background: transparent !important;
 }
 
-.extruder .text.ui-resizable {
+.extruder .text {
   border: none;
   padding: 0;
   text-shadow: none;
-   /*---- default panel container width is set ----*/
   width: 277px;
   min-width: 277px !important;
-  background: #f8f8f8;
-  color: #333;
+ /*---- default panel container width is set ----*/
 }
 
 .extruder .flap,
@@ -94,6 +90,7 @@ object.flip_label {
   position: absolute;
   left: 1px;
   top: 10px;
+ /* top:85%; */
   z-index: 290;
   width: 6px;
   height: 97%;
@@ -103,7 +100,38 @@ object.flip_label {
   background: #fafafa;
 }
 
-#search-flyout.extruder .text:first-of-type {
+/*--- panel ---*/
+#search-flyout {
+  top: 0;
+}
+
+#search-flyout.extruder {
+  margin-top: 7px;
+  position: absolute;
+  z-index: 300;
+}
+
+#search-flyout .ext_wrapper {
+  height: auto;
+  padding: 0;
+}
+
+#search-flyout.extruder .extruder-content {
+  background: transparent !important;
+ /*overflow:visible !important;*/
+  border: 7px solid #fff;
+  border-right-width: 0px;
+  padding: 0;
+  width: 100%;
+  box-shadow: -4px 4px 5px hsla(0, 0.0000%, 60.0000%, 0.2000);
+  border-collapse: separate;
+}
+
+#search-flyout.extruder.isOpened .extruder-content {
+  border-right-width: 12px;
+}
+
+#search-flyout.extruder .text {
   border: none;
   padding: 0;
   text-shadow: none;
@@ -126,11 +154,6 @@ object.flip_label {
   border-collapse: separate;
 }
 
-#search-flyout.extruder.isOpened .flap {
-  width: 48px;
-  margin: 0 0 0 -8px;
-}
-
 #search-flyout.extruder .flap.on-flap {
   border-collapse: separate;
 }
@@ -146,6 +169,11 @@ object.flip_label {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-collapse: separate;
+}
+
+#search-flyout.extruder.isOpened .flap {
+  width: 48px;
+  margin: 0 0 0 -8px;
 }
 
 #search-flyout.extruder.isOpened .flap.on-flap .flapLabel {
