@@ -103,6 +103,14 @@ object.flip_label {
   background: #fafafa;
 }
 
+#search-flyout.extruder .text:first-of-type {
+  border: none;
+  padding: 0;
+  text-shadow: none;
+  background: #f8f8f8;
+  color: #333;
+}
+
 /*--- big search button inline styles are loaded via main.js with icon markup  */
 #search-flyout.extruder .flap {
   background: #fff;
