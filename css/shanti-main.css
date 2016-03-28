@@ -1862,7 +1862,7 @@ body.front ol.breadcrumb {
   display: block;
   width: 100%;
   font-size: 1.06em;
-  line-height: 2.06em;
+  line-height: 2.18em;
   height: 2.75em;
   letter-spacing: 0.03rem;
 }
@@ -2364,29 +2364,26 @@ body.front ol.breadcrumb {
 }
 
 .content-resources .nav-pills li > a > .badge {
-  margin-left: 7px;
+  margin-left: 4px;
   position: relative;
   top: -1px;
   font-size: .82em;
   font-family: sans-serif;
   line-height: 1em;
-  height: 1.63em;
+  height: 1.62em;
   text-shadow: 0 1px 1px #444;
   display: inline-block;
   color: #fff;
   background: #777;
 }
 
+.content-resources .nav-pills li > a:hover > .badge,
 .content-resources .nav-pills li.active > a > .badge {
   background: #505050;
 }
 
 .content-resources .nav-pills li > a > .badge:empty {
   display: none;
-}
-
-.content-resources .nav-pills li > a:hover .badge {
-  background: #505050;
 }
 
 .content-resources .nav-pills li .ajax-progress {
@@ -2410,7 +2407,6 @@ body.front ol.breadcrumb {
 /*------------------------------*/
 /*----- END new kmaps -----*/
 /*------------------------------*/
-
 
 
 /*-------------------------*/
@@ -3631,6 +3627,12 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   background: #fff;
 }
 /*----- checkmark styles -----*/
+.bootstrap-select.btn-group.show-tick .dropdown-menu li>a .check-mark {
+  color: #ddd;
+  position: absolute;
+  top: 0.7rem;
+  margin-top: 0 !important;
+}
 .bootstrap-select.btn-group .dropdown-menu li>a .check-mark,
 .bootstrap-select.btn-group .dropdown-menu li>a:hover .check-mark,
 .bootstrap-select.btn-group .dropdown-menu li>a:active .check-mark {
@@ -3641,15 +3643,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover .check-mark,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active .check-mark {
   color: #444;
-}
-
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
-  color: #ddd;
-  position: absolute;
-  right: 15px;
-  top: 0.5rem;
-  margin-top: 0 !important;
-  display: inline-block;
 }
 
 .bootstrap-select.btn-group .btn .filter-option {
