@@ -1961,10 +1961,10 @@ body.front ol.breadcrumb {
   margin: 0 auto;
   border: none;
 }
-/* temp fix for audio image */
+
 .shanti-thumbnail-image.shanti-field-audio img { 
   position:relative;
-  height: 9rem;
+    /* height: 9rem; */
 }
 
 .shanti-thumbnail-image a {
