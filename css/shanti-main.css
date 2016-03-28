@@ -1721,7 +1721,7 @@ body.front ol.breadcrumb {
 .popover {
   position: absolute;
   z-index: 400;
-  font-size:0.93em;
+  font-size:0.88em;
   line-height:1.18em;
 }
 
@@ -1861,8 +1861,8 @@ body.front ol.breadcrumb {
   border-bottom: none;
   display: block;
   width: 100%;
-  font-size: 1em;
-  line-height: 2.32em;
+  font-size: 1.06em;
+  line-height: 2.06em;
   height: 2.75em;
   letter-spacing: 0.03rem;
 }
