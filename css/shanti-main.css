@@ -55,29 +55,12 @@ body {
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
 
-.h1, h1 {
-    font-size: 1.56em;
-}
-
-.h2, h2 {
-    font-size: 1.44em;
-}
-
-.h3, h3 {
-    font-size: 1.32em;
-}
-
-.h4, h4 {
-    font-size: 1.18em;
-}
-
-.h5, h5 {
-    font-size: 1.06em;
-}
-
-.h6, h6 {
-    font-size: 1em;
-}
+.h1, h1 { font-size: 1.56em; }
+.h2, h2 { font-size: 1.44em; }
+.h3, h3 { font-size: 1.32em; }
+.h4, h4 { font-size: 1.18em; }
+.h5, h5 { font-size: 1.06em; }
+.h6, h6 { font-size: 1em; }
 
 ul {
   list-style: square inside none;
@@ -870,8 +853,6 @@ section.content-section.equal-height{
 .collections ul .icon.shanticon-logo-shanti::before {
   font-size: 110%;
 }
-
-
 
 .collections h4 {
   color: #eee;

@@ -627,13 +627,18 @@ object.flip_label {
   right: 2.5rem;
 }
 
-.input-section .selectpicker li a span {
+.input-section .bootstrap-select.btn-group li a span {
   background: transparent !important;
   color: #444;
 }
 
-.input-section .selectpicker li a span:hover {
+.input-section .bootstrap-select.btn-group li a span:hover {
   color: #fff;
+}
+
+.input-section .bootstrap-select.btn-group .popover-title .close{
+  line-height: .75;
+  font-weight:normal;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
