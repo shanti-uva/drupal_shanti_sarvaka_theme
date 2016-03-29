@@ -37,23 +37,22 @@ body {
   overflow: hidden;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    line-height: 1.1;
-    color: #626262;
-    text-rendering: optimizeLegibility;
-    letter-spacing: 0.015rem;
-    font-weight: normal;
-    font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-}
-
 .h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 5px;
+  color: #606060;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  letter-spacing: 0.015rem;
+  font-weight: normal;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 .h4, .h5, .h6, h4, h5, h6 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  color:#555;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  letter-spacing: 0;
+  font-weight: bold;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
 
 .h1, h1 {
@@ -78,16 +77,6 @@ body {
 
 .h6, h6 {
     font-size: 1em;
-}
-
-h4 {
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-}
-
-h5, h6 {
-  font-weight: bold;
-  letter-spacing: 0;
-  margin-bottom: 5px;
 }
 
 ul {
@@ -296,8 +285,8 @@ a:hover,a:active {
   content: '\f18e';
  /*-- arrow icon */
 }
-/* tools */
-.dfn, .italic {
+/*
+.italic {
   font-style: italic !important;
 }
 
@@ -317,12 +306,6 @@ a:hover,a:active {
   min-height: 0;
   line-height: 0;
   border: none;
-}
-/* - testing removal
-.loader {
-  height: 80%;
-  min-height: 31em;
-  padding-top: 1em;
 }
 */
 .ajax-progress, .ajax-progress *, 
@@ -357,6 +340,7 @@ a:hover,a:active {
   text-shadow: none !important;
   color: white !important;
 }
+
 /* layout containers */
 .wrap-all {
   position: relative;
