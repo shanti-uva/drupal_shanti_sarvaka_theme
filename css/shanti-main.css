@@ -584,7 +584,7 @@ section.content-section.equal-height{
 
 
 .navbar-collapse .navbar-nav.navbar-right:last-child {
-  margin-right: 60px;
+  margin-right: 50px;
 }
 
 .navbar-default .navbar-nav>li {
@@ -1929,7 +1929,7 @@ body.front ol.breadcrumb {
   float: left;
   width: 100%;
   max-width: 190px;
-  height: 17em;
+  height: 18em;
   padding: 0;
   margin: 0;
   border-radius: 0.4rem;
@@ -2065,7 +2065,7 @@ body.front ol.breadcrumb {
 .shanti-thumbnail .body-wrap {
   padding: .35rem .8rem .6rem 0.9rem;
   overflow: auto;
-  height: 12.5rem;
+  height: 13.5rem;
 }
 
 .shanti-thumbnail .body-wrap::-webkit-scrollbar {
@@ -2343,7 +2343,7 @@ body.front ol.breadcrumb {
 }
 
 .content-resources .nav-pills li a .icon {
-  margin-right: .4em;
+  margin-right: 0.2em;
   font-size: 1.68em;
   position: relative;
   top: 4px;
