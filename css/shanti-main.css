@@ -406,9 +406,8 @@ section.content-section.equal-height{
   margin: 0;
   color: #333;
   font-size: 0.88em;
-  /*line-height: 2.62em;*/
+  line-height: 1.38em;
   font-weight: normal;
-  /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
 
 .navbar-header .navbar-brand:hover,
@@ -428,7 +427,7 @@ section.content-section.equal-height{
   white-space: nowrap;
   color: #444 !important;
   position: relative;
-  top: 0.25rem;
+  top: 1.32rem;
   text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.25rem;
@@ -518,6 +517,7 @@ section.content-section.equal-height{
   position: relative;
   top: 0.75rem;
   float:left;
+  margin-right: 0.75rem;
 }
 
 .menu-icon .icon {
@@ -3608,7 +3608,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
   color: #ddd;
   position: absolute;
-  top: 0.5rem;
+  top: 0.6rem;
   right:1.5rem;
   margin-top: 0 !important;
   display:inline-block;
