@@ -1355,6 +1355,7 @@ body.front ol.breadcrumb {
 
 .nav-justified>li:hover{
   background: #f9f9f9;
+  border-top: 2px solid #ccc;
 }
 
 .nav-justified>li>a {
@@ -1378,7 +1379,8 @@ body.front ol.breadcrumb {
   border-right: none;
 }
 
-.nav-justified>li.active{
+.nav-justified>li.active,
+.nav-justified>li.active:hover{
   border-top: 5px double #764B8D;
 }
 
