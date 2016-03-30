@@ -3609,6 +3609,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   color: #ddd;
   position: absolute;
   top: 0.5rem;
+  right:1.5rem;
   margin-top: 0 !important;
   display:inline-block;
 }
