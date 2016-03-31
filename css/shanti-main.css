@@ -499,7 +499,7 @@ section.content-section.equal-height{
   background: #eee;
   color: #444;
   display: inline-block;
-  width: 60px;
+  width: 55px;
   height: 50px;
   vertical-align: middle;
   padding: 12px 0 0 0;
@@ -521,7 +521,7 @@ section.content-section.equal-height{
 }
 
 .menu-icon .icon {
-  padding: 0;
+  padding: 0 0 0 0.7rem;
   margin: 0;
   color: #505050;
   font-size: 2em;
@@ -552,7 +552,7 @@ section.content-section.equal-height{
 
 
 .navbar-collapse .navbar-nav.navbar-right:last-child {
-  margin-right: 60px;
+  margin-right: 55px;
 }
 
 .navbar-default .navbar-nav>li {
