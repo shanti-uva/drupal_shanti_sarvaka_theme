@@ -1356,11 +1356,11 @@ body.front ol.breadcrumb {
 
 .nav-justified>li:hover:not(.active){
   background: #fefefe;
-  box-shadow: 0 0 3px 1px #ddd;
+  box-shadow: 0 0 2px 1px #ddd;
 }
 
 .nav-justified>li:active{
-  box-shadow: 0 0 3px 1px #d0d0d0;
+  box-shadow: 0 0 2px 1px #c0c0c0;
 }
 
 .nav-justified>li>a {
