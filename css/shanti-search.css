@@ -477,10 +477,10 @@ object.flip_label {
 /*----- Advanced Options -----*/
 .advanced-view {
  /*** height:275px;  height can help control cross-browser issues ***/
-  padding: 0;
+  padding: 0 .9rem;
   background: #f8f8f8;
   width: 100%;
-  margin-right: 0.25em;
+  margin-right: 0.3rem;
 }
 
 .advanced-view .form-group {
@@ -803,7 +803,7 @@ object.flip_label {
 }
 
 .advanced-view .form-group.advanced-input {
-  padding: 2px 5px 2px;
+  padding: 2px 0 2px;
 } /*--- common input ---*/
 
 .advanced-view > .form-group:last-of-type .form-group{
