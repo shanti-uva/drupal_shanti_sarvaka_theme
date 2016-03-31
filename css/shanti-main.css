@@ -1358,6 +1358,10 @@ body.front ol.breadcrumb {
   background: #f9f9f9;
 }
 
+.nav-justified>li:hover:not(.active){
+  box-shadow: 0 0 4px #ddd;
+}
+
 .nav-justified>li>a {
   border: none !important;
   border-radius: 0;
