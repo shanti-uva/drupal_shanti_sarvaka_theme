@@ -1354,12 +1354,13 @@ body.front ol.breadcrumb {
   transition: background 0.25s ease 0s;
 }
 
-.nav-justified>li:hover{
+.nav-justified>li:hover:not(.active){
   background: #fefefe;
+  box-shadow: 0 0 3px 1px #ddd;
 }
 
-.nav-justified>li:hover:not(.active){
-  box-shadow: 0 0 4px #ddd;
+.nav-justified>li:active{
+  box-shadow: 0 0 3px 1px #d0d0d0;
 }
 
 .nav-justified>li>a {
