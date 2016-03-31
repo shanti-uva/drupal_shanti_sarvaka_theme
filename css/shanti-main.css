@@ -1946,8 +1946,8 @@ body.front ol.breadcrumb {
 }
 
 .shanti-thumbnail-image .icon {
-  filter: alpha(opacity=80);
-  opacity: 0.8;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
   position: absolute;
   top: 0;
   right: 0;
