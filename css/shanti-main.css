@@ -439,6 +439,8 @@ section.content-section.equal-height{
   font-style: normal;
   letter-spacing: 0.25rem;
   font-family: 'museo-sans-500', arial,sans-serif;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 .navbar-header .site-slogan::before {
@@ -724,9 +726,9 @@ section.content-section.equal-height{
 
 .navtop .dropdown-menu li:hover,
 .navtop .dropdown-menu li:active {
-  background: #f0f0f0;
+  background: #f9f9f9;
   color: #333;
-  border-color: #e7e7e7;
+  border-color: #ededed;
  /* background:  linear-gradient(to bottom, #ddd 0%, #fafafa 50%,  #f5f5f5 65%,  #ddd 100%); */
 }
 
