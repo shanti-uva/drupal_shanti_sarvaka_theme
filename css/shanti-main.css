@@ -3598,19 +3598,19 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   background: #fff;
 }
 /*----- checkmark styles -----*/
-.bootstrap-select.btn-group .dropdown-menu li>a .check-mark,
-.bootstrap-select.btn-group .dropdown-menu li>a:hover .check-mark,
-.bootstrap-select.btn-group .dropdown-menu li>a:active .check-mark {
+.bootstrap-select.btn-group .dropdown-menu li>a .glyphicon,
+.bootstrap-select.btn-group .dropdown-menu li>a:hover .glyphicon,
+.bootstrap-select.btn-group .dropdown-menu li>a:active .glyphicon {
   color: #ccc;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a .check-mark,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover .check-mark,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:active .check-mark {
+.bootstrap-select.btn-group .dropdown-menu li.selected>a .glyphicon,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover .glyphicon,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:active .glyphicon {
   color: #444;
 }
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a .glyphicon {
   color: #ddd;
   position: absolute;
   top: 0.6rem;
