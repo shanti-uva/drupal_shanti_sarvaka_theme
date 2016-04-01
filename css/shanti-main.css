@@ -3989,6 +3989,7 @@ table tr.ok {
   margin: 0;
   padding: 0;
   box-shadow: 0 0 5px rgba(0,0,0, 0.125);
+  box-shadow: none;
   border-collapse: separate;
 }
 
