@@ -703,6 +703,10 @@ section.content-section.equal-height{
   border-top: 1px solid #ddd;
   background-image: -webkit-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
   background-image: linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
+
+
+  background-image: -webkit-linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
+  background-image: linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
 }
 
 .navbar .lang .dropdown-menu {
@@ -1453,6 +1457,11 @@ body.front ol.breadcrumb {
   margin: 0;
 /* -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; */
   overflow: visible;
+}
+
+.menu-main h3{
+    background-image: -webkit-linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
+    background-image: linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
 }
 
 .menu-main h2 a {
