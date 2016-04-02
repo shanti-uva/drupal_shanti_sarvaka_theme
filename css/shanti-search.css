@@ -828,7 +828,7 @@ object.flip_label {
   border-collapse: separate;
 }
 
-.advanced-view .form-group.advanced-input .form-control > .form-control{
+.advanced-view .form-group.advanced-input.select-type > .select-type{
   padding: 0 !important;
 }
 
