@@ -3969,7 +3969,10 @@ table tr.ok {
 }
 
 .panel-default .panel-heading+.panel-collapse .panel-body{
-  box-shadow: inset 0 0 3px 1px #ddd;
+      box-shadow: inset 0 0 3px 1px #ddd;
+  box-shadow: inset 0 0 0.25rem 0 #999;
+
+
 }
 
 .panel.panel-default {
@@ -4794,7 +4797,8 @@ form table td.label {
 
 
 .feature-type-wrapper{
-  padding: 1.5rem 0 0.75rem;
+      padding: 1.5rem 0 0.75rem;
+  padding: 0 0 0.75rem;
 }
 
 .feature-type-wrapper h6{
