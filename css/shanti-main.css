@@ -220,7 +220,7 @@ a:hover,a:active {
 
 .img-thumbnail.pull-left{
   margin-left:0;
-  padding-right: 0.4rem;
+  padding: 0.4rem;
 }
 
 .img-thumbnail.pull-right {
@@ -358,6 +358,10 @@ a:hover,a:active {
 
 section.content-section.equal-height{
   /*padding-bottom: 7rem;*/
+}
+
+.content-section article.active:not(.front){
+  padding-top: 0.5rem;
 }
 
 /*----------------------------------*/
@@ -4802,8 +4806,7 @@ form table td.label {
 
 
 .feature-type-wrapper{
-      padding: 1.5rem 0 0.75rem;
-  padding: 0 0 0.75rem;
+  padding: 1.5rem 0 0.75rem;
 }
 
 .feature-type-wrapper h6{
