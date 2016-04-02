@@ -3556,19 +3556,19 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li>a,
 .bootstrap-select.btn-group .dropdown-menu li>a:hover,
 .bootstrap-select.btn-group .dropdown-menu li>a:active {
-  border: none;
-  outline: none;
+  border: 1px solid transparent;
+  border-width: 1px 0;
+  /*outline: none;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a:focus {
     background-color: #fff;
     background-image: none !important;
-    outline: thin dotted;
+    /*outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
+    outline-offset: -2px;*/
     outline: 0;
-    border-top:1px solid #d0d0d0;
-    border-bottom:1px solid #d0d0d0;
+    border-color: #d0d0d0;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a,
