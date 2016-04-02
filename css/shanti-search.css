@@ -485,7 +485,7 @@ object.flip_label {
 
 .advanced-view .form-group {
   border-top: 1px solid #e0e0e0;
-  margin: 0 8px;
+  margin: 0;
 }
 
 .advanced-view .form-group.last {
@@ -553,7 +553,7 @@ object.flip_label {
   padding: 0;
   position: relative;
   top: 23px;
-  left: -8px;
+  left: -12px;
   float: right;
 }
 
