@@ -3556,8 +3556,8 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li>a,
 .bootstrap-select.btn-group .dropdown-menu li>a:hover,
 .bootstrap-select.btn-group .dropdown-menu li>a:active {
-  border: 1px solid transparent;
-  border-width: 1px 0;
+  border: 1px solid transparent !important;
+  border-width: 1px 0 !important;
   /*outline: none;*/
 }
 
@@ -3568,7 +3568,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;*/
     outline: 0;
-    border-color: #d0d0d0;
+    border-color: #d0d0d0 !important;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a,
