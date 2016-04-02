@@ -701,12 +701,13 @@ section.content-section.equal-height{
   border-bottom-left-radius: 8px;
   background-clip: padding-box;
   border-top: 1px solid #ddd;
-  background-image: -webkit-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
-  background-image: linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
+  /*background-image: -webkit-linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);
+  background-image: linear-gradient(top, #ddd 0, #f7f7f7 6px, #fff 18px);*/
 
 
-  background-image: -webkit-linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
-  background-image: linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
+    border-top-color:#ddd;
+    background-image: -webkit-linear-gradient(top, #f0f0f0 0, #f7f7f7 3px, #fff 12px);
+    background-image: linear-gradient(top, #f0f0f0 0, #f7f7f7 3px, #fff 12px);
 }
 
 .navbar .lang .dropdown-menu {
