@@ -806,10 +806,6 @@ object.flip_label {
   padding: 2px 1.2rem 2px;
 } 
 
-.advanced-view > .form-group:last-of-type .form-group{
-  border-top:none;
-}
-
 .advanced-view .form-group.advanced-input .form-control {
   line-height: 27px;
   height: 27px;
@@ -828,7 +824,8 @@ object.flip_label {
   border-collapse: separate;
 }
 
-.advanced-view .form-group.advanced-input.select-type > .select-type{
+.advanced-view > .form-group:last-of-type .form-group{
+  border-top:none;
   padding: 0 !important;
 }
 
