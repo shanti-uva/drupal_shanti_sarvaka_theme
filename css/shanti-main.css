@@ -3566,6 +3566,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
+    outline: 0;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a,
