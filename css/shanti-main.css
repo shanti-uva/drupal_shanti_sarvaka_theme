@@ -363,7 +363,7 @@ section.content-section.equal-height{
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-.header-banner {
+/*.header-banner {
   position: relative;
   overflow: visible;
   margin-top: 0 !important;
@@ -371,7 +371,7 @@ section.content-section.equal-height{
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110);
   border-collapse: separate;
 }
-
+*/
 .navbar.navbar-default {
   padding: 0;
   margin: 0;
@@ -1462,7 +1462,7 @@ body.front ol.breadcrumb {
 }
 
 .menu-main h3{
-    border: none;
+    border-top: none;
     background-image: -webkit-linear-gradient(top, #f0f0f0 0, #f7f7f7 3px, #fff 12px);
     background-image: linear-gradient(top, #f0f0f0 0, #f7f7f7 3px, #fff 12px);
 }
