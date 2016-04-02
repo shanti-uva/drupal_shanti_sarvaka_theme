@@ -1460,6 +1460,7 @@ body.front ol.breadcrumb {
 }
 
 .menu-main h3{
+    border-top-color:#ddd;
     background-image: -webkit-linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
     background-image: linear-gradient(top, #f0f0f0 0, #f7f7f7 6px, #fff 18px);
 }
