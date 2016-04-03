@@ -3074,6 +3074,16 @@ a.btn,a.btn:hover,a.btn:active {
   padding-right: 5px;
 }
 
+
+
+
+
+
+
+
+
+
+
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
@@ -3165,6 +3175,10 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-description p {
     height: 10em;
+  }
+
+  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+    height: 16.25em;
   }
 }
 
@@ -3298,6 +3312,11 @@ a.btn,a.btn:hover,a.btn:active {
     transform: translate3d(0, 0, 0);
   }
 }
+
+
+
+
+
 
 /*------------------------*/
 /*----- END carousel ---*/
