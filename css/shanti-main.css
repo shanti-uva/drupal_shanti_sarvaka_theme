@@ -2082,7 +2082,8 @@ body.front ol.breadcrumb {
 }
 
 .shanti-thumbnail .body-wrap .shanti-field-creator a::before{
-  content: '\e600'; /* icon of agent person */
+  /* icon of agent person */
+  content: '\e600';
   font-family: 'shanticon';
   margin-right: .4rem;
   margin-left: 0.09rem;
@@ -2106,6 +2107,11 @@ body.front ol.breadcrumb {
 .shanti-thumbnail-link:active {
   color: rgba(90,101,209,.9000);
   box-shadow: none;
+}
+
+/* Tibetan in teaser titles */
+.shanti-thumbnail-field.shanti-field-title.bo {
+    font-size: 120%;
 }
 
 .shanti-field-group-audience a {
@@ -2289,10 +2295,7 @@ body.front ol.breadcrumb {
   white-space: nowrap;
 }
 
-.content-resources .nav-pills li.active {
- /* see custom theme colors */
-}
-
+.content-resources .nav-pills li.active { /* see custom theme colors */ }
 .content-resources .nav-pills li a {
   display: block;
   padding: 0 0 0 1.2rem;
@@ -2309,10 +2312,7 @@ body.front ol.breadcrumb {
   font-weight: bold;
 }
 
-.content-resources .nav-pills li:first-child a {
- /*border-top:1px solid #e0e0e0;*/
-}
-
+.content-resources .nav-pills li:first-child a { /*border-top:1px solid #e0e0e0;*/ }
 .content-resources .nav-pills li a,
 .content-resources .nav-pills li a:hover,
 .content-resources .nav-pills li a:active {
@@ -2393,8 +2393,10 @@ body.front ol.breadcrumb {
 */
 
 /*------------------------------*/
-/*----- END new kmaps -----*/
+/*----- END kmaps -----*/
 /*------------------------------*/
+
+
 
 
 /*-------------------------*/
@@ -3317,14 +3319,12 @@ a.btn,a.btn:hover,a.btn:active {
   }
 }
 
-
-
-
-
-
 /*------------------------*/
 /*----- END carousel ---*/
 /*------------------------*/
+
+
+
 
 
 /* JIRA feedback button bottom-right */
