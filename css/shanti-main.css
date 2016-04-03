@@ -1439,6 +1439,7 @@ body.front ol.breadcrumb {
   top: 50px;
   padding: 0;
   overflow: visible;
+  opacity: .93;
 }
 
 .menu-main h3,
@@ -3327,12 +3328,21 @@ a.btn,a.btn:hover,a.btn:active {
 
 
 
-/* JIRA feedback button bottom-right */
-.atlwdg-trigger{
-  z-index:1; /* firefox needs this */
+
+/** 
+* JIRA feedback button bottom-right 
+*/
+.atlwdg-trigger.atlwdg-SUBTLE{
+  right: 2rem;
+  z-index:1; /* help firefox */
+  padding: 6px 12px;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 2px 2px 0 0;
 }
 
-/*---scroll to top ---*/
+/**
+* Scroll to Top 
+*/
 .back-to-top {
   position: fixed;
   bottom: 6rem;
