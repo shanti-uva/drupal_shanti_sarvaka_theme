@@ -2950,9 +2950,9 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel-description p {
-  font-size: 0.93em;
+  font-size: 1em;
   overflow: hidden;
-  height: 9.5em;
+  /*height: 9.5em;*/
 }
 
 .carousel-main-content .go-to-link a {
@@ -2962,6 +2962,10 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-main-content .go-to-link a:hover,
 .carousel-main-content .go-to-link a:active {
   color: rgb(207, 47, 30);
+}
+
+.carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+  height: auto;
 }
 
 .carousel-main-image img {
@@ -3106,7 +3110,7 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-description p{
     font-size:0.93em;
-    height:11em;
+    /*height:11em;*/
   } 
 
   .carousel-pause{
@@ -3174,7 +3178,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-description p {
-    height: 10em;
+    /*height: 10em;*/
   }
 
   .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
