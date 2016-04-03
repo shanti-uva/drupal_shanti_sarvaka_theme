@@ -3138,6 +3138,10 @@ a.btn,a.btn:hover,a.btn:active {
     left: -1.7rem;
     top: -1rem;
   }
+
+  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+    height: 16.25em;
+  }
 }  
 
 @media (min-width: 675px) {
@@ -3182,10 +3186,6 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-description p {
     /*height: 10em;*/
-  }
-
-  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 16.25em;
   }
 }
 
