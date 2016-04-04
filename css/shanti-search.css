@@ -143,9 +143,9 @@ object.flip_label {
 #search-flyout.extruder .flap {
   background: #fff;
   height: 53px;
-  width: 45px;
+  width: 50px;
   padding: 7px 0 7px 7px;
-  margin: 0 0 0 -7px;
+  margin: 0 0 0 -12px;
   cursor: pointer;
   display: block;
   border-top-left-radius: 44px;
@@ -162,7 +162,7 @@ object.flip_label {
 #search-flyout.extruder .flap.on-flap .flapLabel {
   background: #505050;
   height: 39px;
-  width: 37px !important;
+  width: 43px !important;
   padding: 17px 38px 17px 0;
   margin: 0;
   display: block;
@@ -198,7 +198,7 @@ object.flip_label {
 #search-flyout.extruder .flap>span .icon {
   font-size: 2.38rem;
   position: absolute;
-  left: 16px;
+  left: 17px;
   top: 16px;
   z-index: 10;
 }
