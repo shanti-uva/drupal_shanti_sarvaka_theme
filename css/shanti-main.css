@@ -1994,7 +1994,7 @@ body.front ol.breadcrumb {
   opacity: 1;
 }
 
-.shanti-thumbnail.audio .shanti-thumbnail-image .icon {
+.shanti-thumbnail-image.shanti-field-audio .icon {
   background: rgb(72,80,189) !important;
 }
 
