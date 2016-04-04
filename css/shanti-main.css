@@ -1779,6 +1779,7 @@ body.front ol.breadcrumb {
 }
 
 .related-resources-popover .parents p {
+  line-height:1.12em;
   margin-bottom: 0;
   font-family: Arial,'Helvetica Neue',Helvetica, sans-serif;
 }
@@ -1797,7 +1798,7 @@ body.front ol.breadcrumb {
 }
 
 .related-resources-popover .parents a {
-  font-size: 0.82em;
+  font-size: 0.88em;
   line-height: 0.75em;
   border-bottom-width: 0;
   display: inline;
@@ -4592,13 +4593,13 @@ form table td.label {
 #sidebar-second .bootstrap-select.form-control .selectpicker {
   width: 100% !important;
 }
-
+/*
 #sidebar-second .bootstrap-select.btn-group .btn .caret{
   position: absolute;
   top: 3px;
   right: 2.5rem;
 }
-
+*/
 /**** END Sidebars ****/
 
 
