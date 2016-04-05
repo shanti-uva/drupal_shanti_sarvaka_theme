@@ -690,17 +690,17 @@ function shanti_sarvaka_carousel($variables) {
                   <a data-slide="prev" href="#collection-carousel" class="carousel-control left"><span class="icon"></span></a>
                   <a data-slide="next" href="#collection-carousel" class="carousel-control right"><span class="icon"></span></a>
               </div> 
-              --><!-- /.control-box -->
+              -->
 
               <div class="control-box-2">
                   <button class="btn btn-default btn-sm carousel-pause"><span class="glyphicon glyphicon-pause"></span></button>
               </div><!-- /.control-box-2 -->
 
               <ol class="carousel-indicators control-box-3">
-                  <li data-target=".item.active .carousel-main-image img" data-slide-to="0" class="active"></li>
-                  <li data-target=".item.active .carousel-main-image img" data-slide-to="1"></li>
-                  <li data-target=".item.active .carousel-main-image img" data-slide-to="2"></li>
-              </ol><!-- /.control-box-3 -->
+                  <li data-target="#collection-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#collection-carousel" data-slide-to="1"></li>
+                  <li data-target="#collection-carousel" data-slide-to="2"></li>
+              </ol><!-- /.control-box -->
 
             </div><!-- /#collection-carousel -->
         </div><!-- /.span12 -->
