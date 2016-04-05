@@ -3086,12 +3086,17 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel .carousel-main-image{
   width:100%;
   padding:0;
+  margin-bottom: 3rem;
 }
 
 .carousel .carousel-main-content{
   width:100%;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.carousel-indicators{
+  bottom:0;
 }
 
 
