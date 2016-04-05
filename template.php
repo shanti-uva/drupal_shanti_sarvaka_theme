@@ -667,6 +667,12 @@ function shanti_sarvaka_carousel($variables) {
 
           <div class="carousel-header show-more" data-ride="carousel"><span>' . $el['title'] . '</span>' . $el['link'] . '</div>
 
+            <ol class="carousel-indicators control-box-3">
+              <li data-target=".item.active .carousel-main-image img" data-slide-to="0" class="active"></li>
+              <li data-target=".item.active .carousel-main-image img" data-slide-to="1"></li>
+              <li data-target=".item.active .carousel-main-image img" data-slide-to="2"></li>
+            </ol>
+
           <div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="' . $el['speed'] . '">
               <div class="carousel-inner">';
   foreach($el['slides'] as $n => $slide) {
