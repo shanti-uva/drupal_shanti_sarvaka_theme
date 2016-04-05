@@ -523,7 +523,8 @@ section.content-section.equal-height{
 .navbar-default h1 .icon {
   font-size: 1.38em;
   position: relative;
-  top: 0.75rem;
+    top: 0.75rem;
+  top:1.15rem;
   float:left;
   margin-right: 0.75rem;
 }
@@ -5419,6 +5420,7 @@ html body.admin-menu {
     top: 0.3rem;*/
     margin-left: 9px;
     margin-top: 0.5rem;
+    top:0.75rem;
   }
 
   .navbar-header .site-slogan {
