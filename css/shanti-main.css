@@ -409,6 +409,8 @@ section.content-section.equal-height{
   font-size: 0.88em;
   line-height: 1.38em;
   font-weight: normal;
+
+  height:45px;
 }
 
 .navbar-header .navbar-brand:hover,
@@ -5408,6 +5410,8 @@ html body.admin-menu {
 
 @media screen and (min-width: 600px) {
 
+  .navbar-brand { height:50; }
+
   .navbar-default h1 .icon {
     /*line-height: 1.68em;
     padding-left: 12px;
@@ -5428,7 +5432,7 @@ html body.admin-menu {
     /*text-shadow: 0.05rem 0.05rem #555;*/
     text-shadow:none;
   }
-    /* .navbar-header .navbar-brand{ line-height: 3.75em;} */
+  
   .collections ul li {
     width: 20%;
   }
@@ -5446,9 +5450,10 @@ html body.admin-menu {
 
 @media screen and (min-width: 768px) {
    
+  /* adjust height of admin bar */
   html body.admin-menu {
     margin-top: 3rem !important;
-  } /* adjust height of admin bar */
+  } 
   
   .navbar-default .menu-explore {
     display: none;
