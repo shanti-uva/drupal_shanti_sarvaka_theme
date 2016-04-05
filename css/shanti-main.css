@@ -5433,8 +5433,7 @@ html body.admin-menu {
 
   .navbar-header .site-slogan {
     font-size: 100%;
-    /*position: relative;
-    top: 1.5rem;*/
+    top:1.375rem;
   }
   
   .collections ul li {
