@@ -3099,6 +3099,11 @@ a.btn,a.btn:hover,a.btn:active {
   bottom:0;
 }
 
+.carousel-indicators li{
+  background: #ddd;
+  color: #ccc;
+}
+
 
 
 /*-------------------------*/
