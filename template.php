@@ -667,12 +667,6 @@ function shanti_sarvaka_carousel($variables) {
 
           <div class="carousel-header show-more" data-ride="carousel"><span>' . $el['title'] . '</span>' . $el['link'] . '</div>
 
-            <ol class="carousel-indicators control-box-3">
-              <li data-target=".item.active .carousel-main-image img" data-slide-to="0" class="active"></li>
-              <li data-target=".item.active .carousel-main-image img" data-slide-to="1"></li>
-              <li data-target=".item.active .carousel-main-image img" data-slide-to="2"></li>
-            </ol>
-
           <div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="' . $el['speed'] . '">
               <div class="carousel-inner">';
   foreach($el['slides'] as $n => $slide) {
@@ -692,14 +686,22 @@ function shanti_sarvaka_carousel($variables) {
      </div><!-- /Slide' . $n . ' --> ';
   }
   $html .= '</div>
-              <div class="control-box">
+              <!-- <div class="control-box">
                   <a data-slide="prev" href="#collection-carousel" class="carousel-control left"><span class="icon"></span></a>
                   <a data-slide="next" href="#collection-carousel" class="carousel-control right"><span class="icon"></span></a>
-              </div><!-- /.control-box -->
+              </div> 
+              --><!-- /.control-box -->
 
               <div class="control-box-2">
                   <button class="btn btn-default btn-sm carousel-pause"><span class="glyphicon glyphicon-pause"></span></button>
               </div><!-- /.control-box-2 -->
+
+              <ol class="carousel-indicators control-box-3">
+                  <li data-target=".item.active .carousel-main-image img" data-slide-to="0" class="active"></li>
+                  <li data-target=".item.active .carousel-main-image img" data-slide-to="1"></li>
+                  <li data-target=".item.active .carousel-main-image img" data-slide-to="2"></li>
+              </ol><!-- /.control-box-3 -->
+
             </div><!-- /#collection-carousel -->
         </div><!-- /.span12 -->
         </div><!-- /.row -->
