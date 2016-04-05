@@ -437,7 +437,7 @@ section.content-section.equal-height{
   white-space: nowrap;
   color: #444 !important;
   position: relative;
-  top: 1.32rem;
+  top: 1.15rem;
   text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.25rem;
@@ -5435,12 +5435,6 @@ html body.admin-menu {
     font-size: 100%;
     /*position: relative;
     top: 1.5rem;*/
-  }
-
-  .navbar-header .site-slogan:hover,
-  .navbar-header .site-slogan:active {
-    /*text-shadow: 0.05rem 0.05rem #555;*/
-    text-shadow:none;
   }
   
   .collections ul li {
