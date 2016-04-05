@@ -1533,6 +1533,11 @@ body.front ol.breadcrumb {
   /*color: #fff;*/
 }
 
+#user-prefs .menu-main li:hover,
+#user-prefs .menu-main li:active{
+  background:#fff;
+}
+
 .menu-main li a {
   color: #606060;
   border-top: 1px solid #ddd;
@@ -1575,8 +1580,8 @@ body.front ol.breadcrumb {
 
 .menu-main .form-group {
   font-size: 0.88em;
-  line-height: 2em;
-  height: 2em;
+  line-height: 1em;
+  height: 2.1em;
   padding: 1px 5px 1px 25px;
   margin: 0;
   display: block;
@@ -1599,11 +1604,12 @@ body.front ol.breadcrumb {
 .menu-main .form-group .radio-inline {
   padding: 0 0 0 0.5rem;
   display: block;
+  font-size: 0.82em;
 }
 
 .menu-main .form-group .radio-inline>div {
   position: relative;
-  top: -2px;
+  top: -1px;
   right: 0.5rem;
 } /* graphic replacement */
 .menu-main .drop-hdr {
@@ -1613,7 +1619,7 @@ body.front ol.breadcrumb {
   font-size: 0.88em;
   font-weight: bold;
   line-height: 1em;
-  height: 1.88em;
+  height: 2.25em;
 }
 
 .menu-main .drop-hdr em {
@@ -1697,6 +1703,8 @@ body.front ol.breadcrumb {
 .menu-main .levelHolderClass.rtl {
   padding-left: 4px;
 }
+
+
 /***** END main-menu *****/
 
 /*--------------------*/
