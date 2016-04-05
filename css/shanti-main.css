@@ -1533,8 +1533,8 @@ body.front ol.breadcrumb {
   /*color: #fff;*/
 }
 
-#user-prefs .menu-main li:hover,
-#user-prefs .menu-main li:active{
+.menu-main #user-prefs li:hover,
+.menu-main #user-prefs li:active{
   background:#fff;
 }
 
