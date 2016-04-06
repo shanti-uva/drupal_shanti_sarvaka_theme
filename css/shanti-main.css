@@ -3101,11 +3101,11 @@ a.btn,a.btn:hover,a.btn:active {
 
 .carousel-indicators li{
   background-color: #2db6b4 !important;
-  opacity:0.9;
+  opacity:0.6;
 }
 
 .carousel-indicators li.active{
-  opacity:0.6;
+  opacity:1;
 }
 
 .carousel .show-more.h5{
