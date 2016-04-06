@@ -3109,13 +3109,14 @@ a.btn,a.btn:hover,a.btn:active {
   position: relative;
 }
 
-.carousel-indicators li.active{
+.carousel-indicators .active{
   opacity: 1;
   width: 10px;
   height: 10px;
   top: 1px;
   margin:0 6px;
-  border-color:#cae0e0 !important;
+  border-color:#cae0e0;
+  background: #2db6b4;
 }
 
 .carousel .show-more.h5{
