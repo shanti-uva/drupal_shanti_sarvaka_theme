@@ -3104,6 +3104,7 @@ a.btn,a.btn:hover,a.btn:active {
   background-color: #2db6b4;
   opacity: 0.5;
   width: 8px;
+  height: 8px;
   margin: 0 8px;
   position: relative;
 }
@@ -3111,6 +3112,7 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-indicators li.active{
   opacity: 1;
   width: 10px;
+  height: 10px;
   top: 1px;
   margin:0 6px;
   border-color:#cae0e0 !important;
