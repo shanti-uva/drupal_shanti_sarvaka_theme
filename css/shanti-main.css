@@ -1442,7 +1442,7 @@ body.front ol.breadcrumb {
   top: 50px;
   padding: 0;
   overflow: visible;
-  opacity: .93;
+  opacity: .96;
 }
 
 .menu-main h3,
@@ -3174,7 +3174,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 15.2em;
+    height: 16em;
   }
 }  
 
