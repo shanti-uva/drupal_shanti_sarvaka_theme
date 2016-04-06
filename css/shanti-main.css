@@ -3102,17 +3102,16 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-indicators li{
   border-color: #fff;
   background-color: #2db6b4;
-  opacity: 0.5;
+  opacity: 0.3;
   width: 8px;
   margin: 0 8px;
   position: relative;
 }
 
-.carousel-indicators .active{
+.carousel-indicators li.active{
   opacity: 1;
   width: 10px;
   top: 1px;
-  margin: 0 8px;
   border-color:#cae0e0 !important;
 }
 
@@ -3171,7 +3170,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    padding-bottom: 1rem;
+    height: 15.2em;
   }
 }  
 
