@@ -3104,14 +3104,14 @@ a.btn,a.btn:hover,a.btn:active {
   background-color: #2db6b4;
   opacity: 0.3;
   width: 8px;
-  margin: 0 2px;
+  margin: 0 5px;
   position: relative;
 }
 
 .carousel-indicators li.active{
   opacity: 1;
   width: 10px;
-  top: 2px;
+  top: 1px;
   border-color:#cae0e0 !important;
 }
 
