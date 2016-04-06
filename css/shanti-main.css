@@ -2989,7 +2989,7 @@ a.btn,a.btn:hover,a.btn:active {
   margin: 0;
   display:block;
   margin-bottom:2rem;
-  margin-top:1rem;
+  /*margin-top:1rem;*/
 }
 
 .carousel-main-image a { 
@@ -4879,11 +4879,11 @@ form table td.label {
 }
 
 
-.main-overview-image {
+.resource-overview-image {
   margin: 0 0 1.5rem;
 }
 
-.main-overview-image img{
+.resource-overview-image img{
   box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
