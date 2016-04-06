@@ -2988,7 +2988,7 @@ a.btn,a.btn:hover,a.btn:active {
   height: auto;
   margin: 0;
   display:block;
-  margin-bottom:1rem;
+  margin-bottom:2rem;
   margin-top:1rem;
 }
 
@@ -3170,7 +3170,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 16.25em;
+    height: 15.2em;
   }
 }  
 
