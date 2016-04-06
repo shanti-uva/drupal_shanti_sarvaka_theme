@@ -3170,7 +3170,7 @@ a.btn,a.btn:hover,a.btn:active {
   }
 
   .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 15.2em;
+    padding-bottom: 1rem;
   }
 }  
 
