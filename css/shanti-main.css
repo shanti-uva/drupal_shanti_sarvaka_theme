@@ -3103,10 +3103,12 @@ a.btn,a.btn:hover,a.btn:active {
   border-color: #a0d3d5 !important;
   background-color: #2db6b4;
   opacity:0.3;
+  width: 8px;
 }
 
 .carousel-indicators li.active{
   opacity:1;
+  width: 10px;
 }
 
 .carousel .show-more.h5{
