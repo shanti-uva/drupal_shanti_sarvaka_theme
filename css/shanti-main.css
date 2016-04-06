@@ -3100,10 +3100,12 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel-indicators li{
-  background: #ddd;
-  color: #ccc;
+  background: #e0e0e0
 }
 
+.carousel-indicators li.active{
+  background: #ccc;
+}
 
 
 /*-------------------------*/
