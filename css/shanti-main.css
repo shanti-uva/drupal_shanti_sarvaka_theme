@@ -3100,7 +3100,8 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel-indicators li{
-  background-color: #2db6b4 !important;
+  border-color: #2db6b4 !important;
+  background-color: #2db6b4;
   opacity:0.6;
 }
 
