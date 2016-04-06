@@ -1605,13 +1605,20 @@ body.front ol.breadcrumb {
   padding: 0 0 0 0.5rem;
   display: block;
   font-size: 0.82em;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 250px !important;
+  padding-right: 15px;
 }
 
 .menu-main .form-group .radio-inline>div {
   position: relative;
   top: -1px;
   right: 0.5rem;
-} /* graphic replacement */
+}
+
 .menu-main .drop-hdr {
   border-top: 1px solid #ddd;
   cursor: default;
