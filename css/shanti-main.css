@@ -1725,13 +1725,6 @@ body.front ol.breadcrumb {
 /*----------------------------*/
 /*----- BEGIN Popovers -------*/
 /*----------------------------*/
-.popover {
-  position: absolute;
-  z-index: 400;
-  font-size:0.88em;
-  line-height:1.18em;
-}
-
 .popover-link {
   background: #5a65d1;
   border: none;
@@ -1766,6 +1759,14 @@ body.front ol.breadcrumb {
   position: relative;
   bottom: 0.15rem;
   right: 0.25rem;
+}
+
+.popover {
+  position: absolute;
+  z-index: 400;
+  font-size:0.88em;
+  line-height:1.18em;
+  width:250px;
 }
 
 .related-resources-popover {
