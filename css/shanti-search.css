@@ -143,9 +143,9 @@ object.flip_label {
 #search-flyout.extruder .flap {
   background: #fff;
   height: 53px;
-  width: 45px;
+  width: 50px;
   padding: 7px 0 7px 7px;
-  margin: 0 0 0 -7px;
+  margin: 0 0 0 -12px;
   cursor: pointer;
   display: block;
   border-top-left-radius: 44px;
@@ -162,7 +162,7 @@ object.flip_label {
 #search-flyout.extruder .flap.on-flap .flapLabel {
   background: #505050;
   height: 39px;
-  width: 37px !important;
+  width: 43px !important;
   padding: 17px 38px 17px 0;
   margin: 0;
   display: block;
@@ -198,7 +198,7 @@ object.flip_label {
 #search-flyout.extruder .flap>span .icon {
   font-size: 2.38rem;
   position: absolute;
-  left: 16px;
+  left: 17px;
   top: 16px;
   z-index: 10;
 }
@@ -477,15 +477,15 @@ object.flip_label {
 /*----- Advanced Options -----*/
 .advanced-view {
  /*** height:275px;  height can help control cross-browser issues ***/
-  padding: 0;
+  padding: 0 .9rem;
   background: #f8f8f8;
   width: 100%;
-  margin-right: 0.25em;
+  margin-right: 0.3rem;
 }
 
 .advanced-view .form-group {
   border-top: 1px solid #e0e0e0;
-  margin: 0 8px;
+  margin: 0;
 }
 
 .advanced-view .form-group.last {
@@ -553,7 +553,7 @@ object.flip_label {
   padding: 0;
   position: relative;
   top: 23px;
-  left: -8px;
+  left: -12px;
   float: right;
 }
 
@@ -627,13 +627,18 @@ object.flip_label {
   right: 2.5rem;
 }
 
-.input-section .selectpicker li a span {
+.input-section .bootstrap-select.btn-group li a span {
   background: transparent !important;
   color: #444;
 }
 
-.input-section .selectpicker li a span:hover {
+.input-section .bootstrap-select.btn-group li a span:hover {
   color: #fff;
+}
+
+.input-section .bootstrap-select.btn-group .popover-title .close{
+  line-height: .75;
+  font-weight:normal;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
@@ -794,21 +799,17 @@ object.flip_label {
 .input-section .alert-danger .close {
   position: relative;
   top: -0.5rem;
-  right: -.5rem;
+  right: -0.5rem;
 }
 
-.advanced-view .form-group.advanced-input {
-  padding: 2px 5px 2px;
-} /*--- common input ---*/
-
-.advanced-view > .form-group:last-of-type .form-group{
-  border-top:none;
-}
+.advanced-view .form-group.advanced-input.select-type {
+  padding: 2px 1.2rem 2px;
+} 
 
 .advanced-view .form-group.advanced-input .form-control {
   line-height: 27px;
   height: 27px;
-  padding: 0 15px;
+  padding: 0 1.5rem;
   margin: 2px 0;
   width: 100% !important;
   color: #666;
@@ -819,9 +820,13 @@ object.flip_label {
   background-clip: padding-box;
   overflow: hidden;
   vertical-align: middle;
-  box-shadow: 0px 2px 5px #eee inset;
+  box-shadow: 0 2px 5px #eee inset;
   border-collapse: separate;
- /* fix for ie9 shadow */
+}
+
+.advanced-view > .form-group:last-of-type .form-group{
+  border-top:none;
+  padding: 0 !important;
 }
 
 .advanced-view .form-group.advanced-input .form-control:hover {
@@ -838,7 +843,7 @@ object.flip_label {
   font-size: 0.93em;
   position: relative;
   top: 6px;
-  left: 4px;
+  left: 12px;
 }
 /*--- END advanced ---*/
 
