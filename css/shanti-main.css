@@ -4898,8 +4898,13 @@ form table td.label {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0.4rem;
-  display:inline-block;
+  display:block;
+
+  max-width:100%;
+  height:auto;
 }
+
+
 
 .olControlCustomToggle.olControlNoSelect {
   width: 160px !important;
@@ -4911,8 +4916,12 @@ form table td.label {
   white-space: nowrap;
 }
 
+
+
 .modal img {
   margin-bottom: 1rem;
+  max-width:100%;
+  height:auto;
 }
 
 .modal-header {
