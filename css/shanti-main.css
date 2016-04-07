@@ -212,12 +212,13 @@ a:hover,a:active {
 }
 
 .content-section img:not(.og-grid img){
-  border-radius: 0.25rem;
-  box-shadow: 0 0 3px #ccc;
+  border-radius: 0rem;
+  box-shadow: 0 0 3px 1px #d0d0d0;
   margin: 0;
-  padding: 0.4rem;
+  padding: 0.2rem;
   background: #fff;
   display: block;
+  /* border: 1px solid #e0e0e0; */
 }
 
 img.pull-left{
