@@ -1615,7 +1615,7 @@ body.front ol.breadcrumb {
 
 .menu-main .form-group .radio-inline>div {
   position: relative;
-  top: -1px;
+  top: 0;
   right: 0.5rem;
 }
 
@@ -2980,12 +2980,33 @@ a.btn,a.btn:hover,a.btn:active {
 
 .carousel-main-content .go-to-link a {
   font-size: 1em;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .carousel-main-content .go-to-link a:hover,
 .carousel-main-content .go-to-link a:active {
   color: rgb(207, 47, 30);
 }
+
+.carousel-main-content .go-to-link a::after{
+  color: #5a65d1;
+  font-size: 1.38em;
+  margin-left: 0.32em;
+  font-family: 'FontAwesome';
+  content: '\f18e';
+  position: relative;
+  top: 0.15rem;
+  left:0;
+  opacity:0.75;
+}
+
+.carousel-main-content .go-to-link a:hover::after{
+  position: relative;
+  left:0.3rem;
+  opacity:1;
+}
+
 
 .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
   height: auto;
@@ -3123,7 +3144,6 @@ a.btn,a.btn:hover,a.btn:active {
   height: 10px;
   top: 1px;
   margin:0 6px;
-  border-color:#cae0e0;
   background: #2db6b4;
 }
 
