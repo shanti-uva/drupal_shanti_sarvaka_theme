@@ -648,8 +648,8 @@ object.flip_label {
   color: #555 !important;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li>a {
-  padding-left:2.8rem;
+.bootstrap-select.btn-group.show-tick .dropdown-menu li>a {
+  padding-left: 2.8rem !important;
 }
 
 /*---- select dropdown -----
