@@ -644,6 +644,12 @@ object.flip_label {
 .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
   font-size: 1.18em;
   margin-right: 0.4rem;
+  left:1em;
+  color: #555 !important;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li>a {
+  padding-left:2.8rem;
 }
 
 /*---- select dropdown -----
