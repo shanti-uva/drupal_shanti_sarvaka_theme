@@ -211,19 +211,19 @@ a:hover,a:active {
   border-bottom-color: transparent !important;
 }
 
-.img-thumbnail{
+.content-section img{
   border-radius: 0.25rem;
   box-shadow: 0 0 7px #ccc;
   margin: 0 1.5rem .5rem;
   padding: 0.4rem;
 }
 
-.img-thumbnail.pull-left{
+img.pull-left{
   margin-left:0;
   padding: 0.4rem;
 }
 
-.img-thumbnail.pull-right {
+img.pull-right {
   margin-right: 0;
   padding-left: 0.4rem;
 }
@@ -231,10 +231,15 @@ a:hover,a:active {
 .show-more a, 
 .go-to-link a {
   border: none;
-  font-size: .88em;
+  font-size: 1em;
   display: inline;
   text-transform: uppercase;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+}
+
+.go-to-link a:hover, .show-more a:hover,
+.go-to-link a:active, .show-more a:active {
+  color: rgb(207, 47, 30);
 }
 
 .show-more a::after {
@@ -243,19 +248,30 @@ a:hover,a:active {
   margin-left: 0.7rem;
   font-family: 'Glyphicons Halflings';
   content: '\002b'; /*-- plus icon */
+  opacity:0.75;
 }
 
 .show-more.less a::after {
   content: '\2212';
 }
 
-.go-to-link a::after {
+.go-to-link a::after{
   color: #5a65d1;
-  font-size: 1.25em;
+  font-size: 1.38em;
   margin-left: 0.32em;
   font-family: 'FontAwesome';
-  content: '\f18e'; /*-- arrow icon */
+  content: '\f18e';
+  position: relative;
+  top: 0.15rem;
+  opacity:0.75;
 }
+
+.show-more a:hover::after,
+.go-to-link a:hover::after{
+  opacity:1;
+}
+
+
 /*
 .italic {
   font-style: italic !important;
@@ -2965,36 +2981,6 @@ a.btn,a.btn:hover,a.btn:active {
   overflow: hidden;
   /*height: 9.5em;*/
 }
-
-.carousel-main-content .go-to-link a {
-  font-size: 1em;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-.carousel-main-content .go-to-link a:hover,
-.carousel-main-content .go-to-link a:active {
-  color: rgb(207, 47, 30);
-}
-
-.carousel-main-content .go-to-link a::after{
-  color: #5a65d1;
-  font-size: 1.38em;
-  margin-left: 0.32em;
-  font-family: 'FontAwesome';
-  content: '\f18e';
-  position: relative;
-  top: 0.15rem;
-  left:0;
-  opacity:0.75;
-}
-
-.carousel-main-content .go-to-link a:hover::after{
-  position: relative;
-  left:0.3rem;
-  opacity:1;
-}
-
 
 .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
   height: auto;
