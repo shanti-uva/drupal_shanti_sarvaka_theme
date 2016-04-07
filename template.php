@@ -674,7 +674,7 @@ function shanti_sarvaka_carousel($variables) {
           <div><h3 class="carousel-title"><a href="' . $slide['path'] . '"><span class="icon shanticon-stack"></span> ' . $slide['title'] . '</a></h3></div>
           <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . $itemcount . '</div>
           <div class="carousel-description">' . $slide['summary'] . '</div>
-          <p class="show-more h5"><a href="' . $slide['path'] . '">' . t('View Collection') . ' </a></p>
+          <p class="go-to-link"><a href="' . $slide['path'] . '">' . t('View Collection') . ' </a></p>
         </div>
         <div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
             <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>

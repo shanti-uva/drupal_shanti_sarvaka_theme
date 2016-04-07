@@ -231,13 +231,10 @@ a:hover,a:active {
 .show-more a, 
 .go-to-link a {
   border: none;
+  font-size: .88em;
+  display: inline;
   text-transform: uppercase;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
-}
-
-.show-more a {
-  font-size: .83em;
-  display: inline;
 }
 
 .show-more a::after {
@@ -245,19 +242,11 @@ a:hover,a:active {
   font-size: 0.82em;
   margin-left: 0.7rem;
   font-family: 'Glyphicons Halflings';
-  content: '\002b';
- /*-- plus icon */
+  content: '\002b'; /*-- plus icon */
 }
 
 .show-more.less a::after {
   content: '\2212';
-}
-
-.go-to-link a {
-  text-transform: uppercase;
-  border: none;
-  font-size: .83em;
-  display: inline;
 }
 
 .go-to-link a::after {
@@ -265,8 +254,7 @@ a:hover,a:active {
   font-size: 1.25em;
   margin-left: 0.32em;
   font-family: 'FontAwesome';
-  content: '\f18e';
- /*-- arrow icon */
+  content: '\f18e'; /*-- arrow icon */
 }
 /*
 .italic {
