@@ -3625,7 +3625,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   padding: 0 1.25rem;
   overflow: hidden;
   display: block;
-  line-height: 2.38em;
+  line-height: 2.25em;
   height: 2.12em;
 }
 
@@ -4158,8 +4158,8 @@ table tr.ok {
   margin-bottom: 0;
 }
 
-.panel.panel-default .accordion-toggle .glyphicon.glyphicon-plus::before,
-.panel.panel-default .accordion-toggle .glyphicon.glyphicon-minus::before {
+.panel.panel-default .accordion-toggle .glyphicon-plus::before,
+.panel.panel-default .accordion-toggle .glyphicon-minus::before {
   content: '';
 }
 
