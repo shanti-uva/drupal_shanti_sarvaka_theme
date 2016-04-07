@@ -218,17 +218,15 @@ a:hover,a:active {
   padding: 0.2rem;
   background: #fff;
   display: block;
-  max-width:100%;
-  height:auto;
   /* border: 1px solid #e0e0e0; */
 }
 
-img.pull-left{
+.content-section img.pull-left{
   margin: 0 1.5rem 0.5rem 0;
   padding: 0.2rem !important;
 }
 
-img.pull-right {
+.content-section img.pull-right {
   margin: 0 0 0.5rem 1.5rem;
   padding: 0.2rem !important;
 }
