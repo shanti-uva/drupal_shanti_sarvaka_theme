@@ -219,13 +219,13 @@ a:hover,a:active {
 }
 
 img.pull-left{
-  margin-left:0;
-  padding: 0.4rem;
+  margin-left: 0;
+  padding: 0.4rem !important;
 }
 
 img.pull-right {
   margin-right: 0;
-  padding-left: 0.4rem;
+  padding: 0.4rem !important;
 }
 
 .show-more a, 
