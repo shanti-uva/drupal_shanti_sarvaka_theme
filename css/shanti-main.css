@@ -216,6 +216,8 @@ a:hover,a:active {
   box-shadow: 0 0 7px #ccc;
   margin: 0 1.5rem .5rem;
   padding: 0.4rem;
+  background: #fff;
+  display: block;
 }
 
 img.pull-left{
