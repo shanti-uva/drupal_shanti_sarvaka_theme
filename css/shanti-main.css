@@ -223,12 +223,12 @@ a:hover,a:active {
 
 img.pull-left{
   margin: 0 1.5rem 0.5rem 0;
-  padding: 0.4rem !important;
+  padding: 0.2rem !important;
 }
 
 img.pull-right {
   margin: 0 0 0.5rem 1.5rem;
-  padding: 0.4rem !important;
+  padding: 0.2rem !important;
 }
 
 .show-more a, 
