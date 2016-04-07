@@ -3139,12 +3139,12 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel-indicators .active{
-  opacity: 1;
   width: 10px;
   height: 10px;
   top: 1px;
   margin:0 6px;
   background: #2db6b4;
+  opacity: 0.75;
 }
 
 .carousel .show-more.h5{
