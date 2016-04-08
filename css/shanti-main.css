@@ -210,7 +210,8 @@ a:hover,a:active {
 .content-section a:active {
   border-bottom-color: transparent !important;
 }
-
+/**
+* Set exceptions to the display of the image frame. Current rules exclude:; Images-grid, Shanti-gallery */
 .content-section img:not(.og-grid img):not(.shanti-gallery img){
   border-radius: 0rem;
   box-shadow: 0 0 3px 1px #d0d0d0;
@@ -1451,7 +1452,7 @@ body.front ol.breadcrumb {
   top: 50px;
   padding: 0;
   overflow: visible;
-  opacity: .96;
+  opacity: .94;
 }
 
 .menu-main h3,

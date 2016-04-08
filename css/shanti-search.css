@@ -641,7 +641,7 @@ object.flip_label {
   font-weight:normal;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
+.input-section .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
   font-size: 1.18em;
   left: 0.8em;
   color: #555 !important;
