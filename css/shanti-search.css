@@ -636,9 +636,9 @@ object.flip_label {
   font-weight:normal;
 }
 
-.input-section .form-group.select-type:first-of-type .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
-  font-size: 1.18em;
-  left: 0.8em;
+.input-section .form-group.select-type:first-of-type .bootstrap-select.btn-group.show-tick .dropdown-menu li>a .glyphicon:first-of-type{
+  font-size: 1.18em !important;
+  left: 0.8em !important;
   color: #555 !important;
 }
 
