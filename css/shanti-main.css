@@ -3607,6 +3607,9 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   border: none;
   font-family: 'shanticon';
   content: '\e609';
+  position: absolute;
+  top: 3px;
+  right: 2.5rem;
 }
 
 .bootstrap-select.btn-group .btn .caret::before {
@@ -3614,10 +3617,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   font-size: 1.7rem;
   font-family: 'shanticon';
   content: '\e609';
-  /*position: absolute;
-  top: -0.56em;
-  right: -0.5rem;*/
- /* adjusted position for Video Edit page edits */
 }
 
 .bootstrap-select.btn-group .dropdown-menu li {

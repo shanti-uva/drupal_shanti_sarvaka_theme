@@ -621,11 +621,6 @@ object.flip_label {
 .input-section .bootstrap-select.btn-group[class*="span"]{
   margin-top: 1rem;
 }
-.input-section .bootstrap-select.btn-group .btn .caret{
-  position: absolute;
-  top: 3px;
-  right: 2.5rem;
-}
 
 .input-section .bootstrap-select.btn-group li a span {
   background: transparent !important;
@@ -641,13 +636,13 @@ object.flip_label {
   font-weight:normal;
 }
 
-.input-section .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
+.input-section .form-group.select-type:first-of-type .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
   font-size: 1.18em;
   left: 0.8em;
   color: #555 !important;
 }
 
-.input-section .bootstrap-select.btn-group.show-tick .dropdown-menu li>a {
+.input-section .form-group.select-type:first-of-type .bootstrap-select.btn-group.show-tick .dropdown-menu li>a {
   padding-left: 2.8rem !important;
 }
 
