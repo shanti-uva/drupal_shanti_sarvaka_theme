@@ -188,7 +188,7 @@ article ul ul ul ul {
   -webkit-margin-before: 0;
   margin-top: 0;
 }
-
+/* anchors */
 a {
   text-decoration: none;
   color: #454fa4;
@@ -211,21 +211,21 @@ a:hover,a:active {
   border-bottom-color: transparent !important;
 }
 /**
-* Set exceptions to the display of the image frame. Current rules exclude:; Images-grid, Shanti-gallery */
+* Images - Set exceptions - Current rule excludes: (1)Images-grid, (2)Shanti-gallery */
 .content-section img:not(.og-grid img):not(.shanti-gallery img){
   border-radius: 0rem;
-  box-shadow: 0 0 3px 1px #d0d0d0;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px 1px #ccc;  
   margin: 0;
   padding: 0.2rem;
   background: #fff;
   display: block;
   max-width:100%;
   height:auto;
-  /* border: 1px solid #e0e0e0; */
 }
 
 .content-section img.pull-left{
-  margin: 0 1.5rem 0.5rem 0 !important;
+  margin: 0.5rem 1.5rem 0.5rem 0.5rem !important;
   padding: 0.2rem !important;
 }
 
