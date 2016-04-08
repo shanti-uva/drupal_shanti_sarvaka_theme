@@ -213,11 +213,11 @@ a:hover,a:active {
 /**
 * Images - Set exceptions - Current rule excludes: (1)Images-grid, (2)Shanti-gallery */
 .content-section img:not(.og-grid img):not(.shanti-gallery img){
-  border-radius: 0rem;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 3px 1px #ccc;  
+  border-radius: 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #aaa;  
   margin: 0;
-  padding: 0.2rem;
+  padding: 0.1rem;
   background: #fff;
   display: block;
   max-width:100%;
@@ -225,13 +225,13 @@ a:hover,a:active {
 }
 
 .content-section img.pull-left{
-  margin: 0.5rem 1.5rem 0.5rem 0.5rem !important;
-  padding: 0.2rem !important;
+  margin: 0.2rem 1.5rem 0.5rem 0.2rem !important;
+  padding: 0.1rem !important;
 }
 
 .content-section img.pull-right {
-  margin: 0 0 0.5rem 1.5rem !important;
-  padding: 0.2rem !important;
+  margin: 0.2rem 0.2rem 0.5rem 1.5rem !important;
+  padding: 0.1rem !important;
 }
 
 .show-more a, 
