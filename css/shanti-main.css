@@ -1536,11 +1536,12 @@ body.front ol.breadcrumb {
 .menu-main li:hover {
   background: #444;
   color: #f0f0f0;
+  color: #fff !important;
 }
 
 .menu-main li:active {
   background: #333;
-  /*color: #fff;*/
+  color: #fff !important;
 }
 
 .menu-main #user-prefs li:hover,
