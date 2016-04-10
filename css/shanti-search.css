@@ -636,13 +636,13 @@ object.flip_label {
   font-weight:normal;
 }
 
-.input-section .advanced-view .select-type:first-child .dropdown-menu li>a .glyphicon:first-of-type{
+.input-section .advanced-view .select-type:first-child ul.dropdown-menu>li>a .glyphicon:first-of-type{
   font-size: 1.18em !important;
   left: 0.8em !important;
   color: #555 !important;
 }
 
-.input-section .advanced-view .select-type:first-of-type .dropdown-menu li>a {
+.input-section .advanced-view .select-type:first-of-type ul.dropdown-menu>li>a {
   padding-left: 2.8rem !important;
 }
 
