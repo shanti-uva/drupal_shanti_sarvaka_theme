@@ -2302,7 +2302,7 @@ body.front ol.breadcrumb {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-left: -1.5rem;
+  /*margin-left: -1.5rem;*/
   max-width: 16em;
   background: #fff;
   min-height: 700px;
