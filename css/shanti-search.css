@@ -643,7 +643,7 @@ object.flip_label {
   color: #555 !important;
 }
 
-.input-section .advanced-view > .select-type:first-child .bootstrap-select.btn-group .dropdown-menu>li>a {
+.input-section .bootstrap-select.btn-group .dropdown-menu>li>a .glyphicon:not(.glyphicon-ok) ~ span.text {
   padding-left: 2.8rem !important;
 }
 
