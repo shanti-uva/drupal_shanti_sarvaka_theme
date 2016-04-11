@@ -3594,16 +3594,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   background-clip: padding-box;
 }
 
-.bootstrap-select.btn-group .dropdown-menu>li>a span.text {
-  margin-right: 0;
-  padding-left: 1.3rem;
-  overflow: hidden;
-}
-
-.bootstrap-select.btn-group .dropdown-menu li>a.opt{
-  padding-left: 2rem;
-}
-
 .bootstrap-select.btn-group .btn .caret {
   border: none;
   font-family: 'shanticon';
@@ -3625,10 +3615,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   overflow: hidden;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li>a>span.text {
-  padding-left: 4px !important;
-}
-
 .bootstrap-select.btn-group .dropdown-menu li>a {
   padding: 0 1.25rem;
   overflow: hidden;
@@ -3642,28 +3628,24 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li>a:active {
   border: 1px solid transparent !important;
   border-width: 1px 0 !important;
-  /*outline: none;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a:focus {
     background-color: #fff;
     background-image: none !important;
-    /*outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;*/
     outline: 0;
     border-color: #d0d0d0 !important;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text {
-    /*font-weight: bold;*/
-  background: #fff;
+.bootstrap-select.btn-group .dropdown-menu>li>a span.text {
+  margin-right: 0;
+  padding-left: 0.4rem;
+  overflow: hidden;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a .icon {
-  font-weight: bold;
-  color: #444;
+.bootstrap-select.btn-group .dropdown-menu li.selected>a,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text {
+  background: #fff;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:hover>a,
@@ -3700,19 +3682,19 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   background: #fff;
 }
 /*----- checkmark styles -----*/
-.bootstrap-select.btn-group .dropdown-menu li>a .glyphicon,
-.bootstrap-select.btn-group .dropdown-menu li>a:hover .glyphicon,
-.bootstrap-select.btn-group .dropdown-menu li>a:active .glyphicon {
+.bootstrap-select.btn-group .dropdown-menu li>a .glyphicon-ok,
+.bootstrap-select.btn-group .dropdown-menu li>a:hover .glyphicon-ok,
+.bootstrap-select.btn-group .dropdown-menu li>a:active .glyphicon-ok {
   color: #ccc;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a .glyphicon,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover .glyphicon,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:active .glyphicon {
+.bootstrap-select.btn-group .dropdown-menu li.selected>a .glyphicon-ok,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover .glyphicon-ok,
+.bootstrap-select.btn-group .dropdown-menu li.selected>a:active .glyphicon-ok {
   color: #444;
 }
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .glyphicon {
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a .glyphicon-ok {
   color: #ddd;
   position: absolute;
   top: 0.6rem;
@@ -3720,19 +3702,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   margin-top: 0 !important;
   display:inline-block;
 }
-
-
-.input-section .advanced-view .select-type:first-child ul.dropdown-menu>li>a .glyphicon:first-of-type{
-  font-size: 1.18em !important;
-  left: 0.8em !important;
-  color: #555 !important;
-}
-
-.input-section .advanced-view .select-type:first-of-type ul.dropdown-menu>li>a {
-  padding-left: 2.8rem !important;
-}
-
-
 
 .bootstrap-select.btn-group .btn .filter-option {
   font-size: 0.93em;

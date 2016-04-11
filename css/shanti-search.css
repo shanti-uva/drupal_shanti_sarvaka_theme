@@ -636,6 +636,18 @@ object.flip_label {
   font-weight:normal;
 }
 
+.input-section .bootstrap-select.btn-group .dropdown-menu>li>a .glyphicon:not(.glyphicon-ok){
+  font-size: 1.18em !important;
+  position: absolute;
+  left: 0.8em !important;
+  color: #555 !important;
+}
+
+.input-section .advanced-view > .select-type:first-child .bootstrap-select.btn-group .dropdown-menu>li>a {
+  padding-left: 2.8rem !important;
+}
+
+
 
 /*---- select dropdown -----
 .input-section .bootstrap-select {
