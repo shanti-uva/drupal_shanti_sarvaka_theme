@@ -667,14 +667,15 @@ object.flip_label {
 }
 
 .input-section .bootstrap-select.btn-group .dropdown-menu>li>a .glyphicon:not(.glyphicon-ok){
-  font-size: 1.18em !important;
+  font-size: 1.18em;
   position: absolute;
-  left: 0.8em !important;
-  color: #555 !important;
+  left: 0.8em;
+  top: 0.6rem;
+  color: #555;
 }
 
 .input-section .bootstrap-select.btn-group .dropdown-menu>li>a .glyphicon:not(.glyphicon-ok) ~ span.text {
-  padding-left: 2.8rem !important;
+  padding-left: 2.8rem;
 }
 
 .advanced-view .form-group.advanced-input.select-type {
