@@ -1,10 +1,10 @@
-/**
-* ------------------------
-* START / Sliding Panel
-* ------------------------
-*/
+/*----------------------------------------------*/
+/*--- START / Sliding Panel ---*/
+/*----------------------------------------------*/
 
-/* clearing default styles (extruder default in utils.css) */
+/** 
+* clearing default styles (extruder default in utils.css)
+*/
 .extruder, .extruder,.extruder .extruder-content, .extruder .flap .flapLabel, .extruder .text, .extruder .voice.hover, .extruder .voice.sel, .extruder .settingsBtn, .extruder .optionsPanel,.optionsPanel .panelVoice a:hover {
   overflow: visible;
   background-image: none;
@@ -20,14 +20,14 @@
   border: none;
 }
 
-/**
-* ---------------
-* Search Panel
-* ---------------
+/** 
+* search panel 
 */
 .extruder {
   padding: 0;
+  border: none;
   background: transparent !important;
+  box-shadow: none;
 }
 
 .ext_wrapper {
@@ -36,12 +36,14 @@
 }
 
 .extruder .extruder-content {
+ /*overflow:visible !important;*/
   background: transparent !important;
   border: none;
   padding: 0;
   width: 100%;
   box-shadow: 0 0 5px hsla(0, 0.0000%, 60.0000%, 0.7500);
   border-collapse: separate;
+ /* fix for ie9 shadow */
 }
 
 .extruder.isOpened .extruder-content {
@@ -49,8 +51,61 @@
   background: transparent !important;
 }
 
+.extruder .text {
+  border: none;
+  padding: 0;
+  text-shadow: none;
+  /* default panel container width is set */
+  width: 277px;
+  min-width: 277px !important;
+}
 
-#search-flyout.extruder {
+.extruder .flap,
+.extruder.isOpened .flap,
+.extruder .flap .flapLabel,
+.extruder .flap.on-flap .flapLabel,
+.extruder.isOpened .flap.on-flap .flapLabel,
+.extruder .flap>span,
+.extruder .flap.on-flap>span,
+.extruder .flap.on-hover>span,
+.extruder .flap.on-hover.on-flap>span {
+  width: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+object.flip_label {
+  display: none;
+}
+
+.extruder.open-collections {
+  margin-top: 280px;
+}
+
+/* drag width handle */
+.text.ui-resizable,
+.isOpened .text.ui-resizable {
+  /* Important to keep the right edge pinned while expanding width */
+  position: static;
+}
+
+.ui-resizable-handle.ui-resizable-w {
+  cursor: col-resize;
+  position: absolute;
+  left: 1px;
+  top: 10px;
+  z-index: 290;
+  width: 6px;
+  height: 97%;
+}
+
+.ui-resizable-handle.ui-resizable-w:active {
+  background: #fafafa;
+}
+
+/*--- search panel ---*/
+#search-flyout {
   top: 0;
 }
 
@@ -86,64 +141,9 @@
   text-shadow: none;
   background: #f8f8f8;
   color: #333;
-  /* default panel container width is set */
-  width: 277px;
-  min-width: 277px !important;
 }
 
-/**
-* BEGIN extruder button for opening-closing
-*/
-.extruder .flap,
-.extruder.isOpened .flap,
-.extruder .flap .flapLabel,
-.extruder .flap.on-flap .flapLabel,
-.extruder.isOpened .flap.on-flap .flapLabel,
-.extruder .flap>span,
-.extruder .flap.on-flap>span,
-.extruder .flap.on-hover>span,
-.extruder .flap.on-hover.on-flap>span {
-  width: 0;
-  padding: 0;
-  border: none;
-  background: transparent;
-}
-/**
-* Note: object.flip_label has to do with a built-in extruder
-* tab label feature of extruder library we are not using 
-*/
-object.flip_label {
-  display: none;
-}
-
-.extruder.open-collections {
-  margin-top: 280px;
-}
-
-/* drag-width handle for extruder */
-.text.ui-resizable,
-.isOpened .text.ui-resizable {
-  /* Important to keep the right edge pinned while expanding width */
-  position: static;
-}
-
-.ui-resizable-handle.ui-resizable-w {
-  cursor: col-resize;
-  position: absolute;
-  left: 1px;
-  top: 10px;
-  z-index: 290;
-  width: 6px;
-  height: 97%;
-}
-
-.ui-resizable-handle.ui-resizable-w:active {
-  background: #fafafa;
-}
-
-/**
-* top banner search button inline styles are loaded via main.js with icon markup  
-*/
+/*--- big search button inline styles are loaded via main.js with icon markup  */
 #search-flyout.extruder .flap {
   background: #fff;
   height: 53px;
@@ -183,7 +183,6 @@ object.flip_label {
 #search-flyout.extruder.isOpened .flap.on-flap .flapLabel {
   width: 30px !important;
 }/* on-flap is opened state */
-
 /*----- css for the flap is inserted inline, see js/main ---*/
 #search-flyout.extruder .flap>span,
 #search-flyout.extruder .flap.on-flap>span {
@@ -226,20 +225,16 @@ object.flip_label {
 #search-flyout.extruder.isOpened .flap.on-flap>span .icon.shanticon-search::before {
   content: '\e610';
 }
-
-/**
-*** END - Sliding Panel */
-
+/*----------------------------------------------*/
+/*--- END / Sliding Panel ---------------------*/
 
 
 
 
 
-/**
-* --------------------------------------
-* START / Search Panel / Input & View 
-* --------------------------------------
-*/
+
+/*--- START / Search Panel / Input & View ----*/
+/*----------------------------------------------*/
 .input-section {
   padding: 0;
   border: 1px solid #e0e0e0;
@@ -293,8 +288,10 @@ object.flip_label {
   border: 1px solid #9097d3;
   box-shadow: 0 0 4px #949bd8;
   border-collapse: separate;
+ /* fix for ie9 shadow */
 }
 
+/*--- button group ---*/
 .input-section .input-group .input-group-btn {
   width: 45px !important;
   height: 35px;
@@ -310,8 +307,8 @@ object.flip_label {
 /*--- button ---*/
 .input-section .input-group .btn.btn-default {
   display: block;
-   /* 2px less input-group-btn above */
   height: 33px;
+ /* 2px less than search input height above */
   color: #aaa;
   width: 100%;
   border: 1px solid #e5e5e5;
@@ -356,7 +353,7 @@ object.flip_label {
   color: #777;
 }
 
-/* reset search button */
+/*--- reset search button ---*/
 .input-section .input-group-btn .searchreset {
   border: none;
   background: transparent;
@@ -447,31 +444,10 @@ object.flip_label {
   content: '\e610';
 }
 
-/* search errors */
-.input-section .notification-wrapper {
-  padding: 0 15px;
-}
 
-.input-section .alert {
-  margin: 0 10px 10px;
-  padding: 10px 15px;
-  text-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
 
-.input-section .alert-danger {
-  color: #dc3c47;
-  background-image: none;
-  border-radius: 0 9px;
-  background-clip: padding-box;
-  border: 1px solid #ddd;
-  background-color: rgba(255,255,252, 1.0);
-}
 
-.input-section .alert-danger .close {
-  position: relative;
-  top: -0.5rem;
-  right: -0.5rem;
-}
+/*-----------------------------------------------*/
 
 .input-section .form-group {
   margin-bottom: 7px;
@@ -502,6 +478,23 @@ object.flip_label {
 .input-section .search-group .radio-inline>div {
   margin-right: 4px;
 }
+/*----- Advanced Options -----*/
+.advanced-view {
+ /*** height:275px;  height can help control cross-browser issues ***/
+  padding: 0 .9rem;
+  background: #f8f8f8;
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+.advanced-view .form-group {
+  border-top: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+.advanced-view .form-group.last {
+  padding-bottom: 0;
+}
 
 .input-section label {
   color: #444;
@@ -514,28 +507,7 @@ object.flip_label {
   text-transform: capitalize;
 }
 
-/** 
-* Advanced Options
-*/
-.input-section .advanced-view {
- /*** height:275px;  height can help control cross-browser issues ***/
-  padding: 0 .9rem;
-  background: #f8f8f8;
-  width: 100%;
-  margin-right: 0.3rem;
-}
-
-.input-section .advanced-view .form-group {
-  border-top: 1px solid #e0e0e0;
-  margin: 0;
-}
-
-.input-section .advanced-view .form-group.last {
-  padding-bottom: 0;
-}
-
-/**
-* advanced toggle for search panel */
+/*--- toggle links for search panel ---*/
 .input-section .toggle-link {
   background: #f8f8f8;
   color: #555 !important;
@@ -569,11 +541,13 @@ object.flip_label {
 .input-section .toggle-link:hover .icon::before {
   color: #555 !important;
 }
-
+/*---------------------------*/
+/*--- custom sizes & position ---*/
 .input-section .feature-group .toggle-link.feature-toggle {
   float: right;
   padding: 0 10px 0 0;
   margin: 0;
+/*display:inline;*/
   position: relative;
   top: -1px;
 }
@@ -644,9 +618,9 @@ object.flip_label {
   max-width: 15em;
   padding-left: 3px;
 }
-/**
-* BEGIN select dropdown
-*/
+
+/*-----------------------------------------------*/
+
 .input-section .bootstrap-select.btn-group:not(.input-group-btn), 
 .input-section .bootstrap-select.btn-group[class*="span"]{
   margin-top: 1rem;
@@ -667,15 +641,40 @@ object.flip_label {
 }
 
 .input-section .bootstrap-select.btn-group .dropdown-menu>li>a .glyphicon:not(.glyphicon-ok){
-  font-size: 1.18em;
+  font-size: 1.18em !important;
   position: absolute;
-  left: 0.8em;
-  top: 0.6rem;
-  color: #555;
+  left: 0.8em !important;
+  color: #555 !important;
 }
 
 .input-section .bootstrap-select.btn-group .dropdown-menu>li>a .glyphicon:not(.glyphicon-ok) ~ span.text {
-  padding-left: 2.8rem;
+  padding-left: 2.8rem !important;
+}
+
+ /* search errors */
+.input-section .notification-wrapper {
+  padding: 0 15px;
+}
+
+.input-section .alert {
+  margin: 0 10px 10px;
+  padding: 10px 15px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+
+.input-section .alert-danger {
+  color: #dc3c47;
+  background-image: none;
+  border-radius: 0 9px;
+  background-clip: padding-box;
+  border: 1px solid #ddd;
+  background-color: rgba(255,255,252, 1.0);
+}
+
+.input-section .alert-danger .close {
+  position: relative;
+  top: -0.5rem;
+  right: -0.5rem;
 }
 
 .advanced-view .form-group.advanced-input.select-type {
@@ -721,18 +720,16 @@ object.flip_label {
   top: 6px;
   left: 12px;
 }
+/*--- END advanced ---*/
 
-/**
-*** END / Input & Advanced */
+/*----------------------------------------------------*/
+/*--- END / Input & View ----------------------------*/
 
 
 
 
-/**
-* --------------------------------------------
-*  START View Section / Tabs - Table - Tree 
-* --------------------------------------------
-*/
+/*---- START View Section / Tabs - Table - Tree -----*/
+/*----------------------------------------------------*/
 .view-section {
   display: none;
   background: #fff;
@@ -742,6 +739,7 @@ object.flip_label {
 .view-section .tab-content {
   background: #f8f8f8;
   padding: 1rem 0 0;
+ /*border: 1px solid #ddd; border-width:0 1px 1px;*/
 }
 
 .view-section .tab-content .tab-pane {
@@ -767,8 +765,8 @@ object.flip_label {
   margin-right: 2px;
   font-weight: bold;
   padding: 10px 0 5px 0;
-  /* display:none prevents flash on load */
   display: none;
+ /*--- prevent flash on load */
   text-align: center;
   background: #fcfcfc;
   border: 1px solid #eee;
@@ -960,9 +958,10 @@ object.flip_label {
   color: #555;
 }
 
-/**
-* search scrollbars full-length
-*/
+
+
+
+/***** scrollbars *****/
 .text.ui-resizable::-webkit-scrollbar{
   width: 0;
 }
@@ -980,30 +979,9 @@ object.flip_label {
 .text.ui-resizable::-webkit-scrollbar-thumb:hover{
   background-color: #888;
 }
-/**
-* search view-section scrollbars 
-*/
-.view-section .view-wrap::-webkit-scrollbar {
-  width: 0.6rem;
-  border-radius: 1rem;
-}
- 
-.view-section .view-wrap::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-}
- 
-.view-section .view-wrap::-webkit-scrollbar-thumb {
-  background-color: #aaa;
-  border-radius: 1rem;
-  width: 0.6rem;
-}
 
-.view-section .view-wrap::-webkit-scrollbar-thumb:hover {
-  background-color: #888;
-}
-/**
-* bootstrap-select scrollbars 
-*/
+
+
 .bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar{
   width: 0.5rem;
   border-radius: 0.8rem;
@@ -1025,9 +1003,32 @@ object.flip_label {
 }
 
 
-/**
-* Tooltip popovers 
-*/
+
+/*----- search bottom half -----*/
+.view-section .view-wrap::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 1rem;
+}
+ 
+.view-section .view-wrap::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+ 
+.view-section .view-wrap::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 1rem;
+  width: 0.6rem;
+}
+
+.view-section .view-wrap::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+
+
+
+
+/* popovers */
 .view-section .title-field {
   position: static;
   float: none;
@@ -1089,6 +1090,7 @@ object.flip_label {
 
 .view-section .popover-title .kmapid-display::before {
   color: #888;
+/*content: 'kmapid: '*/
 }
 
 .view-section .popover-content .badge {
@@ -1131,16 +1133,19 @@ object.flip_label {
   color: #777;
   margin: 0 6px;
 }
-/**
-* END View Table */
+/*--- END trunk8 */
+/*-----------------*/
+/*--- END Table ---*/
 
 
 
-/**
-* --------------------------
-* START / Search Tree-Nav 
-* --------------------------
-*/
+
+
+
+
+/*------------------------------*/
+/*---- START / Search Tree ----*/
+/*------------------------------*/
 .fancytree-container {
   margin: 0;
   background: transparent;
@@ -1168,10 +1173,8 @@ object.flip_label {
   width: 0;
   height: 0;
   line-height: 0;
-  /* remove checkbox */
   display: none;
-} 
-
+} /*--- remove checkbox ---*/
 .fancytree-node {
   border: 1px solid transparent !important;
   display: block;
@@ -1328,14 +1331,12 @@ object.flip_label {
     background: transparent;
 }
 */
-/**
-*** END treeview */
+/*---- END treeview -----*/
 
 
 
-/**
-* Search Loading 
-*/
+/* ----- overlay timer ------ */
+/* ----- search loading ----- */
 #search-flyout .overlay-mask {
   position: absolute;
   z-index: 310;
@@ -1481,14 +1482,12 @@ object.flip_label {
   top: -10px;
   left: 40px;
   width: 120px;
-}
-/**
-*** END search loading */
+}/* ----- END search loading ----- */
 
 
-/**
-* BEGIN tooltip popover on search view-section 
-*/
+
+
+/* ----- BEGIN tooltip popover on search view-section ----- */
 .search-popover {
   display: none;
   border: 1px solid #ddd;
@@ -1602,17 +1601,9 @@ object.flip_label {
 .popover.left{
   margin-left: -1.5rem;
 }
-
-/**
-*** END View Section */
-
-/* ---------------- */
-/* END SEARCH PANEL */
-/* ---------------- */
-
-
-
-
+/*--- END trunk8 */
+/*-----------------*/
+/*--- END Table ---*/
 
 
 
@@ -1633,6 +1624,16 @@ object.flip_label {
   border-top: none !important;
 }
  */
+
+/*--------------------------------*/
+/*--- END SEARCH PANEL -----------*/
+/*--------------------------------*/
+
+
+
+
+
+
 
 
 
