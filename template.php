@@ -657,8 +657,8 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
 function shanti_sarvaka_carousel($variables) {
   $el = $variables['element'];
   $html = '<div class="container-fluid carouseldiv">
-      <div class="row">
-        <div class="col-xs-12">
+      <!-- <div class="row"> -->
+      <!-- <div class="col-xs-12"> -->
 
           <div class="carousel-header show-more" data-ride="carousel"><span>' . $el['title'] . '</span>' . $el['link'] . '</div>
 
@@ -698,8 +698,8 @@ function shanti_sarvaka_carousel($variables) {
               </ol><!-- /.control-box-2 -->
 
             </div><!-- /#collection-carousel -->
-        </div><!-- /.span12 -->
-        </div><!-- /.row -->
+        <!-- </div> /.span12 -->
+        <!-- </div> /.row -->
         </div><!-- /.container -->';
   return $html;
 }
