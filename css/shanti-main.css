@@ -105,7 +105,7 @@ textarea.form-textarea {
   font-size: 1em;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   height: 27px;
-  line-height: 1.88em;
+  line-height: 1.82em;
   padding: 0.3rem 1.5rem 0;
   max-width: 35em;
   overflow: auto;
@@ -126,7 +126,6 @@ textarea.form-textarea {
   border-radius: 0.5em;
   background-clip: padding-box;
 }
-
 
 textarea.form-textarea::-webkit-scrollbar {
   width: 0.8rem;
@@ -149,6 +148,7 @@ textarea.form-textarea::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
 
+input.form-control{  }
 
 input.form-control:hover,
 textarea.form-textarea:hover {
@@ -1393,7 +1393,7 @@ body.front ol.breadcrumb {
 }
 
 .nav-tabs.nav-justified>li.active{
-  border-top: 5px double orange;
+  border-top: 5px double orange; /* subtheme colors override this */
 }
 
 .nav-tabs.nav-justified>li.active::before {
@@ -3698,8 +3698,8 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 }
 
 .bootstrap-select.btn-group .btn .filter-option {
-  font-size: 0.93em;
-  padding-top: 0.1rem;
+  font-size: 0.75em;
+  padding-top: 0.2rem;
 }
 
 .bootstrap-select.btn-group .btn .filter-option .icon,
