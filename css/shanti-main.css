@@ -212,7 +212,7 @@ a:hover,a:active {
 }
 /**
 * Images - Set exceptions - Current rule excludes: (1)Images-grid, (2)Shanti-gallery */
-.content-section img:not(.og-grid img):not(.shanti-gallery img){
+.content-section img:not(.og-grid img):not(.shanti-gallery img):not(.pswp__container img){
   border-radius: 0;
   border: 1px solid #ddd;
   box-shadow: 0 0 2px #aaa;  
