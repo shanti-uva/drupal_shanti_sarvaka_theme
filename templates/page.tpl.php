@@ -85,7 +85,7 @@
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <section class="content-section equal-height<?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?>">
+          <section class="content-section col-xs-12 <?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?> equal-height">
 	        
 		        <button type="button" class="btn btn-default view-resources" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>
