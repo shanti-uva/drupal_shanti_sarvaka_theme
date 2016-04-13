@@ -1364,7 +1364,7 @@ body.front ol.breadcrumb {
 
 
 /**** Horizontal Tabs Bootstrap *****/
-.nav-justified {
+.nav-tabs.nav-justified {
   margin: 1.12em 0 1.75rem;
 }
 
@@ -1372,7 +1372,7 @@ body.front ol.breadcrumb {
   background: #fff;
   border-right: none;
   font-size: 1.06em;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
   font-weight: bold;
   -webkit-transition: background 0.25s ease 0s;
   transition: background 0.25s ease 0s;
@@ -1393,7 +1393,7 @@ body.front ol.breadcrumb {
 }
 
 .nav-tabs.nav-justified>li.active{
-  border-top: 5px double #764B8D;
+  border-top: 5px double orange;
 }
 
 .nav-tabs.nav-justified>li.active::before {
@@ -1404,8 +1404,7 @@ body.front ol.breadcrumb {
   left: 50%;
   top: 100%;
   margin: -0.56em 0 0 -0.5em;
-  /* see subtheme for color */
-  border-color: transparent !important; /* see subtheme color */
+  /* see subtheme for arrow-indicator color */
   color: transparent;
 }
 
