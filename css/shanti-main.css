@@ -106,7 +106,7 @@ textarea.form-textarea {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   height: 27px;
   line-height: 1.88em;
-  padding: 0.1rem 1.5rem;
+  padding: 0.3rem 1.5rem 0;
   max-width: 35em;
   overflow: auto;
   box-shadow: 0 2px 5px #eee inset;
@@ -1368,9 +1368,9 @@ body.front ol.breadcrumb {
   margin: 1.12em 0 1.75rem;
 }
 
-.nav-justified>li {
+.nav-tabs.nav-justified>li {
   background: #fff;
-  border-right: 1px solid #ddd;
+  border-right: none;
   font-size: 1.06em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   font-weight: bold;
@@ -1378,41 +1378,25 @@ body.front ol.breadcrumb {
   transition: background 0.25s ease 0s;
 }
 
-.nav-justified>li:hover:not(.active){
+.nav-tabs.nav-justified>li:hover:not(.active){
   background: #fefefe;
   box-shadow: 0 0 2px 1px #ddd;
 }
 
-.nav-justified>li:active{
+.nav-tabs.nav-justified>li:active{
   box-shadow: 0 0 2px 1px #c0c0c0;
 }
 
-.nav-justified>li>a {
-  border: none !important;
-  border-radius: 0;
-  color: #777;
-}
-
-.nav-justified>li>a:hover {
-  background: transparent;
-  color: #555;
-}
-
-.nav-justified>li>a:active {
-  background: transparent;
-  color: #555;
-}
-
-.nav-justified>li:last-child,
-.nav-justified>li.active {
+.nav-tabs.nav-justified>li:last-child,
+.nav-tabs.nav-justified>li.active {
   border-right: none;
 }
 
-.nav-justified>li.active{
+.nav-tabs.nav-justified>li.active{
   border-top: 5px double #764B8D;
 }
 
-.nav-justified>li.active::before {
+.nav-tabs.nav-justified>li.active::before {
   font-family: 'shanticon';
   font-size: 2em;
   content: '\e646';
@@ -1421,22 +1405,31 @@ body.front ol.breadcrumb {
   top: 100%;
   margin: -0.56em 0 0 -0.5em;
   /* see subtheme for color */
+  border-color: transparent !important; /* see subtheme color */
+  color: transparent;
 }
 
-.nav-justified>li.active>a,
-.nav-justified>li.active>a:hover,
-.nav-justified>li.active>a:active {
+.nav-tabs.nav-justified>li>a {
+  border: none !important;
+  border-radius: 0;
+  color: #777;
+}
+
+.nav-tabs.nav-justified>li>a:hover {
+  background: transparent;
+  color: #555;
+}
+
+.nav-tabs.nav-justified>li>a:active {
+  background: transparent;
+  color: #555;
+}
+
+.nav-tabs.nav-justified>li.active>a,
+.nav-tabs.nav-justified>li.active>a:hover,
+.nav-tabs.nav-justified>li.active>a:active {
   border-radius: 0;
   color: #fff !important;
-}
-/*--- Example: subtheme color ---*/
-.nav-justified>li.active>a {
- /* background:#32ccca !important; see subtheme color */
-}
-
-.nav-justified>li.active::before {
- /* color:#32ccca !important; see subtheme color */
-  border-color: transparent !important; /* see subtheme color */
 }
 
 
@@ -2501,7 +2494,8 @@ html input[type=file].form-file {
 
 .btn {
   background-image: none;
-  font-weight: normal;
+  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
   white-space: nowrap;
@@ -2513,7 +2507,7 @@ html input[type=file].form-file {
   line-height: 2em;
   font-size: .83em;
   letter-spacing: .05em;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
 }
 
 a.btn,a.btn:hover,a.btn:active {
@@ -2689,10 +2683,11 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .btn.btn-sm {
-  font-size: 60%;
-  line-height: 130%;
+  font-size: 0.62em;
+  line-height: 180%;
   padding-top: .88em;
   font-weight: bold;
+  font-weight: 700;
 }
 
 .btn.btn-lg {
@@ -4293,8 +4288,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 .footer {
   color: #ddd;
   width: 100%;
-  font-size: small;
-  padding-left: 15px;
   padding: 40px 0 20px 15px;
   background: #222;
   bottom: 0;
@@ -4800,31 +4793,21 @@ html body.admin-menu {
 }
 
 
-/*------------------------------*/
-/*----- BEGIN RESPONSIVE -------*/
-/*------------------------------*/
+/**
+* ---------------------------
+* BEGIN Mobile Breakpoints
+* ---------------------------
+*/
 
-
-/* minimum width below & maximum width break points above */
-
-@media screen and (max-width: 399px) {
-
-  /*#kmaps-search.extruder.right .flap,
-  #kmaps-search.extruder.right .flap .flapLabel,
-  #kmaps-search.extruder.right .flap.on-flap .flapLabel{ display:none !important;}*/
-}
+/**
+* BEGIN - @media MAX-WIDTH - @MEDIA MIN-WIDTH after Min-Width
+*/
 
 @media screen and (max-width: 499px) {
-
-          /*.menu-explore a span{ display:none;}*/
 
   .collections h4 {
     font-size: 1em;
   }
-
-  /*.collections ul li {
-    line-height: 3em;
-  }*/
 
   .collections > nav > div {
     padding-right: 0;
@@ -4838,38 +4821,12 @@ html body.admin-menu {
     line-height: 3em;
   }
 
-  /*.collections ul li a {
-    font-size: 0.82em;
-  }*/
-
   .shanti-thumbnail {
     max-width: 220px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  
-  .nav-justified>li.active::before {
-    border-color: transparent !important;
-    color: transparent !important;
-  } 
-
-    /* .titlearea .page-title { font-weight: normal; font-size:1.5em; line-height:1.5em; } */
- 
-    /*
-    .menu-icon a,
-    .menu-icon .shanticon{ padding:0; height:40px; width:50px;}
-    .menu-icon .shanticon{ font-size:1.75em; line-height:1.75em;}
-    .menu-icon a,
-    .menu-icon .shanticon,
-    .menu-explore a,
-    .navbar.navbar-default,
-    .navbar-default .navbar-nav>li>a{ height:40px; min-height: 40px;}
-      .navbar-default .menu-explore a{ font-size:0.88em; line-height:0.75em; height:40px; padding:10px 20px 0 16px; }
-        */
-}
-
-@media screen and (max-width: 830px) {
   
 }
 
@@ -5044,7 +5001,6 @@ html body.admin-menu {
   .view-resources.btn-default > .badge {
     display: none;
   } 
-  /* .view-resources.btn-default .badge { border:1px solid #ddd; font-size: .62em; padding:0.2rem 0.5rem 0; line-height:1; position:relative; top:-0.4rem; background:transparent; font-weight:normal; } */
 
   /* custom set for resource column */
   .page-places .view-resources.btn-default:nth-child(1),
@@ -5056,8 +5012,11 @@ html body.admin-menu {
 
 
 
-/* MINIMUM WIDTH Begins */
-
+/**
+* ----------------------------------
+* BEGIN - @media MIN-WIDTH Begins 
+* ----------------------------------
+*/
 
 @media screen and (min-width: 400px) {
 
@@ -5080,10 +5039,6 @@ html body.admin-menu {
   .navbar-brand { height:50; }
 
   .navbar-default h1 .icon {
-    /*line-height: 1.68em;
-    padding-left: 12px;
-    position: relative;
-    top: 0.3rem;*/
     margin-left: 9px;
     margin-top: 0.5rem;
     top:0.75rem;
@@ -5135,6 +5090,9 @@ html body.admin-menu {
     margin-left: 8%;
   }
 
+  .nav-tabs.nav-justified>li{
+    border-right: 1px solid #ddd;
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -5160,10 +5118,6 @@ html body.admin-menu {
     width: 12%;
     margin-left: 7%;
   }
-
-  /*.collections ul li a {
-    font-size: 0.75em;
-  }*/
 
   .collections ul li a.disabled, 
   .collections ul li a.disabled:hover, .collections ul li a.disabled:active, 
