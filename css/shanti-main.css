@@ -1,3 +1,12 @@
+/**
+* Mandala Sarvaka - Development
+* 
+* version 1.x - shanti-main.css
+* ------------------------------------------
+* University of Virginia / SHANTI MANDALA
+* ------------------------------------------
+* 
+*/
 @font-face {
   font-family: 'museo-sans-300';
   src: url('../fonts/Museosans/museosans-300-webfont.eot');
@@ -1503,7 +1512,7 @@ body.front ol.breadcrumb {
 }
 
 .menu-main ul {
-  background: #fff;
+  /*background: #fff;*/
   box-shadow: 0 1px 4px hsla(0, 0.0000%, 60.0000%, 0.4);
   border-collapse: separate;
 }
@@ -1514,7 +1523,7 @@ body.front ol.breadcrumb {
 
 .menu-main li {
   border-top: none;
-  background: #fff;
+  background: #fafafa;
   display: block;
   font-size: 1em;
   line-height: 3em;
@@ -1536,7 +1545,7 @@ body.front ol.breadcrumb {
 
 .menu-main #user-prefs li:hover,
 .menu-main #user-prefs li:active{
-  background:#fff;
+  background:#fafafa;
 }
 
 .menu-main li a {
@@ -1638,7 +1647,7 @@ body.front ol.breadcrumb {
 
 .menu-main .drop-hdr:hover,
 .menu-main .drop-hdr:active {
-  background: #fff;
+  background: #fafafa;
   color: #555;
 }
 

@@ -1,7 +1,11 @@
 /**
-* ------------------------
-* START / Sliding Panel
-* ------------------------
+* Mandala Sarvaka - Development
+* 
+* version 1.x - shanti-search.css
+* ------------------------------------------
+* University of Virginia / SHANTI MANDALA
+* ------------------------------------------
+* 
 */
 
 /* clearing default styles (extruder default in utils.css) */
@@ -237,7 +241,7 @@ object.flip_label {
 
 /**
 * --------------------------------------
-* START / Search Panel / Input & View 
+* BEGIN  Search / Input & View 
 * --------------------------------------
 */
 .input-section {
