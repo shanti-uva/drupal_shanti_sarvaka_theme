@@ -168,7 +168,7 @@ object.flip_label {
 
 #search-flyout.extruder .flap .flapLabel,
 #search-flyout.extruder .flap.on-flap .flapLabel {
-  background: #505050;
+  background: #444;
   height: 39px;
   width: 43px !important;
   padding: 17px 38px 17px 0;
@@ -199,7 +199,7 @@ object.flip_label {
 #search-flyout.extruder .flap.on-hover>span,
 #search-flyout.extruder .flap.on-hover.on-flap>span {
   color: #fff;
-  background: #555;
+  background: #333;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
