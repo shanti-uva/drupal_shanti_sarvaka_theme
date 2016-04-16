@@ -376,7 +376,7 @@ a:hover,a:active {
 } /* matching container-fluid for now, correct for changes in BStrap */
 
 section.content-section.equal-height{
-  /*padding-bottom: 7rem;*/
+  padding-bottom: 7rem;
 }
 
 

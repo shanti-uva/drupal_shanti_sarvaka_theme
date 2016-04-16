@@ -280,7 +280,7 @@ object.flip_label {
   overflow: auto;
   vertical-align: middle;
   box-shadow: 0 2px 5px #eee inset;
-  border-collapse: separate; /* fix for ie9 shadow */
+  border-collapse: separate; /* fix for ie9 box-shadow */
   background: #fff;
   -webkit-transition-property: all;
   transition-property: all;
