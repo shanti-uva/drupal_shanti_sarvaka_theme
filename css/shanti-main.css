@@ -4303,6 +4303,10 @@ body.page-admin-modules #block-system-main.block.block-system {
   color: #ccc;
 }
 
+.footer p{
+  font-size:0.88em;
+}
+
 .admin-menu .footer h1,
 .admin-menu .footer h2 {
   color: #fff;
