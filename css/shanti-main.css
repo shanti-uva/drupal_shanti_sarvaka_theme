@@ -287,8 +287,7 @@ a:hover,a:active {
   opacity:1;
 }
 
-
-/*
+/* ---- deprecated styles ----
 .italic {
   font-style: italic !important;
 }
@@ -311,6 +310,7 @@ a:hover,a:active {
   border: none;
 }
 */
+
 .ajax-progress, .ajax-progress *, 
 .ajax-progress-throbber, 
 .ajax-progress-throbber * {
@@ -344,7 +344,9 @@ a:hover,a:active {
   color: white !important;
 }
 
-/* layout containers */
+/**
+* layout containers 
+*/
 .wrap-all {
   position: relative;
 }
@@ -364,14 +366,6 @@ a:hover,a:active {
   margin: 0 auto;
 }
 
-.row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
-  /*padding-bottom: 5rem;*/
-}
-
-.max-col-widths .row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
-  /*padding-top: 0;*/
-}
-
 .content-section .container {
   width: auto;
 } /* matching container-fluid for now, correct for changes in BStrap */
@@ -384,15 +378,6 @@ section.content-section.equal-height{
 /*----------------------------------*/
 /*----- BEGIN header section -------*/
 /*----------------------------------*/
-/*.header-banner {
-  position: relative;
-  overflow: visible;
-  margin-top: 0 !important;
-  box-shadow: 0 3px 10px #ddd;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1110);
-  border-collapse: separate;
-}
-*/
 .navbar.navbar-default {
   padding: 0;
   margin: 0;
@@ -416,7 +401,8 @@ section.content-section.equal-height{
 }
 
 .navbar-nav>li>a{
-  text-shadow:none; /* override bootstrap style */
+  /* override bootstrap style */
+  text-shadow:none; 
 }
 
 .navbar-header .navbar-brand {
@@ -435,7 +421,6 @@ section.content-section.equal-height{
 .navbar-header .navbar-brand:hover,
 .navbar-header .navbar-brand:active {
   color: #222;
-  /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
 
 .navbar-header .shanti {
