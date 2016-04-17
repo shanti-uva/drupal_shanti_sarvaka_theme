@@ -2304,8 +2304,8 @@ body.front ol.breadcrumb {
   margin-left: -1.5rem;
   max-width: 16em;
   background: #fff;
-  min-height: 700px;
-  height: 100%;
+  min-height: 650px;
+  height: auto;
   background-image: -webkit-linear-gradient(left, #ccc 0, #ccc 9px, #fff 10px);
   background-image: linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);
 }
@@ -4231,7 +4231,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 #sidebar-first,
 #sidebar-second{
   background-color: transparent;
-  min-height: 60em;
+  min-height: 700px;
   border: 1px solid #e5e5e5;
 }
 
