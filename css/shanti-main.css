@@ -2274,7 +2274,7 @@ body.front ol.breadcrumb {
   padding-right: 0;
   padding-top: 0;
   margin-left: -1.5rem;
-  max-width: 16em;
+  max-width: 14em;
   background: #fff;
   min-height: 650px;
   height: auto;
@@ -4783,7 +4783,7 @@ html body.admin-menu {
 */
 
 /**
-* BEGIN - @media MAX-WIDTH - @MEDIA MIN-WIDTH after Min-Width
+* BEGIN - Note: MAX-WIDTH settings first
 */
 
 @media screen and (max-width: 499px) {
@@ -4997,7 +4997,7 @@ html body.admin-menu {
 
 /**
 * ----------------------------------
-* BEGIN - @media MIN-WIDTH Begins 
+* BEGIN - MIN-WIDTH
 * ----------------------------------
 */
 
