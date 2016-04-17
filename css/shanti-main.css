@@ -3662,7 +3662,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
-  color: #444;
+  color: #505050;
  /*background: #eee !important;*/
 }
 
@@ -3676,6 +3676,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
   background: #f7f7f7;
+  color:#000;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:active>a,
