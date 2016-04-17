@@ -438,15 +438,8 @@ section.content-section.equal-height{
   /*text-shadow: 0 1px 1px #f0f0f0;*/
 }
 
-.navbar-header span:nth-of-type(2) {
+.navbar-header .shanti {
   display: none;
-}
-
-.navbar-header a .icon {
-  font-size: 1.38em;
-  position: relative;
-  top: 0.75rem;
-  padding-left: 5px;
 }
 
 .navbar-header .site-slogan {
@@ -461,8 +454,6 @@ section.content-section.equal-height{
   font-style: normal;
   letter-spacing: 0.25rem;
   font-family: 'museo-sans-500', arial,sans-serif;
-  /*-webkit-transition: color .1s ease-in-out;
-  transition: color .1s ease-in-out;*/
 }
 
 .navbar-header .site-slogan::before {
