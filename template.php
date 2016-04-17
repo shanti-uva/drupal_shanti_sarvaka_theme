@@ -103,18 +103,18 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     $variables['bsclass_main'] = $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = '';
     // if both side columns exist
     if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
-        $variables['bsclass_main'] = 'col-xs-12 col-md-9 col-lg-10';
-        $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-12 col-md-3 col-lg-2';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9';
+        $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-12 col-md-3';
     // If first side column exists
     } else if ($variables['page']['sidebar_first']) {
-        $variables['bsclass_main'] = 'col-xs-12 col-md-9 col-lg-10';
-        $variables['bsclass_sb1'] = 'col-xs-12 col-md-3 col-lg-2';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9';
+        $variables['bsclass_sb1'] = 'col-xs-12 col-md-3';
         $variables['bsclass_sb2'] = '';
     // If second side column exists
     } else if ($variables['page']['sidebar_second']) {
-        $variables['bsclass_main'] = 'col-xs-12 col-md-9 col-lg-10';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9';
         $variables['bsclass_sb1'] = '';
-        $variables['bsclass_sb2'] = 'col-xs-12 col-md-3 col-lg-2';
+        $variables['bsclass_sb2'] = 'col-xs-12 col-md-3';
     }
     // If no side columns keep default all classes blank
     // Add has_tabs var
