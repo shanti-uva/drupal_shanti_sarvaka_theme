@@ -461,8 +461,8 @@ section.content-section.equal-height{
   font-style: normal;
   letter-spacing: 0.25rem;
   font-family: 'museo-sans-500', arial,sans-serif;
-  -webkit-transition: color .3s ease-in-out;
-  transition: color .3s ease-in-out;
+  -webkit-transition: color .1s ease-in-out;
+  transition: color .1s ease-in-out;
 }
 
 .navbar-header .site-slogan::before {

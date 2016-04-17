@@ -720,18 +720,22 @@ Drupal.behaviors.shantiEqualHeights = {
         // $(document).ajaxSuccess(function() {
         $(document).on('ajaxSuccess', function(){
           $('.equal-height').matchHeight({
-              target: $('.equal-height.col-xs-12');
+              target: $('.equal-height.col-xs-12')
           });
         });    
        
-        // $(document).ajaxSuccess(function() {
-        $('.content-resources a,.panel-heading a').bind( 'click', function() {
-            $('.equal-height').matchHeight({
-              target: $('.equal-height.col-xs-12');
-            }); 
-        });  
+            // $(document).ajaxSuccess(function() {
+            $('.content-resources a,.panel-heading a').bind( 'click', function() {
 
-         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );  
+              $(document).on('ajaxSuccess', function(){
+                $('.equal-height').matchHeight({
+                  target: $('.equal-height.col-xs-12')
+                }); 
+              });
+
+            });  
+
+         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiEqualHeights );  
     }
   } 
 };
