@@ -352,13 +352,13 @@ a:hover,a:active {
 .main-wrapper {
   background: #eee;
   position: relative;
-  min-height: 60em;
+  min-height: 700px;
 }
-
+/* container-fluid class handles this
 .main-wrapper::after {
   clear: both;
 }
-
+*/
 .main-content {
   position: relative;
   margin: 0 auto;
@@ -4231,7 +4231,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 #sidebar-first,
 #sidebar-second{
   background-color: transparent;
-  min-height: 700px;
+  min-height: 650px;
   border: 1px solid #e5e5e5;
 }
 
