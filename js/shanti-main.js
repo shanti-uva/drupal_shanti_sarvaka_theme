@@ -719,7 +719,7 @@ Drupal.behaviors.shantiEqualHeights = {
     if(context == window.document) {        
         // $(document).ajaxSuccess(function() {
         $(document).on('ajaxSuccess', function(){
-          $('.equal-height').matchHeight({
+          $('.main-col .equal-height').matchHeight({
               target: $('.equal-height.col-xs-12')
           });
         });    
@@ -728,7 +728,7 @@ Drupal.behaviors.shantiEqualHeights = {
             $('.content-resources a,.panel-heading a').bind( 'click', function() {
 
               $(document).on('ajaxSuccess', function(){
-                $('.equal-height').matchHeight({
+                $('.main-col .equal-height').matchHeight({
                   target: $('.equal-height.col-xs-12')
                 }); 
               });
