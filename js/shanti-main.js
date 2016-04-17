@@ -597,14 +597,11 @@
 
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
+
 			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
 			  $(this).toggleClass( "show",'fast' );
 			});
-	  }
-	};
 
-	Drupal.behaviors.kmapsOffCanvasButton = {
-	  attach: function (context, settings) {
 			if($(".feature-carousel-tabpanel").length ) {
 				$("button.view-resources").remove();
 			}
@@ -721,27 +718,25 @@ Drupal.behaviors.shantiEqualHeights = {
   attach: function (context, settings) { 
     if(context == window.document) {        
         // $(document).ajaxSuccess(function() {
-        $(window).on('load', function(){
+        $(document).on('ajaxSuccess', function(){
           $('.equal-height').matchHeight({
-              target: $('.content-section.equal-height')
+              target: $('.equal-height.col-xs-12');
           });
         });    
+       
+        // $(document).ajaxSuccess(function() {
+        $('.content-resources a,.panel-heading a').bind( 'click', function() {
+            $('.equal-height').matchHeight({
+              target: $('.equal-height.col-xs-12');
+            }); 
+        });  
 
-        $('.panel-heading a').bind( 'click', function() {
-            $(window).on('load', function(){
-              $('.equal-height').matchHeight({
-                  target: $('.content-section.equal-height')
-              });
-            });   
-        });
-
-        // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );
-
+         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.shantiEqualHeights );  
     }
   } 
 };
 
-  
+
 Drupal.behaviors.shantiDeleteButtonDisable = {
 	 attach: function (context, settings) {
 			if (context == document) {
