@@ -714,33 +714,6 @@
     } 
   };
 
-Drupal.behaviors.shantiEqualHeights = {
-  attach: function (context, settings) { 
-    if(context == window.document) {        
-        // $(document).ajaxSuccess(function() {
-        $(document).on('ajaxSuccess', function(){
-          $('.main-col .equal-height').matchHeight({
-              target: $('.equal-height.col-xs-12')
-          });
-        });    
-       
-            // $(document).ajaxSuccess(function() {
-            $('.content-resources a,.panel-heading a').bind( 'click', function() {
-
-              $(document).on('ajaxSuccess', function(){
-                $('.main-col .equal-height').matchHeight({
-                  target: $('.equal-height.col-xs-12')
-                }); 
-              });
-
-            });  
-
-         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiEqualHeights );  
-    }
-  } 
-};
-
-
 Drupal.behaviors.shantiDeleteButtonDisable = {
 	 attach: function (context, settings) {
 			if (context == document) {
