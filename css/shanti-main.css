@@ -370,7 +370,7 @@ a:hover,a:active {
   width: auto;
 } /* matching container-fluid for now, correct for changes in BStrap */
 
-section.content-section.equal-height{
+.content-section.equal-height.col-md-9 .tab-content:first-child{
   padding-bottom: 7rem;
 }
 
