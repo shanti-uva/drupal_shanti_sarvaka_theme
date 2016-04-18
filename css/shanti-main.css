@@ -1839,7 +1839,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button:hover {
   color: #fff;
-  background: #333;
+  background: #707070;
 }
 
 .popover-footer-button:active {
@@ -4141,9 +4141,20 @@ table tr.ok {
   left: -2.075rem;
   top: -0.1rem;
 }
+
+.panel-body .field-collection-container{
+  border-bottom:none;
+}
+
+.panel-body h6{
+  font-size: 0.88em;
+}
 /*---------------*/
 /* END accordion */
 /*---------------*/
+
+
+
 
 
 .search-results a,
@@ -4194,7 +4205,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 /**
 *** Migrated admin css from this location to mb-admin.css 
-*** - mf8yk april 11, 2015
+*** - mf8yk april 11, 2016
 */
 
 
