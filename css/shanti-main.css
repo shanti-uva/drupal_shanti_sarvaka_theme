@@ -1429,7 +1429,7 @@ body.front ol.breadcrumb {
 .menu-main h3,
 .menu-main h2 {
   color: #222;
-  background: #fafafa;
+  background: #fff;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #c0c0c0;
   font-size: 1.32em;
@@ -1880,7 +1880,7 @@ body.front ol.breadcrumb {
   border-radius: 0 0 0.5rem 0.5rem;
   background-clip: padding-box;
   border-bottom: none;
-  height:110%;
+  height:105%;
 }
 
 /*------------------*/
