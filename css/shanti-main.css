@@ -1445,9 +1445,9 @@ body.front ol.breadcrumb {
   margin: 0;
 
   border-top: 4px solid #444;
-  -webkit-box-shadow: -1px -2px 24px hsla(0, 0.0000%, 60.0000%, 0.5);
-  box-shadow: -1px -2px 24px hsla(0, 0.0000%, 60.0000%, 0.5);
-/* -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; */
+  -webkit-box-shadow: -1px -2px 14px #d0d0d0;
+  box-shadow: -1px -2px 14px #d0d0d0;
+    /* -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; */
   overflow: visible;
 }
 /*
