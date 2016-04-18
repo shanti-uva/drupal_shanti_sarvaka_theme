@@ -4073,7 +4073,7 @@ table tr.ok {
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
   font-size: 1.06em;
-  line-height: 4.06em;
+  line-height: 4.25em;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
   margin: 0;
@@ -4105,7 +4105,7 @@ table tr.ok {
   height: 25px;
   float: left;
   position: relative;
-  top: 16px;
+  top: 18px;
   left: 0;
   display: block;
   border:1px solid #d0d0d0;
@@ -4139,7 +4139,7 @@ table tr.ok {
   content: '\2b';
   position: relative;
   left: -2.075rem;
-  top: -0.13rem;
+  top: -0.1rem;
 }
 /*---------------*/
 /* END accordion */
