@@ -4425,7 +4425,7 @@ body.page-admin-modules #block-system-main.block.block-system {
   display: none;
 }
 
-.admin-menu .content table td {
+.admin-menu .content table td:not(.pagerer) {
   background: transparent;
   padding-bottom:1.5rem;
   padding-top: 1rem;
