@@ -1352,7 +1352,7 @@ body.front ol.breadcrumb {
   background: #fff;
   border-right: none;
   font-size: 1.06em;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   font-weight: bold;
   -webkit-transition: background 0.25s ease 0s;
   transition: background 0.25s ease 0s;
@@ -1405,10 +1405,11 @@ body.front ol.breadcrumb {
 }
 
 .nav-tabs.nav-justified>li.active>a,
-.nav-tabs.nav-justified>li.active>a:hover,
-.nav-tabs.nav-justified>li.active>a:active {
+.nav-tabs.nav-justified>li.active>a:focus,
+.nav-tabs.nav-justified>li.active>a:hover {
   border-radius: 0;
   color: #fff !important;
+  padding-bottom:13px;
 }
 
 
@@ -1445,8 +1446,8 @@ body.front ol.breadcrumb {
   margin: 0;
 
   border-top: 4px solid #444;
-  -webkit-box-shadow: -1px -2px 12px #ddd;
-  box-shadow: -1px -2px 12px #ddd;
+  /*-webkit-box-shadow: -1px -2px 12px #ddd;
+  box-shadow: -1px -2px 12px #ddd;*/
     /* -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; */
   overflow: visible;
 }
@@ -1499,7 +1500,7 @@ body.front ol.breadcrumb {
 
 .menu-main li {
   border-top: none;
-  background: #fff;
+  background: #fafafa;
   display: block;
   font-size: 1em;
   line-height: 3em;
@@ -1549,6 +1550,8 @@ body.front ol.breadcrumb {
 .menu-main li:first-of-type a,
 .menu-main .myaccount>a {
   border-top: none;
+  background-image: -webkit-linear-gradient(top, #f0f0f0 0, #f7f7f7 3px, #fff 12px);
+  background-image: linear-gradient(top, #f0f0f0 0, #f7f7f7 3px, #fff 12px);
 }
 
 .menu-main li:first-of-type a:hover,
