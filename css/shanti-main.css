@@ -1825,7 +1825,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button {
   background: #111;
-  border-bottom: 1px solid #333;
+  border: 1px solid #333;
   font-size: 1em;
   height: 2.5em;
   padding: 0 0 0 1.3rem;
@@ -1879,8 +1879,7 @@ body.front ol.breadcrumb {
 .popover-footer-button:last-child {
   border-radius: 0 0 0.5rem 0.5rem;
   background-clip: padding-box;
-  border-bottom: none;
-  height:105%;
+  height:2.65rem;
 }
 
 /*------------------*/
@@ -4046,6 +4045,7 @@ table tr.ok {
 .panel-group .panel {
   border: none;
   border-radius: 0;
+  color:#111;
   width: 100%;
  /* background:white; */
   margin: 0;
