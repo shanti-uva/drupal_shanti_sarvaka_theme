@@ -1445,8 +1445,8 @@ body.front ol.breadcrumb {
   margin: 0;
 
   border-top: 4px solid #444;
-  -webkit-box-shadow: -1px -2px 14px #d0d0d0;
-  box-shadow: -1px -2px 14px #d0d0d0;
+  -webkit-box-shadow: -1px -2px 12px #ddd;
+  box-shadow: -1px -2px 12px #ddd;
     /* -webkit-box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);box-shadow:-1px -2px 4px hsla(0, 0.0000%, 60.0000%, 0.5);border-collapse:separate; */
   overflow: visible;
 }
@@ -3359,12 +3359,12 @@ a.btn,a.btn:hover,a.btn:active {
   z-index:1; /* help firefox */
   padding: 6px 12px;
   box-shadow: 1px 0 4px rgba(0, 0, 0, 0.3);
-  border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0 !important;
 
   position: fixed;
   right: 10rem !important;
   border-right: 1px solid #ccc !important;
-  /*box-shadow: none !important;*/
+  box-shadow: none !important;
 }
 
 /**
