@@ -370,8 +370,13 @@ a:hover,a:active {
   width: auto;
 } /* matching container-fluid for now, correct for changes in BStrap */
 
-.content-section.equal-height.col-md-9{
-  padding-bottom: 7rem;
+.content-section.equal-height.col-md-9::after{
+  /* padding-bottom: 7rem; */
+  content:'';
+  height:7rem;
+  width:1rem;
+  position:relative;
+  display:block;
 }
 
 
