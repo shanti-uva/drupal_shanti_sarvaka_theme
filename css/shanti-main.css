@@ -1825,7 +1825,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button {
   background: #111;
-  border: 1px solid #333;
+  border-top: 1px solid #606060;
   font-size: 1em;
   height: 2.5em;
   padding: 0 0 0 1.3rem;
@@ -1878,6 +1878,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button:last-child {
   border-radius: 0 0 0.5rem 0.5rem;
+  border-bottom: 1px solid #606060;
   background-clip: padding-box;
   height:3.4rem;
 }
