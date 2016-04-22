@@ -1823,7 +1823,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button {
   background: #111;
-  border-top: 1px solid #606060;
+  border-top: 1px solid #444;
   font-size: 1em;
   height: 2.5em;
   padding: 0 0 0 1.3rem;
@@ -2052,11 +2052,11 @@ body.front ol.breadcrumb {
 }
 
 .shanti-thumbnail-image.shanti-field-audio a:hover .overlay::before {
-  font-size: 3em !important;
+  font-size: 3.5em !important;
 }
 
 .shanti-thumbnail-image.shanti-field-audio a:active .overlay::before {
-  font-size: 2.5em !important;
+  font-size: 3em !important;
 }
 
 .shanti-thumbnail-info {
@@ -4009,10 +4009,6 @@ table tr.ok {
   width: 100%;
   margin-top: 0;
 /*margin:-10px -20px 0 -2px;*/
-}
-
-.content-section.equal-height .panel-group:last-of-type{
-  margin-bottom:12rem;
 }
 
 .panel-body {
