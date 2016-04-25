@@ -442,6 +442,8 @@ a:hover,a:active {
 .navbar-header .site-slogan::before {
   content: '/ ';
   margin-right: 0.5rem;
+  position: relative;
+  top: -0.05rem;
 }
 
 .navbar-brand .shanticon-logo {
@@ -4004,16 +4006,8 @@ table tr.ok {
 /*-------------------------*/
 /*----- BEGIN accordion ---*/
 /*-------------------------*/
-.panel-group {
-  border: none;
-  width: 100%;
-  margin-top: 0;
-/*margin:-10px -20px 0 -2px;*/
-}
-
 .panel-body {
   background: #f9f9f9;
-  border: none;
   border-radius: 0;
   width: 100%;
   padding:2rem 2rem 2rem 2.5rem;
@@ -4021,6 +4015,14 @@ table tr.ok {
 
 .panel-default .panel-heading+.panel-collapse .panel-body{
   box-shadow: inset 0 0 0.25rem 0 #ccc;
+}
+
+.panel-group,
+.panel-default .panel-heading+.panel-collapse .panel-body,
+.panel-group .panel-heading+.panel-collapse .panel-body {
+  margin: 0;
+  border: none;
+  width: 100%;
 }
 
 .panel.panel-default {
@@ -4055,25 +4057,6 @@ table tr.ok {
   padding: 0;
   box-shadow: 0 0 3px rgba(0,0,0, 0.175);
   border-collapse: separate;
-}
-
-.panel-group,
-.panel-default .panel-heading+.panel-collapse .panel-body,
-.panel-group .panel-heading+.panel-collapse .panel-body {
-  margin: 0;
-  border: none;
-}
-
-.panel-group .panel+.panel {
-  margin-top: 0;
-}
-/*
-.panel-collapse.collapse{
-  border-top:1px solid transparent;
-}
-*/
-.panel-collapse.collapse.in{
- /* border-top-color: #d0d0d0;*/
 }
 
 /*--- for larger toggle panels ---*/
@@ -5039,7 +5022,7 @@ html body.admin-menu {
 
   .navbar-header .site-slogan {
     font-size: 100%;
-    top:1.35rem;
+    top:1.45rem;
   }
 
   .navbar-brand { height:50; }
