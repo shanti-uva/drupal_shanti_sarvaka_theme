@@ -75,11 +75,11 @@
 
 
         <!-- Begin Content Row -->
-        <div class="row row-offcanvas row-offcanvas-left">
+        <div class="row row-offcanvas<?php print " $offcanvas_trigger_sb"; ?>">
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar equal-height<?php print " $bsclass_sb1"; ?>">
+            <div id="sidebar-first" class="region sidebar sidebar-offcanvas<?php print " $bsclass_sb1"; ?> equal-height">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>
@@ -87,7 +87,7 @@
           <!-- Begin Page Content -->
           <section class="content-section <?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?> equal-height">
 	        
-		        <button type="button" class="btn btn-default view-resources" data-toggle="offcanvas" style="display:none;">
+		        <button type="button" class="btn btn-default view-offcanvas-sidebar" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>
 	          </button>
           
@@ -106,7 +106,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar equal-height pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?>">
+            <div id="sidebar-second" class="region sidebar equal-height pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?> equal-height">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>

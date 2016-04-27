@@ -305,14 +305,8 @@
     			desc.remove();
     		});
 
-	      // conditional IE message, see markup immediately after the body tag
+	      // conditional Internet Explorer message, see markup immediately after the body tag
 	      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
-	      
-	      // set the sidebar heigth
-	      // $('div#sidebar-second').height($('div#sidebar-second').parent().height()); 
-
-
-
 
 	      // Turn dev menu in admin footer into select
 	      if($('#admin-footer #block-menu-devel ul.menu').length > 0) {
@@ -450,12 +444,6 @@
 	       );
 
 	      // $('table.sticky-header').css('width','100%');
-
-
-	      // hide responsive column for resources
-	      $('[data-toggle=offcanvas]').click(function () {
-	        $('.row-offcanvas').toggleClass('active');
-	      });
 
 	      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width
 	      (function () {
@@ -597,14 +585,23 @@
 
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
+      if(context == document) {
 
-			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
+      // Initiate & hide sidebar when active/visible
+      $('[data-toggle=offcanvas]').click(function () {
+        $('.row-offcanvas').toggleClass('active');
+      });
+      // Toggle sidebar
+			$("button.view-offcanvas-sidebar").click( function() { 		// show-hide resource side-column
 			  $(this).toggleClass( "show",'fast' );
 			});
 
-			if($(".feature-carousel-tabpanel").length ) {
-				$("button.view-resources").remove();
-			}
+      // Hide sidebar button for Kmaps homepage
+			// if($("body.front.kmaps").length ) {
+			// 	$("button.view-offcanvas-sidebar").remove();
+			// }
+
+      }
 	  }
 	};
 
