@@ -101,6 +101,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     $variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
     // Figure out bootstrap column classes. Define class variables
     $variables['bsclass_main'] = $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = '';
+    $variables['offcanvas_trigger_sb'] = '';
     // if both side columns exist
     if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
         $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right';
