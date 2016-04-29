@@ -85,7 +85,7 @@
           <?php endif; ?>
 
           <!-- Begin Page Content -->
-          <div class="content-section <?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?> equal-height">
+          <section class="content-section <?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?> equal-height">
 	        
 		        <button type="button" class="btn btn-default view-offcanvas-sidebar" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>
@@ -101,7 +101,7 @@
                  <?php print render($page['content']); ?>
               </article>
             </div>
-          </div>
+          </section>
           <!-- END Content -->
 
           <!-- Sidebar Second Region -->
