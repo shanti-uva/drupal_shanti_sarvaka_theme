@@ -106,7 +106,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar equal-height pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?> equal-height">
+            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?> equal-height">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
