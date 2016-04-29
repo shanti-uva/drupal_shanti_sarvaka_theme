@@ -1138,7 +1138,7 @@ body.front ol.breadcrumb {
   width: 100%;
   background: #ddd !important;
   height: 2.2rem;
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
   filter: alpha(opacity=60);
   opacity: 0.6;
 }
@@ -2489,8 +2489,8 @@ html input[type=file].form-file {
 
 .btn {
   background-image: none;
-  font-weight: bold;
-  font-weight: 700;
+  font-weight: normal;
+  font-weight: 500;
   text-transform: uppercase;
   display: inline-block;
   white-space: nowrap;
@@ -2502,7 +2502,7 @@ html input[type=file].form-file {
   line-height: 2em;
   font-size: .83em;
   letter-spacing: .05em;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
 
 a.btn,a.btn:hover,a.btn:active {
@@ -4224,12 +4224,17 @@ body.page-admin-modules #block-system-main.block.block-system {
 } 
 #sidebar-second ul {
   list-style: square inside none;
-  -webkit-margin-before: 1rem;
-  -webkit-margin-after: 1rem;
+  /* -webkit-margin-before: 1rem;
+  -webkit-margin-after: 1rem; */
+  -webkit-margin-before: 0rem;
+  -webkit-margin-after: 0rem;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  -webkit-padding-start: 0.7143rem;
-  padding-left: 0.7143rem;
+  /* -webkit-padding-start: 0.7143rem;
+  padding-left: 0.7143rem; */
+  -webkit-padding-start: 0;
+  padding-left: 0;
+  margin-left: 0.7rem;
 }
 
 #sidebar-second ul li a,
