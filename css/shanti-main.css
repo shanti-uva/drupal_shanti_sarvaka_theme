@@ -3544,7 +3544,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .btn {
   margin: 0;
-  padding: 0 2.38em 0 1.5rem;
+  padding: 0.2rem 2.38em 0 1.5rem;
   color: #606060;
   background: transparent;
   background-image: none;
@@ -3696,7 +3696,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .btn .filter-option {
   font-size: 0.75em;
-  padding-top: 0.2rem;
 }
 
 .bootstrap-select.btn-group .btn .filter-option .icon,
