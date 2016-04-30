@@ -3716,11 +3716,12 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   top: 2px;
 }
 
-.bootstrap-select.form-control:not([class*='span']) {
+/* previous;y had :not([class*='span']) - removed for speed issues since it's not needed most likely */
+.bootstrap-select.form-control {
   max-width: 25em;
 }
-
-.view-filters .bootstrap-select.form-control:not([class*='span']) {
+/* previous;y had :not([class*='span']) - removed for speed issues since it's not needed most likely */
+.view-filters .bootstrap-select.form-control {
   padding-right: 0;
   width: 100%;
 }
