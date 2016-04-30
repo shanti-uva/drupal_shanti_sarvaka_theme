@@ -3215,20 +3215,13 @@ a.btn,a.btn:hover,a.btn:active {
   }
 }
 
-@media (min-width: 750px) {
-
-  .carousel-description p {
-    font-size: 1em;
-  }
-}
-
 @media (min-width:768px) {
   .carousel-title {
     font-size: 1.44em;
   }
 
   .carousel-description p {
-    /*height: 10em;*/
+    font-size: 1em;
   }
 }
 
@@ -3267,10 +3260,6 @@ a.btn,a.btn:hover,a.btn:active {
 
   .carousel-title {
     font-size: 1.63em;
-  }
-
-  .carousel-description p {
-    /* height: 9.5em; */
   }
 
   .carousel .carousel-main-image{
