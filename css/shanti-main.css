@@ -286,6 +286,12 @@ a:hover,a:active {
 .go-to-link a:hover::after{
   opacity:1;
 }
+/* drupal block admin link */
+.content-section a.contextual-links-trigger,
+.content-section a.contextual-links-trigger:hover{
+  border:none!important;
+  text-decoration: none !important;
+}
 
 /* ---- deprecated styles ----
 .italic {
@@ -2935,7 +2941,7 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-header a {
   font-size: 0.93em;
   float: right;
-  margin-right: 2rem;
+  margin-right: 3rem;
   margin-top: 2px;
 }
 
