@@ -805,7 +805,8 @@ a:hover,a:active {
 .collections ul li {
   margin: 0;
   float: left;
-  line-height: 3em;
+  line-height: 2em;
+  height:2.12em;
   width: 50%;
 }
 
@@ -816,10 +817,9 @@ a:hover,a:active {
   margin-left: 0;
   float: left;
   font-size: 0.75em;
-  line-height: 3em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  font-weight: 500;
   font-weight: normal;
+  font-weight: 500;
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -842,6 +842,10 @@ a:hover,a:active {
   font-size: 1.75em;
   position: relative;
   top: 0.4rem;
+}
+
+.collections ul .icon.shanticon-visuals{
+  top: 0.54rem;
 }
 
 .collections ul .icon.shanticon-logo-shanti {
@@ -3631,7 +3635,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text {
-  background: #fff;
+  /*background: #fff;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:hover>a,
@@ -3660,24 +3664,24 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
-  background: #f7f7f7;
-  color:#000;
+  /*background: #f7f7f7;
+  color:#000;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:active>a,
 .bootstrap-select.btn-group .dropdown-menu li:active>a>span.text {
-  background: #fff;
+  /*background: #fff;*/
 }
 /*----- checkmark styles -----*/
-.bootstrap-select.btn-group .dropdown-menu li>a .glyphicon-ok,
-.bootstrap-select.btn-group .dropdown-menu li>a:hover .glyphicon-ok,
-.bootstrap-select.btn-group .dropdown-menu li>a:active .glyphicon-ok {
+.bootstrap-select.btn-group.show-tick .dropdown-menu li>a .glyphicon-ok,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li>a:hover .glyphicon-ok,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li>a:active .glyphicon-ok {
   color: #ccc;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a .glyphicon-ok,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover .glyphicon-ok,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:active .glyphicon-ok {
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected>a .glyphicon-ok,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected>a:hover .glyphicon-ok,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected>a:active .glyphicon-ok {
   color: #444;
 }
 
