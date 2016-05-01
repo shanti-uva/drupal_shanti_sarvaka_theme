@@ -3616,8 +3616,9 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li>a,
 .bootstrap-select.btn-group .dropdown-menu li>a:hover,
 .bootstrap-select.btn-group .dropdown-menu li>a:active {
-  border: 1px solid transparent !important;
-  border-width: 1px 0 !important;
+  /*border: 1px solid transparent !important;
+  border-width: 1px 0 !important;*/
+  border:none !important;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a:focus {
@@ -3696,6 +3697,9 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .btn .filter-option {
   /*font-size: 0.75em;*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bootstrap-select.btn-group .btn .filter-option .icon,
