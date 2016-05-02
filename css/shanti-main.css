@@ -3690,7 +3690,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a .glyphicon-ok {
   color: #ddd;
   position: absolute;
-  top: 0.6rem;
+  top: 0.7rem;
   right:1.5rem;
   margin-top: 0 !important;
   display:inline-block;
