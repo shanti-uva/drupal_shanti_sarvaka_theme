@@ -3525,16 +3525,6 @@ a.btn,a.btn:hover,a.btn:active {
  /* padding: 0 2.38em 0 0;*/
 }
 
-table.field-multiple-table .bootstrap-select.btn-group > .btn {
- /* width:50%; */
-}
-
-table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
-  font-size: 0.88em;
-  max-width: 25rem !important;
- /* width:45% !important; commented out for Video Edit page edits */
-}
-
 .bootstrap-select.btn-group .popover-title {
   font-size: 0.93em;
   padding: 0.5rem 1.2rem 0.2rem;
