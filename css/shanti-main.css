@@ -3678,7 +3678,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 }
 /*----- checkmark styles -----*/
 .bootstrap-select.btn-group.show-tick .dropdown-menu li>a .glyphicon-ok{
-  font-size: 85%;
+  font-size: 90%;
   color: #ddd;
   position: absolute;
   top: 0.85rem;
