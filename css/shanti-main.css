@@ -3602,8 +3602,8 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 }
 
 .bootstrap-select.btn-group .dropdown-menu li {
-  padding: 0;
-  overflow: hidden;
+  /*padding: 0;
+  overflow: hidden;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a {
