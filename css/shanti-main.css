@@ -956,6 +956,13 @@ a:hover,a:active {
   top: 0.6rem;
 }
 
+.page-title .page-title-text em::after{
+  content:':';
+  position:relative;
+  display:inline-block;
+  color:#fff;
+}
+
 .page-title .icon {
   font-size: 125%;
   line-height: 1em;
