@@ -3581,6 +3581,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 .bootstrap-select.btn-group .dropdown-menu.open {
   border-radius: 0.8rem;
+  margin-top: 0.2rem;
   background-clip: padding-box;
 }
 
