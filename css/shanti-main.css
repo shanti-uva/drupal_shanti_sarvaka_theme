@@ -3533,8 +3533,8 @@ a.btn,a.btn:hover,a.btn:active {
 
 .bootstrap-select.btn-group .btn {
   margin: 0;
-  font-size: .68em;
-  padding: 0.3rem 2.38em 0.3rem 1.5rem;
+  font-size: .75em;
+  padding: 0.3rem 2.38em 0.2rem 1.5rem;
   color: #606060;
   background: transparent;
   background-image: none;
