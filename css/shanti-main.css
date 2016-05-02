@@ -3576,7 +3576,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 /*--- dropdown ---*/
 .bootstrap-select.btn-group .dropdown-menu {
-  font-size: 1em;
+  /*font-size: 1em;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu.open {
@@ -3612,6 +3612,8 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   display: block;
   line-height: 2.25em;
   height: 2.12em;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a,
@@ -3653,7 +3655,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
-  color: #505050;
+ /* color: #505050;*/
  /*background: #eee !important;*/
 }
 
@@ -3666,8 +3668,8 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
 .bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
-  /*background: #f7f7f7;
-  color:#000;*/
+  /*background: #f7f7f7;*/
+  /*color:#000;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:active>a,
@@ -3675,6 +3677,16 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   /*background: #fff;*/
 }
 /*----- checkmark styles -----*/
+.bootstrap-select.btn-group.show-tick .dropdown-menu li>a .glyphicon-ok{
+  font-size: 85%;
+  color: #ddd;
+  position: absolute;
+  top: 0.85rem;
+  right:1.5rem;
+  margin-top: 0 !important;
+  display:inline-block;
+}
+
 .bootstrap-select.btn-group.show-tick .dropdown-menu li>a .glyphicon-ok,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li>a:hover .glyphicon-ok,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li>a:active .glyphicon-ok {
@@ -3684,20 +3696,10 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected>a .glyphicon-ok,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected>a:hover .glyphicon-ok,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected>a:active .glyphicon-ok {
-  color: #444;
-}
-
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .glyphicon-ok {
-  color: #ddd;
-  position: absolute;
-  top: 0.7rem;
-  right:1.5rem;
-  margin-top: 0 !important;
-  display:inline-block;
+  color: #444; /* reference sub-theme colors for unique variations of color */
 }
 
 .bootstrap-select.btn-group .btn .filter-option {
-  /*font-size: 0.75em;*/
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
