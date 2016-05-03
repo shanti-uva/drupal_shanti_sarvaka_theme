@@ -4437,15 +4437,7 @@ body.page-admin-modules #block-system-main.block.block-system {
   background-color: white;
 }
 
-.pagerer_admin_panes_config .form-type-select label {
-  display: none;
-}
 
-.admin-menu .content table td:not(.pagerer) {
-  background: transparent;
-  padding-bottom:1.5rem;
-  padding-top: 1rem;
-}
 
 
 
