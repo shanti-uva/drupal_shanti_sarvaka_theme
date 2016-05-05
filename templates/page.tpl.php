@@ -79,7 +79,7 @@
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="region sidebar sidebar-offcanvas<?php print " $bsclass_sb1"; ?> equal-height">
+            <div id="sidebar-first" class="region sidebar sidebar-first sidebar-offcanvas<?php print " $bsclass_sb1"; ?> equal-height">
               <?php print render($page['sidebar_first']); ?>
             </div>
           <?php endif; ?>
@@ -106,7 +106,7 @@
 
           <!-- Sidebar Second Region -->
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="region sidebar pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?> equal-height">
+            <div id="sidebar-second" class="region sidebar sidebar-second pull-right sidebar-offcanvas<?php print " $bsclass_sb2"; ?> equal-height">
               <?php print render($page['sidebar_second']); ?>
             </div>
           <?php endif; ?>
