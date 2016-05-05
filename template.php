@@ -1045,6 +1045,18 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 						'localized_options' => array(),
 					));
 					array_splice($active_trail, 1, 0, $bc);
+					if ($gnode->type == "subcollection") {
+					    $pgid = $gnode->field_og_parent_collection_ref['und'][0]['target_id'];
+                        if (!empty($pgid)) {
+                            $pgnode = node_load($pgid);
+                           $bc = array( array(
+                                'title' => $pgnode->title,
+                                'href' => "node/$pgid",
+                                'localized_options' => array(),
+                            ));
+                            array_splice($active_trail, 1, 0, $bc);
+                        }
+					}
 				}
 			}
 		}
