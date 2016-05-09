@@ -4728,7 +4728,6 @@ html body.admin-menu {
   border: none;
   padding: 0.3rem 0 0.3rem 0.8rem;
   background-color: transparent;
-  float:none;
 }
 
 .selected-kmap:hover{
