@@ -317,6 +317,15 @@ a:hover,a:active {
 }
 */
 
+/* Ajax Loading */
+.throbber {
+  background: url('../images/ajax-loader.gif') center center no-repeat !important;
+  background-color: transparent !important;
+  width: 3.5rem !important;
+  height: 2.5rem !important;
+  display: inline-block;
+}
+
 .ajax-progress, .ajax-progress *, 
 .ajax-progress-throbber, 
 .ajax-progress-throbber * {
