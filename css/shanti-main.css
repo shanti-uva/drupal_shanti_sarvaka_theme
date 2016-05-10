@@ -1354,6 +1354,12 @@ body.front ol.breadcrumb {
   font-size: 90%;
   color: #707070;
 }
+
+.vertical-tabs .radio-inline{
+  position: relative;
+  left: 15px;
+  padding-left:0;
+}
  
 /**** ENd vertical tabs ****/
 
