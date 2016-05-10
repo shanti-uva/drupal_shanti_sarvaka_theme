@@ -4026,7 +4026,7 @@ table tr.ok {
   background: #f9f9f9;
   border-radius: 0;
   width: 100%;
-  padding:2rem 2rem 2rem 2.5rem;
+  padding: 2rem 2.5rem;
 }
 
 .panel-default .panel-heading+.panel-collapse .panel-body{
