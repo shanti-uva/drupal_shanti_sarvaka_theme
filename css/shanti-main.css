@@ -342,6 +342,7 @@ a:hover,a:active {
   margin-right: 4px;
 }
 
+.form-type-radio label,
 .form-type-checkbox label {
   text-transform: capitalize;
 }
@@ -4814,11 +4815,11 @@ html body.admin-menu {
 * BEGIN Migrating & Testing styles from Mediabase Edit Form CSS
 * 
 */
-.admin-menu.page-node-edit .radio-inline input[type=radio]{ /*position: static; margin: 0;*/ }
+.admin-menu.page-node-edit .radio-inline input[type=radio]{ /* position: static; margin: 0; */ }
 .admin-menu.page-node-edit .icheckbox_minimal-red { box-shadow: 0 0 2px #999; }
-.admin-menu.page-node-edit .form-item .icheck-label { font-size: 90%; /*text-transform: capitalize;*/ }
-.admin-menu.page-node-edit .form-type-checkbox { padding-bottom: 1rem;}
-.admin-menu.page-node-edit .form-type-checkbox .icheckbox_minimal-red { margin-top: 5px; }
+.admin-menu.page-node-edit .form-item .icheck-label { /* font-size: 90%; text-transform: capitalize;*/ }
+.admin-menu.page-node-edit .form-type-checkbox { padding: 1rem 0;}
+.admin-menu.page-node-edit .form-type-checkbox .icheckbox_minimal-red { /* margin-top: 5px; */ }
 .admin-menu.page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
 
 .admin-menu.page-node-edit .icheckbox_minimal-red,
