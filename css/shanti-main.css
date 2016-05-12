@@ -334,6 +334,18 @@ a:hover,a:active {
   padding: 0;
 }
 
+/*--- reset default size ---*/
+.iradio_minimal-red,
+.icheckbox_minimal-red {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.form-type-checkbox label {
+  text-transform: capitalize;
+}
+
 .custom-inline {
   display: inline;
 }
@@ -4200,10 +4212,6 @@ body.page-admin-modules #block-system-main.block.block-system {
   height: 2.2em;
 }
 
-.page-search .form-item.form-type-checkbox label {
-  text-transform: capitalize;
-}
-
 .page-search .form-item.form-type-textfield.form-item-keys {
   margin-top: -0.5rem;
 }
@@ -4788,6 +4796,53 @@ html body.admin-menu {
   top: 0.2rem;
   left: -0.6rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+* 
+* BEGIN Migrating & Testing styles from Mediabase Edit Form CSS
+* 
+*/
+.admin-menu.page-node-edit .radio-inline input[type=radio]{ position: static; margin: 0; }
+.admin-menu.page-node-edit .icheckbox_minimal-red { box-shadow: 0 0 2px #999; }
+.admin-menu.page-node-edit .icheckbox_minimal-red.disabled { background-position: -80px 0; }
+.admin-menu.page-node-edit .form-item .icheck-label { font-size: 90%; text-transform: capitalize; }
+.admin-menu.page-node-edit .form-type-checkbox { padding-bottom: 1rem;}
+.admin-menu.page-node-edit .form-type-checkbox .icheckbox_minimal-red { display: block; margin-top: 5px; }
+.admin-menu.page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
+
+.admin-menu.page-node-edit .icheckbox_minimal-red,
+.admin-menu.page-node-edit .iradio_minimal-red {
+  margin-right: 0.75rem !important;
+  position: relative;
+  top: -2px;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
