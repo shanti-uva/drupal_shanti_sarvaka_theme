@@ -234,11 +234,13 @@ a:hover,a:active {
   height:auto;
 }
 
+.content-section .pull-left > img,
 .content-section img.pull-left{
   margin: 0.2rem 1.5rem 0.5rem 0.2rem !important;
   padding: 0.1rem !important;
 }
 
+.content-section .pull-right > img, 
 .content-section img.pull-right {
   margin: 0.2rem 0.2rem 0.5rem 1.5rem !important;
   padding: 0.1rem !important;
@@ -293,7 +295,7 @@ a:hover,a:active {
   text-decoration: none !important;
 }
 
-/* ---- deprecated styles ----
+/* ---- deprecated styles - see bootstrap default styles for replacements ----
 .italic {
   font-style: italic !important;
 }
@@ -1170,11 +1172,11 @@ body.front ol.breadcrumb {
 /*----------------------------*/
 
 /**** Titlebar Tabs ****/
-.has-tabs {
+.titlearea.has-tabs {
   margin-bottom: 2.5rem;
 }
 
-.has-tabs .titlearea .banner-tabs {
+.titlearea.has-tabs > div > .banner-tabs {
   border-bottom: 1px solid #ccc;
   width: 100%;
   background: #ddd !important;
@@ -1236,7 +1238,7 @@ body.front ol.breadcrumb {
 .tabs.primary li a {
   font-size: 0.68em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  font-wight: bold;
+  font-weight: bold;
 }
 
 .tabs.secondary li a {
