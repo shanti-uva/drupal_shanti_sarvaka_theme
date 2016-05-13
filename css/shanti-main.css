@@ -4855,6 +4855,7 @@ html body.admin-menu {
 
 .page-node-edit button#edit-preview-changes,
 .page-node-edit button#edit-preview,
+.page-node-edit button#edit-draft,
 .page-node-edit button#edit-cancel{
   box-shadow: none;
   color: #777;
@@ -4865,6 +4866,7 @@ html body.admin-menu {
 
 .page-node-edit button#edit-preview-changes:hover,
 .page-node-edit button#edit-preview:hover,
+.page-node-edit button#edit-draft:hover,
 .page-node-edit button#edit-cancel:hover{
   background: #ddd;
   box-shadow: none;
