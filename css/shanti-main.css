@@ -4814,13 +4814,8 @@ html body.admin-menu {
 * BEGIN Migrating & Testing styles from Mediabase Edit Form CSS
 * 
 */
-.page-node-edit .radio-inline input[type=radio]{ /* position: static; margin: 0; */ }
-.page-node-edit .icheckbox_minimal-red { box-shadow: 0 0 2px #999; }
-.page-node-edit .form-item .icheck-label { /* font-size: 90%; text-transform: capitalize;*/ }
 .page-node-edit .form-type-checkbox { padding: 1rem 0;}
-.page-node-edit .form-type-checkbox .icheckbox_minimal-red { /* margin-top: 5px; */ }
 .page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
-
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red {
   margin-right: 0.5rem !important;
@@ -4828,16 +4823,12 @@ html body.admin-menu {
   top: -1px;
   left: 0;
 }
-
-
-
-
+.page-node-edit .icheckbox_minimal-red { box-shadow: 0 0 2px #999; margin-right: 0.75rem !important; }
 
 
 /** 
-* Final form button at bottom- Save, cancel, Delete 
+* Final Edit form buttons at very bottom
 */
-
 .page-node-edit button#edit-delete{
   float: right;
   padding: .38em 1.5em .25em;
