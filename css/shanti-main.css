@@ -3636,9 +3636,8 @@ a.btn,a.btn:hover,a.btn:active {
 .bootstrap-select.btn-group .dropdown-menu li>a,
 .bootstrap-select.btn-group .dropdown-menu li>a:hover,
 .bootstrap-select.btn-group .dropdown-menu li>a:active {
-  /*border: 1px solid transparent !important;
-  border-width: 1px 0 !important;*/
   border:none !important;
+  text-transform: capitalize;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a:focus {
