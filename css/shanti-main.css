@@ -1184,36 +1184,36 @@ body.front ol.breadcrumb {
   opacity: 0.6;
 }
 
-.titlearea .banner-tabs ul.tabs.primary,
-.titlearea .banner-tabs ul.tabs.secondary {
+.tabs.primary,
+.tabs.secondary {
   border: none;
   display: inline;
   margin: 0;
   padding: 0;
 }
 
-.titlearea .banner-tabs ul.tabs.primary {
+.tabs.primary {
   float: right;
   margin-right: 2rem;
   color: #000;
 }
 
-.titlearea .banner-tabs ul.tabs.secondary {
+.tabs.secondary {
   float: left;
   margin-left: 2rem;
   text-transform: lowercase;
 }
 
-.titlearea .banner-tabs ul.tabs.primary li,
-.titlearea .banner-tabs ul.tabs.secondary li {
+.tabs.primary li,
+.tabs.secondary li {
   float: left;
   margin-right: 0.2rem;
   border: none;
   padding: 0;
 }
 
-.titlearea .banner-tabs ul.tabs.primary li a,
-.titlearea .banner-tabs ul.tabs.secondary li a {
+.tabs.primary li a,
+.tabs.secondary li a {
   background-color: #c0c0c0;
   background-color: rgba(0,0,0,.2000);
   color: #111;
@@ -1233,27 +1233,27 @@ body.front ol.breadcrumb {
   font-weight: 700;
 }
 
-.titlearea .banner-tabs ul.tabs.primary li a {
+.tabs.primary li a {
   font-size: 0.68em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   font-wight: bold;
 }
 
-.titlearea .banner-tabs ul.tabs.secondary li a {
+.tabs.secondary li a {
   line-height: 2em;
   font-size: 0.56em;
 }
 
-.titlearea .banner-tabs ul.tabs.primary li a:hover,
-.titlearea .banner-tabs ul.tabs.secondary li a:hover,
-.titlearea .banner-tabs ul.tabs.primary li a:active,
-.titlearea .banner-tabs ul.tabs.secondary li a:active {
+.tabs.primary li a:hover,
+.tabs.secondary li a:hover,
+.tabs.primary li a:active,
+.tabs.secondary li a:active {
   background: #444;
   color: #f0f0f0;
 }
 
-.titlearea .banner-tabs ul.tabs.primary li.active a,
-.titlearea .banner-tabs ul.tabs.secondary li.active a {
+.tabs.primary li.active a,
+.tabs.secondary li.active a {
   background: #eee;
   color: #111;
   cursor: pointer;
@@ -1261,22 +1261,22 @@ body.front ol.breadcrumb {
   border-width: 0 1px;
 }
 
-.titlearea .banner-tabs ul.tabs.primary li.active a:hover,
-.titlearea .banner-tabs ul.tabs.secondary li.active a:hover {
+.tabs.primary li.active a:hover,
+.tabs.secondary li.active a:hover {
   background: #eee;
   color: #111;
   cursor: pointer;
 }
-
-.titlearea .banner-tabs ul.tabs.primary li a:active,
-.titlearea .banner-tabs ul.tabs.secondary li a:active,
-.titlearea .banner-tabs ul.tabs.primary li a.active:active,
-.titlearea .banner-tabs ul.tabs.secondary li a.active:active {
+/*
+.tabs.primary li a:active,
+.tabs.secondary li a:active,
+.tabs.primary li a.active:active,
+.tabs.secondary li a.active:active {
   background: #222;
   color: #fff;
 }
-
-.has-tabs-secondary .titlearea .banner-tabs ul.tabs.secondary {
+*/
+.has-tabs-secondary .tabs.secondary {
   margin-top: 0.2rem;
 }
 
