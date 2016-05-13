@@ -2549,7 +2549,7 @@ html input[type=file].form-file {
   line-height: 2em;
   font-size: .83em;
   letter-spacing: .05em;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
 }
 
 a.btn,a.btn:hover,a.btn:active {
@@ -4831,6 +4831,8 @@ html body.admin-menu {
 /** 
 * Final Edit form buttons at very bottom
 */
+
+/* Delete button gets red */
 .page-node-edit button#edit-delete{
   float: right;
   padding: .38em 1.5em .25em;
@@ -4845,13 +4847,13 @@ html body.admin-menu {
   background: red;
   color:#fff;
 }
-
+/* other than Save button gets grey */
 .page-node-edit button#edit-preview-changes,
 .page-node-edit button#edit-preview,
 .page-node-edit button#edit-draft,
 .page-node-edit button#edit-cancel{
   box-shadow: none;
-  color: #777;
+  color: #606060;
   letter-spacing: .02em;
   background:#fff;
   border:1px solid #ddd;
@@ -4861,11 +4863,12 @@ html body.admin-menu {
 .page-node-edit button#edit-preview:hover,
 .page-node-edit button#edit-draft:hover,
 .page-node-edit button#edit-cancel:hover{
-  background: #ddd;
+  background: #888;
   box-shadow: none;
+  border-color: #888;
+  color: #fff;
+  text-shadow: 0 0 1px #444;
 }
-
-
 
 /**
 * END Mediabase Edit Form migration
