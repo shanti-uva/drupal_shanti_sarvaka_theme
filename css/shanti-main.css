@@ -4823,7 +4823,7 @@ html body.admin-menu {
 
 .admin-menu.page-node-edit .icheckbox_minimal-red,
 .admin-menu.page-node-edit .iradio_minimal-red {
-  margin-right: 0.75rem !important;
+  margin-right: 0.5rem !important;
   position: relative;
   top: -1px;
   left: 0;
