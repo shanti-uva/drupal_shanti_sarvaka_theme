@@ -398,7 +398,9 @@ a:hover,a:active {
   width: auto;
 } /* matching container-fluid for now, correct for changes in BStrap */
 
-
+.has-tabs-secondary .row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
+  margin-top: 2rem;
+} /* see breakpoints - this allows for two rows of tabs on tablets. */
 
 
 /*----------------------------------*/
@@ -1172,7 +1174,7 @@ body.front ol.breadcrumb {
   margin-bottom: 2.5rem;
 }
 
-.has-tabs .banner-tabs {
+.has-tabs .titlearea .banner-tabs {
   border-bottom: 1px solid #ccc;
   width: 100%;
   background: #ddd !important;
@@ -1181,10 +1183,6 @@ body.front ol.breadcrumb {
   filter: alpha(opacity=60);
   opacity: 0.6;
 }
-
-.has-tabs-secondary .row-offcanvas > section.content-section .tab-content:nth-of-type(1) {
-  margin-top: 2rem;
-} /* see breakpoints - this allows for two rows of tabs on tablets. */
 
 .titlearea .banner-tabs ul.tabs.primary,
 .titlearea .banner-tabs ul.tabs.secondary {
@@ -1278,7 +1276,7 @@ body.front ol.breadcrumb {
   color: #fff;
 }
 
-.has-tabs-secondary .tabs.secondary {
+.has-tabs-secondary .titlearea .banner-tabs ul.tabs.secondary {
   margin-top: 0.2rem;
 }
 
