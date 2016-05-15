@@ -45,7 +45,7 @@ body {
   font-weight: normal;
   overflow: hidden;
 }
-
+/* Note: header classes & elements */
 .h1, .h2, .h3, h1, h2, h3 {
   color: #606060;
   margin-top: 20px;
@@ -222,6 +222,7 @@ a:hover,a:active {
 /**
 * Image display - Set exceptions here - Current rule excludes: (1)Images-Gallery, (2)Shanti-Media Gallery, (3) Images-Lightbox
 */
+.content-section .img-thumnail > img, /* this is new test for collections template as in Sources & AV */
 .content-section img:not(.og-grid img):not(.shanti-thumbnail-image img):not(.pswp__container img){
   border-radius: 0;
   border: 1px solid #ccc;
@@ -1093,7 +1094,7 @@ a:hover,a:active {
   font-size: 0.93em;
   line-height: 1em;
   color: #f5f5f5;
-  font-family: arial,tahoma,helvetica,sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   font-weight: bold;
 }
 
@@ -1126,10 +1127,10 @@ a:hover,a:active {
 .breadcrumb li:last-child {
   color: #fff;
   position:relative;
-  top: 0.035rem;
-  font-size: 1.18em;
+  top: 0.15rem;
+  font-size: 1.06em;
   cursor: default;
-  font-family: arial,tahoma,helvetica,sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 .breadcrumb li:last-child .icon {
@@ -1967,7 +1968,7 @@ body.front ol.breadcrumb {
   color: #222;
   border: none!important;
   display: block;
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 .shanti-thumbnail {
@@ -3632,7 +3633,7 @@ a.btn,a.btn:hover,a.btn:active {
   height: 2.12em;
   font-size: 1em;
   font-weight: normal;
-  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a,
@@ -4816,6 +4817,11 @@ html body.admin-menu {
 * BEGIN Migrating & Testing styles from Mediabase Edit Form CSS
 * 
 */
+.page-node-edit .content-section a {
+  font-weight: bold;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
 .page-node-edit .form-type-checkbox { padding: 1rem 0;}
 .page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
 .page-node-edit .icheckbox_minimal-red,
@@ -5231,3 +5237,8 @@ html body.admin-menu {
 
 
 
+/**
+* 
+* END - Sarvaka/css/shanti-main.css
+*
+*/
