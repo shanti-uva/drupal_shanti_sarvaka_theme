@@ -4661,11 +4661,7 @@ p.modal-title {
 /********************************/
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
-/*
-.node-type-collection.logged-in.sidebar-second .tab-pane.main-col > div{
-  padding-top:0;
-}
-*/
+
 .tab-pane.main-col > div, /* broad range need to watch */
 .page-node-devel .tab-pane.main-col > div {
   max-width: 1050px !important;
