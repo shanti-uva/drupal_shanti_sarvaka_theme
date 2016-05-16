@@ -2146,11 +2146,6 @@ body.front ol.breadcrumb {
   cursor: pointer;
 }
 
-
-.node-type-collection.logged-in.sidebar-second .tab-pane.main-col > div{
-  padding-top:0;
-}
-
 .shanti-thumbnail .body-wrap .shanti-field-creator a::before{
   /* icon of agent person */
   content: '\e600';
@@ -4666,6 +4661,11 @@ p.modal-title {
 /********************************/
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
+/*
+.node-type-collection.logged-in.sidebar-second .tab-pane.main-col > div{
+  padding-top:0;
+}
+*/
 .tab-pane.main-col > div, /* broad range need to watch */
 .page-node-devel .tab-pane.main-col > div {
   max-width: 1050px !important;
