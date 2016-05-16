@@ -209,6 +209,9 @@
 	          $('#menu').hide(100);
 	      });
 
+
+
+
 	      /* Initialize Language Buttons */
 
 				// Language menu drop down init
@@ -302,14 +305,8 @@
     			desc.remove();
     		});
 
-	      // conditional IE message
+	      // conditional Internet Explorer message, see markup immediately after the body tag
 	      $(".progressive").delay( 2000 ).slideDown( 400 ).delay( 5000 ).slideUp( 400 );
-	      
-	      // set the sidebar heigth
-	      // $('div#sidebar-second').height($('div#sidebar-second').parent().height()); 
-
-
-
 
 	      // Turn dev menu in admin footer into select
 	      if($('#admin-footer #block-menu-devel ul.menu').length > 0) {
@@ -379,12 +376,12 @@
           // Prepare layout options.
           var options = {
           	align: 'left',
-            itemWidth: 190, // Optional min width of a grid item
+            itemWidth: 185, // Optional min width of a grid item
             autoResize: true, // This will auto-update the layout when the browser window is resized.
             container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
-            offset: 15, // Optional, the distance between grid items
+            offset: 12, // Optional, the distance between grid items
             outerOffset: 0, // Optional the distance from grid to parent
-            flexibleWidth: '30%', // Optional, the maximum width of a grid item
+            flexibleWidth: '35%', // Optional, the maximum width of a grid item
             ignoreInactiveItems: false,
           };
           // Get a reference to your grid items.
@@ -447,12 +444,6 @@
 	       );
 
 	      // $('table.sticky-header').css('width','100%');
-
-
-	      // hide responsive column for resources
-	      $('[data-toggle=offcanvas]').click(function () {
-	        $('.row-offcanvas').toggleClass('active');
-	      });
 
 	      // IE10 viewport hack for Surface/desktop Windows 8 bug http://getbootstrap.com/getting-started/#support-ie10-width
 	      (function () {
@@ -594,17 +585,23 @@
 
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
-			$(".view-resources.btn-default").click( function() { 		// show-hide resource side-column
+      if(context == document) {
+
+      // Initiate & hide sidebar when active/visible
+      $('[data-toggle=offcanvas]').click(function () {
+        $('.row-offcanvas').toggleClass('active');
+      });
+      // Toggle sidebar
+			$("button.view-offcanvas-sidebar").click( function() { 		// show-hide resource side-column
 			  $(this).toggleClass( "show",'fast' );
 			});
-	  }
-	};
 
-	Drupal.behaviors.kmapsOffCanvasButton = {
-	  attach: function (context, settings) {
-			if($(".feature-carousel-tabpanel").length ) {
-				$("button.view-resources").remove();
-			}
+      // Hide sidebar button for Kmaps homepage
+			// if($("body.front.kmaps").length ) {
+			// 	$("button.view-offcanvas-sidebar").remove();
+			// }
+
+      }
 	  }
 	};
 
@@ -713,7 +710,7 @@
       }
     } 
   };
-  
+
 Drupal.behaviors.shantiDeleteButtonDisable = {
 	 attach: function (context, settings) {
 			if (context == document) {

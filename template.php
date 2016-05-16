@@ -85,103 +85,86 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 }
 
 function shanti_sarvaka_preprocess_page(&$variables) {
-	//dpm($variables, 'vars in preprocess page');
-  global $base_url, $base_path, $base_theme_info;
-  $base = $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/'; // took out $base_url .  from beginning as not necessary, ndg (2019-09-22)
-  $variables['breadcrumb'] = menu_get_active_breadcrumb();
-  $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
-  $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
-  $variables['home_url'] = url(variable_get('site_frontpage', ''));
-  $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
-  $variables['theme_path'] = $base;
-	$variables['base_theme'] = (empty($base_theme_info)) ? FALSE : $base_theme_info[0]->name;
-	$variables['base_theme_path'] = (empty($base_theme_info)) ? FALSE : $base_path . 'sites/all/themes/' . $base_theme_info[0]->name . '/';
-  $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
-	$variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
-	$variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
-  // Figure out bootstrap column classes. Define class variables
-  $variables['bsclass_main'] = $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = '';
-	// if both side columns exist
-	if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
-  	$variables['bsclass_main'] = 'col-xs-12 col-md-8';
-  	$variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-12 col-md-3';
-	// If first side column exists
-	} else if ($variables['page']['sidebar_first']) {
-  	$variables['bsclass_main'] = 'col-xs-12 col-md-9';
-  	$variables['bsclass_sb1'] = 'col-xs-12 col-md-3';
-		$variables['bsclass_sb2'] = '';
-	// If second side column exists
-	} else if ($variables['page']['sidebar_second']) {
-  	$variables['bsclass_main'] = 'col-xs-12 col-md-9';
-  	$variables['bsclass_sb1'] = '';
-		$variables['bsclass_sb2'] = 'col-xs-12 col-md-3';
-	}
-	// If no side columns keep default all classes blank
-
-	// Add has_tabs var
-	$variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
-
-	// Add menu blocks in banner to secondary tabs
-	if(empty($variables['tabs']['#secondary'])) { $variables['tabs']['#secondary'] = array(); }
-	$variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
-
-	// Set banner_class variable depending on whether there are tabs or not
-	$variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
-	//$variables['banner_class'] = ''; // uncomment this line to disable the has-tabs class on the banner
-
-  //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
-
-  // Add usermenu to main menu
-  $um = menu_tree_all_data('user-menu');
-  $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
-
-  // Set Loginout_link
-  $variables['loginout_link'] = l(t('Logout'), 'user/logout');
-  if(!$variables['logged_in']) {
-    if(module_exists('shib_auth')) {
-      $variables['loginout_link'] = l(t('Login'), shib_auth_generate_login_url());
-    } else {
-      $variables['loginout_link'] = l(t('Login'), 'user');
+    //dpm($variables, 'vars in preprocess page');
+    global $base_url, $base_path, $base_theme_info;
+    $base = $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/'; // took out $base_url .  from beginning as not necessary, ndg (2019-09-22)
+    // Temporary code to enable deprecated Team content types to show
+    $variables['breadcrumb'] = array();
+    if (empty($variables['node']) || $variables['node']->type != "team") {
+        $variables['breadcrumb'] = menu_get_active_breadcrumb();
+        $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
+    }   
+    $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
+    $variables['home_url'] = url(variable_get('site_frontpage', ''));
+    $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
+    $variables['theme_path'] = $base;
+    $variables['base_theme'] = (empty($base_theme_info)) ? FALSE : $base_theme_info[0]->name;
+    $variables['base_theme_path'] = (empty($base_theme_info)) ? FALSE : $base_path . 'sites/all/themes/' . $base_theme_info[0]->name . '/';
+    $variables['shanti_site'] = theme_get_setting('shanti_sarvaka_shanti_site');
+    $variables['use_admin_site_title'] = theme_get_setting('shanti_sarvaka_use_admin_site_title');
+    $variables['prefix_default_title'] = theme_get_setting('shanti_sarvaka_prefix_default_title');
+    // Figure out bootstrap column classes. Define class variables
+    $variables['bsclass_main'] = $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = '';
+    $variables['offcanvas_trigger_sb'] = '';
+    // if both side columns exist
+    if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
+        $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
+        $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-first & sidebar-second 
+    // If first side column exists
+    } else if ($variables['page']['sidebar_first']) {
+        $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
+        $variables['bsclass_sb1'] = 'col-xs-6 col-md-3'; // sidebar-first
+        $variables['bsclass_sb2'] = ''; // no sidebar
+    // If second side column exists
+    } else if ($variables['page']['sidebar_second']) {
+        $variables['offcanvas_trigger_sb'] = 'row-offcanvas-right';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
+        $variables['bsclass_sb1'] = ''; // no sidebar
+        $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-second
     }
-  }
-  // If explore menu module installed set variables for its markup
-  /*if(module_exists('explore_menu')) {
-    $variables['explore_menu_link'] = variable_get('explore_link_text', EXPLORE_LINK_TEXT);
-    $variables['explore_menu'] = menu_tree('shanti-explore-menu');
-  }*/
-  // Preload and render the language switcher to include in header (in page template)
-  if(module_exists('locale')) {
-    $data = module_invoke('locale', 'block_view', 'language');
-    $block = block_load('locale', 'language');
-    shanti_sarvaka_block_view_locale_language_alter($data, $block);
-    $variables['language_switcher'] = '<li class="dropdown lang highlight" id="block-locale-language">
+    // If no side columns keep default all classes blank
+    // Add has_tabs var
+    $variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
+    
+    // Add menu blocks in banner to secondary tabs
+    if(empty($variables['tabs']['#secondary'])) { $variables['tabs']['#secondary'] = array(); }
+    $variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
+    
+    // Set banner_class variable depending on whether there are tabs or not
+    $variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
+    //$variables['banner_class'] = ''; // uncomment this line to disable the has-tabs class on the banner
+    
+      //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
+    
+      // Add usermenu to main menu
+    $um = menu_tree_all_data('user-menu');
+    $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
+    // Set Loginout_link
+    $variables['loginout_link'] = l(t('Logout'), 'user/logout');
+    if(!$variables['logged_in']) {
+        if(module_exists('shib_auth')) {
+            $variables['loginout_link'] = l(t('Login'), shib_auth_generate_login_url());
+        } else {
+            $variables['loginout_link'] = l(t('Login'), 'user');
+        }
+    }
+      // If explore menu module installed set variables for its markup
+      /*if(module_exists('explore_menu')) {
+        $variables['explore_menu_link'] = variable_get('explore_link_text', EXPLORE_LINK_TEXT);
+        $variables['explore_menu'] = menu_tree('shanti-explore-menu');
+      }*/
+    // Preload and render the language switcher to include in header (in page template)
+    if(module_exists('locale')) {
+        $data = module_invoke('locale', 'block_view', 'language');
+        $block = block_load('locale', 'language');
+        shanti_sarvaka_block_view_locale_language_alter($data, $block);
+        $variables['language_switcher'] = '<li class="dropdown lang highlight" id="block-locale-language">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native .
         '</span><span class="icon shanticon-arrowselect"></span></a>' . $data['content'] . '</li>';
-  }
-
-  /**
-   * Add Custom CSS with Theme Setting for Site's Default/Base Color. These include:
-   *
-   *        .basebg =  Set the background to theme's color
-   *        .basecolor = Set Font color to theme's color
-   *        ul.ss-full-tabs>li.active>a:after = Sets the color of the triangle under ss-full-tabs (bootstrap tabs)
-   *        i.thumbtype = Sets the color for the the thumbnail type icon in the upper right corner of gallery thumbnails (deprecated)
-   *
-   */
-   /* Now should be set in childe theme css
-  drupal_add_css('.basebg { background-color: ' . $variables['base_color'] . '!important; } ' .
-                 '.basecolor { color: ' . $variables['base_color'] . '!important; }  ' .
-                 ' ul.ss-full-tabs>li.active>a:after {
-                    border-color: rgba(' . hex2rgb($variables['base_color']) . ', 0) !important;
-                    border-top-color: ' . $variables['base_color'] . ' !important;
-                    border-width: 15px !important;
-                    margin-left: -15px !important;
-                  }  i.thumbtype { background-color: rgba(' . hex2rgb($variables['base_color']) . ', 0.8) !important; }', array(
-                      'type' => 'inline',
-                      'preprocess' => FALSE,
-                    ));
-	  */
-}
+    }
+} /** End Preprocess Page **/
 
 function shanti_sarvaka_preprocess_node(&$variables) {
   //dpm($variables, 'in node preprocess');
@@ -302,11 +285,6 @@ function shanti_sarvaka_form_alter(&$form, &$form_state, $form_id) {
   	$form['actions']['submit']['#attributes'] = array("class" => array("btn", "btn-default"));
 		$form['actions']['submit']['#value'] = ''; // This replaced by the icon code in shanti_sarvaka_button function
 		$form['actions']['submit']['#icon'] = 'glyphicon-chevron-right';
-	}
-	if(in_array($form_id, array('video_node_form','audio_node_form'))) {
-		$form['#groups']['group_media']->weight = -10;
-		$form['group_audience']['#weight'] = -5;
-		//dpm($form, 'a/v edit form');
 	}
 }
 
@@ -687,12 +665,13 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
 function shanti_sarvaka_carousel($variables) {
   $el = $variables['element'];
   $html = '<div class="container-fluid carouseldiv">
-      <div class="row">
-        <div class="col-xs-12">
+      <!-- <div class="row"> -->
+        <!-- <div class="col-xs-12"> -->
 
           <div class="carousel-header show-more" data-ride="carousel"><span>' . $el['title'] . '</span>' . $el['link'] . '</div>
 
-          <div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="' . $el['speed'] . '">
+          <!-- <div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="' . $el['speed'] . '"> -->
+          <div class="carousel carousel-fade slide row" id="collection-carousel">
               <div class="carousel-inner">';
   foreach($el['slides'] as $n => $slide) {
     $active = ($n == 0) ? 'active' : '';
@@ -703,7 +682,7 @@ function shanti_sarvaka_carousel($variables) {
           <div><h3 class="carousel-title"><a href="' . $slide['path'] . '"><span class="icon shanticon-stack"></span> ' . $slide['title'] . '</a></h3></div>
           <div class="byline"> ' . $slide['author'] . ', ' . $slide['date'] . $itemcount . '</div>
           <div class="carousel-description">' . $slide['summary'] . '</div>
-          <p class="show-more h5"><a href="' . $slide['path'] . '">' . t('View Collection') . ' </a></p>
+          <p class="go-to-link"><a href="' . $slide['path'] . '">' . t('View Collection') . ' </a></p>
         </div>
         <div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
             <a href="' . $slide['path'] . '"><img src="' . $slide['img'] . '" alt=""></a>
@@ -714,14 +693,21 @@ function shanti_sarvaka_carousel($variables) {
               <div class="control-box">
                   <a data-slide="prev" href="#collection-carousel" class="carousel-control left"><span class="icon"></span></a>
                   <a data-slide="next" href="#collection-carousel" class="carousel-control right"><span class="icon"></span></a>
-              </div><!-- /.control-box -->
+              </div>
 
-              <div class="control-box-2">
+              <!-- <div class="control-box-2">
                   <button class="btn btn-default btn-sm carousel-pause"><span class="glyphicon glyphicon-pause"></span></button>
-              </div><!-- /.control-box-2 -->
+              </div>--><!-- /.control-box-2 -->
+
+              <ol class="control-box-3 carousel-indicators">
+                  <li data-target="#collection-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#collection-carousel" data-slide-to="1"></li>
+                  <li data-target="#collection-carousel" data-slide-to="2"></li>
+              </ol><!-- /.control-box-2 -->
+
             </div><!-- /#collection-carousel -->
-        </div><!-- /.span12 -->
-        </div><!-- /.row -->
+          <!-- </div> /.span12 -->
+        <!-- </div> /.row -->
         </div><!-- /.container -->';
   return $html;
 }
@@ -1059,6 +1045,18 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 						'localized_options' => array(),
 					));
 					array_splice($active_trail, 1, 0, $bc);
+					if ($gnode->type == "subcollection") {
+					    $pgid = $gnode->field_og_parent_collection_ref['und'][0]['target_id'];
+                        if (!empty($pgid)) {
+                            $pgnode = node_load($pgid);
+                           $bc = array( array(
+                                'title' => $pgnode->title,
+                                'href' => "node/$pgid",
+                                'localized_options' => array(),
+                            ));
+                            array_splice($active_trail, 1, 0, $bc);
+                        }
+					}
 				}
 			}
 		}

@@ -12,19 +12,19 @@
           <li class="menu-collections active">
               <a href="#">Kmaps Collections <span class="fa arrow"></span></a>
                 <ul>
-                  <li><a href="<?php //print $theme_path; ?>subjects"><i class="icon shanticon-subjects"></i>Subjects</a></li>
-                  <li><a href="<?php //print $theme_path; ?>places"><i class="icon shanticon-places"></i>Places</a></li>
-                  <li><a href="#"><i class="icon shanticon-agents"></i>Agents</a></li>
-                  <li><a href="#"><i class="icon shanticon-events"></i>Events</a></li>
-                  <li><a href="#"><i class="icon shanticon-photos"></i>Photos</a></li>
-                  <li><a href="#"><i class="icon shanticon-audio-video"></i>Audio-Video</a></li>
-                  <li><a href="#"><i class="icon shanticon-visuals"></i>Visuals</a></li>
-                  <li><a href="#"><i class="icon shanticon-essays"></i>Essays</a></li>
-                  <li><a href="#"><i class="icon shanticon-texts"></i>Texts</a></li>
-                  <li><a href="#"><i class="icon shanticon-maps"></i>Maps</a></li>
-                  <li><a href="#"><i class="icon shanticon-community"></i>Community</a></li>
-                  <li><a href="#"><i class="icon shanticon-terms"></i>Terms</a></li>
-                  <li><a href="#"><i class="icon shanticon-sources"></i>Sources</a></li>
+                  <li><a href="<?php //print $theme_path; ?>subjects"><span class="icon shanticon-subjects"></span>Subjects</a></li>
+                  <li><a href="<?php //print $theme_path; ?>places"><span class="icon shanticon-places"></span>Places</a></li>
+                  <li><a href="#"><span class="icon shanticon-agents"></span>Agents</a></li>
+                  <li><a href="#"><span class="icon shanticon-events"></span>Events</a></li>
+                  <li><a href="#"><span class="icon shanticon-photos"></span>Photos</a></li>
+                  <li><a href="#"><span class="icon shanticon-audio-video"></span>Audio-Video</a></li>
+                  <li><a href="#"><span class="icon shanticon-visuals"></span>Visuals</a></li>
+                  <li><a href="#"><span class="icon shanticon-essays"></span>Essays</a></li>
+                  <li><a href="#"><span class="icon shanticon-texts"></span>Texts</a></li>
+                  <li><a href="#"><span class="icon shanticon-maps"></span>Maps</a></li>
+                  <li><a href="#"><span class="icon shanticon-community"></span>Community</a></li>
+                  <li><a href="#"><span class="icon shanticon-terms"></span>Terms</a></li>
+                  <li><a href="#"><span class="icon shanticon-sources"></span>Sources</a></li>
                   <li class="bottom-trim"></li>
                 </ul>
           </li>
