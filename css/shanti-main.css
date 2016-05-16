@@ -223,7 +223,7 @@ a:hover,a:active {
 /**
 * Image display - Set exceptions here - Current rule excludes: (1)Images-Gallery, (2)Shanti-Media Gallery, (3) Images-Lightbox
 */
-.content-section .img-thumnail > img, /* this is new test for collections template as in Sources & AV */
+.content-section .img-thumbnail > img, /* this is new test for collections template as in Sources & AV */
 .content-section img:not(.og-grid img):not(.shanti-thumbnail-image img):not(.pswp__container img){
   border-radius: 0;
   border: 1px solid #ccc;
