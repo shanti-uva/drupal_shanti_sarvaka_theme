@@ -223,7 +223,6 @@ a:hover,a:active {
 /**
 * Image display - Set exceptions here - Current rule excludes: (1)Images-Gallery, (2)Shanti-Media Gallery, (3) Images-Lightbox
 */
-.content-section .img-thumbnail > img, /* this is new test for collections template as in Sources & AV */
 .content-section img:not(.og-grid img):not(.shanti-thumbnail-image img):not(.pswp__container img){
   border-radius: 0;
   border: 1px solid #ccc;
@@ -238,8 +237,7 @@ a:hover,a:active {
 
 .content-section .pull-left > img,
 .content-section img.pull-left{
-  margin: 0.2rem 1.5rem 0.5rem 0.2rem !important;
-  padding: 0.1rem !important;
+  margin: 0 1.5rem 0.5rem 0.2rem !important;
 }
 
 .content-section .pull-right > img, 
@@ -4280,16 +4278,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 
 
-/* My Stuff Account Collections page - 50% columns for drop-select */
-.view-my-workflow .field-accordion .form-item {
- /*display:inline;*/
-  width: 50%;
-  float: left;
-}
-
-.view-my-workflow .field-accordion .form-item label {
-  display: block;
-}
 
 
 /*---- footer ----*/
@@ -4881,6 +4869,30 @@ html body.admin-menu {
 
 
 
+/* My Stuff Account Collections page - 50% columns for drop-select */
+.view-my-workflow .field-accordion .form-item {
+ /*display:inline;*/
+  width: 50%;
+  float: left;
+}
+
+.view-my-workflow .field-accordion .form-item label {
+  display: block;
+}
+
+
+
+
+/**
+* New Collections work for end of May-2016 
+*/
+.node-type-collection .pane-node-body h2{
+  margin: 1rem 0 0.7rem;
+}
+
+.node-type-collection .pane-node-body p{
+  line-height: 1.68em;
+}
 
 
 
