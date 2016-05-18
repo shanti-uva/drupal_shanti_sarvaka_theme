@@ -223,7 +223,6 @@ a:hover,a:active {
 /**
 * Image display - Set exceptions here - Current rule excludes: (1)Images-Gallery, (2)Shanti-Media Gallery, (3) Images-Lightbox
 */
-.content-section .img-thumbnail > img, /* this is new test for collections template as in Sources & AV */
 .content-section img:not(.og-grid img):not(.shanti-thumbnail-image img):not(.pswp__container img){
   border-radius: 0;
   border: 1px solid #ccc;
@@ -238,8 +237,7 @@ a:hover,a:active {
 
 .content-section .pull-left > img,
 .content-section img.pull-left{
-  margin: 0.2rem 1.5rem 0.5rem 0.2rem !important;
-  padding: 0.1rem !important;
+  margin: 0 1.5rem 0.5rem 0.2rem !important;
 }
 
 .content-section .pull-right > img, 
@@ -3821,7 +3819,7 @@ ul.pager {
 }
 
 ul.pager li {
-  color: #555;
+  color: #707070;
   padding: 0 1px;
   line-height: 1em;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
@@ -4280,16 +4278,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 
 
-/* My Stuff Account Collections page - 50% columns for drop-select */
-.view-my-workflow .field-accordion .form-item {
- /*display:inline;*/
-  width: 50%;
-  float: left;
-}
-
-.view-my-workflow .field-accordion .form-item label {
-  display: block;
-}
 
 
 /*---- footer ----*/
@@ -4823,12 +4811,12 @@ html body.admin-menu {
 .page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red {
-  margin-right: 0.5rem !important;
+  margin-right: 0.75rem !important;
   position: relative;
   top: -1px;
   left: 0;
 }
-.page-node-edit .icheckbox_minimal-red { box-shadow: 0 0 2px #999; margin-right: 0.75rem !important; }
+.page-node-edit .icheckbox_minimal-red { box-shadow: 0 0 2px #999; }
 
 
 /** 
@@ -4881,6 +4869,30 @@ html body.admin-menu {
 
 
 
+/* My Stuff Account Collections page - 50% columns for drop-select */
+.view-my-workflow .field-accordion .form-item {
+ /*display:inline;*/
+  width: 50%;
+  float: left;
+}
+
+.view-my-workflow .field-accordion .form-item label {
+  display: block;
+}
+
+
+
+
+/**
+* New Collections work for end of May-2016 
+*/
+.node-type-collection .pane-node-body h2{
+  margin: 1rem 0 0.7rem;
+}
+
+.node-type-collection .pane-node-body p{
+  line-height: 1.68em;
+}
 
 
 
