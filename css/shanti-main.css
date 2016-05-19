@@ -4154,7 +4154,7 @@ table tr.ok {
   content: '\2b';
   position: relative;
   left: -2.075rem;
-  top: -0.1rem;
+  top: 0;
 }
 
 .panel-body .field-collection-container{
