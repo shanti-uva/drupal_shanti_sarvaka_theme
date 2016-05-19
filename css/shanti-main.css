@@ -4900,7 +4900,9 @@ html body.admin-menu {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
-
+.node-type-collection .panel-panel.right a{
+  font-weight:bold;
+}
 
 
 
