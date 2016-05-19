@@ -4088,7 +4088,7 @@ table tr.ok {
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
   font-size: 1.06em;
-  line-height: 4.25em;
+  line-height: 4.38em;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
   margin: 0;
@@ -4120,7 +4120,7 @@ table tr.ok {
   height: 25px;
   float: left;
   position: relative;
-  top: 18px;
+  top: 19px;
   left: 0;
   display: block;
   border:1px solid #d0d0d0;
@@ -4145,7 +4145,7 @@ table tr.ok {
   float: left;
   color: #777;
   position: relative;
-  top: -0.13rem;
+  top: 0;
   left: -2.15rem;
   font-size: 0.75em;
 }
@@ -4556,7 +4556,7 @@ p.modal-title {
   position: absolute;
   bottom: 35px;
   left: 30px;
-  box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0 0 12px 0 rgba(50, 50, 50, 0.4);
   border-collapse: separate;
 }
 
