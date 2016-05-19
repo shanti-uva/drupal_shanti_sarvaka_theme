@@ -139,6 +139,7 @@ textarea.form-textarea {
 
 textarea.form-textarea::-webkit-scrollbar {
   width: 0.8rem;
+  height: 0.8rem;
 }
  
 textarea.form-textarea::-webkit-scrollbar-track {
@@ -3160,8 +3161,8 @@ a.btn,a.btn:hover,a.btn:active {
   padding: 1px;
   position: relative;
 }
-.carousel-indicators .hover,
-.carousel-indicators .active{
+.carousel-indicators li:hover,
+.carousel-indicators li.active{
   width: 10px;
   height: 10px;
   top: 0.05rem;
@@ -4953,7 +4954,9 @@ font-size: 1.12em;
 
 
 
-
+.page-node-edit .tab-pane.main-col > div.region-content{
+  padding-bottom: 5rem;
+}
 
 .page-node-edit .content-section a {
   font-weight: bold;
@@ -5103,6 +5106,27 @@ font-size: 1.12em;
 
 .node-type-collection .panel-panel.right button:first-of-type{
   margin-top:0;
+}
+
+
+
+
+
+
+
+
+/**
+* Collection page - FROM SOURCES may 19
+*/
+/* page layout narrower for Coelctions edit & Group Edit */
+.node-type-collection .tab-pane.main-col > div.region-content{ padding-bottom:5rem; }
+
+/* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
+.page-node-edit .tab-pane.main-col > div.region-content,
+.page-node-group .tab-pane.main-col > div.region-content,
+.page-group-node-admin .tab-pane.main-col > div.region-content {
+  max-width: 970px !important;
+  margin: 0 auto !important;
 }
 
 
