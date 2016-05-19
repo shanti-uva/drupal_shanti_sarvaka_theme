@@ -3151,23 +3151,24 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel-indicators li{
-  border-color: #fff;
-  background-color: #2db6b4;
-  filter: alpha(opacity=50);
+  border-color: #2db6b4;
+  background-color: #fff;
   opacity: 0.5;
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
   margin: 0 8px;
+  padding: 1px;
   position: relative;
 }
-
+.carousel-indicators .hover,
 .carousel-indicators .active{
   width: 10px;
   height: 10px;
-  top: 1px;
-  margin:0 6px;
+  top: 0.05rem;
+  margin: 0 8px;
   background: #2db6b4;
   opacity: 0.75;
+  cursor: default;
 }
 
 .carousel .show-more.h5{
@@ -5084,6 +5085,11 @@ font-size: 1.12em;
   font-size:90%;
   filter: alpha(opacity=90);
   opacity:0.9;
+}
+
+.node-type-collection .panel-panel.right a.btn{
+  padding-left:3rem;
+  padding-right:3rem;
 }
 
 .node-type-collection .tab-pane.main-col > div.region-content{
