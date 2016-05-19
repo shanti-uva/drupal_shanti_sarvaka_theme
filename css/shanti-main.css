@@ -4894,7 +4894,11 @@ html body.admin-menu {
   line-height: 1.68em;
 }
 
-
+.node-type-collection .panel-panel.right,
+.node-type-collection .panel-panel.right a,
+.node-type-collection .panel-panel.right ul li{
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
 
 
 
