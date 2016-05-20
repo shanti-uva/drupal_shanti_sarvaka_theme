@@ -4901,6 +4901,10 @@ font-size: 1.12em;
 * BEGIN Migrating & Testing styles from Mediabase Edit Form CSS
 * 
 */
+/* powerful, careful */
+.page-node-edit .fieldset-wrapper .form-item{
+  margin:0;
+}
 
 /* search-labels used for transcript edit admin */
 .selected-kmap{
@@ -5024,8 +5028,7 @@ font-size: 1.12em;
 }
 
 /* text, ...more information about text formats... */
-.page-node-edit .filter-wrapper .form-item-field-pbcore-description-und-0-field-description-und-0-format{
-  float: none;
+.page-node-edit .filter-wrapper .form-item-body-en-0-format{
   width: 27rem;
 }
 
@@ -5041,8 +5044,14 @@ font-size: 1.12em;
   float: none !important;
   padding: 0 !important;
   position: relative;
-  top: 0.5rem;
+  top: -0.5rem;
 }
+
+.page-node-edit .filter-help a{
+  padding-left:0;
+}
+
+
 
 .page-node-edit table.field-multiple-table .field-widget-text-textarea{
   padding-top:1rem;
@@ -5054,9 +5063,6 @@ font-size: 1.12em;
   text-transform: capitalize;
 }
 
-.page-node-edit .fieldset-wrapper .form-item{
-  margin:0;
-}
 
 /**
 * END Mediabase Edit Form migration
