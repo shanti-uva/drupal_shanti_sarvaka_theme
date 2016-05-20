@@ -996,39 +996,54 @@ function shanti_sarvaka_textfield($variables) {
 /**
  * Implements HOOK_breadcrumbs
  * Customizes output of breadcrumbs
+ * 
+ * See also shanti_sarvaka_menu_breadcrumb_alter
  */
 function shanti_sarvaka_breadcrumb($variables) {
-  global $base_url;
-  //dpm($variables, 'in shanti sarvaka breadcrumb');
+    global $base_url;
 
-  $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
-	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') < 3 && strpos($breadcrumbs[0], t('Home')) > -1)  {
-		array_shift($breadcrumbs);
-	}
-  $output = '<ol class="breadcrumb">';
-  if(empty($variables['is_front'])) {
-    array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
-  }
-	if(count($breadcrumbs) > 1) {
-		$breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
-	}
-	$lidx = count($breadcrumbs) - 1;
-    if (strpos($breadcrumbs[$lidx], '<a') == -1) {
-        	$breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
+    $bcsetting = theme_get_setting('shanti_sarvaka_breadcrumb_prefix');
+    $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
+
+    // Take off "Home" if that setting (4) is not chosen
+    if ($bcsetting < 4 && strpos($breadcrumbs[0], t('Home')) > -1)  {
+        array_shift($breadcrumbs);
     }
-  foreach($breadcrumbs as $crumb) {
-  	$icon = ($breadcrumbs[0] == $crumb) ? '' : ' <span class="icon shanticon-arrow3-right"></span>';
-    $output .= "<li>$crumb$icon</li>";
-  }
-  $output .= '</ol>';
-  return $output;
+    
+    // Begin output
+    $output = '<ol class="breadcrumb">';
+    // Account for front page
+    if(empty($variables['is_front'])) {
+        array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
+    }
+    
+    // Make sure first breadcrumb does not have a colon after it
+    if(count($breadcrumbs) > 1) {
+        $breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
+    }
+    
+    // Wrap last bc in <a> for symmetry and styling
+    $lidx = count($breadcrumbs) - 1;
+    if (strpos($breadcrumbs[$lidx], '<a') == -1) {
+        $breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
+    }
+    
+    // Iterate through breadcrumbs, marking up for sarvaka
+    foreach($breadcrumbs as $crumb) {
+        $icon = ($breadcrumbs[0] == $crumb) ? '' : ' <span class="icon shanticon-arrow3-right"></span>';
+        $output .= "<li>$crumb$icon</li>";
+    }
+    
+    $output .= '</ol>';
+    return $output;
 }
 
 /**
  * Alter Breadcrumbs to add Collection before item or if not part of collection, then creators name.
  */
 function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
-	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') != 2) {return;}
+    $bcsetting = theme_get_setting('shanti_sarvaka_breadcrumb_prefix');
+	if ($bcsetting == 1 || $bcsetting == 4) {return;}
 	$group_exists = TRUE;
 	// Adjust breadcrumbs only for nodes
 	if ($item['map'][0] == 'node') {
@@ -1062,7 +1077,7 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 				}
 			}
 		}
-		if (isset($item['map'][1]->uid)) {
+		if ($bcsetting == 3 && isset($item['map'][1]->uid)) {
 			$uid = $item['map'][1]->uid;
 			$user = user_load($uid);
 			$uname = (!empty($user->realname)) ? $user->realname : $user->name;

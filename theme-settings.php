@@ -51,8 +51,9 @@ function shanti_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
     '#title'         => t('Choose the prefix you want for your breadcrumbs'),
     '#options' 			 => array(
     	1 => t('None'),
-    	2 => t('Username and Collection'),
-    	3 => t('Home'),
+    2 => t('Collection Only'),
+    	3 => t('Username and Collection'),
+    	4 => t('Home'),
     ),
     '#default_value' => theme_get_setting('shanti_sarvaka_breadcrumb_prefix'),
     '#description'   => t("Select the option for your breadcrumb prefix"),
