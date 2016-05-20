@@ -5026,7 +5026,7 @@ font-size: 1.12em;
 /* text, ...more information about text formats... */
 .page-node-edit .filter-wrapper .form-item-field-pbcore-description-und-0-field-description-und-0-format{
   float: none;
-  max-width: 27rem;
+  width: 27rem;
 }
 
 .page-node-edit .filter-wrapper .form-item label{
@@ -5041,24 +5041,32 @@ font-size: 1.12em;
   float: none !important;
   padding: 0 !important;
   position: relative;
-  top: -0.5rem;
+  top: 0.5rem;
 }
 
-.page-node-edit .filter-help a{
-  padding-left:0;
+.page-node-edit table.field-multiple-table .field-widget-text-textarea{
+  padding-top:1rem;
 }
-
-.page-node-edit table.field-multiple-table .tr.draggable{
-  padding-top:1.5rem;
-}
-
-
 
 /* Edit front page sumamry */
 .page-node-edit a.link-edit-summary{
   font-size: 85%;
   text-transform: capitalize;
 }
+
+.page-node-edit .fieldset-wrapper .form-item{
+  margin:0;
+}
+
+/* technical metadata section */
+.page-node-edit .group-technical .form-type-date-popup > div > .form-item:nth-of-type(1){
+  margin-right: 3rem;
+}
+
+.page-node-edit .group-technical .form-type-date-popup > div > .form-item:nth-of-type(2) input{
+  width: 19rem
+}
+
 /**
 * END Mediabase Edit Form migration
 */
