@@ -5024,6 +5024,15 @@ font-size: 1.12em;
 }
 
 /* text, ...more information about text formats... */
+.page-node-edit .filter-wrapper .form-item-field-pbcore-description-und-0-field-description-und-0-format{
+  float: none;
+  max-width: 27rem;
+}
+
+.page-node-edit .filter-wrapper .form-item label{
+  display: block;
+}
+
 .page-node-edit .filter-help p{
   font-size: 85%;
 }
@@ -5035,6 +5044,10 @@ font-size: 1.12em;
   top: -0.5rem;
 }
 
+.page-node-edit .filter-help a{
+  padding-left:0;
+}
+
 .page-node-edit table.field-multiple-table .tr.draggable{
   padding-top:1.5rem;
 }
@@ -5042,7 +5055,7 @@ font-size: 1.12em;
 
 
 /* Edit front page sumamry */
-a.link-edit-summary{
+.page-node-edit a.link-edit-summary{
   font-size: 85%;
   text-transform: capitalize;
 }
