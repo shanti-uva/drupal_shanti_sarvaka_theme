@@ -5029,11 +5029,11 @@ font-size: 1.12em;
 
 /* Help text and dropdown menu width for Editor - Full HTML, etc */
 .page-node-edit .filter-wrapper .form-item-body-en-0-format{
-  width: 18rem;
+  width: 20rem;
 }
 /* Label Editing text formats */
 .page-node-edit .filter-wrapper .form-item label{
-  /*display: block;*/
+  display: block;
 }
 
 .page-node-edit .filter-help {
