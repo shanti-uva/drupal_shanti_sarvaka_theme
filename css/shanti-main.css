@@ -5017,6 +5017,35 @@ font-size: 1.12em;
   text-shadow: 0 0 1px #444;
 }
 
+
+/* toggle text editor link text under textarea */
+.page-node-edit .ckeditor_links{
+  margin-left:1rem;
+}
+
+/* text, ...more information about text formats... */
+.page-node-edit .filter-help p{
+  font-size: 85%;
+}
+
+.page-node-edit .filter-help {
+  float: none !important;
+  padding: 0 !important;
+  position: relative;
+  top: -0.5rem;
+}
+
+.page-node-edit table.field-multiple-table .tr.draggable{
+  padding-top:1.5rem;
+}
+
+
+
+/* Edit front page sumamry */
+a.link-edit-summary{
+  font-size: 85%;
+  text-transform: capitalize;
+}
 /**
 * END Mediabase Edit Form migration
 */
@@ -5024,17 +5053,6 @@ font-size: 1.12em;
 
 
 
-
-/* My Stuff Account Collections page - 50% columns for drop-select */
-.view-my-workflow .field-accordion .form-item {
- /*display:inline;*/
-  width: 50%;
-  float: left;
-}
-
-.view-my-workflow .field-accordion .form-item label {
-  display: block;
-}
 
 
 
@@ -5111,6 +5129,16 @@ font-size: 1.12em;
 
 
 
+/* My Stuff Account Collections page - 50% columns for drop-select */
+.view-my-workflow .field-accordion .form-item {
+ /*display:inline;*/
+  width: 50%;
+  float: left;
+}
+
+.view-my-workflow .field-accordion .form-item label {
+  display: block;
+}
 
 
 
@@ -5125,7 +5153,7 @@ font-size: 1.12em;
 .page-node-edit .tab-pane.main-col > div.region-content,
 .page-node-group .tab-pane.main-col > div.region-content,
 .page-group-node-admin .tab-pane.main-col > div.region-content {
-  max-width: 970px !important;
+  max-width: 920px !important;
   margin: 0 auto !important;
 }
 
