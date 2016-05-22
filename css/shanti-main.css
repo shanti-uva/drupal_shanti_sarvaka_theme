@@ -2298,6 +2298,63 @@ body.front ol.breadcrumb {
 
 
 
+/*----------------------------*/
+/*----- BEGIN sideabars -----*/
+/*----------------------------*/
+#sidebar-first,
+#sidebar-second{
+  background-color: transparent;
+  min-height: 650px;
+}
+
+#sidebar-second {
+  padding: 0 0 0 0.6rem;
+  margin-top: 1rem;
+  border: 1px solid #e5e5e5;
+  border-right-width:0;
+}
+/* hide carousel nav arrows */
+.front #sidebar-second {
+  z-index: 1;
+} 
+#sidebar-second ul {
+  list-style: square inside none;
+  /* -webkit-margin-before: 1rem;
+  -webkit-margin-after: 1rem; */
+  -webkit-margin-before: 0rem;
+  -webkit-margin-after: 0rem;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  /* -webkit-padding-start: 0.7143rem;
+  padding-left: 0.7143rem; */
+  -webkit-padding-start: 0;
+  padding-left: 0;
+  margin-left: 0.7rem;
+}
+
+#sidebar-second ul li a,
+#sidebar-second ul li a:hover,
+#sidebar-second ul li a:active {
+  border-bottom-width: 1px !important;
+}
+
+#sidebar-second .block {
+  padding: 1rem 2rem .3rem 1.5rem;
+}
+
+#sidebar-second .bootstrap-select.form-control .selectpicker {
+  width: 100% !important;
+}
+
+#sidebar-second .bootstrap-select.btn-group .btn .caret{
+  position: absolute;
+  top: 3px;
+  right: 2.5rem;
+}
+
+/**** END Sidebars ****/
+
+
 
 
 
@@ -4222,62 +4279,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 *** Migrated admin css from this location to mb-admin.css 
 *** - mf8yk april 11, 2016
 */
-
-
-/*----------------------------*/
-/*----- BEGIN sideabars -----*/
-/*----------------------------*/
-#sidebar-first,
-#sidebar-second{
-  background-color: transparent;
-  min-height: 650px;
-  border: 1px solid #e5e5e5;
-}
-
-#sidebar-second {
-  padding: 0 0 0 0.6rem;
-  margin-top: 1rem;
-}
-/* hide carousel nav arrows */
-.front #sidebar-second {
-  z-index: 1;
-} 
-#sidebar-second ul {
-  list-style: square inside none;
-  /* -webkit-margin-before: 1rem;
-  -webkit-margin-after: 1rem; */
-  -webkit-margin-before: 0rem;
-  -webkit-margin-after: 0rem;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  /* -webkit-padding-start: 0.7143rem;
-  padding-left: 0.7143rem; */
-  -webkit-padding-start: 0;
-  padding-left: 0;
-  margin-left: 0.7rem;
-}
-
-#sidebar-second ul li a,
-#sidebar-second ul li a:hover,
-#sidebar-second ul li a:active {
-  border-bottom-width: 1px !important;
-}
-
-#sidebar-second .block {
-  padding: 1rem 2rem .3rem 1.5rem;
-}
-
-#sidebar-second .bootstrap-select.form-control .selectpicker {
-  width: 100% !important;
-}
-
-#sidebar-second .bootstrap-select.btn-group .btn .caret{
-  position: absolute;
-  top: 3px;
-  right: 2.5rem;
-}
-
-/**** END Sidebars ****/
 
 
 
