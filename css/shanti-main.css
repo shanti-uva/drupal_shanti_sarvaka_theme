@@ -49,24 +49,21 @@ body {
   overflow: hidden;
 }
 /* Note: header classes & elements */
+.h1, .h2, .h3, h1, h2, h3, .h4, .h5, .h6, h4, h5, h6{ color: #606060; text-rendering: optimizeLegibility;}
 .h1, .h2, .h3, h1, h2, h3 {
-  color: #606060;
   margin-top: 20px;
   margin-bottom: 5px;
   letter-spacing: 0.015rem;
   font-weight: normal;
-  text-rendering: optimizeLegibility;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 .h4, .h5, .h6, h4, h5, h6 {
-  color:#555;
   margin-top: 10px;
   margin-bottom: 5px;
   letter-spacing: 0;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-weight: bold;
 }
 
 .h1, h1 { font-size: 1.56em; }
@@ -1737,7 +1734,7 @@ body.front ol.breadcrumb {
 .menu-main .backItemClass,
 .menu-main .levelHolderClass.rtl {
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   background: transparent;
   border: none;
   box-shadow: none;
