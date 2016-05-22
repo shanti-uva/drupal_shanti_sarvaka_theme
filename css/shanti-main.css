@@ -41,9 +41,9 @@ html {
 
 body {
   color: #404040;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; /* Chrome fonts need help */
-  -moz-osx-font-smoothing: grayscale; /* FF fonts need help */
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased; /* Chrome fonts assist */
+  -moz-osx-font-smoothing: grayscale; /* FF fonts assist */
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
   font-weight: normal;
   overflow: hidden;
@@ -55,6 +55,7 @@ body {
   margin-bottom: 5px;
   letter-spacing: 0.015rem;
   font-weight: normal;
+  text-rendering: optimizeLegibility;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
@@ -64,6 +65,7 @@ body {
   margin-bottom: 5px;
   letter-spacing: 0;
   font-weight: normal;
+  text-rendering: optimizeLegibility;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
 }
 
