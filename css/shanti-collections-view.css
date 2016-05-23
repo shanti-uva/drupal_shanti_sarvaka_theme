@@ -36,12 +36,12 @@
   color: #454fa4;
 }
 
-.node-type-collection .view-collections .view-content > div:first-of-type {
+.node-type-collection .view-collections .view-content > div {
   position: relative;
   left: 2.2rem;
 }
 
-.node-type-collection .view-collections .view-content > div:first-of-type span {
+.node-type-collection .view-collections .view-content > div > span {
   margin-left: -2.2rem;
 }
 

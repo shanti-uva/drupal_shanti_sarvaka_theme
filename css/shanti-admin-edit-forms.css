@@ -311,7 +311,7 @@ font-size: 1.12em;
 .page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red {
-  margin-right: 0.75rem !important;
+  margin-right: 0.5rem !important;
   position: relative;
   top: -1px;
   left: 0;
