@@ -4332,7 +4332,7 @@ html body.admin-menu {
   .sidebar-second {
     position: absolute;
     top: 0; 
-    width:50%; /* 6 columns */
+    /* width:50%;  6 columns */
   }
 
   .row-offcanvas {
@@ -4342,29 +4342,113 @@ html body.admin-menu {
     transition: all .25s ease-out;
   }
 
-  .row-offcanvas-left {
-    left: 0;
+  .row-offcanvas-left {left: 0;}
+  .row-offcanvas-right {right: 0}
+  .row-offcanvas-left .sidebar-first {/* left: -50%;  6 columns */}
+  .row-offcanvas-right .sidebar-second {/* right: -50%;  6 columns */}
+  .row-offcanvas-left.active {/* left: 50%;  6 columns */}
+  .row-offcanvas-right.active {/* right: 50%;  6 columns */}
+  .row-offcanvas-left.active .sidebar-first { /* width: 18.5rem; Kmaps width example */ }
+  .row-offcanvas-right.active .sidebar-second { /* width: 18.5rem; */ }  
+  
+  /* BEGIN Sidebar Button */
+  /* LEFT BUTTON */
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default {
+    position: absolute;
+    left: -3.6rem;
+    top: -0.7rem;
+    color: #000;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
 
-  .row-offcanvas-right {
-    right: 0;
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon {
+    color: #777;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.4rem;
+    left: -0.3rem;
   }
 
-  .row-offcanvas-left .sidebar-first {
-    left: -50%; /* 6 columns */
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon::before,
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon::after {
+    background: #777;
+    position: absolute;
+    top: 0rem;
+    left: .2rem;
+    width: 1.5rem;
+    height: 0.2rem;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
-  .row-offcanvas-right .sidebar-second {
-    right: -50%; /* 6 columns */
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 
-  .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default:hover .icon::before,
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default:hover .icon::after {
+    background: #444;
   }
 
-  .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
+  /* RIGHT BUTTON */
+    /* BEGIN Sidebar Button */
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default {
+    position: absolute;
+    left: -3.6rem;
+    top: -0.7rem;
+    color: #000;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon {
+    color: #777;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.4rem;
+    left: -0.3rem;
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::before,
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::after {
+    background: #777;
+    position: absolute;
+    top: 0rem;
+    left: .2rem;
+    width: 1.5rem;
+    height: 0.2rem;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default:hover .icon::before,
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default:hover .icon::after {
+    background: #444;
+  }
+
+  .view-offcanvas-sidebar.btn-default > .header,
+  .view-offcanvas-sidebar.btn-default > .badge {
+    display: none;
+  } 
 
   /* toggle button for sidebar resources, xtra widths for overflow during animation */
   .view-offcanvas-sidebar.btn-default {
@@ -4420,61 +4504,6 @@ html body.admin-menu {
   .view-offcanvas-sidebar.btn-default:hover .icon::before,
   .view-offcanvas-sidebar.btn-default:active .icon::before {
   }
-
-  .row-offcanvas-left.active .sidebar-first {
-    width: 18.5rem;
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default {
-    position: absolute;
-    left: -3.6rem;
-    top: -0.7rem;
-    color: #000;
-    filter: alpha(opacity=100);
-    opacity: 1;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon {
-    color: #777;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.4rem;
-    left: -0.3rem;
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon::before,
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon::after {
-    background: #777;
-    position: absolute;
-    top: 0rem;
-    left: .2rem;
-    width: 1.5rem;
-    height: 0.2rem;
-    content: '';
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default .icon::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default:hover .icon::before,
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default:hover .icon::after {
-    background: #444;
-  }
-
-  .view-offcanvas-sidebar.btn-default > .header,
-  .view-offcanvas-sidebar.btn-default > .badge {
-    display: none;
-  } 
-
 } /* END (max-width 993px) */
 
 
