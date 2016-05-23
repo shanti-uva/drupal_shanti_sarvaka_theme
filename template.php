@@ -620,7 +620,7 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
   }
 
   foreach($links as $n => $link) {
-        if ($link['link']['hidden'] == 1) { continue; }
+        if (!empty($link['link']['hidden']) && $link['link']['hidden'] == 1) { continue; }
         if(isset($link['html'])) {
           $html .= $link['html'];
           continue;
