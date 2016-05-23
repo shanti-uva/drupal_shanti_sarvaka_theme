@@ -427,8 +427,7 @@ font-size: 1.12em;
 * Collections-Main Edit Form 
 */
 
-
-
+/* featured image button: Select, Edit, Remove */
 .node-type-collection .icheck-label.option{ margin-left: 0; }
 .node-type-collection .node-collection-form .radio-inline,
 .node-type-collection .node-collection-form .checkbox-inline{ padding-left: 0; }
