@@ -3,13 +3,13 @@
 * New Collections work for end of May-2016 
 */
 
-.node-type-collection .tab-pane.main-col > div.region-content{
+.node-type-collection .tab-pane.main-col > div.region-content {
   padding-top:0;
   padding-bottom:5rem; 
 }
 
 .node-type-collection .bootstrap-twocol-stacked,
-.node-type-collection .bootstrap-threecol-stacked{
+.node-type-collection .bootstrap-threecol-stacked {
   padding-top: 1.5rem;
 }
 
@@ -19,11 +19,11 @@
 */
 .node-type-collection .panel-panel.right,
 .node-type-collection .panel-panel.right a,
-.node-type-collection .panel-panel.right ul li{
+.node-type-collection .panel-panel.right ul li {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
-.node-type-collection .panel-panel.right .pane-content a{
+.node-type-collection .panel-panel.right .pane-content a {
   font-weight:bold;
   font-size:90%;
   filter: alpha(opacity=90);
@@ -32,29 +32,24 @@
 }
 
 .node-type-collection .panel-panel.right .pane-content a:hover .icon,
-.node-type-collection .panel-panel.right .pane-content a:active .icon{
+.node-type-collection .panel-panel.right .pane-content a:active .icon {
   color: #454fa4;
 }
 
-.node-type-collection .view-collections .view-content > div {
+.node-type-collection .view-collections .view-content > div:first-of-type {
   position: relative;
   left: 2.2rem;
-  line-height: 1.12em;
 }
 
-.node-type-collection .view-collections .view-content > div > span{
+.node-type-collection .view-collections .view-content > div:first-of-type span {
   margin-left: -2.2rem;
 }
 
-.node-type-collection .panel-panel.right a.btn{
+.node-type-collection .panel-panel.right a.btn {
   padding-left:3rem;
   padding-right:3rem;
+  margin-left:0;
 }
-
-.node-type-collection .panel-panel.right button:first-of-type{
-  margin-top:0;
-}
-
 
 /**
 * END Collections Sidebar

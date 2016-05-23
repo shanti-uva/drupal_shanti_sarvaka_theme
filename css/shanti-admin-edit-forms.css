@@ -431,8 +431,8 @@ font-size: 1.12em;
 .node-type-collection .icheck-label.option{ margin-left: 0; }
 .node-type-collection .node-collection-form .radio-inline,
 .node-type-collection .node-collection-form .checkbox-inline{ padding-left: 0; }
-.node-type-collection .mediaBrowserLaunch-processed{ position: relative; }
-.node-type-collection .mediaBrowserLaunch-processed a{ 
+.node-type-collection .media-widget{ position: relative; }
+.node-type-collection .media-widget a{ 
   padding: 0.38em 1.5em 0.25em;
   font-size: 0.88em;
   background: #fff;
