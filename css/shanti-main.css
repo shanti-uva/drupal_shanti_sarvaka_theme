@@ -1800,11 +1800,16 @@ body.front ol.breadcrumb {
   font-size:0.88em;
   line-height:1.18em;
   width:250px;
+
+  z-index:-10; /* temp hiding */
 }
 
 .popover.fade.in{
-  filter: alpha(opacity=95);
-  opacity:0.95;
+  /*filter: alpha(opacity=95);
+  opacity:0.95; show me when you're ready */
+
+  filter: alpha(opacity=0);  /* temp hiding */
+  opacity:0;  /* temp hiding */
 } 
 
 .related-resources-popover {
