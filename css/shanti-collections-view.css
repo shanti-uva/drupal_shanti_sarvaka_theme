@@ -13,8 +13,8 @@
 .bootstrap-threecol-stacked {
   padding-top: 1.5rem;
 }
-
-.pane-node-field-general-featured-image .field-type-text-with-summary{
+/* featured image descriptive text */
+.panel-panel > .pane-node-body .field-type-text-with-summary{
   min-height:130px;
 }
 
