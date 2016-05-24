@@ -1224,7 +1224,7 @@ body.front ol.breadcrumb {
   background-color: #c0c0c0 !important;
   /*background-color: rgba(0,0,0,.2000) !important;*/
   color: #333 !important;
-  font-size: 0.75em !important;
+  font-size: 0.68em !important;
   line-height: 2.2em !important;
   height: 2.2em !important;
   /*padding: 0.55rem 1.5rem 0;
@@ -1236,7 +1236,7 @@ body.front ol.breadcrumb {
   box-shadow: none;
   text-transform: uppercase;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif !important;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .tabs.secondary li a {
@@ -1257,6 +1257,9 @@ body.front ol.breadcrumb {
   background: #eee !important;
   cursor: pointer;
   border-color: #eee !important;
+  position:relative;
+  top:1px;
+  line-height:2em !important; 
 }
 
 .tabs.primary li.active a:hover,
@@ -1268,7 +1271,7 @@ body.front ol.breadcrumb {
 
 
 /** Vertical Tabs rulesets 
-* moved to shanti-admin-edit-forms.css 
+* ---> Moved to shanti-admin-edit-forms.css 
 */
 
 
