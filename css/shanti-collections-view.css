@@ -3,7 +3,7 @@
 * New Collections development work begun May-2016 
 */
 
-.node-type-collection .tab-pane.main-col > div.region-content {
+.og-context .tab-pane.main-col > div.region-content {
   padding-top:0;
   padding-bottom:5rem; 
 }
