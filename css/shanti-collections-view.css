@@ -3,17 +3,17 @@
 * New Collections development work begun May-2016 
 */
 
-.node-type-collection .tab-pane.main-col > div.region-content {
+.tab-pane.main-col > div.region-content {
   padding-top:0;
   padding-bottom:5rem; 
 }
 
-.node-type-collection .bootstrap-twocol-stacked,
-.node-type-collection .bootstrap-threecol-stacked {
+.bootstrap-twocol-stacked,
+.bootstrap-threecol-stacked {
   padding-top: 1.5rem;
 }
 
-.node-type-collection .pane-node-field-general-featured-image .field-type-text-with-summary{
+.pane-node-field-general-featured-image .field-type-text-with-summary{
   min-height:130px;
 }
 
@@ -27,19 +27,19 @@
 /**
 * BEGIN - Collections Sidebar admin buttons and associated link lists
 */
-.node-type-collection .panel-panel.right a.btn.btn-primary {
+.panel-panel.right a.btn.btn-primary {
   padding-left:3rem;
   padding-right:3rem;
   margin-left:0;
 }
 
-.node-type-collection .panel-panel.right,
-.node-type-collection .panel-panel.right a:not(.btn.btn-primary),
-.node-type-collection .panel-panel.right ul li {
+.panel-panel.right,
+.panel-panel.right a:not(.btn.btn-primary),
+.panel-panel.right ul li {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
-.node-type-collection .panel-panel.right .pane-content a:not(.btn.btn-primary) {
+.panel-panel.right .pane-content a:not(.btn.btn-primary) {
   font-weight:bold;
   font-size:90%;
   filter: alpha(opacity=90);
@@ -47,17 +47,17 @@
   border:none;
 }
 
-.node-type-collection .panel-panel.right .pane-content a:not(.btn.btn-primary):hover .icon,
-.node-type-collection .panel-panel.right .pane-content a:not(.btn.btn-primary):active .icon {
+.panel-panel.right .pane-content a:not(.btn.btn-primary):hover .icon,
+.panel-panel.right .pane-content a:not(.btn.btn-primary):active .icon {
   color: #454fa4;
 }
 
-.node-type-collection .panel-panel.right .view-collections .view-content > div {
+.panel-panel.right .view-collections .view-content > div {
   position: relative;
   left: 2.2rem;
 }
 
-.node-type-collection .panel-panel.right .view-collections .view-content > div > span {
+.panel-panel.right .view-collections .view-content > div > span {
   margin-left: -2.2rem;
 }
 
