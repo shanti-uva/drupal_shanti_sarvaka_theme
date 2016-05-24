@@ -58,9 +58,13 @@ body {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
+.h3, h3 {
+  margin-top: 15px;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+}
+
 .h4, .h5, .h6, h4, h5, h6 {
   margin-top: 10px;
-  margin-bottom: 5px;
   letter-spacing: 0;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
   font-weight: bold;
@@ -1214,7 +1218,7 @@ body.front ol.breadcrumb {
 .tabs.primary li,
 .tabs.secondary li {
   float: left;
-  margin-right: 0.2rem;
+  margin-right: 0.2rem !important;
   border: none;
   padding: 0;
 }
