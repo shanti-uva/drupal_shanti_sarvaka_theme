@@ -14,7 +14,7 @@
   padding-top: 1.5rem;
 }
 
-.panel-panel.middle .pane-node-field-general-featured-image .field-type-text-with-summary{
+.pane-node-field-general-featured-image .field-type-text-with-summary{
   min-height:130px;
 }
 
