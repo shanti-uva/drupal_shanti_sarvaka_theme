@@ -328,6 +328,11 @@ font-size: 1.12em;
 /**  
 * Edit Textarea block (example Edit Summary, frontpage )
 */
+.form-disabled input.form-autocomplete, 
+.form-disabled input.form-text, 
+.form-disabled input.form-file, 
+.form-disabled textarea.form-textarea, 
+.form-disabled select.form-select{ background-color: #fafafa; }
 
 .page-node-add a.link-edit-summary,
 .page-node-edit a.link-edit-summary{

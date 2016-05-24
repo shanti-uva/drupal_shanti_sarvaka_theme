@@ -1187,44 +1187,50 @@ body.front ol.breadcrumb {
   opacity: 0.6;
 }
 
-.tabs.primary,
-.tabs.secondary {
+ul.tabs.primary,
+ul.tabs.secondary {
   border: none;
   display: inline;
   margin: 0;
   padding: 0;
 }
 
-.tabs.primary {
+ul.tabs.primary {
   float: right;
   margin-right: 2rem;
   color: #000;
 }
 
-.tabs.secondary {
+ul.tabs.secondary {
   float: left;
   margin-left: 2rem;
   text-transform: lowercase;
 }
 
-.tabs.primary li,
-.tabs.secondary li {
+.has-tabs-secondary ul.tabs.secondary {
+  margin-top: 0.2rem;
+}
+
+ul.tabs.primary li,
+ul.tabs.secondary li {
   float: left;
   margin-right: 0.2rem;
   border: none;
   padding: 0;
 }
 
-.tabs.primary li a,
-.tabs.secondary li a {
-  background-color: #eee !important;
-  background-color: rgba(0,0,0,.2000) !important;
+ul.tabs.primary li > a:link,
+ul.tabs.primary li > a:visited,
+ul.tabs.secondary li > a:link,
+ul.tabs.secondary li > a:visited {
+  background-color: #eee;
+  background-color: rgba(0,0,0,.2000);
   color: #111;
   font-size: 0.75em;
   line-height: 1.32em;
   height: 2.2rem;
   padding: 0.55rem 1.5rem 0;
-  border: none !important;
+  border: none;
   border-width:0;
   border-radius:0;
   margin-right: 0;
@@ -1235,27 +1241,29 @@ body.front ol.breadcrumb {
   font-weight: bold;
 }
 
-.tabs.primary li a {
+ul.tabs.primary li > a:link,
+ul.tabs.primary li > a:visited {
   font-size: 0.68em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   font-weight: bold;
 }
 
-.tabs.secondary li a {
+ul.tabs.secondary li > a:link,
+ul.tabs.secondary li > a:visited {
   line-height: 2em;
   font-size: 0.56em;
 }
 
-.tabs.primary li a:hover,
-.tabs.secondary li a:hover,
-.tabs.primary li a:active,
-.tabs.secondary li a:active {
+.tabs.primary li > a:hover,
+ul.tabs.secondary li > a:hover,
+.tabs.primary li > a:active,
+ul.tabs.secondary li > a:active {
   background: #444;
   color: #f0f0f0;
 }
 
-.tabs.primary li.active a,
-.tabs.secondary li.active a {
+ul.tabs.primary li > a.active:link,
+ul.tabs.secondary li.active > a:link {
   background: #eee;
   color: #111;
   cursor: pointer;
@@ -1263,24 +1271,14 @@ body.front ol.breadcrumb {
   border-width: 0 1px;
 }
 
-.tabs.primary li.active a:hover,
-.tabs.secondary li.active a:hover {
+.tabs.primary li.active > a:hover,
+ul.tabs.secondary li.active > a:hover {
   background: #eee;
   color: #111;
   cursor: pointer;
 }
-/*
-.tabs.primary li a:active,
-.tabs.secondary li a:active,
-.tabs.primary li a.active:active,
-.tabs.secondary li a.active:active {
-  background: #222;
-  color: #fff;
-}
-*/
-.has-tabs-secondary .tabs.secondary {
-  margin-top: 0.2rem;
-}
+
+
 
 
 /***** BEGIN Vertical Tabs *****/
