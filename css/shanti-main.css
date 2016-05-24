@@ -1221,10 +1221,10 @@ body.front ol.breadcrumb {
 
 .tabs.primary li a,
 .tabs.secondary li a {
-  background-color: #eee !important;
+  background-color: #c0c0c0 !important;
   background-color: rgba(0,0,0,.2000) !important;
   color: #111 !important;
-  font-size: 0.75em;
+  font-size: 0.75em !important;
   line-height: 1.32em;
   height: 2.2rem;
   padding: 0.55rem 1.5rem 0;
@@ -1235,14 +1235,13 @@ body.front ol.breadcrumb {
   display: inline-block;
   box-shadow: none;
   text-transform: uppercase;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif !important;
   font-weight: bold;
 }
 
 .tabs.primary li a {
   font-size: 0.68em;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .tabs.secondary li a {
@@ -1273,122 +1272,11 @@ body.front ol.breadcrumb {
   color: #111 !important;
   cursor: pointer;
 }
-/*
-.tabs.primary li a:active,
-.tabs.secondary li a:active,
-.tabs.primary li a.active:active,
-.tabs.secondary li a.active:active {
-  background: #222;
-  color: #fff;
-}
+
+
+/** Vertical Tabs rulesets 
+* moved to shanti-admin-edit-forms.css 
 */
-
-
-
-/***** BEGIN Vertical Tabs *****/
-/* the main instance so far - of these vertical tabs is in video edit section audio-video */
-
-.vertical-tabs fieldset.vertical-tabs-pane{
-  padding:1rem;
-}
-
-.vertical-tab-button a,
-.vertical-tab-button.selected a {
-  border-bottom: none;
-  outline: none !important;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
-  font-weight: bold;
-}
-
-.vertical-tab-button a:hover,
-.vertical-tab-button a:active,
-.vertical-tab-button.selected a:hover,
-.vertical-tab-button.selected a:active {
-  border-bottom: none;
-  text-decoration: none !important;
-}
-
-.vertical-tabs {
-  margin-top: 0;
-  background: #fdfdfd;
-}
-
-.vertical-tabs-panes.vertical-tabs-processed {
-  padding:1rem 1.5rem;
-  /* border-top: 1px solid #ddd; */
- /* border-bottom:1px solid #fff; */
-}
-
-.vertical-tabs-panes {
-  margin-bottom: 2em;
-  font-size: 1em;
-}
-
-.vertical-tabs a {
-  border-bottom: none;
-}
-
-.vertical-tabs a:hover,
-.vertical-tabs a:active {
-  text-decoration: underline;
-  border-bottom: none;
-}
-
-.vertical-tabs .vertical-tab-button.selected a:hover,
-.vertical-tabs .vertical-tab-button.selected a:active,
-.vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:hover,
-.vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:active {
-  text-decoration: none;
-}
-
-.vertical-tabs table.features .feature .description {
-  color: #666;
-}
-
-.vertical-tabs ul.vertical-tabs-list .selected strong {
-  color: inherit;
-}
-
-.vertical-tabs ul.vertical-tabs-list li a:hover strong {
-  text-decoration: none;
-}
-
-.vertical-tab-container .nav-tabs>li {
-  border-right: 1px solid  #ddd;
-}
-
-.vertical-tabs ul.vertical-tabs-list li.selected {
-  border-right: 1px solid  transparent;
-  background: #fdfdfd;
-}
-
-.vertical-tabs ul.vertical-tabs-list li.selected:hover{
-  background: #fff;
-}
-
-.vertical-tab-container .nav-tabs>li>a {
-  border: none !important;
-}
-
-.vertical-tab-container .nav-tabs>li>a:hover {
-  border: none !important;
-}
-
-.vertical-tabs ul.vertical-tabs-list .summary{
-  font-weight: normal;
-  font-size: 90%;
-  color: #707070;
-}
-
-.vertical-tabs .radio-inline{
-  position: relative;
-  left: 15px;
-  padding-left:0;
-}
- 
-/**** ENd vertical tabs ****/
-
-
 
 
 /**** Horizontal Tabs Bootstrap *****/
