@@ -1087,6 +1087,11 @@ a:hover,a:active {
 .breadcrumb li a:active {
   text-decoration: underline;
 }
+/* this :last-child breadcrumb anchor ruleset is for Kmaps */
+.breadcrumb li:last-child a{ 
+  font-size:1em;
+  line-height:1em;
+}
 
 .breadcrumb li:last-child a:hover,
 .breadcrumb li:last-child a:active {
