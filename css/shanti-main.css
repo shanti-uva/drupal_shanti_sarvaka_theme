@@ -2833,7 +2833,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .carousel-control .icon::before{
   position: relative;
-  top: -0.1rem;
+  top: -0.5rem;
 }
 
 .carousel-control.left .icon::before {

@@ -3,7 +3,7 @@
 * New Collections development work begun May-2016 
 */
 
-.tab-pane.main-col > div.region-content {
+.node-type-collection .tab-pane.main-col > div.region-content {
   padding-top:0;
   padding-bottom:5rem; 
 }
@@ -13,7 +13,7 @@
   padding-top: 1.5rem;
 }
 
-.pane-node-field-general-featured-image .field-type-text-with-summary{
+.panel-panel.middle .pane-node-field-general-featured-image .field-type-text-with-summary{
   min-height:130px;
 }
 
