@@ -1217,14 +1217,14 @@ body.front ol.breadcrumb {
 
 .tabs.primary li a,
 .tabs.secondary li a {
-  background-color: #c0c0c0;
-  background-color: rgba(0,0,0,.2000);
+  background-color: #eee !important;
+  background-color: rgba(0,0,0,.2000) !important;
   color: #111;
   font-size: 0.75em;
   line-height: 1.32em;
   height: 2.2rem;
   padding: 0.55rem 1.5rem 0;
-  border: none;
+  border: none !important;
   border-width:0;
   border-radius:0;
   margin-right: 0;
