@@ -328,6 +328,11 @@ font-size: 1.12em;
 /**  
 * Edit Textarea block (example Edit Summary, frontpage )
 */
+.form-disabled input.form-autocomplete, 
+.form-disabled input.form-text, 
+.form-disabled input.form-file, 
+.form-disabled textarea.form-textarea, 
+.form-disabled select.form-select{ background-color: #fafafa; }
 
 .page-node-add a.link-edit-summary,
 .page-node-edit a.link-edit-summary{
@@ -470,6 +475,113 @@ font-size: 1.12em;
 .page-node-log .btn.btn-primary.form-submit { padding: .32em 1.5em .12em; }
 .page-node-log .views-exposed-form .views-exposed-widget .form-submit{ margin-top: 1.62em; }
 .page-node-log .bootstrap-select.btn-group .dropdown-menu.open{ min-width: 110px; }
+
+
+
+
+
+
+
+/***** BEGIN Vertical Tabs *****/
+.vertical-tabs fieldset.vertical-tabs-pane{
+  padding:1rem;
+}
+
+.vertical-tab-button a,
+.vertical-tab-button.selected a {
+  border-bottom: none;
+  outline: none !important;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-weight: bold;
+}
+
+.vertical-tab-button a:hover,
+.vertical-tab-button a:active,
+.vertical-tab-button.selected a:hover,
+.vertical-tab-button.selected a:active {
+  border-bottom: none;
+  text-decoration: none !important;
+}
+
+.vertical-tabs {
+  margin-top: 0;
+  background: #fdfdfd;
+}
+
+.vertical-tabs-panes.vertical-tabs-processed {
+  padding:1rem 1.5rem;
+  /* border-top: 1px solid #ddd; */
+ /* border-bottom:1px solid #fff; */
+}
+
+.vertical-tabs-panes {
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
+.vertical-tabs a {
+  border-bottom: none;
+}
+
+.vertical-tabs a:hover,
+.vertical-tabs a:active {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+.vertical-tabs .vertical-tab-button.selected a:hover,
+.vertical-tabs .vertical-tab-button.selected a:active,
+.vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:hover,
+.vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:active {
+  text-decoration: none;
+}
+
+.vertical-tabs table.features .feature .description {
+  color: #666;
+}
+
+.vertical-tabs ul.vertical-tabs-list .selected strong {
+  color: inherit;
+}
+
+.vertical-tabs ul.vertical-tabs-list li a:hover strong {
+  text-decoration: none;
+}
+
+.vertical-tab-container .nav-tabs>li {
+  border-right: 1px solid  #ddd;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected {
+  border-right: 1px solid  transparent;
+  background: #fdfdfd;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected:hover{
+  background: #fff;
+}
+
+.vertical-tab-container .nav-tabs>li>a {
+  border: none !important;
+}
+
+.vertical-tab-container .nav-tabs>li>a:hover {
+  border: none !important;
+}
+
+.vertical-tabs ul.vertical-tabs-list .summary{
+  font-weight: normal;
+  font-size: 90%;
+  color: #707070;
+}
+
+.vertical-tabs .radio-inline{
+  position: relative;
+  left: 15px;
+  padding-left:0;
+}
+ 
+/**** ENd vertical tabs ****/
 
 
 /**

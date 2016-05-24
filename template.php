@@ -1001,10 +1001,8 @@ function shanti_sarvaka_textfield($variables) {
  */
 function shanti_sarvaka_breadcrumb($variables) {
     global $base_url;
-
     $bcsetting = theme_get_setting('shanti_sarvaka_breadcrumb_prefix');
     $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
-
     // Take off "Home" if that setting (4) is not chosen
     if ($bcsetting < 4 && strpos($breadcrumbs[0], t('Home')) > -1)  {
         array_shift($breadcrumbs);
@@ -1015,6 +1013,18 @@ function shanti_sarvaka_breadcrumb($variables) {
     // Account for front page
     if(empty($variables['is_front'])) {
         array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
+    }
+    
+    // Adjusting breadcrumbs for group/collection admin pages
+    $path = current_path();
+    if (preg_match('/node\/(\d+)\/group/',$path, $m)) {
+        $breadcrumbs[2] = 'Admin';
+    } else if (preg_match('/group\/node\/(\d+)/',$path, $m)) {
+        if (strpos($path, 'add-user') > -1) {
+            array_pop($breadcrumbs);
+        }
+        $breadcrumbs[] = '<a href="/node/' . $m[1] . '/group">Admin</a>';
+        $breadcrumbs[] = 'People';
     }
     
     // Make sure first breadcrumb does not have a colon after it

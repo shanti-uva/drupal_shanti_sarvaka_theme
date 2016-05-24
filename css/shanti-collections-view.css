@@ -18,7 +18,7 @@
 * Collections Sidebar admin buttons and associated link lists
 */
 .node-type-collection .panel-panel.right,
-.node-type-collection .panel-panel.right a,
+.node-type-collection .panel-panel.right a:not(.btn),
 .node-type-collection .panel-panel.right ul li {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
