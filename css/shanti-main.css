@@ -3927,15 +3927,6 @@ table tr.ok {
   display: block;
 }
 
-#block-system-main.block.block-system {
-  /* float: left; removed mf8yk oct 29, 2015 */
-  width: 100%;
-}
-
-body.page-admin-modules #block-system-main.block.block-system {
-  float: none;
-}
-
 /*--- testing - transcripts search results but should apply across site */
 .page-search .form-item.form-type-checkbox.form-item-retain-filters {
   display: none;
@@ -4176,6 +4167,17 @@ html body {
 html body.admin-menu {
   margin-top: 5.4rem !important;
 } 
+
+#block-system-main.block.block-system {
+  float: left; /* removed mf8yk oct 29, 2015 & readded May 2016 */
+  width: 100%;
+  padding-bottom: 7rem;
+}
+
+body.page-admin-modules #block-system-main.block.block-system {
+  float: none;
+}
+
 /********************************/
 /*----- END Layout Corrections -----*/
 /********************************/
