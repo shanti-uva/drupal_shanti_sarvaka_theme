@@ -66,6 +66,17 @@
 
 
 
+.shanti-collection-body{
+  margin-top: -2rem !important;
+}
+
+.shanti-collection-body .pane-title{
+  margin-bottom: 1rem !important;
+}
+
+.shanti-collection-body .field-type-text-with-summary p{
+  line-height: 1.56em;
+}
 
 /* image hack for IMG wrapper img-thumnail class */
 .pane-node-field-general-featured-image div.field-type-image.img-thumbnail{
@@ -78,7 +89,7 @@
   background-color: transparent;
   border: none;
   border-radius: 0;
-  margin:0;
+  margin:0 !important;
 }
 
 
