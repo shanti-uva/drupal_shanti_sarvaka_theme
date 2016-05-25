@@ -164,6 +164,14 @@ function shanti_sarvaka_preprocess_page(&$variables) {
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native .
         '</span><span class="icon shanticon-arrowselect"></span></a>' . $data['content'] . '</li>';
     }
+    
+    if (module_exists('og')) {
+        if (strpos(current_path(), 'group/') > -1) {
+            $title = drupal_get_title();
+            $title = str_replace('group','collection', $title);
+            drupal_set_title($title);
+        }
+    }
 } /** End Preprocess Page **/
 
 function shanti_sarvaka_preprocess_node(&$variables) {
@@ -180,8 +188,15 @@ function shanti_sarvaka_preprocess_region(&$variables) {
     case 'search_flyout':
       break;
   }
-}
+} 
 */
+
+function shanti_sarvaka_preprocess_views_view(&$vars) {
+    // Change reference from Group to Collection
+    $head = $vars['header'];
+    $head = str_replace('Group', 'Collection', $head);
+    $vars['header'] = $head;
+}
 
 function shanti_sarvaka_preprocess_block(&$variables) {
   $block = $variables['block'];
