@@ -65,6 +65,27 @@
 
 
 
+
+
+/* image hack for IMG wrapper img-thumnail class */
+.pane-node-field-general-featured-image > div.field-type-image.img-thumbnail{
+  box-shadow:none;
+  display: inline-block;
+  max-width: auto;
+  height: auto;
+  padding: 0;
+  line-height: 1.42857143;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  margin:0;
+}
+
+
+
+
+
+
 /**
 * BEGIN - NOT TESTED - newly brought in from av css w/comments intact - May 25, 2016
 */
