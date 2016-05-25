@@ -4176,7 +4176,7 @@ html body.admin-menu {
 #block-system-main.block.block-system {
   float: left; /* removed mf8yk oct 29, 2015 & readded May 2016 */
   width: 100%;
-  padding-bottom: 7rem;
+  /*padding-bottom: 7rem;*/
 }
 
 body.page-admin-modules #block-system-main.block.block-system {
