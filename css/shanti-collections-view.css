@@ -1,0 +1,86 @@
+
+/**
+* New Collections development work begun May-2016 
+*/
+
+.node-type-collection .tab-pane.main-col > div.region-content,
+.node-type-subcollection .tab-pane.main-col > div.region-content{
+  padding-top:0;
+  padding-bottom:7rem; 
+}
+
+.bootstrap-twocol-stacked,
+.bootstrap-threecol-stacked {
+  padding-top: 1.5rem;
+}
+/* featured image descriptive text */
+.panel-panel > .pane-node-body .field-type-text-with-summary{
+  min-height:130px;
+}
+
+
+
+
+
+
+
+
+/**
+* BEGIN - Collections Sidebar admin buttons and associated link lists
+*/
+.panel-panel.right a.btn.btn-primary {
+  padding-left:3rem;
+  padding-right:3rem;
+  margin-left:0;
+}
+
+.panel-panel.right,
+.panel-panel.right a:not(.btn.btn-primary),
+.panel-panel.right ul li {
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
+.panel-panel.right .pane-content a:not(.btn.btn-primary) {
+  font-weight:bold;
+  font-size:90%;
+  filter: alpha(opacity=90);
+  opacity:0.9;
+  border:none;
+}
+
+.panel-panel.right .pane-content a:not(.btn.btn-primary):hover .icon,
+.panel-panel.right .pane-content a:not(.btn.btn-primary):active .icon {
+  color: #454fa4;
+}
+
+.panel-panel.right .view-collections .view-content > div {
+  position: relative;
+  left: 2.2rem;
+}
+
+.panel-panel.right .view-collections .view-content > div > span {
+  margin-left: -2.2rem;
+}
+
+
+
+
+/* single collection page */
+/** Hiding Spaces table until it can be properly implemented */
+.node-type-collection table.spaces {
+  display: none;
+}
+
+.collection-content .field-label-inline .field-label-span { 
+  float:left; 
+}
+
+.node-type-collection .pane-content .view-empty, 
+.node-type-subcollection .pane-content .view-empty {
+    clear: both;
+}
+
+
+/**
+* END Collections Sidebar
+*/

@@ -109,20 +109,20 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     // if both side columns exist
     if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
         $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right';
-        $variables['bsclass_main'] = 'col-xs-12 col-md-9';
-        $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-6 col-md-3';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
+        $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-first & sidebar-second 
     // If first side column exists
     } else if ($variables['page']['sidebar_first']) {
         $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left';
-        $variables['bsclass_main'] = 'col-xs-12 col-md-9';
-        $variables['bsclass_sb1'] = 'col-xs-6 col-md-3';
-        $variables['bsclass_sb2'] = '';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
+        $variables['bsclass_sb1'] = 'col-xs-6 col-md-3'; // sidebar-first
+        $variables['bsclass_sb2'] = ''; // no sidebar
     // If second side column exists
     } else if ($variables['page']['sidebar_second']) {
         $variables['offcanvas_trigger_sb'] = 'row-offcanvas-right';
-        $variables['bsclass_main'] = 'col-xs-12 col-md-9';
-        $variables['bsclass_sb1'] = '';
-        $variables['bsclass_sb2'] = 'col-xs-6 col-md-3';
+        $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
+        $variables['bsclass_sb1'] = ''; // no sidebar
+        $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-second
     }
     // If no side columns keep default all classes blank
     // Add has_tabs var
@@ -633,21 +633,23 @@ function shanti_sarvaka_user_menu($links, $toplevel = FALSE) {
           <a class="link-blocker"></a>
        </li>';
   }
+
   foreach($links as $n => $link) {
-    if(isset($link['html'])) {
-      $html .= $link['html'];
-      continue;
-    }
-    $url = url($link['link']['href']);
-    if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
-    $target = (substr($url, 0, 4) != 'http' || strpos($url, 'Shibboleth.sso') > -1) ? '': ' target="_blank"';
-    $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
-    if(is_array($link['below']) && count($link['below']) > 0) {
-    	$linkhtml .= '<h2>' . $link['link']['title'] . '</h2>';
-      $linkhtml .= shanti_sarvaka_user_menu($link['below']);
-    }
-    $linkhtml .= '</li>';
-    $html .= $linkhtml;
+        if (!empty($link['link']['hidden']) && $link['link']['hidden'] == 1) { continue; }
+        if(isset($link['html'])) {
+          $html .= $link['html'];
+          continue;
+        }
+        $url = url($link['link']['href']);
+        if(is_array($link['below']) && count($link['below']) > 0) { $url = '#'; }
+        $target = (substr($url, 0, 4) != 'http' || strpos($url, 'Shibboleth.sso') > -1) ? '': ' target="_blank"';
+        $linkhtml = '<li><a href="' . $url . '"' . $target . '>' . $link['link']['title'] . '</a>';
+        if(is_array($link['below']) && count($link['below']) > 0) {
+        	$linkhtml .= '<h2>' . $link['link']['title'] . '</h2>';
+          $linkhtml .= shanti_sarvaka_user_menu($link['below']);
+        }
+        $linkhtml .= '</li>';
+        $html .= $linkhtml;
   }
 
   $html .= '</ul>';
@@ -1009,39 +1011,64 @@ function shanti_sarvaka_textfield($variables) {
 /**
  * Implements HOOK_breadcrumbs
  * Customizes output of breadcrumbs
+ * 
+ * See also shanti_sarvaka_menu_breadcrumb_alter
  */
 function shanti_sarvaka_breadcrumb($variables) {
-  global $base_url;
-  //dpm($variables, 'in shanti sarvaka breadcrumb');
-
-  $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
-	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') < 3 && strpos($breadcrumbs[0], t('Home')) > -1)  {
-		array_shift($breadcrumbs);
-	}
-  $output = '<ol class="breadcrumb">';
-  if(empty($variables['is_front'])) {
-    array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
-  }
-	if(count($breadcrumbs) > 1) {
-		$breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
-	}
-	$lidx = count($breadcrumbs) - 1;
-    if (strpos($breadcrumbs[$lidx], '<a') == -1) {
-        	$breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
+    global $base_url;
+    $bcsetting = theme_get_setting('shanti_sarvaka_breadcrumb_prefix');
+    $breadcrumbs = is_array($variables['breadcrumb']) ? $variables['breadcrumb'] : array();
+    // Take off "Home" if that setting (4) is not chosen
+    if ($bcsetting < 4 && strpos($breadcrumbs[0], t('Home')) > -1)  {
+        array_shift($breadcrumbs);
     }
-  foreach($breadcrumbs as $crumb) {
-  	$icon = ($breadcrumbs[0] == $crumb) ? '' : ' <span class="icon shanticon-arrow3-right"></span>';
-    $output .= "<li>$crumb$icon</li>";
-  }
-  $output .= '</ol>';
-  return $output;
+    
+    // Begin output
+    $output = '<ol class="breadcrumb">';
+    // Account for front page
+    if(empty($variables['is_front'])) {
+        array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
+    }
+    
+    // Adjusting breadcrumbs for group/collection admin pages
+    $path = current_path();
+    if (preg_match('/node\/(\d+)\/group/',$path, $m)) {
+        $breadcrumbs[2] = 'Admin';
+    } else if (preg_match('/group\/node\/(\d+)/',$path, $m)) {
+        if (strpos($path, 'add-user') > -1) {
+            array_pop($breadcrumbs);
+        }
+        $breadcrumbs[] = '<a href="/node/' . $m[1] . '/group">Admin</a>';
+        $breadcrumbs[] = 'People';
+    }
+    
+    // Make sure first breadcrumb does not have a colon after it
+    if(count($breadcrumbs) > 1) {
+        $breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
+    }
+    
+    // Wrap last bc in <a> for symmetry and styling
+    $lidx = count($breadcrumbs) - 1;
+    if (strpos($breadcrumbs[$lidx], '<a') == -1) {
+        $breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
+    }
+    
+    // Iterate through breadcrumbs, marking up for sarvaka
+    foreach($breadcrumbs as $crumb) {
+        $icon = ($breadcrumbs[0] == $crumb) ? '' : ' <span class="icon shanticon-arrow3-right"></span>';
+        $output .= "<li>$crumb$icon</li>";
+    }
+    
+    $output .= '</ol>';
+    return $output;
 }
 
 /**
  * Alter Breadcrumbs to add Collection before item or if not part of collection, then creators name.
  */
 function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
-	if (theme_get_setting('shanti_sarvaka_breadcrumb_prefix') != 2) {return;}
+    $bcsetting = theme_get_setting('shanti_sarvaka_breadcrumb_prefix');
+	if ($bcsetting == 1 || $bcsetting == 4) {return;}
 	$group_exists = TRUE;
 	// Adjust breadcrumbs only for nodes
 	if ($item['map'][0] == 'node') {
@@ -1075,7 +1102,7 @@ function shanti_sarvaka_menu_breadcrumb_alter(&$active_trail, $item) {
 				}
 			}
 		}
-		if (isset($item['map'][1]->uid)) {
+		if ($bcsetting == 3 && isset($item['map'][1]->uid)) {
 			$uid = $item['map'][1]->uid;
 			$user = user_load($uid);
 			$uname = (!empty($user->realname)) ? $user->realname : $user->name;

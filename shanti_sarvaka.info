@@ -39,6 +39,8 @@ stylesheets[all][] =  fonts/font-awesome-4.0.3/css/font-awesome.min.css
 stylesheets[all][] =  fonts/shanticon/css/style.css
 stylesheets[all][] =  css/shanti-search.css
 stylesheets[all][] =  css/shanti-main.css
+stylesheets[all][] =  css/shanti-admin-edit-forms.css
+stylesheets[all][] =  css/shanti-collections-view.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
