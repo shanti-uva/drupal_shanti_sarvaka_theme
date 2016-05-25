@@ -311,14 +311,17 @@ font-size: 1.12em;
 .page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red {
-  margin-right: 0.5rem !important;
+  margin-right: 0.75rem !important;
   position: relative;
   top: -1px;
   left: 0;
 }
 .page-node-edit .icheckbox_minimal-red { box-shadow: 0 0 2px #999; border-collapse: separate; background-color: #f7f7f7;}
 
-
+.page-node-edit .form-type-radio .description{
+  margin-left: 4.4em;
+  margin-bottom: 1rem;
+}
 
 
 
@@ -432,7 +435,7 @@ font-size: 1.12em;
 * Collections-Main Edit Form 
 */
 
-/* featured image button: Select, Edit, Remove */
+/* featured image thumbnail buttons: Select, Edit, Remove */
 .node-type-collection .icheck-label.option{ margin-left: 0; }
 .node-type-collection .node-collection-form .radio-inline,
 .node-type-collection .node-collection-form .checkbox-inline{ padding-left: 0; }
@@ -458,6 +461,10 @@ font-size: 1.12em;
   border-color: #888;
   color: #fff;
   text-shadow: 0 0 1px #444;
+}
+/* adjust position of featured image thumbnail to label text */
+.node-type-collection .page-node-edit .media-widget .preview{
+  margin: 5px 10px;
 }
 
 .node-type-collection .text-format-wrapper .description{ margin-left:1rem; }

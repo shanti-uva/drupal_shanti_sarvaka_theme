@@ -1098,6 +1098,12 @@ a:hover,a:active {
   text-decoration: none;
 }
 
+/* Revive point on last breadcrumb when search result replace node */
+/* Not clear what this is - 
+.breadcrumb li:last-child a.revive-pointer:hover {
+  cursor: pointer !important;
+}*/
+
 .breadcrumb li:first-child a {
   margin-right: 0.5rem;
   font-size: 0.93em;
@@ -1234,9 +1240,9 @@ body.front ol.breadcrumb {
   /*background-color: rgba(0,0,0,.2000) !important;*/
   color: #333 !important;
   font-size: 0.68em !important;
-  line-height: 1.38em !important;
+  /*line-height: 1.38em !important;*/
   height: 2.4em !important;
-  padding: 0.55rem 1.5rem 0 !important;
+  padding: 0.45rem 1.5rem 0 !important;
   border: none !important;
   border-width: 0 !important;
   border-radius: 0 !important;
