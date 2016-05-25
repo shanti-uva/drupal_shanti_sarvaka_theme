@@ -317,6 +317,7 @@ font-size: 1.12em;
   left: 0;
 }
 /* adds a little contrast */
+.page-node-edit .iradio_minimal-red,
 .page-node-edit .icheckbox_minimal-red { 
   box-shadow: 0 0 2px #999; 
   border-collapse: separate; 
@@ -326,6 +327,7 @@ font-size: 1.12em;
 /* .page-node-edit .iradio_minimal-red.checked, */
 .page-node-edit .iradio_minimal-red{ 
   border-radius: 50%;
+  background-clip: padding-box;
 }
 
 .page-node-edit .form-type-radio .description{
