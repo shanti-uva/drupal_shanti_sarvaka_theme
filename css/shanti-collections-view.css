@@ -68,7 +68,7 @@
 
 
 /* image hack for IMG wrapper img-thumnail class */
-.pane-node-field-general-featured-image > div.field-type-image.img-thumbnail{
+.pane-node-field-general-featured-image div.field-type-image.img-thumbnail{
   box-shadow:none;
   display: inline-block;
   max-width: auto;
