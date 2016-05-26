@@ -2214,7 +2214,7 @@ body.front ol.breadcrumb {
 
 .sidebar-first,
 .sidebar-second{
-  background-color: transparent;
+  background-color: #fff;
   min-height: 650px;
 }
 /**** END Sidebars ****/
