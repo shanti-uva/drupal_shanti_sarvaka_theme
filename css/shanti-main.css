@@ -1839,7 +1839,6 @@ body.front ol.breadcrumb {
 
 .popover-footer-button:last-child {
   border-radius: 0 0 0.5rem 0.5rem;
-  margin-top: 0.2rem;
   border-bottom: 1px solid #606060;
   background-clip: padding-box;
   height:3.4rem;
@@ -4235,7 +4234,6 @@ body.page-admin-modules #block-system-main.block.block-system {
   .sidebar-second {
     position: absolute;
     top: 0; 
-    width:25%;
     /* width:50%;  6 columns */
   }
 
