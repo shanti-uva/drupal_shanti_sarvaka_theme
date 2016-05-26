@@ -4267,7 +4267,7 @@ body.page-admin-modules #block-system-main.block.block-system {
     width: 2.6rem;
     line-height: 3.5rem;
     height: 3.5rem;
-    display: inline-block !important;
+    display: none;
     padding: 0;
     position: absolute;
     top: -0.7rem;
@@ -4322,7 +4322,9 @@ body.page-admin-modules #block-system-main.block.block-system {
   .view-offcanvas-sidebar.btn-default:active .icon::before {
   }
 
-  /* LEFT BUTTON */
+  /**
+  * LEFT BUTTON 
+  */
   .row-offcanvas-left .view-offcanvas-sidebar.btn-default{ left: -8px; }
   .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default {
     position: absolute;
@@ -4369,7 +4371,9 @@ body.page-admin-modules #block-system-main.block.block-system {
     background: #444;
   }
 
-  /* RIGHT BUTTON */
+  /**
+  * RIGHT BUTTON 
+  */
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default{ right: -8px; }
   .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default {
     position: absolute;

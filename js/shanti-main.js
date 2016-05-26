@@ -582,14 +582,14 @@
 			}
 	  }
 	};
-
+  
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
       if(context == document) {
 
       // Initiate & hide sidebar when active/visible
       $('[data-toggle=offcanvas]').click(function () {
-        $('.row-offcanvas').toggleClass('active');
+        $('.row-offcanvas').toggleClass('active, addOrRemove');
       });
       // Toggle sidebar
 			$("button.view-offcanvas-sidebar").click( function() { 		// show-hide resource side-column
@@ -604,7 +604,7 @@
       }
 	  }
 	};
-
+  
 
 	// --- unhiding breadcrumbs: inline styles keeps the breadcrumbs markup from flash on load when at homepages where we do not want them
 	Drupal.behaviors.breadcrumbsFlickrControl = {
