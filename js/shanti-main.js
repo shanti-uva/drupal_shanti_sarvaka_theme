@@ -582,18 +582,18 @@
 			}
 	  }
 	};
-  
+
   Drupal.behaviors.kmapsOffCanvasToggle = {
 	  attach: function (context, settings) {
       if(context == document) {
 
       // Initiate & hide sidebar when active/visible
       $('[data-toggle=offcanvas]').click(function () {
-        $('.row-offcanvas').toggleClass('active, addOrRemove');
+        $('.row-offcanvas').toggleClass('active');
       });
       // Toggle sidebar
-			$("button.view-offcanvas-sidebar").click( function() { 		// show-hide resource side-column
-			  $(this).toggleClass( "show",'fast' );
+			$('button.view-offcanvas-sidebar').click( function() { 		// show-hide resource side-column
+			  $(this).toggleClass( 'show', 200 );
 			});
 
       // Hide sidebar button for Kmaps homepage
@@ -604,7 +604,7 @@
       }
 	  }
 	};
-  
+
 
 	// --- unhiding breadcrumbs: inline styles keeps the breadcrumbs markup from flash on load when at homepages where we do not want them
 	Drupal.behaviors.breadcrumbsFlickrControl = {
