@@ -4227,7 +4227,7 @@ body.page-admin-modules #block-system-main.block.block-system {
   
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 991px) {
 
 
   .sidebar-first ,
@@ -4267,7 +4267,7 @@ body.page-admin-modules #block-system-main.block.block-system {
     width: 2.6rem;
     line-height: 3.5rem;
     height: 3.5rem;
-    display: none;
+    display: inline-block !important;
     padding: 0;
     position: absolute;
     top: -0.7rem;
