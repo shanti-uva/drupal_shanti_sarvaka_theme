@@ -14,7 +14,7 @@
 
 
 /* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
-.page-node-edit .tab-pane.main-col > div.region-content,
+/*.page-node-edit .tab-pane.main-col > div.region-content,*/
 .page-node-group .tab-pane.main-col > div.region-content,
 .page-group-node-admin .tab-pane.main-col > div.region-content {
   max-width: 920px !important;
