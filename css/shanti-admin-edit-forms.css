@@ -13,13 +13,7 @@
 */
 
 
-/* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
-.page-node-edit .tab-pane.main-col > div.region-content,
-.page-node-group .tab-pane.main-col > div.region-content,
-.page-group-node-admin .tab-pane.main-col > div.region-content {
-  max-width: 920px !important;
-  margin: 0 auto !important;
-}
+
 
 .page-node-edit .tab-pane.main-col > div.region-content{
   padding-bottom: 5rem;
@@ -608,6 +602,25 @@ font-size: 1.12em;
 }
  
 /**** ENd vertical tabs ****/
+
+
+
+@media (min-width:1150px) {
+
+    /* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
+  .page-node-edit .tab-pane.main-col > div.region-content,
+  .page-node-group .tab-pane.main-col > div.region-content,
+  .page-group-node-admin .tab-pane.main-col > div.region-content {
+    max-width: 920px !important;
+    margin: 0 auto !important;
+  }
+}
+
+
+
+
+
+
 
 
 /**
