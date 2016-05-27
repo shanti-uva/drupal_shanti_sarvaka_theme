@@ -2291,6 +2291,7 @@ body.front ol.breadcrumb {
   * LEFT BUTTON 
   */
   .row-offcanvas-left .view-offcanvas-sidebar.btn-default{ left: -8px; }
+
   .row-offcanvas-left.active .view-offcanvas-sidebar.btn-default {
     position: absolute;
     left: -3.6rem;
@@ -2340,6 +2341,7 @@ body.front ol.breadcrumb {
   * RIGHT BUTTON 
   */
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default{ right: -8px; }
+  
   .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default {
     position: absolute;
     right: -3.6rem;
