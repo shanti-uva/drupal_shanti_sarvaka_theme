@@ -485,6 +485,11 @@ font-size: 1.12em;
 
 .node-type-collection .text-format-wrapper .description{ margin-left:1rem; }
 
+.form-item.form-type-textfield .description{
+  font-size: 0.93em;
+  margin: 0.2rem 0 0 2rem;
+}
+
 
 .field-type-image.field-name-field-general-featured-image{
   position: relative;
