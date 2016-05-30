@@ -228,6 +228,12 @@ font-size: 1.12em;
   padding-left: 1rem; 
 }
 
+
+.field-type-shanti-kmaps-fields-default input.kmap-search-term{
+  width: auto;
+  margin-left:1rem;
+}
+
 .selected-kmap{
   color: #333;
   font-size: 0.93em;
@@ -273,6 +279,29 @@ font-size: 1.12em;
 
 
 
+
+
+.kmap-search-button,
+.kmap_search_button{
+  background-color: #5b68ce;
+  color: #eee;
+  display: inline-block;
+  padding: 0.5rem 1.5rem 0.2rem;
+  border-radius: .3rem; 
+  border: 1px solid #777;
+  font-family:'museo-sans-500', helvetica, sans-serif;
+  font-size:0.93em;
+  margin-left:0.5rem;
+}
+
+.kmap-search-button:hover,
+.kmap_search_button:hover,
+.kmap_search_button:focus,
+.kmap-search-button:focus{
+  background: #4850bd;
+  border-color:#4850bd;
+  color:#fff;
+}
 
 
 
@@ -519,12 +548,6 @@ font-size: 1.12em;
 .page-node-log .btn.btn-primary.form-submit { padding: .32em 1.5em .12em; }
 .page-node-log .views-exposed-form .views-exposed-widget .form-submit{ margin-top: 1.62em; }
 .page-node-log .bootstrap-select.btn-group .dropdown-menu.open{ min-width: 110px; }
-
-
-.node-type-collection .field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  width: auto;
-  margin-left:1rem;
-}
 
 
 
