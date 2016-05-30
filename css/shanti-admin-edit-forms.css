@@ -503,7 +503,10 @@ font-size: 1.12em;
 .page-node-log .bootstrap-select.btn-group .dropdown-menu.open{ min-width: 110px; }
 
 
-
+.node-type-collection .field-type-shanti-kmaps-fields-default input.kmap-search-term{
+  width: auto;
+  margin-left:1rem;
+}
 
 
 
