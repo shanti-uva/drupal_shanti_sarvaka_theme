@@ -486,6 +486,19 @@ font-size: 1.12em;
 .node-type-collection .text-format-wrapper .description{ margin-left:1rem; }
 
 
+.field-type-image.field-name-field-general-featured-image{
+  position: relative;
+  min-height: 6rem;
+}
+
+.form-type-media.form-item-field-general-featured-image-und-0 a.button.browse{
+  display: inline;
+  position: absolute;
+  top: 0;
+  height: 2.75rem;
+  margin-bottom: 2rem;
+}
+
 
 
 /**
@@ -608,6 +621,10 @@ font-size: 1.12em;
   /*position: relative;
   left: 15px;*/
   padding-left:0;
+}
+
+.page-node-edit .form-type-radio .description{
+  margin-left: 1.4em;
 }
  
 /**** ENd vertical tabs ****/
