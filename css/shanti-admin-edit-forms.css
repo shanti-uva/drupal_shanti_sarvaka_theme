@@ -623,8 +623,12 @@ font-size: 1.12em;
   padding-left:0;
 }
 
-.page-node-edit .form-type-radio .description{
-  margin-left: 1.4em;
+.vertical-tabs .page-node-edit .form-type-radio .description{
+  margin-left: 2.4em;
+}
+
+.vertical-tabs .form-type-radio label.icheck-label.option{
+  margin:0;
 }
  
 /**** ENd vertical tabs ****/
