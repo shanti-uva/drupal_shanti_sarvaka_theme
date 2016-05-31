@@ -433,10 +433,10 @@ font-size: 1.12em;
 /* Form Buttons at very bottom */
 
 /* other than Save & Delete button gets white/grey */
-.page-node-edit button#edit-preview-changes,
-.page-node-edit button#edit-preview,
-.page-node-edit button#edit-draft,
-.page-node-edit button#edit-cancel{
+button#edit-preview-changes,
+button#edit-preview,
+button#edit-draft,
+button#edit-cancel{
   box-shadow: none;
   color: #606060;
   letter-spacing: .02em;
@@ -444,10 +444,10 @@ font-size: 1.12em;
   border:1px solid #ddd;
 }
 
-.page-node-edit button#edit-preview-changes:hover,
-.page-node-edit button#edit-preview:hover,
-.page-node-edit button#edit-draft:hover,
-.page-node-edit button#edit-cancel:hover{
+button#edit-preview-changes:hover,
+button#edit-preview:hover,
+button#edit-draft:hover,
+button#edit-cancel:hover{
   background: #888;
   box-shadow: none;
   border-color: #888;
@@ -456,7 +456,7 @@ font-size: 1.12em;
 }
 
 /* Delete button gets white/red */
-.page-node-edit button#edit-delete{
+button#edit-delete{
   float: right;
   padding: .38em 1.5em .25em;
   font-size: 0.68em;
@@ -466,7 +466,7 @@ font-size: 1.12em;
   border:1px solid #ddd;
 }
 
-.page-node-edit button#edit-delete:hover{
+button#edit-delete:hover{
   background: red;
   color:#fff;
 }
@@ -663,7 +663,7 @@ font-size: 1.12em;
   padding-left:0;
 }
 
-.vertical-tabs .page-node-edit .form-type-radio .description{
+.vertical-tabs .form-type-radio .description{
   margin-left: 2.4em;
 }
 
