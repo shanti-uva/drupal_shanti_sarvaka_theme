@@ -12,6 +12,13 @@
 * - Collections Log Edit Page - (there is no Log edit page)
 */
 
+.media-wrapper.ui-dialog .ui-dialog-titlebar-close::before{
+  content:'X';
+  display:inline-block;
+  color:#555;
+  position:relative;
+}
+
 
 /* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
 /*.page-node-edit .tab-pane.main-col > div.region-content,*/
