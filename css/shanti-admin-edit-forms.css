@@ -385,29 +385,29 @@ font-size: 1.12em;
 .form-disabled textarea.form-textarea, 
 .form-disabled select.form-select{ background-color: #fafafa; }
 
-.page-node-add a.link-edit-summary,
-.page-node-edit a.link-edit-summary{
+a.link-edit-summary,
+a.link-edit-summary{
   font-size: 90%;
   text-transform: capitalize;
   padding: 0 0.5rem;
 }
 
-.page-node-edit table.field-multiple-table .field-widget-text-textarea{
+table.field-multiple-table .field-widget-text-textarea{
   padding-top:1rem;
 }
 
 /* toggle text editor link text under textarea */
-.page-node-edit .ckeditor_links{
-  margin-left:1rem;
+.ckeditor_links{
+  margin-left:2rem;
 }
 
 /* Help text and dropdown menu width for Editor - Full HTML, etc */
-.page-node-edit .filter-wrapper .form-item-body-en-0-format{
+.filter-wrapper .form-item-body-en-0-format{
   width: 22rem;
 }
 
 /* Text Formats Label */
-.page-node-edit .filter-wrapper .form-item label{
+.filter-wrapper .form-item label{
   display: block;
 }
 /*
