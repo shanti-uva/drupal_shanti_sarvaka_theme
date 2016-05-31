@@ -4318,20 +4318,30 @@ table tr.ok {
 /********************************/
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
-.tab-pane.main-col > div.region-content, /* broad range need to watch */
-.page-node-devel .tab-pane.main-col > div.region-content {
+/* broad range need to watch */
+/* .page-node-devel .tab-pane.main-col > div.region-content */
+.tab-pane.main-col {
   max-width: 1050px !important;
   padding: 1.7rem 0 0;
   margin: 0 auto !important;
 }
 
-.page-mydata .tab-pane.main-col > div.region-content,
-.page-mygallery .tab-pane.main-col > div.region-content,
-.page-user-contact .tab-pane.main-col > div.region-content {
+.tab-pane.main-col > div.region-content::after{
+  /* clearfix application */
+  display: table;
+  content: " ";
+  clear: both;
+  height:0;
+  visibility: hidden;
+}
+
+.page-mydata .tab-pane.main-col,
+.page-mygallery .tab-pane.main-col,
+.page-user-contact .tab-pane.main-col {
   max-width: 940px !important;
 }
 
-.page-user-contact .tab-pane.main-col > div.region-content {
+.page-user-contact .tab-pane.main-col {
   max-width: 850px !important;
 }
 
@@ -4351,6 +4361,10 @@ html body.admin-menu {
 
 body.page-admin-modules #block-system-main.block.block-system {
   float: none;
+}
+
+.tab-content.container-fluid{
+  padding-bottom:5rem;
 }
 
 /********************************/
