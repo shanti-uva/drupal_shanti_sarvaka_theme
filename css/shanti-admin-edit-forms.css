@@ -773,6 +773,10 @@ button#edit-delete:hover{
   margin-bottom: -0.5rem;
 }
 
+.vertical-tabs .form-wrapper .form-item-date > div{
+  padding-left:0;
+}
+
 /**
 *** END vertical tabs ***/
 
