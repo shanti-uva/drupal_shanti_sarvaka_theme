@@ -193,8 +193,10 @@ font-size: 1.12em;
 
 
 
-
-
+/* shade interior nested accordions as in AV for contrast */
+.panel.panel-default .panel-collapse.in .panel-heading h6 a.collapsed{
+  background: #e0e0e0;
+}
 
 
 
