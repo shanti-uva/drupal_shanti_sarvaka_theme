@@ -3,12 +3,6 @@
 * New Collections development work begun May-2016 
 */
 
-.node-type-collection .tab-pane.main-col > div.region-content,
-.node-type-subcollection .tab-pane.main-col > div.region-content{
-  padding-top:0;
-  padding-bottom:7rem; 
-}
-
 .bootstrap-twocol-stacked,
 .bootstrap-threecol-stacked {
   padding-top: 1.5rem;

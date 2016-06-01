@@ -676,7 +676,7 @@ button#edit-delete:hover{
 
     /* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
   .page-node-edit.sidebar-second .tab-pane.main-col {
-    /*max-width: 920px !important; removed May 31, 2016 mf8yk */
+      max-width: 920px !important;
   }
 }
 
