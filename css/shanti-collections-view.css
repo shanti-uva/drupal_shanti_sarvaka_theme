@@ -5,7 +5,7 @@
 
 .bootstrap-twocol-stacked,
 .bootstrap-threecol-stacked {
-  padding-top: 1.5rem;
+  /*padding-top: 1.5rem;*/
 }
 /* featured image descriptive text */
 .panel-panel > .pane-node-body .field-type-text-with-summary{
