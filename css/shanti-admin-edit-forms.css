@@ -377,6 +377,15 @@ body.page-group-node-admin .view-og-members-admin .view-filters{
   padding-left: 3rem;
 }
 
+body.page-group-node-admin .view-og-members-admin .form-item{
+  margin-top:0;
+}
+
+body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
+  padding-right:1rem;
+}
+
+
 
 
 .page-node-edit .form-type-checkbox,
