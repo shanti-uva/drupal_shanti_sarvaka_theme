@@ -473,8 +473,7 @@ button#edit-delete:hover{
 }
 
 /**
-* END Textarea block
-*/
+*** END Textarea block ***/
 
 
 
@@ -667,10 +666,8 @@ button#edit-delete:hover{
 .vertical-tabs .form-type-radio .description{
   margin-left: 2.4em;
 }
-
-
- 
-/**** ENd vertical tabs ****/
+/**
+*** END vertical tabs ***/
 
 
 
@@ -678,11 +675,147 @@ button#edit-delete:hover{
 @media (min-width:1150px) {
 
     /* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
-  .page-node-edit.sidebar-second .tab-pane.main-col > div.region-content {
-    max-width: 920px !important;
-    margin: 0 auto !important;
+  .page-node-edit.sidebar-second .tab-pane.main-col {
+    /*max-width: 920px !important; removed May 31, 2016 mf8yk */
   }
 }
+
+
+
+/**
+* --------------
+* Modal Popup
+* --------------
+*/
+#modalContent{
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 1rem;
+  z-index: 1000 !important;
+  min-width: 550px;
+  /*max-height:280px;*/
+  overflow:hidden
+}
+
+@media (max-width: 600px) { 
+    
+    #modalContent {
+      position: fixed !important;
+      min-width: 320px;
+      top: 12% !important;
+      bottom: 12% !important;
+      right: 4% !important;
+      left: 4% !important;
+    }
+}
+
+
+/* kaltura upload video */
+div.ctools-modal-content {
+  margin: 0 auto;
+  width: 100% !important;
+  /*max-width: 550px !important;
+  max-height: 350px !important;*/
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+div.ctools-modal-content .modal-content {
+  width: 100% !important;
+  max-width: 550px !important;
+  padding: 2rem 9%;
+  box-shadow:none !important;
+  border:none !important;
+  background:transparent;
+}
+
+div.ctools-modal-content button.btn.btn-primary{
+  /*margin-left: 50%;
+  margin-top: 3rem;
+  position: relative;
+  left: -6em;
+  padding: .5rem 2rem .4rem;*/
+}
+
+div.ctools-modal-content .btn.btn-delete.btn-primary{
+  margin-top:0 !important;
+}
+
+div.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
+  padding: 0.4rem 1.8rem 0.2rem;
+  font-size: 0.75em;
+}
+
+div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
+  padding: 0.7rem 0.5rem 0.7rem;
+  margin-top:-0.5rem !important;
+}
+
+div.ctools-modal-content div#edit-actions--3.form-actions.form-wrapper{
+  margin-top:4rem;
+}
+/*
+.modal-header button.close{
+  position: relative;
+  top: -1.5rem;
+  left: 1rem;
+}
+
+.modal-content .messages.status{
+  display:none;
+}
+*/
+div.ctools-modal-content .modal-header{
+  padding: 1.5rem 2rem;
+  background-color: transparent !important;
+  background-color: #2fbebc !important; /* subtheme color setting */
+  border-radius: .7rem 0.7rem 0 0;
+}
+
+div.ctools-modal-content .modal-title{
+  font-size: 150%;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  text-shadow: 0 0 5px #888;
+}
+
+div.ctools-modal-content a.close{
+  position: relative;
+  right: 0;
+  top: -3rem;
+  width: 2em;
+  height: .01rem;
+  font-size: 0.5em;
+  text-shadow: 0 0 3px #888;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  opacity: 0.85;
+}
+
+div.ctools-modal-content a.close:hover{
+  opacity:1;
+}
+
+div.ctools-modal-content a.close::after{
+  content: 'X';
+  position: relative;
+  font-size: 3em;
+  top: 2.3rem;
+}
+
+div.ctools-modal-content a.close img{
+  display:none;
+}
+/* radio button labels input position */
+div.ctools-modal-content .vertical-tabs label.radio-inline{
+  width: auto !important;
+  padding-left: 0;
+}
+
+div.ctools-modal-content .form-item label{
+  float:none;
+  width:100%;
+}
+/**
+*** END modal ***/
 
 
 /**
