@@ -235,12 +235,6 @@ font-size: 1.12em;
   padding-left: 1rem; 
 }
 
-
-.field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  width: auto;
-  margin-left:1rem;
-}
-
 .selected-kmap{
   color: #333;
   font-size: 0.93em;
@@ -281,12 +275,45 @@ font-size: 1.12em;
 .selected-kmap:hover .shanticon-close2:before{
   color: red;
 }
-
 /* END keyword labels */
 
 
 
 
+/**
+* KMAPS - Search 
+*/
+.field-type-shanti-kmaps-fields-default input.kmap-search-term{
+  width:100% !important;
+  margin-left: 0 !important;
+}
+
+.kmap-typeahead-picker .twitter-typeahead{
+  width: 49%;
+}
+
+.field-name-field-location .kmap-typeahead-picker{
+  border-top:1px solid #ccc;
+  padding-top:2rem;
+}
+
+.kmap-search-header p{
+  margin: 0 0 1.5rem 1rem;
+}
+
+.field-name-field-subject .panel-body,
+.field-name-field-subcollection-new .panel-body{
+  padding-top: 1.5rem !important;
+}
+
+.field-name-field-subject .kmap-search-header,
+.field-name-field-subcollection-new .kmap-search-header{
+  display:none;
+}
+
+.form-type-textfield.form-item-field-subject-search-term{
+  display:block;
+}
 
 .kmap-search-button,
 .kmap_search_button{
@@ -385,13 +412,16 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
 
 
 
-
+.page-node-add .form-type-checkbox,
 .page-node-edit .form-type-checkbox,
 .page-group-node-admin .form-type-checkbox { padding: 1rem 0;}
 
+.page-node-add .form-type-checkbox .description,
 .page-node-edit .form-type-checkbox .description,
 .page-group-node-admin .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
 
+.page-node-add .icheckbox_minimal-red,
+.page-node-add .iradio_minimal-red,
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red,
 .page-group-node-admin .icheckbox_minimal-red,
@@ -403,6 +433,8 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
   left: 0;
 }
 /* adds a little contrast */
+.page-node-add .iradio_minimal-red,
+.page-node-add .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red,
 .page-node-edit .icheckbox_minimal-red,
 .page-group-node-admin .iradio_minimal-red,
@@ -412,7 +444,9 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
   background-color: #f7f7f7;
 }
 
-.page-node-edit .iradio_minimal-red{ 
+.page-node-add .iradio_minimal-red,
+.page-node-edit .iradio_minimal-red,
+.page-group-node-admin .iradio_minimal-red{ 
   border-radius: 50%;
   background-clip: padding-box;
 }
