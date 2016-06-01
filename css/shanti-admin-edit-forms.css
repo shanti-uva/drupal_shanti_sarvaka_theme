@@ -458,6 +458,8 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
 .page-group-node-admin .iradio_minimal-red{ 
   border-radius: 50%;
   background-clip: padding-box;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
 }
 
 
@@ -736,8 +738,6 @@ button#edit-delete:hover{
 }
 
 .vertical-tabs .radio-inline{
-  /*position: relative;
-  left: 15px;*/
   padding-left:0;
 }
 
