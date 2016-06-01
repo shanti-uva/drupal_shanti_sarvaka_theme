@@ -4282,15 +4282,24 @@ table tr.ok {
   background-position: 97% .56em !important;
 }
 
-.region-admin-footer .form-item-masquerade-user-field .form-control{
+.region-admin-footer .block-masquerade .form-control{
   max-width: 14rem;
 }
 
-.region-admin-footer .form-item-masquerade-user-field .btn{
+.region-admin-footer .block-masquerade .btn{
   float:right;
   padding: .4em 1.25em;
   margin: .25em 0 .75rem .5rem;
 }
+
+.region-admin-footer .block-masquerade .description{
+  margin:0;
+  padding:0;
+  color:#eee;
+  font-size: 0.75em;
+}
+
+
 
 
 
