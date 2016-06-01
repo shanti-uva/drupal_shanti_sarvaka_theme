@@ -755,11 +755,11 @@ button#edit-delete:hover{
   padding-left: 1rem;
 }
 
-.vertical-tabs .form-type-textfield.form-item-date input{
+.vertical-tabs .form-item-date input{
   max-width:15em;
 }
 
-.vertical-tabs .form-type-textfield.form-item-name input{
+.vertical-tabs .form-item-name input{
   max-width:22em;
 }
 
@@ -773,9 +773,17 @@ button#edit-delete:hover{
 
 
 
+
+
+.page-node-add.no-sidebars .tab-pane.main-col,
+.page-node-edit.no-sidebars .tab-pane.main-col,
+.page-node-group.no-sidebars .tab-panel.main-col{
+    max-width: 920px !important;
+}
+
 @media (min-width:1150px) {
 
-  .page-node-edit.sidebar-second .tab-pane.main-col {
+  .page-node-edit .tab-pane.main-col {
       max-width: 920px !important;
   }
 }
