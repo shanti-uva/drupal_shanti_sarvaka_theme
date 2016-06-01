@@ -32,6 +32,7 @@
   /*padding-bottom: 5rem;*/
 }
 
+.page-node-add .content-section a,
 .page-node-edit .content-section a {
   font-weight: bold;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
@@ -194,8 +195,8 @@ font-size: 1.12em;
 
 
 /* shade interior nested accordions as in AV for contrast */
-.panel.panel-default .panel-collapse.in .panel-heading h6 a.collapsed{
-  background: #e0e0e0;
+.panel.panel-default .panel-collapse .panel-heading h6 a.collapsed{
+  background: #f0f0f0;
 }
 
 
