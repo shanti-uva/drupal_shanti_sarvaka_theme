@@ -743,6 +743,7 @@ button#edit-delete:hover{
 
 .vertical-tabs .form-type-radio .description{
   margin-left: 2.4em;
+  margin-top: -0.5rem;
 }
 
 .vertical-tabs .form-type-textfield.form-item-date input{
