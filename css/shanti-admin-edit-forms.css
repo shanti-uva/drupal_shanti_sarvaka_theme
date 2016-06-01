@@ -20,16 +20,12 @@
 }
 
 
-/* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
-/*.page-node-edit .tab-pane.main-col > div.region-content,*/
-.page-node-group .tab-pane.main-col > div.region-content,
-.page-group-node-admin .tab-pane.main-col > div.region-content {
-  max-width: 920px !important;
-  margin: 0 auto !important;
-}
 
-.page-node-edit .tab-pane.main-col > div.region-content{
-  /*padding-bottom: 5rem;*/
+
+.page-node-add .tab-pane.main-col,
+.page-node-group .tab-pane.main-col,
+.page-group-node-admin .tab-pane.main-col {
+  max-width: 920px !important;
 }
 
 .page-node-add .content-section a,
@@ -39,6 +35,7 @@
 }
 
 /* powerful, careful */
+.page-node-add .fieldset-wrapper .form-item,
 .page-node-edit .fieldset-wrapper .form-item{
   margin:0;
 }
@@ -462,20 +459,7 @@ table.field-multiple-table .field-widget-text-textarea{
   display: block;
 }
 
-/*
-.page-node-edit .filter-help {
-  float: none !important;
-  padding: 0 !important;
-  position: relative;
-  top: -0.5rem;
-}
 
-.page-node-edit .filter-help a{
-  padding-left:0;
-  margin-left:2rem;
-  font-size: 90%;
-}
-*/
 /* format rich-text editor dropdown selector */
 .filter-wrapper .form-item{
   margin-top: -1em;
@@ -725,7 +709,6 @@ button#edit-delete:hover{
 
 @media (min-width:1150px) {
 
-    /* .node-type-collection.page-node-edit .tab-pane.main-col > div.region-content */
   .page-node-edit.sidebar-second .tab-pane.main-col {
       max-width: 920px !important;
   }
