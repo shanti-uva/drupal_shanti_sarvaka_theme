@@ -4322,7 +4322,7 @@ table tr.ok {
 /* .page-node-devel .tab-pane.main-col > div.region-content */
 .tab-pane.main-col {
   max-width: 1050px !important;
-  padding: 1.7rem 0 0;
+  /*padding: 1.7rem 0 0;*/
   margin: 0 auto !important;
 }
 
