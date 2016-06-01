@@ -767,8 +767,8 @@ button#edit-delete:hover{
   font-size:0.88em;
 }
 
-.vertical-tabs .form-wrapper .form-item-date label:first-child{
-  margin-left: 2rem;
+.vertical-tabs .form-wrapper .form-item-date > label{
+  /*margin-left: 2rem;*/
   margin-top: 1rem;
   margin-bottom: -0.5rem;
 }
