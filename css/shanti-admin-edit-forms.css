@@ -394,6 +394,15 @@ body.page-group-node-admin table.views-table .form-type-checkbox{
   padding: 0.5rem;
 }
 
+body.page-group-node-admin table.views-table thead .icheckbox_minimal-red{
+  margin-left: 1.2rem;
+}
+
+body.page-group-node-admin table.views-table thead .views-field-name img{
+  display: inline-block;
+  margin-left: .5rem;
+}
+
 body.page-group-node-admin .view-og-members-admin .view-header{
   padding-left: 1rem;
 }
