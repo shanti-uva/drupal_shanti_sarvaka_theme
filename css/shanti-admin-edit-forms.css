@@ -369,6 +369,14 @@ body.page-group-node-admin table.views-table .form-type-checkbox{
   padding: 0.5rem;
 }
 
+body.page-group-node-admin .view-og-members-admin .view-header{
+  padding-left: 1rem;
+}
+
+body.page-group-node-admin .view-og-members-admin .view-filters{
+  padding-left: 3rem;
+}
+
 
 
 .page-node-edit .form-type-checkbox,
