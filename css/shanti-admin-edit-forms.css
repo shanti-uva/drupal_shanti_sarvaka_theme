@@ -284,8 +284,8 @@ font-size: 1.12em;
 * KMAPS - Search 
 */
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  width:100% !important;
-  margin-left: 0 !important;
+  width: 50%;
+  margin-left: 0;
 }
 
 .kmap-typeahead-picker .twitter-typeahead{
