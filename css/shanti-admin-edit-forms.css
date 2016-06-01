@@ -284,7 +284,7 @@ font-size: 1.12em;
 * KMAPS - Search 
 */
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  width: 50%;
+  max-width: 20em;
   margin-left: 0;
 }
 
@@ -735,6 +735,15 @@ button#edit-delete:hover{
 .vertical-tabs .form-type-radio .description{
   margin-left: 2.4em;
 }
+
+.vertical-tabs .form-type-textfield.form-item-date input{
+  max-width:15em;
+}
+
+.vertical-tabs .form-type-textfield.form-item-name input{
+  max-width:22em;
+}
+
 /**
 *** END vertical tabs ***/
 
