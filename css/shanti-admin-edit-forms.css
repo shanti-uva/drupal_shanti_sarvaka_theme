@@ -55,6 +55,31 @@
 
 
 
+/* under input */
+.form-item .description {
+  font-size: 0.93em;
+  margin-top: 0.25em;
+  margin-bottom: .75em;
+  padding-left: 1.75em;
+  max-width: 50em;
+  font-style: italic;
+  color: #222;
+}
+
+.description p{
+  font-style: italic;
+  color: #000;
+}
+
+.form-item.form-type-textfield .description{
+  /*font-size: 0.93em;
+  margin: 0.2rem 0 0 2rem;*/
+}
+
+
+
+
+
 
 /* form table td.label styles address the 'Group Space' fields on ...node/add/collection*/
 form table td.label {
@@ -470,7 +495,7 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
 
 
 /**  
-* Edit Textarea block (example Edit Summary, frontpage )
+* Textarea Edit block (example Edit Summary, frontpage )
 */
 .form-disabled input.form-autocomplete, 
 .form-disabled input.form-text, 
@@ -485,30 +510,19 @@ a.link-edit-summary{
   padding: 0 0.5rem;
 }
 
-table.field-multiple-table .field-widget-text-textarea{
-  padding-top:1rem;
-}
-
+table.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
 /* toggle text editor link text under textarea */
-.ckeditor_links{
-  margin-left:2rem;
-}
-
+.ckeditor_links{ margin-left:2rem; }
 /* Help text and dropdown menu width for Editor - Full HTML, etc */
-.filter-wrapper .form-item-body-en-0-format{
-  width: 22rem;
-}
-
+.filter-wrapper .form-item-body-en-0-format{ width: 22rem; }
 /* Text Formats Label */
-.filter-wrapper .form-item label{
-  display: block;
-}
-
-
+.filter-wrapper .form-item label{ display: block; }
 /* format rich-text editor dropdown selector */
-.filter-wrapper .form-item{
-  margin-top: -1em;
-}
+.filter-wrapper .form-item{ margin-top: -1em; }
+
+.text-format-wrapper .description{ margin-left:1rem; }
+/**  
+*** END Textarea Edit block ***/
 
 
 /* Form Buttons at very bottom */
@@ -604,12 +618,6 @@ button#edit-delete:hover{
   margin-bottom: 0;
 }
 
-.node-type-collection .text-format-wrapper .description{ margin-left:1rem; }
-
-.form-item.form-type-textfield .description{
-  font-size: 0.93em;
-  margin: 0.2rem 0 0 2rem;
-}
 
 
 .field-type-image.field-name-field-general-featured-image{
@@ -698,10 +706,6 @@ button#edit-delete:hover{
   text-decoration: none;
 }
 
-.vertical-tabs table.features .feature .description {
-  color: #666;
-}
-
 .vertical-tabs ul.vertical-tabs-list .selected strong {
   color: inherit;
 }
@@ -739,11 +743,16 @@ button#edit-delete:hover{
 
 .vertical-tabs .radio-inline{
   padding-left:0;
+  margin-left:0;
 }
 
 .vertical-tabs .form-type-radio .description{
   margin-left: 2.4em;
   margin-top: -0.5rem;
+}
+
+.vertical-tabs .form-type-textfield{
+  padding-left: 1rem;
 }
 
 .vertical-tabs .form-type-textfield.form-item-date input{
@@ -753,6 +762,8 @@ button#edit-delete:hover{
 .vertical-tabs .form-type-textfield.form-item-name input{
   max-width:22em;
 }
+
+
 
 /**
 *** END vertical tabs ***/
