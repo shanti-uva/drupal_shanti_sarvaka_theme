@@ -342,6 +342,14 @@ font-size: 1.12em;
 
 
 
+body.page-group-node-admin table.views-table.cols-7{
+  width:100%;
+}
+
+body.page-group-node-admin table.views-table .form-type-checkbox{
+  padding: 0.5rem;
+}
+
 
 
 
@@ -356,7 +364,9 @@ font-size: 1.12em;
 }
 /* adds a little contrast */
 .page-node-edit .iradio_minimal-red,
-.page-node-edit .icheckbox_minimal-red { 
+.page-node-edit .icheckbox_minimal-red,
+.page-group-node-admin .iradio_minimal-red,
+.page-group-node-admin .icheckbox_minimal-red { 
   box-shadow: 0 0 2px #999; 
   border-collapse: separate; 
   background-color: #f7f7f7;
@@ -374,7 +384,9 @@ font-size: 1.12em;
 }
 
 
-
+.views-table .form-type-checkbox{
+  padding: 0.5rem 0;
+}
 
 
 
