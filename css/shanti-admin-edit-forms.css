@@ -466,6 +466,16 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
   top: -1px;
   left: 0;
 }
+
+.page-node-add .iradio_minimal-red,
+.page-node-edit .iradio_minimal-red,
+.page-group-node-admin .iradio_minimal-red{ 
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+  margin-right: 0.5rem !important;
+}
 /* adds a little contrast */
 .page-node-add .iradio_minimal-red,
 .page-node-add .icheckbox_minimal-red,
@@ -477,16 +487,6 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
   border-collapse: separate; 
   background-color: #f7f7f7;
 }
-
-.page-node-add .iradio_minimal-red,
-.page-node-edit .iradio_minimal-red,
-.page-group-node-admin .iradio_minimal-red{ 
-  border-radius: 50%;
-  background-clip: padding-box;
-  margin-top:0.5rem;
-  margin-bottom:0.5rem;
-}
-
 
 
 
