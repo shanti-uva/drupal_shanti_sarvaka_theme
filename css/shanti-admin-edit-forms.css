@@ -341,9 +341,20 @@ font-size: 1.12em;
 
 
 
+body.page-group-node-admin fieldset.form-wrapper legend{
+  font-size: 1em;
+}
+
+body.page-group-node-admin .tab-pane.main-col{
+  padding-top:3rem;
+}
 
 body.page-group-node-admin table.views-table.cols-7{
   width:100%;
+}
+
+body.page-group-node-admin table.views-table a{
+  border-bottom: none;
 }
 
 body.page-group-node-admin table.views-table tr.odd{
@@ -360,11 +371,16 @@ body.page-group-node-admin table.views-table .form-type-checkbox{
 
 
 
+.page-node-edit .form-type-checkbox,
+.page-group-node-admin .form-type-checkbox { padding: 1rem 0;}
 
-.page-node-edit .form-type-checkbox { padding: 1rem 0;}
-.page-node-edit .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
+.page-node-edit .form-type-checkbox .description,
+.page-group-node-admin .form-type-checkbox .description { margin-top: 0; margin-left: 0; }
+
 .page-node-edit .icheckbox_minimal-red,
-.page-node-edit .iradio_minimal-red {
+.page-node-edit .iradio_minimal-red,
+.page-group-node-admin .icheckbox_minimal-red,
+.page-group-node-admin .iradio_minimal-red {
   margin-right: 0.5rem !important;
   position: relative;
   top: -1px;
@@ -380,21 +396,15 @@ body.page-group-node-admin table.views-table .form-type-checkbox{
   background-color: #f7f7f7;
 }
 
-/* .page-node-edit .iradio_minimal-red.checked, */
 .page-node-edit .iradio_minimal-red{ 
   border-radius: 50%;
   background-clip: padding-box;
 }
 
-.page-node-edit .form-type-radio .description{
-  /*margin-left: 4.4em;
-  margin-bottom: 1rem; */
-}
 
 
-.views-table .form-type-checkbox{
-  padding: 0.5rem 0;
-}
+
+
 
 
 
