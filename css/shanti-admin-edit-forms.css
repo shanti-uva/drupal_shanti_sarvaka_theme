@@ -943,6 +943,168 @@ div.ctools-modal-content .form-item label{
 *** END modal ***/
 
 
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------*/
+/*--- ADMIN topbar and footer ---*/
+/*-------------------------------*/
+/* accounts for height of black admin bar */
+#admin-menu input.admin-menu-search.form-text {
+  background: #eee;
+  font-size: 1em;
+  line-height: 1.56em;
+  height: 1.5em;
+  padding: 0.82em 1em 0.62em;
+}
+
+#admin-menu .admin-menu-search input {
+  width: 108px;
+  border-radius: 1em;
+  background-clip: padding-box;
+}
+
+#admin-menu .dropdown .admin-menu-toolbar-category > a {
+  text-shadow: none;
+  color: #ccc;
+}
+
+#admin-menu .dropdown .admin-menu-toolbar-category > a:hover {
+  color: #fff;
+}
+
+#admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail {
+  background: #f5f5f5;
+  color: #000;
+  text-shadow: none;
+}
+
+#admin-menu .dropdown .admin-menu-toolbar-category.admin-menu-icon > a.active-trail {
+  background: #777;
+}
+
+#admin-menu #edit-filters--2.filters.form-wrapper {
+  float: none;
+} /*--- admin page viewing / adding users ---*/
+#admin-menu {
+  box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
+  border-collapse: separate;
+  background: #333;
+  background-image: none;
+  z-index: 900;
+  /* Necessary because header-banner has z-index: 30000 */
+}
+
+#admin-menu > div > .dropdown > li > a {
+  padding: 2px 7px 3px;
+}
+
+/* Admin */
+@media screen and (max-width: 1040px) {
+  #admin-menu .dropdown .admin-menu-search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #admin-menu .dropdown .admin-menu-account,
+  #admin-menu .dropdown .admin-menu-users,
+  #admin-menu .dropdown .admin-menu-search {
+    display: none;
+  }
+}
+
+html body.admin-menu {
+  margin-top: 5.4rem !important;
+} 
+
+@media screen and (min-width: 768px) {
+  /* adjust height of admin bar */
+  html body.admin-menu {
+    margin-top: 3rem !important;
+  }
+}  
+
+.region-admin-footer h1,
+.region-admin-footer h2 {
+  color: #ddd;
+  font-size: 1.25em;
+}
+
+.region-admin-footer {
+  padding: 1.5rem;
+  background: #888;
+  color:#eee;
+  border-bottom: 5px solid #fff;
+}
+
+.region-admin-footer a{
+  color:#ddd;
+  border-bottom:1px solid #ccc;
+}
+
+.region-admin-footer a:hover,
+.region-admin-footer a:active{
+  color:#fff;
+  border-bottom:1px solid #eee;
+}
+
+.region-admin-footer a:hover{
+  text-decoration:underline;
+}
+
+.region-admin-footer > .block {
+  display: inline-block;
+  padding: 0 1rem;
+  border-right: thin solid #555;
+  vertical-align: top;
+  min-height: 120px;
+}
+
+.region-admin-footer .block.block-user {
+  padding-right: 3rem;
+}
+
+.region-admin-footer .block p,
+.region-admin-footer .block li {
+  font-size: 0.88em;
+  color:#ddd;
+}
+
+.region-admin-footer .description{
+  margin:0;
+  padding:0;
+  color:#eee;
+  font-size: 0.75em;
+}
+
+.region-admin-footer .form-control,
+.region-admin-footer .form-textarea {
+  max-width: 95%;
+  background-position: 97% 0.56em !important;
+}
+
+.region-admin-footer .block-masquerade .form-control{
+  max-width: 14rem;
+}
+
+.region-admin-footer .block-masquerade .btn{
+  float:right;
+  padding: 0.4em 1.25em;
+  margin: -0.25em 0 0.75rem 0.5rem;
+}
+
+/**
+*** END Admin topbar and footer ***/
+
+
 /**
 * ----------------------
 * END - Edit Form CSS
