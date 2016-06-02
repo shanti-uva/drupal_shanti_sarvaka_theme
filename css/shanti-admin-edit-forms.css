@@ -362,30 +362,28 @@ font-size: 1.12em;
   color:#fff;
 }
 
-
-.kmap-result-box.form-wrapper.kmaps-fields-processed{
-  position: relative;
-  top: 1.75rem;
-  left: 1rem;
-}
-
 .kmap-pick-tree.form-wrapper{
   font-size: 85%;
   font-weight: normal !important;
   border: 1px solid #ddd;
   border-radius: .5rem;
   box-shadow: inset 0 0 7px #ddd;
+  padding:1rem;
 }
-
+/* tree results list items */
 .kmap-pick-tree .matching{
   color:#222;
 }
-
+/* tree results list items */
 .kmap-pick-tree .matching.terminal{
   color:#777;
 }
-
-
+/* labels position */
+.kmap-result-box.form-wrapper.kmaps-fields-processed{
+  position: relative;
+  top: 1.75rem;
+  left: 1rem;
+}
 
 
 
@@ -437,6 +435,12 @@ body.page-group-node-admin table.views-table tr.odd{
 body.page-group-node-admin table.views-table tr.even{
   background: #fff;
 }
+
+body.page-group-node-admin table.views-table tr.odd:hover,
+body.page-group-node-admin table.views-table tr.even:hover{
+  background: #ddd;
+}
+
 
 body.page-group-node-admin table.views-table .form-type-checkbox{
   padding: 0.5rem;
