@@ -795,7 +795,7 @@ button#edit-delete:hover{
 .page-node-add.no-sidebars .tab-pane.main-col,
 .page-node-edit.no-sidebars .tab-pane.main-col,
 .page-node-group.no-sidebars .tab-panel.main-col{
-    max-width: 920px !important;
+    max-width: 870px !important;
 }
 
 @media (min-width:1150px) {
