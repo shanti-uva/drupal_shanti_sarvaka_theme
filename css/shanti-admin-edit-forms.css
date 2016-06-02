@@ -767,15 +767,22 @@ button#edit-delete:hover{
   font-size:0.88em;
 }
 
+.vertical-tabs .form-wrapper .form-type-radio label,
+.vertical-tabs .form-wrapper .form-type-checkbox label{
+  font-size:1.06em;
+}
+
+.vertical-tabs .form-wrapper .form-item-date > div{
+  padding-left:0;
+}
+
 .vertical-tabs .form-wrapper .form-item-date > label{
   /*margin-left: 2rem;*/
   margin-top: 1rem;
   margin-bottom: -0.5rem;
 }
 
-.vertical-tabs .form-wrapper .form-item-date > div{
-  padding-left:0;
-}
+
 
 /**
 *** END vertical tabs ***/
