@@ -778,8 +778,14 @@ button#edit-delete:hover{
 
 .vertical-tabs .form-wrapper .form-item-date > label{
   /*margin-left: 2rem;*/
-  margin-top: 1rem;
-  margin-bottom: -0.5rem;
+  /*margin-top: 1rem;
+  margin-bottom: -0.5rem;*/
+}
+
+table.redirect-list thead th:first-of-type img{
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom:0.2rem;
 }
 
 
