@@ -806,12 +806,10 @@ button#edit-delete:hover{
 }
 
 table.redirect-list thead th:first-of-type img{
-  display: inline-block;
-  margin-left: 0.5rem;
-  margin-bottom:0.2rem;
+  display: inline-block !important;
+  margin-left: 0.5rem !important;
+  margin-bottom:0.2rem !important;
 }
-
-
 
 /**
 *** END vertical tabs ***/
