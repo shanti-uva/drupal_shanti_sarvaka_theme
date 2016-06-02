@@ -365,6 +365,25 @@ font-size: 1.12em;
 
 
 
+.kmap-pick-tree.form-wrapper{
+  font-size: 85%;
+  font-weight: normal !important;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  box-shadow: inset 0 0 7px #ddd;
+}
+
+.kmap-pick-tree .matching{
+  color:#222;
+}
+
+.kmap-pick-tree .matching.terminal{
+  color:#777;
+}
+
+
+
+
 
 
 
