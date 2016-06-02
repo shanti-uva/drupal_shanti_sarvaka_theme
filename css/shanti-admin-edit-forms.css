@@ -362,6 +362,11 @@ font-size: 1.12em;
   color:#fff;
 }
 
+
+.kmap-pick-tree::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
 .kmap-pick-tree.form-wrapper{
   font-size: 85%;
   font-weight: normal !important;
@@ -369,6 +374,9 @@ font-size: 1.12em;
   border-radius: .5rem;
   box-shadow: inset 0 0 7px #ddd;
   padding:1rem;
+}
+.kmap-pick-tree p{
+  margin: 10px;
 }
 /* tree results list items */
 .kmap-pick-tree .matching{
@@ -440,7 +448,6 @@ body.page-group-node-admin table.views-table tr.odd:hover,
 body.page-group-node-admin table.views-table tr.even:hover{
   background: #ddd;
 }
-
 
 body.page-group-node-admin table.views-table .form-type-checkbox{
   padding: 0.5rem;
