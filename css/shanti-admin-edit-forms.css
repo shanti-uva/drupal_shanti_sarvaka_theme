@@ -452,7 +452,7 @@ body.page-group-node-admin table.views-table tr.even{
 
 body.page-group-node-admin table.views-table tr.odd:hover,
 body.page-group-node-admin table.views-table tr.even:hover{
-  background: #e7e7e7;
+  background: transparent;
 }
 
 body.page-group-node-admin table.views-table .form-type-checkbox{
