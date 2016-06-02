@@ -363,7 +363,11 @@ font-size: 1.12em;
 }
 
 
-
+.kmap-result-box.form-wrapper.kmaps-fields-processed{
+  position: relative;
+  top: 1.75rem;
+  left: 1rem;
+}
 
 .kmap-pick-tree.form-wrapper{
   font-size: 85%;
