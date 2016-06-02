@@ -362,11 +362,11 @@ font-size: 1.12em;
   color:#fff;
 }
 
-
+/*
 .kmap-pick-tree::-webkit-scrollbar {
     -webkit-appearance: none;
 }
-
+*/
 .kmap-pick-tree.form-wrapper{
   font-size: 85%;
   font-weight: normal !important;
@@ -446,7 +446,7 @@ body.page-group-node-admin table.views-table tr.even{
 
 body.page-group-node-admin table.views-table tr.odd:hover,
 body.page-group-node-admin table.views-table tr.even:hover{
-  background: #ddd;
+  background: #e7e7e7;
 }
 
 body.page-group-node-admin table.views-table .form-type-checkbox{
