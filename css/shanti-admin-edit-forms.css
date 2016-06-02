@@ -434,6 +434,7 @@ body.page-group-node-admin table.views-table.cols-7{
 
 body.page-group-node-admin table.views-table a{
   border-bottom: none;
+  font-weight: bold;
 }
 
 body.page-group-node-admin table.views-table .views-field-edit-membership a{
