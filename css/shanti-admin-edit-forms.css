@@ -436,6 +436,11 @@ body.page-group-node-admin table.views-table a{
   border-bottom: none;
 }
 
+body.page-group-node-admin table.views-table .views-field-edit-membership a{
+  text-transform: capitalize;
+  padding-left: .75rem
+}
+
 body.page-group-node-admin table.views-table tr.odd{
   background: #f5f5f5;
 }
