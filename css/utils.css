@@ -35,7 +35,6 @@
 	-moz-box-shadow: 5px 0 5px -5px #1f4164;
 	-webkit-box-shadow: 5px 0 5px -5px #1f4164;
 	box-shadow: 5px 0 5px -5px #1f4164;
-	filter: progid:DXImageTransform.Microsoft.Shadow(color=#1f4164,direction=90,strength=2);
 }
 
 .multilevelpushmenu_wrapper .rtl {
@@ -44,7 +43,6 @@
 	-moz-box-shadow: 5px 0 5px 5px #1f4164;
 	-webkit-box-shadow: 5px 0 5px 5px #1f4164;
 	box-shadow: 5px 0 5px 5px #1f4164;
-	filter: progid:DXImageTransform.Microsoft.Shadow(color=#1f4164,direction=270,strength=2); 
 }
 
 .multilevelpushmenu_wrapper .multilevelpushmenu_inactive {
@@ -172,7 +170,6 @@
 .icheckbox_minimal-red,
 .iradio_minimal-red {
     display: inline-block;
-    *display: inline;
     vertical-align: middle;
     margin: 0;
     padding: 0;
@@ -232,16 +229,7 @@
 
 .page-subjects .icheckbox_minimal-red,
 .page-subjects .iradio_minimal-red {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    width: 18px;
-    height: 18px;
     background: url("../js/inc/check/skins/minimal/subjects.png") no-repeat;
-    border: none;
-    cursor: pointer;
 }
 
 .page-subjects .icheckbox_minimal-red {
@@ -292,16 +280,7 @@
 
 .page-places .icheckbox_minimal-red,
 .page-places .iradio_minimal-red {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    width: 18px;
-    height: 18px;
     background: url("../js/inc/check/skins/minimal/places.png") no-repeat;
-    border: none;
-    cursor: pointer;
 }
 
 .page-places .icheckbox_minimal-red {
@@ -352,16 +331,7 @@
 
 .audio-video .icheckbox_minimal-red,
 .audio-video .iradio_minimal-red {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    width: 18px;
-    height: 18px;
     background: url("../js/inc/check/skins/minimal/audio-video.png") no-repeat;
-    border: none;
-    cursor: pointer;
 }
 
 .audio-video .icheckbox_minimal-red {
@@ -412,16 +382,7 @@
 
 .texts .icheckbox_minimal-red,
 .texts .iradio_minimal-red {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    width: 18px;
-    height: 18px;
     background: url("../js/inc/check/skins/minimal/texts.png") no-repeat;
-    border: none;
-    cursor: pointer;
 }
 
 .texts .icheckbox_minimal-red {
@@ -472,16 +433,7 @@
 
 .images .icheckbox_minimal-red,
 .images .iradio_minimal-red {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    width: 18px;
-    height: 18px;
     background: url("../js/inc/check/skins/minimal/images.png") no-repeat;
-    border: none;
-    cursor: pointer;
 }
 
 .images .icheckbox_minimal-red {
@@ -532,16 +484,7 @@
 
 .sources .icheckbox_minimal-red,
 .sources .iradio_minimal-red {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    width: 18px;
-    height: 18px;
     background: url("../js/inc/check/skins/minimal/sources.png") no-repeat;
-    border: none;
-    cursor: pointer;
 }
 
 .sources .icheckbox_minimal-red {

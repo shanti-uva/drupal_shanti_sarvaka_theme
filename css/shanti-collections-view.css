@@ -1,0 +1,115 @@
+
+/**
+* New Collections development work begun May-2016 
+*/
+
+.bootstrap-twocol-stacked,
+.bootstrap-threecol-stacked {
+  /*padding-top: 1.5rem;*/
+}
+/* featured image descriptive text */
+.panel-panel > .pane-node-body .field-type-text-with-summary{
+  min-height:130px;
+}
+
+
+
+
+
+
+
+
+/**
+* BEGIN - Collections Sidebar admin buttons and associated link lists
+*/
+.panel-panel.right a.btn.btn-primary {
+  padding-left:3rem;
+  padding-right:3rem;
+  margin-left:0;
+}
+
+.panel-panel.right,
+.panel-panel.right a:not(.btn.btn-primary),
+.panel-panel.right ul li {
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
+.panel-panel.right .pane-content a:not(.btn.btn-primary) {
+  font-weight:bold;
+  font-size:90%;
+  filter: alpha(opacity=90);
+  opacity:0.9;
+  border:none;
+}
+
+.panel-panel.right .pane-content a:not(.btn.btn-primary):hover .icon,
+.panel-panel.right .pane-content a:not(.btn.btn-primary):active .icon {
+  color: #454fa4;
+}
+/*
+.panel-panel.right .view-collections .view-content > div {
+  position: relative;
+  left: 2.2rem;
+}
+
+.panel-panel.right .view-collections .view-content > div > span {
+  margin-left: -2.2rem;
+}
+*/
+
+
+
+
+.shanti-collection-body{
+  margin-top: -1.5rem !important;
+}
+
+.shanti-collection-body .pane-title{
+  margin-bottom: 1rem !important;
+}
+
+.shanti-collection-body .field-type-text-with-summary p{
+  line-height: 1.56em;
+}
+
+/* image hack for IMG wrapper img-thumnail class */
+.pane-node-field-general-featured-image div.field-type-image.img-thumbnail{
+  box-shadow:none;
+  display: inline-block;
+  max-width: auto;
+  height: auto;
+  padding: 0;
+  line-height: 1.42857143;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  margin:0 !important;
+}
+
+
+
+
+
+
+/**
+* BEGIN - NOT TESTED - newly brought in from av css w/comments intact - May 25, 2016
+*/
+/* single collection page */
+/** Hiding Spaces table until it can be properly implemented */
+.node-type-collection table.spaces {
+  display: none;
+}
+
+.collection-content .field-label-inline .field-label-span { 
+  float:left; 
+}
+
+.node-type-collection .pane-content .view-empty, 
+.node-type-subcollection .pane-content .view-empty {
+    clear: both;
+}
+
+
+/**
+* END Collections Sidebar
+*/

@@ -592,8 +592,8 @@
         $('.row-offcanvas').toggleClass('active');
       });
       // Toggle sidebar
-			$("button.view-offcanvas-sidebar").click( function() { 		// show-hide resource side-column
-			  $(this).toggleClass( "show",'fast' );
+			$('button.view-offcanvas-sidebar').click( function() { 		// show-hide resource side-column
+			  $(this).toggleClass( 'show', 200 );
 			});
 
       // Hide sidebar button for Kmaps homepage
