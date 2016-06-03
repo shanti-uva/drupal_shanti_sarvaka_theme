@@ -464,7 +464,7 @@ table.views-table .form-type-checkbox{
 }
 
 table.views-table thead .icheckbox_minimal-red{
-  margin-left: 1.2rem;
+  margin-left: 1.55rem;
 }
 /* column sorting arrow img */
 table.views-table thead a > img{
@@ -567,7 +567,7 @@ table.views-table thead a > img{
   font-size: 0.88em;
   text-transform: capitalize;
 }
-
+.views-table tr td.views-field-name,
 .views-table tr td.views-field-title {
   font-size: 0.93em;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
