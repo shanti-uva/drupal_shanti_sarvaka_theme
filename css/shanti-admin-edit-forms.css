@@ -419,7 +419,9 @@ font-size: 1.12em;
 
 
 
-
+.views-exposed-form label{
+  font-size:0.88em;
+}
 
 
 
@@ -466,8 +468,8 @@ table.views-table thead .icheckbox_minimal-red{
 }
 /* column sorting arrow img */
 table.views-table thead a > img{
-  display: inline-block;
-  margin-left: .5rem;
+  display: inline-block !important;
+  margin-left: .5rem !important;
 }
 
 .view-og-members-admin .view-header{
@@ -552,38 +554,21 @@ table.views-table thead a > img{
   vertical-align: top;
 }
 
-.view-my-content .views-table, 
-.view-my-collections .views-table, 
-.view-my-memberships .views-table, 
-.view-my-workflow .views-table {
-  width: 100%;
+
+.views-table th{
+  font-size: 0.88em;
+  padding: 0 0.3rem;
+  min-width: 75px;
 }
 
-.view-my-content .views-table th,
-.view-my-collections .views-table th,
-.view-my-memberships .views-table th,
-.view-my-workflow .views-table th {
+.views-table tr td{
   padding: 6px 12px 6px 3px;
   min-width: 75px;
-  font-size: 1em;
-}
-
-.view-my-content .views-table tr td,
-.view-my-collections .views-table tr td,
-.view-my-memberships .views-table tr td,
-.view-my-workflow .views-table tr td {
-  padding: 6px 12px 6px 3px;
-  min-width: 75px;
-  font-size: 1em;
-/* white-space: nowrap; ---- pushing the table too wide on myworkflow page */
-}
-
-.view-my-workflow .views-table tr td {
   font-size: 0.88em;
   text-transform: capitalize;
 }
 
-.view-my-workflow .views-table tr td.views-field-title {
+.views-table tr td.views-field-title {
   font-size: 0.93em;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-weight: bold;
@@ -593,42 +578,42 @@ table.views-table thead a > img{
   margin: 1rem;
 }
 
-
 /* - page-mycontent-workflow - new @june 2016 */
 .page-mycontent-workflow .tab-pane.main-col {
   max-width:1200px;
 }
 
 .page-mycontent-workflow .views-exposed-form .views-exposed-widget{
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 
-.views-exposed-form label{
-  font-size:0.88em;
+.page-mycontent-workflow .views-exposed-form .panel-group label{
+  font-size:0.75em;
 }
 
+.page-mycontent-workflow .view-filters .bootstrap-select.form-control{
+  width: 120%;
+}
 
 
 /* view My Content in My Workflow etc */
-.views-table td.active {
-  background: transparent;
-}
-
-.views-table th {
-  font-size: 0.88em;
-  padding: 0 0.3rem;
-}
-
 .views-field {
   padding: 0 0.5rem 0 0;
   font-size: 0.93em;
 }
 
-.views-field img {
+.views-table td.active {
+  background: transparent;
+}
+
+.views-field td img {
   margin: 0.2rem;
 }
 
-.views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type {
+.views-field-realname,
+td.views-field-created,
+td.views-field-changed,
+td.views-field-type {
   font-size: 0.82em;
 }
 
@@ -637,13 +622,6 @@ table.views-table thead a > img{
 }
 
 /* end new migration from mb-main */
-
-
-
-
-
-
-
 
 
 
@@ -729,6 +707,10 @@ table.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
 .text-format-wrapper .description{ margin-left:1rem; }
 /**  
 *** END Textarea Edit block ***/
+
+
+
+
 
 
 /* Form Buttons at very bottom */
