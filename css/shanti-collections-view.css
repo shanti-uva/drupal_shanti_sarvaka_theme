@@ -22,18 +22,21 @@
 /**
 * BEGIN - Collections Sidebar admin buttons and associated link lists
 */
+.collections-sidebar a.btn.btn-primary,
 .panel-panel.right a.btn.btn-primary {
   padding-left:3rem;
   padding-right:3rem;
   margin-left:0;
 }
-
+.collections-sidebar,
+.collections-sidebar a:not(.btn.btn-primary),
+.collections-sidebar ul li,
 .panel-panel.right,
 .panel-panel.right a:not(.btn.btn-primary),
 .panel-panel.right ul li {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
-
+.collections-sidebar .view-collections a:not(.btn.btn-primary), 
 .panel-panel.right .pane-content a:not(.btn.btn-primary) {
   font-weight:bold;
   font-size:90%;
@@ -41,7 +44,8 @@
   opacity:0.9;
   border:none;
 }
-
+.collections-sidebar .view-collections a:not(.btn.btn-primary):hover .icon,
+.collections-sidebar .view-collections a:not(.btn.btn-primary):active .icon,
 .panel-panel.right .pane-content a:not(.btn.btn-primary):hover .icon,
 .panel-panel.right .pane-content a:not(.btn.btn-primary):active .icon {
   color: #454fa4;
