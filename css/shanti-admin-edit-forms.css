@@ -428,7 +428,7 @@ body.page-group-node-admin .tab-pane.main-col{
   padding-top:3rem;
 }
 
-body.page-group-node-admin table.views-table.cols-7{
+table.views-table{
   width:100%;
 }
 
@@ -463,7 +463,7 @@ body.page-group-node-admin table.views-table thead .icheckbox_minimal-red{
   margin-left: 1.2rem;
 }
 
-body.page-group-node-admin table.views-table thead .views-field-name img{
+table.views-table thead .views-field-name img{
   display: inline-block;
   margin-left: .5rem;
 }
@@ -483,6 +483,170 @@ body.page-group-node-admin .view-og-members-admin .form-item{
 body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
   padding-right:1rem;
 }
+
+
+
+
+
+/** 
+* My Content Pages - @new from mb-main @June 3, 2016
+*/
+.view-my-content .vbo-views-form fieldset#edit-select {
+  float: right;
+  width: 65%;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select legend {
+  color: #555;
+  font-size: 80%;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 0px 0px;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item {
+  margin-top: -0.3em;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item + button {
+  margin-top: -8px;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .btn-group {
+  margin: 0px;
+}
+
+.view-collections .view-my-content .views-exposed-widgets {
+  float: left;
+  margin-bottom: 0;
+}
+
+.view-collections .views-exposed-form .views-exposed-widgets {
+  min-width: 24rem;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.view-collections .view-my-workflow .views-exposed-widget {
+  float: left;
+  padding: 0px 12px;
+}
+/* widget singular not plural */
+.view-collections .views-exposed-form .views-exposed-widget { 
+  height: 5.5rem;
+  margin: 0;
+  text-align: left;
+  padding: 0 0.5em 0 0;
+}
+
+.view .form-item-operation {
+  float: left;
+}
+
+.view .form-item-operation + button {
+  margin: 0 0 0 8px;
+  vertical-align: top;
+}
+
+.view-my-content .views-table, 
+.view-my-collections .views-table, 
+.view-my-memberships .views-table, 
+.view-my-workflow .views-table {
+  width: 100%;
+}
+
+.view-my-content .views-table th,
+.view-my-collections .views-table th,
+.view-my-memberships .views-table th,
+.view-my-workflow .views-table th {
+  padding: 6px 12px 6px 3px;
+  min-width: 75px;
+  font-size: 1em;
+}
+
+.view-my-content .views-table tr td,
+.view-my-collections .views-table tr td,
+.view-my-memberships .views-table tr td,
+.view-my-workflow .views-table tr td {
+  padding: 6px 12px 6px 3px;
+  min-width: 75px;
+  font-size: 1em;
+/* white-space: nowrap; ---- pushing the table too wide on myworkflow page */
+}
+
+.view-my-workflow .views-table tr td {
+  font-size: 0.88em;
+  text-transform: capitalize;
+}
+
+.view-my-workflow .views-table tr td.views-field-title {
+  font-size: 0.93em;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.page-my-content-workflow .views-exposed-widgets {
+  margin: 1rem;
+}
+
+
+/* - page-mycontent-workflow - new @june 2016 */
+.page-mycontent-workflow .tab-pane.main-col {
+  max-width:1200px;
+}
+
+.page-mycontent-workflow .views-exposed-form .views-exposed-widget{
+  padding-right: 3rem;
+}
+
+.views-exposed-form label{
+  font-size:0.8em;
+}
+
+
+
+/* view My Content in My Workflow etc */
+.views-table td.active {
+  background: transparent;
+}
+
+.views-table th {
+  font-size: 0.88em;
+  padding: 0 0.3rem;
+}
+
+.views-field {
+  padding: 0 0.5rem 0 0;
+  font-size: 0.93em;
+}
+
+.views-field img {
+  margin: 0.2rem;
+}
+
+.views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type {
+  font-size: 0.82em;
+}
+
+.views-table.cols-8 .views-field.views-field-title {
+  width: 40%;
+}
+
+/* end new migration from mb-main */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
