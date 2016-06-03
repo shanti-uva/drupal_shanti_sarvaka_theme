@@ -386,8 +386,8 @@ font-size: 1.12em;
 .kmap-pick-tree .matching.terminal{
   color:#777;
 }
-/* labels position */
-.kmap-result-box.form-wrapper.kmaps-fields-processed{
+/* Add Collections / bottom accordion - Subcollection - labels position */
+.field-name-field-subcollection-root .kmap-result-box.form-wrapper.kmaps-fields-processed{
   position: relative;
   top: 1.75rem;
   left: 1rem;
