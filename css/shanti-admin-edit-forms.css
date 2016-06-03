@@ -422,12 +422,13 @@ font-size: 1.12em;
 
 
 
-body.page-group-node-admin fieldset.form-wrapper legend{
-  font-size: 1em;
-}
 
 body.page-group-node-admin .tab-pane.main-col{
   padding-top:3rem;
+}
+
+body.page-group-node-admin fieldset.form-wrapper legend{
+  font-size: 1em;
 }
 
 table.views-table{
@@ -439,12 +440,7 @@ table.views-table a{
   /* font-weight: bold; */
 }
 
-table.views-table tr td.views-field-title a{
-  font-weight: bold;
-}
-
 table.views-table .views-field-edit-membership a{
-  text-transform: capitalize;
   padding-left: .75rem
 }
 
@@ -468,8 +464,8 @@ table.views-table .form-type-checkbox{
 table.views-table thead .icheckbox_minimal-red{
   margin-left: 1.2rem;
 }
-
-table.views-table thead .views-field-name img{
+/* column sorting arrow img */
+table.views-table thead a > img{
   display: inline-block;
   margin-left: .5rem;
 }
@@ -589,7 +585,7 @@ table.views-table thead .views-field-name img{
 
 .view-my-workflow .views-table tr td.views-field-title {
   font-size: 0.93em;
-  font-family: helvetica;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-weight: bold;
 }
 
