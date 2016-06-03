@@ -58,10 +58,11 @@ body {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
-.h3, h3, .h4, h4 {
+.h4, h4 {
   margin-top: 15px;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   font-weight:bold
+  color: #707070;
 }
 
 .h5, .h6, h5, h6 {

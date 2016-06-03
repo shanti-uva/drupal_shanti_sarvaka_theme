@@ -77,8 +77,7 @@
 }
 
 /* image hack for IMG wrapper img-thumnail class */
-.field-name-field-general-featured-image div.field-type-image.img-thumbnail, /* Texts */
-.pane-node-field-general-featured-image div.field-type-image.img-thumbnail{ /* AV */
+.field-name-field-general-featured-image.field-type-image.img-thumbnail{ /* AV & TEXTS */
   box-shadow:none;
   display: inline-block;
   max-width: auto;
