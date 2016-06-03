@@ -330,22 +330,19 @@ a:hover,a:active {
 */
 
 /* Ajax Loading */
-.throbber {
+.throbber,
+.ajax-progress,
+.ajax-progress-throbber, 
+.ajax-progress .throbber, 
+.ajax-progress-throbber .throbber {
+  margin: 0;
+  padding: 0;
   background: url('../images/ajax-loader.gif') center center no-repeat !important;
   background-color: transparent !important;
   width: 3.5rem !important;
   height: 2.5rem !important;
-  display: inline-block;
+  display: inline-block !important;
 }
-
-.ajax-progress, .ajax-progress *, 
-.ajax-progress-throbber, 
-.ajax-progress-throbber * {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
 /*--- reset default size ---*/
 .iradio_minimal-red,
 .icheckbox_minimal-red {
