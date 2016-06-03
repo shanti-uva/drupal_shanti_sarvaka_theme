@@ -420,6 +420,8 @@ font-size: 1.12em;
 
 
 
+
+
 body.page-group-node-admin fieldset.form-wrapper legend{
   font-size: 1em;
 }
@@ -432,34 +434,38 @@ table.views-table{
   width:100%;
 }
 
-body.page-group-node-admin table.views-table a{
+table.views-table a{
   border-bottom: none;
+  /* font-weight: bold; */
+}
+
+table.views-table tr td.views-field-title a{
   font-weight: bold;
 }
 
-body.page-group-node-admin table.views-table .views-field-edit-membership a{
+table.views-table .views-field-edit-membership a{
   text-transform: capitalize;
   padding-left: .75rem
 }
 
-body.page-group-node-admin table.views-table tr.odd{
+table.views-table tr.odd{
   background: #f5f5f5;
 }
 
-body.page-group-node-admin table.views-table tr.even{
+table.views-table tr.even{
   background: #fff;
 }
 
-body.page-group-node-admin table.views-table tr.odd:hover,
-body.page-group-node-admin table.views-table tr.even:hover{
+table.views-table tr.odd:hover,
+table.views-table tr.even:hover{
   background: transparent;
 }
 
-body.page-group-node-admin table.views-table .form-type-checkbox{
+table.views-table .form-type-checkbox{
   padding: 0.5rem;
 }
 
-body.page-group-node-admin table.views-table thead .icheckbox_minimal-red{
+table.views-table thead .icheckbox_minimal-red{
   margin-left: 1.2rem;
 }
 
@@ -468,19 +474,19 @@ table.views-table thead .views-field-name img{
   margin-left: .5rem;
 }
 
-body.page-group-node-admin .view-og-members-admin .view-header{
+.view-og-members-admin .view-header{
   padding-left: 1rem;
 }
 
-body.page-group-node-admin .view-og-members-admin .view-filters{
+.view-og-members-admin .view-filters{
   padding-left: 3rem;
 }
 
-body.page-group-node-admin .view-og-members-admin .form-item{
+.view-og-members-admin .form-item{
   margin-top:0;
 }
 
-body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
+.view-og-members-admin .form-item.form-type-select{
   padding-right:1rem;
 }
 
@@ -489,7 +495,7 @@ body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
 
 
 /** 
-* My Content Pages - @new from mb-main @June 3, 2016
+* My Content Pages - @new from mb-main @June 3, 2016 @question - vbo-views-form ?
 */
 .view-my-content .vbo-views-form fieldset#edit-select {
   float: right;
