@@ -566,11 +566,11 @@ table.views-table thead a > img{
   min-width: 75px;
   font-size: 0.88em;
   text-transform: capitalize;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 .views-table tr td.views-field-name,
 .views-table tr td.views-field-title {
   font-size: 0.93em;
-  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-weight: bold;
 }
 

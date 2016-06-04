@@ -126,19 +126,20 @@
 
 
 /* TESTING - temporary style for Texts app here */
-.texts.node-type-collection .view-all-texts-control-box-cell-header .view-result-count-info{
+.texts.node-type-collection .view-all-texts-control-box-cell-header .view-result-count-info,
+.texts.node-type-subcollection .view-all-texts-control-box-cell-header .view-result-count-info{
   margin-left:1.5rem;
 }
-
-.texts.node-type-collection .view-all-texts-control-box-cell-header.col-md-4{
+.texts.node-type-collection .view-all-texts-control-box-cell-header.col-md-4,
+.texts.node-type-subcollection .view-all-texts-control-box-cell-header.col-md-4{
   width:29%;
 }
-
-.texts.node-type-collection .view-all-texts-control-box-cell-filters.col-md-4{
+.texts.node-type-collection .view-all-texts-control-box-cell-filters.col-md-4,
+.texts.node-type-subcollection .view-all-texts-control-box-cell-filters.col-md-4{
   width:37%;
 }
-
-.texts.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer{
+.texts.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
+.texts.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
   margin-right:0;
 }
 
