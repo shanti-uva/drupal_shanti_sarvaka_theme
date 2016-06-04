@@ -367,6 +367,8 @@ font-size: 1.12em;
     -webkit-appearance: none;
 }
 */
+
+.kmap-lazy-tree,
 .kmap-pick-tree.form-wrapper{
   font-size: 85%;
   font-weight: normal !important;
@@ -1185,6 +1187,7 @@ div.ctools-modal-content .form-item label{
 #admin-menu #edit-filters--2.filters.form-wrapper {
   float: none;
 } /*--- admin page viewing / adding users ---*/
+
 #admin-menu {
   box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
   border-collapse: separate;
