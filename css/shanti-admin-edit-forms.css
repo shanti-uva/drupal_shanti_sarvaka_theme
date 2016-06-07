@@ -311,6 +311,7 @@ font-size: 1.12em;
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
   max-width: 20em;
   margin-left: 0;
+  display: inline-block;
 }
 
 .kmap-typeahead-picker .twitter-typeahead{
@@ -379,6 +380,7 @@ font-size: 1.12em;
 }
 .kmap-pick-tree p{
   margin: 10px;
+  font-size: 1.12em;
 }
 /* tree results list items */
 .kmap-pick-tree .matching{
