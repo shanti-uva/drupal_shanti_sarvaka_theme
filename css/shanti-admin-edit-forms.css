@@ -310,7 +310,6 @@ font-size: 1.12em;
 */
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
   max-width: 20em;
-  margin-left: 0;
   display: inline-block;
 }
 
