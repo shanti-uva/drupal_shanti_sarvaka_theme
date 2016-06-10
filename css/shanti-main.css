@@ -2195,197 +2195,6 @@ body.front ol.breadcrumb {
 
 
 
-
-/*----------------------------*/
-/*----- BEGIN sideabars -----*/
-/*----------------------------*/
-/* toggle sidebar */
-.view-offcanvas-sidebar.btn.btn-default {
-  display: none;
-}
-
-.sidebar-first.sidebar-offcanvas,
-.sidebar-second.sidebar-offcanvas{
-  background-color: #fff;
-  min-height: 650px;
-}
-
-
-  .view-offcanvas-sidebar.btn.btn-default  > .header,
-  .view-offcanvas-sidebar.btn.btn-default  > .badge {
-    display: none;
-  } 
-
-  /* BEGIN Sidebar Button */
-  /* toggle button for sidebar resources, xtra-widths for overflow during animation */
-  .view-offcanvas-sidebar.btn.btn-default  {
-    background: #444;
-    font-size: 1rem;
-    width: 2.6rem;
-    line-height: 3.5rem;
-    height: 3.5rem;
-    display: none;
-    padding: 0;
-    position: absolute;
-    top: -0.7rem;
-    z-index: 10;
-    background-image: none;
-    border-radius: 0 0.4rem 0.4rem 0;
-    background-clip: padding-box;
-    text-shadow: none;
-    font-weight: normal;
-    color: #fff;
-    font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-    -webkit-transition: background .100ms ease-out;
-    transition: background .100ms ease-out;
-  }
-
-  .view-offcanvas-sidebar.btn.btn-default :hover,
-  .view-offcanvas-sidebar.btn.btn-default :active {
-    background: #000;
-    color: #fff;
-  }
-
-  .has-tabs .view-offcanvas-sidebar.btn.btn-default  {
-    position: relative;
-    top: -1.5rem;
-  }
-  
-  .view-offcanvas-sidebar.btn.btn-default  .icon {
-    background: transparent;
-    line-height: 1;
-    font-size: 1.68rem;
-    width: 2rem;
-    position: relative;
-    top: 0rem;
-  }
-
-  .row-offcanvas-left .view-offcanvas-sidebar.btn.btn-default  .icon {
-    float: right;
-    left: -0.3rem;
-  }
-
-  .row-offcanvas-right .view-offcanvas-sidebar.btn.btn-default  .icon {
-    float: left;
-    right: -0.3rem;
-  }
-
-  .view-offcanvas-sidebar.btn.btn-default  .icon::before {
-    font-family: 'shanticon';
-    content: '\e63e';
-  }
-
-  .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
-  .view-offcanvas-sidebar.btn.btn-default :active .icon::before {
-  }
-
-  /**
-  * LEFT BUTTON 
-  */
-  .row-offcanvas-left .view-offcanvas-sidebar.btn.btn-default { left: -8px; }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  {
-    position: absolute;
-    left: -3.6rem;
-    top: -0.7rem;
-    color: #000;
-    filter: alpha(opacity=100);
-    opacity: 1;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon {
-    color: #777;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.4rem;
-    left: -0.3rem;
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::before,
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
-    background: #777;
-    position: absolute;
-    top: 0rem;
-    left: .2rem;
-    width: 1.5rem;
-    height: 0.2rem;
-    content: '';
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::after {
-    background: #444;
-  }
-
-  /**
-  * RIGHT BUTTON 
-  */
-  .row-offcanvas-right .view-offcanvas-sidebar.btn.btn-default { right: -8px; }
-
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  {
-    position: absolute;
-    right: -3.6rem;
-    top: -0.7rem;
-    color: #000;
-    filter: alpha(opacity=100);
-    opacity: 1;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon {
-    color: #777;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.4rem;
-    right: -0.3rem;
-  }
-
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::before,
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
-    background: #777;
-    position: absolute;
-    top: 0rem;
-    right: .2rem;
-    width: 1.5rem;
-    height: 0.2rem;
-    content: '';
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::after {
-    background: #444;
-  }
-  /* END Sidebar Button */
-/**** END Sidebars ****/
-
-
-
-
-
-
 /*-------------------------*/
 /*----- BEGIN Buttons -----*/
 /*-------------------------*/
@@ -2862,6 +2671,202 @@ a.btn,a.btn:hover,a.btn:active {
 /*-------------------------*/
 /*----- END Buttons -----*/
 /*-------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------*/
+/*----- BEGIN sideabars -----*/
+/*----------------------------*/
+/* toggle sidebar */
+.view-offcanvas-sidebar.btn.btn-default {
+  display: none;
+}
+
+.sidebar-first.sidebar-offcanvas,
+.sidebar-second.sidebar-offcanvas{
+  background-color: #fff;
+  min-height: 650px;
+}
+
+
+  .view-offcanvas-sidebar.btn.btn-default  > .header,
+  .view-offcanvas-sidebar.btn.btn-default  > .badge {
+    display: none;
+  } 
+
+  /* BEGIN Sidebar Button */
+  /* toggle button for sidebar resources, xtra-widths for overflow during animation */
+  .view-offcanvas-sidebar.btn.btn-default  {
+    background: #444;
+    font-size: 1rem;
+    width: 2.6rem;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: -0.7rem;
+    z-index: 10;
+    background-image: none;
+    border-radius: 0 0.4rem 0.4rem 0;
+    background-clip: padding-box;
+    text-shadow: none;
+    font-weight: normal;
+    color: #fff;
+    font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+    -webkit-transition: background .100ms ease-out;
+    transition: background .100ms ease-out;
+  }
+
+  .view-offcanvas-sidebar.btn.btn-default :hover,
+  .view-offcanvas-sidebar.btn.btn-default :active {
+    background: #000;
+    color: #fff;
+  }
+
+  .has-tabs .view-offcanvas-sidebar.btn.btn-default  {
+    position: relative;
+    top: -1.5rem;
+  }
+  
+  .view-offcanvas-sidebar.btn.btn-default  .icon {
+    background: transparent;
+    line-height: 1;
+    font-size: 1.68rem;
+    width: 2rem;
+    position: relative;
+    top: 0rem;
+  }
+
+  .row-offcanvas-left .view-offcanvas-sidebar.btn.btn-default  .icon {
+    float: right;
+    left: -0.3rem;
+  }
+
+  .row-offcanvas-right .view-offcanvas-sidebar.btn.btn-default  .icon {
+    float: left;
+    right: -0.3rem;
+  }
+
+  .view-offcanvas-sidebar.btn.btn-default  .icon::before {
+    font-family: 'shanticon';
+    content: '\e63e';
+  }
+
+  .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
+  .view-offcanvas-sidebar.btn.btn-default :active .icon::before {
+  }
+
+  /**
+  * LEFT BUTTON 
+  */
+  .row-offcanvas-left .view-offcanvas-sidebar.btn.btn-default { left: -8px; }
+
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  {
+    position: absolute;
+    left: -3.6rem;
+    top: -0.7rem;
+    color: #000;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon {
+    color: #777;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.4rem;
+    left: -0.3rem;
+  }
+
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::before,
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+    background: #777;
+    position: absolute;
+    top: 0rem;
+    left: .2rem;
+    width: 1.5rem;
+    height: 0.2rem;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
+  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::after {
+    background: #444;
+  }
+
+  /**
+  * RIGHT BUTTON 
+  */
+  .row-offcanvas-right .view-offcanvas-sidebar.btn.btn-default { right: -8px; }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  {
+    position: absolute;
+    right: -3.6rem;
+    top: -0.7rem;
+    color: #000;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon {
+    color: #777;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.4rem;
+    right: -0.3rem;
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::before,
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+    background: #777;
+    position: absolute;
+    top: 0rem;
+    right: .2rem;
+    width: 1.5rem;
+    height: 0.2rem;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::after {
+    background: #444;
+  }
+  /* END Sidebar Button */
+
+/**
+*** END Sidebars ***/
+
+
 
 
 
