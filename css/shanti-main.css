@@ -2819,14 +2819,19 @@ a.btn,a.btn:hover,a.btn:active {
 
   .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  {
     position: absolute;
-    right: -3.6rem;
+    right: -3.2rem;
     top: -0.7rem;
     color: #000;
-    filter: alpha(opacity=100);
-    opacity: 1;
+    filter: alpha(opacity=80);
+    opacity: .8;
     background: transparent;
     border: none;
     box-shadow: none;
+  }
+
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default:hover{
+    filter: alpha(opacity=100);
+    opacity: 1; 
   }
 
   .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon {
