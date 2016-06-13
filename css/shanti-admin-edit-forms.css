@@ -372,22 +372,25 @@ font-size: 1.12em;
 .kmap-pick-tree.form-wrapper{
   font-size: 85%;
   font-weight: normal !important;
-  border: 1px solid #ddd;
-  border-radius: .5rem;
+  /*border: 1px solid #ddd;*/
+  border-radius: 0.5rem;
   box-shadow: inset 0 0 7px #ddd;
-  padding:1rem;
+  padding: 0.5rem;
+  margin-top:1rem;
 }
 .kmap-pick-tree p{
   margin: 10px;
   font-size: 1.12em;
 }
-/* tree results list items */
-.kmap-pick-tree .matching{
-  color:#222;
+.kmap-pick-tree ul{
+  list-style: circle inside none;
 }
 /* tree results list items */
+.kmap-pick-tree .matching,
+/* tree results list items */
 .kmap-pick-tree .matching.terminal{
-  color:#777;
+  color:#333;
+  line-height: 1.75em;
 }
 /* Add Collections / bottom accordion - Subcollection - labels position */
 .field-name-field-subcollection-root .kmap-result-box.form-wrapper.kmaps-fields-processed{
