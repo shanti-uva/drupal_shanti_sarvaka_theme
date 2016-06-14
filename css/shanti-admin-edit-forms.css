@@ -56,24 +56,24 @@
 
 
 /* under input */
-.form-item .description {
-  font-size: 0.93em;
+.form-wrapper .description {
+  /*font-size: 0.93em;
   margin-top: 0.25em;
   margin-bottom: .75em;
   padding-left: 1.75em;
   max-width: 50em;
   font-style: italic;
-  color: #222;
+  color: #222;*/
 }
 
-.description p{
+.form-wrapper .description p{
+  font-size: 0.93em;
+  margin-top: 0.25em;
+  /*margin-bottom: .75em;*/
+  padding-left: 1.75em;
+  max-width: 50em;
   font-style: italic;
-  color: #000;
-}
-
-.form-item.form-type-textfield .description{
-  /*font-size: 0.93em;
-  margin: 0.2rem 0 0 2rem;*/
+  color: #222;
 }
 
 
