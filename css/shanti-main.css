@@ -4001,12 +4001,12 @@ table tr.ok {
 /*--- for larger toggle panels ---*/
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
-  font-size: 1.06em;
-  line-height: 4.38em;
+  font-weight: bold;
+  line-height: 4.68em;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
   margin: 0;
-  height: 65px; /* if line-height is changed, this is important to adjust */
+  height: 65px;
 }
 
 .panel.panel-default .panel-heading h6 a {
@@ -4059,7 +4059,6 @@ table tr.ok {
   float: left;
   color: #777;
   position: relative;
-  top: 0;
   left: -2.15rem;
   font-size: 0.75em;
 }
@@ -4068,7 +4067,7 @@ table tr.ok {
   content: '\2b';
   position: relative;
   left: -2.075rem;
-  top: 0;
+  top: 0.1rem;
 }
 
 .panel-body .field-collection-container{
