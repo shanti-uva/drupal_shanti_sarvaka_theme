@@ -57,7 +57,7 @@ body {
 .h6, h6 { font-size: 1em; }
 
 /* Note: header classes & elements */
-.h1, .h2, .h3, h1, h2, h3, .h4, .h5, .h6, h4, h5, h6{ color: #606060; text-rendering: optimizeLegibility;}
+.h1, .h2, .h3, h1, h2, h3, .h4, .h5, .h6, h4, h5, h6{ color: #505050; text-rendering: optimizeLegibility;}
 .h1, .h2, .h3, h1, h2, h3 {
   margin-top: 20px;
   margin-bottom: 5px;
