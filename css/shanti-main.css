@@ -2687,7 +2687,7 @@ a.btn,a.btn:hover,a.btn:active {
 /*----- BEGIN sideabars -----*/
 /*----------------------------*/
 /* toggle sidebar */
-.view-offcanvas-sidebar.btn.btn-default {
+.btn.btn-default.view-offcanvas-sidebar {
   display: none;
 }
 
@@ -2698,14 +2698,14 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 
-  .view-offcanvas-sidebar.btn.btn-default  > .header,
-  .view-offcanvas-sidebar.btn.btn-default  > .badge {
+  .btn.btn-default.view-offcanvas-sidebar  > .header,
+  .btn.btn-default.view-offcanvas-sidebar  > .badge {
     display: none;
   } 
 
   /* BEGIN Sidebar Button */
   /* toggle button for sidebar resources, xtra-widths for overflow during animation */
-  .view-offcanvas-sidebar.btn.btn-default  {
+  .btn.btn-default.view-offcanvas-sidebar  {
     background: #444;
     font-size: 1rem;
     width: 2.6rem;
@@ -2727,18 +2727,18 @@ a.btn,a.btn:hover,a.btn:active {
     transition: background .100ms ease-out;
   }
 
-  .view-offcanvas-sidebar.btn.btn-default :hover,
-  .view-offcanvas-sidebar.btn.btn-default :active {
+  .btn.btn-default.view-offcanvas-sidebar :hover,
+  .btn.btn-default.view-offcanvas-sidebar :active {
     background: #000;
     color: #fff;
   }
 
-  .has-tabs .view-offcanvas-sidebar.btn.btn-default  {
+  .has-tabs .btn.btn-default.view-offcanvas-sidebar  {
     position: relative;
     top: -1.5rem;
   }
   
-  .view-offcanvas-sidebar.btn.btn-default  .icon {
+  .btn.btn-default.view-offcanvas-sidebar  .icon {
     background: transparent;
     line-height: 1;
     font-size: 1.68rem;
@@ -2747,31 +2747,31 @@ a.btn,a.btn:hover,a.btn:active {
     top: 0rem;
   }
 
-  .row-offcanvas-left .view-offcanvas-sidebar.btn.btn-default  .icon {
+  .row-offcanvas-left .btn.btn-default.view-offcanvas-sidebar  .icon {
     float: right;
     left: -0.3rem;
   }
 
-  .row-offcanvas-right .view-offcanvas-sidebar.btn.btn-default  .icon {
+  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar  .icon {
     float: left;
     right: -0.3rem;
   }
 
-  .view-offcanvas-sidebar.btn.btn-default  .icon::before {
+  .btn.btn-default.view-offcanvas-sidebar  .icon::before {
     font-family: 'shanticon';
     content: '\e63e';
   }
 
-  .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
-  .view-offcanvas-sidebar.btn.btn-default :active .icon::before {
+  .btn.btn-default.view-offcanvas-sidebar :hover .icon::before,
+  .btn.btn-default.view-offcanvas-sidebar :active .icon::before {
   }
 
   /**
   * LEFT BUTTON 
   */
-  .row-offcanvas-left .view-offcanvas-sidebar.btn.btn-default { left: -8px; }
+  .row-offcanvas-left .btn.btn-default.view-offcanvas-sidebar { left: -8px; }
 
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  {
+  .row-offcanvas-left.active .btn.btn-default.view-offcanvas-sidebar  {
     position: absolute;
     left: -3.6rem;
     top: -0.7rem;
@@ -2783,7 +2783,7 @@ a.btn,a.btn:hover,a.btn:active {
     box-shadow: none;
   }
 
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon {
+  .row-offcanvas-left.active .btn.btn-default.view-offcanvas-sidebar  .icon {
     color: #777;
     font-size: 1.5rem;
     position: relative;
@@ -2791,8 +2791,8 @@ a.btn,a.btn:hover,a.btn:active {
     left: -0.3rem;
   }
 
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::before,
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+  .row-offcanvas-left.active .btn.btn-default.view-offcanvas-sidebar  .icon::before,
+  .row-offcanvas-left.active .btn.btn-default.view-offcanvas-sidebar  .icon::after {
     background: #777;
     position: absolute;
     top: 0rem;
@@ -2805,23 +2805,23 @@ a.btn,a.btn:hover,a.btn:active {
     transform: rotate(45deg);
   }
 
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+  .row-offcanvas-left.active .btn.btn-default.view-offcanvas-sidebar  .icon::after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
-  .row-offcanvas-left.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::after {
+  .row-offcanvas-left.active .btn.btn-default.view-offcanvas-sidebar :hover .icon::before,
+  .row-offcanvas-left.active .btn.btn-default.view-offcanvas-sidebar :hover .icon::after {
     background: #444;
   }
 
   /**
   * RIGHT BUTTON 
   */
-  .row-offcanvas-right .view-offcanvas-sidebar.btn.btn-default { right: -8px; }
+  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { right: -8px; }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  {
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar  {
     position: absolute;
     right: -3.2rem;
     top: -0.7rem;
@@ -2833,12 +2833,12 @@ a.btn,a.btn:hover,a.btn:active {
     box-shadow: none;
   }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default:hover{
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar:hover{
     filter: alpha(opacity=100);
     opacity: 1; 
   }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon {
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar  .icon {
     color: #777;
     font-size: 1.5rem;
     position: relative;
@@ -2846,8 +2846,8 @@ a.btn,a.btn:hover,a.btn:active {
     right: -0.3rem;
   }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::before,
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar  .icon::before,
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar  .icon::after {
     background: #777;
     position: absolute;
     top: 0rem;
@@ -2860,14 +2860,14 @@ a.btn,a.btn:hover,a.btn:active {
     transform: rotate(45deg);
   }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default  .icon::after {
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar  .icon::after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::before,
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn.btn-default :hover .icon::after {
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar :hover .icon::before,
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar :hover .icon::after {
     background: #444;
   }
   /* END Sidebar Button */
