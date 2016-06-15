@@ -320,7 +320,9 @@ font-size: 1.12em;
 }
 
 .kmap-search-header p{
-  margin: 0 0 1.5rem 1rem;
+  margin: 1.5rem 0 .5rem 1rem;
+  font-size: 0.93em;
+  font-style: italic;
 }
 
 .field-name-field-subject .panel-body,
