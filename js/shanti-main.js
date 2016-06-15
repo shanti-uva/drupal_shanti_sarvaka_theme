@@ -589,7 +589,7 @@
 
       // Initiate & hide sidebar when active/visible
       $('[data-toggle=offcanvas]').click(function () {
-        $('.row-offcanvas').toggleClass('active', 200);
+        $('.row-offcanvas').toggleClass('active');
       });
 
       // Toggle sidebar
