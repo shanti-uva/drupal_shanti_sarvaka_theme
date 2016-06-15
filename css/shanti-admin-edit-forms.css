@@ -57,21 +57,16 @@
 
 /* under input */
 .form-wrapper .description {
-  /*font-size: 0.93em;
+  font-size: 0.93em;
   margin-top: 0.25em;
   margin-bottom: .75em;
   padding-left: 1.75em;
   max-width: 50em;
   font-style: italic;
-  color: #222;*/
+  color: #222;
 }
 
 .form-wrapper .description p{
-  font-size: 0.93em;
-  margin-top: 0.25em;
-  /*margin-bottom: .75em;*/
-  padding-left: 1.75em;
-  max-width: 50em;
   font-style: italic;
   color: #222;
 }
