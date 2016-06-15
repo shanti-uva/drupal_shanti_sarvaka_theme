@@ -56,7 +56,7 @@
 
 
 /* under input */
-.form-item .description {
+.form-wrapper .description {
   font-size: 0.93em;
   margin-top: 0.25em;
   margin-bottom: .75em;
@@ -66,14 +66,9 @@
   color: #222;
 }
 
-.description p{
+.form-wrapper .description p{
   font-style: italic;
-  color: #000;
-}
-
-.form-item.form-type-textfield .description{
-  /*font-size: 0.93em;
-  margin: 0.2rem 0 0 2rem;*/
+  color: #222;
 }
 
 
@@ -228,6 +223,7 @@ font-size: 1.12em;
 * Twitter Typeahead - keyword labels for transcript
 */
 .kmap-filter label,
+.kmap-tree-picker label,
 .kmap-typeahead-picker label{
   text-transform: capitalize;
   padding-left:1rem;
@@ -235,6 +231,7 @@ font-size: 1.12em;
 }
 
 .kmap-filter label span,
+.kmap-tree-picker label span,
 .kmap-typeahead-picker label span{
   text-transform: uppercase;
   font-weight: bold;
@@ -310,7 +307,7 @@ font-size: 1.12em;
 */
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
   max-width: 20em;
-  margin-left: 0;
+  display: inline-block;
 }
 
 .kmap-typeahead-picker .twitter-typeahead{
@@ -323,7 +320,9 @@ font-size: 1.12em;
 }
 
 .kmap-search-header p{
-  margin: 0 0 1.5rem 1rem;
+  margin: 1.5rem 0 .5rem 1rem;
+  font-size: 0.93em;
+  font-style: italic;
 }
 
 .field-name-field-subject .panel-body,
@@ -362,30 +361,41 @@ font-size: 1.12em;
   color:#fff;
 }
 
-
-.kmap-result-box.form-wrapper.kmaps-fields-processed{
-  position: relative;
-  top: 1.75rem;
-  left: 1rem;
+/*
+.kmap-pick-tree::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
+*/
 
+.kmap-lazy-tree,
 .kmap-pick-tree.form-wrapper{
   font-size: 85%;
   font-weight: normal !important;
-  border: 1px solid #ddd;
-  border-radius: .5rem;
+  /*border: 1px solid #ddd;*/
+  border-radius: 0.5rem;
   box-shadow: inset 0 0 7px #ddd;
+  padding: 0.5rem;
+  margin-top:1rem;
 }
-
-.kmap-pick-tree .matching{
-  color:#222;
+.kmap-pick-tree p{
+  margin: 10px;
+  font-size: 1.12em;
 }
-
+.kmap-pick-tree ul{
+  list-style: circle inside none;
+}
+/* tree results list items */
+.kmap-pick-tree .matching,
+/* tree results list items */
 .kmap-pick-tree .matching.terminal{
-  color:#777;
+  color:#333;
+  line-height: 1.75em;
 }
-
-
+/* Add Collections / bottom accordion - Subcollection - labels position */
+.kmap-result-box{
+  position: relative;
+  left: 0.7rem;
+}
 
 
 
@@ -413,59 +423,214 @@ font-size: 1.12em;
 
 
 
-
-body.page-group-node-admin fieldset.form-wrapper legend{
-  font-size: 1em;
+.views-exposed-form label{
+  font-size:0.88em;
 }
+
+
 
 body.page-group-node-admin .tab-pane.main-col{
   padding-top:3rem;
 }
 
-body.page-group-node-admin table.views-table.cols-7{
+body.page-group-node-admin fieldset.form-wrapper legend{
+  font-size: 1em;
+}
+
+table.views-table{
   width:100%;
 }
 
-body.page-group-node-admin table.views-table a{
+table.views-table a{
   border-bottom: none;
+  /* font-weight: bold; */
 }
 
-body.page-group-node-admin table.views-table tr.odd{
+table.views-table .views-field-edit-membership a{
+  padding-left: .75rem
+}
+
+table.views-table tr.odd{
   background: #f5f5f5;
 }
 
-body.page-group-node-admin table.views-table tr.even{
+table.views-table tr.even{
   background: #fff;
 }
 
-body.page-group-node-admin table.views-table .form-type-checkbox{
+table.views-table tr.odd:hover,
+table.views-table tr.even:hover{
+  background: transparent;
+}
+
+table.views-table .form-type-checkbox{
   padding: 0.5rem;
 }
 
-body.page-group-node-admin table.views-table thead .icheckbox_minimal-red{
-  margin-left: 1.2rem;
+table.views-table thead .icheckbox_minimal-red{
+  margin-left: 1.55rem;
+}
+/* column sorting arrow img */
+table.views-table thead a > img{
+  display: inline-block !important;
+  margin-left: .5rem !important;
 }
 
-body.page-group-node-admin table.views-table thead .views-field-name img{
-  display: inline-block;
-  margin-left: .5rem;
-}
-
-body.page-group-node-admin .view-og-members-admin .view-header{
+.view-og-members-admin .view-header{
   padding-left: 1rem;
 }
 
-body.page-group-node-admin .view-og-members-admin .view-filters{
+.view-og-members-admin .view-filters{
   padding-left: 3rem;
 }
 
-body.page-group-node-admin .view-og-members-admin .form-item{
+.view-og-members-admin .form-item{
   margin-top:0;
 }
 
-body.page-group-node-admin .view-og-members-admin .form-item.form-type-select{
+.view-og-members-admin .form-item.form-type-select{
   padding-right:1rem;
 }
+
+
+
+
+
+/** 
+* My Content Pages - @new from mb-main @June 3, 2016 @question - vbo-views-form ?
+*/
+.view-my-content .vbo-views-form fieldset#edit-select {
+  float: right;
+  width: 65%;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select legend {
+  color: #555;
+  font-size: 80%;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 0px 0px;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item {
+  margin-top: -0.3em;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item + button {
+  margin-top: -8px;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .btn-group {
+  margin: 0px;
+}
+
+.view-collections .view-my-content .views-exposed-widgets {
+  float: left;
+  margin-bottom: 0;
+}
+
+.view-collections .views-exposed-form .views-exposed-widgets {
+  min-width: 24rem;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.view-collections .view-my-workflow .views-exposed-widget {
+  float: left;
+  padding: 0px 12px;
+}
+/* widget singular not plural */
+.view-collections .views-exposed-form .views-exposed-widget { 
+  height: 5.5rem;
+  margin: 0;
+  text-align: left;
+  padding: 0 0.5em 0 0;
+}
+
+.view .form-item-operation {
+  float: left;
+}
+
+.view .form-item-operation + button {
+  margin: 0 0 0 8px;
+  vertical-align: top;
+}
+
+
+.views-table th{
+  font-size: 0.88em;
+  padding: 0 0.3rem;
+  min-width: 75px;
+}
+
+.views-table tr td{
+  padding: 6px 12px 6px 3px;
+  min-width: 75px;
+  font-size: 0.88em;
+  text-transform: capitalize;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+}
+.views-table tr td.views-field-name,
+.views-table tr td.views-field-title {
+  font-size: 0.93em;
+  font-weight: bold;
+}
+
+.page-my-content-workflow .views-exposed-widgets {
+  margin: 1rem;
+}
+
+/* - page-mycontent-workflow - new @june 2016 */
+.page-mycontent-workflow .tab-pane.main-col {
+  max-width:1200px;
+}
+
+.page-mycontent-workflow .views-exposed-form .views-exposed-widget{
+  padding-right: 5rem;
+}
+
+.page-mycontent-workflow .views-exposed-form .panel-group label{
+  font-size:0.75em;
+}
+
+.page-mycontent-workflow .view-filters .bootstrap-select.form-control{
+  width: 120%;
+}
+
+
+/* view My Content in My Workflow etc */
+.views-field {
+  padding: 0 0.5rem 0 0;
+  font-size: 0.93em;
+}
+
+.views-table td.active {
+  background: transparent;
+}
+
+.views-field td img {
+  margin: 0.2rem;
+}
+
+.views-field-realname,
+td.views-field-created,
+td.views-field-changed,
+td.views-field-type {
+  font-size: 0.82em;
+}
+
+.views-table.cols-8 .views-field.views-field-title {
+  width: 40%;
+}
+
+/* end new migration from mb-main */
+
+
+
+
+
 
 
 
@@ -546,6 +711,10 @@ table.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
 .text-format-wrapper .description{ margin-left:1rem; }
 /**  
 *** END Textarea Edit block ***/
+
+
+
+
 
 
 /* Form Buttons at very bottom */
@@ -841,7 +1010,7 @@ table.redirect-list thead th:first-of-type img{
 */
 #modalContent{
   box-shadow: 0 0 10px #aaa;
-  border-radius: 1rem;
+  border-radius: .2rem;
   z-index: 1000 !important;
   min-width: 550px;
   /*max-height:280px;*/
@@ -868,7 +1037,7 @@ div.ctools-modal-content {
   /*max-width: 550px !important;
   max-height: 350px !important;*/
   border: 1px solid #ccc;
-  border-radius: 1rem;
+  border-radius: .2rem;
 }
 
 div.ctools-modal-content .modal-content {
@@ -920,7 +1089,7 @@ div.ctools-modal-content .modal-header{
   padding: 1.5rem 2rem;
   background-color: transparent !important;
   background-color: #2fbebc !important; /* subtheme color setting */
-  border-radius: .7rem 0.7rem 0 0;
+  border-radius: .2rem 0.2rem 0 0;
 }
 
 div.ctools-modal-content .modal-title{
@@ -1020,6 +1189,7 @@ div.ctools-modal-content .form-item label{
 #admin-menu #edit-filters--2.filters.form-wrapper {
   float: none;
 } /*--- admin page viewing / adding users ---*/
+
 #admin-menu {
   box-shadow: 0 1px 2px hsla(0, 0%, 0.0000%, 0.3250);
   border-collapse: separate;

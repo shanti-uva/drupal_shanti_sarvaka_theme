@@ -176,7 +176,7 @@
 	      // Initialize the multilevel main menu
 	      $( '#menu' ).multilevelpushmenu({
 	        menuWidth: 250,
-	        menuHeight: '32em', // this height is determined by tallest menu, Preferences
+	        menuHeight: '32em', // this height is determined by tallest menu
 	        mode: 'cover',
 	        direction: 'rtl',
 	        backItemIcon: 'fa fa-angle-left',
@@ -583,7 +583,7 @@
 	  }
 	};
 
-  Drupal.behaviors.kmapsOffCanvasToggle = {
+  Drupal.behaviors.sidebarOffCanvasToggle = {
 	  attach: function (context, settings) {
       if(context == document) {
 
@@ -591,13 +591,14 @@
       $('[data-toggle=offcanvas]').click(function () {
         $('.row-offcanvas').toggleClass('active');
       });
-      // Toggle sidebar
-			$('button.view-offcanvas-sidebar').click( function() { 		// show-hide resource side-column
-			  $(this).toggleClass( 'show', 200 );
-			});
 
-      // Hide sidebar button for Kmaps homepage
-			// if($("body.front.kmaps").length ) {
+      // Toggle sidebar
+			// $('button.view-offcanvas-sidebar').click( function() {
+			//  $(this).toggleClass( 'show', 200 );
+			// });
+
+      // Hide sidebar button for homepage
+			// if($("body.front").length ) {
 			// 	$("button.view-offcanvas-sidebar").remove();
 			// }
 
