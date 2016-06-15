@@ -182,6 +182,7 @@
 .node-type-collection .shanti-collection-body .pane-title{
   margin-top:15px;
   margin-bottom: 0.82rem !important;
+  font-size: 1.44em;
 }
 
 .node-type-collection.tab-pane.main-col > div.region-content,
