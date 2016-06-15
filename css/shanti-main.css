@@ -2694,7 +2694,7 @@ a.btn,a.btn:hover,a.btn:active {
 .sidebar-first.sidebar-offcanvas,
 .sidebar-second.sidebar-offcanvas{
   background-color: #fff;
-  min-height: 950px;
+  min-height: 800px;
 }
 
 
