@@ -48,6 +48,14 @@ body {
   font-weight: normal;
   overflow: hidden;
 }
+
+.h1, h1 { font-size: 1.56em; }
+.h2, h2 { font-size: 1.44em; }
+.h3, h3 { font-size: 1.32em; }
+.h4, h4 { font-size: 1.18em; }
+.h5, h5 { font-size: 1.06em; }
+.h6, h6 { font-size: 1em; }
+
 /* Note: header classes & elements */
 .h1, .h2, .h3, h1, h2, h3, .h4, .h5, .h6, h4, h5, h6{ color: #606060; text-rendering: optimizeLegibility;}
 .h1, .h2, .h3, h1, h2, h3 {
@@ -61,6 +69,8 @@ body {
 .h4, h4 {
   margin-top: 15px;
   font-weight:bold;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 .h5, .h6, h5, h6 {
@@ -69,15 +79,9 @@ body {
 }
 
 .h4, h4, .h5, .h6, h5, h6{
+  color:#444;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
 }
-
-.h1, h1 { font-size: 1.56em; }
-.h2, h2 { font-size: 1.44em; }
-.h3, h3 { font-size: 1.32em; }
-.h4, h4 { font-size: 1.18em; }
-.h5, h5 { font-size: 1.06em; }
-.h6, h6 { font-size: 1em; }
 
 ul {
   list-style: square inside none;
