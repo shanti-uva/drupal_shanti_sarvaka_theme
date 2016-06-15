@@ -390,7 +390,7 @@ a:hover,a:active {
 .main-wrapper {
   background: #eee;
   position: relative;
-  min-height: 700px;
+  min-height: 900px;
 }
 /* container-fluid class handles this
 .main-wrapper::after {
