@@ -1010,7 +1010,7 @@ table.redirect-list thead th:first-of-type img{
 */
 #modalContent{
   box-shadow: 0 0 10px #aaa;
-  border-radius: 1rem;
+  border-radius: .2rem;
   z-index: 1000 !important;
   min-width: 550px;
   /*max-height:280px;*/
@@ -1037,7 +1037,7 @@ div.ctools-modal-content {
   /*max-width: 550px !important;
   max-height: 350px !important;*/
   border: 1px solid #ccc;
-  border-radius: 1rem;
+  border-radius: .2rem;
 }
 
 div.ctools-modal-content .modal-content {
@@ -1089,7 +1089,7 @@ div.ctools-modal-content .modal-header{
   padding: 1.5rem 2rem;
   background-color: transparent !important;
   background-color: #2fbebc !important; /* subtheme color setting */
-  border-radius: .7rem 0.7rem 0 0;
+  border-radius: .2rem 0.2rem 0 0;
 }
 
 div.ctools-modal-content .modal-title{
