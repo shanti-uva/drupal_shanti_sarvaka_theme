@@ -116,6 +116,7 @@
 /* temp needs to be h3 smaller */
 .node-type-collection .panel-panel.right h2{
   font-size: 1.32em;
+  text-transform: capitalize;
 }
 /**
 * END Collections Sidebar
