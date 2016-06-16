@@ -390,15 +390,16 @@ a:hover,a:active {
 html, body{ height: 100%;}
 footer, .heavy-gravity{ height:155px;}
 .wrap-all {
+  background:#eee;
   min-height: 100%;
-  margin: 0 auto -155px; 
   position: relative;
+  margin: 0 auto -155px; 
 }
 
 .main-wrapper {
   background: #eee;
-  position: relative;
   min-height: 900px;
+  position: relative;
 }
 /* container-fluid class handles this
 .main-wrapper::after {
@@ -4135,7 +4136,7 @@ table tr.ok {
   width: 100%;
   padding: 40px 0 20px 15px;
   background: #222;
-  bottom: 0;
+  position:relative;
   border-bottom: 1px solid #fff;
 }
 
