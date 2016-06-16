@@ -398,7 +398,7 @@ footer, .heavy-gravity{ height:155px;}
 
 .main-wrapper {
   background: #eee;
-  /*min-height: 900px;*/
+  min-height: 900px;
   position: relative;
 }
 /* container-fluid class handles this
