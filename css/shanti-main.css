@@ -4137,6 +4137,7 @@ table tr.ok {
   padding: 40px 0 20px 15px;
   background: #222;
   position:relative;
+  z-index:1;
   border-bottom: 1px solid #fff;
 }
 
