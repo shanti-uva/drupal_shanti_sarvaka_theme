@@ -383,7 +383,15 @@ a:hover,a:active {
 /**
 * layout containers 
 */
+
+/* Sticky Footer: html, body & footer work together with the 'heavy-gravity' div (bottom of wrap-all),
+* the bottom margin of 'wrap-all' is the negative value of the footer's height, 
+* this all works w/ the 'heavy-gravity' div's height to pin the footer to the browsers bottom */
+html, body{ height: 100%;}
+footer, .heavy-gravity{ height:155px;}
 .wrap-all {
+  min-height: 100%;
+  margin: 0 auto -155px; 
   position: relative;
 }
 
