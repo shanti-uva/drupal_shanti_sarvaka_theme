@@ -387,7 +387,7 @@ a:hover,a:active {
 /* Sticky Footer: html, body & footer work together with the 'heavy-gravity' div (bottom of wrap-all),
 * the bottom margin of 'wrap-all' is the negative value of the footer's height, 
 * this all works w/ the 'heavy-gravity' div's height to pin the footer to the browsers bottom */
-html, body{ height: 100%;}
+html, body{ /*height: 100%;*/}
 footer, .heavy-gravity{ height:155px;}
 .wrap-all {
   background:#eee;
@@ -2704,7 +2704,6 @@ a.btn,a.btn:hover,a.btn:active {
 .sidebar-second.sidebar-offcanvas{
   background-color: #fff;
   min-height: 1100px;
-  min-height: 100%;
 }
 
 
