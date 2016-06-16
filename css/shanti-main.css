@@ -4261,11 +4261,11 @@ body.page-admin-modules #block-system-main.block.block-system {
   .sidebar-first.sidebar-offcanvas,
   .sidebar-second.sidebar-offcanvas {
     position: absolute;
-    top: 0; 
-    /* width:50%;  6 columns */
+    top: 0;
   }
 
-  .row-offcanvas {
+  .row-offcanvas.row-offcanvas-left,
+  .row-offcanvas.row-offcanvas-right {
     position: relative;
     -webkit-transition: all .25s ease-out;
     -o-transition: all .25s ease-out;
@@ -4274,12 +4274,12 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .row-offcanvas-left {left: 0;}
   .row-offcanvas-right {right: 0}
-  .row-offcanvas-left .sidebar-first.sidebar-offcanvas {/* left: -50%;  6 columns */}
-  .row-offcanvas-right .sidebar-second.sidebar-offcanvas {/* right: -50%;  6 columns */}
-  .row-offcanvas-left.active {/* left: 50%;  6 columns */}
-  .row-offcanvas-right.active {/* right: 50%;  6 columns */}
-  .row-offcanvas-left.active .sidebar-first.sidebar-offcanvas { /* width: 18.5rem; Kmaps width example */ }
-  .row-offcanvas-right.active .sidebar-second.sidebar-offcanvas { /* width: 18.5rem; */ }  
+  .row-offcanvas-left .sidebar-first.sidebar-offcanvas {/* left: -25%;  3 columns */}
+  .row-offcanvas-right .sidebar-second.sidebar-offcanvas {/* right: -25%; 3 columns */}
+  .row-offcanvas-left.active {/* left: 25%;  3 columns */}
+  .row-offcanvas-right.active {/* right: 25%;  3 columns */}
+  .row-offcanvas-left.active .sidebar-first.sidebar-offcanvas { /* width: 25%; min-width: 150px (Example); */ }
+  .row-offcanvas-right.active .sidebar-second.sidebar-offcanvas { /* width: 25%; min-width: 150px (Example); */ }  
 
 } 
 
