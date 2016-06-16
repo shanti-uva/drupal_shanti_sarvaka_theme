@@ -387,25 +387,21 @@ a:hover,a:active {
 /* Sticky Footer: html, body & footer work together with the 'heavy-gravity' div (bottom of wrap-all),
 * the bottom margin of 'wrap-all' is the negative value of the footer's height, 
 * this all works w/ the 'heavy-gravity' div's height to pin the footer to the browsers bottom */
-html, body{ /*height: 100%;*/}
-footer, .heavy-gravity{ height:155px;}
+html, body{ /*height: 100%;*/} /* this conflicts with somescripts like the gallery wookmark, and other ajax loading content */
+footer, .heavy-gravity{ /*height:155px;*/}
 .wrap-all {
-  background:#eee;
+  /*background:#eee;
   min-height: 100%;
+  margin: 0 auto -155px; */
   position: relative;
-  margin: 0 auto -155px; 
 }
 
 .main-wrapper {
   background: #eee;
-  min-height: 900px;
+  min-height: 1050px;
   position: relative;
 }
-/* container-fluid class handles this
-.main-wrapper::after {
-  clear: both;
-}
-*/
+
 .main-content {
   position: relative;
   margin: 0 auto;
@@ -2703,7 +2699,7 @@ a.btn,a.btn:hover,a.btn:active {
 .sidebar-first.sidebar-offcanvas,
 .sidebar-second.sidebar-offcanvas{
   background-color: #fff;
-  min-height: 900px;
+  /*min-height: 900px;*/
 }
 
 
