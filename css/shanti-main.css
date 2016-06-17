@@ -388,11 +388,11 @@ a:hover,a:active {
 * the bottom margin of 'wrap-all' is the negative value of the footer's height, 
 * this all works w/ the 'heavy-gravity' div's height to pin the footer to the browsers bottom */
 html, body{ /*height: 100%;*/} /* this conflicts with somescripts like the gallery wookmark, and other ajax loading content */
-footer, .heavy-gravity{ /*height:155px;*/}
+footer, .heavy-gravity{ height:155px;}
 .wrap-all {
-  /*background:#eee;
+  background:#eee;
   min-height: 100%;
-  margin: 0 auto -155px; */
+  margin: 0 auto -155px;
   position: relative;
 }
 
