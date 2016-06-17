@@ -187,12 +187,31 @@
 
 
 
-/* TESTING - temporary style for Texts app here */
+/** TESTING - 
+* temporary style for Texts app here 
+*/
+
 .shanti-text.node-type-collection .view-all-texts-control-box-cell-header .view-result-count-info,
 .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-header .view-result-count-info{
   margin-left: 1.5rem;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.93em;
+}
+
+.shanti-text.node-type-collection .view-all-texts-control-box-cell-filters,
+.shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters{
+  padding-top: 0.5rem;
+}
+
+.shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
+.shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
+  margin-top: 4rem;
+  float:left;
+}
+
+.shanti-text.node-type-collection .view-all-texts-control-box-cell-pager,
+.shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager{
+  float:left;
 }
 
 
@@ -201,11 +220,6 @@
   .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager,
   .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager{
     float:right;
-  }
-
-  .shanti-text.node-type-collection .view-all-texts-control-box-cell-filters,
-  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters{
-    padding-top: 0.5rem;
   }
 
   .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
