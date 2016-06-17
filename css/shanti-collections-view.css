@@ -14,11 +14,6 @@
 
 
 
-
-
-
-
-
 /**
 * BEGIN - Collections Sidebar admin buttons and associated link lists
 */
@@ -50,16 +45,9 @@
 .panel-panel.right .pane-content a:not(.btn.btn-primary):active .icon {
   color: #454fa4;
 }
-/*
-.panel-panel.right .view-collections .view-content > div {
-  position: relative;
-  left: 2.2rem;
-}
 
-.panel-panel.right .view-collections .view-content > div > span {
-  margin-left: -2.2rem;
-}
-*/
+
+
 
 
 
@@ -199,98 +187,57 @@
 
 
 
-
-
-
-
-
-
-
 /* TESTING - temporary style for Texts app here */
-.texts.node-type-collection .view-all-texts-control-box-cell-header .view-result-count-info,
-.texts.node-type-subcollection .view-all-texts-control-box-cell-header .view-result-count-info{
-  margin-left:.5rem;
-}
-.texts.node-type-collection .view-all-texts-control-box-cell-header.col-md-4,
-.texts.node-type-subcollection .view-all-texts-control-box-cell-header.col-md-4{
-  width:27%;
-}
-.texts.node-type-collection .view-all-texts-control-box-cell-filters.col-md-4,
-.texts.node-type-subcollection .view-all-texts-control-box-cell-filters.col-md-4{
-  width:37%;
-}
-.texts.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
-.texts.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
-  margin-right:0;
+.shanti-text.node-type-collection .view-all-texts-control-box-cell-header .view-result-count-info,
+.shanti-text.node-type-subcollection .view-all-texts-control-box-cell-header .view-result-count-info{
+  margin-left: 1.5rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.93em;
 }
 
 
+@media screen and (min-width: 768px) {
 
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager{
+    float:right;
+  }
 
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-filters,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters{
+    padding-top: 0.5rem;
+  }
 
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
+    margin-top: -2.5rem;
+  }
 
-
-
-
-
-
-
-
-
-/**
-* ------------------
-* Collections page
-* ------------------
-*/
-
-/*
-.view-collections .field-image-thumb {
-  max-width: 50%;
-  float: left;
-  padding-right: 20px;
 }
 
-.view-collection-media table.pagerer{
-  margin-top: -4rem;
+@media screen and (min-width: 992px) {
+
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-header.col-md-4,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-header.col-md-4{
+    width:27%;
+  }
+
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-filters.col-md-4,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters.col-md-4{
+    width:37%;
+    padding:0;
+  }
+
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
+    margin-right: 0;
+    width:25rem;
+  }
+
 }
 
-    .node-type-team .view-collection-media table.pagerer{
-      margin-top: -4rem;
-    }
 
-    .view-collections .views-row {
-      padding-top: 0.75em;
-      padding-bottom: 2em;
-      margin: 0 auto;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #ccc;
-    }
 
-    .view-collections .views-row::after {
-      clear: both;
-    }
-
-    .view-collections .views-field-title {
-      font-size: 1.5em;
-      margin-bottom: -0.5em;
-      font-family: 'museo-sans-500',helvetica, arial, sans-serif;
-    }
-
-    .view-collections .views-field-realname {
-      margin-bottom: 0.25em;
-      margin-top: 1em;
-      font-size: 90%;
-      color: #808080;
-      font-style: italic;
-    }
-
-    .view-collections .views-field-field-images  {
-      float: left;
-      margin: .44em .88em .18em 0;
-      box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
-      border-collapse: separate;
-    }
-*/
 
 
 
