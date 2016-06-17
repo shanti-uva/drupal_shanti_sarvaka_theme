@@ -389,6 +389,7 @@ a:hover,a:active {
 * this all works w/ the 'heavy-gravity' div's height to pin the footer to the browsers bottom */
 html, body{ /*height: 100%;*/} /* this conflicts with somescripts like the gallery wookmark, and other ajax loading content */
 footer, .heavy-gravity{ height:155px;}
+.footer-gravity{ height:100%; }
 .wrap-all {
   background:#eee;
   min-height: 100%;
