@@ -337,7 +337,7 @@ a:hover,a:active {
 
 /* Ajax Loading */
 .throbber,
-.ajax-progress,
+.ajax-progress:not(.transcript-navigate-results .ajax-progress),
 .ajax-progress-throbber, 
 .ajax-progress .throbber, 
 .ajax-progress-throbber .throbber {
