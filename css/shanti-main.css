@@ -238,14 +238,14 @@ a:hover,a:active {
 .content-section img:not(.og-grid img):not(.shanti-thumbnail-image img):not(.pswp__container img):not(.map-renditions img){
   /* box-shadow: 0 0 2px 1px #ccc; */
 
-  border-radius: 0;
+  /*border-radius: 0;
   border: 1px solid #ccc;
   margin: 0;
   padding: 0.1rem;
   background: #fff;
   display: block;
   max-width:100%;
-  height:auto;
+  height:auto;*/
 }
 
 .content-section .pull-left > img,
