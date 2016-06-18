@@ -200,8 +200,13 @@
 
 .shanti-text.node-type-collection .view-all-texts-control-box-cell-filters,
 .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters{
-  padding-top: 0.5rem;
+  padding: 0.5rem 0 0;
   float:left;
+}
+
+.shanti-text.node-type-collection .view-all-texts-control-box-cell-filters .views-exposed-form .views-exposed-widget,
+.shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters .views-exposed-form .views-exposed-widget{
+  float:right;
 }
 
 .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
