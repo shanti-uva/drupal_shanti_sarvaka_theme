@@ -215,12 +215,24 @@
 }
 
 
-@media screen and (min-width: 768px) {
 
-  .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager,
-  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager{
+@media screen and (min-width: 480px) {
+
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-filters,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters{
+    margin-top:-3.5rem;
     float:right;
   }
+
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
+    margin-top: 1rem;
+  }
+
+}  
+
+
+@media screen and (min-width: 768px) {
 
   .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
   .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
@@ -249,7 +261,13 @@
 }
 
 
+@media screen and (min-width: 992px) {
 
+  .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager,
+  .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager{
+    float:right;
+  }
+}
 
 
 
