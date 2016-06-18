@@ -120,7 +120,7 @@
 
 
 .node-type-collection .tab-pane.main-col{
-  max-width: 1150px !important;
+  max-width: 1200px !important;
 }
 
 .node-type-team .tab-pane.main-col > div{
@@ -224,12 +224,10 @@
 
   .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
   .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
-    margin-top: -2.5rem;
+    margin-top: 0.75rem;
+    margin-right: 0;
+    width:25rem;
   }
-
-}
-
-@media screen and (min-width: 992px) {
 
   .shanti-text.node-type-collection .view-all-texts-control-box-cell-header.col-md-4,
   .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-header.col-md-4{
