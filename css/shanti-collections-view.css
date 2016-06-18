@@ -201,6 +201,7 @@
 .shanti-text.node-type-collection .view-all-texts-control-box-cell-filters,
 .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters{
   padding-top: 0.5rem;
+  float:left;
 }
 
 .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
@@ -215,14 +216,18 @@
 }
 
 
-
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px)  {
 
   .shanti-text.node-type-collection .view-all-texts-control-box-cell-filters,
   .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-filters{
     margin-top:-3.5rem;
     float:right;
   }
+
+}
+
+
+@media screen and (min-width: 480px){
 
   .shanti-text.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer,
   .shanti-text.node-type-subcollection .view-all-texts-control-box-cell-pager table.pagerer{
