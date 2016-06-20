@@ -622,8 +622,8 @@ footer, .heavy-gravity{ /*height:155px;*/}
 .navbar-default .navbar-nav>li a {
   color: #555;
   display: inline-block;
-  font-size: 0.88em;
-  line-height: 4.44em;
+  font-size: 1em;
+  line-height: 3.88em;
   height: 50px;
   margin: 0;
   padding: 0 0 0 15px;
@@ -1843,7 +1843,6 @@ body.front ol.breadcrumb {
 .popover-footer-button .icon::before {
   color: #fff;
   margin-right: 8px;
-  font-family: 'shanticon';
   font-size: 115%;
   position: relative;
   top: .2rem;
@@ -2004,7 +2003,6 @@ body.front ol.breadcrumb {
 }
 
 .shanti-thumbnail-image a .overlay::before {
-  font-family: 'shanticon';
   content: '\e60a';
   color: rgba(255,255,255,0.0001);
   font-size: 2.5em;
@@ -4048,7 +4046,7 @@ table tr.ok {
 }
 
 .panel.panel-default .panel-heading h6 .glyphicon {
-  margin-right: 0.3rem;
+  margin-right: 0.32rem;
   background: #fff;
   color: #444;
   width: 25px;
