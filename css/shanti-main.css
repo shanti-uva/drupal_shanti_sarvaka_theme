@@ -311,6 +311,22 @@ a:hover,a:active {
   text-decoration: none !important;
 }
 
+/*[class^="shanticon-"], replicated from from default shanticon css
+[class*="shanticon-"], */
+.icon {
+  font-family: 'shanticon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* ---- deprecated styles - see bootstrap default styles for replacements ----
 .italic {
   font-style: italic !important;
