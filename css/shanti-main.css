@@ -4046,14 +4046,14 @@ table tr.ok {
 }
 
 .panel.panel-default .panel-heading h6 .glyphicon {
-  margin-right: 0.32rem;
+  margin-right: 0.35rem;
   background: #fff;
   color: #444;
   width: 25px;
   height: 25px;
   float: left;
   position: relative;
-  top: 19px;
+  top: 1.9rem;
   left: 0;
   display: block;
   border:1px solid #d0d0d0;
