@@ -68,7 +68,7 @@ body {
 
 .h4, h4 {
   margin-top: 15px;
-  font-weight:bold;
+  /*font-weight:bold;*/
 }
 
 .h5, .h6, h5, h6 {
@@ -78,7 +78,7 @@ body {
 
 .h4, h4, .h5, .h6, h5, h6{
   color:#555;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
 }
 
 ul {
