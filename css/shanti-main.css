@@ -1805,18 +1805,9 @@ body.front ol.breadcrumb {
 .popover-footer-button {
   background: #111;
   border-top: 1px solid #444;
-  font-size: 1em;
   height: 2.5em;
   padding: 0 0 0 1.3rem;
   margin: 0;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
-  font-weight: bold;
-}
-
-.popover-footer-button a {
-  color: #f0f0f0;
-  font-weight: normal;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif !important;
 }
 
 .popover-footer-button:hover {
@@ -1828,7 +1819,9 @@ body.front ol.breadcrumb {
   background: #000;
 }
 
-.popover-footer-button .icon {
+.popover-footer-button a {
+  color: #f0f0f0;
+  font-weight: normal;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   color: #ddd;
   border-bottom: none;
@@ -1840,12 +1833,13 @@ body.front ol.breadcrumb {
   letter-spacing: 0.03rem;
 }
 
-.popover-footer-button .icon::before {
+.popover-footer-button a.icon::before {
   color: #fff;
   margin-right: 8px;
   font-size: 115%;
   position: relative;
   top: .2rem;
+  font-family: 'shanticon';
 }
 
 .popover-footer-button:hover .icon,
@@ -1996,6 +1990,7 @@ body.front ol.breadcrumb {
   background-clip: padding-box;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
+  font-family: 'shanticon';
 }
 
 .shanti-thumbnail-image a:hover .overlay {
@@ -4020,7 +4015,7 @@ table tr.ok {
 /*--- for larger toggle panels ---*/
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
-  /*font-weight: bold;*/
+  font-weight: bold;
   font-size:1.06em;
   line-height: 4.38em;
   border-top: 1px solid #fff;
