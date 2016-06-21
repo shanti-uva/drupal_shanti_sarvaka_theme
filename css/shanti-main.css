@@ -620,10 +620,10 @@ footer, .heavy-gravity{ /*height:155px;*/}
 }
 
 .navbar-default .navbar-nav>li a {
-  color: #555;
+  color: #707070;
   display: inline-block;
-  font-size: 1em;
-  line-height: 3.88em;
+  font-size: 0.93em;
+  line-height: 4.12em;
   height: 50px;
   margin: 0;
   padding: 0 0 0 15px;
@@ -678,7 +678,7 @@ footer, .heavy-gravity{ /*height:155px;*/}
 }
 
 .navbar-default .navbar-nav .explore a {
-  color: #707070;
+  /*color: #707070;*/
   padding-right: 1.8rem;
   letter-spacing: 0.01rem;
 }
