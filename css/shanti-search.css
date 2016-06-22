@@ -329,6 +329,8 @@ object.flip_label {
   margin: 0;
   font-size: 1.2rem;
   background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
+  background-image: -moz-linear-gradient(top, #fff 0, #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #fff 0, #e0e0e0 100%);
   background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 
