@@ -235,7 +235,7 @@ a:hover,a:active {
 * Image display - Set exceptions here - Current rule excludes: (1)Images-Gallery, (2)Shanti-Media Gallery, (3) Images-Lightbox
 */
 /* map-renditions targets the google/custom maps in places */
-.content-section img:not(.og-grid img):not(.shanti-thumbnail-image img):not(.pswp__container img):not(.map-renditions img):not(.kmaps.front img){
+.content-section img:not(.og-grid img):not(.shanti-thumbnail-image img):not(.pswp__container img):not(.map-renditions img){
   /* box-shadow: 0 0 2px 1px #ccc; */
 
   border-radius: 0;
