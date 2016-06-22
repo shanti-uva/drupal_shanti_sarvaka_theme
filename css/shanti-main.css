@@ -2780,55 +2780,6 @@ a.btn,a.btn:hover,a.btn:active {
   .btn.btn-default.view-offcanvas-sidebar:active .icon::before {
   }
 
-  /**
-  * LEFT BUTTON - Note: simplified class selector to just 'row-offcanvas' for Kmaps template
-  */
-  .row-offcanvas .btn.btn-default.view-offcanvas-sidebar { left: -8px; }
-
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar {
-    position: absolute;
-    left: -3.6rem;
-    top: -0.7rem;
-    color: #000;
-    filter: alpha(opacity=100);
-    opacity: 1;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar .icon {
-    color: #777;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.4rem;
-    left: -0.3rem;
-  }
-
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar .icon::before,
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar .icon::after {
-    background: #aaa;
-    position: absolute;
-    top: 0rem;
-    left: .2rem;
-    width: 1.5rem;
-    height: 0.2rem;
-    content: '';
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar .icon::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::before,
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::after {
-    background: #444;
-  }
 
   /**
   * RIGHT BUTTON 
