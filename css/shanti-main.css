@@ -2249,6 +2249,13 @@ html input[type='button'].form-submit:active {
 html input[type=file].form-file {
   margin-bottom: 5px;
 }
+/* for design development, if users require greater accessibility, remove this */
+.btn:focus, .btn:active, .btn.active, .btn:focus:active {
+  /*background-image: none;*/
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 .btn-group > .btn {
   box-shadow: none;
@@ -3544,7 +3551,10 @@ a.btn,a.btn:hover,a.btn:active {
 .bootstrap-select.btn-group .dropdown-menu li>a:focus {
     background-color: #fff;
     background-image: none !important;
-    outline: 0;
+    /* outline: 0; */
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     border-color: #d0d0d0 !important;
 }
 
