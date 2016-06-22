@@ -4228,15 +4228,6 @@ body.page-admin-modules #block-system-main.block.block-system {
     transition: all .25s ease-out;
   }
 
-  .row-offcanvas {left: 0;}
-  .row-offcanvas-right {right: 0}
-  .row-offcanvas .sidebar-first.sidebar-offcanvas {/* left: -25%;  3 columns */}
-  .row-offcanvas-right .sidebar-second.sidebar-offcanvas {/* right: -25%; 3 columns */}
-  .row-offcanvas.active {/* left: 25%;  3 columns */}
-  .row-offcanvas-right.active {/* right: 25%;  3 columns */}
-  .row-offcanvas.active .sidebar-first.sidebar-offcanvas { /* width: 25%; min-width: 150px (Example); */ }
-  .row-offcanvas-right.active .sidebar-second.sidebar-offcanvas { /* width: 25%; min-width: 150px (Example); */ }  
-
 } 
 
 
