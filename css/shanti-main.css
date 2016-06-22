@@ -2807,7 +2807,7 @@ a.btn,a.btn:hover,a.btn:active {
 
   .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar  .icon::before,
   .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar  .icon::after {
-    background: #777;
+    background: #aaa;
     position: absolute;
     top: 0rem;
     left: .2rem;
@@ -2825,8 +2825,8 @@ a.btn,a.btn:hover,a.btn:active {
     transform: rotate(-45deg);
   }
 
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar :hover .icon::before,
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar :hover .icon::after {
+  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::before,
+  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::after {
     background: #444;
   }
 
