@@ -384,6 +384,10 @@ font-size: 1.12em;
 .kmap-pick-tree ul{
   list-style: circle inside none;
 }
+.kmap-pick-tree ul ul{
+  -webkit-padding-start: 9px;
+  padding-left: 9px;
+}
 /* tree results list items */
 .kmap-pick-tree .matching,
 /* tree results list items */
