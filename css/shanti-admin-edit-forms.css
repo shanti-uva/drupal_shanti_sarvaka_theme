@@ -1124,13 +1124,18 @@ div.ctools-modal-content a.close::after{
 
 div.ctools-modal-content a.close img{
   display:none;
+  position: absolute;
+  z-index: -10;
 }
 /* radio button labels input position */
 div.ctools-modal-content .vertical-tabs label.radio-inline{
   width: auto !important;
   padding-left: 0;
 }
-
+div.ctools-modal-content .form-item{
+  margin-top:0;
+  margin-bottom:0;
+}
 div.ctools-modal-content .form-item label{
   float:none;
   width:100%;
