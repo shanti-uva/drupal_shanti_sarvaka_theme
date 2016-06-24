@@ -1611,6 +1611,63 @@ object.flip_label {
 
 
 
+
+.input-section .search-group {
+  /*height: 86px; removed for @new w/typeahead filters */
+}
+/* @new w/typeahead filters */
+.input-section .search-filters{
+  padding: 0 1.5rem 1.5rem;
+}
+/* @new w/typeahead filters */
+.input-section .kmap-typeahead-picker > label{
+  /* same as BS 'sr-only' class, screenreader only ruleset */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0
+}
+/* @new w/typeahead filters */
+.input-section .kmap-typeahead-picker .twitter-typeahead{
+  display: block;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 1.8rem auto 0;
+}
+
+.input-section .transcript-search-wrapper .form-control{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--- Temporary styles to hide advance search options 
 .input-section .search-group{ height:44px;}
 .input-section .input-group input.form-control{ margin-top:7px;}
