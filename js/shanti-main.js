@@ -697,21 +697,6 @@
     }
   };
 
- 
-  Drupal.behaviors.shantiKmapsHideBreadcrumbsSubjects = {
-    attach: function (context, settings) {
-      if(context == window.document) {
-
-        $( window ).load(function() {
-          if($(".front.page-subjects").length ) { 
-               $(this).find(".breadwrap").remove();
-          }
-        });
-
-      }
-    } 
-  };
-
 Drupal.behaviors.shantiDeleteButtonDisable = {
 	 attach: function (context, settings) {
 			if (context == document) {
