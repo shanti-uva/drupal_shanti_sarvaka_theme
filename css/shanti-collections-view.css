@@ -297,6 +297,7 @@
 * BEGIN Collections Sidebar
 */
 
+#shanti-texts-collection .panel-panel.right,
 .collections-sidebar-second .sidebar-second.sidebar-offcanvas{
   min-height:600px;
   max-width: 300px;
@@ -305,7 +306,7 @@
 
 @media screen and (max-width: 1170px) {
 
-  .content-section.col-md-9 { width:100%; }
+  .node-type-collection .content-section.col-md-9 { width:100%; }
 
   /**
   * BEGIN: custom right-sidebar breakpoint styles 
@@ -313,6 +314,7 @@
   */
   .row-offcanvas { position: relative; right:0;  }
   .node-type-collection .row-offcanvas.active { position:relative; right:300px; }
+  .row-offcanvas #shanti-texts-collection .panel-panel.right, 
   .row-offcanvas .collections-sidebar-second .sidebar-second.sidebar-offcanvas { position:absolute; right:-300px; min-width:300px; width:25%; }
   .node-type-collection .row-offcanvas .btn.btn-default.view-offcanvas-sidebar { display:inline-block !important; position:absolute; right:-8px; top:0; border-radius:0.4rem 0 0 0.4rem; }
   .node-type-collection .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar { position:absolute; right:-3.6rem; top:-0.5rem; }
