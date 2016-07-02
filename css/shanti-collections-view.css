@@ -304,15 +304,13 @@
   background:transparent;
 }
 
-@media screen and (max-width: 1170px) {
 
-  .node-type-collection .panel-panel.left.col-sm-9 { width:100%; }
 
-  /**
-  * BEGIN: custom right-sidebar breakpoint styles 
-  * 1170px is a wider breakpoint than in Kmaps
-  */
-  .row-offcanvas { position: relative; right:0;  }
+@media screen and (max-width: 992px) {
+
+  .node-type-collection.audio-video .panel-panel.left.col-sm-9 { width:100%; }
+
+  .node-type-collection .row-offcanvas { position: relative; right:0;  }
   .node-type-collection .row-offcanvas.active { position:relative; right:300px; }
   .row-offcanvas #shanti-texts-collection .panel-panel.right, 
   .row-offcanvas .collections-sidebar-second .sidebar-second.sidebar-offcanvas { position:absolute; right:-300px; min-width:300px; width:25%; }
