@@ -296,9 +296,11 @@
 /**
 * BEGIN Collections Sidebar
 */
+
 .collections-sidebar-second .sidebar-second.sidebar-offcanvas{
   min-height:600px;
   max-width: 300px;
+  background:transparent;
 }
 
 @media screen and (max-width: 1170px) {
