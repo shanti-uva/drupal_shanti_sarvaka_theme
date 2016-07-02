@@ -307,19 +307,17 @@
 
   .content-section.col-md-9 { width:100%; }
 
-  /*.sidebar-offcanvas.sidebar-second .content-section.col-xs-12.col-md-9 { width:100% !important; }*/
-
   /**
   * BEGIN: custom right-sidebar breakpoint styles 
-  * 1170px is a wider breakpoint in AV than in Kmaps
+  * 1170px is a wider breakpoint than in Kmaps
   */
-  .row-offcanvas { position: relative; right:0; /*-webkit-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out;*/ }
-  .row-offcanvas.active { position:relative; right:300px; }
+  .row-offcanvas { position: relative; right:0;  }
+  .node-type-collection .row-offcanvas.active { position:relative; right:300px; }
   .row-offcanvas .collections-sidebar-second .sidebar-second.sidebar-offcanvas { position:absolute; right:-300px; min-width:300px; width:25%; }
-  .row-offcanvas .btn.btn-default.view-offcanvas-sidebar { display:inline-block !important; position:absolute; right:-8px; top:0; border-radius:0.4rem 0 0 0.4rem; }
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar { position:absolute; right:-3.6rem; top:-0.5rem; }
-  .row-offcanvas .btn.btn-default.view-offcanvas-sidebar .icon { position:relative; left:0.3rem; top:0; float:left; /* reverse arrow icon */ -webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);  }
-  .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar .icon { position:relative; top:0.7rem; }
+  .node-type-collection .row-offcanvas .btn.btn-default.view-offcanvas-sidebar { display:inline-block !important; position:absolute; right:-8px; top:0; border-radius:0.4rem 0 0 0.4rem; }
+  .node-type-collection .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar { position:absolute; right:-3.6rem; top:-0.5rem; }
+  .node-type-collection .row-offcanvas .btn.btn-default.view-offcanvas-sidebar .icon { position:relative; left:0.3rem; top:0; float:left; /* reverse arrow icon */ -webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);  }
+  .node-type-collection .row-offcanvas.active .btn.btn-default.view-offcanvas-sidebar .icon { position:relative; top:0.7rem; }
 
 }
 /**
