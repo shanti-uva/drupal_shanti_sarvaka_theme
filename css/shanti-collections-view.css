@@ -306,7 +306,7 @@
 
 @media screen and (max-width: 1170px) {
 
-  .node-type-collection .panel-panel.left.col-md-9 { width:100%; }
+  .node-type-collection .panel-panel.left.col-sm-9 { width:100%; }
 
   /**
   * BEGIN: custom right-sidebar breakpoint styles 
