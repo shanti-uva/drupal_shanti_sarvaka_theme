@@ -2720,7 +2720,7 @@ a.btn,a.btn:hover,a.btn:active {
   min-height: 600px;
 }
 
-.row-offcanvas.row-offcanvas,
+.row-offcanvas,
 .row-offcanvas.row-offcanvas-right {
   -webkit-transition: all .25s ease-out;
   -o-transition: all .25s ease-out;
