@@ -72,7 +72,7 @@ scripts[] = js/inc/other/trunk8.min.js
 scripts[] = js/inc/other/vjs.zencdn.net-4.5-video.js
 scripts[] = js/inc/jquery/jquery.imagesloaded.js
 scripts[] = js/inc/jquery/jquery.wookmark.min.js
-scripts[] = js/inc/other/jquery.matchHeight.js
+; scripts[] = js/inc/other/jquery.matchHeight.js --- mf8yk removed July 5, 2016 
 scripts[] = js/inc/other/jssor.slider.mini.js
 scripts[] = js/inc/other/hammer.min.js
 
