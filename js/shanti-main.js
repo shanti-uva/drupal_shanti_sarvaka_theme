@@ -758,7 +758,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
-            $(document).on('ajaxSuccess', function(){
+//            $(document).on('ajaxSuccess', function(){
 
               var height = $(window).height();
               var maincontent = (height) - 223;
@@ -773,7 +773,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".has-tabs .sidebar-first").css('height',hastabs); // target kmaps left resoruce sidebar
               $(".has-tabs .region-sidebar-second").css('height',hastabs); // target audio-video right sidebar
               $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',hastabs);
-            });          
+              
+//           });          
           };
 
           $('#sidebar-first a.use-ajax').bind( 'click', function() {
