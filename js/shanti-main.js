@@ -763,6 +763,14 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           };
 
+          $('#sidebar-first a.use-ajax').on( 'click', function() {
+                    
+            $(document).ajaxSuccess(function() {
+                Drupal.ShantiSarvaka.sidebarFooterGravity
+            });  
+            
+          });
+
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       }
