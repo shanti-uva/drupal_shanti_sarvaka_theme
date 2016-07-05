@@ -4,9 +4,9 @@
    <header class="header-banner">
     <div class="navbar navbar-default">
 
-	      <nav class="navbar-buttons btn-group" role="group" aria-label="navigation">
-	        <button typ="button" class="menu-icon menu-toggle" aria-label="navigation menu" aria-controls="navigation"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></button><!-- desktop > 768 drilldown menu : main-menu -->
-	        <button typ="button" class="menu-explore menu-exploretoggle" aria-label="navigation menu" aria-controls="navigation"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></button><!-- mobile < 768 : collections -->
+	      <nav class="navbar-buttons btn-group" role="group">
+	        <button typ="button" class="menu-icon menu-toggle"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></button><!-- desktop > 768 drilldown menu : main-menu -->
+	        <button typ="button" class="menu-explore menu-exploretoggle"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></button><!-- mobile < 768 : collections -->
 	      </nav>
 
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
