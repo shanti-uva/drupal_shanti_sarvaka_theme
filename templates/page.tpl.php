@@ -131,9 +131,6 @@
      <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->
-
-  <!-- heavy gravity holds the footer down -->
-  <div class="heavy-gravity"></div>
   
 </div> <!-- End wrap-all -->
 
