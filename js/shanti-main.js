@@ -645,8 +645,9 @@
 	    if($(".tabs.secondary").length ) { 
 	      $(".titlearea").addClass('has-tabs-secondary');
 	    }
+      
       if($(".tabs.primary").length ) { 
-        $(body).addClass('has-tabs');
+        $("body").addClass('has-tabs');
       }
 	  }
 	};
