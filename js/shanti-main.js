@@ -758,7 +758,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             var maincontent = (height) - 228;
 
             maincontent = parseInt(maincontent) + 'px';
-            $(".sidebar-offcanvas").css('min-height',maincontent);
+            $(".sidebar-first").css('height',maincontent);
+            $(".region-sidebar-second").css('height',maincontent);
 
           };
 
