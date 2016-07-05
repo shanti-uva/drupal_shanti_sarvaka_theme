@@ -762,17 +762,24 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var height = $(window).height();
               var maincontent = (height) - 223;
-              var hastabs = (height) - 250;
+              var maincontent_sidebarsecond = (height) - 243; //adds padding/margin for region-sidebar-second in AV
+
+              // with tabs
+              var maincontent_hastabs = (maincontent) - 25;
+              var maincontent_sidebarsecond_hastabs = (maincontent_sidebarsecond) - 25;
 
               maincontent = parseInt(maincontent) + 'px';
-              $(".sidebar-first").css('height',maincontent); // target kmaps left resoruce sidebar
-              $(".region-sidebar-second").css('height',maincontent); // target audio-video right sidebar
+              maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px';
+              $(".sidebar-first").css('height',maincontent); // target kmaps left resource sidebar
               $(".main-content").find(".content-section").eq(0).css('min-height',maincontent);
+              $(".region-sidebar-second").css('height',maincontent_sidebarsecond); // target audio-video right sidebar
 
-              hastabs = parseInt(hastabs) + 'px';
-              $(".has-tabs .sidebar-first").css('height',hastabs); // target kmaps left resoruce sidebar
-              $(".has-tabs .region-sidebar-second").css('height',hastabs); // target audio-video right sidebar
-              $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',hastabs);
+              // admin tabs included
+              maincontent_hastabs = parseInt(maincontent_hastabs) + 'px';
+              maincontent_sidebarsecond_hastabs = parseInt(maincontent_sidebarsecond_hastabs) + 'px';
+              $(".has-tabs .sidebar-first").css('height',maincontent_hastabs); // target kmaps left resource sidebar
+              $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',maincontent_hastabs);
+              $(".has-tabs .region-sidebar-second").css('height',maincontent_sidebarsecond_hastabs); // target audio-video right sidebar
        
           };
 
