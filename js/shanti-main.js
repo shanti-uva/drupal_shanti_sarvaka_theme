@@ -764,6 +764,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var mainwrapper = $(".main-wrapper").height(); 
 
               var mainwrapper_minimum = (height) - 165;
+              var mainwrapper_minimum_hastabs = (height) - 155;
               // var maincontent_height = (mainwrapper) - 165;
 
               var sidebar = (mainwrapper) - 60;
@@ -771,7 +772,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
+              mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum) + 'px';
               $(".main-wrapper").css('min-height',mainwrapper_minimum);
+              $(".has-tabs .main-wrapper").css('min-height',mainwrapper_minimum);
 
               sidebar = parseInt(sidebar) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
