@@ -816,7 +816,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
   //          $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
   //        });
 
-          window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
+          $(window).setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 2000 );
 
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
