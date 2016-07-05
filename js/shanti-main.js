@@ -760,46 +760,38 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
+              // top-banner-white = 50
+              // top-banner-colored = 70
+              // admin-tabs = 25
+              // main-wrapper = includes top-banner-colored and admin tabs extends to top of default-footer
+              // default-footer = 110
+              // admin-footer = 140
+
               var height = $(window).height();
               var mainwrapper = $(".main-wrapper").height(); 
 
-              var mainwrapper_minimum = (height) - 165;
-              var mainwrapper_minimum_hastabs = (height) - 155;
-              // var maincontent_height = (mainwrapper) - 165;
+              var mainwrapper_minimum = (height) - 160;
+              var mainwrapper_minimum_adminfooter = (height) - 300;
 
-              var sidebar = (mainwrapper) - 60;
-              var sidebarsecond = (mainwrapper_minimum) - 80; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
-
+              var sidebar = (mainwrapper) - 70;  // for sidebar height
+              var sidebarsecond = (mainwrapper) - 90;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
-              mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum) + 'px';
+              mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
+              mainwrapper_minimum_hastabs_adminfooter = parseInt(mainwrapper_minimum_hastabs_adminfooter) + 'px';
               $(".main-wrapper").css('min-height',mainwrapper_minimum);
-              $(".has-tabs .main-wrapper").css('min-height',mainwrapper_minimum);
+              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
 
               sidebar = parseInt(sidebar) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
+              sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
               $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
-
-
-              //var maincontent_height_hastabs = (maincontent) - 25;
-              //var maincontent_height_admin = (maincontent) - 330;
-              //var maincontent_height_admin_hastabs = (maincontent) - 175;
-
-              // maincontent_height = parseInt(maincontent_height) + 'px';
-              //maincontent_height_hastabs = parseInt(maincontent_height_hastabs) + 'px';
-              //maincontent_height_admin = parseInt(maincontent_height_admin) + 'px';
-              //maincontent_height_admin_hastabs = parseInt(maincontent_height_admin_hastabs) + 'px';
-
-              //$(".has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_hastabs);
-              //$(".admin-menu .main-content .content-section:eq(0)").css('height',maincontent_height_admin);
-              //$(".admin-menu.has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_admin_hastabs);
+              $(".has-tabs.region-sidebar-second").css('height',sidebarsecond_hastabs)
 
 
           };
-              
-              window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
-
 
       }
     }
@@ -810,13 +802,11 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         $('#sidebar-first a').bind( 'click', function() {
+            $(document).on( 'ajaxSuccess', ( Drupal.ShantiSarvaka.sidebarFooterGravity );
+         });
 
-
-
-  //       $('#sidebar-first a').bind( 'click', function() {
-  //          $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-  //        });
+         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       }
     }

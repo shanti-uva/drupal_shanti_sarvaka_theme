@@ -1249,6 +1249,7 @@ html body.admin-menu {
   background: #888;
   color: #eee;
   border-bottom: 5px solid #333;
+  height:140px;
 }
 
 .region-admin-footer a{
@@ -1271,7 +1272,7 @@ html body.admin-menu {
   padding: 0 1rem;
   border-right: thin solid #555;
   vertical-align: top;
-  min-height: 120px;
+  min-height: 118px;
 }
 
 .region-admin-footer .block.block-user {
