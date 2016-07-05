@@ -770,8 +770,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var maincontent_admin = (maincontent) - 150;
               var maincontent_sidebarsecond_admin = (maincontent_sidebarsecond) - 150;
               // with admin-menu admin-footer
-              var maincontent_admin_hastabs = (maincontent) - 150;
-              var maincontent_sidebarsecond_admin_hastabs = (maincontent_sidebarsecond) - 150;              
+              var maincontent_admin_hastabs = (maincontent) - 175;
+              var maincontent_sidebarsecond_admin_hastabs = (maincontent_sidebarsecond) - 175;              
 
               maincontent = parseInt(maincontent) + 'px';
               maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px'; 
