@@ -4274,6 +4274,10 @@ body.page-admin-modules #block-system-main.block.block-system {
     width: 40%;
     margin-left: 10%;
   }
+
+  .main-wrapper {
+    min-height: 400px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -4363,25 +4367,26 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 }
 
-@media screen and (min-width: 1080px) {
-
-  .main-wrapper {
-    min-height: 600px;
-  }
-}
-
 
 @media screen and (min-width: 1440px) {
 
   .main-wrapper {
     min-height: 700px;
   }
+
+  .admin-menu .main-wrapper {
+    min-height: 550px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
 
   .main-wrapper {
-    min-height: 1000px;
+    min-height: 900px;
+  }
+  
+  .admin-menu .main-wrapper {
+    min-height: 750px;
   }
 }
 
