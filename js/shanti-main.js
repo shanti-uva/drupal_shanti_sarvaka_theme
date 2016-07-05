@@ -761,47 +761,35 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
               var height = $(window).height();
-              var maincontent = (height) - 223;
+              var maincontent = $(".main-content .content-section:eq(0)").height(); 
               var maincontent_sidebarsecond = (maincontent) - 20; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
-              // with tabs
-              var maincontent_hastabs = (maincontent) - 25;
-               var maincontent_sidebarsecond_hastabs = (maincontent_hastabs) - 20;
-              // with admin-menu admin-footer
-              var maincontent_admin = (maincontent) - 150;
-               var maincontent_sidebarsecond_admin = (maincontent_admin) - 20;
-              // with admin-menu admin-footer
-              var maincontent_admin_hastabs = (maincontent) - 175;
-               var maincontent_sidebarsecond_admin_hastabs = (maincontent_admin_hastabs) - 20;              
 
-              maincontent = parseInt(maincontent) + 'px';
-              maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px'; 
-              $(".main-content .content-section:eq(0)").css('min-height',maincontent);
-              $(".region-sidebar-second").css('min-height',maincontent_sidebarsecond); // target audio-video right sidebar 
-              $(".main-content .sidebar-first").css('height',maincontent); // target kmaps left resource sidebar
+              var maincontent_minimum = (height) - 223;
 
-              // Login w/tabs
-              maincontent_hastabs = parseInt(maincontent_hastabs) + 'px';
-              maincontent_sidebarsecond_hastabs = parseInt(maincontent_sidebarsecond_hastabs) + 'px';
-              $(".has-tabs .main-content .content-section:eq(0)").css('min-height',maincontent_hastabs);
-              $(".has-tabs .region-sidebar-second").css('min-height',maincontent_sidebarsecond_hastabs); // target audio-video right sidebar 
-              $(".has-tabs .main-content .sidebar-first").css('min-height',maincontent_hastabs); // target kmaps left resource sidebar
+              var maincontent_height = (maincontent);
+              var maincontent_height_hastabs = (maincontent) - 25;
+              var maincontent_height_admin = (maincontent) - 150;
+              var maincontent_height_admin_withtabs = (maincontent) - 175;
 
-              // SITE ADMIN
-              // Site Admin adjustments
-              maincontent_admin = parseInt(maincontent_admin) + 'px';
-              maincontent_sidebarsecond_admin = parseInt(maincontent_sidebarsecond_admin) + 'px';
-              $(".admin-menu .main-content .content-section:eq(0)").css('min-height',maincontent_admin);
-              $(".admin-menu .region-sidebar-second").css('min-height',maincontent_sidebarsecond_admin); // target audio-video right sidebar 
-              $(".admin-menu .main-content .sidebar-first").css('min-height',maincontent_admin); // target kmaps left resource sidebar
-              // Site Admin w/tabs included
-              maincontent_admin_hastabs = parseInt(maincontent_admin_hastabs) + 'px';
-              maincontent_sidebarsecond_admin_hastabs = parseInt(maincontent_sidebarsecond_admin_hastabs) + 'px';
-              $(".admin-menu.has-tabs .main-content .content-section:eq(0)").css('min-height',maincontent_admin_hastabs);
-              $(".admin-menu.has-tabs .region-sidebar-second").css('min-height',maincontent_sidebarsecond_admin_hastabs); // target audio-video right sidebar 
-              $(".admin-menu.has-tabs .main-content .sidebar-first").css('min-height',maincontent_admin_hastabs); // target kmaps left resource sidebar
+              maincontent_minimum = parseInt(maincontent_minimum) + 'px'; 
+              $(".main-content .content-section:eq(0)").css('min-height',maincontent_minimum);
+
+              maincontent_height = parseInt(maincontent_height) + 'px';
+              maincontent_height_hastabs = parseInt(maincontent_height_hastabs) + 'px';
+              maincontent_height_admin = parseInt(maincontent_height_admin) + 'px';
+              maincontent_height_admin_hastabs = parseInt(maincontent_height_admin_hastabs) + 'px';
+              $(".main-content .content-section:eq(0)").css('height',maincontent_height);
+              $(".main-content .sidebar-first").css('height',maincontent_height);
+              $(".has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_hastabs);
+              $(".admin-menu .main-content .content-section:eq(0)").css('height',maincontent_height_admin);
+              $(".admin-menu.has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_admin_hastabs);
+
+              maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px';
+              $(".region-sidebar-second").css('height', maincontent_sidebarsecond);
+
           };
 
-          window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
+          // window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
 
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
@@ -817,10 +805,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
   //       $('#sidebar-first a').bind( 'click', function() {
   //          $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
   //        });
-
-
-
-          
 
       }
     }
