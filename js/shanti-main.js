@@ -775,9 +775,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           $('#sidebar-first a.use-ajax').on( 'click', function() {
                     
-            $(document).ajaxSuccess(function() {
-                Drupal.ShantiSarvaka.sidebarFooterGravity
-            });  
+            $(document).ajaxSuccess( Drupal.ShantiSarvaka.sidebarFooterGravity );  
 
           });
 
