@@ -755,7 +755,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {    
             var height = $(window).height();
-            var maincontent = (height) - 210;
+            var maincontent = (height) - 228;
 
             maincontent = parseInt(maincontent) + 'px';
             $(".sidebar-first").css('height',maincontent); // target kmaps left resoruce sidebar
