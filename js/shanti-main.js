@@ -769,9 +769,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var maincontent_sidebarsecond_hastabs = (maincontent_sidebarsecond) - 25;
 
               maincontent = parseInt(maincontent) + 'px';
-              maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px';
-              $(".sidebar-first").css('height',maincontent); // target kmaps left resource sidebar
+              maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px'; 
               $(".main-content").find(".content-section").eq(0).css('min-height',maincontent);
+              $(".main-content").find(".sidebar-first").delay(1000).css('height',maincontent); // target kmaps left resource sidebar
               $(".region-sidebar-second").css('height',maincontent_sidebarsecond); // target audio-video right sidebar
 
               // admin tabs included
