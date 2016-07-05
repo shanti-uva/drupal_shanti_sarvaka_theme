@@ -749,4 +749,23 @@ Drupal.behaviors.shantiDeleteButtonDisable = {
 //	};
 
 
+Drupal.behaviors.shantiSidebarFooterGravity = {
+   attach: function (context, settings) {
+      if (context == document) {
+
+          Drupal.ShantiSarvaka.sidebarFooterGravity = function() {    
+            var height = $(window).height();
+            var maincontent = (height) - 108;
+
+            maincontent = parseInt(maincontent) + 'px';
+            $(".sidebar-offcanvas").css('min-height',maincontent);
+
+          };
+
+          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
+      }
+    }
+ };
+
 }(jQuery));
