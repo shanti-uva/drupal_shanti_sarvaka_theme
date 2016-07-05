@@ -787,9 +787,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-          $('#sidebar-first a').bind( 'click', function() {
-            $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-          });
+  //       $('#sidebar-first a').bind( 'click', function() {
+  //          $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+  //        });
 
       }
     }
