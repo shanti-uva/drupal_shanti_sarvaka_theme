@@ -755,7 +755,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {    
             var height = $(window).height();
-            var maincontent = (height) - 108;
+            var maincontent = (height) - 228;
 
             maincontent = parseInt(maincontent) + 'px';
             $(".sidebar-offcanvas").css('min-height',maincontent);
