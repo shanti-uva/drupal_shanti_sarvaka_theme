@@ -1245,10 +1245,10 @@ html body.admin-menu {
 }
 
 .region-admin-footer {
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   background: #888;
-  color:#eee;
-  border-bottom: 5px solid #fff;
+  color: #eee;
+  border-bottom: 5px solid #333;
 }
 
 .region-admin-footer a{

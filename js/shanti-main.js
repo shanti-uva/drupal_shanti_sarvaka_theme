@@ -762,24 +762,34 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var height = $(window).height();
               var maincontent = (height) - 223;
-              var maincontent_sidebarsecond = (height) - 250; //adds padding/margin for region-sidebar-second in AV
+              var maincontent_sidebarsecond = (height) - 250; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
               // with tabs
               var maincontent_hastabs = (maincontent) - 25;
               var maincontent_sidebarsecond_hastabs = (maincontent_sidebarsecond) - 25;
+              // with admin-menu admin-footer
+              var maincontent_admin = (maincontent) - 175;
+              var maincontent_sidebarsecond_admin = (maincontent_sidebarsecond) - 175;
 
               maincontent = parseInt(maincontent) + 'px';
               maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px'; 
+              $(".main-content .content-section:eq(0)").css('min-height',maincontent);
               $(".region-sidebar-second").css('height',maincontent_sidebarsecond); // target audio-video right sidebar 
-              $(".main-content").find(".sidebar-first").delay(1000).css('height',maincontent); // target kmaps left resource sidebar
-              $(".main-content").find(".content-section").eq(0).css('min-height',maincontent);
+              $(".main-content .sidebar-first").css('height',maincontent); // target kmaps left resource sidebar
 
               // admin tabs included
- /*             maincontent_hastabs = parseInt(maincontent_hastabs) + 'px';
+              maincontent_hastabs = parseInt(maincontent_hastabs) + 'px';
               maincontent_sidebarsecond_hastabs = parseInt(maincontent_sidebarsecond_hastabs) + 'px';
-              $(".has-tabs .sidebar-first").css('height',maincontent_hastabs); // target kmaps left resource sidebar
-              $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',maincontent_hastabs);
-              $(".has-tabs .region-sidebar-second").css('height',maincontent_sidebarsecond_hastabs); // target audio-video right sidebar
- */      
+              $(".main-content .content-section:eq(0)").css('min-height',maincontent_hastabs);
+              $(".region-sidebar-second").css('height',maincontent_sidebarsecond_hastabs); // target audio-video right sidebar 
+              $(".main-content .sidebar-first").css('height',maincontent_hastabs); // target kmaps left resource sidebar
+
+              // admin tabs included
+              maincontent_admin = parseInt(maincontent_admin) + 'px';
+              maincontent_sidebarsecond_admin = parseInt(maincontent_sidebarsecond_admin) + 'px';
+              $(".main-content .content-section:eq(0)").css('min-height',maincontent_admin);
+              $(".region-sidebar-second").css('height',maincontent_sidebarsecond_admin); // target audio-video right sidebar 
+              $(".main-content .sidebar-first").css('height',maincontent_admin); // target kmaps left resource sidebar
+
           };
 
       }
