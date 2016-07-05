@@ -766,8 +766,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var mainwrapper_minimum = (height) - 165;
               // var maincontent_height = (mainwrapper) - 165;
 
-              var sidebar = (mainwrapper) - 215;
-              var sidebarsecond = (mainwrapper_minimum) - 235; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
+              var sidebar = (mainwrapper) - 65;
+              var sidebarsecond = (mainwrapper_minimum) - 85; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
 
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
