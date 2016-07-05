@@ -760,7 +760,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             maincontent = parseInt(maincontent) + 'px';
             $(".sidebar-first").css('height',maincontent); // target kmaps left resoruce sidebar
             $(".region-sidebar-second").css('height',maincontent); // target audio-video right sidebar
-            $(".main-content .content-section").css('min-height',maincontent);
+            $(".main-content").find(".content-section").eq(1).css('min-height',maincontent);
 
           };
 
