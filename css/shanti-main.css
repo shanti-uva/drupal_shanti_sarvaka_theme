@@ -414,7 +414,6 @@ footer, .heavy-gravity{ /*height:155px;*/}
 
 .main-wrapper {
   background: #eee;
-  /*min-height: 965px;*/
   position: relative;
 }
 
@@ -4364,7 +4363,26 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1080px) {
+
+  .main-wrapper {
+    min-height: 600px;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+  .main-wrapper {
+    min-height: 700px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .main-wrapper {
+    min-height: 1000px;
+  }
 }
 
 @media all and (orientation:portrait) {
