@@ -759,7 +759,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {    
             var height = $(window).height();
-            var maincontent = (height) - 228;
+            var maincontent = (height) - 223;
             var hastabs = (height) - 255;
 
             maincontent = parseInt(maincontent) + 'px';
