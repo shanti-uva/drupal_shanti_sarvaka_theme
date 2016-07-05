@@ -645,7 +645,7 @@
 	    if($(".tabs.secondary").length ) { 
 	      $(".titlearea").addClass('has-tabs-secondary');
 	    }
-      
+
       if($(".tabs.primary").length ) { 
         $("body").addClass('has-tabs');
       }
@@ -760,7 +760,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {    
             var height = $(window).height();
             var maincontent = (height) - 228;
-            var hastabs = (height) - 203;
+            var hastabs = (height) - 260;
 
             maincontent = parseInt(maincontent) + 'px';
             $(".sidebar-first").css('height',maincontent); // target kmaps left resoruce sidebar
