@@ -639,12 +639,15 @@
   };
   
 
-	Drupal.behaviors.hasTabsSecondary = {
+	Drupal.behaviors.hasTabs = {
 		attach: function (context, settings) {
 	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
 	    if($(".tabs.secondary").length ) { 
 	      $(".titlearea").addClass('has-tabs-secondary');
 	    }
+      if($(".tabs.primary").length ) { 
+        $(body).addClass('has-tabs');
+      }
 	  }
 	};
 
@@ -756,11 +759,17 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {    
             var height = $(window).height();
             var maincontent = (height) - 228;
+            var hastabs = (height) - 203;
 
             maincontent = parseInt(maincontent) + 'px';
             $(".sidebar-first").css('height',maincontent); // target kmaps left resoruce sidebar
             $(".region-sidebar-second").css('height',maincontent); // target audio-video right sidebar
-            $(".main-content").find(".content-section").eq(1).css('min-height',maincontent);
+            $(".main-content").find(".content-section").eq(0).css('min-height',maincontent);
+
+            hastabs = parseInt(hastabs) + 'px';
+            $(".has-tabs .sidebar-first").css('height',hastabs); // target kmaps left resoruce sidebar
+            $(".has-tabs .region-sidebar-second").css('height',hastabs); // target audio-video right sidebar
+            $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',hastabs);
 
           };
 
