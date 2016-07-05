@@ -775,12 +775,12 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".region-sidebar-second").css('height',maincontent_sidebarsecond); // target audio-video right sidebar
 
               // admin tabs included
-              maincontent_hastabs = parseInt(maincontent_hastabs) + 'px';
+ /*             maincontent_hastabs = parseInt(maincontent_hastabs) + 'px';
               maincontent_sidebarsecond_hastabs = parseInt(maincontent_sidebarsecond_hastabs) + 'px';
               $(".has-tabs .sidebar-first").css('height',maincontent_hastabs); // target kmaps left resource sidebar
               $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',maincontent_hastabs);
               $(".has-tabs .region-sidebar-second").css('height',maincontent_sidebarsecond_hastabs); // target audio-video right sidebar
-       
+ */      
           };
 
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
