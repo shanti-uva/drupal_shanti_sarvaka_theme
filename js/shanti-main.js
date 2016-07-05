@@ -761,7 +761,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
               var height = $(window).height();
-              var maincontent = $(".main-content .content-section:eq(0)").height(); 
+              var maincontent = $(".content-section").first().height(); 
               var maincontent_sidebarsecond = (maincontent) - 20; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
 
               var maincontent_minimum = (height) - 223;
@@ -771,7 +771,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var maincontent_height = (maincontent);
               var maincontent_height_hastabs = (maincontent) - 25;
-              var maincontent_height_admin = (maincontent) - 150;
+              var maincontent_height_admin = (maincontent) - 330;
               var maincontent_height_admin_hastabs = (maincontent) - 175;
 
               maincontent_height = parseInt(maincontent_height) + 'px';
