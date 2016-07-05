@@ -801,7 +801,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".main-content .sidebar-first").css('min-height',maincontent_admin_hastabs); // target kmaps left resource sidebar
           };
 
-          window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
+
 
       }
     }
@@ -815,6 +815,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
   //       $('#sidebar-first a').bind( 'click', function() {
   //          $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
   //        });
+
+          window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
 
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
