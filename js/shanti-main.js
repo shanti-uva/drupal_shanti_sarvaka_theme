@@ -753,6 +753,7 @@ Drupal.behaviors.shantiDeleteButtonDisable = {
 //	};
 
 
+// Sidebar and footer coordinate heights
 Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
@@ -773,12 +774,27 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".has-tabs .sidebar-first").css('height',hastabs); // target kmaps left resoruce sidebar
               $(".has-tabs .region-sidebar-second").css('height',hastabs); // target audio-video right sidebar
               $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',hastabs);
-              
+
 //           });          
           };
 
           $('#sidebar-first a.use-ajax').bind( 'click', function() {
             $(document).ajaxSuccess( Drupal.ShantiSarvaka.sidebarFooterGravity );
+          });
+
+          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
+      }
+    }
+ };
+
+ // Kmaps - sidebar height and footer coordinate heights
+ Drupal.behaviors.shantiKmapsSidebarFooter = {
+   attach: function (context, settings) {
+      if (context == document) {
+
+          $('#sidebar-first a').bind( 'click', function() {
+            $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
           });
 
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
