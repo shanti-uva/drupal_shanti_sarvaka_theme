@@ -762,7 +762,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var height = $(window).height();
               var maincontent = (height) - 223;
-              var maincontent_sidebarsecond = (height) - 243; //adds padding/margin for region-sidebar-second in AV
+              var maincontent_sidebarsecond = (height) - 250; //adds padding/margin for region-sidebar-second in AV
 
               // with tabs
               var maincontent_hastabs = (maincontent) - 25;
