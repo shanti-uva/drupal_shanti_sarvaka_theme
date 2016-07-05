@@ -766,13 +766,13 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var maincontent_minimum = (height) - 223;
 
+              maincontent_minimum = parseInt(maincontent_minimum) + 'px'; 
+              $(".main-content .content-section:eq(0)").css('min-height',maincontent_minimum);
+
               var maincontent_height = (maincontent);
               var maincontent_height_hastabs = (maincontent) - 25;
               var maincontent_height_admin = (maincontent) - 150;
-              var maincontent_height_admin_withtabs = (maincontent) - 175;
-
-              maincontent_minimum = parseInt(maincontent_minimum) + 'px'; 
-              $(".main-content .content-section:eq(0)").css('min-height',maincontent_minimum);
+              var maincontent_height_admin_hastabs = (maincontent) - 175;
 
               maincontent_height = parseInt(maincontent_height) + 'px';
               maincontent_height_hastabs = parseInt(maincontent_height_hastabs) + 'px';
