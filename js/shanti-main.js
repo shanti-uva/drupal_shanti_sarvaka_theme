@@ -757,27 +757,27 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-          Drupal.ShantiSarvaka.sidebarFooterGravity = function() {    
-            var height = $(window).height();
-            var maincontent = (height) - 223;
-            var hastabs = (height) - 250;
+          Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
+            $(document).on('ajaxSuccess', function(){
 
-            maincontent = parseInt(maincontent) + 'px';
-            $(".sidebar-first").css('height',maincontent); // target kmaps left resoruce sidebar
-            $(".region-sidebar-second").css('height',maincontent); // target audio-video right sidebar
-            $(".main-content").find(".content-section").eq(0).css('min-height',maincontent);
+              var height = $(window).height();
+              var maincontent = (height) - 223;
+              var hastabs = (height) - 250;
 
-            hastabs = parseInt(hastabs) + 'px';
-            $(".has-tabs .sidebar-first").css('height',hastabs); // target kmaps left resoruce sidebar
-            $(".has-tabs .region-sidebar-second").css('height',hastabs); // target audio-video right sidebar
-            $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',hastabs);
+              maincontent = parseInt(maincontent) + 'px';
+              $(".sidebar-first").css('height',maincontent); // target kmaps left resoruce sidebar
+              $(".region-sidebar-second").css('height',maincontent); // target audio-video right sidebar
+              $(".main-content").find(".content-section").eq(0).css('min-height',maincontent);
 
+              hastabs = parseInt(hastabs) + 'px';
+              $(".has-tabs .sidebar-first").css('height',hastabs); // target kmaps left resoruce sidebar
+              $(".has-tabs .region-sidebar-second").css('height',hastabs); // target audio-video right sidebar
+              $(".has-tabs .main-content").find(".content-section").eq(0).css('min-height',hastabs);
+            });          
           };
 
-          $('#sidebar-first a.use-ajax').on( 'click', function() {
-                    
-            $(document).ajaxSuccess( Drupal.ShantiSarvaka.sidebarFooterGravity );  
-
+          $('#sidebar-first a.use-ajax').bind( 'click', function() {
+            $(document).ajaxSuccess( Drupal.ShantiSarvaka.sidebarFooterGravity );
           });
 
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
