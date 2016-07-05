@@ -762,16 +762,16 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var height = $(window).height();
               var maincontent = (height) - 223;
-              var maincontent_sidebarsecond = (height) - 250; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
+              var maincontent_sidebarsecond = (maincontent) - 20; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
               // with tabs
               var maincontent_hastabs = (maincontent) - 25;
-              var maincontent_sidebarsecond_hastabs = (maincontent_sidebarsecond) - 25;
+               var maincontent_sidebarsecond_hastabs = (maincontent_hastabs) - 20;
               // with admin-menu admin-footer
               var maincontent_admin = (maincontent) - 150;
-              var maincontent_sidebarsecond_admin = (maincontent_sidebarsecond) - 150;
+               var maincontent_sidebarsecond_admin = (maincontent_admin) - 20;
               // with admin-menu admin-footer
               var maincontent_admin_hastabs = (maincontent) - 175;
-              var maincontent_sidebarsecond_admin_hastabs = (maincontent_sidebarsecond) - 175;              
+               var maincontent_sidebarsecond_admin_hastabs = (maincontent_admin_hastabs) - 20;              
 
               maincontent = parseInt(maincontent) + 'px';
               maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px'; 
