@@ -761,37 +761,42 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
               var height = $(window).height();
-              var maincontent = $(".content-section").first().height(); 
-              var maincontent_sidebarsecond = (maincontent) - 20; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
+              var mainwrapper = $(".main-wrapper").height(); 
 
-              var maincontent_minimum = (height) - 223;
+              var mainwrapper_minimum = (mainwrapper) - 230;
+              // var maincontent_height = (mainwrapper) - 165;
 
-              maincontent_minimum = parseInt(maincontent_minimum) + 'px'; 
-              $(".main-content .content-section:eq(0)").css('min-height',maincontent_minimum);
+              var sidebar = (mainwrapper) - 165;
+              var sidebarsecond = (mainwrapper) - 185; //adds padding/margin for sidebar-second inner wrapper 'region-sidebar-second' in Audio-Video
 
-              var maincontent_height = (maincontent);
-              var maincontent_height_hastabs = (maincontent) - 25;
-              var maincontent_height_admin = (maincontent) - 330;
-              var maincontent_height_admin_hastabs = (maincontent) - 175;
 
-              maincontent_height = parseInt(maincontent_height) + 'px';
-              maincontent_height_hastabs = parseInt(maincontent_height_hastabs) + 'px';
-              maincontent_height_admin = parseInt(maincontent_height_admin) + 'px';
-              maincontent_height_admin_hastabs = parseInt(maincontent_height_admin_hastabs) + 'px';
-              $(".main-content .content-section:eq(0)").css('height',maincontent_height);
-              $(".main-content .sidebar-first").css('height',maincontent_height);
-              $(".has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_hastabs);
-              $(".admin-menu .main-content .content-section:eq(0)").css('height',maincontent_height_admin);
-              $(".admin-menu.has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_admin_hastabs);
+              mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
+              $(".main-wrapper").css('min-height',mainwrapper_minimum);
 
-              maincontent_sidebarsecond = parseInt(maincontent_sidebarsecond) + 'px';
-              $(".region-sidebar-second").css('height', maincontent_sidebarsecond);
+              sidebar = parseInt(sidebar) + 'px';
+              sidebarsecond = parseInt(sidebarsecond) + 'px';
+              $(".sidebar-first").css('height',sidebar);
+              $(".region-sidebar-second").css('height',sidebarsecond);
+
+
+              //var maincontent_height_hastabs = (maincontent) - 25;
+              //var maincontent_height_admin = (maincontent) - 330;
+              //var maincontent_height_admin_hastabs = (maincontent) - 175;
+
+              // maincontent_height = parseInt(maincontent_height) + 'px';
+              //maincontent_height_hastabs = parseInt(maincontent_height_hastabs) + 'px';
+              //maincontent_height_admin = parseInt(maincontent_height_admin) + 'px';
+              //maincontent_height_admin_hastabs = parseInt(maincontent_height_admin_hastabs) + 'px';
+
+              //$(".has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_hastabs);
+              //$(".admin-menu .main-content .content-section:eq(0)").css('height',maincontent_height_admin);
+              //$(".admin-menu.has-tabs .main-content .content-section:eq(0)").css('height',maincontent_height_admin_hastabs);
+
 
           };
+              
+              window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
 
-          // window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
-
-          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       }
     }
@@ -801,6 +806,10 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
  Drupal.behaviors.shantiKmapsSidebarFooter = {
    attach: function (context, settings) {
       if (context == document) {
+
+          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
+
 
   //       $('#sidebar-first a').bind( 'click', function() {
   //          $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
