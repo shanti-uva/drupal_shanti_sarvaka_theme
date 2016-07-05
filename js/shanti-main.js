@@ -801,7 +801,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".main-content .sidebar-first").css('min-height',maincontent_admin_hastabs); // target kmaps left resource sidebar
           };
 
-
+          window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 2000 );
 
       }
     }
@@ -816,7 +816,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
   //          $(document).on( 'ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
   //        });
 
-          $(window).setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 2000 );
+          
 
           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
