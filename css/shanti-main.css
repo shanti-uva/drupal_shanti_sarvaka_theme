@@ -4271,8 +4271,9 @@ body.page-admin-modules #block-system-main.block.block-system {
     margin-left: 10%;
   }
 
+  .sidebar,
   .main-wrapper {
-    min-height: 400px;
+    min-height: 500px;
   }
 }
 
@@ -4366,6 +4367,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (min-width: 1440px) {
 
+  .sidebar,
   .main-wrapper {
     min-height: 700px;
   }
@@ -4377,6 +4379,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (min-width: 1920px) {
 
+  .sidebar,
   .main-wrapper {
     min-height: 900px;
   }
@@ -4385,6 +4388,8 @@ body.page-admin-modules #block-system-main.block.block-system {
     min-height: 750px;
   }
 }
+
+
 
 @media all and (orientation:portrait) {
 }
