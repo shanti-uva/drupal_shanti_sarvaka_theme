@@ -774,8 +774,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var mainwrapper_minimum_adminfooter = (height) - 300;
 
               var sidebar = (mainwrapper) - 70;  // for sidebar height
-              var sidebarsecond = (mainwrapper) - 90;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
-              var sidebarsecond_hastabs = (mainwrapper) - 115;
+              var sidebarsecond = (mainwrapper) + 10;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
@@ -787,7 +787,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
               $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
-              $(".has-tabs.region-sidebar-second").css('height',sidebarsecond_hastabs)
+              // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
 
 
           };
