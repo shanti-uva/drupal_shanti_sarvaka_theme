@@ -1248,7 +1248,7 @@ html body.admin-menu {
   padding: 1rem;
   background: #888;
   color: #eee;
-  border-bottom: 5px solid #333;
+  /*border-bottom: 5px solid #333;*/
   height:140px;
 }
 
