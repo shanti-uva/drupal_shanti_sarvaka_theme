@@ -784,7 +784,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               sidebar = parseInt(sidebar) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
-              sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
+              // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
               $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
