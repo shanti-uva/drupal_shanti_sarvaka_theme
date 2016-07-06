@@ -774,7 +774,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var mainwrapper_minimum_adminfooter = (height) - 300;
 
               var sidebar = (mainwrapper) - 70;  // for sidebar height
-              var sidebarsecond = (mainwrapper) + 10;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              var sidebarsecond = (mainwrapper) - 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
