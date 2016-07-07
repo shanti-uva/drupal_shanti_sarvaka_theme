@@ -784,7 +784,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var mainwrapper = $(".main-wrapper").height(); 
               var sidebar = (mainwrapper) - 70;  // for sidebar height
-              var sidebarsecond = (mainwrapper) - 90;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              var sidebarsecond = (mainwrapper) - 80;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               sidebar = parseInt(sidebar) + 'px';

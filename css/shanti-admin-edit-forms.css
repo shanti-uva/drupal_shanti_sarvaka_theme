@@ -1252,15 +1252,16 @@ html body.admin-menu {
   height:140px;
 }
 
-.region-admin-footer a{
+.region-admin-footer a,
+.region-admin-footer a.active{
   color:#ddd;
-  border-bottom:1px solid #ccc;
+  /*border-bottom:1px solid #ccc;*/
 }
 
 .region-admin-footer a:hover,
 .region-admin-footer a:active{
   color:#fff;
-  border-bottom:1px solid #eee;
+  /*border-bottom:1px solid #eee;*/
 }
 
 .region-admin-footer a:hover{
