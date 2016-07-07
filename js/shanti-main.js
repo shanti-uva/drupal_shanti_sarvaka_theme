@@ -814,8 +814,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
        //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarHeight );
        //  });
 
-         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.footerGravity );
-         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarHeight );
+          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.footerGravity );
+         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarHeight );
          // $(".main-wrapper").bind( 'load resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       }
