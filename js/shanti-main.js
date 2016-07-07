@@ -805,23 +805,17 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         
-           $(window).load(function() {
-            $(".accordion-toggle").bind( 'click', function() {
-              function set_sidebar_height() {
-                var sidebarheight = $(".main-wrapper").height() - 80;
-                sidebarheight = parseInt(sidebarsecond) + 'px';
-                $(".region-sidebar-second").css('height',sidebarheight);
-              };
-                window.setTimeout( set_sidebar_height, 1000 );
-           });   
+         $("a.accordion-toggle").bind( 'click', function() {
+              var sidebarheight = $(".main-wrapper").height() - 80;
+              sidebarheight = parseInt(sidebarheight) + 'px';
+              $(".region-sidebar-second").css('height',sidebarheight);
          });
-            
-         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
-      //   $('.use-ajax').bind( 'click', function() {
-      //      $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-      //   });
+         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
+         $('.use-ajax').bind( 'click', function() {
+            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         });
 
       }
     }
