@@ -782,11 +782,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
               $(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
-          };
-
-
-          Drupal.ShantiSarvaka.sidebarHeight = function() {
-
               var mainwrapper = $(".main-wrapper").height(); 
               var sidebar = (mainwrapper) - 70;  // for sidebar height
               var sidebarsecond = (mainwrapper) + 75;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
@@ -799,6 +794,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
 
+
           };
 
       }
@@ -810,12 +806,12 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-       //  $('#sidebar-first').each('.use-ajax').bind( 'click', function() {
-       //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarHeight );
-       //  });
+         $('#sidebar-first a').bind( 'click', function() {
+            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         });
 
-         // s $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.footerGravity );
-         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarHeight );
+         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
          // $(".main-wrapper").bind( 'load resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       }

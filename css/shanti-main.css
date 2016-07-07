@@ -4179,6 +4179,10 @@ html body {
   width: 100%;
   /*padding-bottom: 7rem;*/
 }
+/* this targets the Overview text on AV home above carousel, not sure yet if it's needed on other homepages */
+.front #block-system-main.block.block-system {
+  float: none;
+}
 
 body.page-admin-modules #block-system-main.block.block-system {
   float: none;
