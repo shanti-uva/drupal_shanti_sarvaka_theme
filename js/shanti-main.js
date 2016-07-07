@@ -753,7 +753,6 @@ Drupal.behaviors.shantiDeleteButtonDisable = {
 //	};
 
 
-
 // Sidebar and footer coordinate heights
 Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
@@ -767,10 +766,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // main-wrapper = includes top-banner-colored and admin tabs extends to top of default-footer
               // default-footer = 110
               // admin-footer = 140
-
-
-            $(window).load(function() {
-                function sidebarFooter() {
 
               var height = $(window).height();
               var mainwrapper = $(".main-wrapper").height(); 
@@ -794,13 +789,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
 
-                };
-                    window.setTimeout( sidebarFooter, 1000 ); // 5 seconds
-            });
-
-
-
           };
+
+          window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
 
       }
     }
