@@ -767,30 +767,30 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // default-footer = 110
               // admin-footer = 140
 
-              var height = $(window).height(); 
+              var height = $(window).height();
+              var mainwrapper = $(".main-wrapper").height(); 
+
               var mainwrapper_minimum = (height) - 160;
               var mainwrapper_minimum_adminfooter = (height) - 300;
+
+              var sidebar = (mainwrapper) - 70;  // for sidebar height
+              var sidebarsecond = (mainwrapper) - 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
               $(".main-wrapper").css('min-height',mainwrapper_minimum);
               $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
 
-              var mainwrapper = $(".main-wrapper").height();
-              var sidebarfirst = (mainwrapper) - 70;  // for sidebar height
-              var sidebarsecond = (mainwrapper) - 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
-              // var sidebarsecond_hastabs = (mainwrapper) - 115;
-
-              sidebarfirst = parseInt(sidebarfirst) + 'px';
+              sidebar = parseInt(sidebar) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
               // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
-              $(".sidebar-first").css('height',sidebarfirst);
+              $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
 
-          };
 
-        //  window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
+          };
 
       }
     }
@@ -801,11 +801,11 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-       //  $('#sidebar-first a').bind( 'click', function() {
-       //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-       //  });
+         $('#sidebar-first a').bind( 'click', function() {
+            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         });
 
-         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
          // $(".main-wrapper").bind( 'load resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
