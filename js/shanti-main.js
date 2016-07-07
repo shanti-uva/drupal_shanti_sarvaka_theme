@@ -810,8 +810,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          $(".main-wrapper a").bind( 'click', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
-         
-         $('.main-wrapper a').bind( 'click', function() {
+
+         $('.use-ajax').bind( 'click', function() {
             $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
          });
 
