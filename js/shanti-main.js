@@ -805,8 +805,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $(".accordion-toggle").bind( 'click', function() {
+         
            $(window).load(function() {
+            $(".accordion-toggle").bind( 'click', function() {
               function set_sidebar_height() {
                 var sidebarheight = $(".main-wrapper").height() - 80;
                 sidebarheight = parseInt(sidebarsecond) + 'px';
@@ -815,7 +816,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
                 window.setTimeout( set_sidebar_height, 1000 );
            });   
          });
-
+            
          // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       //   $('.use-ajax').bind( 'click', function() {
