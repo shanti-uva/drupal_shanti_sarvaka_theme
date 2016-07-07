@@ -774,7 +774,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               //var mainwrapper_minimum_adminfooter_hastabs = (height) - 275;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
-              mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
+              // mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
               //mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
               $(".main-wrapper").css('min-height',mainwrapper_minimum);
