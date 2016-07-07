@@ -769,22 +769,22 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var height = $(window).height();
               var mainwrapper_minimum = (height) - 160;
-              var mainwrapper_minimum_hastabs = (height) - 135;
+              //var mainwrapper_minimum_hastabs = (height) - 135;
               var mainwrapper_minimum_adminfooter = (height) - 300;
-              var mainwrapper_minimum_adminfooter_hastabs = (height) - 275;
+              //var mainwrapper_minimum_adminfooter_hastabs = (height) - 275;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
               mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
-              mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
+              //mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
               $(".main-wrapper").css('min-height',mainwrapper_minimum);
-              $(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
+              //$(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
               $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
-              $(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
+              //$(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               var mainwrapper = $(".main-wrapper").height(); 
               var sidebar = (mainwrapper) - 70;  // for sidebar height
-              var sidebarsecond = (mainwrapper) + 45;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              var sidebarsecond = (mainwrapper) - 45;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               sidebar = parseInt(sidebar) + 'px';
