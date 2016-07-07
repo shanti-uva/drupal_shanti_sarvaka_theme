@@ -805,17 +805,22 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $("a.accordion-toggle").bind( 'click', function() {
+         $(".accordion-toggle").bind( 'click', function() {
+
+            function set_sidebar_height() {
               var sidebarheight = $(".main-wrapper").height() - 80;
               sidebarheight = parseInt(sidebarsecond) + 'px';
               $(".region-sidebar-second").css('height',sidebarheight);
+            };
+              window.setTimeout( set_sidebar_height, 1000 );
+
          });
 
-         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
-         $('.use-ajax').bind( 'click', function() {
-            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-         });
+      //   $('.use-ajax').bind( 'click', function() {
+      //      $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+      //   });
 
       }
     }
