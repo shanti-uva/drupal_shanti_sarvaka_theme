@@ -753,6 +753,7 @@ Drupal.behaviors.shantiDeleteButtonDisable = {
 //	};
 
 
+
 // Sidebar and footer coordinate heights
 Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
@@ -767,13 +768,17 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // default-footer = 110
               // admin-footer = 140
 
+
+            $(window).load(function() {
+                function sidebarFooter() {
+
               var height = $(window).height();
               var mainwrapper = $(".main-wrapper").height(); 
 
               var mainwrapper_minimum = (height) - 160;
               var mainwrapper_minimum_adminfooter = (height) - 300;
 
-              var sidebar = (mainwrapper) - 70;  // for sidebar height
+              var sidebarfirst = (mainwrapper) - 70;  // for sidebar height
               var sidebarsecond = (mainwrapper) - 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
@@ -782,12 +787,17 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".main-wrapper").css('min-height',mainwrapper_minimum);
               $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
 
-              sidebar = parseInt(sidebar) + 'px';
+              sidebarfirst = parseInt(sidebarfirst) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
               // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
-              $(".sidebar-first").css('height',sidebar);
+              $(".sidebar-first").css('height',sidebarfirst);
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
+
+                };
+                    window.setTimeout( sidebarFooter, 1000 ); // 5 seconds
+            });
+
 
 
           };
