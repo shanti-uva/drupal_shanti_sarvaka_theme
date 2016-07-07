@@ -767,20 +767,19 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // default-footer = 110
               // admin-footer = 140
 
-              var height = $(window).height();
-              var mainwrapper = $(".main-wrapper").height(); 
-
+              var height = $(window).height(); 
               var mainwrapper_minimum = (height) - 160;
               var mainwrapper_minimum_adminfooter = (height) - 300;
-
-              var sidebarfirst = (mainwrapper) - 70;  // for sidebar height
-              var sidebarsecond = (mainwrapper) - 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
-              // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
               $(".main-wrapper").css('min-height',mainwrapper_minimum);
               $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
+
+              var mainwrapper = $(".main-wrapper").height();
+              var sidebarfirst = (mainwrapper) - 70;  // for sidebar height
+              var sidebarsecond = (mainwrapper) - 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               sidebarfirst = parseInt(sidebarfirst) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
@@ -791,7 +790,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           };
 
-          window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
+        //  window.setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 1000 );
 
       }
     }
@@ -802,9 +801,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $('#sidebar-first a').bind( 'click', function() {
-            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-         });
+       //  $('#sidebar-first a').bind( 'click', function() {
+       //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+       //  });
 
          // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
