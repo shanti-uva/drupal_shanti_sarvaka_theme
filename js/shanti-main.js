@@ -805,7 +805,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $("a.accordion-toggle").bind( 'click', function() {
+         $("a.accordion-toggle").one( 'click', function() {
 
               var height = $(window).height();
               var mainwrapper_minimum_adminfooter = (height) - 265;
