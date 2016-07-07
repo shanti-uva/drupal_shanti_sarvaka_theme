@@ -802,10 +802,10 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
          $('#sidebar-first a').bind( 'click', function() {
-            $(document).bind('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
          });
 
-         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
          // $(".main-wrapper").bind( 'load resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
