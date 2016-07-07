@@ -758,7 +758,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-          Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
+          Drupal.ShantiSarvaka.footerGravity = function() {   
 
               // top-banner-white = 50
               // top-banner-colored = 70
@@ -768,19 +768,29 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // admin-footer = 140
 
               var height = $(window).height();
-              var mainwrapper = $(".main-wrapper").height(); 
-
               var mainwrapper_minimum = (height) - 160;
+              var mainwrapper_minimum_hastabs = (height) - 135;
               var mainwrapper_minimum_adminfooter = (height) - 300;
+              var mainwrapper_minimum_adminfooter_hastabs = (height) - 275;
 
+              mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
+              mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
+              mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
+              mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
+              $(".main-wrapper").css('min-height',mainwrapper_minimum);
+              $(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
+              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
+              $(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
+
+          };
+
+
+          Drupal.ShantiSarvaka.sidebarHeight = function() {
+
+              var mainwrapper = $(".main-wrapper").height(); 
               var sidebar = (mainwrapper) - 70;  // for sidebar height
               var sidebarsecond = (mainwrapper) + 75;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
-
-              mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
-              mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
-              $(".main-wrapper").css('min-height',mainwrapper_minimum);
-              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
 
               sidebar = parseInt(sidebar) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
@@ -788,7 +798,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
-
 
           };
 
@@ -801,12 +810,12 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $('#sidebar-first a').bind( 'click', function() {
-            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         $('#sidebar-first').each('.use-ajax').bind( 'click', function() {
+            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarHeight );
          });
 
-         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
-
+         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.footerGravity );
+         $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarHeight );
          // $(".main-wrapper").bind( 'load resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       }
