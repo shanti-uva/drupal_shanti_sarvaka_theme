@@ -808,10 +808,10 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
          $("a.accordion-toggle").bind( 'click', function() {
 
               var height = $(window).height();
-              var mainwrapper_minimum_adminfooter = (height) - 330;
+              var mainwrapper_minimum_adminfooter = (height) - 265;
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
               $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
-              
+
               var sidebarheight = $(".main-wrapper").height() - 80;
               sidebarheight = parseInt(sidebarheight) + 'px';
               $(".region-sidebar-second").css('height',sidebarheight);
