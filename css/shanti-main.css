@@ -2712,8 +2712,7 @@ a.btn,a.btn:hover,a.btn:active {
   display: none;
 }
 
-.sidebar-first.sidebar-offcanvas,
-.sidebar-second.sidebar-offcanvas{
+.sidebar-offcanvas{
   /*background-color: #fff;*/
   /*min-height: 900px;*/
 }
@@ -4238,8 +4237,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (max-width: 991px) {
 
-  .sidebar-first.sidebar-offcanvas,
-  .sidebar-second.sidebar-offcanvas {
+  .sidebar-offcanvas {
     position: absolute;
     top: 0;
   }
