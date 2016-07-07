@@ -807,7 +807,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
-         $(".main-wrapper").bind( 'load resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         // $(".main-wrapper").bind( 'load resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
       }
     }
