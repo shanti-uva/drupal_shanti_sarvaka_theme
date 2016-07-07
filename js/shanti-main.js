@@ -758,7 +758,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-          Drupal.ShantiSarvaka.footerGravity = function() {   
+          Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
               // top-banner-white = 50
               // top-banner-colored = 70
