@@ -809,7 +809,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var sidebarheight = $(".main-wrapper").height() - 80;
               sidebarheight = parseInt(sidebarsecond) + 'px';
               $(".region-sidebar-second").css('height',sidebarheight);
-            };  
          });
 
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
