@@ -810,9 +810,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $('#sidebar-first').each('.use-ajax').bind( 'click', function() {
-            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarHeight );
-         });
+       //  $('#sidebar-first').each('.use-ajax').bind( 'click', function() {
+       //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarHeight );
+       //  });
 
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.footerGravity );
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarHeight );
