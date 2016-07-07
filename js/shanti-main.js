@@ -806,14 +806,14 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
          $(".accordion-toggle").bind( 'click', function() {
-
-            function set_sidebar_height() {
-              var sidebarheight = $(".main-wrapper").height() - 80;
-              sidebarheight = parseInt(sidebarsecond) + 'px';
-              $(".region-sidebar-second").css('height',sidebarheight);
-            };
-              window.setTimeout( set_sidebar_height, 1000 );
-
+           $(window).load(function() {
+              function set_sidebar_height() {
+                var sidebarheight = $(".main-wrapper").height() - 80;
+                sidebarheight = parseInt(sidebarsecond) + 'px';
+                $(".region-sidebar-second").css('height',sidebarheight);
+              };
+                window.setTimeout( set_sidebar_height, 1000 );
+           });   
          });
 
          // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
