@@ -806,9 +806,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
          $(".use-ajax, .accordion-toggle").bind( 'click', function() {
-
-            Drupal.ShantiSarvaka.sidebarFooterGravity
-
+            $(document).ajaxSuccess(function() {
+              Drupal.ShantiSarvaka.sidebarFooterGravity
+            });
          });
 
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
