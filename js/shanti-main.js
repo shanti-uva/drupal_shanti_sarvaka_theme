@@ -805,10 +805,10 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $(".accordion-toggle").one( 'click', function() {
+         $(".use-ajax, .accordion-toggle").bind( 'click', function() {
 
             Drupal.ShantiSarvaka.sidebarFooterGravity
-            
+
          });
 
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
