@@ -807,13 +807,12 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          $("a.accordion-toggle").one( 'click', function() {
 
-              var height = $(window).height();
-              var mainwrapper_minimum_adminfooter = (height) - 265;
-              mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
-              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
+              var sidebar = $(".main-wrapper").delay(500).height() - 70;
+              var sidebarheight = $(".main-wrapper").delay(500).height() - 80;
 
-              var sidebarheight = $(".main-wrapper").height() - 80;
+              sidebar = parseInt(sidebar) + 'px';
               sidebarheight = parseInt(sidebarheight) + 'px';
+              $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarheight);
          });
 
