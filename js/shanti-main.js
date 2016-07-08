@@ -807,7 +807,13 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          $(".use-ajax, .accordion-toggle").bind( 'click', function() {
             $(document).ajaxSuccess(function() {
-              Drupal.ShantiSarvaka.sidebarFooterGravity
+              
+                function set_sidebar_heights() {
+                    Drupal.ShantiSarvaka.sidebarFooterGravity
+                };
+
+                  window.setTimeout( set_sidebar_heights, 2000 );
+
             });
          });
 
