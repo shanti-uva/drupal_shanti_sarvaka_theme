@@ -806,15 +806,14 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
          $(".use-ajax, .accordion-toggle").bind( 'click', function() {
+            
             $(document).ajaxSuccess(function() {
-              
-                function set_sidebar_heights() {
+                function set_sidebar_height() {
                     Drupal.ShantiSarvaka.sidebarFooterGravity
                 };
-
-                  window.setTimeout( set_sidebar_heights, 2000 );
-
+                  document.setTimeout( set_sidebar_height, 2000 );
             });
+
          });
 
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
