@@ -806,7 +806,20 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
          $(".use-ajax, .accordion-toggle").one( 'click', function() {
+              var height = $(window).height();
+              var mainwrapper_minimum = (height) - 160;
+              //var mainwrapper_minimum_hastabs = (height) - 95;
+              var mainwrapper_minimum_adminfooter = (height) - 330;
+              //var mainwrapper_minimum_adminfooter_hastabs = (height) - 275;
 
+              mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
+              //mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
+              mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
+              //mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
+              $(".main-wrapper").css('min-height',mainwrapper_minimum);
+              //$(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
+              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
+              //$(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
               var sidebar = $(".main-wrapper").height() - 70;
               var sidebarheight = $(".main-wrapper").height() - 80;
 
