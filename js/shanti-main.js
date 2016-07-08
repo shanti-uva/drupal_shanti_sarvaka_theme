@@ -777,9 +777,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               //mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
               //mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
-              $(".main-wrapper").css('height',mainwrapper_minimum);
+              $(".main-wrapper").css('min-height',mainwrapper_minimum);
               //$(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
-              $(".admin-menu .main-wrapper").css('height',mainwrapper_minimum_adminfooter);
+              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
               //$(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               // var mainwrapper = $(".main-wrapper").height(); 
