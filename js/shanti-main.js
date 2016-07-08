@@ -807,8 +807,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          $(".use-ajax, .accordion-toggle").one( 'click', function() {
 
-              var sidebar = $(".main-wrapper").delay(500).height() - 70;
-              var sidebarheight = $(".main-wrapper").delay(500).height() - 80;
+              var sidebar = $(".main-wrapper").height() - 70;
+              var sidebarheight = $(".main-wrapper").height() - 80;
 
               sidebar = parseInt(sidebar) + 'px';
               sidebarheight = parseInt(sidebarheight) + 'px';
