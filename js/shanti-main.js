@@ -777,9 +777,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               //mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
               //mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
-              $(".main-wrapper").css('min-height',mainwrapper_minimum);
+              $(".main-wrapper").css('height',mainwrapper_minimum);
               //$(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
-              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
+              $(".admin-menu .main-wrapper").css('height',mainwrapper_minimum_adminfooter);
               //$(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               // var mainwrapper = $(".main-wrapper").height(); 
@@ -807,13 +807,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          $(".use-ajax, .accordion-toggle").one( 'click', function() {
 
-              var sidebar = $(".main-wrapper").height() - 70;
-              var sidebarheight = $(".main-wrapper").height() - 80;
-
-              sidebar = parseInt(sidebar) + 'px';
-              sidebarheight = parseInt(sidebarheight) + 'px';
-              $(".sidebar-first").css('height',sidebar);
-              $(".region-sidebar-second").css('height',sidebarheight);
+              Drupal.ShantiSarvaka.sidebarFooterGravity
          });
 
          $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
