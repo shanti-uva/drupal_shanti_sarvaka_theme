@@ -223,7 +223,7 @@ a {
   text-decoration: none;
   color: #454fa4;
 } /* *:active{ outline:none !important;} */
-a:hover,a:active {
+a:hover,a:focus,a:active {
   text-decoration: none;
   color: rgb(207, 47, 30);
 }
@@ -579,7 +579,6 @@ a:hover,a:active {
 }
 
 .menu-icon a:hover,
-.menu-icon a:focus,
 .menu-icon a:active {
   background: #fff;
   border:none;
