@@ -209,6 +209,15 @@ article ul ul ul ul {
   -webkit-margin-before: 0;
   margin-top: 0;
 }
+/* additional properties to bootstrap list-inline class */
+ul.list-inline{
+  margin-bottom:0;
+}
+
+ul.list-inline > li{
+  padding:0;
+}
+
 /* anchors */
 a {
   text-decoration: none;
