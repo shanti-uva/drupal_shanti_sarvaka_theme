@@ -579,6 +579,7 @@ a:hover,a:active {
 }
 
 .menu-icon a:hover,
+.menu-icon a:focus,
 .menu-icon a:active {
   background: #fff;
   border:none;
@@ -597,8 +598,8 @@ a:hover,a:active {
 }
 
 .menu-icon .icon.shanticon-menu {
-  position: relative;
-  top: 0;
+  /*position: relative; - mf8yk removed for test on july 11, 2016
+  top: 0;*/
 }
 
 .menu-icon.show-topmenu a {
