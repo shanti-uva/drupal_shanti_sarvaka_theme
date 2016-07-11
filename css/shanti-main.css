@@ -215,7 +215,7 @@ ul.list-inline{
 }
 
 ul.list-inline > li{
-  padding:0;
+  padding:0 !important;
 }
 
 /* anchors */
