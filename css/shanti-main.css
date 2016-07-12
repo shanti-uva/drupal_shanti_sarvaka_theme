@@ -4284,7 +4284,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .sidebar,
   .main-wrapper {
-    min-height: 600px;
+    min-height: 700px;
   }
 }
 
@@ -4380,11 +4380,11 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .sidebar,
   .main-wrapper {
-    min-height: 700px;
+    min-height: 800px;
   }
 
-  .admin-menu .main-wrapper {
-    min-height: 550px;
+  .logged-in .main-wrapper {
+    /*min-height: 750px;*/
   }
 }
 
@@ -4395,8 +4395,8 @@ body.page-admin-modules #block-system-main.block.block-system {
     min-height: 900px;
   }
   
-  .admin-menu .main-wrapper {
-    min-height: 750px;
+  .logged-in .main-wrapper {
+    /*min-height: 850px;*/
   }
 }
 
