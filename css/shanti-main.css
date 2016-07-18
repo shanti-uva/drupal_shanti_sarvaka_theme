@@ -2017,6 +2017,7 @@ body.front ol.breadcrumb {
   top: 3.5rem;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  font-family: shanticon; /* Needed in new acquia dev*/
 }
 
 .shanti-thumbnail-image.shanti-field-video a .overlay::before {
