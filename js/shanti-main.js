@@ -760,6 +760,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
+            $(window).bind('load orientationchange resize', function() {
+
               // top-banner-white = 50
               // top-banner-colored = 70
               // admin-tabs = 25
@@ -793,6 +795,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
+
+            });  
 
           };
 
