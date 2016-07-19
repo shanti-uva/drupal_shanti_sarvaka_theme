@@ -805,11 +805,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $(".accordion-toggle").on('hidden.bs.collapse', function() {
-            
-              Drupal.ShantiSarvaka.sidebarFooterGravity
-
-         });
+         $(".accordion-toggle").on('hidden.bs.collapse', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
          // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
