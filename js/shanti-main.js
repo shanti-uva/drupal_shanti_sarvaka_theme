@@ -805,18 +805,13 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $(".accordion-toggle").off('click').on( 'click', function() {
+         $(".accordion-toggle").on('hidden.bs.collapse', function() {
             
-            $(document).ajaxSuccess(function() {
-                function set_sidebar_height() {
-                    Drupal.ShantiSarvaka.sidebarFooterGravity
-                };
-                  document.setTimeout( set_sidebar_height, 2000 );
-            });
+              Drupal.ShantiSarvaka.sidebarFooterGravity
 
          });
 
-         $(window).one().bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
        //  $('.use-ajax').bind( 'click', function() {
        //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
