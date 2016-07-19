@@ -760,8 +760,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
-            $(window).bind('load orientationchange resize', function() {
-
+            
               // top-banner-white = 50
               // top-banner-colored = 70
               // admin-tabs = 25
@@ -794,9 +793,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
               $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
-              // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs)
-
-            });  
+              // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs) 
 
           };
 
@@ -810,6 +807,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
          $("#accordion .panel-collapse").on('hidden.bs.collapse', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
+         $("#sidebar-first").find("a.use-ajax").bind('click', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
          // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
