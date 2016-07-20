@@ -806,9 +806,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-         $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
+         //$("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
-         $("#sidebar-first").find("a.use-ajax").bind('click', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
+         //$("#sidebar-first").find("a.use-ajax").bind('click', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
          // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
