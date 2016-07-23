@@ -810,7 +810,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          //$("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
-         //$("#sidebar-first").find("a.use-ajax").bind('click', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
+         $("#sidebar-first").find("a.use-ajax").bind('click', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
         
 
