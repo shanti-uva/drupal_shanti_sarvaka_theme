@@ -812,11 +812,10 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          $("#sidebar-first").find("a.use-ajax").bind('click', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
-        
-
-       //  $('.use-ajax').bind( 'click', function() {
-       //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-       //  });
+      
+         $('a.use-ajax').bind( 'click', function() {
+            $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+         });
 
       }
     }
