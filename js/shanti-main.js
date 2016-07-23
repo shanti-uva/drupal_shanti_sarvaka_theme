@@ -797,6 +797,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           };
 
+           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
       }
     }
  };
@@ -810,7 +812,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
          //$("#sidebar-first").find("a.use-ajax").bind('click', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
-         // $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+        
 
        //  $('.use-ajax').bind( 'click', function() {
        //     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
