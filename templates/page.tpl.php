@@ -1,7 +1,7 @@
 <div class="wrap-all">
    <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#search-flyout">Skip to search</a></span>
     <!-- Header Region -->
-   <div class="site-banner">
+   <div class="header-banner">
     <div class="navbar navbar-default">
 
 	      <nav class="navbar-buttons">
