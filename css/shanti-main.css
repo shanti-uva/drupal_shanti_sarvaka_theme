@@ -838,7 +838,7 @@ a:hover,a:focus,a:active {
 
 
 /*--- BEGIN collections panel ---*/
-.header-banner .collections {
+.site-banner .collections {
   background: #222;
   margin: 0 0 .2rem 0;
   padding: 1rem 0 1.8rem 0.8rem;
@@ -847,11 +847,11 @@ a:hover,a:focus,a:active {
   display: none;
 }
 
-.header-banner .collections .row {
+.site-banner .collections .row {
   margin: 0;
 }
 
-.header-banner .collections ul {
+.site-banner .collections ul {
   text-align: center;
   list-style-type: none;
   /*margin: 0 auto 0 2%;*/
@@ -859,7 +859,7 @@ a:hover,a:focus,a:active {
   margin-bottom: 10px !important;
 }
 
-.header-banner .collections ul li {
+.site-banner .collections ul li {
   margin: 0;
   float: left;
   line-height: 2em;
@@ -867,7 +867,7 @@ a:hover,a:focus,a:active {
   width: 50%;
 }
 
-.header-banner .collections ul li a {
+.site-banner .collections ul li a {
   color: #d0d0d0;
   text-decoration: none;
   letter-spacing: 0.08em;
@@ -880,19 +880,19 @@ a:hover,a:focus,a:active {
   text-transform: uppercase;
 }
 
-.header-banner .collections ul li a.disabled, .header-banner .collections ul li a.disabled:hover, .header-banner .collections ul li a.disabled:active, 
-.header-banner .collections ul li a.disabled .icon, .header-banner .collections ul li a.disabled:hover .icon {
+.site-banner .collections ul li a.disabled, .site-banner .collections ul li a.disabled:hover, .site-banner .collections ul li a.disabled:active, 
+.site-banner .collections ul li a.disabled .icon, .site-banner .collections ul li a.disabled:hover .icon {
   color: #707070;
   cursor: default;
 }
 
-.header-banner .collections ul li a:hover,
-.header-banner .collections ul li a:active {
+.site-banner .collections ul li a:hover,
+.site-banner .collections ul li a:active {
   text-decoration: none;
   color: #fff;
 }
 
-.header-banner .collections ul .icon {
+.site-banner .collections ul .icon {
   color: #aaa !important;
   margin-right: 8px;
   font-size: 1.75em;
@@ -900,32 +900,32 @@ a:hover,a:focus,a:active {
   top: 0.4rem;
 }
 
-.header-banner .collections ul .icon.shanticon-visuals{
+.site-banner .collections ul .icon.shanticon-visuals{
   top: 0.54rem;
 }
 
-.header-banner .collections ul .icon.shanticon-logo-shanti {
+.site-banner .collections ul .icon.shanticon-logo-shanti {
   color: #f0f0f0;
 }
 
-.header-banner .collections ul li a:hover .icon::before{
+.site-banner .collections ul li a:hover .icon::before{
   color: #e0e0e0;
 }
-.header-banner .collections ul li a:active .icon::before{
+.site-banner .collections ul li a:active .icon::before{
   color: #fff;
 }
 
-.header-banner .collections ul .icon.shanticon-visuals::before {
+.site-banner .collections ul .icon.shanticon-visuals::before {
   font-size: 120%;
   position: relative;
   left: -0.15rem;
   margin-right: -0.25rem;
 }
-.header-banner .collections ul .icon.shanticon-logo-shanti::before {
+.site-banner .collections ul .icon.shanticon-logo-shanti::before {
   font-size: 110%;
 }
 
-.header-banner .collections h4 {
+.site-banner .collections h4 {
   color: #eee;
   text-align: center;
   margin: 10px 0 18px;
@@ -933,7 +933,7 @@ a:hover,a:focus,a:active {
   display: none;
 }
 
-.header-banner .collections .close {
+.site-banner .collections .close {
   color: #ccc;
   background: transparent;
   background-image: none;
@@ -957,8 +957,8 @@ a:hover,a:focus,a:active {
   transition: color 200ms ease 0s;
 }
 
-.header-banner .collections .close:hover,
-.header-banner .collections .close:active {
+.site-banner .collections .close:hover,
+.site-banner .collections .close:active {
   filter: alpha(opacity=75);
   opacity: 0.75;
 }
@@ -987,7 +987,7 @@ a:hover,a:focus,a:active {
 
 .titlearea > div {
   height: 6.7rem;
- /* bottom shadow here, top banner shadow is off header-banner */
+ /* bottom shadow here, top banner shadow is off site-banner */
   box-shadow: inset 0 -2px 10px -4px rgba(0, 0, 0, 0.1400);
   border-collapse: separate;
   position: relative;
@@ -4219,11 +4219,11 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (max-width: 499px) {
 
-  .header-banner .collections h4 {
+  .site-banner .collections h4 {
     font-size: 1em;
   }
 
-  .header-banner .collections > nav > div {
+  .site-banner .collections > nav > div {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4231,7 +4231,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (max-width: 599px) {
     
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     line-height: 3em;
   }
 
@@ -4277,7 +4277,7 @@ body.page-admin-modules #block-system-main.block.block-system {
     display: inline-block;
   }
 
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 40%;
     margin-left: 10%;
   }
@@ -4297,15 +4297,15 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .navbar-brand { height:50; }
   
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 20%;
   }
 
-  .header-banner .collections ul li a.disabled, 
-  .header-banner .collections ul li a.disabled:hover,
-  .header-banner .collections ul li a.disabled:active,
-  .header-banner .collections ul li a.disabled .icon,  
-  .header-banner .collections ul li a.disabled:hover .icon {
+  .site-banner .collections ul li a.disabled, 
+  .site-banner .collections ul li a.disabled:hover,
+  .site-banner .collections ul li a.disabled:active,
+  .site-banner .collections ul li a.disabled .icon,  
+  .site-banner .collections ul li a.disabled:hover .icon {
     color: #707070;
     cursor: default;
   }
@@ -4326,13 +4326,13 @@ body.page-admin-modules #block-system-main.block.block-system {
     display: inline-block;
   }
 
-  .header-banner .collections h4 {
+  .site-banner .collections h4 {
     font-size: 1.06em;
     letter-spacing: 0.25em;
     margin-top: 8px !important;
   }
 
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 15%;
     margin-left: 7%;
   }
@@ -4353,22 +4353,22 @@ body.page-admin-modules #block-system-main.block.block-system {
     margin-top: 0;
   }
 
-  .header-banner .collections h4 {
+  .site-banner .collections h4 {
     font-size: 1.12em;
   }
 
-  .header-banner .collections ul {
+  .site-banner .collections ul {
     margin-left: -5%;
   }
 
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 12%;
     margin-left: 7%;
   }
 
-  .header-banner .collections ul li a.disabled, 
-  .header-banner .collections ul li a.disabled:hover, .header-banner .collections ul li a.disabled:active, 
-  .header-banner .collections ul li a.disabled .icon, .header-banner .collections ul li a.disabled:hover .icon, .header-banner .collections ul li a.disabled:active .icon {
+  .site-banner .collections ul li a.disabled, 
+  .site-banner .collections ul li a.disabled:hover, .site-banner .collections ul li a.disabled:active, 
+  .site-banner .collections ul li a.disabled .icon, .site-banner .collections ul li a.disabled:hover .icon, .site-banner .collections ul li a.disabled:active .icon {
     color: #707070;
     cursor: default;
   }
