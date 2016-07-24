@@ -48,6 +48,7 @@ Drupal.behaviors.sarvakaMbextruder = {
 	      // styles inline for now, forces
 	      $(".flap").prepend("<span><span class='icon shanticon-search'></span></span>");
 	      $(".flap").addClass("on-flap");
+	      $(".flap").attr("role", "button");
 	    }
 
 	    // --- set class on dropdown menu for icon
