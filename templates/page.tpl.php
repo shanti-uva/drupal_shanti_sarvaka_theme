@@ -43,7 +43,7 @@
     <!-- Begin Content Region -->
     <main class="main-wrapper container-fluid">
       <article class="main-content" role="main">
-        <section class="row">
+        <section class="row" role="banner">
 
           <!-- Banner Region -->
           <div class="titlearea banner<?php print $variables['banner_class']; ?>">
@@ -78,7 +78,7 @@
 
 
         <!-- Begin Content Row -->
-        <section class="row row-offcanvas<?php print " $offcanvas_trigger_sb"; ?>">
+        <section class="row row-offcanvas<?php print " $offcanvas_trigger_sb"; ?>" role="main">
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>

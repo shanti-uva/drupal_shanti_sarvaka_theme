@@ -36,6 +36,8 @@ Drupal.behaviors.sarvakaMbextruder = {
 				}
 		    // Bind event listener
 		    $(".extruder-content").resize(Drupal.ShantiSarvaka.checkWidth);
+		    // Add identifier
+		    $(".extruder-content").attr("aria-label","Search Panel");
 		   } catch (e) { 
 		   	console.trace();
 		   	console.warn('Resizeable not a function error caught! shanti-search.js line 31');
@@ -48,7 +50,9 @@ Drupal.behaviors.sarvakaMbextruder = {
 	      // styles inline for now, forces
 	      $(".flap").prepend("<span><span class='icon shanticon-search'></span></span>");
 	      $(".flap").addClass("on-flap");
+	      // Add identifiers
 	      $(".flap").attr("role", "button");
+	      $(".flap").attr("aria-label", "Open Search Panel");
 	    }
 
 	    // --- set class on dropdown menu for icon
