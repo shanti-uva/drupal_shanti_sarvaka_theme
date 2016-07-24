@@ -5,8 +5,8 @@
     <div class="navbar navbar-default">
 
 	      <nav class="navbar-buttons">
-	        <span class="menu-icon menu-toggle" role="button"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
-	        <span class="menu-explore menu-exploretoggle" role="button"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
+	        <span class="menu-icon menu-toggle" role="button" aria-label="Main Menu"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
+	        <span class="menu-explore menu-exploretoggle" role="button" aria-label="Explore Collections"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
 	      </nav>
 
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
@@ -115,7 +115,7 @@
           <?php endif; ?>
         </section>
 
-        <a href="#" class="back-to-top" role="button"><span class="icon fa"></span></a>
+        <a href="#" class="back-to-top" role="button" aria-label="Back to Top of Page"><span class="icon fa"></span></a>
       </article>
 
 		  <!-- Search Flyout -->
