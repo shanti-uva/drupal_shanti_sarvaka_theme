@@ -797,8 +797,9 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           };
 
-           $(window).bind('load orientationchange resize', fucntion() { Drupal.ShantiSarvaka.sidebarFooterGravity });
-
+          $(window).bind('load orientationchange resize', function() { 
+            $(this).one( Drupal.ShantiSarvaka.sidebarFooterGravity );
+          });
       }
     }
  };
