@@ -758,11 +758,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-        $(window).on('load orientationchange resize', function() {
-            clearTimeout(this.id);
-            this.id = setTimeout( sidebarFooterGravity, 1000);
-        });
-
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
             
@@ -803,7 +798,11 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
           };
 
            // $(window).on('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
-
+        $(window).on('load orientationchange resize', function() {
+            clearTimeout(this.id);
+            this.id = setTimeout( sidebarFooterGravity, 1000);
+        });
+        
       }
     }
  };
