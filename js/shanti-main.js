@@ -821,10 +821,10 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 500);
           }
 
-                    $("a.use-ajax").bind( 'click', function() {
+                    $("#sidebar-first .use-ajax").bind( 'click', function() {
                         $(document).ready(function(){
                             $("body").bind("ajaxComplete", function(e, xhr, settings){
-                                   set_equal_heights();
+                                   setTimeout( set_equal_heights, 2000);
                             });
                         });
                     });
