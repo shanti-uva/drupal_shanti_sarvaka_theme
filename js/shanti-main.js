@@ -815,17 +815,19 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-          $(window).bind('load', function() {
 
-              function set_equal_heights() {
-                 $('a.use-ajax').bind( 'click', function() {
-                    $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
-                 });
-              }; 
+          function set_equal_heights() {
+              clearTimeout(this.id);
+              this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 500);
+          }
 
-              window.setTimeout( set_equal_heights, 1000 );              
-          });
-
+                    $("a.use-ajax").bind( 'click', function() {
+                        $(document).ready(function(){
+                            $("body").bind("ajaxComplete", function(e, xhr, settings){
+                                   set_equal_heights();
+                            });
+                        });
+                    });
          //$("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
     /*     $("#sidebar-first").find("a.use-ajax").bind('resize', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
