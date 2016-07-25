@@ -797,7 +797,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           };
 
-           $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
+           $(window).bind('load orientationchange resize', fucntion() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
       }
     }
@@ -817,7 +817,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
          });
     */
-    
+
       }
     }
  };
