@@ -37,7 +37,7 @@ Drupal.behaviors.sarvakaMbextruder = {
 		    // Bind event listener
 		    $(".extruder-content").resize(Drupal.ShantiSarvaka.checkWidth);
 		    // Add identifier
-		    $(".extruder-content").attr("aria-label","Search Panel");
+		    // $(".extruder-content").attr("aria-label","Search Panel");
 		   } catch (e) { 
 		   	console.trace();
 		   	console.warn('Resizeable not a function error caught! shanti-search.js line 31');
