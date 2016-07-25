@@ -797,12 +797,12 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           };
 
-           // $(window).on('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
-        $(window).on('load orientationchange resize', function() {
+        $(window).bind('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
+        $(window).bind('resize orientationchange', function() {
             clearTimeout(this.id);
-            this.id = setTimeout( sidebarFooterGravity, 1000);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 5000);
         });
-        
+
       }
     }
  };
