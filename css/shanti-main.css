@@ -4323,6 +4323,10 @@ body.page-admin-modules #block-system-main.block.block-system {
   .navbar-brand .shanticon-logo {
     margin-left: 2rem;
   }
+
+  .navbar-header .navbar-brand{
+    margin-left:0;
+  }
   
   .navbar-default .menu-explore {
     display: none;
