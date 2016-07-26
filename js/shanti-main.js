@@ -771,7 +771,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var height = $(window).height();
               var mainwrapper_minimum = (height) - 160;
               //var mainwrapper_minimum_hastabs = (height) - 95;
-              var mainwrapper_minimum_adminfooter = (height) - 270;
+              var mainwrapper_minimum_adminfooter = (height) - 330;
               //var mainwrapper_minimum_adminfooter_hastabs = (height) - 275;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
@@ -801,7 +801,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
         $(window).bind('resize orientationchange', function() {
             clearTimeout(this.id);
-            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 500);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 2000);
         });
 
 

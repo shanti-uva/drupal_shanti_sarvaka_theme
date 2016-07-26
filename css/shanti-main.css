@@ -449,14 +449,19 @@ a:hover,a:focus,a:active {
 .navbar.navbar-default.navbar-static-top {
   border-bottom: none;
 }
-
+/* font style on site-banner H1 */
 .navbar-header {
-  color: #555;
-  font-style: italic;
+  /*color: #555;
+  font-style: italic;*/
   font-size: 1.62em;
   margin: 0;
   padding: 0;
-  font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;
+  /*font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;*/
+
+text-transform: uppercase;
+font-style: normal;
+letter-spacing: 0.25rem;
+font-family: 'museo-sans-500', arial, sans-serif;
 }
 
 .navbar-nav>li>a{
@@ -469,12 +474,12 @@ a:hover,a:focus,a:active {
   border: 0;
   display: inline-block;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 1rem; /* margin-left for mobile */
   color: #333;
   font-size: 0.88em;
   line-height: 1.38em;
   font-weight: normal;
-  height:45px;
+  height:45px; /* reduced height for mobile */
 }
 
 .navbar-header .navbar-brand:hover,
@@ -494,17 +499,17 @@ a:hover,a:focus,a:active {
   color: #444 !important;
   position: relative;
   top: 1.15rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.25rem;
-  font-family: 'museo-sans-500', arial,sans-serif;
+  font-family: 'museo-sans-500', arial,sans-serif;*/
 }
 
 .navbar-header .site-slogan::before {
   content: '/ ';
   margin-right: 0.5rem;
   position: relative;
-  top: -0.05rem;
+  top: 0;
 }
 
 .navbar-brand .shanticon-logo {
@@ -4292,10 +4297,13 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .navbar-header .site-slogan {
     font-size: 100%;
-    top:1.45rem;
+    top:1.35rem;
   }
 
-  .navbar-brand { height:50; }
+  .navbar-header .navbar-brand{
+    height:50;
+    margin-left:0;
+  }
   
   .site-banner .collections ul li {
     width: 20%;
