@@ -477,7 +477,7 @@ font-family: 'museo-sans-500', arial, sans-serif;
   margin: 0 0 0 1rem; /* margin-left for mobile */
   color: #333;
   font-size: 0.88em;
-  line-height: 1.38em;
+  /*line-height: 1.38em;*/
   font-weight: normal;
   height:45px; /* reduced height for mobile */
 }
@@ -498,7 +498,7 @@ font-family: 'museo-sans-500', arial, sans-serif;
   white-space: nowrap;
   color: #444 !important;
   position: relative;
-  top: 1.15rem;
+  top: 1.35rem;
   /*text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.25rem;
@@ -518,7 +518,7 @@ font-family: 'museo-sans-500', arial, sans-serif;
 
   font-size: 1.5em;
   position: relative;
-  top:1.15rem;
+  top: 0.7rem;
   float:left;
   margin-right: 0.75rem;
 }
@@ -4297,7 +4297,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .navbar-header .site-slogan {
     font-size: 100%;
-    top:1.35rem;
   }
 
   .navbar-header .navbar-brand{
