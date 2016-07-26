@@ -477,7 +477,7 @@ font-family: 'museo-sans-500', arial, sans-serif;
   margin: 0 0 0 1rem; /* margin-left for mobile */
   color: #333;
   font-size: 0.88em;
-  /*line-height: 1.38em;*/
+  line-height: 1.38em;
   font-weight: normal;
   height:45px; /* reduced height for mobile */
 }
@@ -518,7 +518,7 @@ font-family: 'museo-sans-500', arial, sans-serif;
 
   font-size: 1.5em;
   position: relative;
-  top: 0.7rem;
+  top: 1.15rem;
   float:left;
   margin-right: 0.75rem;
 }
@@ -4301,7 +4301,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .navbar-header .navbar-brand{
     height:50;
-    margin-left:0;
   }
   
   .site-banner .collections ul li {
