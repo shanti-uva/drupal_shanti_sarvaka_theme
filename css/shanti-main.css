@@ -4272,10 +4272,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 * ----------------------------------
 */
 
-@media screen and (min-width: 400px) {
-
-}
-
 @media screen and (min-width: 500px) {
     
   .navbar-header .site-slogan {
