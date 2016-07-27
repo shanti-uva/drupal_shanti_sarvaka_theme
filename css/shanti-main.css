@@ -4300,7 +4300,7 @@ body.page-admin-modules #block-system-main.block.block-system {
   }
 
   .navbar-header .navbar-brand{
-    height:50;
+    height:50px;
   }
   
   .site-banner .collections ul li {
@@ -4392,10 +4392,6 @@ body.page-admin-modules #block-system-main.block.block-system {
   .main-wrapper {
     min-height: 800px;
   }
-
-  .logged-in .main-wrapper {
-    /*min-height: 750px;*/
-  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -4403,10 +4399,6 @@ body.page-admin-modules #block-system-main.block.block-system {
   .sidebar,
   .main-wrapper {
     min-height: 900px;
-  }
-  
-  .logged-in .main-wrapper {
-    /*min-height: 850px;*/
   }
 }
 
