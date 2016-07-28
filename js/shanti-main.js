@@ -823,7 +823,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           $(".use-ajax").click( function() {
               $(document).ready( function() {
-                  $(".content-section.equal-height").on('ajaxComplete', function(e){
+                  $(".content-section.equal-height").bind('ajaxComplete', function(e){
                          setTimeout( set_equal_heights, 200);
                   });
               });
