@@ -4157,14 +4157,14 @@ table tr.ok {
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
 /* broad range need to watch */
-/* .page-node-devel .tab-pane.main-col > div.region-content */
-.tab-pane.main-col {
+/* .page-node-devel article.main-col > div.region-content */
+article.main-col {
   max-width: 1050px !important;
-  padding: 1.7rem 0 0;
+  padding: 1.7rem 0 5rem;
   margin: 0 auto !important;
 }
 
-.tab-pane.main-col > div.region-content::after{
+article.main-col > div.region-content::after{
   /* clearfix application */
   display: table;
   content: " ";
@@ -4173,13 +4173,13 @@ table tr.ok {
   visibility: hidden;
 }
 
-.page-mydata .tab-pane.main-col,
-.page-mygallery .tab-pane.main-col,
-.page-user-contact .tab-pane.main-col {
+.page-mydata article.main-col,
+.page-mygallery article.main-col,
+.page-user-contact article.main-col {
   max-width: 940px !important;
 }
 
-.page-user-contact .tab-pane.main-col {
+.page-user-contact article.main-col {
   max-width: 850px !important;
 }
 
@@ -4202,7 +4202,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 }
 
 .tab-content.container-fluid{
-  padding-bottom:5rem;
+  /*padding-bottom:5rem;*/
 }
 
 /********************************/
