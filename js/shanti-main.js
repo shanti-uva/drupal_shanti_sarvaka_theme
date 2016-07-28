@@ -778,14 +778,14 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               //mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
               //mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
-              $(".main-wrapper").css('min-height',mainwrapper_minimum);
+              $(".main-col").css('min-height',mainwrapper_minimum);
               //$(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
-              $(".admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter);
+              $(".admin-menu .main-col").css('min-height',mainwrapper_minimum_adminfooter);
               //$(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               // var mainwrapper = $(".main-wrapper").height(); 
-              var sidebar = $(".main-wrapper").height() - 70;  // for sidebar height
-              var sidebarsecond = $(".main-wrapper").height() - 80;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              var sidebar = $(".main-col").height();  // for sidebar height
+              var sidebarsecond = $(".main-col").height() - 10;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               sidebar = parseInt(sidebar) + 'px';
