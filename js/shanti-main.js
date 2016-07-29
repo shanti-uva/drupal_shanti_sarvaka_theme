@@ -757,6 +757,8 @@ Drupal.behaviors.shantiDeleteButtonDisable = {
 Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
+ 
+
 
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
@@ -815,7 +817,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-          function set_equal_heights() {
+
+          Drupal.ShantiSarvaka.set_equal_heights = function() {
               clearTimeout(this.id);
               this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
           }
@@ -823,11 +826,10 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
           $(".use-ajax").click( function() {
               $(document).ready( function() {
                   $(".content-section.equal-height").bind('ajaxSend', function(e){
-                         setTimeout( set_equal_heights, 200);
+                         setTimeout( Drupal.ShantiSarvaka.set_equal_heights, 200);
                   });
               });
           });
-
 
             // $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
