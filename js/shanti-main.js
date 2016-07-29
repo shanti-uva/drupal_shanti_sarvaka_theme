@@ -52,7 +52,7 @@
     var height = $(window).height();
     var srchtab = (height) - 88;
     var viewheight = (height) - 235;
-    var viewheightadmin = (height) - 270; // adds height of Drupal admin navbar
+    var viewheightadmin = (height) - 270; // subtract 35px height of Drupal admin navbar
     // var advHeight = $(".advanced-view").show().height();
     // var comboHeight = (viewheight) - 370;
 
@@ -797,7 +797,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               sidebar = parseInt(sidebar) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
               // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
-              $(".sidebar").css('height',sidebar);
+              $(".sidebar-first").css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs) 
 
@@ -807,7 +807,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
         $(window).on('load', function() {
             clearTimeout(this.id);
-            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 500);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
         });
 
         $(window).bind('resize orientationchange', function() {
