@@ -4164,6 +4164,10 @@ article.main-col {
   margin: 0 auto !important;
 }
 
+.no-sidebars article.main-col{
+  padding-bottom:50px;
+}
+
 article.main-col > div.region-content::after{
   /* clearfix application */
   display: table;

@@ -790,7 +790,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               //$(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               // var mainwrapper = $(".main-wrapper").height(); 
-              var sidebar = $(".main-col").height();  // for sidebar height
+              var sidebar = $(".main-col").height() + 50;  // for sidebar height
               var sidebarsecond = $(".main-col").height() + 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
