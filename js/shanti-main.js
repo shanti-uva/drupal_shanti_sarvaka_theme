@@ -785,14 +785,14 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               // var mainwrapper = $(".main-wrapper").height(); 
               var sidebar = $(".main-col").height();  // for sidebar height
-              //var sidebarsecond = $(".main-col").height();  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              var sidebarsecond = $(".main-col").height() + 10;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               sidebar = parseInt(sidebar) + 'px';
-              //sidebarsecond = parseInt(sidebarsecond) + 'px';
+              sidebarsecond = parseInt(sidebarsecond) + 'px';
               // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
               $(".sidebar").css('height',sidebar);
-              //$(".region-sidebar-second").css('height',sidebarsecond);
+              $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs) 
 
           };
