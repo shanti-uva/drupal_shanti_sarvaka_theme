@@ -799,11 +799,16 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
           };
 
-        $(window).on('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
+        // $(window).on('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
+        $(window).on('load', function() {
+            clearTimeout(this.id);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 500);
+        });
 
         $(window).bind('resize orientationchange', function() {
             clearTimeout(this.id);
-            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 500);
         });
 
 
