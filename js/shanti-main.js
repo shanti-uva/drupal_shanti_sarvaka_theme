@@ -785,14 +785,14 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               // var mainwrapper = $(".main-wrapper").height(); 
               var sidebar = $(".main-col").height();  // for sidebar height
-              var sidebarsecond = $(".main-col").height();  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              //var sidebarsecond = $(".main-col").height();  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               sidebar = parseInt(sidebar) + 'px';
-              sidebarsecond = parseInt(sidebarsecond) + 'px';
+              //sidebarsecond = parseInt(sidebarsecond) + 'px';
               // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
-              $(".sidebar-first").css('height',sidebar);
-              $(".region-sidebar-second").css('height',sidebarsecond);
+              $(".sidebar").css('height',sidebar);
+              //$(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs) 
 
           };
@@ -803,6 +803,17 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             clearTimeout(this.id);
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
         });
+
+
+
+      }
+    }
+ };
+
+ // Kmaps - sidebar height and footer coordinate heights
+ Drupal.behaviors.shantiKmapsSidebarFooter = {
+   attach: function (context, settings) {
+      if (context == document) {
 
           function set_equal_heights() {
               clearTimeout(this.id);
@@ -816,17 +827,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
                   });
               });
           });
-
-      }
-    }
- };
-
- // Kmaps - sidebar height and footer coordinate heights
- Drupal.behaviors.shantiKmapsSidebarFooter = {
-   attach: function (context, settings) {
-      if (context == document) {
-
-
 
 
             // $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
