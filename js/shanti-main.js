@@ -812,9 +812,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-        Drupal.ShantiSarvaka.sidebarFooterGravity();
-        $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.sidebarFooterGravity );
-
 
           Drupal.ShantiSarvaka.set_equal_heights = function() {
               clearTimeout(this.id);
@@ -832,17 +829,12 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
 
         // $(window).on('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
-/*
-        $(window).on('load', function() {
+
+        $(window).bind('resize orientationchange', function() {
             clearTimeout(this.id);
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
         });
 
-        $(window).bind('resize orientationchange', function() {
-            clearTimeout(this.id);
-            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 500);
-        });
-*/
 
             // $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
