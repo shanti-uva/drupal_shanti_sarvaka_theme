@@ -51,8 +51,9 @@
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
     var srchtab = (height) - 88;
+    var srchtabAdmin = (height) - 123; // subtract 35px height of Drupal admin navbar
     var viewheight = (height) - 235;
-    var viewheightadmin = (height) - 270; // subtract 35px height of Drupal admin navbar
+    
     // var advHeight = $(".advanced-view").show().height();
     // var comboHeight = (viewheight) - 370;
 
@@ -60,13 +61,14 @@
     srchtab = parseInt(srchtab) + 'px';
     $("#search-flyout").find(".text").css('height',srchtab);
 
+    srchtabAdmin = parseInt(srchtabAdmin) + 'px';
+    $(".admin-menu .view-wrap").find(".text").css('height',srchtabAdmin);
+
     viewheight = parseInt(viewheight) + 'px';
     // comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
     // $(".view-wrap.short-wrap").css('height', comboHeight);
 
-    viewheightadmin = parseInt(viewheightadmin) + 'px';
-    $(".admin-menu .view-wrap").css('height', viewheightadmin);
   };
 
   /**
