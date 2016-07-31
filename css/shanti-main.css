@@ -1740,12 +1740,12 @@ body.front ol.breadcrumb {
 } 
 
 .popover:not(.related-resources-popover) { /* temp hiding */
-  z-index:-10; 
+  /*z-index:-10; */
 }
 
 .popover.fade.in:not(.related-resources-popover){ /* temp hiding */
-  filter: alpha(opacity=0);
-  opacity:0; 
+  /*filter: alpha(opacity=0);
+  opacity:0; */
 } 
 
 .related-resources-popover {
