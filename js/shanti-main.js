@@ -779,7 +779,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var height = $(window).height();
               var mainwrapper_minimum = (height) - 230;
               var mainwrapper_minimum_hastabs = (height) - 255;
-              var mainwrapper_minimum_adminfooter = (height) - 375;
+              var mainwrapper_minimum_adminfooter = (height) - 400;
               // var mainwrapper_minimum_adminfooter_hastabs = (height) - 430;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
