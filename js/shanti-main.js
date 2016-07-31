@@ -779,7 +779,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               var height = $(window).height();
               var mainwrapper_minimum = (height) - 230;
               var mainwrapper_minimum_hastabs = (height) - 255;
-              var mainwrapper_minimum_adminfooter = (height) - 400;
+              var mainwrapper_minimum_adminfooter = (height) - 375;
               // var mainwrapper_minimum_adminfooter_hastabs = (height) - 430;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
@@ -788,7 +788,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
               $(".main-col").css('min-height',mainwrapper_minimum);
               $(".has-tabs .main-col").css('min-height',mainwrapper_minimum_hastabs);
-              $(".admin-menu .main-col").css('min-height',mainwrapper_minimum_adminfooter);
+              $(".admin-menu.has-tabs .main-col").css('min-height',mainwrapper_minimum_adminfooter);
               // $(".admin-menu .main-col").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               // var mainwrapper = $(".main-wrapper").height(); 
