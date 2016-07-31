@@ -778,18 +778,18 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
               var height = $(window).height();
               var mainwrapper_minimum = (height) - 230;
-              //var mainwrapper_minimum_hastabs = (height) - 95;
+              var mainwrapper_minimum_hastabs = (height) - 255;
               var mainwrapper_minimum_adminfooter = (height) - 425;
-              //var mainwrapper_minimum_adminfooter_hastabs = (height) - 275;
+              var mainwrapper_minimum_adminfooter_hastabs = (height) - 455;
 
               mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
-              //mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
+              mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
               mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
-              //mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
+              mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
               $(".main-col").css('min-height',mainwrapper_minimum);
-              //$(".has-tabs.main-wrapper").css('min-height',mainwrapper_minimum_hastabs);
+              $(".has-tabs.main-col").css('min-height',mainwrapper_minimum_hastabs);
               $(".admin-menu .main-col").css('min-height',mainwrapper_minimum_adminfooter);
-              //$(".has-tabs.admin-menu .main-wrapper").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
+              $(".has-tabs.admin-menu .main-col").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               // var mainwrapper = $(".main-wrapper").height(); 
               var sidebar = $(".main-col").height() + 50;  // for sidebar height
