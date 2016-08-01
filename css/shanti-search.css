@@ -364,18 +364,18 @@ object.flip_label {
 
 /* reset search button */
 .input-section .searchreset {
-  border: none;
   background: transparent;
   background-image: none;
+  background-clip: padding-box;
+  box-shadow: none;
+  border-radius: 50%;
+  border: none;
   position: absolute;
   right: 5rem;
   top: 0.9rem;
   z-index: 10;
   padding: 0;
   margin: 0;
-  display: none;
-  border-radius: 50%;
-  background-clip: padding-box;
 }
 
 .input-section .searchreset:hover,
@@ -386,33 +386,33 @@ object.flip_label {
 .input-section .searchreset:active,
 .input-section .searchreset.active {
   background: transparent;
-  border: none;
   background-image: none;
   box-shadow: none;
+  border: none;
 }
 
 .input-section .searchreset .icon {
-  cursor: pointer;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 50%;
+  background: transparent;
   background-clip: padding-box;
   border: none;
+  border-radius: 50%;
+  cursor: pointer;
   position: relative;
-  top: -0.55rem;
-  left: 0;
-  background: transparent;
+  top: .6rem;
+  left: 0.1rem;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .input-section .searchreset .icon::before,
 .input-section .searchreset .icon::after {
   background: #aaa;
+  content: '';
   position: absolute;
   top: 1.3rem;
   left: 0.5rem;
   width: 1.7rem;
   height: 1px;
-  content: '';
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
