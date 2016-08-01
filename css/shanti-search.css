@@ -381,6 +381,11 @@ object.flip_label {
 .input-section .searchreset:hover,
 .input-section .searchreset:active {
   color: #777;
+
+  color: transparent;
+  background-image: none;
+  background: transparent;
+  border: none;
 }
 
 .input-section .searchreset:active,
