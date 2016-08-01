@@ -363,7 +363,7 @@ object.flip_label {
 }
 
 /* reset search button */
-.input-section .input-group-btn .searchreset {
+.input-section .searchreset {
   border: none;
   background: transparent;
   background-image: none;
@@ -378,20 +378,20 @@ object.flip_label {
   background-clip: padding-box;
 }
 
-.input-section .input-group-btn .searchreset:hover,
-.input-section .input-group-btn .searchreset:active {
+.input-section .searchreset:hover,
+.input-section .searchreset:active {
   color: #777;
 }
 
-.input-section .input-group-btn .searchreset:active,
-.input-section .input-group-btn .searchreset.active {
+.input-section .searchreset:active,
+.input-section .searchreset.active {
   background: transparent;
   border: none;
   background-image: none;
   box-shadow: none;
 }
 
-.input-section .input-group-btn .searchreset .icon {
+.input-section .searchreset .icon {
   cursor: pointer;
   width: 2.75rem;
   height: 2.75rem;
@@ -404,8 +404,8 @@ object.flip_label {
   background: transparent;
 }
 
-.input-section .input-group-btn .searchreset .icon::before,
-.input-section .input-group-btn .searchreset .icon::after {
+.input-section .searchreset .icon::before,
+.input-section .searchreset .icon::after {
   background: #aaa;
   position: absolute;
   top: 1.3rem;
@@ -418,14 +418,14 @@ object.flip_label {
   transform: rotate(45deg);
 }
 
-.input-section .input-group-btn .searchreset .icon::after {
+.input-section .searchreset .icon::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.input-section .input-group-btn .searchreset:hover .icon,
-.input-section .input-group-btn .searchreset:active .icon {
+.input-section .searchreset:hover .icon,
+.input-section .searchreset:active .icon {
   background: #f5f5f5;
 }
 
