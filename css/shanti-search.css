@@ -491,6 +491,7 @@ object.flip_label {
 
 .input-section .search-group {
   height: 86px;
+  position:relative;
 }
 
 .input-section .search-group .form-group {
