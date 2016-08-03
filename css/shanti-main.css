@@ -1732,6 +1732,7 @@ body.front ol.breadcrumb {
   font-size:0.88em;
   line-height:1.18em;
   width:250px;
+  font-style:normal;
 }
 
 .popover.fade.in{
