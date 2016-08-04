@@ -663,7 +663,7 @@
       attach: function (context, settings) {
         if(context == window.document) {
                           
-          var mbsrch = $(".search-group .form-control");  // the main search input
+          var mbsrch = $(".search-group .form-control:not(.kmaps-tt-hint)");  // the main search input
           $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
       
           // --- focusin - focusout
