@@ -792,14 +792,14 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
               // $(".admin-menu .main-col").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
 
               // var mainwrapper = $(".main-wrapper").height(); 
-              var sidebar = $(".main-col").height().one() + 50;  // for sidebar height
+              var sidebar = $(".main-col").height() + 50;  // for sidebar height
               var sidebarsecond = $(".main-col").height() + 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
               // var sidebarsecond_hastabs = (mainwrapper) - 115;
 
               sidebar = parseInt(sidebar) + 'px';
               sidebarsecond = parseInt(sidebarsecond) + 'px';
               // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
-              $(".sidebar-first").css('height',sidebar);
+              $(".sidebar-first").one().css('height',sidebar);
               $(".region-sidebar-second").css('height',sidebarsecond);
               // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs) 
 
@@ -814,22 +814,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
 
-
-          Drupal.ShantiSarvaka.set_equal_heights = function() {
-              clearTimeout(this.id);
-              this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
-          }
-
-          $(".use-ajax").click( function() {
-              $(document).ready( function() {
-                  $(".content-section.equal-height").bind('ajaxComplete', function(e){
-                         setTimeout( Drupal.ShantiSarvaka.set_equal_heights, 200);
-                  });
-              });
-          });
-
-
-
         // $(window).on('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
 
         $(window).on('load', function() {
@@ -843,6 +827,21 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
         });
 
 
+
+        Drupal.ShantiSarvaka.set_equal_heights = function() {
+            clearTimeout(this.id);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
+        }
+
+        $(".use-ajax").click( function() {
+            $(document).ready( function() {
+                $(".content-section.equal-height").bind('ajaxComplete', function(e){
+                       setTimeout( Drupal.ShantiSarvaka.set_equal_heights, 200);
+                });
+            });
+        });
+
+          
             // $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
             /*     $("#sidebar-first").find("a.use-ajax").bind('resize', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
