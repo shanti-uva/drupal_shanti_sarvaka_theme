@@ -675,7 +675,7 @@
               $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
               $("button.searchreset").hide();
       
-              var str = "Enter Search...";
+              var str = $(mbsrch).data("holder"); //"Enter Search...";
               var txt = $(mbsrch).val();
       
               if (str.indexOf(txt) > -1) {
