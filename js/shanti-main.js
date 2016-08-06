@@ -662,31 +662,32 @@
   Drupal.behaviors.shantiSarvakaSearchFlyoutCancel = {
       attach: function (context, settings) {
         if(context == window.document) {
-                          
-          var mbsrch = $(".search-group .form-control:not(.kmaps-tt-hint)");  // the main search input
-          $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
-      
-          // --- focusin - focusout
-          $(mbsrch).focusin(function () {
-              $(mbsrch).attr("placeholder", "");
-              $("button.searchreset").show("fast");
-          });
-          $(mbsrch).focusout(function () {
-              $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
-              $("button.searchreset").hide();
-      
-              var str = $(mbsrch).data("holder"); //"Enter Search...";
-              var txt = $(mbsrch).val();
-      
-              if (str.indexOf(txt) > -1) {
-                  $("button.searchreset").hide();
-                  return true;
-              } else {
-                  $("button.searchreset").show(100);
-                  return false;
-              }
-          });
-        
+        	$('.search-group').once().each(function() {
+				var $xbtn = $("button.searchreset", this);
+        		var $srch = $(".form-control:not(.kmaps-tt-hint)", this);  // the main search input
+				$srch.data("holder", $srch.attr("placeholder"));
+
+				// --- focusin - focusout
+				$srch.focusin(function () {
+					$srch.attr("placeholder", "");
+					$xbtn.show("fast");
+				});
+				$srch.focusout(function () {
+					$srch.attr("placeholder", $srch.data("holder"));
+					$xbtn.hide();
+
+					var str = $srch.data("holder"); //"Enter Search...";
+					var txt = $srch.val();
+
+					if (str.indexOf(txt) > -1) {
+						$xbtn.hide();
+						return true;
+					} else {
+						$xbtn.show(100);
+						return false;
+					}
+				});
+			});
         }
       }
   };
