@@ -321,7 +321,8 @@ font-size: 1.12em;
   position:relative;
 }
 
-.field-name-field-subject .kmap-tree-picker{
+.field-name-field-subject .kmap-tree-picker,
+.field-name-field-subcollection-root .kmap-tree-picker{
   position:relative;
 }
 
