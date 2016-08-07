@@ -308,6 +308,7 @@ font-size: 1.12em;
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
   max-width: 20em;
   display: inline-block;
+  padding-left:2.8rem;
 }
 
 .kmap-typeahead-picker .twitter-typeahead{
@@ -317,6 +318,14 @@ font-size: 1.12em;
 .field-name-field-location .kmap-typeahead-picker{
   border-top:1px solid #ccc;
   padding-top:2rem;
+  position:relative;
+}
+
+.field-name-field-location .kmap-typeahead-picker .shanticon-magnify{
+  position: absolute;
+  left: 1rem;
+  margin-top: 0.7rem;
+  color: #888;
 }
 
 .kmap-search-header p{
