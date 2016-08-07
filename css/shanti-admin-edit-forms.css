@@ -319,7 +319,7 @@ font-size: 1.12em;
 }
 
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  width: 30rem;
+  width: 27rem;
   display: inline-block;
   padding-left: 3rem;
 }
@@ -338,6 +338,15 @@ font-size: 1.12em;
 .field-name-field-subject .kmap-tree-picker,
 .field-name-field-subcollection-root .kmap-tree-picker{
   position:relative;
+}
+
+.field-name-field-subcollection-root .kmap-tree-picker{
+  width:38rem;
+}
+
+.field-name-field-subcollection-root .kmap-tree-picker .searchreset{
+  right: 12rem;
+  top: 2.5rem;
 }
 
 .kmap-tree-picker .shanticon-magnify,
