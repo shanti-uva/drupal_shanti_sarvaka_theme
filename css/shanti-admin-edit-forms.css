@@ -335,7 +335,8 @@ font-size: 1.12em;
   font-size: 1em;
 }
 
-.field-name-field-subject .kmap-tree-picker .shanticon-magnify{
+.field-name-field-subject .kmap-tree-picker .shanticon-magnify,
+.field-name-field-subcollection-root .kmap-tree-picker .shanticon-magnify{
   margin-top: 0.7rem;
 }
 
