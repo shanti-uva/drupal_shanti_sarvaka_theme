@@ -313,6 +313,11 @@ font-size: 1.12em;
   bottom: -3.5rem;
 }
 
+.field-name-field-subject .kmap-tree-picker .searchreset{
+  right: 12rem;
+  top: 2.5rem;
+}
+
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
   width: 30rem;
   display: inline-block;
@@ -324,6 +329,10 @@ font-size: 1.12em;
   padding-top:1rem;
   position:relative;
   width: 30rem;
+}
+
+.field-name-field-subject .kmap-typeahead-picker{
+  width: 38rem;
 }
 
 .field-name-field-subject .kmap-tree-picker,
