@@ -305,20 +305,25 @@ font-size: 1.12em;
 /**
 * KMAPS - Search 
 */
+
+
+.field-name-field-location .kmap-typeahead-picker .searchreset{
+  position: absolute;
+  right: 1rem;
+  bottom: -3.5rem;
+}
+
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  max-width: 20em;
+  width: 30rem;
   display: inline-block;
   padding-left: 3rem;
 }
 
-.kmap-typeahead-picker .twitter-typeahead{
-  width: 49%;
-}
-
 .field-name-field-location .kmap-typeahead-picker{
   border-top:1px solid #ccc;
-  padding-top:2rem;
+  padding-top:1rem;
   position:relative;
+  width: 30rem;
 }
 
 .field-name-field-subject .kmap-tree-picker,
@@ -330,7 +335,7 @@ font-size: 1.12em;
 .kmap-typeahead-picker .shanticon-magnify{
   position: absolute;
   left: 1rem;
-  margin-top: 1.9rem;
+  margin-top: 0.9rem;
   color: #999;
   font-size: 1em;
 }
