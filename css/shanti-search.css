@@ -366,7 +366,8 @@ object.flip_label {
 * BEGIN Search Reset 
 */
 .input-section .searchreset,
-.kmap-typeahead-picker .searchreset {
+.kmap-typeahead-picker .searchreset,
+.kmap-tree-picker .searchreset {
   background: transparent;
   background-image: none;
   background-clip: padding-box;
@@ -384,7 +385,9 @@ object.flip_label {
 .input-section .searchreset:hover,
 .input-section .searchreset:active,
 .kmap-typeahead-picker .searchreset:hover,
-.kmap-typeahead-picker .searchreset:active {
+.kmap-typeahead-picker .searchreset:active,
+.kmap-tree-picker .searchreset:hover,
+.kmap-tree-picker .searchreset:active {
   color: #777;
 
   color: transparent;
@@ -396,7 +399,9 @@ object.flip_label {
 .input-section .searchreset:active,
 .input-section .searchreset.active,
 .kmap-typeahead-picker .searchreset:active,
-.kmap-typeahead-picker .searchreset.active {
+.kmap-typeahead-picker .searchreset.active,
+.kmap-tree-picker .searchreset:active,
+.kmap-tree-picker .searchreset.active {
   background: transparent;
   background-image: none;
   box-shadow: none;
@@ -404,7 +409,8 @@ object.flip_label {
 }
 
 .input-section .searchreset .icon,
-.kmap-typeahead-picker .searchreset .icon {
+.kmap-typeahead-picker .searchreset .icon,
+.kmap-tree-picker .searchreset .icon {
   background: transparent;
   background-clip: padding-box;
   border: none;
@@ -420,7 +426,9 @@ object.flip_label {
 .input-section .searchreset .icon::before,
 .input-section .searchreset .icon::after,
 .kmap-typeahead-picker .searchreset .icon::before,
-.kmap-typeahead-picker .searchreset .icon::after {
+.kmap-typeahead-picker .searchreset .icon::after,
+.kmap-tree-picker .searchreset .icon::before,
+.kmap-tree-picker .searchreset .icon::after {
   background: #aaa;
   content: '';
   position: absolute;
@@ -434,7 +442,8 @@ object.flip_label {
 }
 
 .input-section .searchreset .icon::after,
-.kmap-typeahead-picker .searchreset .icon::after {
+.kmap-typeahead-picker .searchreset .icon::after,
+.kmap-tree-picker .searchreset .icon::after{
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -443,7 +452,9 @@ object.flip_label {
 .input-section .searchreset:hover .icon,
 .input-section .searchreset:active .icon,
 .kmap-typeahead-picker .searchreset:hover .icon,
-.kmap-typeahead-picker .searchreset:active .icon {
+.kmap-typeahead-picker .searchreset:active .icon,
+.kmap-tree-picker .searchreset:hover .icon,
+.kmap-tree-picker .searchreset:active .icon {
   background: #f5f5f5;
 }
 
