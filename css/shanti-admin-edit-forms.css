@@ -321,15 +321,21 @@ font-size: 1.12em;
   position:relative;
 }
 
-.field-name-field-location .kmap-typeahead-picker .shanticon-magnify{
-  position: absolute;
-  left: 1rem;
-  margin-top: 1.8rem;
-  color: #999;
+.field-name-field-subject .kmap-tree-picker{
+  position:relative;
 }
 
-.field_location-typeahead-wrapper .kmap-typeahead-picker .shanticon-magnify{
+.kmap-tree-picker .shanticon-magnify,
+.kmap-typeahead-picker .shanticon-magnify{
+  position: absolute;
+  left: 1rem;
+  margin-top: 1.9rem;
+  color: #999;
+  font-size: 1em;
+}
 
+.field-name-field-subject .kmap-tree-picker .shanticon-magnify{
+  margin-top: 0.7rem;
 }
 
 .kmap-search-header p{
