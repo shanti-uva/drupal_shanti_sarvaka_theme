@@ -62,7 +62,7 @@
     $("#search-flyout").find(".text").css('height',srchtab);
 
     srchtabAdmin = parseInt(srchtabAdmin) + 'px';
-    $(".admin-menu .view-wrap").find(".text").css('height',srchtabAdmin);
+    $(".admin-menu #search-flyout").find(".text").css('height',srchtabAdmin);
 
     viewheight = parseInt(viewheight) + 'px';
     // comboHeight = parseInt(comboHeight) + 'px';
