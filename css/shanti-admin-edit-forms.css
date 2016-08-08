@@ -309,8 +309,12 @@ font-size: 1.12em;
 
 .field-name-field-location .kmap-typeahead-picker .searchreset{
   position: absolute;
-  right: 1rem;
+  right: 4rem;
   bottom: -3.5rem;
+}
+
+.field-name-field-subject .kmap-tree-picker{
+  width:38rem;
 }
 
 .field-name-field-subject .kmap-tree-picker .searchreset{
