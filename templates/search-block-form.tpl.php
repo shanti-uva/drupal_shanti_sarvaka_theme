@@ -37,6 +37,7 @@
 				  	<?php print $search['search_block_form']; ?>
 				  	<div class="input-group-btn">
 				  		<?php print $search['actions']; ?>
+              <span class="icon shanticon-magnify"></span>
 				  		<button type="reset" class="btn searchreset" style="display:none;"><span class="icon"></span></button>
 				  	</div>
 
