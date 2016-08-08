@@ -274,7 +274,7 @@ object.flip_label {
   height: 35px; /* coordinate with button height below */
   line-height: 1.44em;
   margin: 14px 0 0;
-  padding: 2px 75px 0 15px;
+  padding: 2px 75px 0 32px;
   width: 100%;
   max-width: 100%;
   overflow: auto;
@@ -460,16 +460,18 @@ object.flip_label {
 
 .input-section .shanticon-magnify{
     position: absolute;
-    left: 2.5rem; 
-    top: 2.8rem;
-    font-size: 1.12em;
+    left: 2rem; 
+    top: 1.45rem;
+    z-index:10;
+    font-size: 1.18em;
     color: #999;
 }
 
 .input-section .kmap-typeahead-picker .shanticon-magnify{
-    /* position: absolute;
+    position: absolute;
     left: 2.5rem; 
-    top: 2.8rem;*/
+    top: 2.8rem;
+    font-size: 1.12em;
 }
 
 
