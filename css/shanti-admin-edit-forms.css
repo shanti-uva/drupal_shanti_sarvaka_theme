@@ -305,8 +305,6 @@ font-size: 1.12em;
 /**
 * KMAPS - Search 
 */
-
-
 .field-name-field-location .kmap-typeahead-picker .searchreset{
   position: absolute;
   right: 4rem;
@@ -357,6 +355,7 @@ font-size: 1.12em;
 .kmap-typeahead-picker .shanticon-magnify{
   position: absolute;
   left: 1rem;
+  top:2.8rem;
   margin-top: 0.9rem;
   color: #999;
   font-size: 1em;
