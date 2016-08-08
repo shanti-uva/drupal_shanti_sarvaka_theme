@@ -356,14 +356,14 @@ font-size: 1.12em;
   position: absolute;
   left: 1rem;
   top:2.8rem;
-  margin-top: 0.9rem;
+  /*margin-top: 0.9rem;*/
   color: #999;
   font-size: 1em;
 }
 
 .field-name-field-subject .kmap-tree-picker .shanticon-magnify,
 .field-name-field-subcollection-root .kmap-tree-picker .shanticon-magnify{
-  margin-top: 0.7rem;
+  /*margin-top: 0.7rem;*/
 }
 
 .kmap-search-header p{
