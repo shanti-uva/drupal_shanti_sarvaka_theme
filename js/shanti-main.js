@@ -662,9 +662,9 @@
   Drupal.behaviors.shantiSarvakaSearchFlyoutCancel = {
       attach: function (context, settings) {
         if(context == window.document) {
-        	$('.search-group').once().each(function() {
+        	$('.search-group .input-group').once().each(function() {
 				var $xbtn = $("button.searchreset", this);
-        		var $srch = $(".form-control:not(.kmaps-tt-hint)", this);  // the main search input
+        		var $srch = $(".form-control", this);  // the main search input
 				$srch.data("holder", $srch.attr("placeholder"));
 
 				// --- focusin - focusout
