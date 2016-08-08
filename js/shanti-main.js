@@ -659,6 +659,7 @@
 	};
 
 
+	// handles ordinary search flyout inputs (not typeahead inputs)
   Drupal.behaviors.shantiSarvakaSearchFlyoutCancel = {
       attach: function (context, settings) {
         if(context == window.document) {
