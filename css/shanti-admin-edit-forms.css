@@ -19,28 +19,51 @@
   position:relative;
 }
 
-
-
-
-.page-node-add .tab-pane.main-col,
-.page-node-group .tab-pane.main-col,
-.page-group-node-admin .tab-pane.main-col {
-  max-width: 920px !important;
-}
-
 .page-node-add .content-section a,
 .page-node-edit .content-section a {
   font-weight: bold;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
+
+/**
+* Page layout
+*/
+.page-node-add .tab-pane.main-col,
+.page-node-group .tab-pane.main-col,
+.page-group-node-admin .tab-pane.main-col {
+  max-width: 920px !important;
+}
+
+.page-node-add.no-sidebars .tab-pane.main-col,
+.page-node-edit.no-sidebars .tab-pane.main-col,
+.page-node-group.no-sidebars .tab-panel.main-col{
+    max-width: 870px !important;
+}
+
+@media (min-width:1150px) {
+
+  .page-node-edit .tab-pane.main-col {
+      max-width: 920px !important;
+  }
+}
+
+.page-mycontent-workflow .tab-pane.main-col {
+  max-width:1200px;
+}
+
+.page-group-node-admin .tab-pane.main-col{
+  padding-top:3rem;
+}
+
+
+
+
 /* powerful, careful */
 .page-node-add .fieldset-wrapper .form-item,
 .page-node-edit .fieldset-wrapper .form-item{
   margin:0;
 }
-
-
 
 /* My Stuff Account Collections page - 50% columns for drop-select */
 .view-my-workflow .field-accordion .form-item {
@@ -305,78 +328,6 @@ font-size: 1.12em;
 /**
 * KMAPS - Search 
 */
-.field-name-field-location .kmap-typeahead-picker .searchreset{
-  position: absolute;
-  right: 4rem;
-  bottom: -3.5rem;
-}
-
-.field-name-field-subject .kmap-tree-picker{
-  width:38rem;
-}
-
-.field-name-field-subject .kmap-tree-picker .searchreset{
-  right: 12rem;
-  top: 2.5rem;
-}
-
-.field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  width: 27rem;
-  display: inline-block;
-  padding-left: 3rem;
-}
-
-.field-name-field-location .kmap-typeahead-picker{
-  border-top:1px solid #ccc;
-  padding-top:1rem;
-  position:relative;
-  width: 30rem;
-}
-
-.field-name-field-subject .kmap-typeahead-picker{
-  width: 38rem;
-}
-
-.field-name-field-subject .kmap-tree-picker,
-.field-name-field-subcollection-root .kmap-tree-picker{
-  position:relative;
-}
-
-.field-name-field-subcollection-root .kmap-tree-picker{
-  width:38rem;
-}
-
-.field-name-field-subcollection-root .kmap-tree-picker .searchreset{
-  right: 12rem;
-  top: 2.5rem;
-}
-
-.kmap-tree-picker .shanticon-magnify,
-.kmap-typeahead-picker .shanticon-magnify{
-  position: absolute;
-  left: 1rem;
-  top:2.7rem;
-  /*margin-top: 0.9rem;*/
-  color: #999;
-  font-size: 1em;
-}
-
-.kmap-typeahead-picker .shanticon-magnify{
-  position: absolute;
-  top: 3.7rem;
-}
-
-.field-name-field-subject .kmap-tree-picker .shanticon-magnify,
-.field-name-field-subcollection-root .kmap-tree-picker .shanticon-magnify{
-  /*margin-top: 0.7rem;*/
-}
-
-.kmap-search-header p{
-  margin: 1.5rem 0 .5rem 1rem;
-  font-size: 0.93em;
-  font-style: italic;
-}
-
 .field-name-field-subject .panel-body,
 .field-name-field-subcollection-new .panel-body{
   padding-top: 1.5rem !important;
@@ -387,9 +338,68 @@ font-size: 1.12em;
   display:none;
 }
 
+.kmap-search-header p{
+  margin: 1.5rem 0 .5rem 1rem;
+  font-size: 0.93em;
+  font-style: italic;
+}
+
 .form-type-textfield.form-item-field-subject-search-term{
   display:block;
 }
+
+.field-name-field-subject .kmap-tree-picker,
+.field-name-field-subcollection-root .kmap-tree-picker{
+  position:relative;
+}
+
+.field-name-field-location .kmap-typeahead-picker .searchreset{
+  position: absolute;
+  right: 4rem;
+  bottom: -3.5rem;
+}
+
+.field-name-field-subject .kmap-tree-picker .searchreset,
+.field-name-field-subcollection-root .kmap-tree-picker .searchreset{
+  position: absolute;
+  right: 12rem;
+  top: 2.5rem;
+}
+
+.field-type-shanti-kmaps-fields-default input.kmap-search-term{
+  width: 27rem;
+  display: inline-block;
+  padding-left: 3rem;
+  padding-right: 3.3rem;
+}
+
+.field-name-field-location .kmap-typeahead-picker{
+  border-top:1px solid #ccc;
+  padding-top:1rem;
+  position:relative;
+  width: 30rem;
+}
+
+.field-name-field-subject .kmap-tree-picker,
+.field-name-field-subject .kmap-typeahead-picker,
+.field-name-field-subcollection-root .kmap-tree-picker{
+  width: 38rem;
+}
+
+.kmap-tree-picker .shanticon-magnify,
+.kmap-typeahead-picker .shanticon-magnify{
+  position: absolute;
+  left: 1rem;
+  top:2.7rem;
+  color: #999;
+  font-size: 1em;
+}
+
+.kmap-typeahead-picker .shanticon-magnify{
+  position: absolute;
+  top: 3.7rem;
+}
+
 
 .kmap-search-button,
 .kmap_search_button{
@@ -484,50 +494,46 @@ font-size: 1.12em;
 }
 
 
-
-body.page-group-node-admin .tab-pane.main-col{
-  padding-top:3rem;
-}
-
-body.page-group-node-admin fieldset.form-wrapper legend{
+/* Selector target - body class=page-group-node-admin */
+.page-group-node-admin fieldset.form-wrapper legend{
   font-size: 1em;
 }
-
-table.views-table{
+/* Selector target - TABLE class=views-table */
+.views-table{
   width:100%;
 }
 
-table.views-table a{
+.views-table a{
   border-bottom: none;
   /* font-weight: bold; */
 }
 
-table.views-table .views-field-edit-membership a{
+.views-table .views-field-edit-membership a{
   padding-left: .75rem
 }
 
-table.views-table tr.odd{
+.views-table .odd{
   background: #f5f5f5;
 }
 
-table.views-table tr.even{
+.views-table .even{
   background: #fff;
 }
 
-table.views-table tr.odd:hover,
-table.views-table tr.even:hover{
+.views-table .odd:hover,
+.views-table .even:hover{
   background: transparent;
 }
 
-table.views-table .form-type-checkbox{
+.views-table .form-type-checkbox{
   padding: 0.5rem;
 }
 
-table.views-table thead .icheckbox_minimal-red{
+.views-table thead .icheckbox_minimal-red{
   margin-left: 1.55rem;
 }
 /* column sorting arrow img */
-table.views-table thead a > img{
+.views-table thead a > img{
   display: inline-block !important;
   margin-left: .5rem !important;
 }
@@ -555,12 +561,13 @@ table.views-table thead a > img{
 /** 
 * My Content Pages - @new from mb-main @June 3, 2016 @question - vbo-views-form ?
 */
-.view-my-content .vbo-views-form fieldset#edit-select {
+/* Selector target - fieldset #edit-select */
+.view-my-content .vbo-views-form #edit-select {
   float: right;
   width: 65%;
 }
 
-.view-my-content .vbo-views-form fieldset#edit-select legend {
+.view-my-content .vbo-views-form #edit-select legend {
   color: #555;
   font-size: 80%;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
@@ -570,15 +577,15 @@ table.views-table thead a > img{
   padding: 12px 0px 0px;
 }
 
-.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item {
+.view-my-content .vbo-views-form #edit-select .fieldset-wrapper > .form-item {
   margin-top: -0.3em;
 }
 
-.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item + button {
+.view-my-content .vbo-views-form #edit-select .fieldset-wrapper > .form-item + button {
   margin-top: -8px;
 }
 
-.view-my-content .vbo-views-form fieldset#edit-select .btn-group {
+.view-my-content .vbo-views-form #edit-select .btn-group {
   margin: 0px;
 }
 
@@ -628,8 +635,8 @@ table.views-table thead a > img{
   text-transform: capitalize;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 }
-.views-table tr td.views-field-name,
-.views-table tr td.views-field-title {
+.views-table tr .views-field-name,
+.views-table tr .views-field-title {
   font-size: 0.93em;
   font-weight: bold;
 }
@@ -639,9 +646,6 @@ table.views-table thead a > img{
 }
 
 /* - page-mycontent-workflow - new @june 2016 */
-.page-mycontent-workflow .tab-pane.main-col {
-  max-width:1200px;
-}
 
 .page-mycontent-workflow .views-exposed-form .views-exposed-widget{
   padding-right: 5rem;
@@ -671,9 +675,9 @@ table.views-table thead a > img{
 }
 
 .views-field-realname,
-td.views-field-created,
-td.views-field-changed,
-td.views-field-type {
+.views-field-created,
+.views-field-changed,
+.views-field-type {
   font-size: 0.82em;
 }
 
@@ -747,14 +751,14 @@ td.views-field-type {
 .form-disabled textarea.form-textarea, 
 .form-disabled select.form-select{ background-color: #fafafa; }
 
-a.link-edit-summary,
-a.link-edit-summary{
+.link-edit-summary,
+.link-edit-summary{
   font-size: 90%;
   text-transform: capitalize;
   padding: 0 0.5rem;
 }
 
-table.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
+.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
 /* toggle text editor link text under textarea */
 .ckeditor_links{ margin-left:2rem; }
 /* Help text and dropdown menu width for Editor - Full HTML, etc */
@@ -773,13 +777,13 @@ table.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
 
 
 
-/* Form Buttons at very bottom */
+/* Form Buttons w/ID selectors - at very bottom */
 
 /* other than Save & Delete button gets white/grey */
-button#edit-preview-changes,
-button#edit-preview,
-button#edit-draft,
-button#edit-cancel{
+#edit-preview-changes,
+#edit-preview,
+#edit-draft,
+#edit-cancel{
   box-shadow: none;
   color: #606060;
   letter-spacing: .02em;
@@ -787,10 +791,10 @@ button#edit-cancel{
   border:1px solid #ddd;
 }
 
-button#edit-preview-changes:hover,
-button#edit-preview:hover,
-button#edit-draft:hover,
-button#edit-cancel:hover{
+#edit-preview-changes:hover,
+#edit-preview:hover,
+#edit-draft:hover,
+#edit-cancel:hover{
   background: #888;
   box-shadow: none;
   border-color: #888;
@@ -799,7 +803,7 @@ button#edit-cancel:hover{
 }
 
 /* Delete button gets white/red */
-button#edit-delete{
+#edit-delete{
   float: right;
   padding: .38em 1.5em .25em;
   font-size: 0.68em;
@@ -809,7 +813,7 @@ button#edit-delete{
   border:1px solid #ddd;
 }
 
-button#edit-delete:hover{
+#edit-delete:hover{
   background: red;
   color:#fff;
 }
@@ -953,12 +957,12 @@ button#edit-delete:hover{
 .vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:active {
   text-decoration: none;
 }
-
-.vertical-tabs ul.vertical-tabs-list .selected strong {
+/* Selector target UL.vertical-tabs-list */
+.vertical-tabs .vertical-tabs-list .selected strong {
   color: inherit;
 }
 
-.vertical-tabs ul.vertical-tabs-list li a:hover strong {
+.vertical-tabs .vertical-tabs-list li a:hover strong {
   text-decoration: none;
 }
 
@@ -966,12 +970,12 @@ button#edit-delete:hover{
   border-right: 1px solid  #ddd;
 }
 
-.vertical-tabs ul.vertical-tabs-list li.selected {
+.vertical-tabs .vertical-tabs-list li.selected {
   border-right: 1px solid  transparent;
   background: #fdfdfd;
 }
 
-.vertical-tabs ul.vertical-tabs-list li.selected:hover{
+.vertical-tabs .vertical-tabs-list li.selected:hover{
   background: #fff;
 }
 
@@ -1044,18 +1048,7 @@ table.redirect-list thead th:first-of-type img{
 
 
 
-.page-node-add.no-sidebars .tab-pane.main-col,
-.page-node-edit.no-sidebars .tab-pane.main-col,
-.page-node-group.no-sidebars .tab-panel.main-col{
-    max-width: 870px !important;
-}
 
-@media (min-width:1150px) {
-
-  .page-node-edit .tab-pane.main-col {
-      max-width: 920px !important;
-  }
-}
 
 
 
@@ -1085,9 +1078,8 @@ table.redirect-list thead th:first-of-type img{
     }
 }
 
-
 /* kaltura upload video */
-div.ctools-modal-content {
+.ctools-modal-content {
   margin: 0 auto;
   width: 100% !important;
   /*max-width: 550px !important;
@@ -1096,7 +1088,7 @@ div.ctools-modal-content {
   border-radius: .2rem;
 }
 
-div.ctools-modal-content .modal-content {
+.ctools-modal-content .modal-content {
   width: 100% !important;
   max-width: 550px !important;
   padding: 2rem 9%;
@@ -1105,29 +1097,21 @@ div.ctools-modal-content .modal-content {
   background:transparent;
 }
 
-div.ctools-modal-content button.btn.btn-primary{
-  /*margin-left: 50%;
-  margin-top: 3rem;
-  position: relative;
-  left: -6em;
-  padding: .5rem 2rem .4rem;*/
-}
-
-div.ctools-modal-content .btn.btn-delete.btn-primary{
+.ctools-modal-content .btn.btn-delete.btn-primary{
   margin-top:0 !important;
 }
 
-div.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
+.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
   padding: 0.4rem 1.8rem 0.2rem;
   font-size: 0.75em;
 }
 
-div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
+.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
   padding: 0.7rem 0.5rem 0.7rem;
   margin-top:-0.5rem !important;
 }
 
-div.ctools-modal-content div#edit-actions--3.form-actions.form-wrapper{
+.ctools-modal-content #edit-actions--3.form-actions.form-wrapper{
   margin-top:4rem;
 }
 /*
@@ -1141,21 +1125,21 @@ div.ctools-modal-content div#edit-actions--3.form-actions.form-wrapper{
   display:none;
 }
 */
-div.ctools-modal-content .modal-header{
+.ctools-modal-content .modal-header{
   padding: 1.5rem 2rem;
   background-color: transparent !important;
   background-color: #2fbebc !important; /* subtheme color setting */
   border-radius: .2rem 0.2rem 0 0;
 }
 
-div.ctools-modal-content .modal-title{
+.ctools-modal-content .modal-title{
   font-size: 150%;
   font-weight: normal;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   text-shadow: 0 0 5px #888;
 }
 
-div.ctools-modal-content a.close{
+.ctools-modal-content a.close{
   position: relative;
   right: 0;
   top: -3rem;
@@ -1167,32 +1151,32 @@ div.ctools-modal-content a.close{
   opacity: 0.85;
 }
 
-div.ctools-modal-content a.close:hover{
+.ctools-modal-content a.close:hover{
   opacity:1;
 }
 
-div.ctools-modal-content a.close::after{
+.ctools-modal-content a.close::after{
   content: 'X';
   position: relative;
   font-size: 3em;
   top: 2.3rem;
 }
 
-div.ctools-modal-content a.close img{
+.ctools-modal-content a.close img{
   display:none;
   position: absolute;
   z-index: -10;
 }
 /* radio button labels input position */
-div.ctools-modal-content .vertical-tabs label.radio-inline{
+.ctools-modal-content .vertical-tabs label.radio-inline{
   width: auto !important;
   padding-left: 0;
 }
-div.ctools-modal-content .form-item{
+.ctools-modal-content .form-item{
   margin-top:0;
   margin-bottom:0;
 }
-div.ctools-modal-content .form-item label{
+.ctools-modal-content .form-item label{
   float:none;
   width:100%;
 }
@@ -1278,14 +1262,14 @@ div.ctools-modal-content .form-item label{
     display: none;
   }
 }
-
-html body.admin-menu {
+/* adjust height of admin bar target body clas admin-menu */
+html .admin-menu {
   margin-top: 5.4rem !important;
 } 
 
 @media screen and (min-width: 768px) {
-  /* adjust height of admin bar */
-  html body.admin-menu {
+  
+  html .admin-menu {
     margin-top: 3rem !important;
   }
 }  
