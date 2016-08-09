@@ -379,13 +379,13 @@ font-size: 1.12em;
 
 .field-name-field-subject input.kmap-search-term{
   width: 27rem;
+  max-width: 100%;
 }
 
 .field-name-field-location .kmap-typeahead-picker{
   border-top:1px solid #ccc;
   padding-top:1rem;
   position:relative;
-  width: 30rem;
 }
 
 .field-name-field-subject .kmap-tree-picker,
