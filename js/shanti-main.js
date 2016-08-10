@@ -54,7 +54,8 @@
     var srchtabAdmin = (height) - 123; // subtract 35px height of Drupal admin navbar
     // var viewheight = (height) - 235;
     var viewheight = (height) - 270;
-    
+    var viewheightSources = (height) - 230;
+    var viewheightPlaces = (height) - 340;
     // var advHeight = $(".advanced-view").show().height();
     // var comboHeight = (viewheight) - 370;
 
@@ -69,6 +70,12 @@
     // comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
     // $(".view-wrap.short-wrap").css('height', comboHeight);
+
+    viewheightSources = parseInt(viewheightSources) + 'px';
+    $(".sources .view-wrap").css('height', viewheightSources);
+
+    viewheightPlaces = parseInt(viewheightPlaces) + 'px';
+    $(".page-places .view-wrap").css('height', viewheightPlaces);
 
   };
 
