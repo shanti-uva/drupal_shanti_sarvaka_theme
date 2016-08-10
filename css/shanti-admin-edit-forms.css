@@ -511,41 +511,41 @@ font-size: 1.12em;
   font-size: 1em;
 }
 /* Selector target - TABLE class=views-table */
-.views-table{
+table.views-table{
   width:100%;
 }
 
-.views-table a{
+table.views-table a{
   border-bottom: none;
   /* font-weight: bold; */
 }
 
-.views-table .views-field-edit-membership a{
+table.views-table .views-field-edit-membership a{
   padding-left: .75rem
 }
 
-.views-table .odd{
+table.views-table tr.odd{
   background: #f5f5f5;
 }
 
-.views-table .even{
+table.views-table tr.even{
   background: #fff;
 }
 
-.views-table .odd:hover,
-.views-table .even:hover{
+table.views-table tr.odd:hover,
+table.views-table tr.even:hover{
   background: transparent;
 }
 
-.views-table .form-type-checkbox{
+table.views-table .form-type-checkbox{
   padding: 0.5rem;
 }
 
-.views-table thead .icheckbox_minimal-red{
+table.views-table thead .icheckbox_minimal-red{
   margin-left: 1.55rem;
 }
 /* column sorting arrow img */
-.views-table thead a > img{
+table.views-table thead a > img{
   display: inline-block !important;
   margin-left: .5rem !important;
 }
@@ -574,12 +574,12 @@ font-size: 1.12em;
 * My Content Pages - @new from mb-main @June 3, 2016 @question - vbo-views-form ?
 */
 /* Selector target - fieldset #edit-select */
-.view-my-content .vbo-views-form #edit-select {
+.view-my-content .vbo-views-form fieldset#edit-select {
   float: right;
   width: 65%;
 }
 
-.view-my-content .vbo-views-form #edit-select legend {
+.view-my-content .vbo-views-form fieldset#edit-select legend {
   color: #555;
   font-size: 80%;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
@@ -589,15 +589,15 @@ font-size: 1.12em;
   padding: 12px 0px 0px;
 }
 
-.view-my-content .vbo-views-form #edit-select .fieldset-wrapper > .form-item {
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item {
   margin-top: -0.3em;
 }
 
-.view-my-content .vbo-views-form #edit-select .fieldset-wrapper > .form-item + button {
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item + button {
   margin-top: -8px;
 }
 
-.view-my-content .vbo-views-form #edit-select .btn-group {
+.view-my-content .vbo-views-form fieldset#edit-select .btn-group {
   margin: 0px;
 }
 
@@ -647,8 +647,8 @@ font-size: 1.12em;
   text-transform: capitalize;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 }
-.views-table tr .views-field-name,
-.views-table tr .views-field-title {
+.views-table tr td.views-field-name,
+.views-table tr td.views-field-title {
   font-size: 0.93em;
   font-weight: bold;
 }
@@ -687,9 +687,9 @@ font-size: 1.12em;
 }
 
 .views-field-realname,
-.views-field-created,
-.views-field-changed,
-.views-field-type {
+td.views-field-created,
+td.views-field-changed,
+td.views-field-type {
   font-size: 0.82em;
 }
 
@@ -763,14 +763,14 @@ font-size: 1.12em;
 .form-disabled textarea.form-textarea, 
 .form-disabled select.form-select{ background-color: #fafafa; }
 
-.link-edit-summary,
-.link-edit-summary{
+a.link-edit-summary,
+a.link-edit-summary{
   font-size: 90%;
   text-transform: capitalize;
   padding: 0 0.5rem;
 }
 
-.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
+table.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
 /* toggle text editor link text under textarea */
 .ckeditor_links{ margin-left:2rem; }
 /* Help text and dropdown menu width for Editor - Full HTML, etc */
@@ -792,10 +792,10 @@ font-size: 1.12em;
 /* Form Buttons w/ID selectors - at very bottom */
 
 /* other than Save & Delete button gets white/grey */
-#edit-preview-changes,
-#edit-preview,
-#edit-draft,
-#edit-cancel{
+button#edit-preview-changes,
+button#edit-preview,
+button#edit-draft,
+button#edit-cancel{
   box-shadow: none;
   color: #606060;
   letter-spacing: .02em;
@@ -803,10 +803,10 @@ font-size: 1.12em;
   border:1px solid #ddd;
 }
 
-#edit-preview-changes:hover,
-#edit-preview:hover,
-#edit-draft:hover,
-#edit-cancel:hover{
+button#edit-preview-changes:hover,
+button#edit-preview:hover,
+button#edit-draft:hover,
+button#edit-cancel:hover{
   background: #888;
   box-shadow: none;
   border-color: #888;
@@ -815,7 +815,7 @@ font-size: 1.12em;
 }
 
 /* Delete button gets white/red */
-#edit-delete{
+button#edit-delete{
   float: right;
   padding: .38em 1.5em .25em;
   font-size: 0.68em;
@@ -825,7 +825,7 @@ font-size: 1.12em;
   border:1px solid #ddd;
 }
 
-#edit-delete:hover{
+button#edit-delete:hover{
   background: red;
   color:#fff;
 }
@@ -970,11 +970,11 @@ font-size: 1.12em;
   text-decoration: none;
 }
 /* Selector target UL.vertical-tabs-list */
-.vertical-tabs .vertical-tabs-list .selected strong {
+.vertical-tabs ul.vertical-tabs-list .selected strong {
   color: inherit;
 }
 
-.vertical-tabs .vertical-tabs-list li a:hover strong {
+.vertical-tabs ul.vertical-tabs-list li a:hover strong {
   text-decoration: none;
 }
 
@@ -982,12 +982,12 @@ font-size: 1.12em;
   border-right: 1px solid  #ddd;
 }
 
-.vertical-tabs .vertical-tabs-list li.selected {
+.vertical-tabs ul.vertical-tabs-list li.selected {
   border-right: 1px solid  transparent;
   background: #fdfdfd;
 }
 
-.vertical-tabs .vertical-tabs-list li.selected:hover{
+.vertical-tabs ul.vertical-tabs-list li.selected:hover{
   background: #fff;
 }
 
@@ -1091,7 +1091,7 @@ table.redirect-list thead th:first-of-type img{
 }
 
 /* kaltura upload video */
-.ctools-modal-content {
+div.ctools-modal-content {
   margin: 0 auto;
   width: 100% !important;
   /*max-width: 550px !important;
@@ -1100,7 +1100,7 @@ table.redirect-list thead th:first-of-type img{
   border-radius: .2rem;
 }
 
-.ctools-modal-content .modal-content {
+div.ctools-modal-content .modal-content {
   width: 100% !important;
   max-width: 550px !important;
   padding: 2rem 9%;
@@ -1109,21 +1109,21 @@ table.redirect-list thead th:first-of-type img{
   background:transparent;
 }
 
-.ctools-modal-content .btn.btn-delete.btn-primary{
+div.ctools-modal-content .btn.btn-delete.btn-primary{
   margin-top:0 !important;
 }
 
-.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
+div.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
   padding: 0.4rem 1.8rem 0.2rem;
   font-size: 0.75em;
 }
 
-.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
+div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
   padding: 0.7rem 0.5rem 0.7rem;
   margin-top:-0.5rem !important;
 }
 
-.ctools-modal-content #edit-actions--3.form-actions.form-wrapper{
+div.ctools-modal-content #edit-actions--3.form-actions.form-wrapper{
   margin-top:4rem;
 }
 /*
@@ -1137,21 +1137,21 @@ table.redirect-list thead th:first-of-type img{
   display:none;
 }
 */
-.ctools-modal-content .modal-header{
+div.ctools-modal-content .modal-header{
   padding: 1.5rem 2rem;
   background-color: transparent !important;
   background-color: #2fbebc !important; /* subtheme color setting */
   border-radius: .2rem 0.2rem 0 0;
 }
 
-.ctools-modal-content .modal-title{
+div.ctools-modal-content .modal-title{
   font-size: 150%;
   font-weight: normal;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   text-shadow: 0 0 5px #888;
 }
 
-.ctools-modal-content a.close{
+div.ctools-modal-content a.close{
   position: relative;
   right: 0;
   top: -3rem;
@@ -1163,32 +1163,32 @@ table.redirect-list thead th:first-of-type img{
   opacity: 0.85;
 }
 
-.ctools-modal-content a.close:hover{
+div.ctools-modal-content a.close:hover{
   opacity:1;
 }
 
-.ctools-modal-content a.close::after{
+div.ctools-modal-content a.close::after{
   content: 'X';
   position: relative;
   font-size: 3em;
   top: 2.3rem;
 }
 
-.ctools-modal-content a.close img{
+div.ctools-modal-content a.close img{
   display:none;
   position: absolute;
   z-index: -10;
 }
 /* radio button labels input position */
-.ctools-modal-content .vertical-tabs label.radio-inline{
+div.ctools-modal-content .vertical-tabs label.radio-inline{
   width: auto !important;
   padding-left: 0;
 }
-.ctools-modal-content .form-item{
+div.ctools-modal-content .form-item{
   margin-top:0;
   margin-bottom:0;
 }
-.ctools-modal-content .form-item label{
+div.ctools-modal-content .form-item label{
   float:none;
   width:100%;
 }
@@ -1275,13 +1275,13 @@ table.redirect-list thead th:first-of-type img{
   }
 }
 /* adjust height of admin bar target body clas admin-menu */
-html .admin-menu {
+html body.admin-menu {
   margin-top: 5.4rem !important;
 } 
 
 @media screen and (min-width: 768px) {
   
-  html .admin-menu {
+  html body.admin-menu {
     margin-top: 3rem !important;
   }
 }  
