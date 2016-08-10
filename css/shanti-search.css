@@ -1670,6 +1670,12 @@ object.flip_label {
   padding: 0 1.5rem 1.5rem;
 }
 
+.kmaps.page-places .input-section .kmap-filter:first-of-type{
+  margin-top: 1.5rem;
+  padding-top: .1rem;
+  border-top: 1px solid #ddd;
+}
+
 .input-section .kmap-typeahead-picker > label{
   /* same as BS 'sr-only' class, screenreader only ruleset */
   position: absolute;
