@@ -1199,7 +1199,7 @@ object.flip_label {
 }
 
 .fancytree-container ul {
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 1rem !important;
   margin: 0;
 }
 
