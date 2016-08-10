@@ -53,7 +53,7 @@
     var srchtab = (height) - 88;
     var srchtabAdmin = (height) - 123; // subtract 35px height of Drupal admin navbar
     // var viewheight = (height) - 235;
-    var viewheight = (height) - 270;
+    var viewheight = (height) - 255;
     var viewheightSources = (height) - 230;
     var viewheightPlaces = (height) - 340;
     // var advHeight = $(".advanced-view").show().height();
