@@ -377,10 +377,6 @@ font-size: 1.12em;
   padding-right: 3.3rem;
 }
 
-.field-name-field-subcollection-root input.kmap-search-term{
-  max-width: 70%;
-}
-
 .field-name-field-subject input.kmap-search-term{
   width: 27rem;
   max-width: 100%;
@@ -392,13 +388,12 @@ font-size: 1.12em;
   position:relative;
 }
 
-.field-name-field-subject .kmap-tree-picker,
-.field-name-field-subject .kmap-typeahead-picker,
 .field-name-field-subcollection-root .kmap-tree-picker{
-  width: 38rem;
+  width: 55rem;
 }
 
-.field-name-field-subject .kmap-tree-picker{
+.field-name-field-subject .kmap-tree-picker,
+.field-name-field-subject .kmap-typeahead-picker{
   width: 42rem;
 }
 
