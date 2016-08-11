@@ -388,12 +388,13 @@ font-size: 1.12em;
   position:relative;
 }
 
+.field-name-field-subject .kmap-tree-picker,
+.field-name-field-subject .kmap-typeahead-picker,
 .field-name-field-subcollection-root .kmap-tree-picker{
-  width: 55rem;
+  width: 38rem;
 }
 
-.field-name-field-subject .kmap-tree-picker,
-.field-name-field-subject .kmap-typeahead-picker{
+.field-name-field-subject .kmap-tree-picker{
   width: 42rem;
 }
 
