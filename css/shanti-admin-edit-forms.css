@@ -371,10 +371,14 @@ font-size: 1.12em;
 }
 
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  max-width: 70%;
+  max-width: 49%;
   display: inline-block;
   padding-left: 3rem;
   padding-right: 3.3rem;
+}
+
+.field-name-field-subcollection-root input.kmap-search-term{
+  max-width: 70%;
 }
 
 .field-name-field-subject input.kmap-search-term{
