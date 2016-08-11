@@ -382,6 +382,10 @@ font-size: 1.12em;
   max-width: 100%;
 }
 
+.field-name-field-subcollection-root input.kmap-search-term{
+  max-width: 27rem
+}
+
 .field-name-field-location .kmap-typeahead-picker{
   border-top:1px solid #ccc;
   padding-top:1rem;
