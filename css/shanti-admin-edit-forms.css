@@ -349,7 +349,8 @@ font-size: 1.12em;
 }
 
 .field-name-field-subject .kmap-tree-picker,
-.field-name-field-subcollection-root .kmap-tree-picker{
+.field-name-field-subcollection-root .kmap-tree-picker,
+.field-name-field-recording-location-new .kmap-tree-picker{
   position:relative;
 }
 
@@ -360,7 +361,8 @@ font-size: 1.12em;
 }
 
 .field-name-field-subject .kmap-tree-picker .searchreset,
-.field-name-field-subcollection-root .kmap-tree-picker .searchreset{
+.field-name-field-subcollection-root .kmap-tree-picker .searchreset,
+.field-type-shanti-kmaps-fields-default .kmap-tree-picker .searchreset{
   position: absolute;
   right: 12rem;
   top: 2.5rem;
@@ -382,7 +384,8 @@ font-size: 1.12em;
   max-width: 100%;
 }
 
-.field-name-field-subcollection-root input.kmap-search-term{
+.field-name-field-subcollection-root input.kmap-search-term,
+.field-type-shanti-kmaps-fields-default input.kmap-search-term{
   max-width: 27rem
 }
 
@@ -394,7 +397,8 @@ font-size: 1.12em;
 
 .field-name-field-subject .kmap-tree-picker,
 .field-name-field-subject .kmap-typeahead-picker,
-.field-name-field-subcollection-root .kmap-tree-picker{
+.field-name-field-subcollection-root .kmap-tree-picker,
+.field-name-field-recording-location-new .kmap-tree-picker{
   width: 38rem;
 }
 
