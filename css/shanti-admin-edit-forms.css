@@ -1093,7 +1093,8 @@ table.redirect-list thead th:first-of-type img{
   z-index: 1000 !important;
   /*min-width: 550px;
   max-height: 700px;*/
-  overflow:hidden
+  overflow:hidden;
+  margin-left:-200px;
 }
 /* target edit collection page only w/height for now to be safe */
 .node-type-collection #modalContent{
@@ -1225,8 +1226,8 @@ div.ctools-modal-content .form-item label{
 .modal-content .ctools-close-modal::after{
   content: 'X';
   position:relative;
+  left: 0.5rem;
   display: inline-block;
-
 }
 /**
 *** END modal ***/
