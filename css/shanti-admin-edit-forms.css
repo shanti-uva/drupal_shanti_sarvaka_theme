@@ -1087,7 +1087,7 @@ table.redirect-list thead th:first-of-type img{
 * Modal Popup
 * --------------
 */
-.ctools-modal-content{
+#modalContent{
   box-shadow: 0 0 10px #aaa;
   border-radius: .2rem;
   z-index: 1000 !important;
@@ -1096,13 +1096,13 @@ table.redirect-list thead th:first-of-type img{
   overflow:hidden
 }
 /* target edit collection page only w/height for now to be safe */
-.node-type-collection .ctools-modal-content{
+.node-type-collection #modalContent{
   max-height: 700px;
 }
 
 @media (max-width: 600px) { 
     
-    .ctools-modal-content {
+    #modalContent {
       position: fixed !important;
       min-width: 320px;
       top: 12% !important;
@@ -1113,7 +1113,7 @@ table.redirect-list thead th:first-of-type img{
 }
 
 /* kaltura upload video */
-.ctools-modal-content {
+div.ctools-modal-content {
   margin: 0 auto;
   width: 100% !important;
   /*max-width: 550px !important;
@@ -1122,7 +1122,7 @@ table.redirect-list thead th:first-of-type img{
   border-radius: .2rem;
 }
 
-.ctools-modal-content .modal-content {
+div.ctools-modal-content .modal-content {
   width: 100% !important;
   max-width: 550px !important;
   padding: 2rem 9%;
@@ -1131,21 +1131,21 @@ table.redirect-list thead th:first-of-type img{
   background:transparent;
 }
 
-.ctools-modal-content .btn.btn-delete.btn-primary{
+div.ctools-modal-content .btn.btn-delete.btn-primary{
   margin-top:0 !important;
 }
 
-.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
+div.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
   padding: 0.4rem 1.8rem 0.2rem;
   font-size: 0.75em;
 }
 
-.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
+div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
   padding: 0.7rem 0.5rem 0.7rem;
   margin-top:-0.5rem !important;
 }
 
-.ctools-modal-content #edit-actions--3.form-actions.form-wrapper{
+div.ctools-modal-content #edit-actions--3.form-actions.form-wrapper{
   margin-top:4rem;
 }
 /*
@@ -1159,21 +1159,21 @@ table.redirect-list thead th:first-of-type img{
   display:none;
 }
 */
-.ctools-modal-content .modal-header{
+div.ctools-modal-content .modal-header{
   padding: 1.5rem 2rem;
   background-color: transparent !important;
   background-color: #2fbebc !important; /* subtheme color setting */
   border-radius: .2rem 0.2rem 0 0;
 }
 
-.ctools-modal-content .modal-title{
+div.ctools-modal-content .modal-title{
   font-size: 150%;
   font-weight: normal;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   text-shadow: 0 0 5px #888;
 }
 
-.ctools-modal-content a.close{
+div.ctools-modal-content a.close{
   position: relative;
   right: 0;
   top: -3rem;
@@ -1189,11 +1189,11 @@ table.redirect-list thead th:first-of-type img{
   height: 0;
 }
 
-.ctools-modal-content a.close:hover{
+div.ctools-modal-content a.close:hover{
   opacity:1;
 }
 
-.ctools-modal-content a.close::after{
+div.ctools-modal-content a.close::after{
   content: 'X';
   position: relative;
   font-size: 3em;
@@ -1201,7 +1201,7 @@ table.redirect-list thead th:first-of-type img{
   right:2rem;
 }
 
-.ctools-modal-content a.close img{
+div.ctools-modal-content a.close img{
   display:none;
   position: absolute;
   z-index: -10;
@@ -1209,20 +1209,20 @@ table.redirect-list thead th:first-of-type img{
   width: 0;
 }
 /* radio button labels input position */
-.ctools-modal-content .vertical-tabs label.radio-inline{
+div.ctools-modal-content .vertical-tabs label.radio-inline{
   width: auto !important;
   padding-left: 0;
 }
-.ctools-modal-content .form-item{
+div.ctools-modal-content .form-item{
   margin-top:0;
   margin-bottom:0;
 }
-.ctools-modal-content .form-item label{
+div.ctools-modal-content .form-item label{
   float:none;
   width:100%;
 }
-/* cancel button */
-.ctools-modal-content .form-actions .ctools-close-modal::after{
+
+.modal-content .ctools-close-modal::after{
   content: 'X';
   position:relative;
   display: inline-block;
