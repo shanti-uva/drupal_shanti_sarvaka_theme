@@ -1229,6 +1229,11 @@ div.ctools-modal-content .form-item label{
   left: 0.5rem;
   display: inline-block;
 }
+
+.modal-content .form-type-file .description{
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+}
 /**
 *** END modal ***/
 
