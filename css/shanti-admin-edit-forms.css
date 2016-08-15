@@ -1081,9 +1081,13 @@ table.redirect-list thead th:first-of-type img{
   box-shadow: 0 0 10px #aaa;
   border-radius: .2rem;
   z-index: 1000 !important;
-  min-width: 550px;
-  /*max-height:280px;*/
+  /*min-width: 550px;
+  max-height: 700px;*/
   overflow:hidden
+}
+/* target edit collection page only w/height for now to be safe */
+.node-type-collection #modalContent{
+  max-height: 700px;
 }
 
 @media (max-width: 600px) { 
@@ -1169,6 +1173,10 @@ div.ctools-modal-content a.close{
   text-shadow: 0 0 3px #888;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   opacity: 0.85;
+  margin:0;
+
+  width: 0;
+  height: 0;
 }
 
 div.ctools-modal-content a.close:hover{
@@ -1180,12 +1188,15 @@ div.ctools-modal-content a.close::after{
   position: relative;
   font-size: 3em;
   top: 2.3rem;
+  right:2rem;
 }
 
 div.ctools-modal-content a.close img{
   display:none;
   position: absolute;
   z-index: -10;
+  height: 0;
+  width: 0;
 }
 /* radio button labels input position */
 div.ctools-modal-content .vertical-tabs label.radio-inline{
