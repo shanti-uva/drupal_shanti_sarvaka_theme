@@ -1703,6 +1703,10 @@ object.flip_label {
   
 }
 
+.input-section .kmaps-tt-input{
+  max-width: 25rem;
+}
+
 .input-section .kmap-typeahead-picker input.kmap-search-term.form-control{
   background-color: #fff !important;
   border-radius: 1.8rem;
