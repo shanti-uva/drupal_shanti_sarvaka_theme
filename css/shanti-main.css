@@ -126,7 +126,7 @@ textarea.form-textarea {
   height: 27px;
   line-height: 1.82em;
   padding: 0.3rem 1.5rem 0;
-  max-width: 35em;
+  /*max-width: 35em;*/
   overflow: auto;
   box-shadow: 0 2px 5px #eee inset;
   border-collapse: separate;
@@ -209,12 +209,21 @@ article ul ul ul ul {
   -webkit-margin-before: 0;
   margin-top: 0;
 }
+/* additional properties to bootstrap list-inline class */
+ul.list-inline{
+  margin-bottom:0;
+}
+
+ul.list-inline > li{
+  padding:0 !important;
+}
+
 /* anchors */
 a {
   text-decoration: none;
   color: #454fa4;
 } /* *:active{ outline:none !important;} */
-a:hover,a:active {
+a:hover,a:focus,a:active {
   text-decoration: none;
   color: rgb(207, 47, 30);
 }
@@ -353,7 +362,7 @@ a:hover,a:active {
 
 /* Ajax Loading */
 .throbber,
-.ajax-progress,
+/*.ajax-progress,*/
 .ajax-progress-throbber, 
 .ajax-progress .throbber, 
 .ajax-progress-throbber .throbber {
@@ -399,12 +408,6 @@ a:hover,a:active {
 /**
 * layout containers 
 */
-
-/* Sticky Footer: html, body & footer work together with the 'heavy-gravity' div (bottom of wrap-all),
-* the bottom margin of 'wrap-all' is the negative value of the footer's height, 
-* this all works w/ the 'heavy-gravity' div's height to pin the footer to the browsers bottom */
-html, body{ /*height: 100%;*/} /* this conflicts with somescripts like the gallery wookmark, and other ajax loading content */
-footer, .heavy-gravity{ /*height:155px;*/}
 .wrap-all {
   /*background:#eee;
   min-height: 100%;
@@ -414,7 +417,6 @@ footer, .heavy-gravity{ /*height:155px;*/}
 
 .main-wrapper {
   background: #eee;
-  min-height: 965px;
   position: relative;
 }
 
@@ -447,14 +449,19 @@ footer, .heavy-gravity{ /*height:155px;*/}
 .navbar.navbar-default.navbar-static-top {
   border-bottom: none;
 }
-
+/* font style on site-banner H1 */
 .navbar-header {
-  color: #555;
-  font-style: italic;
+  /*color: #555;
+  font-style: italic;*/
   font-size: 1.62em;
   margin: 0;
   padding: 0;
-  font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;
+  /*font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;*/
+
+text-transform: uppercase;
+font-style: normal;
+letter-spacing: 0.25rem;
+font-family: 'museo-sans-500', arial, sans-serif;
 }
 
 .navbar-nav>li>a{
@@ -467,12 +474,12 @@ footer, .heavy-gravity{ /*height:155px;*/}
   border: 0;
   display: inline-block;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 1rem; /* margin-left for mobile */
   color: #333;
   font-size: 0.88em;
   line-height: 1.38em;
   font-weight: normal;
-  height:45px;
+  height:45px; /* reduced height for mobile */
 }
 
 .navbar-header .navbar-brand:hover,
@@ -485,24 +492,24 @@ footer, .heavy-gravity{ /*height:155px;*/}
 }
 
 .navbar-header .site-slogan {
-  font-size: 85%;
+  /*font-size: 85%;*/
   display: none;
   padding: 0 0 0 1rem;
   white-space: nowrap;
   color: #444 !important;
   position: relative;
-  top: 1.15rem;
-  text-transform: uppercase;
+  top: 1.35rem;
+  /*text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.25rem;
-  font-family: 'museo-sans-500', arial,sans-serif;
+  font-family: 'museo-sans-500', arial,sans-serif;*/
 }
 
 .navbar-header .site-slogan::before {
   content: '/ ';
   margin-right: 0.5rem;
   position: relative;
-  top: -0.05rem;
+  top: 0;
 }
 
 .navbar-brand .shanticon-logo {
@@ -511,7 +518,7 @@ footer, .heavy-gravity{ /*height:155px;*/}
 
   font-size: 1.5em;
   position: relative;
-  top:1.15rem;
+  top: 1.15rem;
   float:left;
   margin-right: 0.75rem;
 }
@@ -539,6 +546,10 @@ footer, .heavy-gravity{ /*height:155px;*/}
 
 .navbar-brand:active .site-slogan {
   color: #444 !important;
+}
+
+.navbar-header .navbar-buttons.btn-group{
+  display:block;
 }
 
 
@@ -591,8 +602,8 @@ footer, .heavy-gravity{ /*height:155px;*/}
 }
 
 .menu-icon .icon.shanticon-menu {
-  position: relative;
-  top: 0;
+  /*position: relative; - mf8yk removed for test on july 11, 2016
+  top: 0;*/
 }
 
 .menu-icon.show-topmenu a {
@@ -832,7 +843,7 @@ footer, .heavy-gravity{ /*height:155px;*/}
 
 
 /*--- BEGIN collections panel ---*/
-.header-banner .collections {
+.site-banner .collections {
   background: #222;
   margin: 0 0 .2rem 0;
   padding: 1rem 0 1.8rem 0.8rem;
@@ -841,11 +852,11 @@ footer, .heavy-gravity{ /*height:155px;*/}
   display: none;
 }
 
-.header-banner .collections .row {
+.site-banner .collections .row {
   margin: 0;
 }
 
-.header-banner .collections ul {
+.site-banner .collections ul {
   text-align: center;
   list-style-type: none;
   /*margin: 0 auto 0 2%;*/
@@ -853,7 +864,7 @@ footer, .heavy-gravity{ /*height:155px;*/}
   margin-bottom: 10px !important;
 }
 
-.header-banner .collections ul li {
+.site-banner .collections ul li {
   margin: 0;
   float: left;
   line-height: 2em;
@@ -861,7 +872,7 @@ footer, .heavy-gravity{ /*height:155px;*/}
   width: 50%;
 }
 
-.header-banner .collections ul li a {
+.site-banner .collections ul li a {
   color: #d0d0d0;
   text-decoration: none;
   letter-spacing: 0.08em;
@@ -874,19 +885,19 @@ footer, .heavy-gravity{ /*height:155px;*/}
   text-transform: uppercase;
 }
 
-.header-banner .collections ul li a.disabled, .header-banner .collections ul li a.disabled:hover, .header-banner .collections ul li a.disabled:active, 
-.header-banner .collections ul li a.disabled .icon, .header-banner .collections ul li a.disabled:hover .icon {
+.site-banner .collections ul li a.disabled, .site-banner .collections ul li a.disabled:hover, .site-banner .collections ul li a.disabled:active, 
+.site-banner .collections ul li a.disabled .icon, .site-banner .collections ul li a.disabled:hover .icon {
   color: #707070;
   cursor: default;
 }
 
-.header-banner .collections ul li a:hover,
-.header-banner .collections ul li a:active {
+.site-banner .collections ul li a:hover,
+.site-banner .collections ul li a:active {
   text-decoration: none;
   color: #fff;
 }
 
-.header-banner .collections ul .icon {
+.site-banner .collections ul .icon {
   color: #aaa !important;
   margin-right: 8px;
   font-size: 1.75em;
@@ -894,32 +905,32 @@ footer, .heavy-gravity{ /*height:155px;*/}
   top: 0.4rem;
 }
 
-.header-banner .collections ul .icon.shanticon-visuals{
+.site-banner .collections ul .icon.shanticon-visuals{
   top: 0.54rem;
 }
 
-.header-banner .collections ul .icon.shanticon-logo-shanti {
+.site-banner .collections ul .icon.shanticon-logo-shanti {
   color: #f0f0f0;
 }
 
-.header-banner .collections ul li a:hover .icon::before{
+.site-banner .collections ul li a:hover .icon::before{
   color: #e0e0e0;
 }
-.header-banner .collections ul li a:active .icon::before{
+.site-banner .collections ul li a:active .icon::before{
   color: #fff;
 }
 
-.header-banner .collections ul .icon.shanticon-visuals::before {
+.site-banner .collections ul .icon.shanticon-visuals::before {
   font-size: 120%;
   position: relative;
   left: -0.15rem;
   margin-right: -0.25rem;
 }
-.header-banner .collections ul .icon.shanticon-logo-shanti::before {
+.site-banner .collections ul .icon.shanticon-logo-shanti::before {
   font-size: 110%;
 }
 
-.header-banner .collections h4 {
+.site-banner .collections h4 {
   color: #eee;
   text-align: center;
   margin: 10px 0 18px;
@@ -927,7 +938,7 @@ footer, .heavy-gravity{ /*height:155px;*/}
   display: none;
 }
 
-.header-banner .collections .close {
+.site-banner .collections .close {
   color: #ccc;
   background: transparent;
   background-image: none;
@@ -951,8 +962,8 @@ footer, .heavy-gravity{ /*height:155px;*/}
   transition: color 200ms ease 0s;
 }
 
-.header-banner .collections .close:hover,
-.header-banner .collections .close:active {
+.site-banner .collections .close:hover,
+.site-banner .collections .close:active {
   filter: alpha(opacity=75);
   opacity: 0.75;
 }
@@ -971,6 +982,7 @@ footer, .heavy-gravity{ /*height:155px;*/}
   color: #f9f9f9;
   background: #5b68ce !important; /* default login/account color violet */
   height: 6.7rem;
+  height:70px;
   position: relative;
   padding: 0;
   margin: 0;
@@ -979,8 +991,8 @@ footer, .heavy-gravity{ /*height:155px;*/}
 }
 
 .titlearea > div {
-  height: 6.7rem;
- /* bottom shadow here, top banner shadow is off header-banner */
+  height: 70px;
+ /* bottom shadow here, top banner shadow is off site-banner */
   box-shadow: inset 0 -2px 10px -4px rgba(0, 0, 0, 0.1400);
   border-collapse: separate;
   position: relative;
@@ -1216,7 +1228,7 @@ body.front ol.breadcrumb {
   width: 100%;
   background: #ddd !important;
   height: 2.2rem;
-  margin-top: 0.4rem;
+  margin-top: 0.7rem;
   filter: alpha(opacity=60);
   opacity: 0.6;
 }
@@ -1261,7 +1273,7 @@ body.front ol.breadcrumb {
   font-size: 0.68em !important;
   line-height: 1.38em !important;
   height: 2.4em !important;
-  padding: 0.45rem 1.5rem 0 !important;
+  padding: 0.5rem 1.5rem 0 !important;
   border: none !important;
   border-width: 0 !important;
   border-radius: 0 !important;
@@ -1689,7 +1701,7 @@ body.front ol.breadcrumb {
   position: relative;
   left: 0;
   top: 0.1rem;
-  margin-left: 0.6rem;
+  margin-left: 0.8rem;
   margin-right: 1rem;
   font-size: 1rem;
 }
@@ -1720,6 +1732,7 @@ body.front ol.breadcrumb {
   font-size:0.88em;
   line-height:1.18em;
   width:250px;
+  font-style:normal;
 }
 
 .popover.fade.in{
@@ -1728,12 +1741,12 @@ body.front ol.breadcrumb {
 } 
 
 .popover:not(.related-resources-popover) { /* temp hiding */
-  z-index:-10; 
+  /*z-index:-10; */
 }
 
 .popover.fade.in:not(.related-resources-popover){ /* temp hiding */
-  filter: alpha(opacity=0);
-  opacity:0; 
+  /*filter: alpha(opacity=0);
+  opacity:0; */
 } 
 
 .related-resources-popover {
@@ -1747,7 +1760,7 @@ body.front ol.breadcrumb {
 }
 
 .related-resources-popover .popover-title {
-  font-size: 1.32rem;
+  /*font-size: 1.32rem;*/
   padding: 12px 14px 0;
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
   background: transparent;
@@ -1814,7 +1827,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button:hover {
   color: #fff;
-  background: #707070;
+  background: #555;
 }
 
 .popover-footer-button:active {
@@ -2010,6 +2023,7 @@ body.front ol.breadcrumb {
   top: 3.5rem;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  font-family: shanticon; /* Needed in new acquia dev*/
 }
 
 .shanti-thumbnail-image.shanti-field-video a .overlay::before {
@@ -2714,137 +2728,143 @@ a.btn,a.btn:hover,a.btn:active {
   display: none;
 }
 
-.sidebar-first.sidebar-offcanvas,
-.sidebar-second.sidebar-offcanvas{
-  background-color: #fff;
-  min-height: 900px;
+.sidebar-offcanvas{
+  /*background-color: #fff;*/
+  /*min-height: 900px;*/
+}
+
+.row-offcanvas,
+.row-offcanvas.row-offcanvas-right {
+  -webkit-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 }
 
 
-  .btn.btn-default.view-offcanvas-sidebar > .header,
-  .btn.btn-default.view-offcanvas-sidebar > .badge {
-    display: none;
-  } 
+.btn.btn-default.view-offcanvas-sidebar > .header,
+.btn.btn-default.view-offcanvas-sidebar > .badge {
+  display: none;
+} 
 
-  /* BEGIN Sidebar Button */
-  /* toggle button for sidebar resources, xtra-widths for overflow during animation */
-  .btn.btn-default.view-offcanvas-sidebar {
-    background: #444;
-    font-size: 1rem;
-    width: 2.6rem;
-    line-height: 3.5rem;
-    height: 3.5rem;
-    display: none;
-    padding: 0;
-    position: absolute;
-    top: 0.7rem;
-    z-index: 10;
-    background-image: none;
-    border-radius: 0 0.4rem 0.4rem 0;
-    background-clip: padding-box;
-    text-shadow: none;
-    font-weight: normal;
-    color: #fff;
-    font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-    -webkit-transition: background .100ms ease-out;
-    transition: background .100ms ease-out;
-  }
+/* BEGIN Sidebar Button */
+/* toggle button for sidebar resources, xtra-widths for overflow during animation */
+.btn.btn-default.view-offcanvas-sidebar {
+  background: #444;
+  font-size: 1rem;
+  width: 2.6rem;
+  line-height: 3.5rem;
+  height: 3.5rem;
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 0.7rem;
+  z-index: 10;
+  background-image: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+  background-clip: padding-box;
+  text-shadow: none;
+  font-weight: normal;
+  color: #fff;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+  -webkit-transition: background .100ms ease-out;
+  transition: background .100ms ease-out;
+}
 
-  .btn.btn-default.view-offcanvas-sidebar:hover,
-  .btn.btn-default.view-offcanvas-sidebar:active {
-    background: #000;
-    color: #fff;
-  }
+.btn.btn-default.view-offcanvas-sidebar:hover,
+.btn.btn-default.view-offcanvas-sidebar:active {
+  background: #000;
+  color: #fff;
+}
 
-  .has-tabs .btn.btn-default.view-offcanvas-sidebar {
-    position: relative;
-    top: -1.5rem;
-  }
-  
-  .btn.btn-default.view-offcanvas-sidebar .icon {
-    background: transparent;
-    line-height: 1;
-    font-size: 1.68rem;
-    width: 2rem;
-    position: relative;
-    top: 0rem;
-  }
+.has-tabs .btn.btn-default.view-offcanvas-sidebar {
+  position: relative;
+  top: -1.5rem;
+}
 
-  .row-offcanvas .btn.btn-default.view-offcanvas-sidebar .icon {
-    float: right;
-    left: -0.3rem;
-  }
+.btn.btn-default.view-offcanvas-sidebar .icon {
+  background: transparent;
+  line-height: 1;
+  font-size: 1.68rem;
+  width: 2rem;
+  position: relative;
+  top: 0rem;
+}
 
-  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar .icon {
-    float: left;
-    right: -0.3rem;
-  }
+.row-offcanvas .btn.btn-default.view-offcanvas-sidebar .icon {
+  float: right;
+  left: -0.3rem;
+}
 
-  .btn.btn-default.view-offcanvas-sidebar .icon::before {
-    font-family: 'shanticon';
-    content: '\e63e';
-  }
+.row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar .icon {
+  float: left;
+  right: -0.3rem;
+}
 
-  .btn.btn-default.view-offcanvas-sidebar:hover .icon::before,
-  .btn.btn-default.view-offcanvas-sidebar:active .icon::before {
-  }
+.btn.btn-default.view-offcanvas-sidebar .icon::before {
+  font-family: 'shanticon';
+  content: '\e63e';
+}
+
+.btn.btn-default.view-offcanvas-sidebar:hover .icon::before,
+.btn.btn-default.view-offcanvas-sidebar:active .icon::before {
+}
 
 
-  /**
-  * RIGHT BUTTON 
-  */
-  .row-offcanvas.row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { right: -8px; }
+/**
+* RIGHT BUTTON 
+*/
+.row-offcanvas.row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { right: -8px; }
 
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar {
-    position: absolute;
-    right: -3.2rem;
-    top: -0.7rem;
-    color: #000;
-    filter: alpha(opacity=80);
-    opacity: .8;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar {
+  position: absolute;
+  right: -3.2rem;
+  top: -0.7rem;
+  color: #000;
+  filter: alpha(opacity=80);
+  opacity: .8;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
 
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar:hover {
-    filter: alpha(opacity=100);
-    opacity: 1; 
-  }
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar:hover {
+  filter: alpha(opacity=100);
+  opacity: 1; 
+}
 
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon {
-    color: #777;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.4rem;
-    right: -0.3rem;
-  }
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon {
+  color: #777;
+  font-size: 1.5rem;
+  position: relative;
+  top: 0.4rem;
+  right: -0.3rem;
+}
 
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon::before,
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon::after {
-    background: #777;
-    position: absolute;
-    top: 0rem;
-    right: .2rem;
-    width: 1.5rem;
-    height: 0.2rem;
-    content: '';
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon::before,
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon::after {
+  background: #777;
+  position: absolute;
+  top: 0rem;
+  right: .2rem;
+  width: 1.5rem;
+  height: 0.2rem;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::before,
-  .row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::after {
-    background: #444;
-  }
-  /* END Sidebar Button */
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::before,
+.row-offcanvas.row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar:hover .icon::after {
+  background: #444;
+}
+/* END Sidebar Button */
 
 /**
 *** END Sidebars ***/
@@ -2887,8 +2907,7 @@ a.btn,a.btn:hover,a.btn:active {
 .carousel-header a {
   font-size: 0.93em;
   float: right;
-  margin-right: 3rem;
-  margin-top: 2px;
+  margin-top: 0.2rem;
 }
 
 .carousel-inner {
@@ -2987,8 +3006,8 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .carousel-control .icon::before{
-  position: relative;
-  top: -0.5rem;
+  /*position: relative;
+  top: -0.5rem;*/
 }
 
 .carousel-control.left .icon::before {
@@ -3309,9 +3328,9 @@ a.btn,a.btn:hover,a.btn:active {
 /* JIRA feedback button bottom-right */
 .atlwdg-trigger.atlwdg-SUBTLE{
   border-radius: 2px 2px 0 0 !important;
-
   border-right: 1px solid #ccc !important;
-  box-shadow: none !important;
+  /*box-shadow: none !important;*/
+  box-shadow: 0px 0px 1px 2px rgba(50, 50, 50, 0.1) !important;
   padding: 6px 12px;
   position: fixed;
   right: 10rem !important;
@@ -3978,7 +3997,7 @@ table tr.ok {
 .panel.panel-default .panel-heading h6 {
   text-transform: uppercase;
   font-size:1.06em;
-  line-height: 4.38em;
+  line-height: 4.25em;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
   margin: 0;
@@ -4097,6 +4116,7 @@ table tr.ok {
 .footer {
   color: #ddd;
   width: 100%;
+  height:110px;
   padding: 40px 0 20px 15px;
   background: #222;
   position:relative;
@@ -4135,14 +4155,18 @@ table tr.ok {
 /*----- BEGIN Layout Corrections -----*/
 /********************************/
 /* broad range need to watch */
-/* .page-node-devel .tab-pane.main-col > div.region-content */
-.tab-pane.main-col {
+/* .page-node-devel article.main-col > div.region-content */
+article.main-col {
   max-width: 1050px !important;
   padding: 1.7rem 0 0;
   margin: 0 auto !important;
 }
 
-.tab-pane.main-col > div.region-content::after{
+.no-sidebars article.main-col{
+  padding-bottom:50px;
+}
+
+article.main-col > div.region-content::after{
   /* clearfix application */
   display: table;
   content: " ";
@@ -4151,13 +4175,13 @@ table tr.ok {
   visibility: hidden;
 }
 
-.page-mydata .tab-pane.main-col,
-.page-mygallery .tab-pane.main-col,
-.page-user-contact .tab-pane.main-col {
+.page-mydata article.main-col,
+.page-mygallery article.main-col,
+.page-user-contact article.main-col {
   max-width: 940px !important;
 }
 
-.page-user-contact .tab-pane.main-col {
+.page-user-contact article.main-col {
   max-width: 850px !important;
 }
 
@@ -4170,13 +4194,17 @@ html body {
   width: 100%;
   /*padding-bottom: 7rem;*/
 }
+/* this targets the Overview text on AV home above carousel, not sure yet if it's needed on other homepages */
+.front #block-system-main.block.block-system {
+  float: none;
+}
 
 body.page-admin-modules #block-system-main.block.block-system {
   float: none;
 }
 
 .tab-content.container-fluid{
-  padding-bottom:5rem;
+  /*padding-bottom:5rem;*/
 }
 
 /********************************/
@@ -4198,11 +4226,11 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (max-width: 499px) {
 
-  .header-banner .collections h4 {
+  .site-banner .collections h4 {
     font-size: 1em;
   }
 
-  .header-banner .collections > nav > div {
+  .site-banner .collections > nav > div {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4210,7 +4238,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (max-width: 599px) {
     
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     line-height: 3em;
   }
 
@@ -4225,8 +4253,7 @@ body.page-admin-modules #block-system-main.block.block-system {
 
 @media screen and (max-width: 991px) {
 
-  .sidebar-first.sidebar-offcanvas,
-  .sidebar-second.sidebar-offcanvas {
+  .sidebar-offcanvas {
     position: absolute;
     top: 0;
   }
@@ -4234,9 +4261,6 @@ body.page-admin-modules #block-system-main.block.block-system {
   .row-offcanvas.row-offcanvas,
   .row-offcanvas.row-offcanvas-right {
     position: relative;
-    -webkit-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
   }
 
 } 
@@ -4250,19 +4274,20 @@ body.page-admin-modules #block-system-main.block.block-system {
 * ----------------------------------
 */
 
-@media screen and (min-width: 400px) {
-
-}
-
 @media screen and (min-width: 500px) {
     
   .navbar-header .site-slogan {
     display: inline-block;
   }
 
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 40%;
     margin-left: 10%;
+  }
+
+  .sidebar,
+  .main-wrapper {
+    min-height: 700px;
   }
 }
 
@@ -4270,20 +4295,21 @@ body.page-admin-modules #block-system-main.block.block-system {
 
   .navbar-header .site-slogan {
     font-size: 100%;
-    top:1.45rem;
   }
 
-  .navbar-brand { height:50; }
+  .navbar-header .navbar-brand{
+    height:50px;
+  }
   
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 20%;
   }
 
-  .header-banner .collections ul li a.disabled, 
-  .header-banner .collections ul li a.disabled:hover,
-  .header-banner .collections ul li a.disabled:active,
-  .header-banner .collections ul li a.disabled .icon,  
-  .header-banner .collections ul li a.disabled:hover .icon {
+  .site-banner .collections ul li a.disabled, 
+  .site-banner .collections ul li a.disabled:hover,
+  .site-banner .collections ul li a.disabled:active,
+  .site-banner .collections ul li a.disabled .icon,  
+  .site-banner .collections ul li a.disabled:hover .icon {
     color: #707070;
     cursor: default;
   }
@@ -4295,6 +4321,10 @@ body.page-admin-modules #block-system-main.block.block-system {
   .navbar-brand .shanticon-logo {
     margin-left: 2rem;
   }
+
+  .navbar-header .navbar-brand{
+    margin-left:0;
+  }
   
   .navbar-default .menu-explore {
     display: none;
@@ -4304,15 +4334,15 @@ body.page-admin-modules #block-system-main.block.block-system {
     display: inline-block;
   }
 
-  .header-banner .collections h4 {
+  .site-banner .collections h4 {
     font-size: 1.06em;
     letter-spacing: 0.25em;
     margin-top: 8px !important;
   }
 
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 15%;
-    margin-left: 8%;
+    margin-left: 7%;
   }
 
   .nav-tabs.nav-justified>li{
@@ -4331,30 +4361,46 @@ body.page-admin-modules #block-system-main.block.block-system {
     margin-top: 0;
   }
 
-  .header-banner .collections h4 {
+  .site-banner .collections h4 {
     font-size: 1.12em;
   }
 
-  .header-banner .collections ul {
+  .site-banner .collections ul {
     margin-left: -5%;
   }
 
-  .header-banner .collections ul li {
+  .site-banner .collections ul li {
     width: 12%;
     margin-left: 7%;
   }
 
-  .header-banner .collections ul li a.disabled, 
-  .header-banner .collections ul li a.disabled:hover, .header-banner .collections ul li a.disabled:active, 
-  .header-banner .collections ul li a.disabled .icon, .header-banner .collections ul li a.disabled:hover .icon, .header-banner .collections ul li a.disabled:active .icon {
+  .site-banner .collections ul li a.disabled, 
+  .site-banner .collections ul li a.disabled:hover, .site-banner .collections ul li a.disabled:active, 
+  .site-banner .collections ul li a.disabled .icon, .site-banner .collections ul li a.disabled:hover .icon, .site-banner .collections ul li a.disabled:active .icon {
     color: #707070;
     cursor: default;
   }
 
 }
 
-@media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1440px) {
+
+  .sidebar,
+  .main-wrapper {
+    min-height: 800px;
+  }
 }
+
+@media screen and (min-width: 1920px) {
+
+  .sidebar,
+  .main-wrapper {
+    min-height: 900px;
+  }
+}
+
+
 
 @media all and (orientation:portrait) {
 }

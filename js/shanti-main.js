@@ -51,7 +51,11 @@
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
     var srchtab = (height) - 88;
-    var viewheight = (height) - 235;
+    var srchtabAdmin = (height) - 123; // subtract 35px height of Drupal admin navbar
+    // var viewheight = (height) - 235;
+    var viewheight = (height) - 270;
+    var viewheightSources = (height) - 230;
+    var viewheightPlaces = (height) - 402;
     // var advHeight = $(".advanced-view").show().height();
     // var comboHeight = (viewheight) - 370;
 
@@ -59,10 +63,20 @@
     srchtab = parseInt(srchtab) + 'px';
     $("#search-flyout").find(".text").css('height',srchtab);
 
+    srchtabAdmin = parseInt(srchtabAdmin) + 'px';
+    $(".admin-menu #search-flyout").find(".text").css('height',srchtabAdmin);
+
     viewheight = parseInt(viewheight) + 'px';
     // comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
     // $(".view-wrap.short-wrap").css('height', comboHeight);
+
+    viewheightSources = parseInt(viewheightSources) + 'px';
+    $(".sources .view-wrap").css('height', viewheightSources);
+
+    viewheightPlaces = parseInt(viewheightPlaces) + 'px';
+    $(".page-places .view-wrap").css('height', viewheightPlaces);
+
   };
 
   /**
@@ -639,44 +653,50 @@
   };
   
 
-	Drupal.behaviors.hasTabsSecondary = {
+	Drupal.behaviors.hasTabs = {
 		attach: function (context, settings) {
 	    // --- sets class for height change in flyout, see comboheight below in ShantiSarvaka.searchTabHeight     
 	    if($(".tabs.secondary").length ) { 
 	      $(".titlearea").addClass('has-tabs-secondary');
 	    }
+
+      if($(".tabs.primary").length ) { 
+        $("body").addClass('has-tabs');
+      }
 	  }
 	};
 
 
+	// handles ordinary search flyout inputs (not typeahead inputs)
   Drupal.behaviors.shantiSarvakaSearchFlyoutCancel = {
       attach: function (context, settings) {
         if(context == window.document) {
-                          
-          var mbsrch = $(".search-group .form-control");  // the main search input
-          $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
-      
-          // --- focusin - focusout
-          $(mbsrch).focusin(function () {
-              $(mbsrch).attr("placeholder", "");
-              $("button.searchreset").show("fast");
-          });
-          $(mbsrch).focusout(function () {
-              $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
-              $("button.searchreset").hide();
-      
-              var str = "Enter Search...";
-              var txt = $(mbsrch).val();
-      
-              if (str.indexOf(txt) > -1) {
-                  $("button.searchreset").hide();
-                  return true;
-              } else {
-                  $("button.searchreset").show(100);
-                  return false;
-              }
-          });
-        
+        	$('.search-group .input-group').once().each(function() {
+				var $xbtn = $("button.searchreset", this);
+        		var $srch = $(".form-control", this);  // the main search input
+				$srch.data("holder", $srch.attr("placeholder"));
+
+				// --- focusin - focusout
+				$srch.focusin(function () {
+					$srch.attr("placeholder", "");
+					$xbtn.show("fast");
+				});
+				$srch.focusout(function () {
+					$srch.attr("placeholder", $srch.data("holder"));
+					$xbtn.hide();
+
+					var str = $srch.data("holder"); //"Enter Search...";
+					var txt = $srch.val();
+
+					if (str.indexOf(txt) > -1) {
+						$xbtn.hide();
+						return true;
+					} else {
+						$xbtn.show(100);
+						return false;
+					}
+				});
+			});
         }
       }
   };
@@ -695,21 +715,6 @@
         });
       }
     }
-  };
-
- 
-  Drupal.behaviors.shantiKmapsHideBreadcrumbsSubjects = {
-    attach: function (context, settings) {
-      if(context == window.document) {
-
-        $( window ).load(function() {
-          if($(".front.page-subjects").length ) { 
-               $(this).find(".breadwrap").remove();
-          }
-        });
-
-      }
-    } 
   };
 
 Drupal.behaviors.shantiDeleteButtonDisable = {
@@ -763,5 +768,107 @@ Drupal.behaviors.shantiDeleteButtonDisable = {
 //	  }
 //	};
 
+
+// Sidebar and footer coordinate heights
+Drupal.behaviors.shantiSidebarFooterGravity = {
+   attach: function (context, settings) {
+      if (context == document) {
+ 
+
+
+          Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
+
+            
+              // top-banner-white = 50
+              // top-banner-colored = 70
+              // admin-tabs = 25
+              // main-wrapper = includes top-banner-colored and admin tabs extends to top of default-footer
+              // default-footer = 110
+              // admin-footer = 140
+
+              var height = $(window).height();
+              var mainwrapper_minimum = (height) - 230;
+              var mainwrapper_minimum_hastabs = (height) - 255;
+              var mainwrapper_minimum_adminfooter = (height) - 425;
+              // var mainwrapper_minimum_adminfooter_hastabs = (height) - 430;
+
+              mainwrapper_minimum = parseInt(mainwrapper_minimum) + 'px'; 
+              mainwrapper_minimum_hastabs = parseInt(mainwrapper_minimum_hastabs) + 'px';
+              mainwrapper_minimum_adminfooter = parseInt(mainwrapper_minimum_adminfooter) + 'px';
+              // mainwrapper_minimum_adminfooter_hastabs = parseInt(mainwrapper_minimum_adminfooter_hastabs) + 'px';
+              $(".main-col").css('min-height',mainwrapper_minimum);
+              $(".has-tabs .main-col").css('min-height',mainwrapper_minimum_hastabs);
+              $(".admin-menu.has-tabs .main-col").css('min-height',mainwrapper_minimum_adminfooter);
+              // $(".admin-menu .main-col").css('min-height',mainwrapper_minimum_adminfooter_hastabs);
+
+              // var mainwrapper = $(".main-wrapper").height(); 
+              var sidebar = $(".main-col").height();  // for sidebar height
+              var sidebarsecond = $(".main-col").height() + 50;  // for sidebar height - adds 20px to sidebar-second in AV height for top-margin/padding
+              // var sidebarsecond_hastabs = (mainwrapper) - 115;
+
+              sidebar = parseInt(sidebar) + 'px';
+              sidebarsecond = parseInt(sidebarsecond) + 'px';
+              // sidebarsecond_hastabs = parseInt(sidebarsecond_hastabs) + 'px';
+              $(".sidebar-first").one().css('height',sidebar);
+              $(".region-sidebar-second").css('height',sidebarsecond);
+
+
+              // temp fix
+              var sidebarsecondeditcollection = $(".page-node-edit.node-type-collection .main-col").height() + 550;
+              sidebarsecondeditcollection = parseInt(sidebarsecondeditcollection) + 'px';
+              $(".page-node-edit.node-type-collection  .region-sidebar-second").css('height',sidebarsecondeditcollection);
+              // $(".has-tabs .region-sidebar-second").css('height',sidebarsecond_hastabs) 
+
+          };
+
+      }
+    }
+ };
+
+ // Kmaps - sidebar height and footer coordinate heights
+ Drupal.behaviors.shantiKmapsSidebarFooter = {
+   attach: function (context, settings) {
+      if (context == document) {
+
+        // $(window).on('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
+        $(window).on('load', function() {
+            clearTimeout(this.id);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
+        });
+
+        $(window).bind('resize orientationchange', function() {
+            clearTimeout(this.id);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
+        });
+
+
+
+        Drupal.ShantiSarvaka.set_equal_heights = function() {
+            clearTimeout(this.id);
+            this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
+        }
+
+        $(".use-ajax").click( function() {
+            $(document).ready( function() {
+                $(".content-section.equal-height").bind('ajaxComplete', function(e){
+                       setTimeout( Drupal.ShantiSarvaka.set_equal_heights, 200);
+                });
+            });
+        });
+
+          
+            // $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
+
+            /*     $("#sidebar-first").find("a.use-ajax").bind('resize', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
+
+                 $('a.use-ajax').bind( 'click', function() {
+                    $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
+                 });
+            */
+
+      }
+    }
+ };
 
 }(jQuery));

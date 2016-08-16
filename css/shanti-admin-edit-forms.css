@@ -19,28 +19,51 @@
   position:relative;
 }
 
-
-
-
-.page-node-add .tab-pane.main-col,
-.page-node-group .tab-pane.main-col,
-.page-group-node-admin .tab-pane.main-col {
-  max-width: 920px !important;
-}
-
 .page-node-add .content-section a,
 .page-node-edit .content-section a {
   font-weight: bold;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
+
+/**
+* Page layout
+*/
+.page-node-add .tab-pane.main-col,
+.page-node-group .tab-pane.main-col,
+.page-group-node-admin .tab-pane.main-col {
+  max-width: 920px !important;
+}
+
+.page-node-add.no-sidebars .tab-pane.main-col,
+.page-node-edit.no-sidebars .tab-pane.main-col,
+.page-node-group.no-sidebars .tab-panel.main-col{
+    max-width: 870px !important;
+}
+
+@media (min-width:1150px) {
+
+  .page-node-edit .tab-pane.main-col {
+      max-width: 920px !important;
+  }
+}
+
+.page-mycontent-workflow .tab-pane.main-col {
+  max-width:1200px;
+}
+
+.page-group-node-admin .tab-pane.main-col{
+  padding-top:3rem;
+}
+
+
+
+
 /* powerful, careful */
 .page-node-add .fieldset-wrapper .form-item,
 .page-node-edit .fieldset-wrapper .form-item{
   margin:0;
 }
-
-
 
 /* My Stuff Account Collections page - 50% columns for drop-select */
 .view-my-workflow .field-accordion .form-item {
@@ -305,26 +328,6 @@ font-size: 1.12em;
 /**
 * KMAPS - Search 
 */
-.field-type-shanti-kmaps-fields-default input.kmap-search-term{
-  max-width: 20em;
-  display: inline-block;
-}
-
-.kmap-typeahead-picker .twitter-typeahead{
-  width: 49%;
-}
-
-.field-name-field-location .kmap-typeahead-picker{
-  border-top:1px solid #ccc;
-  padding-top:2rem;
-}
-
-.kmap-search-header p{
-  margin: 1.5rem 0 .5rem 1rem;
-  font-size: 0.93em;
-  font-style: italic;
-}
-
 .field-name-field-subject .panel-body,
 .field-name-field-subcollection-new .panel-body{
   padding-top: 1.5rem !important;
@@ -335,9 +338,98 @@ font-size: 1.12em;
   display:none;
 }
 
+.kmap-search-header p{
+  margin: 1.5rem 0 .5rem 1rem;
+  font-size: 0.93em;
+  font-style: italic;
+}
+
 .form-type-textfield.form-item-field-subject-search-term{
   display:block;
 }
+/*
+.field-name-field-subject .kmap-tree-picker,
+.field-name-field-subcollection-root .kmap-tree-picker,
+.field-name-field-recording-location-new .kmap-tree-picker{
+  position:relative;
+}
+*/
+.field-name-field-location .kmap-typeahead-picker{
+  border-top:1px solid #ccc;
+  padding-top:1rem;
+  /*position:relative;*/
+}
+
+.kmap-tree-picker, /* --------- testing consolidation of above declarations */
+.kmap-typeahead-picker{
+  position:relative;
+}
+
+.field-name-field-subject .kmap-tree-picker,
+.field-name-field-subject .kmap-typeahead-picker,
+.field-name-field-subcollection-root .kmap-tree-picker,
+.field-name-field-recording-location-new .kmap-tree-picker{
+  width: 38rem;
+}
+
+.field-name-field-subject .kmap-tree-picker{
+  width: 42rem;
+}
+
+.field-name-field-location .kmap-typeahead-picker .searchreset{
+  position: absolute;
+  left: -1rem;
+  bottom: -3.5rem;
+}
+
+.field-name-field-subject .kmap-tree-picker .searchreset,
+.field-name-field-subcollection-root .kmap-tree-picker .searchreset,
+.field-type-shanti-kmaps-fields-default .kmap-tree-picker .searchreset{
+  position: absolute;
+  right: 12rem;
+  top: 2.5rem;
+}
+
+.field-name-field-subject .kmap-tree-picker .searchreset{
+  right: 16rem;
+}
+
+.field-type-shanti-kmaps-fields-default input.kmap-search-term{
+  max-width: 49%;
+  display: inline-block;
+  padding-left: 3rem;
+  padding-right: 3.3rem;
+}
+
+.field-name-field-subject input.kmap-search-term{
+  width: 27rem;
+  max-width: 100%;
+}
+
+.field-name-field-subcollection-root input.kmap-search-term,
+.field-type-shanti-kmaps-fields-default input.kmap-search-term{
+  max-width: 27rem
+}
+
+.field-name-field-location .kmap-typeahead-picker input.kmap-search-term{
+  max-width: 49%;
+}
+
+
+.kmap-tree-picker .shanticon-magnify,
+.kmap-typeahead-picker .shanticon-magnify{
+  position: absolute;
+  left: 1rem;
+  top:2.7rem;
+  color: #999;
+  font-size: 1em;
+}
+
+.kmap-typeahead-picker .shanticon-magnify{
+  position: absolute;
+  top: 3.7rem;
+}
+
 
 .kmap-search-button,
 .kmap_search_button{
@@ -384,6 +476,10 @@ font-size: 1.12em;
 .kmap-pick-tree ul{
   list-style: circle inside none;
 }
+.kmap-pick-tree ul ul{
+  -webkit-padding-start: 9px;
+  padding-left: 9px;
+}
 /* tree results list items */
 .kmap-pick-tree .matching,
 /* tree results list items */
@@ -428,15 +524,11 @@ font-size: 1.12em;
 }
 
 
-
-body.page-group-node-admin .tab-pane.main-col{
-  padding-top:3rem;
-}
-
-body.page-group-node-admin fieldset.form-wrapper legend{
+/* Selector target - body class=page-group-node-admin */
+.page-group-node-admin fieldset.form-wrapper legend{
   font-size: 1em;
 }
-
+/* Selector target - TABLE class=views-table */
 table.views-table{
   width:100%;
 }
@@ -499,6 +591,7 @@ table.views-table thead a > img{
 /** 
 * My Content Pages - @new from mb-main @June 3, 2016 @question - vbo-views-form ?
 */
+/* Selector target - fieldset #edit-select */
 .view-my-content .vbo-views-form fieldset#edit-select {
   float: right;
   width: 65%;
@@ -583,9 +676,6 @@ table.views-table thead a > img{
 }
 
 /* - page-mycontent-workflow - new @june 2016 */
-.page-mycontent-workflow .tab-pane.main-col {
-  max-width:1200px;
-}
 
 .page-mycontent-workflow .views-exposed-form .views-exposed-widget{
   padding-right: 5rem;
@@ -717,7 +807,7 @@ table.field-multiple-table .field-widget-text-textarea{ padding-top:1rem; }
 
 
 
-/* Form Buttons at very bottom */
+/* Form Buttons w/ID selectors - at very bottom */
 
 /* other than Save & Delete button gets white/grey */
 button#edit-preview-changes,
@@ -897,7 +987,7 @@ button#edit-delete:hover{
 .vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:active {
   text-decoration: none;
 }
-
+/* Selector target UL.vertical-tabs-list */
 .vertical-tabs ul.vertical-tabs-list .selected strong {
   color: inherit;
 }
@@ -948,7 +1038,7 @@ button#edit-delete:hover{
 }
 
 .vertical-tabs .form-item-date input{
-  max-width:15em;
+  max-width:18em;
 }
 
 .vertical-tabs .form-item-name input{
@@ -988,18 +1078,7 @@ table.redirect-list thead th:first-of-type img{
 
 
 
-.page-node-add.no-sidebars .tab-pane.main-col,
-.page-node-edit.no-sidebars .tab-pane.main-col,
-.page-node-group.no-sidebars .tab-panel.main-col{
-    max-width: 870px !important;
-}
 
-@media (min-width:1150px) {
-
-  .page-node-edit .tab-pane.main-col {
-      max-width: 920px !important;
-  }
-}
 
 
 
@@ -1012,9 +1091,14 @@ table.redirect-list thead th:first-of-type img{
   box-shadow: 0 0 10px #aaa;
   border-radius: .2rem;
   z-index: 1000 !important;
-  min-width: 550px;
-  /*max-height:280px;*/
-  overflow:hidden
+  /*min-width: 550px;
+  max-height: 700px;*/
+  overflow:hidden;
+  margin-left:-200px;
+}
+/* target edit collection page only w/height for now to be safe */
+.node-type-collection #modalContent{
+  max-height: 700px;
 }
 
 @media (max-width: 600px) { 
@@ -1028,7 +1112,6 @@ table.redirect-list thead th:first-of-type img{
       left: 4% !important;
     }
 }
-
 
 /* kaltura upload video */
 div.ctools-modal-content {
@@ -1049,14 +1132,6 @@ div.ctools-modal-content .modal-content {
   background:transparent;
 }
 
-div.ctools-modal-content button.btn.btn-primary{
-  /*margin-left: 50%;
-  margin-top: 3rem;
-  position: relative;
-  left: -6em;
-  padding: .5rem 2rem .4rem;*/
-}
-
 div.ctools-modal-content .btn.btn-delete.btn-primary{
   margin-top:0 !important;
 }
@@ -1071,7 +1146,7 @@ div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
   margin-top:-0.5rem !important;
 }
 
-div.ctools-modal-content div#edit-actions--3.form-actions.form-wrapper{
+div.ctools-modal-content #edit-actions--3.form-actions.form-wrapper{
   margin-top:4rem;
 }
 /*
@@ -1109,6 +1184,10 @@ div.ctools-modal-content a.close{
   text-shadow: 0 0 3px #888;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   opacity: 0.85;
+  margin:0;
+
+  width: 0;
+  height: 0;
 }
 
 div.ctools-modal-content a.close:hover{
@@ -1120,20 +1199,40 @@ div.ctools-modal-content a.close::after{
   position: relative;
   font-size: 3em;
   top: 2.3rem;
+  right:2rem;
 }
 
 div.ctools-modal-content a.close img{
   display:none;
+  position: absolute;
+  z-index: -10;
+  height: 0;
+  width: 0;
 }
 /* radio button labels input position */
 div.ctools-modal-content .vertical-tabs label.radio-inline{
   width: auto !important;
   padding-left: 0;
 }
-
+div.ctools-modal-content .form-item{
+  margin-top:0;
+  margin-bottom:0;
+}
 div.ctools-modal-content .form-item label{
   float:none;
   width:100%;
+}
+
+.modal-content .ctools-close-modal::after{
+  content: 'X';
+  position:relative;
+  left: 0.5rem;
+  display: inline-block;
+}
+
+.modal-content .form-type-file .description{
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
 }
 /**
 *** END modal ***/
@@ -1217,13 +1316,13 @@ div.ctools-modal-content .form-item label{
     display: none;
   }
 }
-
+/* adjust height of admin bar target body clas admin-menu */
 html body.admin-menu {
   margin-top: 5.4rem !important;
 } 
 
 @media screen and (min-width: 768px) {
-  /* adjust height of admin bar */
+  
   html body.admin-menu {
     margin-top: 3rem !important;
   }
@@ -1236,21 +1335,23 @@ html body.admin-menu {
 }
 
 .region-admin-footer {
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   background: #888;
-  color:#eee;
-  border-bottom: 5px solid #fff;
+  color: #eee;
+  /*border-bottom: 5px solid #333;*/
+  height:140px;
 }
 
-.region-admin-footer a{
+.region-admin-footer a,
+.region-admin-footer a.active{
   color:#ddd;
-  border-bottom:1px solid #ccc;
+  /*border-bottom:1px solid #ccc;*/
 }
 
 .region-admin-footer a:hover,
 .region-admin-footer a:active{
   color:#fff;
-  border-bottom:1px solid #eee;
+  /*border-bottom:1px solid #eee;*/
 }
 
 .region-admin-footer a:hover{
@@ -1262,7 +1363,7 @@ html body.admin-menu {
   padding: 0 1rem;
   border-right: thin solid #555;
   vertical-align: top;
-  min-height: 120px;
+  min-height: 118px;
 }
 
 .region-admin-footer .block.block-user {
