@@ -849,7 +849,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
         }
 
-        $(".use-ajax").click( function() {
+        $("#sidebar-first a.use-ajax").click( function() {
             $(document).ready( function() {
                 $(".content-section.equal-height").bind('ajaxComplete', function(e){
                        setTimeout( Drupal.ShantiSarvaka.set_equal_heights, 200);
