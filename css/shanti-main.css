@@ -3837,9 +3837,6 @@ ul.pager li>span {
   border-radius: 0;
 }
 
-ul.pager li .ajax-progress{
-  display: none !important;
-}
 /*----------------------*/
 /*----- END paging -----*/
 /*----------------------*/
