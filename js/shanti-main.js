@@ -844,6 +844,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
 
 
 
+
+
         Drupal.ShantiSarvaka.set_equal_heights = function() {
             clearTimeout(this.id);
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);

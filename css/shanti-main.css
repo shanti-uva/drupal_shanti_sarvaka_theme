@@ -3699,6 +3699,10 @@ table.pagerer {
   text-transform: uppercase;
 }
 
+.kmaps article table.pagerer:nth-of-type(2){
+  margin-bottom:7rem;
+}
+
 table.pagerer tbody{
   border-top:none !important;
 }
