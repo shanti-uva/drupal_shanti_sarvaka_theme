@@ -1760,7 +1760,7 @@ body.front ol.breadcrumb {
 }
 
 .related-resources-popover .popover-title {
-  font-size: 1.32rem;
+  /*font-size: 1.32rem;*/
   padding: 12px 14px 0;
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
   background: transparent;
