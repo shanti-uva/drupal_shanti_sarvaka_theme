@@ -3710,7 +3710,7 @@ table.pagerer tbody{
 input.pagerer-page {
   border-radius: 3px;
   background-clip: padding-box;
-  border: none;
+  /*border: none;*/
   /*font-size: 0.88em;*/
   font-size: 1em;
     padding: 0.1rem .5rem 0;
