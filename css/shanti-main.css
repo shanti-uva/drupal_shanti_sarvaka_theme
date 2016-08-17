@@ -3712,10 +3712,12 @@ input.pagerer-page {
   background-clip: padding-box;
   border: none;
   font-size: 0.88em;
+  font-size: 1em;
+    padding: 0.1rem .5rem 0.2rem;
   line-height: 1em !important;
   color: #6d7afc;
   height: 18px !important;
-  width: 3rem !important;
+    width: 3.5rem !important;
   max-width: 4rem !important;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
   border-collapse: separate;
@@ -3727,11 +3729,16 @@ input.pagerer-page:focus{
   border: 1px solid #ccc;
   color: #6d7afc;
 }
+/* import from KMaps Aug 17, 2016 mf8yk */
+li.pager-item > form,
+li.pager-item > form div,
+li.pager-item > form input {
+  display: inline !important;
+}
 
 ul.pager {
   text-align: right;
   margin:0;
- /*float:right;position:relative;top:0;right:0;*/
 }
 
 ul.pager li {
