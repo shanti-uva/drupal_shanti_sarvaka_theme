@@ -3710,16 +3710,14 @@ table.pagerer tbody{
 input.pagerer-page {
   border-radius: 3px;
   background-clip: padding-box;
-  /*border: none;*/
-  /*font-size: 0.88em;*/
+  border: 1px solid #ddd;
   font-size: 1em;
-    padding: 0.1rem .5rem 0;
-  /*line-height: 1em !important;*/
+  padding: 0.1rem .5rem 0;
+  line-height: 1em !important;
   color: #6d7afc;
   height: 18px !important;
-    width: 3.5rem !important;
-  /*max-width: 4rem !important;*/
-  box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+  width: 3.5rem !important;
+  box-shadow: 0 0 3px #ccc;
   border-collapse: separate;
 }
 
