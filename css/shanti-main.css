@@ -3700,7 +3700,7 @@ table.pagerer {
 }
 
 .kmaps article table.pagerer:last-child{
-  margin-bottom:7rem;
+  margin: 2rem 0 7rem;
 }
 
 table.pagerer tbody{
