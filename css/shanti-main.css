@@ -3711,7 +3711,6 @@ input.pagerer-page {
   border-radius: 3px;
   background-clip: padding-box;
   border: 1px solid #ddd;
-  font-size: 1em;
   padding: 0.5rem;
   line-height: 1em !important;
   color: #6d7afc;
@@ -3720,6 +3719,7 @@ input.pagerer-page {
   box-shadow: 0 0 3px #ccc;
   border-collapse: separate;
   text-align:center;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 
 input.pagerer-page:hover,
