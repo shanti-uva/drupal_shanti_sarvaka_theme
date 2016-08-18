@@ -247,13 +247,14 @@ font-size: 1.12em;
 */
 
 .kmap-filter{
-  padding-top:1rem;
+  /*padding-top:1rem;*/
 }
 
 .field-name-field-location .kmap-filter{
   clear:none;
   width: 49%;
   float: left;
+  padding-top:0.5rem;
   /*padding-bottom: 1.5rem;
   margin-top: 1rem;
   margin-bottom:1rem;*/
@@ -279,8 +280,11 @@ font-size: 1.12em;
 }
 
 .kmap-filter-box{
-  /*margin-bottom: 3rem;*/
   padding-left: 1rem; 
+}
+
+.field-name-field-location .kmap-filter-box{
+  min-height: 3.5rem;
 }
 
 .kmap-filter label,
@@ -304,13 +308,16 @@ font-size: 1.12em;
 
 .field-name-field-location .kmap-filter:nth-of-type(2){
   margin-right:1%;
+  margin-bottom: 2rem;
+  padding-bottom: 2.5rem
 }
 
 .field-name-field-location .kmap-filter:nth-of-type(3){
-  margin-left:1%;
-  margin-top: 1rem;
   border-left: 1px solid #ddd;
+  margin-left:1%;
+  margin-bottom: 2rem;
   padding-left: 2rem;
+  padding-bottom: 2.5rem
 }
 
 /* Keyword Label wrapper - w/(x) cancel buttons */
@@ -328,7 +335,7 @@ font-size: 1.12em;
   background-color: transparent;
 }
 
-.field-name-field-location .selected-kmap{
+.field-name-field-location .kmap-typeahead-picker .selected-kmap{
   background-color: #f0f0f0;
 }
 
