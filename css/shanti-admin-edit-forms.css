@@ -245,6 +245,42 @@ font-size: 1.12em;
 /**
 * Twitter Typeahead - keyword labels for transcript
 */
+
+.kmap-filter.form-wrapper{
+  padding-top:1rem;
+}
+
+.field-name-field-location .kmap-filter{
+  clear:none;
+  width: 49%;
+  float: left;
+  padding-bottom: 1.5rem;
+}
+
+/* labels position */
+.kmap-result-box{
+  position: relative;
+  left: 0.7rem;
+}
+
+.field-name-field-location .kmap-result-box{
+  background: #f0f0f0;
+  float: left;
+  width: 100%;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-width: 0 1px 1px;
+  border-radius: 0 0 1rem 1rem;
+  position: relative;
+  left:0;
+}
+
+.kmap-filter-box{
+  /*margin-bottom: 3rem;*/
+  padding-left: 1rem; 
+}
+
 .kmap-filter label,
 .kmap-tree-picker label,
 .kmap-typeahead-picker label{
@@ -264,35 +300,8 @@ font-size: 1.12em;
   font-size: 1.12em;
 }
 
-.field-name-field-location .kmap-filter{
-  clear:none;
-  width: 49%;
-  float: left;
-  padding-bottom: 1.5rem;
-}
-
-.field-name-field-location .kmap-result-box{
-  background: #f0f0f0;
-  float: left;
-  width: 100%;
-  padding-left: 4rem;
-  padding-bottom: 2rem;
-  border: 1px solid #ccc;
-  border-width: 0 1px 1px;
-  border-radius: 0 0 1rem 1rem;
-}
-
-.kmap-filter.form-wrapper{
-  padding-top:1rem;
-}
-
 .field-name-field-location #field_location-filter-associated_subject{
   margin-right:2%;
-}
-
-.kmap-filter-box{
-  /*margin-bottom: 3rem;*/
-  padding-left: 1rem; 
 }
 
 /* Keyword Label wrapper - w/(x) cancel buttons */
@@ -375,7 +384,8 @@ font-size: 1.12em;
 }
 */
 .field-name-field-location .kmap-typeahead-picker{
-  border-top:1px solid #ccc;
+  border: 1px solid #ccc;
+  border-width: 1px 1px 0;
   padding-top:1rem;
   background: #f0f0f0;
   padding: 2rem 2rem 0;
@@ -515,11 +525,7 @@ font-size: 1.12em;
   color:#333;
   line-height: 1.75em;
 }
-/* Add Collections / bottom accordion - Subcollection - labels position */
-.kmap-result-box{
-  position: relative;
-  left: 0.7rem;
-}
+
 
 
 
