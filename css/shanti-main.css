@@ -126,7 +126,7 @@ textarea.form-textarea {
   height: 27px;
   line-height: 1.82em;
   padding: 0.3rem 1.5rem 0;
-  max-width: 35rem;
+  max-width: 47rem;
   overflow: auto;
   box-shadow: 0 2px 5px #eee inset;
   border-collapse: separate;
@@ -136,6 +136,10 @@ textarea.form-textarea {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
   background-position: 99% .62em !important;
+}
+/* Drupal login form page */
+input.form-control.required{
+  max-width: 35rem;
 }
 
 textarea.form-textarea {
