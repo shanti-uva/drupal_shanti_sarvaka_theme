@@ -252,9 +252,10 @@ font-size: 1.12em;
 
 .field-name-field-location .kmap-filter{
   clear:none;
-  width: 49%;
   float: left;
-  padding-top:0.5rem;
+  padding-top: 0;
+  margin-top:1rem;
+  width: 49%;
   /*padding-bottom: 1.5rem;
   margin-top: 1rem;
   margin-bottom:1rem;*/
