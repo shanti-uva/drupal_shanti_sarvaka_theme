@@ -256,6 +256,7 @@ font-size: 1.12em;
   float: left;
   padding-bottom: 1.5rem;
   margin-top: 1rem;
+  margin-bottom:1rem;
 }
 
 /* labels position */
@@ -301,12 +302,12 @@ font-size: 1.12em;
   font-size: 1.12em;
 }
 
-.field-name-field-location .kmap-filter:nth-of-type(1){
+.field-name-field-location .kmap-filter:nth-of-type(2){
   margin-right:1%;
   margin-top: 1rem;
 }
 
-.field-name-field-location .kmap-filter:nth-of-type(2){
+.field-name-field-location .kmap-filter:nth-of-type(3){
   margin-left:1%;
   margin-top: 1rem;
   border-left: 1px solid #ddd;
