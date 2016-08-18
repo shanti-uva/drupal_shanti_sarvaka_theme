@@ -1706,6 +1706,10 @@ object.flip_label {
   border-top: 1px solid #ddd;
 }
 
+.input-section .kmap-filter:last-of-type .kmap-filter-box{
+  padding-bottom: 2rem
+}
+
 .input-section .search-filters{
   padding: 0 1.5rem 1.5rem;
 }
