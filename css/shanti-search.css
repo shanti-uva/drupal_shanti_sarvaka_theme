@@ -1652,7 +1652,6 @@ object.flip_label {
 .popover.left{
   margin-left: -1.5rem;
 }
-
 /**
 *** END View Section */
 
@@ -1663,24 +1662,8 @@ object.flip_label {
 
 
 
-/* @new w/typeahead filters */
-.kmaps .input-section .search-group {
-  height:auto;
-}
 
-.kmaps .input-section .search-filters{
-  padding: 0 1.5rem 1.5rem;
-}
 
-.kmaps .input-section .search-group .kmap-search-filter{
-  max-width: 330px;
-}
-
-.kmaps.page-places .input-section .kmap-filter:first-of-type{
-  margin-top: 1.5rem;
-  padding-top: .1rem;
-  border-top: 1px solid #ddd;
-}
 
 .input-section .kmap-typeahead-picker > label{
   /* same as BS 'sr-only' class, screenreader only ruleset */
@@ -1721,62 +1704,29 @@ object.flip_label {
 
 
 
+/**
+* -----------------------------------------------
+* KMaps target - temp. located here to target Bhutan
+* -----------------------------------------------
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--- Temporary styles to hide advance search options 
-.input-section .search-group{ height:44px;}
-.input-section .input-group input.form-control{ margin-top:7px;}
-.input-section .toggle-link.advanced-link{ display:none !important;}
-.advanced-view .form-group:first-child{ border-top:none;}
-.input-section .input-group .input-group-btn{ top:8px !important;}
-.advanced-view{ display:block !important;}
-.input-section .alert{ position:relative; top:7px;}
----*/
-/* hiding inner workings here Yuji
-.search-group > .form-group label:nth-of-type(-n+2),
-.form-group.advanced-input.feature-group.dropdown,
-.form-group.advanced-input.select-type{ 
-  display: none !important;
-  border-top: none !important;
-}
- */
-
-
-
-/*
-.ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
-  display: inline-block;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
+.kmaps .input-section .search-group {
+  height:auto;
 }
 
-.ajax-progress {
-  margin: 4px 0 0 -10px;
+.kmaps .input-section .search-filters{
+  padding: 0 1.5rem 1.5rem;
 }
 
-.ajax-progress .throbber {
-  height: 20px;
-  width: 20px;
-  background:transparent url('../images/ajax-loader.gif') no-repeat center center;
-  color: #000;
-  z-index: 501;
+.kmaps .input-section .search-group .kmap-search-filter{
+  max-width: 330px;
 }
-**/
 
+.kmaps.page-places .input-section .kmap-filter:first-of-type{
+  margin-top: 1.5rem;
+  padding-top: .1rem;
+  border-top: 1px solid #ddd;
+}
 
 
 /**
