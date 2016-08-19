@@ -688,6 +688,12 @@ font-size: 1.12em;
   color:#000;
 }
 
+.kmaps-tt-menu .kmaps-tt-suggestion:hover::before,
+.kmaps-tt-menu .kmaps-tt-suggestion.kmaps-tt-selectable.kmaps-tt-cursor:hover::before{
+    border-color: #2db6b4 !important; /* set subtheme color */
+    background-color: #2db6b4 !important;
+}
+
 
 /**
 * ----------------------
