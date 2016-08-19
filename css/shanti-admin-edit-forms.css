@@ -316,7 +316,7 @@ font-size: 1.12em;
   border-left: 1px solid #ddd;
   margin-left:1%;
   margin-bottom: 2rem;
-  padding-left: 2rem;
+  padding-left: 1.8rem;
 }
 
 /* Keyword Label wrapper - w/(x) cancel buttons */
@@ -425,8 +425,8 @@ font-size: 1.12em;
 
 .field-name-field-location .kmap-typeahead-picker .searchreset{
   position: absolute;
-  left: 20%;
-  bottom: -4.5rem;
+  left: 21%;
+  bottom: -4.7rem;
 }
 
 .field-name-field-subject .kmap-tree-picker .searchreset,
@@ -434,11 +434,11 @@ font-size: 1.12em;
 .field-type-shanti-kmaps-fields-default .kmap-tree-picker .searchreset{
   position: absolute;
   right: 12rem;
-  top: 2.5rem;
+  top: 2.55rem;
 }
 
 .field-name-field-subject .kmap-tree-picker .searchreset{
-  right: 16rem;
+  right: 15.5rem;
 }
 
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
@@ -542,6 +542,11 @@ font-size: 1.12em;
 }
 
 
+/* typeahead hover color to match subtheme */
+.kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
+.kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+  background-color: transparent !important;
+}
 
 
 
