@@ -559,6 +559,154 @@ font-size: 1.12em;
 
 
 /**
+* ----------------------------------------------------
+* Import from AV edit form css - aug 19, 2016 mf8yk
+* ----------------------------------------------------
+*/
+
+/**
+* BEGIN Typeahead Menu
+*/
+.kmaps-tt-menu,
+.twitter-typeahead{
+  padding-top:0 !important;
+  text-rendering: optimizeSpeed;
+}
+
+.kmaps-tt-header{
+  background-color: #eee;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 20px 4px 14px;
+}
+
+.kmaps-tt-header:first-of-type {
+  border-top: none;
+  margin-top: 0;
+  border-radius: 0.8rem 0.8rem 0 0;
+  display: block;
+  width: 100%;
+}
+/* These are the search headers which have pagers. The filters do not have pagers. */
+
+/* .form-item-field-subcollection-new-search-term .kmaps-tt-header:first-of-type,
+.form-item-field-subject-search-term .kmaps-tt-header:first-of-type, 
+.form-item-field-location-search-term .kmaps-tt-header:first-of-type{ */
+.kmap-typeahead-picker .kmaps-tt-header:first-of-type{
+  position: relative;
+  height: 60px !important;
+  padding-top:1rem;
+}
+
+.typeahead-pager.pager{
+  font-size: 85%;
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.4rem;
+}
+
+.kmaps-tt-header .close{
+  position: relative;
+  top: -0.7rem;
+  right: -0.5rem;
+  opacity: 0.3;
+  font-size: 2em;
+}
+
+.kmaps-tt-header .close::before{
+  content: 'Close';
+  display: inline-block;
+  position: relative;
+  right: 1rem;
+  top: -0.65rem;
+  /*width: 30px;
+  height: 9px;*/
+  font-size: 0.44em;
+  font-family: arial, tahoma, sans-serif;
+}
+
+
+/* .form-item-field-location-search-filter-feature-type .kmaps-tt-header,
+.form-item-field-location-search-filter-associated-subject .kmaps-tt-header{ */
+.kmap-filter .kmaps-tt-header{
+  padding-top:0.6rem;
+}
+
+/* .form-item-field-location-search-filter-feature-type .kmaps-tt-header .close,
+.form-item-field-location-search-filter-associated-subject .kmaps-tt-header .close{ */
+.kmap-filter .kmaps-tt-header .close{
+  position: relative;
+  top: -0.4rem;
+  right: -1rem;
+}
+
+/* .form-item-field-location-search-filter-feature-type .kmaps-tt-header .close::before,
+.form-item-field-location-search-filter-associated-subject .kmaps-tt-header .close::before{ */
+.kmap-filter .kmaps-tt-header .close::before{
+  position: relative;
+  right: 0.7rem;
+  top: -0.6rem;
+}
+
+
+/**
+* BEGIN Typeahead Menu items listed 
+*/
+/* list items key-word term */
+.kmaps-tt-suggestion .kmaps-term{
+  color: #000;
+}
+/* list items key-word ancestors */
+.kmaps-ancestors{
+  display:inline;
+  color:#333;
+}
+
+/*
+.kmaps-tt-suggestion:hover .kmaps-term,
+.kmaps-tt-suggestion:hover .kmaps-ancestors,
+.kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
+.kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
+.kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
+.kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
+.kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
+  color:#fff;
+}
+.kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
+  color:#f0f0f0; 
+}
+*/
+
+.kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-term,
+.kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-ancestors{
+    color:gray;
+}
+
+.kmaps-tt-suggestion:hover .kmaps-term,
+.kmaps-tt-suggestion:hover .kmaps-ancestors{
+  color:#000;
+}
+
+
+/**
+* ----------------------
+* END: Import from AV edit form css
+* ----------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/**
 * add more row fields 
 */
 .btn.field-add-more-submit {
