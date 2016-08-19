@@ -542,11 +542,7 @@ font-size: 1.12em;
 }
 
 
-/* typeahead hover color to match subtheme */
-.kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
-.kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
-  background-color: transparent !important;
-}
+
 
 
 
