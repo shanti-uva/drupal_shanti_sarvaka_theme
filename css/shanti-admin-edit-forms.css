@@ -441,12 +441,7 @@ font-size: 1.12em;
   right: 15.5rem;
 }
 
-/* Typeahead KMaps Places: reset search button */
-.input-section .kmap-typeahead-picker .searchreset {
-  position: absolute;
-  right: 2.5rem;
-  top: 2.75rem;
-}
+
 
 
 
@@ -616,7 +611,7 @@ font-size: 1.12em;
 }
 
 .kmaps-tt-header .close::before{
-  content: 'Close';
+  content: 'Close X';
   display: inline-block;
   position: relative;
   right: 1rem;

@@ -1714,7 +1714,12 @@ object.flip_label {
   padding: 0 1.5rem 1.5rem;
 }
 
-
+/* Typeahead KMaps Places: reset search button */
+.input-section .kmap-typeahead-picker .searchreset {
+  position: absolute;
+  right: 2.4rem;
+  top: 2.75rem;
+}
 
 /**
 * -----------------------------------------------
