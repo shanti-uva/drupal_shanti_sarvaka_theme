@@ -273,7 +273,7 @@ font-size: 1.12em;
   width: 100%;
   padding-left: 4rem;
   padding-bottom: 2rem;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-width: 0 1px 1px;
   border-radius: 0 0 1rem 1rem;
   position: relative;
@@ -399,7 +399,7 @@ font-size: 1.12em;
 }
 */
 .field-name-field-location .kmap-typeahead-picker{
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-width: 1px 1px 0;
   padding-top:1rem;
   background: #f5f5f5;
@@ -554,37 +554,12 @@ font-size: 1.12em;
 
 
 
-/**
-* ----------------------------------------------------
-* Import from AV edit form css - aug 19, 2016 mf8yk
-* ----------------------------------------------------
-*/
+
 
 /**
 * BEGIN Typeahead Menu
 */
 
-/*
-
-.input-section .kmap-filter .kmaps-tt-header .close{
-  position: relative;
-  top: -0.4rem;
-  right: -1rem;
-  width: 60px;
-  height: 9px;
-}
-
-.input-section .kmap-filter .kmaps-tt-header .close::before{
-  position: relative;
-  right: 0.7rem;
-  top: -0.6rem;
-}
-*/
-
-
-/**
-* BEGIN Typeahead Menu items listed 
-*/
 /* list items key-word term */
 .kmaps-tt-suggestion .kmaps-term{
   color: #000;
@@ -594,7 +569,6 @@ font-size: 1.12em;
   display:inline;
   color:#333;
 }
-
 
 
 .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-term,
@@ -612,12 +586,6 @@ font-size: 1.12em;
     border-color: #555; /* set subtheme color */
     background-color: #555;
 }
-
-/**
-* ----------------------
-* END: Import from AV edit form css
-* ----------------------
-*/
 
 
 
