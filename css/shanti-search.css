@@ -789,6 +789,10 @@ object.flip_label {
   left: 12px;
 }
 
+.input-section .kmaps-tt-header .close{
+  position: relative;
+  top:-0.75rem;
+}
 /**
 *** END / Input & Advanced */
 
