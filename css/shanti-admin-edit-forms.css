@@ -564,13 +564,6 @@ font-size: 1.12em;
 * BEGIN Typeahead Menu
 */
 
-
-
-
-
-
-
-
 /*
 
 .input-section .kmap-filter .kmaps-tt-header .close{
@@ -589,27 +582,6 @@ font-size: 1.12em;
 */
 
 
-
-.kmap-filter .kmaps-tt-header .close{
-    position: relative;
-    top: -11rem;
-    right: -2.5rem;
-}
-.kmap-filter .kmaps-tt-header .close::before{
-    position: relative;
-    right: .5rem; 
-    top: 10.1rem;
-}
-.group-details .field-name-field-location .kmap-typeahead-picker .kmaps-tt-header .close::before{
-    position: relative;
-    top: 9.8rem;
-}
-
-
-
-
-
-
 /**
 * BEGIN Typeahead Menu items listed 
 */
@@ -623,20 +595,7 @@ font-size: 1.12em;
   color:#333;
 }
 
-/*
-.kmaps-tt-suggestion:hover .kmaps-term,
-.kmaps-tt-suggestion:hover .kmaps-ancestors,
-.kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
-.kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
-.kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
-.kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
-.kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
-  color:#fff;
-}
-.kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
-  color:#f0f0f0; 
-}
-*/
+
 
 .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-term,
 .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-ancestors{
@@ -659,9 +618,6 @@ font-size: 1.12em;
 * END: Import from AV edit form css
 * ----------------------
 */
-
-
-
 
 
 
