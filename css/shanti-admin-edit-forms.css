@@ -563,87 +563,51 @@ font-size: 1.12em;
 /**
 * BEGIN Typeahead Menu
 */
-.kmaps-tt-menu,
-.twitter-typeahead{
-  padding-top:0 !important;
-  text-rendering: optimizeSpeed;
-}
-
-.kmaps-tt-header{
-  background-color: #eee;
-  font-weight: bold;
-  border-top: 2px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 8px 20px 4px 14px;
-}
-
-.kmaps-tt-header:first-of-type {
-  border-top: none;
-  margin-top: 0;
-  border-radius: 0.8rem 0.8rem 0 0;
-  display: block;
-  width: 100%;
-}
-/* These are the search headers which have pagers. The filters do not have pagers. */
-
-/* .form-item-field-subcollection-new-search-term .kmaps-tt-header:first-of-type,
-.form-item-field-subject-search-term .kmaps-tt-header:first-of-type, 
-.form-item-field-location-search-term .kmaps-tt-header:first-of-type{ */
-.kmap-typeahead-picker .kmaps-tt-header:first-of-type{
-  position: relative;
-  height: 60px !important;
-  padding-top:1rem;
-}
-
-.typeahead-pager.pager{
-  font-size: 85%;
-  position: absolute;
-  right: 0.7rem;
-  bottom: 0.4rem;
-}
-
-.kmaps-tt-header .close{
-  position: relative;
-  top: -0.7rem;
-  right: -0.5rem;
-  opacity: 0.3;
-  font-size: 2em;
-}
-
-.kmaps-tt-header .close::before{
-  content: 'Close X';
-  display: inline-block;
-  position: relative;
-  right: 1rem;
-  top: -0.65rem;
-  /*width: 30px;
-  height: 9px;*/
-  font-size: 0.44em;
-  font-family: arial, tahoma, sans-serif;
-}
 
 
-/* .form-item-field-location-search-filter-feature-type .kmaps-tt-header,
-.form-item-field-location-search-filter-associated-subject .kmaps-tt-header{ */
-.kmap-filter .kmaps-tt-header{
-  padding-top:0.6rem;
-}
 
-/* .form-item-field-location-search-filter-feature-type .kmaps-tt-header .close,
-.form-item-field-location-search-filter-associated-subject .kmaps-tt-header .close{ */
-.kmap-filter .kmaps-tt-header .close{
+
+
+
+
+
+/*
+
+.input-section .kmap-filter .kmaps-tt-header .close{
   position: relative;
   top: -0.4rem;
   right: -1rem;
+  width: 60px;
+  height: 9px;
 }
 
-/* .form-item-field-location-search-filter-feature-type .kmaps-tt-header .close::before,
-.form-item-field-location-search-filter-associated-subject .kmaps-tt-header .close::before{ */
-.kmap-filter .kmaps-tt-header .close::before{
+.input-section .kmap-filter .kmaps-tt-header .close::before{
   position: relative;
   right: 0.7rem;
   top: -0.6rem;
 }
+*/
+
+
+
+.kmap-filter .kmaps-tt-header .close{
+    position: relative;
+    top: -11rem;
+    right: -2.5rem;
+}
+.kmap-filter .kmaps-tt-header .close::before{
+    position: relative;
+    right: .5rem; 
+    top: 10.1rem;
+}
+.group-details .field-name-field-location .kmap-typeahead-picker .kmaps-tt-header .close::before{
+    position: relative;
+    top: 9.8rem;
+}
+
+
+
+
 
 
 /**
@@ -1145,8 +1109,18 @@ button#edit-delete:hover{
 
 
 /***** BEGIN Vertical Tabs *****/
-.vertical-tabs fieldset.vertical-tabs-pane{
+.vertical-tabs {
+  margin-top: 0;
+  background: #fdfdfd;
+}
+
+.vertical-tabs-pane{
   padding:1rem;
+}
+
+.vertical-tabs-panes {
+  margin-bottom: 2em;
+  font-size: 1em;
 }
 
 .vertical-tab-button a,
@@ -1165,22 +1139,6 @@ button#edit-delete:hover{
   text-decoration: none !important;
 }
 
-.vertical-tabs {
-  margin-top: 0;
-  background: #fdfdfd;
-}
-
-.vertical-tabs-panes.vertical-tabs-processed {
-  padding:1rem 1.5rem;
-  /* border-top: 1px solid #ddd; */
- /* border-bottom:1px solid #fff; */
-}
-
-.vertical-tabs-panes {
-  margin-bottom: 2em;
-  font-size: 1em;
-}
-
 .vertical-tabs a {
   border-bottom: none;
 }
@@ -1197,6 +1155,14 @@ button#edit-delete:hover{
 .vertical-tabs .vertical-tab-button.selected a:-webkit-any-link:active {
   text-decoration: none;
 }
+
+.vertical-tabs-panes.vertical-tabs-processed {
+  padding:1rem 1.5rem;
+  /* border-top: 1px solid #ddd; */
+ /* border-bottom:1px solid #fff; */
+}
+
+
 /* Selector target UL.vertical-tabs-list */
 .vertical-tabs ul.vertical-tabs-list .selected strong {
   color: inherit;
@@ -1274,7 +1240,15 @@ button#edit-delete:hover{
   margin-bottom: -0.5rem;*/
 }
 
-table.redirect-list thead th:first-of-type img{
+.vertical-tabs table.redirect-list{
+  margin-left:1rem
+}
+
+.vertical-tabs table.redirect-list tbody td{
+  padding-left: 1rem;
+}
+
+.vertical-tabs table.redirect-list thead th:first-of-type img{
   display: inline-block !important;
   margin-left: 0.5rem !important;
   margin-bottom:0.2rem !important;
@@ -1393,6 +1367,7 @@ div.ctools-modal-content a.close{
   font-size: 0.5em;
   text-shadow: 0 0 3px #888;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  filter: alpha(opacity=85);
   opacity: 0.85;
   margin:0;
 
@@ -1401,6 +1376,7 @@ div.ctools-modal-content a.close{
 }
 
 div.ctools-modal-content a.close:hover{
+  filter: alpha(opacity=100);
   opacity:1;
 }
 
