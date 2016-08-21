@@ -3703,10 +3703,6 @@ table.pagerer {
   text-transform: uppercase;
 }
 
-article table.pagerer:last-child{
-  margin: 2rem 0 7rem;
-}
-
 table.pagerer tbody{
   border-top:none !important;
 }
