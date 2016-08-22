@@ -492,7 +492,12 @@ font-family: 'museo-sans-500', arial, sans-serif;
 }
 
 .navbar-header .shanti {
-  display: none;
+  display: inline-block;
+  visibility: hidden;
+  height:0;
+  width:0;
+  overflow:hidden;
+  font-size:0;
 }
 
 .navbar-header .site-slogan {
