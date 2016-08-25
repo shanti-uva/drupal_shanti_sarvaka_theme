@@ -222,6 +222,10 @@ ul.list-inline > li{
   padding:0 !important;
 }
 
+.page-user form#user-login{
+  margin-left: 5%;
+}
+
 /* anchors */
 a {
   text-decoration: none;
@@ -4363,6 +4367,11 @@ body.page-admin-modules #block-system-main.block.block-system {
   .nav-tabs.nav-justified>li{
     border-right: 1px solid #ddd;
   }
+
+  .page-user form#user-login{
+    margin-left: 15%;
+  }
+
 }
 
 @media screen and (min-width: 850px) {
