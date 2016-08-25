@@ -977,11 +977,11 @@ font-family: 'museo-sans-500', arial, sans-serif;
   opacity: 0.75;
 }
 /* adjust icon fonts for consistency in Explore menu and elsewhere */
-.shanticon-visuals {
+.site-banner .collections .shanticon-visuals {
   font-size: 110%;
 }
 
-.shanticon-images {
+.site-banner .collections .shanticon-images {
   font-size: 90%;
 }
 /*--- END collections panel ---*/
