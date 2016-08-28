@@ -3600,9 +3600,9 @@ a.btn,a.btn:hover,a.btn:active {
   overflow: hidden;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text {
-  /*background: #fff;*/
+.bootstrap-select.btn-group .dropdown-menu li.selected>a, 
+.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
+  /*background-color: #60d2d0;*/
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:hover>a,
@@ -3737,10 +3737,7 @@ a.btn,a.btn:hover,a.btn:active {
   margin:0;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a, 
-.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
-  background-color: #60d2d0;
-}
+
 
 
 
