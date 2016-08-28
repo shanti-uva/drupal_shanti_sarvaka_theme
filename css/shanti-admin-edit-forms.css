@@ -377,6 +377,8 @@ font-size: 1.12em;
   background:#f7f7f7;
   border:1px solid #ddd;
   border-width: 4px 2px 2px;
+  max-height: 350px;
+  overflow: auto;
 }
 .kmap-pick-tree p{
   margin: 10px;
