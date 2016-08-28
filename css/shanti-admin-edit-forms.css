@@ -648,7 +648,8 @@ td.views-field-type {
 .page-group-node-admin .icheckbox_minimal-red,
 .page-group-node-admin .iradio_minimal-red {
   margin-right: 0.75rem !important;
-  margin-left: 1.5rem;
+    margin-left: 1.5rem;
+  margin-left: 0.5rem;
   position: relative;
   top: -1px;
   left: 0;
