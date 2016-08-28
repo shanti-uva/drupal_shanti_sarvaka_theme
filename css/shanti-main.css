@@ -3703,6 +3703,51 @@ a.btn,a.btn:hover,a.btn:active {
 /*--- END selectpicker ---*/
 
 
+
+/**
+* TESTING
+*/
+.bootstrap-select.btn-group .dropdown-menu li>a{
+  line-height: 1.75em;
+  height: 1.75em;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.bootstrap-select.btn-group .dropdown-menu li>a:active{
+  /*background: #e0e0e0;*/
+  color:#000;
+}
+
+.bootstrap-select.btn-group .dropdown-menu dt{
+  padding: 6px 20px 4px 14px;
+  background-color: #eee;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  /* target collection smenu single top header , but will look for exceptions to this model and address those seperately */
+  padding: 8px 20px 4px 14px;
+  border-top: none;
+  border-radius: 0;
+}
+
+.bootstrap-select.btn-group .dropdown-menu .divider{
+  margin:0;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li.selected>a, 
+.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
+  background-color: #60d2d0;
+}
+
+/* END TESTING select */
+
+
+
+
+
+
+
 /*----------------------*/
 /*---- BEGIN Paging ----*/
 /*----------------------*/
