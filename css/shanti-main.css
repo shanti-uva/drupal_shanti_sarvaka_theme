@@ -3740,6 +3740,25 @@ a.btn,a.btn:hover,a.btn:active {
   background-color: #60d2d0;
 }
 
+
+
+
+
+
+.bootstrap-select.btn-group .dropdown-menu li>a::before{
+  content:'';
+  width:8px;
+  height:8px;
+  background:transparent;
+  border:1px solid #444;
+  margin-right: 0.6rem;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li:hover>a::before{
+  background:#555;
+  border-color: #555;
+}
+
 /* END TESTING select */
 
 
