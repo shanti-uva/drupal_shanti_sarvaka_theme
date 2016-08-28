@@ -3691,11 +3691,7 @@ a.btn,a.btn:hover,a.btn:active {
   top: 2px;
 }
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li>a::before{
-  width:0;
-  height:0;
-  display:none;
-}
+
 
 /* previous;y had :not([class*='span']) - removed for speed issues since it's not needed most likely */
 .bootstrap-select.form-control {
@@ -3765,6 +3761,11 @@ a.btn,a.btn:hover,a.btn:active {
   border-color: #555;
 }
 
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li>a::before{
+  width:0;
+  height:0;
+  display:none;
+}
 /* END TESTING select */
 
 
