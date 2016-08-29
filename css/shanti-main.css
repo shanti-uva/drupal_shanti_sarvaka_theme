@@ -3602,7 +3602,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
-  /*background-color: #60d2d0;*/
+  background-color: #eee;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li:hover>a,
@@ -3701,6 +3701,12 @@ a.btn,a.btn:hover,a.btn:active {
 .view-filters .bootstrap-select.form-control {
   padding-right: 0;
   width: 100%;
+}
+
+div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a::before{
+  width:0;
+  height:0;
+  display:none;
 }
 /*--- END selectpicker ---*/
 
