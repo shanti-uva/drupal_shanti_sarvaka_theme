@@ -3424,52 +3424,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 
 
-/***** REVIEW ***/
-/****************** mark pulled these on March 25, 2016 testing
-.select-wrapper {
-  position: relative;
-  float: left;
-  display: block;
-  cursor: pointer;
-  border-radius: 15px;
-  background-clip: padding-box;
-  border: 1px solid #CCC;
-  padding: 0 2px 0 10px;
-  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat;
-  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, -webkit-linear-gradient(top, #fff, #f4f6f5);
-  background: url(../images/dropdown_arrow.png) 95% 8px no-repeat, linear-gradient(to bottom, #fff, #f4f6f5);
-}
 
-.select-wrapper .holder {
-  display: none;
-  margin: 0 35px 0 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  line-height: 28px;
-}
-
-.select-wrapper,
-.select-wrapper select {
-  width: 293px;
-  height: 30px;
-  line-height: 30px;
-}
-
-.select-wrapper select {
-  margin: -1px 0 0 1px;
-  cursor: pointer;
-  outline: none;
-  filter: alpha(opacity=0);
-  opacity: 0;
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  width: 100%;
-}
-****/
 
 /*------------------------------------*/
 /*---- Bootstrap Select dropdown -----*/
@@ -3570,8 +3525,8 @@ a.btn,a.btn:hover,a.btn:active {
   padding: 0 1.25rem;
   overflow: hidden;
   display: block;
-  line-height: 2.25em;
-  height: 2.12em;
+  line-height: 0.88em;
+  height: 2em;
   font-size: 1em;
   font-weight: normal;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
@@ -3584,16 +3539,21 @@ a.btn,a.btn:hover,a.btn:active {
   text-transform: capitalize;
 }
 
+.bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.bootstrap-select.btn-group .dropdown-menu li>a:active{
+  /*background: #e0e0e0;*/
+  color:#000;
+}
+/*
 .bootstrap-select.btn-group .dropdown-menu li>a:focus {
     background-color: #fff;
     background-image: none !important;
-    /* outline: 0; */
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-color: #d0d0d0 !important;
 }
-
+*/
 .bootstrap-select.btn-group .dropdown-menu>li>a span.text {
   margin-right: 0;
   padding-left: 0.4rem;
@@ -3605,40 +3565,6 @@ a.btn,a.btn:hover,a.btn:active {
   background-color: #eee;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li:hover>a,
-.bootstrap-select.btn-group .dropdown-menu li:hover>a span.text,
-.bootstrap-select.btn-group .dropdown-menu li>a,
-.bootstrap-select.btn-group .dropdown-menu li>a:hover,
-.bootstrap-select.btn-group .dropdown-menu li>a:active,
-.bootstrap-select.btn-group .dropdown-menu li>a>span.text,
-.bootstrap-select.btn-group .dropdown-menu li>a:hover>span.text,
-.bootstrap-select.btn-group .dropdown-menu li>a:active>span,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
- /* color: #505050;*/
- /*background: #eee !important;*/
-}
-
-.bootstrap-select.btn-group .dropdown-menu li:hover>a,
-.bootstrap-select.btn-group .dropdown-menu li:hover>a span.text,
-.bootstrap-select.btn-group .dropdown-menu li>a:hover span.text,
-.bootstrap-select.btn-group .dropdown-menu li>a:active span.text,
-.bootstrap-select.btn-group .dropdown-menu li.selected:hover,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:active,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:hover span.text,
-.bootstrap-select.btn-group .dropdown-menu li.selected>a:active span.text {
-  /*background: #f7f7f7;*/
-  /*color:#000;*/
-}
-
-.bootstrap-select.btn-group .dropdown-menu li:active>a,
-.bootstrap-select.btn-group .dropdown-menu li:active>a>span.text {
-  /*background: #fff;*/
-}
 /*----- checkmark styles -----*/
 .bootstrap-select.btn-group.show-tick .dropdown-menu li>a .glyphicon-ok{
   font-size: 90%;
@@ -3703,6 +3629,12 @@ a.btn,a.btn:hover,a.btn:active {
   width: 100%;
 }
 
+
+
+div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a{
+  line-height:2em;
+}
+
 div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a::before{
   width:0;
   height:0;
@@ -3715,16 +3647,7 @@ div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a::before
 /**
 * TESTING
 */
-.bootstrap-select.btn-group .dropdown-menu li>a{
-  line-height: 0.88em;
-  height: 2em;
-}
 
-.bootstrap-select.btn-group .dropdown-menu li>a:hover, 
-.bootstrap-select.btn-group .dropdown-menu li>a:active{
-  /*background: #e0e0e0;*/
-  color:#000;
-}
 
 .bootstrap-select.btn-group .dropdown-menu dt{
   padding: 6px 20px 4px 14px;
