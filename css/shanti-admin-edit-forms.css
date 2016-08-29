@@ -267,7 +267,7 @@ font-size: 1.12em;
 
 /* Keyword w/(x) cancel buttons */
 .selected-kmap{
-  color: #333;
+  color: #333;''
   font-size: 0.93em;
   font-family: 'museo-sans-500', helvetica, arial, sans-serif;
   border: none;
