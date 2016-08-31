@@ -108,7 +108,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     $variables['offcanvas_trigger_sb'] = '';
     // if both side columns exist
     if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
-        // $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right'; not currently feasible using two offcanvas sidebars at once
+        $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right';
         $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
         $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-first & sidebar-second 
     // If first side column exists
@@ -144,8 +144,8 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     // Set Loginout_link
     $variables['loginout_link'] = l(t('Logout'), 'user/logout');
     if(!$variables['logged_in']) {
-        if(module_exists('shib_auth')) {
-            $variables['loginout_link'] = l(t('Login'), shib_auth_generate_login_url());
+        if(module_exists('simplesamlphp_auth')) {
+            $variables['loginout_link'] = l(t('Login'), 'saml_login');
         } else {
             $variables['loginout_link'] = l(t('Login'), 'user');
         }
@@ -542,10 +542,10 @@ function shanti_sarvaka_create_user_menu($um) {
 		if(theme_get_setting('shanti_sarvaka_show_login_link')) {
 	    // Determine whether login is via password or shibboleth and create login link accordingly
 	    $loginlink = 'user';
-			$lisuff = '';
-	    if(module_exists('shib_auth')) {
-	      $loginlink = shib_auth_generate_login_url();
-				$lisuff = t('via Netbadge');
+		$lisuff = '';
+	    if(module_exists('simplesamlphp_auth')) {
+	        $loginlink = url('saml_login');
+            $lisuff = t('via Netbadge');
 	    }
 
 	    // Add login link to bottom of links array
@@ -1207,83 +1207,52 @@ function _shanti_sarvaka_add_metatags() {
   $base = $base_url . $base_path . drupal_get_path('theme', 'shanti_sarvaka') . '/';
 
 	// Add to Header variables for favicons and MS settings
-	// See https://wiki.shanti.virginia.edu/display/DELTA/Favicons for specs.
 	$els = array(
 		array(
 			'tag' => 'link',
 			'rel' => 'apple-touch-icon',
-			'sizes' => '57x57',
-			'href' => '/apple-touch-icon-57x57.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
-			'sizes' => '60x60',
-			'href' => '/apple-touch-icon-60x60.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
-			'sizes' => '72x72',
-			'href' => '/apple-touch-icon-72x72.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
-			'sizes' => '76x76',
-			'href' => '/apple-touch-icon-76x76.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
-			'sizes' => '114x114',
-			'href' => '/apple-touch-icon-114x114.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
-			'sizes' => '120x120',
-			'href' => '/apple-touch-icon-120x120.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
-			'sizes' => '144x144',
-			'href' => '/apple-touch-icon-144x144.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
-			'sizes' => '152x152',
-			'href' => '/apple-touch-icon-152x152.png',
-		),
-		array(
-			'tag' => 'link',
-			'rel' => 'apple-touch-icon',
 			'sizes' => '180x180',
-			'href' => '/apple-touch-icon-180x180.png',
+			'href' => '/sites/all/themes/shanti_sarvaka/images/favicons/apple-touch-icon.png',
 		),
 		array(
 			'tag' => 'link',
 			'rel' => 'icon',
 			'type' => 'image/png',
-			'href' => '/favicon-16x16.png',
-	    'sizes' => '16x16',
+            'sizes' => '32x32',
+			'href' => '/sites/all/themes/shanti_sarvaka/images/favicons/favicon-32x32.png',
 		),
+        array(
+            'tag' => 'link',
+            'rel' => 'icon',
+            'type' => 'image/png',
+            'sizes' => '16x16',
+            'href' => '/sites/all/themes/shanti_sarvaka/images/favicons/favicon-16x16.png',
+        ),
 		array(
 			'tag' => 'link',
 			'rel' => 'manifest',
-			'href' => '/manifest.json',
+			'href' => '/sites/all/themes/shanti_sarvaka/images/favicons/manifest.json',
+		),
+        array(
+            'tag' => 'link',
+            'rel' => 'mask-icon',
+            'color' => '#5bbad5',
+            'href' => '/sites/all/themes/shanti_sarvaka/images/favicons/safari-pinned-tab.svg',
+        ),
+        array(
+            'tag' => 'link',
+            'rel' => 'shortcut icon',
+            'href' => '/sites/all/themes/shanti_sarvaka/images/favicons/favicon.ico',
+        ),
+		array(
+			'tag' => 'meta',
+			'name' => 'apple-mobile-web-app-title',
+			'content' => 'SHANTI Mandala',
 		),
 		array(
 			'tag' => 'meta',
-			'name' => 'msapplication-TileColor',
-			'content' => '#da532c',
-		),
-		array(
-			'tag' => 'meta',
-			'name' => 'msapplication-TileImage',
-			'content' => '/mstile-144x144.png',
+			'name' => 'msapplication-config',
+			'content' => '/sites/all/themes/shanti_sarvaka/images/favicons/browserconfig.xml',
 		),
 		array(
 			'tag' => 'meta',
@@ -1309,11 +1278,13 @@ function _shanti_sarvaka_add_metatags() {
 		$ct++;
   }
 }
+
 function shanti_sarvaka_preprocess_apachesolr_search_snippets(&$vars) {
         if ($vars['doc']->entity_type == 'tcu') {
                 $vars['transcripts_apachesolr_search_snippet']['link']['#text'] = t('Transcript');
         }
 }
+
 function shanti_sarvaka_transcripts_ui_transcript_navigation($vars) {
         $out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play/Pause' data-play-icon='fa-play' data-pause-icon='fa-pause'><span class='fa fa-play'></span></button>";
         $out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
