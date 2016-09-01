@@ -12,13 +12,34 @@
 	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
 	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<?php print $site_name; ?> Homepage">
 	          <?php if($variables['shanti_site']): ?>
-	            <span class="icon shanticon-logo"></span><span class="shanti">SHANTI</span><?php if($variables['use_admin_site_title']) {
-		            	print "<span class=\"site-title\">{$site_name}</span>";
-		            } ?>
+	            <span class="icon shanticon-logo"></span>
+                <span class="shanti">SHANTI</span>
+                <?php if($variables['use_admin_site_title']) {
+                    print "<span class=\"site-title\">{$site_name}</span>";
+                }
+                ?>
 	          <?php else: ?>
-	            <img src="<?php print $logo; ?>" class="site-logo" /> <span class="site-title"><?php print $site_name; ?></span>
+	            <img src="<?php print $logo; ?>" class="site-logo" />
+                <span class="site-title"><?php print $site_name; ?></span>
 	          <?php endif; ?>
-	          <?php if($site_slogan) { print '<span class="site-slogan">' . $site_slogan . '</span>' ;} ?>
+	          <?php if($site_slogan) {
+                    print '<span class="site-slogan">';
+                    print $site_slogan;
+                    if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'prod') {
+                    // DO NOTHING
+                    } else {
+                    $x = '';
+                    if (preg_match("/\.dd:/",$_SERVER['HTTP_HOST'])) {
+                        $x = 'dd';
+                    } else {
+                        preg_match("/^[a-z=]+-([^.]+)\./",$_SERVER['HTTP_HOST'],$matches);
+                        $x = $matches[1];
+                    }
+                    print " / $x";
+                    }
+                    print '</span>';
+              }
+              ?>
 	        </a>
 	      </h1>
 
@@ -89,14 +110,14 @@
 
           <!-- Begin Page Content -->
           <section class="content-section <?php if (!empty($bsclass_main)) { print " $bsclass_main"; } ?> equal-height">
-	        
+
 		        <button type="button" class="btn btn-default view-offcanvas-sidebar" data-toggle="offcanvas" style="display:none;">
 	            <span class="icon"></span>
 	          </button>
-          
+
           	<!-- Message Area -->
           	<?php if (!empty($messages)) { print "<div class=\"messages\">$messages</div>"; } ?>
-          	
+
           	<!-- Main Content -->
             <div class="tab-content container-fluid">
               <article class="tab-pane main-col active" id="tab-overview">
@@ -134,7 +155,7 @@
      <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->
-  
+
 </div> <!-- End wrap-all -->
 
 <!-- Footer -->
@@ -149,7 +170,3 @@
 <div id="admin-footer">
   <?php print render($page['admin_footer']); ?>
 </div>
-
-
-
-
