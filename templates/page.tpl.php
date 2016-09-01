@@ -32,7 +32,7 @@
                     if (preg_match("/\.dd:/",$_SERVER['HTTP_HOST'])) {
                         $x = 'dd';
                     } else {
-                        preg_match("/^[a-z=]+-([^.]+)\./",$_SERVER['HTTP_HOST'],$matches);
+                        preg_match("/^[a-z=]+-([^a-z]+)\./",$_SERVER['HTTP_HOST'],$matches);
                         $x = $matches[1];
                     }
                     print " / $x";
