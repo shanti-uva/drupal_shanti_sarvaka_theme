@@ -183,7 +183,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
       if ($a[2] == 'dd') {
         $variables['site_env_context'] = 'dd';
       } else {
-        $variables['site_env_context'] = $b[-1];
+        $variables['site_env_context'] = $b;
       }
     }
 
