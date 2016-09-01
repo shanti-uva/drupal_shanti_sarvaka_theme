@@ -178,11 +178,13 @@ function shanti_sarvaka_preprocess_page(&$variables) {
       // Do nothing.
     } else {
       $variables['site_env_context'] = '';
-      if (preg_match("/\.dd:/",$_SERVER['HTTP_HOST'])) {
+      $a = preg_split('/[.:\/]+/',$base_url);
+      $variables['site_env_context'] = " / BOO $x";
+      if ($a[2] == 'dd') {
         $variables['site_env_context'] = ' / dd';
       } else {
-        preg_match("/^[a-z-]+-([a-z]+)\.shanti/",$_SERVER['HTTP_HOST'],$matches);
-        $variables['site_env_context'] = ' / ' . $matches[1];
+        $b = preg_split('/-/',$a);
+        $variables['site_env_context'] = ' / ' . $b[-1];
       }
     }
 
