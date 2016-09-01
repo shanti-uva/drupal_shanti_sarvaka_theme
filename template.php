@@ -179,7 +179,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     } else {
       $variables['site_env_context'] = '';
       $a = preg_split('/[.:\/]+/', $base_url);
-      $b = preg_split('/-/',$a[1]);
+      $b = preg_split('/-/',end($a));
       if ($a[2] == 'dd') {
         $variables['site_env_context'] = 'dd';
       } else {
