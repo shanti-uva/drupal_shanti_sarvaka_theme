@@ -22,24 +22,12 @@
 	            <img src="<?php print $logo; ?>" class="site-logo" />
                 <span class="site-title"><?php print $site_name; ?></span>
 	          <?php endif; ?>
-	          <?php if($site_slogan) {
+	          <?php if ($site_slogan) {
                     print '<span class="site-slogan">';
                     print $site_slogan;
-                    if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'prod') {
-                    // DO NOTHING
-                    } else {
-                    $x = '';
-                    if (preg_match("/\.dd:/",$_SERVER['HTTP_HOST'])) {
-                        $x = 'dd';
-                    } else {
-                        preg_match("/^[a-z=]+-([a-z]+)\.shanti/",$_SERVER['HTTP_HOST'],$matches);
-                        $x = $matches[1];
-                    }
-                    print " / $x";
-                    }
+                    print $site_env_context;
                     print '</span>';
-              }
-              ?>
+              }?>
 	        </a>
 	      </h1>
 

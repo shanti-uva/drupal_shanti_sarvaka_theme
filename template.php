@@ -74,10 +74,10 @@ function shanti_sarvaka_preprocess_html(&$variables) {
 	}
 
     drupal_add_library('system', 'ui');
-    
+
     // Adds favicon meta tags (Did say: NOT needed automatically picked up by device, but was this me? ndg, 2015-07-15)
-	_shanti_sarvaka_add_metatags(); 
-    
+	_shanti_sarvaka_add_metatags();
+
 	// Adding Bootstrap CDN Resoures
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -100));
 	drupal_add_css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css', array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -99));
@@ -93,7 +93,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     if (empty($variables['node']) || $variables['node']->type != "team") {
         $variables['breadcrumb'] = menu_get_active_breadcrumb();
         $variables['breadcrumb'][] = (!empty($variables['is_front']))? 'Home' : drupal_get_title();
-    }   
+    }
     $variables['default_title'] = theme_get_setting('shanti_sarvaka_default_title');
     $variables['home_url'] = url(variable_get('site_frontpage', ''));
     $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
@@ -110,7 +110,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
         $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right';
         $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
-        $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-first & sidebar-second 
+        $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-first & sidebar-second
     // If first side column exists
     } else if ($variables['page']['sidebar_first']) {
         $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left';
@@ -127,17 +127,17 @@ function shanti_sarvaka_preprocess_page(&$variables) {
     // If no side columns keep default all classes blank
     // Add has_tabs var
     $variables['has_tabs'] = (!empty($variables['tabs']['#primary'])) ? TRUE : FALSE;
-    
+
     // Add menu blocks in banner to secondary tabs
     if(empty($variables['tabs']['#secondary'])) { $variables['tabs']['#secondary'] = array(); }
     $variables['tabs']['#secondary'] = array_merge($variables['tabs']['#secondary'], shanti_sarvaka_banner_tabs($variables['page']['banner']));
-    
+
     // Set banner_class variable depending on whether there are tabs or not
     $variables['banner_class'] = (empty($variables['tabs']['#primary']) && empty($variables['tabs']['#secondary'])) ? '': ' has-tabs';
     //$variables['banner_class'] = ''; // uncomment this line to disable the has-tabs class on the banner
-    
+
       //unset($variables['page']['banner']['menu_menu-color-bar-menu']);
-    
+
       // Add usermenu to main menu
     $um = menu_tree_all_data('user-menu');
     $variables['user_menu_links']  = shanti_sarvaka_create_user_menu($um);
@@ -164,7 +164,7 @@ function shanti_sarvaka_preprocess_page(&$variables) {
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>' . $variables['language']->native .
         '</span><span class="icon shanticon-arrowselect"></span></a>' . $data['content'] . '</li>';
     }
-    
+
     if (module_exists('og')) {
         if (strpos(current_path(), 'group/') > -1) {
             $title = drupal_get_title();
@@ -172,6 +172,20 @@ function shanti_sarvaka_preprocess_page(&$variables) {
             drupal_set_title($title);
         }
     }
+
+    // Add docroot environment to site header
+    if (isset($_ENV['AH_SITE_ENVIRONMENT']) && $_ENV['AH_SITE_ENVIRONMENT'] === 'prod') {
+      // Do nothing.
+    } else {
+      $variables['site_env_context'] = '';
+      if (preg_match("/\.dd:/",$_SERVER['HTTP_HOST'])) {
+        $variables['site_env_context'] = ' / dd';
+      } else {
+        preg_match("/^[a-z-]+-([a-z]+)\.shanti/",$_SERVER['HTTP_HOST'],$matches);
+        $variables['site_env_context'] = ' / ' . $matches[1];
+      }
+    }
+
 } /** End Preprocess Page **/
 
 function shanti_sarvaka_preprocess_node(&$variables) {
@@ -188,7 +202,7 @@ function shanti_sarvaka_preprocess_region(&$variables) {
     case 'search_flyout':
       break;
   }
-} 
+}
 */
 
 function shanti_sarvaka_preprocess_views_view(&$vars) {
@@ -1012,7 +1026,7 @@ function shanti_sarvaka_textfield($variables) {
 /**
  * Implements HOOK_breadcrumbs
  * Customizes output of breadcrumbs
- * 
+ *
  * See also shanti_sarvaka_menu_breadcrumb_alter
  */
 function shanti_sarvaka_breadcrumb($variables) {
@@ -1023,14 +1037,14 @@ function shanti_sarvaka_breadcrumb($variables) {
     if ($bcsetting < 4 && strpos($breadcrumbs[0], t('Home')) > -1)  {
         array_shift($breadcrumbs);
     }
-    
+
     // Begin output
     $output = '<ol class="breadcrumb">';
     // Account for front page
     if(empty($variables['is_front'])) {
         array_unshift($breadcrumbs, '<a href="' . $base_url . '">' . theme_get_setting('shanti_sarvaka_breadcrumb_intro') . '</a>');
     }
-    
+
     // Adjusting breadcrumbs for group/collection admin pages
     $path = current_path();
     if (preg_match('/node\/(\d+)\/group/',$path, $m)) {
@@ -1042,24 +1056,24 @@ function shanti_sarvaka_breadcrumb($variables) {
         $breadcrumbs[] = '<a href="/node/' . $m[1] . '/group">Admin</a>';
         $breadcrumbs[] = 'People';
     }
-    
+
     // Make sure first breadcrumb does not have a colon after it
     if(count($breadcrumbs) > 1) {
         $breadcrumbs[0] = str_replace('</a>', ':</a>', $breadcrumbs[0]);
     }
-    
+
     // Wrap last bc in <a> for symmetry and styling
     $lidx = count($breadcrumbs) - 1;
     if (strpos($breadcrumbs[$lidx], '<a') == -1) {
         $breadcrumbs[$lidx] = '<a href="#">' . $breadcrumbs[$lidx] . '</a>';
     }
-    
+
     // Iterate through breadcrumbs, marking up for sarvaka
     foreach($breadcrumbs as $crumb) {
         $icon = ($breadcrumbs[0] == $crumb) ? '' : ' <span class="icon shanticon-arrow3-right"></span>';
         $output .= "<li>$crumb$icon</li>";
     }
-    
+
     $output .= '</ol>';
     return $output;
 }
