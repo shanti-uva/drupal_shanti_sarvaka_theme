@@ -25,8 +25,8 @@
 	          <?php if ($site_slogan) {
                     print '<span class="site-slogan">';
                     print $site_slogan;
-                    print $site_env_context;
                     print '</span>';
+                    print '<span class="site-slogan development">' . $site_env_context . '</span>';
               }?>
 	        </a>
 	      </h1>
