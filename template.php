@@ -745,6 +745,7 @@ function shanti_sarvaka_info_popover($variables) {
 							<div class=\"parents clearfix\"><p><strong>" . $variables['tree']['label']. "</strong>";
 
 	foreach($variables['tree']['items'] as $n => $link) {
+	    $link = str_replace('http://', '//', $link);
 		$html .= "{$link}";
 	}
 	$html .= "</p></div></div><div class=\"popover-footer\">";
@@ -752,7 +753,7 @@ function shanti_sarvaka_info_popover($variables) {
 		$options = array('attributes' => array());
 		if(!empty($info['external'])) { $options['attributes']['target'] = '_blank'; }
 		$options['attributes']['class'] = "icon shanticon-{$info['icon']}";
-		$html .= "<div class=\"popover-footer-button\">" . l($label, $info['href'], $options) . "</div>";
+		$html .= "<div class=\"popover-footer-button\">" . l($label, str_replace('http://', '//', $info['href']), $options) . "</div>";
 	}
 	$html .= "</div></div>";
 	return $html;
