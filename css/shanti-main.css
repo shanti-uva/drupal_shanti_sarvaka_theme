@@ -7,13 +7,11 @@
 * ------------------------------------------
 * 
 */
-/* This font is not currently in use mf8yk may/2016
 @font-face {
   font-family: 'museo-sans-300';
   src: url('../fonts/Museosans/museosans-300-webfont.eot');
   src: url('../fonts/Museosans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Museosans/museosans-300-webfont.woff2') format('woff2'), url('../fonts/Museosans/museosans-300-webfont.woff') format('woff'), url('../fonts/Museosans/museosans-300-webfont.ttf') format('truetype'), url('../fonts/Museosans/museosans-300-webfont.svg#svgFontName') format('svg');
 }
-*/
 @font-face {
   font-family:'museo-sans-500';
   src: url('../fonts/Museosans/museosans-500-webfont.eot'); 
@@ -469,7 +467,7 @@ a:hover,a:focus,a:active {
 text-transform: uppercase;
 font-style: normal;
 letter-spacing: 0.25rem;
-font-family: 'museo-sans-500', arial, sans-serif;
+font-family: 'museo-sans-300', arial, sans-serif;
 }
 
 .navbar-nav>li>a{
@@ -511,11 +509,17 @@ font-family: 'museo-sans-500', arial, sans-serif;
   white-space: nowrap;
   color: #444 !important;
   position: relative;
-  top: 1.35rem;
+  top:1.4rem;
   /*text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.25rem;
   font-family: 'museo-sans-500', arial,sans-serif;*/
+}
+
+.navbar-header .site-slogan.development{
+  font-size: 80%;
+  top:1.25rem;
+  position: relative;
 }
 
 .navbar-header .site-slogan::before {
@@ -523,6 +527,10 @@ font-family: 'museo-sans-500', arial, sans-serif;
   margin-right: 0.5rem;
   position: relative;
   top: 0;
+}
+
+.navbar-header .site-slogan.development::before{
+  content: '-'; 
 }
 
 .navbar-brand .shanticon-logo {
