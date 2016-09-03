@@ -1434,7 +1434,8 @@ body.front ol.breadcrumb {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #c0c0c0;
   font-size: 1.32em;
-  line-height: 3.32em;
+      line-height: 3.32em;
+  line-height: 3em;
   height: 3.12em;
   font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif !important;
   font-weight: normal;
@@ -1537,7 +1538,7 @@ body.front ol.breadcrumb {
 }
 
 .menu-main li a:hover {
-  color: #f0f0f0;
+  color: #f0f0f0 !important;
   background-color: #444;
 }
 
