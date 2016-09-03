@@ -523,8 +523,8 @@ font-family: 'museo-sans-300', arial, sans-serif;
 }
 
 .navbar-header .site-slogan::before {
-  content: '/ ';
-  margin-right: 0.5rem;
+  content: '::';
+  margin-right: 1rem;
   position: relative;
   top: 0;
 }
@@ -3853,7 +3853,7 @@ ul.pager .icon::before {
 
 .pager-first .icon,
 .pager-last .icon {
-  font-size: 1.25em;
+  font-size: 1.38em;
 }
 /*
 .pager-next{ margin-left:.5rem;}
