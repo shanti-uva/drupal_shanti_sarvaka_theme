@@ -545,8 +545,8 @@ font-family: 'museo-sans-300', arial, sans-serif;
 }
 
 .navbar-brand .site-slogan {
-  filter: alpha(opacity=80);
-  opacity: 0.80;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
 }
 
 .navbar-brand:hover .shanticon-logo,
