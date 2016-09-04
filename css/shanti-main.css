@@ -518,19 +518,20 @@ font-family: 'museo-sans-300', arial, sans-serif;
 
 .navbar-header .site-slogan.development{
   font-size: 80%;
-  top:1.25rem;
+  top:1.28rem;
   position: relative;
 }
 
 .navbar-header .site-slogan::before {
-  content: '::';
-  margin-right: 1rem;
+  content: '/ ';
+  margin-right: 0.5rem;
   position: relative;
   top: 0;
 }
 
 .navbar-header .site-slogan.development::before{
-  content: '-'; 
+  content: '-';
+  margin-right: 0.5rem; 
 }
 
 .navbar-brand .shanticon-logo {
@@ -3817,7 +3818,7 @@ ul.pager .pager-last>a {
 ul.pager .pager-first span,
 ul.pager .pager-last span {
   position: relative;
-  top: 0.15rem !important;
+  top: 0.2rem !important;
 }
 /* .pager .pager-last>a{ margin-right:1rem;} */
 .pager-first .icon,
