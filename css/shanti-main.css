@@ -3812,7 +3812,7 @@ ul.pager li>a:active .icon {
 
 ul.pager .pager-first>a, 
 ul.pager .pager-last>a {
-  padding: 1px 0 4px;
+  padding: 2px 0 5px;
 }
 
 ul.pager .pager-first span,
