@@ -23,6 +23,12 @@
   padding-right:3rem;
   margin-left:0;
 }
+.collections-sidebar a .shanticon-stack,
+.panel-panel.right a .shanticon-stack{
+  position: relative;
+  top: .15rem;
+  margin-right: .3rem;
+}
 .collections-sidebar,
 .collections-sidebar a:not(.btn.btn-primary),
 .collections-sidebar ul li,
@@ -38,6 +44,7 @@
   filter: alpha(opacity=90);
   opacity:0.9;
   border:none;
+    display: block;
 }
 .collections-sidebar .view-collections a:not(.btn.btn-primary):hover .icon,
 .collections-sidebar .view-collections a:not(.btn.btn-primary):active .icon,

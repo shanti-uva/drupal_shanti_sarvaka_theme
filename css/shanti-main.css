@@ -3544,12 +3544,20 @@ a.btn,a.btn:hover,a.btn:active {
 }
 
 .bootstrap-select.btn-group .dropdown-menu li>a,
+.bootstrap-select.btn-group .dropdown-menu li>a.opt{
+  padding-left: 2.5rem;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li>a,
 .bootstrap-select.btn-group .dropdown-menu li>a:hover,
 .bootstrap-select.btn-group .dropdown-menu li>a:active {
   border:none !important;
   text-transform: capitalize;
 }
 
+.dropdown-menu>.disabled>a, 
+.dropdown-menu>.disabled>a:focus, 
+.dropdown-menu>.disabled>a:hover,
 .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
 .bootstrap-select.btn-group .dropdown-menu li>a:active{
   /*background: #e0e0e0;*/
@@ -3574,6 +3582,7 @@ a.btn,a.btn:hover,a.btn:active {
 .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
   background-color: #eee;
+  outline:none;
 }
 
 /*----- checkmark styles -----*/
