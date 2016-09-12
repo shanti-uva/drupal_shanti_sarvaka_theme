@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  color: #404040;
+  color: #333;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased; /* Chrome fonts assist */
   -moz-osx-font-smoothing: grayscale; /* FF fonts assist */
@@ -2924,7 +2924,6 @@ a.btn,a.btn:hover,a.btn:active {
 
 .carousel-header span {
   font-style: italic;
-  font-weight: bold;
   font-size: 1.12em;
   position: relative;
   top: -0.15rem;
@@ -3003,7 +3002,7 @@ a.btn,a.btn:hover,a.btn:active {
   width: 1.75em;
   font-size: 2.63em;
   height: 1.44em;
-  line-height: 1.75em;
+  line-height: 1.68em;
   color: #fff;
   background-image: none !important;
   text-shadow: none;
@@ -3751,7 +3750,7 @@ input.pagerer-page {
   border-radius: 3px;
   background-clip: padding-box;
   border: 1px solid #ddd;
-  padding: 0.5rem;
+  padding: 0.2rem 0.2rem 0.3rem;
   line-height: 1em !important;
   color: #6d7afc;
   height: 18px !important;
