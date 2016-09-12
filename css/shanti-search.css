@@ -246,7 +246,7 @@ object.flip_label {
 */
 .input-section {
   padding: 0;
-  border: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   display: block;
   width: 100%;
 }
@@ -368,7 +368,7 @@ object.flip_label {
 /** 
 * BEGIN Search Reset 
 */
-.input-section .searchreset,
+
 .kmap-typeahead-picker .searchreset,
 .kmap-tree-picker .searchreset {
   background: transparent;
@@ -381,7 +381,6 @@ object.flip_label {
   margin: 0;
 }
 
-.input-section .searchreset,
 .kmap-tree-picker .searchreset {
   position: absolute;
   right: 5rem;
@@ -392,11 +391,10 @@ object.flip_label {
 .input-section .kmap-typeahead-picker .searchreset {
   position: absolute;
   right: 2.4rem;
-  top: 2.75rem;
+  top: 3.75rem;
+  z-index: 10;
 }
 
-.input-section .searchreset:hover,
-.input-section .searchreset:active,
 .kmap-typeahead-picker .searchreset:hover,
 .kmap-typeahead-picker .searchreset:active,
 .kmap-tree-picker .searchreset:hover,
@@ -407,8 +405,6 @@ object.flip_label {
   border: none;
 }
 
-.input-section .searchreset:active,
-.input-section .searchreset.active,
 .kmap-typeahead-picker .searchreset:active,
 .kmap-typeahead-picker .searchreset.active,
 .kmap-tree-picker .searchreset:active,
@@ -419,7 +415,6 @@ object.flip_label {
   border: none;
 }
 
-.input-section .searchreset .icon,
 .kmap-typeahead-picker .searchreset .icon,
 .kmap-tree-picker .searchreset .icon {
   background: transparent;
@@ -434,8 +429,6 @@ object.flip_label {
   height: 2.25rem;
 }
 
-.input-section .searchreset .icon::before,
-.input-section .searchreset .icon::after,
 .kmap-typeahead-picker .searchreset .icon::before,
 .kmap-typeahead-picker .searchreset .icon::after,
 .kmap-tree-picker .searchreset .icon::before,
@@ -452,7 +445,6 @@ object.flip_label {
   transform: rotate(45deg);
 }
 
-.input-section .searchreset .icon::after,
 .kmap-typeahead-picker .searchreset .icon::after,
 .kmap-tree-picker .searchreset .icon::after{
   -webkit-transform: rotate(-45deg);
@@ -460,8 +452,6 @@ object.flip_label {
   transform: rotate(-45deg);
 }
 
-.input-section .searchreset:hover .icon,
-.input-section .searchreset:active .icon,
 .kmap-typeahead-picker .searchreset:hover .icon,
 .kmap-typeahead-picker .searchreset:active .icon,
 .kmap-tree-picker .searchreset:hover .icon,
@@ -470,23 +460,13 @@ object.flip_label {
 }
 
 
-
-
-
-.input-section .shanticon-magnify{
-    position: absolute;
-    left: 2rem; 
-    top: 1.45rem;
-    z-index:10;
-    font-size: 1.18em;
-    color: #999;
-}
-
 .input-section .kmap-typeahead-picker .shanticon-magnify{
     position: absolute;
     left: 2.5rem; 
-    top: 2.8rem;
+    top: 3.75rem;
+    z-index:10;
     font-size: 1.12em;
+    color: #999;
 }
 
 
@@ -1693,7 +1673,7 @@ object.flip_label {
   display: block;
   width: 100%;
   padding: 0 1.5rem;
-  margin: 1.8rem auto 0;
+  margin: 0 auto;
 }
 
 .input-section .kmap-search-term{
@@ -1703,20 +1683,20 @@ object.flip_label {
   font-size: 1.06em;
   height: 35px;
   max-width:100%;
-  padding: 0.2rem 3.3rem 0 1.5rem;
-  padding-left:3rem; /* for icon magnify */
+  padding: 0.2rem 3.3rem 0 3rem;
 }
 
 .input-section .kmap-typeahead-picker > label{
+  padding-left:2.5rem;
   /* same as BS 'sr-only' class, screenreader only ruleset */
-  position: absolute;
+  /*position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0
+  border: 0*/
 }
 
 .input-section .kmap-search-filter{
