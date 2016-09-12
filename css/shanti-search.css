@@ -861,6 +861,7 @@ object.flip_label {
   position: relative;
   top: 0;
   right: 5px;
+  content: "\e624";
 }
 
 .view-section .nav-tabs>li.active> a .icon::before {
