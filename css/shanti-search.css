@@ -470,7 +470,7 @@ object.flip_label {
 .input-section .kmap-typeahead-picker .shanticon-magnify {
     position: absolute;
     left: 2.5rem;
-    top: 3.7rem;
+    top: 3.9rem;
     font-size: 1.12em;
 }
 
@@ -881,7 +881,7 @@ object.flip_label {
   border-bottom-color: transparent;
 }
 
-.kmaps .view-section .nav-tabs>li.list-view.active>a{
+.kmaps .view-section .nav-tabs>li.listview.active>a{
   background-color: #eee;
 }
 
