@@ -914,7 +914,7 @@ object.flip_label {
 }
 
 .view-section .nav-tabs>li.listview> a .icon::before{
-  /*content: "\e624";*/
+  content: '\e624';
 }
 
 .view-section .nav-tabs>li.treeview> a .icon::before{
