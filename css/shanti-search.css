@@ -1766,6 +1766,19 @@ object.flip_label {
   padding: 3px 12px;
 }
 
+.view-wrap .kmaps-tt-suggestion .kmaps-term{
+  color: #555 !important;
+  font-weight: bold;
+}
+
+.view-wrap .kmaps-tt-suggestion .kmaps-ancestors{
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.32rem;
+  font-weight: normal !important;
+}
+
+
 /**
 * -----------------------------------------------
 * KMaps target - temp
