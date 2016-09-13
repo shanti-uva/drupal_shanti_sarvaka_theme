@@ -1776,6 +1776,10 @@ object.flip_label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.view-wrap .kmaps-tt-dataset .kmaps-tt-suggestion:first-child{
+  padding-top:1rem;
+}
+
 .view-wrap .kmaps-tt-suggestion .kmaps-term{
   color: #505050 !important;
   font-weight: bold;
