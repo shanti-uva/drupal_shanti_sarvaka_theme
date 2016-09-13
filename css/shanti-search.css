@@ -575,7 +575,7 @@ object.flip_label {
 .kmaps-explorer-processed .input-section label {
   font-size: 0.88em;
   line-height: 3em;
-  height: 2.25em;
+  height: 2.38em;
   margin-left: 0.7rem;
 }
 
@@ -818,8 +818,13 @@ object.flip_label {
 }
 
 .kmaps .view-wrap .kmaps-tt-header:first-of-type{
-  height: 50px !important;
+  height: 35px !important;
+  color:transparent;
   /* padding-top: 1rem; */
+}
+
+.kmaps .view-section .tab-content .tab-pane{
+  border-top: 10px solid #eee;
 }
 
 .view-section .tab-content .tab-pane {
@@ -876,7 +881,7 @@ object.flip_label {
   border-bottom-color: transparent;
 }
 
-.kmaps .view-section .nav-tabs>li.active>a{
+.kmaps .view-section .nav-tabs>li.list-view.active>a{
   background-color: #eee;
 }
 
