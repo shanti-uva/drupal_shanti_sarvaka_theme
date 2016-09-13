@@ -1722,8 +1722,20 @@ object.flip_label {
 }
 
 .input-section .search-filters{
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 0;
 }
+
+.view-section .kmaps-tt-suggestion:hover:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet){
+    background-color: #4aa1f3;
+}
+
+.view-section .kmaps-tt-suggestion:hover .kmaps-count,
+.view-section .kmaps-tt-suggestion:hover .kmaps-term,
+.view-section .kmaps-tt-suggestion:hover .kmaps-ancestors{
+    color:#fff;
+}
+
+
 
 
 
