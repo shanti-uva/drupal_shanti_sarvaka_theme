@@ -392,7 +392,7 @@ object.flip_label {
 .input-section .kmap-typeahead-picker .searchreset {
   position: absolute;
   right: 2.4rem;
-  top: 3.75rem;
+  top: 3.9rem;
   z-index: 10;
 }
 
@@ -823,7 +823,7 @@ object.flip_label {
   /* padding-top: 1rem; */
 }
 
-.kmaps .view-section .tab-content .tab-pane{
+.kmaps .view-section .tab-content .tab-pane.listview{
   border-top: 10px solid #eee;
 }
 
