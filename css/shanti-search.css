@@ -1764,10 +1764,11 @@ object.flip_label {
 .view-wrap .kmaps-tt-suggestion{
   margin-left:0;
   padding: 3px 12px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .view-wrap .kmaps-tt-suggestion .kmaps-term{
-  color: #555 !important;
+  color: #505050 !important;
   font-weight: bold;
 }
 
@@ -1776,6 +1777,7 @@ object.flip_label {
   margin-bottom: 0.3rem;
   line-height: 1.32rem;
   font-weight: normal !important;
+  color: #333 !important;
 }
 
 
