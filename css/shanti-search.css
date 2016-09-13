@@ -1725,22 +1725,22 @@ object.flip_label {
   padding: 0 1.5rem 0;
 }
 
-.view-section .kmaps-tt-suggestion:hover:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet){
+.view-wrap .kmaps-tt-suggestion:hover:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet){
     background-color: #4aa1f3 !important;
 }
 
-.view-section .kmaps-tt-suggestion:hover .kmaps-count,
-.view-section .kmaps-tt-suggestion:hover .kmaps-term,
-.view-section .kmaps-tt-suggestion:hover .kmaps-ancestors{
+.view-wrap .kmaps-tt-suggestion:hover .kmaps-count,
+.view-wrap .kmaps-tt-suggestion:hover .kmaps-term,
+.view-wrap .kmaps-tt-suggestion:hover .kmaps-ancestors{
     color:#fff !important;
 }
 
-.view-section .kmaps-tt-header:first-of-type,
-.view-section .kmaps-tt-footer.kmaps-tt-results{
+.view-wrap .kmaps-tt-header:first-of-type,
+.view-wrap .kmaps-tt-footer.kmaps-tt-results{
   border-radius:0;
 }
 
-.view-section .kmaps-tt-suggestion{
+.view-wrap .kmaps-tt-suggestion{
   margin-left:0;
   padding: 3px 12px;
 }
