@@ -1726,13 +1726,13 @@ object.flip_label {
 }
 
 .view-section .kmaps-tt-suggestion:hover:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet){
-    background-color: #4aa1f3;
+    background-color: #4aa1f3 !important;
 }
 
 .view-section .kmaps-tt-suggestion:hover .kmaps-count,
 .view-section .kmaps-tt-suggestion:hover .kmaps-term,
 .view-section .kmaps-tt-suggestion:hover .kmaps-ancestors{
-    color:#fff;
+    color:#fff !important;
 }
 
 
