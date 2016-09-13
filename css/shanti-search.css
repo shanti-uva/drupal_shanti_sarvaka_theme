@@ -849,7 +849,7 @@ object.flip_label {
 
 .kmaps .view-section .nav-tabs>li.treeview{
   width: 75%;
-  max-width: 140px;
+  max-width: 160px;
 }
 
 .view-section .nav-tabs>li>a {
