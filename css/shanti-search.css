@@ -246,7 +246,7 @@ object.flip_label {
 */
 .input-section {
   padding: 0;
-  border-bottom: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   display: block;
   width: 100%;
 }
@@ -563,13 +563,20 @@ object.flip_label {
 
 .input-section label {
   color: #444;
+  font-size: 12px;
+  line-height: 30px;
+  height: 28px;
+  padding-right: 0;
+  margin-left: 0px;
+  margin-right: 0;
+  text-transform: capitalize;
+}
+
+.kmaps-explorer-processed .input-section label {
   font-size: 0.88em;
   line-height: 3em;
   height: 2.25em;
-  padding-right: 0;
   margin-left: 0.7rem;
-  margin-right: 0;
-  text-transform: capitalize;
 }
 
 .input-section .kmap-typeahead-picker > label{
@@ -806,6 +813,15 @@ object.flip_label {
   border-width:0 1px;
 }
 
+.kmaps .view-section .tab-content{
+  padding-top:0;
+}
+
+.kmaps .view-wrap .kmaps-tt-header:first-of-type{
+  height: 50px !important;
+  /* padding-top: 1rem; */
+}
+
 .view-section .tab-content .tab-pane {
   padding: 0;
 }
@@ -858,6 +874,10 @@ object.flip_label {
   border-color: #ddd;
   border-top: 2px solid #888;
   border-bottom-color: transparent;
+}
+
+.kmaps .view-section .nav-tabs>li.active>a{
+  background-color: #eee;
 }
 
 .view-section .nav-tabs>li> .icon {
