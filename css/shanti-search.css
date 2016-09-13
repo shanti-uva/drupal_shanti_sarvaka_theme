@@ -827,6 +827,10 @@ object.flip_label {
   border-top: 10px solid #eee;
 }
 
+.kmaps .view-section .tab-content .tab-pane.treeview{
+  padding-top:1rem;
+}
+
 .view-section .tab-content .tab-pane {
   padding: 0;
 }
@@ -841,6 +845,11 @@ object.flip_label {
   font-size: 1.06em;
   line-height: 1.5em;
   letter-spacing: 0.01rem;
+}
+
+.kmaps .view-section .nav-tabs>li.treeview{
+  width: 75%;
+  max-width: 140px;
 }
 
 .view-section .nav-tabs>li>a {
