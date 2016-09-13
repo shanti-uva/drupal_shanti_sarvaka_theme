@@ -885,7 +885,7 @@ object.flip_label {
 }
 
 .view-section .listview>div {
-  padding-top: 7px;
+  /*padding-top: 7px;*/
 }
 
 .view-section .treeview .tab-content {
@@ -1735,9 +1735,15 @@ object.flip_label {
     color:#fff !important;
 }
 
+.view-section .kmaps-tt-header:first-of-type,
+.view-section .kmaps-tt-footer.kmaps-tt-results{
+  border-radius:0;
+}
 
-
-
+.view-section .kmaps-tt-suggestion{
+  margin-left:0;
+  padding: 3px 12px;
+}
 
 /**
 * -----------------------------------------------
