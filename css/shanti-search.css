@@ -1,11 +1,11 @@
 /**
 * Mandala Sarvaka - Development
-* 
+*
 * version 1.x - shanti-search.css
 * ------------------------------------------
 * University of Virginia / SHANTI MANDALA
 * ------------------------------------------
-* 
+*
 */
 
 /* clearing default styles (extruder default in utils.css) */
@@ -114,7 +114,7 @@
 }
 /**
 * Note: object.flip_label has to do with a built-in extruder
-* tab label feature of extruder library we are not using 
+* tab label feature of extruder library we are not using
 */
 object.flip_label {
   display: none;
@@ -146,7 +146,7 @@ object.flip_label {
 }
 
 /**
-* top banner search button inline styles are loaded via main.js with icon markup  
+* top banner search button inline styles are loaded via main.js with icon markup
 */
 #search-flyout.extruder .flap {
   background: #fff;
@@ -241,7 +241,7 @@ object.flip_label {
 
 /**
 * --------------------------------------
-* BEGIN  Search / Input & View 
+* BEGIN  Search / Input & View
 * --------------------------------------
 */
 .input-section {
@@ -339,7 +339,7 @@ object.flip_label {
   color: #777;
 }
 
-.input-section .input-group .btn.btn-default:active, 
+.input-section .input-group .btn.btn-default:active,
 .input-section .input-group .btn-default.active {
   background: transparent;
   border-color: #fff;
@@ -365,8 +365,8 @@ object.flip_label {
 
 
 
-/** 
-* BEGIN Search Reset 
+/**
+* BEGIN Search Reset
 */
 .input-section .searchreset,
 .kmap-typeahead-picker .searchreset,
@@ -478,7 +478,7 @@ object.flip_label {
 
 
 /**
-* BEGIN Feature Reset 
+* BEGIN Feature Reset
 */
 .input-section .feature-group .feature-reset{
   border: none;
@@ -581,9 +581,9 @@ object.flip_label {
 
 .input-section .kmap-typeahead-picker > label{
   padding-left:2.5rem;
-}  
+}
 
-/** 
+/**
 * Advanced Options
 */
 .input-section .advanced-view {
@@ -656,6 +656,10 @@ object.flip_label {
   float: right;
 }
 
+.kmaps-explorer-processed .input-section .toggle-link.advanced-link {
+  top: 0px;
+}
+
 .input-section .feature-group .toggle-link.show-features .icon::before, /*--- for feature types ---*/
 .input-section .toggle-link.show-advanced .icon::before {
   content: '\f068';
@@ -710,7 +714,7 @@ object.flip_label {
 /**
 * BEGIN select dropdown
 */
-.input-section .bootstrap-select.btn-group:not(.input-group-btn), 
+.input-section .bootstrap-select.btn-group:not(.input-group-btn),
 .input-section .bootstrap-select.btn-group[class*="span"]{
   margin-top: 1rem;
 }
@@ -743,7 +747,7 @@ object.flip_label {
 
 .advanced-view .form-group.advanced-input.select-type {
   padding: 2px 1.2rem 2px;
-} 
+}
 
 .advanced-view .form-group.advanced-input .form-control {
   line-height: 27px;
@@ -797,7 +801,7 @@ object.flip_label {
 
 /**
 * --------------------------------------------
-*  START View Section / Tabs - Table - Tree 
+*  START View Section / Tabs - Table - Tree
 * --------------------------------------------
 */
 .view-section {
@@ -1056,7 +1060,7 @@ object.flip_label {
   margin-right: -0.5em;
 }
 
-.view-section .pagination>li>a, 
+.view-section .pagination>li>a,
 .view-section .pagination>li>span {
   padding: 0.5em 0.8em;
 }
@@ -1074,11 +1078,11 @@ object.flip_label {
 .text.ui-resizable::-webkit-scrollbar{
   width: 0;
 }
- 
+
 .text.ui-resizable::-webkit-scrollbar-track{
   /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);*/
 }
- 
+
 .text.ui-resizable::-webkit-scrollbar-thumb{
   background-color: #aaa;
   cursor: pointer;
@@ -1089,17 +1093,17 @@ object.flip_label {
   background-color: #888;
 }
 /**
-* search view-section scrollbars 
+* search view-section scrollbars
 */
 .view-section .view-wrap::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: 1rem;
 }
- 
+
 .view-section .view-wrap::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 }
- 
+
 .view-section .view-wrap::-webkit-scrollbar-thumb {
   background-color: #aaa;
   border-radius: 1rem;
@@ -1110,17 +1114,17 @@ object.flip_label {
   background-color: #888;
 }
 /**
-* bootstrap-select scrollbars 
+* bootstrap-select scrollbars
 */
 .bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar{
   width: 0.5rem;
   border-radius: 0.8rem;
 }
- 
+
 .bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar-track{
   /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);*/
 }
- 
+
 .bootstrap-select .dropdown-menu.selectpicker::-webkit-scrollbar-thumb{
   background-color: #aaa;
   cursor: pointer;
@@ -1134,7 +1138,7 @@ object.flip_label {
 
 
 /**
-* Tooltip popovers 
+* Tooltip popovers
 */
 .view-section .title-field {
   position: static;
@@ -1246,7 +1250,7 @@ object.flip_label {
 
 /**
 * --------------------------
-* START / Search Tree-Nav 
+* START / Search Tree-Nav
 * --------------------------
 */
 .fancytree-container {
@@ -1278,7 +1282,7 @@ object.flip_label {
   line-height: 0;
   /* remove checkbox */
   display: none;
-} 
+}
 
 .fancytree-node {
   border: 1px solid transparent !important;
@@ -1442,7 +1446,7 @@ object.flip_label {
 
 
 /**
-* Search Loading 
+* Search Loading
 */
 #search-flyout .overlay-mask {
   position: absolute;
@@ -1595,7 +1599,7 @@ object.flip_label {
 
 
 /**
-* BEGIN tooltip popover on search view-section 
+* BEGIN tooltip popover on search view-section
 */
 .search-popover {
   display: none;
@@ -1746,7 +1750,7 @@ object.flip_label {
 }
 
 .input-section .kmap-filter:first-of-type{
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   padding-top: .1rem;
   border-top: 1px solid #ddd;
 }
@@ -1814,7 +1818,7 @@ object.flip_label {
 
 
 /**
-* 
+*
 * END - Sarvaka/css/shanti-main.css
 *
 */
