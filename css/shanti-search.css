@@ -847,6 +847,10 @@ object.flip_label {
   letter-spacing: 0.01rem;
 }
 
+.kmaps .view-section .nav-tabs>li.listview{
+  width: 38%;
+}
+
 .kmaps .view-section .nav-tabs>li.treeview{
   width: 75%;
   max-width: 160px;
@@ -1776,7 +1780,7 @@ object.flip_label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.view-wrap .kmaps-tt-dataset .kmaps-tt-suggestion:first-child{
+.view-wrap .kmaps-tt-dataset .kmaps-tt-suggestion:nth-chld(1){
   padding-top:1rem;
 }
 
