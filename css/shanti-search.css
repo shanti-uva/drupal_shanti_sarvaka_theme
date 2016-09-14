@@ -657,8 +657,9 @@ object.flip_label {
 }
 
 .kmaps-explorer-processed .input-section .toggle-link.advanced-link {
-  top: 0px;
-  margin-bottom: 10px;
+  top: 2px;
+  left: -18px;
+  margin-bottom: 8px;
 }
 
 .input-section .feature-group .toggle-link.show-features .icon::before, /*--- for feature types ---*/
