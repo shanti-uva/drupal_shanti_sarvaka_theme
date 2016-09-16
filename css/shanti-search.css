@@ -471,7 +471,7 @@ object.flip_label {
 .input-section .kmap-typeahead-picker .shanticon-magnify {
     position: absolute;
     left: 2.5rem;
-    top: 2.9rem;
+    top: 2.8rem;
     font-size: 1.12em;
 }
 
@@ -567,10 +567,6 @@ object.flip_label {
   text-transform: capitalize;
 }
 
-.kmaps-explorer-processed .input-section label {
-  margin-left: 0.5rem;
-}
-
 .kmaps .input-section .kmap-typeahead-picker > label{
   margin-left:3rem;
 }
@@ -622,7 +618,7 @@ object.flip_label {
 .input-section .toggle-link .icon::before {
   color: #555 !important;
   font-family: 'FontAwesome';
-  content: '\f068';
+  content: '\f067';
   font-size: 0.82em;
   margin-right: 0.25em;
 }
@@ -656,7 +652,7 @@ object.flip_label {
 
 .input-section .feature-group .toggle-link.show-features .icon::before, /*--- for feature types ---*/
 .input-section .toggle-link.show-advanced .icon::before {
-  content: '\f067';
+  content: '\f068';
 }
 
 /***
