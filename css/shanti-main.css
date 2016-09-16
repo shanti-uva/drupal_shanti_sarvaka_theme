@@ -3503,7 +3503,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 /*--- dropdown ---*/
 .bootstrap-select.btn-group .dropdown-menu {
-  /*font-size: 1em;*/
+  list-style-type: none;
 }
 
 .bootstrap-select.btn-group .dropdown-menu.open {
@@ -3651,17 +3651,6 @@ a.btn,a.btn:hover,a.btn:active {
   width: 100%;
 }
 
-
-
-div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a{
-  line-height:2em;
-}
-
-div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a::before{
-  width:0;
-  height:0;
-  display:none;
-}
 /*--- END selectpicker ---*/
 
 
@@ -3669,8 +3658,6 @@ div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a::before
 /**
 * TESTING
 */
-
-
 .bootstrap-select.btn-group .dropdown-menu dt{
   padding: 6px 20px 4px 14px;
   background-color: #eee;
@@ -3687,13 +3674,6 @@ div.btn-group.bootstrap-select.ss-select .dropdown-menu li:first-child a::before
 .bootstrap-select.btn-group .dropdown-menu .divider{
   margin:0;
 }
-
-
-
-
-
-
-
 
 .bootstrap-select.btn-group .dropdown-menu li>a::before{
   content: '';
