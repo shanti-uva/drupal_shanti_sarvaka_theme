@@ -56,8 +56,8 @@
     var viewheight = (height) - 270;
     var viewheightSources = (height) - 230;
     var viewheightPlaces = (height) - 402;
-    // var advHeight = $(".advanced-view").show().height();
-    // var comboHeight = (viewheight) - 370;
+    var advHeight = $(".advanced-view").show().height();
+    var comboHeight = (viewheight) - 140;
 
 
     srchtab = parseInt(srchtab) + 'px';
@@ -67,16 +67,16 @@
     $(".admin-menu #search-flyout").find(".text").css('height',srchtabAdmin);
 
     viewheight = parseInt(viewheight) + 'px';
-    // comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
-    // $(".view-wrap.short-wrap").css('height', comboHeight);
+    
 
     viewheightSources = parseInt(viewheightSources) + 'px';
     $(".sources .view-wrap").css('height', viewheightSources);
 
     viewheightPlaces = parseInt(viewheightPlaces) + 'px';
+    comboHeight = parseInt(comboHeight) + 'px';
     $(".page-places .view-wrap").css('height', viewheightPlaces);
-
+    $(".page-places .view-wrap.short-wrap").css('height', comboHeight);
   };
 
   /**
