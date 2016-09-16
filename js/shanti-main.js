@@ -55,9 +55,9 @@
     // var viewheight = (height) - 235;
     var viewheight = (height) - 270;
       var viewheightSources = (height) - 230;
-      var viewheightPlaces = (height) - 520;
+      var viewheightPlaces = (height) - 300;
     var advHeight = $(".advanced-view").show().height();
-    var comboHeight = (viewheight) - 170;
+    var comboHeight = (viewheight) - 470;
 
 
     srchtab = parseInt(srchtab) + 'px';
