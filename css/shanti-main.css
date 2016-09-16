@@ -1529,7 +1529,7 @@ body.front ol.breadcrumb {
 
 .menu-main #user-prefs li:hover,
 .menu-main #user-prefs li:active{
-  background:#fafafa;
+  /*background:#fafafa;*/
 }
 
 .menu-main li a {
