@@ -93,6 +93,7 @@
   /* default panel container width is set */
   width: 277px;
   min-width: 277px !important;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 /**
@@ -245,7 +246,7 @@ object.flip_label {
 * --------------------------------------
 */
 .input-section {
-  padding: 0;
+  padding-top:1rem;
   border: 1px solid #e0e0e0;
   display: block;
   width: 100%;
@@ -470,7 +471,7 @@ object.flip_label {
 .input-section .kmap-typeahead-picker .shanticon-magnify {
     position: absolute;
     left: 2.5rem;
-    top: 3.9rem;
+    top: 2.9rem;
     font-size: 1.12em;
 }
 
@@ -531,8 +532,8 @@ object.flip_label {
 }
 
 .input-section .form-group {
-  margin-bottom: 7px;
-  padding-left: 0;
+  margin-bottom: 2px;
+  /*padding-left: 0;*/
 }
 
 .input-section .search-group {
@@ -541,7 +542,7 @@ object.flip_label {
 }
 
 .input-section .search-group .form-group {
-  padding-left: 1.5em;
+  /*padding-left: 1.5em;*/
 }
 
 .input-section .search-group .checkbox-inline:first-child {
@@ -562,25 +563,16 @@ object.flip_label {
 }
 
 .input-section label {
-  color: #444;
-  font-size: 12px;
-  line-height: 30px;
-  height: 28px;
-  padding-right: 0;
-  margin-left: 0px;
-  margin-right: 0;
+  font-size: 0.88em;
   text-transform: capitalize;
 }
 
 .kmaps-explorer-processed .input-section label {
-  font-size: 0.88em;
-  line-height: 3em;
-  height: 2.38em;
-  margin-left: 0.7rem;
+  margin-left: 0.5rem;
 }
 
-.input-section .kmap-typeahead-picker > label{
-  padding-left:2.5rem;
+.kmaps .input-section .kmap-typeahead-picker > label{
+  margin-left:3rem;
 }
 
 /**
@@ -588,10 +580,10 @@ object.flip_label {
 */
 .input-section .advanced-view {
  /*** height:275px;  height can help control cross-browser issues ***/
-  padding: 0 .9rem;
-  background: #f8f8f8;
+  /*padding: 0 .9rem;
+  background: #f8f8f8;*/
   width: 100%;
-  margin-right: 0.3rem;
+  /*margin-right: 0.3rem;*/
 }
 
 .input-section .advanced-view .form-group {
@@ -606,17 +598,17 @@ object.flip_label {
 /**
 * advanced toggle for search panel */
 .input-section .toggle-link {
-  background: #f8f8f8;
-  color: #555 !important;
+  /*background: #f8f8f8;
+  color: #555 !important;*/
   font-size: 0.88em;
   display: block;
   text-align: right;
   font-weight: bold;
-  line-height: 0.93em;
-  margin: 0;
-  padding: 0 25px 0 0;
+  /*line-height: 0.93em;*/
+  margin: 0.5rem 2.5rem 0 0;
+  /*padding: 0;
   text-decoration: none;
-  font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;
+  font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;*/
 }
 
 .input-section .toggle-link:hover {
@@ -630,7 +622,7 @@ object.flip_label {
 .input-section .toggle-link .icon::before {
   color: #555 !important;
   font-family: 'FontAwesome';
-  content: '\f067';
+  content: '\f068';
   font-size: 0.82em;
   margin-right: 0.25em;
 }
@@ -648,23 +640,23 @@ object.flip_label {
 }
 
 .input-section .toggle-link.advanced-link {
-  margin: 0;
+  /*margin: 0;
   padding: 0;
   position: relative;
   top: 23px;
   left: -12px;
-  float: right;
+  float: right;*/
 }
 
 .kmaps-explorer-processed .input-section .toggle-link.advanced-link {
-  top: 2px;
+  /*top: 2px;
   left: -18px;
-  margin-bottom: 8px;
+  margin-bottom: 8px;*/
 }
 
 .input-section .feature-group .toggle-link.show-features .icon::before, /*--- for feature types ---*/
 .input-section .toggle-link.show-advanced .icon::before {
-  content: '\f068';
+  content: '\f067';
 }
 
 /***
@@ -1585,7 +1577,7 @@ object.flip_label {
   -webkit-animation: loading-text-opacity 1s linear 0s infinite normal;
   animation: loading-text-opacity 1s linear 0s infinite normal;
   color: #333;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   font-size: 1.18em;
   text-transform: capitalize;
   font-weight: normal;
@@ -1752,8 +1744,8 @@ object.flip_label {
 }
 
 .input-section .kmap-filter:first-of-type{
-  /* margin-top: 1.5rem; */
-  padding-top: .1rem;
+  /* margin-top: 1.5rem; 
+  padding-top: .1rem;*/
   border-top: 1px solid #ddd;
 }
 
@@ -1762,7 +1754,7 @@ object.flip_label {
 }
 
 .input-section .search-filters{
-  padding: 0 1.5rem 0;
+  padding: 0 1.5rem;
 }
 
 .view-wrap .kmaps-tt-suggestion:hover:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet){
@@ -1783,7 +1775,7 @@ object.flip_label {
 .view-wrap .kmaps-tt-suggestion{
   margin-left:0;
   padding: 3px 12px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 .view-wrap .kmaps-tt-dataset .kmaps-tt-suggestion:nth-chld(1){

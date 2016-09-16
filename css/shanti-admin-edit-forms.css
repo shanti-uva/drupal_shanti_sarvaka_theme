@@ -255,9 +255,9 @@ font-size: 1.12em;
 
 .kmap-tree-picker label,
 .kmap-typeahead-picker label{
-  text-transform: capitalize;
+  /*text-transform: capitalize;
   padding-left:1rem;
-  font-weight: normal;
+  font-weight: normal;*/
 }
 .kmap-tree-picker label span,
 .kmap-typeahead-picker label span{
