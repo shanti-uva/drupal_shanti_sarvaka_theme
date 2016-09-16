@@ -3510,7 +3510,7 @@ a.btn,a.btn:hover,a.btn:active {
   border-radius: 0.8rem;
   background-clip: padding-box;
   margin-top: 0.2rem;
-  max-height:400px !important;
+  /*max-height:400px !important;*/
 }
 
 .bootstrap-select.btn-group .btn .caret {
@@ -3583,7 +3583,7 @@ a.btn,a.btn:hover,a.btn:active {
 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
 .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
-  background-color: #eee;
+  /*background-color: #eee;*/
   outline:none;
 }
 
