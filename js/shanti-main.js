@@ -55,7 +55,7 @@
     // var viewheight = (height) - 235;
     var viewheight = (height) - 270;
       var viewheightSources = (height) - 230;
-      var viewheightPlaces = (height) - 400;
+      var viewheightPlaces = (height) - 415;
     var advHeight = $(".advanced-view").show().height();
     var comboHeight = (viewheight) - 0;
 
