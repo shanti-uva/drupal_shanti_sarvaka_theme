@@ -122,7 +122,9 @@ textarea.form-textarea {
   font-size: 1em;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   height: 27px;
-  line-height: 1.82em;
+    line-height: 1.82em;
+    padding: 0.3rem 1.5rem 0;
+  line-height: 1.25em; /* testing new settings sept 16, 2016 */
   padding: 0.3rem 1.5rem 0;
   max-width: 47rem;
   overflow: auto;
