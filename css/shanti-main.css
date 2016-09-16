@@ -3759,7 +3759,7 @@ ul.pager {
   margin:0;
 }
 
-ul.pager li {
+.main-content ul.pager li {
   color: #707070;
   padding: 0 1px;
   line-height: 1em;
@@ -3767,11 +3767,11 @@ ul.pager li {
   font-weight: bold;
 }
 
-ul.pager li .ajax-loading{
+.main-content ul.pager li .ajax-loading{
   display: none !important;
 }
 
-ul.pager li > a {
+.main-content ul.pager li > a {
   border: none;
   color: #aaa;
   padding: 5px 0;
@@ -3784,38 +3784,38 @@ ul.pager li > a {
   top: 0;
 }
 
-ul.pager li>a:hover,
-ul.pager li>a:active {
+.main-content ul.pager li>a:hover,
+.main-content ul.pager li>a:active {
   color: #333;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
   border-collapse: separate;
 }
 
-ul.pager li>a:active {
+.main-content ul.pager li>a:active {
   color: #000;
   box-shadow: none;
 }
 /* .pager li>a .icon{ color:#999; position:relative; top: 0;} */
-ul.pager li>a:hover .icon,
-ul.pager li>a:active .icon {
+.main-content ul.pager li>a:hover .icon,
+.main-content ul.pager li>a:active .icon {
   color: #444;
 }
 
-ul.pager .pager-first>a, 
-ul.pager .pager-last>a {
+.main-content ul.pager .pager-first>a, 
+.main-content ul.pager .pager-last>a {
   padding: 2px 0 5px;
 }
 
-ul.pager .pager-first span,
-ul.pager .pager-last span {
+.main-content ul.pager .pager-first span,
+.main-content ul.pager .pager-last span {
   position: relative;
   top: 0.2rem !important;
 }
 /* .pager .pager-last>a{ margin-right:1rem;} */
-.pager-first .icon,
-.pager-previous .icon,
-.pager-next .icon,
-.pager-last .icon {
+.main-content ul.pager li.pager-first .icon,
+.main-content ul.pager li..pager-previous .icon,
+.main-content ul.pager li..pager-next .icon,
+.main-content ul.pager li..pager-last .icon {
   font-family: 'shanticon';
   font-size: 1em;
   color: #222;
@@ -3823,29 +3823,29 @@ ul.pager .pager-last span {
   background: transparent;
 }
 
-.pager-first .icon::before {
+.main-content ul.pager li..pager-first .icon::before {
   content: '\e63d';
 }
 
-.pager-previous .icon::before {
+.main-content ul.pager li..pager-previous .icon::before {
   content: '\e640';
 }
 
-.pager-next .icon::before {
+.main-content ul.pager li..pager-next .icon::before {
   content: '\e63f';
 }
 
-.pager-last .icon::before {
+.main-content ul.pager li..pager-last .icon::before {
   content: '\e63e';
 }
 
-ul.pager .icon::before {
+.main-content ul.pager li.ul.pager .icon::before {
   position: relative;
   top: 0.1rem;
 }
 
-.pager-first .icon,
-.pager-last .icon {
+.main-content ul.pager li..pager-first .icon,
+.main-content ul.pager li..pager-last .icon {
   font-size: 1.38em;
 }
 /*
@@ -3862,25 +3862,25 @@ ul.pager .icon::before {
 */
 
 /*-- Pager changing active to black and inactive to grey --*/
-.pager-first .icon, 
-.pager-previous .icon, 
-.pager-next .icon, 
-.pager-last .icon {
+body .main-content ul.pager li..pager-first .icon, 
+body .main-content ul.pager li..pager-previous .icon, 
+body .main-content ul.pager li..pager-next .icon, 
+body .main-content ul.pager li..pager-last .icon {
   color: #c0c0c0;
 }
 
-.pager-first.active .icon, 
-.pager-previous.active .icon, 
-.pager-next.active .icon, 
-.pager-last.active .icon {
+body .main-content ul.pager li..pager-first.active .icon, 
+body .main-content ul.pager li..pager-previous.active .icon, 
+body .main-content ul.pager li..pager-next.active .icon, 
+body .main-content ul.pager li..pager-last.active .icon {
   color: #222;
 }
 
-ul.pager li span {
+body .main-content ul.pager li span {
   padding: 0 8px;
 }
 
-ul.pager li>span {
+body .main-content ul.pager li>span {
   border: none;
   border-radius: 0;
 }
