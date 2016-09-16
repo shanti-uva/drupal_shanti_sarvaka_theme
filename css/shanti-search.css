@@ -246,10 +246,14 @@ object.flip_label {
 * --------------------------------------
 */
 .input-section {
-  padding-top:1rem;
+  padding-top:1rem; /* coordinate with contextual-links-region below */
   border: 1px solid #e0e0e0;
   display: block;
   width: 100%;
+}
+
+.input-section .contextual-links-region{
+  margin-top:-1rem;
 }
 
 .input-section .input-group input.form-control:first-child {
@@ -259,7 +263,7 @@ object.flip_label {
 }
 
 .input-section .input-group {
-  padding: 0 12px 0 10px;
+  padding: 0 12px;
   display: block;
   width: 100%;
   background: #f8f8f8;
@@ -393,7 +397,7 @@ object.flip_label {
 .input-section .kmap-typeahead-picker .searchreset {
   position: absolute;
   right: 2.4rem;
-  top: 3.9rem;
+  top: 2.75rem;
   z-index: 10;
 }
 
@@ -542,7 +546,7 @@ object.flip_label {
 }
 
 .input-section .search-group .form-group {
-  /*padding-left: 1.5em;*/
+  padding-left: 1em;
 }
 
 .input-section .search-group .checkbox-inline:first-child {
