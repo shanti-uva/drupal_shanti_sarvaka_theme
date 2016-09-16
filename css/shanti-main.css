@@ -3759,7 +3759,7 @@ ul.pager {
   margin:0;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li {
+.main-wrapper ul.pager li {
   color: #707070;
   padding: 0 1px;
   line-height: 1em;
@@ -3767,11 +3767,11 @@ ul.pager {
   font-weight: bold;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li .ajax-loading{
+.main-wrapper ul.pager li .ajax-loading{
   display: none !important;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li > a {
+.main-wrapper ul.pager li > a {
   border: none;
   color: #aaa;
   padding: 5px 0;
@@ -3784,38 +3784,38 @@ ul.pager {
   top: 0;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li>a:hover,
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li>a:active {
+.main-wrapper ul.pager li>a:hover,
+.main-wrapper ul.pager li>a:active {
   color: #333;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
   border-collapse: separate;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li>a:active {
+.main-wrapper ul.pager li>a:active {
   color: #000;
   box-shadow: none;
 }
 /* .pager li>a .icon{ color:#999; position:relative; top: 0;} */
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li>a:hover .icon,
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li>a:active .icon {
+.main-wrapper ul.pager li>a:hover .icon,
+.main-wrapper ul.pager li>a:active .icon {
   color: #444;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager .pager-first>a, 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager .pager-last>a {
+.main-wrapper ul.pager .pager-first>a, 
+.main-wrapper ul.pager .pager-last>a {
   padding: 2px 0 5px;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager .pager-first span,
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager .pager-last span {
+.main-wrapper ul.pager .pager-first span,
+.main-wrapper ul.pager .pager-last span {
   position: relative;
   top: 0.2rem !important;
 }
 /* .pager .pager-last>a{ margin-right:1rem;} */
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li.pager-first .icon,
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-previous .icon,
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-next .icon,
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-last .icon {
+.main-wrapper ul.pager li.pager-first .icon,
+.main-wrapper ul.pager li..pager-previous .icon,
+.main-wrapper ul.pager li..pager-next .icon,
+.main-wrapper ul.pager li..pager-last .icon {
   font-family: 'shanticon';
   font-size: 1em;
   color: #222;
@@ -3823,29 +3823,29 @@ ul.pager {
   background: transparent;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-first .icon::before {
-  content: '\e63d';
+.main-wrapper ul.pager li..pager-first .icon::before {
+  content: '\e63d' !important;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-previous .icon::before {
-  content: '\e640';
+.main-wrapper ul.pager li..pager-previous .icon::before {
+  content: '\e640' !important;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-next .icon::before {
-  content: '\e63f';
+.main-wrapper ul.pager li..pager-next .icon::before {
+  content: '\e63f' !important;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-last .icon::before {
-  content: '\e63e';
+.main-wrapper ul.pager li..pager-last .icon::before {
+  content: '\e63e' !important;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li.ul.pager .icon::before {
+.main-wrapper ul.pager li.ul.pager .icon::before {
   position: relative;
   top: 0.1rem;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-first .icon,
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-last .icon {
+.main-wrapper ul.pager li..pager-first .icon,
+.main-wrapper ul.pager li..pager-last .icon {
   font-size: 1.38em;
 }
 /*
@@ -3862,29 +3862,28 @@ ul.pager {
 */
 
 /*-- Pager changing active to black and inactive to grey --*/
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-first .icon, 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-previous .icon, 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-next .icon, 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-last .icon {
+.main-wrapper ul.pager li..pager-first .icon, 
+.main-wrapper ul.pager li..pager-previous .icon, 
+.main-wrapper ul.pager li..pager-next .icon, 
+.main-wrapper ul.pager li..pager-last .icon {
   color: #c0c0c0;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-first.active .icon, 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-previous.active .icon, 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-next.active .icon, 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li..pager-last.active .icon {
+.main-wrapper ul.pager li..pager-first.active .icon, 
+.main-wrapper ul.pager li..pager-previous.active .icon, 
+.main-wrapper ul.pager li..pager-next.active .icon, 
+.main-wrapper ul.pager li..pager-last.active .icon {
   color: #222;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li span {
+.main-wrapper ul.pager li span {
   padding: 0 8px;
 }
 
-.main-wrapper .twitter-typeahead .kmaps-tt-menu ul.pager li>span {
+.main-wrapper ul.pager li>span {
   border: none;
   border-radius: 0;
 }
-
 /*----------------------*/
 /*----- END paging -----*/
 /*----------------------*/
