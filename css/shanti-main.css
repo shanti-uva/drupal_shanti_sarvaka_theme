@@ -3801,21 +3801,21 @@ ul.pager {
   color: #444;
 }
 
-.main-wrapper ul.pager .pager-first>a, 
-.main-wrapper ul.pager .pager-last>a {
+.main-wrapper ul.pager li.pager-first>a, 
+.main-wrapper ul.pager li.pager-last>a {
   padding: 2px 0 5px;
 }
 
-.main-wrapper ul.pager .pager-first span,
-.main-wrapper ul.pager .pager-last span {
+.main-wrapper ul.pager li.pager-first span,
+.main-wrapper ul.pager li.pager-last span {
   position: relative;
   top: 0.2rem !important;
 }
 /* .pager .pager-last>a{ margin-right:1rem;} */
 .main-wrapper ul.pager li.pager-first .icon,
-.main-wrapper ul.pager li..pager-previous .icon,
-.main-wrapper ul.pager li..pager-next .icon,
-.main-wrapper ul.pager li..pager-last .icon {
+.main-wrapper ul.pager li.pager-previous .icon,
+.main-wrapper ul.pager li.pager-next .icon,
+.main-wrapper ul.pager li.pager-last .icon {
   font-family: 'shanticon';
   font-size: 1em;
   color: #222;
@@ -3823,19 +3823,19 @@ ul.pager {
   background: transparent;
 }
 
-.main-wrapper ul.pager li..pager-first .icon::before {
+.main-wrapper ul.pager li.pager-first .icon::before {
   content: '\e63d' !important;
 }
 
-.main-wrapper ul.pager li..pager-previous .icon::before {
+.main-wrapper ul.pager li.pager-previous .icon::before {
   content: '\e640' !important;
 }
 
-.main-wrapper ul.pager li..pager-next .icon::before {
+.main-wrapper ul.pager li.pager-next .icon::before {
   content: '\e63f' !important;
 }
 
-.main-wrapper ul.pager li..pager-last .icon::before {
+.main-wrapper ul.pager li.pager-last .icon::before {
   content: '\e63e' !important;
 }
 
@@ -3844,8 +3844,8 @@ ul.pager {
   top: 0.1rem;
 }
 
-.main-wrapper ul.pager li..pager-first .icon,
-.main-wrapper ul.pager li..pager-last .icon {
+.main-wrapper ul.pager li.pager-first .icon,
+.main-wrapper ul.pager li.pager-last .icon {
   font-size: 1.38em;
 }
 /*
@@ -3862,17 +3862,17 @@ ul.pager {
 */
 
 /*-- Pager changing active to black and inactive to grey --*/
-.main-wrapper ul.pager li..pager-first .icon, 
-.main-wrapper ul.pager li..pager-previous .icon, 
-.main-wrapper ul.pager li..pager-next .icon, 
-.main-wrapper ul.pager li..pager-last .icon {
+.main-wrapper ul.pager li.pager-first .icon, 
+.main-wrapper ul.pager li.pager-previous .icon, 
+.main-wrapper ul.pager li.pager-next .icon, 
+.main-wrapper ul.pager li.pager-last .icon {
   color: #c0c0c0;
 }
 
-.main-wrapper ul.pager li..pager-first.active .icon, 
-.main-wrapper ul.pager li..pager-previous.active .icon, 
-.main-wrapper ul.pager li..pager-next.active .icon, 
-.main-wrapper ul.pager li..pager-last.active .icon {
+.main-wrapper ul.pager li.pager-first.active .icon, 
+.main-wrapper ul.pager li.pager-previous.active .icon, 
+.main-wrapper ul.pager li.pager-next.active .icon, 
+.main-wrapper ul.pager li.pager-last.active .icon {
   color: #222;
 }
 
