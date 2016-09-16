@@ -76,7 +76,7 @@
     viewheightPlaces = parseInt(viewheightPlaces) + 'px';
     comboHeight = parseInt(comboHeight) + 'px';
     $(".page-places .view-wrap").css('height', viewheightPlaces);
-    $(".page-places .view-wrap.short-wrap").css('height', comboHeight);
+    $(".page-places .view-wrap.long-view").css('height', comboHeight);
   };
 
   /**
