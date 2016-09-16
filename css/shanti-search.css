@@ -396,7 +396,6 @@ object.flip_label {
 
 .input-section .kmap-typeahead-picker .searchreset {
   position: absolute;
-  left: auto;
   right: 2.4rem;
   top: 2.75rem;
   z-index: 10;
