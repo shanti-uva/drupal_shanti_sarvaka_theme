@@ -89,8 +89,8 @@ Drupal.behaviors.sarvakaMbextruder = {
     attach: function (context, settings) {
     	if(context == document) {
 
-	      Drupal.ShantiSarvaka.searchTabHeight();
-	      $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.searchTabHeight );
+	 //     Drupal.ShantiSarvaka.searchTabHeight();
+	 //     $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.searchTabHeight );
 	    }
     }
   };
