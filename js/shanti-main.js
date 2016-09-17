@@ -62,30 +62,33 @@
                     $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
                 });
 
-                $(".advanced-link").bind('click', Drupal.ShantiSarvaka.searchTabHeight );
+                $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
       }
     }
   };
-  
+
 
   // *** SEARCH *** adapt search panel height to viewport
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
-    var srchtab = (height) - 88;
-    var srchtabAdmin = (height) - 123; // subtract 35px height of Drupal admin navbar
-    // var viewheight = (height) - 235;
+    var pageDiff = (height) - 90; // accounts for height of top banner and space below flyout
+    var pageDiffAdmin = (height) - 125; // subtract xtra 35px height for Drupal admin navbar
+
     var viewheight = (height) - 270;
-      var viewheightSources = (height) - 230;
-      var viewheightPlaces = (height) - 470;
-    var advHeight = $(".advanced-view").show().height();
-    var comboHeight = (viewheight) - 0;
 
+    var viewheightSources = (height) - 230;
 
-    srchtab = parseInt(srchtab) + 'px';
-    $("#search-flyout").find(".text").css('height',srchtab);
+    var viewHeightPlaces = (height) - 330;
+    var viewShowAdvHeightPlaces = (height) - 450;
+    
 
-    srchtabAdmin = parseInt(srchtabAdmin) + 'px';
-    $(".admin-menu #search-flyout").find(".text").css('height',srchtabAdmin);
+   //  var advHeight = $(".advanced-view").show().height();
+
+    pageDiff = parseInt(pageDiff) + 'px';
+    $("#search-flyout").find(".text").css('height',pageDiff);
+
+    pageDiffAdmin = parseInt(pageDiffAdmin) + 'px';
+    $(".admin-menu #search-flyout").find(".text").css('height',pageDiffAdmin);
 
     viewheight = parseInt(viewheight) + 'px';
     $(".view-wrap").css('height', viewheight);
@@ -95,9 +98,9 @@
     $(".sources .view-wrap").css('height', viewheightSources);
 
     viewheightPlaces = parseInt(viewheightPlaces) + 'px';
-    comboHeight = parseInt(comboHeight) + 'px';
-    $(".page-places .view-wrap").css('height', viewheightPlaces);
-    $(".page-places .view-wrap.long-view").css('height', comboHeight);
+    viewShowAdvHeightPlaces = parseInt(viewShowAdvHeightPlaces) + 'px';
+    $(".page-places .view-wrap.long-view").css('height', viewheightPlaces);
+    $(".page-places .view-wrap").css('height', viewShowAdvHeightPlaces);
   };
 
 
