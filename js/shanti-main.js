@@ -56,7 +56,7 @@
     var viewheight = (height) - 270;
     var viewheightSources = (height) - 230;
 
-    //var viewHeightPlaces = (height) - 340;
+    var viewHeightPlaces = (height) - 340;
     var viewShowAdvHeightPlaces = (height) - 410;
 
           // var advHeight = $(".advanced-view").show().height();
@@ -74,10 +74,10 @@
     viewheightSources = parseInt(viewheightSources) + 'px';
     $(".sources .view-wrap").css('height', viewheightSources);
 
-    // viewheightPlaces = parseInt(viewheightPlaces) + 'px';
+    viewheightPlaces = parseInt(viewheightPlaces) + 'px';
     viewShowAdvHeightPlaces = parseInt(viewShowAdvHeightPlaces) + 'px';
-    $(".page-places .view-wrap").css('height', viewShowAdvHeightPlaces);
-    // $(".page-places .view-wrap.long-view").css('height', viewheightPlaces);
+    $(".page-places .view-wrap").css('height', viewheightPlaces);
+    $(".page-places .view-wrap.advanced-height").css('height', viewShowAdvHeightPlaces);
   };
 
 
@@ -89,10 +89,12 @@
                     $(this).toggleClass("show-advanced", 'fast');
                     $(".advanced-view").slideToggle('fast');
                     $(".advanced-view").toggleClass("show-options");
-                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for adjusting view-section/advanced combo height
+                    $(".view-wrap").toggleClass("advanced-height"); // ----- toggle class for adjusting view-section/advanced combo height
+
+                    Drupal.ShantiSarvaka.searchTabHeight();
                 });
 
-                $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
+                // ();$(".advanced-link").bind('click', Drupal.ShantiSarvaka.searchTabHeight );
       }
     }
   };
