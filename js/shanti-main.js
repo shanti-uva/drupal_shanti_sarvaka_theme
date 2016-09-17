@@ -47,6 +47,27 @@
   };
 
 
+
+  /**
+   *  Settings for the theme
+   */
+  Drupal.behaviors.searchFlyoutHeightAdvanced = {
+    attach: function (context, settings) {
+      if(context == document) {
+
+                $(".advanced-link").click(function () {
+                    $(this).toggleClass("show-advanced", 'fast');
+                    $(".advanced-view").slideToggle('fast');
+                    $(".advanced-view").toggleClass("show-options");
+                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
+                });
+
+                $(".advanced-link").bind('click', searchTabHeight );
+      }
+    }
+  };
+  
+
   // *** SEARCH *** adapt search panel height to viewport
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
@@ -78,31 +99,6 @@
     $(".page-places .view-wrap").css('height', viewheightPlaces);
     $(".page-places .view-wrap.long-view").css('height', comboHeight);
   };
-
-
-
-
-  /**
-   *  Settings for the theme
-   */
-  Drupal.behaviors.searchFlyoutHeightAdvanced = {
-    attach: function (context, settings) {
-      if(context == document) {
-
-                $(".advanced-link").click(function () {
-                    $(this).toggleClass("show-advanced", 'fast');
-                    $(".advanced-view").slideToggle('fast');
-                    $(".advanced-view").toggleClass("show-options");
-                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
-                });
-
-                $(".advanced-link").click(searchTabHeight);
-      }
-    }
-  };
-
-
-
 
 
   /**
