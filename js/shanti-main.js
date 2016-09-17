@@ -48,7 +48,24 @@
 
 
 
+  /**
+   *  Settings for the theme
+   */
+  Drupal.behaviors.searchFlyoutHeightCustom = {
+    attach: function (context, settings) {
+      if(context == document) {
 
+                $(".advanced-link").click(function () {
+                    $(this).toggleClass("show-advanced", 'fast');
+                    $(".advanced-view").slideToggle('fast');
+                    $(".advanced-view").toggleClass("show-options");
+                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
+                });
+
+                $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
+      }
+    }
+  };
 
 
   // *** SEARCH *** adapt search panel height to viewport
@@ -84,25 +101,6 @@
     viewShowAdvHeightPlaces = parseInt(viewShowAdvHeightPlaces) + 'px';
     $(".page-places .view-wrap.long-view").css('height', viewheightPlaces);
     $(".page-places .view-wrap").css('height', viewShowAdvHeightPlaces);
-  };
-
-  Drupal.behaviors.searchFlyoutHeightCustom = {
-    attach: function (context, settings) {
-      if(context == document) {
-
-                Drupal.ShantiSarvaka.searchTabHeight();
-                $(window).bind('load orientationchange resize', Drupal.ShantiSarvaka.searchTabHeight );
-
-                $(".advanced-link").click(function () {
-                    $(this).toggleClass("show-advanced", 'fast');
-                    $(".advanced-view").slideToggle('fast');
-                    $(".advanced-view").toggleClass("show-options");
-                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
-                });
-
-                $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
-      }
-    }
   };
 
 
