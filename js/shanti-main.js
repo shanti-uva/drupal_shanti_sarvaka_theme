@@ -55,7 +55,7 @@
     // var viewheight = (height) - 235;
     var viewheight = (height) - 270;
       var viewheightSources = (height) - 230;
-      var viewheightPlaces = (height) - 410;
+      var viewheightPlaces = (height) - 470;
     var advHeight = $(".advanced-view").show().height();
     var comboHeight = (viewheight) - 0;
 
@@ -78,6 +78,32 @@
     $(".page-places .view-wrap").css('height', viewheightPlaces);
     $(".page-places .view-wrap.long-view").css('height', comboHeight);
   };
+
+
+
+
+  /**
+   *  Settings for the theme
+   */
+  Drupal.behaviors.searchFlyoutHeightAdvanced = {
+    attach: function (context, settings) {
+      if(context == document) {
+
+                $('.advanced-link').click(function () {
+                    $(this).toggleClass("show-advanced", 'fast');
+                    $(".advanced-view").slideToggle('fast');
+                    $(".advanced-view").toggleClass("show-options");
+                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
+                });
+
+                $('.advanced-link').click(searchTabHeight);
+      }
+    }
+  };
+
+
+
+
 
   /**
    *  Settings for the theme
@@ -774,11 +800,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
  
-
-
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
-            
               // top-banner-white = 50
               // top-banner-colored = 70
               // admin-tabs = 25
@@ -831,7 +854,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
         // $(window).on('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
-
         $(window).on('load', function() {
             clearTimeout(this.id);
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
@@ -841,8 +863,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             clearTimeout(this.id);
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
         });
-
-
 
 
 
@@ -859,7 +879,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             });
         });
 
-          
             // $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
             /*     $("#sidebar-first").find("a.use-ajax").bind('resize', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
@@ -868,7 +887,6 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
                     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
                  });
             */
-
       }
     }
  };

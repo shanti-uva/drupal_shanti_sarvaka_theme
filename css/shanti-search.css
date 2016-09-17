@@ -1808,6 +1808,9 @@ object.flip_label {
   padding-bottom: 1rem;
 }
 
+.kmaps.page-places .input-section .search-group {
+  padding-bottom: 0;
+} 
 
 
 
