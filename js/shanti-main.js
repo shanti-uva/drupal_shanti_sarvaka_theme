@@ -89,14 +89,14 @@
     attach: function (context, settings) {
       if(context == document) {
 
-                $('.advanced-link').click(function () {
+                $(".advanced-link").click(function () {
                     $(this).toggleClass("show-advanced", 'fast');
                     $(".advanced-view").slideToggle('fast');
                     $(".advanced-view").toggleClass("show-options");
                     $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
                 });
 
-                $('.advanced-link').click(searchTabHeight);
+                $(".advanced-link").click(searchTabHeight);
       }
     }
   };
