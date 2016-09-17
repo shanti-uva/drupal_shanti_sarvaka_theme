@@ -646,9 +646,11 @@ object.flip_label {
   top: 23px;
   left: -12px;
   float: right;*/
+  display:none;
 }
 
-.kmaps-explorer-processed .input-section .toggle-link.advanced-link {
+.page-places .input-section .toggle-link.advanced-link {
+  display:block;
   /*top: 2px;
   left: -18px;
   margin-bottom: 8px;*/
@@ -1803,6 +1805,7 @@ object.flip_label {
 
 .kmaps .input-section .search-group {
   height:auto;
+  padding-bottom: 1rem;
 }
 
 
