@@ -89,10 +89,10 @@
                     $(this).toggleClass("show-advanced", 'fast');
                     $(".advanced-view").slideToggle('fast');
                     $(".advanced-view").toggleClass("show-options");
-                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
+                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for adjusting view-section/advanced combo height
                 });
 
-               // $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
+                $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
       }
     }
   };
