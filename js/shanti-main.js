@@ -78,8 +78,8 @@
 
     var viewheightSources = (height) - 230;
 
-    var viewHeightPlaces = (height) - 330;
-    var viewShowAdvHeightPlaces = (height) - 450;
+    var viewHeightPlaces = (height) - 340;
+    var viewShowAdvHeightPlaces = (height) - 600;
     
 
    //  var advHeight = $(".advanced-view").show().height();
