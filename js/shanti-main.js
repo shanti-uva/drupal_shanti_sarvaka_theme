@@ -91,10 +91,10 @@
                     $(".advanced-view").toggleClass("show-options");
                     $(".view-wrap").toggleClass("advanced-height"); // ----- toggle class for adjusting view-section/advanced combo height
 
-                    Drupal.ShantiSarvaka.searchTabHeight();
+                    Drupal.ShantiSarvaka.searchTabHeight
                 });
 
-                // ();$(".advanced-link").bind('click', Drupal.ShantiSarvaka.searchTabHeight );
+                // $(".advanced-link").bind('click', Drupal.ShantiSarvaka.searchTabHeight );
       }
     }
   };
