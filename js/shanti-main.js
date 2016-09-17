@@ -62,7 +62,7 @@
                     $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
                 });
 
-                $(".advanced-link").bind('click', searchTabHeight );
+                $(".advanced-link").bind('click', Drupal.ShantiSarvaka.searchTabHeight );
       }
     }
   };
