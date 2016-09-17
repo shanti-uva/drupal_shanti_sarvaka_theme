@@ -47,6 +47,24 @@
   };
 
 
+
+  Drupal.behaviors.searchFlyoutHeightCustom = {
+    attach: function (context, settings) {
+      if(context == document) {
+
+                $(".advanced-link").click(function () {
+                    $(this).toggleClass("show-advanced", 'fast');
+                    $(".advanced-view").slideToggle('fast');
+                    $(".advanced-view").toggleClass("show-options");
+                    $(".view-wrap").toggleClass("advanced-height"); // ----- toggle class for adjusting view-section/advanced combo height
+                });
+
+                // $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
+      }
+    }
+  };
+
+  
   // *** SEARCH *** adapt search panel height to viewport
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
@@ -80,22 +98,6 @@
     $(".page-places .view-wrap.advanced-height").css('height', viewShowAdvHeightPlaces);
   };
 
-
-  Drupal.behaviors.searchFlyoutHeightCustom = {
-    attach: function (context, settings) {
-      if(context == document) {
-
-                $(".advanced-link").click(function () {
-                    $(this).toggleClass("show-advanced", 'fast');
-                    $(".advanced-view").slideToggle('fast');
-                    $(".advanced-view").toggleClass("show-options");
-                    $(".view-wrap").toggleClass("advanced-height"); // ----- toggle class for adjusting view-section/advanced combo height
-                });
-
-                // $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
-      }
-    }
-  };
 
 
   /**
