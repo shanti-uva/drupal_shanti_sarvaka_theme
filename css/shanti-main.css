@@ -3710,7 +3710,12 @@ a.btn,a.btn:hover,a.btn:active {
 /* END TESTING select */
 
 
-
+/* temp - Sources website move to */
+.block-sources-views .bootstrap-select.btn-group .dropdown-menu li>a::before{
+  height:0;
+  width:0;
+  display:none;
+}
 
 
 
