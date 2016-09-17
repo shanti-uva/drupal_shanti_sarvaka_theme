@@ -50,36 +50,34 @@
   // *** SEARCH *** adapt search panel height to viewport
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
-    var pageDiff = (height) - 90; // accounts for height of top banner and space below flyout
-    var pageDiffAdmin = (height) - 125; // subtract xtra 35px height for Drupal admin navbar
-
+    var srchtab = (height) - 88;
+    var srchtabAdmin = (height) - 123; // subtract 35px height of Drupal admin navbar
+    // var viewheight = (height) - 235;
     var viewheight = (height) - 270;
     var viewheightSources = (height) - 230;
+    var viewheightPlaces = (height) - 402;
+    // var advHeight = $(".advanced-view").show().height();
+    // var comboHeight = (viewheight) - 370;
 
-    var viewHeightPlaces = (height) - 340;
-    var viewShowAdvHeightPlaces = (height) - 410;
 
-          // var advHeight = $(".advanced-view").show().height();
+    srchtab = parseInt(srchtab) + 'px';
+    $("#search-flyout").find(".text").css('height',srchtab);
 
-    pageDiff = parseInt(pageDiff) + 'px';
-    $("#search-flyout").find(".text").css('height',pageDiff);
-
-    pageDiffAdmin = parseInt(pageDiffAdmin) + 'px';
-    $(".admin-menu #search-flyout").find(".text").css('height',pageDiffAdmin);
+    srchtabAdmin = parseInt(srchtabAdmin) + 'px';
+    $(".admin-menu #search-flyout").find(".text").css('height',srchtabAdmin);
 
     viewheight = parseInt(viewheight) + 'px';
+    // comboHeight = parseInt(comboHeight) + 'px';
     $(".view-wrap").css('height', viewheight);
-    
+    // $(".view-wrap.short-wrap").css('height', comboHeight);
 
     viewheightSources = parseInt(viewheightSources) + 'px';
     $(".sources .view-wrap").css('height', viewheightSources);
 
     viewheightPlaces = parseInt(viewheightPlaces) + 'px';
-    viewShowAdvHeightPlaces = parseInt(viewShowAdvHeightPlaces) + 'px';
     $(".page-places .view-wrap").css('height', viewheightPlaces);
-    $(".page-places .view-wrap.advanced-height").css('height', viewShowAdvHeightPlaces);
-  };
 
+  };
 
   /**
    *  Settings for the theme
@@ -776,8 +774,11 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
    attach: function (context, settings) {
       if (context == document) {
  
+
+
           Drupal.ShantiSarvaka.sidebarFooterGravity = function() {   
 
+            
               // top-banner-white = 50
               // top-banner-colored = 70
               // admin-tabs = 25
@@ -830,6 +831,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
       if (context == document) {
 
         // $(window).on('load', Drupal.ShantiSarvaka.sidebarFooterGravity );
+
         $(window).on('load', function() {
             clearTimeout(this.id);
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
@@ -839,6 +841,8 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             clearTimeout(this.id);
             this.id = setTimeout( Drupal.ShantiSarvaka.sidebarFooterGravity, 200);
         });
+
+
 
 
 
@@ -855,6 +859,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
             });
         });
 
+          
             // $("#accordion .panel-collapse").on('hidden.bs.collapse', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
 
             /*     $("#sidebar-first").find("a.use-ajax").bind('resize', function() { Drupal.ShantiSarvaka.sidebarFooterGravity });
@@ -863,6 +868,7 @@ Drupal.behaviors.shantiSidebarFooterGravity = {
                     $(document).on('ajaxSuccess', Drupal.ShantiSarvaka.sidebarFooterGravity );
                  });
             */
+
       }
     }
  };
