@@ -47,27 +47,6 @@
   };
 
 
-
-  /**
-   *  Settings for the theme
-   */
-  Drupal.behaviors.searchFlyoutHeightCustom = {
-    attach: function (context, settings) {
-      if(context == document) {
-
-                $(".advanced-link").click(function () {
-                    $(this).toggleClass("show-advanced", 'fast');
-                    $(".advanced-view").slideToggle('fast');
-                    $(".advanced-view").toggleClass("show-options");
-                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
-                });
-
-                $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
-      }
-    }
-  };
-
-
   // *** SEARCH *** adapt search panel height to viewport
   Drupal.ShantiSarvaka.searchTabHeight = function() {    
     var height = $(window).height();
@@ -75,14 +54,12 @@
     var pageDiffAdmin = (height) - 125; // subtract xtra 35px height for Drupal admin navbar
 
     var viewheight = (height) - 270;
-
     var viewheightSources = (height) - 230;
 
-    var viewHeightPlaces = (height) - 340;
-    var viewShowAdvHeightPlaces = (height) - 600;
-    
+    //var viewHeightPlaces = (height) - 340;
+    var viewShowAdvHeightPlaces = (height) - 350;
 
-   //  var advHeight = $(".advanced-view").show().height();
+          // var advHeight = $(".advanced-view").show().height();
 
     pageDiff = parseInt(pageDiff) + 'px';
     $("#search-flyout").find(".text").css('height',pageDiff);
@@ -97,10 +74,27 @@
     viewheightSources = parseInt(viewheightSources) + 'px';
     $(".sources .view-wrap").css('height', viewheightSources);
 
-    viewheightPlaces = parseInt(viewheightPlaces) + 'px';
+    // viewheightPlaces = parseInt(viewheightPlaces) + 'px';
     viewShowAdvHeightPlaces = parseInt(viewShowAdvHeightPlaces) + 'px';
-    $(".page-places .view-wrap.long-view").css('height', viewheightPlaces);
     $(".page-places .view-wrap").css('height', viewShowAdvHeightPlaces);
+    // $(".page-places .view-wrap.long-view").css('height', viewheightPlaces);
+  };
+
+
+  Drupal.behaviors.searchFlyoutHeightCustom = {
+    attach: function (context, settings) {
+      if(context == document) {
+
+                $(".advanced-link").click(function () {
+                    $(this).toggleClass("show-advanced", 'fast');
+                    $(".advanced-view").slideToggle('fast');
+                    $(".advanced-view").toggleClass("show-options");
+                    $(".view-wrap").toggleClass("long-view"); // ----- toggle class for managing view-section height
+                });
+
+               // $(".advanced-link").on('click', Drupal.ShantiSarvaka.searchTabHeight );
+      }
+    }
   };
 
 
