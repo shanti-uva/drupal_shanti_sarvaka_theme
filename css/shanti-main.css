@@ -1513,7 +1513,7 @@ body.front ol.breadcrumb {
   line-height: 3em;
   height: 4em;
   padding: 0 !important;
-  color:#606060;
+  color:#555;
 }
 
 .menu-main li:hover {
@@ -1529,11 +1529,12 @@ body.front ol.breadcrumb {
 
 .menu-main #user-prefs li:hover,
 .menu-main #user-prefs li:active{
-  /*background:#fafafa;*/
+  background:#fafafa;
+  color:#555;
 }
 
 .menu-main li a {
-  color: #606060;
+  color: #555;
   border-top: 1px solid #ddd;
   display: block;
   font-size: .88em;
@@ -1892,7 +1893,7 @@ body.front ol.breadcrumb {
 
 .popover-footer-button:last-child {
   border-radius: 0 0 0.5rem 0.5rem;
-  border-bottom: 1px solid #606060;
+  border-bottom: 1px solid #555;
   background-clip: padding-box;
   height:3.4rem;
 }
