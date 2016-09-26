@@ -1344,7 +1344,7 @@ function shanti_sarvaka_transcripts_ui_play_tcu($vars) {
         return $out;
 }
 function shanti_sarvaka_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
-        $form['search']['input']['magnify']['#markup'] = "<span class='icon shanticon-magnify'></span>";
+        $form['search']['input']['magnify']['#markup'] = "<span class='icon shanticon-magnify'></span>"; //override with shanticon
         $form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'></span>";
 
         $form['search']['navigate']['buttons']['next']['#inner'] = "<span class='icon'></span>";
