@@ -246,14 +246,14 @@ object.flip_label {
 * --------------------------------------
 */
 .input-section {
-  padding-top:1rem; /* coordinate with contextual-links-region below */
+  /* padding-top:1rem;  coordinate with contextual-links-region below */
   border: 1px solid #e0e0e0;
   display: block;
   width: 100%;
 }
 
 .input-section .contextual-links-region{
-  margin-top:-1rem;
+  /*margin-top:-1rem;*/
 }
 
 .input-section .input-group input.form-control:first-child {
