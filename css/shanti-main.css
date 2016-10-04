@@ -12,6 +12,7 @@
   src: url('../fonts/Museosans/museosans-300-webfont.eot');
   src: url('../fonts/Museosans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Museosans/museosans-300-webfont.woff2') format('woff2'), url('../fonts/Museosans/museosans-300-webfont.woff') format('woff'), url('../fonts/Museosans/museosans-300-webfont.ttf') format('truetype'), url('../fonts/Museosans/museosans-300-webfont.svg#svgFontName') format('svg');
 }
+
 @font-face {
   font-family:'museo-sans-500';
   src: url('../fonts/Museosans/museosans-500-webfont.eot'); 
@@ -462,17 +463,13 @@ div.contextual-links-wrapper{
 }
 /* font style on site-banner H1 */
 .navbar-header {
-  /*color: #555;
-  font-style: italic;*/
   font-size: 1.62em;
   margin: 0;
   padding: 0;
-  /*font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;*/
-
-text-transform: uppercase;
-font-style: normal;
-letter-spacing: 0.25rem;
-font-family: 'museo-sans-300', arial, sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.18rem;
+  font-family: 'museo-sans-300', arial, sans-serif;
 }
 
 .navbar-nav>li>a{
@@ -547,7 +544,7 @@ font-family: 'museo-sans-300', arial, sans-serif;
   position: relative;
   top: 1.15rem;
   float:left;
-  margin-right: 0.75rem;
+  /*margin-right: 0.75rem;*/
 }
 
 .navbar-brand .site-slogan {
@@ -744,9 +741,9 @@ font-family: 'museo-sans-300', arial, sans-serif;
 .navbar-default .menu-explore a {
   color: #505050;
   display: inline-block;
-  font-size: 0.93em;
+  font-size: 0.88em;
   font-weight: bold;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   line-height: 1em;
   height: 50px;
   margin: 0;
@@ -1582,7 +1579,8 @@ body.front ol.breadcrumb {
 }
 
 .menu-main li:last-child {
-  border-bottom: none;
+  /*border-bottom: none;*/
+  border-bottom: 2px solid #999;
 }
 
 .menu-main .form-group.last {
@@ -4260,32 +4258,6 @@ body.page-admin-modules #block-system-main.block.block-system {
 /**
 * BEGIN - MAX-WIDTH settings (first) */
 
-@media screen and (max-width: 499px) {
-
-  .site-banner .collections h4 {
-    font-size: 1em;
-  }
-
-  .site-banner .collections > nav > div {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 599px) {
-    
-  .site-banner .collections ul li {
-    line-height: 3em;
-  }
-
-  .shanti-thumbnail {
-    max-width: 220px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  
-}
 
 @media screen and (max-width: 991px) {
 
@@ -4300,6 +4272,115 @@ body.page-admin-modules #block-system-main.block.block-system {
   }
 
 } 
+
+
+@media screen and (max-width: 767px) {
+
+  .navbar-default .menu-explore a{
+    padding-top:15px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+
+  .navbar-header{
+    font-size:1.38em;
+  }
+
+  .navbar-header .navbar-brand{
+    padding-top: 0.1rem;
+  }
+
+  .navbar-brand .shanticon-logo{
+    font-size: 1.5em;
+    top: 1.3rem;
+    margin-right: 0rem;
+  }
+
+  .navbar-header .site-slogan{
+    margin-top: 0.1rem;
+    color: #000 !important;
+    display: inline; /* test...ould be  aproblem for sites w/no site-slogan */
+  }
+
+  .navbar-header .site-slogan.development{
+    display:none;
+  }
+
+
+    
+  .site-banner .collections ul li {
+    line-height: 3em;
+  }
+
+  .shanti-thumbnail {
+    max-width: 220px;
+  }
+}
+
+
+@media screen and (max-width: 549px) {
+
+  .navbar-default .menu-explore a{
+    padding: 16px 24px 0 15px;
+  }
+
+  .navbar-default .menu-explore a span{
+    display:none;
+  }
+
+  .navbar-default .menu-explore .icon{
+    font-size: 1.88em;
+    left: 0.1rem;
+    top: 0rem;
+    color: #606060;
+    display:block;
+  }
+
+}
+
+
+@media screen and (max-width: 499px) {
+
+  .navbar-header{
+    font-size:1.25em;
+    letter-spacing: 0.12rem;
+  }
+
+  .navbar-header .navbar-brand{
+    padding-top: 0.3rem;
+  }
+
+  .navbar-brand .shanticon-logo{
+    top: 1.2rem;
+  }
+
+
+  .site-banner .collections h4 {
+    font-size: 1em;
+  }
+
+  .site-banner .collections > nav > div {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  .navbar-header .site-slogan{
+    display:none;
+  }
+
+  .navbar-brand .shanticon-logo{
+    top: 1.1rem;
+    font-size: 1.75em;
+    left: 0.8rem;
+  }
+}
+
+
+
 
 
 
