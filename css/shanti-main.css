@@ -375,7 +375,7 @@ div.contextual-links-wrapper{
 /* Ajax Loading */
 .throbber,
 /*.ajax-progress,*/
-.ajax-progress-throbber, 
+/*.ajax-progress-throbber, */
 .ajax-progress .throbber, 
 .ajax-progress-throbber .throbber {
   margin: 0;
